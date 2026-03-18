@@ -1,0 +1,103 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Malaysia"
+        ]
+      },
+      "evidence_source": "Keywords section lists 'Malaysia' as a keyword, indicating the study was conducted in Malaysia.",
+      "warning": "Study name is inferred as 'Study X' because the provided text does not explicitly name the study. The country is inferred from keywords rather than explicit methodology description."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is limited to article metadata (article history and keywords). No sample size information is present in this section.",
+      "warning": "Insufficient data. Sample size not mentioned in the provided text."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is limited to article metadata (article history and keywords). No survey method information is present in this section.",
+      "warning": "Insufficient data. Survey method not mentioned in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is limited to article metadata (article history and keywords). No demographic information about participant race/ethnicity is present in this section.",
+      "warning": "Insufficient data. Racial/ethnic composition not mentioned in the provided text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is limited to article metadata (article history and keywords). No age information is present in this section.",
+      "warning": "Insufficient data. Mean age not mentioned in the provided text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is limited to article metadata (article history and keywords). No education level information is present in this section.",
+      "warning": "Insufficient data. Education level not mentioned in the provided text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is limited to article metadata (article history and keywords). No BMI information is present in this section.",
+      "warning": "Insufficient data. Mean BMI not mentioned in the provided text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is limited to article metadata (article history and keywords). No information about sample source is present in this section.",
+      "warning": "Insufficient data. Sample source not mentioned in the provided text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "Keywords section lists 'Body Appreciation Scale' as a keyword, indicating the study used the Body Appreciation Scale (BAS) to assess body appreciation.",
+      "warning": "The specific version (BAS or BAS-2) cannot be definitively determined from keywords alone. BAS is inferred as the standard version based on the keyword 'Body Appreciation Scale'."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is limited to article metadata (article history and keywords). No information about how BMI was assessed is present in this section.",
+      "warning": "Insufficient data. BMI assessment method not mentioned in the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text is limited to article metadata (article history and keywords). No correlation data is present in this section.",
+      "warning": "Insufficient data. Correlation coefficients not mentioned in the provided text."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is limited to article metadata (article history and keywords). No explicit information about the number of studies is present in this section.",
+      "warning": "Cannot determine number of studies from article metadata alone. Full methodology section would be needed."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text shows 'ARTICLE INFO' header and article history (received, revised, accepted dates), which suggests this is a journal article, but the publication type is not explicitly stated in the provided text.",
+      "warning": "Publication type cannot be definitively determined from the provided metadata alone. The 'ARTICLE INFO' header and revision history suggest a journal article, but this is not explicitly confirmed."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section contains only article metadata including submission and acceptance dates (received 10 February 2008, accepted 30 April 2008) and keywords. The keywords indicate the study was conducted in Malaysia and used the Body Appreciation Scale to examine positive body image and its factor structure. No detailed study methodology, sample characteristics, or results are provided in this section.",
+      "evidence_source": "Article metadata section with keywords",
+      "warning": "This is a metadata section only; comprehensive study details are not available here."
+    },
+    "_pass_type": "text_only"
+  }
+]

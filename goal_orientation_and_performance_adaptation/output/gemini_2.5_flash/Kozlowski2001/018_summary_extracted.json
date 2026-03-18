@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about publication type is provided in the text.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about financial support is provided in the text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about peer review is provided in the text.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The text mentions 'performance orientation' and 'performance goals' without distinguishing between approach or avoidance components, indicating a global measure. 'performance orientation was not significantly related to training performance' and 'Performance goals did not evidence expected effects on declarative knowledge or training performance.'",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "The text refers to 'performance adaptation' as an outcome, but does not specify the assessment method (e.g., self-report, other, objective, or mixed). It mentions 'training performance', 'declarative knowledge', 'knowledge structure', and 'self-efficacy' as 'learning outcomes making significant contributions' to performance adaptation, but not how performance adaptation itself was measured.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "The text refers to 'performance adaptation' as an outcome, but does not specify whether its measurement was subjective or objective.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "The text refers to 'performance adaptation' as an outcome, but does not specify the specific assessment method (e.g., self-report, other, objective).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "No specific goal orientation measure (e.g., VandeWalle) is mentioned in the text. Therefore, it is coded as 'Other'.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information is provided in the text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No mean age or other age data for imputation is provided in the text.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the sex composition of the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the percentage of men in the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the country of data collection is provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the sample type (student vs. other) is provided in the text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No sample size (N) is reported in the text.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "The text states 'performance orientation was not significantly related to training performance' and 'Performance goals did not evidence expected effects on declarative knowledge or training performance.' However, no specific Pearson correlation coefficient (r value) is provided.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"PO and training performance (not significant)\", \"Performance goals and declarative knowledge (no expected effects)\", \"Performance goals and training performance (no expected effects)\"]}",
+      "evidence_source": "The text states: 'performance orientation was not significantly related to training performance', and 'Performance goals did not evidence expected effects on declarative knowledge or training performance.'",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to 'our model' and 'these results' in the singular, indicating a single study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This summary section discusses the contributions of academic achievement, performance orientation, and learning orientation to various outcomes. It highlights that performance orientation was not significantly related to training performance or declarative knowledge, while mastery goals positively affected knowledge structure coherence and self-efficacy. The model accounted for a significant variance in performance adaptation, with training performance and declarative knowledge making the largest contributions.",
+      "evidence_source": "Summary of the provided text content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

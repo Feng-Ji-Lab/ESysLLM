@@ -1,0 +1,97 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify the country where the studies were conducted. Only that data were collected online using Qualtrics and participants were recruited through social media websites and e-mail list serves.",
+      "warning": "No country information provided in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'Sample 1' and 'Sample 2' but does not provide the actual sample sizes (number of participants) for either sample in this section.",
+      "warning": "Sample sizes are not specified in this procedure section. References to Sample 1 and Sample 2 are made, but numerical values are not provided."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "online"
+        ]
+      },
+      "evidence_source": "The text states: 'In brief, data were collected online using Qualtrics and participants were recruited through social media websites and e-mail list serves.'",
+      "warning": "The text indicates both Sample 1 and Sample 2 used the same online data collection method via Qualtrics, but the specific study names are not explicitly labeled as 'Study 1' or 'Study 2' in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the racial/ethnic composition of participants.",
+      "warning": "No demographic information regarding race/ethnicity is provided in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text only states the inclusion criterion: 'potential participants identified as women and were over the age of 18.' No mean age is provided.",
+      "warning": "Only minimum age requirement (18+) is mentioned; no mean age is provided."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the educational level of participants.",
+      "warning": "No educational attainment data is provided in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide BMI information for participants.",
+      "warning": "No BMI data is provided in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "community"
+        ]
+      },
+      "evidence_source": "The text states: 'participants were recruited through social media websites and e-mail list serves.' This indicates community-based recruitment rather than college or school-based recruitment.",
+      "warning": "The study names are not explicitly labeled as 'Study 1' or 'Study 2' in the provided text, so 'Study X' is used as a placeholder."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify which body appreciation assessment instrument (BAS or BAS-2) was used.",
+      "warning": "No information about the body appreciation assessment tool is provided in this procedure section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether BMI was self-reported or measured.",
+      "warning": "No information about BMI assessment method is provided in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a procedure section and does not contain correlation data.",
+      "warning": "This is a procedure/methods section; no results or correlations are reported here."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 2,
+      "evidence_source": "The text explicitly states 'For both studies' at the beginning and references 'Sample 1' and 'Sample 2' with separate citations: 'A detailed description of study procedures can be found elsewhere for Sample 1 (Satinsky, Reece, Dennis, Sanders, & Bardzell, 2012) and Sample 2 (Satinsky & Jozkowski, in press).'",
+      "warning": "The text indicates two studies/samples, though they are referred to as 'Sample 1' and 'Sample 2' rather than 'Study 1' and 'Study 2'."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether this is a journal article or dissertation.",
+      "warning": "Publication type cannot be determined from this procedure section alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This procedure section describes data collection methods for two studies (Sample 1 and Sample 2) that used similar recruitment and data collection mechanisms. Data were collected online using Qualtrics, with participants recruited through social media and email listservs. Both studies included women over 18 years old, and informed consent was obtained through a study information sheet provided on the study website.",
+      "evidence_source": "Entire procedure section provided in the text.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

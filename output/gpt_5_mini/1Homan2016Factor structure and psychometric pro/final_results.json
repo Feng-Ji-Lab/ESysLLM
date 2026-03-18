@@ -1,0 +1,287 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      2
+    ],
+    "best_indices": [
+      1,
+      7,
+      9,
+      10
+    ],
+    "reason": "Multiple candidates explicitly reference Study 1 (candidate 1) and Study 2 (candidates 7 and 9), and the Discussion explicitly notes at least two studies (candidate 10). Although some sections refer to \"the present study,\" the presence of separate validation (Study 1) and experimental (Study 2) procedures and results supports a total of 2 studies."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates (0 and 1) indicate journal title/cover information and label the piece as a 'Brief research report', which corresponds to a journal publication. No evidence suggests this is a dissertation, and both candidates consistently indicate a journal article."
+  },
+  "Country": {
+    "extract_value": {
+      "Study 1": [
+        "USA"
+      ],
+      "Study 2": [
+        "USA"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one candidate (index 0) provides a country (USA) from the author affiliation. No method/participants sections specifying study-specific locations were provided. The paper contains two studies (per context), and in absence of study-specific country information it is most appropriate to assign the stated country (USA) to both Study 1 and Study 2."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Study 1": [
+        "BAS-2"
+      ],
+      "Study 2": [
+        "BAS-2"
+      ]
+    },
+    "best_indices": [
+      1,
+      2,
+      3,
+      4,
+      7,
+      8,
+      9
+    ],
+    "reason": "The paper reports two distinct studies. Study 1 is explicitly labeled (candidate 2) and Study 2 is explicitly labeled (candidate 7). The Measures section (candidate 3) states the 10-item BAS-2 was used as the basis for the state-adapted SBAS-2; Results and Tables (candidates 4,5,6) report analyses of the SBAS-2, and Methods for Study 2 (candidate 8) describe using the SBAS-2 after scenario manipulations. The Discussion and Abstract (candidates 9 and 1) also describe the SBAS-2 as a state-version of the BAS-2. Because the state measure is derived from BAS-2 (SBAS-2), both studies are recorded as using BAS-2 per the allowed enums. Subsamples (male/female) within Study 1 were merged into the same study entry."
+  },
+  "Sample": {
+    "extract_value": {
+      "Study 1": [
+        246
+      ],
+      "Study 2": [
+        105
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "The paper reports two distinct studies. Candidate 0 (source 008_method) documents a final sample of 246 (104 women, 142 men) \u2014 assigned to Study 1. Candidates 1 and 2 (sources 012_method_1 and 013_results_1) consistently report N=105 (45 female, 60 male); candidate 2 (results) corroborates N=105 via ANOVA df. These were merged as Study 2. Method and Results sources were used, with method counts preferred and results used to confirm consistency.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [
+          142
+        ],
+        "Study 2": [
+          60
+        ]
+      },
+      "female": {
+        "Study 1": [
+          104
+        ],
+        "Study 2": [
+          45
+        ]
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          246
+        ],
+        "Study 2": [
+          105
+        ]
+      }
+    }
+  },
+  "Survey method": {
+    "extract_value": {
+      "Study 1": [
+        "online"
+      ],
+      "Study 2": [
+        "online"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "The paper reports two studies. Candidate 0 (method section, MTurk recruitment, n=246) describes an early Methods sample and explicitly states the survey was posted on MTurk with a link to the online survey \u2014 mapped to Study 1. Candidate 1 refers to recruitment via MTurk and notes it followed the procedure described in Study 1, indicating it is a later study (Study 2) and was collected online. Candidate 2 (Discussion) explicitly states Study 2 was restricted to persons with internet access, confirming online data collection for Study 2. All reliable sources (Methods and Discussion) indicate both studies used online data collection (MTurk)."
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Study 1": [
+        72.7
+      ],
+      "Study 2": [
+        80.8
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates come from Methods sections reporting participant racial breakdowns (reliable source). Source file 008 (candidate 0) is earlier and describes a larger sample (n=246) \u2014 assigned to Study 1 with 72.7% White. Source file 012 (candidate 1) describes a separate study (n=105) \u2014 assigned to Study 2 with 80.8% White. Values refer to different studies, so both are preserved. No subsample merging was needed.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          72.7
+        ],
+        "Study 2": [
+          80.8
+        ]
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Study 1": [
+        32.31
+      ],
+      "Study 2": [
+        34.28
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper contains two distinct studies. Candidate 0 (source 008, earlier Methods section) describes the sample of 246 participants with M = 32.31 \u2192 assigned to Study 1. Candidate 1 (source 012, later Methods section) describes a separate sample of 105 participants with M = 34.28 \u2192 assigned to Study 2. Both values come from Methods participant descriptions (most reliable). No subsamples or gender-specific mean ages were reported to merge.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          32.31
+        ],
+        "Study 2": [
+          34.28
+        ]
+      }
+    }
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Study 1": [
+        "self-reported"
+      ],
+      "Study 2": []
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Candidate 0 (Measures section) explicitly states BMI was calculated from self-reported height and weight, so Study 1 is coded as 'self-reported'. The paper context indicates there are two studies; however, no candidate/evidence was provided for Study 2's BMI assessment, so Study 2 is left empty (no information available in the supplied candidates). Only candidate index 0 was used."
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Study 1": [
+        26.43,
+        26.29
+      ],
+      "Study 2": []
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Table 2 (candidate 0) reports mean BMI separately for men and women: M_men = 26.43, M_women = 26.29. These values are taken as Study 1 because the Results/Exploratory factor analysis described aligns with an initial validation/sample (Study 1). No overall/total mean BMI or any values for Study 2 were provided among the candidates, so Study 2 entries are left empty. Gender-split values are listed under both the study-level extract_value (merged subsamples per instructions) and under extract_value_by_gender.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [
+          26.43
+        ],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [
+          26.29
+        ],
+        "Study 2": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [],
+        "Study 2": []
+      }
+    }
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Study 1": [
+        -0.31,
+        -0.34
+      ],
+      "Study 2": []
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Candidate 0 (Table 2) reports SBAS-2 (Body Appreciation Scale-2) correlations with BMI separately by gender: men r = -0.31 (below diagonal) and women r = -0.34 (above diagonal). Per gender-specific rule, values are reported separately under Study 1. No total (combined) correlation provided. No candidates were provided for Study 2, so Study 2 entry is included but contains no extracted values.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [
+          -0.31
+        ],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [
+          -0.34
+        ],
+        "Study 2": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [],
+        "Study 2": []
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "community"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The Methods section (candidate 0) explicitly states participants were recruited from Amazon's MTurk. MTurk samples are classified as community samples (not college or primary/secondary). Only this candidate was provided, so results are returned as a single study with source = 'community'."
+  }
+}

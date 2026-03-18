@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about publication type is provided in the text.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about financial support is provided in the text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about peer review status is provided in the text.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The text mentions \"goal orientation\" but does not specify if it is 'Avoid', 'Prove', or 'Global' performance goal orientation.",
+      "warning": "Goal orientation is mentioned, but the specific type (Avoid, Prove, Global) is not detailed."
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text states, \"UT2004 provides objective levels of computer-controlled opponent difficulty\" for testing adaptive performance. This indicates an objective measure.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The adaptive performance was measured using \"objective levels of computer-controlled opponent difficulty\" in UT2004, which is an objective score.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The adaptive performance was measured using \"objective levels of computer-controlled opponent difficulty\" in UT2004, which is an objective task/test.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text mentions \"goal orientation\" questionnaires but does not specify the scale or attribute it to VandeWalle.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information is provided in this section.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No mean age or other age-related numerical data is provided in this section.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information about the sex composition of the sample is provided in this section.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the percentage of men in the sample is provided in this section.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information about the country where the sample was collected is provided in this section.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information about whether the sample is a student sample or other is provided in this section.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No sample size (N) is provided in this section.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "This section describes the procedure and does not report any correlation coefficients.",
+      "warning": "No correlation coefficients are reported in this section."
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No correlations are reported in this section, therefore no correlation information can be provided.",
+      "warning": "No correlations are reported in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section describes a single 'Procedure' for 'participants' without explicitly delineating multiple studies or experiments. It appears to describe one study's methodology.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the experimental procedure. Participants first completed questionnaires on mental toughness, self-evaluations, videogame experience, ACT score, and goal orientation. They then underwent training and practice trials in UT2004, followed by baseline performance tests, a pre-practice self-efficacy questionnaire, 20 practice trials, and finally four test trials for post-practice performance and adaptive performance. Objective computer-controlled opponent difficulty levels (5 for baseline/practice/post-practice, 6 for adaptive performance) were used, with adaptive performance trials also featuring a larger and more varied geographical layout.",
+      "evidence_source": "Summary of the '2.3. Procedure' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

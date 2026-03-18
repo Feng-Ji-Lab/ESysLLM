@@ -1,0 +1,357 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          244
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            244
+          ]
+        }
+      },
+      "evidence_source": "The text states 't(244) = 0.14, p = .89' when describing between-group comparisons of men and women, indicating a total sample size of 244 participants.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method (paper-and-pencil or online) is specified in the provided text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information is provided in the text.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in the text.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in the text.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While BMI is mentioned as a variable in the correlation analysis ('Means, standard deviations, and intercorrelations for the SBAS-2, the BISS, life satisfaction, self-esteem, and BMI are presented in Table 2'), the actual mean BMI values are not provided in the text. The table is referenced but not shown.",
+      "warning": "Table 2 is referenced but not provided in the text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about where or how participants were recruited is provided in the text.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The text explicitly discusses the SBAS-2 (State Body Appreciation Scale-2), which is a variant of the BAS-2. The text states 'Consistent with the development of the BAS-2, factor analysis was performed separately by sex' and repeatedly references 'SBAS-2' throughout the results section.",
+      "warning": "The instrument used is SBAS-2 (State Body Appreciation Scale-2), which is a state-level version of BAS-2. Classified as BAS-2 per the allowed values."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions BMI as a variable but does not specify whether it was self-reported or measured. Table 2 is referenced as containing BMI data, but the table is not provided in the text.",
+      "warning": "BMI assessment method is not specified in the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text states 'Greater state body appreciation was also positively associated with life satisfaction and self-esteem, and inversely associated with BMI' and references 'Means, standard deviations, and intercorrelations for the SBAS-2, the BISS, life satisfaction, self-esteem, and BMI are presented in Table 2.' However, the actual correlation coefficients are not provided in the text; they are only referenced as being in Table 2, which is not shown.",
+      "warning": "Table 2 containing the correlation values is referenced but not provided in the text. The direction of the correlation (inverse/negative) is mentioned but not the specific coefficient value."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with separate analyses by sex (male subsample and female subsample), but these are subsamples of one study, not separate studies. The text does not reference multiple distinct studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The publication type (journal article or dissertation) is not specified in the provided text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Results section presents findings from a single study examining the State Body Appreciation Scale-2 (SBAS-2) through exploratory factor analysis conducted separately for male and female subsamples (total N=244). The analysis revealed a single-factor structure for both sexes with excellent internal consistency (\u03b1=.97 for both), and no significant differences between men and women on SBAS-2 items. Convergent validity analyses showed that greater state body appreciation was positively associated with life satisfaction and self-esteem, and inversely associated with BMI for both sexes.",
+      "evidence_source": "Synthesized from the entire Results section text provided."
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is provided in the text or table.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 't(244) = 0.14' in the between-group comparisons section, indicating a total sample of 244 participants (df = 244), but does not explicitly state the total sample size or break it down by gender. The table shows male and female subsamples but does not provide the N for each.",
+      "warning": "Sample size can be inferred as 244 from the t-test degrees of freedom, but gender-specific breakdowns are not provided."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about survey method (paper-and-pencil vs. online) is provided in the text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information about race/ethnicity is provided in the text.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in the text or table.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in the text.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions BMI as a variable in the correlation analysis ('Means, standard deviations, and intercorrelations for the SBAS-2, the BISS, life satisfaction, self-esteem, and BMI are presented in Table 2'), but Table 2 is not provided in the input, and no mean BMI values are stated in the text.",
+      "warning": "Table 2 is referenced but not provided; mean BMI cannot be extracted."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the source of the sample (community, college, primary/secondary/high school) is provided in the text.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The text explicitly states 'Consistent with the development of the BAS-2, factor analysis was performed separately by sex' and refers to 'SBAS-2 items' (State Body Appreciation Scale-2) throughout. The assessment instrument is BAS-2 (Body Appreciation Scale-2).",
+      "warning": "The text uses 'SBAS-2' (State Body Appreciation Scale-2), which is a variant of BAS-2. Extracted as BAS-2 per the allowed values."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions BMI as a variable but does not specify whether it was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states 'Greater state body appreciation was also positively associated with life satisfaction and self-esteem, and inversely associated with BMI.' However, the specific correlation coefficient values are not provided in the text. The text references 'Table 2' for 'Means, standard deviations, and intercorrelations for the SBAS-2, the BISS, life satisfaction, self-esteem, and BMI', but Table 2 is not provided in the input.",
+      "warning": "Table 2 containing the correlation matrix is referenced but not provided; specific correlation values cannot be extracted.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with exploratory factor analysis performed separately by sex (male subsample and female subsample), but these are subsamples of one study, not separate studies. The text does not reference multiple studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text is a results section from an academic paper, but the publication type (journal article vs. dissertation) is not explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Results section presents exploratory factor analysis of the SBAS-2 (State Body Appreciation Scale-2) performed separately for male and female subsamples from a single study with 244 total participants. Both subsamples yielded a single-factor solution with excellent internal consistency (\u03b1 = .97 for both), and no significant differences were found between men and women on individual items or full-scale scores. Convergent and incremental validity analyses showed that state body appreciation was positively associated with life satisfaction and self-esteem, and inversely associated with BMI, with these relationships remaining significant even when controlling for general state body image.",
+      "evidence_source": "Entire Results section text provided."
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1: Means, standard deviations, and item-factor loadings for men and women.",
+      "evidence_source": "Table 1 caption as presented in the image."
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Homan2016Factor structure and psychometric pro/tables/1Homan2016Factor structure and psychometric pro_p001_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is provided in the text or table.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'independent samples t-tests' with t(244) = 0.14, indicating a total sample of 245 participants (df = 244), but the breakdown by gender is not explicitly stated in the provided text.",
+      "warning": "Sample size can be inferred from the t-test degrees of freedom (244), suggesting N=245 total, but gender-specific sample sizes are not provided."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is provided in the text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information is provided in the text.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in the text.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in the text.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          26.43
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            26.29
+          ]
+        },
+        "male": {
+          "Study X": [
+            26.43
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            26.43
+          ]
+        }
+      },
+      "evidence_source": "Table 2 shows M_men = 26.43 (SD = 6.67) for men and M_women = 26.29 (SD = 6.69) for women. The overall mean BMI is reported as 26.43 for men.",
+      "warning": "Gender-specific means are available: men M=26.43, women M=26.29."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the source of the sample (community, college, or primary/secondary/high school) is provided in the text.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The text explicitly states 'SBAS-2 = State Body Appreciation Scale' in the table note. The scale is referred to as 'SBAS-2' throughout the text and is identified as the BAS-2 (State Body Appreciation Scale).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.31,
+          -0.25
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.25
+          ]
+        },
+        "male": {
+          "Study X": [
+            -0.31
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Table 2, row 5 (BMI) and column 1 (SBAS): For men (lower triangle), r = -0.31** (p < .05). For women (upper triangle), r = -0.25** (p < .05). The table note states 'values below the diagonal are correlations for men; values above the diagonal are correlations for women.'",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with separate analyses by gender (male subsample and female subsample), but these are subsamples of one study, not separate studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The publication type (journal article or dissertation) is not specified in the provided text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents results from a single study examining the State Body Appreciation Scale (SBAS-2) with separate exploratory factor analyses conducted for male and female subsamples. The study found that greater state body appreciation was associated with more positive body image, life satisfaction, and self-esteem, while being inversely associated with BMI (r = -0.31 for men, r = -0.25 for women). Table 2 provides means, standard deviations, and intercorrelations for study variables across both genders.",
+      "evidence_source": "Entire Results section text and Table 2",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2: Means, standard deviations, and intercorrelations for study variables.",
+      "evidence_source": "Table 2 title and caption as presented in the image",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Homan2016Factor structure and psychometric pro/tables/1Homan2016Factor structure and psychometric pro_p002_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_1"
+  }
+]

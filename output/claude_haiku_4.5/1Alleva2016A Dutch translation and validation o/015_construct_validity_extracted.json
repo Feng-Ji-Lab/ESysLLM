@@ -1,0 +1,105 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the study was conducted. While it mentions 'Dutch BAS-2', this refers to the Dutch translation of the instrument, not necessarily the country of the study.",
+      "warning": "Country location cannot be determined from this section alone."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          306
+        ]
+      },
+      "evidence_source": "The text references 'F(3, 306)' in two regression analyses, indicating a sample size of 306 participants (df = N - number of predictors - 1, so N = 306 + 3 = 309, but the degrees of freedom suggest 306 is the sample size used in the analysis).",
+      "warning": "The exact sample size is inferred from the degrees of freedom reported in the regression analyses. The text does not explicitly state the total sample size."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether data were collected via paper-and-pencil or online survey methods.",
+      "warning": "Survey method is not mentioned in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the racial/ethnic composition of participants.",
+      "warning": "Demographic information regarding race/ethnicity is not provided in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not report the mean age of participants.",
+      "warning": "Mean age is not mentioned in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the educational level of participants.",
+      "warning": "Educational attainment is not mentioned in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not report the mean BMI of participants. It only mentions that BAS-2 scores were 'significantly negatively correlated with... BMI' but does not provide the mean BMI value.",
+      "warning": "Mean BMI is not explicitly stated in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether participants were recruited from a community, college, or primary/secondary/high school setting.",
+      "warning": "Source of sample is not mentioned in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The text explicitly states 'Dutch BAS-2 scores demonstrated good convergent validity' and discusses the BAS-2 throughout the section as the instrument used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions that BAS-2 scores were 'significantly negatively correlated with... BMI' but does not specify whether BMI was self-reported or measured.",
+      "warning": "The method of BMI assessment (self-reported vs. measured) is not stated in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": []
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text states that Dutch BAS-2 scores were 'significantly negatively correlated with... BMI (Table 1)' but the actual correlation coefficient value is not provided in the text. The specific correlation value is referenced as being in Table 1, which is not provided in this section.",
+      "warning": "The correlation coefficient between body appreciation (BAS-2) and BMI is referenced but not numerically reported in this text. The value is stated to be in Table 1, which is not included in the provided content."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section appears to be a validation study of the Dutch BAS-2 instrument. The text does not explicitly state how many distinct studies are included in this paper.",
+      "warning": "The number of studies cannot be determined from this section alone. This appears to be a single validation study, but the overall paper structure is unknown."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text does not indicate whether this is from a journal article or dissertation.",
+      "warning": "Publication type cannot be determined from this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents construct validity evidence for the Dutch BAS-2 (Body Appreciation Scale-2), demonstrating good convergent validity through significant correlations with appearance satisfaction, functionality satisfaction, self-esteem, and optimistic life orientation, and significant negative correlations with self-objectification and BMI. Incremental validity was assessed using hierarchical regression analyses with a sample of 306 participants, showing that BAS-2 scores made significant incremental contributions to predicting both self-esteem and optimistic life orientation beyond appearance and functionality satisfaction alone.",
+      "evidence_source": "Entire section discusses construct validity of the Dutch BAS-2 with specific regression results reported.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

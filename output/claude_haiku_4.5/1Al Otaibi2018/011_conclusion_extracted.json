@@ -1,0 +1,193 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Saudi Arabia"
+        ]
+      },
+      "evidence_source": "The conclusion mentions 'Saudi middle-aged women', indicating the study was conducted in Saudi Arabia.",
+      "warning": "Study name is inferred as 'Study X' since no explicit study numbering is provided in this conclusion section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The conclusion section does not contain sample size information.",
+      "warning": "No sample size data available in this conclusion section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The conclusion section does not specify the survey method used.",
+      "warning": "No survey method information available in this conclusion section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The conclusion section does not contain demographic information about race/ethnicity.",
+      "warning": "No racial/ethnic demographic data available in this conclusion section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The conclusion mentions 'middle-aged women' but does not provide a specific mean age value.",
+      "warning": "Age is described qualitatively as 'middle-aged' but no numerical mean age is provided."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The conclusion section does not contain educational attainment information.",
+      "warning": "No education level data available in this conclusion section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The conclusion section does not provide mean BMI values.",
+      "warning": "No mean BMI data available in this conclusion section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The conclusion section does not specify the source or recruitment location of participants.",
+      "warning": "No sample source information available in this conclusion section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The conclusion mentions 'BA' (Body Appreciation) but does not specify which instrument (BAS or BAS-2) was used.",
+      "warning": "Body Appreciation is referenced but the specific assessment instrument is not identified in this conclusion section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The conclusion section does not specify how BMI was assessed (self-reported or measured).",
+      "warning": "No BMI assessment method information available in this conclusion section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The conclusion discusses the mediation relationship between BA, BMI, and WL but does not provide specific correlation coefficients.",
+      "warning": "While the conclusion mentions BA and BMI relationship, no numerical correlation coefficient is provided."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The conclusion section does not explicitly state the number of studies conducted.",
+      "warning": "Cannot determine number of studies from conclusion section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The conclusion section does not indicate whether this is a journal article or dissertation.",
+      "warning": "Publication type cannot be determined from this conclusion section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This conclusion section reports that Body Appreciation (BA) mediated the relationship between BMI and weight loss (WL) among middle-aged women in Saudi Arabia. The authors recommend that future research should consider BA when studying the impact of overweight and obesity on this population. No specific study numbering or multiple studies are explicitly mentioned in this section.",
+      "evidence_source": "Entire conclusion section provided.",
+      "warning": "This is a conclusion section with limited methodological details; most study-level metadata would be found in the methods section."
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text mentions 'Saudi middle-aged women' in the conclusion, indicating the study was conducted in Saudi Arabia. However, the current section is only the conclusion and does not explicitly state the country in the provided text excerpt. The image shows a mediation model diagram but does not contain country information.",
+      "warning": "Country information inferred from mention of 'Saudi middle-aged women' in conclusion, but not explicitly stated in the current section text or table/figure provided."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and image do not contain sample size information. The image shows a mediation model diagram with path coefficients, not a data table with sample demographics.",
+      "warning": "Sample size not available in the provided section or figure."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and image do not contain information about survey methodology.",
+      "warning": "Survey method not available in the provided section or figure."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and image do not contain racial/ethnic demographic information.",
+      "warning": "Percent of white participants not available in the provided section or figure."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and image do not contain age information. The conclusion mentions 'middle-aged women' but does not provide a mean age value.",
+      "warning": "Mean age not available in the provided section or figure."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and image do not contain educational attainment information.",
+      "warning": "Percentage of college or higher education not available in the provided section or figure."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and image do not contain mean BMI values. The image shows BMI as a variable in a mediation model but does not report descriptive statistics.",
+      "warning": "Mean BMI not available in the provided section or figure."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and image do not contain information about where or how participants were recruited.",
+      "warning": "Source of sample not available in the provided section or figure."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The image shows 'Body Appreciation (BA)' in the mediation model diagram. The text mentions 'BA' but does not explicitly specify whether BAS or BAS-2 was used. Based on the label 'Body Appreciation (BA)' without further specification, this likely refers to the original BAS instrument.",
+      "warning": "Assessment instrument not explicitly specified in the provided section. Inferred as BAS based on the label, but BAS-2 cannot be ruled out without additional context."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and image do not specify whether BMI was self-reported or measured.",
+      "warning": "Assessment method for BMI not available in the provided section or figure."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The image shows a mediation model with path coefficients (a= -1.25, b= 1.61, c= -8.32, c'= -6.29) but these are regression coefficients, not correlation coefficients. The direct correlation between Body Appreciation and BMI is not explicitly reported in the provided text or figure.",
+      "warning": "The figure shows a mediation model with standardized path coefficients, not a correlation matrix. The correlation between BA and BMI is not directly reported; only indirect and direct effects are shown."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is from the conclusion section and does not indicate the number of studies. The image shows results from what appears to be a single study's mediation analysis.",
+      "warning": "Number of studies cannot be determined from the provided conclusion section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text and image do not contain publication type information.",
+      "warning": "Publication type not available in the provided section or figure."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This conclusion section summarizes findings from a study on Saudi middle-aged women, indicating that Body Appreciation (BA) mediated the relationship between Body Mass Index (BMI) and Weight Loss efforts (WL). The accompanying mediation model diagram shows significant path coefficients (a= -1.25****, b= 1.61****, c= -8.32****, c'= -6.29***), demonstrating the indirect and direct effects in the model. The authors recommend that future research consider BA when examining the impact of overweight and obesity on this population.",
+      "evidence_source": "Text content from the conclusion section and the mediation model diagram labeled [Table/Fig-3].",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "[Table/Fig-3]: The mediation model. ****p= <.00001, ***p= <.0001",
+      "evidence_source": "The caption appears directly below the mediation model diagram in the provided image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Al Otaibi2018/figures/1Al Otaibi2018_p002_fig00.png",
+    "_metadata_caption": "[Table/Fig-2]: Mean, SD, frequency and percentages of study variables.",
+    "_asset_source": "[image] [Table/Fig-2]: Mean, SD, frequency and percentages of study variables.",
+    "_pass_type": "asset_0"
+  }
+]

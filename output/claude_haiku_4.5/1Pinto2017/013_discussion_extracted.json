@@ -1,0 +1,370 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the study was conducted. While the study is described as being conducted on 'a sample of women from the general population,' no geographic location is mentioned in this Discussion section.",
+      "warning": "Country information not provided in the Discussion section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          253
+        ]
+      },
+      "evidence_source": "Figure 1 caption states: 'Path model showing the association between social safeness (SSPS) and disordered eating (EDE-Q), mediated by body appreciation (BAS-2) and infexible eating rules (IEQ), controlling for BMI efect, estimates and square multiple correlations (R2) (N=253).'",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            253
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            253
+          ]
+        }
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not specify whether the survey was conducted using paper-and-pencil or online methods.",
+      "warning": "Survey method not specified in the Discussion section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not provide information about the racial/ethnic composition of participants.",
+      "warning": "Racial/ethnic composition not reported in the Discussion section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not report the mean age of participants.",
+      "warning": "Mean age not provided in the Discussion section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not provide information about the educational level of participants.",
+      "warning": "Educational attainment not reported in the Discussion section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section mentions that BMI was controlled for in the analysis ('controlling for BMI efect'), but does not report the mean BMI of participants.",
+      "warning": "Mean BMI not provided in the Discussion section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "community"
+        ]
+      },
+      "evidence_source": "The text states 'in a sample of women from the general population,' which indicates a community sample rather than a college or school-based sample.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Figure 1 caption explicitly states that body appreciation was assessed using 'BAS-2' (Body Appreciation Scale-2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not specify whether BMI was assessed through self-report or measured directly. The text only mentions that BMI was controlled for in the analysis.",
+      "warning": "Assessment method for BMI not specified in the Discussion section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not report the correlation between body appreciation (BAS-2) and BMI. While the study controlled for BMI in the path analysis, no specific correlation coefficient between these two variables is provided.",
+      "warning": "Correlation between body appreciation and BMI not reported in the Discussion section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The Discussion section describes a single study with one sample (N=253). The text refers to 'the current study' and 'this study' throughout, indicating one study design.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not indicate whether this is from a journal article or dissertation. This information would typically be found in the header or metadata of the full paper, not in the Discussion section.",
+      "warning": "Publication type not determinable from the Discussion section alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Discussion section presents findings from a single study (Study 1, N=253) examining a path model in which body appreciation (BAS-2) and inflexible eating rules mediate the relationship between social safeness and disordered eating in women from the general population, while controlling for BMI. The study found that the model explained 58% of eating psychopathology variance and that social safeness indirectly predicts disordered eating through body appreciation and eating rule flexibility. The authors acknowledge limitations including the cross-sectional design, exclusive focus on women, and reliance on self-report measures.",
+      "evidence_source": "Figure 1 caption and Discussion text describing the study design, sample (N=253), measures (BAS-2, SSPS, EDE-Q, IEQ), and key findings."
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the study was conducted. The discussion section mentions 'a sample of women from the general population' but does not specify the country.",
+      "warning": "Country information not provided in the text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          253
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            253
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            253
+          ]
+        }
+      },
+      "evidence_source": "Figure 1 caption states: '(N=253)'. The text indicates 'a sample of women from the general population', confirming all 253 participants are female.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether data collection used paper-and-pencil or online survey methods.",
+      "warning": "Survey method not specified in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the racial/ethnic composition of participants.",
+      "warning": "Racial/ethnic composition not reported in the text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not report the mean age of participants.",
+      "warning": "Mean age not provided in the text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the educational level of participants.",
+      "warning": "Educational attainment not reported in the text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not report the mean BMI of participants. BMI is mentioned as a control variable in the path model but no descriptive statistics are provided.",
+      "warning": "Mean BMI not provided in the text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes the sample as 'women from the general population' but does not specify whether they were recruited from community, college, or other sources.",
+      "warning": "Specific source of sample recruitment not clearly stated."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Figure 1 shows 'BAS-2' as the measure for body appreciation. The figure caption and path model explicitly label this construct as 'BAS-2'.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether BMI was self-reported or measured. It is mentioned as a control variable in the path model but the assessment method is not described.",
+      "warning": "BMI assessment method (self-reported vs. measured) not specified."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.3
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.3
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            -0.3
+          ]
+        }
+      },
+      "evidence_source": "Figure 1 path model shows a direct path from BMI to BAS-2 (body appreciation) with coefficient -0.30***. This represents the correlation/association between BMI and body appreciation (BAS-2). The path coefficient is -0.30 with significance level p<0.001 (indicated by ***).",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with one sample (N=253). The discussion refers to 'the current study' and 'the tested model' in singular form, and presents one path model (Figure 1) with one sample size.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is from a Discussion section of a paper, but the publication type (journal article vs. dissertation) is not explicitly stated in the provided excerpt.",
+      "warning": "Publication type cannot be determined from the provided text alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Discussion section presents findings from a single study (Study X, N=253) examining a path model that tests the mediating roles of body appreciation (BAS-2) and inflexible eating rules in the relationship between social safeness and disordered eating, while controlling for BMI. The study involved women from the general population, and results showed that social safeness is positively associated with body appreciation (r=-0.30***) and negatively associated with inflexible eating rules and disordered eating, with the model explaining 58% of eating psychopathology variance.",
+      "evidence_source": "Figure 1 caption and Discussion text describing the study design, sample (N=253 women), measures (BAS-2 for body appreciation, BMI as control variable), and key findings from the path model.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Final path model. Path model showing the association between social safeness (SSPS) and disordered eating (EDE-Q), mediated by body appreciation (BAS-2) and inflexible eating rules (IEQ), controlling for BMI effect, estimates and square multiple correlations (R\u00b2) (N=253). All path coefficients are significant at the 0.05 level; *p<0.05; ***p<0.001",
+      "evidence_source": "Figure 1 caption as presented in the document.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Pinto2017/figures/1Pinto2017_p004_fig00.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_0"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the study was conducted. The discussion section provided does not contain country information.",
+      "warning": "Country information not found in the provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          253
+        ]
+      },
+      "evidence_source": "Figure 1 caption states: 'Path model showing the association between social safeness (SSPS) and disordered eating (EDE-Q), mediated by body appreciation (BAS-2) and infexible eating rules (IEQ), controlling for BMI effect, estimates and square multiple correlations (R2) (N=253).'",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            253
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            253
+          ]
+        }
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether the survey was conducted using paper-and-pencil or online methods.",
+      "warning": "Survey method not specified in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain information about the racial/ethnic composition of participants.",
+      "warning": "Percent of white participants not found in the provided text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report the mean age of participants.",
+      "warning": "Mean age of participants not found in the provided text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not provide information about the educational level of participants.",
+      "warning": "Percentage of college or higher education not found in the provided text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text mentions that BMI was controlled for in the analysis but does not report the mean BMI of participants.",
+      "warning": "Mean BMI of participants not reported in the provided text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "community"
+        ]
+      },
+      "evidence_source": "The text states: 'The current study aimed at testing a model which explores the mediator role of body appreciation and infexible eating rules in the relationship between social safeness and disordered eating, controlling for BMI, in a sample of women from the general population.' The phrase 'from the general population' indicates a community sample.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Figure 1 caption explicitly states: 'Path model showing the association between social safeness (SSPS) and disordered eating (EDE-Q), mediated by body appreciation (BAS-2) and infexible eating rules (IEQ), controlling for BMI effect...' The BAS-2 is identified as the instrument used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether BMI was self-reported or measured.",
+      "warning": "Assessment method for BMI (self-reported vs. measured) not specified in the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report a correlation coefficient between body appreciation (BAS-2) and BMI. The study controlled for BMI in the path analysis but did not report the bivariate correlation between these two variables.",
+      "warning": "Correlation between body appreciation and BMI not reported in the provided text or figure."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text describes a single study with one sample (N=253). The discussion refers to 'the current study' and 'this study' throughout, indicating one study design.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a discussion section from an academic paper but does not explicitly state whether it is from a journal article or dissertation.",
+      "warning": "Publication type cannot be determined from the provided text alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This discussion section presents findings from a single study (Study 1, N=253) examining the mediating role of body appreciation (BAS-2) and inflexible eating rules in the relationship between social safeness and disordered eating in women from the general population. The path model explained 58% of eating psychopathology variance and demonstrated that social safeness indirectly predicts disordered eating through body appreciation and inflexible eating rules, while controlling for BMI. The study was limited by its cross-sectional design, exclusive focus on women, and reliance on self-report measures.",
+      "evidence_source": "Entire discussion section, particularly the opening paragraph and the path model description in Figure 1."
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Fig. 1 Final path model. Path model showing the association between social safeness (SSPS) and disordered eating (EDE-Q), mediated by body appreciation (BAS-2) and infexible eating rules (IEQ), controlling for BMI effect, estimates and square multiple correlations (R2) (N=253). All path coefficients are significant at the 0.05 level; *p<0.05; ***p<0.001",
+      "evidence_source": "Figure 1 caption as it appears in the provided text."
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Pinto2017/figures/1Pinto2017_p005_fig00.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_1"
+  }
+]

@@ -1,0 +1,257 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'this sample of Black college women' but does not provide a numerical sample size.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "The text states 'this sample of Black college women'. This explicitly indicates the racial composition, from which 0% white can be inferred for Study X.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {},
+        "male": "None",
+        "other": "None",
+        "total": {}
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "The text states 'this sample of Black college women'. According to the case rule, 'If the text says 'The participants were undergraduate students' or something similar, it means that the percentage of participants with college or higher education experience is 100%'. 'Black college women' is similar, so 100% is inferred for Study X.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {},
+        "male": "None",
+        "other": "None",
+        "total": {}
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "The text states 'this sample of Black college women', indicating the source of the sample is 'college' for Study X.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "The text mentions 'Exploratory factor analysis (EFA) and CFA... were conducted to examine the factor structure of the BAS in this sample of Black college women.' and 'Note. BAS = Body Appreciation Scale'. This indicates BAS was used for Study X.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'Evidence of construct validity was examined using Pearson correlation coefficients.' and lists 'BAS' and 'BMI' in the note, but no specific correlation value between BAS and BMI is provided in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section refers to 'the current sample' and 'this sample', implying a single study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the statistical analyses performed, including descriptive statistics, independent samples t-tests, Pearson correlations for construct validity, and exploratory and confirmatory factor analyses for the Body Appreciation Scale (BAS). Mediation analyses using a nonparametric bootstrapping approach were also conducted. The analyses were performed on a sample of Black college women.",
+      "evidence_source": "The entire text content of the 'Statistical Analysis' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {},
+        "male": {},
+        "other": {},
+        "total": {}
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "The text states 'this sample of Black college women'. This implies 0% white participants.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {},
+        "male": {},
+        "other": {},
+        "total": {}
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {},
+        "male": {},
+        "other": {},
+        "total": {}
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "The text states 'this sample of Black college women'. Per inference rule, this means 100%.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {},
+        "male": {},
+        "other": {},
+        "total": {}
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {},
+        "male": {},
+        "other": {},
+        "total": {}
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "The text mentions 'this sample of Black college women'.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "The text states 'BAS = Body Appreciation Scale' and 'factor structure of the BAS in this sample'.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "The text mentions 'Pearson correlation coefficients' were used, but no specific correlation value between Body Appreciation (BAS) and BMI is provided in the text or Table 1.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {},
+        "male": {},
+        "other": {},
+        "total": {}
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to 'the current sample' and 'this sample of Black college women', implying a single study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the statistical analyses performed, including descriptive statistics, independent samples t-tests, Pearson correlation coefficients, exploratory factor analysis (EFA), confirmatory factor analysis (CFA), and mediation analyses. It also provides a note defining various scales used in the study, such as the Body Appreciation Scale (BAS). The analyses were conducted on a sample of Black college women.",
+      "evidence_source": "Summarized content from the 'Statistical Analysis' section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1. Descriptive Statistics.",
+      "evidence_source": "Caption of Table 1.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Cotter2015/tables/1Cotter2015_p008_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

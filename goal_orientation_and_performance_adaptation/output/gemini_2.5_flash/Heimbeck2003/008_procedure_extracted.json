@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text describes the 'Procedure' of an experiment but does not contain information about the publication type (e.g., journal, book chapter).",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text describes the 'Procedure' of an experiment and does not contain any information regarding financial support or grants.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text describes the 'Procedure' of an experiment but does not contain information about whether the publication was peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'participants filled out the questionnaire on goal orientation' but does not specify if it was 'Avoid', 'Prove', or 'Global' performance goal orientation.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{'Study X': [3]}",
+      "evidence_source": "The text describes 'the first performance test' and 'a second (transfer) performance test' which involved 'new set of performance tasks' and 'far transfer performance tasks'. These are objective measures of performance adaptation. Therefore, code 3 (Objective) is used.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{'Study X': [1]}",
+      "evidence_source": "The performance adaptation was measured using 'performance tasks' and 'transfer performance tasks', which are objective scores. Therefore, code 1 (Objective scores) is used.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{'Study X': [3]}",
+      "evidence_source": "The performance adaptation was assessed through 'the first performance test' and 'a second (transfer) performance test' involving 'performance tasks', which are objective measures. Therefore, code 3 (Objective) is used.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{'Study X': [1]}",
+      "evidence_source": "The text states 'participants filled out the questionnaire on goal orientation' but does not mention VandeWalle. Therefore, code 1 (Other) is used.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{'Study X': ['']}",
+      "evidence_source": "No age information (e.g., range, SD, median) is reported in the provided text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{'Study X': [None]}",
+      "evidence_source": "No mean age or other information from which to impute age is reported in the provided text.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{'Study X': [None]}",
+      "evidence_source": "No information about the sex composition of the sample is reported in the provided text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{'Study X': [None]}",
+      "evidence_source": "No information about the percentage of men in the sample is reported in the provided text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{'Study X': [None]}",
+      "evidence_source": "No information about the country where the study was conducted is reported in the provided text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{'Study X': [None]}",
+      "evidence_source": "The text refers to 'participants' but does not specify if they were students or another type of sample.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{'Study X': [None]}",
+      "evidence_source": "No sample size (N) is reported in the provided text.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{'Study X': [None]}",
+      "evidence_source": "The provided text describes the 'Procedure' of an experiment and does not contain any correlation coefficients between goal orientation and performance adaptation.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{'Study X': [None]}",
+      "evidence_source": "No correlations are reported in the provided text.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes 'The experiment consisted of four parts' and consistently refers to 'the experiment' in the singular, indicating a single study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the procedure of a single experiment, which consisted of four parts. These parts included an initial assessment of questionnaire measures (including goal orientation), a 45-minute training phase, a first performance test (near transfer) immediately after training, and a second (far transfer) performance test one week later, followed by debriefing. The training and performance tasks, involving Excel operations, were standardized for all participants.",
+      "evidence_source": "The entire 'Procedure' section describes the four phases of 'The experiment'.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

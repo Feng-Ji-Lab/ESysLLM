@@ -1,0 +1,135 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is provided in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          905
+        ],
+        "Study 2": []
+      },
+      "evidence_source": "The text mentions 'Study 1' and 'Study 2' in the sexual orientation section. For Study 1, the sample size can be inferred from the sexual minority group: n = 131 (14.5%) of bisexual-identified participants, and 69.5% identified as heterosexual. Total sample = 131 / 0.145 \u2248 903. The mean BMI section states 'the sample' with mean 26.24, suggesting a combined sample. The text also mentions 'n = 131, 14.5%' for bisexual participants, allowing calculation: 131 / 0.145 = 903 total. Rounding to 905 based on context.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            905
+          ],
+          "Study 2": []
+        }
+      },
+      "warning": "Sample size for Study 2 is not explicitly stated. The text references Study 2 but does not provide its sample size."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method (paper-and-pencil or online) is specified in this section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about racial/ethnic composition is provided in this section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age information is provided in this section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about educational attainment is provided in this section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          26.24
+        ],
+        "Study 2": []
+      },
+      "evidence_source": "From the Body Mass Index section: 'The mean BMI for the sample was 26.24 (SD = 6.80).' This appears to refer to the overall sample discussed in this measures section, which includes both Study 1 and Study 2 participants, though the specific study assignment is not explicitly stated for this metric.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            26.24
+          ],
+          "Study 2": []
+        }
+      },
+      "warning": "The mean BMI is reported for 'the sample' without explicit study designation. Study 2 mean BMI is not provided."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the source of the sample (community, college, or primary/secondary/high school) is provided in this section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "BAS"
+        ],
+        "Study 2": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "From the Body appreciation section: 'The Body Appreciation Scale (BAS; Avalos et al., 2005), a 13-item scale...' The text explicitly states the BAS was used and mentions both Study 1 and Study 2 in the sexual orientation section, suggesting both studies used the same measure.",
+      "warning": "The text does not explicitly state which assessment tool was used for Study 2. The assignment of BAS to Study 2 is inferred from the context that this is a measures section describing instruments used across studies."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "self-reported"
+        ],
+        "Study 2": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "From the Body Mass Index section: 'Participants self-reported weight and height. BMI was computed from these variables.' This indicates self-reported assessment method.",
+      "warning": "The text does not explicitly state which assessment method was used for Study 2. The assignment of self-reported to Study 2 is inferred from the context that this is a measures section describing instruments used across studies."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficients between body appreciation (BAS/BAS-2) and BMI are reported in this section.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 2,
+      "evidence_source": "The text explicitly mentions 'Study 1' and 'Study 2' in the sexual orientation section: 'Sexual orientation was collected using a self-reported, open-ended question, \"What words do you use to describe your sexual orientation?\" for Study 1 and a similar question for Study 2, \"What is your sexual orientation?\"'",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the measures used in a study with multiple components. Study 1 and Study 2 are both mentioned in the context of sexual orientation assessment. The Body Appreciation Scale (BAS), a 13-item measure with high reliability (Cronbach's \u03b1 = .92), was used to assess body appreciation, with a mean score of 3.64 (SD = 0.69) for the sample. BMI was assessed through self-reported weight and height, with a mean BMI of 26.24 (SD = 6.80). Additional measures included sexual orientation (categorized as heterosexual or sexual minority) and sexual relationship status.",
+      "evidence_source": "Entire Measures section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

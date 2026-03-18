@@ -1,0 +1,89 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section only describes demographic items collected (sex, age, height, weight) but does not mention the country where the study was conducted.",
+      "warning": "No country information provided in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes what demographic items were collected but does not provide the total number of participants.",
+      "warning": "Sample size not mentioned in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section only lists demographic items collected but does not specify the survey method (paper-and-pencil or online).",
+      "warning": "Survey method not specified in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section does not mention racial or ethnic composition of participants.",
+      "warning": "Racial/ethnic demographic data not provided in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While age is mentioned as a demographic item collected, no mean age values are reported in this section.",
+      "warning": "Mean age values not provided in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section does not mention educational attainment of participants.",
+      "warning": "Educational attainment data not provided in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While height and weight are mentioned as collected demographic items (which can be used to calculate BMI), no mean BMI values are reported in this section.",
+      "warning": "Mean BMI values not provided in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section does not specify where or how participants were recruited (community, college, or primary/secondary/high school).",
+      "warning": "Sample source not specified in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section only describes demographic items collected and does not mention the instrument used to assess body appreciation (BAS or BAS-2).",
+      "warning": "Body appreciation assessment instrument not mentioned in this section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While height and weight are mentioned as demographic items collected, the section does not specify whether BMI was self-reported or measured.",
+      "warning": "BMI assessment method (self-reported vs. measured) not explicitly specified in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section does not report any correlations between body appreciation and BMI.",
+      "warning": "Correlation data not provided in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The section is a subsection describing demographic items collection methods and does not indicate the number of studies in the paper.",
+      "warning": "Number of studies cannot be determined from this section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The section does not indicate whether this is from a journal article or dissertation.",
+      "warning": "Publication type not specified in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section (2.2.6) describes the demographic items collected from participants, which included sex, age, height, and weight. No specific demographic statistics, study details, or correlation data are provided in this brief methodological subsection.",
+      "evidence_source": "Section 2.2.6 titled 'Demographic items'",
+      "warning": "This is a brief methodological description section with minimal extractable data."
+    },
+    "_pass_type": "text_only"
+  }
+]

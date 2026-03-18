@@ -1,0 +1,217 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is provided in the text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          490
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            490
+          ]
+        }
+      },
+      "evidence_source": "The text states 'for the total sample (N = 490)'",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is provided in the text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information is provided in the text.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in the text.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in the text.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI values are provided in the text. The text only mentions 'BMI = Body Mass Index' as an abbreviation definition.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample source is provided in the text.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The text defines 'BAS-2 = Body Appreciation Scale', indicating BAS-2 was used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported vs. measured) is provided in the text.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation values between body appreciation and BMI are provided in the text. The text only mentions that descriptive statistics are presented in Table 1, but the actual table data is not provided.",
+      "warning": "Table 1 is referenced but not provided in the input, so correlation values cannot be extracted."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the number of studies. It appears to describe a single study with N=490, but no explicit study count is provided.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in the text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents descriptive statistics for a study with a total sample of N=490 participants. The text provides abbreviation definitions for key variables including BMI, EMWSS, SSPS, BAS-2 (Body Appreciation Scale), and EDE-Q, indicating these were the primary measures used. However, the actual descriptive statistics table (Table 1) is referenced but not provided in the text.",
+      "evidence_source": "The entire provided text section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not specify the country where the study was conducted.",
+      "warning": "Country information is not available in the provided section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          490
+        ]
+      },
+      "evidence_source": "Table 1 caption states '(N = 490)' indicating the total sample size for the study.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether data collection used paper-and-pencil or online methods.",
+      "warning": "Survey method information is not available in the provided section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not report racial/ethnic composition of participants.",
+      "warning": "Racial/ethnic demographic information is not available in the provided section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not report mean age of participants.",
+      "warning": "Age demographic information is not available in the provided section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not report educational attainment of participants.",
+      "warning": "Educational demographic information is not available in the provided section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          22.29
+        ]
+      },
+      "evidence_source": "Table 1, row 1 (BMI), column M (Mean): Mean BMI = 22.29 with SD = 3.87 for the total sample (N = 490).",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether participants were recruited from community, college, or primary/secondary/high school settings.",
+      "warning": "Sample source information is not available in the provided section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Table 1, row 5 lists 'BAS-2' as a measure. The table note confirms 'BAS-2 = Body Appreciation Scale'.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether BMI was self-reported or measured.",
+      "warning": "BMI assessment method (self-reported vs. measured) is not available in the provided section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          -0.37
+        ]
+      },
+      "evidence_source": "Table 1, intersection of row 5 (BAS-2, Body Appreciation Scale) and column 1 (BMI): correlation = -0.37*** (highlighted in green). The asterisks indicate p < .001. The numeric value extracted is -0.37.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text describes a single study with one total sample (N = 490) presented in Table 1. No multiple studies or experiments are explicitly named or described.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether this is a journal article or dissertation.",
+      "warning": "Publication type information is not available in the provided section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents descriptive statistics for a single study with a total sample of N = 490 participants. Table 1 reports means, standard deviations, and intercorrelation scores between six measures: BMI, EMWSS, EMWSS_peers, SSPS, BAS-2 (Body Appreciation Scale), and EDE-Q. The correlation between Body Appreciation (BAS-2) and BMI is -0.37 (p < .001), indicating a significant negative relationship.",
+      "evidence_source": "Text content and Table 1 caption and data."
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1. Means (M), Standard Deviations (SD) and Intercorrelation Scores Between the Study's Measures (N = 490)",
+      "evidence_source": "Table title and caption as presented in the image."
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Oliveira2016/tables/1Oliveira2016_p007_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

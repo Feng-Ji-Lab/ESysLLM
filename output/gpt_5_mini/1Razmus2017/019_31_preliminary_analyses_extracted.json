@@ -1,0 +1,129 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or region is stated in the provided text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section reports statistical tests (e.g., t(717) = \u22120.53; t(716) = 1.42) comparing two subsamples but does not explicitly state total N or subsample Ns.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about data collection method (e.g., online or paper-and-pencil) is provided in the text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic composition or percent white is reported in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Age is compared between subsamples via t-test (t(717) = \u22120.53, p = .598) but no mean ages are reported.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not report participants' education level or percentage with college or higher.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "BMI is compared between subsamples via t-test (t(716) = 1.42, p = .156) but no mean BMI values are reported.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section references 'two subsamples' but does not state whether the sample was from community, college, or primary/secondary/high school.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "\"There were no missing data in BAS-2 scores.\"",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text reports BMI comparisons (t-tests) but does not state whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation (Pearson r) between body appreciation and BMI is reported in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section describes 'both subsamples' and preliminary analyses for them, indicating a single study with two subsamples rather than multiple separate studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No information about publication type (journal article or dissertation) is provided in the text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This preliminary analyses section reports that BAS-2 scores had no missing data and other variables had at most 0.5% missingness (Little's MCAR test non-significant). The authors examined normality and found skewness/kurtosis within limits; the two subsamples did not differ significantly in sex, age, or BMI. The section refers to 'both subsamples' but does not provide sample sizes, demographic percentages, or correlations between BAS-2 and BMI.",
+      "evidence_source": "\"There were no missing data in BAS-2 scores. For other variables, maximum of 0.5% items were missing completely at random, Little's MCAR test: -2(886) = 777.55, p = .996. The normality of distribution for all BAS-2 items and total score in both subsamples was examined. Skewness and kurtosis did not exceed the critical limits (Kline, 2010). The two subsamples did not differ significantly in sex, -2(1) = 1.25, p = .295, age, t(717) = \u22120.53, p = .598, d = 0.04, and BMI, t(716) = 1.42, p = .156, d = 0.11.\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

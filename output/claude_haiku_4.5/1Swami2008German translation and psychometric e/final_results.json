@@ -1,0 +1,230 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "reason": "All candidates consistently indicate this paper contains 1 study. Candidates 0, 1, 2, and 4 all describe a single study examining the German version of the Body Appreciation Scale in an Austrian community sample. Candidate 3 describes the BAS instrument itself (background information) rather than indicating multiple studies. The abstract (Candidate 0), introduction (Candidate 1), methods/participants section (Candidate 2), and results section (Candidate 4) all converge on the same conclusion: this is a single validation study of the German BAS with one sample of 300 participants (156 women, 144 men). There is no evidence of multiple studies within this paper."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates consistently identify this as a journal article based on the publication source (Body Image, Volume 5, 2008, pages 122\u2013127, published by Elsevier). Although neither candidate provides explicit evidence from the article content itself, the source metadata clearly indicates this is a journal publication rather than a dissertation. The journal header information from both candidates (0 and 1) provides sufficient structural evidence to classify this as \"journal articles\" according to the allowed values for the Publication type field."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "Austria"
+      ]
+    },
+    "best_indices": [
+      0,
+      2
+    ],
+    "reason": "The paper contains a single study examining the German version of the Body Appreciation Scale. Candidates 0 and 2 both explicitly state the study was conducted in Austria (Vienna and its environs), with a community sample of 300 participants (156 women, 144 men). Candidates 1 and 3 incorrectly state 'Germany' based on the fact that the study involved a German translation of the BAS, but the actual data collection location was Austria, not Germany. The introduction (Candidate 1) discusses the aim to develop a German translation and validate it, but the actual study was conducted in Austria. Candidate 2 from the Participants section provides the most reliable geographic information (Vienna, Austria), and Candidate 0 from the Abstract confirms this. Austria is the correct country where the study was conducted."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        300
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates (0 and 1) describe the same single study examining the German version of the Body Appreciation Scale in an Austrian community sample. Candidate 0 (abstract) and Candidate 1 (participants section) are consistent and complementary. Both report N=300 total participants (156 women, 144 men). The context confirms this paper contains only 1 study. 'Study X' in Candidate 1 is resolved to the same study as 'Study 1' in Candidate 0 based on the identical sample composition and study design. The consolidated result is a single study with 300 total participants: 156 female and 144 male participants.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          144
+        ]
+      },
+      "female": {
+        "Single study": [
+          156
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          300
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "community"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "All four candidates consistently describe a single study examining the German version of the Body Appreciation Scale (BAS) in an Austrian community sample. Candidates 0 and 1 explicitly label this as 'Study 1', while Candidates 2 and 3 refer to 'Study X' but describe the same study (N=300, 156 women and 144 men from Vienna and environs, recruited via snowball sampling from the general population). The evidence converges: the abstract (Candidate 0) and introduction (Candidate 1) establish the study's purpose to validate the German BAS in a community sample; the participants section (Candidate 2) confirms the community sample composition; and the procedure section (Candidate 3) describes community-based opportunistic snowball sampling recruitment. All candidates agree on the source of sample: 'community'. No conflicting values or multiple distinct studies are present. The 'Study X' labels in Candidates 2 and 3 refer to the same single study as 'Study 1' in Candidates 0 and 1, so they are merged into one entry labeled 'Single study' with the consolidated value ['community']."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      4,
+      5,
+      7
+    ],
+    "reason": "This paper contains a single validation study of the German Body Appreciation Scale (BAS) in an Austrian community sample. Candidates 0 (abstract) and 1 (introduction) clearly identify this as 'Study 1' examining the German BAS. Candidates 2, 3, and 6 are background/instrument descriptions labeled 'Study X' and are not primary study results. Candidates 4, 5, 7, and 8 are results sections that describe the same single study using the BAS instrument. All candidates consistently report the use of BAS (not BAS-2) as the assessment instrument. The context confirms this is a single study with one sample of 300 participants (156 women, 144 men). Therefore, all substantive evidence points to one study using BAS for assessing body appreciation. Candidates 0, 1, 4, 5, and 7 provide the most direct evidence from abstract, introduction, and results sections confirming BAS as the assessment instrument for this single study.\""
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        32.485
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Single candidate source (007_participants_extracted.json) provides comprehensive data for one study. The paper contains a single validation study of the German Body Appreciation Scale conducted in Vienna, Austria with N=300 participants (156 women, 144 men). The overall mean age of 32.485 years was computed from gender-specific means (women: 31.66 years, men: 33.31 years) weighted by sample sizes. This is the most reliable source as it comes from the Participants/Method section and includes both overall and gender-stratified values. No conflicts or multiple studies detected.\"",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          33.31
+        ]
+      },
+      "female": {
+        "Single study": [
+          31.66
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          32.485
+        ]
+      }
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        14.3
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Single candidate found describing a single validation study of the German Body Appreciation Scale in an Austrian community sample (N=300, 156 women, 144 men). The candidate provides a clear value of 14.3% for participants with university education (college or higher). This value comes from the Participants section, which is a reliable source for demographic information. No gender-specific breakdown is available in the source material, so only the total value is reported. The paper contains only one study, so the resolved_studies entry is labeled 'Single study'.\"",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          14.3
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        22.9975
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates refer to the same single study conducted in Vienna, Austria with N=300 participants (156 women, 144 men). Candidate 0 (from participants section) provides the complete data: overall mean BMI of 22.9975 kg/m\u00b2 with gender breakdown (female: 21.94, male: 24.01). Candidate 1 (from results/Table 2) confirms the same gender-specific values (female: 21.94, male: 24.01). These are complementary sources describing the same study. Candidate 0 is preferred as the primary source since it appears in the Participants/Method section (more reliable for demographic data) and provides the calculated overall mean. Candidate 1 from the Results section serves as confirmation. The overall mean of 22.9975 is mathematically consistent with the gender breakdown and sample sizes provided (21.94 \u00d7 156 + 24.01 \u00d7 144) / 300 = 22.9975.\"",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          24.01
+        ]
+      },
+      "female": {
+        "Single study": [
+          21.94
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          22.9975
+        ]
+      }
+    }
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "paper-and-pencil"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates (0 and 1) refer to the same single study and consistently report 'paper-and-pencil' as the survey method. Candidate 0 from the measures section states 'All participants were presented with a three-page questionnaire', and Candidate 1 from the procedure section explicitly confirms 'All participants completed the paper-and-pencil questionnaire anonymously, and returned the questionnaires in a sealed envelope.' These are complementary descriptions of the same data collection method from different sections of the paper. Both sources are reliable (Method/Procedure sections), and they converge on the same value. No conflict or merging of subsamples is needed. The paper contains only 1 study as confirmed by the context."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        -0.28,
+        -0.03
+      ]
+    },
+    "best_indices": [
+      1,
+      2
+    ],
+    "reason": "Candidate [1] (Table 2) provides the most reliable and precise data, directly reporting exact Pearson r correlations from the correlation matrix: r = \u2212.28 for women and r = \u2212.03 for men. Candidate [2] (text for men) corroborates the male finding (no association/r \u2248 0). Candidate [0] is rejected because it provides only an estimated range (\u22120.3 to \u22120.5) based on Cohen's effect size guidelines rather than the actual correlation coefficient, and explicitly states \"the table is not provided\" and \"an exact value cannot be extracted.\" The paper contains a single study (as confirmed by context) examining the German BAS in an Austrian community sample (N=300; 156 women, 144 men). Gender-specific correlations are reported separately: females show a moderate negative correlation with BMI (r = \u2212.28, p < .001), while males show virtually no correlation (r = \u2212.03, ns). These values are merged into a single study entry with gender-specific breakdowns as per the schema.\"",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          -0.03
+        ]
+      },
+      "female": {
+        "Single study": [
+          -0.28
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    }
+  }
+}

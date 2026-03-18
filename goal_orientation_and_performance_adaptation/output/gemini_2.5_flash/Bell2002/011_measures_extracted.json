@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text is a 'Measures' section, which is typically found in a journal article. It cites multiple journal articles (e.g., Button et al., 1996; Ford et al., 1998; Phillips & Gully, 1997), indicating the current work is likely a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of grants, funding agencies, sponsored projects, or explicit financial support was found in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Given that the publication type is inferred to be a journal article, it is highly probable that it underwent peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "Performance orientation items included 'I feel smart when I do something without making any mistakes' and 'The opinions others have about how well I can do certain things are important to me'. These items are presented as part of a single 'Performance orientation' scale, without explicit separation into approach or avoidance sub-dimensions.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "Performance measures included 'number of correct and incorrect decisions made', 'number of times participants changed range', 'number of markers hooked', and 'number of high-priority targets processed' on basic, strategic, and generalization trials. These are objective task-based metrics.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The adaptation outcome is based on objective performance indicators such as 'number of correct and incorrect decisions made' and 'number of times participants changed range', which are objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The specific assessment method for adaptation was objective, based on task performance indicators like 'number of correct and incorrect decisions made' and 'number of times participants changed range'.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "Trait learning and performance orientations were assessed using two 8-item scales developed by Button et al. (1996). This is not attributed to VandeWalle.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information (e.g., range, SD, median, or subgroups) was reported in the provided text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No mean age, median age, or categorical age ranges were reported in the provided text to allow for imputation.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No information regarding the sex composition of the sample was provided in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No information regarding the percentage of men in the sample was provided in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No information about the country where the sample was collected was provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "The text mentions 'All participants were administered the Wonderlic Personnel Test... at the beginning of the first experimental session' and 'practice trials'. While this suggests an experimental setting, it does not explicitly state that the participants were students. Therefore, it is coded as 'Other sample'.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No sample size (N) for the correlation between goal orientation and performance adaptation was reported in the provided text.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No Pearson correlation coefficient between Performance Goal Orientation and performance adaptation was reported in the provided text.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No correlation information was reported in the provided text.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'the current study' and 'the first experimental session' without indicating multiple distinct studies or experiments.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the measures used in a single study. It describes the assessment of learning and performance orientations using scales by Button et al. (1996), cognitive ability via the Wonderlic Personnel Test, task-specific self-efficacy, and basic and strategic knowledge tests. Performance adaptation was measured objectively through basic and strategic performance indicators across multiple trials, including a generalization trial, which required participants to adapt their strategies.",
+      "evidence_source": "Summarized from the entire provided text content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

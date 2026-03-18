@@ -1,0 +1,139 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "USA"
+        ]
+      },
+      "evidence_source": "Author affiliation states 'University of North Carolina at Charlotte, Department of Psychology, Health Psychology Ph.D. Program, 9201, University City Blvd., Charlotte, NC 28223, USA'. The study location is inferred to be USA based on the author's institutional affiliation.",
+      "warning": "Study name is unclear from this title/author section alone. Using 'Study X' as placeholder. The actual study details (sample size, methodology, results) are not provided in this excerpt."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information is provided in the title and author affiliation section.",
+      "warning": "Sample size data not available in provided text."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is provided in the title and author affiliation section.",
+      "warning": "Survey method data not available in provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            100
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      },
+      "evidence_source": "The title explicitly states 'White college-bound females', indicating the sample consists of White participants. Since the title specifies the sample is exclusively White females, the percentage of white participants is 100%.",
+      "warning": "This inference is based on the title descriptor 'White college-bound females'. The actual study methods section would need to be reviewed to confirm this is the complete sample composition."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age information is provided in the title and author affiliation section.",
+      "warning": "Mean age data not available in provided text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            100
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      },
+      "evidence_source": "The title states 'college-bound females', which indicates participants are college students or college-bound. Per the infer_rule in the definitions, this means 100% of participants have college or higher education experience.",
+      "warning": "This inference is based on the descriptor 'college-bound females' in the title. The actual study methods section would need to be reviewed to confirm all participants are indeed college or college-bound."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI information is provided in the title and author affiliation section.",
+      "warning": "Mean BMI data not available in provided text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The title describes the sample as 'college-bound females', indicating the source of the sample is college.",
+      "warning": "This inference is based on the descriptor 'college-bound females' in the title. The actual study methods section would need to be reviewed to confirm the recruitment source."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the body appreciation assessment instrument is provided in the title and author affiliation section.",
+      "warning": "Assessment of BA data not available in provided text."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed is provided in the title and author affiliation section.",
+      "warning": "Assessment of BMI data not available in provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No correlation coefficients are provided in the title and author affiliation section.",
+      "warning": "Correlation data not available in provided text."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only a title and author affiliation section. No information about the number of studies is available.",
+      "warning": "Cannot determine number of studies from title and author information alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The author affiliation mentions 'Health Psychology Ph.D. Program', which suggests this may be a dissertation, but the publication type is not explicitly stated in the provided text.",
+      "warning": "Publication type cannot be definitively determined from the title and author affiliation alone. The mention of 'Ph.D. Program' suggests it could be a dissertation, but this is not confirmed."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This is the title and author affiliation section of a study examining body image flexibility as a mediator between body dissatisfaction and body appreciation in White college-bound females. The author, Jennifer B. Webb, is affiliated with the University of North Carolina at Charlotte's Health Psychology Ph.D. Program. The study focuses specifically on a female college population, but detailed methodological information (sample size, survey method, instruments, results) is not provided in this excerpt.",
+      "evidence_source": "Title and author affiliation section provided.",
+      "warning": "This section contains only the title and author information. Full methodological details and results are not available in the provided text."
+    },
+    "_pass_type": "text_only"
+  }
+]

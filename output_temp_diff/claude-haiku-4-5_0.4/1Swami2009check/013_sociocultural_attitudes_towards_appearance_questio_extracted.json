@@ -1,0 +1,93 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes measurement instruments (SATAQ-3 and BAS) but does not specify where the study was conducted or which country.",
+      "warning": "No country information provided in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes measurement instruments and their properties but does not provide sample size information.",
+      "warning": "No sample size data provided in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes the instruments used but does not specify whether data collection was conducted via paper-and-pencil or online methods.",
+      "warning": "No survey method information provided in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not contain demographic information about participant race/ethnicity.",
+      "warning": "No racial/ethnic demographic data provided in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide participant age information.",
+      "warning": "No age data provided in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not contain information about participants' educational level.",
+      "warning": "No educational attainment data provided in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide BMI data for participants.",
+      "warning": "No BMI data provided in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify where or how participants were recruited (community, college, or primary/secondary/high school).",
+      "warning": "No sample source information provided in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'Body Appreciation Scale (BAS; Avalos, Tylka, & Wood-Barcalow, 2005)' and describes it as 'a 13-item scale that has been shown to have a unidimensional structure when completed by Western women' with 'Cronbach's alpha for this scale was .90.' This indicates the BAS was used to assess body appreciation in the present study.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes measurement instruments for media influences (SATAQ-3) and body appreciation (BAS) but does not specify how BMI was assessed (self-reported or measured).",
+      "warning": "No BMI assessment method provided in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes the BAS instrument and its properties but does not provide correlation coefficients between body appreciation and BMI.",
+      "warning": "No correlation data provided in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text is a methods/instruments section describing measurement tools. It does not clearly indicate how many distinct studies are included in the paper.",
+      "warning": "Cannot determine number of studies from this section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether this is from a journal article or dissertation.",
+      "warning": "Publication type not specified in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the measurement instruments used in the study, specifically the SATAQ-3 (a 30-item scale measuring sociocultural influences on body image across four factors) and the BAS (a 13-item scale measuring positive body image). The text reports internal reliability coefficients for both instruments as used in the present study, but does not provide participant demographic information, sample size, study location, or correlation results.",
+      "evidence_source": "Entire section content describing instruments and their psychometric properties.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

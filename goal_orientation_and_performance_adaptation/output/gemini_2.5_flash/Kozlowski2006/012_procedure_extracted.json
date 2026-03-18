@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The detailed 'Procedure' section, describing an experimental design and training trials, is characteristic of a journal article. This is an inference as the publication type is not explicitly stated.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from PubType being a journal article (1), which typically undergoes peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'goal frame: learning vs. performance' and 'goal content: learning vs. performance' as experimental conditions, and 'participants completed measures of goal commitment'. However, it does not explicitly state that performance goal orientation (PGO) was *assessed* as a trait, only that 'performance' was a manipulated goal condition.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text states participants would 'demonstrate how much they had learned on a more difficult and complex version of the task' and mentions a '10-min generalization task that was more difficult and complex than the scenario they had practiced'. This indicates objective performance measures.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The adaptation outcome is based on objective task performance, as indicated by 'demonstrate how much they had learned on a more difficult and complex version of the task' and a 'generalization task'.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The adaptation outcome is based on objective task performance, as indicated by 'demonstrate how much they had learned on a more difficult and complex version of the task' and a 'generalization task'.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text states 'participants completed measures of goal commitment' but does not specify the scale or attribute it to VandeWalle.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": []}",
+      "evidence_source": "No age information is provided in the text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No age information is provided in the text.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text refers to 'participants' and 'trainees' without specifying gender composition, implying a mixed sample.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information on the percentage of men is provided in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No country information is provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "The sample consists of 'trainees' participating in a 'radar simulation' and 'training trials'. While they could be students, the text does not explicitly state they are, making 'Other sample' the more appropriate classification.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The text mentions 'groups of 1 to 12 participants' for training sessions and 'eight experimental conditions', but a total sample size (N) for the study is not provided.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No correlation coefficients between Performance Goal Orientation and performance adaptation are reported in this section.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": []}",
+      "evidence_source": "No correlations are reported in this section.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single experimental procedure with various conditions, not multiple distinct studies.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the procedure for a single study involving a radar simulation. Participants, referred to as trainees, were randomly assigned to one of eight experimental conditions based on goal frame (learning vs. performance), goal content (learning vs. performance), and goal proximity (proximal vs. distal). The procedure involved a demonstration, studying an online manual, a trial period, nine cycles of study, practice, and feedback, and a final 10-minute generalization task that was more difficult.",
+      "evidence_source": "Summary of the 'Procedure' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

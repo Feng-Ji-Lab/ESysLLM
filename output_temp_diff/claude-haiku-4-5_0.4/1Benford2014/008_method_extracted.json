@@ -1,0 +1,89 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only the section header 'Method' with no substantive content describing study location or country.",
+      "warning": "Insufficient content to extract country information. Only section title 'Method' provided without actual method details."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only the section header 'Method' with no substantive content describing sample size or participant numbers.",
+      "warning": "Insufficient content to extract sample size. Only section title 'Method' provided without actual method details."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only the section header 'Method' with no substantive content describing survey methodology.",
+      "warning": "Insufficient content to extract survey method. Only section title 'Method' provided without actual method details."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only the section header 'Method' with no substantive content describing participant demographics.",
+      "warning": "Insufficient content to extract racial/ethnic composition. Only section title 'Method' provided without actual method details."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only the section header 'Method' with no substantive content describing participant age.",
+      "warning": "Insufficient content to extract mean age. Only section title 'Method' provided without actual method details."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only the section header 'Method' with no substantive content describing participant education level.",
+      "warning": "Insufficient content to extract education level. Only section title 'Method' provided without actual method details."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only the section header 'Method' with no substantive content describing participant BMI.",
+      "warning": "Insufficient content to extract mean BMI. Only section title 'Method' provided without actual method details."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only the section header 'Method' with no substantive content describing sample recruitment source.",
+      "warning": "Insufficient content to extract sample source. Only section title 'Method' provided without actual method details."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only the section header 'Method' with no substantive content describing body appreciation assessment instruments.",
+      "warning": "Insufficient content to extract body appreciation assessment method. Only section title 'Method' provided without actual method details."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only the section header 'Method' with no substantive content describing BMI assessment methodology.",
+      "warning": "Insufficient content to extract BMI assessment method. Only section title 'Method' provided without actual method details."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only the section header 'Method' with no substantive content describing correlations or results.",
+      "warning": "Insufficient content to extract correlations. Only section title 'Method' provided without actual method details. Correlations are typically found in Results sections, not Method sections."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only the section header 'Method' with no substantive content to determine the number of studies.",
+      "warning": "Insufficient content to determine number of studies. Only section title 'Method' provided without actual method details."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only the section header 'Method' with no information about publication type (journal article vs. dissertation).",
+      "warning": "Insufficient content to extract publication type. Only section title 'Method' provided without actual method details."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "The provided text contains only the section header 'Method' with no substantive content. No actual method details, participant information, or study design information is available for extraction.",
+      "evidence_source": "Section header only: 'Method'",
+      "warning": "Critical: The provided text is incomplete. Only the section title 'Method' was supplied without the actual content of the Method section. All requested data fields cannot be extracted without the full method description."
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,245 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a detailed academic study with methodology and results, typical of a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from PubType being a journal article, which typically undergoes peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson correlation coefficients between Performance Goal Orientation and performance adaptation were extracted, therefore no corresponding PgoType can be provided for an extracted effect.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson correlation coefficients between Performance Goal Orientation and performance adaptation were extracted, therefore no corresponding AdaptMeasures can be provided for an extracted effect.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson correlation coefficients between Performance Goal Orientation and performance adaptation were extracted, therefore no corresponding AdaptMethod can be provided for an extracted effect.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson correlation coefficients between Performance Goal Orientation and performance adaptation were extracted, therefore no corresponding AdaptMethod_Specific can be provided for an extracted effect.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson correlation coefficients between Performance Goal Orientation and performance adaptation were extracted, therefore no corresponding GoMeasure_dichot_num can be provided for an extracted effect.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information was reported in the provided text for any extracted effect.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age was reported in the provided text for any extracted effect.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sex composition information was reported in the provided text for any extracted effect.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No percentage of men was reported in the provided text for any extracted effect.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information was reported in the provided text for any extracted effect.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample type (student vs. other) information was reported in the provided text for any extracted effect.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size (N) was reported in the provided text for the specific analyses or correlations. The text mentions 'Table 6 provides the results' but the table is not provided.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text reports 'standardized regression coefficients (\\beta)' for the links between achievement goals and exam performance, not Pearson 'r' correlation coefficients as required by the schema. Therefore, no correlation was extracted.",
+      "warning": "The text provides standardized regression coefficients (beta) instead of Pearson correlation coefficients (r)."
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson correlation coefficients were extracted, therefore no corresponding correlation information can be provided.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study examining the links between achievement goals, learning strategies, and exam performance. The mention of 'This directly replicates Senko and Miles (2008)' refers to a previous study, not a second study within the current paper.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details a hierarchical model examining the effects of achievement goals (PAP and MAP) and learning strategies (interest-based studying, vigilance, deep learning, surface learning) on exam performance. It reports standardized regression coefficients, indicating that PAP and MAP goals predicted higher exam grades, while interest-based studying and surface learning strategies predicted lower performance. An interaction effect between vigilance and instructional importance was also found.",
+      "evidence_source": "The entire text content of section 3.2.3. Effects on exam performance.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes 'hierarchical regression analyses', 'Hypothesis 8', 'Table 6', and references other academic papers, indicating a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from the publication type (journal article).",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\"]}",
+      "evidence_source": "The text states, \"students pursuing PAP goals earned high grades on the exam\". PAP (Performance-Approach) goals align with 'Prove' performance goal orientation. MAP goals (Mastery-Approach) are not a Performance Goal Orientation and are therefore excluded.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The outcome variable is 'exam performance', which is an objective measure (grades).",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The outcome 'exam performance' is based on objective scores (grades).",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The outcome 'exam performance' is an objective measure (grades).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text does not specify the measurement method for goal orientation (e.g., VandeWalle).",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information is reported in the provided text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No age information is reported in the provided text.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No sex composition information is reported in the provided text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No percentage of men in the sample is reported in the provided text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No country information is reported in the provided text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No sample type (student/other) information is reported in the provided text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "The sample size (N) for the analyses is not explicitly reported in the text or table.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The schema requests Pearson r correlation coefficients. Table 6 provides standardized regression coefficients (beta), not Pearson r values. Therefore, no correlation can be extracted for this field.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson correlations were extracted, so no correlation information is available.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The table caption explicitly states '(Study 2)', and the text describes a single set of analyses for this study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details hierarchical regression analyses from Study 2, examining the links between achievement goals (MAP and PAP goals) and learning strategies with exam performance. It reports that students pursuing PAP goals and MAP goals earned high grades. Several learning strategies, including interest-based studying and vigilance, also predicted exam performance, with vigilance's effect qualified by an interaction with instructional importance accuracy. The results are presented in Table 6.",
+      "evidence_source": "Summary of the provided text content.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 6 Hierarchical regression analyses of effects on exam performance (Study 2).",
+      "evidence_source": "The full caption of Table 6.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Senko2013\\tables\\Senko2013_p006_table01.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

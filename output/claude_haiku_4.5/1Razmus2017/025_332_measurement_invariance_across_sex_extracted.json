@@ -1,0 +1,363 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The section mentions 't(383)' which indicates degrees of freedom (df=383), but the actual sample size cannot be directly inferred from this. The total sample size is not explicitly stated in this section.",
+      "warning": "The degrees of freedom (383) suggests a sample size of approximately 384-385, but this is not explicitly confirmed in the provided text."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No racial/ethnic demographic information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No age information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No education level information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No BMI information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the source of the sample (community, college, or primary/secondary/high school) is mentioned in this section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The section explicitly mentions 'total BAS-2 scores' and discusses measurement invariance of the BAS-2 across sex subsamples. The text states: 'There was no significant between-group difference in total BAS-2 scores, t(383) = 0.04, p = .970, d < 0.01, M_men = 3.72, SD = 0.81, M_women = 3.72, SD = 0.73.'",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported or measured) is mentioned in this section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No correlation between body appreciation and BMI is reported in this section. The section focuses on measurement invariance testing and mean score comparisons between men and women on the BAS-2.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section does not provide information about the number of studies. It appears to be a subsection of a larger study discussing measurement invariance analysis.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is mentioned in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents a measurement invariance analysis (MGCFA) of the BAS-2 across sex subsamples. The analysis confirmed configural invariance and full scalar equivalence, allowing for t-test comparisons of mean BAS-2 scores between men (M=3.72, SD=0.81) and women (M=3.72, SD=0.73), with no significant between-group differences found (t(383)=0.04, p=.970, d<0.01).",
+      "evidence_source": "Section 3.3.2 'Measurement invariance across sex'",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not mention any country or geographic location where the study was conducted.",
+      "warning": "No country information available in the provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          173,
+          212,
+          383
+        ]
+      },
+      "evidence_source": "From the text: 'Men (n = 173)' and 'Women (n = 212)' are mentioned in Table 1. The total sample size is calculated as 173 + 212 = 385, but the text also mentions 't(383) = 0.04' suggesting the total degrees of freedom corresponds to a sample of approximately 385 participants. The table shows separate samples for men and women within what appears to be a single study examining measurement invariance across sex.",
+      "warning": "The exact total sample size is not explicitly stated; it is inferred from the sum of gender-specific samples (173 + 212 = 385). The t-test reference mentions t(383), which suggests df = 383, implying N \u2248 385."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify the survey method (paper-and-pencil or online).",
+      "warning": "No survey method information available in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not mention the racial/ethnic composition of participants.",
+      "warning": "No information about percentage of white participants available in the provided text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not provide mean age information for participants.",
+      "warning": "No age information available in the provided text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not mention educational attainment of participants.",
+      "warning": "No information about educational level available in the provided text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report mean BMI of participants.",
+      "warning": "No BMI information available in the provided text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify where or how participants were recruited.",
+      "warning": "No information about sample source available in the provided text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "From the text: 'There was no significant between-group difference in total BAS-2 scores, t(383) = 0.04, p = .970, d < 0.01, M_men = 3.72, SD = 0.81, M_women = 3.72, SD = 0.73.' This explicitly mentions BAS-2 as the instrument used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify how BMI was assessed (self-reported or measured).",
+      "warning": "No information about BMI assessment method available in the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and Table 1 do not report correlations between body appreciation (BAS-2) and BMI. Table 1 presents measurement invariance statistics (chi-square, RMSEA, SRMR, CFI) across sex, not correlations with BMI.",
+      "warning": "No correlation data between body appreciation and BMI is present in the provided text or table."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text describes a single study examining measurement invariance of the BAS-2 across sex using MGCFA. The section is labeled '3.3.2. Measurement invariance across sex' and refers to 'the second subsample' (as stated in Table 1 caption), indicating this is one study with multiple subsamples by gender.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly state whether this is from a journal article or dissertation.",
+      "warning": "Publication type cannot be determined from the provided text alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents measurement invariance testing of the BAS-2 across sex using multi-group confirmatory factor analysis (MGCFA) on the second subsample (Men n=173, Women n=212). The analysis supported configural and full scalar invariance, allowing for valid comparison of mean BAS-2 scores between genders. No significant difference was found between men and women in total BAS-2 scores (both M=3.72, p=.970).",
+      "evidence_source": "Section 3.3.2 'Measurement invariance across sex' and Table 1 caption 'Measurement invariance across sex from the second subsample.'",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1: Measurement invariance across sex from the second subsample.",
+      "evidence_source": "The table title and caption as presented in the image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Razmus2017/tables/1Razmus2017_p002_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information provided in the text or table.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          383
+        ]
+      },
+      "evidence_source": "Text states 't(383) = 0.04' indicating a sample size of 383 participants in the second subsample.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information provided in the text or table.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information provided in the text or table.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information provided in the text or table.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information provided in the text or table.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI information provided in the text or table.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample source provided in the text or table.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Table 2 caption states 'Participants' mean scores and Pearson correlation coefficients between BAS-2 scores and scores on all other measures from the second subsample.' The text also references 'BAS-2 scores' and 'total BAS-2 scores'.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Table 2 includes BMI as a variable (row 9), but the table does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.2,
+          -0.32,
+          -0.14
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.14
+          ]
+        },
+        "male": {
+          "Study X": [
+            -0.32
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            -0.2
+          ]
+        }
+      },
+      "evidence_source": "Table 2, row 1 (Body appreciation) and row 9 (BMI). Pearson r correlations: All = -0.20, Men = -0.32, Women = -0.14. These values are extracted from the 'Pearson r' columns in Table 2.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text references 'the second subsample' which indicates this is part of a larger study with multiple subsamples, but only one study is being discussed in this section. The section discusses measurement invariance across sex within a single study.",
+      "warning": "The text mentions 'second subsample' suggesting there may be multiple subsamples within the same study, but the number of distinct studies is 1."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information provided in the text or table.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents measurement invariance testing across sex using multi-group confirmatory factor analysis (MGCFA) on BAS-2 scores from the second subsample (N=383). The analysis confirmed configural and full scalar equivalence across men and women, with no significant differences in total BAS-2 scores between groups (M_men = 3.72, SD = 0.81; M_women = 3.72, SD = 0.73). Table 2 displays mean scores, standard deviations, and Pearson correlations between BAS-2 and other measures, including BMI, separately by gender.",
+      "evidence_source": "Text content describing measurement invariance analysis and Table 2 caption.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2: Participants' mean scores and Pearson correlation coefficients between BAS-2 scores and scores on all other measures from the second subsample.",
+      "evidence_source": "Table 2 caption as presented in the image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Razmus2017/tables/1Razmus2017_p003_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_1"
+  }
+]

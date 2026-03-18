@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about publication type is provided in the text.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about financial support is provided in the text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about peer review status is provided in the text.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The text mentions 'performance orientations' and 'low-ability individuals should be encouraged to adopt a performance orientation', referring to Performance Goal Orientation (PGO) generally without distinguishing between approach or avoidance. This is for 'Study X'.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'performance' and 'enhance performance' but does not specify the measurement method (self-report, other people, objective, or mixed).",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'performance' but does not specify whether it was based on subjective ratings or objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'performance' but does not specify the specific assessment method (self-report, other people, or objective).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text states 'goal orientation was measured several months after the first experimental session' but does not specify the scale used. Therefore, it is coded as 'Other' (1) for 'Study X'.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information is provided in this section for 'Study X'.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No mean age or information to impute age is provided in this section for 'Study X'.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the sex composition of the sample is provided in this section.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the percentage of men in the sample is provided in this section.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the country where the sample was collected is provided in this section.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text explicitly states 'the current study used a synthetic task and student participants'. This indicates a student sample (1) for 'Study X'.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size (N) is reported in this section.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No specific correlation coefficient between Performance Goal Orientation and performance adaptation is reported in this section.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No specific correlation value is reported, thus no correlation info can be provided.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'the current study' and mentions 'the first experimental session' and 'the second session', implying a single study with multiple data collection points.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section discusses limitations of the current study, noting the use of a synthetic task and student participants in a laboratory setting, which may affect generalizability. It also addresses the time difference in measuring goal orientation across experimental sessions, arguing it helped decouple assessment from the learning setting. The section further touches upon the orthogonality of learning and performance orientations and suggests encouraging specific orientations based on ability levels to enhance performance.",
+      "evidence_source": "Summary of the 'Limitations' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

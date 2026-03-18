@@ -1,0 +1,96 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Measures' section describing assessment instruments (DMS, BAS, NEO-FFI, MLSSS, and demographics collection). It does not contain information about where the study was conducted or the country of the study.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Measures' section describing assessment instruments. It does not report sample size or number of participants.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Measures' section describing assessment instruments. It does not specify whether data were collected via paper-and-pencil or online methods.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Measures' section describing assessment instruments. It mentions that participants were asked to report ethnicity as part of demographics collection, but does not report the percentage of white participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Measures' section describing assessment instruments. It mentions that participants were asked to report age as part of demographics collection, but does not report the mean age.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Measures' section describing assessment instruments. It mentions that participants were asked to report educational qualifications as part of demographics collection, but does not report the percentage with college or higher education.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Measures' section describing assessment instruments. It mentions that participants reported height and weight to compute self-reported BMI, but does not report the mean BMI of participants.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Measures' section describing assessment instruments. It does not specify the source of the sample (e.g., community, college, primary/secondary/high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text states: 'We measured body appreciation using the Body Appreciation Scale (BAS) developed by Avalos, Tylka, and Wood-Barcalow (2005). This is a 13-item measure...' The study used the BAS (not BAS-2) for assessing body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "The text states in the Demographics section: 'Participants were asked to report their demographics, consisting of age, ethnicity, educational qualifications, height, and weight (the latter two used to compute self-reported BMI as kg/m2).' This explicitly indicates BMI was computed from self-reported height and weight.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Measures' section describing assessment instruments and their psychometric properties. It does not report any correlations between body appreciation (BAS) and BMI.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Measures' section describing assessment instruments. It does not explicitly identify the number of studies or experiments. The text uses 'we' and 'the present study' suggesting a single study context, but this section alone does not provide definitive information about the total number of studies in the paper.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Measures' section from what appears to be a research paper. However, the section itself does not contain information about whether this is a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This is a Measures section describing the assessment instruments used in a study. The study measured drive for muscularity using the Drive for Muscularity Scale (DMS), body appreciation using the Body Appreciation Scale (BAS), Big Five personality domains using the NEO-FFI, subjective social status using the McArthur Ladder, and collected demographic information including age, ethnicity, education, height, and weight (for self-reported BMI calculation). The text indicates a single study context using 'the present study' and 'we' language.",
+      "evidence_source": "The entire provided text section describes measurement instruments and procedures."
+    },
+    "_pass_type": "text_only"
+  }
+]

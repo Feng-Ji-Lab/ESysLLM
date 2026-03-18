@@ -1,0 +1,185 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Brazil"
+        ]
+      },
+      "evidence_source": "Text states: 'recruited from among students and staff at two universities in the state of S\u00e3o Paulo.' S\u00e3o Paulo is a state in Brazil.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          311
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            195
+          ]
+        },
+        "male": {
+          "Study X": [
+            116
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            311
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'The participants of this study consisted of 195 women and 116 men' (195 + 116 = 311 total participants).",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information provided in the text about survey method (paper-and-pencil vs. online).",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          79.4
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            79.4
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'The majority of participants described themselves as White (79.4%)'.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          29.32
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            29.32
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'Participants had a mean age of 29.32 years (SD = 11.02)'.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          51.1
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            51.1
+          ]
+        }
+      },
+      "evidence_source": "Text states educational qualifications: '19.6% had an undergraduate degree, and 31.5% had a further degree or specialist diploma.' Calculation: 19.6% + 31.5% = 51.1% with college or higher education.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          23.27
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            23.27
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'a mean self-reported BMI of 23.27 kg/m2'.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Text states: 'recruited from among students and staff at two universities in the state of S\u00e3o Paulo.' Universities are college-level institutions.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information provided in the text about the instrument used to assess body appreciation (BAS or BAS-2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Text states: 'a mean self-reported BMI of 23.27 kg/m2', indicating BMI was self-reported.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No correlation data provided in this Methods section. This section only describes participant demographics.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with one sample of participants from two universities in S\u00e3o Paulo. No multiple studies or experiments are mentioned.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No information provided in this Methods section about publication type (journal article vs. dissertation).",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Methods section describes a single study (Study X) with 311 participants (195 women, 116 men) recruited from students and staff at two universities in S\u00e3o Paulo, Brazil. Participants had a mean age of 29.32 years and a mean self-reported BMI of 23.27 kg/m\u00b2, with 79.4% identifying as White and 51.1% having college or higher education. The section provides demographic information but does not specify the survey method, body appreciation assessment instrument, or correlation results.",
+      "evidence_source": "Entire Methods section provided in text_content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

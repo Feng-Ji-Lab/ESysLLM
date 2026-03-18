@@ -1,0 +1,749 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text is a 'RESULTS' section, typical of a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support or grants in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The presence of a 'RESULTS' section and discussion of hypotheses implies a peer-reviewed publication.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The text mentions 'performance orientation' without distinguishing between approach or avoidance, indicating a global measure. This is for Study X.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "The text mentions 'adaptive work role performance' but does not specify the assessment method (e.g., self-report, other, objective). This is for Study X.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "The text mentions 'adaptive work role performance' but does not provide enough information to determine if it was based on subjective ratings or objective scores. This is for Study X.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "The text mentions 'adaptive work role performance' but does not specify the specific assessment method. This is for Study X.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text mentions 'performance orientation' but does not specify the measurement scale (e.g., VandeWalle). Therefore, it is coded as 'Other'. This is for Study X.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information is provided in the text. This is for Study X.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No age information is provided in the text to impute a mean age. This is for Study X.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No sex composition information is provided in the text. This is for Study X.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No percentage of men is provided in the text. This is for Study X.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No country information is provided in the text. This is for Study X.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the sample being student or other is provided in the text. This is for Study X.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "The text mentions 'Table 1 shows descriptive statistics and inter-correlations' and 'data was collected using single respondents', but no specific sample size (N) is provided for the correlation between performance orientation and adaptive work role performance. This is for Study X.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "The text states: 'Table 1 also shows that performance orientation has no significant correlation with other variables in the model, thus rejecting hypotheses 1.3 and 1.4.' While it indicates no significant correlation, a numerical Pearson r value is not provided. This is for Study X.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Performance orientation and adaptive work role performance (no significant correlation)\"]}",
+      "evidence_source": "The text states: 'Table 1 also shows that performance orientation has no significant correlation with other variables in the model, thus rejecting hypotheses 1.3 and 1.4.' This is for Study X.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text discusses 'the hypothesized model' and 'data was collected using single respondents', implying a single study without explicit numbering.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents the results, including descriptive statistics and inter-correlations from Table 1. It details significant correlations for learning orientation with various strategies and performance outcomes, while noting that performance orientation had no significant correlations. The section also describes collinearity diagnostics and the results of simple mediation and conditional indirect effects, supporting several hypotheses related to learning orientation and moderated mediation.",
+      "evidence_source": "Summary of the provided text content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about publication type is provided in the text.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about financial support is provided in the text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about peer review status is provided in the text.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{'Study X': ['Global']}",
+      "evidence_source": "Table 1 lists '5. Performance orientation'. This indicates a global measure of performance goal orientation for Study X.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'adaptive work role performance' but does not specify the measurement method (e.g., self-report, other people, objective) for Study X.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'adaptive work role performance' but does not specify if it's based on subjective ratings or objective scores for Study X.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'adaptive work role performance' but does not specify the specific assessment method (e.g., self-report, other people, objective) for Study X.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'performance orientation' but does not specify the measurement scale (e.g., VandeWalle) for Study X.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in the text for Study X.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age or information to impute age is provided in the text for Study X.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sex composition information is provided in the text for Study X.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No percentage of men in the sample is provided in the text for Study X.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is provided in the text for Study X.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the sample type (student or other) is provided in the text for Study X.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'data was collected using single respondents' but does not provide the sample size (N) for Study X. Table 1 also does not explicitly state N.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{'Study X': [0.070]}",
+      "evidence_source": "From Table 1, the correlation between '5. Performance orientation' and '7. Adaptive work role performance' is 0.070. This value is found at the intersection of row 7 and column 5.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{'Study X': ['PGO and AP']}",
+      "evidence_source": "The correlation is between Performance Goal Orientation (PGO) and Adaptive Performance (AP) for Study X.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to 'the hypothesized model' and 'data was collected using single respondents', implying a single study. No explicit 'Study 1', 'Study 2', or 'Experiment' is mentioned.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents the results, including descriptive statistics and inter-correlations from Table 1. It discusses correlations of learning orientation and self-leadership strategies with proactive and adaptive work role performance, noting that performance orientation had no significant correlation with other variables. The section also details simple mediation effects (Tables 2 and 3) and conditional indirect effects (Tables 4 and 5), supporting several hypotheses.",
+      "evidence_source": "The entire 'RESULTS' section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "TABLE 1. Inter-Correlations and Descriptive Statistics",
+      "evidence_source": "Caption of the provided image 'TABLE 1. Inter-Correlations and Descriptive Statistics'.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Marques-Quinteiro2012\\tables\\Marques-Quinteiro2012_p010_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text is a 'RESULTS' section, which is typically found in a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from the publication type being a journal article, which is typically peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The text states: \"Table 1 also shows that performance orientation has no significant correlation with other variables in the model\". 'Performance orientation' without further specification is coded as 'Global'.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'adaptive work role performance' as an outcome, but does not specify the assessment method (e.g., self-report, other people, objective).",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'adaptive work role performance' but does not specify if it was based on subjective ratings or objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'adaptive work role performance' but does not specify the specific assessment method (e.g., self-report, other people, objective).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No specific goal orientation measure (e.g., VandeWalle) is mentioned in the text.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information (e.g., range, SD, median) is provided in the text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age is reported in the text.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the sex composition of the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No percentage of men in the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country of data collection is mentioned in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the sample type (e.g., student, other) is provided in the text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'Table 1 shows descriptive statistics and inter-correlations' and 'data was collected using single respondents', but does not provide the sample size (N) for the correlations.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states: 'Table 1 also shows that performance orientation has no significant correlation with other variables in the model'. While it indicates no significant correlation, it does not provide a numerical Pearson r value.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states 'performance orientation has no significant correlation with other variables in the model', but does not specify which 'other variables' are related to performance adaptation, nor does it provide a numerical correlation value.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to 'the hypothesized model' and 'data was collected', implying a single study. No explicit 'Study 1', 'Study 2', or 'Experiment' is mentioned.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents the results, starting with descriptive statistics and inter-correlations from Table 1, noting significant correlations for learning orientation with various performance strategies and adaptive work role performance, but no significant correlation for performance orientation. It then details a collinearity diagnostic using VIF and tolerance values, concluding no common method bias. Finally, it discusses simple and conditional mediation effects from Tables 2, 3, 4, and 5, supporting several hypotheses related to learning orientation and moderated mediation effects.",
+      "evidence_source": "Summary of the 'RESULTS' section content.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "TABLE 2. Direct and Total Effects for Learning Orientation (X), Self-Leadership Behavior Focused Strategies (M), Proactive Work Role Performance (Y1) and Adaptive Work Role Performance (Y2)",
+      "evidence_source": "Caption of the provided image 'TABLE 2'.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Marques-Quinteiro2012\\tables\\Marques-Quinteiro2012_p011_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_1"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The publication type is not mentioned in the 'RESULTS' section.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "Financial support information is not mentioned in the 'RESULTS' section.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "Peer review status is not mentioned in the 'RESULTS' section.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The text mentions 'performance orientation' in the 'RESULTS' section. This is coded as 'Global' performance goal orientation.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": []}",
+      "evidence_source": "The text mentions 'adaptive work role performance' but does not specify the assessment method (e.g., self-report, other people, objective).",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": []}",
+      "evidence_source": "The text mentions 'adaptive work role performance' but does not specify whether it is based on subjective ratings or objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": []}",
+      "evidence_source": "The text mentions 'adaptive work role performance' but does not specify the specific assessment method (e.g., self-report, other people, objective).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text mentions 'performance orientation' but does not specify the measurement scale (e.g., VandeWalle). Therefore, it is coded as 'Other'.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": []}",
+      "evidence_source": "Age information for the sample is not provided in the 'RESULTS' section.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": []}",
+      "evidence_source": "Mean sample age is not provided in the 'RESULTS' section.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": []}",
+      "evidence_source": "Sex composition of the sample is not provided in the 'RESULTS' section.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": []}",
+      "evidence_source": "Percentage of men in the sample is not provided in the 'RESULTS' section.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": []}",
+      "evidence_source": "Country of data collection is not mentioned in the 'RESULTS' section.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": []}",
+      "evidence_source": "Sample type (student vs. other) is not mentioned in the 'RESULTS' section.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": []}",
+      "evidence_source": "The sample size (N) for the correlation between performance goal orientation and performance adaptation is not explicitly stated in the 'RESULTS' section or Table 3.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": []}",
+      "evidence_source": "The text states 'Table 1 also shows that performance orientation has no significant correlation with other variables in the model'. No specific Pearson r value is provided for performance orientation and adaptive work role performance.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"PGO and AP (no significant correlation)\"]}",
+      "evidence_source": "The text states 'Table 1 also shows that performance orientation has no significant correlation with other variables in the model'. This implies that the correlation between Performance Goal Orientation (PGO) and Adaptive Performance (AP) was assessed and found to be non-significant.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study, referring to 'the hypothesized model' and 'data was collected using single respondents'. No explicit 'Study 1', 'Study 2', or 'Experiment' is mentioned.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents the results, including descriptive statistics and inter-correlations from Table 1, simple mediation effects from Tables 2 and 3, and conditional indirect effects from Tables 4 and 5. It discusses correlations of learning orientation and performance orientation with various work role performance measures, noting that performance orientation had no significant correlation with other variables. Collinearity diagnostics were also performed.",
+      "evidence_source": "The entire 'RESULTS' section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "TABLE 3. Indirect Effects on Learning Orientation (X), Self-Leadership Behavior Focused Strategies (M), and Proactive Work Role Performance (Y)",
+      "evidence_source": "Caption of Table 3.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Marques-Quinteiro2012\\tables\\Marques-Quinteiro2012_p011_table01.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_2"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'RESULTS' section and does not contain information about the publication type.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'RESULTS' section and does not contain information about financial support.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'RESULTS' section and does not contain information about peer review status.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The text states 'performance orientation has no significant correlation with other variables in the model'. 'Performance orientation' refers to Performance Goal Orientation (PGO) without distinguishing approach or avoidance, thus coded as 'Global'.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'adaptive work role performance' as an outcome, but does not specify the assessment method (e.g., self-report, objective, other people).",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'adaptive work role performance' but does not specify if it is based on subjective ratings or objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'adaptive work role performance' but does not specify the specific assessment method (e.g., self-report, other people, objective).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'performance orientation' but does not specify the measurement scale (e.g., VandeWalle).",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'RESULTS' section and does not contain information about age.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'RESULTS' section and does not contain information about age.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'RESULTS' section and does not contain information about sex composition.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'RESULTS' section and does not contain information about the percentage of men in the sample.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'RESULTS' section and does not contain information about the country of data collection.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'RESULTS' section and does not contain information about the sample type (student vs. other).",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'Table 1 shows descriptive statistics and inter-correlations' and 'data was collected using single respondents', but does not provide a specific sample size (N) for the correlation between performance orientation and adaptive work role performance.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states 'Table 1 also shows that performance orientation has no significant correlation with other variables in the model'. While it indicates a relationship, it does not provide a specific Pearson r value for performance orientation and performance adaptation.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No specific numerical correlation coefficient for Performance Goal Orientation (PGO) and performance adaptation (PA) was found.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'the hypothesized model' and 'the study' without explicitly naming or delineating multiple distinct studies or experiments.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents the results of a study, detailing descriptive statistics and inter-correlations from Table 1, simple mediation effects from Tables 2 and 3, and conditional indirect effects from Tables 4 and 5. It highlights significant correlations between learning orientation and various performance measures, while noting that performance orientation showed no significant correlation with other model variables. The section also addresses common method bias diagnostics.",
+      "evidence_source": "Summarized from the entire 'RESULTS' section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "TABLE 4. Conditional Indirect Effects for Proactive Work Role Performance (Interaction With Natural Reward Strategies)",
+      "evidence_source": "Caption of the provided image 'TABLE 4. Conditional Indirect Effects for Proactive Work Role Performance (Interaction With Natural Reward Strategies)'.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Marques-Quinteiro2012\\tables\\Marques-Quinteiro2012_p012_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_3"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about publication type is provided in the 'RESULTS' section.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about financial support is provided in the 'RESULTS' section.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about peer review status is provided in the 'RESULTS' section.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The text states 'performance orientation has no significant correlation with other variables in the model'. 'Performance orientation' is coded as 'Global' performance goal orientation.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The text mentions 'adaptive work role performance' but does not specify the assessment method (e.g., self-report, other people, objective).",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The text mentions 'adaptive work role performance' but does not specify whether it is based on subjective ratings or objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The text mentions 'adaptive work role performance' but does not specify the specific assessment method (e.g., self-report, other people, objective).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text mentions 'performance orientation' but does not specify the measurement scale used (e.g., VandeWalle). Therefore, it is coded as 'Other'.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No age information is provided in the 'RESULTS' section.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No age information is provided in the 'RESULTS' section.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No sex composition information is provided in the 'RESULTS' section.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No percentage of men in the sample is provided in the 'RESULTS' section.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No country information is provided in the 'RESULTS' section.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No sample type (student or other) is provided in the 'RESULTS' section.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The text mentions 'Table 1 shows descriptive statistics and inter-correlations' and 'performance orientation has no significant correlation with other variables in the model', implying a sample size was used for calculation, but the specific N for this correlation is not provided.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The text states 'Table 1 also shows that performance orientation has no significant correlation with other variables in the model'. A numerical correlation coefficient (Pearson r) is not explicitly provided.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No specific correlation value or detailed description is provided beyond 'performance orientation has no significant correlation with other variables'.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to 'the hypothesized model' and 'data was collected using single respondents', implying a single study. No explicit 'Study 1', 'Study 2', or 'Experiment' is mentioned.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents the results, including descriptive statistics and inter-correlations from Table 1, simple mediation effects from Tables 2 and 3, and conditional indirect effects from Tables 4 and 5. It notes that performance orientation had no significant correlation with other variables, and discusses the significance of learning orientation and self-leadership strategies.",
+      "evidence_source": "The entire 'RESULTS' section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "TABLE 5. Conditional Indirect Effects for Proactive Work Role Performance (Interaction With Thought Pattern Strategies)",
+      "evidence_source": "Caption of Table 5.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Marques-Quinteiro2012\\tables\\Marques-Quinteiro2012_p012_table01.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_4"
+  }
+]

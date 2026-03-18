@@ -1,0 +1,243 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10
+    ],
+    "reason": "Multiple sections (e.g., Candidates 0, 3, 4, 5, 6, 8, 9, 10) explicitly describe a single online study (the YouBeauty Body Image Survey) with US and non\u2011US samples. References to two samples or multi-group analyses (Candidates 7 and 11) reflect multiple samples within that one study, not separate studies. Therefore the best numeric judgment is 1 study."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "United States",
+        "Canada",
+        "United Kingdom",
+        "Australia",
+        "Western (non-US)"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      10
+    ],
+    "reason": "All candidates refer to a single large online study (YouBeauty Body Image Survey) with two analyzed sub-samples: a US sample and a non\u2011US (Western) sample. The Participants and Table information (candidates 0 and 3\u20134) give the clearest country-level breakdown: US residents (primary sample) and non\u2011US residents, with the non\u2011US analyses limited to Canada, the United Kingdom, and Australia. Other candidates (1,2,10) consistently describe the study as using respondents from the West (primarily the United States). Per instructions, subsamples are merged under one study entry; therefore the extracted locations include the United States, the specific non\u2011US countries analyzed (Canada; United Kingdom; Australia), and the broader region label (Western / non\u2011US) that the paper also uses."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        9667,
+        8925,
+        742
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "All candidates refer to a single large online study (the YouBeauty Body Image Survey). Candidates 0 and 3 report the total N = 9,667 (supported by df-based computation in Results). Candidates 1 and 2 provide the sub-sample breakdowns: US = 8,925 and non-US = 742. The sub-sample Ns sum to the total (8,925 + 742 = 9,667), so we merged them into one study entry and included both the total and sub-sample counts. No gender-specific Ns were provided in the candidates.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          9667,
+          8925,
+          742
+        ]
+      }
+    }
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "online"
+      ]
+    },
+    "best_indices": [
+      3,
+      0,
+      1,
+      2
+    ],
+    "reason": "All candidates refer to the same single study using data from the YouBeauty.com Body Image Survey (YBIS). The Procedure (candidate 3) explicitly states this was an online cross-sectional survey hosted on YouBeauty.com; candidate 0 and candidates 1\u20132 (text and figure caption) corroborate that participants completed the online YBIS. Discussion (candidate 4) also notes the survey was conducted online. Therefore the survey method for the single study is 'online'."
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "community"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "All candidates describe a single online study using the YouBeauty.com Body Image Survey (YBIS) with participants recruited via the YouBeauty website (advertised on the parent site and linked/hosted pages). This indicates a community/website sample rather than a college or school sample. Multiple subsamples (US vs non-US) are part of the same study and were merged under the single study entry."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0
+    ],
+    "reason": "The text describes a large online survey study with typical journal-article reporting (sample, measures, results). There is no mention of a dissertation/thesis, so 'journal articles' is the most supported value (candidate 0)."
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        30.22,
+        27.7
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Table 1 (Sample characteristics) reports mean ages for two sub-samples within the single study: US sample M = 30.22 (SD = 12.37) and Non-US sample M = 27.70 (SD = 11.42). The paper describes one study with multiple sub-samples, so both sub-sample means are included under 'Single study'. No gender-specific mean ages were reported in the provided candidate.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        68.8,
+        68.9
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study in the paper. Candidate 0 (Table 1) reports education breakdowns for two sub-samples (US and Non-US). Percentages for 'college or higher' were computed from the table by summing 'Some college' + 'Undergraduate degree' + 'Graduate degree' for each sub-sample: US = 35.3 + 23.2 + 10.3 = 68.8%; Non-US = 25.7 + 32.3 + 10.9 = 68.9%. Per instructions, these two sub-samples are merged under the single study, so both values are listed. No gender-specific percentages were provided.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        26.75,
+        24.93
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study in the paper with two subsamples (US and Non\u2011US). Table 1 reports mean BMI for the US sample = 26.75 (SD 5.86) and Non\u2011US sample = 24.93 (SD 5.09). Per instructions, subsamples from the same study are merged under 'Single study' and both mean BMI values are returned. Source: Table 1 (candidate 0).",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          26.75,
+          24.93
+        ]
+      }
+    }
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidate sections describe the same single online study (YouBeauty Body Image Survey) and consistently report use of the 13-item Body Appreciation Scale (Avalos et al., 2005). No evidence of a separate study or use of BAS-2 was found, so the instrument for the single study is recorded as BAS."
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates indicate BMI was calculated from participants' self-reported height and weight. Candidate 0 (Participants/Methods) explicitly states height and weight were self-reported and used to calculate BMI; Candidate 1 (Discussion) repeats this limitation. The paper contains one study (multiple samples within that study), so entries were merged and the assessment is 'self-reported'. Preference was given to the Methods statement (Candidate 0) as the primary source, with Candidate 1 used to corroborate."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        -0.22,
+        -0.17
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study was present. Candidate 0 (Table 2, intercorrelations) reports Pearson r between Body Appreciation and BMI for two samples within the single study: \u22120.22 (US sample) and \u22120.17 (non\u2011US sample). These are two subsamples of the same study, so both values are included under the single study (total).",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          -0.22,
+          -0.17
+        ]
+      }
+    }
+  }
+}

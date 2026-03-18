@@ -1,0 +1,125 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [345], \"Study Y\": [874]}",
+      "evidence_source": "For Study X: \"t(343)=1.45\" implies a total sample size of 343+2 = 345. For Study Y: \"women n=457, men n=417\" implies a total sample size of 457+417 = 874.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study Y\": [457]}",
+        "male": "{\"Study Y\": [417]}",
+        "other": "None",
+        "total": "{\"Study X\": [345], \"Study Y\": [874]}"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"BAS-2\"], \"Study Y\": [\"BAS-2\"]}",
+      "evidence_source": "For Study X: \"total body appreciation scores by taking the mean of all 10 items\". The BAS-2 has 10 items. For Study Y: \"Cantonese version of the BAS-2\".",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [-0.19, -0.13], \"Study Y\": []}",
+      "evidence_source": "For Study X, female: \"In women, body appreciation was significantly and positively correlated with life satisfaction (r=.47, p<.001) and self-esteem (r=.45, p<.001), and negatively correlated with weight discrepancy (r=-.36, p<.001) and BMI (r=-.19, p=.009).\". For Study X, male: \"In men, body appreciation was significantly and positively correlated with life satisfaction (r=.53, p<.001) and self-esteem (r=.48, p<.001). However, the correlation with BMI failed to reach significance (r=-.13, p=.093).\". For Study Y, no correlation between body appreciation and BMI was reported.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\": [-0.19]}",
+        "male": "{\"Study X\": [-0.13]}",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 2,
+      "evidence_source": "The text describes an initial analysis ('Study X') and then 'obtained data from Swami and Ng (2015)' for a separate analysis ('Study Y').",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents further analyses on body appreciation. It first details an analysis (Study X) where body appreciation scores, derived from 10 items (likely BAS-2), were correlated with other variables, including BMI, separately for women and men. It then describes a secondary analysis (Study Y) using data from Swami and Ng (2015) involving a Cantonese version of the BAS-2, comparing it with a Standard Chinese version, with age and BMI entered as covariates.",
+      "evidence_source": "Summarized content from the provided text.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

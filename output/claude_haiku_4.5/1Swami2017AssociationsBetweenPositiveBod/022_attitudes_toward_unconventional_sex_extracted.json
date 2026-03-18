@@ -1,0 +1,125 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text references sample sizes indirectly through regression analyses (N=146 women in first step, N=142 in second step; N=158 men in first step, N=152 in second step), but these appear to be degrees of freedom context rather than explicit sample size statements. No clear total sample size is stated.",
+      "warning": "Degrees of freedom are mentioned (e.g., F(4, 146), F(8, 142), F(4, 158), F(8, 152)) but these do not directly indicate sample sizes. The actual sample sizes would be slightly larger than these df values, but exact N is not explicitly stated."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method (paper-and-pencil or online) is mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No racial/ethnic demographic information is provided in the text.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No age information is provided in the text.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No education level information is provided in the text.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "While BMI is mentioned as a predictor variable in the regression analyses, no mean BMI value is reported in the text.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about where or how participants were recruited (community, college, or primary/secondary/high school) is provided in the text.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'body appreciation' as a variable in the regression analyses but does not specify which instrument (BAS or BAS-2) was used to assess it.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions BMI as a predictor variable but does not specify whether it was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text presents regression analyses with body appreciation and BMI as separate predictors, but does not report the correlation coefficient (Pearson r) between body appreciation and BMI. The regression coefficients (B, \u03b2, t, p values) are provided, but these are not correlation coefficients.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text appears to be a results section from a single study analyzing gender differences (women vs. men) in regression models predicting attitudes toward unconventional sex. No explicit mention of multiple studies is present.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information (journal article or dissertation) is provided in the text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents regression analyses examining predictors of attitudes toward unconventional sex, analyzed separately by gender. For women, both regression steps were significant, with sexual orientation, BMI, body appreciation, and body image flexibility emerging as significant predictors. For men, only the second regression step was significant, with body appreciation and body image flexibility as the only significant predictors. The analyses suggest gender differences in the factors predicting attitudes toward unconventional sex.",
+      "evidence_source": "Entire provided text section on 'Attitudes Toward Unconventional Sex'",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

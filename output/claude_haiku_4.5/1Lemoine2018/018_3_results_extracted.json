@@ -1,0 +1,103 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this Results section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          1012
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            1012
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'participants with missing data (124 participants) were discarded from the sample, resulting in 1012 observations available for analyses (89% of participants)'. This indicates the final sample size used for analyses was 1012.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is provided in this Results section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information about race/ethnicity is provided in this Results section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in this Results section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in this Results section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI statistics are provided in this Results section. The text mentions that 'Means, standard deviations, and Cronbach's alphas of all scales and subscales are display in Table 1' but the actual table is not provided.",
+      "warning": "Table 1 is referenced but not provided; cannot extract mean BMI values."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the source or recruitment location of participants is provided in this Results section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No specific instrument for assessing body appreciation is mentioned in this Results section. The text references scales and subscales in Table 1 but does not specify which instrument was used.",
+      "warning": "Table 1 is referenced but not provided; cannot determine which BA assessment tool was used."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported vs. measured) is provided in this Results section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficients between body appreciation and BMI are provided in this Results section. The text mentions that means and standard deviations are displayed in Table 1, but the actual correlations are not presented in the provided text.",
+      "warning": "Table 1 is referenced but not provided; cannot extract correlation values."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section is a Results section from what appears to be a single study. No explicit mention of multiple studies is provided in this excerpt.",
+      "warning": "Cannot determine number of studies from this Results section alone; would need Methods or Introduction sections."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this Results section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Results section describes data cleaning and preliminary analyses for a single study. After removing 124 participants with missing data, 1012 observations (89% of the original sample) were retained for analysis. Descriptive statistics (means, standard deviations, and Cronbach's alphas) for all scales and subscales are presented in Table 1 (not provided). Normality assumptions were tested using skewness, kurtosis, and Mardia's multivariate tests, revealing that the data were neither univariate nor multivariate normally distributed.",
+      "evidence_source": "Entire Results section provided",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

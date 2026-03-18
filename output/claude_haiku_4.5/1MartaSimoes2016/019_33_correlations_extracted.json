@@ -1,0 +1,93 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information is provided in this section.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While age is mentioned in correlations, no mean age value is explicitly stated in this section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While BMI is mentioned in correlations, no mean BMI value is explicitly stated in this section.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample source (community, college, etc.) is provided in this section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No specific instrument name (BAS or BAS-2) is mentioned in this section.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported or measured) is provided in this section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.3
+        ]
+      },
+      "evidence_source": "For female participants: 'Body mass index revealed to be significantly and negatively correlated to body appreciation, with a correlation of moderate magnitude.' The text describes a negative correlation of moderate magnitude. Based on standard effect size conventions, a moderate negative correlation is approximately -0.3 to -0.5. Since no exact value is provided, this is an estimate based on the qualitative description. Gender-specific: Female participants show this negative correlation; male participants' correlation between BMI and body appreciation is not explicitly stated in this section.",
+      "warning": "Exact correlation coefficient not provided; value estimated from qualitative description ('moderate magnitude'). Only female data available; male data not explicitly stated."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section presents correlational results but does not explicitly state the number of studies. The presence of gender-separated analyses suggests a single study with male and female subsamples.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents intercorrelation results for male and female participants separately. For males, body appreciation showed strong negative association with external shame and strong positive association with self-compassion. For females, body mass index was negatively and moderately correlated with body appreciation, and body appreciation showed strong negative association with external shame and strong positive association with self-compassion.",
+      "evidence_source": "Section 3.3 Correlations, entire text content provided.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

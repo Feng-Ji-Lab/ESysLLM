@@ -1,0 +1,125 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"BAS\"]}",
+      "evidence_source": "Body image was modeled as a latent construct, with the PASTAS scale mean as the reference indicator due to its strong position within the body image literature, and with the BAS scale mean and the WST discrepancies score as the other indicators.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions \"BMI was negatively associated with body image (\u02c7 = \u2212.15)\". Body image was modeled as a latent construct with BAS as an indicator. However, the value provided is a beta coefficient (\u02c7), not a Pearson r correlation coefficient as requested by the schema. Table 1, which might contain zero-order correlations, is not provided.",
+      "warning": "The provided value is a beta coefficient (\u02c7), not a Pearson r correlation coefficient.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'a structural equation model' and 'this model' and 'the research', indicating a single study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "journal articles",
+      "evidence_source": "The structure and content of the text, including sections like 'Results' and references to statistical software and models, are typical of a journal article.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the results of a single structural equation model used to assess relationships between appearance and health goals, regulations, and body image. It describes how variables were modeled, including the use of BAS scale mean as an indicator for body image and BMI as a covariate. The analysis focused on associations between appearance goals for exercise and body image, noting a strong negative direct association and a significant indirect association via introjected regulation.",
+      "evidence_source": "Summarized from the entire '3.2. Results' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

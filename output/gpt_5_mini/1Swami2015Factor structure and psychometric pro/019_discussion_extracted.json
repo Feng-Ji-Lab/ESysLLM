@@ -1,0 +1,141 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Hong Kong"
+        ]
+      },
+      "evidence_source": "Our findings fulfil this goal, at least in university students from Hong Kong.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size reported in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method (e.g., online or paper-and-pencil) is specified in the provided text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about racial/ethnic composition or percentage white is reported in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age or age information is reported in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "Sentence: \"Our findings fulfil this goal, at least in university students from Hong Kong.\" Inference: participants are described as \"university students,\" therefore per case_rules this is taken to indicate 100% with college or higher education.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI value is reported in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Our findings fulfil this goal, at least in university students from Hong Kong. (indicates a college/university sample)",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Our results showed that the Chinese BAS-2 consists of a single factor in both women and men.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text references BMI (and \"BMI2\") but does not state whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Sentence: \"body appreciation scores in the present study were significantly associated with BMI in women and BMI2 in men.\" No Pearson r or correlation coefficients are reported in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to \"the present study\" and discusses a single sample; no multiple studies or numbered studies are described in this section.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type (e.g., journal article or dissertation) is specified in the provided section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Discussion summarizes a single (unnumbered) study of Chinese BAS-2 administered to university students in Hong Kong, reporting a one-dimensional factor structure that retained all 10 BAS-2 items and good internal consistency. The authors report convergent validity (associations with self-esteem and life satisfaction), sex differences (men higher than women), and significant associations between body appreciation and BMI in women and BMI2 in men; they also present a preliminary cross-cultural comparison suggesting slightly higher body appreciation than North American adults.",
+      "evidence_source": "Key sentences used: \"Our results showed that the Chinese BAS-2 consists of a single factor in both women and men.\"; \"Our findings fulfil this goal, at least in university students from Hong Kong.\"; \"body appreciation scores in the present study were significantly associated with BMI in women and BMI2 in men.\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

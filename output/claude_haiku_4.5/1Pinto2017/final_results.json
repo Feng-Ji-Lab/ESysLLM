@@ -1,0 +1,205 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "reason": "All seven candidates consistently report a value of 1, indicating this paper contains a single study. The evidence appears across multiple sections: Methods (Candidates 0-1 describing participant characteristics and procedures for Study X), Results (Candidates 2-3 presenting analyses from the single study), and Discussion (Candidates 4-6 all explicitly referencing \"Study 1\" or \"Study X\" with N=253). Despite the candidates being labeled as \"No evidence,\" the section contexts themselves provide strong evidence that this is a single-study paper examining a path model of social safeness, body appreciation, inflexible eating, and disordered eating in a sample of 253 Portuguese women. The consistent labeling across all sections and the unified research design confirm the count of 1 study."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "Portugal"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study examining a path model in a sample of 253 Portuguese women. Candidate 0 from the Participants section (005_participants_extracted.json) provides clear, direct evidence that the study was conducted in Portugal. The evidence explicitly states 'A total of 253 Portuguese women from the general population,' making this the most reliable source for the Country field. No conflicting values were found across candidates, and the context confirms this is a single-study paper."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        253
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason": "All seven candidates consistently report N=253 for a single study examining a path model of social safeness, body appreciation, inflexible eating, and disordered eating in Portuguese women. Candidates 0-1 (Methods/Procedures sections) describe participant recruitment and final sample composition. Candidates 2-5 (Results/Discussion sections with tables and figures) confirm the same sample size. Despite some candidates labeling the study as 'Study X' and others as 'Study 1', the section summaries and evidence confirm this is a single-study paper. The gender breakdown shows all 253 participants are female (explicitly stated in Candidates 0-1: \"253 Portuguese women\"). Candidate 1 provides additional context that the initial sample was 312, with 59 excluded based on gender and age criteria, resulting in the final sample of 253 female participants. All candidates are consistent and complementary; no conflicts exist. The final consolidated value is [253] with all participants being female.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          253
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          253
+        ]
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        25.0
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Single candidate identified from the Participants section (005_participants_extracted.json) reporting mean age of participants. The paper contains one study examining a path model in a sample of 253 Portuguese women. The candidate provides a clear, reliable value from the Methods/Participants section: M=25.00 years (SD=7.15), with age range 18-50 years. The gender breakdown shows all participants were female (N=253), so the female value equals the total. Male and other categories are empty as the sample consisted exclusively of women. This is the primary and most reliable source for participant demographics.\"",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          25.0
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          25.0
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        21.76
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates (0 and 1) report the identical Mean BMI value of 21.76 kg/m\u00b2 for the same study (N=253 Portuguese women). Candidate 0 is from the Participants section (Methods) and provides the primary source with full gender breakdown (all female sample). Candidate 1 is from Table 1 in the Results section, confirming the same value. Since the paper contains a single study with 253 Portuguese women (all female), the extract_value is [21.76] and the gender breakdown shows female: [21.76], total: [21.76], with male and other as empty arrays. Both candidates are consistent and reliable; they represent the same measurement from different sections of the paper.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          21.76
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          21.76
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "community"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "All four candidates consistently report 'community' as the source of sample. Candidates 0-1 describe Study X from the Methods/Procedures sections, while Candidates 2-3 reference Study 1 from the Discussion section. The context confirms this is a single-study paper (N=253 Portuguese women). The labeling discrepancy ('Study X' vs 'Study 1') refers to the same study across different sections. The evidence is consistent: participants were recruited from the general population via Facebook advertisements and email invitations, not from college or school settings. All candidates are merged into a single entry with the value ['community'].\""
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "Both candidates refer to the same single study (Study X). Candidate 0 infers 'measured' based on the presence of specific BMI values and distribution categories in the participant characteristics section. However, Candidate 1 from the Measures section provides explicit methodological evidence: 'Body mass index BMI was calculated through the quetelet index, based on participants' self-reported weight and height (kg/m2).' This direct statement from the Methods/Measures section takes precedence over the inference in Candidate 0. The specific BMI values and distributions reported in Candidate 0 are derived from calculations based on self-reported data, not from direct physical measurements. Therefore, the correct assessment method is 'self-reported', and Candidate 1 is selected as the most reliable source."
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "online"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study (Study X) as confirmed by the context. Candidate 0 from the procedures section provides clear evidence that the survey method was 'online', with participants completing self-report questionnaires via an online survey accessed through an Internet link. This is the only candidate available and provides explicit, reliable evidence from the Methods section."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS-2"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "reason": "All nine candidates consistently report BAS-2 as the instrument used to assess body appreciation. The paper contains a single study (N=253) examining a path model of social safeness, body appreciation, inflexible eating, and disordered eating in Portuguese women. Candidates 0-5 and 7 label the study as 'Study X', while candidates 6 and 8 label it as 'Study 1', but these refer to the same single study as confirmed by the context (consistent N=253, same research design, same measures). The evidence appears across multiple reliable sections: Measures (Candidate 0), Data Analysis (Candidate 1), Preliminary Analyses (Candidate 2), Descriptive Statistics and Correlations (Candidate 3), Path Analysis text and Table 1 (Candidates 4-5), and Discussion with Figure 1 (Candidates 6-8). All sources consistently identify BAS-2 (Body Appreciation Scale-2) as the sole instrument used to assess body appreciation in this study. No conflicting values exist; the study used only BAS-2, not BAS or any other variant."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Study 1": [
+        -0.36
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "This paper contains a single study (N=253, Portuguese women). Candidate [1] from Table 1 provides the most precise and reliable numerical value (-0.36) extracted directly from the correlation matrix, with explicit significance testing (p<0.001). This is the primary source for the correlation between BMI and Body Appreciation Scale-2 (BAS-2). Candidate [0] describes the correlation qualitatively as 'moderate magnitude' without providing the exact coefficient. Candidate [2] reports a path coefficient of -0.30 from the final path model, which is a standardized path estimate rather than the raw correlation coefficient. Following the hierarchy of evidence (prefer Results/Table sections over Discussion), Candidate [1] is selected as the best source. The value -0.36 represents the Pearson correlation between BMI and body appreciation (BAS-2) for the total sample of 253 women. No gender-specific breakdowns are available in the source data, so the total value is reported for the female sample (as all participants were women).\"",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": []
+      },
+      "female": {
+        "Study 1": [
+          -0.36
+        ]
+      },
+      "other": {
+        "Study 1": []
+      },
+      "total": {
+        "Study 1": [
+          -0.36
+        ]
+      }
+    }
+  }
+}

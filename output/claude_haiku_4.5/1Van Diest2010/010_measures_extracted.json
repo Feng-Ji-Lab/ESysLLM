@@ -1,0 +1,157 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is provided in this Measures section. The text describes measurement instruments and procedures but does not specify where the study was conducted.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          43
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            31
+          ]
+        },
+        "male": {
+          "Study X": [
+            12
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            43
+          ]
+        }
+      },
+      "evidence_source": "Pilot study mentioned: 'we piloted the revised items with a group of 43 college students (12 men and 31 women; M age = 26.40)'. This is a pilot sample for the CEMS measure development, not the main study sample.",
+      "warning": "This is a pilot sample (n=43) used to test the CEMS measure clarity, not the primary study sample. The main study sample size is not provided in this Measures section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Measures section describes instruments and their response scales but does not explicitly state whether data were collected via paper-and-pencil or online methods.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information is provided in this Measures section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          26.4
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            26.4
+          ]
+        }
+      },
+      "evidence_source": "Pilot study: 'we piloted the revised items with a group of 43 college students (12 men and 31 women; M age = 26.40)'. This is the mean age of the pilot sample used to test CEMS clarity, not the main study sample.",
+      "warning": "This mean age (26.40) is from the pilot sample (n=43), not the primary study sample."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      },
+      "evidence_source": "Pilot study: 'we piloted the revised items with a group of 43 college students'. The term 'college students' indicates all participants were enrolled in college.",
+      "warning": "This 100% college enrollment is inferred from the pilot sample description ('college students'), not the main study sample. Inference applied per case_rules."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Measures section describes how BMI was assessed (self-reported weight and height converted to kg/m\u00b2) but does not report the mean BMI of any sample.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Pilot study: 'we piloted the revised items with a group of 43 college students'. The pilot sample was recruited from a college population.",
+      "warning": "This source (college) applies only to the pilot sample (n=43), not the main study sample."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "Body appreciation was measured using 'the 13 item Body Appreciation Scale (BAS; Avalos et al., 2005)'. The text explicitly identifies this as the BAS (not BAS-2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "BMI assessment: 'Participants provided an estimate of their actual weight (in pounds) and height (in feet/inches). We converted these estimates to metric units to compute BMI (kg/m\u00b2).' The use of 'estimate' and 'provided' indicates self-reported measurement.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This Measures section describes the instruments used to assess body appreciation (BAS) and BMI but does not report any correlation coefficients between these variables.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This is a Measures section describing instruments and procedures. It mentions a pilot study (n=43) used to develop/test the CEMS measure, but does not clearly delineate separate numbered studies (Study 1, Study 2, etc.). The main study sample and design are not described in this section.",
+      "warning": "Cannot determine the total number of studies from this Measures section alone. The pilot study is a preliminary validation step, not a numbered study in the main research design."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "This is a Measures section from a research paper. The publication type (journal article vs. dissertation) is not specified in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Measures section describes the instruments and procedures used to assess key constructs in the study. It details the development of the Caregiver Eating Messages Scale (CEMS) with 19 items measuring pressure to eat and restrictive/critical eating messages, including a pilot test with 43 college students (12 men, 31 women; M age = 26.40). The section also describes measures for perceived body acceptance by family (BAOS), body appreciation (13-item BAS), intuitive eating (IES with 21 items), and BMI (self-reported weight and height). Internal consistency alphas are reported for women and men separately for most measures.",
+      "evidence_source": "Entire Measures section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

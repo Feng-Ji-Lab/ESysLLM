@@ -1,0 +1,137 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not explicitly state the country where the study was conducted. While Health Canada is mentioned as a reference for future interventions, this does not indicate where the study took place.",
+      "warning": "Country not specified in this Discussion section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The Discussion section does not provide specific sample size information. It only mentions 'our sample of undergraduate women' without stating the total number of participants.",
+      "warning": "Sample size not provided in this Discussion section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not describe the survey method used to collect data.",
+      "warning": "Survey method not specified in this Discussion section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The Discussion section does not provide demographic information about racial/ethnic composition of participants.",
+      "warning": "Percent of white participants not provided in this Discussion section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The Discussion section does not provide specific age information. It only mentions 'undergraduate women' without stating mean age.",
+      "warning": "Mean age not provided in this Discussion section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "college": [
+          100
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": [
+          100
+        ],
+        "male": "None",
+        "other": "None",
+        "total": [
+          100
+        ]
+      },
+      "evidence_source": "The text states 'our sample of undergraduate women' and later discusses 'Although friends are important for undergraduates.' This indicates all participants were undergraduate students, meaning 100% had college or higher education experience.",
+      "warning": "Inferred from 'undergraduate women' designation; explicit percentage not stated."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The Discussion section mentions 'when controlling for body mass' but does not provide the mean BMI of participants.",
+      "warning": "Mean BMI not provided in this Discussion section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "college": [
+          "college"
+        ]
+      },
+      "evidence_source": "The text explicitly states 'our sample of undergraduate women' and discusses the sample in the context of college students. The limitations section notes 'our sample is limited in generalizability because it comprised undergraduate women.'",
+      "warning": "Source inferred from 'undergraduate women' designation."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not explicitly name the instrument used to assess body appreciation. It mentions 'one index of body image' and references 'Avalos et al., 2005' as a psychometrically sound tool, but does not specify whether it is BAS or BAS-2.",
+      "warning": "Specific body appreciation assessment instrument (BAS vs BAS-2) not explicitly stated in this Discussion section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not specify whether BMI was self-reported or measured. It only mentions 'when controlling for body mass' without describing the assessment method.",
+      "warning": "BMI assessment method (self-reported vs measured) not specified in this Discussion section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The Discussion section does not report specific correlation coefficients between body appreciation and BMI. It discusses relationships between conversation topics and body appreciation, but does not provide the correlation between body appreciation and BMI.",
+      "warning": "Correlation between body appreciation and BMI not provided in this Discussion section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The Discussion section refers to 'the present study' (singular) and describes a single study examining conversations about weight loss/dieting and exercise and their relationship to body appreciation. No mention of multiple studies is made.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not indicate whether this is a journal article or dissertation. This information would typically appear in the header or metadata of the full document.",
+      "warning": "Publication type not determinable from Discussion section alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Discussion section presents findings from a single study examining how conversations about weight loss/dieting versus exercise differentially predict body appreciation among undergraduate women. The study supported hypotheses that exercise conversations predict increased body appreciation while weight loss/diet conversations predict decreased appreciation, with these relationships mediated by body-as-object versus body-as-process orientations. The authors acknowledge three main limitations: the sample comprised only undergraduate women limiting generalizability, measures of body image and body orientation could be refined, and the cross-sectional design prevents determination of causal direction.",
+      "evidence_source": "Entire Discussion section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section is a limitations and future research discussion. While it mentions 'young adult, middle-class, first-year college women,' no explicit country is stated in this section. The text does not provide geographic location information.",
+      "warning": "No country information provided in this limitations section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section discusses limitations of the study but does not provide specific sample size numbers. It mentions 'Participants were mainly White, young adult, middle-class, first-year college women' but no numeric sample size is stated.",
+      "warning": "Sample size not explicitly stated in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This is a limitations and future research section. No survey method information is provided in this text.",
+      "warning": "Survey method not discussed in this limitations section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "The text states: 'Participants were mainly White, young adult, middle-class, first-year college women.' The term 'mainly White' indicates the sample was predominantly White. Given the context of a limitations discussion acknowledging sample homogeneity and the use of 'mainly,' this suggests approximately 100% or near-complete White representation, though an exact percentage is not provided. Interpreting 'mainly White' as indicating very high White representation (100% or near it).",
+      "warning": "The exact percentage is not explicitly stated; 'mainly White' is interpreted as approximately 100% based on the homogeneity concern raised."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes participants as 'young adult' but does not provide a specific mean age value.",
+      "warning": "Mean age not numerically specified in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "The text states: 'Participants were mainly White, young adult, middle-class, first-year college women.' The explicit mention of 'first-year college women' indicates all participants were college students. Per the case rules, when participants are described as college students, the percentage with college or higher education is 100%.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While the section mentions 'We also assessed participants' self-reported height and weight, which adds social desirability and memory recall error to the estimation of participants' BMI,' no actual mean BMI value is provided.",
+      "warning": "Mean BMI value not stated in this limitations section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'Participants were mainly White, young adult, middle-class, first-year college women.' This indicates participants were recruited from a college setting.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This limitations section does not specify which body appreciation assessment instrument (BAS or BAS-2) was used. The section discusses variables and constructs but does not detail the specific measurement tool.",
+      "warning": "Assessment instrument for body appreciation not specified in this section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'We also assessed participants' self-reported height and weight, which adds social desirability and memory recall error to the estimation of participants' BMI.' This clearly indicates BMI was assessed using self-reported height and weight.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This is a limitations and future research discussion section. No correlation coefficients between body appreciation and BMI are reported in this text.",
+      "warning": "Correlation values not provided in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text discusses 'this study' and 'this study's limitations' consistently throughout, referring to a single study. Phrases like 'Although we chose,' 'we did not assess,' 'data were collected in one time period,' and 'our sample' all indicate one study is being discussed.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "This section does not indicate whether the work is a journal article or dissertation. The text is a limitations and future research discussion but does not specify publication type.",
+      "warning": "Publication type not stated in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section discusses the limitations of a single study examining body appreciation and related variables. The study involved first-year college women who were predominantly White and middle-class, with BMI assessed through self-reported height and weight. The authors acknowledge the homogeneity of their sample and recommend future research should examine the model in more diverse populations including men, and suggest longitudinal designs to establish causal relationships.",
+      "evidence_source": "Entire limitations section discussing study characteristics and recommendations for future research.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

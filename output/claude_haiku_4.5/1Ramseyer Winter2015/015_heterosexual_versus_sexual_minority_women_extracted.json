@@ -1,0 +1,157 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is provided in the text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          868,
+          733,
+          872,
+          865,
+          724
+        ]
+      },
+      "evidence_source": "Multiple sample sizes are referenced: N=868 for age comparison (ANOVA), N=733 for BMI comparison (ANOVA), N=872 for sexual relationship status (chi-square), N=865 for education level (chi-square), and N=724 for ANCOVA analysis. These appear to be overlapping subsets of the same study with varying missing data across variables.",
+      "warning": "Multiple sample sizes reported due to missing data across different analyses. The largest N appears to be 872 for sexual relationship status."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method (paper-and-pencil or online) is specified in the text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about racial/ethnic composition is provided in the text.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            29.17,
+            27.17
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "extract_value": {
+        "Study X": [
+          29.17,
+          27.17
+        ]
+      },
+      "evidence_source": "Text states: 'Sexual minority participants were 2 years older (M=29.17) than heterosexual participants (M=27.17)'. These are gender-specific means for women (sexual minority women M=29.17 and heterosexual women M=27.17).",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "extract_value": "None",
+      "evidence_source": "Text mentions 'Sexual minority participants were more likely to have a bachelor's degree or higher than heterosexual participants' but does not provide specific percentages.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            27.56,
+            25.61
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "extract_value": {
+        "Study X": [
+          27.56,
+          25.61
+        ]
+      },
+      "evidence_source": "Text states: 'Sexual minority participants also reported larger body size, as measured by BMI (M BMI = 27.56) than heterosexual participants (M BMI = 25.61)'. These are gender-specific means for women (sexual minority women M=27.56 and heterosexual women M=25.61).",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the source of sample (community, college, or primary/secondary/high school) is provided in the text.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "Text references 'BAS score' multiple times: 'To determine if BAS score differed significantly based on sexual orientation' and 'sexual minority women (adjusted M = 3.77) differed significantly in body appreciation from heterosexual women (adjusted M = 3.60)'. The instrument is identified as BAS (Body Appreciation Scale).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Text states 'Sexual minority participants also reported larger body size, as measured by BMI', indicating self-reported BMI.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.2475
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.2475
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Text states: 'BMI was the only other variable significantly related to BAS, F(1, 724) = 46.84, p < .001, partial \u03b7\u00b2 = .061'. The partial eta-squared of .061 can be converted to a correlation coefficient. Using the formula r = \u221a(\u03b7\u00b2/(1-\u03b7\u00b2)) for the relationship between BAS and BMI: r = \u221a(.061/(1-.061)) = \u221a(.061/.939) = \u221a.0649 \u2248 0.2548. Given the negative relationship implied by the context (higher BMI associated with lower body appreciation), the correlation is approximately r = -0.2475. This represents the correlation for women (the study focuses on heterosexual versus sexual minority women).",
+      "warning": "Correlation coefficient was computed from partial eta-squared value reported in ANCOVA. The sign is inferred as negative based on typical body appreciation literature patterns, but the text does not explicitly state the direction."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes analyses (bivariate analyses and ANCOVA) from a single study comparing heterosexual versus sexual minority women. No multiple studies are explicitly named or described.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information (journal article or dissertation) is provided in the text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents bivariate and ANCOVA analyses comparing heterosexual and sexual minority women on body appreciation (BAS) and related variables. Sexual minority women were significantly older (M=29.17 vs. M=27.17), had higher BMI (M=27.56 vs. M=25.61), and were more likely to have a bachelor's degree or higher. After controlling for age, BMI, sexual relationship status, and education level, sexual minority women showed significantly higher body appreciation scores (adjusted M=3.77) compared to heterosexual women (adjusted M=3.60), with BMI being the only other significant predictor of BAS.",
+      "evidence_source": "Entire text section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

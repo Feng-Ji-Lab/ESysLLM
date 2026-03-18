@@ -1,0 +1,280 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      1,
+      3,
+      4,
+      13
+    ],
+    "reason": "Multiple sections consistently describe a single present study with one sample (N = 1,148). The abstract (candidate 1) and the Discussion (candidate 13) explicitly refer to one study; the methods/aims section (candidate 3) describes a single present study; and the participant section (candidate 4) reports one sample (716 women, 432 men, N = 1,148). No sections present or label additional separate studies or experiments, and background text (candidate 2) is a literature overview rather than an additional study."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "United Kingdom"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "reason": "All candidate sources describe one study (N = 1,148) and consistently identify the sample as British / U.K. adults or British citizens (abstract, participants, procedure, and title). I normalized equivalent terms (British, U.K., U.K. citizens) to the canonical country name 'United Kingdom'. Included indices cover all corroborating mentions, with participant/method sections (indices 3, 5, 6) providing the most reliable evidence."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates are citations of a peer-reviewed journal article (title, authors, journal metadata). There is no evidence anywhere for a dissertation; both sources consistently indicate 'journal articles', so that value is the most accurate."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        1148
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7
+    ],
+    "reason": "All candidates refer to a single present study. Participant details (candidate 1) report 716 women and 432 men (total = 1148), which is corroborated by the abstract (candidate 0) and table notes/captions (candidates 2\u20134, 6\u20137). One candidate (5) computed N = 722 from regression residual df (F(6, 715)), which conflicts with the participant section and table captions; following guidance to prefer participant/method/table information, I used 716F + 432M = 1148 as the study sample. Extracted values: total N = 1148; female = 716; male = 432.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          432
+        ]
+      },
+      "female": {
+        "Single study": [
+          716
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          1148
+        ]
+      }
+    }
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "online"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "All candidate sources (abstract, present study description, procedure, and discussion) consistently describe a single study and indicate data were collected online (explicitly via Prolific Academic). No evidence of additional distinct studies or offline/paper-and-pencil methods was found, so the study-level survey method is resolved as 'online'."
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "community"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All candidates describe the same single study (online sample of UK/British adults, N=1,148) rather than multiple distinct studies. Recruitment is reported as an online crowdsourced sample via Prolific (procedures and abstract/present study sections), which maps to 'community' rather than 'college' or 'primary/secondary/ high school'. Candidates 0, 1 and 2 were used, with the Procedure/Main-text evidence (Prolific recruitment) taken as the most reliable source."
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "All candidate sections refer to a single present study (one sample, N=1,148). The Participants and Body Mass Index sections explicitly state BMI was derived from participants' self-reported height and weight and computed as kg/m^2 (candidates 1 and 2). The abstract/method wording (candidate 0) and Discussion (candidate 3) also refer to self-reported BMI and note some improbable self-reported values. Therefore the study's BMI assessment is 'self-reported'."
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Single study": [
+        88.0
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper reports a single sample (N = 1,148) in the Participants section, which states 88.0% of participants self-reported as British White. This main-text participant information (candidate 0) is the most reliable source; no additional or conflicting study-specific values were found.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          88.0
+        ]
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        34.87,
+        35.95,
+        33.07
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Paper reports a single study (N = 1,148). Candidate 0 (main text/Participants) gives the total mean age M = 34.87, and Candidate 1 (Table 1) provides gender-specific means (Women M = 35.95; Men M = 33.07). These are complementary and consistent (weighted mean of gender-specific means \u2248 34.87). Therefore both sources were used: total mean from the main text and the gender split from the table.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          33.07
+        ]
+      },
+      "female": {
+        "Single study": [
+          35.95
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          34.87
+        ]
+      }
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        60.2
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study/sample in the paper (N=1,148). The participants section provides education breakdown: 38.4% undergraduate + 21.8% postgraduate = 60.2% college-or-higher. 'Still in full-time education' and 'other qualification' were excluded due to ambiguity, and the value comes from the Methods/Participants section (most reliable for sample characteristics). Candidate 0 was used.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          60.2
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        25.95
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper reports a single study (N = 1,148). Candidate 0 (Participants section / main text) provides the overall mean BMI (M = 25.95), which is the preferred source for the total sample. Candidate 1 (Table 1) provides gender-specific means (Women M = 26.39; Men M = 25.20). Following the merging rule, combined the total mean from the main text with the gender-split means from the table. Both candidates refer to the same study (Study X), so values were merged under 'Single study'.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          25.2
+        ]
+      },
+      "female": {
+        "Single study": [
+          26.39
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          25.95
+        ]
+      }
+    }
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS-2"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "All source sections describe a single present study (N=1,148). The Participants/Methods explicitly state the Body Appreciation Scale-2 (BAS-2) was used and report internal consistency in the present sample, so BAS-2 is assigned for the single study."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        -0.35,
+        -0.23
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Single-study paper (N=1,148: women n=716, men n=432). Table 2 reports inter-scale correlations with women in the top diagonal and men in the bottom diagonal. Body appreciation (variable 1) vs BMI (variable 9) yields r = -0.35 for women (top diagonal) and r = -0.23 for men (bottom diagonal). Values extracted directly from Table 2 and reported separately by gender as provided.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          -0.23
+        ]
+      },
+      "female": {
+        "Single study": [
+          -0.35
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    }
+  }
+}

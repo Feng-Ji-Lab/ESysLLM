@@ -1,0 +1,108 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      3
+    ],
+    "best_indices": [
+      20
+    ],
+    "reason": "Candidate [20] explicitly states that the research involved 'three independent samples: a pilot study, Study 1, and Study 2'. This provides the most comprehensive count of studies, including the pilot study, which aligns with the definition of 'Number of studies' as a numeric count of studies found."
+  },
+  "N": {
+    "extract_value": {
+      "Pilot study": [
+        235
+      ],
+      "Study 1": [
+        353
+      ],
+      "Study 2": [
+        233
+      ]
+    },
+    "best_indices": [
+      0,
+      3,
+      4,
+      7
+    ],
+    "reason": "Candidate [0] explicitly states the sample sizes for Study 1 (N=353) and Study 2 (N=233). Candidate [3] confirms the sample size for Study 1 (N=353) by detailing its participants. Candidate [7] confirms the sample size for Study 2 (N=233) by detailing its participants. Candidate [4] explicitly states the sample size for a pilot study (N=235). These values are consistent across sources and cover all three distinct studies identified in the paper."
+  },
+  "usa_vs_other": {
+    "extract_value": {
+      "Pilot Study": [
+        0
+      ],
+      "Study 1": [
+        0
+      ],
+      "Study 2": [
+        0
+      ]
+    },
+    "best_indices": [
+      0,
+      3,
+      5,
+      8,
+      11
+    ],
+    "reason": "The paper explicitly mentions three studies: a pilot study, Study 1, and Study 2. Candidate [5] describes a 'pilot study' and refers to 'Gratitude Questionnaire\u2013Taiwan Version' and 'Taiwan Social Change Survey', indicating a Taiwanese sample (0). Candidate [0] explicitly states 'Study 1: 353 Taiwanese college students' and 'Study 2: 233 Taiwanese college students', confirming both main studies were conducted in Taiwan (0). Candidate [3] refers to 'the current study' in a 'sample of Taiwanese college students', reinforcing the location for Study 1. Candidate [8] further confirms Study 2 used a 'Taiwanese sample'. Candidate [11] summarizes findings 'Across two studies' in 'a sample of Taiwanese students'. Therefore, all three studies were conducted in Taiwan, not the USA."
+  },
+  "r": {
+    "extract_value": {
+      "Study 2": [
+        -0.49
+      ]
+    },
+    "best_indices": [
+      6
+    ],
+    "reason": "The paper describes three studies: a pilot study, Study 1, and Study 2. For Study 1 (referred to as 'a single study' in candidates 2, 3, and 4), candidate 3 explicitly states that 'no correlation between Gratitude and Loneliness' was mentioned. Therefore, no value for 'r' can be extracted for Study 1 or the Pilot Study. For Study 2, candidate 6 (from '019_descriptive_statistics_and_correlation_results_1_extracted.json') explicitly reports that 'gratitude was found to have a reverse relationship with loneliness (r=-.49)'. This value is assigned to Study 2, as indicated by the '_1' suffix in the filename and the context of nearby candidates (5 and 7) which explicitly mention 'Study 2' and the use of the UCLA Loneliness Scale."
+  },
+  "female": {
+    "extract_value": {
+      "Study 1": [
+        0.6940509915
+      ],
+      "Study 2": [
+        0.618025751
+      ]
+    },
+    "best_indices": [
+      2,
+      5
+    ],
+    "reason": "Candidate [2] from '009_participants_and_procedure_extracted.json' describes the participants for what is identified as 'Study 1' based on its early placement in the document flow. It reports 245 female participants out of a total of 353, yielding a proportion of 245/353 = 0.6940509915. Candidate [5] from '016_participants_and_procedure_1_extracted.json' describes participants for 'Study 2' (indicated by the '_1' suffix and later file index). It reports 144 female participants out of a total of 233, yielding a proportion of 144/233 = 0.618025751. No specific numerical data for female participants was found for the pilot study mentioned in the context."
+  },
+  "M_age": {
+    "extract_value": {
+      "Study 1": [
+        18.62
+      ],
+      "Study 2": [
+        19.31
+      ]
+    },
+    "best_indices": [
+      2,
+      6
+    ],
+    "reason": "Candidate 2, from the 'participants_and_procedure' section (009), describes a study with a mean age of 18.62. Given its early placement and the subsequent mention of 'Study 1' in related sections (e.g., Candidate 5), this is identified as Study 1. Candidate 6, from a later 'participants_and_procedure_1' section (016), describes another study with a mean age of 19.31. Its sequential position and the explicit mention of 'Study 2' in subsequent sections (e.g., Candidate 7) confirm this as Study 2. No mean age information was found for the pilot study mentioned in the paper's context."
+  },
+  "SD_age": {
+    "extract_value": {
+      "Study 1": [
+        0.97
+      ],
+      "Study 2": [
+        2.1
+      ]
+    },
+    "best_indices": [
+      2,
+      6
+    ],
+    "reason": "Candidate 2, from an early 'participants and procedure' section (009), describes 'a single study' with a mean age of 18.62 (SD = 0.97). This is identified as Study 1. Candidate 6, from a later 'participants and procedure' section (016_1), also describes 'a single study' with a mean age of 19.31 (SD = 2.10). This is identified as Study 2. No standard deviation for age was found for the pilot study mentioned in the paper's context."
+  }
+}

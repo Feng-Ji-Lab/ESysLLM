@@ -1,0 +1,89 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or region is stated in the provided Results text; the section only reports statistics and correlations (e.g., \"Descriptive statistics and bivariate correlations among measures are presented in Table 1.\").",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"As expected, participants were significantly more likely to be oriented toward appearance versus performance, t(140) = 4.06, p < .001, r = .33, 95 percent confidence interval (CI): (.17, .47). Additionally, ... a paired t-test did showed that women's attitudes ... t(141) = 3.34, p < .001, r = .26, 95 percent CI: (.10, .41).\" (No explicit total sample size is reported.)",
+      "warning": "Inconsistent degrees of freedom reported across tests (t(140) vs t(141)), indicating a potential discrepancy in sample-size reporting."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Results text does not describe the data collection method (e.g., online or paper-and-pencil); it only reports statistical outcomes and correlations.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Results section contains no information about participant race/ethnicity (only statistical tests and correlations are reported).",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean or distribution of participant age is reported in the provided Results text.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Results text does not state participants' education level or whether they were college students.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI mean or summary is reported in the provided Results text.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Results section does not specify the sample source (e.g., community, college, primary/secondary/high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Although the text discusses 'body appreciation' and reports correlations involving body appreciation, it does not state the specific instrument used to assess body appreciation (e.g., BAS or BAS-2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Results text does not indicate how BMI was assessed (self-reported vs measured) or whether BMI was included in the reported correlations.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"The correlations in Table 1 for exercise show that exercise was strongly positively related to body appreciation ...\" and other sentences describe body appreciation's relations with exercise and body-related talk, but no Pearson r between body appreciation and BMI is reported in the provided text.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The Results text presents descriptive statistics and correlations for a single participant sample and does not label or describe multiple studies (no 'Study 1', 'Study 2', or multiple-sample descriptions are present in the provided section).",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided section does not include publication type information (no journal citation or dissertation statement is present).",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Results section reports descriptive statistics and bivariate correlations (referenced in Table 1), showing that participants were more oriented toward appearance than performance and that women's body-as-process attitudes were more positive than body-as-object scores. Correlational patterns indicate exercise is positively related to body appreciation and process orientation, while conversations about weight loss and dieting are negatively associated with body appreciation; no study numbering or participant demographics (e.g., N, age, country, BMI) are provided here.",
+      "evidence_source": "\"Descriptive statistics and bivariate correlations among measures are presented in Table 1.\" \"As expected, participants were significantly more likely to be oriented toward appearance versus performance, t(140) = 4.06, p < .001, r = .33...\" \"Additionally, we averaged subscale scores on the BES, and a paired t-test did showed that women's attitudes toward body-as-process (M = 3.30, SD = .74) were more positive than those toward body-as-object (M = 3.16, SD = .55), t(141) = 3.34, p < .001, r = .26...\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

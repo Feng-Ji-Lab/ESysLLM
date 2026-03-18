@@ -1,0 +1,405 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Zimbabwe",
+          "Britain"
+        ]
+      },
+      "evidence_source": "Text mentions 'Zimbabwean women in Britain' and 'their peers in Zimbabwe', indicating the study involved participants from both Zimbabwe and Britain.",
+      "warning": "Study name is not explicitly provided in the text; using 'Study X' as placeholder. The text references two geographic locations but does not clearly delineate separate studies."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information is provided in the text.",
+      "warning": "Sample size data is completely absent from this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about survey method (paper-and-pencil or online) is provided in the text.",
+      "warning": "Survey method is not mentioned in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information about racial/ethnic composition is provided in the text.",
+      "warning": "Racial/ethnic demographic data is not available in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in the text.",
+      "warning": "Mean age data is not mentioned in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No educational attainment information is provided in the text.",
+      "warning": "Educational level data is not available in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI data is provided in the text. The section discusses weight discrepancy and body size perceptions but not actual BMI measurements.",
+      "warning": "Mean BMI values are not reported in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While the text mentions 'Zimbabwean women in Britain' and 'their peers in Zimbabwe', it does not explicitly state the source of recruitment (community, college, or primary/secondary/high school).",
+      "warning": "Source of sample recruitment is not explicitly stated in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No body appreciation assessment instrument (BAS or BAS-2) is mentioned in this text.",
+      "warning": "Assessment of body appreciation is not described in this section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported or measured) is provided in the text.",
+      "warning": "BMI assessment method is not mentioned in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficients between body appreciation and BMI are reported in this text.",
+      "warning": "Correlation data is not available in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the number of studies. It appears to describe results from a single study with two sample groups (migrant and non-migrant women), but this is not explicitly labeled as separate studies.",
+      "warning": "Study count cannot be definitively determined from this section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information (journal article or dissertation) is provided in this text.",
+      "warning": "Publication type is not mentioned in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents findings on weight discrepancy between Zimbabwean women living in Britain and their non-migrant peers in Zimbabwe. The migrant group perceived themselves as having significantly larger current body sizes and desired significantly smaller body sizes compared to non-migrant women. Additionally, the migrant women believed men idealized thinner bodies and that typical female body sizes were larger than what non-migrant women believed.",
+      "evidence_source": "Text content describing weight discrepancy comparisons between two geographic groups.",
+      "warning": "This section appears to be a results or findings section from a study comparing two sample groups (migrant vs. non-migrant), but does not contain methodological details needed for full study characterization."
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Zimbabwe",
+          "Britain"
+        ]
+      },
+      "evidence_source": "Table 1 caption and column headers indicate two groups: 'Zimbabwe (n=140)' and 'Britain (n=138)'. The text mentions 'Zimbabwean women in Britain' and 'their peers in Zimbabwe', confirming two countries.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          140,
+          138
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            140,
+            138
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            140,
+            138
+          ]
+        }
+      },
+      "evidence_source": "Table 1 column headers: 'Zimbabwe (n=140)' and 'Britain (n=138)'. The text context indicates these are women participants ('Zimbabwean women in Britain', 'women in Zimbabwe').",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about survey method (paper-and-pencil vs. online) is provided in the text or table.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No information about racial/ethnic composition is provided in the text or table.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          25.34,
+          26.61
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            25.34,
+            26.61
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            25.34,
+            26.61
+          ]
+        }
+      },
+      "evidence_source": "Table 1, row 'Age': Zimbabwe group M=25.34 (SD=6.87), Britain group M=26.61 (SD=6.70). The context indicates these are women participants.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No information about educational attainment is provided in the text or table.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          24.81,
+          24.88
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            24.81,
+            24.88
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            24.81,
+            24.88
+          ]
+        }
+      },
+      "evidence_source": "Table 1, row 'Self-reported body mass index': Zimbabwe group M=24.81 (SD=4.61), Britain group M=24.88 (SD=4.62). The table explicitly labels this as 'Self-reported body mass index'.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No explicit information about source of sample (community, college, or primary/secondary/high school) is provided in the text or table.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Table 1 includes a row labeled 'General body appreciation' but does not specify whether BAS or BAS-2 was used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Table 1, row label explicitly states 'Self-reported body mass index', indicating BMI was assessed via self-report rather than measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Table 1 provides descriptive statistics (M and SD) for individual variables by group, but does not contain a correlation matrix. No correlation coefficients between body appreciation and BMI are reported in this table or the accompanying text.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text and table describe a single study comparing two groups (Zimbabwe vs. Britain). No explicit mention of 'Study 1', 'Study 2', or multiple studies is present.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No information about publication type (journal article vs. dissertation) is provided in the text or table.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents Table 1, which displays descriptive statistics (means and standard deviations) for key variables comparing Zimbabwean women (n=140) and Zimbabwean women living in Britain (n=138). The text discusses weight discrepancy findings, noting that migrant women in Britain perceived themselves as significantly larger and desired significantly smaller bodies compared to their non-migrant peers in Zimbabwe. The table includes variables such as actual-ideal weight discrepancy, current body perception, ideal body, body appreciation, media exposure, and self-reported BMI.",
+      "evidence_source": "Text content and Table 1 caption and data.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1: Descriptive statistics (M and SD) and between-group differences for all key variables included in the present study by group.",
+      "evidence_source": "Table 1 title and caption as presented in the image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2012Weight discrepancy and body appreciat/tables/1Swami2012Weight discrepancy and body appreciat_p002_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Zimbabwe",
+          "Britain"
+        ]
+      },
+      "evidence_source": "Table 2 caption and text context: 'results for Zimbabwean women in Britain are reported in the top diagonal and results for women in Zimbabwe in the bottom diagonal'. The text also mentions 'Zimbabwean women in Britain' and 'their peers in Zimbabwe', indicating two countries: Britain and Zimbabwe.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information is provided in the table or accompanying text.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is provided in the table or accompanying text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about racial/ethnic composition is provided in the table or accompanying text.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in the table or accompanying text, although 'Age' is listed as variable (6) in the table.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in the table or accompanying text.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI values are provided in the table or accompanying text. The table shows correlations with self-reported BMI (variable 5), not mean BMI values.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample source is provided in the table or accompanying text.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The table includes 'body appreciation' as variable (2), but the specific instrument (BAS or BAS-2) is not identified in the table or accompanying text.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Table 2 variable (5) is labeled 'Self-reported body mass index (BMI)', indicating that BMI was assessed via self-report.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.11,
+          0.01
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.11,
+            0.01
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            -0.11,
+            0.01
+          ]
+        }
+      },
+      "evidence_source": "Table 2, intersection of row (2) Body appreciation and column (5) Self-reported BMI. The table caption states 'results for Zimbabwean women in Britain are reported in the top diagonal and results for women in Zimbabwe in the bottom diagonal'. Top diagonal (Zimbabwean women in Britain): r = -0.11 (shown in green). Bottom diagonal (women in Zimbabwe): r = 0.01. Both values are extracted from the correlation matrix.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The table and text describe a single study comparing two groups (Zimbabwean women in Britain vs. women in Zimbabwe) using a two-group correlation matrix format. This is one study with two samples, not multiple separate studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in the table or accompanying text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents Table 2, an inter-scale correlation matrix comparing Zimbabwean women in Britain (top diagonal) with women in Zimbabwe (bottom diagonal) across six variables: weight discrepancy, body appreciation, exposure to Western media, exposure to Zimbabwean media, self-reported BMI, and age. The correlation between body appreciation and self-reported BMI was r = -0.11 for Zimbabwean women in Britain and r = 0.01 for women in Zimbabwe. The accompanying text discusses significant differences in weight discrepancy between the two groups, with migrant women perceiving larger current body size and desiring smaller body size compared to non-migrant peers.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2: Inter-scale correlations between weight discrepancy, body appreciation, exposure to Western media, exposure to Zimbabwean media, self-reported body mass index (BMI) and age (results for Zimbabwean women in Britain are reported in the top diagonal and results for women in Zimbabwe in the bottom diagonal).",
+      "evidence_source": "Table 2 title and caption as presented in the image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2012Weight discrepancy and body appreciat/tables/1Swami2012Weight discrepancy and body appreciat_p002_table01.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_1"
+  }
+]

@@ -1,0 +1,89 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text only contains journal header information (ISSN, journal title, and homepage URL) with no study content, location information, or research details.",
+      "warning": "No actual study content provided. The text appears to be only a journal header/metadata page with no research data to extract."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No study content or participant information provided in the text.",
+      "warning": "No sample size data available."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No methodology information provided in the text.",
+      "warning": "No survey method information available."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information provided in the text.",
+      "warning": "No racial/ethnic demographic data available."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No participant demographic data provided in the text.",
+      "warning": "No age data available."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No educational background information provided in the text.",
+      "warning": "No education level data available."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No health or anthropometric data provided in the text.",
+      "warning": "No BMI data available."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participant recruitment or sample source provided in the text.",
+      "warning": "No sample source information available."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about body appreciation assessment instruments provided in the text.",
+      "warning": "No body appreciation assessment data available."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about BMI assessment methods provided in the text.",
+      "warning": "No BMI assessment method data available."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No statistical results or correlation data provided in the text.",
+      "warning": "No correlation data available."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only journal header/metadata information with no study content.",
+      "warning": "Cannot determine number of studies from journal header information alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "journal articles",
+      "evidence_source": "The text header indicates this is from 'The Journal of Social Psychology', which is a peer-reviewed journal publication.",
+      "warning": "Inferred from journal source, but no actual article content provided to confirm."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "The provided text contains only the header metadata of The Journal of Social Psychology (ISSN, journal title, and homepage URL) with no actual research content, study details, or data. No studies, samples, or research findings are described in this section.",
+      "evidence_source": "Entire provided text content",
+      "warning": "This appears to be a journal cover page or header only, not an actual research article or study section."
+    },
+    "_pass_type": "text_only"
+  }
+]

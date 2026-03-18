@@ -1,0 +1,127 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "United States"
+        ]
+      },
+      "evidence_source": "Department affiliation states 'The Ohio State University, Marion, OH 43302, United States'",
+      "warning": "Study name is inferred as 'Study X' because the text does not explicitly label studies. The location indicates the study was conducted in the United States."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information provided in the title and author section.",
+      "warning": "Sample size cannot be extracted from the provided text."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about survey method (paper-and-pencil or online) is provided in the title and author section.",
+      "warning": "Survey method cannot be determined from the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No demographic information about race/ethnicity is provided in the title and author section.",
+      "warning": "Percent of white participants cannot be extracted from the provided text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No age information is provided in the title and author section.",
+      "warning": "Mean age cannot be extracted from the provided text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The title mentions 'college women' which indicates participants are college students. However, the provided text is only the title and author section, which does not contain explicit percentage data. Per the infer_rule, if participants are described as college students, the percentage with college or higher education would be 100%, but this inference should only be made if explicitly stated in the methods section.",
+      "warning": "While the title suggests college-aged participants, explicit percentage data is not provided in the title and author section alone."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No BMI information is provided in the title and author section.",
+      "warning": "Mean BMI cannot be extracted from the provided text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Title states 'body appreciation in college women', indicating the sample source is college.",
+      "warning": "Source of sample is inferred from the title as 'college' based on the explicit mention of 'college women'."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the specific body appreciation assessment instrument (BAS or BAS-2) is provided in the title and author section.",
+      "warning": "Assessment of body appreciation cannot be determined from the provided text."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported or measured) is provided in the title and author section.",
+      "warning": "Assessment of BMI cannot be determined from the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No correlation data is provided in the title and author section.",
+      "warning": "Correlation between body appreciation and BMI cannot be extracted from the provided text."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The title and author section do not explicitly state the number of studies. The title describes 'An exploratory model' in singular form, suggesting one primary study, but this cannot be confirmed from the title and author section alone.",
+      "warning": "Number of studies cannot be definitively determined from the provided text."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The publication type (journal article or dissertation) cannot be determined from the title and author section alone.",
+      "warning": "Publication type cannot be determined from the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents the title and author information for a study examining interpersonal and intrapersonal links to body appreciation in college women. The study was conducted at The Ohio State University in the United States. The sample source is identified as college women, though detailed demographic and methodological information is not provided in this header section.",
+      "evidence_source": "Title: 'Interpersonal and intrapersonal links to body appreciation in college women: An exploratory model'; Author affiliation: 'Department of Psychology, The Ohio State University, Marion, OH 43302, United States'",
+      "warning": "This extraction is based only on the title and author section. Detailed study parameters (sample size, assessment instruments, correlations, etc.) are not available in the provided text."
+    },
+    "_pass_type": "text_only"
+  }
+]

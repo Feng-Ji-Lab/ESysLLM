@@ -1,0 +1,127 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "United States"
+        ]
+      },
+      "evidence_source": "Title states 'among U.S. college students', indicating the study was conducted in the United States.",
+      "warning": "Study name is inferred as 'Study X' because the text does not explicitly label it as 'Study 1' or provide a specific study identifier."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only a title and author line. No sample size information is provided.",
+      "warning": "Insufficient information to extract sample size from title and author line alone."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only a title and author line. No survey method information is provided.",
+      "warning": "Insufficient information to extract survey method from title and author line alone."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text is only a title and author line. No demographic information is provided.",
+      "warning": "Insufficient information to extract racial/ethnic demographics from title and author line alone."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text is only a title and author line. No age information is provided.",
+      "warning": "Insufficient information to extract mean age from title and author line alone."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The title mentions 'college students', which could suggest 100% college education, but the provided text is insufficient to confirm this without additional context from the methods section.",
+      "warning": "While the title mentions 'college students', the infer_rule requires certainty. Without explicit confirmation in a methods section, this cannot be reliably inferred from the title alone."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text is only a title and author line. No BMI information is provided.",
+      "warning": "Insufficient information to extract mean BMI from title and author line alone."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Title explicitly states 'among U.S. college students', indicating the sample source is college.",
+      "warning": "Study name is inferred as 'Study X' because the text does not explicitly label it."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only a title and author line. No information about the body appreciation assessment instrument is provided.",
+      "warning": "Insufficient information to extract assessment of body appreciation from title and author line alone."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only a title and author line. No information about BMI assessment method is provided.",
+      "warning": "Insufficient information to extract BMI assessment method from title and author line alone."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text is only a title and author line. No correlation data is provided.",
+      "warning": "Insufficient information to extract correlation coefficients from title and author line alone."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only a title and author line. No information about the number of studies is provided.",
+      "warning": "Insufficient information to determine the number of studies from title and author line alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only a title and author line. No publication type information is provided.",
+      "warning": "Insufficient information to determine publication type (journal article vs. dissertation) from title and author line alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "The provided text is a title and author line for a study examining body appreciation, interest in cosmetic enhancements, and need for uniqueness among U.S. college students. The study appears to be conducted in the United States with a college student sample, but no detailed methodological information, sample characteristics, or results are available in this excerpt.",
+      "evidence_source": "Title: 'Body appreciation, interest in cosmetic enhancements, and need for uniqueness among U.S. college students' by Meghan M. Gillen and Jamie Dunaev.",
+      "warning": "This is only a title and author line; a complete methods section would be needed to extract most requested variables."
+    },
+    "_pass_type": "text_only"
+  }
+]

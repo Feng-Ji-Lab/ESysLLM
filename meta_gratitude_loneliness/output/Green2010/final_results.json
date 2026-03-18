@@ -1,0 +1,90 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "reason": "All candidates consistently indicate that the paper describes a single study, using phrases like 'this study' or 'the study' throughout various sections. There is no conflicting evidence suggesting multiple studies."
+  },
+  "N": {
+    "extract_value": {
+      "Single study": [
+        140,
+        137
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper describes a single study, as indicated by the context. Candidate [0] from the 'participants' section reports an initial sample size of 140. Candidate [1] from the 'procedure' section clarifies that 137 out of the 140 participants returned packets, indicating the final sample size for analysis. Both values are relevant and complementary, representing different stages of participant involvement in the same study, and are therefore merged into a single list for 'Single study'."
+  },
+  "female": {
+    "extract_value": {
+      "Single study": [
+        0.807
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper describes a single study, as indicated by the context. Candidate [0] provides the proportion of female participants as 0.807 (80.7%), which is consistent across the evidence and section summary. This value is directly used for the 'Single study'."
+  },
+  "M_age": {
+    "extract_value": {
+      "Single study": [
+        21.91
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper describes a single study, as indicated by the context. Candidate [0] provides a clear mean age of 21.91 years from the participants section, which is a reliable source for this information. 'Study X' is resolved to 'Single study' based on the paper's overall structure."
+  },
+  "SD_age": {
+    "extract_value": {
+      "Single study": [
+        5.74
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper describes a single study, as indicated by the context. Candidate [0] provides the standard deviation of age (SD = 5.74) for this study. There are no conflicting values or other studies to consider."
+  },
+  "usa_vs_other": {
+    "extract_value": {
+      "Single study": [
+        1
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper describes a single study, as indicated by the context. Candidate [0] explicitly states that participants were from a large, public university, implying a US location, thus 'usa_vs_other' is 1. The 'Study X' label from the candidate has been resolved to 'Single study' based on the provided context."
+  },
+  "r": {
+    "extract_value": {
+      "Single study": [
+        -0.28
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper describes a single study. Candidate [0] provides the direct Pearson correlation coefficient (r = -0.28) between Gratitude (GQ-6) and Loneliness (UCLA loneliness scale), which directly aligns with the definition of 'r' as the Pearson r between Gratitude and Loneliness. Candidate [1] reports a partial correlation (r = -0.14) controlling for HFS-Total. Since the definition specifies 'Pearson r' without mentioning partial correlations, the direct correlation from Candidate [0] is the most appropriate value."
+  }
+}

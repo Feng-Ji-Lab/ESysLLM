@@ -1,0 +1,93 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Data analysis' section describing statistical methods (SPSS, AMOS, path analyses, goodness-of-fit indices, bootstrap resampling). It contains no information about study location or country.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Data analysis' section describing statistical methods. It contains no information about sample size or number of participants.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Data analysis' section describing statistical methods. It contains no information about how data were collected (paper-and-pencil vs. online).",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Data analysis' section describing statistical methods. It contains no demographic information about participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Data analysis' section describing statistical methods. It contains no information about participant age.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Data analysis' section describing statistical methods. It contains no information about participant education level.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Data analysis' section describing statistical methods. It mentions BMI as a variable in analyses but does not report mean BMI values.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Data analysis' section describing statistical methods. It contains no information about where or how participants were recruited.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The text states: 'Pearson product-moment correlation analyses were performed to explore the relationship between BMI, social safeness (SSPS), body appreciation (BAS-2), infexible eating (IEQ) and disordered eating (EDE-Q).' This explicitly identifies BAS-2 as the instrument used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Data analysis' section describing statistical methods. It mentions BMI as a variable but does not specify whether it was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Data analysis' section describing statistical methods and analytical approaches. It does not report any actual correlation coefficients between body appreciation (BAS-2) and BMI. The text only describes that such analyses were planned/conducted but does not present the results.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Data analysis' section describing statistical methods. It does not explicitly state the number of studies conducted. The section describes a single analytical approach (path analysis with mediation model) but does not clarify whether this represents one or multiple studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Data analysis' section from what appears to be a research paper, but the publication type (journal article vs. dissertation) cannot be determined from this section alone.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This is a 'Data analysis' section describing the statistical methods used to analyze study data. The section details the use of IBM SPSS Statistics for descriptive and correlational analyses, including Pearson correlations between BMI, social safeness (SSPS), body appreciation (BAS-2), inflexible eating (IEQ), and disordered eating (EDE-Q). Path analyses were conducted using AMOS to examine whether the relationship between social belonging/safeness and disordered eating was mediated by body appreciation and inflexible eating, with BMI controlled as a confounding variable. Goodness-of-fit indices (Chi-square, CFI, TLI, RMSEA) and bootstrap resampling with 5000 samples were used to assess model plausibility and significance of mediational paths.",
+      "evidence_source": "Entire 'Data analysis' section provided in text_content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

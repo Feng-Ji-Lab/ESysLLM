@@ -1,0 +1,169 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Iran"
+        ]
+      },
+      "evidence_source": "Text states: 'A total of 1093 university students (568 men and 525 women) were recruited from seven universities in Tehran, Iran.'",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          1093
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            525
+          ]
+        },
+        "male": {
+          "Study X": [
+            568
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            1093
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'A total of 1093 university students (568 men and 525 women) were recruited from seven universities in Tehran, Iran.' Gender breakdown: 568 men + 525 women = 1093 total.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether data collection was conducted via paper-and-pencil or online survey methods.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text does not report the racial/ethnic composition of participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          25.87
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            25.87
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'Participant age ranged from 18 to 50 years (M = 25.87, SD = 4.66).' The mean age is 25.87 years.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text states participants were 'university students,' which indicates they are enrolled in college. However, the exact percentage with college or higher education is not explicitly stated. While all participants appear to be university students (suggesting 100%), the instruction rules state not to infer this unless certain.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          23.69
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            23.69
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'self-reported BMI ranged from 16.14 to 36.07 kg/m2 (M = 23.69, SD = 3.48).' The mean BMI is 23.69 kg/m2.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Text states: 'A total of 1093 university students (568 men and 525 women) were recruited from seven universities in Tehran, Iran.' Participants were recruited from universities, indicating a college source.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify which body appreciation assessment instrument (BAS or BAS-2) was used.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Text states: 'self-reported BMI ranged from 16.14 to 36.07 kg/m2 (M = 23.69, SD = 3.48).' The explicit use of 'self-reported' indicates BMI was assessed via self-report rather than measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text does not report correlation coefficients between body appreciation and BMI.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with one sample of 1093 university students recruited from seven universities in Tehran, Iran. No explicit mention of multiple studies or experiments is present.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not indicate whether this is from a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the participant demographics for a single study (Study X) conducted in Iran. A total of 1093 university students (568 men and 525 women) were recruited from seven universities in Tehran, with a mean age of 25.87 years and mean self-reported BMI of 23.69 kg/m\u00b2. The text provides basic demographic and anthropometric information but does not include details about body appreciation assessment instruments, survey methodology, or correlation analyses.",
+      "evidence_source": "Entire 'Participants' section provided in text_content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

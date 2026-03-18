@@ -1,0 +1,278 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "reason": "Multiple candidates explicitly state or strongly imply that the paper describes 'a single study' or 'the present study'. Candidates [1] and [6] directly mention 'a single study', providing strong evidence. Other candidates consistently refer to 'the present study' or 'this study' without any indication of multiple studies. Candidates [0] and [4] are unreliable due to empty section contexts."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "United Kingdom"
+      ]
+    },
+    "best_indices": [
+      3
+    ],
+    "reason": "Candidate [3] explicitly states that the participants were from 'a university in Greater London'. Following the instruction to return the country name rather than a specific part of a country, 'United Kingdom' is extracted. Other candidates do not provide country information or are unreliable."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        322
+      ]
+    },
+    "best_indices": [
+      3,
+      4,
+      7
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context and candidates 3, 4, and 6. Candidates 3 (Abstract), 4 (Participants), and 7 (Results) consistently indicate a total sample size of 322. Candidates 3 and 4 explicitly state that all 322 participants were female. Candidate 7 derives N=322 from statistical degrees of freedom, which is consistent with the other sources. The gender breakdown is taken from candidates 3 and 4. Other candidates were either unreliable or did not provide sample size information.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          322
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          322
+        ]
+      }
+    }
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "paper-and-pencil"
+      ]
+    },
+    "best_indices": [
+      4
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context. Candidate 4, from the 'procedure' section, explicitly states that participants 'completed a paper-and-pencil questionnaire individually and anonymously'. This directly provides the survey method for the single study."
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Single study": [
+        63.7
+      ]
+    },
+    "best_indices": [
+      3
+    ],
+    "reason": "The paper describes a single study. Candidate 3 explicitly states that 'The majority of participants were of European Caucasian descent (63.7%)', which directly provides the percentage for 'white' participants. Other candidates either do not contain the requested information or are unreliable.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          63.7
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          63.7
+        ]
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        24.72
+      ]
+    },
+    "best_indices": [
+      3,
+      6
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context and candidate 5. Candidate 3 (Participants section) explicitly states the mean age of participants as 24.72 and clarifies that the participants were 322 female university students. Candidate 6 (Results section, Table 1) corroborates this value, reporting 'M' for Age as 24.72. Both sources are consistent and reliable. Since all participants were female, the mean age of 24.72 applies to both the female group and the total group.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          24.72
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          24.72
+        ]
+      }
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        100
+      ]
+    },
+    "best_indices": [
+      2,
+      3,
+      4,
+      8
+    ],
+    "reason": "The paper describes a single study. Candidates 2, 3, 4, and 8 consistently state that the participants were 'female undergraduates' or 'female university students'. According to the inference rule, 'undergraduate students' or 'university students' implies that 100% of participants have college or higher education experience. All reliable sources provide consistent information, leading to a single value of 100% for the study.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          100
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          100
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        21.67
+      ]
+    },
+    "best_indices": [
+      3,
+      6
+    ],
+    "reason": "The paper describes a single study. Candidate [3] from the 'Participants' section explicitly states the mean BMI for 'this study' as 21.67 for 322 female university students. Candidate [6] from 'Results' (Table 1) corroborates this value, reporting 'M' for BMI as 21.67. Since all participants were female, the mean BMI for females is also the total mean BMI for the study.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          21.67
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          21.67
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "college"
+      ]
+    },
+    "best_indices": [
+      2,
+      3,
+      4,
+      6,
+      8
+    ],
+    "reason": "The paper describes a single study. Multiple candidates consistently indicate that the participants were 'female undergraduates' (2, 8) or 'female university students' (3, 4). Candidate 6 further supports this by stating participants were 'recruited opportunistically from various campus locations'. All these pieces of evidence point to 'college' as the source of the sample."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      3,
+      4,
+      7,
+      8
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context and multiple candidates. Candidates [3], [4], [7], and [8] consistently identify the 'Body Appreciation Scale (BAS)' as the instrument used to assess body appreciation. All reliable sources agree on 'BAS' for the single study."
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      3
+    ],
+    "reason": "Candidate 3 explicitly states that participants 'provided their demographic details consisting of... height, and weight', which were then used to calculate BMI. This directly implies that height and weight were self-reported. The paper describes a single study, as confirmed by the provided context and candidate 4's section summary."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        0.27
+      ]
+    },
+    "best_indices": [
+      5
+    ],
+    "reason": "The paper describes a single study, as indicated by the context and consistent references to 'the present study'. Candidate [5] from the 'results' section, referencing 'Table 1', provides the correlation between Body Appreciation Scale (BAS) and BMI as 0.27. This directly matches the field definition. Other candidates either provide no relevant data or are general information about the paper/journal. The value is placed in 'extract_value' and 'extract_value_by_gender.total' as no gender-specific breakdown was provided.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          0.27
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          0.27
+        ]
+      }
+    }
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "reason": "All candidates consistently indicate 'journal articles' as the publication type. Candidates [0], [1], [2], [3], [4], [6], [7], and [8] provide strong evidence such as journal titles, publication platforms, article submission details, and standard journal article sections (abstract, introduction). Candidate [5] also describes a paper with a study, which is consistent with a journal article. There are no conflicting values, and all evidence points to the same conclusion."
+  }
+}

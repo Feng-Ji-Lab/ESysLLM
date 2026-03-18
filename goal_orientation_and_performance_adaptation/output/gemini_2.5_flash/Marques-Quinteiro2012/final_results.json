@@ -1,0 +1,257 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      15,
+      16,
+      17,
+      18
+    ],
+    "reason": "The vast majority of candidates, particularly those describing the methodology, participants, results, and limitations, consistently refer to 'a study' or 'the study' in the singular. Candidate [15] explicitly states 'a single study', and candidate [18] refers to 'This study' when discussing limitations. The candidates suggesting '0' are from sections that provide background, theoretical context, or general discussion, rather than describing the specific empirical work presented in the paper. There is strong and consistent evidence across multiple key sections of the paper indicating that only one study was conducted."
+  },
+  "PubType": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "reason": "The paper is consistently identified as a 'Journal article' across all candidates. Candidate [0] and [1] explicitly mention 'THE JOURNAL OF PSYCHOLOGY' and its publication details. Candidate [2] provides the journal name, volume, issue, and page numbers. Candidate [12] mentions submission and acceptance dates, which are typical for journal articles. All other candidates describe content (introduction, methods, results, discussion, limitations) that is part of a journal article."
+  },
+  "PeerReview": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "reason": "All candidates consistently indicate a value of '1' for PeerReview. The section contexts, including the journal cover, publication details, methodology, results, discussion, and manuscript submission/acceptance dates, all strongly support that the article is a peer-reviewed publication in 'The Journal of Psychology'. There is no conflicting evidence."
+  },
+  "FinancSupport": {
+    "extract_value": [
+      0
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "reason": "All candidates consistently indicate a value of 0 for 'FinancSupport' and explicitly state 'No evidence' for financial support. The section contexts provided for each candidate also do not contain any information suggesting the presence of financial support. Therefore, there is a strong consensus across all candidates that no financial support was received for the study."
+  },
+  "PgoType": {
+    "extract_value": {
+      "Single study": [
+        "Global"
+      ]
+    },
+    "best_indices": [
+      0,
+      3,
+      4,
+      10
+    ],
+    "reason": "The paper describes a single study. Multiple candidates (0, 3, 4) consistently refer to 'performance orientation' without distinguishing between approach or avoidance components, leading to a 'Global' classification. Crucially, Candidate 10, from the limitations section, explicitly states that 'avoidance- and prove-orientation' were for future research and 'not for the current study's assessment.' This direct statement from the authors clarifies that the study utilized a general, undifferentiated measure of performance goal orientation. While Candidate 1 interpreted a sample item as 'Prove', this interpretation is superseded by the authors' explicit statement in Candidate 10 regarding the scope of their assessment for the current study. Therefore, 'Global' is the most accurate representation of the PgoType assessed."
+  },
+  "GoMeasure_dichot_num": {
+    "extract_value": {
+      "Single study": [
+        "1"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "reason": "The paper conducts a single study, as confirmed by the provided context. All candidates consistently refer to this single study (labeled as 'Study X'). Candidates 1 and 2 explicitly state that 'Goal orientation was accessed using the 16-item version of Goal Orientation Scale by Button et al. (1996)', and both explicitly note that this is 'not VandeWalle'. Candidate 7, from the 'Limitations and Future Research Directions' section, further reinforces this by suggesting 'future research should address this issue using other goal orientation measures such as VandeWalle et al.'s method (1999)', which implies the current study did not use VandeWalle's method. All other candidates also do not mention VandeWalle's scale. Therefore, the measurement method for goal orientation is 'Other', which corresponds to code 1."
+  },
+  "Age_Info": {
+    "extract_value": {
+      "Single study": [
+        "mean age was 38 years (SD = 9.8 years)"
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "The paper contains a single study, as indicated by the context. Candidate [1] from the 'participants' section provides explicit age information ('mean age was 38 years (SD = 9.8 years)'). All other candidates either explicitly state 'No age information' or provide empty values, indicating no relevant age details were found in those sections. Therefore, only the information from candidate [1] is extracted and assigned to the 'Single study'."
+  },
+  "Sample_dichot": {
+    "extract_value": {
+      "Single study": [
+        "2"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper contains a single study, as confirmed by the context. Candidates [0] and [1] consistently indicate that the sample consists of 'Workers (N = 108) from a software company' and 'Individuals (N = 108) from three international software companies', respectively. Both descriptions clearly identify the sample as non-student, thus coded as '2'. Other candidates did not provide relevant information for this field."
+  },
+  "N": {
+    "extract_value": {
+      "Single study": [
+        "108"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      8
+    ],
+    "reason": "The context indicates that the paper contains a single study. Candidates [0] (introduction), [1] (participants), and [8] (limitations) consistently and explicitly state the sample size as N = 108. These are reliable sources for the overall sample size. Other candidates either do not report N in their specific section or state that N is not provided for a specific correlation, which does not contradict the overall sample size of 108. All candidates refer to the same single study, hence the value 108 is assigned to 'Single study'."
+  },
+  "Age_imputed": {
+    "extract_value": {
+      "Single study": [
+        "38.0"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study. Candidate [0] from the 'Participants' section explicitly states the mean age as 38 years, which is the most reliable source for this information. All other candidates either did not provide age information or were from less reliable sections for this field."
+  },
+  "Sex": {
+    "extract_value": {
+      "Single study": [
+        "3"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context. Candidate [0] from the 'participants' section explicitly states that '53% of the respondents were men', indicating a mixed-sex sample. This corresponds to code '3' for a mixed sample. All other candidates either provide no information or are from less reliable sections for this specific demographic data."
+  },
+  "Men_Prop": {
+    "extract_value": {
+      "Single study": [
+        "53.0"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study, as confirmed by the context and consistent references to 'a study' or 'the study' in the singular across multiple sections. Candidate [0] from the 'participants' section explicitly states '53% of the respondents were men', providing a clear and reliable value for the percentage of men in the sample. All other candidates either explicitly state that no information about the percentage of men was found in their respective sections or provide null/empty values, indicating no conflicting information. Therefore, the value from candidate [0] is selected for the single study."
+  },
+  "Country_dichot_num": {
+    "extract_value": {
+      "Single study": [
+        "1"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study, as confirmed by the context. Candidate 0, from the 'Participants' section, explicitly states that participants were from 'three international software companies'. This indicates that the country is not the USA, thus coded as '1' (Other). All other candidates either explicitly state that no country information is provided or return null/None values, making Candidate 0 the most reliable and informative source for this field."
+  },
+  "AdaptMeasures": {
+    "extract_value": {
+      "Single study": [
+        "1"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      5
+    ],
+    "reason": "The paper contains a single study, as confirmed by the provided context. Candidates 0, 1, and 5 consistently state that 'Adaptive work role performance' was assessed using the Griffin et al. (2010) scale, which is explicitly described as involving 'self-report statements' or is implied to be self-report. This leads to an 'AdaptMeasures' code of 1 (Self-report). Candidate 6 suggests 'mixed methods' (4) based on 'self and supervisor ratings of performance'. However, the section summary for candidate 6 explicitly mentions 'reliance on single-source data' as a limitation of 'This study', directly contradicting the idea of mixed (self and supervisor) ratings being used in the study itself. Therefore, the evidence from candidate 6 regarding mixed methods is deemed unreliable for this specific study, and the consistent self-report findings from candidates 0, 1, and 5 are prioritized."
+  },
+  "AdaptMethod": {
+    "extract_value": {
+      "Single study": [
+        "0"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      5,
+      6
+    ],
+    "reason": "The paper contains a single study, as indicated by the context. Candidates 0 and 1, both from the 'measures' section, explicitly state that 'Adaptive work role performance was measured using a self-report method, thus indicating subjective ratings (0)'. Candidate 6, from the 'limitations' section, further corroborates this by stating that the adaptation outcome is based on 'self and supervisor ratings of performance', which are subjective ratings (0). Candidate 5's definition, while an inference, also aligns with subjective measurement. Candidates 2, 3, and 4 do not provide sufficient information to determine the adaptation method. All reliable sources consistently point to subjective ratings (0) for the adaptation method."
+  },
+  "AdaptMethod_Specific": {
+    "extract_value": {
+      "Single study": [
+        "1",
+        "2"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      5,
+      6
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context. Candidates 0, 1, and 5 consistently indicate that adaptive work role performance was assessed using a self-report scale (code 1). Candidate 6, from the limitations section, provides the most comprehensive information by explicitly stating that 'self and supervisor ratings of performance' were used. This includes self-report (code 1) and ratings from other people (supervisors, code 2). This information is consistent with and expands upon the details provided by candidates 0, 1, and 5. Therefore, both self-report and supervisor ratings are included for the single study."
+  },
+  "Correlation_PGO_and_PA": {
+    "extract_value": {
+      "Single study": [
+        "0.070"
+      ]
+    },
+    "best_indices": [
+      3
+    ],
+    "reason": "The paper contains a single study, as confirmed by the context. Candidate [3] from Table 1 explicitly provides the Pearson r correlation coefficient between 'Performance orientation' and 'Adaptive work role performance' as 0.070. This numerical value is the most precise extraction. Other candidates ([2], [4], [5], [6], [7]) state that performance orientation has 'no significant correlation' or 'no significant effect' on other variables, which is consistent with a small correlation coefficient like 0.070. Therefore, there is no contradiction, and the numerical value from the table is selected."
+  },
+  "Correlation_info": {
+    "extract_value": {
+      "Single study": [
+        "Performance orientation and adaptive work role performance (no significant correlation)"
+      ]
+    },
+    "best_indices": [
+      2,
+      4
+    ],
+    "reason": "The paper presents a single study, as confirmed by the context. Candidates 2 and 4, both originating from the 'Results' section, provide the most direct and reliable information regarding the correlation between performance goal orientation and performance adaptation. Candidate 2 explicitly states 'Performance orientation and adaptive work role performance (no significant correlation)', which is further supported and reiterated by candidate 4's 'PGO and AP (no significant correlation)'. These two candidates are consistent and specific about the non-significant correlation. Other candidates either indicate a lack of correlation coefficients (0, 1, 5) or only mention the variables without providing the correlation result (3, 6, 7), making candidates 2 and 4 the most informative for this field."
+  }
+}

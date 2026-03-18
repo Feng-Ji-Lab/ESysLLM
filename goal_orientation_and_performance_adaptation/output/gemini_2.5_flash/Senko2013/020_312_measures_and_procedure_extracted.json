@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in the 'Measures and procedure' section.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No financial support information is provided in the 'Measures and procedure' section.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No peer review information is provided in the 'Measures and procedure' section.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\"]}",
+      "evidence_source": "The text states: \"The survey comprised the MAP goal and PAP goal measures first\". Assuming 'PAP goal' refers to Performance-Approach Goal, it is coded as 'Prove'. 'MAP goal' (Mastery-Approach Goal) is not a Performance Goal Orientation and is therefore excluded.",
+      "warning": "Inferred 'PAP goal' as Performance-Approach Goal."
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text states: \"Instructors provided participants' exam scores on a 0\u2013100% scale.\"",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text states: \"Instructors provided participants' exam scores on a 0\u2013100% scale.\" Exam scores are objective.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text states: \"Instructors provided participants' exam scores on a 0\u2013100% scale.\" Exam scores are objective.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text mentions \"MAP goal and PAP goal measures\" and states \"Each of these measures was identical to those from Study 1\". No specific author like VandeWalle is mentioned for the goal orientation measures.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": []}",
+      "evidence_source": "No specific age information (e.g., mean, range, SD) is provided for the sample in this section.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No mean or median age is reported, nor are sufficient categorical age ranges provided to impute a mean age.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text refers to \"Students\" and \"participants\" without specifying a single sex, implying a mixed sample.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No percentage of men or women is provided in this section.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "No country information is provided for the sample in this section.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text states: \"Students completed an online survey\" and refers to \"their class's first exam\" and \"Chemistry course\", indicating a student sample.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No sample size (N) is explicitly reported for this study in the provided text.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "This section describes measures and procedures, but no correlation coefficients between Performance Goal Orientation and performance adaptation are reported.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": []}",
+      "evidence_source": "No correlation information is provided in this section.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section describes the measures and procedures for a study, which is implied to be distinct from 'Study 1' mentioned for comparison ('identical to those from Study 1'). Since no explicit number is given for this study, it is referred to as 'Study X'.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the measures and procedures for a study (referred to as 'Study X' as it contrasts with 'Study 1'). Students completed an online survey assessing MAP and PAP goal measures, learning strategies, utility value, and instructional importance accuracy. Objective exam scores were collected as a measure of performance adaptation.",
+      "evidence_source": "Summary of the '3.1.2. Measures and procedure' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

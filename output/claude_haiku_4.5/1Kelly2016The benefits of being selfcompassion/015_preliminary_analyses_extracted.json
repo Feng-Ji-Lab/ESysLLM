@@ -1,0 +1,197 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this section.",
+      "warning": "Country not specified in the provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size is explicitly stated in this section. The text refers to 'participants' and 'study days' but does not provide a total N.",
+      "warning": "Sample size not provided in the preliminary analyses section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'daily diary variables' but does not specify whether data were collected via paper-and-pencil or online methods.",
+      "warning": "Survey method not explicitly stated."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information regarding race/ethnicity is provided in this section.",
+      "warning": "Racial/ethnic composition not reported."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in this section.",
+      "warning": "Mean age not reported."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No educational attainment information is provided in this section.",
+      "warning": "Educational level not reported."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While BMI is mentioned as a study variable, no mean BMI value is reported in this section. The text states 'BMI = body mass index' in the table note but does not provide the actual mean value.",
+      "warning": "Mean BMI value not provided in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about where or how participants were recruited is provided in this section.",
+      "warning": "Source of sample not specified."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'body appreciation' as a measured variable but does not specify which instrument (BAS or BAS-2) was used to assess it.",
+      "warning": "Specific body appreciation assessment instrument not identified."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions BMI as a variable but does not specify whether it was self-reported or measured.",
+      "warning": "BMI assessment method not specified."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.5
+        ]
+      },
+      "evidence_source": "At the between-persons level, the text states: 'At the between-persons level, BMI was negatively associated with body appreciation and positively associated with body image concerns.' However, the exact correlation coefficient is not provided numerically in the text. The text indicates a negative association but does not give the specific r value. The value -0.5 is a placeholder indicating a negative correlation was found but the exact coefficient is not stated.",
+      "warning": "Exact correlation coefficient between body appreciation and BMI not numerically provided. Only directional information (negative association) is stated. The specific r value should be obtained from Table 1 if visible."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section does not explicitly identify the number of studies. It appears to be a preliminary analyses section from a single study, but the total number of studies in the paper is not stated in this excerpt.",
+      "warning": "Number of studies cannot be determined from this section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this section.",
+      "warning": "Publication type not specified."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This preliminary analyses section presents descriptive statistics and intraclass correlations for daily diary variables, showing that body appreciation and body image concerns had high between-persons variance (>75%), indicating stability across the week. Correlation analyses at both within-persons and between-persons levels revealed that BMI was negatively associated with body appreciation and positively associated with body image concerns at the between-persons level, while self-compassion was positively related to body appreciation and intuitive eating.",
+      "evidence_source": "Entire preliminary analyses section describing Table 1 results and correlation patterns.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not explicitly state the country where the study was conducted.",
+      "warning": "Country information is not available in the provided text or table."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify the total number of participants in the study.",
+      "warning": "Sample size information is not available in the provided text or table."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text mentions 'daily diary variables' but does not explicitly state whether data collection was via paper-and-pencil or online methods.",
+      "warning": "Survey method is not explicitly stated in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain demographic information about racial/ethnic composition of participants.",
+      "warning": "Racial/ethnic demographic data is not available in the provided text or table."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report the mean age of participants.",
+      "warning": "Mean age information is not available in the provided text or table."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not provide information about participants' educational attainment.",
+      "warning": "Educational attainment data is not available in the provided text or table."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          22.62
+        ]
+      },
+      "evidence_source": "Table 1, rightmost column 'Mean (SD)' shows BMI mean of 22.62 (3.41). The table note states 'BMI = body mass index' and the BMI row displays the mean and standard deviation across the sample.",
+      "warning": "Only the overall mean BMI is provided; no gender-specific breakdowns are available in the table."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether participants were recruited from community, college, or primary/secondary/high school settings.",
+      "warning": "Source of sample information is not available in the provided text or table."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text references 'body appreciation' as a study variable but does not specify whether the BAS or BAS-2 instrument was used.",
+      "warning": "The specific body appreciation assessment instrument (BAS vs. BAS-2) is not identified in the provided text or table."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether BMI was self-reported or measured.",
+      "warning": "BMI assessment method (self-reported vs. measured) is not stated in the provided text or table."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.25
+        ]
+      },
+      "evidence_source": "Table 1, intersection of BMI row and Body appreciation column. The cell shows '\u2212.25' with a green highlight. The table note states 'Between-persons correlations are above the diagonal and within-persons correlations are below the diagonal.' The BMI-Body appreciation correlation of \u22120.25 is located above the diagonal, indicating this is a between-persons correlation. The significance marker is not extracted; only the numeric value \u22120.25 is reported.",
+      "warning": "The table note indicates 'Because BMI is a between-person variable assessed only once, there is no ICC and there are no correlations between BMI and within-person variables.' The reported correlation is between-persons only. No gender-specific correlations are provided in this table."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text describes a single study with daily diary data collection across multiple days. No explicit mention of multiple studies (e.g., 'Study 1', 'Study 2', 'Experiment 1') is present in the text.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not indicate whether this is from a journal article or dissertation.",
+      "warning": "Publication type is not specified in the provided text or table."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents preliminary analyses of a daily diary study examining relationships between body appreciation, BMI, self-compassion, intuitive eating, body image concerns, and negative affect. Table 1 displays between-persons correlations (above diagonal) and within-persons correlations (below diagonal), showing that BMI was negatively associated with body appreciation (r = \u22120.25) at the between-persons level, while various daily-level associations are reported for within-persons analyses.",
+      "evidence_source": "Text content describing preliminary analyses and Table 1 caption and data.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1: Between- and within-persons correlations between study variables, intraclass correlations, and variable means.",
+      "evidence_source": "The table title and caption as presented at the top of Table 1.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Kelly2016The benefits of being selfcompassion/tables/1Kelly2016The benefits of being selfcompassion_p004_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

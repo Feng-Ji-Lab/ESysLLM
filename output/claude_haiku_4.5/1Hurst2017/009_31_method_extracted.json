@@ -1,0 +1,223 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "United Kingdom"
+        ]
+      },
+      "evidence_source": "The text mentions 'APA and BPS ethical guidelines' (BPS = British Psychological Society), indicating the study was conducted in the United Kingdom. Additionally, the institutional context and ethical procedures align with UK-based research.",
+      "warning": "Country is inferred from ethical guidelines reference (BPS) rather than explicitly stated. The text does not explicitly name the country."
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "United Kingdom"
+        ]
+      },
+      "evidence_source": "The text states 'Following institutional ethical approval, 215 female students (17\u201330 years, M = 19.77 years, SD = 2.0; 86% white) were recruited from a university participant pool to complete an online questionnaire. The ethical procedures of the study complied fully with APA and BPS ethical guidelines.' The mention of BPS (British Psychological Society) ethical guidelines indicates this is a UK study. However, the text does not explicitly state the country. Based on the context clues (BPS guidelines), this appears to be UK, but this is an inference.",
+      "warning": "Country not explicitly stated in text. Inferred from BPS ethical guidelines reference."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          215
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            215
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            215
+          ]
+        }
+      },
+      "evidence_source": "The text explicitly states: '215 female students (17\u201330 years, M = 19.77 years, SD = 2.0; 86% white) were recruited from a university participant pool.' The note also confirms 'N=215, apart from BMI correlations (N=198).' For the purposes of this extraction, the primary sample size is 215.",
+      "warning": "Note indicates N=198 for BMI correlations specifically, but overall sample is 215."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "online"
+        ]
+      },
+      "evidence_source": "The text states: 'were recruited from a university participant pool to complete an online questionnaire.'",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          86
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            86
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            86
+          ]
+        }
+      },
+      "evidence_source": "The text explicitly states: '215 female students (17\u201330 years, M = 19.77 years, SD = 2.0; 86% white) were recruited from a university participant pool.'",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          19.77
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            19.77
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            19.77
+          ]
+        }
+      },
+      "evidence_source": "The text explicitly states: '215 female students (17\u201330 years, M = 19.77 years, SD = 2.0; 86% white) were recruited from a university participant pool.'",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          100
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            100
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            100
+          ]
+        }
+      },
+      "evidence_source": "The text states that participants were 'female students...recruited from a university participant pool.' Since all participants were recruited from a university, they are all college students. Therefore, 100% have college or higher education experience.",
+      "warning": "Inferred from 'university participant pool' and 'female students' context. The text does not explicitly state the percentage, but the source of recruitment (university) indicates all participants are college students."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The table (Table 1) shows BMI descriptive statistics: Mean = 22.38, SD = 4.28. However, the extraction request asks for Mean BMI of participants, and Table 1 provides this information.",
+      "warning": "The table shows Mean BMI = 22.38, SD = 4.28, but this is from Table 1 which is a correlation matrix. The text section provided does not explicitly state the mean BMI in the narrative. The table is referenced but the mean BMI value is available in Table 1."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "college"
+        ]
+      },
+      "evidence_source": "The text states: '215 female students...were recruited from a university participant pool.' This indicates the sample source is a college/university.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "Table 1 shows row 9 labeled 'BAS \u2013 Body Appreciation Scale' with mean = 2.94, SD = 0.82. The note confirms 'BAS \u2013 Body Appreciation Scale.' This indicates the Body Appreciation Scale (BAS) was used.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state whether BMI was self-reported or measured. Table 1 includes BMI data but does not specify the assessment method.",
+      "warning": "Assessment method for BMI (self-reported vs. measured) is not stated in the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          -0.19
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            -0.19
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            -0.19
+          ]
+        }
+      },
+      "evidence_source": "Table 1, row 9 (BAS \u2013 Body Appreciation Scale) and column 12 (BMI). The correlation coefficient is -0.19 (shown in green highlight in the table). The note indicates this is for Study 1 with N=198 for BMI correlations. The asterisk (*) indicates p < .05, but the numeric value extracted is -0.19.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Table 1 is titled 'Zero-order correlations and descriptive statistics for exercise goals, exercise regulations, body image and covariates (Study 1).' This explicitly indicates Study 1, suggesting at least one study. The text provided is from the Method section of Study 1.",
+      "warning": "Only Study 1 is mentioned in the provided text. The presence of 'Study 1' in the table title suggests there may be additional studies in the full paper, but only one study is described in the provided text."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not indicate whether this is a journal article or dissertation. The text appears to be from a research paper but the publication type is not specified.",
+      "warning": "Publication type cannot be determined from the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "Study 1 recruited 215 female university students (M age = 19.77 years, 86% white) via an online questionnaire. Participants completed measures including the Body Appreciation Scale (BAS) and provided BMI data (N=198 for BMI correlations). Table 1 presents zero-order correlations and descriptive statistics showing a significant negative correlation between body appreciation (BAS) and BMI (r = -0.19, p < .05).",
+      "evidence_source": "Synthesized from the Method section text and Table 1 caption and data.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1: Zero-order correlations and descriptive statistics for exercise goals, exercise regulations, body image and covariates (Study 1).",
+      "evidence_source": "The table title as it appears in the provided image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Hurst2017/tables/1Hurst2017_p002_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

@@ -1,0 +1,132 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "reason": "The overwhelming majority of candidates explicitly state or strongly imply that the paper describes a single study, using phrases such as 'a single study', 'the study', 'our experiment', or 'Experiment 1' without mentioning subsequent experiments. Candidates suggesting a value of 2 either refer to external studies or provide no supporting evidence for multiple studies within the paper."
+  },
+  "Effects": {
+    "extract_value": {
+      "Experiment 1": [
+        0
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason": "The paper describes a single study, as indicated by the context and the consistent reporting across candidates. Candidate [0] explicitly names this study 'Experiment 1'. All other candidates refer to 'Study X' or 'Experiment X' or 'Our experiment/study', which, given the single-study context, are understood to refer to the same 'Experiment 1'. All candidates consistently report that no correlation coefficients (effect sizes) were found, resulting in a value of 0 effects for this study. Therefore, all candidates are merged under 'Experiment 1' with an extract_value of [0]."
+  },
+  "IQ Aspect": {
+    "extract_value": {
+      "Experiment 1": [
+        "Gf"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "reason": "The paper describes a single study, as indicated by the context and consistent references across candidates to 'Experiment 1', 'Study X', 'Our study', or 'The present research'. Candidate 0 explicitly names the study 'Experiment 1', which is used as the canonical name. All valid candidates consistently identify 'Gf' (fluid intelligence) as the measured IQ aspect. Candidate 2 was excluded because its section summary and evidence clearly indicate it refers to 'Nusbaum & Silvia (2011a, Study 2)', which is an external study and not part of the single study conducted in the current paper."
+  },
+  "Measure IQ": {
+    "extract_value": {
+      "Single study": [
+        "Fluid Intelligence"
+      ]
+    },
+    "best_indices": [
+      1,
+      2,
+      3
+    ],
+    "reason": "The paper describes a single study. Candidates 1, 2, and 3 consistently indicate that 'Fluid Intelligence' was measured. Candidate 1 explicitly states 'Measures of Fluid Intelligence' as the highest level, while candidates 2 and 3 refer to 'Fluid Intelligence' directly, which is a more concise and widely accepted term for this type of assessment. The specific tasks mentioned (letter sets, number series, series completion, visuospatial reasoning, paper folding) are components of fluid intelligence, not overarching IQ tests themselves. Therefore, 'Fluid Intelligence' is the appropriate highest-level assessment tool. Candidate 0 is excluded as it provides no specific assessment tool."
+  },
+  "SAMPLE SIZE": {
+    "extract_value": {
+      "Single study": [
+        141
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "The paper describes a single study, as indicated by the context and the consistent reporting across all candidates. All candidates (0, 1, 2) reliably state the sample size as 141. Candidate 0 explicitly mentions 'A final sample of 141 college students participated in this study' in the Participants and Design section. Candidates 1 and 2, from the 'Intelligence as a Moderator' section and a table caption respectively, also confirm 'n = 141'. There are no conflicting values or multiple distinct studies to differentiate, so all values are merged into a single list for 'Single study'."
+  },
+  "Mage": {
+    "extract_value": {
+      "Single study": [
+        19.6
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper describes a single study, as indicated by the context and the section summary of candidate [0]. Candidate [0] provides the mean age of participants as 19.6 years from a reliable 'Participants and Design' section. No other candidates or conflicting information were found."
+  },
+  "IQ modality": {
+    "extract_value": {
+      "Single study": [
+        "both"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper describes a single study. Candidate 0 explicitly states that the fluid intelligence measures included a 'letter sets task' (verbal) and other tasks (number series, series completion, visuospatial reasoning) which are figural. This detailed breakdown leads to the conclusion that both verbal and figural components were used, thus the modality is 'both'. Candidates 1 and 2 infer 'figural' for 'Letter Sets' based on it being a Gf subscale, which is 'typically assessed using figural or abstract reasoning tasks'. However, Candidate 0 provides a more precise categorization of 'letter sets' as verbal. Therefore, Candidate 0 is preferred as it offers a more accurate and detailed assessment, correctly identifying both verbal and figural components, which aligns with the aggregation rule to report 'both' if both types are present."
+  },
+  "Creativity Measures": {
+    "extract_value": {
+      "Single study": [
+        "CAQ"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study, as indicated by the context. Candidate 0 explicitly states 'Study X' and the section summary confirms 'a single study'. Therefore, 'Study X' is mapped to 'Single study'. The creativity measure identified is 'CAQ'."
+  },
+  "Domain classified": {
+    "extract_value": {
+      "Single study": [
+        "Total"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All candidates consistently report 'Total' as the domain classification for creativity. The context indicates there is a single study in the paper, so 'Study X' from the candidates is resolved to 'Single study'. All candidates provide consistent information and are therefore included."
+  }
+}

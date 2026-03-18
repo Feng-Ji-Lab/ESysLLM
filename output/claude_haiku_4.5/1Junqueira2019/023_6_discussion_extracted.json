@@ -1,0 +1,111 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Brazil"
+        ]
+      },
+      "evidence_source": "The text states 'This is the first study to examine the psychometric properties of BSRS scores in non-British women' and later 'the study was conducted with university women from a single region in Brazil.'",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide an explicit total sample size. It mentions 'participants' and percentages (79.4%, 65.5%) but does not state the total N.",
+      "warning": "Sample size not explicitly stated in this Discussion section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not describe the survey method used.",
+      "warning": "Survey method not mentioned in this Discussion section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about racial/ethnic composition is provided in this Discussion section.",
+      "warning": "Racial/ethnic demographics not reported."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not provide mean age of participants.",
+      "warning": "Mean age not stated in this Discussion section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "The text refers to 'Brazilian university women' and 'female university students,' indicating all participants were university students, which implies 100% college or higher education.",
+      "warning": "Inferred from description as 'university women' - all participants appear to be university students."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion mentions that 'breast size dissatisfaction scores were significantly correlated with BMI' but does not report the mean BMI of participants.",
+      "warning": "Mean BMI not provided in this Discussion section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The text states 'the study was conducted with university women from a single region in Brazil' and references 'female university students,' indicating the sample was recruited from a college/university setting.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text discusses 'BSRS scores' (Breast Size Rating Scale) and 'BSRS-derived scores' throughout. While BSRS is not BAS or BAS-2, the extraction request asks for Assessment of BA (Body Appreciation). The text does not mention BAS or BAS-2 specifically. However, the study appears to focus on breast size dissatisfaction, not body appreciation per se.",
+      "warning": "The study uses BSRS (Breast Size Rating Scale), not BAS or BAS-2. This field may not be applicable to this study's focus on breast size dissatisfaction rather than general body appreciation."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion mentions that breast size dissatisfaction was 'significantly correlated with BMI' but does not specify whether BMI was self-reported or measured.",
+      "warning": "Method of BMI assessment (self-reported vs. measured) not specified in this Discussion section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The Discussion mentions that 'breast size dissatisfaction scores were significantly correlated with BMI' but does not provide the specific correlation coefficient value.",
+      "warning": "Specific correlation coefficient between body appreciation/breast size dissatisfaction and BMI is not provided in this Discussion section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to 'This is the first study' and 'the present study' throughout, indicating a single study. References to 'Swami et al. (2015), Studies 2 and 3' are citations to other researchers' work, not part of the current paper.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not explicitly state whether this is a journal article or dissertation.",
+      "warning": "Publication type not determinable from this Discussion section alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Discussion section presents findings from a single study examining the psychometric properties of the Breast Size Rating Scale (BSRS) in Brazilian university women. The study found that BSRS scores have adequate convergent validity and test-retest reliability, with 79.4% of participants dissatisfied with their breast size and 65.5% desiring larger breasts\u2014notably higher than comparable rates in previous research. The authors acknowledge limitations including the single-region sample and lack of discriminant/predictive validity measures, while highlighting the potential utility of the BSRS in Portuguese for future research on breast size dissatisfaction in Brazilian women.",
+      "evidence_source": "Summary derived from the entire Discussion section text provided.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

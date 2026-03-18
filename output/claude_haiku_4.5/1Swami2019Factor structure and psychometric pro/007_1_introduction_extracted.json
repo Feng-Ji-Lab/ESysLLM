@@ -1,0 +1,100 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This is an introductory section that reviews literature across multiple countries (U.S., Canada, Hong Kong, Iran, Netherlands, UAE, Serbia, China, France, Japan, Romania, Brazil, Denmark, Portugal, Sweden, Turkey, Poland, Spain). No single study is being described with a specific country of origin.",
+      "warning": "This is a literature review/introduction section, not a specific study section. Multiple countries are mentioned in citations but no single study is identified."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This is an introductory/literature review section. While multiple studies are cited, no specific sample sizes are provided for any single study being reported.",
+      "warning": "No sample sizes reported in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This is a literature review section. No survey methods are described for any specific study.",
+      "warning": "No survey methods reported in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This is a literature review section. No demographic information about racial/ethnic composition is provided.",
+      "warning": "No racial/ethnic demographic data reported in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This is a literature review section. While various sample types are mentioned (college students, adolescents, teachers, community samples), no specific mean ages are reported.",
+      "warning": "No mean age data reported in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This is a literature review section. While college and community samples are mentioned, no specific percentages with college or higher education are provided.",
+      "warning": "No education level percentages reported in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This is a literature review section. No mean BMI values are reported for any specific study.",
+      "warning": "No BMI data reported in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This is a literature review section. While various sample sources are mentioned (college samples, community samples, adolescents, teachers), these are references to cited studies, not a specific study being reported.",
+      "warning": "This section reviews multiple studies with different sample sources but does not report a single study."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS",
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The introduction discusses the Body Appreciation Scale (BAS) and Body Appreciation Scale-2 (BAS-2) as instruments used across multiple studies cited in the literature. The text states: 'The construct was originally measured using the Body Appreciation Scale (BAS), a 13-item measure' and later 'Tylka and Wood-Barcalow (2015b) refined the BAS by deleting several poor-performing items and developing additional items that better reflected the concept of positive body image, as contemporaneously understood. The result of this refinement was the Body Appreciation Scale-2 (BAS-2), a 10 item measure.' Both instruments are discussed as assessment tools used in the reviewed literature.",
+      "warning": "This is a literature review section describing instruments used across multiple studies, not reporting a specific study's assessment method."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This is a literature review section. While BMI is mentioned as a variable examined in various studies (e.g., 'Associations between BAS-2 scores and body mass index (BMI) are less clear-cut'), no specific information about how BMI was assessed (self-reported vs. measured) is provided.",
+      "warning": "No specific BMI assessment method reported in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "This is a literature review section. While the text mentions that 'Associations between BAS-2 scores and body mass index (BMI) are less clear-cut: while most studies have reported significant and negative correlations (Alleva et al., 2016; Ib\u00e1nez et al., 2017; Razmus & Razmus, 2017; Swami, Garc\u00eda et al., 2017), some studies have reported no significant correlations in men (Jovic et al., 2017; Swami & Ng, 2015; Swami, Barron et al., 2016) and women (Vally et al., 2018), or significant positive correlations in men (Atari, 2016)', no specific correlation coefficients are provided.",
+      "warning": "This section summarizes findings across multiple studies but does not report specific correlation coefficients for any single study."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This is an introductory/literature review section that cites numerous studies but does not report on a specific study or set of studies being analyzed. The section reviews the literature on body appreciation and the BAS/BAS-2 instruments across many different studies and countries.",
+      "warning": "This is a literature review/introduction section, not a section reporting on specific studies."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "This is an introductory section. No publication type information is provided for any specific study being reported.",
+      "warning": "This is a literature review section, not a specific study report."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This is an introductory literature review section that discusses the development and validation of body appreciation measures, specifically the Body Appreciation Scale (BAS) and its refined version, the Body Appreciation Scale-2 (BAS-2). The section reviews evidence for the one-dimensional factor structure of BAS-2 across multiple countries and cultural groups, examines sex invariance and differences, and summarizes construct validity evidence showing positive associations with well-being measures and mixed associations with BMI. No specific study data is reported in this section; rather, it synthesizes findings from numerous cited studies.",
+      "evidence_source": "Entire introduction section (paragraphs 1-4)",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

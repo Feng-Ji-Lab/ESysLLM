@@ -1,0 +1,212 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason": "All six candidates consistently report a value of 1, indicating this paper contains a single study. The evidence comes from multiple sections: the title/authors (Candidate 0), abstract describing one study with specific sample sizes (Candidate 1), introduction presenting one planned study (Candidate 2), participants section describing one study with N=540 (Candidate 3), measures section describing one study's instruments (Candidate 4), and discussion section analyzing findings from one study (Candidate 5). Despite the \"No evidence\" labels in the candidates, the contextual information across all sections clearly demonstrates this is a single-study paper examining the factor structure of the Body Appreciation Scale among Indonesian women and men. There are no mentions of multiple studies, replications, or separate investigations within the paper."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0
+    ],
+    "reason": "The single candidate indicates the publication type is \"journal articles\". Although the evidence label shows \"No evidence\", this is the only available candidate for the Publication type field. The value \"journal articles\" is one of the allowed enum values and represents a standard academic publication format. Without conflicting candidates, this is the most reliable source for determining the publication type."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "Indonesia"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "reason": "All six candidates consistently report Indonesia as the country where the study was conducted. The context confirms this is a single-study paper examining the factor structure of the Body Appreciation Scale among Indonesian women and men. Evidence spans multiple sections: the title (Candidate 0) states 'among Indonesian women and men'; the abstract (Candidate 1) specifies 'Jakarta, Indonesia'; the introduction (Candidate 2) describes the planned study in Indonesia; the participants section (Candidate 3) confirms 'Jakarta, Indonesia' with N=540; the measures section (Candidate 4) mentions the Indonesian translation of the BAS; the procedure section (Candidate 5) describes recruitment 'from public locations in Jakarta'; and the discussion (Candidate 6) references 'the Indonesian context' and 'Jakarta'. All candidates refer to the same single study, so they are merged into one entry. The value is consolidated as ['Indonesia'], with Jakarta being the specific city but Indonesia being the country-level answer requested by the field definition."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "reason": "All nine candidates consistently report the Body Appreciation Scale (BAS) as the instrument used to assess body appreciation. The paper is a single-study investigation examining the factor structure of the BAS among Indonesian women and men in Jakarta. Evidence spans multiple sections: title/authors (Candidate 0), abstract describing the study with N=262 women and 278 men (Candidate 1), introduction presenting the planned study (Candidate 2), measures section explicitly stating 'Body Appreciation Scale (Avalos et al., 2005), a 13-item measure' (Candidate 3), statistical analyses section referencing 'the Indonesian BAS' (Candidate 4), female sample results (Candidate 5), male sample results (Candidate 6), table showing factor loadings for the BAS (Candidate 7), and discussion section analyzing 'the Indonesian version of the BAS' (Candidate 8). All candidates refer to the same single study with no contradictions. The instrument is consistently identified as BAS (not BAS-2), a 13-item measure. No multiple studies, replications, or separate investigations are present in the paper."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        540
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates (Abstract and Participants sections) report identical and consistent values for a single study: N=540 total participants (262 women, 278 men) from Jakarta, Indonesia. The context confirms this is a single-study paper examining the factor structure of the Body Appreciation Scale. Both sources are reliable (Abstract and Method/Participants sections are primary sources for sample information). The values are perfectly consistent across sources, so they are merged into a single entry. The gender breakdown (female: 262, male: 278) sums correctly to the total (540).",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          278
+        ]
+      },
+      "female": {
+        "Single study": [
+          262
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          540
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "community"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All three candidates (Abstract, Procedure, and Discussion sections) consistently report the same value: 'community' as the source of sample. The paper contains a single study examining the Body Appreciation Scale among Indonesian women and men in Jakarta. Participants were recruited via convenience sampling from public locations (marketplaces and shopping complexes) in Jakarta, which clearly indicates a community-based sample rather than college or school settings. All candidates are in agreement, and the evidence from multiple sections (Abstract describing the sample location, Procedure detailing recruitment method, and Discussion acknowledging the opportunistic sampling approach) all point to the same conclusion. No conflicts or contradictions exist across candidates."
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        43.19
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Single candidate found reporting mean age of participants. The paper contains one study conducted in Jakarta, Indonesia with N=540 participants (262 women, 278 men). The mean age is 43.19 years (SD=12.95, range 19-75 years) as reported in the Participants section. This is the only source for this field and is reliable as it comes from the Method/Participants section where demographic information is typically reported. No gender-specific mean ages were provided in the candidate, only the overall mean.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          43.19
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        22.08
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Single candidate found reporting Mean BMI of participants. The paper contains one study conducted in Jakarta, Indonesia with N=540 participants (262 women, 278 men). The mean BMI value of 22.08 kg/m\u00b2 is extracted from the Participants section, which is a reliable source for demographic information. The value is presented with supporting statistics (range: 13.52-35.65 kg/m\u00b2, SD=4.38), confirming its reliability. No gender-specific BMI values are provided in the candidate, only the overall mean. The 'Study X' label is resolved to 'Single study' based on the context that this paper reports only one study.\"",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          22.08
+        ]
+      }
+    }
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "measured"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study examining the Body Appreciation Scale among Indonesian participants. Candidate 0 from the Measures section provides clear evidence that BMI was assessed through measured values: participants' height and weight were collected directly and used to compute BMI, rather than relying on self-reported data. This is the most reliable source for determining assessment methodology, as the Measures section explicitly describes the data collection procedures. The 'Study X' label in the candidate is resolved to 'Single study' based on the contextual information confirming this is a single-study paper."
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "paper-and-pencil"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study as confirmed by the context. Candidate 0 from the Procedure section (011_procedure_extracted.json) provides explicit evidence that participants 'completed a paper-and-pencil survey'. This is the most reliable source for survey method information, as the Procedure section directly describes the data collection methodology. The value 'paper-and-pencil' is extracted and assigned to the single study in the paper."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        -0.3,
+        -0.22
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Candidate [0] from 016_further_analyses_extracted.json provides precise, gender-specific correlation coefficients between General Body Appreciation and BMI: r = -0.30 for women and r = -0.22 for men, both statistically significant (p < .001). Candidate [1] from 017_discussion_extracted.json mentions the negative correlation qualitatively but does not provide the specific coefficient values. Following the hierarchy of source reliability (Results/Tables > Discussion), Candidate [0] is selected as the best source. The context confirms this is a single-study paper examining the Indonesian BAS among a community sample from Jakarta (N=540). The gender-specific values are preserved as reported, with no averaging needed since they represent distinct subgroups (female vs. male) rather than multiple subscales or overlapping samples.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          -0.22
+        ]
+      },
+      "female": {
+        "Single study": [
+          -0.3
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    }
+  }
+}

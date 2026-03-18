@@ -1,0 +1,99 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Brazil"
+        ]
+      },
+      "evidence_source": "Ethics approval section states: 'Ethics approval was obtained from Human Research Ethics Committee of University of Campinas, in S\u00e3o Paulo, Brazil'",
+      "warning": "Study name is inferred as 'Study X' since the section does not explicitly name the study. The country is clearly identified as Brazil from the ethics approval statement."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is an ethics compliance section and does not contain information about sample size or number of participants.",
+      "warning": "No sample size data available in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is an ethics compliance section and does not contain information about survey methodology.",
+      "warning": "No survey method data available in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is an ethics compliance section and does not contain demographic information about participant race/ethnicity.",
+      "warning": "No racial/ethnic demographic data available in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is an ethics compliance section and does not contain information about participant age.",
+      "warning": "No age data available in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is an ethics compliance section and does not contain information about participant education level.",
+      "warning": "No education data available in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is an ethics compliance section and does not contain information about participant BMI.",
+      "warning": "No BMI data available in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is an ethics compliance section and does not contain information about where or how participants were recruited.",
+      "warning": "No sample source data available in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is an ethics compliance section and does not contain information about body appreciation assessment instruments.",
+      "warning": "No body appreciation assessment data available in this section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is an ethics compliance section and does not contain information about BMI assessment methods.",
+      "warning": "No BMI assessment method data available in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text is an ethics compliance section and does not contain statistical data about correlations.",
+      "warning": "No correlation data available in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is an ethics compliance section and does not explicitly state the number of studies conducted.",
+      "warning": "Cannot determine number of studies from this ethics compliance section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is an ethics compliance section and does not contain publication type information.",
+      "warning": "No publication type data available in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section contains ethics compliance information for a study conducted in Brazil. The study obtained ethics approval from the Human Research Ethics Committee of University of Campinas in S\u00e3o Paulo, Brazil (protocol number: 08009212.9.0000.5404), and all participants completed a free and informed consent form. No study-specific demographic or methodological data is provided in this section.",
+      "evidence_source": "Entire 'Compliance with ethical standards' section",
+      "warning": "This is an ethics/compliance section, not a methods or results section. It provides minimal extractable data for the requested fields."
+    },
+    "_pass_type": "text_only"
+  }
+]

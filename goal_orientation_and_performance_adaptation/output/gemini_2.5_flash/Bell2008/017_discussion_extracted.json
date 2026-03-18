@@ -1,0 +1,497 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text is a 'Discussion' section of a research paper, citing other research (e.g., 'Ford & Fisher, 1997; Salas & Cannon-Bowers, 2001'), which indicates it is a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No mention of financial support, grants, or funding agencies in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from the publication type being a journal article, which is typically peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses 'self-regulatory process pathways,' 'learning,' 'performance,' and 'adaptability,' but does not mention specific performance goal orientations (Avoid, Prove, Global).",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'adaptive performance' and 'adaptability' but does not specify the assessment method(s) used (e.g., self-report, other people, objective, mixed).",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'adaptive performance' and 'adaptability' but does not specify whether the outcome is based on subjective ratings or objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'adaptive performance' and 'adaptability' but does not specify the specific assessment method used (e.g., self-report, other people, objective).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the measurement method of goal orientation (e.g., VandeWalle) is provided in the text.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information (mean, range, SD, median, or subgroups) is reported in the provided text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is reported in the provided text to impute a mean age.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the sex composition of the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the percentage of men in the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the country where the sample was collected is provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about whether the sample is a student sample or other is provided in the text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size (N) is reported in the provided text.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficients between Performance Goal Orientation and performance adaptation are reported in this discussion section.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation information is provided in the text.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to 'the current study' (singular) and 'Our goal in the current study was to integrate and extend this research'. It does not explicitly state that this paper contains multiple studies.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This discussion section highlights significant changes in work and organizations over the past decade, emphasizing the increased reliance on workplace learning and the growth of e-learning and self-managed learning. The authors introduce 'the current study' as an effort to integrate and extend research on active learning, self-regulation, learning, performance, and adaptability, promising to discuss key results and implications.",
+      "evidence_source": "Summary of the provided text content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text is a 'Discussion' section of a research paper, referencing other journal articles (e.g., Ford & Fisher, 1997; Salas & Cannon-Bowers, 2001), which implies the current paper is also a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of grants, funding agencies, sponsored projects, or explicit financial support was found in the provided 'Discussion' section.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from the publication type (journal article), which is typically peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses 'active learning,' 'self-regulation,' 'learning,' 'performance,' and 'adaptability,' but does not explicitly mention performance goal orientation (PGO), avoid performance goal orientation (APGO), or prove performance goal orientation (PPGO). The figure also does not depict PGO.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'adaptive performance' and 'adaptability' but does not specify the assessment method (self-report, other people, objective, or mixed). The figure's y-axis 'Metacognitive Activity' is not explicitly defined by these codes in the context of performance adaptation.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'adaptive performance' and 'adaptability' but does not specify whether the outcome is based on subjective ratings or objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'adaptive performance' and 'adaptability' but does not specify the specific assessment method (self-report, other people, or objective).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mention of goal orientation measures or attribution to VandeWalle was found in the provided text.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information (e.g., age range, SD, median, or subgroup age details) is reported in the provided 'Discussion' section.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age or other age information is reported in the provided text for imputation.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sex composition information is reported in the provided text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No percentage of men in the sample is reported in the provided text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information for the sample is reported in the provided text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information regarding whether the sample is a student sample or other is reported in the provided text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size (N) is reported in the provided 'Discussion' section for any specific analysis or correlation.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson r correlation coefficient between trait Performance Goal Orientation (PGO) and performance adaptation (PA) is reported in the text or the provided figure. The figure shows an interaction plot, not a correlation matrix.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation between performance goal orientation and performance adaptation was found in the provided text or figure.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to 'the current study' and 'this effort' in the singular, indicating a single study within this paper.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This discussion section summarizes the paper's goal to integrate and extend research on active learning, self-regulatory process pathways, and how training design and individual differences influence learning, performance, and adaptability. It highlights the key results of 'the current study' and discusses implications for future research and practice. The text refers to a single study.",
+      "evidence_source": "The provided text content.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Figure 4. Interaction between exploratory learning and cognitive ability on trainees\u2019 metacognitive activity.",
+      "evidence_source": "The caption provided with Figure 4.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Bell2008\\figures\\Bell2008_p014_fig00.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_0"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text is a 'Discussion' section, which is a standard component of a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No explicit mention of financial support, grants, or funding agencies in the provided 'Discussion' section.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text is a 'Discussion' section of what appears to be a journal article, which are typically peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Avoid\"]}",
+      "evidence_source": "Figure 6 caption: 'Interaction between error framing and trait avoid orientation on state avoid orientation.' The x-axis is labeled 'Low Trait Avoid' and 'High Trait Avoid', and the y-axis is 'State Avoid Orientation'. This indicates an 'Avoid' performance goal orientation.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The figure's y-axis is 'State Avoid Orientation', which is a measure of goal orientation, not performance adaptation. The text mentions 'adaptability' as an outcome but provides no specific measurement method for it in the current study.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No information provided regarding the assessment method (subjective/objective) for performance adaptation.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No information provided regarding the specific assessment method for performance adaptation.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text and figure refer to 'trait avoid orientation' and 'state avoid orientation' but do not mention VandeWalle or any specific goal orientation scale.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information is reported in the provided text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No age information is reported in the provided text.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No sex composition information is reported in the provided text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No percentage of men is reported in the provided text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No country information is reported in the provided text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No sample type (student/other) information is reported in the provided text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No sample size (N) is reported in the provided text or figure.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "Figure 6 illustrates an interaction effect of error framing and trait avoid orientation on state avoid orientation. It does not show a direct correlation between Performance Goal Orientation and performance adaptation.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No correlation between Performance Goal Orientation and performance adaptation was extracted from the provided text or figure.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text states, 'Our goal in the current study was to integrate and extend this research...' indicating a single study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This discussion section highlights the changing nature of work, emphasizing the reliance on workplace learning and the growth of e-learning and self-managed learning. The authors state that the goal of 'the current study' was to integrate and extend research on active learning by examining self-regulatory process pathways through which training design and individual differences influence learning, performance, and adaptability. The section concludes by mentioning a discussion of key results and implications.",
+      "evidence_source": "The entire 'Discussion' section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Figure 6. Interaction between error framing and trait avoid orientation on state avoid orientation.",
+      "evidence_source": "The caption directly below Figure 6.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Bell2008\\figures\\Bell2008_p014_fig01.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_1"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text is a 'Discussion' section, which is typical of a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No mention of financial support or grants was found in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "As the text is a 'Discussion' section of what appears to be a journal article, it is inferred to be peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text and Figure 5 refer to 'Mastery Orientation' (e.g., 'trait mastery orientation', 'state mastery orientation'). According to the schema, Mastery Goal Orientation is a Learning Goal Orientation (LGO), which is distinct from Performance Goal Orientation (PGO). The schema explicitly states to 'Select ONLY performance goal orientation (not other constructs)'.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'adaptive performance' and 'adaptability' as outcomes, but does not specify the assessment method (e.g., self-report, other people, objective, or mixed). The figure's y-axis, 'State Mastery Orientation', is not a performance adaptation measure.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No specific assessment method (subjective ratings or objective scores) for performance adaptation is mentioned in the text.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No specific assessment method (self-report, other people, or objective) for performance adaptation is mentioned in the text.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'trait mastery orientation' and 'state mastery orientation' but does not specify the measurement scale (e.g., VandeWalle).",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information was provided in the text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information was provided in the text.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sex composition information was provided in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No percentage of men in the sample was provided in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information for the sample was provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information regarding whether the sample was a student sample or other was provided in the text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size (N) for any correlation coefficient was mentioned in the text.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The figure and text discuss 'Mastery Orientation', which is a Learning Goal Orientation, not a Performance Goal Orientation (PGO). The schema explicitly states to 'Select ONLY performance goal orientation (not other constructs)'. Therefore, no relevant correlation between PGO and PA can be extracted.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation between Performance Goal Orientation and Performance Adaptation was found to extract information for.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text states, 'Our goal in the current study was to integrate and extend this research...' indicating a single study within this paper.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This discussion section outlines significant changes in work and organizations, emphasizing the increased reliance on workplace learning and the shift towards e-learning and self-managed learning. It introduces active learning approaches and states that the current study aimed to integrate and extend research by examining self-regulatory process pathways that influence learning, performance, and adaptability.",
+      "evidence_source": "The entire provided text content of the 'Discussion' section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Figure 5. Interaction between error framing and trait mastery orientation on state mastery orientation.",
+      "evidence_source": "The caption directly below the provided image.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Bell2008\\figures\\Bell2008_p014_fig02.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_2"
+  }
+]

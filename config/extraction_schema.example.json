@@ -1,0 +1,143 @@
+{
+    "value_definitions": [
+        {
+            "name": "Author",
+            "type": "string",
+            "definition": "Author name(s) of the study or paper. Extract from the author line near the main title, not from the abstract, introduction, or citations."
+        },
+        {
+            "name": "Year",
+            "type": "integer_or_string",
+            "definition": "Publication year of the study or paper."
+        },
+        {
+            "name": "Publication type",
+            "type": "enum_or_none",
+            "definition": "Type of publication. Must be exactly one of: \"journal articles\" or \"dissertation\".",
+            "allowed_values": [
+                "journal articles",
+                "dissertation"
+            ]
+        },
+        {
+            "name": "Country",
+            "type": "object",
+            "items_type": "string",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of strings. Where the study was conducted. If a country is stated, return the country name. If only a broad region is stated, return the stated region. But do not state specific part of a country like Midwestern US."
+        },
+        {
+            "name": "Sample",
+            "type": "object",
+            "items_type": "integer",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of integers. Total number of participants in the study."
+        },
+        {
+            "name": "Survey method",
+            "type": "object",
+            "items_type": "enum",
+            "allowed_values": [
+                "paper-and-pencil",
+                "online"
+            ],
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of enum strings ('paper-and-pencil' or 'online'). Method used to collect data. If the description states evidence to infer this, do so but make sure to justify your inference."
+        },
+        {
+            "name": "Percent of white in participants",
+            "type": "object",
+            "items_type": "number",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of numbers (0-100). Percentage of participants identifying as white."
+        },
+        {
+            "name": "Mean age of participants",
+            "type": "object",
+            "items_type": "number",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of numbers. Mean (average) age of participants."
+        },
+        {
+            "name": "Percentage of college or higher of participants",
+            "type": "object",
+            "items_type": "number",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of numbers (0-100). Percentage of participants with college or higher education experience.",
+            "case_rules": {
+                "infer_rule": "If the text says 'The participants were undergraduate students' or something similar, it means that the percentage of participants with college or higher education experience is 100%. However, you should not infer this if you are not sure."
+            }
+        },
+        {
+            "name": "Mean BMI of participants",
+            "type": "object",
+            "items_type": "number",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of numbers. Mean (average) BMI of participants."
+        },
+        {
+            "name": "Source of sample",
+            "type": "object",
+            "items_type": "enum",
+            "allowed_values": [
+                "community",
+                "college",
+                "primary/secondary/ high school"
+            ],
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of enum strings ('community', 'college', 'primary/secondary/ high school'). Where or how participants were recruited."
+        },
+        {
+            "name": "Assessment of BA",
+            "type": "object",
+            "items_type": "enum",
+            "allowed_values": [
+                "BAS",
+                "BAS-2"
+            ],
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of enum strings ('BAS' or 'BAS-2'). Instrument used to assess body appreciation."
+        },
+        {
+            "name": "Assessment of BMI",
+            "type": "object",
+            "items_type": "enum",
+            "allowed_values": [
+                "self-reported",
+                "measured"
+            ],
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of enum strings ('self-reported' or 'measured'). How BMI was assessed. If the description states evidence to infer this, do so but make sure to justify your inference."
+        },
+        {
+            "name": "Correlation between body appreciation and BMI",
+            "type": "object",
+            "items_type": "number",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of numbers (correlation coefficients). Pearson r between Body Appreciation (BAS/BAS-2) and BMI. CAUTION: Select ONLY Body Appreciation (not Functionality/Pride).",
+            "correlation_case_rules": {
+                "Table_attention": "If the caption of the table mentions 'correlation', then it is highly likely that the table contains correlation coefficients so you should carefully check the tables following the table rules for multiple times. Do not quickly judge that the table does not contain correlation coefficients. Similarily, if the text mentions 'correlation', you should carefully check the text. If you still cannot find the correlation coefficients, do not trust your initial extraction. Re-evaluate the image specifically to cross-check the findings. Actively look for missed details, misread characters (e.g., confusing 'O' with '0', or 'I' with '1'), or spatial misinterpretations. List any corrections and based on the rigorous verification, provide the final, verified answer. Also, record all variables' name appearing in the column and row headers in the evidence source and section summary to provide a detailed description of this correlation table",
+                "Table_attention_2": "If the caption of the table mentions 'correlation', and 'Body Appreciation' and 'BMI' (or any other scales related to Body Appreciation and BMI) both appear in the table, then it is 99.99% likely (almost certain) that the table contains correlation coefficients so you should carefully check the tables following the table rules for multiple times. If you still cannot find the correlation coefficients, do not trust your initial extraction. Re-evaluate following the step in 'Table_attention', and based on the rigorous verification, provide the final, verified answer.",
+                "case_1_multiple_subscales": "If multiple BAS or BAS-2 subscale correlations with BMI are reported, compute the arithmetic mean across the subscales and report that mean.",
+                "case_2_gender_specific": "If correlations are reported separately by gender, report separate values for male and female.",
+                "case_3_tables_or_matrices": "Carefully check row/column headers in tables. Ensure you are looking at the intersection of 'Body Appreciation' (not Functionality) and 'BMI'.",
+                "case_4_multiple_subgroups": "If correlations are reported for multiple subgroups of the SAME gender (e.g., 'migrant women' and 'non-migrant women'), you MUST compute the arithmetic mean of their correlations and report that mean as the value for that gender."
+            },
+            "precision_rule": "Do not round extracted correlations. If you compute an average, keep at least 4 decimal places when possible."
+        },
+        {
+            "name": "Confidence Level (low, moderate, high)",
+            "type": "enum",
+            "definition": "Confidence rating for each extracted value.",
+            "allowed_values": [
+                "low",
+                "moderate",
+                "high"
+            ]
+        },
+        {
+            "name": "Confidence Percentage (scale of 0% to 100%)",
+            "type": "number_percent",
+            "definition": "Confidence percentage (0 to 100) for each extracted value."
+        },
+        {
+            "name": "Number of studies",
+            "type": "integer",
+            "definition": "Labels whether you could judge that this paper has multiple studies. Return numeric count of studies found."
+        },
+        {
+            "name": "section_summary",
+            "type": "string",
+            "definition": "2-3 sentences summarizing the content of this section. Explicitly highlight any mention of 'Study 1', 'Experiment 2', or multiple sample subsets to help identify the context."
+        }
+    ]
+}

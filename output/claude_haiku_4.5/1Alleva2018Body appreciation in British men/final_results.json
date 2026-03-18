@@ -1,0 +1,255 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "reason": "All candidates consistently report a value of 1, indicating this paper contains a single study. While Candidate [1] mentions that participants were invited to complete follow-up surveys at 6 and 12 months as part of a \"separate longitudinal study,\" this is explicitly described as separate from the main cross-sectional study being reported. The paper's structure, methodology sections, results tables, discussion, and conclusion all refer to \"Study 1\" or \"a single study\" examining body appreciation in men across sexual orientations. There is no evidence of multiple distinct studies being conducted and reported within this paper itself. The consensus across all candidates strongly supports a count of 1 study."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "United Kingdom"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All three candidates refer to the same single study conducted in the United Kingdom. Candidate [0] identifies the country from the paper title ('British men'). Candidate [1] from the Abstract uses the synonym 'British' referring to the same location. Candidate [2] from the Participants/Method section (most reliable source for study location) explicitly states 'British men' recruited 'via the YMCA in the UK.' All candidates are synonymous references to the same geographic location. Following the synonym handling rule, 'British', 'UK', and 'United Kingdom' are treated as identical. The Method section (Candidate [2]) is the most authoritative source for study location details. The paper contains only 1 study as confirmed by the context, so the output uses 'Single study' as the study_name. Final consolidated value: ['United Kingdom'].\""
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        440
+      ]
+    },
+    "best_indices": [
+      1,
+      2
+    ],
+    "reason": "",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          440
+        ]
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          440
+        ]
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        39.13
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates [0] and [1] report the identical mean age value of 39.13 years for the same single study examining body appreciation in British men. Candidate [0] is from the Abstract (005_abstract_extracted.json) and Candidate [1] is from Table 1 in the Methods section (014_CMNI46_extracted.json). Both sources consistently report the same value (M=39.13, SD=13.76, N=439-440), confirming reliability. The paper contains only one study as confirmed by the context analysis. The value is extracted as a single list item [39.13] for the total sample, with the male gender-specific value also being [39.13] since the sample consisted entirely of men. No female or other gender categories apply to this all-male sample.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          39.13
+        ]
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          39.13
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Study 1": [
+        "community"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "All four candidates consistently report 'community' as the source of sample. Candidates [0], [2], and [3] use the label 'Study X', while Candidate [1] explicitly labels it 'Study 1'. According to the context provided, this paper contains a single study (the follow-up surveys mentioned in Candidate [1] are explicitly described as a separate longitudinal study, not part of the main study being reported). The evidence across all candidates is consistent: participants were recruited from the YMCA (a community organization) and via other community media (social networks, website, etc.) in the UK. This is a British community sample of approximately 439-440 men. All candidates refer to the same single study, so they are merged into one entry labeled 'Study 1' with the value ['community'].\""
+  },
+  "Survey method": {
+    "extract_value": {
+      "Study 1": [
+        "online"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study (Study 1) as confirmed by the context. Candidate [0] from the Participants and Procedure section clearly states that 'Participants completed the study online,' providing direct evidence of the survey method used. This is the most reliable source for this field, as the Participants/Method section is the standard location for methodological details. The mention of follow-up surveys at 6 and 12 months is explicitly described as a separate longitudinal study and does not constitute a distinct study within this paper's main reporting. Therefore, the survey method for Study 1 is 'online'.\""
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates [0] and [1] refer to the same single study (labeled 'Study X' in the candidates, which corresponds to the single study reported in this paper). Candidate [0] provides explicit evidence from the Methods section stating 'The BAS was used for this research because, at the time of recruitment, the BAS-2 had not yet been published.' Candidate [1] provides corroborating evidence from Table 2 (Results section), where the Cronbach's alpha values (.92, .93, .91) and the 1-5 response scale are consistent with the original BAS (13-item measure). Both sources reliably confirm that the Body Appreciation Scale (BAS) was the instrument used to assess body appreciation in this study. No BAS-2 was used. The paper contains only one study examining body appreciation in British men across sexual orientations, so the resolved output contains a single entry with study_name 'Single study' and extract_value ['BAS']."
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Single study": [
+        90.68
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Single candidate found reporting percent of white participants. The paper contains one study examining body appreciation in British men. Candidate [0] from Table 1 (Participants' demographic characteristics) provides the most reliable source, showing 90.68% of the sample (n=399 out of N=440) identified as white. This value is extracted from the Method/Participants section, which is the standard location for demographic data. No gender-specific breakdown is available for this field, so the value is recorded in the 'total' category. No conflicts or contradictions exist, and no subsample merging is required.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          90.68
+        ]
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          90.68
+        ]
+      }
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        67.05
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Single candidate identified from Table 1 (Participants' demographic characteristics). The value 67.05% represents the percentage of participants with college or higher education, calculated from the sum of Diploma (15.45%), Undergraduate (32.50%), and Graduate (19.09%) categories. This is the most precise calculation based on exact counts: (68 + 143 + 84) / 440 \u00d7 100 = 67.05%. The paper contains only one study as confirmed by the context analysis. The candidate value of 66.59% appears to be a rounding artifact; the precise calculation yields 67.05%. This value is extracted from the Method/Participants section (Table 1), which is the most reliable source for demographic information. No gender-specific breakdown is available for this field, so the value is reported in the 'total' category.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          67.05
+        ]
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          67.05
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        25.74
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Single candidate identified from Table 1 (Participants' demographic characteristics) in the Method/Participants section. The paper contains one study examining body appreciation in British men. The mean BMI value of 25.74 is clearly reported in Table 1 with sample size N=440. This is a reliable source from the main results table. No gender-specific BMI breakdowns are provided in the candidate, only the total mean BMI. No conflicting values exist. The 'Study X' label in the candidate is resolved to 'Single study' based on the context that this paper reports only one main cross-sectional study (the separate longitudinal follow-up mentioned is explicitly described as a separate study not reported in this paper).",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          25.74
+        ]
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          25.74
+        ]
+      }
+    }
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study as confirmed by the context. Candidate [0] from the Demographic Items section (2.2.12) clearly indicates that BMI was assessed through self-reported measurement, with participants reporting their height and weight to calculate BMI. This is the most reliable source for this field as it comes from the Method/Participants section where assessment procedures are explicitly described. No conflicting values were found across candidates."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        -0.247
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study examining body appreciation in men across sexual orientations. Candidate [0] provides a clear, explicit correlation between body appreciation and BMI for the male sample (r = -0.247, p < .001) from Section 3.2 titled 'Correlates of body appreciation in men'. This is the only candidate available and represents the primary result for this field. The correlation is reported with appropriate precision and is statistically significant. No gender-split data for females or other groups is available in the paper, so the male value is reported under the gender-specific breakdown while the overall study value reflects the male sample correlation.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          -0.247
+        ]
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          -0.247
+        ]
+      }
+    }
+  }
+}

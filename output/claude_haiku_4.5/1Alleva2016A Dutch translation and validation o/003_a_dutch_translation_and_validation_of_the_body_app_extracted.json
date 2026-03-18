@@ -1,0 +1,105 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Netherlands"
+        ]
+      },
+      "evidence_source": "Title states 'A Dutch translation and validation of the Body Appreciation Scale-2: An investigation with female university students in the Netherlands'",
+      "warning": "Study name not explicitly provided in text; using 'Study X' as placeholder. Country inferred from title reference to 'Netherlands'."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information provided in the given text excerpt.",
+      "warning": "Sample size not stated in the provided text. Only title and author information available."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information provided in the given text excerpt.",
+      "warning": "Survey method not stated in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information about race/ethnicity provided in the given text excerpt.",
+      "warning": "Percent of white participants not stated in the provided text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information provided in the given text excerpt.",
+      "warning": "Mean age not stated in the provided text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "Title states 'female university students in the Netherlands', indicating all participants were university students, which means 100% have college or higher education experience.",
+      "warning": "Percentage inferred from 'university students' designation in title. This is a reasonable inference per the case_rules."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI information provided in the given text excerpt.",
+      "warning": "Mean BMI not stated in the provided text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Title indicates 'female university students in the Netherlands', indicating the sample was recruited from a college/university setting.",
+      "warning": "Source inferred from 'university students' in title."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Title states 'A Dutch translation and validation of the Body Appreciation Scale-2', indicating BAS-2 was used to assess body appreciation.",
+      "warning": "Assessment instrument inferred from title reference to 'Body Appreciation Scale-2'."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported vs. measured) provided in the given text excerpt.",
+      "warning": "Assessment method for BMI not stated in the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficients between body appreciation and BMI provided in the given text excerpt.",
+      "warning": "Correlation data not available in the provided text."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only a title and author line. No explicit mention of multiple studies or experiments is present.",
+      "warning": "Cannot determine number of studies from title and author information alone. Full paper content needed."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information (journal article vs. dissertation) provided in the given text excerpt.",
+      "warning": "Publication type not stated in the provided text. Only title and author information available."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents the title and author information for a study on the Dutch translation and validation of the Body Appreciation Scale-2 (BAS-2) conducted with female university students in the Netherlands. The study involves female university students from a college setting in the Netherlands, with 100% of participants having college-level education. The specific study name, sample size, and detailed methodology are not provided in this excerpt.",
+      "evidence_source": "Title and author line provided in the text.",
+      "warning": "Limited information available; only title and author information provided. Full paper content needed for complete extraction."
+    },
+    "_pass_type": "text_only"
+  }
+]

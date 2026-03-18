@@ -1,0 +1,166 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "United States"
+        ]
+      },
+      "evidence_source": "The text states 'Participants included 333 women attending a large southeastern public university', indicating the study was conducted in the southeastern United States.",
+      "warning": "Only region (southeastern) is explicitly stated; country inferred from context as United States."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          333
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            333
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            333
+          ]
+        }
+      },
+      "evidence_source": "The text explicitly states 'Participants included 333 women attending a large southeastern public university'.",
+      "warning": "All participants are female; no male or other gender participants reported."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "online"
+        ]
+      },
+      "evidence_source": "The text states 'completed measures of mindful eating, family fat talk, body appreciation, and functional body appreciation via an online survey platform'.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No information about racial/ethnic composition of participants is provided in the abstract.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No mean age information is provided in the abstract.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          100
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            100
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            100
+          ]
+        }
+      },
+      "evidence_source": "The text states 'Participants included 333 women attending a large southeastern public university', indicating all participants were undergraduate students at a university, which means 100% had college or higher education experience.",
+      "warning": "Inferred from the statement that all participants were undergraduate students at a university."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No mean BMI value is provided in the abstract. The text mentions 'A regression model controlling for BMI' but does not report the mean BMI.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "college"
+        ]
+      },
+      "evidence_source": "The text states 'Participants included 333 women attending a large southeastern public university', indicating the sample was recruited from a college/university setting.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "BAS",
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The text states 'completed measures of mindful eating, family fat talk, body appreciation, and functional body appreciation'. The mention of both 'body appreciation' and 'functional body appreciation' suggests use of BAS or BAS-2 scales, though the specific version is not explicitly named in the abstract.",
+      "warning": "The specific assessment tool (BAS vs BAS-2) is not explicitly stated in the abstract. Both are listed as the text references body appreciation and functional body appreciation measures, which are components of these scales."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract mentions 'A regression model controlling for BMI' but does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The abstract does not provide specific correlation coefficients between body appreciation and BMI. It mentions that 'A regression model controlling for BMI' was used, but no correlation values are reported.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The abstract describes a single study with 333 undergraduate female participants from a southeastern public university. No multiple studies or experiments are mentioned.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The abstract does not indicate whether this is a journal article or dissertation. Only the abstract text is provided without publication venue information.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This abstract describes a single study (Study 1) examining the indirect effects of family fat talk on mindful eating through body appreciation and functional body appreciation among 333 undergraduate female participants at a southeastern U.S. university. Participants completed online surveys measuring mindful eating, family fat talk, body appreciation, and functional body appreciation, with results indicating that family fat talk was inversely associated with mindful eating and both body image indices.",
+      "evidence_source": "Entire abstract section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

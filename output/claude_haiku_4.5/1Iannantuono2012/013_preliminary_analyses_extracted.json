@@ -1,0 +1,89 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Preliminary Analyses' section describing data handling and normality testing. No country information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain sample size information. It only mentions 'Twelve missing data points' in the context of data handling, not total sample size.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not describe the survey method used (paper-and-pencil or online).",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain demographic information about racial/ethnic composition of participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain age information for participants.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain educational attainment information for participants.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain BMI information. It mentions that 'Variable means, standard deviations, and bivariate correlations are presented in Table 1,' but Table 1 is not provided.",
+      "warning": "Table 1 is referenced but not provided; cannot extract mean BMI values."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not describe where or how participants were recruited.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify which instrument (BAS or BAS-2) was used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text mentions that 'bivariate correlations are presented in Table 1,' but Table 1 is not provided. Therefore, correlation values cannot be extracted.",
+      "warning": "Table 1 is referenced but not provided; cannot extract correlation coefficients."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a preliminary analyses section and does not indicate the number of studies in the paper. This appears to be a methods/analysis section rather than a section that would identify multiple studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain publication type information (journal article or dissertation).",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes preliminary data analyses conducted prior to path analytic modeling. The authors handled twelve missing data points by substituting participants' mean scale or subscale scores, and examined variables for normality of distribution using skewness and kurtosis criteria (absolute skewness > 3 and kurtosis > 10). All variables met normality assumptions (skewness range = -1.21 to 1.69, kurtosis range = -0.58 to 3.55), so no transformations were applied. Variable means, standard deviations, and bivariate correlations are referenced as being presented in Table 1.",
+      "evidence_source": "Entire 'Preliminary Analyses' section provided",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "'Body appreciation, media influence, and weight status predict consideration of cosmetic surgery among female undergraduates\\nViren Swami a,b, *' \u2014 no country or region is stated in the provided text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "'Body appreciation, media influence, and weight status predict consideration of cosmetic surgery among female undergraduates' \u2014 participants are described only as 'female undergraduates'; no sample size is provided.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Provided text contains only the title and author line; no information about data collection method (e.g., online or paper-and-pencil) is given.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Title and author line only; no racial/ethnic composition information is provided in the text.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "'female undergraduates' indicates participant educational status but does not provide a mean age.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "Text: '... among female undergraduates'. Per extraction rules, if participants are described as undergraduate students, infer percentage with college or higher = 100%. Detected phrase: 'female undergraduates' -> inferred value 100 for Study X.",
+      "warning": "Inference made: participants described as 'undergraduates' so percentage college-or-higher set to 100%."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participants' BMI or summary statistics is provided in the title/author line.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Text: '... among female undergraduates' \u2014 indicates participants were recruited from a college/university student population; therefore source classified as 'college' for Study X.",
+      "warning": "Inference based on phrase 'female undergraduates' -> classified as 'college' sample."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Title and author line only; no information about which instrument (BAS or BAS-2) was used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No details provided about how BMI was assessed (self-reported or measured) in the provided text.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficients or statistical results are provided in the title or author line.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "Provided text is only the article title and author line and does not indicate whether the paper contains multiple studies or experiments.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication venue or designation (e.g., journal article or dissertation) is provided in the supplied text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "The section contains only the paper title and author line: the study appears to examine how body appreciation, media influence, and weight status predict consideration of cosmetic surgery among female undergraduates. The only participant descriptor given is 'female undergraduates' (author: Viren Swami); no sample size, country, methods, measures, or results are provided.",
+      "evidence_source": "'Body appreciation, media influence, and weight status predict consideration of cosmetic surgery among female undergraduates\\nViren Swami a,b, *' \u2014 title indicates topic and participant population; no further details are present.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

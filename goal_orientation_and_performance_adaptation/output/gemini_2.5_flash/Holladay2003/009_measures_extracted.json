@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section and does not explicitly state the publication type of the paper itself. It only cites other works.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or acknowledgments in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information to determine if the publication was peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\"]}",
+      "evidence_source": "The text states: \"participants were given a two-factor measure of goal orientation (Roedel, Schraw, & Plake, 1994). The items... assessed both learning... and performance (e.g., 'It is important to me to always do better than others'; 5 items, .75) orientations.\" The example item for performance orientation ('It is important to me to always do better than others') indicates a 'Prove' performance goal orientation.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text describes 'Training performance' and 'Transfer performance' as measures, stating: 'The number of points for a trial was based on the accuracy of the judgments made.' This indicates an objective measure.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The adaptation outcome ('Training performance' and 'Transfer performance') is based on 'The number of points for a trial was based on the accuracy of the judgments made,' which are objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The adaptation outcome ('Training performance' and 'Transfer performance') is based on 'The number of points for a trial was based on the accuracy of the judgments made,' which is an objective task/test score.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text states: \"participants were given a two-factor measure of goal orientation (Roedel, Schraw, & Plake, 1994).\" This measure is attributed to Roedel, Schraw, & Plake, not VandeWalle.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information is provided in this section.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No age information (mean, median, or ranges) is provided in this section.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information about the sex composition of the sample is provided in this section.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information about the percentage of men in the sample is provided in this section.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information about the country where the study was conducted is provided in this section.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information about whether the sample was a student sample or other is provided in this section.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No sample size (N) is provided in this section.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The section describes measures and the rationale for including goal orientation as a covariate, but it does not report any correlation coefficients between performance goal orientation and performance adaptation.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No correlation coefficients are reported, so no correlation information can be provided.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'the present study' and 'this research' in the singular, indicating a single study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the measures used in the present study, including self-efficacy (level, strength, and generality), training performance, and transfer performance (near and far). It also describes the individual differences measured, specifically a two-factor goal orientation (learning and performance) and general cognitive ability, which were included as covariates in the analyses. The text refers to 'the present study' indicating a single study.",
+      "evidence_source": "Summary of the 'Measures' section content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

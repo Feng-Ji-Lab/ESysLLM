@@ -1,0 +1,287 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          200,
+          243,
+          109
+        ]
+      },
+      "evidence_source": "Quoted sentences: \"First, we split the main dataset so that the first subsample had a random allocation of 100 women and 100 men, and so that the second subsample included all remaining participants (women n = 112, men n = 141).\"; \"Next, data from the second subsample (n = 243) were subjected to CFA using Analysis of Moment Structures (AMOS v.23).\"; \"For the test\u2013retest sample (n = 109), intraclass correlation coefficients and paired-sample t-tests were used to estimate the stability of BAS-2's scores in women and men separately.\". Computation: first subsample total 200 computed as 100 women + 100 men.",
+      "warning": "Inconsistency detected: second subsample gender counts (112 + 141 = 253) do not match the reported second subsample total n = 243."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "\"We used a two-step analytic strategy to examine the psychometric properties of the Romanian BAS-2.\"",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "\"We used a two-step analytic strategy to examine the psychometric properties of the Romanian BAS-2.\" and references to a single main dataset with a separate test\u2013retest sample (\"For the test\u2013retest sample (n = 109)...\").",
+      "warning": "None (the paper describes a single study with main and test\u2013retest samples)."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the statistical analyses for evaluating the Romanian BAS-2: handling of missing data, splitting the main dataset into two subsamples (first subsample: 100 women and 100 men; second subsample: women n = 112, men n = 141 with a reported total n = 243), and conducting EFA in the first subsample and CFA in the second. It also describes measurement invariance testing across sex, internal consistency (Cronbach's alpha), test\u2013retest stability assessed in a sample of n = 109, planned sex comparisons via t-tests, and convergent validity via bivariate correlations.",
+      "evidence_source": "Quoted key sentences: \"First, we split the main dataset so that the first subsample had a random allocation of 100 women and 100 men, and so that the second subsample included all remaining participants (women n = 112, men n = 141).\"; \"Next, data from the second subsample (n = 243) were subjected to CFA...\"; \"For the test\u2013retest sample (n = 109)...\"",
+      "warning": "Inconsistency in reported second subsample size: gender counts (112 + 141 = 253) conflict with reported total n = 243."
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          200,
+          243,
+          109
+        ]
+      },
+      "evidence_source": "\u201cwe split the main dataset so that the first subsample had a random allocation of 100 women and 100 men, and so that the second subsample included all remaining participants (women n = 112, men n = 141).\u201d; \u201cdata from the second subsample (n = 243) were subjected to CFA using Analysis of Moment Structures (AMOS v.23).\u201d; \u201cFor the test\u2013retest sample (n = 109), intraclass correlation coefficients and paired-sample t-tests were used to estimate the stability of BAS-2's scores in women and men separately.\u201d",
+      "warning": "Inconsistency: second subsample reported as (women n = 112, men n = 141) which sums to 253, but later the second subsample is reported as n = 243. Both values are recorded.",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            100,
+            112
+          ]
+        },
+        "male": {
+          "Study X": [
+            100,
+            141
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            200,
+            243,
+            109
+          ]
+        }
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "\u201cwe used a two-step analytic strategy to examine the psychometric properties of the Romanian BAS-2.\u201d",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section describes a single psychometric investigation with multiple subsamples (first subsample, second subsample, and a test\u2013retest sample) rather than multiple, separately numbered studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the statistical analyses used to evaluate the Romanian BAS-2, including handling of missing data, EFA in a first subsample (100 women, 100 men), CFA in a second subsample (reported n = 243; also reported as women n = 112 and men n = 141), and test\u2013retest analyses on a sample of n = 109. It also outlines model fit indices, measurement invariance testing across sex (configural, loading, intercept), internal consistency (Cronbach's alpha), stability (ICC and paired t-tests), sex comparisons (independent-samples t-tests), and convergent validity via bivariate correlations.",
+      "evidence_source": "Quotes: \u201cwe used the mean replacement technique to estimate missing values.\u201d; \u201cthe first subsample had a random allocation of 100 women and 100 men, and ... the second subsample included all remaining participants (women n = 112, men n = 141).\u201d; \u201cdata from the second subsample (n = 243) were subjected to CFA ...\u201d; \u201cFor the test\u2013retest sample (n = 109)...\u201d",
+      "warning": "Inconsistency noted between second subsample counts: component counts (112 + 141 = 253) do not match the reported n = 243."
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1\nItems of the Body Appreciation Scales-2 in English and Romanian (italics), descriptive statistics for women (n = 100) and men (n = 100), and item-factor loadings in the first subsample.",
+      "evidence_source": "Caption text visible on provided Table 1 image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2017Factor structure and psychometric pro/tables/1Swami2017Factor structure and psychometric pro_p003_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

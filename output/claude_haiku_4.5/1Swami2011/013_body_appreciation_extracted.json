@@ -1,0 +1,211 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          311
+        ]
+      },
+      "evidence_source": "The text states 't(309) = 2.83' and 't(309) = 0.22', indicating a sample size of 310 participants (df = n - 1). However, the text also mentions 'women M = 3.90' and 'men M = 4.11' with separate standard deviations, suggesting the total sample is 311 (310 + 1 for rounding, or the actual N is 311). The most reliable indicator is the degrees of freedom reported as 309, which corresponds to N = 310. However, given the context, the sample size is approximately 310-311 participants.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": [
+          311
+        ]
+      },
+      "warning": "Degrees of freedom reported as 309, which suggests N=310, but exact sample size not explicitly stated. Value of 311 is inferred from context."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method (paper-and-pencil or online) is mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about racial/ethnic composition is provided in the text.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in the text.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in the text.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI information is provided in the text.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample source (community, college, or primary/secondary/high school) is provided in the text.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly states 'the 13 items of the Portuguese BAS were subjected to an EFA' and later 'we followed the general guidelines reported by Swami and Chamorro-Premuzic (2008) in extracting two factors', confirming the use of the Body Appreciation Scale (BAS).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported or measured) is provided in the text.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficients between body appreciation and BMI are reported in the provided text. The text focuses on factor analysis of the BAS and gender differences in body appreciation subscales, but does not report correlations with BMI.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with factor analysis of the Portuguese BAS. While it references a previous study by Swami and Chamorro-Premuzic (2008), the current section focuses on one study's results.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No explicit publication type (journal article or dissertation) is mentioned in the provided text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the factor analysis of the Portuguese Body Appreciation Scale (BAS) with 13 items conducted on a sample of 310-311 participants. The analysis extracted two factors: General body appreciation (10 items, \u03b1 = .89) and Body image investment (\u03b1 = .67). Men showed significantly higher General body appreciation than women (M = 4.11 vs. M = 3.90, p = .005), but no significant gender difference was found in Body image investment scores. Due to the low alpha coefficient of the Body image investment factor, only the General body appreciation factor was retained for further analyses.",
+      "evidence_source": "Entire provided text section on body appreciation analysis.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the study was conducted. The study references a 'Portuguese Body Appreciation Scale' and mentions 'Portuguese BAS', which suggests Portugal, but the country is not explicitly stated in the provided text.",
+      "warning": "Country not explicitly stated in the provided text section. The reference to 'Portuguese BAS' suggests Portugal, but this is not confirmed in the text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 't(309) = 2.83' and 't(309) = 0.22', indicating a sample size of 310 participants (df = 309). However, the text does not explicitly state the total sample size at the beginning of this section.",
+      "warning": "Sample size inferred from degrees of freedom (309) in t-tests, suggesting N=310, but not explicitly stated in the provided text section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not mention the survey method (paper-and-pencil or online).",
+      "warning": "Survey method not mentioned in the provided text section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain information about the racial/ethnic composition of participants.",
+      "warning": "Percent of white participants not mentioned in the provided text section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not mention the mean age of participants.",
+      "warning": "Mean age of participants not mentioned in the provided text section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not mention the educational level of participants.",
+      "warning": "Percentage of college or higher education not mentioned in the provided text section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not mention BMI statistics for participants.",
+      "warning": "Mean BMI of participants not mentioned in the provided text section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify where or how participants were recruited.",
+      "warning": "Source of sample not mentioned in the provided text section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly states 'the 13 items of the Portuguese BAS were subjected to an EFA' and discusses the Body Appreciation Scale (BAS) with 13 items. The study extracted two factors from the BAS, with the General body appreciation factor containing ten items.",
+      "warning": "The study name is not explicitly provided in the text. Using 'Study X' as a placeholder. The text refers to 'the Portuguese BAS' but does not specify if this is BAS or BAS-2. Based on the 13-item structure and reference to Swami and Chamorro-Premuzic (2008), this appears to be the original BAS."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not mention how BMI was assessed (self-reported or measured).",
+      "warning": "Assessment of BMI not mentioned in the provided text section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report correlations between body appreciation and BMI. The text focuses on factor analysis of the BAS and gender differences in body appreciation subscales, but does not present BMI correlations.",
+      "warning": "Correlation between body appreciation and BMI not reported in the provided text section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly state the number of studies. It appears to describe a single study analyzing the Portuguese BAS, but the overall paper structure is not clear from this section alone.",
+      "warning": "Number of studies cannot be determined from the provided text section. This appears to be a single study, but the full paper context is needed to confirm."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not indicate whether this is a journal article or dissertation.",
+      "warning": "Publication type not mentioned in the provided text section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the factor analysis of the Portuguese Body Appreciation Scale (BAS) with 13 items. The analysis extracted two factors: General body appreciation (10 items, \u03b1 = .89) and Body image investment (3 items, \u03b1 = .67). Gender differences were found, with men showing significantly higher General body appreciation than women (M = 4.11 vs. 3.90, p = .005), but no significant difference in Body image investment. Due to the low alpha coefficient of the Body image investment factor, only the General body appreciation factor was retained for further analyses.",
+      "evidence_source": "Entire provided text section on Body appreciation analysis.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2: Factor loadings for items meeting inclusion criteria for the Portuguese Body Appreciation Scale (bold value refer to items loading onto a particular factor).",
+      "evidence_source": "The table caption is provided at the top of the table image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2011/tables/1Swami2011_p004_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not mention the country where the study was conducted. Country information is typically found in the Methods section, which is not provided in this text.",
+      "warning": "Country information not available in the provided Discussion section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section mentions 'our sample consisted of undergraduates' but does not provide the specific number of participants. Sample size is typically reported in the Methods section, which is not provided.",
+      "warning": "Specific sample size not available in the provided Discussion section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not describe the survey method used. This information is typically found in the Methods section, which is not provided.",
+      "warning": "Survey method information not available in the provided Discussion section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not provide demographic information about racial/ethnic composition of participants.",
+      "warning": "Racial/ethnic demographic data not available in the provided Discussion section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not report the mean age of participants. This information is typically found in the Methods or Results section.",
+      "warning": "Mean age information not available in the provided Discussion section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "The Discussion section states: 'it should be noted that our sample consisted of undergraduates'. Since all participants were undergraduates, this indicates 100% of participants have college or higher education experience.",
+      "warning": "Inferred from statement that sample consisted of undergraduates; explicit percentage not provided."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not report mean BMI of participants. This information is typically found in the Methods or Results section.",
+      "warning": "Mean BMI information not available in the provided Discussion section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The Discussion section states: 'our sample consisted of undergraduates', indicating the sample was drawn from a college/university population.",
+      "warning": "Source inferred from 'undergraduates' reference; explicit recruitment location not detailed in Discussion."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not specify which Body Appreciation scale (BAS or BAS-2) was used. This information is typically found in the Methods section.",
+      "warning": "Specific BA assessment instrument not identified in the provided Discussion section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not describe how BMI was assessed (self-reported vs. measured). This information is typically found in the Methods section.",
+      "warning": "BMI assessment method not available in the provided Discussion section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not report correlations between body appreciation and BMI. The discussion focuses on correlations between femininity ideology (FIS subscales) and body appreciation, not BMI correlations.",
+      "warning": "No body appreciation-BMI correlations reported in this Discussion section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The Discussion section refers to 'the present study' and 'this study' consistently in singular form, indicating a single study design. No mention of multiple studies or experiments.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only a Discussion section. Publication type (journal article vs. dissertation) cannot be determined from this section alone.",
+      "warning": "Publication type not identifiable from Discussion section alone; typically found on title page or journal header."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Discussion section presents findings from a single study examining the relationship between femininity ideology and body appreciation among undergraduate women. The study found significant negative correlations between body appreciation and traditional femininity ideology scores, particularly with the Purity and Stereotypic Images and Activities subscales of the Femininity Ideology Scale (FIS). The authors note that their results represent an advance over previous literature by measuring femininity ideology rather than gender role orientation, though the associations were weak and explained only 10% of variance in body appreciation.",
+      "evidence_source": "Entire Discussion section, particularly opening paragraphs describing study findings and the limitations paragraph identifying the sample as undergraduates.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

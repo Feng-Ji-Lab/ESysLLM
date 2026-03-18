@@ -1,0 +1,127 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or region of data collection is reported in the provided Discussion text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion refers to 'the present study' and describes a 'college female sample' but does not report the sample size.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about data collection method (e.g., online or paper-and-pencil) is provided in the Discussion.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion does not report participant racial/ethnic composition.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age or age range is reported in the provided Discussion text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "The Discussion states: 'We demonstrated that this model ... in a college female sample.' This indicates participants were a college sample, interpreted as 100% college-level.",
+      "warning": "Inference: percentage set to 100% because the text explicitly describes a 'college female sample'."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI is reported in the provided Discussion text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The Discussion states: '...in a college female sample.'",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion mentions 'body appreciation' and 'appreciating the body's functionality' but does not state the specific instrument (e.g., BAS or BAS-2) used.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion does not indicate whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson correlation values between body appreciation and BMI are reported in the provided Discussion text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text repeatedly refers to 'the present study' and discusses results from a single sample (e.g., 'The present study provided...' and 'We demonstrated that this model ... in a college female sample.'), indicating one study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided Discussion does not specify whether the work is a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Discussion summarizes a single study that tested a sociocultural model linking overheard family 'fat talk' to mindful eating via positive body image variables. Results (in a college female sample) showed that overhearing family body criticism was associated with lower mindful eating and body appreciation, with body functionality appreciation partially mediating the link to mindful eating. No other studies or sample subsets (e.g., Study 1, Study 2) are mentioned.",
+      "evidence_source": "Key sentences: 'The present study provided a preliminary evaluation...' and 'We demonstrated that this model... in a college female sample.'",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or location is stated in the provided section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size or total number of participants is reported in the provided section.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided section does not specify how surveys/data were collected (e.g., paper-and-pencil or online).",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participant ethnicity percentages is given in the provided section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Age is listed as a demographic collected, but no mean age value is reported in the provided section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Educational qualifications are listed as collected demographics, but no percentage with college or higher is reported.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Height and weight were collected to compute self-reported BMI, but no mean BMI value is provided in the section.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section does not state the sampling source (e.g., college, community, primary/secondary/high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "We measured body appreciation using the Body Appreciation Scale (BAS) developed by Avalos, Tylka, and Wood-Barcalow (2005).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Participants were asked to report their demographics, consisting of age, ethnicity, educational qualifications, height, and weight (the latter two used to compute self-reported BMI as kg/m2).",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation between body appreciation and BMI is reported in the provided section.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers repeatedly to \"the present study\" (e.g., \"In the present study, Cronbach's \u02db for this measure was .92.\"), indicating a single study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided section does not indicate the publication type (journal article or dissertation).",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Measures section describes instruments used in the present study: Drive for Muscularity Scale (DMS), Body Appreciation Scale (BAS), NEO-FFI for Big Five domains, and the McArthur Ladder for subjective social status, plus demographics. Body appreciation was measured with the BAS and BMI was computed from self-reported height and weight. The text repeatedly refers to \"the present study,\" indicating a single study (Study X).",
+      "evidence_source": "Key sentences: \"We measured body appreciation using the Body Appreciation Scale (BAS) developed by Avalos, Tylka, and Wood-Barcalow (2005).\" and \"Participants were asked to report their demographics, consisting of age, ethnicity, educational qualifications, height, and weight (the latter two used to compute self-reported BMI as kg/m2).\" and examples like \"In the present study, Cronbach's \u02db for this measure was .92.\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

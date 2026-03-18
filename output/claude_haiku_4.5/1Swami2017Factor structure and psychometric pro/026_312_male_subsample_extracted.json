@@ -1,0 +1,232 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": [
+          100
+        ],
+        "other": "None",
+        "total": [
+          100
+        ]
+      },
+      "evidence_source": "The text explicitly states 'for men (n=100)' when describing the male subsample.",
+      "warning": "This is a male subsample only; the full study sample size is not provided in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI statistics are reported in this section.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample recruitment source is provided in this section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While this section discusses factor analysis of items (likely from a body appreciation scale), the specific instrument name (BAS or BAS-2) is not explicitly stated in this section.",
+      "warning": "The section references 'all 10 items' and factor analysis results, suggesting a body appreciation assessment tool, but the specific instrument is not named here."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI assessment method is mentioned in this section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficients between body appreciation and BMI are reported in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section describes a male subsample analysis within what appears to be a single study, but the total number of studies in the paper is not determinable from this section alone.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents factor analysis results for a male subsample (n=100) of what appears to be a body appreciation scale with 10 items. Unlike the female sample which yielded one factor, initial analysis suggested two factors for men, but parallel analysis determined that only a single factor should be retained, explaining 41.8% of common variance with Cronbach's alpha of .84. The section explicitly contrasts the male subsample results with the female subsample mentioned earlier.",
+      "evidence_source": "Section 3.1.2 titled 'Male subsample' describing factor analysis outcomes and internal consistency for the male participants."
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the study was conducted. Only a male subsample (n=100) is described in the provided section.",
+      "warning": "Country information is not provided in the given text or figure."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": {
+          "Study X": [
+            100
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      },
+      "evidence_source": "The text states 'Descriptive statistics for all 10 items for men (n=100) are reported Table 1.' This indicates the male subsample size is 100 participants.",
+      "warning": "Only the male subsample size is provided in this section. The female subsample size is referenced but not explicitly stated in the provided text."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether the survey was administered via paper-and-pencil or online methods.",
+      "warning": "Survey method is not provided in the given text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the racial/ethnic composition of participants.",
+      "warning": "Percent of white participants is not provided in the given text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide mean age information for participants.",
+      "warning": "Mean age is not provided in the given text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about educational attainment of participants.",
+      "warning": "Percentage of college or higher education is not provided in the given text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide BMI information for participants.",
+      "warning": "Mean BMI is not provided in the given text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether participants were recruited from community, college, or primary/secondary/high school settings.",
+      "warning": "Source of sample is not provided in the given text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The figure caption and text reference 'the Body Appreciation Scale-2' and 'the one-dimensional model of the Body Appreciation Scale-2.' The section title mentions 'Male subsample' analysis of the BAS-2 model.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about how BMI was assessed (self-reported or measured).",
+      "warning": "Assessment of BMI is not provided in the given text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text does not report correlations between body appreciation and BMI. The section focuses on factor analysis, parallel analysis, and internal consistency (Cronbach's alpha) of the BAS-2 for the male subsample.",
+      "warning": "Correlation between body appreciation and BMI is not provided in the given text or figure."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a subsection (3.1.2) describing the male subsample analysis. It references a female sample and mentions 'the second subsample' in Table 2's caption, suggesting this is part of a larger study with multiple subsamples, but the total number of distinct studies is not explicitly stated in this excerpt.",
+      "warning": "The text appears to be part of a larger study with multiple subsamples (male and female), but the total number of studies cannot be definitively determined from this section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain publication type information (journal article vs. dissertation).",
+      "warning": "Publication type is not provided in the given text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section (3.1.2) presents the male subsample analysis (n=100) of the Body Appreciation Scale-2 (BAS-2). Unlike the female sample, factor analysis revealed two factors with eigenvalues > 1.0, but parallel analysis indicated only one factor should be extracted, explaining 41.8% of common variance. Cronbach's alpha was .84, demonstrating adequate internal consistency, though item loadings were more variable than in the female subsample.",
+      "evidence_source": "Section 3.1.2 titled 'Male subsample' describing factor analysis results, parallel analysis application, and internal consistency for the male participants.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Fig. 1. Path diagram and estimates for the one-dimensional model of the Body Appreciation Scale-2. The large oval is the latent construct, with the rectangles representing measured variables, and the small circles with numbers representing the unstandardized residual variables (variances). Error covariances were .14 for Items #2 and #9, .21 for Items #1 and #5, and \u2212.16 for Items #4 and #7. The path factor loadings are unstandardised with significance levels determined by critical ratios (all p < .001).",
+      "evidence_source": "The figure caption provided in the attached assets section.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2017Factor structure and psychometric pro/tables/1Swami2017Factor structure and psychometric pro_p004_table00.png",
+    "_metadata_caption": "Fig. 1. Path diagram and estimates for the one-dimensional model of the Body Appreciation Scale-2. The large oval is the latent construct, with the rectangles representing measured variables, and the small circles with numbers representing the unstandardized residual variables (variances). Error covariances were .14 for Items #2 and #9, .21 for Items #1 and #5, and \u2212.16 for Items #4 and #7. The path factor loadings are unstandardised with significance levels determined by critical ratios (all p &lt; .001).",
+    "_asset_source": "[table] Fig. 1. Path diagram and estimates for the one-dimensional model of the Body Appreciation Scale-2. The large oval is the latent construct, with the rectangles representing measured variables, and the small circles with numbers representing the unstandardized residual variables (variances). Error covariances were .14 for Items #2 and #9, .21 for Items #1 and #5, and \u2212.16 for Items #4 and #7. The path factor loadings are unstandardised with significance levels determined by critical ratios (all p &lt; .001).",
+    "_pass_type": "asset_0"
+  }
+]

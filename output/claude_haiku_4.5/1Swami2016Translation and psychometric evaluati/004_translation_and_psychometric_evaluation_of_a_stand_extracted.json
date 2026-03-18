@@ -1,0 +1,129 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only a title and author line. No country information is explicitly stated in this section.",
+      "warning": "Insufficient text content. Only title and author names provided. Cannot determine study location from this excerpt alone."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No sample size information provided in the title and author line.",
+      "warning": "Insufficient text content. Sample size data not available in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information provided in the title and author line.",
+      "warning": "Insufficient text content. Survey method not specified in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No demographic information provided in the title and author line.",
+      "warning": "Insufficient text content. Racial/ethnic composition not available in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No age information provided in the title and author line.",
+      "warning": "Insufficient text content. Mean age data not available in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No education level information provided in the title and author line.",
+      "warning": "Insufficient text content. Education level data not available in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No BMI information provided in the title and author line.",
+      "warning": "Insufficient text content. Mean BMI data not available in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample source information provided in the title and author line.",
+      "warning": "Insufficient text content. Sample source not specified in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The title explicitly states 'Body Appreciation Scale-2', indicating BAS-2 was used as the assessment instrument.",
+      "warning": "Study name inferred as 'Study X' per policy since no explicit study numbering provided. The title indicates BAS-2 is the focus of this translation and validation study."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about BMI assessment method (self-reported vs. measured) provided in the title and author line.",
+      "warning": "Insufficient text content. BMI assessment method not specified in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No correlation data provided in the title and author line.",
+      "warning": "Insufficient text content. Correlation coefficients not available in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only a title and author line. No information about the number of studies is available.",
+      "warning": "Insufficient text content. Cannot determine number of studies from title and author line alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information (journal article vs. dissertation) provided in the title and author line.",
+      "warning": "Insufficient text content. Publication type not specified in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section contains only the title and author information for a study on the translation and psychometric evaluation of the Body Appreciation Scale-2 (BAS-2) in Standard Chinese. The authors are Viren Swami, Siu-Kuen Ng, and David Barron. No substantive study data, methodology, or results are provided in this excerpt.",
+      "evidence_source": "Title and author line only.",
+      "warning": "This is insufficient content for comprehensive data extraction. Full methods and results sections are needed to extract sample characteristics, study design, and correlation data."
+    },
+    "_pass_type": "text_only"
+  }
+]

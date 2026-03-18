@@ -1,0 +1,129 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or location information is provided in the provided section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size (N) or participant counts are reported in the provided section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section does not state the data collection method (e.g., online or paper-and-pencil).",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participant race/ethnicity or percent white is provided in the section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Although age is mentioned as a variable and included in intercorrelations (Table 1), no mean age value is reported in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section does not report participants' education levels or percentage with college or higher.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "BMI is discussed (including a logarithmic transformation) but no mean BMI value is provided in the section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not state whether participants were recruited from community, college, or primary/secondary/high school samples.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text refers to 'BAS' (body appreciation) when describing analyses: '...BMI was solely correlated with age and body appreciation...'.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "BMI is discussed and was log-transformed, but the section does not state whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "'Among the variables of interest, BMI was solely correlated with age and body appreciation,' (no numeric Pearson r reported in the provided text).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section describes a single set of analyses (e.g., 'Table 1 includes means, standard deviations, and intercorrelations...') and contains no indication of multiple studies or separate experiments.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided section does not indicate whether the document is a journal article or a dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section reports preliminary analyses: variables (age, sexual orientation, partner status, BMI, BAS, FSFI) were dummy-coded or transformed as needed, intercorrelations were examined with a Bonferroni correction, and assumptions for regression were checked (including log-transforming BMI). No explicit study numbering (e.g., 'Study 1') is mentioned; the section refers to results from a single sample and notes that BMI correlated with age and body appreciation but provides no numeric correlation coefficients.",
+      "evidence_source": "Key sentences: 'Table 1 includes means, standard deviations, and intercorrelations of age, sexual orientation, partner status, BMI, BAS, and FSFI total scores and subscale scores.' 'Among the variables of interest, BMI was solely correlated with age and body appreciation...' 'Due to significant positive skewness, logarithmic transformation was applied to participant BMI.'",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,245 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about publication type is provided in the text.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about financial support is provided in the text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about peer review status is provided in the text.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\", \"Avoid\"]}",
+      "evidence_source": "The text states: \"We ran analyses separately for learning, prove, and avoidance goal orientations.\" and \"However, there were two significant interaction effects for prove goal orientation...\" and \"Further, there was one significant interaction effect for avoidance goal orientation...\". 'Prove' and 'Avoid' are performance goal orientations.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3, 3]}",
+      "evidence_source": "The text mentions \"aggregating the four dependant variables into a performance variable first phase and a performance variable second phase (summing z-scores of performance/medium, performance/difficult)\". This indicates objective task performance, coded as 3.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1]}",
+      "evidence_source": "The text describes performance as \"summing z-scores of performance/medium, performance/difficult\", which are objective scores. This is coded as 1.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3, 3]}",
+      "evidence_source": "The text describes performance as \"summing z-scores of performance/medium, performance/difficult\", which are objective task scores. This is coded as 3.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1]}",
+      "evidence_source": "The text mentions \"goal orientation variables\" but does not specify the measurement scale (e.g., VandeWalle). Therefore, it is coded as 1 (Other).",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in this section.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age or information to impute age is provided in this section.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sex composition information is provided in this section.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No percentage of men in the sample is provided in this section.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is provided in this section.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the sample type (student vs. other) is provided in this section.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The sample size (N) for the analyses is not explicitly stated in the text.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text reports R-squared increments for interaction effects (e.g., \"explaining 6% and 4% additional variance\" and \"5% added explained variance\"), not direct Pearson r correlation coefficients between PGO and PA.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No direct correlation coefficients were extracted, so no correlation information is available.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single set of analyses related to \"Hypothesis 2\" and \"participants' goal orientations\" without explicitly delineating multiple studies or experiments.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the testing of Hypothesis 2, which examined the interaction between participants' goal orientations (learning, prove, avoidance) and training conditions on performance. Moderated regression analyses revealed no significant effects for learning goal orientation. However, significant interaction effects were found for prove goal orientation (explaining 6% and 4% additional variance for first and second test phase performance) and avoidance goal orientation (5% added explained variance for second phase performance). The results indicated that high prove and avoidance goal orientations were beneficial in the error avoidant training condition.",
+      "evidence_source": "Summary of the provided text content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The document is an excerpt from an academic paper, which is typically a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support or grants was found in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The document is an excerpt from an academic paper, which implies it has undergone peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\", \"Prove\", \"Avoid\"]}",
+      "evidence_source": "The text states: 'However, there were two significant interaction effects for prove goal orientation...' and 'Further, there was one significant interaction effect for avoidance goal orientation...'. These are the performance goal orientations for which effects were extracted.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3, 3, 3]}",
+      "evidence_source": "The text mentions 'performance variable first phase' and 'performance variable second phase (summing z-scores of performance/medium, performance/difficult)', indicating objective task performance measures. This corresponds to code 3 (Objective).",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1, 1]}",
+      "evidence_source": "The adaptation outcomes are described as 'performance variable first phase' and 'performance variable second phase (summing z-scores of performance/medium, performance/difficult)', which are objective scores. This corresponds to code 1 (Objective scores).",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3, 3, 3]}",
+      "evidence_source": "The adaptation outcomes are 'performance variable first phase' and 'performance variable second phase (summing z-scores of performance/medium, performance/difficult)', which are objective task/test scores. This corresponds to code 3 (Objective).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1, 1]}",
+      "evidence_source": "The text does not mention VandeWalle as the source for the goal orientation measure. Therefore, it is coded as 'Other' (1). This applies to all three goal orientations (Learning, Prove, Avoidance) discussed.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information was provided in the text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information was provided in the text to impute a mean age.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the sex composition of the sample was provided in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the percentage of men in the sample was provided in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the country of data collection was provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the sample type (student vs. other) was provided in the text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [87, 87, 87]}",
+      "evidence_source": "The table shows df values for the interaction effects. For 'Contrast 1 x Prove GO' and 'Contrast 1 x Avoid GO', the denominator df is 79. The model for these interaction terms includes 3 controls + 2 training conditions + 1 goal orientation variable + 1 interaction term = 7 predictors. Using the formula N - k - 1 = df_denominator, we get N - 7 - 1 = 79, which implies N = 87. This N is consistent across all three significant interaction effects reported.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text and Table 3 report results from 'moderated regression analyses' and 'interaction effects' (beta coefficients and R-squared changes), not direct Pearson correlation coefficients (r) between Performance Goal Orientation and Performance Adaptation.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson correlation coefficients were extracted, so no correlation information is available.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single set of analyses and hypotheses within one study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details moderated regression analyses investigating the interaction effects of participants' goal orientations (learning, prove, avoidance) and training conditions on performance across two test phases. The study found significant interaction effects for prove goal orientation (on both first and second phase performance) and avoidance goal orientation (on second phase performance), but no significant effect for learning goal orientation, providing partial support for Hypothesis 2. Table 3 presents the hierarchical regression results.",
+      "evidence_source": "Summary of the provided text content.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "TABLE 3 Hierarchical Regression Results: Interaction between Goal Orientations and Training Conditions on Performance in the First and Second Test Phase",
+      "evidence_source": "The caption of the provided table image.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Heimbeck2003\\tables\\Heimbeck2003_p017_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

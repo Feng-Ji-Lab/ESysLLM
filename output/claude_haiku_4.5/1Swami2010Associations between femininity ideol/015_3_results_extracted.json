@@ -1,0 +1,135 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this Results section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text mentions 'F(7, 134)' indicating 134 degrees of freedom in the regression, which suggests approximately 142 participants (134 + 7 + 1), but the exact sample size is not explicitly stated in this section.",
+      "warning": "Sample size cannot be definitively extracted from this Results section alone. The df=134 suggests a sample around 142, but this is an inference and not explicitly stated."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is provided in this Results section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No demographic information about race/ethnicity is provided in this Results section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Age is mentioned as a predictor variable in the regression model, but no mean age value is reported in this Results section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No education level information is provided in this Results section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "BMI is mentioned as a predictor variable and as a variable correlated with body appreciation, but no mean BMI value is reported in this Results section. The text states 'Table 1' contains descriptive statistics but the table is not provided.",
+      "warning": "Table 1 is referenced but not provided; mean BMI values would be in that table."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample source (community, college, or primary/secondary/high school) is provided in this Results section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text refers to 'body appreciation' as the dependent variable but does not specify whether BAS or BAS-2 was used to assess it.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "BMI is mentioned as a variable but the method of assessment (self-reported vs. measured) is not specified in this Results section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.17,
+          -0.26
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            -0.17,
+            -0.26
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'body appreciation was significantly and negatively correlated with Stereotypic Images and Activities, Purity, the Total Traditional score, and participant BMI, although it should be noted that these correlations were weak (rs -.17 to -.26).' The range of correlations between body appreciation and BMI is reported as -.17 to -.26. Since the exact correlation coefficient is not specified as a single value, both endpoints of the reported range are extracted.",
+      "warning": "The text provides a range (-.17 to -.26) rather than a single correlation coefficient. The exact r-value for the body appreciation-BMI correlation is not explicitly stated; only the range is given. No gender-specific correlations are reported."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This is a Results section from what appears to be a single study. No explicit mention of multiple studies is provided in this excerpt.",
+      "warning": "Cannot determine number of studies from Results section alone; would need Methods or introduction to confirm."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this Results section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Results section reports findings from a single study examining the relationship between body appreciation and various predictor variables. Body appreciation was significantly and negatively correlated with BMI (rs -.17 to -.26), and a multiple linear regression analysis (F(7, 134) = 3.09, p = .005) identified Stereotypic Images and Activities and BMI as significant predictors of body appreciation. The study appears to involve approximately 142 participants based on the reported degrees of freedom.",
+      "evidence_source": "Entire Results section provided",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

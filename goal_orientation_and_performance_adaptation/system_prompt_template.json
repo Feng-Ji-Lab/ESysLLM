@@ -1,0 +1,31 @@
+{
+    "spec_version": "extraction_spec",
+    "task": {
+        "name": "study_variable_extraction",
+        "goal": "Extract study-level metadata and statistics from provided text and any attached images."
+    },
+    "policies": {
+        "missing_value_token": "None",
+        "missing_value_rule": "If not explicitly stated, or not allowed to infer per field rules, return None.",
+        "no_extra_text_rule": "No additional text, explanations, or apologies. Output valid JSON only.",
+        "read_all_rule": "Read the entire provided text and all attached images before extracting.",
+        "strict_type_rule": "EXTREMELY STRICT TYPE ENFORCEMENT. If the schema specifies a list of strings, you MUST return a list of strings. If the schema specifies a dictionary, you MUST return a dictionary. Do NOT flatten dictionaries into strings.",
+        "average_multiple_values_rule": "Do NOT average multiple values unless certain fields in \"definitions\" have explicit rules for averaging in specific cases. Record EVERY distinct value found in a list. If a study has multiple sub-samples (e.g., college vs. community, original vs follow-up), list values for ALL sub-samples in the SAME list for that study. NEVER create keys like 'Study 1 (Follow-up)'. All data must be under 'Study 1'.",
+        "study_naming_rule": "Use 'Study 1', 'Study 2', 'Experiment 1', etc., ONLY if the text explicitly names them as such. If the text describes a study without a specific number, or if it is unclear, YOU MUST USE 'Study X'.  Do NOT infer 'Study 1' just because it's the first one you see. The Aggregator will resolve 'Study X' later."
+    },
+    "definitions": {
+        "fields": "<<DEFINITIONS_JSON>>"
+    },
+    "figure_policy": {
+        "when_to_use_figures": "If the current section text references any figure(s), you must examine the provided figure assets (image + caption) before extracting values.",
+        "missing_figure_rule": "If a figure is referenced but not provided in inputs, do not guess. Extract from available text only, otherwise return None."
+    },
+    "gender_difference_policy": {
+        "fields_to_check": "<<GENDER_FIELDS_LIST>>",
+        "rule": "If gender-specific values exist (explicitly stated or inferred from terms like 'feminine'/'masculine'), report them separately. Otherwise report only overall, and set gender-specific slots to None."
+    },
+    "property_definitions": {
+        "evidence_source": "String quoting the specific and complete sentence or describing the specific table/figure location where the value was found. If you performed any computation or inference (e.g., summing values, inferring percentage), you MUST explicitly state the detected values and the calculation steps here. Also explicitly state the extracted value is for which study if the section clearly states it like Study 1 or Study 2. Otherwise, do not infer. Explicitly state that there exists multiple sample subsets in this study if the section clearly states it like Sample 1 or Sample 2 both in Study 2. Otherwise, do not infer.",
+        "warning": "String containing any consistency warnings (e.g., 'Indices mismatch', 'Asymmetric matrix') or 'None' if clean."
+    }
+}

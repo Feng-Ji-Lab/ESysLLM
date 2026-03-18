@@ -1,0 +1,137 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the study was conducted. While ethnic groups (Malay and Chinese) are mentioned, this does not definitively indicate the country.",
+      "warning": "Country not explicitly stated in the provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          591,
+          296,
+          295,
+          315,
+          276
+        ]
+      },
+      "evidence_source": "Multiple sample sizes are reported: (1) Initial full sample: 'x2 (65, N = 591)'; (2) First subsample for PCA: 'n = 296'; (3) Second subsample for CFA: 'n = 295'; (4) Malay participants in multi-group analysis: 'n = 315'; (5) Chinese participants in multi-group analysis: 'n = 276'. These represent different analytical subsets of what appears to be a single study.",
+      "warning": "Multiple sample sizes reported for different analytical phases. The 591 appears to be the total initial sample, while 296 and 295 are split subsamples, and 315 and 276 are ethnic group breakdowns of the full sample.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            591,
+            296,
+            295,
+            315,
+            276
+          ]
+        }
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not describe the survey method (paper-and-pencil or online) used to collect data.",
+      "warning": "Survey method not specified in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions Malay and Chinese ethnic groups but does not provide percentages of white participants.",
+      "warning": "Percent of white participants not reported. Only Malay and Chinese ethnic groups are mentioned."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          42.75,
+          43.43
+        ]
+      },
+      "evidence_source": "Two mean ages are reported for the two subsamples: 'the first subsample (n = 296, age M = 42.75, SD = 13.21)' and 'the second sub-sample (n = 295, age M = 43.43, SD = 13.12)'. These represent the PCA and CFA subsamples respectively.",
+      "warning": "Two different mean ages reported for the two analytical subsamples. No overall mean age for the full sample (N=591) is provided.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            42.75,
+            43.43
+          ]
+        }
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the educational level of participants.",
+      "warning": "Percentage of college or higher education not reported in the provided text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not report BMI values for participants.",
+      "warning": "Mean BMI of participants not reported in the provided text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify where or how participants were recruited (community, college, or primary/secondary/high school).",
+      "warning": "Source of sample not specified in the provided text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly discusses 'the 13 items of the BAS' and refers to 'the BAS' throughout the analysis. The BAS (Body Appreciation Scale) is the instrument used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not discuss BMI assessment or measurement. The focus is entirely on the factor structure of the BAS.",
+      "warning": "BMI assessment method not discussed in the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not report correlations between body appreciation and BMI. The section focuses on confirmatory factor analysis and the factor structure of the BAS.",
+      "warning": "No correlations between body appreciation and BMI are reported in this section.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with multiple analytical phases (CFA on full sample, PCA on first subsample, CFA on second subsample, and multi-group analyses). These are analytical variations within one study, not separate studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state whether this is from a journal article or dissertation.",
+      "warning": "Publication type not specified in the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the factor structure analysis of the Body Appreciation Scale (BAS) using confirmatory factor analysis (CFA) and principal component analysis (PCA) on a single study with multiple analytical phases. The initial CFA on the full sample (N=591) did not fit well, so the sample was randomly split into two subsamples (n=296 and n=295) for PCA exploration and subsequent CFA confirmation. The final model identified a two-factor structure ('General Body Appreciation' and 'Body Image Investment') with adequate fit. Multi-group analyses tested invariance of this two-factor model across Malay (n=315) and Chinese (n=276) ethnic groups, confirming that the model structure was invariant across these groups.",
+      "evidence_source": "Entire section text describing the methodological approach and results of the factor structure analysis.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

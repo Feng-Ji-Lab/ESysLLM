@@ -1,0 +1,273 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      2,
+      3,
+      6,
+      8,
+      13,
+      16
+    ],
+    "reason": "The vast majority of candidates, particularly those describing the abstract, introduction, methods, results, and discussion sections (e.g., candidates 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16), consistently refer to 'the present study', 'a laboratory study', 'the current study', or 'a single study'. This indicates that the paper reports on a single research effort. Candidate [1] refers to multiple articles within a journal issue, which describes the container (the journal issue) rather than the content (the specific paper being analyzed). Therefore, the most accurate value for the number of studies within this specific paper is 1."
+  },
+  "PubType": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "reason": "All candidates consistently indicate a 'PubType' of 1, which corresponds to a 'Journal article'. The section contexts repeatedly mention elements characteristic of a journal article, such as 'ScienceDirect', 'international journal', 'journal title', article history (submission, revision, acceptance dates), and descriptions of a 'laboratory study' with 'hierarchical multiple regression analyses' and a 'discussion section'. There is strong consensus across all candidates, reinforcing the selection of '1' as the publication type."
+  },
+  "PeerReview": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "reason": "All candidates consistently indicate a value of 1 for 'PeerReview'. The section contexts, particularly candidate 4 which mentions 'submission, revision, acceptance, and online availability dates', strongly suggest that the publication is a peer-reviewed journal article. The document is identified as being from 'Personality and Individual Differences', an international journal, further supporting that it is peer-reviewed. Given the unanimous agreement and strong contextual evidence, 1 is the most accurate value."
+  },
+  "Country_dichot_num": {
+    "extract_value": {
+      "Single study": [
+        "2"
+      ]
+    },
+    "best_indices": [
+      0,
+      2
+    ],
+    "reason": "The paper reports a single study. Candidate 2, from the 'Participants' section, explicitly states that the participants were from 'a large, public university in the southwestern U.S.', which directly codes as 2 (USA). Candidate 0, from the author affiliations, also indicates 'United States', reinforcing this finding. All other candidates either provide no information or are less specific regarding the country of data collection."
+  },
+  "FinancSupport": {
+    "extract_value": [
+      0
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "reason": "All provided candidates consistently indicate a value of 0 with 'No evidence' for financial support. Given the complete agreement across all sections, and the absence of any mention of grants, funding agencies, or explicit financial support in any of the contexts, the most accurate consolidated value is 0. The consensus among all candidates boosts confidence in this selection."
+  },
+  "AdaptMeasures": {
+    "extract_value": {
+      "Single study": [
+        "1",
+        "3"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8
+    ],
+    "reason": "The paper reports a single study, as indicated by the context and consistent references to 'the present study' or 'a laboratory study'. All candidates referring to 'Study X' are therefore consolidated under 'Single study'. Multiple sources ([0], [1], [2], [3], [4], [5], [7]) consistently indicate objective measures (Code 3) for various performance aspects, including adaptive performance, skill-based performance, and baseline performance, through task scores, kill/death ratios, and objective difficulty levels. Candidate [8] additionally identifies 'self-efficacy' as a self-report measure (Code 1) which is related to performance adaptation. Following the rule 'If the study provides multiple eligible effects with different adaptation measurement sources, store each code in the LIST,' both 1 and 3 are included in the final list. Candidate [6] provided an empty list and no specific measurement method, thus it was not used."
+  },
+  "AdaptMethod": {
+    "extract_value": {
+      "Single study": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "0",
+        "1"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8
+    ],
+    "reason": "The paper reports a single study, as confirmed by the context and consistent references to 'Study X' or 'the present study' across candidates. Multiple candidates (0, 1, 2, 3, 4, 5, 7) consistently indicate objective measures (code 1) for various performance outcomes such as 'adaptive performance', 'performance scores', 'baseline performance', and 'skill-based performance', based on objective metrics like kills, deaths, participant rank, and mean trial scores. Candidate 8 additionally identifies 'post-practice self-efficacy' as a subjective measure (code 0) and 'performance' as an objective measure (code 1). Therefore, the consolidated list of AdaptMethod codes for the single study includes all identified instances of both subjective (0) and objective (1) measures. Following the provided JSON schema, these integer codes are represented as strings in the output."
+  },
+  "AdaptMethod_Specific": {
+    "extract_value": {
+      "Single study": [
+        "1",
+        "3"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8
+    ],
+    "reason": "The paper reports a single study, as confirmed by the context. All candidates referring to 'Study X' are therefore consolidated under 'Single study'. Multiple candidates (0, 1, 2, 3, 4, 5, 7) consistently indicate that 'adaptive performance' or 'skill-based performance' (which includes adaptive performance) was measured objectively (Code 3) through game metrics, task performance, or objective difficulty levels. Candidate 8, from the discussion section, mentions 'post-practice self-efficacy' (self-report, Code 1) and 'performance' (objective, Code 3) as outcomes where domain mental toughness explained variance. Given the study's focus on adaptive performance and related outcomes, self-efficacy is considered an adaptation-related outcome measured via self-report. The 'multiple outcomes' rule dictates that if multiple adaptation outcomes are extracted with different assessment methods, all codes should be stored in the list. Therefore, the specific assessment methods for performance adaptation or related outcomes are self-report (1) and objective (3). Candidate 6 provided an empty list and did not add new information or contradict existing findings."
+  },
+  "GoMeasure_dichot_num": {
+    "extract_value": {
+      "Single study": [
+        "2",
+        "2"
+      ]
+    },
+    "best_indices": [
+      2,
+      4,
+      5
+    ],
+    "reason": "The paper reports a single study, as indicated by the context and consistent references to 'the present study' or 'a laboratory study' across candidates. Therefore, all relevant information is consolidated under 'Single study'. Candidate 2, from the 'Other Predictor Variables' section (part of the Method), explicitly states that 'goal orientation (13-items; VandeWalle, 1997)' was used, providing a reliable code of 2. Candidates 4 and 5, from Table 1 and Table 2 respectively, refer to 'PPGO' and 'APGO', indicating two distinct goal orientation effects. While these candidates initially coded as '1' (Other) due to the absence of explicit attribution in the table notes, the explicit attribution to VandeWalle in the main text (Candidate 2) is considered more reliable. Following the conflict resolution rule to 'Prefer values in the MAIN TEXT over 'TABLE' values if both contradict but appear reliable', it is assumed that the VandeWalle scale was used for both PPGO and APGO. Therefore, for the two identified effects, the `extract_value` is `[\"2\", \"2\"]`. Candidates 2, 4, and 5 are selected as they collectively provide the most precise information: Candidate 2 for the specific measurement scale, and Candidates 4 and 5 for identifying the two distinct effects."
+  },
+  "Age_Info": {
+    "extract_value": {
+      "Single study": [
+        "Mage = 19.33, SD = 1.77"
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "The paper reports a single study. Candidate 1, from the 'Participants' section, provides the most reliable and specific age information, stating 'Mage = 19.33, SD = 1.77'. All other candidates either explicitly state that no age information was provided or offer empty strings, indicating a lack of relevant data for this field."
+  },
+  "Age_imputed": {
+    "extract_value": {
+      "Single study": [
+        "19.33"
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "The paper reports a single study, as confirmed by the context and consistent references to 'the present study' across candidates. Candidate [1] explicitly states the mean age as 19.33 for the participants of this study, which is the most reliable and preferred information according to the definition. All other candidates either report no age information or are irrelevant to age extraction."
+  },
+  "Sex": {
+    "extract_value": {
+      "Single study": [
+        "2"
+      ]
+    },
+    "best_indices": [
+      1,
+      6
+    ],
+    "reason": "The paper reports a single study, as indicated by the context. Candidate 1, from the Participants section, explicitly states the sample consisted of \"One-hundred twenty young-adult males\". This is corroborated by Candidate 6, from the Discussion section, which mentions \"our sample contained only males\" and \"an all-male sample\" as a limitation. Both sources are highly reliable for demographic information and consistently indicate a male-only sample, which is coded as 2. Other candidates provided no relevant information."
+  },
+  "Men_Prop": {
+    "extract_value": {
+      "Single study": [
+        "100.0"
+      ]
+    },
+    "best_indices": [
+      1,
+      6
+    ],
+    "reason": "The paper reports a single study, as indicated by the context. Candidate 1, from the 'Participants' section, explicitly states 'One-hundred twenty young-adult males', directly indicating 100% men in the sample. Candidate 6, from the 'Discussion' section, corroborates this by stating 'our sample contained only males', confirming 100% men. Both reliable sources agree, so the value 100.0 is used for the single study."
+  },
+  "Sample_dichot": {
+    "extract_value": {
+      "Single study": [
+        "1"
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "The paper reports a single study. Candidate 1, from the 'participants' section, explicitly states that the participants were 'young-adult males (Mage = 19.33, SD = 1.77) attending a large, public university in the southwestern U.S. participated in this study for partial fulfillment of a research requirement for their introductory psychology course.' This directly indicates a student sample, which corresponds to code 1 according to the definition. The 'Participants section and recruitment description' is the most reliable source for this information. Candidate 6, from the discussion section, suggests 'Other sample' (code 2) based on the text mentioning a 'laboratory setting' but not explicitly stating students. However, this is an inference based on absence and is contradicted by the direct and explicit evidence from the participants section. Therefore, the value from Candidate 1 is chosen as the most accurate and reliable."
+  },
+  "N": {
+    "extract_value": {
+      "Single study": [
+        "120",
+        "120"
+      ]
+    },
+    "best_indices": [
+      1,
+      5,
+      6
+    ],
+    "reason": "The paper reports a single study, as indicated by the context. Multiple candidates consistently report a sample size of N=120. Candidate [1] from the Participants section explicitly states 'One-hundred twenty young-adult males... participated in this study'. Candidate [5], a note below Table 1 (Correlations), states 'N = 120.' and clarifies that this sample size applies to 'both extracted correlations', which directly aligns with the field definition for N related to correlation coefficients. Candidate [6], a note below Table 2 (Regression), also states 'N = 120.' for the regression results. The consistent reporting of N=120 across the participants section and table notes for relevant analyses confirms this value. The value '[120, 120]' from candidate [5] is chosen as it specifically refers to the N for two distinct extracted correlation coefficients, as per the field definition, and is corroborated by other reliable sources."
+  },
+  "Correlation_PGO_and_PA": {
+    "extract_value": {
+      "Single study": [
+        "0.23",
+        "-0.02"
+      ]
+    },
+    "best_indices": [
+      4
+    ],
+    "reason": "The paper reports a single study. Candidate 4 provides the direct correlation coefficients from Table 1 for Performance-Prove Goal Orientation (PPGO) and Performance-Avoid Goal Orientation (APGO) with Adaptive Performance. Both PPGO and APGO are subscales of Performance Goal Orientation, and the instructions specify to report all subscale correlations. The correlation between PPGO and Adaptive Performance is 0.23, and between APGO and Adaptive Performance is -0.02. Other candidates either state that no direct correlation values were reported or mention goal orientation only as a control variable without providing specific correlation coefficients between PGO and PA."
+  },
+  "Correlation_info": {
+    "extract_value": {
+      "Single study": [
+        "PPGO and Adaptive perf.",
+        "APGO and Adaptive perf."
+      ]
+    },
+    "best_indices": [
+      4
+    ],
+    "reason": "The paper contains a single study, as indicated by the context. Candidates 1, 2, and 3 were discarded because they merely state that no correlation information was reported in their respective sections, not that the study itself found no correlations. Candidate 4, sourced from a table explicitly detailing 'Means, standard deviations, and correlations', provides specific relationships between 'PPGO and Adaptive perf.' and 'APGO and Adaptive perf.'. These values directly describe correlations between types of performance goal orientation and performance adaptation, aligning with the field definition and examples. Candidates 0 (abstract) and 5 (discussion) state a general 'No correlation between Performance Goal Orientation and performance adaptation was reported'. However, the specific correlations from the table (Candidate 4) are considered more reliable and granular, especially since the definition's examples include specific goal orientation types like PPGO and APGO. Following the instruction to 'Prefer 'Results'/'Method'/'Table' sections over 'Abstract' or 'Introduction'', Candidate 4 is prioritized as the most accurate and specific source for the correlation information."
+  },
+  "PgoType": {
+    "extract_value": {
+      "Single study": [
+        "Prove",
+        "Avoid"
+      ]
+    },
+    "best_indices": [
+      3,
+      4
+    ],
+    "reason": "The paper reports a single study. Candidates 3 and 4, derived from table notes in the results section, explicitly define and refer to 'Prove performance goal orientation (PPGO)' and 'Avoidance performance goal orientation (APGO)' as constructs measured and used in the analysis. This directly aligns with the definition's tie-breaker rule 1, which states that if both performance-approach and performance-avoidance are reported as separate constructs, they should be coded as 'Prove' and 'Avoid'. Candidate 1, while from the methods section, infers 'Global' based on the mention of a 13-item goal orientation scale without further detail on its scoring or subscales. However, the explicit definitions and usage of PPGO and APGO in the results (Candidates 3 and 4) provide more specific and reliable information about how these constructs were treated in the study. Other candidates are either too vague, inferential, or provide empty values. Therefore, 'Prove' and 'Avoid' are the most accurate PgoType values."
+  }
+}

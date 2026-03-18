@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text is a section (2.4.2. Other predictor variables) within a larger paper, citing multiple other journal articles, which is characteristic of a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No financial support information was mentioned in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from PubType being a journal article (1), which is typically peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The text mentions 'goal orientation (13-items; VandeWalle, 1997)' without specifying approach or avoidance components, implying a global measure.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text states 'Baseline performance was operationalized using the mean performance of the two baseline trials.', which is an objective measure.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text states 'Baseline performance was operationalized using the mean performance of the two baseline trials.', indicating an objective score.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text states 'Baseline performance was operationalized using the mean performance of the two baseline trials.', which is an objective measure.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "The text explicitly states 'goal orientation (13-items; VandeWalle, 1997)'.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information was provided in the text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No age information was provided in the text to impute mean age.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No sex composition information was provided in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No sex composition information was provided in the text to calculate men's proportion.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No country information was provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No sample type information was provided in the text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No sample size (N) was provided in the text.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No correlation values between goal orientation and performance adaptation were reported in the text.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No correlation values were reported in the text to provide correlation information.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section describes variables and measures for a single, unnamed study, without indicating multiple distinct studies or experiments.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the measurement of several predictor variables, including general mental ability (GMA) using ACT and APM scores, core self-evaluations, goal orientation (VandeWalle, 1997), task-specific self-efficacy, and videogame experience. It also defines baseline performance as the mean of two baseline trials. No specific study names or multiple sample subsets are mentioned.",
+      "evidence_source": "Summary of the provided text content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

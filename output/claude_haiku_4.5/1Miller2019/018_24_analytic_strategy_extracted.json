@@ -1,0 +1,88 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section is a methodological description of analytic strategy. No country information is provided in this section.",
+      "warning": "No country information available in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes analytic procedures and multilevel modeling approach. No sample size is explicitly stated in this section.",
+      "warning": "No sample size information available in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes statistical analysis methods (multilevel modeling, PROC MIXED in SAS 9.3) but does not specify the survey administration method (paper-and-pencil vs. online).",
+      "warning": "No survey method information available in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section is focused on analytic strategy and does not contain demographic information about participant race/ethnicity.",
+      "warning": "No racial/ethnic demographic data available in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes statistical analysis procedures and does not include participant age information.",
+      "warning": "No age demographic data available in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section focuses on analytic methodology and does not provide information about participants' educational attainment.",
+      "warning": "No educational attainment data available in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While BMI is mentioned as a level-2 covariate in the multilevel models ('Level-2 fixed effects were the covariate BMI'), no mean BMI value is reported in this section.",
+      "warning": "BMI is referenced as a variable in the analysis but no mean value is provided."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes analytic procedures and does not specify where or how participants were recruited (community, college, or primary/secondary/high school).",
+      "warning": "No information about sample source available in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes multilevel modeling procedures. While 'body acceptance' is mentioned as a criterion variable, no specific instrument for assessing body appreciation (BAS or BAS-2) is identified in this section.",
+      "warning": "Body acceptance is mentioned as a criterion variable but no specific assessment instrument is specified."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes the analytic approach but does not specify whether BMI was assessed via self-report or measured directly.",
+      "warning": "BMI assessment method not specified in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes the analytic strategy and model specifications but does not report any correlation coefficients between body appreciation and BMI.",
+      "warning": "No correlation values reported in this methodological section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The section describes analytic procedures for what appears to be a single study with a repeated measures design (assessment days nested within participants). No explicit mention of multiple studies is provided in this section.",
+      "warning": "Cannot determine number of studies from this methodological section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The section is a methodological description and does not contain publication type information.",
+      "warning": "Publication type not available in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the analytic strategy for a study examining how social interactions influence eating and body image using multilevel modeling with PROC MIXED in SAS 9.3. The analysis involves a hierarchical data structure with assessment days (level-1) nested within participants (level-2), examining both between-person and within-person predictors of body image and eating outcomes. Two sets of models are tested: one examining daily deviations in exposure to body-focused and non-body-focused others, and another examining changes in exposure from day to day while controlling for prior criterion variable levels.",
+      "evidence_source": "Section 2.4 Analytic strategy - entire section describes the multilevel modeling approach and hypothesis testing procedures."
+    },
+    "_pass_type": "text_only"
+  }
+]

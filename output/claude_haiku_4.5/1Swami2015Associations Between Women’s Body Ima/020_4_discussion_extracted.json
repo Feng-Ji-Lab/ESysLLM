@@ -1,0 +1,97 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'Western women' and references to 'United States Census Bureau 2009' but does not explicitly state the country where the study was conducted. The discussion section does not provide specific country information.",
+      "warning": "Country not explicitly stated in this discussion section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The discussion section does not provide specific sample size numbers. It references 'two samples of Western women' but does not state the actual number of participants.",
+      "warning": "Sample size not provided in this discussion section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "online"
+        ]
+      },
+      "evidence_source": "The text states: 'because our survey was conducted online, our sample may be biased toward women with Internet access'",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The discussion mentions that ethnicity was not measured: 'demographic variables such as ethnicity' were neglected in the study.",
+      "warning": "Ethnicity/race data not collected or reported."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The discussion section does not provide specific mean age values, though it discusses age as a variable that shaped body image outcomes.",
+      "warning": "Mean age not provided in this discussion section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The discussion mentions education as a proxy for SES but does not provide the percentage of participants with college or higher education.",
+      "warning": "Specific percentage of college or higher education not provided."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The discussion section discusses BMI as a variable but does not report the mean BMI of participants.",
+      "warning": "Mean BMI not provided in this discussion section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The discussion mentions 'self-selecting' samples and online survey but does not specify whether participants were from community, college, or primary/secondary/high school sources.",
+      "warning": "Specific source of sample (community, college, or school) not explicitly stated."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The discussion section does not specify which instrument (BAS or BAS-2) was used to assess body appreciation.",
+      "warning": "Specific body appreciation assessment instrument not mentioned in this discussion section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "The text states: 'The accuracy of self-reported data cannot be established in the present instance. For example, although self-reported height and weight are strongly correlated with objectively measured data, there is also a tendency among women to over-report height and under-report their weight'",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The discussion section does not provide the specific correlation coefficient between body appreciation and BMI. It discusses relationships but does not report the actual correlation value.",
+      "warning": "Specific correlation coefficient between body appreciation and BMI not provided in this discussion section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 2,
+      "evidence_source": "The text explicitly states: 'we examined the relationships between body image and subjective happiness in two samples of Western women'",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The discussion section does not indicate whether this is a journal article or dissertation.",
+      "warning": "Publication type not specified in this discussion section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This discussion section examines relationships between body image and subjective happiness in two samples of Western women, finding that body appreciation is a strong positive predictor of happiness while BMI shows a complex relationship. The authors note that 89% of women in their survey experienced weight-based dissatisfaction and discuss limitations including self-selecting samples, online survey methodology, self-reported BMI data, and the cross-sectional nature of the study.",
+      "evidence_source": "Opening paragraph and limitations section of the discussion",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to 'this article' multiple times, indicating a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding was found in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to 'this article' and discusses 'Limitations and Directions for Future Research', which is characteristic of a peer-reviewed journal article.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{'Study X': ['Global']}",
+      "evidence_source": "The text mentions 'performance orientation' without distinguishing between approach and avoidance subscales, implying a global measure. For example: 'Unexpected results in this study were the direct relationships between mastery orientation and performance orientation and self-efficacy'.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{'Study X': [3]}",
+      "evidence_source": "The text states 'learning outcomes related to performance on a more difficult version of the task'. This 'performance on a task' is an objective measure of adaptation. The 'multiple learning outcomes that were cognitive, skill-based, and affective' are also mentioned, but the 'transfer task' is explicitly linked to performance adaptation.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{'Study X': [1]}",
+      "evidence_source": "The adaptation outcome is described as 'performance on a more difficult version of the task', which is an objective score.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{'Study X': [3]}",
+      "evidence_source": "The adaptation outcome is described as 'performance on a more difficult version of the task', which is an objective assessment method.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{'Study X': [1]}",
+      "evidence_source": "The text mentions 'mastery orientation and performance orientation' but does not specify the measurement scale used, so it is coded as 'Other'.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{'Study X': ['None']}",
+      "evidence_source": "No information regarding age (mean, range, SD, median, or subgroups) was found in the provided text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{'Study X': ['None']}",
+      "evidence_source": "No mean age or information to impute age was found in the provided text.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{'Study X': ['None']}",
+      "evidence_source": "No information about the sex composition of the sample was found in the provided text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{'Study X': ['None']}",
+      "evidence_source": "No information about the percentage of men in the sample was found in the provided text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{'Study X': ['None']}",
+      "evidence_source": "No information about the country where the study was conducted was found in the provided text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{'Study X': ['None']}",
+      "evidence_source": "No information about whether the sample was a student sample or other was found in the provided text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{'Study X': ['None']}",
+      "evidence_source": "No sample size (N) for the correlation between goal orientation and performance adaptation was reported in this section.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{'Study X': ['None']}",
+      "evidence_source": "The text discusses relationships (e.g., 'direct relationships between mastery orientation and performance orientation and self-efficacy'), but no specific correlation coefficients (r values) between performance goal orientation and performance adaptation were provided.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{'Study X': ['None']}",
+      "evidence_source": "No specific correlation values were found, therefore no correlation information can be provided.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'the study' or 'this study' in the singular throughout the section, indicating a single study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section discusses the limitations and future research directions for a single study. It highlights the study's strength in using multiple learning outcomes (cognitive, skill-based, affective) and a transfer task for performance adaptation. The text also notes unexpected direct relationships between mastery and performance orientation with self-efficacy, and calls for future research on learning strategies, metacognition, and the use of stronger experimental designs.",
+      "evidence_source": "Summary of the 'Limitations and Directions for Future Research' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size is explicitly stated in this section. The text refers to 'the sample' but does not provide a total number of participants.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section mentions 'nightly basis' and 'daily diary portion' but does not explicitly state whether data collection was via paper-and-pencil or online methods.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information regarding race/ethnicity is provided in this section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in this section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          22.47
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'The mean BMI in the sample was 22.47 (SD = 3.28).' This is the only study referenced in this section, labeled as Study X since no explicit study number is provided.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the source of the sample (community, college, or primary/secondary/high school) is provided in this section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section is titled 'Measures' but does not specify which instrument (BAS or BAS-2) was used to assess body appreciation. The text mentions that 'all other measures were completed on a nightly basis' but does not name the specific body appreciation assessment tool.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'BMI was assessed via self-reported weight and height four to six days before the daily diary portion of the study.'",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficients between body appreciation and BMI are reported in this section. The section only describes the measures and their administration.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "This section describes measures for a single study. The text refers to 'the study' and 'the sample' (singular), indicating one study is being described.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the measures used in a single study (Study X). BMI was assessed via self-reported weight and height, with a mean BMI of 22.47 (SD = 3.28) in the sample. All other measures, including body appreciation assessment, were completed on a nightly basis as part of a daily diary study design, with item wording modified to assess participants' experiences 'that day' rather than retrospectively or on average.",
+      "evidence_source": "Section 2.3 Measures",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

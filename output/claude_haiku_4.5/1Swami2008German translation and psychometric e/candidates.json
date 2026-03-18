@@ -1,0 +1,678 @@
+{
+  "Publication type": {
+    "0": {
+      "type": "enum_or_none",
+      "extract_value": "journal articles",
+      "evidence_source": "The text indicates this is from 'Body Image 5 (2008) 122\u2013127' which is a journal publication format.",
+      "warning": "None",
+      "source_file": "001_general_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "The provided text contains only a journal header from Body Image volume 5 (2008), pages 122\u2013127. No actual study content, methodology, or results are present in the provided text. Additional content from the article is needed to extract study-level metadata and statistics."
+    },
+    "1": {
+      "type": "enum_or_none",
+      "extract_value": "journal articles",
+      "evidence_source": "The text indicates 'Body Image 5 (2008) 122\u2013127' which is a journal citation format, and the Elsevier logo is shown, indicating this is from a peer-reviewed journal publication.",
+      "warning": "Publication type inferred from journal citation format; full article content not provided.",
+      "source_file": "001_general_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2008German translation and psychometric e/figures/1Swami2008German translation and psychometric e_p000_fig00.png",
+      "_metadata_caption": "",
+      "_extracted_caption": "Elsevier Logo and Journal Header",
+      "_section_summary": "This section shows only the header page of a journal article from Body Image (Volume 5, 2008, pages 122\u2013127) published by Elsevier. No study details, methodology, or data are visible in the provided text or image."
+    }
+  },
+  "Country": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "Austria"
+        ]
+      },
+      "evidence_source": "Abstract states: 'Based on a community sample of 156 women and 144 men in Austria'",
+      "warning": "None",
+      "source_file": "004_abstract_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This abstract describes a single study (Study 1) that examined the psychometric properties of the German version of the Body Appreciation Scale (BAS) in an Austrian community sample of 156 women and 144 men. The study found good internal reliability and construct validity for the BAS, with gender-specific analyses showing that women with lower BMIs reported greater body appreciation while no such association was found for men."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "Germany"
+        ]
+      },
+      "evidence_source": "The text states: 'the present study sought to achieve trough the development of a German translation of the BAS' and 'the aim of the present study was to conduct a translation and validation of a German version of the BAS with male and female community samples.' This indicates the study was conducted in Germany.",
+      "warning": "None",
+      "source_file": "005_introduction_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This introduction section discusses the shift in body image research from a pathology-oriented focus on negative body image to examining positive body image. The authors reference Avalos et al.'s (2005) development of the Body Appreciation Scale (BAS) and outline three extensions needed: examining the BAS in internationally diverse populations (specifically Germany), validating it for men (not just women), and testing it in community samples (not just college students). The present study aims to conduct a translation and validation of a German version of the BAS with male and female community samples."
+    },
+    "2": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Austria"
+        ]
+      },
+      "evidence_source": "Data collection took place in Vienna and its environs, and represents volunteers from the general population.",
+      "warning": "None",
+      "source_file": "007_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes the participants of a single study (Study X) conducted in Vienna, Austria. The sample consisted of 156 women and 144 men (N=300) from the general population, with mean ages of 31.66 and 33.31 years respectively, and mean BMIs of 21.94 and 24.01 kg/m\u00b2 respectively. The majority of participants were educated to secondary level (68%), with only 14.3% having university education."
+    },
+    "3": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "Germany"
+        ]
+      },
+      "evidence_source": "The text states 'This is the first study to use a German translation of the BAS' and discusses 'the psychometric properties of the BAS hold when a community sample is investigated, as opposed to college women,' indicating a German-speaking community sample. The reference to 'English and German versions of the scale' and the context of translating the BAS into German strongly suggests this study was conducted in Germany.",
+      "warning": "The country is inferred from the mention of 'German translation' rather than explicitly stated as the study location. However, this is a reasonable inference given the context.",
+      "source_file": "019_discussion_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "None"
+    }
+  },
+  "Sample": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          300
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            156
+          ]
+        },
+        "male": {
+          "Study 1": [
+            144
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study 1": [
+            300
+          ]
+        }
+      },
+      "evidence_source": "Abstract states: 'Based on a community sample of 156 women and 144 men in Austria' (156 + 144 = 300 total participants)",
+      "warning": "None",
+      "source_file": "004_abstract_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This abstract describes a single study (Study 1) that examined the psychometric properties of the German version of the Body Appreciation Scale (BAS) in an Austrian community sample of 156 women and 144 men. The study found good internal reliability and construct validity for the BAS, with gender-specific analyses showing that women with lower BMIs reported greater body appreciation while no such association was found for men."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          300
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            156
+          ]
+        },
+        "male": {
+          "Study X": [
+            144
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            300
+          ]
+        }
+      },
+      "evidence_source": "Participants were a community sample of 156 women and 144 men. Total: 156 + 144 = 300.",
+      "warning": "None",
+      "source_file": "007_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes the participants of a single study (Study X) conducted in Vienna, Austria. The sample consisted of 156 women and 144 men (N=300) from the general population, with mean ages of 31.66 and 33.31 years respectively, and mean BMIs of 21.94 and 24.01 kg/m\u00b2 respectively. The majority of participants were educated to secondary level (68%), with only 14.3% having university education."
+    }
+  },
+  "Source of sample": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "community"
+        ]
+      },
+      "evidence_source": "Abstract states: 'Based on a community sample of 156 women and 144 men in Austria'",
+      "warning": "None",
+      "source_file": "004_abstract_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This abstract describes a single study (Study 1) that examined the psychometric properties of the German version of the Body Appreciation Scale (BAS) in an Austrian community sample of 156 women and 144 men. The study found good internal reliability and construct validity for the BAS, with gender-specific analyses showing that women with lower BMIs reported greater body appreciation while no such association was found for men."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "community"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'given that Avalos et al. only examined college students, an additional purpose for the present study was to examine positive body image among a community sample' and 'the aim of the present study was to conduct a translation and validation of a German version of the BAS with male and female community samples.'",
+      "warning": "None",
+      "source_file": "005_introduction_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This introduction section discusses the shift in body image research from a pathology-oriented focus on negative body image to examining positive body image. The authors reference Avalos et al.'s (2005) development of the Body Appreciation Scale (BAS) and outline three extensions needed: examining the BAS in internationally diverse populations (specifically Germany), validating it for men (not just women), and testing it in community samples (not just college students). The present study aims to conduct a translation and validation of a German version of the BAS with male and female community samples."
+    },
+    "2": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "community"
+        ]
+      },
+      "evidence_source": "Participants were a community sample of 156 women and 144 men, ranging in age from 16 to 80 years. Data collection took place in Vienna and its environs, and represents volunteers from the general population.",
+      "warning": "None",
+      "source_file": "007_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes the participants of a single study (Study X) conducted in Vienna, Austria. The sample consisted of 156 women and 144 men (N=300) from the general population, with mean ages of 31.66 and 33.31 years respectively, and mean BMIs of 21.94 and 24.01 kg/m\u00b2 respectively. The majority of participants were educated to secondary level (68%), with only 14.3% having university education."
+    },
+    "3": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "community"
+        ]
+      },
+      "evidence_source": "The text states: 'All participants were recruited opportunistically through a snowball-sampling technique. A number of data collectors, all of whom were study collaborators, directly recruited participants through their personal contacts.' This indicates community-based recruitment rather than college or school-based recruitment.",
+      "warning": "None",
+      "source_file": "013_procedure_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This procedural section describes the data collection methods for a study using opportunistic snowball sampling to recruit participants from the community. Participants completed paper-and-pencil questionnaires anonymously, and researchers developed German versions of the BAS (Body Appreciation Scale) and BES scales using the parallel blind translation technique to maintain translation quality."
+    }
+  },
+  "Assessment of BA": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "Abstract states: 'This paper examined the psychometric properties of the German version of the Body Appreciation Scale (BAS)' and 'The German BAS, a useful indicator of positive body image among Austrian adults'",
+      "warning": "None",
+      "source_file": "004_abstract_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This abstract describes a single study (Study 1) that examined the psychometric properties of the German version of the Body Appreciation Scale (BAS) in an Austrian community sample of 156 women and 144 men. The study found good internal reliability and construct validity for the BAS, with gender-specific analyses showing that women with lower BMIs reported greater body appreciation while no such association was found for men."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text discusses the Body Appreciation Scale (BAS) throughout, stating 'the aim of the present study was to conduct a translation and validation of a German version of the BAS.' The BAS is the instrument used to assess body appreciation in this study.",
+      "warning": "None",
+      "source_file": "005_introduction_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This introduction section discusses the shift in body image research from a pathology-oriented focus on negative body image to examining positive body image. The authors reference Avalos et al.'s (2005) development of the Body Appreciation Scale (BAS) and outline three extensions needed: examining the BAS in internationally diverse populations (specifically Germany), validating it for men (not just women), and testing it in community samples (not just college students). The present study aims to conduct a translation and validation of a German version of the BAS with male and female community samples."
+    },
+    "2": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly describes the Body Appreciation Scale (BAS; Avalos et al., 2005) as a 13-item scale developed to measure positive body image. This is an instrument description, not a specific study, so it is labeled as 'Study X'.",
+      "warning": "This section describes the BAS instrument itself rather than a specific empirical study. The assessment tool is identified, but no study-specific data is provided.",
+      "source_file": "010_body_appreciation_scale_bas_avalos_et_al_2005_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes the Body Appreciation Scale (BAS), a 13-item instrument developed by Avalos et al. (2005) to measure positive body image. The scale uses a 5-point rating format (1=never to 5=always), with Item 12 being sex-specific to account for different media representations (thin images for women, muscular images for men). The English version demonstrated unidimensional structure for women, test-retest reliability, and good construct, discriminant, and incremental validities."
+    },
+    "3": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'Body Appreciation Scale (BAS; Avalos et al., 2005) This is a 13-item scale developed to measure four aspects of positive body image.' Table 1 is titled 'Body Appreciation Scale (BAS) items and factor loadings from the exploratory factor analysis of the data' and shows the 13 items with factor loadings for women and men.",
+      "warning": "None",
+      "source_file": "010_body_appreciation_scale_bas_avalos_et_al_2005_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2008German translation and psychometric e/tables/1Swami2008German translation and psychometric e_p001_table00.png",
+      "_metadata_caption": null,
+      "_extracted_caption": "Table 1 Body Appreciation Scale (BAS) items and factor loadings from the exploratory factor analysis of the data",
+      "_section_summary": "This section describes the Body Appreciation Scale (BAS), a 13-item instrument designed to measure positive body image across four dimensions. The scale uses a 5-point rating system (1=never to 5=always), with Item 12 being sex-specific to address gender-relevant media influences (thin images for women, muscular images for men). Table 1 presents all 13 BAS items and their factor loadings separately for women and men from an exploratory factor analysis, demonstrating the scale's structure and gender differences in item loadings."
+    },
+    "4": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'Three researchers (TH, MV, SS) developed German versions of the BAS and BES scales from their originals in English.' The BAS (Body Appreciation Scale) is mentioned as one of the instruments used.",
+      "warning": "None",
+      "source_file": "013_procedure_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This procedural section describes the data collection methods for a study using opportunistic snowball sampling to recruit participants from the community. Participants completed paper-and-pencil questionnaires anonymously, and researchers developed German versions of the BAS (Body Appreciation Scale) and BES scales using the parallel blind translation technique to maintain translation quality."
+    },
+    "5": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'we conducted an exploratory factor analysis of the BAS data' and 'we calculated Cronbach's a for all 13 items of the BAS, and this revealed that the internal consistency of the BAS for female participants was very good (a = .90).' The BAS (Body Appreciation Scale) is the instrument used to assess body appreciation.",
+      "warning": "None",
+      "source_file": "015_results_for_women_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section presents results for female participants from a study examining the Body Appreciation Scale (BAS). The authors conducted a factor analysis of the BAS data, finding a one-factor solution that explained 45.5% of variance and demonstrated good internal consistency (\u03b1 = .90) for female participants. The analysis revealed that BAS showed a moderate negative correlation with BMI, supporting the construct validity of the scale."
+    },
+    "6": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text states 'we calculated Cronbach's a for all 13 items of the BAS' and Table 2 shows BAS as the body appreciation measure.",
+      "warning": "None",
+      "source_file": "015_results_for_women_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2008German translation and psychometric e/tables/1Swami2008German translation and psychometric e_p003_table00.png",
+      "_metadata_caption": null,
+      "_extracted_caption": "Table 2: Means, standard deviations and Pearson r correlations among the different measures for women (lower off-diagonal entries) and men (upper off-diagonal entries)",
+      "_section_summary": "This section reports results from a single study analyzing body appreciation (BAS) and its correlations with various measures separately for women and men. Table 2 presents means, standard deviations, and Pearson r correlations among different measures for both genders, showing that BAS had a moderate negative correlation with BMI for women (r = \u2212.28) but virtually no correlation for men (r = \u2212.03)."
+    },
+    "7": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly states 'For the male BAS data' and 'Cronbach's \u03b1 for all 13 items of the BAS for men revealed that the internal consistency was good (\u03b1 = .85).' This indicates the Body Appreciation Scale (BAS) was used to assess body appreciation.",
+      "warning": "None",
+      "source_file": "016_results_for_men_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section presents factor analysis and reliability results for the Body Appreciation Scale (BAS) in male participants. The BAS demonstrated adequate sampling adequacy (KMO = .88) and a one-factor solution explaining 38.3% of variance, with good internal consistency (\u03b1 = .85). Notably, while BAS showed large positive correlations with physical activity, upper body strength, and physical competence, there was no significant association between male body appreciation and BMI."
+    },
+    "8": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly mentions 'BAS' as the body appreciation measure being used in the regression analysis: 'In the second step, BAS was entered in the regression equation to determine if it predicted self-esteem beyond the BES variables.'",
+      "warning": "None",
+      "source_file": "018_regression_analysis_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section reports hierarchical regression analyses examining whether Body Appreciation Scale (BAS) predicts self-esteem beyond Body Esteem Scale (BES) variables, conducted separately for women (n\u2248160) and men (n\u2248148). In both gender groups, BAS emerged as a significant negative predictor of self-esteem (women: \u03b2 = -.25, p < .05; men: \u03b2 = -.27, p < .05), accounting for 4% of variance in each group."
+    }
+  },
+  "Number of studies": {
+    "0": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The abstract describes a single study examining the psychometric properties of the German version of the BAS in an Austrian community sample.",
+      "warning": "None",
+      "source_file": "004_abstract_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This abstract describes a single study (Study 1) that examined the psychometric properties of the German version of the Body Appreciation Scale (BAS) in an Austrian community sample of 156 women and 144 men. The study found good internal reliability and construct validity for the BAS, with gender-specific analyses showing that women with lower BMIs reported greater body appreciation while no such association was found for men."
+    },
+    "1": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The introduction describes 'the present study' as a single study aimed at conducting 'a translation and validation of a German version of the BAS with male and female community samples.' While Avalos et al. (2005) conducted four studies, those are cited work, not part of the present paper. The present paper appears to describe one main study.",
+      "warning": "None",
+      "source_file": "005_introduction_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This introduction section discusses the shift in body image research from a pathology-oriented focus on negative body image to examining positive body image. The authors reference Avalos et al.'s (2005) development of the Body Appreciation Scale (BAS) and outline three extensions needed: examining the BAS in internationally diverse populations (specifically Germany), validating it for men (not just women), and testing it in community samples (not just college students). The present study aims to conduct a translation and validation of a German version of the BAS with male and female community samples."
+    },
+    "2": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with one sample of participants from Vienna and its environs. No explicit mention of multiple studies or experiments.",
+      "warning": "None",
+      "source_file": "007_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes the participants of a single study (Study X) conducted in Vienna, Austria. The sample consisted of 156 women and 144 men (N=300) from the general population, with mean ages of 31.66 and 33.31 years respectively, and mean BMIs of 21.94 and 24.01 kg/m\u00b2 respectively. The majority of participants were educated to secondary level (68%), with only 14.3% having university education."
+    },
+    "3": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "This section is an instrument description (the Body Appreciation Scale) rather than a report of empirical studies. No studies are described in this text.",
+      "warning": "None",
+      "source_file": "010_body_appreciation_scale_bas_avalos_et_al_2005_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes the Body Appreciation Scale (BAS), a 13-item instrument developed by Avalos et al. (2005) to measure positive body image. The scale uses a 5-point rating format (1=never to 5=always), with Item 12 being sex-specific to account for different media representations (thin images for women, muscular images for men). The English version demonstrated unidimensional structure for women, test-retest reliability, and good construct, discriminant, and incremental validities."
+    },
+    "4": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes results for women and men from a single study, with separate analyses by gender but no indication of multiple distinct studies.",
+      "warning": "None",
+      "source_file": "015_results_for_women_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2008German translation and psychometric e/tables/1Swami2008German translation and psychometric e_p003_table00.png",
+      "_metadata_caption": null,
+      "_extracted_caption": "Table 2: Means, standard deviations and Pearson r correlations among the different measures for women (lower off-diagonal entries) and men (upper off-diagonal entries)",
+      "_section_summary": "This section reports results from a single study analyzing body appreciation (BAS) and its correlations with various measures separately for women and men. Table 2 presents means, standard deviations, and Pearson r correlations among different measures for both genders, showing that BAS had a moderate negative correlation with BMI for women (r = \u2212.28) but virtually no correlation for men (r = \u2212.03)."
+    }
+  },
+  "Mean age of participants": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          32.485
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            31.66
+          ]
+        },
+        "male": {
+          "Study X": [
+            33.31
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            32.485
+          ]
+        }
+      },
+      "evidence_source": "age M \u00b1 SD women = 31.66 \u00b1 13.60, men = 33.31 \u00b1 15.05. Overall mean computed as: (31.66 \u00d7 156 + 33.31 \u00d7 144) / 300 = 32.485.",
+      "warning": "None",
+      "source_file": "007_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes the participants of a single study (Study X) conducted in Vienna, Austria. The sample consisted of 156 women and 144 men (N=300) from the general population, with mean ages of 31.66 and 33.31 years respectively, and mean BMIs of 21.94 and 24.01 kg/m\u00b2 respectively. The majority of participants were educated to secondary level (68%), with only 14.3% having university education."
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          14.3
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            14.3
+          ]
+        }
+      },
+      "evidence_source": "In terms of highest educational qualification, the majority of participants were educated to a secondary level (68.0%; university = 14.3%, apprenticeships = 10.3%, primary school = 7.0%). Only university education is counted as college or higher.",
+      "warning": "None",
+      "source_file": "007_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes the participants of a single study (Study X) conducted in Vienna, Austria. The sample consisted of 156 women and 144 men (N=300) from the general population, with mean ages of 31.66 and 33.31 years respectively, and mean BMIs of 21.94 and 24.01 kg/m\u00b2 respectively. The majority of participants were educated to secondary level (68%), with only 14.3% having university education."
+    }
+  },
+  "Mean BMI of participants": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          22.9975
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            21.94
+          ]
+        },
+        "male": {
+          "Study X": [
+            24.01
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            22.9975
+          ]
+        }
+      },
+      "evidence_source": "The mean body mass index (BMI) for male participants was 24.01 kg/m\u00b2 (SD = 3.34), whereas that of women was 21.94 kg/m\u00b2 (SD = 3.82). Overall mean computed as: (21.94 \u00d7 156 + 24.01 \u00d7 144) / 300 = 22.9975.",
+      "warning": "None",
+      "source_file": "007_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes the participants of a single study (Study X) conducted in Vienna, Austria. The sample consisted of 156 women and 144 men (N=300) from the general population, with mean ages of 31.66 and 33.31 years respectively, and mean BMIs of 21.94 and 24.01 kg/m\u00b2 respectively. The majority of participants were educated to secondary level (68%), with only 14.3% having university education."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "female": [
+          21.94
+        ],
+        "male": [
+          24.01
+        ],
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Table 2 reports M (women) = 21.94 and M (men) = 24.01 for BMI.",
+      "warning": "None",
+      "source_file": "015_results_for_women_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2008German translation and psychometric e/tables/1Swami2008German translation and psychometric e_p003_table00.png",
+      "_metadata_caption": null,
+      "_extracted_caption": "Table 2: Means, standard deviations and Pearson r correlations among the different measures for women (lower off-diagonal entries) and men (upper off-diagonal entries)",
+      "_section_summary": "This section reports results from a single study analyzing body appreciation (BAS) and its correlations with various measures separately for women and men. Table 2 presents means, standard deviations, and Pearson r correlations among different measures for both genders, showing that BAS had a moderate negative correlation with BMI for women (r = \u2212.28) but virtually no correlation for men (r = \u2212.03)."
+    }
+  },
+  "Survey method": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "paper-and-pencil"
+        ]
+      },
+      "evidence_source": "The text states 'All participants were presented with a three-page questionnaire', which indicates a paper-and-pencil survey method.",
+      "warning": "None",
+      "source_file": "008_measures_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes the measures used in the study, indicating that all participants completed a three-page questionnaire comprising four sections. However, the specific content of these sections, the assessment instruments (such as BAS or BAS-2 for body appreciation), and other study details are not provided in this excerpt."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "paper-and-pencil"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'All participants completed the paper-and-pencil questionnaire anonymously, and returned the questionnaires in a sealed envelope.'",
+      "warning": "None",
+      "source_file": "013_procedure_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This procedural section describes the data collection methods for a study using opportunistic snowball sampling to recruit participants from the community. Participants completed paper-and-pencil questionnaires anonymously, and researchers developed German versions of the BAS (Body Appreciation Scale) and BES scales using the parallel blind translation technique to maintain translation quality."
+    }
+  },
+  "Correlation between body appreciation and BMI": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.3
+        ]
+      },
+      "evidence_source": "The text states: 'BAS showed a large positive correlation (cf. Cohen, 1992) with WC, moderate positive correlations with SA, PC, and self-esteem, and a moderate negative correlation with BMI.' The text explicitly describes a 'moderate negative correlation with BMI' but does not provide the exact correlation coefficient value. Table 2 is referenced as containing 'Pearson r correlations of the measures for women (including BMI)' but the table is not provided. Based on Cohen's (1992) effect size guidelines, a 'moderate' correlation typically ranges from approximately -0.3 to -0.5. Without the actual table, an exact value cannot be extracted.",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.3
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "warning": "Exact correlation coefficient not provided in text; Table 2 referenced but not provided. Estimated value based on 'moderate negative correlation' descriptor. This is an approximation and should be verified against the actual table.",
+      "source_file": "015_results_for_women_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section presents results for female participants from a study examining the Body Appreciation Scale (BAS). The authors conducted a factor analysis of the BAS data, finding a one-factor solution that explained 45.5% of variance and demonstrated good internal consistency (\u03b1 = .90) for female participants. The analysis revealed that BAS showed a moderate negative correlation with BMI, supporting the construct validity of the scale."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.03,
+          -0.28
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.28
+          ]
+        },
+        "male": {
+          "Study X": [
+            -0.03
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Table 2, row 1 (BAS) and column 6 (BMI): For women (lower off-diagonal), the correlation is \u2212.28** (p < .001). For men (upper off-diagonal), the correlation is \u2212.03 (not significant).",
+      "warning": "None",
+      "source_file": "015_results_for_women_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2008German translation and psychometric e/tables/1Swami2008German translation and psychometric e_p003_table00.png",
+      "_metadata_caption": null,
+      "_extracted_caption": "Table 2: Means, standard deviations and Pearson r correlations among the different measures for women (lower off-diagonal entries) and men (upper off-diagonal entries)",
+      "_section_summary": "This section reports results from a single study analyzing body appreciation (BAS) and its correlations with various measures separately for women and men. Table 2 presents means, standard deviations, and Pearson r correlations among different measures for both genders, showing that BAS had a moderate negative correlation with BMI for women (r = \u2212.28) but virtually no correlation for men (r = \u2212.03)."
+    },
+    "2": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          0
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": {
+          "Study X": [
+            0
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text explicitly states: 'There was, however, no association between male body appreciation and BMI.' This indicates a correlation of 0 (or very close to 0, indicating no association) between BAS and BMI for males.",
+      "warning": "The text states 'no association' which typically indicates a correlation near zero. The exact correlation coefficient is not numerically provided, but 'no association' is interpreted as r \u2248 0.",
+      "source_file": "016_results_for_men_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section presents factor analysis and reliability results for the Body Appreciation Scale (BAS) in male participants. The BAS demonstrated adequate sampling adequacy (KMO = .88) and a one-factor solution explaining 38.3% of variance, with good internal consistency (\u03b1 = .85). Notably, while BAS showed large positive correlations with physical activity, upper body strength, and physical competence, there was no significant association between male body appreciation and BMI."
+    }
+  }
+}

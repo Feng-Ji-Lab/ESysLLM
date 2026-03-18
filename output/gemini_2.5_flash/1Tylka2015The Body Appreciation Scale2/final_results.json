@@ -1,0 +1,624 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      3
+    ],
+    "best_indices": [
+      0,
+      1,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      15,
+      20,
+      24,
+      26
+    ],
+    "reason": "The most accurate value for the total number of studies is 3. This is explicitly stated in the Abstract (Candidate 0), Introduction (Candidate 1), and multiple Discussion sections (Candidates 15, 24). Furthermore, several Method and Discussion sections (Candidates 8, 9, 10, 11, 12, 13, 20, 26) explicitly mention or refer to 'Study 1, Study 2, and Study 3', providing strong and consistent evidence across different parts of the paper. While some candidates focus on individual studies (value 1) or a subset of two studies (value 2), these are specific to their section's focus rather than the overall count for the entire paper. The overwhelming consensus from high-level summary sections and detailed method descriptions confirms three studies were conducted."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "reason": "All candidate extractions consistently identify the publication type as 'journal articles'. There are no conflicting values among the candidates, which strongly supports this selection."
+  },
+  "Sample": {
+    "extract_value": {
+      "Study 1": [
+        "675",
+        "208"
+      ],
+      "Study 2": [
+        "263",
+        "317"
+      ],
+      "Study 3": [
+        "382"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [
+          "308",
+          "73"
+        ],
+        "Study 2": [
+          "102",
+          "167"
+        ],
+        "Study 3": [
+          "190"
+        ]
+      },
+      "female": {
+        "Study 1": [
+          "367",
+          "135"
+        ],
+        "Study 2": [
+          "161",
+          "150"
+        ],
+        "Study 3": [
+          "192"
+        ]
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "total": {
+        "Study 1": [
+          "675",
+          "208"
+        ],
+        "Study 2": [
+          "263",
+          "317"
+        ],
+        "Study 3": [
+          "382"
+        ]
+      }
+    },
+    "best_indices": [
+      2,
+      4,
+      6,
+      8,
+      12,
+      14
+    ],
+    "reason": "The paper explicitly states three studies. For Study 1, Candidate 2 (from the method section) provides the initial sample of 675 participants (367 women, 308 men) and a test-retest follow-up sample of 208 participants (135 women, 73 men). These two samples are merged into the 'extract_value' list for Study 1, as per instructions for subsample merging. Candidates 6 and 8 also confirm the initial 675 participants for Study 1. For Study 2, Candidate 4 (from the Study 2 section) and Candidates 6, 8, and 12 (from comprehensive notes and results sections) consistently report two distinct samples: 263 college students (161 women, 102 men) and 317 Amazon Mechanical Turk (MTurk) participants (150 women, 167 men). These two samples are merged into the 'extract_value' list for Study 2. For Study 3, Candidates 6, 8, 12, and 14 consistently report a sample of 382 MTurk participants (192 women, 190 men). This value is used for Study 3. Candidate 0 (Abstract) provides a total sample of 1587 across three studies, but this is an abstract summary and differs from the sum of the detailed study samples (675+208 + 263+317 + 382 = 1845). The detailed method and results sections are preferred for accuracy. Candidate 15 presents conflicting sample sizes (641 for both Study 2 and Study 3) derived from statistical degrees of freedom, which are less reliable for actual participant counts compared to explicit statements in method sections. Therefore, Candidate 15's values are rejected."
+  },
+  "Survey method": {
+    "extract_value": {
+      "Study 1": [
+        "online"
+      ],
+      "Study 2": [
+        "online"
+      ],
+      "Study 3": [
+        "online"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "female": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "total": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      }
+    },
+    "best_indices": [
+      2,
+      5,
+      6,
+      7,
+      8,
+      11
+    ],
+    "reason": "The paper reports three distinct studies. For Study 1, Candidate 2 (from an early method section) describes college students completing an online survey, and Candidates 6, 7, and 8 (from a method section) explicitly state that measures for Study 1 were completed online via SurveyMonkey. For Study 2, Candidate 5 (from a method section) explicitly states that measures for both college and Amazon Mechanical Turk (MTurk) samples were completed online via SurveyMonkey, which is reinforced by Candidates 6, 7, and 8. For Study 3, Candidate 11 (from a later method section) details community participants recruited via MTurk completing the survey via SurveyMonkey, further supported by Candidates 6, 7, and 10. All reliable sources consistently indicate an 'online' survey method for each of the three studies."
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Study 1": [
+        "college"
+      ],
+      "Study 2": [
+        "college",
+        "community"
+      ],
+      "Study 3": [
+        "community"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "female": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "total": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      }
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "reason": "The paper explicitly states it has three studies. Study 1 consistently recruited participants from 'college' samples, as evidenced by candidates 1, 2, 5, 6, 7, and 8. Candidate 2, initially labeled 'Study X', was resolved to Study 1 based on its section summary describing college student recruitment and its position in the document flow. Study 2 consistently recruited participants from both 'college' and 'community' samples, as evidenced by candidates 3, 4, 5, 6, 7, 8, 11, and 12. Study 3 consistently recruited participants from 'community' samples, as evidenced by candidates 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 17, and 19. Candidate 15, initially labeled 'Study X', was resolved to Study 3 based on its section summary detailing community participant recruitment via MTurk. Candidates 0, 10, 16, 18, and 20, which refer to 'Study X' or 'the present study', provide an overall summary of samples used across all studies ('college' and 'community'), which is consistent with the individual study findings. No gender-specific source information was provided in any candidate."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Study 1": [
+        "BAS-2"
+      ],
+      "Study 2": [
+        "BAS-2"
+      ],
+      "Study 3": [
+        "BAS-2"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "female": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "total": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      }
+    },
+    "best_indices": [
+      2,
+      8,
+      10,
+      11,
+      14,
+      20,
+      27
+    ],
+    "reason": "The paper consistently reports the use of the Body Appreciation Scale-2 (BAS-2) across all three studies. Candidates 10, 11, 20, and 27 explicitly state or clearly imply that BAS-2 was used in Studies 1, 2, and 3. Specific study sections (e.g., Candidate 2 for Study 1, Candidate 8 for Study 2, Candidate 14 for Study 3) further confirm the use of BAS-2 for each respective study. While Candidate 0 from the abstract mentions both 'BAS' and 'BAS-2', and Candidate 3 discusses 'original BAS items', the detailed method and results sections consistently refer to BAS-2 as the instrument used for assessment within the studies, indicating that BAS was the precursor or source material for the revised BAS-2, not an independently administered assessment in these studies. Therefore, only BAS-2 is included for each study."
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Study 1": [
+        "79.1",
+        "81.3"
+      ],
+      "Study 2": [
+        "81.0",
+        "79.8"
+      ],
+      "Study 3": [
+        "71.9"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "female": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "total": {
+        "Study 1": [
+          "79.1",
+          "81.3"
+        ],
+        "Study 2": [
+          "81.0",
+          "79.8"
+        ],
+        "Study 3": [
+          "71.9"
+        ]
+      }
+    },
+    "best_indices": [
+      1,
+      4,
+      5,
+      6,
+      7,
+      9
+    ],
+    "reason": "The paper explicitly states it contains three studies. Values for 'Percent of white in participants' were extracted and resolved for each study:\n- **Study 1:** Candidate 1, from an early method section (`011_method_extracted.json`), describes an initial sample and a 3-week follow-up sample, providing percentages of 79.1% and 81.3% respectively. This 'Study X' is resolved to Study 1 as it is the first detailed method description.\n- **Study 2:** Candidates 4, 5, 6, and 7 consistently provide values of 81.0% and 79.8% for 'Study 2', explicitly mentioning two distinct samples (college students and Amazon Mechanical Turk participants). These values are from `014_method_1_extracted.json` and associated assets.\n- **Study 3:** Candidate 9, from a later method section (`017_method_2_extracted.json`), describes a study recruiting 382 community participants via MTurk and SurveyMonkey, with 71.9% identifying as White. This 'Study X' is resolved to Study 3, as it describes a distinct sample and methodology after Study 1 and Study 2 have been identified. \n\nAll identified subsamples within a study were merged into a single list for that study, as per instructions. No conflicting values were found for the same study."
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Study 1": [
+        "20.34",
+        "20.27"
+      ],
+      "Study 2": [
+        "20.43",
+        "32.89"
+      ],
+      "Study 3": [
+        "33.38"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "female": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "total": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      }
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      9
+    ],
+    "reason": "The paper explicitly states it contains three studies. Mean age values were extracted and assigned to the correct studies based on detailed section summaries and evidence. Candidate 1, initially labeled 'Study X', describes college students with initial and follow-up samples (Mage = 20.34, 20.27), which aligns with the description of Study 1 (Candidate 0). Candidate 4 (and confirmed by 5, 6, 7) provides mean ages for Study 2's two samples (college students: Mage = 20.43; community participants: Mage = 32.89). Candidate 9, also labeled 'Study X', describes community participants from MTurk (Mage = 33.38), which is consistent with Study 3. Subsample ages for Study 1 and Study 2 were merged into a single list for their respective studies. No gender-specific age data was found."
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Study 1": [
+        "99.5",
+        "99.5"
+      ],
+      "Study 2": [
+        "100.0",
+        "82.7"
+      ],
+      "Study 3": [
+        "86.1"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "female": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "total": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      }
+    },
+    "best_indices": [
+      1,
+      4,
+      9
+    ],
+    "reason": "The paper explicitly states it contains three studies. Values for 'Percentage of college or higher of participants' were extracted and consolidated for each study:\n- **Study 1:** Candidate 1 (from `011_method_extracted.json`) provides the most precise and detailed information for Study 1. It describes two samples (initial and follow-up) of college students, with 99.5% of participants in each sample reporting college or higher education based on a detailed breakdown of college status. This is preferred over the general statement of 'college students' implying 100% from Candidate 0, as Candidate 1 offers a calculated percentage from specific demographic data.\n- **Study 2:** Candidate 4 (from `014_method_1_extracted.json`) provides comprehensive data for both subsamples of Study 2: 100% for the college student sample (derived from summing college-level categories) and 82.7% for the community sample (explicitly stated as having at least a year of college education). This information is consistent across Candidates 5, 6, and 7, which also refer to Study 2's samples.\n- **Study 3:** Candidate 9 (from `017_method_2_extracted.json`), a later method section, details the education level for a community sample, stating 86.1% reported at least a year of college education. This sample description and section placement align with Study 3. No gender-specific percentages were found for any study."
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Study 1": [
+        "24.21",
+        "25.02"
+      ],
+      "Study 2": [
+        "24.56",
+        "24.84",
+        "27.11",
+        "26.64"
+      ],
+      "Study 3": [
+        "26.82",
+        "26.54"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [
+          "25.02"
+        ],
+        "Study 2": [
+          "24.84",
+          "26.64"
+        ],
+        "Study 3": [
+          "26.54"
+        ]
+      },
+      "female": {
+        "Study 1": [
+          "24.21"
+        ],
+        "Study 2": [
+          "24.56",
+          "27.11"
+        ],
+        "Study 3": [
+          "26.82"
+        ]
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "total": {
+        "Study 1": [
+          "24.21",
+          "25.02"
+        ],
+        "Study 2": [
+          "24.56",
+          "24.84",
+          "27.11",
+          "26.64"
+        ],
+        "Study 3": [
+          "26.82",
+          "26.54"
+        ]
+      }
+    },
+    "best_indices": [
+      1,
+      4,
+      5,
+      6,
+      7,
+      9
+    ],
+    "reason": "Mean BMI values were extracted for all three distinct studies identified in the paper. For Study 1, values (24.21 for women, 25.02 for men) were taken from Candidate 1, which describes a study with college students, consistent with Study 1. For Study 2, values (24.56 for women, 24.84 for men in Sample 1; 27.11 for women, 26.64 for men in Sample 2) were extracted from Candidate 4. Candidates 5, 6, and 7 provided consistent gender-specific breakdowns for these two samples within Study 2, which were merged into a single entry for Study 2 as per instructions. For Study 3, values (26.82 for women, 26.54 for men) were extracted from Candidate 9, which describes a study with MTurk community participants, consistent with Study 3. Study resolution for 'Study X' candidates was based on the detailed section summaries and the sequential order of source file indices (e.g., 011 for Study 1, 014 for Study 2, 017 for Study 3). Other candidates either explicitly stated 'None' for BMI or did not provide specific mean BMI values and were therefore not included in the 'best_indices' as they did not contribute to the extracted data."
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Study 1": [
+        "self-reported"
+      ],
+      "Study 2": [
+        "self-reported"
+      ],
+      "Study 3": [
+        "self-reported"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "female": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "total": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      }
+    },
+    "best_indices": [
+      1,
+      4,
+      5,
+      6,
+      7,
+      9
+    ],
+    "reason": "The paper describes three distinct studies. For Study 1, Candidate 1 explicitly states 'Participants reported their height in feet and inches and weight in pounds, which we used to calculate BMI' in a section describing Study 1's methodology. Candidates 5, 6, and 7 further confirm 'self-reported' for Study 1 with general evidence applying to all studies. For Study 2, Candidate 4 explicitly states 'Participants reported their height and weight, which was used to calculate BMI' in a section primarily focusing on Study 2. Candidates 5, 6, and 7 also confirm 'self-reported' for Study 2. For Study 3, Candidate 9 explicitly states 'Participants self-reported their height and weight, which were used to calculate BMI' in a section detailing Study 3's methodology. Candidates 5 and 6 also confirm 'self-reported' for Study 3. The 'Study X' references in Candidates 1 and 9 were resolved to Study 1 and Study 3, respectively, based on their section summaries and source file context. The 'None' values in other candidates are superseded by these explicit statements. The evidence consistently indicates that BMI was self-reported across all three studies."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Study 1": [
+        "-0.27"
+      ],
+      "Study 2": [
+        "-0.33",
+        "-0.39"
+      ],
+      "Study 3": []
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [
+          "-0.32"
+        ],
+        "Study 2": [
+          "-0.36",
+          "-0.42"
+        ],
+        "Study 3": [
+          "-0.38"
+        ]
+      },
+      "female": {
+        "Study 1": [
+          "-0.23"
+        ],
+        "Study 2": [
+          "-0.32",
+          "-0.38"
+        ],
+        "Study 3": [
+          "-0.38"
+        ]
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "total": {
+        "Study 1": [
+          "-0.27"
+        ],
+        "Study 2": [
+          "-0.33",
+          "-0.39"
+        ],
+        "Study 3": []
+      }
+    },
+    "best_indices": [
+      1,
+      6,
+      7,
+      9
+    ],
+    "reason": "The paper contains three distinct studies. For Study 1, Candidate 1, from an early results section, provides the overall correlation of -0.27, and gender-specific correlations of -0.23 for women and -0.32 for men. This is attributed to Study 1 as it is the first set of results following the description of Study 1. For Study 2, Candidates 6 and 7 explicitly state correlations for two distinct samples (college and community) within Study 2. For the college sample, the total correlation is -0.33 (women: -0.32, men: -0.36). For the community sample, the total correlation is -0.39 (women: -0.38, men: -0.42). These values are merged into the Study 2 entry. For Study 3, Candidate 9 explicitly states gender-specific correlations of -0.38 for women and -0.38 for men. While Candidate 9 also makes a comparison to Study 2's community sample, implying a men's correlation of -0.38 for Study 2, the direct statement in Candidates 6 and 7 for Study 2's community men (-0.42) is preferred due to its explicit nature, following conflict resolution instructions. No overall correlation was explicitly provided for Study 3, only gender-specific values."
+  },
+  "Country": {
+    "extract_value": {
+      "Study 1": [
+        "United States"
+      ],
+      "Study 2": [
+        "United States"
+      ],
+      "Study 3": [
+        "United States"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "female": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "total": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      }
+    },
+    "best_indices": [
+      0,
+      3,
+      4,
+      7,
+      10
+    ],
+    "reason": "The paper explicitly states there are three studies. Candidate 4, a table caption from a method section, explicitly lists 'United States' for Study 1, Study 2, and Study 3, providing strong evidence for all three. Candidate 0, from an early method section (011_method_extracted.json) describing recruitment at 'The Ohio State University', is resolved as Study 1 and states 'United States'. Candidate 3, from a method section (014_method_1_extracted.json) focusing on Study 2, explicitly states 'USA' for community participants. Candidate 10, from a later method section (017_method_2_extracted.json) describing 'Community participants who were from the U.S. via MTurk', is resolved as Study 3. General discussion and conclusion sections (e.g., Candidate 7) also confirm that all studies were conducted in the 'U.S.'. All country values ('United States', 'USA', 'U.S.') are consistent and refer to the same country. 'United States' is used as the canonical form."
+  }
+}

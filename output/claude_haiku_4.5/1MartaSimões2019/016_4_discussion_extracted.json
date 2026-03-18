@@ -1,0 +1,192 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not explicitly state the country where the study was conducted. No geographic location is mentioned in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not provide sample size information. Sample size details would typically be found in the Methods section, not in the Discussion.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section mentions 'the used survey web app' but does not explicitly state whether the survey method was 'paper-and-pencil' or 'online'. While the reference to a 'web app' suggests online administration, this is not explicitly confirmed as the survey method in the target format.",
+      "warning": "Potential inference: The mention of 'survey web app' suggests online method, but this is not explicitly stated as the survey method in the required format."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not provide information about the racial/ethnic composition of participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not provide mean age of participants. It mentions that 'future studies should target adolescent populations' but does not report the actual mean age of the current study's participants.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not provide information about the educational level of participants.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not report mean BMI of participants. While the study explores relationships with body appreciation, no BMI statistics are provided in this section.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section mentions 'The use of the Exponential Non-Discriminative Snowball Sampling method' but does not explicitly categorize the source as 'community', 'college', or 'primary/secondary/high school'.",
+      "warning": "Potential inference: Snowball sampling suggests community-based recruitment, but this is not explicitly stated in the required categorical format."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not explicitly state which instrument (BAS or BAS-2) was used to assess body appreciation. The term 'body appreciation' is discussed throughout, but the specific assessment tool is not mentioned in this section.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not report any correlation coefficients between body appreciation and BMI. The discussion focuses on correlations between psychological flexibility, self-compassion, and body appreciation, but not between body appreciation and BMI.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section refers to 'the present study' and 'this study' (singular), indicating one study. However, the Discussion section alone does not provide explicit confirmation of the total number of studies in the paper. This would typically be stated in the introduction or methods section.",
+      "warning": "Based on the Discussion section language ('the present study', 'this study'), it appears to be a single-study paper, but this cannot be definitively confirmed from the Discussion section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not indicate whether this is a journal article or dissertation. This information would typically appear in the header or publication information, not in the Discussion section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Discussion section presents findings from a single study examining the relationships between psychological flexibility, self-compassion (engagement and action), and body appreciation in adult women. The study used path analysis to test whether psychological inflexibility mediates the association between self-compassionate engagement and action, with results indicating that self-compassionate action and psychological inflexibility are direct predictors of body appreciation. The authors acknowledge several limitations including the cross-sectional correlational design, the female-only sample, and the use of self-report measures and snowball sampling, while suggesting that future research should explore these mechanisms in mixed-gender and adolescent populations.",
+      "evidence_source": "Entire Discussion section, particularly paragraphs discussing study aims, findings, and limitations."
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text provided is a Discussion section from an academic paper. No specific country is mentioned in the discussion text. The attached figure (Fig. 1) shows a path model diagram and does not contain country information.",
+      "warning": "Country information not found in the provided text or figure."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text provided is a Discussion section. Sample size information is not explicitly stated in this section. The figure shows a path model but does not contain sample size data.",
+      "warning": "Sample size not found in the provided Discussion section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section mentions 'the use of the Exponential Non-Discriminative Snowball Sampling method' and 'self-report measures' and 'survey web app', but does not explicitly state whether the survey method was 'paper-and-pencil' or 'online'. The mention of 'survey web app' suggests online administration, but this is not explicitly confirmed.",
+      "warning": "Survey method not explicitly stated as 'paper-and-pencil' or 'online' in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information regarding race/ethnicity is provided in the Discussion section or the figure.",
+      "warning": "Percent of white participants not found in the provided text or figure."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section mentions 'adult women' as the sample and notes that 'future studies should target adolescent populations', but no specific mean age is provided.",
+      "warning": "Mean age of participants not found in the provided Discussion section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about educational attainment is provided in the Discussion section or figure.",
+      "warning": "Percentage of college or higher education not found in the provided text or figure."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Although BMI is shown as a variable in the path model (Fig. 1), no mean BMI value is reported in the Discussion section.",
+      "warning": "Mean BMI of participants not found in the provided text or figure."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion mentions the use of 'Exponential Non-Discriminative Snowball Sampling method' but does not specify whether participants were from 'community', 'college', or 'primary/secondary/high school' sources.",
+      "warning": "Source of sample (community/college/school) not explicitly stated in the provided text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The figure caption (Fig. 1) explicitly states 'BAS-2 = Body Appreciation Scale \u2013 2.' The path model diagram shows 'BAS' as the outcome variable, and the caption clarifies this refers to BAS-2.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not specify whether BMI was assessed via 'self-reported' or 'measured' methods. The path model includes BMI as a variable but provides no methodological detail.",
+      "warning": "Assessment method for BMI (self-reported vs. measured) not found in the provided text or figure."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.28
+        ]
+      },
+      "evidence_source": "Fig. 1 (Final path model) shows a direct path from BMI to BAS (Body Appreciation Scale-2) with a standardized path coefficient of -0.28***. The figure caption notes '* * * p < .001'. This represents the correlation/association between BMI and body appreciation.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The Discussion section refers to 'this study' and 'the present study' consistently in singular form. The path model (Fig. 1) represents a single study's findings. No mention of multiple studies is made in the provided text.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a Discussion section from an academic paper. The publication type (journal article vs. dissertation) cannot be determined from the Discussion section alone without access to the title page or publication metadata.",
+      "warning": "Publication type not determinable from the provided Discussion section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Discussion section presents findings from a single study examining the role of affect regulation mechanisms (psychological flexibility, self-compassionate engagement, and self-compassionate action) in predicting body appreciation (measured via BAS-2) in adult women. The path model (Fig. 1) reveals that self-compassionate action and psychological inflexibility directly predict body appreciation, while self-compassionate engagement operates indirectly through these mechanisms, with a direct negative association between BMI and body appreciation (r = -0.28***).",
+      "evidence_source": "Discussion section text and Fig. 1 path model diagram.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Fig. 1. Final path model. Standardized path coefficients amongst variables are presented. Note. BMI = Body Mass Index; SC_Engagement = Self-compassionate engagement subscale of the Compassionate Engagement and Action Scales; AAQ-II = Acceptance and Action Questionnaire; SC_Action = Self-compassionate action subscale of the Compassionate Engagement and Action Scales; BAS-2 = Body Appreciation Scale \u2013 2. * * * p < .001.",
+      "evidence_source": "Figure caption as presented in the document.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1MartaSim\u00f5es2019/figures/1MartaSim\u00f5es2019_p003_fig00.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_0"
+  }
+]

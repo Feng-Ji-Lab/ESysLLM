@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about publication type is provided in the text.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about financial support is provided in the text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about peer review status is provided in the text.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about performance goal orientation type is provided in this section.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about adaptation measures is provided in this section.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about adaptation method (subjective/objective) is provided in this section.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about specific adaptation assessment method is provided in this section.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about goal orientation measurement method is provided in this section.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": []}",
+      "evidence_source": "The mean age is reported as 'M age=20.9 years'. No additional age information such as range, SD, or median is provided.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [20.9]}",
+      "evidence_source": "The mean age is explicitly stated as 'M age=20.9 years'.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text states '64% female', indicating a mixed sample.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [36.0]}",
+      "evidence_source": "The text states '64% female'. Men_Prop is calculated as 100 - 64 = 36%.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "Participants were 'at an American public university'.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "Participants were '157 undergraduate students'.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [157]}",
+      "evidence_source": "The text states 'Participants were 157 undergraduate students'.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation between Performance Goal Orientation and performance adaptation is provided in this section.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation information is provided in this section.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes participants for a single study without explicitly naming it or indicating multiple studies.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the participants for a study, consisting of 157 undergraduate students (64% female, mean age 20.9 years) from an American public university. They were recruited from Psychology, Chemistry, and Business courses and received a $5 incentive plus entry into a lottery.",
+      "evidence_source": "The entire '3.1.1. Participants' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

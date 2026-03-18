@@ -1,0 +1,153 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      2,
+      3,
+      4,
+      6,
+      9,
+      11,
+      12
+    ],
+    "reason": "Multiple sections of the paper consistently refer to 'a single study,' 'this study,' or 'the current study' without any indication of multiple experiments or studies being conducted within the paper. All relevant candidates point to a single study."
+  },
+  "SAMPLE SIZE": {
+    "extract_value": {
+      "Single study": [
+        116,
+        115,
+        114
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "reason": "The paper consistently refers to a single study, as indicated by the context. Candidates 0 and 1 explicitly state a sample size of 116 in the Introduction and Participants sections, respectively, which are highly reliable sources for the overall sample size. Candidate 2, from the Results section, infers sample sizes of 115 and 116 from F-statistics, supporting both values. Candidates 3 and 4, from tables in the Discussion section, report sample sizes of 114 and 115 for specific analyses. Following the instruction to merge all valid sample sizes for a single study into one list, and acknowledging that different analyses within a study may use slightly varying Ns (e.g., due to missing data), all reported distinct values (114, 115, 116) are included. The value 116 is the most frequently and explicitly stated overall sample size."
+  },
+  "Effects": {
+    "extract_value": {
+      "Single study": [
+        20
+      ]
+    },
+    "best_indices": [
+      4
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context. Candidate 4 provides the most specific and reliable count for 'Effects'. It explicitly states that 'Table 5, \"Coefficients of Correlation Between the Creativity Measures and Glr and Gc\"' contains 10 CAQ subscales correlated with 2 intelligence measures (Glr and Gc), resulting in 20 effect sizes. This directly matches the definition of 'Effects' as the number of correlation coefficients between intelligence and creative achievement. Other candidates either state 0 effects without specific table reference or refer to text where no r values were explicitly stated, which does not contradict the presence of these values in a table."
+  },
+  "Measure IQ": {
+    "extract_value": {
+      "Single study": [
+        "Kaufman Assessment Battery for Children\u2013Second Edition",
+        "Kaufman Test of Educational Achievement\u2014Second Edition Brief Form"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper describes a single study. Candidates 0 and 1 consistently identify the highest-level assessment tools used to measure IQ: 'Kaufman Assessment Battery for Children\u2013II' (also referred to as 'Kaufman Assessment Battery for Children\u2013Second Edition') and 'Kaufman Test of Educational Achievement \u2013 II Brief' (also referred to as 'Kaufman Test of Educational Achievement\u2014Second Edition Brief Form'). These are merged and deduplicated. Candidates 2 and 4 provide names of subtests ('Atlantis', 'Rebus', 'Atlantis Delayed', 'Rebus Delayed'), which are explicitly excluded by the definition requiring the highest level of assessment tool. Candidate 3 provides constructs ('Glr', 'Gc') rather than specific assessment tools, and is therefore also excluded."
+  },
+  "IQ Aspect": {
+    "extract_value": {
+      "Single study": [
+        "Gr",
+        "Gc"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "reason": "The paper describes a single study, as indicated by the context. All candidates consistently identify 'Glr' and 'Gc' as the IQ aspects. 'Glr' is explicitly mapped to 'Gr' (General retrieval ability) in candidates [1], [3], and [4], which aligns with the schema's allowed values. 'Gc' is directly an allowed value. Therefore, the consolidated IQ aspects for the single study are 'Gr' and 'Gc'. All candidates are consistent and contribute to this finding."
+  },
+  "Domain classified": {
+    "extract_value": {
+      "Single study": [
+        "Arts",
+        "Total",
+        "Everyday",
+        "Technological",
+        "Science"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "reason": "The paper describes a single study, as indicated by the context and consistent references to 'Study X' across all candidates. All domain classifications from the candidates were consolidated for this single study. Candidate 7 provided the most granular list of domains (Visual, Music, Dance, Architectural, Creative writing, Humor, Invention, Scientific, Theater/film, Culinary), which were then mapped to the allowed values: 'Arts' (Visual, Music, Dance, Creative writing, Theater/film), 'Technological' (Architectural, Invention), 'Everyday' (Humor, Culinary), and 'Science' (Scientific). Other candidates provided 'Arts', 'Total', 'Everyday', 'Technological', and 'Science' directly or through specific examples (e.g., drawing/poetry for 'Arts'). All unique classifications were merged into a single list for the 'Single study'."
+  },
+  "Mage": {
+    "extract_value": {
+      "Single study": [
+        26
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study as indicated by the context and the section summary. Candidate [0] provides the mean age of 26 years for this study, which is directly extracted from the participants section, a reliable source."
+  },
+  "IQ modality": {
+    "extract_value": {
+      "Single study": [
+        "both"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study, as indicated by the context and the section summary consistently referring to 'this study' or 'the current study'. Candidate [0] provides 'both' as the IQ modality for 'Study X', which is resolved to 'Single study'."
+  },
+  "Creativity Measures": {
+    "extract_value": {
+      "Single study": [
+        "CAQ"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "reason": "The paper consistently refers to a single study. All candidates identify 'CAQ' (Creative Achievement Questionnaire) as the creativity measure used in this study. The values are consistent across all sources, so they are merged into a single entry for 'Single study'."
+  },
+  "ES": {
+    "extract_value": {
+      "Single study": [
+        0.0525
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study, as indicated by the context. Candidate [0] provides an effect size (ES) for 'Study X', which is resolved to 'Single study'. The value 0.0525 is the arithmetic mean of multiple correlations between CAQ subscales (creative achievement) and Glr/Gc (intelligence measures), calculated according to the 'case_1_multiple_subscales' rule, and is consistent with the precision rule."
+  }
+}

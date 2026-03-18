@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text is a section from a research paper, which is typically published as a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about financial support or grants was found in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No explicit mention of peer review was found in the provided text.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'MAP and PAP goals' and a beta coefficient for MAP goals. However, the schema requires extraction of PGO (Performance Goal Orientation) and performance adaptation correlations. While PAP is a PGO, no correlation or beta for PAP and utility value is provided. The beta for MAP goals is not for a PGO, and no relevant correlation is extracted.",
+      "warning": "No relevant correlation between PGO and performance adaptation was found to extract PgoType for a specific effect."
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No relevant correlation between PGO and performance adaptation was found, therefore no corresponding adaptation measure can be extracted for a specific effect.",
+      "warning": "No relevant correlation between PGO and performance adaptation was found to extract AdaptMeasures for a specific effect."
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No relevant correlation between PGO and performance adaptation was found, therefore no corresponding adaptation method can be extracted for a specific effect.",
+      "warning": "No relevant correlation between PGO and performance adaptation was found to extract AdaptMethod for a specific effect."
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No relevant correlation between PGO and performance adaptation was found, therefore no corresponding specific adaptation method can be extracted for a specific effect.",
+      "warning": "No relevant correlation between PGO and performance adaptation was found to extract AdaptMethod_Specific for a specific effect."
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the specific measurement method of goal orientation (e.g., VandeWalle) was found in the provided text, and no relevant correlation was extracted.",
+      "warning": "No relevant correlation between PGO and performance adaptation was found to extract GoMeasure_dichot_num for a specific effect."
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information (e.g., mean, range, SD) was found in the provided text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information was found in the provided text to impute a mean age.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the sex composition of the sample was found in the provided text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the percentage of men in the sample was found in the provided text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the country where the sample was collected was found in the provided text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'students' and 'class dummy codes', indicating a student sample. However, no relevant correlation between PGO and performance adaptation was found to extract Sample_dichot for a specific effect.",
+      "warning": "No relevant correlation between PGO and performance adaptation was found to extract Sample_dichot for a specific effect."
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text refers to 'Table 5' for results, but Table 5 is not provided. No sample size (N) for the specific analysis was found in the text.",
+      "warning": "N is mentioned in 'Table 5' but the table is not provided. No N could be extracted from the text."
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text reports a beta coefficient (\u03b2=.20) for MAP goals and utility value. This is not a Pearson r, and MAP goals are not Performance Goal Orientation (PGO). No correlation or beta for Performance-Approach Goal (PAP) and utility value is provided.",
+      "warning": "The reported value is a beta coefficient (\u03b2=.20) for MAP goals, not a Pearson r for PGO. MAP goals are not PGO. No relevant correlation for PGO and performance adaptation was found."
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No relevant correlation between PGO and performance adaptation was found, therefore no correlation information can be extracted.",
+      "warning": "No relevant correlation between PGO and performance adaptation was found to extract Correlation_info."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single set of analyses on 'utility value' involving 'MAP and PAP goals' and 'two class dummy codes', without explicitly naming or delineating multiple distinct studies or experiments.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes a regression analysis examining the effects of Mastery-Approach (MAP) and Performance-Approach (PAP) goals on utility value, controlling for class dummy codes. It reports that students pursuing MAP goals showed higher utility value (\u03b2=.20), suggesting utility value as a mediator for MAP goal effects on learning strategies. The two class dummy codes were also significant predictors.",
+      "evidence_source": "The entire provided text content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

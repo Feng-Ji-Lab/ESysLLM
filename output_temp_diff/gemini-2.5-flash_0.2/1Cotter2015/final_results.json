@@ -1,0 +1,291 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      1,
+      2,
+      4,
+      5,
+      12,
+      16
+    ],
+    "reason": "Multiple sections of the paper consistently refer to 'a study', 'a single study', or 'the current study', indicating that the paper describes one investigation. Candidates [3] and [8] provided a value of 0, but their section contexts explicitly state 'no further details or specific information', making them unreliable for determining the number of studies."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Candidates [0] and [1] explicitly state that the paper is an 'Article' published in the 'Journal of Black Psychology' and provide a DOI, which are strong indicators of a journal article. All other candidates are consistent with this type of publication, describing a single study as would be found in a journal article."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "United States"
+      ]
+    },
+    "best_indices": [
+      1,
+      4,
+      9
+    ],
+    "reason": "The paper describes a single study. Candidate [9] explicitly states the study was conducted in the \"United States\". This is further supported by Candidate [1], which indicates the corresponding author's affiliation is in the \"USA\", and Candidate [4], which describes participants from a university in the \"Mid-Atlantic\" region, a region within the United States. All evidence consistently points to the United States as the country where the study was conducted."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        228
+      ]
+    },
+    "best_indices": [
+      0,
+      3
+    ],
+    "reason": "The paper describes a single study. Candidates 0 (Abstract) and 3 (Participants and Procedure section) consistently report the total number of participants as 228. Both sources explicitly state the participants were 'Black college women' or 'Black female college students,' indicating the entire sample was female. Candidate 6's inferred sample sizes from t-test degrees of freedom (546, 950, 948) contradict the direct statements and are less reliable for the primary study sample size, likely referring to comparisons or pooled data, and are therefore disregarded. The most reliable and consistent information comes from the abstract and the participants section.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          228
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          228
+        ]
+      }
+    }
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "online"
+      ]
+    },
+    "best_indices": [
+      3
+    ],
+    "reason": "The paper describes a single study, as indicated by the context. Candidate 3 explicitly states that 'Measures were administered through a secure website called SONA Systems, an online data collection program maintained by the university' and 'data was collected online via SONA Systems'. This directly indicates that the survey method was 'online'."
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Single study": [
+        0
+      ]
+    },
+    "best_indices": [
+      0,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "reason": "The paper describes a single study. Multiple candidates (0, 2, 3, 5, 6, 7, 8, 9) consistently state that the sample consisted entirely of 'Black college women' or 'Black female college students'. This directly implies that the percentage of white participants in the study is 0%. All these candidates refer to the same single study, providing consistent information.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          0
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          0
+        ]
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        19.89
+      ]
+    },
+    "best_indices": [
+      0,
+      3
+    ],
+    "reason": "The paper describes a single study. Both Candidate 0 (Abstract) and Candidate 3 (Participants and Procedure section) consistently report the mean age of participants as 19.89. The participants are explicitly identified as Black college women, so this age applies to both the female and total participant groups. The information from the 'Participants and Procedure' section (Candidate 3) is considered highly reliable for demographic details and is consistent with the abstract.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          19.89
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          19.89
+        ]
+      }
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        100
+      ]
+    },
+    "best_indices": [
+      0,
+      2,
+      3,
+      5,
+      6,
+      9
+    ],
+    "reason": "The paper describes a single study. Multiple candidates (0, 2, 3, 5, 6, 9) explicitly state that the participants were 'Black college women' or 'undergraduate Black female college students'. According to the infer_rule, 'If the text says 'The participants were undergraduate students' or something similar, it means that the percentage of participants with college or higher education experience is 100%'. Therefore, 100% of the participants had college or higher education. Since the entire sample consisted of women, this percentage applies to females and the total.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          100
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          100
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        24.71
+      ]
+    },
+    "best_indices": [
+      3
+    ],
+    "reason": "The paper describes a single study. Candidate [3] from the 'participants_and_procedure' section explicitly states 'Mean BMI was 24.71 (SD = 6.04)' for the sample of 228 Black female college students. This is the most reliable and direct source for the mean BMI. Since the sample consists exclusively of females, the value is applied to both the 'female' and 'total' categories for the study.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          24.71
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          24.71
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "college"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      9
+    ],
+    "reason": "The paper describes a single study, as indicated by the context and consistent references throughout the candidates. Multiple candidates (0, 1, 2, 3, 5, 6, 7, 9) explicitly state or strongly imply that the participants were 'Black college women' or 'undergraduate Black female college students' recruited from 'psychology courses' or a 'Psychology 101 Participant Pool'. All reliable evidence points to 'college' as the source of the sample for this single study."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      13
+    ],
+    "reason": "The paper consistently describes a single study. All reliable candidates explicitly state that the 'Body Appreciation Scale (BAS)' was used to assess body appreciation. There is no mention of 'BAS-2' or any other alternative instrument. Therefore, 'BAS' is the sole instrument identified for the single study."
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      3,
+      4
+    ],
+    "reason": "The paper describes a single study, as indicated by the context. Candidates 3 and 4 both explicitly state that BMI was calculated from 'self-reported height and weight data'. Candidate 3's evidence directly states 'Self-reported height and weight data were used to calculate body mass index (BMI)'. Candidate 4's evidence details the Demographics Questionnaire where participants 'report their height, and weight', leading to the inference that BMI was 'self-reported'. These sources are consistent and reliable, confirming the assessment method for the single study."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        -0.45
+      ]
+    },
+    "best_indices": [
+      7
+    ],
+    "reason": "The paper describes a single study, as indicated by the context. Candidate [7] provides the specific correlation value of -0.45 from Table 3, which is a reliable source. The study sample consists exclusively of Black college women, as consistently stated in the abstract and section summaries (e.g., candidate [0]), making this correlation inherently specific to females. Candidate [8] qualitatively supports a 'moderate, negative relation with BMI' but does not provide a numerical value, thus candidate [7] is the most precise source.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          -0.45
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          -0.45
+        ]
+      }
+    }
+  }
+}

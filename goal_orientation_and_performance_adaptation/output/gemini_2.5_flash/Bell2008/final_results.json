@@ -1,0 +1,310 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      27
+    ],
+    "reason": "The vast majority of candidates, particularly those from the Methods, Results, and Discussion sections, consistently refer to 'this study,' 'the current study,' or 'the present study' in the singular, indicating that the paper reports on a single empirical investigation. Candidates suggesting '0' studies are primarily from introductory or background sections that discuss existing literature or theoretical concepts, not the authors' own conducted research within this paper. The strong consensus across multiple key sections supports the value of 1."
+  },
+  "PubType": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      15,
+      16,
+      17
+    ],
+    "reason": "Multiple candidates explicitly state that the publication is a 'journal article' and provide characteristic details such as the journal name ('Ergonomics'), volume, page numbers, and submission/acceptance dates, which are definitive indicators of a journal article. All candidates consistently provide the value 1, which corresponds to 'Journal article' in the provided definition."
+  },
+  "FinancSupport": {
+    "extract_value": [
+      0
+    ],
+    "best_indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "reason": "The definition for 'FinancSupport' states that a value of 0 should be assigned if no funding information exists after checking typical locations. None of the provided section contexts, including those from typical funding information locations like the introduction or conclusion, contain any explicit mention of grants, funding agencies, sponsored projects, or other forms of financial support. While Candidate [0] suggests a value of 1, its 'Evidence' is 'No evidence' and its 'Section Context' does not support this claim. All other candidates (1-12) consistently indicate a value of 0, which aligns with the absence of any funding information in the provided text. Therefore, based on the lack of evidence for financial support and the strong consensus among the majority of candidates, the most accurate value is 0."
+  },
+  "PeerReview": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "reason": "All candidates consistently indicate a value of 1 for 'PeerReview'. Candidates 15, 16, and 17 provide strong evidence by detailing publication information, including the journal name 'Ergonomics' and submission/acceptance dates, which are hallmarks of a peer-reviewed process. The remaining candidates discuss the content of the study, which is presented as a published work, further supporting the peer-reviewed status."
+  },
+  "PgoType": {
+    "extract_value": {
+      "Single study": [
+        "Avoid",
+        "Prove",
+        "Avoid",
+        "Prove"
+      ]
+    },
+    "best_indices": [
+      3,
+      4,
+      5,
+      6,
+      10
+    ],
+    "reason": "The paper reports a single study. The 'Measures' section (Candidate 3) explicitly states that both 'performance-avoid orientation' and 'performance-prove orientation' were assessed for both trait and state goal orientation. Specifically, it mentions 'The performance-avoid orientation measure consisted of 4 items' and 'Performance-prove orientation was assessed with 4 items' for trait goal orientation, and similarly for state goal orientation. This indicates four distinct constructs were measured: Trait Avoid, Trait Prove, State Avoid, and State Prove. This is strongly supported by Table 2 (Candidate 6) which lists 'Trait prove orientation', 'Trait avoid orientation', 'State prove orientation', and 'State avoid orientation'. The 'Analytic Strategy' (Candidate 4) and 'MSEM Results' (Candidates 5, 7) further confirm the assessment of 'state prove orientation' and 'state avoid orientation', and Figure 3 (Candidate 10) visually depicts 'Trait Prove', 'State Prove Orientation', 'Trait Avoid', and 'State Avoid Orientation'. According to tie-breaker rule 1, if both performance-approach ('Prove') and performance-avoidance ('Avoid') are reported as separate constructs, they should be extracted. The 'multiple_effects_within_study' rule dictates appending all corresponding PgoType values into the list for that study, reflecting each distinct measurement. Therefore, the list includes 'Avoid' and 'Prove' for both trait and state measurements. The 'Global' interpretation from the abstract (Candidate 0) and manipulations (Candidate 2) is superseded by these specific and detailed measurement descriptions."
+  },
+  "AdaptMeasures": {
+    "extract_value": {
+      "Single study": [
+        "3",
+        "3"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11
+    ],
+    "reason": "The paper reports a single study, consistently referred to as 'this study' or 'the current study'. Multiple reliable candidates (0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11) consistently indicate that both 'analogical transfer performance' and 'adaptive transfer performance' were assessed using objective measures (code 3). These are distinct types of performance adaptation. According to the field definition, if a study provides multiple eligible effects with different adaptation measurement sources, each code should be stored in the list. In this case, both distinct effects (analogical and adaptive transfer) were measured objectively, leading to the consolidated value of [3, 3]. Candidates 9 and 12 were excluded as they did not provide information on performance adaptation measurement methods or referred to non-adaptation measures."
+  },
+  "AdaptMethod": {
+    "extract_value": {
+      "Single study": [
+        "1",
+        "1"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11
+    ],
+    "reason": "The paper reports a single study, as indicated by the context and consistent use of 'this study' or 'the current study' across candidates. All valid candidates consistently indicate that performance adaptation outcomes were measured using objective scores. Specifically, both analogical transfer performance and adaptive transfer performance are described as objective measures (e.g., 'adaptive transfer performance', 'points for correct decisions', 'transfer performance assessed in trials', 'skill-based performance', 'objective measures', 'performance adaptation test phase', 'Performance' on y-axis). Candidates 2 and 3 explicitly provide [1, 1] for these two distinct objective transfer outcomes, which is the most precise representation. Therefore, the consolidated value for the single study is [1, 1]."
+  },
+  "AdaptMethod_Specific": {
+    "extract_value": {
+      "Single study": [
+        "3",
+        "3"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11
+    ],
+    "reason": "The paper reports a single study, consistently referred to as 'this study', 'the current study', or 'the present study' across various sections. Multiple candidates (0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11) consistently indicate that performance adaptation was measured objectively (code 3). The study specifically assessed two distinct types of transfer performance: analogical transfer and adaptive transfer. Both were measured using objective task/test scores, such as points for correct decisions or performance scores computed based on task outcomes. Candidates 2 and 3 explicitly provide '[3, 3]' to represent these two distinct objective measures. While some candidates provided a single '[3]' (likely a general reference to objective measurement) and candidate 7 provided a longer list, '[3, 3]' is the most precise and consistently supported representation for the two distinct adaptation outcomes (analogical and adaptive transfer) that were objectively assessed. Candidates 9 and 12 were excluded as they provided 'None' or no specific assessment method."
+  },
+  "GoMeasure_dichot_num": {
+    "extract_value": {
+      "Single study": [
+        "2",
+        "1"
+      ]
+    },
+    "best_indices": [
+      3
+    ],
+    "reason": "The paper reports a single study. Candidate 3, from the 'Measures' section, provides the most explicit and reliable information regarding the measurement of goal orientation. It clearly states that 'Trait goal orientation' was measured using VandeWalle's (1997) scale (code 2) and 'State goal orientation' scales were adapted from Horvath, Scheu, and DeShon (2001) (code 1, as it is not VandeWalle). The field definition allows for multiple measures within a study, storing one code per extracted effect. Other candidates either confirm 'Other' (code 1) without specific attribution or do not provide sufficient detail on the measurement method. Candidates 1 and 10 provide 'None' which is not a valid integer code for this field. Therefore, the values from Candidate 3 are the most accurate and comprehensive."
+  },
+  "Age_Info": {
+    "extract_value": {
+      "Single study": [
+        "89.4% between 18 and 21",
+        "college student trainees"
+      ]
+    },
+    "best_indices": [
+      1,
+      11
+    ],
+    "reason": "The paper reports a single study, as indicated by the context and consistent references to 'this study', 'the current study', or 'the present study' across various sections. Candidate 1 from the 'participants' section provides specific age range information: '89.4% between 18 and 21'. Candidate 11 from the 'limitations' section provides additional demographic context regarding age: 'college student trainees'. These two pieces of information are complementary and do not contradict, thus they are consolidated into a list for the 'Single study'. Other candidates either reported no age information or were from sections not relevant to participant demographics."
+  },
+  "Age_imputed": {
+    "extract_value": {
+      "Single study": [
+        "21"
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "The paper reports a single study. Candidate 1 from the 'participants' section provides the most reliable information for age imputation, stating that 'most (89.4%) were between 18 and 21 years of age.' Following the rule 'For a single reported age range, the upper bound is used,' the age is imputed as 21. All other candidates either explicitly state no age information or provide no relevant data for imputation."
+  },
+  "Sex": {
+    "extract_value": {
+      "Single study": [
+        "3"
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "The paper reports a single study, as confirmed by the context. Candidate [1] from the 'participants' section explicitly states that 'Of the trainees, 58% were female', which unequivocally indicates a mixed-sex sample. This corresponds to the integer code '3' for a mixed sample. Other candidates either provide no relevant information or make assumptions that align with this explicit finding, but none contradict it. Therefore, candidate [1] is the most reliable source."
+  },
+  "Men_Prop": {
+    "extract_value": {
+      "Single study": [
+        "42.0"
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "The paper reports a single study, as indicated by the context and consistent references to 'this study' or 'the present study'. Candidate [1] from the 'participants' section is the most reliable source, explicitly stating that '58% were female'. Following the fallback rule '2_from_percent_women', Men_Prop is calculated as 100 - 58 = 42%. All other candidates either report no relevant information or explicitly state 'None' or 'null'."
+  },
+  "Country_dichot_num": {
+    "extract_value": {
+      "Single study": [
+        "2"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper reports on a single study. Candidates [0] and [1] both provide strong evidence that the study was conducted in the USA. Candidate [0] mentions the authors' affiliations with US universities (Cornell University and Michigan State University) and sponsorship by a U.S. government entity (Air Force Office of Scientific Research). Candidate [1] explicitly states participants were from 'a large midwestern university', which is located in the USA. Both pieces of evidence consistently indicate the study's location as the USA, which is coded as 2. Other candidates either provide no information or are from sections not relevant to data collection location."
+  },
+  "Sample_dichot": {
+    "extract_value": {
+      "Single study": [
+        "1"
+      ]
+    },
+    "best_indices": [
+      1,
+      4,
+      11
+    ],
+    "reason": "The paper reports a single study. Candidates 1, 4, and 11 explicitly state that the participants were students. Candidate 1, from the 'Participants' section, directly identifies them as '350 undergraduates enrolled in psychology courses.' Candidate 11, from the 'Limitations' section, reinforces this by mentioning 'college student trainees.' Candidate 4, from the 'Measures' section, further supports this by referring to 'university records' and 'ACT or SAT scores.' Candidate 0, which suggests an 'Other sample' based on the term 'trainees' and context of 'work environments', is contradicted by these more specific and direct statements about the student population. Therefore, the sample is coded as 1 (Student sample)."
+  },
+  "N": {
+    "extract_value": {
+      "Single study": [
+        "350"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      4,
+      6,
+      7,
+      8,
+      9
+    ],
+    "reason": "The paper reports a single study. The initial participant count is consistently reported as 350 in the 'Participants' section (Candidates 0, 1). Candidate 4 also mentions N=350 for a confirmatory factor analysis. Crucially, the sample size for the Moderated Structural Equation Modeling (MSEM), which is the primary analytical approach for examining the relationships between goal orientation and performance adaptation, is consistently reported as N=350 across multiple candidates (7, 8, 9). Although one candidate (6) derived an N of 343 from F-statistics in the general results section (likely from ANOVA for specific effects), the N=350 is explicitly stated for the central structural models. Following the tie-breaker rule to 'Use the N that matches the specific analysis producing the correlation coefficient or model,' N=350 is selected as the most relevant and reliable sample size for the study's core analyses related to goal orientation and performance adaptation."
+  },
+  "Correlation_PGO_and_PA": {
+    "extract_value": {
+      "Single study": [
+        "0.19",
+        "0.24",
+        "-0.04",
+        "-0.04",
+        "0.11",
+        "0.15",
+        "-0.04",
+        "-0.09"
+      ]
+    },
+    "best_indices": [
+      5
+    ],
+    "reason": "The paper reports on a single study, as indicated by the context. Candidate 5 is the only reliable source that provides Pearson correlation coefficients (r values) between various forms of Performance Goal Orientation (Trait prove orientation, Trait avoid orientation, State prove orientation, State avoid orientation) and Performance Adaptation (Analogical transfer, Adaptive transfer) from Table 2. All other candidates either explicitly state that no correlation coefficients were reported, or they provide path coefficients from structural equation models (which are not Pearson r correlations as requested by the schema), or they are from sections that do not contain the required data."
+  },
+  "Correlation_info": {
+    "extract_value": {
+      "Single study": [
+        "Trait prove orientation and Analogical transfer",
+        "Trait prove orientation and Adaptive transfer",
+        "Trait avoid orientation and Analogical transfer",
+        "Trait avoid orientation and Adaptive transfer",
+        "State prove orientation and Analogical transfer",
+        "State prove orientation and Adaptive transfer",
+        "State avoid orientation and Analogical transfer",
+        "State avoid orientation and Adaptive transfer"
+      ]
+    },
+    "best_indices": [
+      5
+    ],
+    "reason": "The paper reports on a single study, consistently referred to as 'this study' or 'the present study' across various sections. Candidate 5 is the only reliable source that explicitly provides correlation information between different types of performance goal orientation (trait prove, trait avoid, state prove, state avoid) and performance adaptation outcomes (analogical transfer, adaptive transfer) from Table 2. All other candidates explicitly state that no correlation coefficients or relevant correlation information was reported or extracted from their respective sections or assets. Therefore, Candidate 5 is selected as the sole source for the correlation information for the 'Single study'."
+  }
+}

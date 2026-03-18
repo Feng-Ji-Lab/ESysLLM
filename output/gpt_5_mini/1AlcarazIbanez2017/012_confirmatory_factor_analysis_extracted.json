@@ -1,0 +1,429 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about country or location of the study is provided in the section text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes model fit for the \"whole sample\" and \"gender and weight status subsamples\" but gives no numeric sample size: \"The hypothesized 10 item one-factor model showed an acceptable fit to the data for the whole  sample as well as for both gender and weight status subsamples (see Table 2).\"",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about data collection method (e.g., online or paper-and-pencil) is provided in the section text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participant race/ethnicity or percent white is provided in the section text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participant age or mean age is provided in the section text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participants' education level or percentage with college or higher is provided in the section text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text references weight-status categories (UW, NW, OW, OB) but does not report mean BMI values: \"Note: \\lambda = Standardized factor loadings, SE = Standard errors; UW = Underweight; NW = Normoweight; OW = Overweight; OB = Obese.\"",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about source of sample (community, college, primary/secondary/high school) is provided in the section text.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section discusses a \"10 item one-factor model\" but does not name the instrument (e.g., BAS or BAS-2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Although weight-status categories are mentioned (UW, NW, OW, OB), the section does not state whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation (Pearson r) between body appreciation and BMI is reported in the section text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The section refers to analyses on the \"whole sample\" and subsamples but does not indicate multiple separate studies or label studies (e.g., 'Study 1').",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type (journal article or dissertation) is specified in the provided section text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section reports confirmatory factor analysis results for a hypothesized 10-item one-factor model showing acceptable fit for the whole sample and for gender and weight-status subsamples. It notes a significant DIFFTEST difference across gender (p = .01) that was resolved after freeing two thresholds (M1P, p = .07), and no significant difference across weight status (p = .33).",
+      "evidence_source": "\"The hypothesized 10 item one-factor model showed an acceptable fit to the data for the whole  sample as well as for both gender and weight status subsamples (see Table 2).\" \"statistically-significant differences between M0 and M1 (p = .01) were found in the DIFFTEST procedure used to test invariance across gender... After performing this modification, no statistically-significant differences were found between M0 and M1P (p = .07). No statistically-significant differences were found between M0 and M1 (p = .33) in the DIFFTEST procedure used to test invariance across weight status.\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or region is stated in the provided section text or in Table 1.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          840,
+          438,
+          402,
+          592,
+          248
+        ]
+      },
+      "evidence_source": "Table 1 header: \"Whole sample (N = 840)\"; column headings: \"Boys (n = 438)\", \"Girls (n = 402)\", \"UW & NW (n = 592)\", \"OW & OB (n = 248)\".",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            402
+          ]
+        },
+        "male": {
+          "Study X": [
+            438
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            840
+          ]
+        }
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information on survey/data collection method (e.g., online or paper-and-pencil) is provided in the section text or Table 1.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participant race/ethnicity or percent white is provided in the section text or Table 1.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age or age information is reported in the provided section text or Table 1.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level or percentage with college or higher is reported in the provided section text or Table 1.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Table 1 reports weight-status subgroup sample sizes (UW, NW, OW, OB) but does not report mean BMI values in the provided section or table.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided section and Table 1 do not state the recruitment/source (e.g., community, college, primary/secondary/ high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Table 1 title and header: \"Factor Loadings and Standard Errors for Whole Sample and Gender and Weight Status Subgroups\" and \"English BAS-2 items [Spanish version]\" indicating BAS-2 was used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Table 1 differentiates weight-status groups (UW, NW, OW, OB) but does not state whether BMI was self-reported or measured in the provided section or table.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation between Body Appreciation (BAS/BAS-2) and BMI is reported in the provided section text or Table 1 (Table 1 shows factor loadings, not correlations).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section reports a single confirmatory factor analysis for a \"hypothesized 10 item one-factor model\" applied to the whole sample and subsamples; no multiple separate studies or experiments are described in the provided text.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "Publication type (journal article or dissertation) is not provided in the supplied section text or table.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section reports a confirmatory factor analysis of the 10-item BAS-2 showing acceptable one-factor model fit for the whole sample and for gender and weight-status subsamples. An initial DIFFTEST indicated statistically significant noninvariance across gender (p = .01), and freeing two item thresholds (M1P) removed that difference (M1P p = .07); no invariance differences were found across weight status (p = .33). Table 1 provides factor loadings and standard errors for the whole sample (N = 840), boys (n = 438), girls (n = 402), UW & NW (n = 592) and OW & OB (n = 248).",
+      "evidence_source": "\"The hypothesized 10 item one-factor model showed an acceptable fit to the data for the whole sample as well as for both gender and weight status subsamples...statistically-significant differences between M0 and M1 (p = .01) were found in the DIFFTEST procedure used to test invariance across gender...After performing this modification, no statistically-significant differences were found between M0 and M1P (p = .07). No statistically-significant differences were found between M0 and M1 (p = .33) in the DIFFTEST procedure used to test invariance across weight status.\" (section text) and Table 1 header showing sample sizes.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1. Factor Loadings and Standard Errors for Whole Sample and Gender and Weight Status Subgroups",
+      "evidence_source": "Caption text as displayed on the provided table image.",
+      "warning": "None"
+    },
+    "_asset_link": "D:\\PhD\\llm_meta_analysis_new\\test\\papers\\1AlcarazIbanez2017\\tables\\1AlcarazIbanez2017_p006_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Brazil"
+        ]
+      },
+      "evidence_source": "Image header/title: \"Psychometric properties of BAS-2 in Brazilian adolescents\" (visible above Table 2).",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Table 2 rows: \"Boys (n = 438)\" and \"Girls (n = 402)\" are shown; no overall 'Whole sample (n = ...)' explicit total is provided in the table image.",
+      "warning": "Total sample size not explicitly stated in the table; male and female subsample sizes provided.",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            402
+          ]
+        },
+        "male": {
+          "Study X": [
+            438
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Image header/title: \"Psychometric properties of BAS-2 in Brazilian adolescents\" (visible above Table 2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlations between Body Appreciation (BAS/BAS-2) and BMI are reported in the provided text or Table 2.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section and Table 2 report a single confirmatory factor analysis (one study sample) with subgroup analyses (gender and weight-status); no separate multiple studies or \"Study 1/Study 2\" labels are presented.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "The section reports a confirmatory factor analysis of a hypothesized 10-item one-factor BAS-2 model showing acceptable fit for the whole sample and for gender and weight-status subsamples. DIFFTEST indicated a statistically significant difference between M0 and M1 across gender (p = .01), and freeing two item thresholds (M1P) removed that significance (M1P vs. M0, p = .07); invariance across weight status showed no significant difference (M1 vs. M0, p = .33). The table lists subgroup sample sizes (Boys n = 438; Girls n = 402; Underweight & Normoweight n = 592; Overweight & Obese n = 248). No explicit labels such as 'Study 1' or 'Experiment 2' are used.",
+      "evidence_source": "Text: \"The hypothesized 10 item one-factor model showed an acceptable fit to the data for the whole sample as well as for both gender and weight status subsamples...statistically-significant differences between M0 and M1 (p = .01) were found in the DIFFTEST procedure used to test invariance across gender...After performing this modification, no statistically-significant differences were found between M0 and M1P (p = .07). No statistically-significant differences were found between M0 and M1 (p = .33) in the DIFFTEST procedure used to test invariance across weight status.\" Table 2 rows: \"Boys (n = 438)\", \"Girls (n = 402)\", \"Underweight & Normoweight group (n = 592)\", \"Overweight & Obese group (n = 248)\".",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2. Model Fit Indices for the Confirmatory Factor Analyses and tests of Measurement Invariance",
+      "evidence_source": "Caption text visible at top of the provided table image: \"Table 2. Model Fit Indices for the Confirmatory Factor Analyses and tests of Measurement Invariance\".",
+      "warning": "None"
+    },
+    "_asset_link": "D:\\PhD\\llm_meta_analysis_new\\test\\papers\\1AlcarazIbanez2017\\tables\\1AlcarazIbanez2017_p007_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_1"
+  }
+]

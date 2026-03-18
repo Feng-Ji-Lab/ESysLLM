@@ -1,0 +1,278 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      2
+    ],
+    "best_indices": [
+      0,
+      4
+    ],
+    "reason": "The paper clearly describes TWO distinct studies: Study 1 (main psychometric validation study with N=453 conducted January-March 2017) and Study 2 (test-retest reliability study with N=109 conducted in June 2017). Candidates 0 and 4 both correctly identify this as a 2-study paper with strong evidence from the abstract and procedures sections. Candidates 1, 2, 3, 5, 6, 7, and 8 incorrectly report value=1, as they focus on individual components or subsample analyses rather than recognizing the two distinct studies. The abstract explicitly states \"Study 1 involved 453 university students\" and \"Study 2 involved a separate sample of 109 university students,\" making the count of 2 studies the most accurate assessment."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper is published in Body Image, an international peer-reviewed journal published by Elsevier. This is clear evidence that the publication type is \"journal articles\" rather than \"dissertation.\" The cover page context explicitly identifies this as a journal publication, which is the most reliable source for determining publication type."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Study 1": [
+        "BAS-2"
+      ],
+      "Study 2": [
+        "BAS-2"
+      ]
+    },
+    "best_indices": [
+      1,
+      7
+    ],
+    "reason": "The paper reports TWO distinct studies as confirmed by the context and multiple candidates. Candidate 1 (abstract) and Candidate 7 (procedures) are the most reliable sources as they explicitly distinguish between Study 1 (N=453, January-March 2017, main psychometric validation) and Study 2 (N=109, June 2017, test-retest reliability). Both studies used BAS-2 exclusively. Candidates 0, 2, 3, 4, 5, 6, 8-17 use 'Study X' notation because they describe specific analyses or subsample results (e.g., female/male subsamples, EFA/CFA splits, convergent validity) that belong to Study 1, not separate studies. The abstract (Candidate 1) and procedures section (Candidate 7) provide the clearest delineation of the two distinct studies. All candidates consistently report BAS-2 as the assessment instrument with no contradictions regarding which instrument was used."
+  },
+  "Country": {
+    "extract_value": {
+      "Study 1": [
+        "Romania"
+      ],
+      "Study 2": [
+        "Romania"
+      ]
+    },
+    "best_indices": [
+      0,
+      3,
+      4
+    ],
+    "reason": "Candidate 0 (abstract) is the most reliable source as it explicitly identifies both Study 1 (N=453) and Study 2 (N=109) as separate studies conducted in Romania. Candidates 3 and 4 provide supporting evidence from the Methods section: Candidate 3 describes the main sample (N=453) from a university in Timi\u0219u County, west Romania (Study 1), and Candidate 4 describes the test-retest sample (N=109) from the same university in west Romania (Study 2). Candidate 1 incorrectly includes Moldova as a study location\u2014this is contextual background about where Romanian is spoken, not where the actual studies were conducted. Candidates 2 and 5 use vague 'Study X' labels without distinguishing between the two studies. The paper clearly reports TWO distinct studies: Study 1 (psychometric validation with 453 students) and Study 2 (test-retest reliability with 109 students), both conducted in Romania. Both studies were conducted at the same university location in Romania, so the country value is identical for both studies."
+  },
+  "Sample": {
+    "extract_value": {
+      "Study 1": [
+        453
+      ],
+      "Study 2": [
+        109
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "The paper contains TWO distinct studies as confirmed by the context and Candidate 0 (abstract). Study 1 is the main psychometric validation study with N=453 (212 female, 241 male) conducted January-March 2017. Study 2 is the test-retest reliability study with N=109 (57 female, 52 male) conducted in June 2017. Candidate 0 correctly identifies both studies with their respective sample sizes from the abstract. Candidates 1 and 2 provide complementary gender-split data: Candidate 1 (source 012) describes the main sample (Study 1) with gender breakdown (212 female, 241 male = 453 total), and Candidate 2 (source 013) describes the test-retest sample (Study 2) with gender breakdown (57 female, 52 male = 109 total). Candidates 4-14 refer to 'Study X' or describe subsamples/analyses within these two main studies (e.g., EFA subsample of 100+100, CFA subsample of 243, convergent validity with 453, test-retest with 109) but do not represent separate studies. These subsamples are components of Study 1's analyses and should not be merged as separate studies. The final consolidated result reports the two distinct studies with their total sample sizes and gender breakdowns, merging complementary data from the most reliable sources (abstract + method sections).",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [
+          241
+        ],
+        "Study 2": [
+          52
+        ]
+      },
+      "female": {
+        "Study 1": [
+          212
+        ],
+        "Study 2": [
+          57
+        ]
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          453
+        ],
+        "Study 2": [
+          109
+        ]
+      }
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Study 1": [
+        88.3
+      ],
+      "Study 2": [
+        100
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "The paper contains TWO distinct studies as confirmed by the context. Candidate [0] from the abstract correctly identifies both studies but uses the infer_rule to assign 100% to both. However, Candidates [1] and [2] provide more precise empirical data from the actual Method/Participants sections. Candidate [1] (source 012_211_main_sample_extracted.json) describes Study 1 with N=453 and provides the calculated value of 88.3% (72.2% undergraduate + 16.1% Masters). Candidate [2] (source 013_212_testretest_sample_extracted.json) describes Study 2 with N=109 and correctly identifies 100% as all participants are explicitly described as 'university students.' The abstract's inference of 100% for Study 1 is overridden by the more precise empirical breakdown in Candidate [1]. Both candidates [1] and [2] use 'Study X' labels, but based on the section summaries and sample sizes (N=453 vs N=109), they clearly correspond to Study 1 and Study 2 respectively. Final resolution: Study 1 = 88.3%, Study 2 = 100%.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          88.3
+        ],
+        "Study 2": [
+          100
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Study 1": [
+        "college"
+      ],
+      "Study 2": [
+        "college"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "The paper contains TWO distinct studies as confirmed by the context and multiple candidates. Candidate 0 and 3 explicitly identify both Study 1 and Study 2 with college source for each. Candidate 1 describes the main sample (N=453) which belongs to Study 1, and Candidate 2 describes the test-retest sample (N=109) which belongs to Study 2. Both are university-based samples, confirming 'college' as the source for each study. Candidate 4 from the discussion section is less reliable as it discusses findings rather than providing primary methodological information. Candidates 0, 1, 2, and 3 provide consistent evidence that both Study 1 and Study 2 recruited participants from university settings in Romania, making 'college' the appropriate value for both studies. No conflicts exist between candidates\u2014all agree on the college source for both studies.\""
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Study 1": [
+        23.57
+      ],
+      "Study 2": [
+        25.02
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper contains two distinct studies as confirmed by the context. Candidate [0] from source 012_211_main_sample_extracted.json describes the main psychometric validation study (Study 1) with N=453 university students, reporting mean age M=23.57 years (SD=7.86). Candidate [1] from source 013_212_testretest_sample_extracted.json describes the test-retest reliability study (Study 2) with N=109 university students, reporting mean age M=25.02 years (SD=8.91). Both candidates are reliable as they come from the Method/Participants sections describing the respective study samples. The two studies are distinct and separate, so each mean age value is preserved in its corresponding study entry. No gender-specific breakdowns were provided in the candidates, so only total values are reported.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          23.57
+        ],
+        "Study 2": [
+          25.02
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Study 1": [
+        22.18
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates refer to the same study (Study 1, N=453 with 212 female and 241 male participants). Candidate [0] provides the overall mean BMI (22.18) from the main sample description. Candidate [1] provides gender-specific breakdowns from Table 3 (Female: 21.30, Male: 22.95). These are complementary data from the same study and have been merged: the total value (22.18) is preserved, and the gender-split values are added to provide a complete picture. The overall mean (22.18) is consistent with the weighted average of the gender-specific means, confirming data reliability. No Study 2 data for Mean BMI was found in the provided candidates.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [
+          22.95
+        ]
+      },
+      "female": {
+        "Study 1": [
+          21.3
+        ]
+      },
+      "other": {
+        "Study 1": []
+      },
+      "total": {
+        "Study 1": [
+          22.18
+        ]
+      }
+    }
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Study 1": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates [0] and [1] refer to the same study (Study 1, the main psychometric validation study with N=453 conducted January-March 2017). Candidate [0] provides direct evidence from the main sample section stating 'self-reported BMI from 13.98 to 37.11 kg/m2', while Candidate [1] provides methodological confirmation from the Demographics section that 'Participants were also asked to self-reported their height and weight, which we used to calculate BMI'. Both sources consistently indicate that BMI was assessed via self-reported measurements. These candidates are complementary (one from results/sample description, one from methods/demographics) and reinforce the same assessment method. No Study 2 candidates were provided for the Assessment of BMI field, so only Study 1 is included in the resolved output."
+  },
+  "Survey method": {
+    "extract_value": {
+      "Study 1": [
+        "paper-and-pencil"
+      ],
+      "Study 2": [
+        "paper-and-pencil"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Candidate 0 from the procedures section (021_23_procedures_extracted.json) provides clear and explicit evidence for the survey method used in both studies. The source explicitly states that Study 1 participants 'completed an anonymous paper-and-pencil questionnaire in a private cubicle' and Study 2 participants 'complete the BAS-2 along with brief demographics in a private cubicle' (paper-and-pencil method). The procedures section is the most reliable source for methodological details. Both distinct studies are correctly identified and their respective survey methods are documented as paper-and-pencil for each study."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        -0.3,
+        -0.28
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Candidate 0 provides precise correlation coefficients from Table 3 (a convergent validity table in the Results section), which is the most reliable source type for this field. The table clearly reports the correlation between Body Appreciation (BAS-2) and BMI separately by gender: r = -0.30 for women (n=212, p < .001) and r = -0.28 for men (n=241, p < .05). Candidate 1 is from the Discussion section and only mentions the direction of the correlation (negative) without providing the specific magnitude values, making it less reliable. The paper describes a single study with 453 participants (212 women and 241 men), so the resolved_studies list contains one entry. The gender-specific values are preserved as reported in the table, with no need for averaging since these represent distinct gender subgroups rather than multiple subscales or subsamples of the same gender.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          -0.28
+        ]
+      },
+      "female": {
+        "Single study": [
+          -0.3
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    }
+  }
+}

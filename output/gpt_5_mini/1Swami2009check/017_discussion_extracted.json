@@ -1,0 +1,127 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or region of data collection is stated in the provided section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No total sample size (N) is reported in the provided section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided section does not state the method of data collection (e.g., online or paper-and-pencil).",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided section does not report participants' racial/ethnic breakdown or percent white.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Although age is discussed (e.g., 'respondent age was significantly and negative correlated with consideration of cosmetic surgery'), no mean age value is reported in the provided section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "\"The results of the current study showed that body appreciation... were significant predictors of consideration of cosmetic surgery among female undergraduates, explaining 47.1% of the variance.\" Based on the explicit phrase 'female undergraduates', and per the case rule that 'The participants were undergraduate students' implies 100% with college or higher education, the percentage is set to 100%.",
+      "warning": "Inference applied: assumed all participants have college-level education because the text states they are 'undergraduate' participants."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section discusses BMI as a predictor (e.g., 'participant BMI was a significant predictor') but does not report mean BMI values.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "\"...consideration of cosmetic surgery among female undergraduates...\" \u2014 indicates the sample consisted of undergraduate (college) women.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section refers to 'body appreciation' but does not state which instrument was used (BAS or BAS-2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "BMI is discussed as a predictor (e.g., 'participant BMI was a significant predictor') but the section does not state whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section notes relationships among body appreciation, media influence, and BMI as predictors of cosmetic surgery consideration, but does not report a Pearson correlation coefficient between body appreciation and BMI.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "\"The results of the current study...\" (the section consistently refers to a single 'current study'), indicating one study was reported.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided section does not indicate the publication type (e.g., journal article or dissertation).",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "The section reports that, in a single study of female undergraduates, body appreciation, media influence (three SATAQ-3 subscales), and participant weight status significantly predicted consideration of cosmetic surgery, explaining 47.1% of variance; body appreciation was the strongest predictor. It notes unexpected findings (higher consideration among more slender participants and a negative correlation with age), discusses limitations (restricted undergraduate sample, limited variables), and recommends replication with representative community samples; the section does not label this as 'Study 1' or multiple studies.",
+      "evidence_source": "\"The results of the current study showed that body appreciation... were significant predictors of consideration of cosmetic surgery among female undergraduates, explaining 47.1% of the variance.\" Additional supporting sentences include: \"First, although participant BMI was a significant predictor... more slender participants reported greater consideration of cosmetic surgery.\" and \"As such, these results may not be generalisable to other sample of women and it would be beneficial to replicate the current work using representative samples from the community.\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

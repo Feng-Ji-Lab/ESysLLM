@@ -1,0 +1,200 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      2,
+      6,
+      10
+    ],
+    "reason": "Multiple method/result sections consistently describe a single empirical study (sample N=155; descriptive/sample section, analytic strategy, and path-analysis results). No evidence of additional studies or experiments; therefore the paper contains one study."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "Portugal"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All candidates refer to the same single study. Candidate 1 explicitly states the sample are Portuguese young adults; Candidate 2 describes the procedure as conducted in the Portuguese population; Candidate 0 gives author affiliation at University of Coimbra, Portugal. These consistent sources (affiliation + study description + procedure) indicate the study was conducted in Portugal, so merged into one entry for the single study."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one candidate provided. The paper presents a single empirical study with standard journal-article sections (sample, analytic strategy, path-analysis results) and no indication it is a dissertation. Therefore the best match from the allowed values is \"journal articles.\""
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        155
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "reason": "All candidates refer to a single empirical study (described as 'the present study') with consistent sample size information. Participant/Methods text (index 0) reports N = 155 (44 males, 111 females); analytic strategy (index 1) and path-analysis/results sections and tables (indices 2\u20134) consistently report N = 155 and the male/female subsamples. No conflicting values were found, so the total N = 155 and gender split (male 44, female 111) are reported. 'Other' gender not reported.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          44
+        ]
+      },
+      "female": {
+        "Single study": [
+          111
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          155
+        ]
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        22.36,
+        21.3
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper describes a single empirical study (N = 155; 44 males, 111 females). Candidates 0 (Participants section) and 1 (Table 1) report the same gender-specific mean ages: males M = 22.36 and females M = 21.30. No overall/total mean age is provided in the sources, so both subgroup means are returned and recorded under gender-specific fields. Both candidates were used and are consistent.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          22.36
+        ]
+      },
+      "female": {
+        "Single study": [
+          21.3
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        22.63
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Paper contains a single study (N=155). Participant section (candidate 0) reports overall mean BMI = 22.63 and gender means (M_male=23.54, M_female=22.28). Table 1 (candidate 1) corroborates the gender means; it lacks a total mean. Merged values into one study entry, using the main-text participant section for the total and combining with the table for gender means.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          23.54
+        ]
+      },
+      "female": {
+        "Single study": [
+          22.28
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          22.63
+        ]
+      }
+    }
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidate excerpts (participants section and BMI calculation description) consistently state BMI was based on participants' self-reported height and weight (Quetelet Index). The paper contains a single study, so the values were merged into one entry. Candidates from sources 008 and 011 corroborate the same assessment method."
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "community",
+        "college"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study is reported. Candidate 0 indicates participants were recruited from a private company and a retail service (mapped to 'community') and from a higher education institution (mapped to 'college'). These subsamples are merged under the single study."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS-2"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason": "All candidate sources (method/measure description, analytic strategy, figure caption, tables, and path-analysis results) consistently identify the instrument used to assess body appreciation as the Body Appreciation Scale\u20132 (BAS-2). The paper reports a single empirical study (N = 155, with male and female subsamples) rather than multiple distinct studies, so results were merged under 'Single study'. No conflicting instrument names were found."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": []
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper reports a single study (N = 155). Table 2 presents gender-specific correlations (upper triangle = women, n = 111; lower triangle = men, n = 44). The BMI \u00d7 BAS-2 correlation is -0.39 for women and -0.24 for men. No overall/total correlation was provided. Candidate 0 (Table 2) was used.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          -0.24
+        ]
+      },
+      "female": {
+        "Single study": [
+          -0.39
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    }
+  }
+}

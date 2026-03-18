@@ -1,0 +1,206 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a statistical analysis section describing methodology. No geographic location or country is mentioned in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes statistical methods and mentions 'this sample of Black college women' but does not provide a specific sample size number.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes statistical analysis procedures (SPSS, Mplus, factor analysis, mediation analysis) but does not specify the survey method (paper-and-pencil or online).",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'Black college women' as the sample but does not provide percentage breakdowns of racial/ethnic composition.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age or age-related statistics are reported in this statistical analysis section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'Black college women' indicating college-level participants, but does not provide an explicit percentage.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI statistics are reported in this statistical analysis section.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'Black college women' suggesting a college source, but does not explicitly state the recruitment source or sampling method.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The note section explicitly states 'BAS = Body Appreciation Scale' and the text mentions examining 'the factor structure of the BAS in this sample of Black college women.'",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes statistical analysis methods but does not specify how BMI was assessed (self-reported or measured).",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes statistical methodology and does not report specific correlation coefficients between body appreciation and BMI.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This is a statistical analysis section describing methods. The text does not explicitly state the number of studies conducted. The mention of 'this sample of Black college women' suggests one study, but this is not explicitly confirmed in this section.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "This section contains only statistical methodology descriptions and does not indicate whether the work is a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the statistical analysis procedures used in the study, including descriptive statistics via SPSS 19.0, exploratory and confirmatory factor analysis using Mplus to examine the factor structure of the BAS (Body Appreciation Scale) in a sample of Black college women, and mediation analyses using bootstrapping methods. The study examined construct validity through Pearson correlations and evaluated model fit using CFI, SRMR, and RMSEA indices.",
+      "evidence_source": "Entire Statistical Analysis section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not explicitly state the country where the study was conducted. The text mentions 'Black college women' as the sample, but no geographic location is specified.",
+      "warning": "Country information not found in the provided text or table."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain information about the total sample size. The text references 'this sample of Black college women' but does not provide a numeric count.",
+      "warning": "Sample size not found in the provided text or table."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not describe the survey method used (paper-and-pencil vs. online).",
+      "warning": "Survey method not specified in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain racial/ethnic demographic breakdown percentages.",
+      "warning": "Percent of white participants not found in the provided text or table."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain age information for participants.",
+      "warning": "Mean age not found in the provided text or table."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "total": [
+          100
+        ]
+      },
+      "evidence_source": "The text explicitly states 'this sample of Black college women,' indicating all participants were college students. Therefore, 100% of participants have college or higher education experience.",
+      "warning": "Inferred from explicit mention of 'college women' in the sample description."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and Table 1 do not contain BMI information. Table 1 shows descriptive statistics for various psychological measures (BAS, MEIM, MBSRQ-AE, RSES, etc.) but not BMI.",
+      "warning": "Mean BMI not found in the provided text or table."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "total": [
+          "college"
+        ]
+      },
+      "evidence_source": "The text explicitly states 'this sample of Black college women,' indicating participants were recruited from a college setting.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "total": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "Table 1 shows 'BAS' (Body Appreciation Scale) with a mean of 3.87 and standard deviation of 0.76. The note confirms 'BAS = Body Appreciation Scale.' The text also mentions 'examine the factor structure of the BAS in this sample of Black college women.'",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not indicate how BMI was assessed (self-reported vs. measured). No BMI data is presented in Table 1.",
+      "warning": "Assessment method for BMI not found in the provided text or table."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and Table 1 do not contain correlation coefficients between Body Appreciation (BAS) and BMI. Table 1 only shows descriptive statistics (means and standard deviations) for various measures, not correlations.",
+      "warning": "Correlation between BAS and BMI not found in the provided text or table."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text describes a single study examining 'the factor structure of the BAS in this sample of Black college women.' No mention of multiple studies is present.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly state whether this is a journal article or dissertation.",
+      "warning": "Publication type not specified in the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the statistical analysis methods used in a study of Black college women examining the factor structure of the Body Appreciation Scale (BAS). The study employed descriptive statistics, independent samples t-tests, Pearson correlations, exploratory and confirmatory factor analysis, and mediation analyses using bootstrapping with 5,000 resamples. Table 1 presents descriptive statistics for multiple measures including BAS (M = 3.87, SD = 0.76) and various other psychological and eating-related scales.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1. Descriptive Statistics.",
+      "evidence_source": "The table title appears at the top of the provided table image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Cotter2015/tables/1Cotter2015_p008_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'Brazilian Portuguese' and 'university campus locations' but does not explicitly state the country where the study was conducted. While the translation into Brazilian Portuguese suggests Brazil, this cannot be definitively confirmed from the procedures section alone.",
+      "warning": "Country not explicitly stated in this section. Inferred context suggests Brazil, but this is not confirmed."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'a randomly-selected subsample of 100 participants' for the retest, but does not provide the total sample size for the initial testing session.",
+      "warning": "Only subsample size (100) is mentioned for retest; total initial sample size is not provided in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "paper-and-pencil"
+        ]
+      },
+      "evidence_source": "Text states: 'participants completed paper-and-pencil, anonymous questionnaires in which the order of presentation of measures was counterbalanced.'",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about racial or ethnic composition of participants is provided in this section.",
+      "warning": "Racial/ethnic demographics not reported."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in this procedures section.",
+      "warning": "Mean age not reported in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "Text states: 'participants were opportunistically recruited from various university campus locations.' This indicates all participants were recruited from a university setting, which allows inference that 100% of participants have college or higher education experience.",
+      "warning": "Inferred from recruitment location (university campus); not explicitly stated as a percentage."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions that 'Weight, height, and bra size measurements were taken' but does not report the mean BMI value.",
+      "warning": "BMI measurements were collected but mean BMI is not reported in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Text states: 'participants were opportunistically recruited from various university campus locations.'",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'BSRS' (Body Shape Rating Scale) and its translation, but does not specify whether BAS or BAS-2 was used for assessing body appreciation.",
+      "warning": "BSRS is mentioned but it is not clear if this corresponds to BAS or BAS-2. The acronym BSRS does not match the allowed values (BAS or BAS-2)."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "measured"
+        ]
+      },
+      "evidence_source": "Text states: 'Weight, height, and bra size measurements were taken once the questionnaire had been completed.' This indicates BMI was measured directly rather than self-reported.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This is a procedures section describing study methodology. No correlation coefficients are reported.",
+      "warning": "Correlation values are not provided in this procedures section; they would typically appear in results section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section describes procedures for a single study. No indication of multiple studies is present.",
+      "warning": "Cannot determine number of studies from procedures section alone; appears to be describing one study."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The procedures section does not indicate whether this is from a journal article or dissertation.",
+      "warning": "Publication type cannot be determined from this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This procedures section describes a study involving the translation of the BSRS into Brazilian Portuguese and data collection from university campus participants. Participants completed paper-and-pencil questionnaires with counterbalanced measure presentation, and physical measurements (weight, height, bra size) were taken. A subsample of 100 participants returned 15 days later for retest administration.",
+      "evidence_source": "Entire procedures section (4. Procedures)",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,125 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The text mentions 'Malay and Chinese participants' but does not explicitly state the country where the study was conducted.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [591, 296, 295, 315, 276]}",
+      "evidence_source": "Initial CFA: \"N = 591\". First subsample: \"n = 296\". Second subsample: \"n = 295\". Multi-group analyses: \"Malay, \\chi^2(43) n = 315)\" and \"Chinese participants, \\chi^2(43, n = 276)\".",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The text mentions 'Malay and Chinese participants' but does not provide a percentage for white participants.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [42.75, 43.43]}",
+      "evidence_source": "First subsample: \"age M = 42.75\". Second sub-sample: \"age M = 43.43\".",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"BAS\"]}",
+      "evidence_source": "The section title is 'Factor structure of the BAS'. The text mentions 'the 13 items of the BAS'.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The text mentions a correlation of r = .44 between 'General Body Appreciation' and 'Body Image Investment', but no correlation between Body Appreciation and BMI is reported.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study that utilized various subsamples for different analyses (PCA, CFA, multi-group analyses) but does not delineate them as separate numbered studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the factor structure analysis of the Body Appreciation Scale (BAS). The initial CFA on the full sample (N=591) did not fit well, leading to a split into two subsamples (n=296 and n=295) for PCA and subsequent CFA. The analysis ultimately confirmed an adequate two-factor solution for the BAS, labeled 'General Body Appreciation' and 'Body Image Investment', which was found to be invariant across Malay (n=315) and Chinese (n=276) ethnic groups.",
+      "evidence_source": "Summarized from the entire section text.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

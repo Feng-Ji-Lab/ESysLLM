@@ -1,0 +1,97 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or location information provided in the excerpt.",
+      "warning": "Information not reported in provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size provided in the excerpt.",
+      "warning": "Information not reported in provided text."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No data collection method (e.g., 'online' or 'paper-and-pencil') is specified in the excerpt.",
+      "warning": "Information not reported in provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information on participant racial/ethnic composition is provided in the excerpt.",
+      "warning": "Information not reported in provided text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age reported; the excerpt only indicates participants were undergraduate women and that age range was relatively constricted.",
+      "warning": "Information not reported in provided text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "Text states a 'select sample of participants in the present study (i.e., undergraduate women)', which indicates participants were undergraduates; per instructions this implies 100% college or higher.",
+      "warning": "Inference made from statement that participants were undergraduate women."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI value reported in the excerpt; only that participant BMI was a predictor in analyses.",
+      "warning": "Information not reported in provided text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Text: 'select sample of participants in the present study (i.e., undergraduate women)' indicating a college sample.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The excerpt discusses 'body appreciation' but does not specify the instrument used (e.g., BAS or BAS-2).",
+      "warning": "Information not reported in provided text."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The excerpt refers to 'participant BMI' but does not state whether BMI was self-reported or measured.",
+      "warning": "Information not reported in provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson correlation coefficient or correlation statistics reported; only that BMI was a significant predictor in regression and the direction was unexpected.",
+      "warning": "No correlation coefficients provided in text."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text repeatedly refers to 'the current study' and 'the present study', indicating a single study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type (journal article or dissertation) is specified in the excerpt.",
+      "warning": "Information not reported in provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "The excerpt reports a single study of female undergraduate participants in which body appreciation, media influence, and weight status significantly predicted consideration of cosmetic surgery, explaining 47.1% of the variance. The authors note unexpected direction for BMI and limited generalisability due to the college (undergraduate) sample; several methodological details (sample size, country, measures, assessment methods, correlation coefficients) are not reported in the provided excerpt.",
+      "evidence_source": "'The results of the current study showed that body appreciation, media influence, and respondent weight status were significant predictors of consideration of cosmetic surgery among female undergraduates, explaining 47.1% of the variance.' and 'select sample of participants in the present study (i.e., undergraduate women), for whom the range of BMIs and age was relatively constricted.'",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,293 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "reason": "Multiple candidates explicitly state or strongly imply that the paper describes 'a single study' or 'the current study', consistently indicating a count of 1. Candidates 1 and 4 are irrelevant as they discuss contact information or are empty sections. All other relevant candidates support the value of 1."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All candidates consistently indicate that the publication is a 'journal article'. Candidate [0] mentions 'publication details for an article... published in the Journal'. Candidate [1] explicitly states 'includes the journal name, publication year, and DOI'. Candidate [2] is an abstract describing a single study, which is characteristic of a journal article. Candidate [3] lists other journal articles in the references, which is consistent with the paper itself being a journal article. Given the strong and consistent evidence across multiple relevant candidates, 'journal articles' is the most accurate value."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "USA"
+      ]
+    },
+    "best_indices": [
+      1,
+      4
+    ],
+    "reason": "The paper describes a single study. Candidate [1] provides the corresponding author's affiliation as \"Virginia Commonwealth University in Richmond, VA, USA,\" explicitly stating \"USA\" as the country. Candidate [4] describes participants from \"a large urban university in the Mid-Atlantic,\" which is consistent with the location in candidate [1] (Richmond, VA is in the Mid-Atlantic region of the USA). Following instructions to return the country name and not a specific part of a country, \"USA\" is the appropriate value."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        228
+      ]
+    },
+    "best_indices": [
+      0,
+      4
+    ],
+    "reason": "The paper describes a single study. Candidates 0 (Abstract) and 4 (Participants and Procedure section) consistently report a total sample of 228, all identified as female Black college students. The values are consistent across these reliable sources, with the Participants section being the most authoritative.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          228
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          228
+        ]
+      }
+    }
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "online"
+      ]
+    },
+    "best_indices": [
+      4
+    ],
+    "reason": "The paper describes a single study, as confirmed by the CONTEXT and consistent references to 'a single study' or 'the current study' across candidates. Candidate [4] explicitly states that \"Measures were administered through a secure website called SONA Systems, an online data collection program maintained by the university\" and \"Data was collected online via SONA Systems,\" which directly indicates an 'online' survey method for this study."
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Single study": [
+        0
+      ]
+    },
+    "best_indices": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "reason": "Multiple candidates consistently state that the participants were exclusively Black college women. Candidate 0 (abstract) states 'Participants were 228 Black college women'. Candidate 3 (research hypotheses) mentions 'Black college women' and 'Black undergraduate women'. Candidate 4 (participants and procedure) explicitly states 'Participants were 228 undergraduate Black female college students'. Candidates 5, 6, 7, and 8 (statistical analysis and descriptive statistics) refer to 'this sample of Black college women' or 'The current sample of Black women'. This overwhelming evidence indicates that 0% of the participants were white.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          0
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          0
+        ]
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        19.89
+      ]
+    },
+    "best_indices": [
+      0,
+      4
+    ],
+    "reason": "The paper describes a single study. Both Candidate 0 (abstract) and Candidate 4 (participants and procedure) consistently report the mean age of participants as 19.89. Both sources also specify that the participants were Black college women/female students. The 'Participants and Procedure' section (Candidate 4) is a highly reliable source for demographic information, and the abstract (Candidate 0) corroborates this value. Therefore, the value 19.89 is extracted for the single study, specifically for female participants.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          19.89
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          19.89
+        ]
+      }
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        100
+      ]
+    },
+    "best_indices": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "reason": "The paper describes a single study. Multiple candidates (0, 2, 3, 4, 5, 6, 7) explicitly state that the participants were 'Black college women' or 'undergraduate Black female college students'. According to the inference rule, if participants are undergraduate students or college women, the percentage of participants with college or higher education experience is 100%. All relevant candidates consistently support this value for the single study.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          100
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          100
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        24.71
+      ]
+    },
+    "best_indices": [
+      4
+    ],
+    "reason": "Candidate 4, from the 'Participants and Procedure' section, explicitly states the mean BMI as 24.71. This is the only candidate providing this specific numerical value. The paper describes a single study, and the participants are identified as 228 Black female undergraduate college students, indicating that the mean BMI of 24.71 applies to the female participants and thus also to the total sample.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          24.71
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          24.71
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "college"
+      ]
+    },
+    "best_indices": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "reason": "All relevant candidates consistently indicate that the participants were 'Black college women' or 'Black undergraduate women', and were recruited from a 'Psychology 101 Participant Pool, as well as other psychology courses' at a 'large urban university'. This clearly points to 'college' as the source of the sample. The paper describes a single study, as confirmed by the context and multiple candidate summaries referring to 'the current study' or 'a single study'. Candidates 1 and 10 are irrelevant or lack specific information for this field. Candidates 8 and 9 confirm the single study nature but do not provide direct evidence for the source of sample."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "reason": "Multiple candidates across various sections (abstract, keywords, hypotheses, measures, statistical analysis, descriptive statistics, factor structure, construct validity, and relation to ethnic identity) consistently identify 'BAS' (Body Appreciation Scale) as the instrument used to assess body appreciation. The paper describes a single study, as confirmed by the context and consistent phrasing across candidates (e.g., 'This study', 'The current study')."
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      4,
+      5
+    ],
+    "reason": "The paper describes a single study, as indicated by the context and confirmed by multiple section summaries (e.g., 'the current study', 'the present study'). Candidate 4, from the 'Participants and Procedure' section, explicitly states, 'Self-reported height and weight data were used to calculate body mass index (BMI)'. Candidate 5, from the 'Measures' section, further supports this by noting that the 'Demographics Questionnaire' asked participants to 'report their... height, and weight', leading to the inference that BMI was 'self-reported'. Both candidates consistently point to 'self-reported' as the method of BMI assessment for the single study."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": []
+    },
+    "best_indices": [
+      7
+    ],
+    "reason": "The paper describes a single study. Candidate 7, from Table 3, explicitly provides the correlation between '1. BAS' (Body Appreciation Scale) and '12. Body Mass Index' as -0.45. The study sample, as described in the abstract and other sections (e.g., candidate 0, 2), consists of Black college women, indicating that this correlation is specific to females. Therefore, the value -0.45 is assigned to the 'female' category for the single study.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          -0.45
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    }
+  }
+}

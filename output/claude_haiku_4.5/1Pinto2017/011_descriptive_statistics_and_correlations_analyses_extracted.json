@@ -1,0 +1,107 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in the provided text.",
+      "warning": "Country not specified in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'nonclinical female samples' but does not provide a specific sample size number.",
+      "warning": "Sample size not explicitly stated in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is provided in the text.",
+      "warning": "Survey method not specified in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information is provided in the text.",
+      "warning": "Percent of white participants not specified in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in the text.",
+      "warning": "Mean age not specified in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in the text.",
+      "warning": "Percentage of college or higher education not specified in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text references BMI in correlation analyses but does not provide the mean BMI value. The text states 'Descriptive statistics for the study variables are presented in Table 1' but Table 1 is not provided.",
+      "warning": "Mean BMI not explicitly stated in the provided text. Table 1 is referenced but not included."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about where or how participants were recruited is provided in the text.",
+      "warning": "Source of sample not specified in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The text explicitly states 'body appreciation (BAS-2)' when describing correlation analyses results.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether BMI was self-reported or measured.",
+      "warning": "Assessment method for BMI not specified in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.3
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            -0.3
+          ]
+        }
+      },
+      "evidence_source": "The text states 'BMI presented negative correlations with social safeness (SSPS) and body appreciation (BAS-2), with weak and moderate magnitudes, respectively.' The correlation between BMI and body appreciation (BAS-2) is described as having a 'moderate magnitude' and being negative. A moderate negative correlation is typically in the range of -0.3 to -0.5. However, the exact correlation coefficient value is not numerically provided in the text.",
+      "warning": "Exact correlation coefficient not numerically stated. The magnitude is described as 'moderate' and 'negative' but the precise r-value is not given. This is an inference based on the descriptive language used."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to 'the study' and 'study variables' in singular form, and references 'Table 1' as presenting descriptive statistics for the study. No explicit mention of multiple studies is made.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in the text.",
+      "warning": "Publication type not specified in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents descriptive statistics and correlation analyses results for a study with nonclinical female samples. The text reports that BMI showed negative correlations with social safeness and body appreciation (BAS-2), with the latter being a moderate negative correlation. Multiple other correlations among variables (social safeness, flexible eating, and eating disorder symptoms) are also described.",
+      "evidence_source": "Entire provided text section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

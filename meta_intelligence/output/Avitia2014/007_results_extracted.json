@@ -1,0 +1,285 @@
+[
+  {
+    "SAMPLE SIZE": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions degrees of freedom for regression models (e.g., F(13, 101), F(2, 112), F(2, 113)), which could imply sample sizes of 115 or 116, but no explicit total sample size (N) is stated. Given the slight inconsistency and the rule 'If not explicitly stated, or not allowed to infer per field rules, return None', the sample size cannot be definitively extracted.",
+      "warning": "None"
+    },
+    "ES": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states, 'Table 5 reveals that rated creativity in drawing correlated significantly with both Glr and Gc', indicating the existence of correlations between intelligence aspects and creativity. However, Table 5 is not provided, and the specific correlation coefficients (r values) are not explicitly stated in the text. The rule 'If a figure is referenced but not provided in inputs, do not guess. Extract from available text only, otherwise return None' applies.",
+      "warning": "None"
+    },
+    "Effects": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Since no specific effect sizes (correlation coefficients) between intelligence and creative achievement could be extracted, the number of effects is None.",
+      "warning": "None"
+    },
+    "Mage": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The mean age of participants is not mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Measure IQ": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'intelligence subtests' such as 'Atlantic Delayed' and 'Rebus Delayed', and 'Glr' and 'Gc' as intelligence aspects. However, it does not specify the name of the highest-level assessment tool or scale used to measure IQ or intelligence, as required by the schema.",
+      "warning": "None"
+    },
+    "IQ modality": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The modality of the intelligence measures (e.g., figural, verbal) is not specified in the text.",
+      "warning": "None"
+    },
+    "IQ Aspect": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Gr",
+          "Gc"
+        ]
+      },
+      "evidence_source": "The text explicitly mentions 'Glr' and 'Gc' multiple times, for example: 'Table 5 reveals that rated creativity in drawing correlated significantly with both Glr and Gc' and 'The first two hierarchical multiple regressions used Glr and Gc as outcomes'. Glr corresponds to 'Gr' (General retrieval ability) and Gc corresponds to 'Gc' (Crystallized intelligence) as per the schema definitions.",
+      "warning": "None"
+    },
+    "Creativity Measures": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "CAQ"
+        ]
+      },
+      "evidence_source": "The text states: 'For the CAQ, participants had the highest achievement in humor with an M = 1.02'. CAQ (Creativity Achievement Questionnaire) is an allowed value.",
+      "warning": "None"
+    },
+    "Domain classified": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Arts"
+        ]
+      },
+      "evidence_source": "The text mentions 'rated creativity in drawing' and 'rated creativity in poetry' multiple times, for example: 'rated creativity in drawing correlated significantly with both Glr and Gc' and 'No models or predictors were significant when looking at rated creativity in poetry as an outcome variable'. Drawing and poetry are classifications under 'Arts'. The CAQ also mentions 'humor' and 'architectural design' but these are not explicitly classified into the allowed values without further inference.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single research effort without explicitly labeling it as 'Study 1', 'Study 2', or 'Experiment 1'. It presents results and hypotheses for one continuous investigation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents the results of a single study, detailing reliability coefficients for creative measures (poems and drawings) and means/standard deviations for intelligence subtests and creativity measures (CAQ, drawing, poetry). It discusses correlations among intelligence measures, creativity measures, and between intelligence (specifically Glr and Gc) and creativity (rated creativity in drawing), referencing Table 5 which is not provided. The section also reports on two hierarchical multiple regressions testing hypotheses related to Glr, Gc, and rated creativity in drawing and poetry.",
+      "evidence_source": "The entire 'Results' section, including mentions of reliability, means, standard deviations, correlations, and hierarchical multiple regressions for hypotheses 1 and 2.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "SAMPLE SIZE": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "ES": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states: \"Table 5 reveals that rated creativity in drawing correlated significantly with both Glr and Gc\", but no specific numerical correlation value is provided in the text, and Table 5 is not available.",
+      "warning": "None"
+    },
+    "Effects": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No specific correlation coefficients (ES) between intelligence and creative achievement were extracted.",
+      "warning": "None"
+    },
+    "Mage": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text provides means for intelligence subtests and creativity measures, but no mean age for participants.",
+      "warning": "None"
+    },
+    "Measure IQ": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Glr",
+          "Gc"
+        ]
+      },
+      "evidence_source": "Table 1, titled 'Means and SDs for Intelligence Measures', lists 'Glr' and 'Gc' as measures. The text also refers to 'Glr' and 'Gc' in the context of intelligence measures and outcomes for regressions.",
+      "warning": "None"
+    },
+    "IQ modality": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text and Table 1 do not provide information about the modality (figural, verbal, both) of the intelligence measures.",
+      "warning": "None"
+    },
+    "IQ Aspect": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Gr",
+          "Gc"
+        ]
+      },
+      "evidence_source": "Table 1 and the text explicitly mention 'Glr' and 'Gc' as intelligence measures and aspects. 'Glr' corresponds to 'Gr' (general retrieval ability) and 'Gc' corresponds to 'Gc' (crystallized intelligence) as per schema definitions.",
+      "warning": "None"
+    },
+    "Creativity Measures": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "CAQ"
+        ]
+      },
+      "evidence_source": "The text states: \"For the CAQ, participants had the highest achievement in humor with an M = 1.02\". The schema specifies 'CAQ' as an allowed value.",
+      "warning": "None"
+    },
+    "Domain classified": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Everyday",
+          "Technological",
+          "Arts"
+        ]
+      },
+      "evidence_source": "The text mentions: \"For the CAQ, participants had the highest achievement in humor... and the lowest in architectural design...\". Humor is classified as 'Everyday' and architectural design as 'Technological'. The text also mentions \"rated creativity in drawing\" and \"rated creativity in poetry\" which are classified as 'Arts'.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study, discussing its results, hypotheses, and analyses without explicitly naming multiple studies.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "The 'Results' section details the reliability of creativity ratings for poems (r = .83) and drawings (r = .88). It presents means and standard deviations for various intelligence measures (Table 1) and creativity measures. The section discusses correlations among intelligence measures, creativity measures, and between intelligence and creativity measures (Table 5, not provided), noting a significant correlation between rated creativity in drawing and both Glr and Gc. Finally, it describes hierarchical multiple regressions for Hypothesis 1 (Glr and Gc as outcomes) and Hypothesis 2 (rated creativity in drawing/poetry as outcomes).",
+      "evidence_source": "Summary of the 'Results' section and Table 1.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1 Means and SDs for Intelligence Measures",
+      "evidence_source": "The caption of the provided image 'Table 1 Means and SDs for Intelligence Measures'.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/meta_intelligence/papers_json/Avitia2014/tables/Avitia2014_p003_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "SAMPLE SIZE": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          115,
+          116
+        ]
+      },
+      "evidence_source": "For Glr 15% of the variance was accounted for based on the Adjusted R-Squared by three predictors: Rated creativity in drawing (\\beta = 0.35, t = 3.72, p &lt; .001), self-reported music achievements (\\beta = 0.22, t = 0.001) 2.12, p &lt; .05), and self-reported theater and film achievements (\\beta = 0.22, t = 2.19, p &lt; .05). The model was significant at F(13, 101) = 2.53, p &lt; .05. For Gc, 5% of the variance was accounted for based on the Adjusted R-Squared by Rated creativity in Drawing (\\beta = 0.208, t = 2.17, p &lt; .05). Model two was not significant and no additional predictors came out besides drawing so we retained the first model. The model was significant at F(2, 112) = 4.04, p &lt; .005 (see Table 6). Hypothesis 2: When we looked at rated creativity in drawing as an outcome with Glr in block one and Gc in block two, 13% of the variance was accounted for based on the Adjusted R-Squared by one predictor: Glr (\\beta = 0.371, t = 4.26, p &lt; .001). The overall model was significant at F(2, 113) = 10.33, p &lt; .001. The sample sizes are inferred from the F-statistics degrees of freedom: F(13, 101) implies N = 13 + 101 + 1 = 115. F(2, 112) implies N = 2 + 112 + 1 = 115. F(2, 113) implies N = 2 + 113 + 1 = 116.",
+      "warning": "None"
+    },
+    "ES": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states 'Table 5 reveals that rated creativity in drawing correlated significantly with both Glr and Gc', indicating a correlation between intelligence aspects and creativity. However, the specific numerical correlation coefficient (r value) is not provided in the text, and Table 5 is not available.",
+      "warning": "None"
+    },
+    "Effects": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          0
+        ]
+      },
+      "evidence_source": "No specific Pearson r (effect size) values between intelligence scores and creative achievement were explicitly stated in the text or provided table.",
+      "warning": "None"
+    },
+    "Mage": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age of participants was explicitly stated in the text or provided table.",
+      "warning": "None"
+    },
+    "Measure IQ": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'intelligence subtests' and specific aspects like 'Glr' and 'Gc', but does not provide the name of the overarching assessment tool or scale used to measure IQ or intelligence.",
+      "warning": "None"
+    },
+    "IQ modality": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No modality of the Intelligence measure (e.g., 'figural', 'verbal', 'both') was explicitly stated in the text or provided table.",
+      "warning": "None"
+    },
+    "IQ Aspect": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Gr",
+          "Gc"
+        ]
+      },
+      "evidence_source": "Table 5 reveals that rated creativity in drawing correlated significantly with both Glr and Gc. For Glr 15% of the variance was accounted for... For Gc, 5% of the variance was accounted for...",
+      "warning": "None"
+    },
+    "Creativity Measures": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "CAQ"
+        ]
+      },
+      "evidence_source": "For the CAQ, participants had the highest achievement in humor with an M = 1.02, and the lowest in architectural design with an M = 0.15.",
+      "warning": "None"
+    },
+    "Domain classified": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Everyday",
+          "Arts",
+          "Technological",
+          "Science"
+        ]
+      },
+      "evidence_source": "For the CAQ, participants had the highest achievement in humor with an M = 1.02, and the lowest in architectural design with an M = 0.15. Table 2 lists 'Visual', 'Music', 'Dance', 'Architectural', 'Creative writing', 'Humor', 'Invention', 'Scientific', 'Theater/film', 'Culinary'. These domains are classified as: Humor (Everyday), Architectural (Arts), Visual (Arts), Music (Arts), Dance (Arts), Creative writing (Arts), Invention (Technological), Scientific (Science), Theater/film (Arts), Culinary (Everyday).",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single 'Results' section detailing various analyses and hypotheses (Hypothesis 1, Hypothesis 2) without explicitly delineating separate numbered studies or experiments.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents the results of a study, beginning with the reliability coefficients for creativity measures (poems and drawings). It then discusses means and standard deviations for intelligence subtests and creativity measures, referencing Tables 1 and 2. The core of the results includes three sets of correlations (referencing Tables 3, 4, and 5) and the findings for Hypothesis 1, which examined Glr and Gc as outcomes of creativity measures, and Hypothesis 2, which investigated rated creativity in drawing and poetry as outcomes of intelligence aspects, referencing Tables 6 and 7. The text does not explicitly name studies as 'Study 1' or 'Experiment 2', but describes a single set of results.",
+      "evidence_source": "The entire 'Results' section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2 Means SD and Ranges for Creativity Measures",
+      "evidence_source": "Table 2 caption.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/meta_intelligence/papers_json/Avitia2014/tables/Avitia2014_p004_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_1"
+  }
+]

@@ -1,0 +1,205 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information is provided in this section.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information about race/ethnicity is provided in this section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI information is provided in this section.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample source or recruitment is mentioned in this section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While body appreciation is discussed as a variable, no specific assessment instrument (BAS or BAS-2) is mentioned in this section.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported vs. measured) is provided in this section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section discusses regression analyses and moderation effects, but does not report the correlation coefficient between body appreciation and BMI. The text states 'BMI did not significantly moderate the relationships between body appreciation and any of the components of sexual function,' but no specific correlation value is provided.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section describes statistical analyses (regression) but does not explicitly state the number of studies. The text references 'Hypothesis 2' and 'Hypothesis 3' and mentions 'Table 2,' suggesting this is part of a larger study, but the number of distinct studies is not specified in this section.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes hierarchical multiple regression analyses testing whether body appreciation predicts sexual function (Hypothesis 2) and whether BMI moderates the relationship between body appreciation and sexual function (Hypothesis 3). Results indicated that body appreciation significantly predicted sexual arousal, sexual satisfaction, orgasm, and overall sexual function after controlling for age and partner status, supporting Hypothesis 2. However, BMI did not significantly moderate these relationships, so Hypothesis 3 was not supported.",
+      "evidence_source": "Entire section content",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain explicit information about the country where the study was conducted.",
+      "warning": "No country information found in the provided section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          246
+        ]
+      },
+      "evidence_source": "Table 2 caption states: 'Hierarchical multiple regression analyses predicting Female Sexual Function Index subscale and Full Scale scores from Body Appreciation Scale score, BMI, age and partner status (n = 246).'",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            246
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            246
+          ]
+        }
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain information about the survey method used.",
+      "warning": "No survey method information found in the provided section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain information about the racial/ethnic composition of participants.",
+      "warning": "No demographic information about race/ethnicity found in the provided section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain explicit mean age values. Age is mentioned as a control variable in the regression analyses, but no mean age is reported.",
+      "warning": "No mean age information found in the provided section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain information about educational attainment of participants.",
+      "warning": "No educational attainment information found in the provided section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain explicit mean BMI values. BMI is mentioned as a variable in the regression analyses, but no mean BMI is reported.",
+      "warning": "No mean BMI information found in the provided section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain information about where or how participants were recruited.",
+      "warning": "No sample source information found in the provided section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "Table 2 and the regression analyses text refer to 'Body Appreciation Scale score' and 'BAS' as the instrument used to assess body appreciation. The table header and text consistently use 'BAS' as the variable name in the regression models.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not specify whether BMI was self-reported or measured.",
+      "warning": "No information about BMI assessment method found in the provided section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Table 2 presents hierarchical multiple regression analyses, not a correlation matrix. The table shows regression coefficients (B, \u03b2), standard errors, and R\u00b2 values for the relationship between BAS, BMI, and sexual function outcomes. The interaction term 'BAS \u00d7 BMI' is included in Step 3, but this is not a simple Pearson correlation coefficient between body appreciation and BMI. No direct correlation coefficient between BAS and BMI is reported in this table.",
+      "warning": "The table contains regression coefficients and interaction terms, not Pearson correlation coefficients. A correlation matrix would be needed to extract the direct correlation between body appreciation and BMI."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text describes a single study with hierarchical multiple regression analyses testing Hypotheses 2 and 3. The table (Table 2) presents results from one study with n = 246 female participants. No mention of multiple studies or experiments is present in the provided section.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain explicit information about the publication type (journal article vs. dissertation).",
+      "warning": "No publication type information found in the provided section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents hierarchical multiple regression analyses (Table 2) testing whether body appreciation predicts sexual function outcomes (FSFI subscales and full scale) above and beyond age and partner status, and whether BMI moderates this relationship. The study included 246 female participants. Results indicated that body appreciation significantly predicted sexual arousal, satisfaction, orgasm, and overall sexual function after controlling for age and partner status, supporting Hypothesis 2. However, BMI did not significantly moderate these relationships, so Hypothesis 3 was not supported.",
+      "evidence_source": "Text content describing regression analyses and Table 2 caption and results."
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2: Hierarchical multiple regression analyses predicting Female Sexual Function Index subscale and Full Scale scores from Body Appreciation Scale score, BMI, age and partner status (n = 246).",
+      "evidence_source": "Table 2 title and caption as presented in the image."
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Satinsky2012/tables/1Satinsky2012_p004_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or location is stated in the provided text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No total sample size is stated explicitly. Sample sizes were inferred separately for women and men from regression degrees of freedom: for women, F(4, 146) (df1=4, df2=146) => N = 146 + 4 + 1 = 151; for women second step F(8, 142) also implies N = 142 + 8 + 1 = 151. For men, first step F(4, 158) => N = 158 + 4 + 1 = 163; second step F(8, 152) => N = 152 + 8 + 1 = 161. These computations are based on the quoted F(df1, df2) values in the text.",
+      "warning": "Inconsistent male sample sizes across regression steps (163 vs 161), likely due to missing data/listwise deletion between steps.",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            151
+          ]
+        },
+        "male": {
+          "Study X": [
+            163,
+            161
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey or data-collection method (e.g., paper-and-pencil or online) is described in the provided text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report participant race or percentage identifying as white.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains no information about participant ages or mean age.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report participants' education level or percentage with college education.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While BMI is included as a predictor in regression (e.g., 'BMI (B = .03, SE = .01, \\beta = .20, t = 2.41, p = .017)'), no mean BMI value is reported in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify the source of the sample (e.g., community, college, primary/secondary/high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text refers to 'body appreciation' as a predictor but does not name the instrument (e.g., BAS or BAS-2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text includes BMI as a predictor but does not state whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text reports regression coefficients where body appreciation predicts sexual liberalism and BMI is included as a predictor (e.g., 'body appreciation (B = .35, SE = .15, \\beta = .29, t = 2.39, p = .018)') but does not provide a Pearson correlation (r) between body appreciation and BMI.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text describes a single set of regression analyses separated by gender; no multiple studies or labels like 'Study 1' or 'Study 2' are present.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No information about publication type (journal article or dissertation) is provided in the text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section reports gender-specific hierarchical regression analyses predicting general sexual liberalism. For women (N inferred = 151), sexual orientation was a significant predictor in step 1, and in step 2 body appreciation, sexual orientation, and BMI were significant predictors. For men (Ns inferred = 163 and 161 across steps), only body appreciation emerged as a significant predictor in the second step; no explicit study numbering is given.",
+      "evidence_source": "Quoted sentences from the section: 'When general sexual liberalism was entered as the criterion variable, the first step of the regression was significant in women, F(4, 146) = 3.17, p = .016, Adj. R^2 = .06, with sexual orientation being the only significant predictor (B = .27, SE = .10, \\beta = .22, t = 2.68, p = .008).' and 'The second step of the regression was also significant, F(8, 142) = 5.25, p < .001, \\Delta R^2 = .13, with body appreciation (B = .35, SE = .15, \\beta = .29, t = 2.39, p = .018), sexual orientation (B = .27, SE = .09, \\beta = .22, t = 2.90, p = .004), and BMI (B = .03, SE = .01, \\beta = .20, t = 2.41, p = .017) emerging as significant predictors.' and 'In men, the first step of the regression did not reach significance, F(4, 158) < 1, Adj. R^2 < .01, whereas the second step did, F(8, 152) = 3.21, p = .001, \\Delta R^2 = .10. Of the variables entered into the second step, the only significant predictor was body appreciation (B = .25, SE = .11, \\beta = .24, t = 2.25, p = .026).'",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

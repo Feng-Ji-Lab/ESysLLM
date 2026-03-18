@@ -1,0 +1,277 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "reason": "Multiple core sections consistently describe a single empirical investigation (Abstract [0], Methods/participants [1], Results [3], Discussion summary [5]) \u2014 all refer to 'the present study' with a single sample (N \u2248 263) and no indication of additional separate studies. Therefore the most accurate count is 1."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "Multiple sections indicate this is a journal article: header contains journal title/homepage (Candidate 0); article metadata with receipt/revision/acceptance dates and keywords (Candidate 1); and the Abstract, Methods, and Results describe a single empirical study with N \u2248 263 and typical journal-style reporting (Candidates 2 and 3). There is no indication the work is a dissertation, so the correct value is \"journal articles.\""
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "online"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All reliable sources (abstract and Participants/Procedure) describe a single study (final N = 263) that recruited participants via MTurk and an undergraduate pool and administered the questionnaire online (SurveyMonkey). Keywords and article metadata also reference MTurk. Therefore the survey method for the single study is 'online'."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        263,
+        259,
+        257
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "reason": "All candidates refer to a single empirical study. The Methods/Participants section (candidate 1) reports the final sample as 263 women (preferred for total N). The Results and table notes indicate analytic Ns smaller than the full sample due to missing data: regression analyses were based on 257 cases (candidate 2), and BMI has N = 259 (candidates 3\u20136). These values are complementary (total sample and measure-/analysis-specific Ns), so all three (263, 259, 257) are provided. Gender-specific reporting indicates only women were recruited, so female = [263, 259, 257], male/other = []. All candidates (0\u20137) informed this resolution.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          263,
+          259,
+          257
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          263,
+          259,
+          257
+        ]
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        35.26
+      ]
+    },
+    "best_indices": [
+      1,
+      2
+    ],
+    "reason": "All candidates refer to a single empirical study (final N = 263 women). The Participants/Procedure section (candidate 1) provides the primary, reliable mean age (M = 35.26, SD = 12.42; range 19\u201376) and Table 1 (candidate 2) confirms this value. The Abstract (candidate 0) reports the same value but is lower priority. The sample consisted only of women, so the female and total fields contain 35.26; male/other are empty. Subsamples (MTurk and undergraduates) were merged into the single study entry.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          35.26
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          35.26
+        ]
+      }
+    }
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "United States"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "All candidate evidence refers to a single empirical study that recruited MTurk workers from the U.S. and undergraduates at a small U.S. liberal arts institution. Subsamples (MTurk and undergraduate) were merged into the same study. 'U.S.' normalized to 'United States'. Candidate index 0 provided the relevant information."
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Single study": [
+        77.9
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper reports a single empirical study (final sample N = 263, described in Participants/Method). The Participants section explicitly states 77.9% identified as White; the sample consisted only of women (MTurk and undergraduate subsamples merged), so the same value applies to both female and total. Candidate 0 (Participants section) is the most reliable source and was used.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          77.9
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          77.9
+        ]
+      }
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        86.6
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study reported (final sample N=263, all women). The Participants section gives educational breakdown (HS or less 13.3%; some college 45.2%; Bachelor's 30.0%; >Bachelor's 11.4%), which sums to 86.6% with college experience or higher. Source is the Methods/Participants section (most reliable), and because the sample comprised only women, the female and total values are the same.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          86.6
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          86.6
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        26.23
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "All sections describe a single study (final N \u2248 263 women). Both the Participants/Procedure text (candidate 0) and Table 1 (candidate 1) report the same mean BMI = 26.23 (SD = 6.45). Table notes BMI N = 259 versus text N = 263, but the mean is consistent; prefer main-text Method/Participants for primary reporting while using the table as corroboration. Therefore a single-study entry with mean BMI 26.23 is returned; female-only sample so female and total values are identical.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          26.23
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          26.23
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "community",
+        "college"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "All sections describe a single empirical study that recruited participants from two sources: MTurk (mapped to 'community') and an undergraduate psychology participant pool (mapped to 'college'). Candidate 0 (Participants/Method) provides the primary recruitment detail listing both MTurk and college samples; Candidate 1 (Results) confirms the samples were combined for analysis. Therefore both source types are included for the single study."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The Measures section (candidate 0) explicitly states the 13-item Body Appreciation Scale (BAS; Avalos et al., 2005) was used to assess body appreciation in the present study. The paper contains a single study, so 'BAS' is assigned to 'Single study'."
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "All candidates refer to a single empirical study. The Measures section (candidate 0) explicitly states BMI was computed from self-reported height and weight, which is the most reliable source for assessment method. Discussion candidates (1\u20133) corroborate this by noting reliance on self-report as a study limitation. Therefore the study-level assessment of BMI is 'self-reported'."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        -0.37
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study in the paper. Table 1 reports the intercorrelation between Body Appreciation (Variable 3) and BMI (Variable 5) as r = -0.37 (noted as -.37***). Sample N = 263 (BMI N = 259). No gender-specific correlations provided, so the total correlation (-0.37) is used for the single study. Candidate index 0 provided the table value.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          -0.37
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          -0.37
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      2,
+      3,
+      7
+    ],
+    "reason": "Multiple sections (abstract [0], sample description [2], procedure [3], and discussion [7]) describe a single dataset/sample (N = 1,093) and report one set of analyses. No sections label separate experiments or 'Study 1/Study 2', and all results pertain to the same university sample, so the paper contains one study."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      2,
+      0,
+      1
+    ],
+    "reason": "The document is a peer-reviewed journal article (journal name 'Body Image' and journal metadata such as submission/acceptance dates are present in candidates [0] and [1]), and the abstract (candidate [2]) describes the single study and results. This clearly matches the allowed value 'journal articles' rather than 'dissertation'."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "Iran"
+      ]
+    },
+    "best_indices": [
+      2,
+      4,
+      5
+    ],
+    "reason": "All candidate sources consistently indicate a single study conducted in Iran (participants were 1,093 university students recruited from seven universities in Tehran). The paper reports one dataset and no separate studies, so a single study entry ('Single study') is used and the country is 'Iran'. Candidates 2 (abstract), 4 (participants), and 5 (procedure) were used as primary evidence."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS-2"
+      ]
+    },
+    "best_indices": [
+      1,
+      3,
+      5,
+      6,
+      8,
+      11
+    ],
+    "reason": "All candidate sections refer to a single dataset (N = 1,093 university students) and consistently report use of the 10-item Body Appreciation Scale-2 (BAS-2): the abstract (1) states the study examined the BAS-2, the Measures section (3) specifies participants completed the 10-item BAS-2, statistical analyses (5) and factor/subsample results (6, 8) describe BAS-2 EFA and internal consistency, and the Discussion (11) summarizes validation of the Persian BAS-2. Therefore this is a single study and the assessment instrument is BAS-2."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        1093
+      ]
+    },
+    "best_indices": [
+      1,
+      0
+    ],
+    "reason": "Both candidates report the same single sample (N = 1,093) with an identical gender split (568 men, 525 women). The Participants section (candidate 1) is the primary source and matches the Abstract (candidate 0), so values were consolidated into one study entry. Gender counts and total are consistent and merged accordingly.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          568
+        ]
+      },
+      "female": {
+        "Single study": [
+          525
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          1093
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "college"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason": "All candidate sections describe the same single dataset (N = 1,093) drawn from university students recruited from seven universities in Tehran and tested in classroom settings. The Participants/Procedure sections (indices 1 and 2) are the primary sources and explicitly state 'university students' or 'universities in Tehran'; other sections (abstract, results, discussion, table) are consistent. Therefore the source is classified as 'college'."
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        25.87
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper reports one study (single university sample, N=1,093). The Methods/Participants section (candidate 0) gives the overall mean age M = 25.87 (preferred for total). Table 2 (candidate 1) provides the gender-specific means (men M = 26.16; women M = 25.54). These are complementary and consistent (weighted average ~25.87), so both the total mean and the gender-split means are included.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          26.16
+        ]
+      },
+      "female": {
+        "Single study": [
+          25.54
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          25.87
+        ]
+      }
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        100
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All candidate sources describe a single sample of university students (N=1,093) from multiple sections (Participants, Procedure, Discussion/Table). By the provided inference rule, 'university students' implies 100% with college or higher education. No conflicting values found; merged evidence from the Participants/Procedure/main text and table supports a single-study extraction of 100% (applied to total and to both male and female subsamples).",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          100
+        ]
+      },
+      "female": {
+        "Single study": [
+          100
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          100
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        23.69
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper reports a single study (N = 1,093; 568 men, 525 women). Candidate 0 provides the overall mean BMI (M = 23.69, SD = 3.48) from the Participants section; Candidate 1 provides gender-specific means from Table 2 (men M = 25.17; women M = 22.07). These are complementary and consistent (the weighted mean of the gender-specific values \u2248 23.68, matching the reported 23.69 within rounding), so I merged them into one study entry, including the total and gender-specific means.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          25.17
+        ]
+      },
+      "female": {
+        "Single study": [
+          22.07
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          23.69
+        ]
+      }
+    }
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All candidates refer to the same single university sample (N = 1,093). The Measures section (candidate 1) explicitly states participants self-reported weight and height used to calculate BMI; the Participants section (candidate 0) reports self-reported BMI values; the Discussion (candidate 2) repeats that self-reported BMI was used and lists it as a limitation. All sources consistently indicate BMI was self-reported, so the study-level value is 'self-reported'."
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "paper-and-pencil"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "All sections describe a single dataset collected from university students; Procedure (main-text) explicitly states participants completed a paper-and-pencil survey in classroom settings, so 'paper-and-pencil' is the reliable method for the single study."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        0.12,
+        -0.24
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study in the paper (university sample, N reported across sections). Table 2 reports BAS-2 vs BMI correlations separately by gender: lower triangle (men) = 0.12, upper triangle (women) = -0.24. Per instructions, when gender-specific correlations are reported, provide separate male and female values; both values are included in the study-level list.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          0.12
+        ]
+      },
+      "female": {
+        "Single study": [
+          -0.24
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "United Kingdom"
+        ]
+      },
+      "evidence_source": "Title states 'Body image and personality among British men', indicating the study was conducted in Britain/United Kingdom.",
+      "warning": "Study name is inferred as 'Study X' because the provided text is only a title/header section and does not explicitly name the study. The full methods section would be needed to confirm study naming and other details."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only the title and author line. No sample size information is present in this section.",
+      "warning": "Sample size cannot be extracted from title/header alone. Full methods section required."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only the title and author line. No survey method information is present in this section.",
+      "warning": "Survey method cannot be extracted from title/header alone. Full methods section required."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only the title and author line. No demographic information is present in this section.",
+      "warning": "Demographic data cannot be extracted from title/header alone. Full methods/results section required."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only the title and author line. No age information is present in this section.",
+      "warning": "Age data cannot be extracted from title/header alone. Full methods/results section required."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only the title and author line. No education information is present in this section.",
+      "warning": "Education data cannot be extracted from title/header alone. Full methods/results section required."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only the title and author line. No BMI information is present in this section.",
+      "warning": "BMI data cannot be extracted from title/header alone. Full methods/results section required."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only the title and author line. No information about sample source is present in this section.",
+      "warning": "Sample source cannot be extracted from title/header alone. Full methods section required."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only the title and author line. No information about body appreciation assessment instruments is present in this section.",
+      "warning": "Assessment instrument cannot be extracted from title/header alone. Full methods section required."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only the title and author line. No information about BMI assessment method is present in this section.",
+      "warning": "BMI assessment method cannot be extracted from title/header alone. Full methods section required."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text is only the title and author line. No correlation data is present in this section.",
+      "warning": "Correlation data cannot be extracted from title/header alone. Full results section required."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only the title and author line. No explicit mention of number of studies is present. The title suggests a single study design, but full text is needed to confirm.",
+      "warning": "Cannot definitively determine number of studies from title alone. Full paper structure required."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only the title and author line. No publication type information is present in this section.",
+      "warning": "Publication type cannot be extracted from title/header alone. Full document metadata required."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section contains only the title and author information for a study on body image and personality among British men. The title indicates the study examines associations between Big Five personality domains, drive for muscularity, and body appreciation. No methodological details, sample characteristics, or results are provided in this header section.",
+      "evidence_source": "Title: 'Body image and personality among British men: Associations between the Big Five personality domains, drive for muscularity, and body appreciation' by Karis Benford and Viren Swami.",
+      "warning": "This is a title/header section only. Full methods, results, and discussion sections are needed to extract the requested study variables."
+    },
+    "_pass_type": "text_only"
+  }
+]

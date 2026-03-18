@@ -1,0 +1,103 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size is explicitly stated in this section. The section discusses correlations for men but does not provide the number of male participants.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method is mentioned in this section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While the section mentions 'body appreciation was also not associated with... age (r = .036, p = .454)', this reports a correlation with age, not the mean age of participants.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section reports a correlation between body appreciation and BMI (r = -.247, p < .001), but does not provide the mean BMI of participants.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about where or how participants were recruited is provided in this section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section discusses body appreciation but does not specify which instrument (BAS or BAS-2) was used to assess it.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section reports correlations with BMI but does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.247
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": {
+          "Study X": [
+            -0.247
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Section 3.2 is titled 'Correlates of body appreciation in men'. The text explicitly states: 'Body appreciation was moderately inversely associated with BMI (r = -.247, p < .001)'. This correlation is for the male sample.",
+      "warning": "This section specifically analyzes men only, so the correlation is gender-specific (male). The overall and female correlations are not provided in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section (3.2) appears to be a results subsection of a single study analyzing correlates for men. No indication of multiple studies is present in this text.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "Section 3.2 presents correlational analyses of body appreciation in men. Body appreciation was inversely associated with conformity to masculine norms, upward appearance-based social comparisons, and BMI (r = -.247, p < .001), while positively associated with physical activity frequency and body satisfaction. Several variables showed no significant associations after Bonferroni correction.",
+      "evidence_source": "Section 3.2 title and content describing correlational findings for the male sample.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

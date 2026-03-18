@@ -1,0 +1,182 @@
+[
+  {
+    "SAMPLE SIZE": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'many more participants had at least one accomplishment in culinary arts than in architecture (2,220 vs. 484)', but these numbers refer to participants with accomplishments in specific domains, not the total sample size for the study.",
+      "warning": "None"
+    },
+    "ES": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states 'cognitive ability were consistently associated with creative achievement' and 'prediction of creative achievement based on self-reported individual differences depended on both general traits (intellect and high cognitive ability)', indicating associations but no specific correlation coefficients (Pearson r) are provided.",
+      "warning": "None"
+    },
+    "Effects": {
+      "type": "object",
+      "extract_value": [],
+      "evidence_source": "No correlation coefficients (ES) were found in the text.",
+      "warning": "None"
+    },
+    "Mage": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the mean age of participants.",
+      "warning": "None"
+    },
+    "Measure IQ": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'cognitive ability' and 'intellect' but does not specify any particular assessment tool or scale used to measure IQ or intelligence.",
+      "warning": "None"
+    },
+    "IQ modality": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the modality of the intelligence measure (e.g., figural, verbal, both).",
+      "warning": "None"
+    },
+    "IQ Aspect": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'cognitive ability' and 'intellect' but does not specify any particular aspect of intelligence (e.g., 'g', 'Gf', 'Gc', 'Gr').",
+      "warning": "None"
+    },
+    "Creativity Measures": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "CAQ"
+        ]
+      },
+      "evidence_source": "The text states: 'Using the large sample of SAPA-Project participants who completed the additional CAQ, we were able to link creative achievement with individual differences in Big Five traits, cognitive ability, and vocational interests.' The Inventory of Creative Activities and Achievements (ICAA) is mentioned for 'Future studies'.",
+      "warning": "None"
+    },
+    "Domain classified": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'the domains we investigated in this study' and gives examples like 'culinary arts' and 'architecture', but it does not classify these domains according to the allowed values ('Everyday', 'Arts', 'Science', 'Technological', 'Total').",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'this study' throughout the conclusion section, indicating a single study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This conclusion section summarizes a study that linked creative achievement, measured by the CAQ, with Big Five traits, cognitive ability, and vocational interests in a large sample of SAPA-Project participants. It highlights consistent associations between intellect, extraversion, and cognitive ability with creative achievement, noting that the importance of traits varied across different domains. The study acknowledges limitations related to sampling constraints, selection bias, variable endorsement rates across creativity domains (e.g., culinary arts vs. architecture), and self-report bias. Future research directions include improving CAQ scoring, investigating age effects, and exploring more holistic approaches to individual differences across the lifespan, potentially using new inventories like the ICAA.",
+      "evidence_source": "Summary of the entire 'Conclusion' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "SAMPLE SIZE": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'large sample of SAPA-Project participants' and specific counts for creative accomplishments in culinary arts (2,220) and architecture (484), but does not provide a total sample size for the study.",
+      "warning": "None"
+    },
+    "ES": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          0.445
+        ]
+      },
+      "evidence_source": "Figure 5, intersection of 'Intellect' row and 'TotalScore' column: 0.32. Figure 5, intersection of 'ICAR' row and 'TotalScore' column: 0.57. The arithmetic mean of these two correlations is (0.32 + 0.57) / 2 = 0.445. 'Intellect' and 'ICAR' are considered general intelligence measures, and 'TotalScore' is a general creative achievement measure, following the 'case_2_general_scales' and 'case_1_multiple_subscales' rules.",
+      "warning": "None"
+    },
+    "Effects": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          2
+        ]
+      },
+      "evidence_source": "Two correlation coefficients were extracted and averaged to compute the ES: one for 'Intellect' with 'TotalScore' and one for 'ICAR' with 'TotalScore' from Figure 5.",
+      "warning": "None"
+    },
+    "Mage": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the mean age of participants.",
+      "warning": "None"
+    },
+    "Measure IQ": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "ICAR",
+          "Intellect"
+        ]
+      },
+      "evidence_source": "Figure 5 and its note define 'ICAR = International Cognitive Abilities Resource'. The text also mentions 'intellect' as a general trait associated with 'high cognitive ability'.",
+      "warning": "None"
+    },
+    "IQ modality": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "both"
+        ]
+      },
+      "evidence_source": "Figure 5 includes 'LetterNumberSeries', 'MatrixReasoning', 'VerbalReasoning', and 'Rotation3D' as cognitive ability measures. 'MatrixReasoning' and 'Rotation3D' are typically figural, while 'VerbalReasoning' is verbal. 'LetterNumberSeries' can involve both. 'ICAR' is a broad resource. Given the presence of both figural and verbal components, the modality is 'both'.",
+      "warning": "None"
+    },
+    "IQ Aspect": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "g"
+        ]
+      },
+      "evidence_source": "The text refers to 'intellect' and 'high cognitive ability' as 'general traits'. 'ICAR' (International Cognitive Abilities Resource) is also a general measure of cognitive ability. These align with the 'g' aspect of intelligence.",
+      "warning": "None"
+    },
+    "Creativity Measures": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "CAQ"
+        ]
+      },
+      "evidence_source": "The text states 'Using the large sample of SAPA-Project participants who completed the additional CAQ' and Figure 5's caption mentions 'CAQ Scores'. The note for Figure 5 defines 'CAQ = Creative Achievement Questionnaire'. The ICAA is mentioned as a future direction, not used in this study.",
+      "warning": "None"
+    },
+    "Domain classified": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Total"
+        ]
+      },
+      "evidence_source": "The extracted ES is based on the correlation with 'TotalScore' from the CAQ, as shown in Figure 5. The 'TotalScore' represents the overall creative achievement.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'this study' in the singular, indicating a single study was conducted. 'the age study' is mentioned in the context of results from another study, not one presented here.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This conclusion section summarizes the findings of a single study that linked creative achievement, measured by the CAQ, with individual differences in Big Five traits, cognitive ability, and vocational interests using a large sample of SAPA-Project participants. It highlights that general traits like intellect and high cognitive ability were consistently associated with creative achievement. The section also discusses limitations related to sampling and self-report bias, and suggests future research directions, including improvements to creative achievement evaluation methods like the CAQ and the use of new inventories such as the ICAA.",
+      "evidence_source": "Summary of the 'Conclusion' section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Figure 5 Zero-Order Correlation Matrix of Gender, Age, Big Five, ICAR, Vocational Interest, and CAQ Scores Note. CAQ = Creative Achievement Questionnaire; ICAR = International Cognitive Abilities Resource. See the online article for the color version of this figure.",
+      "evidence_source": "The full caption of Figure 5.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/meta_intelligence/papers_json/Zabelina2020/figures/Zabelina2020_p010_fig00.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_0"
+  }
+]

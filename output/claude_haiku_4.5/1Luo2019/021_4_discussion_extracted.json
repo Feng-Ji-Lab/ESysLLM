@@ -1,0 +1,111 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "China"
+        ]
+      },
+      "evidence_source": "The text states 'This study is the first to explore factors influencing intuitive eating among Chinese adolescent girls,' indicating the study was conducted in China.",
+      "warning": "Study name is inferred as 'Study X' because the text does not explicitly label it as 'Study 1' or provide a specific study identifier. The country is inferred from the descriptor 'Chinese adolescent girls.'"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a Discussion section from a study on Chinese adolescent girls. While the text mentions 'Chinese adolescent girls' and references to 'Chinese girls', the actual country information is not explicitly stated in the provided Discussion section. The table provided (Table 2) contains model fit statistics and does not include country information.",
+      "warning": "Country information is mentioned contextually (Chinese adolescent girls) but not explicitly stated in the provided text section. The Discussion section does not contain explicit country designation."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Table 2 caption states 'n = 1152' which indicates the total sample size. However, the Discussion section provided does not explicitly state the sample size or break it down by study. The table caption indicates n = 1152 for the model fit analysis.",
+      "warning": "Sample size of 1152 is mentioned in Table 2 caption but the Discussion section does not provide explicit sample information for individual studies."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided Discussion section does not contain information about the survey method used (paper-and-pencil vs. online).",
+      "warning": "No survey method information is provided in the Discussion section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided Discussion section does not contain demographic information about racial/ethnic composition of participants.",
+      "warning": "No racial/ethnic demographic data is provided in the Discussion section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided Discussion section does not contain information about the mean age of participants. The text refers to 'adolescent girls' but does not provide specific age statistics.",
+      "warning": "While the study population is described as 'adolescent girls', no specific mean age is provided in the Discussion section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided Discussion section does not contain information about educational attainment of participants.",
+      "warning": "No educational attainment data is provided in the Discussion section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided Discussion section does not contain information about BMI of participants. Table 2 contains model fit statistics but not BMI data.",
+      "warning": "No BMI data is provided in the Discussion section or Table 2."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided Discussion section does not specify where participants were recruited (community, college, or school).",
+      "warning": "No information about sample source is provided in the Discussion section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided Discussion section does not explicitly mention which Body Appreciation Scale (BAS or BAS-2) was used for assessment.",
+      "warning": "While body appreciation is discussed as a key variable, the specific assessment instrument is not mentioned in the Discussion section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided Discussion section does not contain information about how BMI was assessed (self-reported vs. measured).",
+      "warning": "No BMI assessment method is provided in the Discussion section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided Discussion section and Table 2 do not contain correlation coefficients between body appreciation and BMI. Table 2 presents model fit statistics (\u03c7\u00b2, df, CFI, TLI, RMSEA, WRMR) for structural equation modeling, not bivariate correlations.",
+      "warning": "Table 2 contains model fit indices, not correlation coefficients between body appreciation and BMI. No such correlations are reported in the Discussion section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided Discussion section does not explicitly state the number of studies. The text refers to 'This study' (singular) suggesting one study, but the Discussion section alone does not provide definitive information about whether this is a single study or multiple studies.",
+      "warning": "The Discussion section refers to 'This study' but does not explicitly state the total number of studies in the paper."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is from a Discussion section of an academic paper. While the format and content suggest it could be from a journal article, the publication type is not explicitly stated in the provided text.",
+      "warning": "Publication type cannot be determined from the Discussion section alone. The text appears to be from a research paper but the specific type (journal article vs. dissertation) is not stated."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Discussion section presents findings from a study examining factors influencing intuitive eating among Chinese adolescent girls. The study demonstrates indirect effects of online interpersonal sexual objectification (OISO) experiences on intuitive eating through broad conceptualization of beauty and body appreciation. The section discusses implications for intervention programs and highlights that broad conceptualization of beauty and body appreciation may serve as protective buffers against negative impacts of objectification experiences.",
+      "evidence_source": "Discussion section content describing study findings and implications",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2: Model fit for the proposed model, the trimmed model and the Chi-square difference testing (n = 1152).",
+      "evidence_source": "Table 2 caption as presented in the image",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Luo2019/tables/1Luo2019_p003_table01.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

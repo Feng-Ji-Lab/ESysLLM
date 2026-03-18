@@ -1,0 +1,139 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or location information is provided in the section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          92
+        ]
+      },
+      "evidence_source": "For seven consecutive days, 92 female college students completed nightly online questionnaires about their daily experiences.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            92
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "online"
+        ]
+      },
+      "evidence_source": "For seven consecutive days, 92 female college students completed nightly online questionnaires about their daily experiences.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participants' racial/ethnic composition is provided in the section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Age or mean age of participants is not reported in the section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "Text states '92 female college students'; therefore, inference: all participants were college students \u2192 percentage with college or higher = 100%.",
+      "warning": "Inference made from phrase 'college students' to assign 100%; source text does not give an explicit percentage."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI or mean BMI information is reported in the section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Participants are described as 'female college students.'",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section reports outcomes such as 'body appreciation' but does not specify the instrument (e.g., BAS or BAS-2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No method of BMI assessment (self-reported or measured) is mentioned in the section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation (Pearson r) between body appreciation and BMI is reported in the section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The abstract consistently refers to 'This study' describing a single investigation conducted over seven consecutive days.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "journal articles",
+      "evidence_source": "Crown Copyright \u00a9 2018 Published by Elsevier Ltd. All rights reserved.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This abstract reports a single study in which 92 female college students completed nightly online questionnaires for seven days to examine how exposure to non-body focused versus body focused others affected eating and body image. Between-persons, greater exposure to non-body focused others predicted better outcomes (greater intuitive eating, greater body appreciation, less dietary restraint) while exposure to body focused others predicted the opposite; within-persons effects were found for non-body focused others but not body focused others. The section does not report country, age, racial composition, BMI, or the specific instruments used to assess body appreciation.",
+      "evidence_source": "Entire abstract; specifically: 'For seven consecutive days, 92 female college students completed nightly online questionnaires...' and summary sentences describing between-person and within-person findings.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

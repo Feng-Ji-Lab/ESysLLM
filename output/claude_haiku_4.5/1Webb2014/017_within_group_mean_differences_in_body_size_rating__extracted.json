@@ -1,0 +1,125 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The section mentions F(3,238) indicating 238 degrees of freedom, but does not explicitly state the total sample size. The actual sample size cannot be reliably inferred from this statistic alone.",
+      "warning": "Sample size cannot be determined from the ANOVA degrees of freedom alone without additional context."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method is described in this section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No demographic information about race/ethnicity percentages is provided in this section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No age information is provided in this section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text mentions 'students' but does not specify educational level or percentage with college or higher education.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "While the section discusses body size ratings 'adjusted for BMI', no actual mean BMI values are reported.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text refers to 'students' but does not explicitly state whether they are from college, primary/secondary/high school, or community samples.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No body appreciation assessment instrument (BAS or BAS-2) is mentioned in this section.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section discusses body size ratings and mentions BMI adjustment, but does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "This section reports within-group mean differences in body size ratings via ANOVA and post-hoc comparisons, not correlations between body appreciation and BMI.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section does not explicitly identify the number of studies. It appears to be results from a single study, but the section alone does not provide sufficient context to determine the total number of studies in the paper.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents results from a repeated measures ANOVA examining within-group mean differences in body size ratings across four conditions: participants' current body size, personal ideal, ethnic group ideal, and typical ethnic female peer body size (adjusted for BMI). Bonferroni-corrected post-hoc tests revealed that participants rated their actual body size as significantly larger than their personal ideal and ethnic group ideal, but smaller than their ethnic female peers. The personal ideal was rated as significantly smaller than both the ethnic group ideal and typical peer body size.",
+      "evidence_source": "Entire section text describing ANOVA results and post-hoc comparisons.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

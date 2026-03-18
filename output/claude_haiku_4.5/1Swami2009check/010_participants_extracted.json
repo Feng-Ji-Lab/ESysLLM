@@ -1,0 +1,193 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "United Kingdom"
+        ]
+      },
+      "evidence_source": "Text states: 'The participants of this study were 322 female university students enrolled in a number of courses at a university in Greater London'. Greater London is a region in the United Kingdom.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          322
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            322
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            322
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'The participants of this study were 322 female university students'. All 322 participants are female.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether data collection was conducted via paper-and-pencil or online survey methods.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          63.7
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            63.7
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            63.7
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'The majority of participants were of European Caucasian descent (63.7%)'. European Caucasian descent is interpreted as white/European ethnicity.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          24.72
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            24.72
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            24.72
+          ]
+        }
+      },
+      "evidence_source": "Text states: '(age M = 24.72, SD = 5.90)'. M denotes mean age of 24.72 years.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            100
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'The participants of this study were 322 female university students enrolled in a number of courses at a university'. All participants are university students, which means they have college or higher education experience. Therefore, 100% of participants have college or higher education.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          21.67
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            21.67
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            21.67
+          ]
+        }
+      },
+      "evidence_source": "Text states: '(BMI M = 21.67, SD = 3.48)'. M denotes mean BMI of 21.67.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Text states: 'The participants of this study were 322 female university students enrolled in a number of courses at a university in Greater London'. Participants were recruited from a university, which is a college source.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify which instrument (BAS or BAS-2) was used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide any correlation coefficients between body appreciation and BMI.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with one sample of 322 female university students. No multiple studies or experiments are mentioned.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text does not indicate whether this is from a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the participants of a single study (Study X) consisting of 322 female university students from Greater London, United Kingdom, with a mean age of 24.72 years and mean BMI of 21.67. The majority of participants (63.7%) were of European Caucasian descent, with smaller proportions of Asian (13.7%), African Caribbean (13.7%), and other ancestry (9.0%). All participants were university students, indicating 100% had college or higher education experience.",
+      "evidence_source": "Entire Participants section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

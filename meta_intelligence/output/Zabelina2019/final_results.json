@@ -1,0 +1,179 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24
+    ],
+    "reason": "The vast majority of candidates, supported by their section contexts, explicitly state or strongly imply that the paper describes a single study. Phrases like 'a single study', 'the present study', 'the study', 'our study', and 'this study' are consistently used throughout the paper. Candidate [21] mentions 'our study' and compares it to another study from a different paper, which means 'our study' refers to one study within this paper, not two studies in total for this paper. Candidates [0] and [7] provide a value of 0, but lack supporting context for the entire paper, or refer to a measure rather than a study count."
+  },
+  "SAMPLE SIZE": {
+    "extract_value": {
+      "Single study": [
+        47,
+        50,
+        16,
+        19,
+        49,
+        48
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "reason": "The paper describes a single study. Candidates 0, 1, and 2 consistently report an overall participant count of N=47 in the 'Participants' or 'Method' sections, which are highly reliable for the total recruited sample. Candidate 3 reports a total sample size of N=50 for 'all other analyses' by summing sub-groups (IT, artistic, students/unemployed), and also provides sub-sample sizes of 16 (IT) and 19 (artistic). Candidates 4, 5, and 6 report sample sizes of N=48, N=49, and N=50, derived from F-statistics in various regression analyses within the 'Results' sections. These different values likely reflect the total recruited sample (47) and the effective sample sizes for specific analyses or sub-group categorizations (48, 49, 50). As per instructions, all valid sample sizes for a single study, including those for sub-samples or specific analyses, should be merged into a single list for that study. All distinct values (47, 48, 49, 50, 16, 19) are included."
+  },
+  "Effects": {
+    "extract_value": {
+      "Single study": [
+        1
+      ]
+    },
+    "best_indices": [
+      6
+    ],
+    "reason": "The paper describes a single study. Candidate [6] explicitly identifies one correlation coefficient (ICAR with CAQ total) from Table 4, which directly matches the definition of an effect size (correlation between intelligence and creative achievement). Other candidates stating 0 effects either lacked the specific table or did not find this particular correlation in their respective sections, making candidate [6] the most precise and reliable source for this specific metric."
+  },
+  "Domain classified": {
+    "extract_value": {
+      "Single study": [
+        "Arts",
+        "Science",
+        "Technological",
+        "Total"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "reason": "The paper describes a single study, as indicated by the context and consistent references to 'Study X' across all candidates. All candidates provide domain classifications for this single study. By consolidating the unique domain classifications from all candidates, the following domains were identified: 'Arts' (from candidates [0, 1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14]), 'Total' (from candidates [0, 3, 4, 5, 6, 7, 8, 9]), 'Technological' (from candidate [2]), and 'Science' (from candidates [3, 4, 5, 6, 8, 9]). These unique values are combined into a single list for the 'Single study'."
+  },
+  "Creativity Measures": {
+    "extract_value": {
+      "Single study": [
+        "CAQ"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "reason": "The paper describes a single study, as indicated by the context. All candidates consistently identify 'CAQ' (Creative Achievement Questionnaire) as the creativity measure used in this study. No other creativity measures were mentioned across the candidates."
+  },
+  "Mage": {
+    "extract_value": {
+      "Single study": [
+        29.26,
+        33.0,
+        29.79
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper contains a single study as indicated by the context and confirmed by the section summaries of both candidates. Candidate [0] provides the overall mean age of 29.26 for the participants. Candidate [1] provides mean ages of 33.0 and 29.79 for two distinct subgroups (IT and Artistic professions) within the same study, as detailed in Table 1. All values are merged into a single list for the 'Single study' as per instructions for handling multiple samples/subgroups within one study."
+  },
+  "Measure IQ": {
+    "extract_value": {
+      "Single study": [
+        "International Cognitive Ability Resource (ICAR) test"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "reason": "The paper describes a single study, as indicated by the context. All candidates consistently identify the 'International Cognitive Ability Resource (ICAR) test' (or its abbreviation 'ICAR') as the measure used for general cognitive ability or IQ in this study. Candidate [0] provides the most complete name, 'International Cognitive Ability Resource (ICAR) test', which encompasses the information from other candidates that mention 'ICAR' or 'International Cognitive Ability Resource'. Candidate [11] mentions 'Benedek et al. (2014)' but explicitly states no IQ measure was provided for that external study, and it is not part of the current paper's studies. Therefore, only the measure for the single study in this paper is extracted."
+  },
+  "IQ Aspect": {
+    "extract_value": {
+      "Single study": [
+        "g"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "reason": "The paper describes a single study, as indicated by the context and consistent use of 'Study X' or 'our study' across candidates. All candidates consistently identify 'general cognitive ability' or 'ICAR (International Cognitive Ability Resource)' as the measure, which maps to the 'g' aspect of intelligence. Candidate [10] also refers to 'our study' with 'general cognitive ability as assessed by the ICAR measure', confirming 'g' for the paper's study, while the external study 'Benedek et al. (2014)' does not provide an IQ aspect value for this paper. Therefore, all instances of 'g' are consolidated under 'Single study'."
+  },
+  "ES": {
+    "extract_value": {
+      "Single study": [
+        0.12
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study, as indicated by the context. Candidate [0] provides a Pearson correlation coefficient of 0.12 between ICAR (International Cognitive Ability Resource, a measure of general cognitive ability) and CAQ total (Creative Achievement Questionnaire total score, a general creative achievement measure). This directly aligns with the definition of ES, which seeks correlations between intelligence and creative achievement (specifically mentioning CAQ). The evidence correctly applies the 'case_2_general_scales' rule by selecting the correlation for the general/total creative achievement measure (CAQ total) over its subscales (CAQ arts, CAQ science). Therefore, 0.12 is extracted for the 'Single study'."
+  }
+}

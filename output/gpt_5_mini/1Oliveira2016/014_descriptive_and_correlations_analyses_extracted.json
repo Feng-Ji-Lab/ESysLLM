@@ -1,0 +1,129 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or geographic location is mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size or total number of participants is provided in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about data collection method (e.g., online or paper-and-pencil) is provided in the text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information on participant racial/ethnic composition is given in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses 'age' associations but does not report any mean or summary age value.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participants' education level (e.g., percentage with college or higher) is provided in the text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text reports associations involving BMI but does not provide a mean BMI value.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not state the sample source (e.g., community, college, primary/secondary/high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Sentence: \"BMI was inversely associated with body appreciation (BAS-2) and positively linked to EDE-Q, both with moderate magnitudes.\"",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Sentence: \"BMI was inversely associated with body appreciation (BAS-2) and positively linked to EDE-Q, both with moderate magnitudes.\" (No numeric correlation coefficient reported.)",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "\"Results demonstrated that age revealed non-significant associations with the  variables in study, except with BMI.\" (Text refers to a single study.)",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type (journal article or dissertation) is specified in the provided text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "The section reports descriptive and correlation analyses from a single study: age showed no significant associations with study variables except BMI. BMI was weakly negatively associated with early memories of warmth and safeness and social safeness, and was inversely associated with body appreciation (BAS-2) and positively associated with eating-disorder symptoms (EDE-Q); partial correlations controlling for age produced similar patterns.",
+      "evidence_source": "Multiple sentences, e.g.: \"Results demonstrated that age revealed non-significant associations with the  variables in study, except with BMI.\" and \"BMI was inversely associated with body appreciation (BAS-2) and positively linked to EDE-Q, both with moderate magnitudes.\" and \"a partial correlation analysis controlling for age... the direction and magnitude... remained similar.\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

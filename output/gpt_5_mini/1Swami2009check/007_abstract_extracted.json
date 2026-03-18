@@ -1,0 +1,157 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or region is stated in the provided abstract.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          322
+        ]
+      },
+      "evidence_source": "\"In total, 322 female university students completed the Consider subscale of the Acceptance of Cosmetic Surgery Scale, the third revision of Sociocultural Attitudes Toward Appearance Scale (SATAQ-3), the Body Appreciation Scale (BAS), and provided their demographic details.\"",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            322
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            322
+          ]
+        }
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey administration method (paper-and-pencil or online) is specified in the abstract.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract does not report participant race or percentage white.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract mentions age in correlations (\"negatively correlated with BAS scores, age, and body mass index (BMI)\") but does not report a mean age.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "\"In total, 322 female university students completed...\". Inference: participants are university students, therefore percentage with college or higher education is recorded as 100%.",
+      "warning": "Inference made from phrase 'university students'.",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            100
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract references BMI in correlations but does not report a mean BMI value.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "\"In total, 322 female university students completed...\" indicating participants were recruited from a university (college) sample.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "\"In total, 322 female university students completed... the Body Appreciation Scale (BAS)\"",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "BMI is mentioned in reported correlations, but the abstract does not state whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"Bivariate correlations showed that consideration of cosmetic surgery was significantly and positively correlated with three of the SATAQ-3 subscales and negatively correlated with BAS scores, age, and body mass index (BMI).\" The abstract states a negative correlation between BAS and BMI but provides no numeric Pearson r.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "\"The current study examined the association...\" (singular), and the abstract describes one sample of 322 female university students.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "journal articles",
+      "evidence_source": "\"- 2009 Elsevier Ltd. All rights reserved.\" indicating publication is a journal article.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This abstract reports a single study of 322 female university students examining associations among consideration of cosmetic surgery, media influence (SATAQ-3), body appreciation (BAS), and demographics including BMI. Results indicated consideration of cosmetic surgery correlated positively with some media influence subscales and negatively with body appreciation, age, and BMI; regression showed greater media influence, lower body appreciation, and lower BMI predicted consideration of cosmetic surgery. The abstract does not provide country, survey method, mean age, mean BMI, numeric correlation coefficients, or explicit study labels (e.g., 'Study 1').",
+      "evidence_source": "\"The current study examined the association between consideration of cosmetic surgery, body appreciation, media influence, and participant demographics.\" and \"In total, 322 female university students completed... the Body Appreciation Scale (BAS)...\" and \"Bivariate correlations showed... negatively correlated with BAS scores, age, and body mass index (BMI). A multiple regression showed that the only significant predictors... were greater media influence, less body appreciation, and lower BMI.\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

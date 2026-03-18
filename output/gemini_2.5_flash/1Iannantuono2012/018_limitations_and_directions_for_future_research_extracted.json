@@ -1,0 +1,125 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The text states 'Participants were mainly White, young adult, middle-class, first-year college women' but does not provide a specific number for the sample size. This value is for Study X.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The text states 'Participants were mainly White' but does not provide a specific percentage. This value is for Study X.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The text states 'young adult' but does not provide a specific mean age. This value is for Study X.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [100]}",
+      "evidence_source": "The text states 'Participants were mainly White, young adult, middle-class, first-year college women'. This implies 100% of the participants had college experience. This value is for Study X.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "100",
+        "male": "None",
+        "other": "None",
+        "total": "100"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"college\"]}",
+      "evidence_source": "The text states 'first-year college women'. This value is for Study X.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"self-reported\"]}",
+      "evidence_source": "The text states 'We also assessed participants' self-reported height and weight, which adds social desirability and memory recall error to the estimation of participants' BMI.' This value is for Study X.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The section mentions 'correlational data' but does not provide specific correlation coefficients between body appreciation and BMI. This value is for Study X.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'this study' and 'our sample' in the singular, indicating a single study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section discusses the limitations of the study, including its correlational design, potential for recall and measurement error due to self-reported data (e.g., BMI), and the homogeneity of its sample, which consisted mainly of White, young adult, middle-class, first-year college women. It also provides directions for future research, such as using longitudinal designs and investigating the model in more diverse populations.",
+      "evidence_source": "Summary of the 'Limitations and Directions for Future Research' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

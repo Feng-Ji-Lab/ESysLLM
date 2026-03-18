@@ -1,0 +1,103 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Romania"
+        ]
+      },
+      "evidence_source": "Text states 'we prepared a Romanian translation of the BAS-2 and examined its factor structure and psychometric properties in a sample of Romanian adults.' This indicates the study was conducted in Romania.",
+      "warning": "Study name is not explicitly provided in the text; using 'Study X' as placeholder per policy."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide a specific sample size. It mentions 'a sample of Romanian adults' but no numerical value is given.",
+      "warning": "Sample size not explicitly stated in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether data collection was conducted via paper-and-pencil or online methods.",
+      "warning": "Survey method not explicitly stated in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the racial/ethnic composition of participants.",
+      "warning": "Percent of white participants not stated in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide mean age of participants.",
+      "warning": "Mean age not explicitly stated in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about educational attainment of participants.",
+      "warning": "Percentage with college or higher education not stated in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions BMI as a variable examined for convergent validity but does not report the mean BMI of participants.",
+      "warning": "Mean BMI not explicitly stated in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether participants were recruited from community, college, or primary/secondary/high school settings.",
+      "warning": "Source of sample not explicitly stated in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Text explicitly states 'we prepared a Romanian translation of the BAS-2 and examined its factor structure and psychometric properties' and later references 'BAS-2 scores' throughout the section.",
+      "warning": "Study name is not explicitly provided in the text; using 'Study X' as placeholder per policy."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions BMI as a variable for examining convergent validity but does not specify whether BMI was self-reported or measured.",
+      "warning": "Assessment method for BMI (self-reported vs. measured) not explicitly stated in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text mentions that convergent validity would be examined by looking at associations with BMI, expecting negative associations, but no actual correlation coefficients are reported in this section.",
+      "warning": "Correlation values not provided in this section; only hypotheses about expected associations are stated."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study examining the Romanian BAS-2 in a sample of Romanian adults. No multiple studies are explicitly named or described.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text does not indicate whether this is a journal article or dissertation.",
+      "warning": "Publication type not explicitly stated in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes a single study examining the psychometric properties of a Romanian translation of the BAS-2 in a sample of Romanian adults. The study aims to examine the factor structure, internal consistency, sex invariance, test-retest reliability, and convergent validity of the BAS-2, with expected negative associations between BAS-2 scores and BMI.",
+      "evidence_source": "Section 1.2 titled 'The present study'",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

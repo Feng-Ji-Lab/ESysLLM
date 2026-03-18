@@ -1,0 +1,136 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information is provided in the text.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information is provided in the text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age information is provided in the text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in the text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI information is provided in the text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the source of the sample (community, college, or primary/secondary/high school) is provided in the text.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The text explicitly states 'The correlation coefficients between the total score of the BAS-2 and other study variables are summarized in Table 2.' This indicates the Body Appreciation Scale-2 (BAS-2) was used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether BMI was self-reported or measured. It only mentions correlations between body appreciation and BMI.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.12,
+          0.12
+        ]
+      },
+      "evidence_source": "The text states: 'Body appreciation was negatively associated with BMI among women while positively correlated among men.' The specific correlation for men with BMI\u00b2 is provided: 'The correlation coefficient between body appreciation and BMI\u00b2 was significant, r = .12; p = .006, in men.' The text indicates a negative correlation for women (direction stated but magnitude not provided in this excerpt). The value r = .12 is reported for men's correlation with BMI\u00b2. Since the text mentions the relationship may be curvilinear in men and reports the BMI\u00b2 correlation, the primary BMI correlation for men is implied to be positive but the exact value is not stated in this section. However, the BMI\u00b2 correlation of .12 is explicitly provided for men.",
+      "warning": "Asymmetric data: The exact correlation coefficient for women is not numerically provided in this text, only the direction (negative) is stated. For men, the BMI\u00b2 correlation (.12) is provided, but the primary BMI correlation is not explicitly stated numerically in this excerpt.",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.12
+          ]
+        },
+        "male": {
+          "Study X": [
+            0.12
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text discusses a single study with gender-stratified analyses. The reference to 'Table 2' and consistent discussion of 'the study' indicates one study with results broken down by gender.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text does not indicate whether this is from a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents convergent validity results for the BAS-2, showing that greater body appreciation was significantly associated with higher self-esteem and life satisfaction. Notably, body appreciation was negatively associated with BMI among women but positively correlated among men, with a significant correlation of r = .12 (p = .006) found between body appreciation and BMI\u00b2 in men, suggesting a possible curvilinear relationship.",
+      "evidence_source": "Entire provided text section on Convergent Validity",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

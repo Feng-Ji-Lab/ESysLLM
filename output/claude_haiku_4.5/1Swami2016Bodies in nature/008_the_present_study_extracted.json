@@ -1,0 +1,96 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'community adults in the U.S.' as the study population, indicating the country is the United States. However, this is a methods/aims section that describes planned analyses rather than reporting actual study results. The actual study data (sample size, demographics, results) are not provided in this section.",
+      "warning": "This is a methods/aims section describing planned analyses, not a results section. Actual study data are not reported here."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size is reported in this section. The text describes the study aims and hypotheses but does not provide the actual number of participants.",
+      "warning": "Sample size not provided in this methods/aims section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method is specified in this section. The text describes the conceptual model and hypotheses but does not detail how data were collected.",
+      "warning": "Survey method not specified in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information about racial/ethnic composition is provided in this section.",
+      "warning": "Demographic data not provided in this methods/aims section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age data are reported in this section.",
+      "warning": "Age data not provided in this methods/aims section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in this section.",
+      "warning": "Education data not provided in this methods/aims section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI data are reported in this section.",
+      "warning": "BMI data not provided in this methods/aims section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "community"
+        ]
+      },
+      "evidence_source": "The text states 'community adults in the U.S.' indicating the sample source is community.",
+      "warning": "Study name is inferred as 'Study X' per policy since no explicit study number is given in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'we sought to replicate the findings of Swami, von Nordheim, et al. (2016) with respect to the positive association between connectedness to nature and body appreciation. We did so using a more conceptually valid measure of body appreciation (i.e., the BAS-2 as opposed to the BAS)'",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported vs. measured) is provided in this section.",
+      "warning": "BMI assessment method not specified in this methods/aims section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes the study aims and hypotheses but does not report any correlation coefficients between body appreciation and BMI.",
+      "warning": "No correlation data provided in this methods/aims section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes 'The Present Study' (singular) with multiple aims and analyses, but it appears to be one study with different hypotheses and mediational pathways being tested. No explicit mention of multiple studies (e.g., 'Study 1', 'Study 2') is present.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this section.",
+      "warning": "Publication type not specified in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the aims and hypotheses of a single study examining associations between nature exposure, connectedness to nature, and body appreciation in community adults in the U.S. The study plans to use the BAS-2 (rather than the BAS) to measure body appreciation and will employ path analysis to test direct and indirect (mediated by self-esteem) relationships, as well as broader body image variables including investment in appearance and internalization of appearance ideals. The analysis will be conducted separately for women and men to examine potential sex-specific effects.",
+      "evidence_source": "Entire section text"
+    },
+    "_pass_type": "text_only"
+  }
+]

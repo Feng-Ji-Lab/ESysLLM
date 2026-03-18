@@ -1,0 +1,113 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in the provided Results section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          105
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            105
+          ]
+        }
+      },
+      "evidence_source": "The ANOVA analysis mentions 'F(1,103)' which indicates df=1 and error df=103. With one between-subjects factor (sex) with 2 levels, the total sample size is 103+1=104 or approximately 105 participants (the exact N is inferred from the degrees of freedom structure).",
+      "warning": "Sample size inferred from degrees of freedom in ANOVA (df=103). Exact N not explicitly stated in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is provided in the Results section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information is provided in the Results section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in the Results section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in the Results section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI information is provided in the Results section.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample source (community, college, or primary/secondary/high school) is provided in the Results section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The text explicitly states 'we averaged SBAS-2 scores' and 'mean state BA was 3.79... for high acceptance situations'. SBAS-2 refers to the State Body Appreciation Scale-2, which is a variant of BAS-2 used to measure momentary body appreciation.",
+      "warning": "SBAS-2 is the State version of BAS-2. Classified as BAS-2 per the allowed values in the schema."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI assessment method is mentioned in the Results section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation between body appreciation and BMI is reported in the Results section. The section reports ANOVA results comparing state BA across acceptance situations by sex, but does not report correlations with BMI.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The Results section does not explicitly indicate the number of studies. This appears to be results from a single study, but the section alone does not provide explicit study count information.",
+      "warning": "Cannot determine number of studies from Results section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in the Results section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Results section reports findings from a mixed factorial ANOVA examining state body appreciation (measured via SBAS-2) across high and low acceptance situations, with sex as a between-subjects factor (N\u2248105). The analysis found a significant main effect for situation (F(1,103)=215.88, p<.001) but no significant main effect for sex or interaction, indicating that the SBAS-2 can detect moment-by-moment changes in body appreciation regardless of sex.",
+      "evidence_source": "Entire Results section provided.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

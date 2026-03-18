@@ -1,0 +1,311 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a path analysis section describing statistical methods and results. No geographic location or country information is mentioned in this section.",
+      "warning": "No country information available in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text describes path analysis results and does not report sample size information. Sample size would typically be reported in the Methods or Participants section, not in a Results/Path Analysis section.",
+      "warning": "Sample size not reported in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a path analysis results section and does not describe the survey method used for data collection.",
+      "warning": "Survey method not reported in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains path analysis results and does not report demographic information about participant race/ethnicity.",
+      "warning": "Demographic information not available in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a path analysis results section and does not report participant age information.",
+      "warning": "Age information not reported in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains path analysis results and does not report educational attainment information.",
+      "warning": "Educational information not available in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text mentions BMI as a control variable in the path analysis but does not report the mean BMI of participants. The text states 'while controlling for the effect of body mass index (BMI)' but provides no descriptive statistics for BMI.",
+      "warning": "Mean BMI not reported in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a path analysis results section and does not describe where or how participants were recruited.",
+      "warning": "Sample source information not available in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The abbreviation legend at the end of the text states: 'BAS-2 Body Appreciation Scale-II'. This indicates that the Body Appreciation Scale-II (BAS-2) was used to assess body appreciation in this study.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text mentions BMI as a variable in the path analysis but does not specify whether BMI was self-reported or measured.",
+      "warning": "BMI assessment method not specified in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text is a path analysis section that reports path coefficients and indirect effects between variables (social safeness, self-reassurance, body appreciation, and eating-related psychopathology dimensions). While BMI is mentioned as a control variable, no correlation coefficient between body appreciation (BAS-2) and BMI is reported in this section.",
+      "warning": "Correlation between body appreciation and BMI not reported in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a single path analysis results section. No explicit mention of multiple studies or experiments is present. The text describes one analytical model without reference to separate studies.",
+      "warning": "Cannot determine number of studies from this section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a results section from a study and does not contain information about the publication type (journal article vs. dissertation).",
+      "warning": "Publication type not determinable from this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents path analysis results examining whether self-reassurance and body appreciation mediate the associations between social safeness and eating-related psychopathology dimensions (restraint, eating concern, weight concern, and shape concern) while controlling for BMI. The final model demonstrated excellent fit and revealed that social safeness had both direct and indirect effects on body appreciation and eating psychopathology outcomes, with self-reassurance and body appreciation serving as significant mediators. The analysis used the BAS-2 (Body Appreciation Scale-II) to assess body appreciation.",
+      "evidence_source": "Entire path analysis section describing the model, results, and conclusions.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly state the country where the study was conducted. No geographic location is mentioned in the path analysis section or table.",
+      "warning": "Country information is not available in the provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          309
+        ]
+      },
+      "evidence_source": "Table 1 caption states 'Means (M), standard deviations (SD), and intercorrelation scores on self-report measures (N=309)'. This indicates the total sample size is 309 participants.",
+      "warning": "Gender-specific sample sizes are not provided in the available text."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether data collection was conducted via paper-and-pencil or online methods.",
+      "warning": "Survey method is not explicitly stated in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain information about the racial/ethnic composition of participants.",
+      "warning": "Racial/ethnic demographic data is not available in the provided text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report the mean age of participants.",
+      "warning": "Age demographic data is not available in the provided text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not provide information about the educational level of participants.",
+      "warning": "Educational attainment data is not available in the provided text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          22.28
+        ]
+      },
+      "evidence_source": "Table 1 shows BMI with M=22.28 and SD=3.09. This represents the mean BMI of the 309 participants (N=309).",
+      "warning": "Gender-specific BMI means are not provided; this is the overall mean BMI."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether participants were recruited from community, college, or primary/secondary/high school settings.",
+      "warning": "Sample source information is not available in the provided text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Table 1 includes a row labeled 'BAS-2' with M=36.01 and SD=7.67. The table footnote confirms 'BAS-2 Body Appreciation Scale-II'. This is the instrument used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly state whether BMI was self-reported or measured. Table 1 reports BMI values but does not specify the assessment method.",
+      "warning": "BMI assessment method (self-reported vs. measured) is not explicitly stated in the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.22
+        ]
+      },
+      "evidence_source": "Table 1, row 'BAS-2' (Body Appreciation Scale-II), column '1' (BMI): the correlation coefficient is -0.22***. The triple asterisks indicate p<0.001 significance. The numeric value extracted is -0.22.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text describes a single path analysis study with one sample (N=309). No multiple studies or experiments are explicitly named or described.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not indicate whether this is from a journal article or dissertation. No publication venue or type is mentioned.",
+      "warning": "Publication type cannot be determined from the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents a path analysis examining whether self-reassurance and body appreciation mediate the associations between social safeness and eating-related psychopathology dimensions (restraint, eating concern, weight concern, shape concern) while controlling for BMI. The analysis was conducted on a single sample of 309 participants, with Table 1 providing descriptive statistics (means, standard deviations) and intercorrelations among all measured variables including BMI, social safeness, self-reassurance, body appreciation (BAS-2), and eating disorder examination subscales.",
+      "evidence_source": "Entire provided text section on path analysis and Table 1 caption.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1 Means (M), standard deviations (SD), and intercorrelation scores on self-report measures (N=309)",
+      "evidence_source": "Table 1 title as presented in the image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Mendes2018/tables/1Mendes2018_p003_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section is a path analysis results section and does not contain information about the country where the study was conducted. No country is mentioned in the text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section is a path analysis results section and does not contain information about the sample size. No sample size is mentioned in the text.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section is a path analysis results section and does not contain information about the survey method used. No survey method is mentioned in the text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section is a path analysis results section and does not contain demographic information about participant race/ethnicity. No percentage of white participants is mentioned in the text.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section is a path analysis results section and does not contain information about participant age. No mean age is mentioned in the text.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section is a path analysis results section and does not contain information about participant education level. No percentage with college or higher education is mentioned in the text.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section is a path analysis results section. While BMI is mentioned as a control variable in the model, no mean BMI value for participants is reported in the text.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section is a path analysis results section and does not contain information about where or how participants were recruited. No source of sample is mentioned in the text.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The abbreviation key at the bottom of the text states: 'BAS-2 Body Appreciation Scale-II'. The path analysis section references body appreciation as a variable in the model, and the abbreviation key indicates BAS-2 was used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section is a path analysis results section. While BMI is mentioned as a control variable, the method of BMI assessment (self-reported vs. measured) is not specified in the text.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section is a path analysis results section that reports direct and indirect effects in a path model. The text does not report a Pearson correlation coefficient between body appreciation (BAS-2) and BMI. The text mentions that BMI was controlled for in the model, but no correlation between body appreciation and BMI is explicitly stated.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text section is a path analysis results section from what appears to be a single study. No indication of multiple studies is present in this section. The text does not explicitly state the number of studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text section is a path analysis results section and does not contain information about the publication type (journal article vs. dissertation). This information is not available in the provided text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents path analysis results exploring whether self-reassurance and body appreciation mediate the associations between social safeness and eating-related psychopathology dimensions (restraint, eating concern, weight concern, and shape concern) while controlling for BMI. The final model demonstrated excellent fit and revealed that social safeness had both direct and indirect effects on eating psychopathology symptoms, with the impact partially carried through self-reassurance and body appreciation as mediators.",
+      "evidence_source": "Entire path analysis section describing the model structure, eliminated paths, model fit indices, direct effects, and indirect effects.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "None",
+      "evidence_source": "An image asset is referenced in the context ('[image]'), but no caption or title text is provided in the input. The text references 'Fig. 1' as showing the recalculated model, but the actual figure caption is not included in the provided text.",
+      "warning": "The figure is referenced in the text ('The recalculated model (Fig. 1)...') but the actual caption is not provided in the input."
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Mendes2018/figures/1Mendes2018_p003_fig00.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_1"
+  }
+]

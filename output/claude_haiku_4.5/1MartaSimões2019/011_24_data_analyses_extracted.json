@@ -1,0 +1,92 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section is a methods/data analysis section that does not mention the country where the study was conducted.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes data analysis procedures but does not provide sample size information.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes statistical analysis methods (SPSS, Amos, path analysis) but does not specify how data were collected (paper-and-pencil vs. online).",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section does not contain demographic information about participant race/ethnicity.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes analytical procedures but does not report participant age statistics.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section does not contain information about participant education levels.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section mentions BMI as a variable in the analysis but does not report the mean BMI of participants.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes data analysis procedures but does not specify where or how participants were recruited.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The text states: 'body appreciation (BAS-2) as an exogenous variable' in the path analysis model description.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section mentions BMI as a variable but does not specify whether it was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes the analytical approach and model structure but does not report actual correlation coefficients between body appreciation and BMI.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section is a methods/data analysis section that does not explicitly state the number of studies conducted. The text does not use labels like 'Study 1' or 'Study 2'.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "This section is a methods section and does not indicate whether the publication is a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the data analysis procedures used in the study, including descriptive statistics and Pearson correlation analyses conducted using IBM SPSS 22.0 and Amos 22.0. A path analysis model was tested to examine direct and indirect effects among variables, with body appreciation measured using the BAS-2 scale, while controlling for body mass index. The study employed Maximum Likelihood estimation with 95% confidence intervals and examined multiple model fit indices (Chi-Square, TLI, CFI, RMSEA) to assess model adequacy.",
+      "evidence_source": "Entire section 2.4 (Data analyses)"
+    },
+    "_pass_type": "text_only"
+  }
+]

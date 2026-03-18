@@ -1,0 +1,231 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section is a methods/statistical analyses section that does not mention the country where the study was conducted.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100,
+          100,
+          112,
+          141,
+          243,
+          109
+        ]
+      },
+      "evidence_source": "First subsample: 'the first subsample had a random allocation of 100 women and 100 men' (total 200). Second subsample: 'the second subsample included all remaining participants (women n = 112, men n = 141)' (total 253, but text states n = 243 for CFA). Test-retest sample: 'For the test\u2013retest sample (n = 109)'.",
+      "warning": "Discrepancy noted: Second subsample description lists 112 + 141 = 253 participants, but text explicitly states 'n = 243' for CFA analysis. All distinct sample sizes are listed as reported."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The statistical analyses section does not describe the survey method used to collect data.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The statistical analyses section does not report the percentage of white participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The statistical analyses section does not report mean age of participants.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The statistical analyses section does not report educational attainment of participants.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The statistical analyses section does not report mean BMI of participants.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The statistical analyses section does not describe the source or recruitment location of the sample.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The section explicitly states 'we split the main dataset' and 'we assessed the factor structure of BAS-2 scores' and 'we examined internal consistency by computing Cronbach's \u03b1' for BAS-2, and 'we examined convergent validity by computing bivariate correlations between BAS-2 scores and scores on all other included measures.' The instrument used is BAS-2 (Body Appreciation Scale-2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The statistical analyses section does not describe how BMI was assessed (self-reported vs. measured).",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The statistical analyses section describes planned analyses but does not report actual correlation values between BAS-2 scores and BMI. The section states 'Finally, we examined convergent validity by computing bivariate correlations between BAS-2 scores and scores on all other included measures' but does not provide the specific correlation coefficients.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "This section describes statistical analyses for a single study with multiple subsamples (first subsample with 200 participants split by gender, second subsample with 243 participants, and a test-retest sample with 109 participants). The text refers to 'the main dataset' and describes a two-step analytic strategy applied to this single dataset.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The statistical analyses section does not indicate whether this is a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the statistical analyses for a single study examining the psychometric properties of the Romanian BAS-2 (Body Appreciation Scale-2). The main dataset was split into two subsamples: the first subsample (100 women and 100 men) was used for exploratory factor analysis (EFA) to assess the factor structure of BAS-2 scores separately by gender, and the second subsample (n = 243, with 112 women and 141 men) was used for confirmatory factor analysis (CFA). Additional analyses included measurement invariance testing across sex, internal consistency (Cronbach's \u03b1), test-retest reliability (n = 109), and convergent validity with other measures.",
+      "evidence_source": "Entire section 2.4 describing the two-step analytic strategy, sample splits, and planned statistical procedures.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section (2.4. Statistical analyses) does not mention the country where the study was conducted. The table caption mentions 'Romanian' in the context of the BAS-2 scale, but this refers to the language version, not the study location.",
+      "warning": "Country information not explicitly stated in the provided text section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          100,
+          100
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            100
+          ]
+        },
+        "male": {
+          "Study 1": [
+            100
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study 1": [
+            200
+          ]
+        }
+      },
+      "evidence_source": "Table 1 caption and text state: 'Items of the Body Appreciation Scales-2 in English and Romanian (italics), descriptive statistics for women (n = 100) and men (n = 100)'. The statistical analyses section confirms: 'the first subsample had a random allocation of 100 women and 100 men'. This is the first subsample used for factor analysis.",
+      "warning": "The text mentions a second subsample (women n = 112, men n = 141) used for CFA, but Table 1 specifically reports data for the first subsample only (n=100 women, n=100 men)."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section does not specify whether data collection used paper-and-pencil or online survey methods.",
+      "warning": "Survey method not stated in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not report the percentage of participants identifying as white.",
+      "warning": "Racial/ethnic composition data not provided in the text or table."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section and Table 1 do not report mean age of participants.",
+      "warning": "Mean age information not provided in the text or table."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section and Table 1 do not report educational attainment of participants.",
+      "warning": "Educational level information not provided in the text or table."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section and Table 1 do not report BMI statistics for participants.",
+      "warning": "BMI data not provided in the text or table."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section does not specify whether participants were recruited from community, college, or primary/secondary/high school settings.",
+      "warning": "Sample source/recruitment location not stated in the provided text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Table 1 caption explicitly states: 'Items of the Body Appreciation Scales-2 in English and Romanian (italics)'. The statistical analyses section confirms the study examined 'the psychometric properties of the Romanian BAS-2'.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section and Table 1 do not mention how BMI was assessed (self-reported vs. measured).",
+      "warning": "BMI assessment method not specified in the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text section (2.4. Statistical analyses) and Table 1 do not report correlations between body appreciation and BMI. Table 1 presents item-level descriptive statistics (means and standard deviations) and factor loadings for the BAS-2, not correlations with BMI.",
+      "warning": "Correlation data not available in the provided text or table."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with two subsamples: 'we split the main dataset so that the first subsample had a random allocation of 100 women and 100 men, and so that the second subsample included all remaining participants (women n = 112, men n = 141)'. These are subsamples of one study, not separate studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not indicate whether this is a journal article or dissertation.",
+      "warning": "Publication type not specified in the provided text section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the statistical analyses for examining the psychometric properties of the Romanian BAS-2 scale. The study used a two-step analytic strategy: the first subsample (100 women and 100 men) underwent exploratory factor analysis (EFA) to assess the factor structure of BAS-2 scores separately by gender, while the second subsample (112 women and 141 men) underwent confirmatory factor analysis (CFA). Table 1 presents the BAS-2 items in English and Romanian with descriptive statistics (means and standard deviations) and item-factor loadings for the first subsample.",
+      "evidence_source": "Text section 2.4 and Table 1 caption",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1: Items of the Body Appreciation Scales-2 in English and Romanian (italics), descriptive statistics for women (n = 100) and men (n = 100), and item-factor loadings in the first subsample.",
+      "evidence_source": "Table 1 caption as presented in the image",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2017Factor structure and psychometric pro/tables/1Swami2017Factor structure and psychometric pro_p003_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

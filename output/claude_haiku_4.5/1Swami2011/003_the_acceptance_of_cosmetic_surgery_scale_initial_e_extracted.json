@@ -1,0 +1,93 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Brazil"
+        ]
+      },
+      "evidence_source": "Title states 'among Brazilian adults', indicating the study was conducted in Brazil.",
+      "warning": "Study name is inferred as 'Study X' since no explicit study numbering is provided in the text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information is provided in the given text (title and author line only).",
+      "warning": "Sample size cannot be extracted from the provided text."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is provided in the given text.",
+      "warning": "Survey method cannot be extracted from the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information about racial/ethnic composition is provided in the given text.",
+      "warning": "Percent of white participants cannot be extracted from the provided text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in the given text.",
+      "warning": "Mean age cannot be extracted from the provided text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in the given text.",
+      "warning": "Percentage of college or higher education cannot be extracted from the provided text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI information is provided in the given text.",
+      "warning": "Mean BMI cannot be extracted from the provided text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample source (community, college, or school) is provided in the given text.",
+      "warning": "Source of sample cannot be extracted from the provided text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about body appreciation assessment instruments is provided in the given text.",
+      "warning": "Assessment of body appreciation cannot be extracted from the provided text."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about BMI assessment method is provided in the given text.",
+      "warning": "Assessment of BMI cannot be extracted from the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation data is provided in the given text.",
+      "warning": "Correlation between body appreciation and BMI cannot be extracted from the provided text."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only a title and author line. No study count information is available.",
+      "warning": "Cannot determine number of studies from the provided text."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in the given text.",
+      "warning": "Publication type cannot be determined from the provided text (title and author line only)."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section contains only the title and author information for a study on the Acceptance of Cosmetic Surgery Scale conducted among Brazilian adults. The study appears to examine the factor structure and correlates of this scale, but no methodological details, sample characteristics, or results are provided in this excerpt.",
+      "evidence_source": "Title and author line provided in the text_content.",
+      "warning": "This is only a title/header section with no substantive content for data extraction."
+    },
+    "_pass_type": "text_only"
+  }
+]

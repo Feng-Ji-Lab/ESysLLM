@@ -1,0 +1,107 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information is provided in the text.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method is mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information about race/ethnicity is provided in the text.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While age is mentioned in relation to correlation analysis ('age was not significantly correlated with either of the BAS factors'), no mean age value is provided.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in the text.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI value is provided; only correlations between BMI and BAS factors are reported.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about where or how participants were recruited is provided in the text.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text references 'BAS factors' and 'General Body Appreciation' which is a component of the Body Appreciation Scale (BAS). The specific version (BAS vs BAS-2) cannot be definitively determined from this text alone, but BAS is mentioned.",
+      "warning": "The specific version of BAS (original or BAS-2) cannot be definitively determined from the text provided."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.24
+        ]
+      },
+      "evidence_source": "The text states: 'Participants' BMI was significantly negatively correlated with General Body Appreciation (r = -.24)'. This is the correlation between Body Appreciation (General Body Appreciation subscale) and BMI. The Body Image Investment subscale (r = .03) was excluded as it is not body appreciation.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            -0.24
+          ]
+        }
+      },
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly indicate how many studies are included in this analysis. It appears to be reporting results from a single study or analysis, but this cannot be confirmed from the provided text alone.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in the text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section reports correlations between Body Appreciation Scale (BAS) factors and BMI. General Body Appreciation showed a significant negative correlation with BMI (r = -.24), while Body Image Investment did not correlate with BMI (r = .03). The General Body Appreciation correlation remained significant when age was controlled for.",
+      "evidence_source": "Entire provided text section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

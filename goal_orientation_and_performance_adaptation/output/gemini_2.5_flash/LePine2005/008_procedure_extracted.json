@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to 'Hollenbeck et al., 1995, for a more complete description', which is a citation typically found in journal articles.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from PubType being a journal article (1), which is typically peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mention of performance goal orientation (PGO), prove performance goal orientation (PPGO), or avoid performance goal orientation (APGO) in the provided text.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text states, 'Participants received feedback indicating the accuracy of their decision as well as the team's average performance across the nontraining trials.' This indicates objective measures of performance adaptation.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text mentions 'accuracy of their decision' and 'team's average performance', which are objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text mentions 'accuracy of their decision' and 'team's average performance', which are objective scores from a task/test (computerized simulation).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mention of goal orientation measurement methods, including VandeWalle's scale, in the provided text.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information (mean, range, SD, or categories) is provided in the text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No age information is provided in the text to extract or impute a mean age.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the sex composition of the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the percentage of men in the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the country where the study was conducted is provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information explicitly stating whether the sample was students or another type is provided in the text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size (N) is provided in the text.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficients between Performance Goal Orientation and performance adaptation are reported in the provided text.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlations were found, therefore no correlation information can be provided.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'The study took place' and 'the present study', indicating a single study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the procedure of a laboratory study utilizing a 3-hour computerized decision-making simulation called TIDE2. Participants were assigned to interdependent roles (Alpha, Bravo, Charlie) within teams, each with specialized information. The study involved training and decision trials, with a gradual communication link failure introduced between Bravo and Charlie to observe team adaptation, focusing on the final 20 decision trials for analysis.",
+      "evidence_source": "Summary of the 'Procedure' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

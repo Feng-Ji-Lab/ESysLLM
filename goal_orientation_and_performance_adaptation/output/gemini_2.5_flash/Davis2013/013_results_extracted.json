@@ -1,0 +1,749 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The section 'Results' does not contain information about the publication type.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The section 'Results' does not contain information about financial support.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The section 'Results' does not contain information about peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\", \"Avoid\"]}",
+      "evidence_source": "The text mentions 'proving orientation' and 'avoidance orientation' as constructs in the confirmatory factor analysis and hypothesis testing.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'personal bricolage' and 'individual innovative behavior' as adaptive behaviors/dependent variables, but does not specify the assessment method (e.g., self-report, other people, objective).",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'personal bricolage' and 'individual innovative behavior' as adaptive behaviors/dependent variables, but does not specify if they are based on subjective ratings or objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'personal bricolage' and 'individual innovative behavior' as adaptive behaviors/dependent variables, but does not specify the specific assessment method (e.g., self-report, other people, objective).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1]}",
+      "evidence_source": "The text mentions 'proving orientation' and 'avoidance orientation' but does not attribute the goal orientation scale to VandeWalle. Therefore, it is coded as 'Other'.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "The text states 'we tested for differences in personal bricolage, individual innovative behavior, learning orientation, proving orientation, avoidance orientation, and quality of feedback based on the demographic variables of respondent gender, age, ethnicity, education, and advisory/consultant role.' However, no specific age information (e.g., mean, range, SD) is provided.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No mean, median, or categorical age ranges are reported in the text to impute the age.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "The text mentions 'respondent gender' as a demographic variable but does not provide information on the sex composition of the sample (e.g., all female, all male, mixed).",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No percentage of men in the sample is reported in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "The section 'Results' does not contain information about the country where the data was collected.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "The section 'Results' does not contain information about whether the sample is a student sample or other.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "The text mentions 'sample size' influencing the chi-square statistic but does not provide a specific N for the overall sample or for the correlation coefficients between goal orientation and performance adaptation.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'Table 1 presents the descriptive statistics, coefficient alphas, and correlation matrix of the studied variables' but does not explicitly provide Pearson r correlation coefficients between performance goal orientation (proving/avoidance) and performance adaptation (personal bricolage/individual innovative behavior). The relationships are reported as gamma (\u03b3) coefficients from structural equation modeling, which are path coefficients, not Pearson r correlations.",
+      "warning": "The schema specifically requests Pearson r values, but only gamma (\u03b3) coefficients from SEM are provided for the relationships between goal orientation and adaptive behaviors. No Pearson r values for these specific relationships are found."
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson r correlation coefficients between performance goal orientation and performance adaptation were extracted.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study, detailing its methodology, confirmatory factor analysis, and hypothesis testing.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents the results of a single study, including descriptive statistics, coefficient alphas, and a correlation matrix. It details multicollinearity checks, confirmatory factor analysis for measurement invariance, and hypothesis testing using structural equation modeling. The study examined relationships between learning orientation, proving orientation, avoidance orientation, quality of feedback, personal bricolage, and individual innovative behavior, finding support for some direct and partial mediation effects.",
+      "evidence_source": "Summary of the 'Results' section content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from the academic structure and content of the paper, which is typical of a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies in the provided 'Results' section.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from the publication type (journal article) which typically undergoes peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\", \"Prove\", \"Avoid\", \"Avoid\"]}",
+      "evidence_source": "The text mentions 'proving orientation' and 'avoidance orientation' as goal orientations. These are considered performance goal orientations. The extracted effects are for 'Proving orientation' and 'Avoidance orientation' with 'Personal bricolage' and 'Individual innovative behavior'.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\", \"None\", \"None\", \"None\"]}",
+      "evidence_source": "The text mentions 'personal bricolage' and 'individual innovative behavior' as dependent variables/adaptive behaviors, but does not specify the assessment method (e.g., self-report, other people, objective task) for these measures.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\", \"None\", \"None\", \"None\"]}",
+      "evidence_source": "The text mentions 'personal bricolage' and 'individual innovative behavior' as dependent variables/adaptive behaviors, but does not specify if their measurement was subjective or objective.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\", \"None\", \"None\", \"None\"]}",
+      "evidence_source": "The text mentions 'personal bricolage' and 'individual innovative behavior' as dependent variables/adaptive behaviors, but does not specify the specific assessment method (e.g., self-report, other people, objective task).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1, 1, 1]}",
+      "evidence_source": "The text mentions 'learning orientation, proving orientation, avoidance orientation' but does not attribute the goal orientation scale to VandeWalle. Therefore, it is coded as 'Other'. This applies to all four extracted effects.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\", \"\", \"\", \"\"]}",
+      "evidence_source": "The text mentions 'respondent gender, age, ethnicity, education, and advisory/consultant role' as demographic variables but provides no specific age information (e.g., mean, range, SD) in this section.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null, null, null, null]}",
+      "evidence_source": "No mean, median, or categorical age ranges are reported in the provided text to impute age.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null, null, null, null]}",
+      "evidence_source": "The text mentions 'respondent gender' but does not provide specific sex composition (e.g., percentage of men/women, or if it's a single-sex sample).",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null, null, null, null]}",
+      "evidence_source": "No percentage of men is reported in the provided text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null, null, null, null]}",
+      "evidence_source": "No country of data collection is mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null, null, null, null]}",
+      "evidence_source": "No information is provided to determine if the sample is a student sample or other.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [231, 231, 231, 231]}",
+      "evidence_source": "Table 1 caption states 'n = 231'. This N is used for all correlations presented in the table.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [0.12, 0.11, -0.27, -0.19]}",
+      "evidence_source": "From Table 1: 'Proving orientation' (row 4) and 'Personal bricolage' (column 1) correlation is .12. 'Proving orientation' (row 4) and 'Individual innovative behavior' (column 2) correlation is .11. 'Avoidance orientation' (row 5) and 'Personal bricolage' (column 1) correlation is -.27. 'Avoidance orientation' (row 5) and 'Individual innovative behavior' (column 2) correlation is -.19.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Proving orientation and Personal bricolage\", \"Proving orientation and Individual innovative behavior\", \"Avoidance orientation and Personal bricolage\", \"Avoidance orientation and Individual innovative behavior\"]}",
+      "evidence_source": "Derived from the variable names in Table 1 for the extracted correlations.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'the study' and 'our model' throughout the results section, indicating a single study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents the results of a single study, detailing descriptive statistics, coefficient alphas, and a correlation matrix (Table 1). It covers multicollinearity checks, confirmatory factor analysis for measurement invariance, and hypothesis testing. The hypotheses examine direct and mediated relationships between goal orientations (learning, proving, avoidance) and adaptive behaviors (personal bricolage, individual innovative behavior), with quality of feedback as a mediator. The section references Table 1, Table 2, Table 3, and Figure 2.",
+      "evidence_source": "Summary of the provided text content in the 'Results' section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1. Descriptive Statistics, Coefficient Alphas, and Correlations of Studied variables (n = 231).",
+      "evidence_source": "The full caption of Table 1 as provided in the image.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Davis2013\\tables\\Davis2013_p008_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text is a 'Results' section, which is a standard component of a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "The text does not contain any mention of grants, funding agencies, sponsored projects, or explicit financial support.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Given that the publication type is inferred as a journal article, it is highly probable that it underwent peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\", \"Avoid\"]}",
+      "evidence_source": "The text explicitly mentions 'proving orientation' and 'avoidance orientation' as constructs in the confirmatory factor analysis and hypothesis testing sections.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1]}",
+      "evidence_source": "The adaptive behaviors are 'personal bricolage' and 'individual innovative behavior'. Table 2 shows multiple items for each, which typically indicates self-report measures. Therefore, both are coded as self-report (1).",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [0, 0]}",
+      "evidence_source": "Based on the inference that 'personal bricolage' and 'individual innovative behavior' are self-report measures (AdaptMeasures = 1), their outcomes are considered subjective ratings (0).",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1]}",
+      "evidence_source": "The adaptive behaviors are 'personal bricolage' and 'individual innovative behavior'. Table 2 shows multiple items for each, which typically indicates self-report measures. Therefore, both are coded as self-report (1).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1]}",
+      "evidence_source": "The text mentions 'learning orientation, proving orientation, avoidance orientation' but does not specify that VandeWalle's measure was used for goal orientation. Therefore, it is coded as 'Other' (1) for both proving and avoidance orientations.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"No specific age information reported.\"]}",
+      "evidence_source": "The text states: 'Specifically, we tested for differences in personal bricolage, individual innovative behavior, learning orientation, proving orientation, avoidance orientation, and quality of feedback based on the demographic variables of respondent gender, age, ethnicity, education, and advisory/consultant role.' However, no specific age data (mean, range, SD, median) is provided.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No mean, median, or categorical age ranges were reported in the text to allow for imputation.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text mentions 'respondent gender' as a demographic variable tested for differences, but does not specify the proportion of men or women, nor does it state it was a single-sex sample. This implies a mixed sample.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No percentage of men or women was reported in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information about the country where the sample was collected is provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information about whether the sample was a student sample or another type of sample is provided in the text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The text mentions 'sample size' in the context of influencing the chi-square statistic ('this measure is often influenced by sample size'), but it does not provide the actual numerical value of N for the study or for the specific correlations.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The text reports gamma (\u03b3) coefficients for relationships between goal orientations (proving, avoidance) and adaptive behaviors (personal bricolage, individual innovative behavior). For example, 'proving orientation was positively related to personal bricolage (\u03b3 = .20; p < .05)' and 'avoidance orientation is negatively related to personal bricolage) accepted (\u03b3 = \u2212.20; p < .05)'. These are path coefficients from a structural model, not Pearson r correlation coefficients as required by the schema.",
+      "warning": "The text provides path coefficients (gamma) from a structural model, not Pearson r correlation coefficients, for the relationships between goal orientation and performance adaptation."
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No Pearson r correlation coefficients were extracted, so no correlation information can be provided.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'the study', 'our model', and 'the data' in singular terms, indicating that only one study is being described.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents the results of a single study, detailing descriptive statistics, coefficient alphas, and a correlation matrix of variables including personal bricolage, individual innovative behavior, learning orientation, proving orientation, avoidance orientation, and quality of feedback. It describes confirmatory factor analysis for measurement invariance and multicollinearity checks, followed by hypothesis testing using a partially mediated model. The section reports path coefficients (gamma) for relationships between goal orientations and adaptive behaviors, as well as quality of feedback.",
+      "evidence_source": "Summary of the 'Results' section content.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2. Confirmatory Factor Analysis, AVEs, and Construct Reliabilities.",
+      "evidence_source": "The caption of the provided table asset.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Davis2013\\tables\\Davis2013_p009_table00.png",
+    "_metadata_caption": "Table 2. Confirmatory Factor Analysis, AVEs, and Construct Reliabilities.",
+    "_asset_source": "[table] Table 2. Confirmatory Factor Analysis, AVEs, and Construct Reliabilities.",
+    "_pass_type": "asset_1"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text is a 'Results' section, which is typically found in a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of grants, funding agencies, sponsored projects, or explicit financial support in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from the publication type being a journal article, which typically undergoes peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\", \"Avoid\"]}",
+      "evidence_source": "The text explicitly mentions 'proving orientation' and 'avoidance orientation' as constructs in the study.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "Table 2, titled 'Table 2. (continued)', lists items for 'Quality of feedback (QUAL)' which are self-report statements (e.g., 'The performance feedback I receive from clients is helpful.'). The text also mentions 'personal bricolage' and 'individual innovative behavior' as adaptive behaviors, but their specific measurement methods are not described in this section.",
+      "warning": "Measurement methods for 'personal bricolage' and 'individual innovative behavior' are not specified in the provided text."
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [0]}",
+      "evidence_source": "Based on 'AdaptMethod_Specific' being 1 (Self-report) for 'Quality of feedback', the adaptation outcome is subjective.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "Table 2, titled 'Table 2. (continued)', lists items for 'Quality of feedback (QUAL)' which are self-report statements (e.g., 'The performance feedback I receive from clients is helpful.').",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1]}",
+      "evidence_source": "The text mentions 'proving orientation' and 'avoidance orientation' but does not specify the measurement scale (e.g., VandeWalle).",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "The text mentions 'demographic variables of respondent gender, age, ethnicity, education, and advisory/consultant role' but provides no specific age information (e.g., range, SD, median).",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No mean age, median age, or categorical age ranges are reported in the text.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The text mentions 'respondent gender' but does not provide information on the sex composition of the sample.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No percentage of men in the sample is reported in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No country of data collection is mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information is provided to determine if the sample is a student sample or other.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The text mentions 'Table 1 presents the descriptive statistics, coefficient alphas, and correlation matrix of the studied variables' but Table 1 is not provided. The degrees of freedom (df = 411) for the chi-square statistic is not the sample size (N). No explicit sample size (N) for the correlations or the overall study is reported in the provided text.",
+      "warning": "Sample size (N) for the correlations is not explicitly reported in the text or provided tables."
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The text reports gamma (\u03b3) coefficients from structural equation modeling (e.g., 'proving orientation to be negatively related to quality of feedback (\u03b3 = \u2212.20)'). The schema specifically requests Pearson r correlation coefficients, not path coefficients (gamma). Table 1, which would contain a correlation matrix, is not provided.",
+      "warning": "Only gamma (\u03b3) coefficients from SEM are reported, not Pearson r correlations as required by the schema."
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No Pearson r correlations were extracted.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'the study' and 'our model' in the singular, without explicitly naming or numbering multiple studies or experiments.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents the results of a single study, detailing multicollinearity checks, confirmatory factor analysis (CFA) for measurement invariance, and hypothesis testing. The CFA confirmed the measurement model fit and discriminant validity. Hypothesis testing examined relationships between learning, proving, and avoidance orientations with quality of feedback, personal bricolage, and individual innovative behavior, reporting gamma coefficients for direct and mediated effects. The study found support for some direct and partial mediation relationships, particularly for learning and proving orientations.",
+      "evidence_source": "Summary of the 'Results' section content.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2. (continued) Note. AVE = average variance extracted. a. Completely standardized factor loading.",
+      "evidence_source": "The full caption and notes provided with the image asset.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Davis2013\\tables\\Davis2013_p010_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_2"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain information about the publication type.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain information about financial support.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain information about peer review status.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\", \"Avoid\", \"Prove\", \"Avoid\", \"Prove\", \"Avoid\"]}",
+      "evidence_source": "The text explicitly mentions 'proving orientation' and 'avoidance orientation' as constructs. These are types of performance goal orientation. The relationships are with 'quality of feedback', 'personal bricolage', and 'individual innovative behavior'. For 'Study X', the assessed PGO types are 'Prove' and 'Avoid'. Since there are multiple effects involving these, they are listed for each effect: 'proving orientation to quality of feedback', 'proving orientation to personal bricolage', 'proving orientation to individual innovative behavior', 'avoidance orientation to quality of feedback', 'avoidance orientation to personal bricolage', 'avoidance orientation to individual innovative behavior'.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'personal bricolage' and 'individual innovative behavior' as adaptive behaviors but does not specify their assessment methods (e.g., self-report, objective, other people, or mixed).",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'personal bricolage' and 'individual innovative behavior' as adaptive behaviors but does not specify whether their outcomes are based on subjective ratings or objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'personal bricolage' and 'individual innovative behavior' as adaptive behaviors but does not specify their specific assessment methods (e.g., self-report, other people, objective).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1]}",
+      "evidence_source": "The text mentions 'learning orientation, proving orientation, avoidance orientation' but does not specify the measurement scale used for goal orientation, nor does it attribute it to VandeWalle. Therefore, it is coded as 'Other' (1) for both proving and avoidance orientations.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"age mentioned as a demographic variable, but no specific age range, SD, or median is provided\"]}",
+      "evidence_source": "The text states: 'Specifically, we tested for differences in personal bricolage, individual innovative behavior, learning orientation, proving orientation, avoidance orientation, and quality of feedback based on the demographic variables of respondent gender, age, ethnicity, education, and advisory/consultant role.' No specific age information is given.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age, median age, or categorical age ranges are reported in the text to allow for imputation.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'respondent gender' as a demographic variable but does not provide information about the sex composition of the sample (e.g., all female, all male, or mixed).",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No percentage of men in the sample is reported in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain information about the country where the sample was collected.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain information about whether the sample is a student sample or other.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'sample size' in relation to the chi-square statistic but does not provide the actual sample size (N) for the analyses or correlations.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Table 3 presents 'Completely standardized estimate' values (gamma and beta parameters), which are path coefficients from a structural model, not Pearson correlation coefficients (r) between Performance Goal Orientation and performance adaptation. The text also refers to these as 'paths' and 'relationships'.",
+      "warning": "The table provides path coefficients (gamma and beta), not Pearson correlation coefficients (r), which are specifically requested by the schema."
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson correlation coefficients were extracted, so no correlation information can be provided.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'the study', 'our model', and 'the data' without explicitly naming or numbering multiple studies or experiments.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the results of a single study, covering descriptive statistics, multicollinearity checks, confirmatory factor analysis, and hypothesis testing. It examines the relationships between learning, proving, and avoidance orientations with quality of feedback, personal bricolage, and individual innovative behavior, often discussing partial mediation. Table 3, 'Structural Model Parameter Estimates for the Partially Mediated Model', presents path coefficients for these relationships.",
+      "evidence_source": "Summary of the 'Results' section content.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 3. Structural Model Parameter Estimates for the Partially Mediated Model.",
+      "evidence_source": "The caption is directly extracted from the provided image of Table 3.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Davis2013\\tables\\Davis2013_p011_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_3"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The detailed statistical reporting and academic style imply a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The detailed statistical analyses, including CFA and hypothesis testing, are typical of a peer-reviewed academic publication.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\", \"Avoid\", \"Prove\", \"Prove\", \"Avoid\", \"Avoid\"]}",
+      "evidence_source": "The text explicitly mentions 'proving orientation' and 'avoidance orientation' in relation to various outcomes. Specifically: 'proving orientation to be negatively related to quality of feedback', 'avoidance orientation not being negatively related to quality of feedback', 'proving orientation was positively related to personal bricolage', 'proving orientation ... to individual innovative behavior', 'avoidance orientation is negatively related to personal bricolage', and 'avoidance orientation is negatively related to individual innovative behavior'.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None, None, None, None, None, None]}",
+      "evidence_source": "The text mentions 'quality of feedback', 'personal bricolage', and 'individual innovative behavior' as outcomes, but does not explicitly state their assessment methods (e.g., self-report, other people, objective).",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None, None, None, None, None, None]}",
+      "evidence_source": "The text does not explicitly state whether the performance adaptation outcomes ('quality of feedback', 'personal bricolage', 'individual innovative behavior') are based on subjective ratings or objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None, None, None, None, None, None]}",
+      "evidence_source": "The text does not explicitly state the specific assessment method (self-report, other people, objective) for 'quality of feedback', 'personal bricolage', or 'individual innovative behavior'.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1, 1, 1, 1, 1]}",
+      "evidence_source": "The text mentions 'proving orientation' and 'avoidance orientation' but does not attribute the measurement scale to VandeWalle or any other specific author.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "The text mentions 'respondent age' as a demographic variable but provides no specific age information such as range, SD, or median.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No mean age, median age, or categorical age ranges are reported in this section.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text states, 'we tested for differences in personal bricolage, individual innovative behavior, learning orientation, proving orientation, avoidance orientation, and quality of feedback based on the demographic variables of respondent gender'. This implies a mixed sample.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No percentage of men or women is reported in this section.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No country information for the sample is reported in this section.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information is provided to determine if the sample is a student sample or another type of sample.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The text mentions 'sample size' in relation to model fit ('though this measure is often influenced by sample size'), but a specific numerical value for N is not provided.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None, None, None, None, None, None]}",
+      "evidence_source": "The text reports gamma (\u03b3) values from a structural model (e.g., '\u03b3 = \u2212.20', '\u03b3 = .06', '\u03b3 = .20', '\u03b3 = .16', '\u03b3 = \u2212.20', '\u03b3 = \u2212.07'), which are path coefficients, not Pearson r correlation coefficients as required by the schema.",
+      "warning": "Gamma (\u03b3) values are reported instead of Pearson r correlation coefficients."
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"PPGO and quality of feedback\", \"APGO and quality of feedback\", \"PPGO and personal bricolage\", \"PPGO and individual innovative behavior\", \"APGO and personal bricolage\", \"APGO and individual innovative behavior\"]}",
+      "evidence_source": "The text describes the following relationships: 'proving orientation to be negatively related to quality of feedback' (Hypothesis 4), 'avoidance orientation not being negatively related to quality of feedback' (Hypothesis 5), 'proving orientation was positively related to personal bricolage' (Hypothesis 6a), 'proving orientation ... to individual innovative behavior' (Hypothesis 6b), 'avoidance orientation is negatively related to personal bricolage' (Hypothesis 8a), and 'avoidance orientation is negatively related to individual innovative behavior' (Hypothesis 8b).",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'the study' or 'our model' without distinguishing multiple numbered studies or experiments.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "The 'Results' section details the statistical analyses, including descriptive statistics, reliability checks, multicollinearity assessment, and confirmatory factor analysis for measurement invariance. It then presents the results of hypothesis testing using a partially mediated structural model, examining relationships between learning, proving, and avoidance goal orientations with quality of feedback, personal bricolage, and individual innovative behavior. No explicit study numbers or multiple sample subsets are mentioned.",
+      "evidence_source": "Summary of the provided text content in the 'Results' section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Figure 2. Results of partially mediated structural model. Table 4. Summary of Results.",
+      "evidence_source": "The captions are directly extracted from the provided image assets.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Davis2013\\tables\\Davis2013_p012_table00.png",
+    "_metadata_caption": "Figure 2. Results of partially mediated structural model.",
+    "_asset_source": "[table] Figure 2. Results of partially mediated structural model.",
+    "_pass_type": "asset_4"
+  }
+]

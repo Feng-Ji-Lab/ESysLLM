@@ -1,0 +1,133 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about country or location of data collection in the provided text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No total sample size explicitly stated in the provided text (degrees of freedom reported for a t-test, t(1031), were not used to infer total N per instructions).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about data collection method (paper-and-pencil or online) in the provided text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participants' race/ethnicity in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participants' age or mean age in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not state participants' educational attainment (it mentions comparisons 'across universities' but does not state that participants were undergraduate students), so no percentage is inferred.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participants' BMI or mean BMI in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Inference based on the sentence: 'The mean score of the BAS-2 was also compared across universities.' This indicates participants were sampled across universities, so source is coded as 'college'.",
+      "warning": "Inference made from phrasing 'compared across universities' (participants not explicitly described as students)."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Text states: 'the total score of the BAS-2 was significantly higher in men compared with women, t(1031) = 2.37, p = .021 (see Table 2 for means and standard deviations).'",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed in the provided text.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation between body appreciation (BAS/BAS-2) and BMI is reported in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section describes a single set of between-group analyses (e.g., 'Item-level comparisons between men and women are summarized in Table 1.' and reports BAS-2 results). There is no mention of multiple studies or numbered studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No information about publication type in the provided text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section reports between-group (men vs women) item-level and total-score comparisons on the BAS-2, noting several items and the BAS-2 total were significantly higher in men while one item was higher in women. It reports t(1031) = 2.37, p = .021 for the BAS-2 total (mean difference = 0.10, d = 0.15) and a non-significant ANOVA across universities. The section does not label any study as 'Study 1' or indicate multiple distinct studies.",
+      "evidence_source": "Quoted sentences include: 'Item-level comparisons between men and women are summarized in Table 1.' and 'the total score of the BAS-2 was significantly higher in men compared with women, t(1031) = 2.37, p = .021 ...' and 'The mean score of the BAS-2 was also compared across universities.'",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

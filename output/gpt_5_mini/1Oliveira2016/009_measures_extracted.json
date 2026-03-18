@@ -1,0 +1,133 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Measures section lists demographic questions (e.g., age, gender, nationality, area of residence and education level) but does not state where the study was conducted or provide a country.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states participants completed demographic questions (e.g., age, gender, nationality, area of residence and education level) but does not report the total sample size.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The measures are described as self-report measures, but the text does not specify the survey administration method (e.g., 'online' or 'paper-and-pencil').",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Demographic questions included nationality but no information on participant race/ethnicity or percent white is provided.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Although age was collected ('a series of questions regarding demographic data (e.g., age, gender, nationality, area of residence and education level)'), the text does not report a mean age.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Education level was asked ('demographic data ... education level') but no percentage with college or higher is reported.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "BMI was calculated from self-reported weight and height but no mean BMI value is reported in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided Measures section does not specify the recruitment source (e.g., community, college, primary/secondary/high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Body Appreciation Scale (BAS-2; Marta-Sim\u00f5es, Mendes, Oliveira, Trindade, & Ferreira, 2016; Tylka & Wood-Barcalow, 2015); BAS-2 is a self-report measure composed of 10 items ... Also, in the current study BAS-2 presented high internal consistency (\u03b1 = .95).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "BMI was calculated based on participants' self-reported current weight and height using the Quetelet Index (Kg/m2 ).",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficients between Body Appreciation (BAS-2) and BMI are reported in the provided Measures section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "All measures are described in relation to 'the current study' (e.g., 'in the current study BAS-2 presented high internal consistency (\u03b1 = .95)'), with no mention of multiple separate studies or Study 1/Study 2.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided section does not state the publication type (journal article or dissertation).",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Measures section lists the demographic questions and describes instruments used in the current study, including BMI calculated from self-reported weight and height, EMWSS (and peers version), SSPS, BAS-2, and EDE-Q. The section reports internal consistency values for these scales in the current study but does not provide sample size, age means, ethnicity, recruitment source, survey administration method, mean BMI, or correlations between BAS-2 and BMI. The text does not name numbered studies (e.g., Study 1).",
+      "evidence_source": "Key sentences: 'Before answering self-report measures (described below), participants completed a series of questions regarding demographic data ... and current weight and height (used to calculate BMI).' and 'Also, in the current study BAS-2 presented high internal consistency (\u03b1 = .95).' and similar '... in the current study' statements for other measures.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

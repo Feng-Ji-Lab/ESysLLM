@@ -1,0 +1,101 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the study was conducted. While YouBeauty.com is mentioned as the host website, no geographic location is specified.",
+      "warning": "Country information is not provided in this procedural section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide sample size information. This is a procedural section describing the survey methodology, not the results section where sample sizes are typically reported.",
+      "warning": "Sample size is not mentioned in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "online"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'Data were derived from the YBIS, an online crosssectional survey hosted at the health and beauty website YouBeauty.com' and 'The survey was presented across seven webpages' and 'all participants provided informed consent online.'",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the racial/ethnic composition of participants.",
+      "warning": "Demographic breakdown by race/ethnicity is not provided in this procedural section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions that 'the penultimate page requested demographic information' but does not report the actual mean age of participants.",
+      "warning": "Mean age is not reported in this procedural section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the educational level of participants.",
+      "warning": "Educational attainment data is not provided in this procedural section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not report mean BMI of participants. This is a procedural section describing the survey administration, not results.",
+      "warning": "Mean BMI is not provided in this procedural section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "community"
+        ]
+      },
+      "evidence_source": "The text states: 'Data were derived from the YBIS, an online crosssectional survey hosted at the health and beauty website YouBeauty.com' and 'potential participants who visited the site were invited to complete the YBIS.' This indicates recruitment from a general online community rather than a college or school setting.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'Providing informed consent began the survey on a new page with items of the Body Appreciation Scale.'",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether BMI was self-reported or measured. While the Photographic Figure Rating Scale is mentioned, this is not the same as BMI assessment.",
+      "warning": "The method of BMI assessment (self-reported vs. measured) is not explicitly stated in this procedural section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This is a procedural section describing the survey methodology. Correlation coefficients are not reported in procedural sections; they appear in results sections.",
+      "warning": "Correlation data is not provided in this procedural section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text describes a single study (YBIS) but does not explicitly state the number of studies. The procedural section does not provide sufficient information to determine if this is part of a multi-study paper.",
+      "warning": "The total number of studies in the paper cannot be determined from this procedural section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text is a procedural section and does not indicate whether this is from a journal article or dissertation.",
+      "warning": "Publication type cannot be determined from this procedural section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This procedural section describes the YBIS (YouBeauty Image Survey), an online cross-sectional survey conducted between September and December 2012 on the YouBeauty.com website. Participants were recruited from website visitors and completed a seven-page survey that included the Body Appreciation Scale, Subjective Happiness Scale, and Photographic Figure Rating Scale, with demographic information collected on the penultimate page. The study received ethics approval and participants provided informed consent online without compensation.",
+      "evidence_source": "Entire procedural section (2.3 Procedure)",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

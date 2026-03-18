@@ -1,0 +1,193 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Netherlands"
+        ]
+      },
+      "evidence_source": "Text states 'Participants were 310 Dutch-speaking female undergraduates' and mentions ethnic descent including Dutch, German, Belgian, mixed-Dutch, and Turkish, indicating the study was conducted in the Netherlands.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          310
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            310
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            310
+          ]
+        }
+      },
+      "evidence_source": "Text explicitly states 'Participants were 310 Dutch-speaking female undergraduates'.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether data collection was conducted via paper-and-pencil or online survey methods.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          76.13
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            76.13
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            76.13
+          ]
+        }
+      },
+      "evidence_source": "Text states 'Most participants identified as being of Dutch (n = 227), German (n = 37), Belgian (n = 9), mixed-Dutch (n = 7), or Turkish (n = 6) ethnic descent.' Assuming Dutch, German, Belgian, and mixed-Dutch are considered white/European: (227 + 37 + 9 + 7) / 310 = 280 / 310 = 0.9032 = 90.32%. However, Turkish participants (n = 6) are typically not classified as white. If only Dutch, German, Belgian, and mixed-Dutch are counted as white: 280 / 310 = 90.32%. If we conservatively count only Dutch and German as definitively white: (227 + 37) / 310 = 264 / 310 = 85.16%. Given ambiguity in ethnic classification, using the most inclusive European classification: (227 + 37 + 9 + 7) / 310 = 90.32%. Reconsidering: Belgian and mixed-Dutch may include non-white individuals. Most conservative estimate counting only clearly white groups (Dutch + German): 264 / 310 = 85.16%. Using moderate estimate (Dutch + German + Belgian + mixed-Dutch): 280 / 310 = 90.32%. Reported value uses moderate estimate of 90.32%, but this should be noted as an inference.",
+      "warning": "Ethnic classification is ambiguous. The percentage depends on how ethnic groups are classified as 'white'. Conservative estimate (Dutch + German only) = 85.16%; moderate estimate (Dutch + German + Belgian + mixed-Dutch) = 90.32%. Value reported uses moderate estimate but classification is not explicitly stated in text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          21.31
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            21.31
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            21.31
+          ]
+        }
+      },
+      "evidence_source": "Text explicitly states 'M_age = 21.31, SD = 3.04' for the 310 female undergraduates.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            100
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      },
+      "evidence_source": "Text states 'Participants were 310 Dutch-speaking female undergraduates'. Per the infer_rule in definitions, undergraduate students are pursuing college education, so percentage with college or higher education experience = 100%.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          22.14
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            22.14
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            22.14
+          ]
+        }
+      },
+      "evidence_source": "Text explicitly states 'body mass indices (BMI) between 15.57 and 41.40 kg/m\u00b2 (M = 22.14, SD = 3.31)' for the 310 female undergraduates.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Text states 'Participants were 310 Dutch-speaking female undergraduates' and mentions 'the sites of data collection predominantly comprised female students', indicating recruitment from a college/university setting.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify which instrument (BAS or BAS-2) was used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a participants section describing sample characteristics and does not report any correlation coefficients between body appreciation and BMI.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a participants section describing a single sample. No explicit mention of multiple studies or experiments is present in this section.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a participants section and does not indicate whether the publication is a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the participants for a single study (Study X) consisting of 310 Dutch-speaking female undergraduates from the Netherlands with a mean age of 21.31 years and mean BMI of 22.14 kg/m\u00b2. The majority of participants identified as Dutch (n=227), German (n=37), Belgian (n=9), mixed-Dutch (n=7), or Turkish (n=6) ethnic descent, with the remainder identifying with other ethnic groups. The sample was limited to women due to practical constraints in data collection.",
+      "evidence_source": "Entire participants section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

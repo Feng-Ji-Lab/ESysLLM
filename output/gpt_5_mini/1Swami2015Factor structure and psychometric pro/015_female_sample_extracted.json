@@ -1,0 +1,129 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or location is mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Section is labeled 'Female Sample' but no sample size (N) or counts are provided in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information on survey or data-collection method (e.g., online, paper-and-pencil) is provided in the text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial or ethnic composition (e.g., percent white) is reported in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age or age information is reported in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not state participants' education level or whether they were undergraduate students; no percentage with college or higher is provided.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI or mean BMI values are reported in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section header 'Female Sample' is present, but the source of the sample (community, college, primary/secondary/high school) is not specified in the text.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The Kaiser\u2013Meyer\u2013Olkin (KMO) measure of sampling adequacy, KMO = .92, indicated that the BAS-2 items had adequate common variance for EFA.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information is provided about how BMI was assessed (self-reported or measured).",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficients or analyses relating Body Appreciation (BAS/BAS-2) to BMI are reported in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Only a single 'Female Sample' subsection appears in the provided text; no indication of multiple distinct studies or numbered studies is present.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not indicate the publication type (journal article or dissertation).",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This 'Female Sample' section reports an exploratory factor analysis of BAS-2 items: Bartlett's test of sphericity was significant and KMO = .92, with EFA suggesting one dominant factor explaining 48.8% of item variance. The section notes item loadings \u2265 .45 and parallel analysis supporting a single factor. No sample size, demographic information, BMI data, survey method, or correlations with BMI are reported, and no study numbering (e.g., 'Study 1') is provided.",
+      "evidence_source": "Entire provided section titled 'Female Sample' describing EFA results (Bartlett's test, KMO = .92, eigenvalues 4.88 and 1.50, scree-plot inspection, item loadings \u2265 .45, and 48.8% variance explained).",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

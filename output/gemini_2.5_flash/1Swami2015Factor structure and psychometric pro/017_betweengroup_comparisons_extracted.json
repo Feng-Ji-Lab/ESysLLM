@@ -1,0 +1,125 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [872], \"Study 3\": [\"None\"]}",
+      "evidence_source": "For Study X: 't(836.68)' implies a total sample of approximately 838. 't(456)' for women implies N=457. 't(414)' for men implies N=415. Total N = 457 + 415 = 872. There exists multiple sample subsets in this study. For Study 3: Sample size not explicitly stated.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\": [457], \"Study 3\": [\"None\"]}",
+        "male": "{\"Study X\": [415], \"Study 3\": [\"None\"]}",
+        "other": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}",
+        "total": "{\"Study X\": [872], \"Study 3\": [\"None\"]}"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}",
+        "male": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}",
+        "other": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}",
+        "total": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}",
+        "male": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}",
+        "other": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}",
+        "total": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}",
+        "male": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}",
+        "other": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}",
+        "total": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}",
+        "male": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}",
+        "other": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}",
+        "total": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"], \"Study 3\": [\"community\"]}",
+      "evidence_source": "For Study 3: 'women in the community sample in Tylka and Wood-Barcalow (2015b, Study 3)'.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"BAS-2\"], \"Study 3\": [\"None\"]}",
+      "evidence_source": "For Study X: 'Internal consistency coefficients of the BAS-2 items'. For Study 3: Instrument not explicitly stated.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}",
+        "male": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}",
+        "other": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}",
+        "total": "{\"Study X\": [\"None\"], \"Study 3\": [\"None\"]}"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 2,
+      "evidence_source": "The text refers to 'the present study' and 'Tylka and Wood-Barcalow (2015b, Study 3)', indicating two distinct studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "journal articles",
+      "evidence_source": "The reference to 'Tylka and Wood-Barcalow (2015b)' suggests a journal article.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details between-group comparisons of body appreciation. It first compares body appreciation scores between women and men within 'Study X' (the present study). Subsequently, it compares the body appreciation scores of women and men in 'Study X' to those from a 'community sample' in 'Study 3' (Tylka and Wood-Barcalow, 2015b), indicating two distinct studies are discussed.",
+      "evidence_source": "Generated summary of the section content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

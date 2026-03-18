@@ -1,0 +1,141 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Brazil"
+        ]
+      },
+      "evidence_source": "First, the study was conducted with university women from a single region in Brazil.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section states the study was conducted with university women from a single region in Brazil but does not report total N.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about data-collection method (paper-and-pencil or online) is provided in this section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participant race/ethnicity or percent white is reported in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean or range of participant ages is reported in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "The section states \"the study was conducted with university women from a single region in Brazil.\" Based on this description ('university women'), we infer that 100% of the sample were college-attending/college-level, so value = 100.",
+      "warning": "Inference made from phrase 'university women' that all participants are college-level; original text does not state education percentage explicitly.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section reports correlations with BMI but does not provide mean BMI values.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The section states the study \"was conducted with university women from a single region in Brazil,\" indicating a college sample.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The paper examined \"the psychometric properties of BSRS scores\" (Breast Size Rating Scale), not BAS or BAS-2.",
+      "warning": "Instrument used (BSRS) is not one of the allowed assessment types (BAS, BAS-2)."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section mentions correlations with BMI but does not state whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section reports that \"breast size dissatisfaction scores were significantly correlated with BMI,\" but does not report correlations between Body Appreciation (BAS/BAS-2) and BMI. The study used BSRS (breast-size measures) rather than BAS/BAS-2.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section describes a single study (e.g., \"This is the first study to examine the psychometric properties of BSRS scores in non-British women\") and does not describe multiple studies within the paper.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type (journal article or dissertation) is indicated in the provided section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This discussion reports that the BSRS (Breast Size Rating Scale) has adequate convergent validity and 15-day test-retest reliability in a sample of Brazilian university women, with breast size ratings correlating moderately with bra band size and breast-size dissatisfaction correlating with BMI and body-image measures. The authors note that a majority of participants were dissatisfied with their breast size (79.4%), and 65.5% desired larger breasts, and they list limitations including a single-region university sample, lack of discriminant/predictive validity testing, and absence of data on breast-modifying procedures.",
+      "evidence_source": "\"This is the first study to examine the psychometric properties of BSRS scores in non-British women.\" \"BSRS-derived scores have adequate convergent validity in Brazilian university women... ratings of current breast size were significantly correlated with actual bra size.\" \"BSRS-derived scores retain their test-retest reliability over a 15-day period.\" \"The results of the present study indicated that a majority of participants (79.4% were dissatisfied with their current breast size, with a clear majority (65.5%) desiring larger breasts than they currently had.\" \"First, the study was conducted with university women from a single region in Brazil...\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

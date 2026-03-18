@@ -1,0 +1,93 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "reason": "All candidates consistently indicate that the paper describes a single study. Multiple section contexts explicitly state 'a single study' or refer to 'the study' in the singular, without any mention of multiple studies."
+  },
+  "N": {
+    "extract_value": {
+      "Single study": [
+        219
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "The context indicates a single study. All candidates consistently report N=219 for 'Study X', which is resolved to 'Single study' based on the context. Candidates 1 and 2 explicitly state 'a single study' in their section summaries, reinforcing this resolution. All sources are reliable (Abstract, Sample/Procedure section) and provide consistent information."
+  },
+  "female": {
+    "extract_value": {
+      "Single study": [
+        0.7899
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All candidates consistently report that 78.99% of the sample were women, which translates to a proportion of 0.7899. The context confirms that the paper describes a single study. Therefore, the value is assigned to 'Single study'."
+  },
+  "usa_vs_other": {
+    "extract_value": {
+      "Single study": [
+        0
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All candidates consistently indicate that the study was conducted in Serbia, not the USA, thus the value is 0. The context confirms this is a single study, so 'Single study' is used as the study name. All candidates provide consistent information and are used."
+  },
+  "M_age": {
+    "extract_value": {
+      "Single study": [
+        25.28
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper describes a single study, as indicated by the context and the section summary. Candidate [0] explicitly states the average age as 25.28, which is directly extracted for the 'Single study'."
+  },
+  "SD_age": {
+    "extract_value": {
+      "Single study": [
+        8.14
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper describes a single study, as indicated by the context and the section summary of candidate [0]. Candidate [0] explicitly states the standard deviation of age as 8.14. This value is directly extracted and assigned to the 'Single study'."
+  },
+  "r": {
+    "extract_value": {
+      "Single study": [
+        -0.31766666666666665
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context and section summary. Candidate [0] provides the correlation between Gratitude and Loneliness, which is an arithmetic mean of correlations with multiple loneliness subscales (Loneliness in love, Loneliness in Family, and Social loneliness). This calculation adheres to the 'case_1_multiple_subscales' rule, which requires computing the arithmetic mean when multiple subscale correlations are reported. The value -0.31766666666666665 is the correct mean of -0.250, -0.277, and -0.426."
+  }
+}

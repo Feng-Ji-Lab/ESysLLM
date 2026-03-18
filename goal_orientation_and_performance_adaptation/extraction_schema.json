@@ -1,0 +1,308 @@
+{
+    "value_definitions": [
+        {
+            "name": "Author",
+            "type": "string",
+            "definition": "Author name(s) of the study or paper. Extract from the author line near the main title, not from the abstract, introduction, or citations."
+        },
+        {
+            "name": "Year",
+            "type": "integer_or_string",
+            "definition": "Publication year of the study or paper."
+        },
+        {
+            "name": "PubType",
+            "type": "integer",
+            "definition": "Publication type. Codes: 1 = Journal article. 2 = Book chapter. 3 = Dissertation. 4 = Master's thesis. 5 = Bachelor's thesis. 6 = Conference proceedings. 7 = Report. 8 = Other (e.g., unpublished manuscript).",
+            "allowed_values": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        },
+        {
+            "name": "FinancSupport",
+            "type": "integer",
+            "definition": "Whether there was financial support (e.g., grant). Codes: 0 = No. 1 = Yes.",
+            "allowed_values": [
+                0,
+                1
+            ],
+            "case_rules": {
+                "coding_heuristics": {
+                    "1": "Any mention of grants, funding agencies, sponsored projects, or explicit financial support.",
+                    "0": "If the paper explicitly states no funding, or if no funding information exists after checking the typical locations."
+                },
+                "where_to_find": "Funding information is typically found in the acknowledgments section, at the end of the paper, or in a dedicated funding statement. They may sometimes be mentioned in the introduction or conclusion section but rarely be mentioned in the other sections. They might be mentioned once or twice in the whole paper so you cannot infer no financial support just because the majority of the sections attain 0 or none when aggregating the codes of all sections."
+            }
+        },
+        {
+            "name": "PeerReview",
+            "type": "integer",
+            "definition": "Whether the publication was peer reviewed. Codes: 0 = No. 1 = Yes.",
+            "allowed_values": [
+                0,
+                1
+            ]
+        },
+        {
+            "name": "PgoType",
+            "type": "object",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of strings. Each string indicates which performance goal orientation was assessed for a particular extracted effect. Allowed categories are: 'Avoid' = Avoid performance goal orientation (APGO). 'Prove' = Prove performance goal orientation (PPGO). 'Global' = Performance goal orientation (PGO).",
+            "allowed_values": [
+                "Avoid",
+                "Prove",
+                "Global"
+            ],
+            "case_rules": {
+                "meaning_Avoid_APGO": "Avoid performance goal orientation (APGO). People aim to avoid showing incompetence to others.",
+                "meaning_Prove_PPGO": "Prove performance goal orientation (PPGO). People aim to prove their competence.",
+                "meaning_Global_PGO": "Global performance goal orientation (PGO). A combined score not separating approach and avoidance.",
+                "tie_breakers": {
+                    "1": "If the paper reports both performance-approach and performance-avoidance as separate constructs, extract two separate effects and code them as 'Prove' and 'Avoid' respectively.",
+                    "2": "If the paper reports a single combined performance goal orientation score without separating approach and avoidance, code 'Global'."
+                },
+                "multiple_effects_within_study": "If a single paper yields multiple eligible effects (e.g., multiple samples, multiple time points, multiple adaptation outcomes), append all corresponding PgoType values into the LIST for that Study Name."
+            },
+            "precision_rule": "Do not alter the category labels. Use exactly one of: 'Avoid', 'Prove', 'Global'."
+        },
+        {
+            "name": "AdaptMeasures",
+            "type": "object",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of integers. Each integer codes the assessment method(s) of performance adaptation used for the corresponding extracted effect. Codes: 1 = Self-report. 2 = Other people (e.g., manager, peers). 3 = Objective (e.g., task, test). 4 = Mixed.",
+            "allowed_values": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "case_rules": {
+                "note": "This variable is described as method(s). Code 1, 2, or 3 when only one method applies to the effect. Code 4 when multiple methods are used within the same effect definition.",
+                "multiple_effects_within_study": "If the study provides multiple eligible effects with different adaptation measurement sources, store each code in the LIST."
+            },
+            "precision_rule": "Use integer codes only. Do not invent new codes."
+        },
+        {
+            "name": "AdaptMethod",
+            "type": "object",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of integers. Each integer codes whether the performance adaptation outcome is based on subjective ratings or objective scores for the corresponding extracted effect. Codes: 0 = Subjective ratings. 1 = Objective scores.",
+            "allowed_values": [
+                0,
+                1
+            ],
+            "case_rules": {
+                "derivation_hint": "If the adaptation outcome is self-report or rated by others, it is typically subjective (0). If it is a task score, test score, accuracy, reaction time, or other performance metric, it is typically objective (1).",
+                "consistency_check_with_AdaptMethod_Specific": "If AdaptMethod_Specific = 3, then AdaptMethod should be 1. If AdaptMethod_Specific is 1 or 2, then AdaptMethod should be 0."
+            },
+            "precision_rule": "Use integer codes only."
+        },
+        {
+            "name": "AdaptMethod_Specific",
+            "type": "object",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of integers. Each integer indicates the specific assessment method of performance adaptation used for the corresponding extracted effect. Codes: 1 = Self-report. 2 = Other people (e.g., manager, peers). 3 = Objective (e.g., task, test).",
+            "allowed_values": [
+                1,
+                2,
+                3
+            ],
+            "case_rules": {
+                "where_to_find": "Measures or Method section describing the adaptation outcome tied to the extracted association.",
+                "multiple_outcomes": "If multiple adaptation outcomes are extracted from the same study but with different assessment methods, code each outcome separately and store all codes in the LIST."
+            },
+            "precision_rule": "Use integer codes only."
+        },
+        {
+            "name": "GoMeasure_dichot_num",
+            "type": "object",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of integers. Each integer indicates the measurement method of goal orientation for the corresponding extracted effect. Codes: 1 = Other. 2 = VandeWalle.",
+            "allowed_values": [
+                1,
+                2
+            ],
+            "case_rules": {
+                "coding_heuristics": {
+                    "2": "If the goal orientation scale is explicitly attributed to VandeWalle (e.g., VandeWalle goal orientation measure), code 2.",
+                    "1": "Otherwise code 1."
+                },
+                "multiple_measures": "If a study uses different goal orientation measures for different samples or waves, store one code per extracted effect."
+            },
+            "precision_rule": "Use integer codes only."
+        },
+        {
+            "name": "Age_Info",
+            "type": "object",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of strings. Each string stores any additional age information for the corresponding extracted effect or sample, such as age range, SD, median, or subgroup age details, especially when mean age is not directly available.",
+            "case_rules": {
+                "examples": [
+                    "89.4% between 18 and 21",
+                    "between 20 and 61, SD = 9.5",
+                    "median age reported (mean not reported)"
+                ],
+                "where_to_find": "Participants or Sample description section. Sometimes Table 1 demographics.",
+                "missingness_rule": "If no age information is reported, store an empty string for that effect and note missingness elsewhere if you track it."
+            },
+            "precision_rule": "Keep wording close to the paper. Do not paraphrase away key numbers or qualifiers."
+        },
+        {
+            "name": "Age_imputed",
+            "type": "object",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of numbers. Each number is the mean sample age for the corresponding extracted effect or sample. Prefer the reported mean age. If mean age is not reported, impute using best available information and document what you did in Age_Info.",
+            "case_rules": {
+                "preferred": "If the article explicitly reports the mean sample age, use that value directly.",
+                "fallbacks": {
+                    "1_use_median": "If the mean is not reported but the median age is reported, use the median as Age_imputed and note this in Age_Info.",
+                    "2_derive_from_categories": "If neither mean nor median is available, derive Age_imputed from reported categorical age ranges.",
+                    "2.1_single_range": "For a single reported age range, the upper bound is used. The age range can be only for the majority of the sample if the age range for the whole sample is not reported.",
+                    "2.2_weighted_sum_rule": "When multiple age ranges with corresponding percentages are provided, compute a weighted sum. For each age category, use the upper bound as the representative value (including closed intervals like '21-30' and categories with only a maximum age like '20 or below'). Use the lower bound only for open-ended upper categories without a defined maximum (e.g., '55 and over' uses 55). Record the full rule and inputs in Age_Info."
+                },
+                "multiple_samples": "If a paper reports distinct samples and you extract separate effects for them, compute or extract Age_imputed per sample and store all values in the LIST."
+            },
+            "precision_rule": "Do not round if the mean is reported. If imputed, keep at least 1 decimal place when possible."
+        },
+        {
+            "name": "Sex",
+            "type": "object",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of integers. Each integer codes the sex composition of the sample for the corresponding extracted effect. Codes: 1 = Female sample. 2 = Male sample. 3 = Mixed sample.",
+            "allowed_values": [
+                1,
+                2,
+                3
+            ],
+            "case_rules": {
+                "coding_heuristics": {
+                    "1": "Sample is explicitly all female or women-only.",
+                    "2": "Sample is explicitly all male or men-only.",
+                    "3": "Any mixture of men and women, or not explicitly single-sex."
+                },
+                "where_to_find": "Participants section or demographics table."
+            },
+            "precision_rule": "Use integer codes only."
+        },
+        {
+            "name": "Men_Prop",
+            "type": "object",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of numbers. Each number is the percentage of men in the sample (0 to 100) for the corresponding extracted effect or sample.",
+            "value_range": "[0, 100]",
+            "case_rules": {
+                "preferred": "If percent men is reported, use it directly as Men_Prop.",
+                "fallbacks": {
+                    "1_from_counts": "If counts are given, compute Men_Prop = (n_men / N_total) * 100.",
+                    "2_from_percent_women": "If only percent women is given, compute Men_Prop = 100 - percent_women.",
+                    "3_missing": "If nothing is given, return null for that effect and note missingness in Age_Info or your notes field."
+                },
+                "multiple_samples": "If a paper has multiple samples or subgroups and you extract separate effects, store one Men_Prop per extracted effect."
+            },
+            "precision_rule": "Do not round reported percentages. If computed, keep at least 1 decimal place when possible."
+        },
+        {
+            "name": "Country_dichot_num",
+            "type": "object",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of integers. Each integer codes the country dichotomy for the corresponding extracted effect. Codes: 1 = Other. 2 = USA.",
+            "allowed_values": [
+                1,
+                2
+            ],
+            "case_rules": {
+                "coding_heuristics": {
+                    "2": "If the sample was collected in the United States.",
+                    "1": "All other countries, including multi-country samples. If multi-country includes USA and others, code 1 and note in your notes field."
+                },
+                "where_to_find": "Participants section, recruitment location or study context."
+            },
+            "precision_rule": "Use integer codes only."
+        },
+        {
+            "name": "Sample_dichot",
+            "type": "object",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of integers. Each integer codes whether the sample is a student sample or not for the corresponding extracted effect. Codes: 1 = Student sample. 2 = Other sample.",
+            "allowed_values": [
+                1,
+                2
+            ],
+            "case_rules": {
+                "coding_heuristics": {
+                    "1": "If the sample was collected from a student population (e.g., undergraduate, graduate, or school students).",
+                    "2": "All other samples (e.g., community samples, clinical samples, convenience samples, employees, managers)."
+                },
+                "where_to_find": "Participants section and recruitment description."
+            },
+            "precision_rule": "Use integer codes only."
+        },
+        {
+            "name": "N",
+            "type": "object",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of integers. Each integer is the sample size used for the extracted correlation coefficient between goal orientation and performance adaptation for the corresponding extracted effect.",
+            "case_rules": {
+                "where_to_find": "Participants section, correlation table notes, regression table notes, or results text.",
+                "tie_breakers": [
+                    "Use the N that matches the specific analysis producing the correlation coefficient, not necessarily the total recruited N.",
+                    "If there are multiple Ns across measures or analyses, use the N reported for the relevant correlation or model. If only total N is given, use it and note uncertainty."
+                ],
+                "missingness_rule": "If N is not reported for the specific effect, you are allowed to use the total sample size of the study. If the total sample size is also not reported, then return null for that effect and record the issue in notes."
+            },
+            "precision_rule": "Use the exact integer N reported. If multiple Ns exist, choose the analysis-matched N and document the decision in notes."
+        },
+        {
+            "name": "Correlation_PGO_and_PA",
+            "type": "object",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of numbers (correlation coefficients). Pearson r between trait Performance Goal Orientation (PGO) and performance adaptation (PA). CAUTION: Select ONLY performance goal orientation (not other constructs). PGO means people compare their performance to the performance of other people or they use some external norms to evaluate own performance. PGO is distinguished from Learning Goal Orientation (LGO), which means self-improvement (i.e. comparison with own previous performance) or task mastery is at the center of the learning goal orientation ",
+            "correlation_case_rules": {
+                "case_1_multiple_subscales": "If multiple goal orientation subscale correlations with performance adaptation are reported, report all of them. Similarly, if multiple performance adaptation subscale correlations with goal orientation are reported, report all of them.",
+                "case_2_gender_specific": "If correlations are reported separately by gender, report separate values for male and female.",
+                "case_3_tables_or_matrices": "Carefully check row/column headers in tables. Ensure you are looking at the intersection of '(Trait) Performance Goal Orientation' (not other constructs) and 'Performance Adaptation'.",
+                "case_4_multiple_subgroups": "If correlations are reported for multiple subgroups of the SAME gender (e.g., 'migrant women' and 'non-migrant women'), you should report all of them."
+            },
+            "precision_rule": "Do not round extracted correlations. If you compute an average, keep at least 4 decimal places when possible.",
+            "table_reading_rule": "Note that columns and numbers may be visually misaligned or skewed. Do not rely solely on vertical alignment. Instead, count the index/sequence. For example, first, determine the exact position (e.g., the 3rd variable) of '(Trait) Performance Goal Orientation' in the header/variable list. Then, go to the row for 'Performance Adaptation' and extract the numerical value at that exact same position (e.g., the 3rd number). Ensure you are strictly matching these two constructs."
+        },
+        {
+            "name": "Correlation_info",
+            "type": "object",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of strings. Each string is a short description of the correlation between performancegoal orientation and performance adaptation.",
+            "examples": [
+                "PO and AP",
+                "PGO and AP(social)",
+                "PO and AP (2. month)",
+                "APGO and AP (difficult)",
+                "PPGO and AP (Creativity)"
+            ],
+            "case_rules": {
+                "PO": "Performance Orientation",
+                "AP": "Adaptation Performance",
+                "PGO": "Performance Goal Orientation",
+                "APGO": "Adaptation Performance Goal Orientation",
+                "PPGO": "Performance Performance Goal Orientation"
+            }
+        },
+        {
+            "name": "Confidence Level (low, moderate, high)",
+            "type": "enum",
+            "definition": "Confidence rating for each extracted value.",
+            "allowed_values": [
+                "low",
+                "moderate",
+                "high"
+            ]
+        },
+        {
+            "name": "Confidence Percentage (scale of 0% to 100%)",
+            "type": "number_percent",
+            "definition": "Confidence percentage (0 to 100) for each extracted value."
+        },
+        {
+            "name": "Number of studies",
+            "type": "integer",
+            "definition": "Labels whether you could judge that this paper has multiple studies. Return numeric count of studies found."
+        },
+        {
+            "name": "section_summary",
+            "type": "string",
+            "definition": "2-3 sentences summarizing the content of this section. Explicitly highlight any mention of 'Study 1', 'Experiment 2', or multiple sample subsets to help identify the context."
+        }
+    ]
+}

@@ -1,0 +1,107 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify a country. It mentions 'Black college women' and 'Black undergraduate women' but does not state where the study was conducted.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide sample size information. It refers to 'a sample of Black undergraduate women' but no specific number is given.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not describe the survey method used for data collection.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text explicitly states the sample consists of 'Black college women' and 'Black undergraduate women,' indicating the sample is entirely Black, not white. However, the percentage of white participants is not explicitly stated as a number.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide mean age information.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "The text states 'a sample of Black undergraduate women' and 'Black college women,' indicating all participants are college students. Per the infer_rule, when participants are identified as undergraduate/college students, the percentage with college or higher education is 100%.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide mean BMI information.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The text explicitly refers to 'Black college women' and 'Black undergraduate women,' indicating the sample was recruited from a college source.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text states 'validate the BAS (Avalos et al., 2005) in Black college women,' indicating the Body Appreciation Scale (BAS) was used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not describe how BMI was assessed (self-reported or measured).",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not report any correlation coefficients between body appreciation and BMI. The hypotheses mention correlations with appearance satisfaction, self-esteem, Western beauty ideal internalization, dieting, eating disordered behavior, weight-related teasing, ethnic identity, and eating disorder symptoms, but not specifically with BMI.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with one sample of Black college women. The phrase 'the present study' indicates one study is being described.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text does not indicate whether this is a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section outlines the research hypotheses for a study validating the Body Appreciation Scale (BAS) in Black college women and examining the role of ethnic identity in body appreciation. The study involves one sample of Black undergraduate women and proposes to test relationships between BAS scores and various constructs including appearance satisfaction, self-esteem, Western beauty ideal internalization, eating behaviors, ethnic identity, and eating disorder symptoms.",
+      "evidence_source": "The entire 'Research Hypotheses' section describes the goals and hypotheses of a single study (referred to as 'the present study') examining Black college women.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

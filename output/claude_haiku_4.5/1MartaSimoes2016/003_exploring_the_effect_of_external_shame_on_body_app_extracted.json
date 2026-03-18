@@ -1,0 +1,99 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Portugal"
+        ]
+      },
+      "evidence_source": "Author affiliation states 'CINEICC \u2013 Cognitive-Behavioral Research Centre, University of Coimbra, Portugal'",
+      "warning": "Study name not explicitly provided in text; using 'Study X' as placeholder per policy"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information provided in the header/title section",
+      "warning": "Sample size not stated in provided text"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information provided in the header/title section",
+      "warning": "Survey method not stated in provided text"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information about race/ethnicity provided in the header/title section",
+      "warning": "Racial/ethnic composition not stated in provided text"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information provided in the header/title section",
+      "warning": "Mean age not stated in provided text"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information provided in the header/title section",
+      "warning": "Education level not stated in provided text"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI information provided in the header/title section",
+      "warning": "Mean BMI not stated in provided text"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample source information provided in the header/title section",
+      "warning": "Sample source not stated in provided text"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No assessment instrument information provided in the header/title section",
+      "warning": "Body Appreciation assessment tool not stated in provided text"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI assessment method provided in the header/title section",
+      "warning": "BMI assessment method not stated in provided text"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No correlation data provided in the header/title section",
+      "warning": "Correlation coefficients not stated in provided text"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No explicit mention of number of studies in the provided header/title section",
+      "warning": "Cannot determine number of studies from title and author information alone"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "Publication type not explicitly stated in the provided text",
+      "warning": "Cannot determine if this is a journal article or dissertation from header information alone"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This is the header section of a research paper titled 'Exploring the effect of external shame on body appreciation among Portuguese young adults: The role of self-compassion' by Joana Marta-Sim\u00f5es, Cl\u00e1udia Ferreira, and Ana Laura Mendes from the University of Coimbra, Portugal. The study appears to examine relationships between external shame, body appreciation, and self-compassion in a Portuguese sample of young adults. Detailed methodological and demographic information is not available in this header section.",
+      "evidence_source": "Title and author affiliation information provided in the text",
+      "warning": "This is only the header/title section; full methodological details would be found in the Methods section"
+    },
+    "_pass_type": "text_only"
+  }
+]

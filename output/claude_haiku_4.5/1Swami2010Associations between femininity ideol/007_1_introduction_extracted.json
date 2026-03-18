@@ -1,0 +1,241 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is provided in this Introduction section. The text discusses theoretical concepts and previous research but does not specify where the present study was conducted.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The only sample size mentioned is 'N = 135' in a footnote, but this appears to be a reference note and not clearly attributed to a specific study in this Introduction section. No explicit study sample size is stated in the main text.",
+      "warning": "Footnote mentions N = 135 but context is unclear in Introduction section alone"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method is described in this Introduction section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information about race/ethnicity is provided in this Introduction section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in this Introduction section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in this Introduction section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI information is provided in this Introduction section.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample source (community, college, school) is provided in this Introduction section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While the text discusses body appreciation as a construct and mentions the Femininity Ideology Scale (FIS), it does not specify which instrument (BAS or BAS-2) was used to assess body appreciation in the present study.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about BMI assessment method is provided in this Introduction section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This Introduction section does not report any correlation values between body appreciation and BMI. The text discusses theoretical expectations for correlations between FIS factors and body appreciation, but no actual correlation coefficients are provided.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The Introduction section references 'the present study' (singular) but does not explicitly state how many studies are included in the paper. This is an Introduction section only, which typically precedes the Methods and Results sections where study details would be specified.",
+      "warning": "Cannot determine number of studies from Introduction alone"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The publication type (journal article vs. dissertation) is not specified in this Introduction section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Introduction section establishes the theoretical foundation for examining associations between femininity ideology and body appreciation. The text reviews literature on body image disorders and their correlates, introduces the Femininity Ideology Scale (FIS) with its five factors, and explains why body appreciation (rather than negative body image) was selected as the outcome variable. The study aims to examine correlations between FIS factors and body appreciation, with specific hypotheses about which factors (Stereotypic Image and Activities, Purity) are expected to negatively correlate with body appreciation.",
+      "evidence_source": "Entire Introduction section from 'Body image is a multidimensional concept...' through '...and the FIS factors, which the present study sought to overcome.'",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text provided does not explicitly state the country where the study was conducted. The introduction section discusses theoretical background and research questions but does not mention the study location.",
+      "warning": "Country information not found in the provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          135
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            135
+          ]
+        }
+      },
+      "evidence_source": "Table 1 footer states 'Note: N = 135.' This indicates the total sample size for the study.",
+      "warning": "Gender-specific sample sizes are not provided in the table or text."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not specify whether data collection used paper-and-pencil or online survey methods.",
+      "warning": "Survey method information not found in the provided text or table."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain information about the racial/ethnic composition of participants.",
+      "warning": "Racial/ethnic demographic information not found in the provided text or table."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          23.74
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            23.74
+          ]
+        }
+      },
+      "evidence_source": "Table 1, column (8) labeled 'Age' shows M = 23.74 and SD = 5.78. This represents the mean age of the 135 participants.",
+      "warning": "Gender-specific age means are not provided in the table."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain information about the educational attainment of participants.",
+      "warning": "Educational attainment information not found in the provided text or table."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          22.15
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            22.15
+          ]
+        }
+      },
+      "evidence_source": "Table 1, column (9) labeled 'Body mass index' shows M = 22.15 and SD = 2.80. This represents the mean BMI of the 135 participants.",
+      "warning": "Gender-specific BMI means are not provided in the table."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not specify whether participants were recruited from community, college, or primary/secondary/high school settings.",
+      "warning": "Sample source information not found in the provided text or table."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text mentions 'body appreciation' as the outcome variable but does not explicitly state whether the BAS or BAS-2 instrument was used to measure it.",
+      "warning": "The specific body appreciation assessment instrument (BAS or BAS-2) is not identified in the provided text or table."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not specify whether BMI was assessed via self-reported or measured methods.",
+      "warning": "BMI assessment method (self-reported vs. measured) not found in the provided text or table."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.19
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            -0.19
+          ]
+        }
+      },
+      "evidence_source": "Table 1, row (1) 'Body appreciation' and column (9) 'Body mass index' shows a correlation of -.19 (with significance marker indicating p < .05). This is the Pearson r correlation between body appreciation and BMI for the full sample of N = 135.",
+      "warning": "Gender-specific correlations are not provided in the table. The correlation value shown is -.19 with a single asterisk indicating p < .05."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text is an introduction section describing a single study examining associations between femininity ideology factors and body appreciation. Table 1 presents descriptive statistics for one sample (N = 135). No mention of multiple studies or experiments is present.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not indicate whether this is a journal article or dissertation. Only an introduction section and a table are provided without publication venue information.",
+      "warning": "Publication type cannot be determined from the provided text and table."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This introduction section presents a single study examining the relationship between femininity ideology (measured via the Femininity Ideology Scale with five factors) and body appreciation among women. Table 1 provides descriptive statistics and inter-item correlations for 135 female participants, showing a weak negative correlation (r = -.19, p < .05) between body appreciation and body mass index, with mean age of 23.74 years and mean BMI of 22.15.",
+      "evidence_source": "Introduction text and Table 1 caption and data",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1: Descriptive statistics and inter-item correlations between body appreciation, femininity ideology, and participant age and body mass index.",
+      "evidence_source": "Table 1 title as presented in the image",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2010Associations between femininity ideol/tables/1Swami2010Associations between femininity ideol_p001_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

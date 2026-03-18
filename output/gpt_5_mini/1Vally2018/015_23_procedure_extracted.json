@@ -1,0 +1,293 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or region is stated in the provided section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Students were recruited from a range of undergraduate psychology and general education classes.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "online"
+        ]
+      },
+      "evidence_source": "The three questionnaires were administered using the Qualtrics online survey platform.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information on participant race/ethnicity is provided in the section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information on participant age or mean age is provided in the section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "\"Students were recruited from a range of undergraduate psychology and general education classes.\" => participants are described as undergraduate students; per the extraction rules, this implies 100% have college or higher education experience.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information on participant BMI (mean or otherwise) is provided in the section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Students were recruited from a range of undergraduate psychology and general education classes.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The translation procedure description repeatedly references the BAS-2 (e.g., \"resulting in two versions of the translated BAS-2\"), indicating the BAS-2 was the body appreciation measure used.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported or measured) is provided in the section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlations between body appreciation (BAS/BAS-2) and BMI are reported in the provided section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section describes procedures for a single data collection (no mention of 'Study 1', 'Study 2', or multiple studies).",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type (journal article or dissertation) is indicated in the provided section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This procedure section reports recruitment of undergraduate students from psychology and general education classes and administration of three questionnaires via the Qualtrics online platform. It describes a 5-step Brislin translation/back-translation process used to produce an Arabic version of the BAS-2; no sample size, demographic breakdown (race/age), BMI data, or correlations between body appreciation and BMI are reported in this section.",
+      "evidence_source": "Key sentences: \"Students were recruited from a range of undergraduate psychology and general education classes.\"; \"The three questionnaires were administered using the Qualtrics online survey platform.\"; \"All scales were carefully translated from English to Arabic using the following 5-step process outlined by Brislin... resulting in two versions of the translated BAS-2.\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or region is explicitly stated in the provided text or table caption. The text only describes translation into Arabic and use of Arabic language, but does not name a country.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          256
+        ]
+      },
+      "evidence_source": "Table caption: \"TABLE 1 Items of the Body Appreciation Scale-2 in English and Arabic, descriptive statistics, and item-factor loadings for the complete sample (n = 256)\".",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "online"
+        ]
+      },
+      "evidence_source": "\"The three questionnaires were administered using the Qualtrics online survey platform.\"",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participant race/ethnicity or percent white is provided in the text or table.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean or distribution of participant ages is reported in the provided text or table.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "\"Students were recruited from a range of undergraduate psychology and general education classes.\" From this explicit statement that participants were undergraduate students, we infer that 100% of participants have college-level (undergraduate) education (per case rules: undergraduate students => 100%).",
+      "warning": "Inference applied (undergraduate sample => 100%)",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI or mean BMI information is provided in the text or table.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "\"Students were recruited from a range of undergraduate psychology and general education classes.\"",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "\"...resulting in two versions of the translated BAS-2.\" Table caption: \"Items of the Body Appreciation Scale-2...\"",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The procedure and table describe the BAS-2 and translations; no description of BMI assessment (self-reported or measured) is provided.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlations between body appreciation (BAS/BAS-2) and BMI are reported in the provided text or table.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided section describes a single procedure/sample and does not reference multiple studies or label any study as 'Study 1' or similar; only one sample (n = 256) is described.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type (e.g., 'journal article' or 'dissertation') is specified in the provided content.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Methods section describes recruitment of undergraduate students from psychology and general education classes and administration of three questionnaires via the Qualtrics online survey platform. It details the translation/back-translation process used to produce an Arabic version of the BAS-2 and references a table of BAS-2 items and descriptive statistics for the complete sample (n = 256). No explicit study numbering (e.g., 'Study 1') or details on BMI, age, race, or correlations with BMI are provided.",
+      "evidence_source": "Summarizes provided procedural text and the table caption; specifically cites: \"Students were recruited from a range of undergraduate psychology and general education classes.\" and \"The three questionnaires were administered using the Qualtrics online survey platform.\" Table caption includes \"complete sample (n = 256)\".",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "TABLE 1 Items of the Body Appreciation Scale-2 in English and Arabic, descriptive statistics, and item-factor loadings for the complete sample (n = 256)",
+      "evidence_source": "Caption printed above the provided table image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Vally2018/tables/1Vally2018_p002_table00.png",
+    "_metadata_caption": "TABLE 1 Items of the Body Appreciation Scale-2 in English and Arabic, descriptive statistics, and item-factor loadings for the complete sample (n = 256)",
+    "_asset_source": "[table] TABLE 1 Items of the Body Appreciation Scale-2 in English and Arabic, descriptive statistics, and item-factor loadings for the complete sample (n = 256)",
+    "_pass_type": "asset_0"
+  }
+]

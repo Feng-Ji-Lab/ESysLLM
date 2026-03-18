@@ -1,0 +1,129 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Statistical Analyses' section describing methodology for factor analysis and correlation testing. No geographic location or country information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text describes statistical procedures (EFA, t-tests, correlation analyses) but does not report sample sizes or participant numbers.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text describes statistical analysis methods but does not mention how data were collected (paper-and-pencil vs. online).",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text is a statistical methods section and does not contain demographic information about racial/ethnic composition of participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text describes statistical procedures but does not report participant age information. Age is mentioned only as a variable to be correlated with body appreciation.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text is a statistical methods section and does not contain information about participants' educational attainment.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text describes statistical procedures but does not report mean BMI. BMI is mentioned only as a variable to be correlated with body appreciation.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text describes statistical analysis methods but does not indicate where or how participants were recruited (community, college, or primary/secondary/high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'The factor structure of the BAS-2 was examined using a principal-axis exploratory factor analysis (EFA)' and 'another independent-samples t-test was performed to compare the total score of BAS-2 between men and women.' This indicates BAS-2 was the instrument used to assess body appreciation.",
+      "warning": "Study name is unknown; labeled as 'Study X' per policy. The assessment instrument is clearly BAS-2."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text mentions that 'Pearson correlation coefficients were used to investigate associations between body appreciation, self-esteem, life satisfaction, BMI, and age,' but does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text describes the statistical procedures that were used (Pearson correlation coefficients to investigate associations between body appreciation and BMI) but does not report the actual correlation coefficient values.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Statistical Analyses' section describing methodology. It does not explicitly state how many studies are included in the paper. The text mentions analyses conducted 'separately for women and men' but this refers to gender-stratified analyses within a study, not multiple studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a methodological section and does not contain information about the publication type (journal article vs. dissertation).",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the statistical analyses used to examine the factor structure of the BAS-2 through exploratory factor analysis (EFA) with separate analyses for women and men, and reports the use of independent t-tests to compare BAS-2 items and total scores between genders. Pearson correlation coefficients were employed to investigate associations between body appreciation, self-esteem, life satisfaction, BMI, and age.",
+      "evidence_source": "Entire 'Statistical Analyses' section provided in text_content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

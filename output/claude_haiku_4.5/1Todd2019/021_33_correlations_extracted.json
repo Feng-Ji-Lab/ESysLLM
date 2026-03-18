@@ -1,0 +1,93 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information is provided in this section.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information about race/ethnicity is provided in this section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age information is provided in this section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI value is provided in this section.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample source is provided in this section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While body appreciation is discussed, the specific assessment instrument (BAS or BAS-2) is not identified in this section.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported vs. measured) is provided in this section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.2
+        ]
+      },
+      "evidence_source": "The text states: 'BMI had a small negative correlation with body appreciation...for both sexes'. A small correlation is defined in the text as \u2265 .20 in magnitude. The direction is negative. The exact correlation coefficient value is not numerically specified in the text, but it is characterized as 'small negative'. Table 1 is referenced but not provided in the input. Based on the qualitative description of 'small negative correlation', a representative value of approximately -0.20 is inferred as the lower bound of a small effect size.",
+      "warning": "Exact correlation coefficient not provided in text; value inferred from qualitative description 'small negative correlation'. Table 1 is referenced but not provided in the input. This extraction is based on effect size interpretation only."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section does not explicitly state the number of studies. It appears to be a results section from a single study analyzing correlations between variables.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents bivariate correlations between body appreciation, functionality appreciation, body pride, and various MAIA subscales, analyzed separately for women and men. Key findings include small to moderate positive correlations between body appreciation and MAIA subscales, with moderate to strong correlations for the Trusting subscale. BMI showed a small negative correlation with body appreciation for both sexes, and a small negative correlation with body pride for women only. Fischer's r to z transformation was used to test for sex differences in correlation patterns, with only two statistically significant differences identified.",
+      "evidence_source": "Section 3.3 Correlations, entire text provided.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

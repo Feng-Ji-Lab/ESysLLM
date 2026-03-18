@@ -1,0 +1,137 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the study was conducted. While German versions of scales are mentioned, this does not definitively indicate the country of the study.",
+      "warning": "Country not explicitly stated in the provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text does not provide information about the total number of participants or gender-specific sample sizes.",
+      "warning": "Sample size not provided in this procedural section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "paper-and-pencil"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'All participants completed the paper-and-pencil questionnaire anonymously, and returned the questionnaires in a sealed envelope.'",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text does not provide information about the racial/ethnic composition of participants.",
+      "warning": "Racial/ethnic demographics not provided in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text does not provide information about participant age.",
+      "warning": "Mean age not provided in this procedural section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text does not provide information about educational attainment of participants.",
+      "warning": "Educational level not provided in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text does not provide information about participant BMI.",
+      "warning": "Mean BMI not provided in this procedural section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "community"
+        ]
+      },
+      "evidence_source": "The text states: 'All participants were recruited opportunistically through a snowball-sampling technique. A number of data collectors, all of whom were study collaborators, directly recruited participants through their personal contacts.' This indicates community-based recruitment rather than college or school-based recruitment.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'Three researchers (TH, MV, SS) developed German versions of the BAS and BES scales from their originals in English.' The BAS (Body Appreciation Scale) is mentioned as one of the instruments used.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether BMI was self-reported or measured.",
+      "warning": "Method of BMI assessment not provided in this procedural section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text is a procedural description and does not contain correlation coefficients or results.",
+      "warning": "Correlation data not provided in this procedural section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly indicate the number of studies. This is a procedural section describing data collection methods, but does not specify whether this is a single study or multiple studies.",
+      "warning": "Number of studies cannot be determined from this procedural section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text does not indicate whether this is from a journal article or dissertation.",
+      "warning": "Publication type not determinable from this procedural section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This procedural section describes the data collection methods for a study using opportunistic snowball sampling to recruit participants from the community. Participants completed paper-and-pencil questionnaires anonymously, and researchers developed German versions of the BAS (Body Appreciation Scale) and BES scales using the parallel blind translation technique to maintain translation quality.",
+      "evidence_source": "Entire procedural section provided.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

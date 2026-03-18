@@ -1,0 +1,89 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only article metadata (keywords and article history). No country information is stated in this section.",
+      "warning": "Insufficient information to extract country. This appears to be a header/metadata section only."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only article metadata (keywords and article history). No sample size information is provided.",
+      "warning": "Insufficient information to extract sample size."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only article metadata. No survey method is described.",
+      "warning": "Insufficient information to extract survey method."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only article metadata. No demographic information about participant race/ethnicity is provided.",
+      "warning": "Insufficient information to extract racial/ethnic composition."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only article metadata. No age information is provided.",
+      "warning": "Insufficient information to extract mean age."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only article metadata. No education level information is provided.",
+      "warning": "Insufficient information to extract education level."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only article metadata. No BMI information is provided.",
+      "warning": "Insufficient information to extract mean BMI."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only article metadata. No information about sample source is provided.",
+      "warning": "Insufficient information to extract sample source."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only article metadata and keywords. While 'Body appreciation' is mentioned in the keywords, no specific assessment instrument (BAS or BAS-2) is identified.",
+      "warning": "Insufficient information to extract body appreciation assessment instrument."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only article metadata. No information about BMI assessment method is provided.",
+      "warning": "Insufficient information to extract BMI assessment method."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only article metadata. No correlation coefficients are provided.",
+      "warning": "Insufficient information to extract correlation values."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only article metadata (article history, keywords). No information about the number of studies is provided.",
+      "warning": "Insufficient information to determine number of studies."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only article metadata. While this appears to be from a journal article based on the 'Article history' format, the publication type is not explicitly stated in this section.",
+      "warning": "Publication type cannot be definitively determined from metadata alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section contains only article metadata including submission/acceptance dates and keywords. The keywords indicate the article focuses on body appreciation, adolescence, psychometrics, and measurement invariance across Denmark, Portugal, and Sweden. No study-level data, sample characteristics, or statistical findings are present in this section.",
+      "evidence_source": "Article history and keywords section",
+      "warning": "This is a metadata section only; substantive study information is not available here."
+    },
+    "_pass_type": "text_only"
+  }
+]

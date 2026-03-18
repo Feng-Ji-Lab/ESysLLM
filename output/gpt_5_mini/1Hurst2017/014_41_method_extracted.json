@@ -1,0 +1,179 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or location is specified in the provided Method section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          165
+        ]
+      },
+      "evidence_source": "One hundred and sixty-five female university students (aged 18\u201327 years, M = 19.44, SD = 1.40) were randomly assigned to a 2 (appearance vs.healthframe)\u00d72 (no guilt vs. guilt) between-subjects design.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            165
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            165
+          ]
+        }
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "paper-and-pencil"
+        ]
+      },
+      "evidence_source": "Participants attended group testing sessions, which ranged in size from 1 to 10 participants and took between 20 and 35 min to complete. Participants worked through the pack at their own pace. (Inference: in-person group testing with a paper pack implies paper-and-pencil rather than online, but the method is not explicitly stated.)",
+      "warning": "Inference made from description of in-person group testing; method not explicitly stated."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          77.7
+        ]
+      },
+      "evidence_source": "Participants were predominantly white (77.7%).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            77.7
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            77.7
+          ]
+        }
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          19.44
+        ]
+      },
+      "evidence_source": "One hundred and sixty-five female university students (aged 18\u201327 years, M = 19.44, SD = 1.40).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            19.44
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            19.44
+          ]
+        }
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "The text states 'One hundred and sixty-five female university students' and 'Participants were recruited through a university participation pool.' (Inference: all participants are university students, therefore 100% have college-level enrollment/experience.)",
+      "warning": "Inference: assumed university students => 100% college or higher."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          21.31
+        ]
+      },
+      "evidence_source": "Participants were within the 'normal' range for BMI (75% between 18.5 and 25, M = 21.31, SD = 3.59).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            21.31
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            21.31
+          ]
+        }
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Participants were recruited through a university participation pool.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No measure of body appreciation (BAS or BAS-2) is described in the provided Method section.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "BMI values are reported (M = 21.31, SD = 3.59) but the Method section does not specify whether BMI was measured or self-reported.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlations between body appreciation and BMI are reported in the provided Method section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to 'the experiment' and describes a single 2 (appearance vs. health) \u00d7 2 (no guilt vs. guilt) between-subjects design with 165 participants.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided section does not indicate whether this is from a journal article or a dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "Study X describes an experiment with 165 female university students randomly assigned to a 2 (appearance vs. health) \u00d7 2 (no guilt vs. guilt) between-subjects design, recruited via a university participation pool. Participants attended in-person group testing sessions, completed a packet of materials (20\u201335 min), and were exposed to manipulations of article framing (appearance vs. health) and guilt in a short passage; the sample was predominantly white (77.7%), mean age 19.44 (SD = 1.40), and mean BMI 21.31 (SD = 3.59).",
+      "evidence_source": "Combined sentences: 'One hundred and sixty-five female university students (aged 18\u201327 years, M = 19.44, SD = 1.40) were randomly assigned to a 2 (appearance vs.healthframe)\u00d72 (no guilt vs. guilt) between-subjects design.'; 'Participants were recruited through a university participation pool.'; 'Participants attended group testing sessions, which ranged in size from 1 to 10 participants and took between 20 and 35 min to complete.'; 'Participants were predominantly white (77.7%), and within the 'normal' range for BMI (75% between 18.5 and 25, M = 21.31, SD = 3.59).'",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

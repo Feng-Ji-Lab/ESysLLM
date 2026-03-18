@@ -1,0 +1,389 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Note. Women n = 716, men n = 432.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "716",
+        "male": "432",
+        "other": "None",
+        "total": "1148"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'body appreciation' as one of the four measures of body image, but does not specify the instrument used (e.g., BAS or BAS-2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states: 'all four positive body image measures were significantly and negatively correlated with BMI in both women and men.' It explicitly mentions 'body appreciation' as one of these measures. However, no numerical correlation coefficient (r value) is provided.",
+      "warning": "No numerical correlation coefficient (r value) was provided, only a qualitative description ('significantly and negatively correlated').",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text discusses 'inter-scale correlations' and 'all variables' within a single context, implying a single study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes inter-scale correlations between body image measures, well-being, BMI, and age, computed separately for women (n=716) and men (n=432). It notes that body appreciation was significantly and positively correlated with well-being measures in both genders, and significantly and negatively correlated with BMI in both women and men. The text refers to 'Table 2' for details, but the table is not provided.",
+      "evidence_source": "The entire provided text.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text or table.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1148]}",
+      "evidence_source": "The text states 'Women n = 716, men n = 432'. Table 1 caption also states 'Women (n = 716)' and 'Men (n = 432)'. The total sample is 716 + 432 = 1148.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\": [716]}",
+        "male": "{\"Study X\": [432]}",
+        "other": "None",
+        "total": "{\"Study X\": [1148]}"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text or table.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text or table.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [35.95, 33.07]}",
+      "evidence_source": "From Table 1, row 'Age', under 'M' column: Women = 35.95, Men = 33.07.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\": [35.95]}",
+        "male": "{\"Study X\": [33.07]}",
+        "other": "None",
+        "total": "{\"Study X\": [35.95, 33.07]}"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text or table.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [26.39, 25.20]}",
+      "evidence_source": "From Table 1, row 'Body mass index', under 'M' column: Women = 26.39, Men = 25.20.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\": [26.39]}",
+        "male": "{\"Study X\": [25.20]}",
+        "other": "None",
+        "total": "{\"Study X\": [26.39, 25.20]}"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text or table.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'Body appreciation' as a variable, but does not specify the instrument used (e.g., BAS or BAS-2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated how BMI was assessed (self-reported or measured).",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states 'all four positive body image measures were significantly and negatively correlated with BMI in both women and men' and refers to 'Table 2' for inter-scale correlations. However, Table 2 is not provided, and the provided Table 1 does not contain correlation coefficients between body appreciation and BMI.",
+      "warning": "The text mentions correlations between body appreciation and BMI, but the specific numerical values are not present in the provided Table 1 or text. The text refers to 'Table 2' which is not available.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study analyzing data for women and men separately.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section discusses inter-scale correlations between body image measures, well-being, BMI, and age, analyzed separately for women (n=716) and men (n=432). It notes that all four positive body image measures were significantly and negatively correlated with BMI in both genders. The text refers to Table 2 for these correlations, but only Table 1, which presents descriptive statistics and between-group comparisons, is provided.",
+      "evidence_source": "Summarized from the provided text content.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1. Descriptive statistics and the results of between-group comparisons as a function of respondent sex.",
+      "evidence_source": "Caption of the provided image 'Table 1'.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\test\\papers\\1Swami2018Positivebodyimageispositivelya\\tables\\1Swami2018Positivebodyimageispositivelya_p006_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [716, 432]}",
+      "evidence_source": "Table 2 Note: Women n = 716, men n = 432.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\": [716]}",
+        "male": "{\"Study X\": [432]}",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'Body appreciation' as one of the four measures of body image, but does not specify the assessment instrument (BAS or BAS-2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [-0.35, -0.23]}",
+      "evidence_source": "Table 2, correlation between (1) Body appreciation and (9) Body mass index. For women (top diagonal), r = -0.35. For men (bottom diagonal), r = -0.23.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\": [-0.35]}",
+        "male": "{\"Study X\": [-0.23]}",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study analyzing inter-scale correlations for women and men separately.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details inter-scale correlations between various body image measures, well-being indices, BMI, and age, with results presented separately for women and men. It refers to Table 2 for these correlations, which shows that positive body image measures were negatively correlated with BMI in both genders. The sample sizes for women (n=716) and men (n=432) are provided in the table note.",
+      "evidence_source": "The entire provided text and Table 2.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2. Inter-scale correlations between all variables with results for women in the top diagonal and for men in the bottom diagonal.",
+      "evidence_source": "Table 2 caption.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\test\\papers\\1Swami2018Positivebodyimageispositivelya\\tables\\1Swami2018Positivebodyimageispositivelya_p007_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_1"
+  }
+]

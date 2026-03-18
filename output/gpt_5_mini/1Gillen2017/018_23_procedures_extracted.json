@@ -1,0 +1,131 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "paper-and-pencil"
+        ]
+      },
+      "evidence_source": "Quote: \"After giving informed consent, participants completed a paperand-pencil questionnaire on campus in a group setting, supervised by members of the research team.\"",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "Detected phrase: \"Students were recruited from a participant pool at the college\" and \"...research study about body modification in college students.\" Inference: participants are described as college students (i.e., enrolled in college), therefore percentage with college or higher education is inferred as 100%.",
+      "warning": "Inference made that all participants are college students based on text; original text does not state explicit education-level percentages."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Quote: \"Students were recruited from a participant pool at the college, so they elected to participate for course credit in one of several foundational courses in psychology.\"",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Quote: \"The study was advertised as a research study about body modification in college students...\" \u2014 text consistently refers to a single \"study,\" indicating one study described in this section.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes procedures for a single study conducted with college students recruited from a university participant pool who completed a paper-and-pencil questionnaire in supervised group sessions on campus. Measures included body image, body modification, risk behaviors/attitudes, and mental health; participants received course credit and responses were anonymous. The study received IRB approval; no study numbering (e.g., 'Study 1') is provided in the text.",
+      "evidence_source": "Quotes used: \"After giving informed consent, participants completed a paperand-pencil questionnaire on campus in a group setting, supervised by members of the research team.\"; \"Students were recruited from a participant pool at the college, so they elected to participate for course credit...\"; \"The study was advertised as a research study about body modification in college students...\"; \"The Institutional Review Board (IRB) at the university approved this study.\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

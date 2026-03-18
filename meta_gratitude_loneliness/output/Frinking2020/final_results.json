@@ -1,0 +1,94 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      1,
+      6,
+      7,
+      11,
+      17
+    ],
+    "reason": "Multiple candidates, particularly from the abstract, methods, and conclusion sections, explicitly state that the paper describes 'a single study' or 'the current study'. Candidate [9] incorrectly counts a referenced 'previous study' as a study conducted within the current paper, which is a misinterpretation of the field's scope."
+  },
+  "usa_vs_other": {
+    "extract_value": {
+      "Single study": [
+        0
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason": "All candidates consistently indicate that the study's sample was collected in the Netherlands, not the USA, thus the value is 0. The paper describes a single study, as confirmed by the context and multiple candidate summaries."
+  },
+  "N": {
+    "extract_value": {
+      "Single study": [
+        163
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context and the section summaries of candidates 0 and 1. Candidates 0 (abstract) and 1 (method section) consistently report a total sample size of 163 participants. Candidate 2 (Table 1) from the discussion section also shows N=163 for 'Age', which supports the total sample size. The other N values (146, 160) in Table 1 likely represent the sample size for specific variables due to missing data, rather than the overall total sample size. Therefore, 163 is selected as the total N for the single study."
+  },
+  "female": {
+    "extract_value": {
+      "Single study": [
+        0.6
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All candidates consistently report 60% female participants (0.6 proportion) for the single study described in the paper. The values are consistent across the abstract, method section, and a table in the discussion, confirming the proportion of female participants."
+  },
+  "M_age": {
+    "extract_value": {
+      "Single study": [
+        66
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context and consistent descriptions across all candidate sections (abstract, design and sample, discussion). All candidates provide a consistent mean age of 66 for this single study. Candidate [0] from the abstract, candidate [1] from the design and sample section, and candidate [2] from a table in the discussion section all report 'Mage = 66'. There are no conflicts or multiple studies to distinguish."
+  },
+  "SD_age": {
+    "extract_value": {
+      "Single study": [
+        12
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context and all candidate summaries. All candidates consistently report an SD_age of 12 for this single study. Candidate [0] from the abstract, Candidate [1] from the design and sample section, and Candidate [2] from a table in the discussion section all provide the same value, indicating high consistency across sources. Therefore, the value 12 is extracted for the single study."
+  },
+  "r": {
+    "extract_value": {
+      "Single study": [
+        -0.45
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study, as indicated by the context. Candidate [0] provides a Pearson's correlation of -0.45 between Gratitude (SGRAT-NL) and Loneliness (LQ) in Table 1. This value directly corresponds to the definition of 'r' for the single study."
+  }
+}

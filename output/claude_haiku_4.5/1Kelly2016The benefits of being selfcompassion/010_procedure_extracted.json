@@ -1,0 +1,101 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify a country. While it mentions 'the university psychology subject pool,' no country is explicitly stated.",
+      "warning": "Country not specified in the provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states 'participation in this study was available to all female undergraduate students enrolled in the university psychology subject pool' but does not provide a specific sample size (N).",
+      "warning": "Sample size not provided in the text."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "online"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'participants were asked to complete a nightly survey e-mailed to them via a link to an online survey.'",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the racial/ethnic composition of participants.",
+      "warning": "Racial/ethnic demographics not reported."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide mean age or age range of participants.",
+      "warning": "Age information not provided."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "The text states 'participation in this study was available to all female undergraduate students enrolled in the university psychology subject pool.' Since all participants are undergraduate students, 100% have college or higher education experience.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide BMI data for participants.",
+      "warning": "BMI information not provided."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The text explicitly states 'participation in this study was available to all female undergraduate students enrolled in the university psychology subject pool,' indicating recruitment from a college/university setting.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes the procedure but does not specify which instrument (BAS or BAS-2) was used to assess body appreciation.",
+      "warning": "Assessment instrument for body appreciation not specified in this section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether BMI was self-reported or measured.",
+      "warning": "BMI assessment method not specified in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a procedural description and does not report correlation coefficients between body appreciation and BMI.",
+      "warning": "Correlation data not provided in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text references 'Kelly and Stephen (2016)' and describes a study procedure, but does not explicitly state how many studies are included in the paper. The text appears to describe a single study's procedure.",
+      "warning": "Number of studies unclear; this appears to be a procedural section of one study."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text does not indicate whether this is from a journal article or dissertation.",
+      "warning": "Publication type not specified in the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the procedure for a study involving female undergraduate students from a university psychology subject pool. Participants completed nightly online surveys for seven consecutive days (with an optional make-up survey on Day 8) between 4-11pm each evening, with credit awarded for timely completion. The study investigated personality, feelings, and body image.",
+      "evidence_source": "Entire 'Procedure' section provided.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

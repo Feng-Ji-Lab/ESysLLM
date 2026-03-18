@@ -1,0 +1,94 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      7,
+      14
+    ],
+    "reason": "Multiple candidates, including the abstract (Candidate [0]), explicitly state or strongly imply that the paper describes a single study. For example, Candidate [0] mentions 'a single study (Study X)', Candidate [1] refers to 'a study involving 465 older adults', Candidate [7] discusses findings 'in a single sample of 465 participants', and Candidate [14] refers to 'the present study'. All consistent candidates support the value of 1, while Candidate [6] provides no textual evidence to support its value of 0."
+  },
+  "usa_vs_other": {
+    "extract_value": {
+      "Single study": [
+        0
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason": "All candidates consistently indicate that the study was conducted in Nigeria (or authors are affiliated with South Africa), which is not the United States. Candidate [1] explicitly states 'Ekiti State, Nigeria', Candidate [2] confirms 'Ekiti State, Nigeria', Candidate [3] mentions 'Ado-Ekiti' (a city in Ekiti State, Nigeria), Candidate [4] refers to 'Nigerian higher institutions', and Candidate [5] notes translation to 'Yoruba language' (spoken in Nigeria). Candidate [0] states authors are from 'South Africa'. All evidence points to the study not being conducted in the USA, thus the value is 0. The context confirms this is a single study."
+  },
+  "N": {
+    "extract_value": {
+      "Single study": [
+        465
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      3,
+      4,
+      5
+    ],
+    "reason": "The paper describes a single study, consistently identified across multiple reliable sources (abstract, method, results, tables). Candidates [0], [1], [3], [4], and [5] all report a sample size of 465 for the main study. Candidate [2] refers to a pilot testing sample of 63, which is distinct from the main study's participant pool and therefore excluded from the main study's N."
+  },
+  "female": {
+    "extract_value": {
+      "Single study": [
+        0.632
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context and consistent reporting across all candidates. All three candidates provide highly consistent values for the proportion of female participants. Candidate [0] (abstract) states '294 women and 171 men', yielding 294/465 = 0.632. Candidate [1] (sample and procedure) states '465 older adults (comprising of 294 women)', yielding 294/465 = 0.632258. Candidate [2] (table) explicitly states 'Women 294 (63.2%)', which is 0.632 as a proportion. Given the consistency, the value 0.632 is selected, representing the proportion of female participants in the single study."
+  },
+  "M_age": {
+    "extract_value": {
+      "Single study": [
+        74.18
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper describes a single study, as indicated by the context and consistent references across candidates. Both Candidate [0] (abstract) and Candidate [1] (sample and procedure) report the mean age as 74.18 for 'Study X'. These values are consistent and refer to the same single study. Therefore, they are merged into a single entry under 'Single study'."
+  },
+  "SD_age": {
+    "extract_value": {
+      "Single study": [
+        9.42
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates [0] and [1] consistently report the standard deviation of age as 9.42. The context indicates that the paper describes a single study, so the values are merged under 'Single study'."
+  },
+  "r": {
+    "extract_value": {
+      "Single study": [
+        -0.25
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper describes a single study. Candidates [0] and [1] both report a correlation of r = -0.25 between Gratitude and Loneliness. Candidate [1] explicitly confirms this value from Table 2, which is titled 'Descriptive statistics and correlations among study variables' and shows '-.25**' for the correlation between Loneliness and Gratitude. This is a direct and reliable source for the Pearson r. Candidate [2] reports a correlation of r = -0.40 from Figure 1, which is a path model showing standardized estimates between latent variables. While this can represent a correlation, the value from the explicit correlation matrix (Table 2) is considered more direct and reliable for the zero-order Pearson correlation as per the field definition and correlation case rules. Therefore, -0.25 is selected as the most accurate value."
+  }
+}

@@ -1,0 +1,37 @@
+{
+    "study_specific_prompt": {
+        "system_prompt": {
+            "task": {
+                "name": "academic_data_aggregator",
+                "goal": "Consolidate extracted values for the field '<<FIELD_NAME>>' from multiple candidate sources (sections of a paper). Return values as a LIST. If the paper contains multiple distinct studies (Study 1, Study 2), extract the value for EACH study separately."
+            },
+            "definitions": "<<FIELD_DEFINITION>>",
+            "instructions": {
+                "1_judge_source_reliability": "Content for this field is likely to appear in specific sections (e.g., 'Sample' in Participants/Method, 'Correlations' in Results/Tables). Use the field definition to determine the most reliable source type.",
+                "2_distinguish_studies": "Do not directly collect values from all candidates. Instead, JUDGE whether the paper reports multiple distinct studies. If so, select the PRECISE result for EACH individual study and put them in the list. The output should be a dictionary with lists as items (handled via the schema). If the paper is a single study, the resolved_studies list should contain only one entry with study_name 'Single study'. Otherwise, the dictionary should have the same number of entries as the number of studies.",
+                "3_subsample_merging": "If a study has multiple samples (e.g., 'Original' and 'Follow-up'), MERGE them into the SAME list for that study. Do NOT create separate keys (e.g., 'Study 1 (Follow-up)' is FORBIDDEN). Put both values in 'Study 1' output. List values for each sub-sample in the SAME list for that study.",
+                "4_handle_synonyms": "Treat equivalent values as identical (e.g., 'United Kingdom' = 'UK' = 'Britain').",
+                "5_merge_complementary_data": "If Candidate A has a 'Total' value but no Gender Split, and Candidate B has 'Gender Split' values but no Total, COMBINE them. If Candidate A has specific values (Male: 10, Female: 20) and Candidate B has the Total (30), verify consistency and output the full set.",
+                "6_resolve_conflicts": "If values contradict (e.g., N=300 vs N=312) AND they refer to the SAME study:\n - Prefer values in the MAIN TEXT over 'TABLE' values if both contradict but appear reliable.\n - Prefer 'Results'/'Method'/'Table' sections over 'Abstract' or 'Introduction'.\n - IF they refer to DIFFERENT studies, preserve BOTH values in the list."
+            },
+            "critical_instruction": "The input candidates might refer to 'Study 1', 'Study 2', or just 'Study X'. You MUST use the provided 'Evidence' and 'Section Summary' to resolve which specific Study each candidate belongs to. Merge candidates that belong to the same study. Create a separate entry in 'resolved_studies' for each distinct study found. Pay attention to `source_file` index (e.g., `011` comes before `014`) and `Section Summary`. Early sections (Method, Participants) usually describe Study 1. Later sections (Results, Discussion) describe Study 2. Use this to resolve 'Study X' candidates to the correct study."
+        },
+        "user_prompt": "Field: <<FIELD_NAME>>\n\nCandidates Found:\n<<CANDIDATES_LIST>>\n\nPlease consolidate these candidates into the final result."
+    },
+    "flat_prompt": {
+        "system_prompt": {
+            "task": {
+                "name": "data_aggregation_assistant",
+                "goal": "Consolidate extracted values for the field: '<<FIELD_NAME>>'."
+            },
+            "definitions": "<<FIELD_DEFINITION>>",
+            "instructions": {
+                "1_judge_source_reliability": "Content for this field is likely to appear in specific sections. Use the field definition to determine the most reliable source type.",
+                "2_identify_accuracy": "Identify the most accurate value(s) for the entire paper.",
+                "3_conflict_resolution": "If candidates conflict, prefer the one with stronger evidence.",
+                "4_single_list": "Return a SINGLE list of values (e.g., [\"Smith\", \"Jones\"] or [2015])."
+            }
+        },
+        "user_prompt": "INPUT CANDIDATES:\nEach candidate is from a specific section of the paper.\n<<CANDIDATES_LIST>>"
+    }
+}

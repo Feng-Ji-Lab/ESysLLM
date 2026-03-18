@@ -1,0 +1,353 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "reason": "The overwhelming majority of candidates (15 out of 16) indicate that there is '1' study. Candidates [6] and [12] explicitly state 'a single study' in their context, providing strong evidence. Candidate [7] reported '0' but its context was an empty 'Results' section, suggesting no information was found rather than an actual count of zero studies. Given the strong consensus and explicit mentions, '1' is the most accurate value."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "All candidates consistently identify the publication type as 'journal articles'. The section contexts further support this, mentioning 'journal', 'article information', and details typical of a research study published in a journal. There is no conflicting evidence for 'dissertation'."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "United Kingdom"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    },
+    "best_indices": [
+      0,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason": "The paper describes a single study, as indicated by the context. Candidates [0], [2], [3], [4], and [5] consistently state or imply that the study was conducted in the United Kingdom or involved British participants. 'British' (from candidate [0]) is a synonym for 'United Kingdom'. Candidate [1] refers to countries from *cited* studies, not the current paper's study, and is therefore excluded. All valid mentions refer to the same country, 'United Kingdom', which is consolidated into a single entry for the 'Single study'."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        "646"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          "199"
+        ]
+      },
+      "female": {
+        "Single study": [
+          "446"
+        ]
+      },
+      "other": {
+        "Single study": [
+          "1"
+        ]
+      },
+      "total": {
+        "Single study": [
+          "646"
+        ]
+      }
+    },
+    "best_indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context and Candidate 1. Candidate 0 was excluded as it explicitly refers to samples from other cited studies, not the current paper. Candidates 2, 3, 4, 5, 6, and 7 consistently report a total sample size of N=646. Candidate 2, from the 'Participants' section, provides the most detailed and reliable breakdown of gender, stating 199 men, 446 women, and 1 person identifying as 'other'. This breakdown is consistent with the total N and implicitly supported by the discrepancy noted in Candidate 4's evidence (199+446=645 vs N=646). All consistent and complementary values are merged into a single study entry."
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "online"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    },
+    "best_indices": [
+      2
+    ],
+    "reason": "The paper contains a single study. Candidate 2, from the 'Procedure' section, explicitly states that participants were recruited via 'Prolific Academic' and the survey was hosted 'on Qualtrics', clearly indicating an 'online' survey method. Candidate 3 mentions 'self-reported measures', which describes the nature of the data collected rather than the method of survey administration itself. Therefore, 'online' is the most accurate and direct answer for the survey method."
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Single study": [
+        "92.4"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    },
+    "best_indices": [
+      2
+    ],
+    "reason": "Candidate [2] from the 'Participants' section is the most reliable source, explicitly stating '92.4% White' for the study. As the paper contains a single study, this value is assigned to 'Single study'. No gender-specific percentages for white participants were found in any candidate."
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        "38.92",
+        "37.76",
+        "39.46"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          "37.76"
+        ]
+      },
+      "female": {
+        "Single study": [
+          "39.46"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "38.92"
+        ]
+      }
+    },
+    "best_indices": [
+      2,
+      4
+    ],
+    "reason": "The paper describes a single study. Candidate 2 from the 'Participants' section provides the overall mean age of 38.92 years. Candidate 4, from Table 1, provides gender-specific mean ages: 37.76 years for men and 39.46 years for women. These values are consistent with each other, with the overall mean being a weighted average of the gender-specific means, considering the participant counts (199 men, 446 women, 1 other) mentioned in Candidate 2's section summary. All relevant values have been consolidated for the single study."
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        "52.3"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "52.3"
+        ]
+      }
+    },
+    "best_indices": [
+      2
+    ],
+    "reason": "The paper contains a single study as indicated by the context. Candidate [2] from the 'Participants' section explicitly states that '52.3% college or higher' education was reported, with evidence showing the calculation (36.7% undergraduate + 15.6% postgraduate = 52.3%). This is the most reliable source for this demographic information. Other candidates either do not contain the information or are from less relevant sections for participant demographics. No gender-specific breakdown for education level was provided, so only the total is included."
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        "27.25"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          "27.72"
+        ]
+      },
+      "female": {
+        "Single study": [
+          "26.10"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "27.25"
+        ]
+      }
+    },
+    "best_indices": [
+      2,
+      4
+    ],
+    "reason": "The paper describes a single study. Candidate 2, from the 'Participants' section, provides the overall mean BMI (27.25) and gender-specific means (26.10 for women, 27.72 for men). Candidate 4, from Table 1, also provides gender-specific means (26.10 for women, 27.76 for men). The female BMI values are consistent across both sources. For male BMI, there is a slight discrepancy (27.72 vs 27.76). Following the instruction to prefer values from the main text over tables when reliable sources contradict, the value from Candidate 2 (27.72) is selected for male participants. The overall mean BMI is taken from Candidate 2. Candidates 0, 1, and 3 did not contain specific mean BMI values."
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "community"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    },
+    "best_indices": [
+      1,
+      2,
+      3
+    ],
+    "reason": "The paper contains a single study as indicated by the context. Candidate [0] describes samples from other cited studies in the introduction and is therefore disregarded. Candidates [1], [2], and [3] consistently state that the sample for the present study was drawn from the 'community'. Candidate [2] further specifies recruitment via Prolific Academic, which aligns with a community sample. All reliable candidates agree on 'community' as the source of the sample for the single study."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS-2"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    },
+    "best_indices": [
+      2
+    ],
+    "reason": "The paper contains a single study, as indicated by the context. Candidate 2 explicitly states that \"Body appreciation was assessed using the Body Appreciation Scale-2 (BAS-2)\" and is the most direct and reliable source for this information. Candidates 0 and 1 mention body appreciation as a variable but do not specify the assessment instrument for the current study."
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    },
+    "best_indices": [
+      2,
+      3
+    ],
+    "reason": "The paper contains a single study, as indicated by the context. Candidates [2] and [3] both explicitly state that BMI was 'self-reported', providing consistent and reliable evidence for the assessment method. No gender-specific assessment methods were mentioned."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": []
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          "-0.24"
+        ]
+      },
+      "female": {
+        "Single study": [
+          "-0.32"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    },
+    "best_indices": [
+      3
+    ],
+    "reason": "Candidate 3, from Table 1, explicitly provides the Pearson r correlation coefficients between Body Appreciation and BMI for both women (-0.32) and men (-0.24). This is the most direct and reliable source for the requested values. Candidates 0 and 1 are introductory sections and do not contain specific correlation data. Candidate 2 mentions a negative predictive relationship but does not provide the specific correlation coefficient (r value), making it unsuitable for extraction of the exact value."
+  }
+}

@@ -1,0 +1,89 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not mention any country or geographic location where the study was conducted.",
+      "warning": "No country information available in the provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify the total number of participants or sample size.",
+      "warning": "No sample size information available in the provided text."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not describe the method used to collect demographic data (paper-and-pencil vs. online).",
+      "warning": "No survey method information available in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text mentions that participants provided demographic information including religion, but does not specify racial or ethnic composition.",
+      "warning": "No information about percentage of white participants available in the provided text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text states that participants provided their age, but does not report the mean age value.",
+      "warning": "Age was collected but mean age not reported in the provided text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text mentions that participants provided their 'highest educational qualification,' but does not report the percentage with college or higher education.",
+      "warning": "Educational qualification was collected but percentage with college or higher education not reported in the provided text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text states that 'height, and weight (the latter two variables were used to calculate BMI)' were collected, but no mean BMI value is reported.",
+      "warning": "BMI was calculated from height and weight but mean BMI value not reported in the provided text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify where or how participants were recruited (community, college, or primary/secondary/high school).",
+      "warning": "No information about source of sample available in the provided text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a demographics section that does not mention any body appreciation assessment instrument (BAS or BAS-2).",
+      "warning": "No body appreciation assessment information available in the provided text."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text states that height and weight were collected to calculate BMI, but does not explicitly specify whether these were self-reported or measured.",
+      "warning": "BMI assessment method (self-reported vs. measured) not explicitly stated in the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a demographics section and does not report any correlation coefficients between body appreciation and BMI.",
+      "warning": "No correlation data available in the provided text."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a brief demographics section that does not indicate how many studies are included in the paper.",
+      "warning": "Cannot determine number of studies from this demographics section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not indicate whether this is from a journal article or dissertation.",
+      "warning": "No publication type information available in the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This is a brief demographics section describing the demographic information collected from participants, including sex, age, religion, educational qualification, height, and weight. The section indicates that height and weight were used to calculate BMI, but provides no actual demographic values, sample characteristics, or study design details.",
+      "evidence_source": "Entire provided text",
+      "warning": "This section contains only a description of what demographic variables were collected, not the actual demographic data or study characteristics needed for extraction."
+    },
+    "_pass_type": "text_only"
+  }
+]

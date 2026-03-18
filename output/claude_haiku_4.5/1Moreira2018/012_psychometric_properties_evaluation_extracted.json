@@ -1,0 +1,591 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in the provided text.",
+      "warning": "Country not specified in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'overall sample' and stratified groups (boys, girls) but does not provide explicit sample sizes. ANOVA analysis excluded 4 participants (n=1 extreme underweight, n=3 underweight), leaving 340 participants in the weight status analysis (F(2, 340) = 6.66), but the total sample size is not explicitly stated.",
+      "warning": "Sample size not explicitly stated. Only partial information available from ANOVA analysis (340 in weight status analysis after exclusions)."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method (paper-and-pencil or online) is mentioned in the provided text.",
+      "warning": "Survey method not specified in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about racial/ethnic composition is provided in the text.",
+      "warning": "Percent of white participants not specified in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age information is provided in the text.",
+      "warning": "Mean age not specified in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in the text.",
+      "warning": "Percentage of college or higher education not specified in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses weight status categories (normal weight, obese, underweight, extreme underweight) and BMI correlations, but does not provide the mean BMI of participants.",
+      "warning": "Mean BMI not explicitly stated in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about where or how participants were recruited is provided in the text.",
+      "warning": "Source of sample not specified in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly discusses 'The BAS original unidimensional model' and 'BAS scores' throughout the section. The instrument used is the Body Appreciation Scale (BAS).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'BMI' and correlations with BAS scores, but does not explicitly state whether BMI was self-reported or measured.",
+      "warning": "Assessment method for BMI (self-reported vs. measured) not specified in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.23,
+          -0.338
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.338
+          ]
+        },
+        "male": {
+          "Study X": [
+            "None"
+          ]
+        },
+        "other": {
+          "Study X": [
+            "None"
+          ]
+        },
+        "total": {
+          "Study X": [
+            -0.23
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'A negative correlation between the BAS scores and the BMI was obtained for the overall sample (r = \u2013.230, p < .001) and female group (r = \u2013.338, p < .001).' The overall sample correlation is -0.230, and the female group correlation is -0.338. No male-specific correlation is provided.",
+      "warning": "Male-specific correlation not reported; only overall and female correlations are available."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "This section describes psychometric properties and validity evidence for a single study. The text discusses 'the overall sample' and stratified groups (boys, girls) within one study, not multiple separate studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information (journal article or dissertation) is provided in this section.",
+      "warning": "Publication type not specified in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents psychometric properties evaluation of the Body Appreciation Scale (BAS) in a single study with stratified gender groups (boys and girls). The BAS demonstrated satisfactory model fit, and concurrent validity analyses revealed a negative correlation between BAS scores and BMI for the overall sample (r = \u2013.230) and female group (r = \u2013.338), indicating that higher body appreciation accompanies lower BMI. Criterion validity analysis showed that normal-weight individuals had significantly higher BAS scores compared to obese individuals.",
+      "evidence_source": "Entire section content",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is provided in the text or table.",
+      "warning": "Country not specified in the provided section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          347
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            176
+          ]
+        },
+        "male": {
+          "Study X": [
+            171
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            347
+          ]
+        }
+      },
+      "evidence_source": "Table 1 caption states: 'Descriptive Statistics (Mean, Standard Deviation, Minimum and Maximum Values) of Quantitative Variables in the Overall Sample (n = 347) and Stratified by Sex (Male, n = 171; Female, n = 176)'",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Survey method is not mentioned in the provided text or table.",
+      "warning": "Survey method not specified."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Racial/ethnic composition is not reported in the provided text or table.",
+      "warning": "Percent of white participants not specified."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          11.1
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            11.06
+          ]
+        },
+        "male": {
+          "Study X": [
+            11.13
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            11.1
+          ]
+        }
+      },
+      "evidence_source": "Table 1, row 'Age (years)', column 'M (SD)': General (n = 347) = 11.10 (.81); Male (n = 171) = 11.13 (.80); Female (n = 176) = 11.06 (.81)",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Educational attainment is not reported in the provided text or table.",
+      "warning": "Percentage of college or higher education not specified."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          20.3
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            20.31
+          ]
+        },
+        "male": {
+          "Study X": [
+            20.29
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            20.3
+          ]
+        }
+      },
+      "evidence_source": "Table 1, row 'BMI (kg/m\u00b2)', column 'M (SD)': General (n = 347) = 20.30 (4.18); Male (n = 171) = 20.29 (4.19); Female (n = 176) = 20.31 (4.18)",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Source of sample (community, college, or school) is not specified in the provided text or table.",
+      "warning": "Source of sample not specified."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "Table 1 includes a row labeled 'BAS' with descriptive statistics. The text mentions 'The BAS original unidimensional model' and discusses the Body Appreciation Scale (BAS). The table shows BAS scores: General (n = 347) = 49.29 (9.27); Male (n = 171) = 49.43 (8.63); Female (n = 176) = 49.16 (9.88).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "measured"
+        ]
+      },
+      "evidence_source": "Table 1 reports BMI calculated from Weight (kg) and Height (m) measurements. The table shows: Weight (kg) and Height (m) as separate rows with measured values, indicating BMI was calculated from measured anthropometric data rather than self-reported.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.23
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.338
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            -0.23
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'A negative correlation between the BAS scores and the BMI was obtained for the overall sample (r = \u2013.230, p < .001) and female group (r = \u2013.338, p < .001).' Male-specific correlation is not reported separately in the provided text.",
+      "warning": "Male-specific correlation between BAS and BMI not reported; only overall and female correlations are provided."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text and table describe a single study with one overall sample (n = 347) stratified by sex. No multiple studies or experiments are explicitly named or described.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "Publication type (journal article or dissertation) is not specified in the provided text or table.",
+      "warning": "Publication type not specified."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents descriptive statistics for a single study with 347 participants (171 male, 176 female) aged approximately 11 years, including measures of age, weight, height, BMI, body image estimation, dissatisfaction, and Body Appreciation Scale (BAS) scores. The text reports psychometric properties of the BAS and concurrent validity evidence, showing a negative correlation between BAS scores and BMI for the overall sample (r = \u2013.230, p < .001) and the female group (r = \u2013.338, p < .001), indicating that higher body appreciation is associated with lower BMI.",
+      "evidence_source": "Table 1 caption and text describing correlation analyses between BAS scores and BMI.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1. Descriptive Statistics (Mean, Standard Deviation, Minimum and Maximum Values) of Quantitative Variables in the Overall Sample (n = 347) and Stratified by Sex (Male, n = 171; Female, n = 176)",
+      "evidence_source": "Table 1 title as presented in the image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Moreira2018/tables/1Moreira2018_p004_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the study was conducted. The title mentions 'Brazilian Adolescents' in Figure 1, which indicates Brazil, but this is from the figure caption describing the BAS scale, not from the main text describing the study location.",
+      "warning": "Country can be inferred from 'Brazilian Adolescents' in Figure 1 caption, but the main text does not explicitly state the study location."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide an explicit total sample size. It mentions 'n = 176' for females in Table 3 caption (partial), and references to subgroups (e.g., 'n = 1' extreme underweight, 'n = 3' underweight excluded from ANOVA, F(2, 340) suggesting approximately 343 participants in the ANOVA analysis), but no single clear statement of total sample size.",
+      "warning": "Sample size cannot be definitively extracted. The ANOVA reference F(2, 340) suggests ~343 participants, but this is inferred from degrees of freedom, not explicitly stated.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not describe the survey method (paper-and-pencil vs. online).",
+      "warning": "Survey method is not mentioned in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the racial/ethnic composition of participants.",
+      "warning": "Percent of white participants is not mentioned in the provided text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide mean age of participants. The title of Figure 1 mentions 'Brazilian Adolescents' but no specific age or mean age is stated.",
+      "warning": "Mean age is not explicitly stated in the provided text.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about educational attainment of participants.",
+      "warning": "Percentage of college or higher education is not mentioned in the provided text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide mean BMI of the overall sample. It discusses correlations between BAS and BMI, and weight status categories (normal weight, obese, underweight, extreme underweight), but does not report mean BMI.",
+      "warning": "Mean BMI is not explicitly stated in the provided text.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not describe where or how participants were recruited (community, college, or school).",
+      "warning": "Source of sample is not mentioned in the provided text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly discusses the Body Appreciation Scale (BAS) throughout. Figure 1 is titled 'Final Version of Body Appreciation Scale (BAS) for Brazilian Adolescents' and the text refers to 'BAS scores' and 'BAS original unidimensional model' multiple times.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions BMI and correlations with BAS scores, but does not explicitly state whether BMI was self-reported or measured.",
+      "warning": "Assessment method for BMI (self-reported vs. measured) is not explicitly stated in the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.23,
+          -0.338
+        ]
+      },
+      "evidence_source": "The text states: 'A negative correlation between the BAS scores and the BMI was obtained for the overall sample (r = \u2013.230, p < .001) and female group (r = \u2013.338, p < .001).' The overall sample correlation is r = -0.230, and the female group correlation is r = -0.338. No male-specific correlation is reported in the text.",
+      "warning": "Male-specific correlation is not reported. Only overall sample (r = -0.230) and female group (r = -0.338) correlations are provided.",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.338
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            -0.23
+          ]
+        }
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text describes a single study with one sample of Brazilian adolescents. There is no mention of 'Study 1', 'Study 2', 'Experiment 1', or multiple distinct studies. The text discusses psychometric properties evaluation and validity analyses of the BAS for a single sample.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not indicate whether this is a journal article or dissertation. The context suggests it is from an academic paper, but the publication type is not explicitly stated.",
+      "warning": "Publication type cannot be determined from the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents psychometric properties evaluation of the Body Appreciation Scale (BAS) for Brazilian adolescents. The BAS unidimensional model showed satisfactory fit indices, and a negative correlation between BAS scores and BMI was found for the overall sample (r = -0.230) and female group (r = -0.338), indicating that lower BMI accompanies higher body appreciation. Criterion validity analysis showed that normal-weight individuals have significantly higher BAS scores compared to obese individuals.",
+      "evidence_source": "Entire provided text section on psychometric properties evaluation.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Figure 1. Final Version of Body Appreciation Scale (BAS) for Brazilian Adolescents.",
+      "evidence_source": "The caption appears at the top of the provided figure/table asset.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Moreira2018/tables/1Moreira2018_p005_table00.png",
+    "_metadata_caption": "Figure 1. Final Version of Body Appreciation Scale (BAS) for Brazilian Adolescents.",
+    "_asset_source": "[table] Figure 1. Final Version of Body Appreciation Scale (BAS) for Brazilian Adolescents.",
+    "_pass_type": "asset_1"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is explicitly stated in the provided text or table.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          347,
+          171,
+          176
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            176
+          ]
+        },
+        "male": {
+          "Study X": [
+            171
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            347
+          ]
+        }
+      },
+      "evidence_source": "Table 3 caption states: 'Convergent Validity of the Body Assessment Scale (BAS) for the Overall Sample (n = 347) and Stratified by Sex (Male, n = 171; Female, n = 176)'",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method (paper-and-pencil or online) is mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about racial/ethnic composition is provided in the text.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age information is provided in the text.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in the text.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While BMI is discussed in relation to body appreciation correlations, no mean BMI value is reported in the text.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about where participants were recruited (community, college, or school) is provided in the text.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "Table 3 title explicitly states 'Body Assessment Scale (BAS)' and the text discusses 'BAS scores' and 'BAS original unidimensional model'. The scale items are presented in the questionnaire section.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions BMI correlations but does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.23,
+          -0.105,
+          -0.338
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.338
+          ]
+        },
+        "male": {
+          "Study X": [
+            -0.105
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            -0.23
+          ]
+        }
+      },
+      "evidence_source": "Table 3 shows 'BAS - BMI' row with correlations: General sample r = \u2013.230 (p = .001), Male r = \u2013.105 (p = .178), Female r = \u2013.338 (p = .001). The text confirms: 'A negative correlation between the BAS scores and the BMI was obtained for the overall sample (r = \u2013.230, p < .001) and female group (r = \u2013.338, p < .001).'",
+      "warning": "Male correlation (r = \u2013.105) is not statistically significant (p = .178), which may indicate a weak or unreliable relationship for males."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with one overall sample (n = 347) stratified by sex. No multiple studies or experiments are mentioned.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not indicate whether this is a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents psychometric properties of the Body Assessment Scale (BAS), including convergent validity results. Table 3 reports correlations between BAS scores and BMI for the overall sample (n = 347) stratified by sex (Male n = 171; Female n = 176), showing a significant negative correlation for the overall sample (r = \u2013.230, p < .001) and female group (r = \u2013.338, p < .001), but not for males (r = \u2013.105, p = .178). The text also discusses correlations with dissatisfaction indices and criterion validity across weight status groups.",
+      "evidence_source": "Entire provided text section"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 3. Convergent Validity of the Body Assessment Scale (BAS) for the Overall Sample (n = 347) and Stratified by Sex (Male, n = 171; Female, n = 176)",
+      "evidence_source": "Table 3 title as presented in the image"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Moreira2018/tables/1Moreira2018_p005_table01.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_2"
+  }
+]

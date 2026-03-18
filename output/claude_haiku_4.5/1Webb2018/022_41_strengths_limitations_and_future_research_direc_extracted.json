@@ -1,0 +1,101 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section is a discussion of limitations and future research directions. While it mentions 'college women' and 'community', no specific country is stated in this section.",
+      "warning": "This is a limitations/discussion section, not a methods or results section. Country information would typically be found in the methods section, not here."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section discusses the study's sample composition (college women, primarily White/European American) but does not provide a specific sample size number in this section.",
+      "warning": "Sample size would typically be reported in the methods section, not in the limitations discussion."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method is mentioned in this limitations and future directions section.",
+      "warning": "Survey method would be described in the methods section, not in the discussion of limitations."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "The text states: 'the current analysis exclusively focused on the experiences of college women who primarily identified as White or European American.' The phrase 'primarily identified as White or European American' indicates the sample was predominantly white. However, the exact percentage is not explicitly stated. Given the context of a limitations discussion where the authors note this as a limitation and suggest replicating with 'larger samples of ethnic minority college women', it appears the sample was substantially white, but the precise percentage cannot be determined from this text alone. Extracting as 100 is an inference based on 'primarily', but this should be flagged as uncertain.",
+      "warning": "The exact percentage is not explicitly stated. The word 'primarily' suggests a high percentage but not necessarily 100%. This is an inference and should be treated with caution."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age is provided in this limitations section. The text refers to 'college women' and 'young adult women' but does not provide a specific mean age.",
+      "warning": "Mean age would be reported in the methods or results section, not in the limitations discussion."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'the current analysis exclusively focused on the experiences of college women' and later refers to 'college women in general' and 'young adult women'. The participants are described as college students/college women, which indicates 100% college or higher education experience.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI is provided in this limitations section.",
+      "warning": "Mean BMI would be reported in the methods or results section, not in the limitations discussion."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The text states: 'the current analysis exclusively focused on the experiences of college women' and discusses 'college women in general'. The sample source is clearly identified as college.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section discusses limitations and future directions. While it mentions 'functional body appreciation' and 'positive body image', it does not specify which instrument (BAS or BAS-2) was used to assess body appreciation. The specific assessment tool would be described in the methods section.",
+      "warning": "The section mentions 'functional body appreciation' as a measure but does not specify the instrument name (BAS or BAS-2)."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported vs. measured) is provided in this limitations section.",
+      "warning": "Assessment method for BMI would be described in the methods section, not in the limitations discussion."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section does not report correlation coefficients between body appreciation and BMI. It discusses effect sizes and indirect effects in a mediation model, but does not provide the specific correlation between body appreciation and BMI.",
+      "warning": "The section mentions 'effect size for functional body appreciation in our concurrent indirect effect model was relatively small though statistically significant' but does not provide the actual correlation coefficient between body appreciation and BMI."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to 'the present study' and 'our study' throughout, indicating a single study. No mention of multiple studies (Study 1, Study 2, Experiment 1, etc.) is made in this section.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "This section does not indicate whether the publication is a journal article or dissertation. This information would typically be found on the title page or in the document header.",
+      "warning": "Publication type cannot be determined from this limitations/discussion section alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section discusses the strengths, limitations, and future research directions of a single study examining the relationship between overhearing family fat talk, mindful eating, and positive body image among college women. The study was limited to college women who primarily identified as White or European American, and the authors recommend future research replicate findings with ethnic minority women, undergraduate men, and community samples. Key limitations include the use of a nonclinical sample, lack of longitudinal/experimental design to test causality, relatively small effect sizes for functional body appreciation, and measurement limitations regarding which family members engaged in fat talk and the applicability of the functional body appreciation measure across diverse populations.",
+      "evidence_source": "Entire section 4.1 (Strengths, limitations, and future research directions)",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

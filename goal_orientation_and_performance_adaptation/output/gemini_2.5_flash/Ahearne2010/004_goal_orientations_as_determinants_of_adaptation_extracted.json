@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text is an academic discussion of goal orientations, citing multiple scholarly works and presenting hypotheses, which is characteristic of a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of grants, funding, or financial support was found in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Given that the text appears to be an excerpt from a journal article (PubType = 1), it is highly likely to have undergone peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\"]}",
+      "evidence_source": "The text states, 'all references to performance orientation in this text refer specifically to PO.' PO is defined as orienting people to 'achieve a positive evaluation of their current abilities and performance from important others' (Sujan, Weitz, and Kumar 1994, p. 39), which aligns with 'Prove' performance goal orientation. The text explicitly states, 'We do not discuss AO in this study'.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses 'salespeople's performance during a change' and 'performance trajectories' but does not specify the method of assessment (e.g., self-report, other-report, objective task).",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses 'salespeople's performance during a change' and 'performance trajectories' but does not specify whether the outcome is based on subjective ratings or objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses 'salespeople's performance during a change' and 'performance trajectories' but does not specify the specific assessment method (e.g., self-report, other people, objective task).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text defines goal orientations using VandeWalle (1997) and cites VandeWalle, Cron, and Slocum (2001). However, it does not explicitly state that the goal orientation *measure* used in this study was VandeWalle's. Therefore, it is coded as 'Other'.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No information regarding age (mean, range, SD, median) was provided in this section.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information regarding age was provided, so imputation is not possible.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information regarding the sex composition of the sample was provided in this section.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information regarding the percentage of men in the sample was provided in this section.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information regarding the country where the sample was collected was provided in this section.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "The text explicitly states the sample consists of 'salespeople', indicating it is not a student sample.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size (N) for the correlation or any analysis was provided in this section.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section discusses the theoretical background and presents hypotheses (H2, H3) but does not report any empirical correlation coefficients between Performance Goal Orientation and performance adaptation.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficients were reported in this section.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'this study' in the singular, indicating a single study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section defines goal orientations, distinguishing between learning orientation (LO), performance-prove orientation (PO), and performance-avoid orientation (AO). The authors explicitly state that AO is not discussed in 'this study' and that all references to performance orientation refer specifically to PO. The section then presents theoretical arguments and hypotheses (H2 and H3) regarding the longitudinal relationship between LO and PO and salespeople's performance trajectories during planned organizational change.",
+      "evidence_source": "Summary of the provided text content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,275 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      5,
+      6,
+      7,
+      11,
+      12,
+      18
+    ],
+    "reason": "Multiple empirical sections (Participants [5], Measures [6], Procedures [7]) describe a single sample and a single \"current/present\" study; results sections report regression models conducted on one sample (Ns reported as 223 and 221 due to missing data) [11,12]; the conclusions explicitly refer to \"this study\" [18]. No sections label multiple studies (e.g., 'Study 1', 'Study 2') or present separate independent experiments, so the paper reports one study."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        247
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason": "The paper reports a single study. The Participants section (candidate 1) and the Abstract (candidate 0) state a total sample of 247 Black female adolescents \u2014 this is treated as the study 'total' N. The Procedures/Table notes (candidates 2 and 3) indicate Ns ranged from 207 to 247 due to missing data, and the regression tables report analysis-specific Ns of 223 (body appreciation) and 221 (body image flexibility) (candidates 4 and 5). Following guidance to prefer the main Participants/Methods text for the total sample, the consolidated total N is 247; analysis-specific Ns are noted in the reason but not listed as separate study totals.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          247
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          247
+        ]
+      }
+    }
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Single study": [
+        0
+      ]
+    },
+    "best_indices": [
+      2,
+      4,
+      0
+    ],
+    "reason": "The paper reports a single study (Participants/Methods describe one sample of 247 Black female adolescents). The Participants section (candidate 2) explicitly states the sample consisted of Black female adolescents; Limitations (candidate 4) and the Abstract (candidate 0) reiterate the sample was exclusively Black. Therefore percent of participants identifying as white = 0% for the single study. Participants/methods sections were prioritized over abstract/discussion per reliability rules.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          0
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          0
+        ]
+      }
+    }
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates refer to the same single study (Measures and Abstract describe the current study). The Measures section (index 1) is the most reliable source and explicitly states BMI was calculated from participants' self-reported height and weight; the Abstract (index 0) provides the same information. No evidence of measured BMI was found, so the assessment method is consolidated as 'self-reported'."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0
+    ],
+    "reason": "Candidate 0 indicates a standard empirical abstract describing a single study with participants, measures, and results\u2014typical of a journal article. There are no signals of a dissertation (e.g., 'thesis', university/department, committee/advisor), so \u2018journal articles\u2019 is the most supported value."
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "primary/secondary/ high school"
+      ]
+    },
+    "best_indices": [
+      4,
+      3,
+      5,
+      0,
+      6
+    ],
+    "reason": "Although the Participants section (index 3) notes participants were admitted to specific colleges, multiple method sections (Procedures index 4 and its recruitment table asset index 5), the Introduction (index 0), and the Discussion (index 6) consistently describe the sample as a pre-college sample of Black older-adolescent females recruited in the summer before entering college. Recruitment was via admissions lists for students admitted to colleges, but data were collected prior to matriculation, so the most accurate source classification is 'primary/secondary/ high school' (pre-college). I prioritized Methods/Procedures text (indices 4, 3, 5) and corroborating Intro/Discussion (0, 6) to resolve the apparent conflict with candidates that labeled the sample as 'college.'"
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "United States",
+        "southeastern U.S."
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "The paper reports a single empirical study. Participants (candidate 0) and Limitations (candidate 2) explicitly state the sample was located in the southeastern U.S.; Procedures (candidate 1) confirms recruitment via U.S. mail/email, indicating the country is the United States. The conclusion reference to 'western culture' (candidate 3) is conceptual and not a study location, so it was excluded. Both the country-level value ('United States') and the more specific region ('southeastern U.S.') are provided."
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        17.8
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper reports a single study (participants section describes one sample of Black female adolescents). Both the Participants text (candidate 0) and Table 1 (candidate 1) report the same mean age (17.8 years, SD = 0.47). These sources are consistent; primary text (Participants) was used along with the table for confirmation. The sample is female, so the value is recorded under female and total for the single study.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          17.8
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          17.8
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        25.4
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper reports a single study (one sample of Black female adolescents). Both the Participants section (candidate 0) and Table 1 (candidate 1) report the same mean BMI = 25.4 kg/m2 (SD = 6.4). The values are consistent; Participants text and Table 1 were used and merged. Because the sample is entirely female, the female and total entries both equal 25.4.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          25.4
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          25.4
+        ]
+      }
+    }
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "All candidate sources (Measures, Procedures, Table note, and Descriptive Statistics) consistently identify the Body Appreciation Scale (BAS; Avalos et al., 2005) as the instrument for assessing body appreciation. The paper reports a single empirical study (no Study 1/Study 2 distinctions), so values were merged into one entry. Candidates 0\u20133 were used as evidence."
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "online"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both credible candidates (Procedures section and Table caption) indicate participants were directed to a SurveyShare-hosted online survey. The paper reports a single study (methods, participants, and results all describe one sample), so values were merged for that study and resolved as 'online'. Candidates 0 and 1 were used, with the Procedures text taken as the most reliable source."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        -0.44
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study in the paper. Table 1 (candidate 0) reports the Pearson correlation between BAS (Body Appreciation Scale) and BMI as -0.44 (intersection row 5, column 2, displayed as '-.44**'). The sample described is a precollege female sample, so the correlation applies to females (and the study total). No other conflicting candidates were found.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          -0.44
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          -0.44
+        ]
+      }
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        100
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper reports a single study. Candidate 0 (limitations section) states the sample 'exclusively consisted of ... females ... admitted to public universities,' which reliably indicates participants were college students; by the case rule this implies 100% had college or higher education. No conflicting values were found in other sections, so the value 100% is assigned (also listed under female and total).",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          100
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          100
+        ]
+      }
+    }
+  }
+}

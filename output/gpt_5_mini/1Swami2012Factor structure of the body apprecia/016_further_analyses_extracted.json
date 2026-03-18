@@ -1,0 +1,138 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text reports ANOVA degrees of freedom: \"F(2, 540)\" for ethnicity and \"F(1, 540)\" for gender. If N = df_within + number_of_groups, the ethnicity test implies N = 540 + 3 = 543, whereas the gender test implies N = 540 + 2 = 542. These two inferred totals conflict, so a single unambiguous sample size cannot be determined from the provided text.",
+      "warning": "Indices mismatch between ANOVA dfs (inferred N = 543 from F(2,540) vs inferred N = 542 from F(1,540)).",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section refers to the \"General Body Appreciation factor\" but does not specify the instrument (e.g., BAS or BAS-2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text reports correlations with BMI but does not indicate whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.3,
+          -0.22
+        ]
+      },
+      "evidence_source": "\"General Body Appreciation was significantly correlated with BMI among both women (r = -.30, p < .001) and men (r = -.22, p < .001).\"",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.3
+          ]
+        },
+        "male": {
+          "Study X": [
+            -0.22
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "\"Further Analyses\" describes additional analyses on the (single) General Body Appreciation factor in this section; no separate multiple studies or study numbers are mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section reports that the Body Image Investment factor failed to meet internal consistency criteria, so analyses focused on the General Body Appreciation factor. ANOVAs found no significant ethnicity effects or ethnicity-by-gender interactions, a significant main effect of gender (women lower than men), and significant negative correlations between General Body Appreciation and BMI for both women (r = -0.30) and men (r = -0.22).",
+      "evidence_source": "\"Because the Body Image Investment factor did not meet conservative criteria for acceptable internal consistency (\\alpha \\ge .80; Kline, 1999), all further analyses were conducted with the General Body Appreciation factor alone.\" \"The results of the ANOVA indicated that there was no significant main effect of ethnicity..., and no significant ethnicity by gender interaction... On the other hand, there was a significant main effect of gender (women M = 3.32, SD = 0.86; men M = 3.67, SD = 0.78)... Finally, General Body Appreciation was significantly correlated with BMI among both women (r = -.30, p < .001) and men (r = -.22, p < .001).\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

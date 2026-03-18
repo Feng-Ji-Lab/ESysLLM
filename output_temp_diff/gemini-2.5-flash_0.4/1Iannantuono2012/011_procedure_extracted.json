@@ -1,0 +1,125 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No specific country is mentioned in the text. It refers to 'the university's Institutional Review Board' and 'Department of Psychology'.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states 'Female introductory psychology students could select this study' but does not provide a total number of participants.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {},
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "The text states, 'Participants completed the measures in a classroom used as a research lab.' This implies an in-person, non-online method, which is best categorized as 'paper-and-pencil'.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the racial or ethnic composition of participants is provided.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age of participants is provided in the text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "The text states 'Female introductory psychology students could select this study'. As per the inference rule, 'If the text says 'The participants were undergraduate students' or something similar, it means that the percentage of participants with college or higher education experience is 100%'.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {},
+        "male": "None",
+        "other": "None",
+        "total": {}
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI of participants is provided in the text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "The text states 'Female introductory psychology students could select this study... in the Department of Psychology.' This indicates the participants were recruited from a college setting.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions the study's purpose was to investigate 'body attitudes' but does not specify an instrument like BAS or BAS-2.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information regarding the assessment of BMI is provided.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation between body appreciation and BMI is reported in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'the study' in the singular, indicating a single study is being described.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The publication type is not mentioned in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the procedure for a single study, which received approval from a university's Institutional Review Board. Participants were female introductory psychology students recruited from the Department of Psychology for class credit. They completed measures on body attitudes, personality, and eating behavior in a classroom setting, with measures counterbalanced to control for order effects.",
+      "evidence_source": "The summary is derived from the entire provided text content of the 'Procedure' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

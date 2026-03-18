@@ -1,0 +1,99 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Canada"
+        ]
+      },
+      "evidence_source": "Text states 'Mount Allison University, Canada' indicating the study location.",
+      "warning": "Study name is unclear; using 'Study X' as placeholder. Only country is explicitly stated; no other demographic or methodological details are provided in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information provided in the text.",
+      "warning": "Sample size not mentioned in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information provided in the text.",
+      "warning": "Survey method not specified in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information provided in the text.",
+      "warning": "Percent of white participants not mentioned in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information provided in the text.",
+      "warning": "Mean age of participants not mentioned in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information provided in the text.",
+      "warning": "Percentage of college or higher education not mentioned in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI information provided in the text.",
+      "warning": "Mean BMI of participants not mentioned in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample source provided in the text.",
+      "warning": "Source of sample not specified in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No body appreciation assessment instrument mentioned in the text.",
+      "warning": "Assessment of body appreciation (BAS/BAS-2) not mentioned in this section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI assessment method provided in the text.",
+      "warning": "Assessment of BMI (self-reported or measured) not mentioned in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No correlation data provided in the text.",
+      "warning": "Correlation between body appreciation and BMI not mentioned in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text is a brief introductory passage discussing sociocultural models of body image. No explicit study count is provided.",
+      "warning": "Cannot determine number of studies from this brief introductory text."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information provided in the text.",
+      "warning": "Publication type (journal article or dissertation) not specified in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section introduces the topic of 'Body talk' and discusses sociocultural models of body image, citing Smolak and Levine (2001) and Thompson et al. (1999). It posits that family and peers influence how girls evaluate their physical selves through communication of appearance value. The section appears to be from a study conducted at Mount Allison University in Canada, though no specific study details, sample characteristics, or methodology are provided in this excerpt.",
+      "evidence_source": "Text content provided in the extraction request.",
+      "warning": "This appears to be an introductory or theoretical section with minimal empirical data. Most study-level variables cannot be extracted from this brief passage."
+    },
+    "_pass_type": "text_only"
+  }
+]

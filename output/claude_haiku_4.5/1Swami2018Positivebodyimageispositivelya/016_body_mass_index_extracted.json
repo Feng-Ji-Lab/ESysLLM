@@ -1,0 +1,99 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information is provided in this section.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes BMI assessment methodology but does not specify whether the survey was conducted via paper-and-pencil or online.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information about race/ethnicity is provided in this section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in this section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While the section describes how BMI was computed from self-reported height and weight, no mean BMI value is reported.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about where or how participants were recruited is provided in this section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section focuses on BMI assessment methodology and does not mention body appreciation assessment instruments.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "The section explicitly states: 'Participants self-reported their height and weight on open-ended items' and 'self-reported BMI was subsequently computed as kg/m^2'. The text also notes that 'Self-reported height and weight data are strongly correlated with measured data', confirming that self-reported assessment was used.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes BMI assessment methodology and does not report any correlations between body appreciation and BMI.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section does not provide information about the number of studies. It appears to be a methods section describing BMI assessment for a single study, but the study number is not explicitly stated.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the methodology for assessing body mass index (BMI) in the study. Participants self-reported their height and weight on open-ended items, which were then standardized and used to compute BMI as kg/m\u00b2. Improbable BMI values (< 12 or > 50 kg/m\u00b2) representing less than 4.0% of the dataset were replaced using mean replacement method. The section notes that self-reported height and weight data are strongly correlated with measured data and can be reliably used in population studies.",
+      "evidence_source": "Entire section content",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

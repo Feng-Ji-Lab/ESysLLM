@@ -1,0 +1,89 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text only contains header information ('NON SOLUS', 'ELSEVIER', 'Contents lists available at ScienceDirect') with no substantive content about study location.",
+      "warning": "Insufficient content to extract country information. This appears to be a journal header/navigation page rather than actual study content."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No participant sample information is present in the provided text.",
+      "warning": "No sample data available."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey methodology information is present in the provided text.",
+      "warning": "No survey method data available."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information about racial/ethnic composition is present in the provided text.",
+      "warning": "No demographic data available."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No participant age information is present in the provided text.",
+      "warning": "No age data available."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No educational attainment information is present in the provided text.",
+      "warning": "No education data available."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI data is present in the provided text.",
+      "warning": "No BMI data available."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample recruitment source is present in the provided text.",
+      "warning": "No sample source data available."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about body appreciation assessment instruments is present in the provided text.",
+      "warning": "No body appreciation assessment data available."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about BMI assessment methodology is present in the provided text.",
+      "warning": "No BMI assessment data available."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation data is present in the provided text.",
+      "warning": "No correlation data available."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only journal header/navigation information with no study content.",
+      "warning": "Cannot determine number of studies from this content."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "While the text indicates this is from ELSEVIER (a publisher), there is insufficient content to determine if this is a journal article or dissertation.",
+      "warning": "Publication type cannot be reliably determined from header information alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "The provided text contains only journal header and navigation information ('NON SOLUS', 'ELSEVIER', 'Contents lists available at ScienceDirect') with no substantive study content. This appears to be a cover page or navigation section rather than actual research methodology or results.",
+      "evidence_source": "Full text provided",
+      "warning": "This section does not contain extractable study data. Please provide the actual study methodology or results section."
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or region is stated in the provided text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"Height and weight were used to calculate body mass index (available for 150 participants).\" and \"Two weeks after the experimental session, participants were emailed a link to an online survey and provided their trait measures via this portal (n = 130).\" These are subsample counts but the total sample size for the study is not explicitly stated.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "online"
+        ]
+      },
+      "evidence_source": "\"Two weeks after the experimental session, participants were emailed a link to an online survey and provided their trait measures via this portal (n = 130).\"",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"Participants reported their age, ethnicity, height, and weight.\" No percentages or breakdowns by ethnicity are provided in the text.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"Participants reported their age, ethnicity, height, and weight.\" The text does not report a mean age.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information on participants' education level or statements (e.g., 'undergraduate students') is provided in the section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"Height and weight were used to calculate body mass index (available for 150 participants).\" No mean BMI value is reported.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not state the source of the sample (e.g., community, college, primary/secondary/high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes measures of body anxiety (PASTAS) and exercise regulation (BREQ-2) but does not mention assessment of Body Appreciation (BAS or BAS-2). Example: \"The Physical Appearance State Trait Anxiety Scale (PASTAS, Reed et al., 1991) was used to measure body anxiety.\"",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "\"Participants reported their age, ethnicity, height, and weight. Height and weight were used to calculate body mass index (available for 150 participants).\"",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation between body appreciation and BMI is reported in the provided text; body appreciation (BAS/BAS-2) is not measured here.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section describes a single experimental session with post-test measures and a two-week follow-up (\"Two weeks after the experimental session, participants were emailed a link to an online survey...\"). No multiple distinct studies or numbered studies (e.g., 'Study 1') are indicated.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided section does not state the publication type (e.g., journal article or dissertation).",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes post-test and two-week follow-up measures for a single experimental session (no explicit 'Study 1' label). State measures collected after the manipulation included a modified I-PANAS-SF with a guilt item, PASTAS for body anxiety, and an adapted BREQ-2 introjected regulation subscale; height and weight were self-reported and BMI was calculated (available for 150 participants). Trait measures were collected online two weeks later (n = 130).",
+      "evidence_source": "\"4.1.2.3.2. Post-test guilt...\"; \"The Physical Appearance State Trait Anxiety Scale (PASTAS, Reed et al., 1991) was used to measure body anxiety.\"; \"Participants reported their age, ethnicity, height, and weight. Height and weight were used to calculate body mass index (available for 150 participants).\"; \"Two weeks after the experimental session, participants were emailed a link to an online survey and provided their trait measures via this portal (n = 130).\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

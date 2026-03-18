@@ -1,0 +1,140 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country is mentioned in the text. The text describes measures and instruments used but does not specify where the study was conducted.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes measures and instruments but does not provide the total number of participants in the study. The phrase 'for the current sample' is used multiple times but no sample size is stated.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not describe the survey method (paper-and-pencil or online). It only describes the measures and instruments used.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information about race/ethnicity is provided in this text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in this text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in this text. While the text references 'U.S. college women' and 'U.S. college students' as validation samples for the instruments, it does not specify the education level of the current sample.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          23.1
+        ]
+      },
+      "evidence_source": "From the Body Mass Index (BMI) section: 'This information was converted to metric units and BMI was calculated (kg/m^2; M = 23.1, SD = 4.8).' The mean BMI is explicitly stated as 23.1.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            23.1
+          ]
+        }
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify where participants were recruited (community, college, or primary/secondary/high school). While the text references validation studies conducted with 'U.S. college women' and 'U.S. college students', it does not state the source of the current sample.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "From the Body appreciation section: 'We used the 13-item Body Appreciation Scale (BAS; Avalos et al., 2005) to measure the extent to which participants appreciate, accept, respect, and take care of their body regardless of its flaws and inconsistency with media ideals.' The BAS (not BAS-2) was used.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "From the Body Mass Index (BMI) section: 'Participants reported their weight and height.' This indicates self-reported measurement, not measured/objective assessment.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes the measures used (BAS for body appreciation and self-reported BMI) but does not report any correlation coefficient between body appreciation and BMI. This section is about measurement instruments, not results.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text is a measures section describing instruments used in a study. It does not explicitly state the number of studies. The phrase 'for the current sample' suggests a single study, but the text does not explicitly label it as 'Study 1' or provide a count of studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text does not indicate whether this is from a journal article or dissertation. It is only a measures section without publication context.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the measures and instruments used in the study. It details seven measurement tools: the Body Appreciation Scale (BAS) to assess body appreciation, the Caregiver Eating Messages Scale (CEMS) to measure perceived eating-related messages from caregivers, the Experiences in Close Relationships Scale (ECRS) for adult attachment, the Almost Perfect Scale-Revised (APS-R) for perfectionism, the Beck Depression Inventory-II (BDI-II) for depressive symptoms, the Intuitive Eating Scale (IES) for intuitive eating, and self-reported weight and height for BMI calculation (M = 23.1, SD = 4.8). No explicit study numbering is provided, suggesting a single study context.",
+      "evidence_source": "Entire 'Measures' section provided in the text content."
+    },
+    "_pass_type": "text_only"
+  }
+]

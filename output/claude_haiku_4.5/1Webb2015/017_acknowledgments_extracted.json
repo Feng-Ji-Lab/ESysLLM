@@ -1,0 +1,89 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgments section does not contain information about the country where the study was conducted. It mentions UNC Charlotte, North Carolina A&T State University, and North Carolina Central University, which are all in the United States, but this is an Acknowledgments section that does not explicitly state study methodology or location.",
+      "warning": "This is an Acknowledgments section, not a Methods or Results section. No study-level data is present in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgments section does not contain sample size information.",
+      "warning": "This is an Acknowledgments section, not a Methods or Results section. No participant data is present."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgments section does not contain information about survey methodology.",
+      "warning": "This is an Acknowledgments section, not a Methods section. No methodological details are present."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgments section does not contain demographic information about participants.",
+      "warning": "This is an Acknowledgments section, not a Results or Methods section. No demographic data is present."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgments section does not contain participant age information.",
+      "warning": "This is an Acknowledgments section, not a Results or Methods section. No demographic data is present."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgments section does not contain information about participant education levels.",
+      "warning": "This is an Acknowledgments section, not a Methods or Results section. No demographic data is present."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgments section does not contain BMI data.",
+      "warning": "This is an Acknowledgments section, not a Results section. No health metrics are present."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgments section does not contain information about sample recruitment sources. While it mentions 'facilitating participant recruitment for this study,' it does not specify whether participants were from college, community, or school settings.",
+      "warning": "This is an Acknowledgments section, not a Methods section. No recruitment methodology is detailed."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgments section does not contain information about body appreciation assessment instruments.",
+      "warning": "This is an Acknowledgments section, not a Methods section. No assessment tools are mentioned."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgments section does not contain information about BMI assessment methods.",
+      "warning": "This is an Acknowledgments section, not a Methods section. No assessment methodology is present."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgments section does not contain statistical results or correlation data.",
+      "warning": "This is an Acknowledgments section, not a Results section. No statistical findings are present."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgments section does not provide information about the number of studies conducted. No explicit mention of 'Study 1', 'Study 2', 'Experiment 1', etc. is present.",
+      "warning": "This is an Acknowledgments section. Study count information is typically found in the Methods or Results sections."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgments section does not explicitly state whether this is a journal article or dissertation. While the mention of grant funding and manuscript submission suggests a journal article, this cannot be definitively determined from the Acknowledgments section alone.",
+      "warning": "Publication type cannot be reliably inferred from an Acknowledgments section. This information is typically found on the title page or in the header/footer of the document."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This is an Acknowledgments section that credits funding from the National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) and thanks research team members and collaborators at UNC Charlotte, North Carolina A&T State University, and North Carolina Central University. The section also acknowledges assistance with participant recruitment from the Undergraduate Admissions Office at UNC Charlotte. No study-level data, methodology, or results are present in this section.",
+      "evidence_source": "Entire Acknowledgments section",
+      "warning": "This section contains no extractable study-level data. All requested fields should return 'None' as this is an Acknowledgments section, not a Methods, Results, or Participants section."
+    },
+    "_pass_type": "text_only"
+  }
+]

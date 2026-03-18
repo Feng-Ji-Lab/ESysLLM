@@ -1,0 +1,107 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is provided in the abstract text.",
+      "warning": "Country not specified in the provided abstract."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          369
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            369
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            369
+          ]
+        }
+      },
+      "evidence_source": "Abstract states: 'in a sample of 369 women'",
+      "warning": "Sample consists entirely of women; no male or other gender participants."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method (paper-and-pencil or online) is specified in the abstract.",
+      "warning": "Survey method not specified in the provided abstract."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information is provided in the abstract.",
+      "warning": "Percent of white participants not specified in the provided abstract."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in the abstract.",
+      "warning": "Mean age of participants not specified in the provided abstract."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in the abstract.",
+      "warning": "Percentage of college or higher education not specified in the provided abstract."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI value is provided in the abstract. The abstract mentions 'controlling the effect of BMI' but does not report the actual mean BMI.",
+      "warning": "Mean BMI of participants not specified in the provided abstract."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about where or how participants were recruited is provided in the abstract.",
+      "warning": "Source of sample not specified in the provided abstract."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract mentions 'body appreciation' as a key variable but does not specify which instrument (BAS or BAS-2) was used to assess it.",
+      "warning": "Specific assessment instrument for body appreciation not specified in the provided abstract."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported or measured) is provided in the abstract.",
+      "warning": "BMI assessment method not specified in the provided abstract."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficient between body appreciation and BMI is reported in the abstract.",
+      "warning": "Correlation between body appreciation and BMI not specified in the provided abstract."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The abstract describes a single study with one sample of 369 women. No multiple studies or experiments are mentioned.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The publication type (journal article or dissertation) cannot be determined from the abstract alone.",
+      "warning": "Publication type not specified in the provided abstract."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This abstract describes a single study examining the relationship between body image discrepancy and disordered eating in a sample of 369 women. The study investigates the distinct roles of cognitive fusion and body appreciation as mediating factors, while controlling for BMI. Results indicate that body image discrepancy predicts disordered eating, with this effect partially mediated by cognitive fusion and body appreciation.",
+      "evidence_source": "Abstract text",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

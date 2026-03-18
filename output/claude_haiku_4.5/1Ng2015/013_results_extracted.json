@@ -1,0 +1,531 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this Results section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          2393
+        ]
+      },
+      "evidence_source": "The text states 'N = 2393' multiple times throughout the Results section, indicating the total sample size for this study.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            2393
+          ]
+        }
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about survey method (paper-and-pencil or online) is provided in this Results section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information about racial/ethnic composition is provided in this Results section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in this Results section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No educational attainment information is provided in this Results section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While BMI is discussed in correlational analyses, no mean BMI value for the overall sample is reported in this Results section.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about where or how participants were recruited is provided in this Results section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly references 'the BAS' (Body Appreciation Scale) and discusses items from the BAS throughout the Results section. The text states 'we examined the factorial validity of the one-dimensional model proposed by Avalos et al. (2005)' and discusses 'items of the BAS' and 'items (#1, 7, 11, and 12)' which are BAS items.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Results section discusses correlations with BMI but does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.32,
+          -0.02
+        ]
+      },
+      "evidence_source": "The text reports: 'Among women, General Body Appreciation was significantly and negatively correlated with BMI, r = \u2212.32, p < .001' and 'Among men, General Body Appreciation was significantly and positively correlated with self-esteem, r = .36, p < .001, but was not significantly correlated with BMI, r = \u2212.02, p = .468.' The correlation for women is -0.32 and for men is -0.02.",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.32
+          ]
+        },
+        "male": {
+          "Study X": [
+            -0.02
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      },
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "This Results section describes a single study with one sample (N = 2393) analyzed across gender groups. No multiple studies or experiments are explicitly named or described.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The publication type (journal article or dissertation) is not indicated in this Results section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Results section presents factorial validity testing of the Body Appreciation Scale (BAS) using a sample of N = 2393 participants. The authors tested multiple models and found that a two-dimensional model with four items removed (#1, 7, 11, and 12) provided the best fit. Gender-specific analyses revealed that General Body Appreciation was significantly and negatively correlated with BMI among women (r = \u2212.32, p < .001) but not significantly correlated with BMI among men (r = \u2212.02, p = .468), though a weak curvilinear relationship with BMI\u00b2 was found in the male sample.",
+      "evidence_source": "Entire Results section"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the study was conducted. No geographic location is mentioned in the provided section.",
+      "warning": "Country information not available in the provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          2393
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            1319
+          ]
+        },
+        "male": {
+          "Study X": [
+            1074
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            2393
+          ]
+        }
+      },
+      "evidence_source": "Table 1 shows 'Men (n = 1074)' and 'Women (n = 1319)'. Total sample size is stated in the text as 'N = 2393' in multiple places (e.g., '-2(63, N = 2393)' and '-2(62, N = 2393)').",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether data collection was conducted via paper-and-pencil or online survey methods.",
+      "warning": "Survey method not specified in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report the racial/ethnic composition of participants.",
+      "warning": "Racial/ethnic demographic information not available in the provided text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report the mean age of participants.",
+      "warning": "Mean age information not available in the provided text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report the educational attainment of participants.",
+      "warning": "Educational attainment information not available in the provided text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report the mean BMI of participants. While BMI is mentioned as a variable in correlational analyses, no mean BMI values are provided.",
+      "warning": "Mean BMI values not reported in the provided text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether participants were recruited from community, college, or primary/secondary/high school settings.",
+      "warning": "Sample source information not available in the provided text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly references 'the one-dimensional model proposed by Avalos et al. (2005)' and discusses 'all items of the BAS' and later mentions 'the General Body Appreciation factor' derived from the BAS. The instrument is identified as the Body Appreciation Scale (BAS).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether BMI was assessed via self-report or measured directly. BMI is mentioned as a variable in analyses but the assessment method is not described.",
+      "warning": "BMI assessment method not specified in the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.32,
+          -0.02
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.32
+          ]
+        },
+        "male": {
+          "Study X": [
+            -0.02
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text states: 'Among women, General Body Appreciation was significantly and negatively correlated with BMI, r = \u2212.32, p < .001' and 'Among men, General Body Appreciation was significantly and positively correlated with self-esteem, r = .36, p < .001, but was not significantly correlated with BMI, r = \u2212.02, p = .468.' These are the correlations between Body Appreciation (General Body Appreciation factor from the BAS) and BMI, reported separately by gender.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text describes a single study with multiple analyses (examining different factorial models of the BAS and testing for invariance across sex). No explicit mention of 'Study 1', 'Study 2', or multiple separate studies is present. This appears to be one study with one sample (N = 2393) analyzed by gender subgroups.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly state whether this is from a journal article or dissertation. The format suggests it is from a research paper, but the publication type cannot be definitively determined from the provided excerpt.",
+      "warning": "Publication type not explicitly stated in the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents results from a single study examining the factorial validity of the Body Appreciation Scale (BAS) across 2,393 participants (1,074 men and 1,319 women). The researchers tested multiple confirmatory factor models and found that a two-dimensional model with four items removed provided the best fit. Multiple-group analysis confirmed that the model structure was invariant across sex. General Body Appreciation scores were significantly negatively correlated with BMI among women (r = \u2212.32) but not significantly correlated with BMI among men (r = \u2212.02).",
+      "evidence_source": "Synthesized from the entire Results section provided.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1: Best-fitting two-factor model across participant sex.",
+      "evidence_source": "The table caption is explicitly provided at the top of the table image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Ng2015/tables/1Ng2015_p004_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the study was conducted. While the paper references multiple studies (Swami, Campana, et al., 2011; Swami & Jaafar, 2012; Swami, Mada, et al., 2012; Taylor et al., 2013), the current section does not specify the country for the data being analyzed.",
+      "warning": "Country information not provided in the text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          2393
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            2393
+          ]
+        }
+      },
+      "evidence_source": "The text states '\u03c7\u00b2(63, N = 2393)' and '\u03c7\u00b2(62, N = 2393)' and '\u03c7\u00b2(41, N = 2393)' and '\u03c7\u00b2(25, N = 2393)', indicating a total sample size of N = 2393 participants. Gender-specific sample sizes are not provided in this section.",
+      "warning": "Gender-specific sample sizes not reported."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not describe the survey method (paper-and-pencil or online) used to collect data.",
+      "warning": "Survey method not specified in the text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the racial/ethnic composition of participants.",
+      "warning": "Racial/ethnic composition not reported."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not report the mean age of participants.",
+      "warning": "Mean age not provided."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the educational level of participants.",
+      "warning": "Educational attainment not reported."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not report the mean BMI of participants. While BMI is mentioned as a variable correlated with General Body Appreciation, no mean BMI value is provided.",
+      "warning": "Mean BMI not reported in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether participants were recruited from community, college, or primary/secondary/high school settings.",
+      "warning": "Source of sample not specified."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text references 'the one-dimensional model proposed by Avalos et al. (2005)' and discusses the Body Appreciation Scale (BAS). The figure caption states 'GBA = General Body Appreciation' and the text mentions 'items of the BAS', confirming use of the BAS instrument. The text does not indicate use of BAS-2.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether BMI was self-reported or measured. BMI is mentioned as a variable in correlational analyses, but the assessment method is not described.",
+      "warning": "BMI assessment method not specified."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.32,
+          -0.02
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.32
+          ]
+        },
+        "male": {
+          "Study X": [
+            -0.02
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text explicitly states: 'Among women, General Body Appreciation was significantly and negatively correlated with BMI, r = \u2212.32, p < .001' and 'Among men, General Body Appreciation was significantly and positively correlated with self-esteem, r = .36, p < .001, but was not significantly correlated with BMI, r = \u2212.02, p = .468.' These are gender-specific correlations between General Body Appreciation (the body appreciation measure) and BMI.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with N = 2393 participants. While the figure caption references multiple prior studies (Swami, Campana, et al., 2011; Swami & Jaafar, 2012; Swami, Mada, et al., 2012; Taylor et al., 2013), the current results section reports on one combined dataset from these studies, not separate studies.",
+      "warning": "The figure caption indicates this analysis combines data from multiple prior studies, but the current section presents results from a single combined analysis."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state whether this is a journal article or dissertation. The journal reference 'Body Image 13 (2015) 1\u20138' at the top suggests this is a journal article, but this is inferred from the header rather than explicitly stated in the provided text.",
+      "warning": "Publication type inferred from journal header but not explicitly stated in the text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Results section presents confirmatory factor analysis (CFA) findings for the Body Appreciation Scale (BAS) across a combined sample of N = 2393 participants. The analysis tested multiple factorial models, ultimately identifying a two-dimensional model (General Body Appreciation and Body Image Investment) with four items removed (#1, 7, 11, and 12) as providing the best fit. Gender-specific correlations revealed that General Body Appreciation was significantly negatively correlated with BMI among women (r = \u2212.32) but not significantly correlated with BMI among men (r = \u2212.02), though a weak curvilinear relationship with BMI\u00b2 was found in the male sample.",
+      "evidence_source": "Entire Results section provided in text_content.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Fig. 2. Confirmatory factor analysis for the two-dimensional model with all items included (Swami, Campana, et al., 2011; Swami & Jaafar, 2012; Swami, Mada, et al., 2012; Taylor et al., 2013). Note: GBA = General Body Appreciation; BII = Body Image Investment.",
+      "evidence_source": "Figure caption as it appears in the provided image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Ng2015/figures/1Ng2015_p003_fig00.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_1"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the study was conducted. No geographic location is mentioned in the provided section.",
+      "warning": "Country information is not provided in the text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          2393
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            2393
+          ]
+        }
+      },
+      "evidence_source": "The text states 'N = 2393' multiple times when describing the confirmatory factor analysis models. This appears to be the total sample size for the study.",
+      "warning": "Gender-specific sample sizes are not provided in the text."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether the survey was administered via paper-and-pencil or online methods.",
+      "warning": "Survey method is not stated in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the racial/ethnic composition of participants.",
+      "warning": "Racial/ethnic demographic data is not provided."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not report the mean age of participants.",
+      "warning": "Mean age information is not provided in the text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the educational level of participants.",
+      "warning": "Educational attainment data is not provided."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not report the mean BMI of the overall sample. While BMI is mentioned as a variable correlated with body appreciation, no mean BMI value is provided.",
+      "warning": "Mean BMI is not reported in the provided text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether participants were recruited from a community, college, or primary/secondary/high school setting.",
+      "warning": "Source of sample is not stated in the provided text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly references 'the Body Appreciation Scale (BAS)' and discusses the one-dimensional model proposed by Avalos et al. (2005). The figure caption states 'Confirmatory factor analysis for the one-dimensional model of the Body Appreciation Scale (Avalos et al., 2005).' The study examines the factorial validity of the BAS.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether BMI was self-reported or measured. BMI is mentioned as a variable in correlational analyses, but the method of assessment is not stated.",
+      "warning": "BMI assessment method is not specified in the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.32,
+          -0.02
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.32
+          ]
+        },
+        "male": {
+          "Study X": [
+            -0.02
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text states: 'Among women, General Body Appreciation was significantly and negatively correlated with BMI, r = \u2212.32, p < .001' and 'Among men, General Body Appreciation was significantly and positively correlated with self-esteem, r = .36, p < .001, but was not significantly correlated with BMI, r = \u2212.02, p = .468.' These are the correlations between the General Body Appreciation factor (derived from the BAS) and BMI, reported separately by gender.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with one sample (N = 2393) that underwent various confirmatory factor analyses. No multiple studies or experiments are explicitly labeled or described.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not indicate whether this is from a journal article or dissertation. The header shows 'S.-K. Ng et al. / Body Ima' which suggests a journal article format, but this cannot be definitively confirmed from the text alone.",
+      "warning": "Publication type cannot be definitively determined from the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents the results of confirmatory factor analyses examining the factorial validity of the Body Appreciation Scale (BAS) in a sample of 2,393 participants. The study tested multiple models, ultimately finding that a two-dimensional model with four items removed (#1, 7, 11, and 12) provided the best fit. The analysis revealed that General Body Appreciation was significantly and negatively correlated with BMI among women (r = \u2212.32) but not significantly correlated with BMI among men (r = \u2212.02), though a weak curvilinear relationship with BMI\u00b2 was found in the male sample.",
+      "evidence_source": "Summary derived from the entire Results section provided.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Fig. 1. Confirmatory factor analysis for the one-dimensional model of the Body Appreciation Scale (Avalos et al., 2005).",
+      "evidence_source": "The caption appears directly below the figure showing the path diagram with 13 items loading onto the BAS construct.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Ng2015/figures/1Ng2015_p003_fig01.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_2"
+  }
+]

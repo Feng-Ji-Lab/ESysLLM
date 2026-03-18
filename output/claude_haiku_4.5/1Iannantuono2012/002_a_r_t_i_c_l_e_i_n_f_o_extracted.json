@@ -1,0 +1,221 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text only contains journal header information ('article info', 'journal homepage: www.elsevier.com/locate/bodyimage') with no country information stated.",
+      "warning": "No country data available in the provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text contains only journal header information with no sample size data.",
+      "warning": "No sample size information available in the provided text."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only journal header information with no survey method details.",
+      "warning": "No survey method information available in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text contains only journal header information with no demographic data.",
+      "warning": "No racial/ethnic demographic information available in the provided text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text contains only journal header information with no participant age data.",
+      "warning": "No age information available in the provided text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text contains only journal header information with no education level data.",
+      "warning": "No education level information available in the provided text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text contains only journal header information with no BMI data.",
+      "warning": "No BMI information available in the provided text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only journal header information with no sample source information.",
+      "warning": "No sample source information available in the provided text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only journal header information with no assessment instrument details.",
+      "warning": "No body appreciation assessment information available in the provided text."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only journal header information with no BMI assessment method details.",
+      "warning": "No BMI assessment method information available in the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text contains only journal header information with no correlation data.",
+      "warning": "No correlation data available in the provided text."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only journal header information with no study count information.",
+      "warning": "Cannot determine number of studies from journal header information alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text indicates this is from a journal (www.elsevier.com/locate/bodyimage), suggesting 'journal articles', but the text is insufficient to confirm publication type with certainty.",
+      "warning": "Publication type cannot be definitively determined from journal header information alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "The provided text contains only journal header information ('article info' and 'journal homepage: www.elsevier.com/locate/bodyimage') with no substantive study content. No study details, participant information, or research findings are available in this section.",
+      "evidence_source": "Text content: 'a r t i c l e i n f o j ou rnal homepa ge: www.elsevier.com/locate/bodyimage'",
+      "warning": "This appears to be a journal header/metadata section only, not the actual study content. Full extraction requires the actual article text, abstract, methods, and results sections."
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text only shows a journal header page with 'www.elsevier.com/locate/bodyimage' and does not contain any information about the country where the study was conducted.",
+      "warning": "No country information available in the provided text or image."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only a journal header page and does not contain sample size information.",
+      "warning": "No sample size data available in the provided text or image."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only a journal header page and does not contain information about survey methodology.",
+      "warning": "No survey method information available in the provided text or image."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only a journal header page and does not contain demographic information about participants.",
+      "warning": "No demographic data available in the provided text or image."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only a journal header page and does not contain participant age information.",
+      "warning": "No age data available in the provided text or image."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only a journal header page and does not contain educational background information.",
+      "warning": "No education data available in the provided text or image."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only a journal header page and does not contain BMI information.",
+      "warning": "No BMI data available in the provided text or image."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only a journal header page and does not contain information about sample source.",
+      "warning": "No sample source information available in the provided text or image."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only a journal header page and does not contain information about body appreciation assessment instruments.",
+      "warning": "No body appreciation assessment data available in the provided text or image."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only a journal header page and does not contain information about BMI assessment methods.",
+      "warning": "No BMI assessment method information available in the provided text or image."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only a journal header page and does not contain correlation data.",
+      "warning": "No correlation data available in the provided text or image."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only a journal header page and does not indicate the number of studies.",
+      "warning": "Cannot determine number of studies from header page alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "journal articles",
+      "evidence_source": "The header indicates this is from a journal (Elsevier journal with URL www.elsevier.com/locate/bodyimage), indicating this is a journal article publication.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This is a journal header page from an Elsevier publication in the Body Image journal. No substantive study data, participant information, or research findings are present on this page.",
+      "evidence_source": "The provided text shows only 'a r t i c l e i n f o' and 'j ou rnal homepa ge: www.elsevier.com/locate/bodyimage' along with the Elsevier logo.",
+      "warning": "This is a cover/header page only; no actual study data is available for extraction."
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Elsevier Journal Logo and Header",
+      "evidence_source": "The image shows the Elsevier tree logo with the word 'ELSEVIER' in orange text, which is the standard header/branding for Elsevier publications.",
+      "warning": "This is a generic journal header image, not a study-specific table or figure with a research caption."
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Iannantuono2012/figures/1Iannantuono2012_p000_fig01.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_0"
+  }
+]

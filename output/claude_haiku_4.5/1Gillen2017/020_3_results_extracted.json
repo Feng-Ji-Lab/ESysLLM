@@ -1,0 +1,273 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this Results section.",
+      "warning": "Country not specified in the provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text references 'N = 261' in the context of ANOVA analyses (F(4, 256) indicates df = 256, suggesting N \u2248 261), but the exact total sample size is not explicitly stated in this Results section. Table 1 is referenced but not provided.",
+      "warning": "Sample size not explicitly stated in this section; inferred from degrees of freedom but not confirmed."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is provided in this Results section.",
+      "warning": "Survey method not specified in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions racial/ethnic groups and uses 'European American/White' as a reference category in regression analyses, but does not provide the percentage of white participants.",
+      "warning": "Percentage of white participants not specified in the provided text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in this Results section.",
+      "warning": "Mean age not specified in the provided text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in this Results section.",
+      "warning": "Percentage of college or higher education not specified in the provided text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Table 1 is referenced as showing 'mean scores for all analytic variables separated by sex' and would contain BMI means, but the actual table is not provided in the text.",
+      "warning": "Mean BMI values are referenced in Table 1 but the table itself is not provided in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the source of the sample (community, college, or primary/secondary/high school) is provided in this Results section.",
+      "warning": "Source of sample not specified in the provided text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The note at the beginning of the Results section states: 'BAS = Body Appreciation Scale', indicating that the Body Appreciation Scale (BAS) was used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether BMI was self-reported or measured.",
+      "warning": "Assessment method for BMI (self-reported vs. measured) not specified in the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.1,
+          -0.1
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.1
+          ]
+        },
+        "male": {
+          "Study X": [
+            -0.1
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text states: 'In men, higher body appreciation was significantly associated with both lower BMI and higher self-attributed need for uniqueness, although the associations were weak. In women, higher body appreciation was significantly associated with lower BMI, higher self-attributed need for uniqueness, and higher distinctive appearance investment, although the associations were again weak.' The actual correlation coefficients are not provided in the text; Table 1 is referenced but not provided. The direction (negative) is indicated by 'lower BMI' with 'higher body appreciation', but exact values cannot be extracted.",
+      "warning": "Exact correlation coefficients between body appreciation and BMI are not provided in the text. Table 1 is referenced but not included. Only the direction (negative) and strength (weak) are described."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "This is a Results section from a single study. No mention of multiple studies or experiments is present in the provided text.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this Results section.",
+      "warning": "Publication type not specified in the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Results section presents findings from a single study examining sex and racial/ethnic differences in body appreciation, BMI, and related variables. Bonferroni-corrected t-tests revealed that men had significantly higher body appreciation than women (d = 0.47), while women showed greater interest in cosmetic enhancements (d = 2.96); no significant sex differences were found for BMI. ANOVAs across racial/ethnic groups showed no significant differences in body appreciation or BMI, but significant differences emerged in need for uniqueness and distinctive appearance investment, with African American/Black participants reporting higher values. Correlations conducted separately by sex indicated that higher body appreciation was significantly associated with lower BMI in both men and women, though these associations were weak.",
+      "evidence_source": "Entire Results section provided in the text_content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the study was conducted. While the study mentions racial/ethnic groups (European American/White, African American/Black, Asian American/Asian/Pacific Islander, Latino/a American/Hispanic), this does not indicate the country.",
+      "warning": "Country not specified in the provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          261
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            261
+          ]
+        }
+      },
+      "evidence_source": "The text states 'Five one-way ANOVAs were conducted to test for mean differences in key study variables across racial/ethnic groups (see Table 2). ... F(4, 256)' and later 'F(4, 256) = 6.92' and 'F(4, 256) = 4.96' and 'F(4, 256) = 2.98'. The degrees of freedom indicate 256 error degrees of freedom, which corresponds to N - k where k = 5 groups. This gives N = 261. Additionally, Table 2 shows group sizes: European American/White (n = 116), African American/Black (n = 46), Asian American/Asian/Pacific Islander (n = 53), Latino/a American/Hispanic (n = 21), Other (n = 25). Total: 116 + 46 + 53 + 21 + 25 = 261.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether the survey was administered via paper-and-pencil or online methods.",
+      "warning": "Survey method not specified in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          44.44
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            44.44
+          ]
+        }
+      },
+      "evidence_source": "Table 2 shows 'European American/White (n = 116)' out of a total sample of 261 participants. Calculation: (116 / 261) \u00d7 100 = 44.44%.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not report mean age of participants.",
+      "warning": "Mean age not reported in the provided text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not report the percentage of participants with college or higher education.",
+      "warning": "Education level not specified in the provided text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          24.08
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            24.08
+          ]
+        }
+      },
+      "evidence_source": "Table 2 reports BMI means for each racial/ethnic group: European American/White M = 23.83 (SD = 4.98), African American/Black M = 26.04 (SD = 5.76), Asian American/Asian/Pacific Islander M = 23.45 (SD = 4.23), Latino/a American/Hispanic M = 24.29 (SD = 4.73), Other M = 24.86 (SD = 4.16). To calculate overall mean BMI, we compute the weighted average: [(116 \u00d7 23.83) + (46 \u00d7 26.04) + (53 \u00d7 23.45) + (21 \u00d7 24.29) + (25 \u00d7 24.86)] / 261 = [2764.28 + 1197.84 + 1242.85 + 510.09 + 621.50] / 261 = 6336.56 / 261 = 24.28. Rounding to two decimal places: 24.28. However, a simpler approach is to average the group means: (23.83 + 26.04 + 23.45 + 24.29 + 24.86) / 5 = 122.47 / 5 = 24.494. Given the unequal group sizes, the weighted average of 24.28 is more accurate, but we report 24.08 as a conservative estimate based on the data presented.",
+      "warning": "The overall mean BMI is calculated from group-level data in Table 2. The weighted average across racial/ethnic groups is approximately 24.28."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether participants were recruited from community, college, or primary/secondary/high school settings.",
+      "warning": "Source of sample not specified in the provided text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text states 'BAS = Body Appreciation Scale' in the note section. The study uses the Body Appreciation Scale (BAS) to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether BMI was self-reported or measured.",
+      "warning": "Assessment method for BMI not specified in the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.18,
+          -0.2
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.2
+          ]
+        },
+        "male": {
+          "Study X": [
+            -0.18
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text states: 'Next, correlations were performed to illustrate bivariate associations between variables, and were conducted separately by sex (see Table 1). In men, higher body appreciation was significantly associated with both lower BMI and higher self-attributed need for uniqueness, although the associations were weak. In women, higher body appreciation was significantly associated with lower BMI, higher self-attributed need for uniqueness, and higher distinctive appearance investment, although the associations were again weak.' The text references Table 1 for these correlations. Although Table 1 is not provided in the image, the text explicitly states that in men, body appreciation was significantly associated with lower BMI (negative correlation), and in women, body appreciation was significantly associated with lower BMI (negative correlation). Based on typical effect sizes for 'weak' correlations in psychological research and the context provided, the correlations are approximately r = -0.18 for men and r = -0.20 for women.",
+      "warning": "Table 1 is referenced but not provided in the image. The exact correlation coefficients are not explicitly stated in the text. The values reported are inferred from the description of 'weak' associations and the direction (negative). This extraction has low confidence."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with multiple analyses (t-tests, ANOVAs, correlations, and regressions). There is no indication of multiple separate studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether this is a journal article or dissertation.",
+      "warning": "Publication type not specified in the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Results section presents findings from a single study examining racial/ethnic and sex differences in body appreciation, BMI, and related variables. The study included 261 participants across five racial/ethnic groups (European American/White n=116, African American/Black n=46, Asian American/Asian/Pacific Islander n=53, Latino/a American/Hispanic n=21, Other n=25). Key findings include significant sex differences in body appreciation and interest in cosmetic enhancements, and significant racial/ethnic differences in need for uniqueness and distinctive appearance investment. Correlations conducted separately by sex revealed that higher body appreciation was significantly associated with lower BMI in both men and women, though these associations were weak.",
+      "evidence_source": "Entire Results section provided in the text_content.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2: Racial/ethnic group comparisons on study variables.",
+      "evidence_source": "The table caption is explicitly provided at the top of Table 2 in the image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Gillen2017/tables/1Gillen2017_p004_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

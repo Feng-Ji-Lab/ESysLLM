@@ -1,0 +1,92 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a Materials section describing measurement instruments (ACSS, PFRS, BAS, SATAQ-3). It does not describe any specific study or sample, and does not mention where any study was conducted.",
+      "warning": "This is a methods/materials section describing instruments, not a study results section. No country information is provided."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a Materials section describing measurement instruments. It does not report sample sizes for any study.",
+      "warning": "This is a methods/materials section. No sample size data is provided."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes instruments but does not specify whether data collection was conducted via paper-and-pencil or online methods.",
+      "warning": "This is a materials/instruments section. No survey method information is provided."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a Materials section describing measurement instruments. It does not report demographic information about participants.",
+      "warning": "This is a methods/materials section. No demographic data is provided."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a Materials section describing measurement instruments. It does not report participant age information.",
+      "warning": "This is a methods/materials section. No age data is provided."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a Materials section describing measurement instruments. It does not report educational attainment of participants.",
+      "warning": "This is a methods/materials section. No education data is provided."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a Materials section describing measurement instruments. It does not report BMI statistics for any sample.",
+      "warning": "This is a methods/materials section. No BMI data is provided."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a Materials section describing measurement instruments. It does not describe where or how participants were recruited.",
+      "warning": "This is a methods/materials section. No sample source information is provided."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text describes the Body Appreciation Scale (BAS; Avalos et al., 2005) as 'a 13-item measure of positive body image, in which items are rated on a 5-point scale (1 = Never, 5= Always).' This is a materials section describing instruments that may be used in studies, but the specific study context is not provided.",
+      "warning": "This is a materials/instruments section. The BAS is described as an instrument but no specific study application is mentioned. The study name is unknown, so 'Study X' is used as a placeholder."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes the Photographic Figure Rating Scale (PFRS) for measuring actual-ideal weight discrepancy, but does not describe how BMI itself was assessed (self-reported vs. measured). The PFRS measures perceived body size, not BMI directly.",
+      "warning": "The PFRS measures weight discrepancy perception, not BMI assessment method. No information on whether BMI was self-reported or measured is provided."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a Materials section describing measurement instruments. It does not report any correlations between body appreciation and BMI.",
+      "warning": "This is a methods/materials section. No correlation data is provided."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text is a Materials section describing measurement instruments used in research. It does not describe any specific studies or indicate how many studies are included in the paper.",
+      "warning": "This is a materials/instruments section. The number of studies cannot be determined from this text alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text is a Materials section from a research paper. The publication type (journal article vs. dissertation) cannot be determined from this excerpt alone.",
+      "warning": "Publication type cannot be determined from a Materials section alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Materials section describes four measurement instruments used in research on body image and cosmetic surgery attitudes: the Acceptance of Cosmetic Surgery Scale (ACSS), the Photographic Figure Rating Scale (PFRS), the Body Appreciation Scale (BAS), and the Sociocultural Attitudes Toward Appearance Questionnaire-3 (SATAQ-3). The section details the structure, scoring, and psychometric properties of each instrument, noting cross-cultural variations in factor structure for some scales. No specific study data, sample characteristics, or correlational results are provided in this section.",
+      "evidence_source": "Entire Materials section describing measurement instruments and their properties."
+    },
+    "_pass_type": "text_only"
+  }
+]

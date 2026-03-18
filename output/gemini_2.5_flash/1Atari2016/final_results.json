@@ -1,0 +1,373 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "reason": "The vast majority of candidates (1-13) consistently indicate that the paper describes a single study. Candidate [0] is irrelevant as its context refers to a platform, not the paper's content. The consistent description of 'a study' or 'the study' across various sections (introduction, methods, results, discussion) provides strong evidence for a single study."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "reason": "All candidates consistently identify the publication type as 'journal articles'. Candidates [1], [2], and [4] provide explicit evidence such as 'brief research report from a journal titled 'Body Image'', 'journal 'Body Image'', and 'article information including its publication history', which strongly support this classification. There is no conflicting information among the candidates."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        "1093"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          "568"
+        ]
+      },
+      "female": {
+        "Single study": [
+          "525"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "1093"
+        ]
+      }
+    },
+    "best_indices": [
+      1,
+      2,
+      5
+    ],
+    "reason": "The paper describes a single study as indicated by the context. Candidates 1 (Abstract) and 2 (Participants section) consistently report a total sample of 1093 participants, comprising 568 men and 525 women. Candidate 2, from the 'Participants' section, is considered the most reliable source as it directly states the recruited sample size. Candidate 5 reports a total sample of 1031, derived from a t-statistic. This value conflicts with the explicit recruitment numbers in the 'Abstract' and 'Participants' sections. Following the instruction to prefer values from 'Method' sections (which includes 'Participants') over other sections for direct sample counts, the value 1093 (568 men, 525 women) from Candidates 1 and 2 is selected as the primary sample size. The discrepancy with Candidate 5's 1031 is noted, but 1093 represents the overall recruited sample."
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Single study": []
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "The paper describes a single study. None of the provided candidates contain explicit numerical values for 'Percent of white in participants'. Candidate [1] indicates the study was conducted in Tehran, Iran, which suggests a non-white demographic, but no specific percentage is stated. Therefore, no values can be extracted for this field."
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        "25.87",
+        "26.16",
+        "25.54"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          "26.16"
+        ]
+      },
+      "female": {
+        "Single study": [
+          "25.54"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "25.87"
+        ]
+      }
+    },
+    "best_indices": [
+      1,
+      4
+    ],
+    "reason": "The paper describes a single study, as indicated by the provided context and consistent reference to 'Study X' across candidates. Candidate [1] from the 'Participants' section provides the overall mean age of participants (25.87). Candidate [4] from 'Table 2' in the 'Discussion' section provides gender-specific mean ages (Male: 26.16, Female: 25.54). These values are complementary and consistent (the weighted average of gender-specific ages is approximately 25.85, which is very close to the overall mean of 25.87). Therefore, all distinct age values are included in 'extract_value', and the gender-specific values are placed in 'extract_value_by_gender'."
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        "100"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    },
+    "best_indices": [
+      1,
+      4
+    ],
+    "reason": "The paper describes a single study. Candidates 1 (Abstract) and 4 (Discussion) both provide strong evidence that participants were drawn from a 'university population' or 'university settings'. This directly implies that 100% of the participants have college or higher education. Candidate 2 (Procedure) further supports this by mentioning 'university students'. There are no conflicting values, and the inference is consistent across reliable sections."
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        "23.69",
+        "25.17",
+        "22.07"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          "25.17"
+        ]
+      },
+      "female": {
+        "Single study": [
+          "22.07"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "23.69"
+        ]
+      }
+    },
+    "best_indices": [
+      1,
+      4
+    ],
+    "reason": "The paper describes a single study, as indicated by the context and consistent reference to 'Study X' across candidates. Candidate 1, from the 'participants' section, provides a total mean BMI of 23.69. Candidate 4, from a table in the 'discussion' section, provides gender-specific mean BMIs: 25.17 for men and 22.07 for women. These values are consistent; a weighted average of the gender-specific BMIs (using participant counts from Candidate 1's summary: 568 men, 525 women) yields approximately 23.68, which is very close to the reported total of 23.69. Following instructions to merge complementary data, all distinct mean BMI values are included in 'extract_value', and the gender-specific and total values are structured under 'extract_value_by_gender'."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        "0.12",
+        "-0.24"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          "0.12"
+        ]
+      },
+      "female": {
+        "Single study": [
+          "-0.24"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    },
+    "best_indices": [
+      3
+    ],
+    "reason": "The paper describes a single study, as indicated by the context. Candidate [3] from the 'discussion' section, referencing Table 2, provides the correlation coefficients between Body Appreciation Scale-2 (BAS-2) and BMI. The evidence clearly states the correlation for men is 0.12 and for women is -0.24. These values are directly extracted and categorized by gender. Candidates [0], [1], and [2] do not contain the requested correlation data."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "Iran"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "reason": "The context indicates that the paper describes a single study. All candidates consistently identify 'Iran' as the country where the study was conducted. There are no conflicting values or gender-specific country data to resolve. Therefore, all candidates are merged under 'Single study'."
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "college"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    },
+    "best_indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context. All reliable candidates consistently indicate that the participants were recruited from universities in Tehran, Iran. 'University' and 'college' are considered synonymous in this context. Candidates 1, 2, 3, 5, and 6 explicitly state recruitment from 'universities' or 'university students/population' and 'university settings'. Candidate 4 also implies a university setting by comparing scores 'across universities'. Candidate 0's evidence refers to author affiliation, not sample source, so it is not included in best_indices, though its inferred value is consistent."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS-2"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context and consistent references to 'the present study' across all sections. All candidates (0-12) consistently identify 'BAS-2' as the instrument used to assess Body Appreciation. No gender-specific assessment instruments were mentioned, only gender differences in scores on the BAS-2, which is not relevant for this field."
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    },
+    "best_indices": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "reason": "The paper describes a single study, so all candidates referring to 'Study X' are consolidated under 'Single study'. Candidates 0, 1, 3, and 4 consistently state that BMI was 'self-reported' through participant reports of weight and height. Candidate 2 provides no specific information regarding BMI assessment and is therefore not used for value extraction. There is no gender-specific information provided for the assessment method."
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "paper-and-pencil"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper describes a single study, as indicated by the context. Candidate [0] from the 'procedure' section explicitly states that 'participants were given the paper-and-pencil version of the survey', which is a direct and reliable source for the survey method. Candidate [1] from the discussion section does not provide any information regarding the survey method and is therefore not used."
+  }
+}

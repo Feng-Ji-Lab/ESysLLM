@@ -1,0 +1,145 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the study was conducted.",
+      "warning": "Country information is missing from the provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          253
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            253
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            253
+          ]
+        }
+      },
+      "evidence_source": "The text states: 'This cleaning process resulted in a final sample of 253 female participants.' The initial sample was 312 participants, but 59 were excluded (being male, being younger than 18 or older than 50), resulting in 253 female participants.",
+      "warning": "The sample consists exclusively of female participants; male participants were excluded by design."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "online"
+        ]
+      },
+      "evidence_source": "The text states: 'The advertisements also included an Internet link which redirected potential participants to an online survey.' This indicates the survey method was online.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text does not provide information about the racial/ethnic composition of participants.",
+      "warning": "Percent of white participants is not reported in the provided text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text does not provide the mean age of participants. It only states the age inclusion criteria: 'being younger than 18 years old or older than 50 years old' were exclusion criteria, meaning participants were between 18 and 50 years old.",
+      "warning": "Mean age is not reported; only age range (18-50 years) is specified as inclusion criteria."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text does not provide information about the educational level of participants.",
+      "warning": "Percentage of college or higher education is not reported in the provided text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text does not provide information about the mean BMI of participants.",
+      "warning": "Mean BMI is not reported in the provided text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "community"
+        ]
+      },
+      "evidence_source": "The text states: 'The study's sample was obtained through online advertisements via a social network (Facebook) and by e-mail invitations.' This indicates recruitment from the general community via social media and email, not from a college or school setting.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify which instrument (BAS or BAS-2) was used to assess body appreciation.",
+      "warning": "Assessment of body appreciation instrument is not mentioned in the provided text."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether BMI was self-reported or measured.",
+      "warning": "Assessment method for BMI is not reported in the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text does not provide correlation coefficients between body appreciation and BMI.",
+      "warning": "Correlation between body appreciation and BMI is not reported in the provided text."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with one sample of 253 female participants. The opening statement 'This study is part of a wider ongoing research' refers to this being part of a larger research program, but the procedures section describes only one study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state whether this is a journal article or dissertation.",
+      "warning": "Publication type is not specified in the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This procedures section describes a single study (Study X) recruiting 253 female participants (aged 18-50) through online advertisements on Facebook and email invitations. Participants completed self-report questionnaires via an online survey after providing informed consent, with 59 participants excluded based on gender and age criteria from an initial sample of 312.",
+      "evidence_source": "Entire procedures section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

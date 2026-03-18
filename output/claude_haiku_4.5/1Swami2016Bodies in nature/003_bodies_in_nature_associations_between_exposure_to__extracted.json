@@ -1,0 +1,123 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "United States"
+        ]
+      },
+      "evidence_source": "Title states 'in U.S. adults'",
+      "warning": "Study name not explicitly provided in text; using 'Study X' as placeholder. Only country information available from title; full study details not present in provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information provided in the text excerpt.",
+      "warning": "Sample size not available in provided text."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information provided in the text excerpt.",
+      "warning": "Survey method not available in provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No demographic information provided in the text excerpt.",
+      "warning": "Percent of white participants not available in provided text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No age information provided in the text excerpt.",
+      "warning": "Mean age not available in provided text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No education information provided in the text excerpt.",
+      "warning": "Percentage of college or higher education not available in provided text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No BMI information provided in the text excerpt.",
+      "warning": "Mean BMI not available in provided text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample source provided in the text excerpt.",
+      "warning": "Source of sample not available in provided text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about body appreciation assessment instrument provided in the text excerpt.",
+      "warning": "Assessment of body appreciation not available in provided text."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about BMI assessment method provided in the text excerpt.",
+      "warning": "Assessment of BMI not available in provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No correlation data provided in the text excerpt.",
+      "warning": "Correlation between body appreciation and BMI not available in provided text."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No explicit mention of multiple studies in the provided text excerpt. Only a title and author line are provided.",
+      "warning": "Cannot determine number of studies from title and author information alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information provided in the text excerpt.",
+      "warning": "Publication type not available in provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section contains only the title and author information for a study examining associations between exposure to nature, connectedness to nature, and body image in U.S. adults. The authors are Viren Swami, David Barron, Laura Weis, and Adrian Furnham. No methodological details, sample characteristics, or results are provided in this excerpt.",
+      "evidence_source": "Title and author line provided in text.",
+      "warning": "Insufficient information to extract study details; only title and authors available."
+    },
+    "_pass_type": "text_only"
+  }
+]

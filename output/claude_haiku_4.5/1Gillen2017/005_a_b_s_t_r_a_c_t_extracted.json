@@ -1,0 +1,165 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "United States"
+        ]
+      },
+      "evidence_source": "Text states: 'Students (N = 261; mean age = 20.16 years, SD = 3.68; 60.9% female) from a non-residential college in the northeastern United States'",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          261
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            159
+          ]
+        },
+        "male": {
+          "Study X": [
+            101
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            261
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'Students (N = 261; mean age = 20.16 years, SD = 3.68; 60.9% female)'. Calculation: 60.9% of 261 = 159 females (rounded); 261 - 159 = 102 males (approximately 39.1%).",
+      "warning": "Gender breakdown calculated from percentage; exact male count not explicitly stated."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Text does not specify whether the questionnaire was administered via paper-and-pencil or online method.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Text mentions 'African Americans/Blacks' as a demographic group but does not provide percentage of white participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          20.16
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            20.16
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'Students (N = 261; mean age = 20.16 years, SD = 3.68; 60.9% female)'",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'Students (N = 261; mean age = 20.16 years, SD = 3.68; 60.9% female) from a non-residential college'. Per infer_rule: participants are college students, therefore 100% have college or higher education experience.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Text does not report mean BMI of participants.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Text states: 'Students (N = 261; mean age = 20.16 years, SD = 3.68; 60.9% female) from a non-residential college in the northeastern United States'",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Text mentions 'questionnaire measuring body appreciation' but does not specify whether BAS or BAS-2 was used.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Text does not mention BMI assessment or measurement.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Text does not report correlation between body appreciation and BMI.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The abstract describes a single study with one sample of college students (N = 261).",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "Text does not explicitly state whether this is a journal article or dissertation. The presence of an abstract and copyright notice suggests journal article, but this cannot be confirmed from the provided text alone.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This abstract describes a single study (Study X) examining associations between body appreciation and self-enhancement/self-expression variables among college students. The study included 261 students (60.9% female, mean age 20.16 years) from a non-residential college in the northeastern United States who completed a questionnaire measuring body appreciation, interest in cosmetic enhancements, and need for uniqueness. Results indicated that higher body appreciation was associated with greater need for uniqueness and investment in distinctive appearance, particularly among African Americans/Blacks.",
+      "evidence_source": "Entire abstract text",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

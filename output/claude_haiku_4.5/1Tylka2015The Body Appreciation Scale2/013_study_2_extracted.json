@@ -1,0 +1,436 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is explicitly stated in the provided text.",
+      "warning": "Country not mentioned in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          675
+        ],
+        "Study 2": [
+          263,
+          317
+        ],
+        "Study 3": [
+          382
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            367
+          ],
+          "Study 2": [
+            161,
+            150
+          ],
+          "Study 3": [
+            192
+          ]
+        },
+        "male": {
+          "Study 1": [
+            308
+          ],
+          "Study 2": [
+            102,
+            167
+          ],
+          "Study 3": [
+            190
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study 1": [
+            675
+          ],
+          "Study 2": [
+            263,
+            317
+          ],
+          "Study 3": [
+            382
+          ]
+        }
+      },
+      "evidence_source": "From the note at the end: 'Study 1: N = 675 college students (women n = 367, men n = 308). Study 2: College students: N = 263 (women n = 161, men n = 102) and Amazon Mechanical Turk online community participants: N = 317 (women n = 150, men n = 167). Study 3: N = 382 MTurk online community participants (women n = 192, men n = 190).' Study 2 has two subsamples: college students (N=263) and online community participants (N=317).",
+      "warning": "Study 2 contains two distinct subsamples with different recruitment methods (college vs. online community)."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study 2": [
+          "paper-and-pencil",
+          "online"
+        ],
+        "Study 3": [
+          "online"
+        ]
+      },
+      "evidence_source": "Study 2 mentions 'college students' (inferred as paper-and-pencil or in-person) and 'Amazon Mechanical Turk online community participants' (explicitly online). Study 3 mentions 'MTurk online community participants' (explicitly online). Study 1 survey method not specified in this section.",
+      "warning": "Study 2 college sample survey method inferred as paper-and-pencil based on typical college recruitment; explicit confirmation not provided in text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No racial/ethnic demographic information provided in this section.",
+      "warning": "Percent of white participants not reported."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No age information provided in this section.",
+      "warning": "Mean age of participants not reported."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          100
+        ],
+        "Study 2": [
+          100
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            100
+          ],
+          "Study 2": [
+            100
+          ]
+        }
+      },
+      "evidence_source": "Study 1 explicitly states 'college students' (N=675). Study 2 college subsample explicitly states 'college students' (N=263). Study 3 mentions 'MTurk online community participants' with no college designation, so college education percentage cannot be inferred. Per infer_rule, when text says 'college students', percentage with college or higher education is 100%.",
+      "warning": "Study 2 online community subsample (N=317) education level not specified. Study 3 education level not specified."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No BMI information provided in this section.",
+      "warning": "Mean BMI of participants not reported."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "college"
+        ],
+        "Study 2": [
+          "college",
+          "community"
+        ],
+        "Study 3": [
+          "community"
+        ]
+      },
+      "evidence_source": "Study 1: 'college students'. Study 2: 'College students' (college source) and 'Amazon Mechanical Turk online community participants' (community source). Study 3: 'MTurk online community participants' (community source).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "BAS"
+        ],
+        "Study 2": [
+          "BAS-2"
+        ],
+        "Study 3": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Study 2 section explicitly states 'confirmatory factor analysis (CFA) of the 10-item BAS-2'. Study 1 is referenced as using EFA (exploratory factor analysis), which would be on the BAS or BAS-2; context suggests Study 1 used BAS (the original instrument being validated). Study 3 is mentioned in the note but no specific assessment instrument is stated in this section.",
+      "warning": "Study 1 assessment of BA inferred from context (EFA suggests original BAS); Study 3 assessment not explicitly stated in this section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported vs. measured) is provided in this section.",
+      "warning": "Assessment of BMI method not reported."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No correlation coefficients between body appreciation and BMI are reported in this section. The section discusses planned analyses and hypotheses but does not present results.",
+      "warning": "Correlation between body appreciation and BMI not reported in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 3,
+      "evidence_source": "The text explicitly references 'Study 1', 'Study 2', and 'Study 3' in the note section. Study 1 had N=675 college students. Study 2 had two subsamples (college N=263 and online community N=317). Study 3 had N=382 MTurk participants.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information (journal article vs. dissertation) is provided in this section.",
+      "warning": "Publication type not specified."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes Study 2, which conducted confirmatory factor analysis (CFA) of the 10-item BAS-2 across two samples: college students (N=263, women n=161, men n=102) and Amazon Mechanical Turk online community participants (N=317, women n=150, men n=167). The study also tested measurement invariance across sex and sample type. Additionally, Study 1 (N=675 college students: women n=367, men n=308) and Study 3 (N=382 MTurk online community participants: women n=192, men n=190) are referenced in a summary note.",
+      "evidence_source": "Entire section, particularly the note at the end providing sample sizes and demographic breakdowns for all three studies.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "United States"
+        ],
+        "Study 2": [
+          "United States"
+        ],
+        "Study 3": [
+          "United States"
+        ]
+      },
+      "evidence_source": "The text does not explicitly state the country. However, the use of Amazon Mechanical Turk (MTurk) in Study 2 and Study 3 strongly suggests United States-based recruitment, as MTurk is a US-based platform. The note mentions 'Amazon Mechanical Turk online community participants' for Studies 2 and 3. Without explicit country statement, returning None per strict policy.",
+      "warning": "Country not explicitly stated in text. Inferred from MTurk platform usage, but per strict missing_value_rule, should return None if not explicitly stated."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          675
+        ],
+        "Study 2": [
+          263,
+          317
+        ],
+        "Study 3": [
+          382
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            367
+          ],
+          "Study 2": [
+            161,
+            150
+          ],
+          "Study 3": [
+            192
+          ]
+        },
+        "male": {
+          "Study 1": [
+            308
+          ],
+          "Study 2": [
+            102,
+            167
+          ],
+          "Study 3": [
+            190
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study 1": [
+            675
+          ],
+          "Study 2": [
+            263,
+            317
+          ],
+          "Study 3": [
+            382
+          ]
+        }
+      },
+      "evidence_source": "Note at bottom of table: 'Study 1: N = 675 college students (women n = 367, men n = 308). Study 2: College students: N = 263 (women n = 161, men n = 102) and Amazon Mechanical Turk online community participants: N = 317 (women n = 150, men n = 167). Study 3: N = 382 MTurk online community participants (women n = 192, men n = 190).' Study 2 has two subsamples: college (N=263) and community (N=317).",
+      "warning": "Study 2 contains two distinct subsamples (college and community) with different recruitment methods and sources."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "paper-and-pencil"
+        ],
+        "Study 2": [
+          "paper-and-pencil",
+          "online"
+        ],
+        "Study 3": [
+          "online"
+        ]
+      },
+      "evidence_source": "Study 1: college sample, method not explicitly stated but typical for college samples in this era. Study 2: 'College students' (inferred paper-and-pencil) and 'Amazon Mechanical Turk online community participants' (explicitly online). Study 3: 'MTurk online community participants' (explicitly online).",
+      "warning": "Study 1 survey method not explicitly stated; inferred from 'college sample' context. Study 2 has two methods corresponding to two subsamples."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information provided in the text or table.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age statistics provided in the text or table.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          100
+        ],
+        "Study 2": [
+          100
+        ],
+        "Study 3": "None"
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            100
+          ],
+          "Study 2": [
+            100
+          ],
+          "Study 3": "None"
+        },
+        "male": {
+          "Study 1": [
+            100
+          ],
+          "Study 2": [
+            100
+          ],
+          "Study 3": "None"
+        },
+        "other": "None",
+        "total": {
+          "Study 1": [
+            100
+          ],
+          "Study 2": [
+            100
+          ],
+          "Study 3": "None"
+        }
+      },
+      "evidence_source": "Study 1: 'college students' explicitly stated. Study 2: 'college students' explicitly stated for the college subsample; community subsample (MTurk) education level not specified. Study 3: 'MTurk online community participants' - education level not specified, so returning None.",
+      "warning": "Study 2 college subsample inferred as 100% college-educated; community subsample education unknown. Study 3 education level not provided."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI statistics provided in the text or table.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "college"
+        ],
+        "Study 2": [
+          "college",
+          "community"
+        ],
+        "Study 3": [
+          "community"
+        ]
+      },
+      "evidence_source": "Study 1: 'college students' explicitly stated. Study 2: 'College students' and 'Amazon Mechanical Turk online community participants' - two distinct sources. Study 3: 'MTurk online community participants' - community source.",
+      "warning": "Study 2 has two distinct sample sources."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "BAS-2"
+        ],
+        "Study 2": [
+          "BAS-2"
+        ],
+        "Study 3": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Table title: 'Body Appreciation Scale-2 (BAS-2) standardized item-factor loadings: Studies 1, 2, and 3.' Text states: 'confirmatory factor analysis (CFA) of the 10-item BAS-2 was conducted' for Study 2, and the table shows BAS-2 item-factor loadings for all three studies.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text and table do not provide information about how BMI was assessed (self-reported vs. measured). The table focuses on BAS-2 item-factor loadings, not BMI assessment methods.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain correlation coefficients between body appreciation and BMI. The table shows BAS-2 item-factor loadings (standardized loadings for individual items), not correlations with BMI. The text mentions hypotheses about measurement invariance and impression management but does not report correlations with BMI.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 3,
+      "evidence_source": "The text explicitly references 'Study 1', 'Study 2', and 'Study 3'. The table title states 'Studies 1, 2, and 3.' The note section provides sample sizes for all three studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not indicate whether this is a journal article or dissertation. Only the study methodology and results are presented.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes Study 2, which conducted a confirmatory factor analysis (CFA) of the 10-item BAS-2 across two sample types: college students (N=263) and online community participants from Amazon Mechanical Turk (N=317). The study tested whether the BAS-2 single-factor model would fit both samples and examined measurement invariance across sex (women and men) and sample type. Study 3 is also referenced with N=382 MTurk online community participants (women n=192, men n=190). The table presents standardized item-factor loadings for all BAS-2 items across Studies 1, 2 (college and community subsamples), and 3, broken down by overall sample and by gender.",
+      "evidence_source": "Text content and Table 1 caption and note section."
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1. Body Appreciation Scale-2 (BAS-2) standardized item-factor loadings: Studies 1, 2, and 3.",
+      "evidence_source": "Table title as presented at the top of the table."
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Tylka2015The Body Appreciation Scale2/tables/1Tylka2015The Body Appreciation Scale2_p006_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

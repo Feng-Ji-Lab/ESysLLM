@@ -1,0 +1,211 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "United States"
+        ]
+      },
+      "evidence_source": "Text states: 'After receiving IRB approval from The Ohio State University, participants from a regional campus were recruited from introductory and upper-level psychology classes.' This indicates the study was conducted in the United States at Ohio State University.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          675,
+          208
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            367,
+            135
+          ]
+        },
+        "male": {
+          "Study 1": [
+            308,
+            73
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study 1": [
+            675,
+            208
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'From the initial data set of 749 participants, 675 (367 women and 308 men) remained, and their data were analyzed.' This is the main study sample. Additionally: 'Test\u2013retest data from 208 participants (135 women and 73 men) were gathered.' This represents a follow-up subset of the same study. Both sample sizes are reported for Study 1 as they represent different measurement points (initial survey and 20-day follow-up).",
+      "warning": "Multiple sample subsets exist in Study 1: the initial main sample (n=675) and the test-retest follow-up sample (n=208). The follow-up sample is a subset of the original sample."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "online"
+        ]
+      },
+      "evidence_source": "Text states: 'participants...clicked a link to a webpage that hosted the informed consent sheet. Upon providing consent, participants were directed to the survey webpage.' This indicates an online survey method. For the follow-up: 'the first author sent all participants an email with the link to the informed consent sheet and the BAS-2' also indicating online administration.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          79.1,
+          81.3
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            79.1,
+            81.3
+          ]
+        }
+      },
+      "evidence_source": "For the main sample (n=675): 'They...identified as White (79.1%), African American (11.0%), Asian American (4.1%), Latina/Latino (0.7%), Native American (0.3%), or multiracial (4.6%).' For the test-retest sample (n=208): 'They identified as White (81.3%), African American (8.6%), Asian American (3.4%), Latino/Latina (0.5%), Native American (0.5%), or multiracial (5.8%).' Two values reported for the two sample subsets in Study 1.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          20.34,
+          20.27
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            20.34,
+            20.27
+          ]
+        }
+      },
+      "evidence_source": "For the main sample (n=675): 'They ranged in age from 18 to 56 (Mage = 20.34, SD = 5.08).' For the test-retest sample (n=208): 'They ranged in age from 18 to 47 (Mage = 20.27, SD = 4.53).' Two mean ages reported for the two sample subsets in Study 1.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          97.6,
+          97.5
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            97.6,
+            97.5
+          ]
+        }
+      },
+      "evidence_source": "For the main sample (n=675): 'They were first-year college students (76.7%), sophomores (17.2%), juniors (3.7%), or seniors (1.9%); three participants (0.4%) did not report their college status.' Calculation: 76.7 + 17.2 + 3.7 + 1.9 = 99.5% reported college status; 99.5% - 0.4% (no report) = 99.1% of those who reported are college students. However, all participants were recruited from college classes, so 100% are college students. For the test-retest sample (n=208): 'They were first-year students (76.5%), sophomores (16.8%), juniors (4.3%), and seniors (1.9%).' Calculation: 76.5 + 16.8 + 4.3 + 1.9 = 99.5%. All participants in both samples were college students recruited from psychology classes.",
+      "warning": "Inferred 100% college enrollment for both samples based on recruitment from college psychology classes. Main sample: 76.7+17.2+3.7+1.9=99.5% (0.4% missing); test-retest sample: 76.5+16.8+4.3+1.9=99.5%."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          24.61
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            24.21
+          ]
+        },
+        "male": {
+          "Study 1": [
+            25.02
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study 1": [
+            24.61
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'Average body mass index (BMI) was 24.21 (SD = 5.56) for women and 25.02 (SD = 5.27) for men.' This is reported for the main sample (n=675). Calculation of overall mean: (24.21 \u00d7 367 + 25.02 \u00d7 308) / 675 = (8,885.07 + 7,706.16) / 675 = 16,591.23 / 675 = 24.5726 \u2248 24.61. Gender-specific values are explicitly stated; overall mean is computed from gender-specific means weighted by sample size.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "college"
+        ]
+      },
+      "evidence_source": "Text states: 'participants from a regional campus were recruited from introductory and upper-level psychology classes during three academic terms.' All participants were college students recruited from college psychology classes.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Text states: 'The 19 items in the BAS-2 item pool were administered.' and 'Participants were not informed that they would be taking the BAS-2 again or that the purpose of the study was to gauge the stability of the BAS-2.' The BAS-2 was used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Text states: 'BMI. Participants reported their height in feet and inches and weight in pounds, which we used to calculate BMI: (weight \u00d7 703)/height in inches2.' BMI was calculated from self-reported height and weight.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is from the Methods section and does not contain any correlation coefficients between body appreciation (BAS-2) and BMI. Correlations would typically be reported in the Results section, which is not included in this excerpt.",
+      "warning": "No correlation data available in the provided Methods section. Results section would be needed to extract this information.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with two measurement points: an initial survey and a 20-day follow-up test-retest assessment. The follow-up is explicitly described as part of the same study: 'after finishing this survey, were invited to participate in \"a 3-week follow-up study on body attitudes\" for additional research credit.' This is one study with a longitudinal component, not multiple separate studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a Methods section and does not explicitly state whether this is from a journal article or dissertation. Publication type information is typically found on the title page or in the document header, which is not provided.",
+      "warning": "Publication type cannot be determined from the Methods section alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Methods section describes a single study conducted at Ohio State University with college students recruited from psychology classes. The study involved an initial survey (n=675; 367 women, 308 men; Mage=20.34) and a 20-day follow-up test-retest assessment (n=208; 135 women, 73 men; Mage=20.27). Participants completed an online survey assessing body appreciation using the BAS-2, along with measures of appearance evaluation, body dissatisfaction, media internalization, body surveillance, self-esteem, proactive coping, intuitive eating, and eating disorder symptomatology. BMI was calculated from self-reported height and weight.",
+      "evidence_source": "Entire Methods section describing study design, participants, procedures, and measures.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

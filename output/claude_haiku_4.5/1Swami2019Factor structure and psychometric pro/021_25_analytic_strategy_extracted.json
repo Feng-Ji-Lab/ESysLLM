@@ -1,0 +1,137 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section is a methodological description of analytic strategy. No country is explicitly mentioned in this section. The text references 'Malay women and men' and 'Chinese participants,' but does not state the country where the study was conducted.",
+      "warning": "Country information not provided in this section. Would need to refer to earlier sections (e.g., Methods, Participants) to determine the study location."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          149,
+          157,
+          121,
+          114,
+          120,
+          120
+        ]
+      },
+      "evidence_source": "The text describes sample splits for different analyses: 'the Malay sample was first split using a computer-generated semi-random seed, resulting in one split-half for EFA (women n = 149, men n = 157) and a second split-half for CFA (Malay women n = 121, Malay men n = 114); the latter was combined with data from Chinese participants (women n = 120, men n = 120).' These represent different subsamples used in different analytical phases (EFA and CFA) of the same study.",
+      "extract_value_by_gender": {
+        "female": [
+          149,
+          121,
+          120
+        ],
+        "male": [
+          157,
+          114,
+          120
+        ],
+        "other": "None",
+        "total": [
+          149,
+          157,
+          121,
+          114,
+          120,
+          120
+        ]
+      },
+      "warning": "Multiple sample subsets reported for different analytical phases (EFA split-half and CFA split-half with combined Chinese participants). All values listed as they represent distinct analytical groups within the same study."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes analytic strategy and statistical methods. No information about survey method (paper-and-pencil vs. online) is provided in this section.",
+      "warning": "Survey method not mentioned in this analytic strategy section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section focuses on analytic procedures and does not report racial/ethnic composition percentages. The text mentions 'Malay and Chinese participants' but does not provide percentage breakdowns of white participants.",
+      "warning": "Racial composition data not provided in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states 'There were no significant differences between the two Malay subsamples, or between Malay and Chinese participants, in terms of mean age and BMI, or in the distribution of educational attainments (all ps > .237; full results available from the corresponding author).' However, the actual mean age values are not provided in this section; only that no significant differences were found.",
+      "warning": "Mean age values not explicitly reported in this section, only that no significant differences existed between groups."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'distribution of educational attainments' but does not provide specific percentages of participants with college or higher education in this section.",
+      "warning": "Specific educational attainment percentages not provided in this analytic strategy section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states 'There were no significant differences between the two Malay subsamples, or between Malay and Chinese participants, in terms of mean age and BMI, or in the distribution of educational attainments (all ps > .237; full results available from the corresponding author).' However, the actual mean BMI values are not provided; only that no significant differences were found.",
+      "warning": "Mean BMI values not explicitly reported in this section, only that no significant differences existed between groups."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes analytic procedures and does not specify where or how participants were recruited (community, college, or primary/secondary/high school).",
+      "warning": "Source of sample not mentioned in this analytic strategy section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The text explicitly references 'the factor structure of Malay BAS-2 scores' and 'the one-factor model of BAS-2 scores' and 'BAS-2 scores' throughout the section, indicating that BAS-2 was the instrument used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section mentions 'self-reported BMI' in the context of convergent validity assessment: 'examined bivariate correlations between BAS-2 scores and measures of well-being (life satisfaction and subjective happiness), body image (weight discrepancy in women and drive for muscularity in men), perceived media influence and internalisation of appearance ideals, and self-reported BMI.' This indicates self-reported BMI was used.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": [
+          "self-reported"
+        ]
+      },
+      "warning": "BMI assessment method mentioned only in context of convergent validity analysis with self-reported BMI. Unclear if this was the primary BMI assessment method for the main analyses."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes the analytic strategy and statistical methods to be used. It mentions that 'bivariate correlations between BAS-2 scores and measures of well-being (life satisfaction and subjective happiness), body image (weight discrepancy in women and drive for muscularity in men), perceived media influence and internalisation of appearance ideals, and self-reported BMI' will be examined, but the actual correlation coefficients are not reported in this section.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "warning": "Correlation values not provided in this analytic strategy section; only the planned analyses are described."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "This section describes the analytic strategy for a single study with multiple analytical phases (EFA and CFA) and multiple sample subsets (Malay and Chinese participants, split-halves for EFA and CFA), but it is one overarching study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "This section is a methodological description and does not indicate whether the publication is a journal article or dissertation.",
+      "warning": "Publication type not determinable from this section alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the analytic strategy for a single study examining the factor structure of the Malay BAS-2 (Body Appreciation Scale-2) using a two-step EFA-to-CFA approach. The Malay sample was split into two halves: one for exploratory factor analysis (EFA) with women (n=149) and men (n=157), and another for confirmatory factor analysis (CFA) with Malay women (n=121), Malay men (n=114), and Chinese participants (women n=120, men n=120). The section details the statistical methods, fit indices, and validity assessments planned for the study, including measurement invariance testing across sex and ethnicity, and convergent validity assessment using bivariate correlations with self-reported BMI and other measures.",
+      "evidence_source": "Entire section 2.5 describing analytic strategy with explicit mention of sample splits and participant groups.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,222 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      2,
+      4
+    ],
+    "reason": "Multiple sections (abstract [0], sample description [2], and methods/results reporting split sample and EFA/CFA [4]) consistently describe a single study (N=591, randomly split into two subsamples). No evidence of additional independent studies; therefore the paper reports 1 study."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "Multiple sections indicate this is a journal article: candidate 0 shows the journal title/cover (Body Image), candidate 1 provides article metadata and submission/acceptance history, and candidate 2 is the article abstract describing the empirical study. No evidence suggests this is a dissertation."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "Malaysia"
+      ]
+    },
+    "best_indices": [
+      2,
+      4,
+      0,
+      1,
+      3,
+      5,
+      6
+    ],
+    "reason": "All candidate sources consistently describe a single study conducted in Malaysia (Kuala Lumpur). The abstract (index 2) and Participants section (index 4) explicitly state the community sample of women in Kuala Lumpur, Malaysia, and other sections (0,1,3,5,6) corroborate this. The paper reports one study with two ethnic subsamples (Malay and Chinese) drawn from the same country, so these were merged under a single study entry. Returned the country name 'Malaysia' per the field definition."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      2,
+      4,
+      5,
+      6,
+      8
+    ],
+    "reason": "All candidates refer to a single study (total N = 591, randomly split into two subsamples) validating a Malay version of the 13-item Body Appreciation Scale (BAS; Avalos et al., 2005). Method and results sections (indices 4, 5, 6, 8) explicitly describe the BAS, its item count, factor analyses, descriptive statistics, and correlations; the abstract (index 2) and appendix (others) are consistent. No mention of BAS-2 was found. Per instructions, subsamples were merged under one study entry and the instrument is therefore coded as 'BAS'."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        591,
+        660,
+        296,
+        295,
+        315,
+        276
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All candidates refer to a single study of women. The primary analyzed sample is N = 591 (abstract [0] and factor analyses [2]). Participants section [1] shows an initial recruited sample of 660 with 69 excluded, leaving 591 (315 Malay + 276 Chinese). The total sample was randomly split into two subsamples n = 296 and n = 295 for EFA/CFA (candidate [2]). All participants are female, so female and total lists include the same values. Candidates 0, 1 and 2 were used to assemble and reconcile these numbers.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          591,
+          660,
+          296,
+          295,
+          315,
+          276
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          591,
+          660,
+          296,
+          295,
+          315,
+          276
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "community"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All candidates refer to the same single study: a community sample of women recruited in Kuala Lumpur, Malaysia. The abstract (0) and participants section (1) explicitly describe a community sample (initial N=660, later 591 after exclusions) and the procedure (2) states opportunistic/snowball recruitment. These sources consistently indicate a community sample, so the study is labeled 'community'."
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        42.96,
+        43.18,
+        42.75,
+        43.43
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper reports a single study (N=591) that was described both by ethnic-group means (Malay M=42.96; Chinese M=43.18; participants are all women) in the Participants section (candidate 0) and by two randomly split subsample means used for EFA/CFA (subsample1 M=42.75; subsample2 M=43.43) in the factor analysis section (candidate 1). These represent different partitions of the same study, so all four mean ages are reported under one study. Female-specific values are taken from candidate 0; the subsample means are recorded as totals from candidate 1.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          42.96,
+          43.18
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          42.75,
+          43.43
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        22.01,
+        22.33
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study in the paper. Candidate [0] reports mean BMIs for the two subsamples (Malay women M = 22.01; Chinese women M = 22.33). The paper describes a single study sample split into subsamples, so both subsample means are merged under the single study. All participants are women, so values are placed under 'female'; no male/other/total values reported.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          22.01,
+          22.33
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          22.01,
+          22.33
+        ]
+      }
+    }
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "paper-and-pencil"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one candidate found and the paper reports a single study. The candidate comes from the Procedure section (reliable source for data-collection method) stating participants completed anonymous paper-and-pencil questionnaires, so 'paper-and-pencil' is assigned to the single study. No conflicting sources were present."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        -0.24
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one candidate (index 0) reported a Pearson correlation between Body Appreciation (General Body Appreciation) and BMI: r = -0.24. The paper describes a single study (randomly split subsamples but not separate studies), so this value is attributed to 'Single study'. No gender-specific correlations were reported, so the value is provided under 'total'. The correlation comes from the Results section reporting that BMI was significantly negatively correlated with General Body Appreciation (r = -0.24).",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          -0.24
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          -0.24
+        ]
+      }
+    }
+  }
+}

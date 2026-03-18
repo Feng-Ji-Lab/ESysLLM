@@ -1,0 +1,134 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"Descriptive statistics (Ms. and SDs) and inter-item correlations for all target variables are reported in Table 1.\" No country or location of study is reported in the provided section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          142
+        ]
+      },
+      "evidence_source": "\"Results showed that the regression was significant, F(7, 134) = 3.09, p = .005, Adj. R2 = .10...\" Degrees of freedom reported in F(7, 134) imply n = df2 + df1 + 1 = 134 + 7 + 1 = 142 (inference from regression df).",
+      "warning": "Inference: sample size (n=142) computed from regression degrees of freedom; raw N not explicitly stated elsewhere in the section.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"Descriptive statistics (Ms. and SDs) and inter-item correlations for all target variables are reported in Table 1.\" The provided text does not state the survey/data collection method (e.g., online or paper-and-pencil).",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"Descriptive statistics (Ms. and SDs) and inter-item correlations for all target variables are reported in Table 1.\" The section does not report participant racial/ethnic composition.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"Descriptive statistics (Ms. and SDs) and inter-item correlations for all target variables are reported in Table 1.\" Mean age is not provided in the visible text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided section does not state participants' education level or say they were undergraduates; no basis to infer percentage with college or higher.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"Descriptive statistics (Ms. and SDs) and inter-item correlations for all target variables are reported in Table 1.\" Mean BMI is not reported in the visible text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided Results text does not state the source of the sample (e.g., community, college, primary/secondary/high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section refers to 'body appreciation' but does not name the instrument (e.g., BAS or BAS-2) in the provided text.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section reports analyses including BMI but does not state whether BMI was self-reported or measured in the provided text.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.17,
+          -0.26
+        ]
+      },
+      "evidence_source": "\"body appreciation was significantly and negatively correlated with Stereotypic Images and Activities, Purity, the Total Traditional score, and participant BMI, although it should be noted that these correlations were weak (rs -.17 to -.26).\" The exact correlation for BMI is not reported separately; only the range across these correlations is provided.",
+      "warning": "The text provides a range (rs = -.17 to -.26) for correlations including BMI but does not give the specific Pearson r for BMI; the two numbers reflect the reported range endpoints rather than distinct reported correlations for BMI alone.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Section labelled '3. Results' presents a single set of results (descriptive statistics and one multiple regression) with no mention of 'Study 1' or additional separate studies in the provided text.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type (e.g., journal article or dissertation) is stated in the provided section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Results section reports that descriptive statistics and inter-item correlations are in Table 1 and states that body appreciation was significantly and negatively correlated with several variables including participant BMI (reported correlations ranged from -0.17 to -0.26). A multiple regression (F(7, 134) = 3.09, p = .005, Adj. R2 = .10) found Stereotypic Images and Activities and BMI to be the only significant predictors of body appreciation.",
+      "evidence_source": "\"Descriptive statistics (Ms. and SDs) and inter-item correlations for all target variables are reported in Table 1.\" and \"...body appreciation was significantly and negatively correlated... (rs -.17 to -.26).\" and \"Results showed that the regression was significant, F(7, 134) = 3.09, p = .005, Adj. R2 = .10, with Stereotypic Images and Activities (st. b = -.25, t = 2.24, p = .027) and BMI (st. b = -.18, t = -2.19, p = .031) emerging as the only significant predictors.\"",
+      "warning": "No explicit study numbering or participant demographics are provided in the section; some values (e.g., full descriptive statistics) are indicated as presented in Table 1 which is not provided here."
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The document is structured as a research paper with authors from universities, including an abstract-like beginning and a literature review, indicating it is a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "The provided text snippet does not contain any information regarding financial support, grants, or funding agencies.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The document is presented as a formal research paper with academic authors and a structured format, which is characteristic of a peer-reviewed journal article.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The study focuses on 'self-efficacy generality' and 'self-efficacy intensity' as motivational mechanisms, not performance goal orientation (PGO), prove performance goal orientation (PPGO), or avoid performance goal orientation (APGO).",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text states 'Measures of self-efficacy (intensity and generality) and transfer (near and far) were assessed.' and refers to a 'computer decision-making task'. Transfer performance on a computer task is an objective measure.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The adaptation outcome is 'transfer (near and far)' from a 'computer decision-making task', which represents objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The adaptation outcome is 'transfer (near and far)' from a 'computer decision-making task', which is an objective task/test.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The study measures 'self-efficacy (intensity and generality)' and does not mention 'goal orientation' or any specific scale by VandeWalle.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Undergraduate students\"]}",
+      "evidence_source": "The participants are described as 'Undergraduate students'.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "Only 'Undergraduate students' is mentioned, with no specific mean, median, or age range provided for imputation.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text mentions 'Undergraduate students (N = 82)' but does not specify the sex composition of the sample, implying a mixed sample.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information about the percentage of men or women in the sample is provided.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "The authors are from 'Rice University' and 'University of Arizona', both located in the United States, suggesting the study was conducted in the USA.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The participants are explicitly stated as 'Undergraduate students'.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [82]}",
+      "evidence_source": "The text states 'Undergraduate students (N = 82)'.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The study investigates the relationship between practice variability, self-efficacy, and transfer of training. It does not report correlations specifically between Performance Goal Orientation (PGO) and performance adaptation (PA).",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation between Performance Goal Orientation and Performance Adaptation was found in the text.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'the present study' in the singular, indicating a single study was conducted.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section introduces a study investigating the role of self-efficacy generality as a motivational mechanism linking practice variability and transfer of training. The study involved 82 undergraduate students assigned to constant or variable training conditions for a computer decision-making task. Measures of self-efficacy (intensity and generality) and transfer (near and far) were assessed, with results indicating that practice variability increased self-efficacy generality, which in turn influenced far transfer performance and mediated the relationship between practice variability and far transfer.",
+      "evidence_source": "Summary of the provided text content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

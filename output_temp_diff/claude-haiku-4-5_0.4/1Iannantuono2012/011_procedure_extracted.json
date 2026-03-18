@@ -1,0 +1,141 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'the university's Institutional Review Board' and 'Department of Psychology' but does not explicitly state the country where the study was conducted.",
+      "warning": "Country not explicitly stated in the provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide a specific number of participants. It only states 'Female introductory psychology students could select this study' but no sample size is given.",
+      "warning": "Sample size not provided in the text.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states 'Participants completed the measures in a classroom used as a research lab' but does not explicitly specify whether measures were administered via paper-and-pencil or online format.",
+      "warning": "Survey method cannot be definitively determined from the text. While classroom administration suggests paper-and-pencil, this is not explicitly stated."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about racial/ethnic composition of participants is provided in the text.",
+      "warning": "Racial/ethnic demographic data not provided.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in the text.",
+      "warning": "Mean age not provided.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "The text states 'Female introductory psychology students could select this study.' Introductory psychology students are college/university students, which means 100% of participants have college or higher education experience.",
+      "warning": "Inferred based on 'introductory psychology students' designation. This assumes all participants are enrolled in college.",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            100
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI data is provided in the text.",
+      "warning": "Mean BMI not provided.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The text states 'Female introductory psychology students could select this study' and 'the study was posted alongside other studies on a research board in the Department of Psychology.' This indicates participants were recruited from a college/university setting.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions that participants completed 'measures' related to 'body attitudes' but does not specify which instrument (BAS or BAS-2) was used to assess body appreciation.",
+      "warning": "Specific body appreciation assessment instrument not identified in the text."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify how BMI was assessed (self-reported vs. measured).",
+      "warning": "BMI assessment method not provided."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation data between body appreciation and BMI is provided in this procedural section.",
+      "warning": "Correlation coefficients not provided in the text.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text describes a procedure section but does not explicitly indicate the number of studies in the paper. No mention of 'Study 1', 'Study 2', 'Experiment 1', etc. is present.",
+      "warning": "Number of studies cannot be determined from this procedural text alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text is a procedure section and does not indicate whether this is from a journal article or dissertation.",
+      "warning": "Publication type not determinable from this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Procedure section describes a study conducted with female introductory psychology students recruited from a university Department of Psychology. Participants completed measures in a classroom research lab setting, with measures counterbalanced to control for order effects, and were assured of anonymity. The section does not specify the country, sample size, specific assessment instruments, or provide any demographic or outcome data.",
+      "evidence_source": "Entire Procedure section provided",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

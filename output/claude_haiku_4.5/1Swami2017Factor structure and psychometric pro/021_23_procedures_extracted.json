@@ -1,0 +1,110 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the study was conducted. It mentions 'university ethics committee' and 'campus locations' but does not specify the country.",
+      "warning": "Country information is not provided in this procedures section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes procedures for two samples: the main study and a test-retest sample. However, no specific sample sizes (N values) are provided in this procedures section. The text states 'The main study was advertised...' and 'The test\u2013retest participant sample was recruited in June 2017' but does not give numerical counts.",
+      "warning": "Sample sizes are not provided in this procedures section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "paper-and-pencil"
+        ],
+        "Study 2": [
+          "paper-and-pencil"
+        ]
+      },
+      "evidence_source": "Main study: 'They then completed an anonymous paper-and-pencil questionnaire in a private cubicle.' Test-retest study: 'participants provided written informed consent and complete the BAS-2 along with brief demographics in a private cubicle.' Both studies used paper-and-pencil method.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about racial/ethnic composition of participants is provided in this procedures section.",
+      "warning": "Racial/ethnic demographic data not provided."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in this procedures section. The text mentions 'demographic items were always presented last' but does not report mean age values.",
+      "warning": "Age data not provided in this procedures section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in this procedures section.",
+      "warning": "Education level data not provided."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI data is provided in this procedures section.",
+      "warning": "BMI data not provided."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "college"
+        ],
+        "Study 2": [
+          "college"
+        ]
+      },
+      "evidence_source": "Main study: 'The main study was advertised as a project on health and well-being on campus locations between January and March 2017.' This indicates recruitment from a college/university campus. Test-retest study: 'The test\u2013retest participant sample was recruited in June 2017' from the same university setting, also indicating college source.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "BAS-2"
+        ],
+        "Study 2": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Main study: The text references 'the scales above' which based on context refers to BAS-2. Test-retest study explicitly states: 'participants provided written informed consent and complete the BAS-2 along with brief demographics' and 'participants were contacted and asked to completed the BAS-2 a second time.'",
+      "warning": "For Study 1 (main study), the specific scale is inferred from context ('the scales above') but BAS-2 is explicitly confirmed for the test-retest study."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This procedures section does not describe how BMI was assessed (whether self-reported or measured). It describes the questionnaire procedures but does not specify BMI assessment methodology.",
+      "warning": "BMI assessment method not specified in this procedures section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This is a procedures section describing study methodology. No correlation coefficients are reported in this section.",
+      "warning": "Correlation data not provided in procedures section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 2,
+      "evidence_source": "The text describes two distinct studies: (1) 'The main study was advertised as a project on health and well-being on campus locations between January and March 2017' and (2) 'The test\u2013retest participant sample was recruited in June 2017, and participants were only eligible if they had not taken part in the earlier study.' These are clearly two separate studies with different participant samples and purposes.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "This procedures section does not indicate whether the publication is a journal article or dissertation.",
+      "warning": "Publication type not determinable from this procedures section alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This procedures section describes two distinct studies: Study 1 (main study) conducted between January-March 2017 where participants completed an anonymous paper-and-pencil questionnaire on campus, and Study 2 (test-retest study) conducted in June 2017 where a separate sample completed the BAS-2 twice with a three-week interval. Both studies involved voluntary participation from university campus locations with written informed consent and debrief procedures.",
+      "evidence_source": "Section 2.3 Procedures",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

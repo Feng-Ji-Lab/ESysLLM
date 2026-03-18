@@ -1,0 +1,115 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information is provided in this section.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in this section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI value is reported in this section. The text mentions weight status categories (underweight, normoweight, overweight, obese) but not mean BMI.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample source is provided in this section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The text explicitly mentions 'BAS-2' multiple times: 'r(BAS-2)(LS).SPAS = .42' and 'r(BAS-2)(LS).SPAS = .49' and 'BAS-2 scores' and 'excluding partially invariant items' in reference to BAS-2.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section reports correlations with BMI but does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.225
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.25
+          ]
+        },
+        "male": {
+          "Study X": [
+            -0.2
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            -0.225
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'Negative correlations were found between body appreciation and (b) BMI (rboys = -.20; rgirls = -.25; both p < .001)'. Gender-specific values: boys r = -0.20, girls r = -0.25. Overall mean computed as arithmetic mean: (-0.20 + -0.25) / 2 = -0.225.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section does not explicitly identify the number of studies. It appears to be results from a single study reporting gender differences, but the overall paper structure is not clear from this excerpt alone.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section reports convergent-incremental validity findings and gender differences in body appreciation using the BAS-2 scale. Negative correlations were found between body appreciation and both social physique anxiety and BMI (rboys = -.20; rgirls = -.25), with boys showing higher body appreciation than girls and underweight/normoweight adolescents showing higher body appreciation than overweight/obese adolescents. Invariance analyses revealed negligible differences in BAS-2 scores when excluding partially invariant items across gender.",
+      "evidence_source": "Entire section text",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

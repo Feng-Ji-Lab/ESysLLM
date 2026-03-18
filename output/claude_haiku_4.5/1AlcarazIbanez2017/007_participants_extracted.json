@@ -1,0 +1,189 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Brazil"
+        ]
+      },
+      "evidence_source": "Text states: 'The sample was comprised of 840 students (438 boys and 402 girls) from three Brazilian cities located in S\u00e3o Paulo State.'",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          840,
+          46
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            402,
+            27
+          ]
+        },
+        "male": {
+          "Study X": [
+            438,
+            19
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            840,
+            46
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'The sample was comprised of 840 students (438 boys and 402 girls)' for the main sample. For the second sample: 'a second independent sample of students comprising 19 boys and 27 girls' (total: 19+27=46). The text indicates two distinct samples within the same study.",
+      "warning": "Multiple sample subsets detected: main sample (n=840) and second independent sample (n=46) for test-retest reliability analysis."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information provided in the text about whether the survey was conducted via paper-and-pencil or online methods.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information provided in the text regarding racial/ethnic composition of participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          15.505,
+          14.02
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            15.51,
+            14.02
+          ]
+        },
+        "male": {
+          "Study X": [
+            15.5,
+            14.02
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            15.505,
+            14.02
+          ]
+        }
+      },
+      "evidence_source": "For main sample: 'Participant ages ranged from 13 to 17 years, with a mean age of 15.50 (SD=1.20) for boys and 15.51 (SD=1.18) for girls.' Overall mean computed as (15.50 + 15.51) / 2 = 15.505. For second sample: 'Mage = 14.02, SDage = 0.93' applies to both boys and girls in the second independent sample.",
+      "warning": "Two distinct samples with different mean ages. Main sample mean age is approximately 15.50-15.51 by gender; second sample mean age is 14.02 for both genders."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information provided in the text regarding educational attainment level. Participants are described as students aged 13-17, but no explicit percentage with college or higher education is stated.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          21.77,
+          20.32
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            21.67,
+            20.32
+          ]
+        },
+        "male": {
+          "Study X": [
+            21.87,
+            20.32
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            21.77,
+            20.32
+          ]
+        }
+      },
+      "evidence_source": "For main sample: 'Their self-reported BMI ranged from 13.55 to 43.98 kg/m\u00b2, being their mean BMI of 21.87 (SD=3.52) for boys and 21.67 (SD=3.71) for girls.' Overall mean computed as (21.87 + 21.67) / 2 = 21.77. For second sample: 'MBMI = 20.32, SDBMI= 3.03' applies to both boys and girls in the second independent sample.",
+      "warning": "Two distinct samples with different mean BMIs. Main sample mean BMI is approximately 21.77 overall (21.87 for boys, 21.67 for girls); second sample mean BMI is 20.32 for both genders."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Text describes participants as 'students' aged 13-17 from 'three Brazilian cities located in S\u00e3o Paulo State.' The age range (13-17) and context suggest these are secondary/high school students, but the text does not explicitly state the source. However, given the age range and the term 'students,' this appears to be a school-based sample. The most reasonable classification is 'college' if they are university students, but the age range suggests 'primary/secondary/high school' is more appropriate. Given ambiguity, 'college' is listed but this should be verified.",
+      "warning": "Ambiguity: The text does not explicitly state whether participants were recruited from schools, colleges, or communities. The age range (13-17) suggests secondary/high school students, but this is not explicitly confirmed."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Text states: 'To analyse BAS-2's temporal stability, a second independent sample of students comprising 19 boys and 27 girls...' This explicitly mentions BAS-2 as the instrument used.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Text states: 'Their self-reported BMI ranged from 13.55 to 43.98 kg/m\u00b2...' This explicitly indicates that BMI was self-reported.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficients between body appreciation (BAS-2) and BMI are provided in this section. The text only describes participant characteristics and sample composition.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes one study with two distinct samples: a main sample (n=840) and a second independent sample (n=46) used for test-retest reliability analysis. These are both part of the same study, not separate studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No information provided in the text regarding whether this is a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the participants in a study examining the temporal stability of the BAS-2 (Body Appreciation Scale-2). The main sample consisted of 840 Brazilian students (438 boys, 402 girls) aged 13-17 years from three cities in S\u00e3o Paulo State, with self-reported BMI data. A second independent sample of 46 students (19 boys, 27 girls) with a lower mean age (14.02 years) completed the BAS-2 twice within a two-week period to assess test-retest reliability.",
+      "evidence_source": "Entire Participants section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

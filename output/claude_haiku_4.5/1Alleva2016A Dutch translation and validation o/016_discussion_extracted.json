@@ -1,0 +1,105 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "Netherlands"
+        ]
+      },
+      "evidence_source": "Text states: 'This study aimed to examine the factor structure and psychometric properties of the BAS-2 in Dutch-speaking women in the Netherlands.' and 'our Dutch-speaking sample was recruited from the Netherlands'",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not provide the total sample size. While it mentions 'Dutch-speaking female undergraduates' were recruited, no specific number is stated in this section.",
+      "warning": "Sample size not explicitly stated in the Discussion section. This information would typically be found in the Methods section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not specify the survey method (paper-and-pencil or online). This information would typically be found in the Methods section.",
+      "warning": "Survey method not stated in the Discussion section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not provide demographic information about racial/ethnic composition of participants.",
+      "warning": "Racial/ethnic demographic data not provided in the Discussion section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not provide mean age of participants. It mentions 'female undergraduates' but no specific age data is given.",
+      "warning": "Mean age not stated in the Discussion section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          100
+        ]
+      },
+      "evidence_source": "Text states: 'One key limitation of this study is that we only recruited Dutch-speaking female undergraduates.' Since all participants were undergraduates, 100% had college or higher education experience.",
+      "warning": "Inferred from explicit statement that all participants were undergraduates."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not provide mean BMI of participants. It mentions that BAS-2 scores were 'significantly negatively correlated with BMI' but does not state the mean BMI value.",
+      "warning": "Mean BMI not stated in the Discussion section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "college"
+        ]
+      },
+      "evidence_source": "Text states: 'One key limitation of this study is that we only recruited Dutch-speaking female undergraduates.' Undergraduates are college students.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Text states: 'This study aimed to examine the factor structure and psychometric properties of the BAS-2 in Dutch-speaking women in the Netherlands.' and multiple references to 'Dutch BAS-2' throughout the Discussion.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not specify whether BMI was self-reported or measured. It only mentions that BAS-2 scores were correlated with BMI.",
+      "warning": "Method of BMI assessment (self-reported vs. measured) not stated in the Discussion section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section states: 'scores on the Dutch BAS-2 were significantly negatively correlated with BMI' but does not provide the specific correlation coefficient value.",
+      "warning": "Specific correlation coefficient not provided in the Discussion section. Only direction (negative) and significance are mentioned."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The Discussion section discusses a single study examining the BAS-2 in Dutch-speaking women in the Netherlands. No multiple studies or experiments are mentioned.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not indicate whether this is a journal article or dissertation. This information would typically be found on the title page or publication metadata.",
+      "warning": "Publication type not determinable from the Discussion section alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Discussion section presents findings from a single study (Study 1) examining the psychometric properties of the Dutch BAS-2 in Dutch-speaking female undergraduates from the Netherlands. The study found a one-dimensional factor structure consistent with international samples, acceptable internal consistency, and a significant negative correlation between BAS-2 scores and BMI, supporting the construct validity of the Dutch BAS-2 across cultures. Key limitations include the exclusive recruitment of female undergraduates, limiting generalizability to men and broader age ranges.",
+      "evidence_source": "Entire Discussion section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

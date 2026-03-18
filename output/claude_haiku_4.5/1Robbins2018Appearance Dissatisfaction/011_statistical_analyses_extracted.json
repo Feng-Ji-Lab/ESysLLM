@@ -1,0 +1,113 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a statistical methods section that does not mention the country where the study was conducted.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          215
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            215
+          ]
+        }
+      },
+      "evidence_source": "The text states: 'The final sample of 215 exceeded requirements by over 100 participants and was thus deemed appropriate.'",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a statistical methods section that does not describe the survey method used to collect data.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain information about the racial/ethnic composition of participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain demographic information about participant age.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain information about participant education level.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a statistical methods section that does not report descriptive statistics for BMI.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not describe where or how participants were recruited.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text mentions 'scores on the BAS' in the context of centering variables prior to multiple regression analyses. BAS refers to the Body Appreciation Scale.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a statistical methods section that describes data screening and preparation procedures, but does not report correlation coefficients between body appreciation and BMI.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly identify the number of studies. It appears to be a methods section from a single study, but the text does not explicitly state 'Study 1' or reference multiple studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a statistical methods section and does not indicate whether this is from a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the statistical methods and data preparation procedures for a study with a final sample of 215 participants. The text details power analysis using G*Power, missing data imputation, outlier detection and winsorization, normality testing, and variable centering for regression analyses. The Body Appreciation Scale (BAS) is mentioned as one of the instruments used, though specific study design details and demographic characteristics are not provided in this methods section.",
+      "evidence_source": "Entire 'Statistical Analyses' section provided",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,197 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "United Kingdom"
+        ]
+      },
+      "evidence_source": "Text states: 'The participants of this study were 135 women enrolled in various undergraduate degree courses at a university in Greater London.' Greater London is a region in the United Kingdom.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          135
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            135
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            135
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'The participants of this study were 135 women enrolled in various undergraduate degree courses at a university in Greater London.'",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether data collection was conducted via paper-and-pencil or online survey methods.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          45.2
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            45.2
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            45.2
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'Of the total sample, 45.2% were of European Caucasian descent, 23.7% were of Asian descent, 11.9% were of African Caribbean descent, and 19.3% were of some other ancestry.' European Caucasian descent is interpreted as white/European.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          23.74
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            23.74
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            23.74
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'Participants ranged in age from 17 to 51 years (M = 23.74, SD = 5.78).'",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            100
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'The participants of this study were 135 women enrolled in various undergraduate degree courses at a university in Greater London.' All participants were undergraduate students, therefore 100% have college or higher education experience.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          22.15
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            22.15
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            22.15
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'in self-reported body mass index (BMI) from 17.15 to 33.27 kg/m2 (M = 22.15, SD = 2.80).'",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Text states: 'The participants of this study were 135 women enrolled in various undergraduate degree courses at a university in Greater London.' Participants were recruited from a university, which is a college source.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify which body appreciation assessment instrument (BAS or BAS-2) was used.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Text states: 'in self-reported body mass index (BMI) from 17.15 to 33.27 kg/m2 (M = 22.15, SD = 2.80).' The term 'self-reported' explicitly indicates the assessment method.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text does not report any correlation coefficients between body appreciation and BMI.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with one sample of 135 women from a university in Greater London. No multiple studies or experiments are mentioned.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a participants section from a study but does not explicitly state whether this is from a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes a single study (Study X) with 135 female undergraduate students recruited from a university in Greater London, United Kingdom. Participants ranged in age from 17 to 51 years (M = 23.74) with self-reported BMI ranging from 17.15 to 33.27 kg/m\u00b2 (M = 22.15). The sample was ethnically diverse, with 45.2% of European Caucasian descent, 23.7% Asian, 11.9% African Caribbean, and 19.3% other ancestry.",
+      "evidence_source": "Entire participants section (2.1)",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

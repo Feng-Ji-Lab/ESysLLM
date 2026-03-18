@@ -1,0 +1,125 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or region information is provided in the supplied text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size (N) or total participant count is reported in the supplied text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not state how data were collected (e.g., online or paper-and-pencil).",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participant race/ethnicity or percentage white is provided in the supplied text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The supplied text does not report mean or distribution of participant ages.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The supplied text does not report participants' education level or percentage with college or higher.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI value is reported in the supplied text (BMI is mentioned only as a covariate entered in regressions).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not describe the source of the sample (e.g., community, college, primary/secondary/high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Body appreciation is discussed (e.g., correlations with body appreciation), but the specific instrument (BAS or BAS-2) is not named in the supplied text.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "BMI is mentioned as a variable entered in regressions but the method of BMI assessment (self-reported or measured) is not specified in the supplied text.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states: \"Bivariate correlations were computed between all variables for women and men separately...\" and also notes BMI was entered as a covariate in regressions: \"participant sexual orientation, relationship status, age, and BMI were entered in a first step on the regression.\" However, no Pearson r value for the correlation between body appreciation and BMI is reported in the supplied text or described tables.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section describes analyses (bivariate correlations and regressions) conducted on women and men separately within a single set of analyses; no separate studies (e.g., 'Study 1', 'Study 2') are indicated in the supplied text.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The supplied text does not indicate whether this is a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section reports that bivariate correlations and hierarchical regressions were computed separately for women and men because sex differences were observed; Table 3 (referenced) shows sexual behavior measures correlated with body appreciation and related constructs, with some gender differences in which measures correlated. BMI is mentioned only as a covariate entered in the first step of hierarchical regressions; no sample characteristics, measurement instruments, or numeric correlations with BMI are reported here.",
+      "evidence_source": "Quoted sentences from supplied text: \"Bivariate correlations were computed between all variables for women and men separately, as sex differences were found on some measures (see Table 2).\" \"As can be seen in Table 3, ... positively correlated with body appreciation...\" \"participant sexual orientation, relationship status, age, and BMI were entered in a first step on the regression.\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

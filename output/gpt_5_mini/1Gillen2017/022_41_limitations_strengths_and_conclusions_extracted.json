@@ -1,0 +1,279 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "United States"
+        ]
+      },
+      "evidence_source": "Participants represented a select group of individuals: psychology students from one non-residential college located in the northeastern U.S.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          261
+        ]
+      },
+      "evidence_source": "Note: N = 261.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            261
+          ]
+        }
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "No information about whether data were collected online or via paper-and-pencil."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "Race/ethnicity was mentioned as dummy coded with European American/White as reference but no percentages reported."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "Detected sentence: \"Participants represented a select group of individuals: psychology students from one non-residential college located in the northeastern U.S.\" Inference: all participants are college students, therefore percentage with college or higher education = 100%.",
+      "warning": "Inferred from statement that participants were college students; the text does not explicitly state 'undergraduate' or give a percentage."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Participants represented a select group of individuals: psychology students from one non-residential college located in the northeastern U.S.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "Sentence: \"Although not available at the time of data collection, there is a newer version of the Body Appreciation Scale (BAS-2; Tylka & Wood-Barcalow, 2015b) that addresses some of the limitations of the original BAS...\" (implies the original BAS was used in this study).",
+      "warning": "Inference: BAS-2 was not available at data collection so the original BAS was used; the text does not explicitly state 'we used the BAS' but strongly implies it."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "No information provided about whether BMI was self-reported or measured."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "No correlation coefficient between body appreciation and BMI is reported in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Multiple sentences refer to \"The present study\" and results for a single sample (Note: N = 261).",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "Publication type (journal article or dissertation) not stated in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section outlines limitations (correlational design, limited cosmetic enhancement measure, limited generalizability) and strengths (focus on novel correlates of body appreciation). The sample consisted of psychology students from one non-residential college in the northeastern U.S. (N = 261); the authors note BAS-2 was not available at data collection and therefore the original BAS was used.",
+      "evidence_source": "\"The present study has limitations. It is correlational...\"; \"The measure of cosmetic enhancements is limited in scope...\"; \"Participants represented a select group of individuals: psychology students from one non-residential college located in the northeastern U.S.\"; \"Note: N = 261.\"; \"Although not available at the time of data collection, there is a newer version of the Body Appreciation Scale (BAS-2...) that addresses some of the limitations of the original BAS...\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "northeastern U.S."
+        ]
+      },
+      "evidence_source": "Participants represented a select group of individuals: psychology students from one non-residential college located in the northeastern U.S.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          261
+        ]
+      },
+      "evidence_source": "Note: N = 261.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            261
+          ]
+        }
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No method of data collection (paper-and-pencil or online) is specified in the provided text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Race/ethnicity was dummy coded as five variables with European American/White serving as the reference group \u2014 no percentages by race/ethnicity are reported.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean or distribution of participant ages is reported in the provided section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "Participants represented a select group of individuals: psychology students from one non-residential college located in the northeastern U.S. (inference applied: participants described as college students => 100% have college-level education).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "BMI is included as a predictor in the regression table but no mean BMI value for the sample is reported in the provided text or table.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Participants represented a select group of individuals: psychology students from one non-residential college located in the northeastern U.S.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "Although not available at the time of data collection, there is a newer version of the Body Appreciation Scale (BAS-2; Tylka & Wood-Barcalow, 2015b) that addresses some limitations of the original BAS \u2014 implying the original BAS was used.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text and table include BMI as a variable but do not state whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson correlation (r) between Body Appreciation and BMI is reported in the provided text or table; the table shows regression coefficients and partial correlations (pr2) but not an r.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section repeatedly refers to \"the present study\" in the singular and reports a single sample (N = 261).",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided section does not explicitly state the publication type (journal article or dissertation).",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This limitations/strengths section notes the study is correlational, limiting causal inference, and that the cosmetic enhancements measure was narrow. The authors state the sample consisted of psychology students from one non-residential college in the northeastern U.S. (N = 261) and recommend future research examine additional markers of unique appearance and potential mediators such as self-esteem and personality.",
+      "evidence_source": "Entire provided section: 'The present study has limitations... Participants represented a select group of individuals: psychology students from one non-residential college located in the northeastern U.S. Note: N = 261... Future studies should continue to focus on associations between body appreciation and need for uniqueness... Potential mediators...'.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 3 Regression models predicting need for uniqueness.",
+      "evidence_source": "Caption shown on the provided table image: 'Table 3 Regression models predicting need for uniqueness.'",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Gillen2017/tables/1Gillen2017_p005_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

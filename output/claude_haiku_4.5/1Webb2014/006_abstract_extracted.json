@@ -1,0 +1,143 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract does not explicitly state the country where the study was conducted.",
+      "warning": "Country not mentioned in the abstract."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          247
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            247
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            247
+          ]
+        }
+      },
+      "evidence_source": "Abstract states: 'The present study provided an initial evaluation of an affect regulation model describing the association between body dissatisfaction and two contemporary measures of positive body image among 247 Black college-bound older adolescent females.'",
+      "warning": "Sample consists entirely of females; no male or other gender participants."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract does not specify whether the survey was conducted via paper-and-pencil or online methods.",
+      "warning": "Survey method not mentioned in the abstract."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract explicitly identifies participants as 'Black college-bound older adolescent females' but does not provide a percentage breakdown of racial composition.",
+      "warning": "Racial composition percentage not provided; only stated that participants are Black."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract describes participants as 'older adolescent females' but does not provide a specific mean age value.",
+      "warning": "Mean age not numerically specified in the abstract."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          100
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            100
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            100
+          ]
+        }
+      },
+      "evidence_source": "Abstract states: 'The present study provided an initial evaluation of an affect regulation model describing the association between body dissatisfaction and two contemporary measures of positive body image among 247 Black college-bound older adolescent females.' The term 'college-bound' indicates participants are on a trajectory toward college education, which can be reasonably inferred as 100% having college or higher education experience or being enrolled in college.",
+      "warning": "Inferred from 'college-bound' descriptor; not explicitly stated as a percentage."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract mentions that 'Self-reported height and weight were used to calculate BMI' and that 'BMI was the strongest predictor of both body appreciation and body image flexibility,' but does not provide a mean BMI value.",
+      "warning": "Mean BMI value not provided in the abstract."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "college"
+        ]
+      },
+      "evidence_source": "Abstract describes participants as 'Black college-bound older adolescent females,' indicating recruitment from a college or college-bound population.",
+      "warning": "Inferred from 'college-bound' descriptor; specific recruitment location not explicitly detailed."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "Abstract states: 'Respondents also completed a culturally-sensitive figure rating scale along with assessments of body appreciation and body image flexibility.' The mention of 'body appreciation' assessment suggests use of the Body Appreciation Scale (BAS), though the specific version (BAS or BAS-2) is not explicitly named.",
+      "warning": "Specific version of Body Appreciation Scale (BAS vs. BAS-2) not explicitly stated; inferred as BAS based on context."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Abstract explicitly states: 'Self-reported height and weight were used to calculate BMI.'",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The abstract does not provide specific correlation coefficients between body appreciation and BMI. It only states that 'BMI was the strongest predictor of both body appreciation and body image flexibility,' indicating a relationship exists but not quantifying it with a correlation value.",
+      "warning": "Specific correlation coefficient not provided in the abstract."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The abstract describes 'The present study' (singular), indicating one study is presented in this abstract.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The abstract does not explicitly state whether this is a journal article or dissertation. The copyright notice '\u00a9 2014 Elsevier Ltd. All rights reserved' suggests journal publication, but this cannot be definitively confirmed from the abstract alone.",
+      "warning": "Publication type inferred as likely journal article based on copyright notice, but not explicitly stated."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This abstract describes Study 1, which evaluated an affect regulation model examining the association between body dissatisfaction and two measures of positive body image (body appreciation and body image flexibility) among 247 Black college-bound older adolescent females. The study used self-reported height and weight to calculate BMI and found that BMI was the strongest predictor of both positive body image measures, with body size discrepancy contributing additional variance.",
+      "evidence_source": "Abstract content describing the study design, sample, and key findings.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,113 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is in Portuguese and appears to be an abstract, but no country is explicitly mentioned in the provided text.",
+      "warning": "Country not specified in the provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          369
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            369
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            369
+          ]
+        }
+      },
+      "evidence_source": "The text states: 'O presente estudo pretendeu clarificar, numa amostra de 369 mulheres' (The present study aimed to clarify, in a sample of 369 women). The sample consists entirely of women.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method (paper-and-pencil or online) is specified in the provided text.",
+      "warning": "Survey method not specified."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about racial/ethnic composition of participants is provided in the text.",
+      "warning": "Percent of white participants not specified."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age of participants is provided in the text.",
+      "warning": "Mean age not specified."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about educational level of participants is provided in the text.",
+      "warning": "Percentage of college or higher education not specified."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While the text mentions 'IMC' (BMI in Portuguese), no mean BMI value is provided in this abstract.",
+      "warning": "Mean BMI not specified in the provided text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about where or how participants were recruited (community, college, or primary/secondary/high school) is provided in the text.",
+      "warning": "Source of sample not specified."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'apre\u00e7o pela imagem corporal' (body appreciation) and 'imagem corporal positiva' (positive body image) as constructs studied, but does not specify which instrument (BAS or BAS-2) was used to assess body appreciation.",
+      "warning": "Specific assessment instrument for body appreciation (BAS or BAS-2) not specified."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'IMC' (BMI) but does not specify whether it was self-reported or measured.",
+      "warning": "Assessment method for BMI (self-reported or measured) not specified."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No specific correlation coefficient between body appreciation and BMI is provided in this abstract.",
+      "warning": "Correlation values not provided in the text."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study: 'O presente estudo pretendeu clarificar...' (The present study aimed to clarify...). No multiple studies or experiments are mentioned.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is an abstract in Portuguese, but the publication type (journal article or dissertation) is not specified.",
+      "warning": "Publication type not specified in the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This is an abstract of a single study examining the relationship between body image discrepancy and disordered eating behaviors in a sample of 369 women. The study investigates the mediating roles of cognitive fusion regarding physical appearance and body appreciation, while controlling for BMI. Results indicate that women perceiving significant body discrepancy show greater disordered eating tendencies, partially explained by higher cognitive fusion and lower body appreciation.",
+      "evidence_source": "Summary derived from the entire abstract text provided.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,245 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the publication type.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text does not mention any financial support or grants.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state whether the publication was peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses self-efficacy and practice variability but does not mention performance goal orientation (PGO), avoid performance goal orientation (APGO), or prove performance goal orientation (PPGO).",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses self-efficacy, not performance adaptation. Therefore, no adaptation measures are reported.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses self-efficacy, not performance adaptation. Therefore, no adaptation method is reported.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses self-efficacy, not performance adaptation. Therefore, no specific adaptation method is reported.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not mention goal orientation or any specific measurement scales like VandeWalle.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide any age information for the participants.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is reported in the text to impute.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide any information about the sex composition of the sample.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide any information about the percentage of men in the sample.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not mention the country where the study was conducted.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text refers to 'individuals' in 'variable condition' and 'constant condition' but does not specify if they are students or another type of sample.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The schema specifically asks for 'N' for the correlation between goal orientation and performance adaptation. Since neither of these constructs is discussed, 'N' for this specific correlation is not available.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses self-efficacy and practice variability, including correlations between self-efficacy intensity and generality (r = -.08). However, it does not report any correlation between Performance Goal Orientation (PGO) and performance adaptation (PA).",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation between Performance Goal Orientation and performance adaptation was found, so no information can be provided.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study investigating self-efficacy and practice variability across 'variable' and 'constant' conditions, examining multiple hypotheses (2a, 2b, 3a, 3b) within this single experimental design.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the examination of self-efficacy generality and intensity in a study comparing variable and constant practice conditions. Hypothesis 2a, predicting higher self-efficacy generality in the variable condition, was supported by factor analyses, intercorrelations, and repeated measures analyses. Hypothesis 2b, predicting higher self-efficacy intensity in the constant condition, was not supported. Hypotheses 3a and 3b, regarding training performance variability as a mediator, were also not supported.",
+      "evidence_source": "Summary of the provided text content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The document is an academic paper, which is typically a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies was found in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The document is an academic paper, which is typically peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "Table 1 lists '8. Performance goal orientation'. The text does not specify approach or avoidance components, so 'Global' is used.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3, 3]}",
+      "evidence_source": "Table 1 lists '9. Near transfer performance mean' and '10. Far transfer performance mean', which are objective performance measures. These are considered performance adaptation outcomes.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1]}",
+      "evidence_source": "The adaptation outcomes 'Near transfer performance mean' and 'Far transfer performance mean' (from Table 1) are objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3, 3]}",
+      "evidence_source": "The adaptation outcomes 'Near transfer performance mean' and 'Far transfer performance mean' (from Table 1) are objective measures (task/test scores).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text does not specify the measurement scale for 'Performance goal orientation'.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information was reported in the provided text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No mean age or information to impute age was reported in the provided text.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No sex composition information was reported in the provided text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No percentage of men was reported in the provided text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No country information was reported in the provided text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No sample type (student vs. other) was reported in the provided text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [80, 80]}",
+      "evidence_source": "The text mentions t-tests with degrees of freedom t(78) and t(77). This implies sample sizes of N=80 and N=79 respectively. Since N for the correlations in Table 1 is not explicitly stated, N=80 is used as a reasonable estimate for the overall sample size for the correlations.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [-0.10, -0.26]}",
+      "evidence_source": "From Table 1, the correlation between '8. Performance goal orientation' and '9. Near transfer performance mean' is -0.10. The correlation between '8. Performance goal orientation' and '10. Far transfer performance mean' is -0.26.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"PGO and Near transfer performance mean\", \"PGO and Far transfer performance mean\"]}",
+      "evidence_source": "Derived from the variable names in Table 1: '8. Performance goal orientation' (PGO), '9. Near transfer performance mean', and '10. Far transfer performance mean'.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with different conditions ('variable condition' and 'constant condition') and hypotheses, without explicitly naming multiple distinct studies (e.g., 'Study 1', 'Study 2').",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the examination of self-efficacy generality and intensity, testing hypotheses related to practice variability and training performance variability. It describes factor analyses, intercorrelations, repeated measures analyses, and regression analyses to evaluate the hypotheses. The findings indicate that the variable condition led to higher self-efficacy generality, while self-efficacy intensity and mediation hypotheses were not supported.",
+      "evidence_source": "Summary of the provided text content.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1 Means, Standard Deviations, and Intercorrelations Among Study Variables",
+      "evidence_source": "The caption of the provided image 'Table 1'.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Holladay2003\\tables\\Holladay2003_p005_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

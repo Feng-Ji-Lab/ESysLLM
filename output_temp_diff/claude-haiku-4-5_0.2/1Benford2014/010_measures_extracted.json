@@ -1,0 +1,103 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing instruments and assessment methods. No geographic location or country information is provided in this section.",
+      "warning": "This is a methods/measures section that does not contain sample or study location information."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments. No sample size or participant count is provided in this section.",
+      "warning": "This is a methods/measures section that does not contain sample size information."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing the instruments used (DMS, BAS, NEO-FFI, MLSSS). The method of survey administration (paper-and-pencil vs. online) is not specified in this section.",
+      "warning": "This is a methods/measures section that describes instruments but not the survey administration method."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section. While it mentions that 'Participants were asked to report their demographics, consisting of age, ethnicity, educational qualifications, height, and weight', no actual demographic data or percentages are reported in this section.",
+      "warning": "This section describes what was measured but does not report the actual demographic results."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section. While it mentions that 'Participants were asked to report their demographics, consisting of age, ethnicity, educational qualifications, height, and weight', no actual mean age is reported in this section.",
+      "warning": "This section describes what was measured but does not report the actual demographic results."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section. While it mentions that 'Participants were asked to report their demographics, consisting of age, ethnicity, educational qualifications, height, and weight', no actual educational attainment percentages are reported in this section.",
+      "warning": "This section describes what was measured but does not report the actual demographic results."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section. While it mentions that 'Participants were asked to report their demographics, consisting of age, ethnicity, educational qualifications, height, and weight (the latter two used to compute self-reported BMI as kg/m2)', no actual mean BMI values are reported in this section.",
+      "warning": "This section describes what was measured but does not report the actual BMI results."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments. No information about where or how participants were recruited is provided in this section.",
+      "warning": "This is a methods/measures section that does not contain sample recruitment information."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'We measured body appreciation using the Body Appreciation Scale (BAS) developed by Avalos, Tylka, and Wood-Barcalow (2005). This is a 13-item measure that taps multiple aspects of positive body image and on which items are rated on a 5-point Likert-type scale (1 = Never, 5= Always).'",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "The text states: 'Participants were asked to report their demographics, consisting of age, ethnicity, educational qualifications, height, and weight (the latter two used to compute self-reported BMI as kg/m2).' The explicit mention of 'self-reported' BMI indicates this was self-reported assessment.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text is a 'Measures' section describing the instruments used to assess body appreciation (BAS), BMI, and other constructs. No correlation coefficients between body appreciation and BMI are reported in this section.",
+      "warning": "This is a methods/measures section that describes instruments but does not report correlational results."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments. No explicit statement about the number of studies is provided. The use of 'the present study' and 'the present work' suggests a single study context, but this is a measures section and does not explicitly state the number of studies.",
+      "warning": "This is a methods/measures section; the number of studies cannot be definitively determined from this section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section from what appears to be a research paper. The publication type (journal article vs. dissertation) cannot be determined from this section alone.",
+      "warning": "Publication type information is not available in this measures section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This is a Measures section describing the instruments used in the study. The study assessed drive for muscularity using the Drive for Muscularity Scale (DMS; 15 items), body appreciation using the Body Appreciation Scale (BAS; 13 items), Big Five personality domains using the NEO-FFI (60 items), subjective social status using the McArthur Ladder, and demographic information including self-reported height and weight for BMI calculation. The text references 'the present study' and 'the present work,' suggesting a single study design.",
+      "evidence_source": "Entire Measures section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The section 'Limitations and Research Extensions' does not provide information about the publication type of the paper itself. It discusses 'This research' and 'the current study' but not its publication format.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "The section 'Limitations and Research Extensions' does not mention any financial support, grants, or funding agencies. Based on the rule 'If the paper explicitly states no funding, or if no funding information exists after checking the typical locations', and the absence of such information in this section, it is coded as 0.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The section 'Limitations and Research Extensions' does not provide information about whether the publication was peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses 'individual differences' and 'dispositional traits of learners' but does not explicitly mention 'Performance Goal Orientation' or its sub-types (Avoid, Prove, Global) as a construct assessed in 'the current study'.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'trainees' performance and adaptability' but does not specify the assessment method (e.g., self-report, objective, other people) used for performance adaptation.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'trainees' performance and adaptability' but does not specify whether the outcome was based on subjective ratings or objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'trainees' performance and adaptability' but does not specify the specific assessment method (e.g., self-report, other people, objective task).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not mention the measurement method of goal orientation, nor does it attribute any measure to VandeWalle.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{'Study X': ['college student trainees']}",
+      "evidence_source": "The sentence 'This research was conducted with a synthetic task and college student trainees'.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'college student trainees' but does not provide any specific mean age, median age, or age ranges from which to impute a mean age.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'college student trainees' but does not provide any information about the sex composition of the sample.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'college student trainees' but does not provide any information about the percentage of men in the sample.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify the country where the research was conducted.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{'Study X': [1]}",
+      "evidence_source": "The sentence 'This research was conducted with a synthetic task and college student trainees'. The term 'college student trainees' explicitly indicates a student sample.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide any sample size (N) for the study or any specific correlation.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not report any correlation coefficients between Performance Goal Orientation and performance adaptation. It mentions 'trainees' performance and adaptability' and 'individual differences' but no specific PGO construct or correlation values.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation between Performance Goal Orientation and performance adaptation was reported in the text.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'This research' and 'the current study' in the singular, indicating a single study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section discusses the limitations and research extensions of the current study. It highlights that the research was conducted with a synthetic task and college student trainees, limiting generalizability. Future research is suggested to explore emotion-control strategies, other training design elements, self-regulatory processes, and individual differences, including other personality traits and cognitive skills.",
+      "evidence_source": "Summary of the 'Limitations and Research Extensions' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,84 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      2
+    ],
+    "best_indices": [
+      0,
+      1,
+      3
+    ],
+    "reason": "The abstract (Candidate 0) and introduction (Candidate 1) explicitly state that the paper describes 'two studies'. Candidate 3, while detailing 'Study 1', also mentions 'Study 2' in its context, reinforcing the count of two. Other candidates either focus on a single study (Study 1 or Study 2) or are from sections not relevant to the overall number of studies. Candidate 9, from the discussion, refers to 'a single study', but this conflicts with the clear and repeated mentions of 'Study 1' and 'Study 2' throughout the paper, especially in the abstract and introduction which provide an overview of the entire research structure. Therefore, the stronger evidence points to two studies."
+  },
+  "usa_vs_other": {
+    "extract_value": {
+      "Study 1": [
+        0
+      ],
+      "Study 2": [
+        0
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "reason": "The paper explicitly states that it comprises two studies conducted in the 'Indian context' (Candidates 0, 1, 2, 10, 11). Specifically, Study 1 is confirmed to be in the Indian context by Candidates 1, 3, 4, 5, and 6. Similarly, Study 2 is confirmed to be in the Indian context by Candidates 1, 4, 7, 8, and 9. All evidence consistently indicates that both studies were conducted in India, not the United States. Therefore, the value for 'usa_vs_other' is 0 for both Study 1 and Study 2."
+  },
+  "N": {
+    "extract_value": {
+      "Study 1": [
+        570
+      ],
+      "Study 2": [
+        524
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "reason": "The paper explicitly describes two studies. For Study 1, the sample size of 570 is consistently reported in the abstract (Candidate 0) and the main text describing Study 1 (Candidates 1, 2, 3). Candidate 4 presents a conflicting value of 572 from a table, but the main text value of 570 is preferred due to its consistency across multiple reliable sources and the instruction to prefer main text over tables in case of conflict. For Study 2, the sample size of 524 is consistently reported in the main text describing Study 2 (Candidates 5, 6, 7). The abstract (Candidate 0) reports 534. Following the instruction to prefer values from 'Results'/'Method'/'Table' sections over 'Abstract', the value of 524 is selected for Study 2."
+  },
+  "female": {
+    "extract_value": {
+      "Study 1": [
+        0.519
+      ],
+      "Study 2": [
+        0.463
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Candidate 0 provides clear and distinct female proportions for 'Study 1' (0.519) and 'Study 2' (0.463) from Table 2, 'Sample description'. The values are directly extracted and converted from percentages as per the definition. This aligns with the context that the paper contains two studies."
+  },
+  "r": {
+    "extract_value": {
+      "Study 2": [
+        -0.344
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "The paper describes two studies, but all candidates for 'r' refer to 'Study 2'. Candidate 1 provides a value of -0.344, which is the arithmetic mean of two correlations: TILS (Loneliness) with Gratitude (r = -0.410) and GQ-6 (Gratitude) with Revised UCLA loneliness scale (r = -0.278). This aligns with the definition's rule 'case_1_multiple_subscales', which states that if multiple Loneliness scale or subscale correlations with Gratitude are reported, the arithmetic mean across the subscales should be computed. Candidates 0 and 2 only report the -0.410 correlation, which is only one of the two relevant correlations. Therefore, Candidate 1's value is preferred as it correctly applies the averaging rule."
+  }
+}

@@ -1,0 +1,107 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a Portuguese abstract (Resumo) that does not explicitly mention the country where the study was conducted.",
+      "warning": "Country not specified in the provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          490
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            490
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            490
+          ]
+        }
+      },
+      "evidence_source": "The text states: 'A an\u00e1lise path foi conduzida numa amostra de 490 mulheres' (Path analysis was conducted in a sample of 490 women). The sample consists of 490 female participants.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether the survey was conducted using paper-and-pencil or online methods.",
+      "warning": "Survey method not specified in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the racial/ethnic composition of participants.",
+      "warning": "Percent of white participants not specified in the provided text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the mean age of participants.",
+      "warning": "Mean age not specified in the provided text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the educational level of participants.",
+      "warning": "Percentage of college or higher education not specified in the provided text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide the mean BMI of participants. It only mentions that IMC (BMI) was controlled for in the analysis: 'controlando o efeito do IMC'.",
+      "warning": "Mean BMI not specified in the provided text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether participants were recruited from community, college, or primary/secondary/high school settings.",
+      "warning": "Source of sample not specified in the provided text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'aprecia\u00e7\u00e3o positiva do corpo (body appreciation)' and 'body appreciation' as a construct, but does not specify whether BAS or BAS-2 was used to assess it.",
+      "warning": "Specific assessment instrument (BAS or BAS-2) for body appreciation not specified in the provided text."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions IMC (BMI) as a variable controlled in the analysis but does not specify whether it was self-reported or measured.",
+      "warning": "Assessment method for BMI (self-reported or measured) not specified in the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide specific correlation coefficients between body appreciation and BMI.",
+      "warning": "Correlation between body appreciation and BMI not provided in the abstract."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with one path analysis conducted on a sample of 490 women. No mention of multiple studies or experiments.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is an abstract (Resumo) in Portuguese. The publication type (journal article or dissertation) cannot be determined from this abstract alone.",
+      "warning": "Publication type not determinable from the provided abstract text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This is a Portuguese abstract describing a single study that tested a path model examining the relationship between early positive memories and eating psychopathology in a sample of 490 women. The study found that social safeness and body appreciation (aprecia\u00e7\u00e3o corporal) mediated the impact of early warm memories on disordered eating behavior, with the model explaining 51% of the variance in eating psychopathology while controlling for BMI.",
+      "evidence_source": "The entire abstract text provides the summary.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

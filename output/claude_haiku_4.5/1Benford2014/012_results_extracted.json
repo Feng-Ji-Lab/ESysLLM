@@ -1,0 +1,238 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in the provided Results section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          509
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            509
+          ]
+        }
+      },
+      "evidence_source": "Note. N = 509. This indicates the total sample size for the study.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method (paper-and-pencil or online) is specified in the provided Results section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information is provided in the Results section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age information is provided in the Results section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No educational attainment information is provided in the Results section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While BMI is discussed as a variable in correlations and regressions, the actual mean BMI value is not reported in the provided Results section. Table 1 is referenced but not provided.",
+      "warning": "Table 1 is referenced but not included in the provided text; mean BMI may be reported there."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the source of the sample (community, college, or primary/secondary/high school) is provided in the Results section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Results section discusses body appreciation as a variable but does not specify which instrument (BAS or BAS-2) was used to assess it.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Results section does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Results section states 'body appreciation was significantly and negatively correlated with Neuroticism and BMI' but does not provide the specific correlation coefficient value. Table 1 is referenced as containing 'bivariate correlations between, all variables' but the table itself is not provided in the text.",
+      "warning": "The specific correlation coefficient between body appreciation and BMI is not provided in the text. Table 1 is referenced but not included."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a Results section from a single study. No explicit mention of multiple studies is present. The text describes analyses from one dataset (N=509).",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only a Results section excerpt. No publication type information (journal article or dissertation) is evident from this section alone.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Results section reports analyses from a single study (N=509) examining relationships between drive for muscularity, body appreciation, personality traits (Big Five), and BMI. Body appreciation was found to be significantly and negatively correlated with both Neuroticism and BMI, while hierarchical regression analyses revealed Neuroticism and BMI as significant predictors in the drive for muscularity model, and Neuroticism, subjective social status, BMI, and Extraversion as significant predictors in the body appreciation model.",
+      "evidence_source": "Entire Results section provided."
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is provided in the text or table.",
+      "warning": "Country not specified in the provided section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          509
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            509
+          ]
+        }
+      },
+      "evidence_source": "Table 1 note states 'N = 509.'",
+      "warning": "Gender-specific sample sizes not provided."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Survey method not mentioned in the provided text or table.",
+      "warning": "Survey method not specified."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information provided in the text or table.",
+      "warning": "Percent of white participants not specified."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Mean age not reported in the provided text or table.",
+      "warning": "Mean age of participants not specified."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Education level information not provided in the text or table.",
+      "warning": "Percentage of college or higher education not specified."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          24.01
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            24.01
+          ]
+        }
+      },
+      "evidence_source": "Table 1, row (8) Body mass index, column M (Mean) = 24.01.",
+      "warning": "Gender-specific BMI means not provided."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Source of sample recruitment not described in the provided text or table.",
+      "warning": "Source of sample not specified."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The specific body appreciation assessment instrument (BAS or BAS-2) is not identified in the provided text or table.",
+      "warning": "Assessment of body appreciation instrument not specified."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Whether BMI was self-reported or measured is not stated in the provided text or table.",
+      "warning": "Assessment method for BMI not specified."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.12
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            -0.12
+          ]
+        }
+      },
+      "evidence_source": "Table 1, intersection of row (2) Body appreciation and column (8) Body mass index. The correlation value is -0.12 (highlighted in green in the table). The text confirms: 'body appreciation was significantly and negatively correlated with Neuroticism and BMI.'",
+      "warning": "Gender-specific correlations not provided. The value -0.12 is marked with a significance indicator in the table but the numeric value is extracted as shown."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with N = 509 participants. No explicit mention of multiple studies (e.g., 'Study 1', 'Study 2', 'Experiment 1') is present. The analyses described (hierarchical regressions with drive for muscularity and body appreciation as criterion variables) are all conducted on the same sample.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "Publication type (journal article or dissertation) is not specified in the provided text or table.",
+      "warning": "Publication type not specified."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Results section presents descriptive statistics and bivariate correlations for a single study (N = 509) examining relationships between drive for muscularity, body appreciation, personality traits (Big Five), BMI, and subjective social status. Body appreciation was significantly and negatively correlated with BMI (r = -0.12) and Neuroticism, while positively correlated with Extraversion and subjective social status. Hierarchical regression analyses revealed that Neuroticism and BMI were significant predictors of drive for muscularity, while Neuroticism, subjective social status, BMI, and Extraversion were significant predictors of body appreciation.",
+      "evidence_source": "Entire Results section including Table 1 and accompanying text describing the analyses and findings."
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1: Descriptive statistics and inter-scale bivariate correlations between all variables included in the present study.",
+      "evidence_source": "Table 1 title and caption as presented in the image."
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Benford2014/tables/1Benford2014_p002_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

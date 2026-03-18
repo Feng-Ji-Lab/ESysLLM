@@ -1,0 +1,170 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "mainland China",
+          "Hong Kong"
+        ]
+      },
+      "evidence_source": "From text: \"Participants were 191 women and 154 men from mainland China who were working or studying at a university in Hong Kong at the time of recruitment.\"",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          345
+        ]
+      },
+      "evidence_source": "\"Participants were 191 women and 154 men from mainland China who were working or studying at a university in Hong Kong at the time of recruitment.\" Detected values: female = 191, male = 154. Calculation: total = 191 + 154 = 345.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            191
+          ]
+        },
+        "male": {
+          "Study X": [
+            154
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            345
+          ]
+        }
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey/data-collection method (e.g., online or paper-and-pencil) is stated in the provided text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participant racial/ethnic composition is provided in the text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          22.41
+        ]
+      },
+      "evidence_source": "\"Participants ranged in age from 16 to 47 years (M = 22.41, SD = 5.30).\"",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            22.41
+          ]
+        }
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Text states participants were \"working or studying at a university in Hong Kong,\" but does not explicitly report the percentage with college or higher education; therefore this is not inferred.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          21
+        ]
+      },
+      "evidence_source": "\"self-reported BMI from 16.02 to 35.69 kg/m^2 (M = 21.00, SD = 2.93).\"",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            21
+          ]
+        }
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Participants were \"working or studying at a university in Hong Kong at the time of recruitment.\"",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about assessment instrument for body appreciation (BAS or BAS-2) is provided in the text.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "\"self-reported BMI from 16.02 to 35.69 kg/m^2 (M = 21.00, SD = 2.93).\"",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation between body appreciation (BAS/BAS-2) and BMI is reported in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The participants description refers to a single sample with no mention of multiple studies or 'Study 1' / 'Study 2'.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type (journal article or dissertation) is indicated in the provided text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section reports a single sample (no explicit study numbering) of 191 women and 154 men (total N = 345) from mainland China who were working or studying at a university in Hong Kong. Participants ranged in age from 16 to 47 (M = 22.41, SD = 5.30) and had self-reported BMI from 16.02 to 35.69 (M = 21.00, SD = 2.93).",
+      "evidence_source": "\"Participants were 191 women and 154 men from mainland China who were working or studying at a university in Hong Kong at the time of recruitment. Participants ranged in age from 16 to 47 years (M = 22.41, SD = 5.30) and in self-reported BMI from 16.02 to 35.69 kg/m^2 (M = 21.00, SD = 2.93).\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text mentions \"q 2001 Academic Press\", indicating a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "The acknowledgments section thanks individuals for comments and insights but does not mention any financial grants or funding.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The publication is a journal article (Academic Press), which implies it is peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The text refers to \"performance goal orientation traits\" and \"performance training goals\" without distinguishing between approach or avoidance components, suggesting a global measure. This is for Study X.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The study examined \"performance adaptability by predicting generalization to a more difficult and complex version of the task.\" This indicates an objective measure. This is for Study X.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The adaptation outcome is based on \"generalization to a more difficult and complex version of the task,\" which is an objective score. This is for Study X.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The adaptation outcome is based on \"generalization to a more difficult and complex version of the task,\" which is an objective task/test. This is for Study X.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text mentions goal orientation based on \"Dweck (1986, 1989), Nicholls (1978, 1984), and others.\" VandeWalle is not mentioned. This is for Study X.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No specific age information (mean, range, SD, median) is reported in the text for Study X.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No mean age or information to impute age is provided in the text for Study X.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text refers to \"60 trainees\" without specifying their sex composition, implying a mixed sample. This is for Study X.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No percentage of men is reported in the text for Study X.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "The authors' affiliations (Michigan State University, Rutgers University, University of Iowa, University of Central Florida, Personnel Decisions Research Institute, Inc., 5th Mission Support Squadron, USAF) are all located in the USA. This is for Study X.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "The sample consists of \"60 trainees.\" While authors are from universities, the text does not explicitly state that the trainees are students. Therefore, it is coded as an 'Other sample'. This is for Study X.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [60]}",
+      "evidence_source": "The text states: \"The experiment involved 60 trainees learning a complex computer simulation over 2 days.\" This is for Study X.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The text describes the effects and contributions of goal orientation on performance adaptability qualitatively but does not provide specific Pearson correlation coefficients (r values). This is for Study X.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No specific correlation values were found, so no correlation information can be provided. This is for Study X.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to a single research effort or experiment using phrases like 'This research examined', 'The experiment involved', and 'The present study contributes'.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section introduces a research study examining the effects of training goals and goal orientation traits on multidimensional training outcomes and performance adaptability. The experiment involved 60 trainees learning a complex computer simulation. The study found that self-efficacy and knowledge structure coherence uniquely contributed to predicting performance adaptability.",
+      "evidence_source": "Summary of the provided text content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

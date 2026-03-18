@@ -1,0 +1,89 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not explicitly state the country where the study was conducted. While the text references 'our study' and 'our data', no geographic location is mentioned.",
+      "warning": "Country information not provided in this Discussion section. This information would typically be found in the Methods section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not provide specific sample size information. The text mentions 'the sample of this study only comprised female participants' but does not state the total number of participants.",
+      "warning": "Sample size not provided in this Discussion section. This information would typically be found in the Methods section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not specify the survey method used. It mentions limitations of 'self-report measures' but does not clarify whether data were collected via paper-and-pencil or online methods.",
+      "warning": "Survey method not explicitly stated in this Discussion section. This information would typically be found in the Methods section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not provide information about the racial/ethnic composition of participants.",
+      "warning": "Racial/ethnic demographic information not provided in this Discussion section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not provide mean age information. It mentions 'controlling the effects of age and BMI' in the analysis, but does not report the actual mean age.",
+      "warning": "Mean age not provided in this Discussion section. This information would typically be found in the Methods or Results section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not provide information about participants' educational level.",
+      "warning": "Educational attainment information not provided in this Discussion section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not provide mean BMI information. It mentions 'controlling the effects of age and BMI' in the analysis, but does not report the actual mean BMI value.",
+      "warning": "Mean BMI not provided in this Discussion section. This information would typically be found in the Methods or Results section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section mentions 'the use of a nonclinical sample' but does not specify whether participants were recruited from community, college, or primary/secondary/high school settings.",
+      "warning": "Specific source of sample recruitment not clearly stated in this Discussion section. Only that it was a nonclinical sample."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not specify which instrument (BAS or BAS-2) was used to assess body appreciation. It references 'body appreciation' throughout but does not name the specific assessment tool.",
+      "warning": "Specific body appreciation assessment instrument not identified in this Discussion section. This information would typically be found in the Methods section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not specify whether BMI was self-reported or measured. It mentions 'controlling the effects of age and BMI' but does not clarify the assessment method.",
+      "warning": "BMI assessment method not specified in this Discussion section. This information would typically be found in the Methods section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not report a specific correlation coefficient between body appreciation and BMI. While the text discusses relationships between variables in the path analysis model, no direct correlation value is provided.",
+      "warning": "Specific correlation coefficient between body appreciation and BMI not provided in this Discussion section. This information would typically be found in the Results section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The Discussion section refers to 'the current study', 'this study', 'the present study', and 'our study' consistently in singular form, indicating a single study. No mention of multiple studies or experiments is made.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not indicate whether this is a journal article or dissertation. This information would typically be found on the title page or in the document header.",
+      "warning": "Publication type not identifiable from this Discussion section alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Discussion section presents findings from a single study examining the relationship between early positive emotional memories, self-compassion, body appreciation, and disordered eating in female participants. The study employed path analysis and found that early warmth and safeness memories had both direct and indirect effects on eating psychopathology severity, with self-compassion and body appreciation serving as mediators. The authors acknowledge several limitations including the cross-sectional design, reliance on self-report measures, female-only sample, and nonclinical population, and recommend future longitudinal and experimental studies with diverse samples.",
+      "evidence_source": "Entire Discussion section, particularly the opening paragraphs describing the study's model and findings, and the limitations section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

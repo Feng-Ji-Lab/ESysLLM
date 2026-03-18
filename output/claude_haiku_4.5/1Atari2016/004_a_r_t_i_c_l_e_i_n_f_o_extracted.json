@@ -1,0 +1,89 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only article metadata (keywords and article history). No country information is present in this section.",
+      "warning": "Insufficient information to extract country. This appears to be only the article header/metadata section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only article metadata. No sample size information is present.",
+      "warning": "Insufficient information to extract sample size."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only article metadata. No survey method information is present.",
+      "warning": "Insufficient information to extract survey method."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only article metadata. No demographic information is present.",
+      "warning": "Insufficient information to extract racial/ethnic composition."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only article metadata. No participant age information is present.",
+      "warning": "Insufficient information to extract mean age."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only article metadata. No education level information is present.",
+      "warning": "Insufficient information to extract education level."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only article metadata. No BMI information is present.",
+      "warning": "Insufficient information to extract mean BMI."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only article metadata. No sample source information is present.",
+      "warning": "Insufficient information to extract sample source."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only article metadata. While 'Body appreciation' is mentioned in keywords, no specific assessment instrument (BAS or BAS-2) is identified in this section.",
+      "warning": "Insufficient information to extract body appreciation assessment instrument."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only article metadata. No BMI assessment method is specified.",
+      "warning": "Insufficient information to extract BMI assessment method."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only article metadata. No correlation data is present.",
+      "warning": "Insufficient information to extract correlation coefficients."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only article metadata (keywords and article history). No information about the number of studies is present in this section.",
+      "warning": "Cannot determine number of studies from metadata alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only article metadata. The publication type (journal article vs. dissertation) cannot be determined from this header section alone.",
+      "warning": "Insufficient information to determine publication type from metadata section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section contains only article metadata including publication history (received December 1, 2015; accepted April 26, 2016) and keywords (Positive body image, Body appreciation, Psychometrics, Iran). No study data, participant information, or methodological details are present in this header section.",
+      "evidence_source": "Article metadata header section",
+      "warning": "This is only the article header/metadata. Full extraction requires access to the Methods, Results, and other substantive sections of the paper."
+    },
+    "_pass_type": "text_only"
+  }
+]

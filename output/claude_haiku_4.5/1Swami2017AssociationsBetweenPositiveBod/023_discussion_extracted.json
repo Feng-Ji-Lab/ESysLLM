@@ -1,0 +1,101 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "United States"
+        ]
+      },
+      "evidence_source": "Text states 'in an online sample of US adults'",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No specific sample size is mentioned in this Discussion section. The text references 'the present study' and 'the present work' but does not provide a numerical count of participants.",
+      "warning": "Sample size not provided in this Discussion section"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "online"
+        ]
+      },
+      "evidence_source": "Text explicitly states 'in an online sample of US adults'",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic breakdown of racial/ethnic composition is provided in this Discussion section.",
+      "warning": "Demographic data not provided"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age is reported in this Discussion section. Age is mentioned as a control variable ('once the effects of sexual orientation, relationship status, age, and BMI had been accounted for') but no specific age values are provided.",
+      "warning": "Mean age not provided"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No educational attainment data is provided in this Discussion section.",
+      "warning": "Educational data not provided"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "BMI is mentioned as a control variable and discussed in relation to sexual liberalism outcomes, but no mean BMI value is reported in this Discussion section.",
+      "warning": "Mean BMI not provided"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "community"
+        ]
+      },
+      "evidence_source": "The text describes 'an online sample of US adults', which indicates a community-based sample rather than college or school-based recruitment.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section references 'body appreciation' and 'body image flexibility' as constructs but does not explicitly name the specific instrument used (BAS or BAS-2). The text defines body appreciation as 'a multi-faceted tendency to accept, respect, and take care of one's body' citing Webb et al. (2015), but does not specify which version of the scale was used.",
+      "warning": "Specific BA assessment instrument (BAS vs BAS-2) not explicitly stated in this Discussion section"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not specify whether BMI was self-reported or measured. BMI is mentioned as a control variable and discussed in relation to outcomes, but the assessment method is not detailed.",
+      "warning": "BMI assessment method (self-reported vs measured) not specified in this Discussion section"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not report specific correlation coefficients between body appreciation and BMI. While BMI is discussed as a significant predictor of sexual liberalism outcomes in women, no correlation values with body appreciation are provided.",
+      "warning": "Specific correlation coefficient between body appreciation and BMI not reported in this Discussion section"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The Discussion section consistently refers to 'the present study' and 'the present work' (singular), indicating this is a single study paper. No mention of multiple studies or experiments is made.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "This Discussion section does not contain information about whether the publication is a journal article or dissertation. Publication type cannot be determined from this section alone.",
+      "warning": "Publication type not identifiable from Discussion section"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Discussion section presents findings from a single study examining the relationship between positive body image (specifically body appreciation) and sexual liberalism in an online sample of US adults. The study found that body appreciation was significantly associated with both traditional and contemporary measures of sexual liberalism in both women and men, with some gender differences noted (e.g., technology liberalism association stronger in men). The authors argue that positive body image may directly promote sex-positive behaviors and more liberal sexual attitudes, rather than merely reducing negative body image effects.",
+      "evidence_source": "Entire Discussion section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

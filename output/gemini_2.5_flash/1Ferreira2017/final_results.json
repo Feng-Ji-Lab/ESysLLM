@@ -1,0 +1,311 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11
+    ],
+    "reason": "The overwhelming majority of candidates (10 out of 12) explicitly state or strongly imply that there is a single study being reported. Candidates [2] and [9] reported '0' because their respective sections were empty, not because they found evidence of zero studies. Therefore, the most accurate and consistently supported value is 1."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "Portugal"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          "Portugal"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "Portugal"
+        ]
+      }
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All candidates consistently identify 'Portugal' as the country where the study was conducted. Given the context that the paper reports a single study, all 'Study X' references are merged into a 'Single study'. There are no conflicting values or gender-specific data to resolve."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        "490"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          "0"
+        ]
+      },
+      "female": {
+        "Single study": [
+          "490"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "490"
+        ]
+      }
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "The paper reports a single study, as indicated by the context and consistent references across candidates. Candidates 0 (Abstract), 1 (Participants), and 3 (Table caption) consistently report a final sample size of 490 participants, all identified as women. Candidate 2 (Procedures) describes an initial recruitment of 514 participants (494 women, 20 men) but explicitly states that male participants and some female participants were subsequently excluded to form the final sample for the study. This cleaning process aligns with the final reported sample of 490 women in the other reliable sources. Therefore, the consolidated sample for the single study is 490 women."
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "online"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          "online"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "online"
+        ]
+      }
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper reports a single study, as indicated by the context. Candidates 0 and 1 explicitly state the survey method as 'online' ('Internet based survey', 'online advertisements on social networks' for questionnaires). Candidate 2 mentions 'self-report measures' as a limitation. While online surveys are typically self-reported, 'online' describes the *method of data collection* more precisely, aligning with the field definition and the provided enum options ('online', 'paper-and-pencil'). Therefore, 'online' is the most accurate and specific method for data collection."
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        "24.76"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          "24.76"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "24.76"
+        ]
+      }
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper reports a single study. Candidate 0, from the 'Participants' section, explicitly states the mean age of participants as 24.76 years for 490 women. Candidate 1, from a table, reports 22.29 for 'Age'. However, Candidate 0's section summary clarifies that the mean Body Mass Index (BMI) was 22.29, strongly suggesting that the value 22.29 in Candidate 1's table refers to BMI, not age, despite being labeled 'Age' in the table extraction. Therefore, 24.76 is the reliable mean age, and it applies to the female participants."
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        "22.29"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          "22.29"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "22.29"
+        ]
+      }
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper reports a single study, so all relevant data is consolidated under 'Single study'. Candidate 0 explicitly states the mean BMI as 22.29 for participants, who are identified as 490 women. This value is therefore assigned to both the 'female' and 'total' categories for BMI. Candidate 1 reports a BMI of 24.76 from a table. However, Candidate 0's section summary also states 'Their mean age was 24.76 years', strongly suggesting that the value 24.76 in Candidate 1 is actually the mean age, not BMI, despite the table row label. Following instruction 7, values from the main text (Candidate 0) are preferred over potentially conflicting table values (Candidate 1) when the main text is more reliable and explicit. Therefore, Candidate 0 is selected as the most reliable source for the mean BMI."
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "community",
+        "nonclinical"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          "community",
+          "nonclinical"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "community",
+          "nonclinical"
+        ]
+      }
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "The context indicates there is a single study. All candidates refer to 'Study X', which is consolidated into 'Single study'. Candidates 0 and 1 both state the sample was from the 'community' or 'general population' and recruited via 'online advertisements'. Candidate 2 describes the sample as 'nonclinical'. These values are complementary, with 'community' and 'nonclinical' both accurately describing the source and nature of the sample. Therefore, all values are merged into a single list for the 'Single study'."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS-2"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          "BAS-2"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "BAS-2"
+        ]
+      }
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason": "The paper reports a single study, as indicated by the context and consistent reporting across all candidates. All candidates consistently identify 'BAS-2' as the instrument used for the assessment of Body Appreciation. There are no conflicting values or gender-specific data to merge. Therefore, 'BAS-2' is extracted for the 'Single study'."
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          "self-reported"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "self-reported"
+        ]
+      }
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The context indicates the paper reports a single study. Candidate [0] explicitly states that BMI was assessed using 'self-reported' height and weight. This value is directly extracted and assigned to the 'Single study' as per the context and instructions."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "All candidates consistently identify the publication type as 'journal articles'. There are no conflicting values, and the consensus across all candidates strongly supports this selection."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        "-0.37"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          "-0.37"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "-0.37"
+        ]
+      }
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper reports a single study. Candidate 0 explicitly provides the 'correlation' between BAS-2 and BMI as -0.37 from an intercorrelation table, which directly matches the field definition. Candidate 1 provides a 'path coefficient' of -0.34 from a path model. While related, a path coefficient is not necessarily the same as a simple bivariate correlation, which is what the field requests. Therefore, Candidate 0 is the more reliable source for the direct correlation value."
+  }
+}

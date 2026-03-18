@@ -1,0 +1,131 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or region of data collection is stated in the provided section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states: \"our sample is limited in generalizability because it comprised undergraduate women.\" No total N is provided in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey/data-collection method (e.g., online or paper-and-pencil) is specified in the provided section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participant racial/ethnic composition (percent white) is provided in the provided section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section indicates participants were \"undergraduate women\" but does not provide a mean age.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "The text states: \"our sample is limited in generalizability because it comprised undergraduate women.\" Per rules, this indicates 100% of participants are college students (inference based on 'undergraduate students').",
+      "warning": "Inference applied: percentage set to 100% because participants are described as undergraduate students."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section mentions \"controlling for body mass\" but does not report mean BMI values.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The text states: \"our sample is limited in generalizability because it comprised undergraduate women.\"",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The section states: \"we used only one index of body image, and although this measure is a psychometrically sound tool (Avalos et al., 2005), it only focuses on the acceptance and appreciation of one's physique.\" Avalos et al. (2005) is the Body Appreciation Scale (BAS).",
+      "warning": "Inference from citation (Avalos et al., 2005) to BAS; text does not explicitly state the acronym."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section references \"controlling for body mass\" but does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficients between body appreciation and BMI are reported in the provided section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section repeatedly refers to \"the present study\" (e.g., \"The present study was undertaken...\"). No multiple studies or numbered studies are described in this section.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided section does not state whether the paper is a journal article or a dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Discussion summarizes a single study examining how conversations about weight loss/dieting and exercise predict body appreciation via object\u2013process body orientation and body attitudes. The sample is described as undergraduate women; no study numbering, sample size, or country is provided, and several measurement limitations (single body appreciation index; unvalidated orientation items; unspecified nature of exercise talk) are highlighted.",
+      "evidence_source": "Key sentences: \"The present study was undertaken to examine whether conversations about weight loss/dieting and exercise differentially predicted body appreciation.\" and \"our sample is limited in generalizability because it comprised undergraduate women.\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

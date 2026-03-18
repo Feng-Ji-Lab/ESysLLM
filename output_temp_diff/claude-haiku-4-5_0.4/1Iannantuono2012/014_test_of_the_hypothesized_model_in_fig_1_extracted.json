@@ -1,0 +1,234 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify a country where the study was conducted.",
+      "warning": "No country information provided in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          249
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'The number of participants (N = 249) exceeded the minimum 5:1 participants-to-parameter ratio needed to confidently examine a model' and later '\u03c7\u00b2(20, N = 249) = 30.61'. The sample size is 249 participants. Study name is unclear from this section alone, so labeled as 'Study X'.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            249
+          ]
+        }
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not describe the survey method (paper-and-pencil or online).",
+      "warning": "No survey method information provided in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide demographic information about racial/ethnic composition of participants.",
+      "warning": "No racial/ethnic demographic data provided in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide mean age of participants.",
+      "warning": "No age demographic data provided in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about educational attainment of participants.",
+      "warning": "No education demographic data provided in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions that 'BMI was related to five model variables' and that 'we controlled for BMI in the model by partialing out BMI's contribution', but does not report the mean BMI of participants.",
+      "warning": "BMI is discussed as a control variable but no mean BMI value is provided in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify where or how participants were recruited (community, college, or primary/secondary/high school).",
+      "warning": "No information about sample source provided in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'body appreciation' as a variable in the model but does not specify which instrument was used to assess it (BAS or BAS-2).",
+      "warning": "Body appreciation is discussed but the specific assessment instrument is not identified in this section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses BMI as a control variable but does not specify whether it was self-reported or measured.",
+      "warning": "BMI assessment method is not specified in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not report the correlation coefficient between body appreciation and BMI. It only mentions that 'BMI was related to five model variables (i.e., restrictive/critical caregiver eating messages, attachment anxiety, depressive symptoms, body appreciation, and intuitive eating)' but does not provide the specific correlation value.",
+      "warning": "While the text indicates BMI was related to body appreciation, no specific correlation coefficient is provided in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "This section describes a single structural model analysis with one sample (N = 249). The text refers to 'this study' and 'our sample' consistently throughout, indicating one study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether this is from a journal article or dissertation.",
+      "warning": "Publication type is not identifiable from this section alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the structural model testing and analysis of a single study (Study X) with N = 249 participants. The authors used Mplus to test a hypothesized model examining relationships between caregiver eating messages, attachment styles, perfectionism, body appreciation, depressive symptoms, and intuitive eating, while controlling for BMI. The final revised model provided excellent fit (CFI=.99, SRMR=.04, RMSEA=.03) and revealed that body appreciation was predicted by restrictive/critical caregiver eating messages, attachment anxiety, and perfectionism dimensions, accounting for 40.5% of variance in body appreciation.",
+      "evidence_source": "Entire section describes the model testing methodology and results for a single study with N = 249 participants."
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the study was conducted. No geographic location is mentioned in the provided section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          249
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            249
+          ]
+        }
+      },
+      "evidence_source": "The text states: 'The number of participants (N = 249) exceeded the minimum 5:1 participants-to-parameter ratio needed to confidently examine a model.' This indicates the study had 249 total participants. No gender-specific sample sizes are provided in this section.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not describe the survey method (paper-and-pencil vs. online). This section focuses on statistical modeling and analysis procedures, not data collection methodology.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report the racial/ethnic composition of participants. No demographic breakdown by race is mentioned.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text does not report the mean age of participants. No age statistics are mentioned in this section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text does not report the educational attainment of participants. No information about college or higher education experience is provided.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text does not report the mean BMI of participants. While BMI is mentioned as a variable controlled for in the model, no descriptive statistics for BMI are provided in this section.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not describe where or how participants were recruited (community, college, or primary/secondary/high school). This section focuses on statistical analysis rather than participant recruitment.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify which instrument was used to assess body appreciation (BAS or BAS-2). While body appreciation is a key variable in the model, the assessment instrument is not mentioned in this section.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify how BMI was assessed (self-reported or measured). While BMI is controlled for in the model, the assessment method is not described in this section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text does not report the correlation between body appreciation and BMI. While the text mentions that 'BMI was related to five model variables (i.e., restrictive/critical caregiver eating messages, attachment anxiety, depressive symptoms, body appreciation, and intuitive eating)' and that 'BMI's contribution to these variables' was controlled for, no specific correlation coefficient is provided.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly state the number of studies. The section describes analysis of a single structural model (Fig. 1) with one sample (N = 249), but does not label this as 'Study 1' or indicate whether multiple studies exist in the paper.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not indicate whether this is a journal article or dissertation. The section is a methods/results section but does not include publication metadata.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the testing of a hypothesized structural model with 249 participants using Mplus maximum likelihood estimation. The authors controlled for BMI's contribution to five model variables (restrictive/critical caregiver eating messages, attachment anxiety, depressive symptoms, body appreciation, and intuitive eating) and examined multiple fit indices (CFI, SRMR, RMSEA) to evaluate model adequacy. The final revised model achieved good fit and revealed that body appreciation was predicted by restrictive/critical caregiver eating messages, attachment anxiety, and perfectionism dimensions, with body appreciation and other variables together predicting 44.4% of variance in intuitive eating.",
+      "evidence_source": "Entire provided text section describing model testing and results."
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1. Means (standard deviations) and correlation among measures and BMI. Note: CEIMS = Caregiver Eating Messages Scale; ECPS = Almost Perfect Scale-Revised; BDI-II = Beck Depression Inventory-II. Experiences in Close Relationships Scale; APS-R = Almost Perfect Scale-Revised; BDI-II = Beck Depression Inventory-II; IES = Intuitive Eating Scale.",
+      "evidence_source": "The table image provided shows Table 1 with variable names in rows and correlation indices in columns. The caption and footnote are visible in the image."
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Iannantuono2012/tables/1Iannantuono2012_p004_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

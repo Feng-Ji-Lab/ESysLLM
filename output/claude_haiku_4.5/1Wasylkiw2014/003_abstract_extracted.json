@@ -1,0 +1,129 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is provided in the abstract.",
+      "warning": "Country not specified in the provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          143
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            143
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            143
+          ]
+        }
+      },
+      "evidence_source": "Abstract states 'Undergraduate women (N = 143)'",
+      "warning": "Only female participants; no male or other gender data provided."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract mentions 'self-reports' but does not specify whether data collection was via paper-and-pencil or online.",
+      "warning": "Survey method (paper-and-pencil vs. online) not specified."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information provided in the abstract.",
+      "warning": "Percent of white participants not specified."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information provided in the abstract.",
+      "warning": "Mean age not specified."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            100
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      },
+      "evidence_source": "Abstract states 'Undergraduate women', indicating all participants are college students.",
+      "warning": "Inferred 100% college education based on 'undergraduate' status; this is a reasonable inference per the infer_rule."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI data provided in the abstract.",
+      "warning": "Mean BMI not specified."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Abstract states 'Undergraduate women', indicating the sample was drawn from a college population.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract mentions 'body appreciation' as a measured construct but does not specify which instrument (BAS or BAS-2) was used.",
+      "warning": "Specific body appreciation assessment instrument not identified."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about BMI assessment method is provided in the abstract.",
+      "warning": "BMI assessment method not specified."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract does not report a correlation coefficient between body appreciation and BMI.",
+      "warning": "Correlation between body appreciation and BMI not provided in the abstract."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The abstract describes a single study with one sample of undergraduate women (N = 143). No multiple studies or experiments are mentioned.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only an abstract; the publication type (journal article vs. dissertation) is not specified.",
+      "warning": "Publication type cannot be determined from abstract alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This abstract describes a single study (Study X) with 143 undergraduate women who completed self-reports on exercise behavior, body orientation, body appreciation, and body-related talk. The study examined how conversations about weight loss/dieting versus exercise differentially predicted body appreciation, with results showing that exercise conversations operated through an object orientation (what bodies can do), while weight loss conversations operated through negative body attitudes.",
+      "evidence_source": "Abstract content",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

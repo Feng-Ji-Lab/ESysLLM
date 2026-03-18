@@ -1,0 +1,93 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a path analysis section describing statistical modeling and does not mention any country or geographic location where the study was conducted.",
+      "warning": "No country information available in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text describes path analysis results and model fit statistics but does not report the sample size or number of participants.",
+      "warning": "No sample size information available in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a path analysis section and does not describe the survey method used to collect data.",
+      "warning": "No survey method information available in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain demographic information about participant race/ethnicity.",
+      "warning": "No racial/ethnic demographic data available in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text mentions that age was controlled for in the path model ('while controlling the effects of BMI and age') but does not report the mean age of participants.",
+      "warning": "Age was controlled for in the analysis but mean age value not reported in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain information about participants' educational attainment.",
+      "warning": "No educational attainment data available in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text mentions that BMI was controlled for in the path model ('while controlling the effects of BMI and age') and that BMI was included as a variable, but does not report the mean BMI of participants.",
+      "warning": "BMI was included in the analysis but mean BMI value not reported in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not describe where or how participants were recruited.",
+      "warning": "No information about sample source available in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The text references 'body appreciation' and specifically mentions 'bBAS-2 = -.090' in the path analysis results, indicating that the Body Appreciation Scale-2 (BAS-2) was used to assess body appreciation.",
+      "warning": "Study name not explicitly provided in this section; labeled as 'Study X' per protocol."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text mentions BMI as a variable in the path model but does not specify whether BMI was self-reported or measured.",
+      "warning": "BMI assessment method not specified in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text describes a path analysis model but does not report a direct correlation coefficient between body appreciation (BAS-2) and BMI. The text mentions that BMI was controlled for in the model, but no bivariate correlation is provided.",
+      "warning": "No correlation between body appreciation and BMI reported in this section. The path analysis controlled for BMI but did not report this specific correlation coefficient."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a results section describing path analysis from what appears to be a single study. No explicit mention of multiple studies is made in this section.",
+      "warning": "Cannot determine number of studies from this section alone; appears to be results from one study."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a path analysis results section and does not contain information about the publication type (journal article vs. dissertation).",
+      "warning": "Publication type not available in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents path analysis results testing whether early memories of warmth and safeness affect eating psychopathology severity through the mechanisms of self-compassion and body appreciation, while controlling for BMI and age. The final model demonstrated significant path coefficients with excellent fit, showing that body appreciation (measured with BAS-2) had a direct negative effect on eating disorder examination questionnaire (EDE-Q) scores, and that self-compassion and body appreciation partially mediated the relationship between early affiliative memories and disordered eating.",
+      "evidence_source": "Entire 'Path Analysis' section provided.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

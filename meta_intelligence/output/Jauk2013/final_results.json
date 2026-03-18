@@ -1,0 +1,153 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      2,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "reason": "Multiple sections of the paper, including the introduction to the present research, methodology, results, and discussion, consistently refer to 'a single study', 'the present research', or 'a single investigation' conducted within this paper. For example, Candidate [2] states 'A single study investigated this relationship', and Candidate [7] introduces 'the present research, which is a single study'. Candidates suggesting other values either discuss external literature (e.g., Candidate [5] reviews several studies, Candidate [6] references an external paper) or provide no specific study information for the current paper."
+  },
+  "SAMPLE SIZE": {
+    "extract_value": {
+      "Single study": [
+        297,
+        21,
+        275,
+        121,
+        175,
+        232,
+        65
+      ]
+    },
+    "best_indices": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "reason": "The paper explicitly states it conducts a single study, as confirmed by the provided context and multiple candidates (e.g., Candidate [0] 'this study', Candidate [2] 'a single study'). The primary sample size is consistently reported as 297 across several reliable sections, including the 'Participants' (Candidate [2]), 'Method' (Candidate [3]), and Table 1 (Candidate [4]). Candidate [10] mentions '300 persons' in the 'Limitations and Conclusions' section; however, this is considered less precise than the detailed reporting in the method sections and contradicts the consistent N=297, which is also supported by the exact sum of some subsamples (e.g., 232 + 65 = 297 from Candidate [5]). Therefore, N=300 is disregarded. Candidates [5], [6], [7], [8], and [9] provide sample sizes for various subsamples (e.g., based on IQ ranges) within this single study (e.g., 21, 275, 121, 175, 232, 65). As per instruction 3, these subsample values are merged into the same list for the single study. Candidate [1] refers to an external study (Preckel et al., 2006) and is therefore excluded."
+  },
+  "IQ Aspect": {
+    "extract_value": {
+      "Single study": [
+        "g"
+      ]
+    },
+    "best_indices": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "reason": "The paper conducts a single study, as confirmed by the context and multiple candidates referring to \"the present research\" or \"this study\". All reliable candidates consistently indicate that 'general intelligence (g)' was the IQ aspect assessed in this study. Candidate [3] mentions that the assessment is grounded in the Cattell\nHorn\nCarroll model, measuring g, fluid intelligence (Gf), and crystallized intelligence (Gc), with g being most strongly predicted by Gf. However, the primary measure used and discussed throughout the paper is 'g', as explicitly stated in candidate [8] (\"assembled in order to obtain a broad and reliable measure of g\"). Therefore, only 'g' is extracted. Candidates [0] and [1] were excluded as they discuss general theoretical models or findings from other studies, not the specific IQ aspect measured in the present paper's study."
+  },
+  "Creativity Measures": {
+    "extract_value": {
+      "Single study": [
+        "CAQ",
+        "ICAA"
+      ]
+    },
+    "best_indices": [
+      0,
+      2,
+      3
+    ],
+    "reason": "The paper conducts a single study as indicated by the context. Candidate [2] explicitly states that 'We administered a newly devised measure of creative achievement, the Inventory of Creative Activities and Achievements (ICAA)'. Candidate [3] explicitly states that 'Participants worked on \"the creative achievement questionnaire\"' and the section summary confirms this refers to the 'CAQ'. Candidate [0] provides a general description of the CAQ, which is consistent with its use in the study. Candidate [1] discusses external studies and is not relevant to the current paper's measures. Therefore, both CAQ and ICAA were used in the single study."
+  },
+  "ES": {
+    "extract_value": {
+      "Single study": [
+        0.28
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "Candidate 0 discusses external literature and is not relevant to the current paper's study. Candidates 2 and 3 report correlations for 'creative potential' (e.g., ideational fluency, originality scores), which do not align with the definition of 'ES' requiring correlations with 'creative achievement' (measured by instruments like CAQ and ICAA). Candidate 1 explicitly provides the correlation between 'IQ' and 'Creative achievement' as .28, which directly matches the field definition for the single study conducted in this paper."
+  },
+  "Effects": {
+    "extract_value": {
+      "Single study": [
+        1
+      ]
+    },
+    "best_indices": [
+      3
+    ],
+    "reason": "The paper explicitly states it contains a single study. Candidate [3] provides direct and specific evidence for one correlation coefficient (effect size) between IQ and Creative Achievement, stating: \"The correlation between IQ (1) and Creative achievement (5) is 0.28, resulting in 1 effect size.\" This value is derived from Table 1, which is a reliable source. Other candidates either discuss external studies (Candidate [0]), refer to creative potential instead of creative achievement (Candidates [4], [7]), or state that no effect sizes were found in their specific text snippets (Candidates [1], [2], [5], [6], [8]). These '0' findings do not definitively contradict the explicit finding of 1 effect size for creative achievement in Candidate [3], which is directly relevant to the field definition. Therefore, Candidate [3] is the most reliable source for the number of effects for the single study."
+  },
+  "Mage": {
+    "extract_value": {
+      "Single study": [
+        30.4
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "The paper contains a single study, as indicated by the context. Candidate [1] explicitly states it details participant characteristics 'for a single study' and provides the average age of 30.40 years. Candidate [0] discusses ages from multiple external studies (e.g., 'Study X1 (Fuchs-Beauchamp et al., 1993)', 'Study X2 (Yamamoto, 1964)'), which are not relevant to the current paper's study and are therefore excluded."
+  },
+  "Measure IQ": {
+    "extract_value": {
+      "Single study": [
+        "Intelligence Structure Battery",
+        "INSBAT"
+      ]
+    },
+    "best_indices": [
+      1,
+      2
+    ],
+    "reason": "The paper contains a single study as confirmed by the context. Candidate [0] describes external studies and is therefore excluded. Candidates [1] and [2] both refer to the current paper's study and consistently identify the 'Intelligence Structure Battery' (INSBAT) as the specific tool used to measure intelligence. Candidate [3] mentions 'IQ' which is a general construct and not the specific assessment tool, thus the more precise information from candidates [1] and [2] is preferred. The values 'Intelligence Structure Battery' and 'INSBAT' are merged for the single study."
+  },
+  "IQ modality": {
+    "extract_value": {
+      "Single study": [
+        "both"
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "The paper contains a single study, as indicated by the context. Candidate [0] discusses external studies and is therefore irrelevant to the current paper's IQ modality. Candidate [1] explicitly describes the assessment of general intelligence for 'a study' within the paper, detailing both figural-inductive reasoning (figural) and verbal short-term memory and word meaning (verbal) components. This directly supports the 'both' modality for the single study. The aggregation rule states that if both figural and verbal measures are present, 'both' should be reported, which is consistent with the extracted value."
+  },
+  "Domain classified": {
+    "extract_value": {
+      "Single study": [
+        "Total",
+        "Everyday"
+      ]
+    },
+    "best_indices": [
+      1,
+      2
+    ],
+    "reason": "The paper reports a single study, as confirmed by the provided CONTEXT. Candidate [0] discusses external studies (Park, Lubinski, & Benbow, 2007, 2008) and is therefore excluded as per the CONTEXT and instructions. Candidate [1] refers to the current study, providing an extracted value of ['Total']. Its section summary explicitly states, \"The ICAA measures everyday creative activities and achievements across eight domains.\" Since 'Everyday' is an allowed value for 'Domain classified' and is directly mentioned as the type of creativity measured, it is included. Candidate [2] also refers to the current study, providing an extracted value of ['Total']. Its evidence states that the discussion is about \"general aspects of creativity rather than specific domains,\" which supports the 'Total' classification. Merging the unique values from Candidate [1] (['Total', 'Everyday']) and Candidate [2] (['Total']) results in the consolidated list ['Total', 'Everyday'] for the 'Single study'."
+  }
+}

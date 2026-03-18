@@ -1,0 +1,159 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          149,
+          157,
+          121,
+          114,
+          120,
+          120,
+          475
+        ]
+      },
+      "evidence_source": "Text: \"Thus, the Malay sample was first split using a computer-generated semi-random seed, resulting in one split-half for EFA (women n = 149, men n = 157) and a second split-half for CFA (Malay women n = 121, Malay men n = 114); the latter was combined with data from Chinese participants (women n = 120, men n = 120).\" Also: \"Proactive Monte Carlo simulations ... indicated that a sample size of 220 would be sufficient for this analysis (our n = 475).\"",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            149,
+            121,
+            120
+          ]
+        },
+        "male": {
+          "Study X": [
+            157,
+            114,
+            120
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            475
+          ]
+        }
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Text: \"To examine the factor structure of Malay BAS-2 scores...\" and \"Our plan was to examine fit of the one-factor model of BAS-2 scores...\"",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Text: \"To assess convergent validity, we used the total sample and examined bivariate correlations between BAS-2 scores and measures of ... self-reported BMI.\"",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Text: \"Finally, to assess convergent validity, we used the total sample and examined bivariate correlations between BAS-2 scores and measures of well-being (...), body image (...), perceived media influence and internalisation of appearance ideals, and self-reported BMI.\" No correlation coefficients between BAS-2 (body appreciation) and BMI are reported in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section describes a single analytic strategy (two-step EFA-to-CFA) applied to the dataset; no multiple distinct studies or experiments (e.g., 'Study 1', 'Study 2') are named.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This analytic strategy describes a two-step EFA-to-CFA approach applied to Malay and Chinese participants: the Malay sample was split into two halves (EFA: women n = 149, men n = 157; CFA: Malay women n = 121, Malay men n = 114) and the CFA half was combined with Chinese participants (women n = 120, men n = 120) yielding n = 475 for CFA. Missing data (1.1%) were multiply imputed; EFA was conducted separately by sex and CFA used robust maximum likelihood with Satorra-Bentler correction, plus tests of measurement invariance and assessments of reliability and convergent/incremental validity.",
+      "evidence_source": "Quoted sentences: \"Thus, the Malay sample was first split ... resulting in one split-half for EFA (women n = 149, men n = 157) and a second split-half for CFA (Malay women n = 121, Malay men n = 114); the latter was combined with data from Chinese participants (women n = 120, men n = 120).\" and \"Proactive Monte Carlo simulations ... indicated that a sample size of 220 would be sufficient for this analysis (our n = 475).\" Also: \"Missing data ... made up only 1.1% of the total dataset, so we imputed these individual missing data points using the multiple imputation technique.\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

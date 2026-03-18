@@ -1,0 +1,102 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section contains only manipulation check results and does not mention the country where the study was conducted.",
+      "warning": "No country information provided in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          162
+        ]
+      },
+      "evidence_source": "The text references 'F(1, 161)' in multiple ANOVA tests, indicating degrees of freedom with N-1 = 161, which means the total sample size is 162 participants.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            162
+          ]
+        }
+      },
+      "warning": "Sample size inferred from degrees of freedom (df=1, 161). Gender breakdown not provided in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes manipulation checks and statistical analyses but does not specify the survey method used.",
+      "warning": "Survey method not mentioned in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information about racial/ethnic composition is provided in this section.",
+      "warning": "Racial/ethnic demographic data not available in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section does not contain age information for participants.",
+      "warning": "Age data not provided in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No educational background information is provided in this section.",
+      "warning": "Educational attainment data not available in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section does not report BMI data for participants.",
+      "warning": "BMI data not provided in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section does not specify where or how participants were recruited.",
+      "warning": "Sample source information not available in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section does not mention any body appreciation assessment instruments (BAS or BAS-2).",
+      "warning": "Body appreciation assessment method not mentioned in this section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section does not discuss how BMI was assessed.",
+      "warning": "BMI assessment method not provided in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section contains manipulation check results and does not report correlations between body appreciation and BMI.",
+      "warning": "Correlation data not available in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section is a subsection (4.2.2) describing manipulation checks for what appears to be a single study, but the section does not explicitly state the number of studies in the overall paper.",
+      "warning": "Cannot determine total number of studies from this section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "This section does not indicate whether the work is a journal article or dissertation.",
+      "warning": "Publication type not specified in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents manipulation checks for a study with 162 participants (N=162, df=1,161). The checks assessed whether experimental manipulations were successful: appearance-focused articles were perceived as significantly more appearance-focused than health-focused articles (F(1,161)=31.62, p<.001), and guilt manipulation significantly increased immediate guilt ratings (F(1,161)=13.02, p<.001). However, both article types primed health concerns, and guilt manipulation did not significantly affect introjected regulation.",
+      "evidence_source": "Section 4.2.2 describing manipulation checks with ANOVA results and descriptive statistics (means and standard deviations)."
+    },
+    "_pass_type": "text_only"
+  }
+]

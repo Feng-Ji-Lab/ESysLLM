@@ -1,0 +1,110 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the studies were conducted. While it references college women and daily diary studies, no geographic location is specified.",
+      "warning": "No country information provided in the text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text references multiple studies (Breines et al. 2014; Kelly & Stephen 2016) but does not provide specific sample sizes for any of them.",
+      "warning": "Sample sizes not reported in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "paper-and-pencil"
+        ],
+        "Study 2": [
+          "paper-and-pencil"
+        ]
+      },
+      "evidence_source": "Breines et al. (2014) conducted a 'four-day study in which college women reported on their daily level of appearance-related self-compassion' (daily diary study). Kelly and Stephen (2016) conducted a 'seven-day daily diary study' - both are consistent with paper-and-pencil or diary-based methods, which are paper-and-pencil format.",
+      "warning": "The exact survey method (paper-and-pencil vs. online) is not explicitly stated; inferred from 'daily diary' methodology which typically uses paper-and-pencil format."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide racial/ethnic demographic information for participants.",
+      "warning": "No racial/ethnic composition data reported."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide specific age data. It only mentions 'college women' and 'undergraduate students' but no mean ages are reported.",
+      "warning": "Mean age not reported; only participant type (college women) is mentioned."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          100
+        ],
+        "Study 2": [
+          100
+        ]
+      },
+      "evidence_source": "Breines et al. (2014): 'college women reported on their daily level of appearance-related self-compassion.' Kelly and Stephen (2016): 'college women treated themselves more self-compassionately.' Both studies explicitly state participants were college women, which indicates 100% college or higher education experience.",
+      "warning": "Inferred from explicit statement that participants were 'college women' in both studies."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not report BMI data for any of the studies mentioned.",
+      "warning": "Mean BMI not reported in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "college"
+        ],
+        "Study 2": [
+          "college"
+        ]
+      },
+      "evidence_source": "Breines et al. (2014): 'college women reported on their daily level of appearance-related self-compassion.' Kelly and Stephen (2016): 'college women treated themselves more self-compassionately.' Both studies explicitly recruited from college populations.",
+      "warning": "None."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'body appreciation' and 'body satisfaction' as outcomes but does not specify which instrument (BAS or BAS-2) was used to assess body appreciation in the studies cited.",
+      "warning": "Specific body appreciation assessment instrument not identified in this section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not discuss how BMI was assessed in any of the studies mentioned.",
+      "warning": "BMI assessment method not reported."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not report any correlation coefficients between body appreciation and BMI. While body appreciation is mentioned as an outcome variable in Kelly and Stephen (2016), no correlations with BMI are provided.",
+      "warning": "No correlation data between body appreciation and BMI reported in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 2,
+      "evidence_source": "The text explicitly references two main empirical studies: (1) Breines et al. (2014) - a four-day daily diary study with college women, and (2) Kelly and Stephen (2016) - a seven-day daily diary study with college women. These are the primary studies discussed in this section.",
+      "warning": "None."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether the cited studies (Breines et al. 2014; Kelly & Stephen 2016) were published as journal articles or dissertations.",
+      "warning": "Publication type not specified for the studies mentioned."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section discusses self-compassion as a within-persons protective factor in relation to body image and eating behaviors. It reviews two key daily diary studies: Study 1 (Breines et al. 2014) with college women over four days, and Study 2 (Kelly & Stephen 2016) with college women over seven days. Both studies found that when participants experienced higher-than-usual self-compassion, they reported better body image outcomes and more adaptive eating behaviors, suggesting that fluctuations in self-compassion within individuals are associated with variability in body image and eating experiences.",
+      "evidence_source": "Entire section text describing the two studies and their findings.",
+      "warning": "None."
+    },
+    "_pass_type": "text_only"
+  }
+]

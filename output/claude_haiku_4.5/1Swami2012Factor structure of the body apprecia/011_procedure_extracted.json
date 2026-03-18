@@ -1,0 +1,101 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Indonesia"
+        ]
+      },
+      "evidence_source": "Text states: 'Participants were recruited using convenience sampling from public locations in Jakarta' - Jakarta is the capital of Indonesia.",
+      "warning": "Study name is unclear; using 'Study X' as placeholder per policy."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Procedure section does not specify the total number of participants. Sample size information is not provided in this text.",
+      "warning": "Sample size not mentioned in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "paper-and-pencil"
+        ]
+      },
+      "evidence_source": "Text explicitly states: 'completed a paper-and-pencil survey'",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Procedure section does not provide information about racial/ethnic composition of participants.",
+      "warning": "Demographic information on race/ethnicity not provided in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Procedure section does not provide age information for participants.",
+      "warning": "Age data not provided in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Procedure section does not provide information about educational attainment of participants.",
+      "warning": "Education level information not provided in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Procedure section does not provide BMI data for participants.",
+      "warning": "BMI information not provided in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "community"
+        ]
+      },
+      "evidence_source": "Text states: 'Participants were recruited using convenience sampling from public locations in Jakarta by a research assistant. Potential participants were approached on a first-come, first-served basis in locations such as marketplaces and shopping complexes' - indicating community-based recruitment.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Procedure section does not specify which body appreciation assessment instrument (BAS or BAS-2) was used.",
+      "warning": "Assessment instrument for body appreciation not mentioned in this section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Procedure section does not specify whether BMI was self-reported or measured.",
+      "warning": "BMI assessment method not specified in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Procedure section does not provide correlation coefficients between body appreciation and BMI.",
+      "warning": "Correlation data not provided in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The Procedure section describes a single study procedure without explicit mention of multiple studies.",
+      "warning": "Cannot determine number of studies from this Procedure section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The Procedure section does not indicate whether this is from a journal article or dissertation.",
+      "warning": "Publication type not specified in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Procedure section describes a study conducted in Jakarta, Indonesia, where participants were recruited via convenience sampling from public locations such as marketplaces and shopping complexes. Participants completed a paper-and-pencil survey on a voluntary basis and returned it in a sealed envelope to ensure confidentiality and anonymity. The section does not specify the sample size, participant demographics, assessment instruments, or study design details.",
+      "evidence_source": "Entire Procedure section provided in text_content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

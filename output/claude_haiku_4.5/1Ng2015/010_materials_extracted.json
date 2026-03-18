@@ -1,0 +1,97 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the study was conducted. While there are references to 'Chinese samples' and a 'Chinese translation' of the RSES, this appears to be contextual information about measurement instruments rather than a statement of where this particular study took place.",
+      "warning": "Country location not explicitly stated in this Materials section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This is a Materials section describing measurement instruments and procedures. No sample size or participant count is provided in this section.",
+      "warning": "Sample size information not available in Materials section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Materials section describes the instruments used but does not specify whether data collection was conducted via paper-and-pencil or online methods.",
+      "warning": "Survey method not specified in this Materials section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This Materials section does not report demographic information about participant race/ethnicity. It only describes the measurement instruments used.",
+      "warning": "Racial/ethnic composition not reported in Materials section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While the Materials section mentions that 'Participants provided their demographic data consisting of sex, age, religion, and marital status,' no actual mean age values are reported in this section.",
+      "warning": "Mean age not reported in Materials section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This Materials section does not report educational attainment of participants.",
+      "warning": "Educational attainment not reported in Materials section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Materials section describes how BMI was computed ('Using participants' self-reported height and weight, we computed BMI as kg/m2') but does not report the actual mean BMI value.",
+      "warning": "Mean BMI value not reported in Materials section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This Materials section does not specify where or how participants were recruited (e.g., community, college, primary/secondary/high school).",
+      "warning": "Source of sample not specified in Materials section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'Participants completed the Body Appreciation Scale (Avalos et al., 2005), a 13-item measure of several related components of positive body image.' This is the original BAS (not BAS-2).",
+      "warning": "Study name not explicitly provided in this Materials section; labeled as 'Study X' per extraction guidelines."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "The text states: 'Using participants' self-reported height and weight, we computed BMI as kg/m2.' This indicates BMI was assessed via self-reported measurements.",
+      "warning": "Study name not explicitly provided in this Materials section; labeled as 'Study X' per extraction guidelines."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This Materials section describes the measurement instruments and procedures but does not report any correlation coefficients between body appreciation and BMI.",
+      "warning": "Correlation values not reported in Materials section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This is a Materials section describing instruments and procedures. It does not explicitly indicate how many studies are included in the paper. The section does not use language like 'Study 1', 'Study 2', 'Experiment 1', etc.",
+      "warning": "Number of studies cannot be determined from this Materials section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "This Materials section does not indicate whether the publication is a journal article or dissertation.",
+      "warning": "Publication type not specified in this Materials section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Materials section describes the measurement instruments used in the study. Participants completed the Body Appreciation Scale (BAS), a 13-item measure rated on a 5-point scale. Women also completed the Photographic Figure Rating Scale (PFRS) to assess actual-ideal weight discrepancy, while men skipped this section. The study measured self-esteem using Rosenberg's Self-Esteem Scale (RSES) and computed BMI from self-reported height and weight. Demographic data including sex, age, religion, and marital status were collected.",
+      "evidence_source": "Entire Materials section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

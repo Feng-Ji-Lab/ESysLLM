@@ -1,0 +1,125 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The text mentions 'Individuals who agreed to participate' for the main study and 'The test\u2013retest participant sample was recruited' but does not provide specific numbers for either.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"paper-and-pencil\", \"paper-and-pencil\"]}",
+      "evidence_source": "For the main study: 'They then completed an anonymous paper-and-pencil questionnaire'. For the test-retest sample: 'participants provided written informed consent and complete the BAS-2 along with brief demographics in a private cubicle', implying paper-and-pencil.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The main study was advertised 'on campus locations', implying college students, but no specific percentage of college or higher education is provided. No information for the test-retest sample.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"college\", \"None\"]}",
+      "evidence_source": "For the main study: 'advertised as a project on health and well-being on campus locations'. For the test-retest sample: 'The test\u2013retest participant sample was recruited in June 2017', but no specific source (e.g., college, community) is mentioned.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\", \"BAS-2\"]}",
+      "evidence_source": "For the main study, 'the order of presentation of the scales above was semi-randomised' but no specific Body Appreciation scale is named. For the test-retest sample: 'participants provided written informed consent and complete the BAS-2'.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes 'The main study' and 'The test\u2013retest participant sample' as distinct recruitment efforts within 'this project'. Following the 'average_multiple_values_rule', these are treated as multiple sub-samples within a single study, referred to as 'Study X'.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the procedures for a research project, including ethical approval and data collection methods. It describes a 'main study' conducted between January and March 2017, and a separate 'test-retest participant sample' recruited in June 2017, where participants had not taken part in the earlier study. Both samples completed anonymous paper-and-pencil questionnaires in private cubicles.",
+      "evidence_source": "The entire 'Procedures' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

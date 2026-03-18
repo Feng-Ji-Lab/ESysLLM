@@ -1,0 +1,191 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "UAE"
+        ]
+      },
+      "evidence_source": "Text states: 'a convenience sample of 256 undergraduate female students enrolled at a large, public university in the UAE'",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          256
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            256
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            256
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'a convenience sample of 256 undergraduate female students'",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state whether the survey was conducted via paper-and-pencil or online methods.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          0
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            0
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            0
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'The sample was ethnically homogenous, all participants were of Arab descent, and identified as Muslim.' This indicates 0% white participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          20.35
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            20.35
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            20.35
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'Participants ranged in age from 18 to 26 (M = 20.35 years, SD = 1.81)'",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            100
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'undergraduate female students enrolled at a large, public university'. Per the infer_rule, undergraduate students are considered to have college or higher education experience, so 100%.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          22.98
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            22.98
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            22.98
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'in self-reported BMI from 14.27 to 49.42 kg/m2 (M = 22.98, SD = 5.01)'",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Text states: 'undergraduate female students enrolled at a large, public university' and 'Participants were recruited from undergraduate psychology and general education courses'",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not mention which instrument (BAS or BAS-2) was used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Text states: 'in self-reported BMI from 14.27 to 49.42 kg/m2'",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide correlation coefficients between body appreciation and BMI.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with one sample of 256 undergraduate female students. No multiple studies or experiments are mentioned.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state whether this is a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes a single cross-sectional study (Study X) with 256 undergraduate female students recruited from a large public university in the UAE. Participants were ethnically homogenous (all Arab descent, Muslim), aged 18-26 (M = 20.35), with self-reported BMI ranging from 14.27 to 49.42 kg/m\u00b2 (M = 22.98). All participants had college-level education as they were enrolled as undergraduates.",
+      "evidence_source": "Section 2.1 Participants",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

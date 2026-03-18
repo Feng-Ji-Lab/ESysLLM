@@ -1,0 +1,341 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the study was conducted. However, the mention of 'Dutch translations' and 'Dutch undergraduate women' suggests the study was conducted in the Netherlands, but this is not explicitly stated in this section.",
+      "warning": "Country not explicitly stated in this section. Inferred from context (Dutch translations, Dutch undergraduate women) but cannot confirm with certainty from this text alone."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          310
+        ]
+      },
+      "evidence_source": "Note: N = 310. This appears twice in the text, indicating the total sample size for this study.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether the survey was administered via paper-and-pencil or online methods.",
+      "warning": "Survey method not stated in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'Demographic items concerned participants' age, weight, height, and ethnic descent' but does not provide the actual percentage of white participants.",
+      "warning": "Ethnic composition data not provided in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions that demographic items concerned 'participants' age' but does not provide the actual mean age value.",
+      "warning": "Mean age not provided in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text references 'Dutch undergraduate women' in the context of prior research validation, but does not explicitly state the percentage of college or higher education in the current study sample.",
+      "warning": "Education level percentage not explicitly stated for this study's sample."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions that demographic items included 'weight, height' which could be used to calculate BMI, but the actual mean BMI value is not provided.",
+      "warning": "Mean BMI not provided in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether participants were recruited from community, college, or primary/secondary/high school settings.",
+      "warning": "Source of sample not stated in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Body Appreciation Scale-2 (BAS-2; Tylka & Wood-Barcalow, 2015a). The BAS-2 comprises 10 items rated from 1 = Never to 5 = Always. Scores on these items were averaged, with higher scores representing a more positive body image.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions that demographic items included 'weight, height' but does not explicitly state whether BMI was self-reported or measured.",
+      "warning": "Method of BMI assessment (self-reported vs. measured) not explicitly stated in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes the measures used but does not report any correlation coefficients between body appreciation and BMI.",
+      "warning": "Correlation data not provided in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section is a methods/measures section describing instruments used. It does not explicitly state the number of studies in the paper. The reference to 'this study' (singular) suggests at least one study, but the total number of studies in the paper cannot be determined from this section alone.",
+      "warning": "Number of studies cannot be determined from this measures section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "This section does not indicate whether the publication is a journal article or dissertation.",
+      "warning": "Publication type not stated in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the measures administered in the study (N = 310). The primary measure of body appreciation was the Body Appreciation Scale-2 (BAS-2), along with several other instruments assessing body image, self-esteem, and life orientation. Demographic items collected included age, weight, height, and ethnic descent. The text indicates Dutch translations were used, suggesting the study was conducted in the Netherlands, though this is not explicitly confirmed in this section.",
+      "evidence_source": "Entire Measures section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the study was conducted. The text mentions 'Dutch BAS-2' and 'Dutch translations' and 'Dutch undergraduate women', which indicates the study was conducted in the Netherlands, but the country is not explicitly stated in the provided text section.",
+      "warning": "Country inferred from context (Dutch language, Dutch translations, Dutch undergraduate women) but not explicitly stated in the provided section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          310
+        ]
+      },
+      "evidence_source": "Table 1 note states: 'Note: N = 310.' This indicates the total sample size for this study.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether the survey was administered via paper-and-pencil or online methods.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'Demographic items. Demographic items concerned participants' age, weight, height, and ethnic descent.' but does not provide specific percentages of white participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          21.31
+        ]
+      },
+      "evidence_source": "Table 1, row 8 'Age': M = 21.31, SD = 3.04. This represents the mean age of participants.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'Dutch undergraduate women' which indicates participants were college students, but does not provide an explicit percentage.",
+      "warning": "Participants are described as 'Dutch undergraduate women' suggesting 100% college education, but this is not explicitly stated as a percentage in the provided text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          22.14
+        ]
+      },
+      "evidence_source": "Table 1, row 7 'Body mass index': M = 22.14, SD = 3.31. This represents the mean BMI of participants.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The text states 'Dutch undergraduate women' and references 'Dutch undergraduate women' in the context of prior research, indicating participants were recruited from a college/university setting.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The text states 'Body Appreciation Scale-2 (BAS-2; Tylka & Wood-Barcalow, 2015a). The BAS-2 comprises 10 items...' and Table 1 row 1 shows 'Dutch BAS-2' as the first measure.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "The text states 'Demographic items. Demographic items concerned participants' age, weight, height, and ethnic descent.' The use of 'weight' and 'height' as demographic items suggests self-reported measurement, as BMI would be calculated from these self-reported values.",
+      "warning": "Assessment method inferred from context (self-reported weight and height) but not explicitly stated."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.14
+        ]
+      },
+      "evidence_source": "Table 1, intersection of row 1 'Dutch BAS-2' and column 7 'Body mass index': r = -0.14 (highlighted in green in the table). This is the Pearson r correlation between Body Appreciation (BAS-2) and BMI.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text and table describe a single study with N = 310 participants. No multiple studies or experiments are mentioned.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not indicate whether this is from a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the measures used in a single study (N = 310) of Dutch undergraduate women. Table 1 presents descriptive statistics (M, SD, Range, \u03b1) and Pearson r correlations between all measures, including the Dutch BAS-2 (Body Appreciation Scale-2), appearance satisfaction, functionality satisfaction, self-objectification, self-esteem, optimistic life orientation, body mass index, and age. The correlation between Dutch BAS-2 and BMI is r = -0.14.",
+      "evidence_source": "Text content and Table 1",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1 Participants' scores on all measures and the Pearson r correlations between them.",
+      "evidence_source": "Table 1 caption as provided in the input",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Alleva2016A Dutch translation and validation o/tables/1Alleva2016A Dutch translation and validation o_p001_table00.png",
+    "_metadata_caption": "Table 1Participants' scores on all measures and the Pearson r correlations between them.",
+    "_asset_source": "[table] Table 1Participants' scores on all measures and the Pearson r correlations between them.",
+    "_pass_type": "asset_0"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the study was conducted. While Dutch translations are mentioned and the BAS-2 was translated to Dutch, this indicates the language of the instrument but not necessarily the country of the study.",
+      "warning": "Country not explicitly stated in the provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          310
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            310
+          ]
+        }
+      },
+      "evidence_source": "Note: N = 310. This appears twice in the text, indicating the total sample size for the study.",
+      "warning": "Gender breakdown of the sample is not provided in the text."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether the survey was administered via paper-and-pencil or online methods.",
+      "warning": "Survey method not explicitly stated in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'Demographic items. Demographic items concerned participants' age, weight, height, and ethnic descent.' However, no specific percentages or counts of white participants are provided.",
+      "warning": "Ethnic composition data not provided in the text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions that demographic items included age, but no mean age value is reported in the provided text.",
+      "warning": "Mean age not reported in the provided text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the educational level of participants.",
+      "warning": "Educational attainment data not provided in the provided text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions that demographic items included weight and height (which are used to calculate BMI), but no mean BMI value is reported in the provided text.",
+      "warning": "Mean BMI not reported in the provided text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether participants were recruited from a community, college, or primary/secondary/high school setting.",
+      "warning": "Source of sample not explicitly stated in the provided text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Body Appreciation Scale-2 (BAS-2; Tylka & Wood-Barcalow, 2015a). The BAS-2 comprises 10 items rated from 1 = Never to 5 = Always. Table 2 presents the Dutch BAS-2 items.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions that demographic items included weight and height, but does not explicitly state whether BMI was self-reported or measured.",
+      "warning": "Whether BMI was self-reported or measured is not explicitly stated."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text is a measures section describing the instruments used in the study, including the BAS-2 and demographic items. No correlation coefficients between body appreciation and BMI are reported in this section.",
+      "warning": "Correlation data not available in the provided text. This appears to be a methods/measures section rather than a results section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with N = 310 participants. No explicit mention of multiple studies (e.g., 'Study 1', 'Study 2', 'Experiment 1') is found in the provided text.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not indicate whether this is from a journal article or dissertation.",
+      "warning": "Publication type not determinable from the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the measures used in a single study (N = 310). The Body Appreciation Scale-2 (BAS-2) was translated to Dutch and used to assess body appreciation, along with several other instruments measuring body image, self-esteem, and life orientation. Demographic items collected included age, weight, height, and ethnic descent, though specific descriptive statistics are not provided in this excerpt.",
+      "evidence_source": "The entire 'Measures' section provided in the text.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2: Dutch BAS-2 items and item-factor loadings obtained via exploratory principal factor analysis.",
+      "evidence_source": "The table caption appears at the top of the provided table image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Alleva2016A Dutch translation and validation o/tables/1Alleva2016A Dutch translation and validation o_p002_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_1"
+  }
+]

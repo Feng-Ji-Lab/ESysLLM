@@ -1,0 +1,346 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      2
+    ],
+    "best_indices": [
+      0,
+      1,
+      7,
+      9
+    ],
+    "reason": "The paper contains two distinct studies. Candidates [0] and [1] explicitly state \"Two studies\" in their context, with Study 1 (N=238) and Study 2 (N=288) clearly identified. Candidates [7] and [9] further confirm Study 2 as a separate investigation with its own sample and analyses. Candidates [2-6, 8, 10-11] describe individual studies or components within the two-study design, but do not represent the total count. The abstract and introduction sections (Candidates [0] and [1]) provide the most reliable overview of the paper's structure, confirming this is a two-study paper examining caregiver eating messages across different samples and analytical approaches."
+  },
+  "Sample": {
+    "extract_value": {
+      "Study 1": [
+        238
+      ],
+      "Study 2": [
+        288
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      6,
+      7,
+      9
+    ],
+    "reason": "The paper contains two distinct studies as confirmed by the context and multiple candidates. Study 1 (N=238) is identified in candidates [0], [1], and [6], with consistent gender breakdown: 160 women and 78 men. Study 2 (N=288) is identified in candidates [0], [7], and [9], with consistent gender breakdown: 171 women and 117 men. Candidate [0] (abstract) provides the clearest overview of both studies. Candidates [1] and [6] provide detailed Study 1 data with gender splits from the Participants/Measures sections. Candidates [7] and [9] provide detailed Study 2 data with gender splits. Candidate [3] describes a pilot study (N=43) used for measure development, not a main study sample, so it is excluded. Candidate [4] references Study X with N=238 but provides no gender breakdown. Candidate [5] includes a test-retest subsample (N=18) which is a subsample of Study 1, not a separate study. Candidate [8] and [10] reference Study X with N=288 but lack explicit Study 2 labeling. Candidate [2] is a duplicate of [1]. The most reliable sources are the abstract [0], the Participants sections [1, 7], and the table captions [6, 9] which explicitly label the studies and provide complete gender breakdowns. These candidates are consistent and represent the primary samples for each study.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [
+          78
+        ],
+        "Study 2": [
+          117
+        ]
+      },
+      "female": {
+        "Study 1": [
+          160
+        ],
+        "Study 2": [
+          171
+        ]
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          238
+        ],
+        "Study 2": [
+          288
+        ]
+      }
+    }
+  },
+  "Country": {
+    "extract_value": {
+      "Study 1": [
+        "United States"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates [0] and [1] refer to the same study (Study X, which is Study 1 based on the context indicating this is a two-study paper). They are sourced from the same document section (009_participants_and_procedure_extracted.json) and provide identical information: participants were recruited from a Midwestern university and community college in the United States. Candidate [0] is the primary text source, and Candidate [1] is a supporting asset reference. Both are reliable as they come from the Method/Participants section, which is the most authoritative source for study location information. No conflict exists between the candidates. The study location is clearly identified as the United States (Midwestern region). Study X is mapped to Study 1 per the context that this is a two-study paper with Study 1 (N=238) and Study 2 (N=288)."
+  },
+  "Survey method": {
+    "extract_value": {
+      "Study 1": [
+        "paper-and-pencil"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates [0] and [1] are from the same source (009_participants_and_procedure_extracted.json) and describe the same study with identical survey method information. Candidate [0] is the primary text source, and Candidate [1] is a duplicate reference from an asset/figure caption. Both explicitly state that participants completed measures in paper-and-pencil format: \"At the university, participants completed the measures in a classroom used as a research lab\" and \"At the community college, participants were instructed to complete the study after class and return it to the experimenter.\" These candidates refer to Study 1 (N=238, 160 women, 78 men) from the two-study paper. The survey method is consistently identified as 'paper-and-pencil' across both candidates. No conflicting information exists, so a single consolidated entry for Study 1 is appropriate."
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Study 1": [
+        91.6
+      ],
+      "Study 2": [
+        80.2
+      ]
+    },
+    "best_indices": [
+      0,
+      4
+    ],
+    "reason": "The paper contains two distinct studies as confirmed by the context. Candidates [0] and [1] both report the same value (91.6%) for Study 1 from the Participants and Procedure section (source 009), which is the most reliable source for demographic information. Candidate [0] is selected as the primary source (text_only format). Candidate [4] reports 80.2% for Study 2 from the Participants and Procedure section (source 015), describing a separate sample of 288 college students. Candidates [2] and [3] report 94% but this refers only to a test-retest subsample of 18 participants within Study 1, not the main Study 1 sample of 238, so these are excluded per the subsample merging instruction (subsamples should be merged into the same study, but the main sample value is preferred when available). The main sample values from the Participants sections are most reliable and directly comparable across studies.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          91.6
+        ],
+        "Study 2": [
+          80.2
+        ]
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Study 1": [
+        20.87
+      ],
+      "Study 2": [
+        19.39
+      ]
+    },
+    "best_indices": [
+      0,
+      5
+    ],
+    "reason": "The paper contains two distinct studies as confirmed by the context. Candidate [0] (from 009_participants_and_procedure_extracted.json) provides the mean age for Study 1: M = 20.87 years (N=238, 160 women, 78 men). Candidate [5] (from 015_participants_and_procedure_1_extracted.json) provides the mean age for Study 2: M = 19.39 years (N=288, 171 women, 117 men). These are the primary, most reliable sources from the Participants and Procedure sections describing the main samples for each study. Candidates [2] and [3] describe subsamples (pilot study with 43 participants, M=26.4; test-retest subsample with 18 participants, M=20.65) and are not included as they do not represent the main study samples. Candidates [1] and [4] are duplicates of [0] and [3] respectively. The selected candidates [0] and [5] represent the definitive mean ages for the two main studies from the most reliable source sections (Participants and Procedure).",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          20.87
+        ],
+        "Study 2": [
+          19.39
+        ]
+      }
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Study 1": [
+        100
+      ],
+      "Study 2": [
+        100
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      3,
+      4,
+      5
+    ],
+    "reason": "The paper contains two distinct studies as confirmed by the context. Candidates [0] and [1] describe Study 1 (N=238 college students recruited from introductory psychology classes at a Midwestern university and community college). Candidates [3], [4], and [5] describe Study 2 (N=288 college students recruited from introductory psychology classes, with 76.4% first-year students). Candidate [2] describes a pilot study with 43 college students used to develop the CEMS scale, which is a methodological component rather than a main study sample. All participants in both Study 1 and Study 2 were explicitly identified as college students or higher education students (including post-baccalaureate and graduate students in Study 2), therefore 100% of participants in each study had college or higher education experience. Gender-specific data (female and male) are available for both studies, confirming all subgroups were college-affiliated. The value of 100% is consistent across all reliable sources describing the main study samples.\"",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [
+          100
+        ],
+        "Study 2": [
+          100
+        ]
+      },
+      "female": {
+        "Study 1": [
+          100
+        ],
+        "Study 2": [
+          100
+        ]
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          100
+        ],
+        "Study 2": [
+          100
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Study 1": [
+        "college",
+        "community"
+      ],
+      "Study 2": [
+        "college"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      4,
+      5
+    ],
+    "reason": "The paper contains two distinct studies as confirmed by the context. Study 1 (N=238) participants were recruited from both a college (large Midwestern university) and a community college in the same region, as explicitly stated in Candidates [0] and [1] from the Participants and Procedure section. Study 2 (N=288) participants were recruited exclusively from college (introductory psychology classes), as stated in Candidates [4] and [5]. Candidates [2], [3], and [6] describe pilot studies, test-retest subsamples, or limitations sections that refer back to the main studies but do not represent distinct studies themselves. Candidates [0] and [1] are duplicates from the same source (009_participants_and_procedure_extracted.json) describing Study 1, so [0] is selected as the primary source. Candidates [4] and [5] describe Study 2 from different extracted sections (015 and 016), confirming the college-only recruitment for Study 2. The distinction between studies is clear: Study 1 uses mixed recruitment (college + community), while Study 2 uses college-only recruitment.\""
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Study 1": [
+        "BAS"
+      ],
+      "Study 2": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "The paper contains two distinct studies as confirmed by the context. Candidates [0] and [1] refer to 'Study X' but appear in early sections (Measures and Reliability sections) describing Study 1 methodology and analyses with N=238 participants. Candidate [2] explicitly labels 'Study 1' and presents Table 1 with Study 1 results (women n=160, men n=78). Candidate [3] describes a separate sample (college women n=171, men n=117) in a different analytical context (Figure 2 path model), indicating this is Study 2. All candidates consistently identify the Body Appreciation Scale (BAS) as the instrument used, with no mention of BAS-2. The 'Study X' labels in candidates [0] and [1] are resolved to Study 1 based on their appearance in early methodological sections and their description of the N=238 sample. Both studies used the same instrument (BAS), so the final output lists BAS for each study separately.\""
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Study 1": [
+        "self-reported"
+      ],
+      "Study 2": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "The paper contains two distinct studies as confirmed by the context. Candidates [0] and [1] both describe self-reported BMI assessment using the same methodology (participants estimated weight in pounds and height in feet/inches, converted to metric units). Candidate [0] is from the Measures section describing Study 1 (pilot with 43 college students). Candidate [1] is from the Measures section for Study 2 (288 college participants, 171 women, 117 men), explicitly referencing Study 1 as a prior study. Candidate [2] is a table caption explicitly labeled \"Table 2: Study 2\" confirming the same self-reported BMI assessment for Study 2. Candidate [3] is a figure caption that also describes the same self-reported methodology but uses generic 'Study X' labeling; it refers to Study 2 based on the sample size (171 women, 117 men) matching Candidate [1]. All candidates consistently report self-reported BMI assessment across both studies. No measured/objective BMI data is reported in any candidate."
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Study 1": [
+        24.8,
+        24.84
+      ],
+      "Study 2": [
+        23.16,
+        24.92
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper contains two distinct studies as confirmed by the context. Candidate [0] provides Study 1 Mean BMI values from Table 1 (Women: 24.8, Men: 24.84), extracted from the primary results section describing Study 1 (n=238: 160 women, 78 men). Candidate [1] provides Study 2 Mean BMI values from Table 2 (Women: 23.16, Men: 24.92), extracted from the results section describing Study 2 (n=288: 171 women, 117 men). Both candidates are from reliable sources (descriptive statistics tables in the Results section) and represent the precise mean BMI values for each study's participants, disaggregated by gender. No conflicts exist as the values refer to different studies. Both candidates are retained and merged into separate study entries.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [
+          24.84
+        ],
+        "Study 2": [
+          24.92
+        ]
+      },
+      "female": {
+        "Study 1": [
+          24.8
+        ],
+        "Study 2": [
+          23.16
+        ]
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [],
+        "Study 2": []
+      }
+    }
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Study 1": [
+        -0.17,
+        -0.03,
+        -0.28,
+        -0.06
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates [0] and [1] refer to the same study (Study 1), but report different correlation values. Candidate [0] is from Table 1 in the Results section (r = -0.17 for women, r = -0.03 for men), while Candidate [1] is from Figure 2 showing path coefficients in a structural model (r = -0.28 for women, r = -0.06 for men). Both are valid representations of the correlation between Body Appreciation (BAS) and BMI for Study 1, but they come from different analytical approaches: the table presents raw correlations, while the figure presents standardized path coefficients from the structural equation model. Following the instruction to merge complementary data from the same study, both sets of values are included in the extract_value list. The gender-specific values are preserved separately for female and male groups. No rounding was applied; values are reported as extracted.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [
+          -0.03,
+          -0.06
+        ]
+      },
+      "female": {
+        "Study 1": [
+          -0.17,
+          -0.28
+        ]
+      },
+      "other": {
+        "Study 1": []
+      },
+      "total": {
+        "Study 1": []
+      }
+    }
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper is presented as a journal article based on its structure, methodology, and presentation format (including measures, path models, and statistical analyses typical of empirical research published in academic journals). While Candidate [0] shows \"No evidence\" in the evidence field, the overall context of the paper\u2014with its formal study design, multiple samples, statistical analyses, and academic presentation\u2014is consistent with journal article publication. The paper does not exhibit characteristics of a dissertation (such as extensive literature review chapters, dissertation-specific formatting, or acknowledgment of dissertation committee). Therefore, \"journal articles\" is the appropriate classification."
+  }
+}

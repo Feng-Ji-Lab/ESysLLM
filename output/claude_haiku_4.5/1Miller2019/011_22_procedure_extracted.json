@@ -1,0 +1,101 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'the university's research ethics committee' and 'university's research participant pool' but does not explicitly state the country where the study was conducted.",
+      "warning": "Country not explicitly stated in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide a specific sample size. It mentions 'all female undergraduate students enrolled in psychology courses' were recruited, but no total number is given.",
+      "warning": "Sample size not provided in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "online"
+        ]
+      },
+      "evidence_source": "The text states: 'Each day at 4:00 pm participants were emailed a link to complete the survey online via Qualtrics.' This indicates an online survey method.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the racial/ethnic composition of participants.",
+      "warning": "Percent of white participants not provided in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide mean age or age range of participants.",
+      "warning": "Mean age not provided in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "The text states: 'The study was advertised through the university's research participant pool to all female undergraduate students enrolled in psychology courses.' Since all participants were undergraduate students, they have college or higher education experience, therefore 100%.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about BMI of participants.",
+      "warning": "Mean BMI not provided in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The text states: 'The study was advertised through the university's research participant pool to all female undergraduate students enrolled in psychology courses.' This indicates the sample was recruited from a college/university setting.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes the procedure but does not specify which instrument (BAS or BAS-2) was used to assess body appreciation.",
+      "warning": "Assessment instrument for body appreciation not specified in this section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether BMI was self-reported or measured.",
+      "warning": "BMI assessment method not provided in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes the study procedure and does not report any correlations between body appreciation and BMI.",
+      "warning": "Correlation values not provided in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study referred to as 'This study' and 'A Daily Diary Study of Personality, Feelings and Body Image.' No mention of multiple studies is present in this section.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "This section is a methods/procedure section and does not indicate whether the publication is a journal article or dissertation.",
+      "warning": "Publication type not determinable from this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the procedure for a daily diary study examining personality, feelings, and body image. All participants were female undergraduate students recruited from psychology courses at a university, who completed online surveys via Qualtrics over an 8-day period. The study involved participants completing at least seven out of eight daily surveys administered between 4:00-11:00 pm each evening.",
+      "evidence_source": "Entire section 2.2 Procedure",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

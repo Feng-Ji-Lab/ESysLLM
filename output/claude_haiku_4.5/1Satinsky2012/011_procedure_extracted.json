@@ -1,0 +1,101 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "United States"
+        ]
+      },
+      "evidence_source": "Text states: 'An ad targeted to women in the United States over the age of 18 was placed on Facebook'",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes the recruitment procedure and data collection methods but does not explicitly state the total number of participants in the study.",
+      "warning": "Sample size not provided in this section"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "online"
+        ]
+      },
+      "evidence_source": "Text states: 'Advertisements invited women to visit the study website, read information about the study and an informed consent statement' and 'Women who consented were directed to a registration page to establish a participant account (e-mail and password). After registration, an email was sent to participants asking them to return to the website. Data were collected in two phases, including: (a) an initial questionnaire on sociodemographics, health indicators, body appreciation, and sexual health attitudes and behaviors, and (b) a daily diary component where women were asked to return to the study website daily'",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide demographic information about racial/ethnic composition of participants.",
+      "warning": "Demographic data on race/ethnicity not provided in this section"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text only states 'An ad targeted to women in the United States over the age of 18' but does not provide mean age of participants.",
+      "warning": "Mean age not provided; only minimum age requirement (18+) is mentioned"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about educational attainment of participants.",
+      "warning": "Educational attainment data not provided in this section"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide BMI data for participants. It mentions 'In order to include women of varying body sizes and levels of body appreciation' but does not report mean BMI.",
+      "warning": "Mean BMI not provided in this section"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "community"
+        ]
+      },
+      "evidence_source": "Text states: 'During March 2010, study recruitment advertisements were posted to various Internet forums and list serves and on a popular social networking site' and 'An ad targeted to women in the United States over the age of 18 was placed on Facebook'. Participants were recruited from the general community via online platforms, not from a college or school setting.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions that data collection included 'body appreciation' as a topic ('an initial questionnaire on sociodemographics, health indicators, body appreciation, and sexual health attitudes and behaviors') but does not specify which instrument (BAS or BAS-2) was used to assess body appreciation.",
+      "warning": "Specific assessment instrument for body appreciation not identified in this section"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether BMI was self-reported or measured.",
+      "warning": "BMI assessment method not provided in this section"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a procedural description and does not report any correlation coefficients between body appreciation and BMI.",
+      "warning": "No correlation data provided in this section"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with two data collection phases: '(a) an initial questionnaire on sociodemographics, health indicators, body appreciation, and sexual health attitudes and behaviors, and (b) a daily diary component'. These are phases of one study, not separate studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text does not indicate whether this is from a journal article or dissertation.",
+      "warning": "Publication type not determinable from this procedural section"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the procedure for a single study conducted in March 2010 recruiting women from the United States through online platforms including Internet forums, list serves, and Facebook. Participants were recruited to include women of varying body sizes and levels of body appreciation, with data collected online via an initial questionnaire covering sociodemographics, health indicators, body appreciation, and sexual health, followed by a 35-day daily diary component.",
+      "evidence_source": "Entire Procedure section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

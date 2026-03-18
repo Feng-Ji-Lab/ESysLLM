@@ -1,0 +1,135 @@
+{
+    "value_definitions": [
+        {
+            "name": "Author",
+            "type": "string",
+            "definition": "Author name(s) of the study or paper. Extract from the author line near the main title, not from the abstract, introduction, or citations."
+        },
+        {
+            "name": "Year",
+            "type": "integer_or_string",
+            "definition": "Publication year of the study or paper."
+        },
+        {
+            "name": "SAMPLE SIZE",
+            "type": "object",
+            "items_type": "integer",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of integers. Sample size (total number of participants) for the corresponding effect."
+        },
+        {
+            "name": "ES",
+            "type": "object",
+            "items_type": "number",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of numbers (correlation coefficients). Pearson r (effect size) between intelligence scores and creative achievement. Creative achievement can be measured by instruments such as CAQ and ICAA. If there are multiple measures of creative achievement, only report the corrrelations related to CAQ and ICAA.",
+            "correlation_case_rules": {
+                "Table_attention": "If the caption of the table mentions 'correlation', then it is highly likely that the table contains correlation coefficients so you should carefully check the tables following the table rules for multiple times. Do not quickly judge that the table does not contain correlation coefficients. Similarily, if the text mentions 'correlation', you should carefully check the text. If you still cannot find the correlation coefficients, do not trust your initial extraction. Re-evaluate the image specifically to cross-check the findings. Actively look for missed details, misread characters (e.g., confusing 'O' with '0', or 'I' with '1'), or spatial misinterpretations. List any corrections and based on the rigorous verification, provide the final, verified answer. Also, record all variables' name appearing in the column and row headers in the evidence source and section summary to provide a detailed description of this correlation table",
+                "Table_attention_2": "If the caption of the table mentions 'correlation', and 'Intelligence' and 'Creative achievement' (or any other scales related to Intelligence and Creative achievement) both appear in the table, then it is 99.99% likely (almost certain) that the table contains correlation coefficients so you should carefully check the tables following the table rules for multiple times. If you still cannot find the correlation coefficients, do not trust your initial extraction. Re-evaluate following the step in 'Table_attention', and based on the rigorous verification, provide the final, verified answer.",
+                "case_1_multiple_subscales": "If multiple Intelligence scale or subscale correlations with Creative achievement are reported, compute the arithmetic mean across the subscales and report that mean. Similarly, if multiple Creative achievement scale or subscale correlations with Intelligence are reported, compute the arithmetic mean across the subscales and report that mean. If the table reports correlations for both Intelligence and Creative achievement, you MUST compute the arithmetic mean of their correlations and report that mean as the value.",
+                "case_2_general_scales": "If the table reports correlations for general or total intelligence and also for its subscales, you MUST only record the correlation coefficients related to general or total intelligence. DO NOT compute the arithmetic mean of the correlations for general or total intelligence and its subscales in this case. However, ONLY in the evidence source (NOT in the extra_value), report the general intelligence's correlation and the subscales' correlations separately. Same rule applies to Creative achievement.",
+                "case_2_tables_or_matrices": "Carefully check row/column headers in tables. Ensure you are looking at the intersection of 'Intelligence' and 'Creative achievement'.",
+                "case_3_multiple_subgroups": "If correlations are reported for multiple subgroups or subsamples, you MUST compute the arithmetic mean of their correlations and report that mean as the value."
+            },
+            "precision_rule": "Do not round extracted correlations. If you compute an average, keep at least 3 decimal places when possible."
+        },
+        {
+            "name": "Effects",
+            "type": "object",
+            "items_type": "integer",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of integers. Number of effect sizes, which is equal to the number of correlation coefficients between intelligence and creative achievement."
+        },
+        {
+            "name": "Mage",
+            "type": "object",
+            "items_type": "number",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of numbers. Mean (average) age of participants."
+        },
+        {
+            "name": "Measure IQ",
+            "type": "object",
+            "items_type": "string",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of strings. Specific assessment tool or scale used to measure IQ or intelligence. Do not report any name of subscales or subtests. Instead, report the name of the highest level of assessment tool or scale used to measure IQ or intelligence."
+        },
+        {
+            "name": "IQ modality",
+            "type": "object",
+            "items_type": "string",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of strings. Modality of the Intelligence measure (e.g., 'figural', 'verbal', 'both').",
+            "allowed_values": [
+                "figural",
+                "verbal",
+                "both"
+            ],
+            "aggregation_rule": "If there are both figural and verbal IQ measures for the study, you only need to report the 'both'."
+        },
+        {
+            "name": "IQ Aspect",
+            "type": "object",
+            "items_type": "string",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of strings. Aspect of Intelligence (e.g., 'g', 'Gf', 'Gc', 'Gr').",
+            "allowed_values": [
+                "g",
+                "Gf",
+                "Gc",
+                "Gr"
+            ],
+            "case_rules": {
+                "g": "The 'g' aspect of intelligence is higher-level general intelligence.",
+                "Gf": "The 'Gf' aspect of intelligence is fluid intelligence, which denotes domain-general ability to deal with novel problems.",
+                "Gc": "The 'Gc' aspect of intelligence is crystallized intelligence, which is more dependent on declarative and procedural knowledge that matters for domain-specificcreativity.",
+                "Gr": "The 'Gr' aspect of intelligence is general retrieval ability."
+            }
+        },
+        {
+            "name": "Creativity Measures",
+            "type": "object",
+            "items_type": "string",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of strings. Name of the Creativity Measure tool (e.g., 'CAQ', 'ICAA').",
+            "allowed_values": [
+                "CAQ",
+                "ICAA"
+            ],
+            "case_rules": {
+                "CAQ": "The CAQ (Creativity Achievement Questionnaire) is a questionnaire that measures creative achievement in various domains of human endeavor. It covers ten domains of creativity: visual arts, music, dance, architecture, creative writing, humor, inventions, scientific discovery, music and film, and culinary arts.",
+                "ICAA": "The ICAA (Inventory of Creative Activities and Achievements) is a self-report questionnaire that measures creative achievement in various domains of human endeavor. It covers creative activities and achievements across eight domains: literature, music, arts and crafts, creative cooking, sports, visual arts, performing arts, and science and engineering."
+            }
+        },
+        {
+            "name": "Domain classified",
+            "type": "object",
+            "items_type": "string",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of strings. The domain classification for creativity (e.g., 'Everyday', 'Arts', 'Science', 'Technological', 'Total').",
+            "allowed_values": [
+                "Everyday",
+                "Arts",
+                "Science",
+                "Technological",
+                "Total"
+            ]
+        },
+        {
+            "name": "Confidence Level (low, moderate, high)",
+            "type": "enum",
+            "definition": "Confidence rating for each extracted value.",
+            "allowed_values": [
+                "low",
+                "moderate",
+                "high"
+            ]
+        },
+        {
+            "name": "Confidence Percentage (scale of 0% to 100%)",
+            "type": "number_percent",
+            "definition": "Confidence percentage (0 to 100) for each extracted value."
+        },
+        {
+            "name": "Number of studies",
+            "type": "integer",
+            "definition": "Labels whether you could judge that this paper has multiple studies. Return numeric count of studies found."
+        },
+        {
+            "name": "section_summary",
+            "type": "string",
+            "definition": "2-3 sentences summarizing the content of this section. Explicitly highlight any mention of 'Study 1', 'Experiment 2', or multiple sample subsets to help identify the context."
+        }
+    ]
+}

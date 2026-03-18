@@ -1,0 +1,371 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from the structure of the text, which discusses results, refers to a table, and presents a hypothesis, characteristic of a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or acknowledgments in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from the publication type (journal article).",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{'Study X': []}",
+      "evidence_source": "The text mentions 'goal orientation' as a control variable and defines 'PPGO' and 'APGO', but no specific correlation between PGO and performance adaptation was extracted.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{'Study X': []}",
+      "evidence_source": "The text mentions 'adaptive performance' and 'performance' as criteria, but no specific correlation between PGO and performance adaptation was extracted, and the measurement method is not specified.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{'Study X': []}",
+      "evidence_source": "No specific correlation between PGO and performance adaptation was extracted, and the method (subjective/objective) for performance adaptation is not specified.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{'Study X': []}",
+      "evidence_source": "No specific correlation between PGO and performance adaptation was extracted, and the specific assessment method for performance adaptation is not specified.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{'Study X': []}",
+      "evidence_source": "No specific correlation between PGO and performance adaptation was extracted, and the measurement method for goal orientation is not specified.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{'Study X': ['None']}",
+      "evidence_source": "No age information was provided in the text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{'Study X': [null]}",
+      "evidence_source": "No age information was provided in the text.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{'Study X': [null]}",
+      "evidence_source": "No sex information was provided in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{'Study X': [null]}",
+      "evidence_source": "No sex information was provided in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{'Study X': [null]}",
+      "evidence_source": "No country information was provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{'Study X': [null]}",
+      "evidence_source": "No information about the sample being student or other was provided in the text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{'Study X': []}",
+      "evidence_source": "The text states 'N = 120' for the overall study, but no specific correlation between PGO and performance adaptation was extracted, so no N for such a correlation is available.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{'Study X': []}",
+      "evidence_source": "The text reports regression analyses for mental toughness, with goal orientation as a control variable, but no direct Pearson r correlations between Performance Goal Orientation (PGO) and performance adaptation (PA) are provided.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{'Study X': []}",
+      "evidence_source": "No correlation between PGO and PA was reported in the text.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single set of analyses and refers to 'the results' and 'the Hypothesis' in singular, without explicitly naming multiple studies or experiments.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section examines the incremental validity of mental toughness using hierarchical multiple regression analyses. It reports that trait-based mental toughness did not show incremental validity, but domain mental toughness significantly predicted post-practice self-efficacy and performance, though not adaptive performance. Goal orientation was included as a control variable, and the sample size was N=120.",
+      "evidence_source": "Summarized from the entire provided text.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The document format and content, discussing research methodology and results, are characteristic of a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies was found in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from the publication type (journal article), which is typically peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\", \"Avoid\"]}",
+      "evidence_source": "The note below Table 1 states: 'PPGO = prove performance goal orientation. APGO = avoidance performance goal orientation.' This indicates two distinct performance goal orientations were assessed for the extracted effects.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3, 3]}",
+      "evidence_source": "The text refers to 'adaptive performance' as an outcome. In the context of performance metrics, 'performance' is typically an objective measure. The schema defines code 3 as 'Objective (e.g., task, test)'. This applies to both extracted effects.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1]}",
+      "evidence_source": "The outcome 'adaptive performance' is inferred to be an objective measure. According to the schema, if AdaptMethod_Specific is 3 (Objective), then AdaptMethod should be 1 (Objective scores). This applies to both extracted effects.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3, 3]}",
+      "evidence_source": "The outcome 'adaptive performance' is inferred to be an objective measure. The schema defines code 3 as 'Objective (e.g., task, test)'. This applies to both extracted effects.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1]}",
+      "evidence_source": "The note below Table 1 defines 'PPGO' and 'APGO' but does not attribute the measure to VandeWalle. Therefore, it is coded as 'Other' (1) for both extracted effects.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information (mean, range, SD, or median) was reported in the provided text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No mean age, median age, or categorical age ranges were reported in the provided text to impute age.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the sex composition of the sample was provided in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the percentage of men in the sample was provided in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the country where the sample was collected was provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about whether the sample was a student sample or other was provided in the text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [120, 120]}",
+      "evidence_source": "The note below Table 1 states: 'N = 120.' This sample size applies to both extracted correlations.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [0.23, -0.02]}",
+      "evidence_source": "From Table 1: The correlation between PPGO (variable 11) and Adaptive perf. (variable 19) is 0.23. The correlation between APGO (variable 12) and Adaptive perf. (variable 19) is -0.02.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"PPGO and Adaptive perf.\", \"APGO and Adaptive perf.\"]}",
+      "evidence_source": "The correlations extracted are between PPGO and Adaptive performance, and APGO and Adaptive performance, as identified from Table 1.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single set of hierarchical multiple regression analyses and refers to 'the Hypothesis' (singular), indicating a single study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details hierarchical multiple regression analyses examining the incremental validity of mental toughness, controlling for variables including goal orientation. The results, presented in Table 2 (though Table 1 is provided), indicate that domain mental toughness predicts post-practice self-efficacy and performance, but not adaptive performance. The text defines PPGO and APGO, which are relevant to goal orientation.",
+      "evidence_source": "Summary of the provided text content.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1 Means, standard deviations, and correlations.",
+      "evidence_source": "The caption of the provided image asset.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Hardy2014\\tables\\Hardy2014_p003_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a research study with hierarchical multiple regression analyses and hypotheses, which is characteristic of a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from the publication type (journal article), which is typically peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\", \"Avoid\"]}",
+      "evidence_source": "The 'Note.' section states: 'PPGO = prove performance goal orientation. APGO = avoidance performance goal orientation.' These were entered as control variables.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'adaptive performance' as a criterion but does not specify the assessment method (e.g., self-report, objective).",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'adaptive performance' as a criterion but does not specify if it was based on subjective ratings or objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'adaptive performance' as a criterion but does not specify the specific assessment method (e.g., self-report, other people, objective).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1]}",
+      "evidence_source": "The 'Note.' section defines PPGO and APGO but does not attribute the goal orientation scale to VandeWalle. Therefore, it is coded as 'Other'.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about age (e.g., range, SD, median) is provided in the text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age or other age information is provided to impute the mean age.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the sex composition of the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No percentage of men in the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the country of data collection is provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about whether the sample is a student sample or other is provided in the text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [120]}",
+      "evidence_source": "The 'Note.' section states: 'N = 120.'",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Table 2 presents standardized regression coefficients (b values) and R-squared values, not Pearson r correlation coefficients, between goal orientation and performance adaptation. The schema specifically requests Pearson r.",
+      "warning": "The table provides standardized regression coefficients, not Pearson r correlations, which are required by the schema."
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson r correlations were extracted, so no correlation information can be provided.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single set of analyses and refers to 'the Hypothesis' and 'the results' without explicitly naming multiple studies or experiments.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the incremental validity of mental toughness using hierarchical multiple regression analyses. It examines how trait-based and domain mental toughness predict various criteria, including post-practice self-efficacy, performance, task enjoyment, task knowledge, and adaptive performance, after controlling for variables such as GMA, CSE, videogame experience, goal orientation, baseline performance, and pre-practice self-efficacy. The results, presented in Table 2, indicate that domain mental toughness, particularly its self-belief subscale, significantly predicts post-practice self-efficacy and performance, while trait-based mental toughness does not.",
+      "evidence_source": "Summary of the provided text content.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2 Summary of regression results.",
+      "evidence_source": "The caption of the provided table image.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Hardy2014\\tables\\Hardy2014_p003_table01.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_1"
+  }
+]

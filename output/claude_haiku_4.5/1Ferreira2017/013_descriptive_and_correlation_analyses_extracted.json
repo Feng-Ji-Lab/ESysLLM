@@ -1,0 +1,103 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in the provided text.",
+      "warning": "Country not specified in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information is provided in the text. The text references 'Table 1' for descriptive statistics but the table is not provided.",
+      "warning": "Sample size not available; Table 1 referenced but not provided."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is mentioned in the provided text.",
+      "warning": "Survey method not specified in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information is provided in the text.",
+      "warning": "Percent of white participants not specified in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions that 'age revealed non-significant associations with body appreciation and with EDE-Q' and 'age presented positive correlations with BMI and self-compassion', but no mean age value is provided. Descriptive statistics are referenced in Table 1, which is not provided.",
+      "warning": "Mean age not available; Table 1 referenced but not provided."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in the text.",
+      "warning": "Education level not specified in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses BMI correlations but does not provide the mean BMI value. Descriptive statistics are referenced in Table 1, which is not provided.",
+      "warning": "Mean BMI not available; Table 1 referenced but not provided."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample source (community, college, or primary/secondary/high school) is provided in the text.",
+      "warning": "Source of sample not specified in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'body appreciation' multiple times but does not specify whether BAS or BAS-2 was used to assess it.",
+      "warning": "Specific body appreciation assessment instrument (BAS vs BAS-2) not identified in this section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses BMI but does not specify whether it was self-reported or measured.",
+      "warning": "BMI assessment method (self-reported vs measured) not specified in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.3
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            -0.3
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'BMI presented negative associations with early memories of warmth and safeness and body appreciation, and a positive link to EDE-Q, with a moderate magnitude.' The correlation between BMI and body appreciation is described as negative with moderate magnitude. A moderate negative correlation is estimated at approximately -0.3 to -0.5. Since no exact value is provided, -0.3 is used as a conservative estimate of moderate negative association.",
+      "warning": "Exact correlation coefficient not provided; value is an estimate based on descriptive language ('negative and moderate magnitude'). Gender-specific correlations not reported."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the number of studies. It appears to be a results section from a single study, but the number of studies is not clearly specified.",
+      "warning": "Number of studies cannot be determined from this section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in the text.",
+      "warning": "Publication type not specified in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents descriptive and correlation analyses results showing that early memories of warmth and safeness were positively associated with self-compassion and body appreciation, while negatively correlated with eating disorder symptoms (EDE-Q). BMI showed negative associations with body appreciation and early memories of warmth/safeness, and positive associations with EDE-Q. Age was positively correlated with BMI and self-compassion but negatively with early memories of warmth and safeness.",
+      "evidence_source": "Entire provided text section",
+      "warning": "This appears to be a single study results section; Table 1 referenced but not provided, limiting access to descriptive statistics."
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,316 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a References section containing only citations and abbreviation notes. No country information is present.",
+      "warning": "This is a References section, not a study methods or results section. No study-level data can be extracted."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a References section containing only citations and abbreviation notes. No sample size information is present.",
+      "warning": "This is a References section, not a study methods or results section. No study-level data can be extracted."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a References section containing only citations and abbreviation notes. No survey method information is present.",
+      "warning": "This is a References section, not a study methods or results section. No study-level data can be extracted."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a References section containing only citations and abbreviation notes. No demographic information is present.",
+      "warning": "This is a References section, not a study methods or results section. No study-level data can be extracted."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a References section containing only citations and abbreviation notes. No age information is present.",
+      "warning": "This is a References section, not a study methods or results section. No study-level data can be extracted."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a References section containing only citations and abbreviation notes. No education information is present.",
+      "warning": "This is a References section, not a study methods or results section. No study-level data can be extracted."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a References section containing only citations and abbreviation notes. No BMI data is present.",
+      "warning": "This is a References section, not a study methods or results section. No study-level data can be extracted."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a References section containing only citations and abbreviation notes. No sample source information is present.",
+      "warning": "This is a References section, not a study methods or results section. No study-level data can be extracted."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a References section containing only citations and abbreviation notes. While 'BAS-2 = Body Appreciation Scale' is mentioned in the abbreviations, this is not a study-level assessment method but rather a reference note.",
+      "warning": "This is a References section, not a study methods or results section. No study-level data can be extracted."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a References section containing only citations and abbreviation notes. No BMI assessment method is present.",
+      "warning": "This is a References section, not a study methods or results section. No study-level data can be extracted."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a References section containing only citations and abbreviation notes. No correlation data is present.",
+      "warning": "This is a References section, not a study methods or results section. No study-level data can be extracted."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a References section containing only citations and abbreviation notes. No information about the number of studies is present.",
+      "warning": "This is a References section, not a study methods or results section. No study-level data can be extracted."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a References section containing only citations and abbreviation notes. No publication type information is present.",
+      "warning": "This is a References section, not a study methods or results section. No study-level data can be extracted."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This is a References section containing bibliographic citations and abbreviation notes. The section lists references including Arbuckle (2008) on AMOS software and Avalos, Tylka, & Wood-Barcalow (2005) on the Body Appreciation Scale development. Abbreviation notes define acronyms used in the paper (BMI, EMWSS, SC, BAS-2, EDE-Q subscales) but contain no study-level data.",
+      "evidence_source": "Entire References section provided",
+      "warning": "This section contains no extractable study-level metadata or statistics. Data extraction should be performed on Methods, Results, or Participants sections instead."
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is provided in the text or table. The table shows descriptive statistics and correlations but does not specify the geographic location of the study.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          490
+        ]
+      },
+      "evidence_source": "Table 1 caption states 'Means (M), standard deviations (SD), Cronbach alphas and Intercorrelation scores on self-report measures (N = 490)'. The total sample size is N = 490.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The table caption mentions 'self-report measures' but does not specify whether data were collected via paper-and-pencil or online methods.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information is provided in the table or accompanying text.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          22.29
+        ]
+      },
+      "evidence_source": "Table 1, row 1 'Age': M = 22.29, SD = 3.87",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about educational attainment is provided in the table or text.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          24.76
+        ]
+      },
+      "evidence_source": "Table 1, row 2 'BMI': M = 24.76, SD = 7.66",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The table does not specify whether participants were recruited from community, college, or primary/secondary/high school settings.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Table 1, row 5 is labeled 'BAS-2' (Body Appreciation Scale). The table note confirms 'BAS-2 = Body Appreciation Scale'.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The table does not specify whether BMI was self-reported or measured. Only the BMI values (M = 24.76, SD = 7.66) are provided.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.37
+        ]
+      },
+      "evidence_source": "Table 1, intersection of row 5 'BAS-2' (Body Appreciation Scale) and column 2 'BMI': r = -.37*** (p < .001). The correlation coefficient is -0.37, with significance marker *** indicating p < .001.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text and table appear to describe a single study with one sample (N = 490). No explicit mention of multiple studies or experiments is present.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text includes only a table and reference list excerpt. No publication type (journal article or dissertation) is explicitly stated in the provided materials.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "Table 1 presents descriptive statistics (means, standard deviations, Cronbach alphas) and intercorrelation scores for self-report measures collected from 490 participants. The table includes measures of age, BMI, Early Memories of Warmth and Safeness Scale (EMWSS), Self-Compassion (SC), Body Appreciation Scale-2 (BAS-2), and various subscales of the Eating Disorder Examination Questionnaire (EDE-Q). The correlation between BAS-2 and BMI is -.37 (p < .001), indicating a significant negative relationship.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1. Means (M), standard deviations (SD), Cronbach alphas and Intercorrelation scores on self-report measures (N = 490)",
+      "evidence_source": "The table title and caption as it appears at the top of the table in the provided image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Ferreira2017/tables/1Ferreira2017_p022_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only a figure caption and references section. No country information is explicitly stated in the text or figure.",
+      "warning": "No country information found in the provided content."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only a figure caption and references section. No sample size information is provided.",
+      "warning": "No sample size information found in the provided content."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only a figure caption and references section. No survey method information is provided.",
+      "warning": "No survey method information found in the provided content."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only a figure caption and references section. No demographic information about race/ethnicity is provided.",
+      "warning": "No racial/ethnic demographic information found in the provided content."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only a figure caption and references section. No age information is provided.",
+      "warning": "No age information found in the provided content."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only a figure caption and references section. No education level information is provided.",
+      "warning": "No education level information found in the provided content."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only a figure caption and references section. No mean BMI information is provided.",
+      "warning": "No mean BMI information found in the provided content."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only a figure caption and references section. No information about sample source is provided.",
+      "warning": "No sample source information found in the provided content."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Figure 1 caption and notes indicate 'BAS-2 = Body Appreciation Scale' is used in the path model. The figure shows 'Body Appreciation' as a measured construct.",
+      "warning": "The figure shows a path model but does not explicitly state which study this represents. Labeled as 'Study X' pending clarification from full paper context."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only a figure caption and references section. No information about how BMI was assessed (self-reported vs. measured) is provided.",
+      "warning": "No BMI assessment method information found in the provided content."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.34
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            -0.34
+          ]
+        }
+      },
+      "evidence_source": "Figure 1 shows a path model with a direct path from BMI to Body Appreciation labeled as '-.34***'. This represents the correlation/path coefficient between BMI and Body Appreciation. The note indicates ***p < .001.",
+      "warning": "This is a standardized path coefficient from a structural equation model, not a simple Pearson correlation. The value -.34 represents the direct effect of BMI on Body Appreciation. No gender-specific breakdowns are provided in the figure."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Figure 1 is labeled as 'Final path model' and appears to represent a single study's results. The figure shows one unified path model without explicit mention of multiple studies.",
+      "warning": "Only one path model is shown in the provided figure. The full paper context is needed to confirm if this represents one study or multiple studies."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only a figure caption and references section. No publication type information is explicitly stated.",
+      "warning": "Publication type cannot be determined from the provided content alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "Figure 1 presents a final path model showing relationships between Early Memories of Warmth and Safeness Scale (EMWSS), Self-Compassion, BMI, Age, Body Appreciation (measured with BAS-2), and Eating Disorder Examination Questionnaire (EDE-Q). The model shows a direct negative path from BMI to Body Appreciation (-.34***) and indicates that Body Appreciation negatively predicts EDE-Q (-.59***). The figure includes error terms (E1, E2, E3) and R\u00b2 values for endogenous variables.",
+      "evidence_source": "Figure 1 caption and path model diagram with accompanying notes."
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Figure 1. Final path model.",
+      "evidence_source": "Direct caption text from the figure as presented in the document."
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Ferreira2017/figures/1Ferreira2017_p023_fig00.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_1"
+  }
+]

@@ -1,0 +1,371 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The document is structured as a research paper with sections like 'Estimation Results' and references to hypotheses (H1a-H3c), which is typical of a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of grants, funding agencies, sponsored projects, or explicit financial support was found in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from PubType being a journal article (1), which typically undergoes peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The text refers to 'PO' (Performance Orientation) and discusses its influence on performance trajectories. It does not differentiate between approach and avoidance components of performance goal orientation, indicating a global measure. The study is not explicitly named, so 'Study X' is used.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text mentions 'sales performance per quota' and 'sales performance' as the outcome measure, which is an objective assessment. The study is not explicitly named, so 'Study X' is used.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The adaptation outcome is 'sales performance per quota', which is an objective score. The study is not explicitly named, so 'Study X' is used.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The specific assessment method for adaptation is 'sales performance per quota', which is an objective measure. The study is not explicitly named, so 'Study X' is used.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text mentions 'PO' (Performance Orientation) and 'LO' (Learning Orientation) but does not specify the author of the goal orientation scale (e.g., VandeWalle). Therefore, it is coded as 'Other'. The study is not explicitly named, so 'Study X' is used.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No information regarding age (mean, range, SD, median, or subgroups) was found in the provided text for the sample. The study is not explicitly named, so 'Study X' is used.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No age information was reported, so imputation is not possible. The study is not explicitly named, so 'Study X' is used.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The text refers to 'salespeople' but provides no explicit information about the sex composition or percentages of the sample. The study is not explicitly named, so 'Study X' is used.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information on the percentage of men in the sample was provided. The study is not explicitly named, so 'Study X' is used.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information about the country where the sample was collected was provided. The study is not explicitly named, so 'Study X' is used.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "The sample consists of 'salespeople', which is classified as an 'Other sample' rather than a student sample. The study is not explicitly named, so 'Study X' is used.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [400]}",
+      "evidence_source": "The text states 'n = 400' in the 'Estimation Results' section. The study is not explicitly named, so 'Study X' is used.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The text discusses the influence of PO on performance trajectories using beta coefficients from regression models (e.g., 'PO exerted significant, positive effects on the linear trend (\u03b2 = .0119, p < .05)'). It also mentions a correlation between LO and PO (\u03c1 = .53), but it does not report a direct Pearson r correlation coefficient between Performance Goal Orientation (PO) and performance adaptation (sales performance). The study is not explicitly named, so 'Study X' is used.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No direct Pearson r correlation between Performance Goal Orientation and performance adaptation was reported in the text. The study is not explicitly named, so 'Study X' is used.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study focusing on salespeople's performance trajectories and the influence of goal orientations.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents the estimation results for a study with a sample size of 400 salespeople. It details the influence of previous technology use and goal orientations (Performance Orientation - PO, and Learning Orientation - LO) on sales performance trajectories over time, including linear, quadratic, and cubic trends. The results support hypotheses regarding the anticipated performance trajectory and the differential effects of LO and PO on performance decline, recovery, and plateau phases.",
+      "evidence_source": "The entire 'B: Estimation Results' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No explicit mention of publication type in the provided text.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No explicit mention of financial support in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No explicit mention of peer review in the provided text.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson r correlation between Performance Goal Orientation (PGO) and performance adaptation (PA) was extracted, therefore no PgoType is extracted for a particular effect.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson r correlation between Performance Goal Orientation (PGO) and performance adaptation (PA) was extracted, therefore no AdaptMeasures is extracted for a particular effect.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson r correlation between Performance Goal Orientation (PGO) and performance adaptation (PA) was extracted, therefore no AdaptMethod is extracted for a particular effect.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson r correlation between Performance Goal Orientation (PGO) and performance adaptation (PA) was extracted, therefore no AdaptMethod_Specific is extracted for a particular effect.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson r correlation between Performance Goal Orientation (PGO) and performance adaptation (PA) was extracted, therefore no GoMeasure_dichot_num is extracted for a particular effect.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information was provided in the text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information was provided in the text.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sex composition information was provided in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No percentage of men information was provided in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information was provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson r correlation between Performance Goal Orientation (PGO) and performance adaptation (PA) was extracted, therefore no Sample_dichot is extracted for a particular effect.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text provides 'n = 400' for the overall model, but no Pearson r correlation between Performance Goal Orientation (PGO) and performance adaptation (PA) was extracted. Therefore, N for a specific correlation is not applicable.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table present unstandardized parameter estimates (beta coefficients) from a hierarchical linear model, not Pearson correlation coefficients (r) between Performance Goal Orientation (PO) and performance adaptation (sales performance). The correlation '\u03c1 = .53' mentioned is between LO and PO, not PGO and PA.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson r correlation between Performance Goal Orientation (PGO) and performance adaptation (PA) was extracted, therefore no Correlation_info is extracted.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single set of estimation results and analyses for 'the model' and 'the data' (n=400), without explicitly mentioning or delineating multiple distinct studies or experiments.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents the estimation results from a hierarchical linear model, detailing how covariates (openness to change, experience, previous technology use) and goal orientations (Learning Orientation and Performance Orientation) influence sales performance trajectories over time. It discusses the significant effects of these predictors on the linear, quadratic, and cubic trends of performance, supporting several hypotheses (H1a-H1c, H2a-H2c, H3a-H3c). Numerical simulations and plots are also described to illustrate the impact of goal orientations on performance plateaus.",
+      "evidence_source": "The entire 'B: Estimation Results' section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "B: Estimation Results Notes: Y = sales performance per quota, OC = openness to change, EXP = experience, and USE = previous technology use. Cells depict unstandardized parameter estimates, and values in parentheses are standard errors. i = individual, n = 400, t = 0, ..., 11. For the unrestricted model, the between-subjects variation is incorporated in the Level 1 error structure (Raudenbush et al. 2001).",
+      "evidence_source": "Caption of the provided table image.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Ahearne2010\\tables\\Ahearne2010_p007_table01.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text is from an academic paper, which is typically a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of grants, funding agencies, sponsored projects, or explicit financial support was found in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text is from an academic paper, implying it is peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The text mentions 'PO' (Performance Orientation) throughout, such as 'PO exerted significant, positive effects on the linear trend'. It does not differentiate between approach or avoidance components of performance goal orientation.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text refers to 'sales performance per quota' and 'sales performance' as the outcome measure, which is an objective measure.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The adaptation outcome is 'sales performance per quota', which is an objective score.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The adaptation outcome is 'sales performance per quota', which is an objective measure.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text mentions 'standardized scores for LO and PO' but does not explicitly attribute the goal orientation scale to VandeWalle.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information (e.g., range, SD, median) was reported in the provided text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No mean age was reported in the provided text.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "No explicit information about the sex composition of the sample was provided. Assuming a mixed sample by default when no information is given.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No percentage of men in the sample was reported in the provided text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "No information about the country where the sample was collected was provided.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "The sample consists of 'salespeople', indicating it is not a student sample.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [400]}",
+      "evidence_source": "The text states 'n = 400'.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The text discusses the 'effects' and 'influence' of Performance Orientation (PO) on performance trajectories, but does not report a direct Pearson correlation coefficient (r) between Performance Goal Orientation and performance adaptation. The correlation '\u03c1 = .53, p < .001' is between LO and PO, not PGO and PA. Table 3 provides simulation results, not correlation coefficients.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No direct correlation coefficient between Performance Goal Orientation and performance adaptation was found.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to 'the model' and 'the data' (n=400) without explicitly naming or distinguishing multiple studies (e.g., 'Study 1', 'Study 2').",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents the estimation results of a hierarchical linear model, focusing on how Performance Orientation (PO) and Learning Orientation (LO) influence sales performance trajectories. It details the impact of these goal orientations on the linear, quadratic, and cubic trends of performance, and how they contribute to performance plateaus and maxima. The section references Table 2 (not provided) and Table 3 (provided) for simulation results, with a sample size of n=400 salespeople.",
+      "evidence_source": "Summary of the 'B: Estimation Results' section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "TABLE 3 Simulation of Performance Trajectories' Maxima and Minima Notes: t-min = time to minimum (month), t-max = time to maximum (month), Perf-min = minimum performance on sales quota, and Perf-max = maximum performance on sales quota. We used standardized scores for LO and PO; \u20131 = one standard deviation below the mean of zero (low condition), 1 = one standard deviation above the mean of zero (high condition), and 0 = average.",
+      "evidence_source": "Caption of Table 3.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Ahearne2010\\tables\\Ahearne2010_p008_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_1"
+  }
+]

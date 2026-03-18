@@ -1,0 +1,145 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract does not specify the country where the study was conducted.",
+      "warning": "Country information is not provided in the abstract."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          387
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            387
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            387
+          ]
+        }
+      },
+      "evidence_source": "Methods section: 'A total of 387 women aged between 18 and 25 completed a set of self-report questionnaires.' All participants are women.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "paper-and-pencil"
+        ]
+      },
+      "evidence_source": "Methods section: 'A total of 387 women aged between 18 and 25 completed a set of self-report questionnaires.' The term 'self-report questionnaires' typically indicates paper-and-pencil administration, though the abstract does not explicitly specify the survey method.",
+      "warning": "Survey method is inferred from 'self-report questionnaires' but not explicitly stated as paper-and-pencil or online."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The abstract does not provide information about the racial/ethnic composition of participants.",
+      "warning": "Racial/ethnic demographic data not provided in the abstract."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Methods section: 'A total of 387 women aged between 18 and 25 completed a set of self-report questionnaires.' Only an age range (18-25) is provided, not a mean age.",
+      "warning": "Only age range (18-25) is provided; mean age is not reported in the abstract."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The abstract does not provide information about the educational level of participants.",
+      "warning": "Educational attainment data not provided in the abstract."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Methods section: 'Self-report instruments assessed participants' weight and height, early memories of warmth and safeness with peers, self-compassion, social safeness, body appreciation, as well as disordered eating.' Weight and height were assessed but mean BMI is not reported in the abstract.",
+      "warning": "Mean BMI is not reported in the abstract, although weight and height were assessed."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract does not specify where or how participants were recruited (e.g., community, college, primary/secondary/high school).",
+      "warning": "Source of sample (recruitment location) is not provided in the abstract."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Methods section mentions 'body appreciation' as a construct assessed, but the specific instrument (BAS or BAS-2) is not named in the abstract.",
+      "warning": "The specific body appreciation assessment instrument (BAS or BAS-2) is not identified in the abstract."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Methods section: 'Self-report instruments assessed participants' weight and height.' This indicates self-reported BMI assessment.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The abstract does not report specific correlation coefficients between body appreciation and BMI. Results section mentions associations but does not provide numerical correlation values.",
+      "warning": "Specific correlation coefficient between body appreciation and BMI is not provided in the abstract."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The abstract describes a single cross-sectional study with 387 women participants. The Level of Evidence statement confirms: 'Cross-sectional descriptive study, Level V.'",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The abstract does not explicitly state whether this is a journal article or dissertation.",
+      "warning": "Publication type (journal article vs. dissertation) is not specified in the abstract."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This abstract describes a single cross-sectional study (Study X) examining body appreciation in 387 emerging adult women aged 18-25. The study assessed early memories of warmth with peers, self-compassion, social safeness, body appreciation, and disordered eating through self-report questionnaires, finding that positive peer experiences and self-compassion were associated with higher body appreciation and lower disordered eating.",
+      "evidence_source": "Abstract sections: Purpose, Methods, Results, and Level of Evidence.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

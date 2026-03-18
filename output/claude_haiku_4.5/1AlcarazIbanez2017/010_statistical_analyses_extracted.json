@@ -1,0 +1,93 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Statistical Analyses' section describing methodological procedures (CFA, reliability assessment, MIMIC models). No geographic location or country is mentioned in this section.",
+      "warning": "This section contains only statistical methodology and does not include study characteristics such as country, sample demographics, or descriptive statistics."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Statistical Analyses' section describing statistical procedures. No sample size information is provided in this section.",
+      "warning": "Sample size data not available in this methodological section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text describes statistical analysis methods (CFA, WLSMV estimation, MIMIC models) but does not specify how data were collected (paper-and-pencil vs. online).",
+      "warning": "Survey method not mentioned in this statistical methods section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Statistical Analyses' section and does not contain demographic information about participant race/ethnicity.",
+      "warning": "Demographic data not available in this methodological section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Statistical Analyses' section describing statistical procedures. No participant age information is provided.",
+      "warning": "Demographic data not available in this methodological section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Statistical Analyses' section and does not contain information about participant education level. The mention of 'students' and 'school centres' suggests a school-based sample, but no explicit education level percentages are stated.",
+      "warning": "Education level data not available in this methodological section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Statistical Analyses' section describing statistical procedures. No descriptive statistics for BMI are provided. Weight status is mentioned as a categorical variable (underweight, normoweight, overweight, obese) used in the MIMIC model, but mean BMI is not reported.",
+      "warning": "Descriptive statistics not available in this methodological section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text mentions 'students' and 'school centres' in the context of clustering for statistical analysis ('the cluster option (based on the different school centres) of Mplus were employed'), which suggests a school-based sample. However, this is insufficient to definitively classify the source as 'college', 'primary/secondary/high school', or 'community' without additional context.",
+      "warning": "Sample source cannot be definitively determined from this methodological section alone. The mention of 'school centres' and 'students' suggests a school-based sample, but the specific educational level is not explicitly stated."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'The hypothesized one-factor BAS-2 solution was analyzed using a confirmatory factor analysis (CFA)' and later 'internal reliability was assessed using composite reliability () derived from CFA' and 'gender and weight status differences in the latent BAS-2 scores were investigated'. This clearly indicates BAS-2 was the instrument used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text describes statistical procedures for analyzing weight status (categorized as underweight, normoweight, overweight, obese in the MIMIC model) but does not specify whether BMI was assessed via self-report or measured directly.",
+      "warning": "The method of BMI assessment (self-reported vs. measured) is not specified in this statistical methods section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Statistical Analyses' section describing the statistical procedures and methods that will be employed. It mentions that 'bivariate and partial correlations among BAS-2 scores and the remaining study variables were respectively obtained' but does not report the actual correlation values between BAS-2 and BMI.",
+      "warning": "Actual correlation coefficients are not provided in this methodological section; only the analytical procedures are described."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Statistical Analyses' section describing statistical procedures. No explicit mention of multiple studies or experiments is present. The text refers to 'the students' and 'study variables' but does not indicate whether this represents one or multiple studies.",
+      "warning": "Cannot determine the number of studies from this methodological section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a section from a publication (indicated by the header '\u00a9 Psy, Soc, & Educ, 2017, Vol. 9(3)'), which suggests a journal article, but the publication type is not explicitly stated in this excerpt.",
+      "warning": "Publication type cannot be definitively determined from this section alone. The journal citation format suggests a journal article, but this is not explicitly confirmed in the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the statistical analyses employed in the study, including confirmatory factor analysis (CFA) of the BAS-2 (Body Appreciation Scale-2) using WLSMV estimation with polychoric correlations. The text outlines procedures for testing measurement invariance across gender and weight status, assessing internal reliability via composite reliability, examining temporal stability, and investigating gender and weight status differences through a MIMIC model. No specific study numbers, sample characteristics, or empirical results are provided in this methodological section.",
+      "evidence_source": "Entire 'Statistical Analyses' section provided in the text_content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

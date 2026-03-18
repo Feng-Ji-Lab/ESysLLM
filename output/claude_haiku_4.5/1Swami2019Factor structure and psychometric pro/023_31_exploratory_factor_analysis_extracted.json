@@ -1,0 +1,146 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this section. The text refers to 'Malay female subsample' and 'Malay male subsample', which indicates Malaysia as the likely country, but this is not explicitly stated in the provided text.",
+      "warning": "Country can be inferred as Malaysia based on 'Malay' descriptor, but is not explicitly stated in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          149,
+          157
+        ]
+      },
+      "evidence_source": "For the Malay female subsample (n = 149) and For the Malay male subsample (n=157). These are two subsamples within the same study, so both values are listed under Study X.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            149
+          ]
+        },
+        "male": {
+          "Study X": [
+            157
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            306
+          ]
+        }
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method (paper-and-pencil or online) is mentioned in this section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about racial/ethnic composition is provided in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI information is provided in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the source of the sample (community, college, or primary/secondary/high school) is provided in this section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The text explicitly states 'the BAS-2 items' multiple times and discusses factor analysis of the BAS-2 for both Malay female and male subsamples.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported or measured) is provided in this section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section focuses on exploratory factor analysis of the BAS-2 and does not report correlations between body appreciation and BMI.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "This section describes a single study with two gender-based subsamples (Malay female subsample and Malay male subsample), but it is one study with multiple subsamples, not multiple separate studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents an exploratory factor analysis (EFA) of the BAS-2 scale conducted on two gender-based subsamples: Malay female (n=149) and Malay male (n=157). For both subsamples, parallel analysis indicated that a single factor should be extracted, explaining 54.5% of variance in females and 49.83% in males, with good to fair factor loadings and omega reliability of .88 for both groups. Tucker's congruence coefficient of .85 suggested similar but not equal factor structures across the two subsamples.",
+      "evidence_source": "Section 3.1 Exploratory factor analysis",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

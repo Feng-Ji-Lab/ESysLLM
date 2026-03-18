@@ -1,0 +1,97 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "reason": "Multiple candidates explicitly state or strongly imply that the paper describes 'a single study' or 'the present study'. Candidate [5] provides a value of 0 but lacks any supporting evidence in its context, making it unreliable. The overwhelming evidence points to a single study."
+  },
+  "N": {
+    "extract_value": {
+      "Single study": [
+        728
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "reason": "All candidates consistently report N=728. The context indicates that the paper describes a single study. Therefore, all 'Study X' references are consolidated into a 'Single study' with the value 728. All sources are reliable and provide consistent information across different sections (introduction, participants, procedure, results, and tables)."
+  },
+  "usa_vs_other": {
+    "extract_value": {
+      "Single study": [
+        0
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "reason": "The paper describes a single study, as indicated by the context and consistent phrasing across candidates (e.g., 'the present study', 'a single study'). All candidates consistently provide evidence that the study participants were Chinese students from universities in China, not the United States. Therefore, the value 0 (not USA) is appropriate for this single study. All candidates are reliable and contribute to this conclusion."
+  },
+  "female": {
+    "extract_value": {
+      "Single study": [
+        0.54
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The context indicates that the paper describes a single study. Candidate [0] provides a clear proportion of female participants (54% or 0.54) from the 'participants' section, which is a reliable source. 'Study X' from the candidate is resolved to 'Single study' based on the overall paper context."
+  },
+  "M_age": {
+    "extract_value": {
+      "Single study": [
+        20.2
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper describes a single study, as indicated by the context and the section summary. The mean age of 20.2 was reliably extracted from the participants section for this single study."
+  },
+  "SD_age": {
+    "extract_value": {
+      "Single study": [
+        3.1
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper describes a single study, as indicated by the context and the section summary. Candidate [0] provides the standard deviation of age (3.1) for 'Study X', which is resolved to 'Single study' based on the overall paper structure."
+  },
+  "r": {
+    "extract_value": {
+      "Single study": [
+        -0.29
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper describes a single study, as indicated by the context. Candidate [0] provides a correlation value of 0.29 from Table 1. However, the accompanying text explicitly states that 'Gratitude and loneliness were negatively correlated'. Following the conflict resolution rule to 'Prefer values in the MAIN TEXT over 'TABLE' values if both contradict but appear reliable', the qualitative statement from the text regarding the negative correlation is used to determine the sign, while the magnitude is taken from the table. Therefore, the correlation coefficient is resolved as -0.29."
+  }
+}

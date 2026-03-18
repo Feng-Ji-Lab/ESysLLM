@@ -1,0 +1,287 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "reason": "The vast majority of candidates, including the title, abstract, introduction, methods, results, discussion, and conclusion sections, consistently indicate that the paper describes a single study. Candidates [13] and [14] suggesting '0' are from the references section, which does not describe the number of studies within the paper itself. Therefore, '1' is the most accurate and strongly supported value."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9
+    ],
+    "reason": "The vast majority of candidates (0-6, 8-9) consistently indicate that the publication is a 'journal article', citing evidence such as journal names, submission/acceptance dates, abstracts, and general article structure. Candidate [7] states that the article is a 'version' of a senior honors thesis. This implies that while the original work was a thesis (a type of dissertation), the current document has been adapted and published as a journal article. Therefore, 'journal articles' is the most accurate description of the current publication's type."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "United States"
+      ]
+    },
+    "best_indices": [
+      0,
+      3
+    ],
+    "reason": "The paper describes a single study. Candidate 0 indicates the authors' affiliation with The Ohio State University, which is located in the United States. Candidate 3 states that participants were from 'a university in the Midwestern U.S.'. Following the instruction 'But do not state specific part of a country like Midwestern US', 'Midwestern U.S.' is not used. Instead, the broader country 'United States' is extracted, as it is consistent with both pieces of evidence and adheres to the instruction."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        249
+      ]
+    },
+    "best_indices": [
+      3,
+      6,
+      7
+    ],
+    "reason": "The paper describes a single study, as indicated by the context and consistent reporting across all relevant sections. Candidates 3, 6, and 7 consistently report a total sample size of 249 participants. Candidate 3, from the 'Participants' section, explicitly states that the sample consisted of '249 college women', confirming that the entire sample was female. There are no conflicting values for the sample size or gender composition. Other candidates either provide no specific numerical data for the sample or reinforce the single-study nature without adding new numerical information.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          249
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          249
+        ]
+      }
+    }
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "paper-and-pencil"
+      ]
+    },
+    "best_indices": [
+      5
+    ],
+    "reason": "Candidate 5 from the 'procedure' section explicitly states that 'Participants completed the measures in a classroom used as a research lab' and 'Participants completed measures in a classroom setting'. This strongly implies an in-person, non-online method, which is best categorized as 'paper-and-pencil' from the allowed values. All other candidates either confirm a single study or do not provide information about the survey method."
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Single study": [
+        86.3
+      ]
+    },
+    "best_indices": [
+      3
+    ],
+    "reason": "The paper describes a single study, as indicated by the context and consistent references across sections. The percentage of white participants (86.3%) was reliably extracted from the 'Participants' section (Candidate 3), which explicitly states the demographic breakdown of the study's sample.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          86.3
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          86.3
+        ]
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        19.1
+      ]
+    },
+    "best_indices": [
+      3
+    ],
+    "reason": "Candidate 3, from the 'Participants' section, explicitly states the mean age of participants as 19.1 years (M = 19.1). The study focuses exclusively on 'college women', therefore this mean age is attributed to the female demographic and the total sample. No other candidates provide mean age information. The paper describes a single study, as confirmed by the context.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          19.1
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          19.1
+        ]
+      }
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        100
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      7,
+      8,
+      9
+    ],
+    "reason": "The paper consistently describes its participants as 'college women' or 'college students' across multiple sections (title, abstract, keywords, participants, procedure, discussion, limitations, conclusion). According to the provided infer_rule, if participants are described as 'undergraduate students' or 'college women,' it implies that 100% of participants have college or higher education experience. Candidate 3 explicitly details the academic years (first-year, sophomores, juniors, seniors, post-baccalaureate or graduate students), all of which confirm college or higher education. Therefore, the percentage of participants with college or higher education experience is 100% for the single study.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          100
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          100
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        23.15
+      ]
+    },
+    "best_indices": [
+      6
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context and all relevant section summaries. Candidate [6] from Table 1 explicitly provides the mean BMI of participants as 23.15 (with a standard deviation of 4.77). No other candidate provides a numerical value for BMI. The value is assigned to the 'Single study' and also to the 'total' within 'extract_value_by_gender' as no gender-specific breakdown was provided.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          23.15
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          23.15
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "college"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      7,
+      8,
+      9
+    ],
+    "reason": "Multiple sections (title, keywords, abstract, participants, procedure, discussion, limitations, conclusion) consistently indicate that the participants were college women, explicitly identifying 'college' as the source of the sample for the single study conducted. All relevant candidates support this conclusion without contradiction."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      4,
+      6
+    ],
+    "reason": "Candidate [4] from the 'Measures' section explicitly states 'Body Appreciation Scale (BAS)', which directly matches one of the allowed enum values. Candidate [6] from a table caption also mentions 'Body Appreciation Scale', corroborating the use of this instrument. Since the paper describes a single study, these findings are consolidated under 'Single study'."
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      7
+    ],
+    "reason": "Candidate [7] explicitly states, \"We also assessed participants' self-reported height and weight, which adds social desirability and memory recall error to the estimation of participants' BMI.\" This directly indicates that BMI was assessed via self-reported measures. The paper describes a single study, as confirmed by the context and all relevant candidate summaries."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        -0.35
+      ]
+    },
+    "best_indices": [
+      6
+    ],
+    "reason": "The paper describes a single study focusing on college women. Candidate [6] from Table 1 explicitly states the correlation between 'Body Appreciation Scale' and 'Body Mass Index' as -0.35. Since the study exclusively involved women, this value is reported under 'female' and 'total' for the 'Single study'.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          -0.35
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          -0.35
+        ]
+      }
+    }
+  }
+}

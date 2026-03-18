@@ -1,0 +1,90 @@
+{
+    "value_definitions": [
+        {
+            "name": "Author",
+            "type": "string",
+            "definition": "Author name(s) of the study or paper. Extract from the author line near the main title, not from the abstract, introduction, or citations."
+        },
+        {
+            "name": "Year",
+            "type": "integer_or_string",
+            "definition": "Publication year of the study or paper."
+        },
+        {
+            "name": "r",
+            "type": "object",
+            "items_type": "number",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of numbers (correlation coefficients). Pearson r between Gratitude and Loneliness. Gratitude and Loneliness might be measured by some scales such as GQ-6 and LQ.",
+            "correlation_case_rules": {
+                "Table_attention": "If the caption of the table mentions 'correlation', then it is highly likely that the table contains correlation coefficients so you should carefully check the tables following the table rules for multiple times. Do not quickly judge that the table does not contain correlation coefficients. Similarily, if the text mentions 'correlation', you should carefully check the text. If you still cannot find the correlation coefficients, do not trust your initial extraction. Re-evaluate the image specifically to cross-check the findings. Actively look for missed details, misread characters (e.g., confusing 'O' with '0', or 'I' with '1'), or spatial misinterpretations. List any corrections and based on the rigorous verification, provide the final, verified answer. Also, record all variables' name appearing in the column and row headers in the evidence source and section summary to provide a detailed description of this correlation table",
+                "Table_attention_2": "If the caption of the table mentions 'correlation', and 'Gratitude' and 'Loneliness' (or any other scales related to Gratitude and Loneliness) both appear in the table, then it is 99.99% likely (almost certain) that the table contains correlation coefficients so you should carefully check the tables following the table rules for multiple times. If you still cannot find the correlation coefficients, do not trust your initial extraction. Re-evaluate following the step in 'Table_attention', and based on the rigorous verification, provide the final, verified answer.",
+                "case_1_multiple_subscales": "If multiple Loneliness scale or subscale correlations with Gratitude are reported, compute the arithmetic mean across the subscales and report that mean.",
+                "case_2_tables_or_matrices": "Carefully check row/column headers in tables. Ensure you are looking at the intersection of 'Gratitude' and 'Loneliness'.",
+                "case_3_multiple_subgroups": "If correlations are reported for multiple subgroups or subsamples, you MUST compute the arithmetic mean of their correlations and report that mean as the value."
+            },
+            "precision_rule": "Do not round extracted correlations. If you compute an average, keep at least 3 decimal places when possible."
+        },
+        {
+            "name": "N",
+            "type": "object",
+            "items_type": "integer",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of integers. Sample size (total number of participants) for the corresponding effect."
+        },
+        {
+            "name": "female",
+            "type": "object",
+            "items_type": "number",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of numbers. Proportion or percentage of female participants in the sample. If percentage is reported (0-100), extract it and divide by 100 to report as a proportion (0-1)."
+        },
+        {
+            "name": "M_age",
+            "type": "object",
+            "items_type": "number",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of numbers. Mean (average) age of participants."
+        },
+        {
+            "name": "SD_age",
+            "type": "object",
+            "items_type": "number",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of numbers. Standard deviation of the age of participants.",
+            "extraction_rules": {
+                "SE_and_SD": "If the text does not report standard deviation (SD) of the mean age, but reports standard error (SE) of the mean age, you can report it for this field but make sure to add a note in the evidence to state that it is SE not SD."
+            }
+        },
+        {
+            "name": "usa_vs_other",
+            "type": "object",
+            "items_type": "integer",
+            "definition": "Dictionary where key is Study Name (e.g., 'Study 1') and value is a LIST of integers. 1 if the sample was collected in the United States (USA), 0 otherwise.",
+            "allowed_values": [
+                0,
+                1
+            ]
+        },
+        {
+            "name": "Confidence Level (low, moderate, high)",
+            "type": "enum",
+            "definition": "Confidence rating for each extracted value.",
+            "allowed_values": [
+                "low",
+                "moderate",
+                "high"
+            ]
+        },
+        {
+            "name": "Confidence Percentage (scale of 0% to 100%)",
+            "type": "number_percent",
+            "definition": "Confidence percentage (0 to 100) for each extracted value."
+        },
+        {
+            "name": "Number of studies",
+            "type": "integer",
+            "definition": "Labels whether you could judge that this paper has multiple studies. Return numeric count of studies found."
+        },
+        {
+            "name": "section_summary",
+            "type": "string",
+            "definition": "2-3 sentences summarizing the content of this section. Explicitly highlight any mention of 'Study 1', 'Experiment 2', or multiple sample subsets to help identify the context."
+        }
+    ]
+}

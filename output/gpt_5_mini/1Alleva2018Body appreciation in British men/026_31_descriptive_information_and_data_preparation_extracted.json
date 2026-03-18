@@ -1,0 +1,135 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or region of data collection is stated in the provided section text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          301,
+          131
+        ]
+      },
+      "evidence_source": "For the analyses separated by sexual orientation, we compared men who identified as heterosexual (n = 301) vs. those who identified as a sexual minority (n = 131; i.e., gay, bisexual, or other).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": {
+          "Study X": [
+            301,
+            131
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey/data-collection method (e.g., online or paper-and-pencil) is stated in the provided section text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participants' race or percentage identifying as white is reported in the provided section text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean or distribution of participant ages is reported in the provided section text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education-level percentages (e.g., percent with college or higher) are reported in the provided section text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI values are reported in the provided section text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section does not specify the source of the sample (community, college, or primary/secondary/high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section references 'body appreciation' and questionnaire scores (see Table 2) but does not name the instrument (e.g., BAS or BAS-2) in the provided text.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section does not state how BMI was assessed (self-reported or measured).",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section notes that Table 2 shows 'the correlations with body appreciation' for the full sample and subgroups, but no specific correlation coefficient between body appreciation and BMI is reported in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section describes analyses for a single dataset (splitting analyses by sexual orientation) and does not indicate multiple distinct studies or experiments in the provided text.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided section does not state whether the document is a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes descriptive information and data preparation for analyses conducted on a sample of men, comparing heterosexual men (n = 301) and sexual minority men (n = 131). It reports missing data patterns and that multiple imputation (100 imputations) was used; it also notes that some measures had low Cronbach's alpha among sexual minority men, so analyses for those variables were restricted to heterosexual men. The section references Table 2 for questionnaire scores and correlations (including with body appreciation) but does not present specific correlation coefficients or demographic summary statistics in the text.",
+      "evidence_source": "Entire provided section (notably: 'For the analyses separated by sexual orientation, we compared men who identified as heterosexual (n = 301) vs. those who identified as a sexual minority (n = 131 ...).' and 'Inspection of missing data revealed that 31.63% of participants (n = 149) had missing data ... Multiple imputation ... with 100 imputations').",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

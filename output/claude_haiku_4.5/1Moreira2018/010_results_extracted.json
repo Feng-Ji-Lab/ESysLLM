@@ -1,0 +1,93 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text references 'Table 1' for sample characteristics but the table is not provided. The text mentions t(345), indicating 345 degrees of freedom, which suggests approximately 346 participants total, but this is inferred from statistical notation rather than explicitly stated sample size. Without the actual table, explicit sample size cannot be confirmed.",
+      "warning": "Sample size inferred from t-statistic degrees of freedom (345 df suggests ~346 participants), but Table 1 is referenced but not provided. Gender-specific breakdown not available from text alone."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is provided in the text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information is provided in the text.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in the text. The text references 'Table 1' for sample characteristics, but the table is not provided.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in the text.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI information is provided in the text.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample source (community, college, school) is provided in the text.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text states 'For BAS scores, there was no statistical difference between the sexes (p > .05).' This indicates the Body Appreciation Scale (BAS) was used to assess body appreciation.",
+      "warning": "The specific version (BAS vs BAS-2) is not explicitly stated; only 'BAS' is mentioned. Cannot determine if this is BAS or BAS-2 from the text alone."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported vs measured) is provided in the text.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficients between body appreciation and BMI are reported in the text. The text discusses body image dissatisfaction differences between genders and BAS score differences, but does not provide correlation values.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text is a results section from what appears to be a single study. No explicit mention of multiple studies is provided in this excerpt.",
+      "warning": "Cannot determine number of studies from this results section alone; appears to be from a single study based on context."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in the text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Results section reports findings from a study comparing male and female participants on body image measures. The sample showed statistically significant differences between genders for body image dissatisfaction (girls wanted to be thinner than boys), but no significant difference in Body Appreciation Scale (BAS) scores between sexes. Sample characteristics are referenced in Table 1, which is not provided in the text.",
+      "evidence_source": "Entire Results section provided in text_content",
+      "warning": "Table 1 is referenced but not provided, limiting access to detailed sample characteristics."
+    },
+    "_pass_type": "text_only"
+  }
+]

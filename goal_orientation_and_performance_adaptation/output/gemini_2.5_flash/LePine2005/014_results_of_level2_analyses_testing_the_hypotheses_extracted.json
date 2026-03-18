@@ -1,0 +1,245 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text is a 'Results of Level-2 Analyses' section, which is typical of a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text is a 'Results' section of what appears to be a journal article, implying it has undergone peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The text mentions 'performance orientation' in Hypothesis 5 and 6, without specifying 'approach' or 'avoidance' sub-types. This indicates a 'Global' performance goal orientation. The study is not explicitly numbered, so 'Study X' is used.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The outcome variable is 'role structure adaptation' and 'likelihood of adaptation'. This is an objective measure of team structure, not self-report or other people's ratings. The study is not explicitly numbered, so 'Study X' is used.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The outcome 'role structure adaptation' is described as a 'likelihood of adaptation', which is an objective measure. The study is not explicitly numbered, so 'Study X' is used.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The outcome 'role structure adaptation' is an objective measure. The study is not explicitly numbered, so 'Study X' is used.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text mentions 'performance orientation' but does not specify the measurement scale, such as 'VandeWalle'. Therefore, it is coded as 'Other'. The study is not explicitly numbered, so 'Study X' is used.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information (mean, range, SD, or median) is provided in the text for any sample or effect. The study is not explicitly numbered, so 'Study X' is used.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No age information is provided in the text to impute a mean age. The study is not explicitly numbered, so 'Study X' is used.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text refers to 'teams comprising members' and 'members possessing higher cognitive ability', implying a mixed-sex sample or at least not explicitly single-sex. The study is not explicitly numbered, so 'Study X' is used.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No percentage of men or women is provided in the text. The study is not explicitly numbered, so 'Study X' is used.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "No country information is provided in the text. The study is not explicitly numbered, so 'Study X' is used.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "The text refers to 'teams' and 'members' with 'cognitive ability', 'learning orientation', and 'performance orientation', suggesting an organizational or work-related sample rather than a student sample. The study is not explicitly numbered, so 'Study X' is used.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The text mentions 'Approximate df = 56 for intercept and slope predictors' for the HGLM model. This is a degrees of freedom value for the model, not a direct sample size (N) for a correlation coefficient. No specific N for the correlation between performance goal orientation and performance adaptation is provided. The study is not explicitly numbered, so 'Study X' is used.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "Hypothesis 5 states that 'performance orientation did not have an effect on adaptation either by the time the disruption stabilized or as a function of time', implying no significant direct correlation. While a moderation effect is reported ('performance orientation did moderate the relationship between goal difficulty and role structure adaptation', \\gamma_{07} = -2.415, p < .05), this is not a direct Pearson r correlation between PGO and PA as requested by the schema. The study is not explicitly numbered, so 'Study X' is used.",
+      "warning": "The text reports a moderation effect (gamma coefficient) but no direct Pearson r correlation between Performance Goal Orientation and Performance Adaptation."
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No direct correlation coefficient between Performance Goal Orientation and Performance Adaptation was extracted, as only a moderation effect was reported. The study is not explicitly numbered, so 'Study X' is used.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes 'Results of Level-2 Analyses' and refers to 'Hypothesis 1' through 'Hypothesis 6', indicating a single study with multiple hypotheses rather than distinct studies.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents the results of Level-2 Hierarchical Generalized Linear Model (HGLM) analyses, testing several hypotheses related to cognitive ability, goal difficulty, learning orientation, and performance orientation on role structure adaptation. It discusses main effects and moderation effects, referencing Table 2 and Figures 2 and 3. The analysis focuses on 'teams' as the unit of study.",
+      "evidence_source": "The entire text content of the section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section title 'Results of Level-2 Analyses: Testing the Hypotheses' and the presence of 'Table 2' and discussion of hypotheses suggest a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No financial support information was explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from PubType = 1 (Journal article), which typically implies peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The text mentions 'performance orientation (PO)' without specifying approach or avoidance, indicating a global measure. 'Hypothesis 5 was not supported because performance orientation did not have an effect on adaptation either by the time the disruption stabilized or as a function of time. However, the results in Table 2 show that performance orientation did moderate the relationship between goal difficulty and role structure adaptation.'",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'role structure adaptation' and 'likelihood of adaptation' but does not specify the assessment method (e.g., self-report, other people, objective task).",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'role structure adaptation' but does not specify if it is based on subjective ratings or objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'role structure adaptation' but does not specify the specific assessment method (e.g., self-report, other people, objective task).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'performance orientation' but does not specify the measurement method (e.g., VandeWalle scale).",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information was explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No age information was explicitly stated in the provided text to impute from.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sex composition information was explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No percentage of men was explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information was explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample type information (student vs. other) was explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "The note in Table 2 states 'Approximate df = 56 for intercept and slope predictors', but the sample size (N) for the specific correlation between goal orientation and performance adaptation is not explicitly reported.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "The text and Table 2 report HGLM coefficients for moderation effects involving 'performance orientation' and 'role structure adaptation' (e.g., GL x PO coefficient = -2.415), but do not provide a direct Pearson correlation (r) between Performance Goal Orientation and Performance Adaptation.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No direct Pearson correlation between Performance Goal Orientation and Performance Adaptation was reported.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text discusses multiple hypotheses within a single 'study' context, without explicitly naming or delineating multiple studies (e.g., 'Study 1', 'Study 2').",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents the results of Level-2 HGLM analyses testing several hypotheses related to team adaptation. It discusses the main effects and moderation effects of cognitive ability, learning orientation, and performance orientation on role structure adaptation. Specifically, Hypothesis 6, concerning the moderation of goal difficulty and role structure adaptation by performance orientation, was supported with a coefficient of -2.415.",
+      "evidence_source": "Results of Level-2 Analyses: Testing the Hypotheses... Hypothesis 1 was supported... Hypothesis 2 was not supported... Hypothesis 3 was not supported... Hypothesis 4 was supported... Hypothesis 5 was not supported... Hypothesis 6 was supported...",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2 Tests of Study Hypotheses",
+      "evidence_source": "Table 2 Tests of Study Hypotheses (from the image caption)",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\LePine2005\\tables\\LePine2005_p007_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

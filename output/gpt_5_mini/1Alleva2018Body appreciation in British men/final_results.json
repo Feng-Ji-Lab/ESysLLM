@@ -1,0 +1,261 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      4,
+      5,
+      8,
+      12
+    ],
+    "reason": "Multiple sections (participant recruitment, Table 1, results, and conclusion) consistently describe a single sample and report analyses from one dataset (N\u2248440) with no labeling of multiple studies or separate Study 1/Study 2. Minor N wording (439 vs 440) does not indicate multiple studies. Therefore the paper contains one study."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      1
+    ],
+    "reason": "Candidate 1 provides detailed study information (a single British community study with sample size, age, analyses and results) and the abstract-style description indicates a peer-reviewed journal article. Candidate 0 (journal title listing) is consistent but provides no study details. There is no indication this work is a dissertation (no university/thesis wording), so the strongest evidence supports \"journal articles.\""
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "United Kingdom"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "All candidates refer to a single study of British men recruited in the UK (title uses 'British', abstract describes a 'British community sample' of ~439 men, and Participants/Procedure notes recruitment via the YMCA in the UK). 'British' is synonymous with 'United Kingdom', so values were merged and normalized to 'United Kingdom'. The paper reports one dataset (N\u2248439/440) with no separate Study 1/Study 2, so a single study entry was used. Candidates 0\u20133 were used as evidence (title, abstract, participants, limitations)."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        440
+      ]
+    },
+    "best_indices": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "reason": "The paper reports a single study (no Study 1/Study 2 labels). The participant section (candidate 1) explicitly states \"In total, 440 men took part in this study\" and Table 1 (candidate 2) sums to N = 440; these are taken as the primary, most reliable total sample size. The abstract value 439 (candidate 0) appears to be a minor inconsistency/typographical discrepancy and is deprioritized in favor of the Methods/Table totals. Table 2 (candidate 5) reports smaller Ns (e.g., full\u2011sample N = 422; hetero 289; sexual minority 125) reflecting variable\u2011level missing data/listwise deletion for specific measures rather than the overall recruited sample; descriptive text (candidates 3 and 6) gives subgroup counts heterosexual n = 301 and sexual minority n = 131, which together with 7 'rather not say' and 1 nonresponse equal 440. Therefore the resolved total is 440. Extracted male counts include the full sample (440) and the main subgroup counts (301 heterosexual; 131 sexual\u2011minority) for reference.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          440,
+          301,
+          131
+        ]
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          440
+        ]
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        39.13
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates refer to the same single-sample study (British community sample of men). The abstract (candidate 0) reports Mage = 39.13 for men; Table 1 (candidate 1) shows M = 39.13 (SD = 13.76) for the sample (N ~ 440). Values are consistent; minor N wording (439 vs 440) does not indicate multiple studies. I used both candidates for confirmation and report the mean age (39.13). Table/Main-text evidence was prioritized for reliability, with the abstract used to corroborate.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          39.13
+        ]
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          39.13
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "community"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "reason": "All candidates describe the same single study (consistent N\u2248439\u2013440, recruitment, and analyses) rather than multiple distinct studies. Participant recruitment is described as via the YMCA and online/media sources in the UK, and the paper repeatedly refers to the present sample as a 'community sample' (Abstract, Methods, Discussion, Limitations). Therefore the correct source classification is 'community'. All provided candidates (indices 0\u20134) support this conclusion."
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "online"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper reports a single study (participants/procedure describe one sample of N\u2248440). The Participants/Procedure section explicitly states \"Participants completed the study online,\" so the survey method is 'online'. No conflicting sources or multiple studies were found."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one reliable candidate was found (index 0) stating the Body Appreciation Scale (BAS) was used because the BAS-2 had not yet been published at recruitment. The paper contains a single study (per provided context), so the BAS value is assigned to 'Single study'."
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Single study": [
+        90.68
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one sample reported in the paper (no Study 1/Study 2 distinctions). Table 1 (candidate 0) lists ethnicity: White = 399 (90.68%) of N = 440, so 90.68% was taken as the percent white for the single study. Table 1 is a direct, reliable source for participant demographics.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          90.68
+        ]
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          90.68
+        ]
+      }
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        51.59
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Table 1 (candidate 0) reports education percentages: Undergraduate 32.50% and Graduate 19.09%. Summing these gives 51.59% college-or-higher for the single sample (N \u2248 440). The paper contains one study, so values were placed under 'Single study'; no gender-specific education percentages were provided.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          51.59
+        ]
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          51.59
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        25.74
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study/sample is reported in the paper (Table 1 shows a single sample, N = 440). The mean BMI is reported in Table 1 as M = 25.74 (SD = 4.39). No separate studies or gender-specific BMI means were provided, so the paper is treated as a single study and the table value (candidate 0) is used.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          25.74
+        ]
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          25.74
+        ]
+      }
+    }
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one candidate was found and the paper contains a single study. The Demographic items text states participants \"reported their ... height and weight (to calculate ... BMI)\", which indicates BMI was obtained via self-report rather than measured. Therefore the study-level value is 'self-reported'."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": []
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one relevant candidate was found and the paper contains a single study. The reported Pearson correlation between Body Appreciation and BMI is r = -0.247 (p < .001) and was presented for a male sample; no total or female correlations were reported. Therefore the male correlation is recorded under the single study's gender-specific field.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          -0.247
+        ]
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    }
+  }
+}

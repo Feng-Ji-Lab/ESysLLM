@@ -1,0 +1,109 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Brazil"
+        ]
+      },
+      "evidence_source": "Text states 'a convenience sample of adolescents from three Brazilian cities were recruited' and 'Brazilian Portuguese translation of the BAS-2 in Brazilian adolescents' and 'Brazilian adolescent population'",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not provide the total sample size. Sample size information would typically be found in the Methods section, which is not provided in this text.",
+      "warning": "Sample size not reported in this Discussion section"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not specify the survey method (paper-and-pencil or online). This information would typically be found in the Methods section.",
+      "warning": "Survey method not reported in this Discussion section"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not report the percentage of white participants.",
+      "warning": "Demographic information on race/ethnicity not provided in this Discussion section"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not provide mean age. The text refers to 'Brazilian adolescents' and 'adolescent population' but does not specify mean age.",
+      "warning": "Mean age not reported in this Discussion section"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not report education level of participants. The text mentions comparisons with 'undergraduate' samples from previous research but does not specify the education level of the current adolescent sample.",
+      "warning": "Education level not reported in this Discussion section"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section mentions 'negative correlations found with social physique anxiety and BMI' and 'after controlling for the effects of weight status' but does not report the mean BMI of participants.",
+      "warning": "Mean BMI not reported in this Discussion section"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "community"
+        ]
+      },
+      "evidence_source": "Text states 'a convenience sample of adolescents from three Brazilian cities were recruited' indicating a community-based sample rather than college or school-based recruitment.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Text explicitly states 'Brazilian Portuguese translation of the BAS-2' and 'the reliability of the BAS-2 has been examined' and 'the use of BAS-2 to measure body appreciation in Brazilian adolescents'",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section mentions correlations with BMI and 'weight status' but does not specify whether BMI was self-reported or measured.",
+      "warning": "Method of BMI assessment not reported in this Discussion section"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": []
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The Discussion section mentions 'negative correlations found with social physique anxiety and BMI' but does not provide the specific correlation coefficient value(s) between body appreciation and BMI.",
+      "warning": "Specific correlation coefficient between body appreciation and BMI not reported in this Discussion section"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "This Discussion section describes a single study examining 'the psychometric properties of a Brazilian Portuguese translation of the BAS-2 in Brazilian adolescents'. No multiple studies are explicitly named or described.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not indicate whether this is a journal article or dissertation. Publication type information would typically be found on the title page or in the document header.",
+      "warning": "Publication type not determinable from this Discussion section alone"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Discussion section presents findings from a single study examining the psychometric properties of the BAS-2 (Body Appreciation Scale-2) in Brazilian adolescents. The study found a one-dimensional factor structure for the BAS-2 that was invariant across gender, with adequate internal consistency and high temporal stability. The instrument demonstrated convergent and incremental validity through negative correlations with BMI and social physique anxiety, and positive correlations with life satisfaction, with boys showing moderately higher body appreciation scores than girls after controlling for weight status.",
+      "evidence_source": "Entire Discussion section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

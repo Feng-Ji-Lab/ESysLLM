@@ -1,0 +1,145 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or region of data collection is reported in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No total sample size is reported in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about survey/data-collection method (e.g., online or paper-and-pencil) is reported in this section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"Participants were mainly White, young adult, middle-class, first-year college women, and our findings may not generalize well to other individuals.\" The text describes the sample as \"mainly White\" but provides no numeric percentage.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"Participants were mainly White, young adult, middle-class, first-year college women...\" The text characterizes participants as \"young adult\" but gives no numeric mean age.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "\"Participants were mainly White, young adult, middle-class, first-year college women...\" (Participants are described as first-year college women, so percentage with college experience is inferred as 100% for this sample.)",
+      "warning": "Inference made from phrase 'first-year college women' per case_rules.",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            100
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI value is reported in this section. The section only notes that height and weight were self-reported: \"We also assessed participants' self-reported height and weight...\"",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "\"Participants were mainly White, young adult, middle-class, first-year college women...\" (explicitly indicates a college sample of first-year students.)",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the specific measure used to assess body appreciation (e.g., BAS or BAS-2) is reported in this section.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "\"We also assessed participants' self-reported height and weight, which adds social desirability and memory recall error to the estimation of participants' BMI.\"",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficient between body appreciation and BMI is reported in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section repeatedly refers to \"this study\" and \"this study's limitations,\" indicating a single study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No information in this section identifies the publication type (e.g., journal article or dissertation).",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This limitations section notes that the study is correlational and cross-sectional, preventing causal inferences, and recommends longitudinal designs and control of extraneous variables. It flags measurement and recall limitations (e.g., retrospective reports of caregivers' eating messages and self-reported height/weight) and the homogeneity of the sample, describing participants as mainly White, young adult, middle-class, first-year college women and urging replication in more diverse samples.",
+      "evidence_source": "\"Although correlational data can provide useful groundwork... causal interpretations cannot be made... data were collected in one time period.\"; \"We also assessed participants' self-reported height and weight...\"; \"Participants were mainly White, young adult, middle-class, first-year college women...\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

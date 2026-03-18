@@ -1,0 +1,137 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      3,
+      6,
+      15
+    ],
+    "reason": "The paper consistently describes a single research endeavor, referred to as 'the current study' or 'the present study,' which utilizes two distinct samples (MTurk and Polish) to validate the K-DOCS. While multiple samples are used, they are all part of one overarching study. Candidate [9] incorrectly interprets the use of two samples as two separate studies. Candidates [2] and [18] are irrelevant or misinterpret the context."
+  },
+  "SAMPLE SIZE": {
+    "extract_value": {
+      "Single study": [
+        825,
+        500,
+        802
+      ]
+    },
+    "best_indices": [
+      0,
+      3,
+      4
+    ],
+    "reason": "The paper describes a single overarching study that utilized two distinct samples: an Amazon Mechanical Turk (MTurk) sample and a Polish sample. The initial MTurk sample size was 825 (confirmed by candidates 0, 1, 4, 7, 8, 9, 11). The Polish sample size was 500 (confirmed by candidates 0, 2, 4, 5, 6, 7, 8, 10, 12). For specific analyses involving Big Five factors within the MTurk sample, a subsample of 802 was used due to missing data (confirmed by candidates 3, 4, 5, 6). All these values are consistent across multiple sources. Following instruction 3, all sample sizes pertaining to the single study, including subsamples, are merged into a single list for that study. Candidate 4 provides a comprehensive summary of all three values (825, 802, 500) with their respective contexts. Candidate 0 provides the main two sample sizes (825, 500). Candidate 3 specifically highlights the 802 subsample. These candidates are chosen as the primary sources."
+  },
+  "Creativity Measures": {
+    "extract_value": {
+      "Single study": [
+        "CAQ",
+        "ICAA"
+      ]
+    },
+    "best_indices": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "reason": "The paper describes a single study that utilized two distinct samples (MTurk and Polish). Multiple candidates consistently indicate the use of 'CAQ' (Creative Achievement Questionnaire) across both samples. Candidate 3 explicitly lists both 'ICAA' (Inventory of Creative Activities and Achievements) and 'CAQ' as measures used. Candidates 7 and 8 mention 'ICA', which is treated as a synonym for 'ICAA' based on the provided definitions and synonym rules. All relevant creativity measures ('CAQ', 'ICAA') are consolidated under this single study."
+  },
+  "Domain classified": {
+    "extract_value": {
+      "Single study": [
+        "Arts",
+        "Everyday",
+        "Science",
+        "Technological",
+        "Total"
+      ]
+    },
+    "best_indices": [
+      1,
+      3,
+      5
+    ],
+    "reason": "The paper describes a single study that utilizes two distinct samples (MTurk and Polish). Therefore, all extracted domain classifications are consolidated under 'Single study'. The K-DOCS primarily assesses 'Everyday', 'Science', and 'Arts' (from 'Artistic'/'Art'). However, other measures used in the study, such as the ICAA and CAQ (detailed in Candidate 3 and Candidate 5), also cover 'Technological' domains (e.g., 'Web Development/Programming', 'Inventions'). Candidate 1 indicates that creativity was considered 'across all domains,' which is captured by 'Total'. By combining information from these reliable sources (Materials and Results sections, including tables), a comprehensive list of all relevant domain classifications is obtained. Other candidates provided subsets of these domains or were less comprehensive."
+  },
+  "Effects": {
+    "extract_value": {
+      "Single study": [
+        5
+      ]
+    },
+    "best_indices": [
+      3
+    ],
+    "reason": "The paper describes a single study that utilized two distinct samples (MTurk and Polish). Candidate [3] from Table 3, which specifically pertains to the Polish sample, explicitly reports 5 correlation coefficients between Intelligence and K-DOCS factors (a measure of creative achievement). This directly aligns with the definition of 'Effects' (number of correlation coefficients between intelligence and creative achievement). Other candidates either report 0 effects from less reliable sources (general text, materials) or are irrelevant. Therefore, the value of 5 is selected for the single overarching study."
+  },
+  "Mage": {
+    "extract_value": {
+      "Single study": [
+        33.28,
+        35.17
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper describes a single overarching study that utilized two distinct samples (MTurk and Polish). As per instructions, if a study has multiple samples, their values should be merged into the same list for that study. Candidate [0] provides the mean age for Sample 1 (MTurk), and Candidate [1] provides the mean age for Sample 2 (Polish). Both values are consolidated under 'Single study'."
+  },
+  "Measure IQ": {
+    "extract_value": {
+      "Single study": [
+        "International Cognitive Ability Resource Project"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper describes a single study utilizing two samples. Candidate [0] explicitly states the specific assessment tool used to measure intelligence: 'International Cognitive Ability Resource Project', which aligns with the definition. Candidate [1] only lists 'Intelligence' as a variable in a table, which is too general and refers to the construct rather than the specific assessment tool. Therefore, Candidate [0] is selected as it provides the precise measure."
+  },
+  "IQ modality": {
+    "extract_value": {
+      "Single study": [
+        "both"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper describes a single study. Candidate [0] from the 'Materials' section provides the most direct and detailed evidence regarding the intelligence measure. It explicitly states that the measure included items for 'matrix reasoning (figural)', 'mental rotations (figural)', 'letter series (verbal)', and 'overall reasoning (both figural and verbal aspects)'. According to the aggregation rule, if both figural and verbal measures are present, 'both' should be reported. Candidates [1] and [2] are from the 'Discussion' section and infer 'figural' based on 'fluid and visual processing items', which is less precise than the direct description in the 'Materials' section. The context also indicates that candidate [2] is irrelevant or misinterprets the context. Therefore, candidate [0] is selected as the most reliable source."
+  },
+  "IQ Aspect": {
+    "extract_value": {
+      "Single study": [
+        "g",
+        "Gf"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "The paper describes a single overarching study, as confirmed by the CONTEXT. Candidates 0 and 1 both indicate that 'g' (general intelligence) was measured or inferred. Candidate 2 provides evidence that 'Gf' (fluid intelligence) was also a primary component of the intelligence measure. These are complementary aspects of the intelligence construct measured in the study, and thus both 'g' and 'Gf' are included in the extract_value for the 'Single study'."
+  },
+  "ES": {
+    "extract_value": {
+      "Single study": [
+        0.162
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study, as indicated by the context. Candidate [0] provides a correlation coefficient of 0.162, which represents the mean correlation between 'Intelligence' and multiple 'K-DOCS' subscales (measures of creative achievement, as implied by the caption mentioning CAQ). This calculation follows the 'case_1_multiple_subscales' rule. This value is specific to the Polish sample, which is part of the single overarching study. Therefore, the value 0.162 is assigned to the 'Single study'."
+  }
+}

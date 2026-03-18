@@ -1,0 +1,115 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "United Kingdom"
+        ]
+      },
+      "evidence_source": "Text states: 'We investigated these issues in a large, online sample of British adults' - indicating the study was conducted in the United Kingdom/Britain.",
+      "warning": "Study number not explicitly stated in text; labeled as 'Study X' per policy."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No specific sample size is provided in the text. The text mentions 'a large, online sample of British adults' but does not state the actual number of participants.",
+      "warning": "Sample size not explicitly stated."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "online"
+        ]
+      },
+      "evidence_source": "Text states: 'We investigated these issues in a large, online sample of British adults', indicating data collection was conducted online.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about racial/ethnic composition of participants is provided in the text.",
+      "warning": "Demographic information on race/ethnicity not available."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No specific mean age is provided. The text mentions examining 'associations between facets of body image and respondent age' but does not report the actual mean age of participants.",
+      "warning": "Mean age not explicitly stated."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about educational attainment of participants is provided in the text.",
+      "warning": "Educational background not reported."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI is reported. The text mentions examining 'associations between positive body image and self-reported body mass index (BMI)' but does not provide the actual mean BMI value.",
+      "warning": "Mean BMI not explicitly stated."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "community"
+        ]
+      },
+      "evidence_source": "Text describes 'a large, online sample of British adults', which indicates a community sample rather than a college or school-based sample.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "Text states: 'In terms of body image, we included a measure of body appreciation, given that this is the dominant way in which positive body image is currently operationalised (Webb et al., 2015).' The Body Appreciation Scale (BAS) is the standard instrument for measuring body appreciation. However, the specific version (BAS or BAS-2) is not explicitly stated in this excerpt.",
+      "warning": "Specific version of BAS (original or BAS-2) not explicitly stated in the provided text; BAS assumed as the standard measure."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Text explicitly states: 'we examined associations between positive body image and self-reported body mass index (BMI)'.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No correlation coefficients are provided in this text. The text discusses the research question and hypotheses regarding associations between body appreciation and BMI, but does not report actual correlation values.",
+      "warning": "Correlation values not reported in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study: 'The present study' and 'We investigated these issues in a large, online sample of British adults'. No multiple studies or experiments are mentioned.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not indicate whether this is from a journal article or dissertation. This appears to be a methods/introduction section but the publication type is not specified.",
+      "warning": "Publication type cannot be determined from the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes a single study examining associations between multiple facets of positive body image (body appreciation, body image flexibility, body pride, and body acceptance by others) and well-being dimensions in a large online sample of British adults. The study investigates sex differences in body image, associations with age, and relationships with self-reported BMI, with the hypothesis that positive body image facets will be significantly and positively associated with emotional, psychological, and social well-being.",
+      "evidence_source": "Entire text section describing study design, sample characteristics, and research questions.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

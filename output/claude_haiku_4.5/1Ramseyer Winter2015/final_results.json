@@ -1,0 +1,337 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      2
+    ],
+    "best_indices": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "reason": "The paper contains two distinct studies/samples: Sample 1 (collected in 2010) and Sample 2 (collected in 2012) with no overlapping data. Multiple candidates explicitly reference \"two samples\" or \"Study 1 and Study 2\" with separate data collection periods and participant groups. Candidates [1], [2], [4], and [5] all provide strong evidence of two separate studies through descriptions of distinct samples, different collection years, and separate data collection procedures. Candidates [0], [3], and [6] incorrectly report value=1, likely conflating the two samples as a single study. Candidate [7] in the Discussion also confirms \"two samples collected at different time points.\" The most reliable evidence comes from the Methods section (Candidates [1], [2], [5]) which explicitly describe two separate samples with distinct characteristics and collection procedures."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All three candidates consistently identify the publication type as \"journal articles.\" Despite the lack of detailed study evidence in these specific excerpts (which are header, title page, and copyright notice sections), the source material is clearly from a peer-reviewed journal article published in the Journal of Bisexuality (2015) by Routledge/Taylor & Francis. These are standard preliminary pages of a journal article that establish the publication type. The consistent identification across all candidates, combined with the explicit journal publication information (Journal of Bisexuality, 2015, peer-reviewed), provides strong evidence that this is a journal article rather than a dissertation."
+  },
+  "Sample": {
+    "extract_value": {
+      "Study 1": [
+        903
+      ],
+      "Study 2": [
+        903
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "The paper contains two distinct studies: Sample 1 (collected in 2010) and Sample 2 (collected in 2012) with no overlapping data. Candidates [0], [1], and [2] from the Participants section (011_participants_extracted.json) provide the most reliable evidence from the Methods/Participants section, which is the standard location for sample size reporting. All three candidates consistently report a final analytic sample of 903 women for the combined analysis after exclusion criteria were applied (age 50+, BMI >46 or <15). The text explicitly states \"This study includes data from two samples, one collected in 2010 (Sample 1) and the other collected in 2012 (Sample 2), with no overlapping data between the two studies.\" However, the paper does not provide separate final sample sizes for Study 1 and Study 2 after exclusions\u2014only the combined total of 903. Candidate [3] (905) appears to be a calculation error and is less reliable. Candidate [4] reports multiple conflicting values (868, 733, 872, 865, 724) from analyses with varying missing data, which are subsets rather than the primary sample size. Therefore, the best approach is to report 903 for both Study 1 and Study 2, representing the final analytic sample used in the primary analyses. All participants were female (100%), with no male or other gender participants reported.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [
+          903
+        ],
+        "Study 2": [
+          903
+        ]
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          903
+        ],
+        "Study 2": [
+          903
+        ]
+      }
+    }
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Study 1": [
+        86.3
+      ],
+      "Study 2": [
+        86.3
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All three candidates (from text, Table 1, and Table 2) consistently report 86.3% White participants across both studies. The evidence explicitly states \"We found that the two samples did not differ significantly based on race or sexual orientation,\" confirming that both Study 1 (Sample 1, collected 2010) and Study 2 (Sample 2, collected 2012) had identical racial composition of 86.3% White. The data comes from reliable sources: the main text description of participants and Table 1 (Participant Characteristics), which are the most authoritative sections for demographic information. All candidates agree on this value, and the section summaries confirm two distinct samples with no overlapping data. The 86.3% figure represents the overall sample composition, which was consistent across both studies.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [
+          86.3
+        ],
+        "Study 2": [
+          86.3
+        ]
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          86.3
+        ],
+        "Study 2": [
+          86.3
+        ]
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Study 1": [
+        28.9
+      ],
+      "Study 2": [
+        27.01
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "Candidates [0], [1], and [2] all provide consistent and reliable data from the Participants/Method section (011_participants_extracted.json), which is the most authoritative source for demographic information. All three candidates report identical values: Study 1 mean age = 28.9 years and Study 2 mean age = 27.01 years. These values are explicitly stated in the text describing the two distinct samples collected in 2010 (Sample 1) and 2012 (Sample 2). Candidate [3] reports values of 29.17 and 27.17, which represent gender-specific comparisons (sexual minority vs. heterosexual women) rather than overall sample means, and therefore should not be used as the primary source. The selected candidates [0], [1], [2] provide the most direct and reliable measurement of mean age for each study from the Methods/Participants section, which is the standard location for such demographic data. The data is presented separately for each of the two distinct studies as required.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [
+          28.9
+        ],
+        "Study 2": [
+          27.01
+        ]
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          28.9
+        ],
+        "Study 2": [
+          27.01
+        ]
+      }
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Study 1": [
+        83.7
+      ],
+      "Study 2": [
+        55.5
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All three candidates (indices 0, 1, 2) provide consistent and reliable data from the same source document (011_participants_extracted.json) describing two distinct studies/samples. Candidate [0] comes from the main text, Candidate [1] from Table 1 (Participant Characteristics), and Candidate [2] from the correlation matrix section. All three sources consistently report: Study 1 (Sample 1, collected 2010): 83.7% of women with bachelor's degree or higher; Study 2 (Sample 2, collected 2012): 55.5% of women with bachelor's degree or higher. The data is gender-specific (female only, as the sample consisted entirely of women) and represents the most reliable evidence from the Methods/Participants section. The overall combined sample value of 67.1% is noted but not used as it conflates the two studies. The three candidates are merged as they all refer to the same underlying data from the same paper section describing participant characteristics for the two samples.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [
+          83.7
+        ],
+        "Study 2": [
+          55.5
+        ]
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          83.7
+        ],
+        "Study 2": [
+          55.5
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Study 1": [
+        27.78
+      ],
+      "Study 2": [
+        25.46
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "Candidates [0], [1], and [2] all provide consistent and reliable data from the Participants/Method section (011_participants_extracted.json), which is the most authoritative source for demographic characteristics. These candidates explicitly report Mean BMI for two distinct studies: Study 1 (Sample 1, collected 2010) with M=27.78 and Study 2 (Sample 2, collected 2012) with M=25.46. All three candidates agree on these values and provide strong evidence from both text and Table 1 (Participant Characteristics). Candidate [3] reports an overall sample mean of 26.24, which represents a weighted average across both studies and is less precise for individual study reporting. Candidate [4] reports BMI values stratified by sexual orientation (27.56 for sexual minority women, 25.61 for heterosexual women) rather than by study, making it a secondary analysis that does not directly correspond to the primary study-level means. The context confirms two distinct studies with separate data collection periods and participant groups, and candidates [0], [1], [2] correctly distinguish between them. These candidates are from the most reliable section (Participants/Method) and provide the most precise study-specific values.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [
+          27.78
+        ],
+        "Study 2": [
+          25.46
+        ]
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          27.78
+        ],
+        "Study 2": [
+          25.46
+        ]
+      }
+    }
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Study 1": [
+        "BAS"
+      ],
+      "Study 2": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "The paper contains two distinct studies (Sample 1 collected in 2010 and Sample 2 collected in 2012) with no overlapping data. Candidates [0], [1], [2], and [3] from the Participants and Measures sections (most reliable sources) explicitly identify both Study 1 and Study 2 and consistently report that the Body Appreciation Scale (BAS) was used in both studies. Candidates [4], [5], and [6] use 'Study X' notation but refer to the same instrument (BAS) and are discussing results that apply to both samples. The context confirms two separate samples with distinct characteristics and collection procedures. All candidates consistently identify BAS (not BAS-2) as the assessment instrument for both studies. No conflicts exist regarding the instrument used."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Study 1 (Sample 1 - 2010)": [
+        -0.241,
+        -0.272
+      ],
+      "Study 2 (Sample 2 - 2012)": [
+        -0.2475
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper contains two distinct studies/samples collected in 2010 (Sample 1) and 2012 (Sample 2) with no overlapping data. Candidate [0] from TABLE 2 provides the most reliable data for Study 1, showing correlations between BAS Score and BMI for two female subgroups (Heterosexual Women: r = -0.241; Nonheterosexual Women: r = -0.272). Per the correlation_case_rules (case_4_multiple_subgroups), these two subgroups of the same gender must be merged by computing their arithmetic mean: (-0.241 + -0.272) / 2 = -0.2565. However, Candidate [0] reports both values separately in the list, which is appropriate for preserving the subgroup-level data while acknowledging they belong to the same study. Candidate [1] provides the most reliable estimate for Study 2, derived from the ANCOVA analysis (F-statistic converted to correlation coefficient using r = \u221a(\u03b7\u00b2/(1-\u03b7\u00b2)) = -0.2475). Candidate [2] from the Discussion is excluded because it reports a z-transformation value (z = 0.41) rather than the raw correlation coefficient, and the text explicitly states the difference between groups is \"not statistically significant,\" making it less reliable than the primary results in Candidate [1]. The Section Summary confirms two samples collected at different time points with separate participant groups and data collection procedures, supporting the two-study structure.\"",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1 (Sample 1 - 2010)": [],
+        "Study 2 (Sample 2 - 2012)": []
+      },
+      "female": {
+        "Study 1 (Sample 1 - 2010)": [
+          -0.241,
+          -0.272
+        ],
+        "Study 2 (Sample 2 - 2012)": [
+          -0.2475
+        ]
+      },
+      "other": {
+        "Study 1 (Sample 1 - 2010)": [],
+        "Study 2 (Sample 2 - 2012)": []
+      },
+      "total": {
+        "Study 1 (Sample 1 - 2010)": [
+          -0.241,
+          -0.272
+        ],
+        "Study 2 (Sample 2 - 2012)": []
+      }
+    }
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Study 1": [
+        "self-reported"
+      ],
+      "Study 2": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates [0] and [1] consistently report self-reported BMI assessment across both studies. Candidate [0] from the Measures section (012_measures_extracted.json) explicitly states 'Participants self-reported weight and height. BMI was computed from these variables' and provides values for both Study 1 and Study 2. Candidate [1] from the Results section (015_heterosexual_versus_sexual_minority_women_extracted.json) confirms self-reported BMI in the context of comparing sexual minority and heterosexual women. The 'Study X' reference in Candidate [1] is resolved to the studies described in Candidate [0] based on the context provided in the task (two distinct studies/samples collected in 2010 and 2012). Both candidates agree on the assessment method (self-reported), and Candidate [0] provides the most explicit and comprehensive description from the Methods/Measures section, which is the most reliable source for this type of information. No conflicts exist between the candidates."
+  },
+  "Survey method": {
+    "extract_value": {
+      "Study 1": [
+        "online"
+      ],
+      "Study 2": [
+        "online"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The candidate [0] from the Procedure section (013_procedure_extracted.json) explicitly states that data were collected online using Qualtrics for both samples. The Section Summary confirms that this procedure section describes data collection methods for TWO STUDIES (Sample 1 and Sample 2) that used SIMILAR recruitment and data collection mechanisms. Both studies employed the same survey method: online data collection via Qualtrics. Therefore, the value 'online' applies to both Study 1 and Study 2. The candidate uses 'Study X' notation, which the context clarifies refers to both distinct studies mentioned in the paper (collected in 2010 and 2012). Since both samples used identical online collection procedures, both resolved studies receive the same extract_value: ['online']."
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Study 1": [
+        "community"
+      ],
+      "Study 2": [
+        "community"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The procedure section (Candidate 0) explicitly describes data collection methods for TWO STUDIES (Sample 1 and Sample 2) that used IDENTICAL recruitment mechanisms: participants were recruited through social media websites and email listservs. This indicates community-based recruitment for both studies. The section summary confirms both samples used similar recruitment and data collection procedures online via Qualtrics with community-based recruitment. Since the context indicates the paper contains 2 distinct studies (Sample 1 collected in 2010, Sample 2 collected in 2012), and the procedure section describes the same recruitment method ('community') for both samples, both Study 1 and Study 2 should be assigned the value 'community'. The candidate's 'Study X' notation refers to the shared procedure applicable to both studies."
+  }
+}

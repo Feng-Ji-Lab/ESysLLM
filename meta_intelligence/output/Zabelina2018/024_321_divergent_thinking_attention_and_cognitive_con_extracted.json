@@ -1,0 +1,197 @@
+[
+  {
+    "SAMPLE SIZE": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No explicit sample size is mentioned in the provided text.",
+      "warning": "None"
+    },
+    "ES": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states, \"Table 1 shows the Pearson correlation matrix between the ATTA (originality, fluency, and total), FSIQ-4, and CAQ scores.\" This implies correlations between FSIQ-4 (intelligence) and CAQ (creative achievement) exist in Table 1. However, Table 1 was not provided, and no explicit correlation coefficient between FSIQ-4 and CAQ is stated in the text. Therefore, per the 'missing_figure_rule', no value can be extracted.",
+      "warning": "Table 1 was referenced but not provided, preventing extraction of specific correlation values between FSIQ-4 and CAQ."
+    },
+    "Effects": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficients between intelligence and creative achievement (CAQ/ICAA) were explicitly found in the text, thus no effects can be counted.",
+      "warning": "None"
+    },
+    "Mage": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age of participants is mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Measure IQ": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "FSIQ-4"
+        ]
+      },
+      "evidence_source": "The text mentions \"FSIQ-4 scores\" multiple times, for example: \"Higher divergent thinking was still associated with a larger RT oddball effect after including FSIQ-4 scores in a multiple linear regression (r = \u2212 .35, p = .039).\"",
+      "warning": "None"
+    },
+    "IQ modality": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "both"
+        ]
+      },
+      "evidence_source": "The IQ measure used is FSIQ-4 (Full Scale IQ). Full Scale IQ typically encompasses both verbal and figural/performance components, thus 'both' modalities are inferred.",
+      "warning": "None"
+    },
+    "IQ Aspect": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "g"
+        ]
+      },
+      "evidence_source": "The IQ measure used is FSIQ-4 (Full Scale IQ). Full Scale IQ is a measure of general intelligence, which corresponds to the 'g' aspect of intelligence.",
+      "warning": "None"
+    },
+    "Creativity Measures": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "CAQ"
+        ]
+      },
+      "evidence_source": "The text states: \"Table 1 shows the Pearson correlation matrix between the ATTA (originality, fluency, and total), FSIQ-4, and CAQ scores.\"",
+      "warning": "None"
+    },
+    "Domain classified": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Total"
+        ]
+      },
+      "evidence_source": "The text mentions \"CAQ scores\" but does not specify a particular domain of creativity (e.g., Arts, Science). The CAQ is a general measure of creative achievement, so 'Total' is inferred.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section describes a single investigation, referred to as 'Our primary hypothesis' and 'As predicted', which replicates findings from a previous 'Experiment 1'. The data presented (r values) are for this current study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section, \"3.2.1. Divergent thinking, attention, and cognitive control,\" details a study investigating the relationship between divergent thinking, attentional flexibility (RT oddball effect), and cognitive control (N2 oddball effect). The findings, which replicate results from a previous Experiment 1, indicate that higher divergent thinking is associated with a smaller RT oddball effect and a larger N2 oddball effect. The study also examined the role of FSIQ-4 scores in these associations and mentions a correlation matrix (Table 1) that includes ATTA, FSIQ-4, and CAQ scores.",
+      "evidence_source": "Summary of the entire text content in section 3.2.1.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "SAMPLE SIZE": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information was explicitly stated in the provided text or table.",
+      "warning": "None"
+    },
+    "ES": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          0.15
+        ]
+      },
+      "evidence_source": "Table 1, intersection of FSIQ-4 row and CAQ column, shows a correlation of .15. The table caption states 'Correlations Between ATTA (Ffluency, Originality, and Total), WASI (FSIQ-4 scores), and CAQ Scores. In Parenthesis Are the p Values.' The correlation between FSIQ-4 (intelligence) and CAQ (creative achievement) is .15.",
+      "warning": "None"
+    },
+    "Effects": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          1
+        ]
+      },
+      "evidence_source": "One correlation coefficient (r = .15) was extracted for the relationship between FSIQ-4 and CAQ in Study X.",
+      "warning": "None"
+    },
+    "Mage": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age information was explicitly stated in the provided text or table.",
+      "warning": "None"
+    },
+    "Measure IQ": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "WASI"
+        ]
+      },
+      "evidence_source": "Table 1 caption: 'WASI (FSIQ-4 scores)'. WASI is the highest level assessment tool.",
+      "warning": "None"
+    },
+    "IQ modality": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "both"
+        ]
+      },
+      "evidence_source": "The WASI (Wechsler Abbreviated Scale of Intelligence) provides a Full Scale IQ (FSIQ) which is a composite measure of both verbal and performance (figural) abilities.",
+      "warning": "None"
+    },
+    "IQ Aspect": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "g"
+        ]
+      },
+      "evidence_source": "FSIQ-4 (Full Scale IQ) from the WASI is a measure of general intelligence ('g').",
+      "warning": "None"
+    },
+    "Creativity Measures": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "CAQ"
+        ]
+      },
+      "evidence_source": "Table 1 caption: 'CAQ Scores'.",
+      "warning": "None"
+    },
+    "Domain classified": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Total"
+        ]
+      },
+      "evidence_source": "The table refers to 'CAQ Scores' generally, without specifying a particular domain, indicating a total score across domains.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 2,
+      "evidence_source": "The text mentions 'Experiment 1' and then describes a new set of findings, implicitly a second experiment, which is referred to as 'Study X'. Therefore, two distinct studies are mentioned in the paper.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section, implicitly describing 'Study X', investigates the relationship between divergent thinking, attention, and cognitive control, replicating findings from 'Experiment 1'. It reports correlations between divergent thinking (measured by ATTA) and RT and N2 oddball effects, also considering FSIQ-4 scores. Table 1 provides a Pearson correlation matrix for ATTA (fluency, originality, total), WASI (FSIQ-4 scores), and CAQ scores.",
+      "evidence_source": "Summary of the provided text and the content of Table 1.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1 Correlations Between ATTA (Ffluency, Originality, and Total), WASI (FSIQ-4 scores), and CAQ Scores. In Parenthesis Are the p Values.",
+      "evidence_source": "The full caption of Table 1.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/meta_intelligence/papers_json/Zabelina2018/tables/Zabelina2018_p006_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

@@ -1,0 +1,245 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section title 'Implications for Practice' is typical of a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No explicit mention of financial support, grants, or funding agencies in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from the publication type being a journal article, which is typically peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\"]}",
+      "evidence_source": "The text states: \"feedback may be the mechanism that links learning and proving orientation to adaptive behaviors.\" 'Proving orientation' is a type of Performance Goal Orientation.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'adaptive behaviors' but does not specify the assessment method (e.g., self-report, objective, other people).",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'adaptive behaviors' but does not specify if the outcome is based on subjective ratings or objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'adaptive behaviors' but does not specify the assessment method (e.g., self-report, other people, objective).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'goal orientation' but does not specify the measurement method or if it was attributed to VandeWalle.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": []}",
+      "evidence_source": "No age information is provided in this section.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": []}",
+      "evidence_source": "No age information is provided in this section to impute mean age.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the sex composition of the sample is provided in this section.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the percentage of men in the sample is provided in this section.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the country where the study was conducted is provided in this section.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the sample type (student vs. other) is provided in this section.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size (N) is reported in this section.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No specific correlation coefficients between Performance Goal Orientation and performance adaptation are reported in this section.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlations were found in this section.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to 'our study' (singular) throughout the section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section discusses the implications of the study's results for practice, focusing on how feedback and goal orientation (learning and proving) influence adaptive behaviors in advisor-client relationships. It explores when an advisor might adopt a learning versus a proving orientation based on task complexity and client openness, and suggests different feedback-seeking approaches for 'open' versus 'closed' client environments. The section refers to 'our study' indicating a single study.",
+      "evidence_source": "Summary of the 'Implications for Practice' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section is titled 'Implications for Practice', which is a common section in a journal article. No other publication type is indicated.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of grants, funding agencies, sponsored projects, or explicit financial support in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text is from an academic paper, likely a journal article, which implies peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\"]}",
+      "evidence_source": "The text states, 'feedback may be the mechanism that links learning and proving orientation to adaptive behaviors.' and 'Other tasks, those that are well learned or relatively simple, would be better accomplished with a proving orientation.' The schema defines 'Prove' for Prove performance goal orientation (PPGO).",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "The text discusses 'feedback-seeking behaviors' and 'feedback environment' from 'family client'. It mentions 'monitoring the feedback environment' and 'Active questioning of the client'. This indicates feedback from other people (clients) as the measure of adaptation.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [0]}",
+      "evidence_source": "The adaptation outcome is based on 'feedback-seeking behaviors' and 'feedback monitoring' from clients, which are subjective ratings.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "The adaptation outcome is based on 'feedback-seeking behaviors' and 'feedback monitoring' from 'family client', indicating assessment by 'Other people'.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "No specific goal orientation scale (e.g., VandeWalle) is mentioned in the text.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information is provided in the text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No age information is provided in the text.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No sex composition information is provided in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No percentage of men in the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No country information is provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "The text refers to 'advisor\u2013client relationship' and 'family client', indicating a professional or community sample rather than a student sample.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No sample size (N) is reported in the provided text.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No correlation coefficients between performance goal orientation and performance adaptation are reported in the text.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No correlation coefficients are reported in the text.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to 'our study' (singular) and 'The results of our study' throughout the section, indicating a single study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section discusses the implications for practice, focusing on how feedback and goal orientation (learning and proving) influence the advisor-client relationship and adaptive behaviors. It explores how advisor approaches to goal orientation and feedback seeking depend on task complexity and client openness, as illustrated in Figure 3. The section suggests that a learning orientation is beneficial for complex tasks, while a proving orientation is more appropriate for simple tasks, and different feedback acquisition strategies are needed for 'open' versus 'closed' client environments.",
+      "evidence_source": "Summary of the provided text content.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Figure 3. Advisor goal orientation and feedback seeking: Approaches most useful for acquiring high-quality feedback.",
+      "evidence_source": "The caption of Figure 3.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Davis2013\\figures\\Davis2013_p014_fig00.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_0"
+  }
+]

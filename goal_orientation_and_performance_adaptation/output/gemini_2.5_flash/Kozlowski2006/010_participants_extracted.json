@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about publication type is provided in the text.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about financial support is provided in the text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about peer review is provided in the text.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about performance goal orientation type is provided in this section.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about adaptation measures is provided in this section.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about adaptation method is provided in this section.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about specific adaptation method is provided in this section.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about goal orientation measurement method is provided in this section.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{'Study X': ['most (87%) were between 18 and 21 years old.']}",
+      "evidence_source": "Text: 'most (87%) were between 18 and 21 years old.'",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{'Study X': [21]}",
+      "evidence_source": "Text: 'most (87%) were between 18 and 21 years old.' Imputed using the upper bound of the age range as per rule 2.1_single_range.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{'Study X': [3]}",
+      "evidence_source": "Text: 'Fifty-eight percent of the participants were female'. This indicates a mixed sample.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{'Study X': [42.0]}",
+      "evidence_source": "Text: 'Fifty-eight percent of the participants were female'. Calculation: 100 - 58 = 42%.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{'Study X': [2]}",
+      "evidence_source": "Text: 'large midwestern university'. This implies the sample was collected in the USA.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{'Study X': [1]}",
+      "evidence_source": "Text: '542 undergraduates in psychology courses'. This indicates a student sample.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{'Study X': [542]}",
+      "evidence_source": "Text: 'Participants were 542 undergraduates'.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation between Performance Goal Orientation and Performance Adaptation is provided in this section.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation information is provided in this section.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes participants for 'the study' without indicating multiple distinct studies or experiments.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the participants of a single study. The sample consisted of 542 undergraduate psychology students from a large midwestern university. The majority were female (58%) and between 18 and 21 years old (87%).",
+      "evidence_source": "Summarized from the provided text.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

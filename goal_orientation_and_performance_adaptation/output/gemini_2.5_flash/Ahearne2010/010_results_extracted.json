@@ -1,0 +1,245 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text is a 'Results' section, which is typically found in a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text is a 'Results' section of what appears to be a scholarly paper, implying it is a journal article and thus peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The text states: \"Both LO and PO evidenced some modest but significant and positive correlations with sales performance\". 'PO' refers to Performance Orientation, which is a global measure of performance goal orientation.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The adaptation outcome is 'sales performance', which is an objective measure.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The adaptation outcome is 'sales performance', which is an objective score.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The adaptation outcome is 'sales performance', which is an objective measure.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "No specific goal orientation measure (e.g., VandeWalle) is mentioned in the text. Therefore, it is coded as 'Other'.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information (mean, range, SD, median) is reported in the provided text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No age information (mean, median, or categories) is reported in the provided text to impute age.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The sample consists of 'salespeople'. No explicit mention of sex composition, but 'salespeople' implies a mixed sample.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No percentage of men or women is reported in the provided text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "No country information is provided in the text. Defaulting to 'Other'.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "The sample consists of 'salespeople', which is not a student sample.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The text mentions 'Table 1 presents correlations and descriptive statistics for all study variables' but Table 1 is not provided. While 'n is the sample size' is mentioned in the context of AIC/BIC, the specific N for the correlation between PGO and PA is not explicitly stated in the text.",
+      "warning": "N for the correlation between PGO and PA is not explicitly stated in the provided text. Table 1, which is referenced, is not available."
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The text states: \"Both LO and PO evidenced some modest but significant and positive correlations with sales performance in the months surrounding the intervention.\" However, the actual correlation coefficient values are not provided in the text.",
+      "warning": "Actual correlation coefficient values for PGO and PA are not provided in the text."
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"PO and sales performance\"]}",
+      "evidence_source": "The text states: \"Both LO and PO evidenced some modest but significant and positive correlations with sales performance\".",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'the study' and 'salespeople' without indicating multiple distinct studies or experiments.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents the results, starting with correlations between study variables. It notes that Performance Orientation (PO) showed modest but significant positive correlations with sales performance. The baseline analyses involved plotting performance trajectories of a random sample of 20 salespeople, revealing three phases of change. Formal data analysis indicated significant within-subject variance in salesperson performance and that individual intercepts and temporal trends varied significantly, enabling hypothesis testing. The section concludes by discussing the error term structure and introducing the hypothesis tests, with Table 2 (not provided) summarizing the HMLM results.",
+      "evidence_source": "Summary of the 'Results' section content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about publication type is provided in the 'Results' section.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about financial support is provided in the 'Results' section.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about peer review status is provided in the 'Results' section.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The text states: \"Both LO and PO evidenced some modest but significant and positive correlations with sales performance\". 'PO' refers to Performance Orientation, which is a global performance goal orientation.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The adaptation outcome is 'sales performance'. The notes for Figure 1 state: \"Vertical axis: 1.00 denotes 100% sales quota achievement.\", indicating an objective measure.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The adaptation outcome is 'sales performance', which is an objective score (sales quota achievement).",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The adaptation outcome is 'sales performance', which is an objective measure (sales quota achievement).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text mentions 'PO' (Performance Orientation) but does not specify the measurement scale (e.g., VandeWalle).",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in this 'Results' section.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in this 'Results' section.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sex composition information is provided in this 'Results' section.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No percentage of men in the sample is provided in this 'Results' section.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is provided in this 'Results' section.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "The sample consists of 'salespeople', indicating an 'Other sample' rather than a student sample.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'Table 1 presents correlations' but Table 1 is not provided. While Figure 1 shows '20 randomly selected salespeople', this is for plotting trajectories and not explicitly stated as the N for the correlations or HMLM analyses. The sample size 'n' for AIC/BIC is mentioned but its value is not given.",
+      "warning": "N for correlations is not explicitly stated in the provided text or figure."
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states: \"Both LO and PO evidenced some modest but significant and positive correlations with sales performance\". However, the actual numerical correlation coefficient (r) is not provided in the text. Table 1, which is said to present correlations, is not available.",
+      "warning": "Numerical correlation value is not provided in the text or accompanying figures."
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"PO and sales performance\"]}",
+      "evidence_source": "The text states: \"Both LO and PO evidenced some modest but significant and positive correlations with sales performance\". 'PO' refers to Performance Orientation.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study without explicit numbering (e.g., 'Study 1', 'Study 2'). It refers to 'all study variables' and 'salespeople' in a singular context.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This 'Results' section details correlations between study variables, specifically noting modest positive correlations between Learning Orientation (LO) and Performance Orientation (PO) with sales performance. It describes baseline analyses, including plotting performance trajectories for 20 randomly selected salespeople (Figure 1) and formal data analysis using Hierarchical Multilevel Modeling (HMLM) to examine variance and temporal trends in sales performance. The section concludes by introducing hypothesis tests summarized in Table 2.",
+      "evidence_source": "Summary of the provided text content in the 'Results' section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "FIGURE 1 Stylized Salesperson Performance Trajectories During the Change. Notes: Smoothed performance trajectories of 20 randomly selected salespeople during the change. The numbers at the top of each plot are the employee identification numbers. Vertical axis: 1.00 denotes 100% sales quota achievement.",
+      "evidence_source": "The full caption and notes accompanying Figure 1.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Ahearne2010\\figures\\Ahearne2010_p006_fig00.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_0"
+  }
+]

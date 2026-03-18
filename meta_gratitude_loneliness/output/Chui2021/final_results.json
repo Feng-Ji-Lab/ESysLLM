@@ -1,0 +1,101 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      6,
+      9,
+      12,
+      15,
+      18
+    ],
+    "reason": "The majority of candidates, including the abstract, introduction, methods, results, discussion, and limitations sections, consistently refer to 'a single daily diary study,' 'the current study,' or explicitly state 'a single study' conducted by the authors. Candidates [1], [2], and [4] with a value of 0 are either discussing existing literature or introducing the study without counting it. Candidate [19] with a value of 2 incorrectly includes a cited study in the count, whereas 'Number of studies' typically refers to studies conducted and reported by the paper's authors. Therefore, the most accurate and consistently supported value is 1."
+  },
+  "N": {
+    "extract_value": {
+      "Single study": [
+        128
+      ]
+    },
+    "best_indices": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "reason": "Multiple reliable sources, including the abstract, the participants section (main text and asset), and Table 1 in the procedure section, consistently report the total sample size as 128. The participants section explicitly states, \"The final sample consisted of 128 community-residing adults.\" Candidate [1] refers to a cited study and is therefore excluded. Candidates [5] and [7] provide implied N values (77 and 116 respectively) from statistical tests (F-statistics and t-statistics). These values are likely due to missing data for specific analyses rather than representing the overall sample size of the study. Therefore, 128 is the most robust and consistently reported N for the single study conducted in this paper."
+  },
+  "female": {
+    "extract_value": {
+      "Single study": [
+        0.4609375,
+        0.48,
+        0.5,
+        0.43
+      ]
+    },
+    "best_indices": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context. Candidates 0, 2, 3, and 4 consistently report the proportion of female participants for this study. Candidates 2 and 3 provide the exact count (59 women out of 128 participants), yielding a precise proportion of 0.4609375. Candidate 0 (abstract) and Candidate 4 (Table 1) report 46% (0.46) for the full sample, which is consistent with the more precise value. Candidate 4 (Table 1) also provides proportions for age-based subsamples (Young adults: 48% or 0.48, Middle-aged adults: 50% or 0.50, Older adults: 43% or 0.43). Following the instruction to merge subsample data into the same list for a single study, all these distinct values (the overall proportion and the subsample proportions) are included. Candidate 1 is excluded as it refers to a cited study (Kashdan et al., 2009), not the current paper's study. Candidate 5 does not contain relevant information regarding female proportion."
+  },
+  "M_age": {
+    "extract_value": {
+      "Single study": [
+        56.72
+      ]
+    },
+    "best_indices": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "reason": "The paper reports a single study, as confirmed by the context and consistent references throughout the candidates. Candidates [0], [2], [3], and [4] consistently report the mean age of participants for this single study. The abstract [0] and participants section [2, 3] state a mean age of 56.7 years. Table 1 [4] provides a more precise mean age for the full sample as 56.72 years. While Table 1 also lists mean ages for specific age groups (Young adults: 29.90, Middle-aged adults: 54.65, Older adults: 72.37), the field definition requests the mean age of participants, which is best represented by the overall mean. Therefore, 56.72 is selected as the most precise overall mean. Candidate [1] is excluded as it refers to a cited study by Kashdan et al. (2009), not the current paper's study. Candidate [5] does not contain M_age information."
+  },
+  "SD_age": {
+    "extract_value": {
+      "Single study": [
+        18.72,
+        3.95,
+        5.15,
+        8.46
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "The paper reports a single study, as confirmed by the provided context. Candidates [0], [1], and [2] consistently report an SD of 18.7 for the full sample's age. Candidate [3] (Table 1) provides more detailed information, including the SD for the full sample (18.72) and for specific age groups: Young adults (3.95), Middle-aged adults (5.15), and Older adults (8.46). Following the instructions, all subsample values (age groups) are merged into a single list for the 'Single study'. For the full sample, 18.72 from Table 1 is considered more precise than 18.7 from the text/abstract, as tables often provide exact values. Candidate [4] did not provide relevant data for SD_age."
+  },
+  "usa_vs_other": {
+    "extract_value": {
+      "Single study": [
+        1
+      ]
+    },
+    "best_indices": [
+      1,
+      2
+    ],
+    "reason": "The paper reports a single study, as confirmed by the context. Candidate [1] provides strong indirect evidence that the study was conducted in the United States by listing racial/ethnic categories (Caucasian, African American, American Indian or Alaska Native) typically used in US demographic reporting. Candidate [2] provides direct evidence, explicitly stating that the original sample was recruited in 'a tri-county area in north central Florida,' which is located in the United States. Both candidates refer to the same study and consistently indicate that the sample was collected in the USA, leading to an extract_value of 1 for the single study."
+  },
+  "r": {
+    "extract_value": {
+      "Single study": [
+        -0.1
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study as per the context. Candidate [0] explicitly states 'Correlations' in its caption and section summary, indicating it is a reliable source for correlation coefficients. The evidence clearly identifies the correlation between 'Loneliness' and 'Gratitude' as -0.10 from Table 2. No other studies, subscales, or subgroups were identified that would require averaging or additional entries."
+  }
+}

@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section title 'Limitations and Future Research Directions' and the academic tone, including citations, suggest a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text is from a 'Limitations and Future Research Directions' section of an academic paper, implying it has undergone peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The text states 'The absence of a relationship between performance orientation and any of the variables in the model'. It refers to 'performance orientation' generally for the current study without specifying sub-dimensions, which aligns with a 'Global' PGO. The mention of 'avoidance- and prove-orientation' is for future research using VandeWalle et al.'s method, not for the current study's assessment.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [4]}",
+      "evidence_source": "The text mentions 'self and supervisor ratings of performance' and 'proactive work role performance'. Since both self-report and other people's ratings were used for performance, it indicates mixed methods for adaptation measurement.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [0]}",
+      "evidence_source": "The adaptation outcome is based on 'self and supervisor ratings of performance', which are subjective ratings.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 2]}",
+      "evidence_source": "The text refers to 'self and supervisor ratings of performance', indicating self-report (1) and other people (2) as specific assessment methods.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text states 'future research should address this issue using other goal orientation measures such as VandeWalle et al.'s method (1999)', implying the current study did not use VandeWalle's method. Therefore, it is coded as 'Other'.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information (mean, range, SD, median) is provided in the text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No age information is provided in the text to impute a mean age.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information about the sex composition of the sample is provided.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information about the percentage of men in the sample is provided.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information about the country where the sample was collected is provided.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information is provided to determine if the sample was student or other.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [108]}",
+      "evidence_source": "The text explicitly states: 'The first limitation concerns the size of the research sample, which is considerably small (N = 108).'",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The text states: 'The absence of a relationship between performance orientation and any of the variables in the model'. While it indicates no relationship, no specific correlation coefficient value is provided.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"PGO and proactive work role performance\"]}",
+      "evidence_source": "The text discusses 'performance orientation' and 'proactive work role performance' as variables in the model, implying a relationship between them was examined.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'This study' in the singular, indicating a single study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section discusses the limitations of 'This study', including its small sample size (N=108), cross-sectional design, and reliance on single-source data despite arguments against common method bias. It also suggests future research directions, such as using different goal orientation measures like VandeWalle et al.'s method, which includes avoidance- and prove-orientation, and exploring the dyadic relationship between adaptive and proactive performance.",
+      "evidence_source": "Summary of the 'Limitations and Future Research Directions' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

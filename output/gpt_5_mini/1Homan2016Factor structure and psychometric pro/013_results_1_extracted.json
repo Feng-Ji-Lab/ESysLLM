@@ -1,0 +1,133 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          105
+        ]
+      },
+      "evidence_source": "Sentence: \"A mixed design factorial ANOVA with one within-subjects factor (high or low acceptance situations) and one between-subjects factor (sex) showed a significant main effect for situation, F(1,103)=215.88, p<.001, ...\" Calculation: denominator df = 103; for a between-subjects factor with 2 groups (sex) denominator df = N - number_groups = N - 2, therefore N = 103 + 2 = 105. Extracted total sample size = 105.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            105
+          ]
+        }
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text refers to \"SBAS-2\" scores (state BA), but the allowed extraction values are only \"BAS\" or \"BAS-2\". Because the exact instrument name BA assessment in allowed values is not explicitly stated, no allowed-value extraction is made.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation between body appreciation and BMI is reported in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The Results describe a single mixed-design experiment (example sentence: \"A mixed design factorial ANOVA with one within-subjects factor (high or low acceptance situations) and one between-subjects factor (sex) ...\"), indicating one study reported in this section.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "The section reports results from a mixed-design experiment using SBAS-2 state body appreciation scores, comparing high vs low acceptance situations and sex. Means are reported separately by sex for high (men 3.79, women 3.72) and low (men 2.76, women 2.38) acceptance situations, and a mixed ANOVA (F(1,103)=215.88, p<.001) showed a large main effect of situation but no significant sex main effect or interaction. No other sample demographics, country, BMI assessments, or correlations with BMI are reported in this text.",
+      "evidence_source": "Quoted sentences: \"For men, mean state BA was 3.79 (SD=0.73) for high acceptance situations and 2.76 (SD=0.97) for low acceptance situations. For women, mean state BA was 3.72 (SD=0.86) for high acceptance situations and 2.38 (SD=0.92) for low acceptance situations.\" and \"A mixed design factorial ANOVA ... showed a significant main effect for situation, F(1,103)=215.88, p<.001, ... a nonsignificant main effect for sex, F(1, 103) = 2.17, p = .14, ... and a nonsignificant interaction between situation and sex, F(1, 103) = 3.67, p = .06.\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

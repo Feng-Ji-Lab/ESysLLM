@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No explicit mention of publication type in the provided text.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No mention of financial support or grants in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No explicit mention of peer review status in the provided text.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The text mentions 'two types of goal orientation (LO and PO)'. PO refers to Performance Orientation. Since it does not specify approach or avoidance, it is coded as 'Global' for Study X.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The adaptation outcome is 'individual salesperson performance', but the specific assessment method (e.g., self-report, objective) is not described.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The adaptation outcome is 'individual salesperson performance', but it is not specified whether it is based on subjective ratings or objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The adaptation outcome is 'individual salesperson performance', but the specific assessment method (e.g., self-report, other people, objective) is not described.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text mentions 'two types of goal orientation (LO and PO)' but does not specify the measurement scale (e.g., VandeWalle). Therefore, it is coded as 'Other' (1) for Study X.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information (e.g., range, SD, median) is provided for the sample.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age or information to impute it is provided for the sample.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information regarding the sex composition of the sample is provided.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No percentage of men in the sample is provided.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the country where the study was conducted is provided.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "The text refers to 'individual salesperson performance', indicating the sample consists of salespeople, which is an 'Other sample' (2) for Study X.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size (N) is reported in the provided text.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficients between Performance Goal Orientation (PO) and performance adaptation (salesperson performance) are reported in this section.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficients are reported, thus no correlation information can be provided.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text states 'For this study, we specify the Level 1 model...', indicating a single study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes a two-level hierarchical model for studying individual change, applied to individual salesperson performance over 12 months. It details the Level 1 model as a cubic function of time and the Level 2 model, which includes five predictors such as openness to change, experience, previous technology use, and two types of goal orientation (LO and PO), to explain individual growth parameters. The text refers to a single 'this study'.",
+      "evidence_source": "The entire text content of the section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

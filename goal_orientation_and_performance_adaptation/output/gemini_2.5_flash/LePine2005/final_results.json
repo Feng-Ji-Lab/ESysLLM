@@ -1,0 +1,324 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      2
+    ],
+    "best_indices": [
+      7
+    ],
+    "reason": "Candidate [7] explicitly mentions both 'a pilot study' and 'a primary study,' indicating two distinct studies conducted within the paper. While many other candidates refer to 'a study' or 'the study' in the singular, they likely refer to the main primary study and do not explicitly account for the pilot study. The definition asks for the numeric count of studies found, and a pilot study is indeed a study. Therefore, Candidate [7] provides the most accurate and comprehensive count."
+  },
+  "PubType": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      21,
+      18,
+      20
+    ],
+    "reason": "The majority of the candidates (0-17) describe the content, methodology, results, and discussion of a research study, which is characteristic of a journal article. Furthermore, Candidate [21] explicitly mentions \"American Psychological Association journals\" and \"electronic manuscript submission\" while also referencing a figure and study within the paper, strongly indicating it is a journal article. Candidate [18] provides \"submission, revision, and acceptance dates for the paper,\" which are typical for journal article publication. Candidate [20] also refers to \"American Psychological Association journals\" and \"manuscript submission.\" These explicit references to journal publication processes and venues, combined with the content, confirm the publication type as a journal article."
+  },
+  "FinancSupport": {
+    "extract_value": [
+      0
+    ],
+    "best_indices": [
+      18
+    ],
+    "reason": "The field definition for 'FinancSupport' indicates a value of 1 for explicit mentions of financial support (e.g., grants, funding agencies) and 0 if no such information exists after checking typical locations. None of the provided candidate contexts contain any explicit mention of financial support. Candidate [18] is from a section typically found at the end of the paper (references/submission dates), which is a common location for acknowledgments or funding statements. The absence of any financial support information in this and all other candidates strongly supports the conclusion that no financial support was mentioned in the paper, leading to a consolidated value of 0."
+  },
+  "PeerReview": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      16
+    ],
+    "reason": "Candidate [16] explicitly states 'submission, revision, and acceptance dates for the paper.' These dates are direct evidence that the paper underwent a peer-review process, which is standard for academic publications. The content of the paper itself (research, studies, results, discussion) also strongly implies it is a peer-reviewed work. Other candidates discussing APA editor appointments are not relevant to the peer-review status of this specific paper."
+  },
+  "PgoType": {
+    "extract_value": {
+      "Study 1": [
+        "Global"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "reason": "The paper describes two studies: a pilot study and a primary study, as indicated by Candidate [2]. However, Candidate [2] also specifies that 'these variables' (including goal orientation, which PgoType refers to) were 'measured' for the 'primary study,' while the pilot study was 'used for setting goal levels.' This strongly suggests that PgoType was only assessed and reported for the primary study. All candidates consistently refer to 'performance orientation' as a single, undifferentiated construct (e.g., 'high-performance orientation,' 'performance orientation' without specifying approach or avoidance). Candidate [16] explicitly confirms this by stating that the measure used 'did not cleanly tap the prove and avoid aspects of performance orientation,' thus indicating a 'Global' performance goal orientation for the main study. Therefore, only one study (the primary study, here named 'Study 1') has PgoType data, and its value is consistently 'Global' across all reliable candidates."
+  },
+  "AdaptMeasures": {
+    "extract_value": {
+      "Primary Study": [
+        "4",
+        "2",
+        "3"
+      ],
+      "Pilot Study": []
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "reason": "The paper explicitly mentions two distinct studies: a pilot study and a primary study, as detailed in candidate [3]. All candidates describing specific adaptation measures refer to the main experiment, which is identified as the 'Primary Study' based on the consistent descriptions of the 3-hour simulation, TIDE2 software, 64 teams, and the variables measured.\n\nFor the 'Primary Study':\n- Candidate [3] indicates that 'role structure adaptation' was measured by 'coding the activity of each team on a trial-by-trial basis' (objective) and validated by 'ratings from two doctoral-level students' (other people). This constitutes a mixed method, coded as '4'.\n- Candidates [12], [13], and [15] (after correcting the value in [15] from '1' to '2' based on stronger evidence in [12] and [13] that doctoral students rated communication processes) describe 'interpersonal, transition, and action processes' (which predict adaptation) as being measured by 'two doctoral-level students rating the communications of teams'. This is coded as '2' (other people).\n- Numerous other candidates ([0], [1], [2], [4], [5], [6], [7], [8], [9], [10], [11], [14], [16], [17]) consistently describe objective measures of adaptation, such as 'accuracy of their decision', 'binary outcome' of adapting, 'role structure adaptation score', 'likelihood of adaptation', and 'team decision-making performance'. These are coded as '3'.\nSince the study provides multiple eligible effects with different adaptation measurement sources, all distinct codes ('4', '2', '3') are included in the list for the 'Primary Study'.\n\nFor the 'Pilot Study':\n- Candidate [3] states that the pilot study was 'used for setting goal levels'. No specific adaptation measures were found or described for this study in any of the candidates. Therefore, its list of extract_value is empty.\n\nAll candidate indices were used as they either contributed to identifying the studies, resolving the measurement methods, or providing specific values for the primary study."
+  },
+  "AdaptMethod": {
+    "extract_value": {
+      "Study 1": [
+        "1",
+        "0"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "reason": "The paper explicitly mentions two studies: a pilot study and a primary study (Candidate [3]). However, all candidates providing specific 'AdaptMethod' values refer to the primary study (herein named 'Study 1'). No 'AdaptMethod' value was found for the pilot study, therefore only 'Study 1' is included in the resolved_studies.\n\nFor 'Study 1', both objective and subjective methods were used to assess performance adaptation outcomes:\n1.  **Objective Scores (1):** The majority of candidates ([0], [1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11], [14], [16], [17]) indicate that the main adaptation outcomes (e.g., 'role structure adaptation', 'accuracy of decision', 'team's average performance', 'likelihood/rates of adaptation') were measured objectively through task performance, software records, or objective coding.\n2.  **Subjective Ratings (0):** A subset of candidates ([12], [13], [15]), specifically from the supplemental analyses section, explicitly state that 'performance adaptation' or 'adaptation outcomes' were also assessed through subjective ratings provided by 'doctoral-level students' for 'interpersonal, transition, and action processes'.\n\nSince the field definition allows for a list of integers and these represent distinct but valid measures of 'performance adaptation outcome' within the same study, both objective ('1') and subjective ('0') methods are included for 'Study 1'."
+  },
+  "AdaptMethod_Specific": {
+    "extract_value": {
+      "Primary Study": [
+        "3",
+        "2",
+        "1"
+      ],
+      "Pilot Study": []
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "reason": "The paper contains two distinct studies: a pilot study and a primary study, as indicated by the context and explicitly mentioned in Candidate [3] ('a pilot study used for setting goal levels and a primary study for which these variables were measured'). All candidates referring to 'Study X' describe the main experiment, its procedures, analyses, and results (e.g., 3-hour simulation, HLM/HGLM analyses, role structure adaptation), which are consistent with the primary study. Therefore, all 'Study X' values are consolidated under 'Primary Study'. The 'Primary Study' utilized multiple assessment methods for performance adaptation: objective measures (code 3, from candidates [0-11, 14, 16, 17]), assessment by other people (code 2, from candidates [12, 13] where doctoral students rated communications), and a subjective measure likely indicating self-report (code 1, from candidate [15] for 'Interpersonal Processes During the Disruption'). The pilot study was mentioned as being 'used for setting goal levels' (Candidate [3]), but no specific 'AdaptMethod_Specific' for performance adaptation was found for it among the candidates. Thus, the 'Pilot Study' is included with an empty list for 'extract_value' to reflect its presence as a distinct study without a specified adaptation method in the provided candidates. All candidates contributed to identifying the methods for the primary study or to the overall study structure resolution."
+  },
+  "GoMeasure_dichot_num": {
+    "extract_value": {
+      "Primary Study": [
+        "1"
+      ]
+    },
+    "best_indices": [
+      3,
+      15
+    ],
+    "reason": "The paper contains two distinct studies: a pilot study and a primary study, as indicated by the context and candidate [3]. Candidates [3] and [15] explicitly state that the 'Button et al. (1996) measure of goal orientation' was used for the 'primary study' or 'present study'. According to the definition, if the goal orientation scale is not explicitly attributed to VandeWalle, it is coded as 1 (Other). Button et al. (1996) is not VandeWalle, thus the code is 1. All other candidates consistently refer to 'Study X', 'the present research', or 'this study' and do not mention VandeWalle, aligning with code 1 for the primary study. No information regarding the goal orientation measurement method for the 'pilot study' was found in any of the candidates, therefore only the 'Primary Study' is included in the resolved_studies."
+  },
+  "Age_Info": {
+    "extract_value": {
+      "Primary Study": [
+        "mean age for these participants was about 21 years"
+      ],
+      "Pilot Study": [
+        ""
+      ]
+    },
+    "best_indices": [
+      3,
+      5
+    ],
+    "reason": "The paper contains two distinct studies: a primary study and a pilot study. Candidate [5] explicitly mentions both 'a pilot study' and 'a primary study,' which is crucial for distinguishing them. For the primary study, Candidate [3] provides specific age information: 'mean age for these participants was about 21 years'. All other candidates referring to the primary study indicate no age information. For the pilot study, no age information was found in any candidate, so an empty string is provided as per the missingness rule."
+  },
+  "Age_imputed": {
+    "extract_value": {
+      "Primary Study": [
+        "21.0"
+      ],
+      "Pilot Study": [
+        "null"
+      ]
+    },
+    "best_indices": [
+      3,
+      5
+    ],
+    "reason": "Candidate [3] explicitly reports the mean age of 21 years for the participants of the main study, which is identified as the 'Primary Study'. Candidate [5] distinguishes between a 'pilot study' and a 'primary study', confirming the presence of two distinct studies as per the context. No age information (mean, median, or ranges) was found for the 'Pilot Study' in any of the provided candidates, hence its age is imputed as null."
+  },
+  "Sex": {
+    "extract_value": {
+      "Primary Study": [
+        "3"
+      ],
+      "Pilot Study": [
+        "null"
+      ]
+    },
+    "best_indices": [
+      2,
+      3
+    ],
+    "reason": "The paper explicitly mentions two distinct studies: a pilot study and a primary study (Candidate [3]). For the 'Primary Study', Candidate [2] provides direct evidence that 'approximately half were men' among the participants, which corresponds to a mixed sample (code 3). Other candidates (e.g., [5], [8], [12]) also infer a mixed sample (code 3) based on the use of 'teams' or the absence of explicit single-sex specification, which is consistent with the direct evidence from Candidate [2]. For the 'Pilot Study', although its existence is confirmed by Candidate [3], no candidate provides specific information regarding the sex composition of its sample, hence the value is null."
+  },
+  "Men_Prop": {
+    "extract_value": {
+      "Primary Study": [
+        "50.0"
+      ],
+      "Pilot Study": [
+        "null"
+      ]
+    },
+    "best_indices": [
+      2,
+      3
+    ],
+    "reason": "The paper explicitly mentions two studies: a pilot study and a primary study (Candidate [3]). Candidate [2] provides the percentage of men for the main study, stating 'approximately half were men' out of 192 participants, which translates to 50.0%. This value is assigned to the 'Primary Study'. No information regarding the percentage of men was provided for the 'Pilot Study', hence 'null' is returned for it."
+  },
+  "Country_dichot_num": {
+    "extract_value": {
+      "Pilot Study": [
+        "null"
+      ],
+      "Primary Study": [
+        "2"
+      ]
+    },
+    "best_indices": [
+      0,
+      2
+    ],
+    "reason": "The paper contains two distinct studies: a pilot study and a primary study, as explicitly identified in Candidate 2. For the 'Primary Study', Candidate 0 provides the most reliable evidence, stating the author's affiliation is 'University of Florida, Gainesville, FL', which is in the USA. This indicates the study was conducted in the USA, leading to a code of '2'. Candidates 7 and 11, which assign a code of '1', explicitly state that 'No country information is provided', making their assignment unreliable and contradictory to their own evidence. Candidates 15 and 16 also suggest the USA based on publisher context (American Psychological Association, Florida State University), which is consistent with Candidate 0 but less direct evidence for the sample location. For the 'Pilot Study', Candidate 2 mentions its existence but provides no country information, and no other candidate offers specific country details for this study. Therefore, the country for the pilot study is coded as 'null'."
+  },
+  "Sample_dichot": {
+    "extract_value": {
+      "Primary Study": [
+        "1"
+      ],
+      "Pilot Study": []
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "reason": "The paper describes two distinct studies: a 'Pilot Study' and a 'Primary Study', as identified in Candidate [3]. For the 'Primary Study', Candidate [2] explicitly states that participants were '192 college juniors and seniors recruited from a large multisection undergraduate management course'. This directly indicates a student sample, coded as '1'. While several other candidates ([0], [4], [5], [6], [8], [10], [12], [15], [16]) infer a non-student sample (code '2') based on the absence of explicit student mention or by referring to 'teams' in a general context, the direct and explicit evidence from Candidate [2] (from the Participants section) is considered more reliable and overrides these inferences. For the 'Pilot Study', Candidate [3] mentions its existence but provides no information regarding the sample type. No other candidate provides this information either. Therefore, no sample type can be extracted for the Pilot Study."
+  },
+  "N": {
+    "extract_value": {
+      "Pilot Study": [
+        "20"
+      ],
+      "Primary Study": [
+        "64"
+      ]
+    },
+    "best_indices": [
+      0,
+      2,
+      3,
+      6,
+      7,
+      10,
+      11,
+      12,
+      13
+    ],
+    "reason": "The paper describes two distinct studies: a pilot study and a primary study. Candidate [3] explicitly mentions 'A pilot study mentions N=20' and refers to a 'primary study'. For the Pilot Study, the N is directly extracted as 20 from Candidate [3]. For the Primary Study, multiple candidates consistently report an N of 64. Candidate [0] states '64 3-person teams'. Candidate [2] clarifies that '192 college juniors and seniors' were 'organized into 64 three-person teams', indicating that the relevant sample size for team-level analyses (which is appropriate for goal orientation and performance adaptation) is 64 teams. Candidates [6], [7], [10], [11], [12], and [13] all explicitly state 'N = 64' in table notes or text sections describing preliminary between-team results, supplemental analyses, and correlations, which are reliable sources for sample size. This consistent reporting of N=64 for team-level analysis in the primary study supports its selection."
+  },
+  "Correlation_PGO_and_PA": {
+    "extract_value": {
+      "Primary Study": [
+        "-0.20",
+        "-0.03"
+      ]
+    },
+    "best_indices": [
+      5
+    ],
+    "reason": "The paper describes a primary study and a pilot study. All identified correlations pertain to the primary study. Candidate 5 (Table 1) provides two direct Pearson correlation coefficients between 'Members' performance orientation' (PGO) and two measures of 'performance adaptation': 'Prechange decision-making performance' (r = -.20) and 'Postchange decision-making performance' (r = -.03). Other candidates either report qualitative associations, moderation effects, or correlations with variables that are not direct measures of performance adaptation (e.g., team process variables like 'action processes during disruption' in Candidate 11, which is a process variable rather than a direct performance adaptation outcome). Therefore, only the values from Candidate 5 are extracted for the Primary Study."
+  },
+  "Correlation_info": {
+    "extract_value": {
+      "Pilot Study": [],
+      "Primary Study": [
+        "PGO and Prechange decision-making performance",
+        "PGO and Postchange decision-making performance",
+        "PGO and AP (action processes during disruption)"
+      ]
+    },
+    "best_indices": [
+      1,
+      5,
+      11
+    ],
+    "reason": "The paper contains two distinct studies: a 'Pilot Study' and a 'Primary Study', as explicitly identified in Candidate [1]. All other candidates referring to 'Study X' or 'the study' describe the main experiment, results, and supplemental analyses, and are therefore attributed to the 'Primary Study'. For the Pilot Study, no candidate provides specific correlation information between performance goal orientation and performance adaptation; its purpose was primarily for 'setting goal levels' (Candidate [1]). Therefore, the 'extract_value' for the Pilot Study is an empty list. For the Primary Study, while many candidates (e.g., [0], [1], [2], [3], [4], [6], [7], [8], [9], [10], [12], [13], [14]) state that no direct correlation was found in the text or specific tables, these 'None' values indicate the absence of a correlation description and are not included in the final list of extracted correlation descriptions. Instead, Candidate [5] (from Table 1) explicitly reports correlations between 'PGO and Prechange decision-making performance' and 'PGO and Postchange decision-making performance'. Candidate [11] (from Table 5) explicitly reports a correlation between 'PGO and AP (action processes during disruption)'. These specific correlations from tables are considered reliable and are included in the 'extract_value' for the Primary Study. Candidates [1], [5], and [11] are used for study resolution and value extraction."
+  }
+}

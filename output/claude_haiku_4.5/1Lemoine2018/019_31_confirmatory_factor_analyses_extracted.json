@@ -1,0 +1,300 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Denmark",
+          "Portugal",
+          "Sweden"
+        ]
+      },
+      "evidence_source": "Text states: 'The results indicated that the unidimensional model fit the data well in the three countries: for both boys and girls in Denmark, Portugal, and Sweden.'",
+      "warning": "Study name is not explicitly provided in the text; using 'Study X' as placeholder. The section discusses three countries but does not provide explicit study naming."
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Denmark",
+          "Portugal",
+          "Sweden"
+        ]
+      },
+      "evidence_source": "Table 2 caption states 'Fit indices of the BAS-2 by sex and country.' The table displays data for three countries: Denmark, Portugal, and Sweden, with separate rows for girls and boys in each country.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          79,
+          50,
+          296,
+          217,
+          155,
+          215
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            79,
+            296,
+            155
+          ]
+        },
+        "male": {
+          "Study X": [
+            50,
+            217,
+            215
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            79,
+            50,
+            296,
+            217,
+            155,
+            215
+          ]
+        }
+      },
+      "evidence_source": "Text note states: 'N = 1012; n = 79 Danish girls; n = 50 Danish boys; n = 296 Portuguese girls; n = 217 Portuguese boys; n = 155 Swedish girls; n = 215 Swedish boys.' These sample sizes are listed for each gender-country combination.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain information about the survey method (paper-and-pencil vs. online).",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain information about the racial/ethnic composition of participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain information about the mean age of participants.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain information about educational attainment of participants.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain information about BMI of participants. Table 2 reports fit indices for the BAS-2 instrument, not BMI statistics.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain information about where or how participants were recruited.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2",
+          "BAS-2",
+          "BAS-2",
+          "BAS-2",
+          "BAS-2",
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Table 2 caption explicitly states 'Fit indices of the BAS-2 by sex and country.' The entire table reports confirmatory factor analysis results for the BAS-2 instrument across all six gender-country subsamples.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain information about BMI assessment methods. Table 2 focuses on BAS-2 fit indices only.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain correlation coefficients between body appreciation and BMI. Table 2 reports fit indices (chi-square, CFI, TLI, RMSEA, SRMR) for the BAS-2 confirmatory factor analysis, not correlations with BMI.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with confirmatory factor analyses conducted across three countries (Denmark, Portugal, Sweden) with separate analyses by gender. The note indicates N = 1012 total participants across all subsamples, suggesting one overarching study with multiple country/gender subgroups.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly state whether this is from a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents confirmatory factor analyses (CFAs) of the BAS-2 instrument using Satorra-Bentler chi-square testing across three countries (Denmark, Portugal, Sweden) with separate analyses for girls and boys in each country. The results indicate that the unidimensional BAS-2 model fit the data well across all six gender-country subsamples (n = 79 Danish girls, 50 Danish boys, 296 Portuguese girls, 217 Portuguese boys, 155 Swedish girls, 215 Swedish boys; total N = 1012), with all item-factor loadings above .32 threshold.",
+      "evidence_source": "Section 3.1 'Confirmatory factor analyses' and Table 2 with accompanying notes.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2: Fit indices of the BAS-2 by sex and country.",
+      "evidence_source": "The table title appears at the top of Table 2 in the provided image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Lemoine2018/tables/1Lemoine2018_p004_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Denmark",
+          "Portugal",
+          "Sweden"
+        ]
+      },
+      "evidence_source": "Table 3 caption: 'Standardized item-factor loadings for the BAS-2 among boys and girls in Denmark, Portugal, and Sweden.' The table shows data collected in three countries: Denmark, Portugal, and Sweden.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          1012,
+          79,
+          50,
+          296,
+          217,
+          155,
+          215
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            79,
+            296,
+            155
+          ]
+        },
+        "male": {
+          "Study X": [
+            50,
+            217,
+            215
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            1012
+          ]
+        }
+      },
+      "evidence_source": "Table 3 note: 'N = 1012; n = 79 Danish girls; n = 50 Danish boys; n = 296 Portuguese girls; n = 217 Portuguese boys; n = 155 Swedish girls; n = 215 Swedish boys.' Total sample is 1012. Gender-specific breakdown: Danish girls (79), Danish boys (50), Portuguese girls (296), Portuguese boys (217), Swedish girls (155), Swedish boys (215).",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and Table 3 do not specify the survey method (paper-and-pencil or online).",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and Table 3 do not contain information about the racial/ethnic composition of participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and Table 3 do not specify the mean age of participants.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and Table 3 do not contain information about educational attainment of participants.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and Table 3 do not provide mean BMI values for participants.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and Table 3 do not specify the source of the sample (community, college, or primary/secondary/high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Table 3 caption: 'Standardized item-factor loadings for the BAS-2 among boys and girls in Denmark, Portugal, and Sweden.' The table presents item-factor loadings for the BAS-2 (Body Appreciation Scale-2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and Table 3 do not contain information about how BMI was assessed (self-reported or measured).",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and Table 3 do not report correlations between body appreciation and BMI. Table 3 presents item-factor loadings for the BAS-2, not correlations with BMI.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with confirmatory factor analyses (CFAs) conducted across three countries (Denmark, Portugal, and Sweden) with separate samples by gender within each country. This is one study with multiple country/gender subsamples, not multiple separate studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly state whether this is a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents confirmatory factor analyses (CFAs) of the BAS-2 across three countries: Denmark, Portugal, and Sweden, with separate analyses for boys and girls in each country. The total sample comprised 1,012 participants (N = 1012; Danish girls n = 79, boys n = 50; Portuguese girls n = 296, boys n = 217; Swedish girls n = 155, boys n = 215). Table 3 displays standardized item-factor loadings for all 10 BAS-2 items, showing that the unidimensional model fit the data well across all groups, with most items loading above .60 on the latent factor.",
+      "evidence_source": "Section 3.1 text and Table 3 caption and note."
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 3: Standardized item-factor loadings for the BAS-2 among boys and girls in Denmark, Portugal, and Sweden.",
+      "evidence_source": "Table 3 title as presented in the document."
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Lemoine2018/tables/1Lemoine2018_p004_table01.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_1"
+  }
+]

@@ -1,0 +1,211 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the study was conducted. While 'MTurk' (Amazon Mechanical Turk) is mentioned as a recruitment source, this does not specify a country.",
+      "warning": "Country information is not provided in this Results section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 2": [
+          161,
+          102,
+          150,
+          167
+        ],
+        "Study 3": [
+          192,
+          190
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 2": [
+            161,
+            150
+          ],
+          "Study 3": [
+            192
+          ]
+        },
+        "male": {
+          "Study 2": [
+            102,
+            167
+          ],
+          "Study 3": [
+            190
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study 2": [
+            580
+          ],
+          "Study 3": [
+            382
+          ]
+        }
+      },
+      "evidence_source": "From the note at bottom of table: 'Study 2: College women n = 161, college men n = 102; MTurk community women n = 150, MTurk community men n = 167. Study 3: MTurk community women n = 192, MTurk community men, n = 190.' Study 2 has four subsamples: college women (161), college men (102), community women (150), community men (167). Study 3 has two subsamples: community women (192), community men (190).",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the survey method (paper-and-pencil or online) for Study 2 or Study 3 in this Results section.",
+      "warning": "Survey method is not specified in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the racial/ethnic composition of participants.",
+      "warning": "Percent of white participants is not reported in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While the text mentions 'The college sample differed from the community sample in terms of age, t(578) = -18.36, p < .001', specific mean age values are not provided in this Results section.",
+      "warning": "Mean age values are not explicitly stated; only a statistical comparison is mentioned."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 2": [
+          100
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 2": [
+            100
+          ]
+        },
+        "male": {
+          "Study 2": [
+            100
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study 2": [
+            100
+          ]
+        }
+      },
+      "evidence_source": "The text states 'The factor structure obtained in Study 1, then, was confirmed in Study 2 for college students as well as community participants.' The college subsample of Study 2 consists of college students, which means 100% have college or higher education. However, the community sample percentage cannot be inferred from the text.",
+      "warning": "Only the college subsample of Study 2 can be inferred as 100% college-educated. The community sample percentage is not stated and should not be inferred."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions BMI differences between samples ('BMI for women, t(578) = -4.36, p < .001, and BMI for men, t(578) = -3.54, p < .001') but does not provide actual mean BMI values.",
+      "warning": "Mean BMI values are not explicitly provided; only statistical comparisons are mentioned."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 2": [
+          "college",
+          "community"
+        ],
+        "Study 3": [
+          "community"
+        ]
+      },
+      "evidence_source": "From the note: 'Study 2: College women n = 161, college men n = 102; MTurk community women n = 150, MTurk community men n = 167. Study 3: MTurk community women n = 192, MTurk community men, n = 190.' Study 2 includes both college and community (MTurk) samples. Study 3 includes only community (MTurk) sample.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study 2": [
+          "BAS-2"
+        ],
+        "Study 3": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The text repeatedly references 'BAS-2' as the instrument used: 'The BAS-2 was correlated -.33 with BMI in the college sample' and 'Each BAS-2 item was specified to load on the latent body appreciation factor.' The entire section discusses BAS-2 validation and measurement invariance.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether BMI was self-reported or measured in this Results section.",
+      "warning": "BMI assessment method (self-reported vs. measured) is not stated in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study 2": [
+          -0.33,
+          -0.39
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 2": [
+            -0.32,
+            -0.38
+          ]
+        },
+        "male": {
+          "Study 2": [
+            -0.36,
+            -0.42
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study 2": [
+            -0.33,
+            -0.39
+          ]
+        }
+      },
+      "evidence_source": "From the text: 'The BAS-2 was correlated -.33 with BMI in the college sample (-.32 for women, -.36 for men) and -.39 in the community sample (-.38 for women, -.42 for men; all ps < .001).' Study 2 has two subsamples: college (r = -.33 overall; -.32 women, -.36 men) and community (r = -.39 overall; -.38 women, -.42 men). These are Pearson r correlations between BAS-2 (Body Appreciation) and BMI.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 2,
+      "evidence_source": "The text explicitly references 'Study 2' and 'Study 3' multiple times. The note states 'Study 2: College women n = 161...' and 'Study 3: MTurk community women n = 192...' This Results section reports on Study 2 and Study 3.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text does not indicate whether this is from a journal article or dissertation.",
+      "warning": "Publication type is not specified in this Results section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Results section reports preliminary analyses and validation of the BAS-2 scale across Study 2 and Study 3. Study 2 includes college students (women n=161, men n=102) and MTurk community participants (women n=150, men n=167), while Study 3 includes MTurk community participants (women n=192, men n=190). The BAS-2 showed significant negative correlations with BMI in both college (r=-.33) and community (r=-.39) samples, with gender-specific correlations reported separately. Measurement invariance testing confirmed the BAS-2's unidimensional factor structure across sex and sample type.",
+      "evidence_source": "Entire Results section, particularly the note and correlation findings.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study 2": [
+          "United States"
+        ],
+        "Study 3": [
+          "United States"
+        ]
+      },
+      "evidence_source": "The text mentions 'MTurk community women' and 'MTurk community men' in the note section of Table 5, indicating Amazon Mechanical Turk (MTurk) which is a US-based platform. The college sample is also referenced without explicit country mention, but the context of US-based research is standard. No explicit country statement found in the provided text, but MTurk is a US platform.",
+      "warning": "Country not explicitly stated in the text. Inferred from MTurk (Amazon Mechanical Turk) reference, which is US-based. This is an inference and should be verified against the full paper."
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Tylka2015The Body Appreciation Scale2/tables/1Tylka2015The Body Appreciation Scale2_p009_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

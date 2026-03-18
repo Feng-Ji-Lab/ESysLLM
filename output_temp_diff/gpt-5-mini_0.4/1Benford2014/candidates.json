@@ -1,0 +1,586 @@
+{
+  "Publication type": {
+    "0": {
+      "type": "enum_or_none",
+      "extract_value": "journal articles",
+      "evidence_source": "Text identifies the source as 'Body Image' and includes 'journal homepage: www.elsevier.com/locate/bodyimage', indicating this is a journal publication (brief research report).",
+      "warning": "None",
+      "source_file": "002_body_image_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section contains only the journal identification line for 'Body Image' and the label 'Brief research report'. No study-level details (e.g., sample size, country, measures, correlations) or any mention of 'Study 1' or numbered experiments are present."
+    },
+    "1": {
+      "type": "enum_or_none",
+      "extract_value": "journal articles",
+      "evidence_source": "Provided text includes 'journal homepage: www.elsevier.com/locate/bodyimage' and the image shows the journal cover 'Body Image', indicating this is a journal article.",
+      "warning": "None",
+      "source_file": "002_body_image_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Benford2014/figures/1Benford2014_p000_fig00.png",
+      "_metadata_caption": "",
+      "_extracted_caption": "None",
+      "_section_summary": "This section contains the journal title 'Body Image' and the note 'Brief research report' with no study details. No participant, methods, measures, or results information is provided in the text or the attached image."
+    },
+    "2": {
+      "type": "enum_or_none",
+      "extract_value": "journal articles",
+      "evidence_source": "\u00a9 2014 Elsevier Ltd. All rights reserved.",
+      "warning": "None",
+      "source_file": "006_abstract_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This abstract reports a single community study (Study X) of 509 men in London, United Kingdom, examining links between the Big Five personality traits and body image measures, including drive for muscularity and body appreciation. Hierarchical regressions (controlling for BMI and subjective social status) found Neuroticism positively predicted drive for muscularity and Neuroticism (negatively) and Extraversion (positively) predicted body appreciation; no instrument names, demographic breakdowns (age, race, education), or BMI means/correlations were provided."
+    }
+  },
+  "Country": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "United Kingdom"
+        ]
+      },
+      "evidence_source": "'Body image and personality among British men: Associations between the Big Five personality domains, drive for muscularity, and body appreciation' (title) indicates participants were British men.",
+      "warning": "None",
+      "source_file": "003_body_image_and_personality_among_british_men_assoc_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "The provided section contains the paper title 'Body image and personality among British men: Associations between the Big Five personality domains, drive for muscularity, and body appreciation' and the author line 'Karis Benforda, Viren Swami a,b,\u2217'. It indicates the study population involves British men but provides no sample size, demographics, methods, instruments, or statistical results. No study numbering (e.g., 'Study 1') or additional data are present in the provided text."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "United Kingdom"
+        ]
+      },
+      "evidence_source": "A total of 509 men from the community in London, UK, completed measures of drive for muscularity, body appreciation, the Big Five domains, and subjective social status, and provided their demographic details.",
+      "warning": "None",
+      "source_file": "006_abstract_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This abstract reports a single community study (Study X) of 509 men in London, United Kingdom, examining links between the Big Five personality traits and body image measures, including drive for muscularity and body appreciation. Hierarchical regressions (controlling for BMI and subjective social status) found Neuroticism positively predicted drive for muscularity and Neuroticism (negatively) and Extraversion (positively) predicted body appreciation; no instrument names, demographic breakdowns (age, race, education), or BMI means/correlations were provided."
+    },
+    "2": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "United Kingdom"
+        ]
+      },
+      "evidence_source": "Participants of this study were 509 men recruited from the community in London, UK, and ranging in age from 18 to 59 years (M = 25.18, SD = 8.28).",
+      "warning": "None",
+      "source_file": "009_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "The section reports one study of 509 men recruited from the community in London, UK (mean age 25.18, SD = 8.28). Mean self-reported BMI was 24.01 (SD = 4.90); 73.1% were British White, 19.3% Asian, and 7.7% African Caribbean; 17.7% had an undergraduate degree and 7.5% a postgraduate degree (25.2% college or higher)."
+    },
+    "3": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Greater London"
+        ]
+      },
+      "evidence_source": "\"Recruitment was conducted on an opportunistic basis in several public locations in Greater London by six researchers.\"",
+      "warning": "None",
+      "source_file": "011_procedure_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "Ethics approval was obtained and participants were recruited opportunistically in public locations in Greater London by six researchers. Participants gave written informed consent and completed an anonymous paper-and-pencil survey in a quiet location; participation was voluntary, unpaid, and participants were given a debriefing sheet upon returning the survey."
+    }
+  },
+  "Sample": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          509
+        ]
+      },
+      "evidence_source": "A total of 509 men from the community in London, UK, completed measures of drive for muscularity, body appreciation, the Big Five domains, and subjective social status, and provided their demographic details.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": {
+          "Study X": [
+            509
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            509
+          ]
+        }
+      },
+      "source_file": "006_abstract_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This abstract reports a single community study (Study X) of 509 men in London, United Kingdom, examining links between the Big Five personality traits and body image measures, including drive for muscularity and body appreciation. Hierarchical regressions (controlling for BMI and subjective social status) found Neuroticism positively predicted drive for muscularity and Neuroticism (negatively) and Extraversion (positively) predicted body appreciation; no instrument names, demographic breakdowns (age, race, education), or BMI means/correlations were provided."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          509
+        ]
+      },
+      "evidence_source": "Participants of this study were 509 men recruited from the community in London, UK...",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": {
+          "Study X": [
+            509
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            509
+          ]
+        }
+      },
+      "source_file": "009_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "The section reports one study of 509 men recruited from the community in London, UK (mean age 25.18, SD = 8.28). Mean self-reported BMI was 24.01 (SD = 4.90); 73.1% were British White, 19.3% Asian, and 7.7% African Caribbean; 17.7% had an undergraduate degree and 7.5% a postgraduate degree (25.2% college or higher)."
+    },
+    "2": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          509
+        ]
+      },
+      "evidence_source": "\"Note. N = 509.\"",
+      "warning": "None",
+      "source_file": "012_results_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This Results section reports findings from a single study (Study X; N = 509). Drive for muscularity was significantly and positively correlated with Neuroticism and participant BMI, and in a hierarchical regression Neuroticism and BMI were the only significant predictors. Body appreciation was significantly and negatively correlated with Neuroticism and BMI and positively correlated with Extraversion and subjective social status; hierarchical regression showed Neuroticism as the strongest predictor, with subjective social status, BMI, and Extraversion also significant, and no interaction terms reached significance."
+    },
+    "3": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          509
+        ]
+      },
+      "evidence_source": "Table 1 note: \"Note. N = 509.\"",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "source_file": "012_results_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Benford2014/tables/1Benford2014_p002_table00.png",
+      "_metadata_caption": null,
+      "_extracted_caption": "Table 1\nDescriptive statistics and inter-scale bivariate correlations between all variables included in the present study.",
+      "_section_summary": "This section reports results from a single study (no explicit study number) with N = 509 and references Table 1 for descriptive statistics and bivariate correlations. Key findings: drive for muscularity correlated positively with Neuroticism and BMI, and body appreciation correlated negatively with Neuroticism and BMI; hierarchical regressions showed Neuroticism and BMI predicted drive for muscularity, while Neuroticism (strongest), subjective social status, BMI, and Extraversion predicted body appreciation."
+    }
+  },
+  "Source of sample": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "community"
+        ]
+      },
+      "evidence_source": "A total of 509 men from the community in London, UK, completed measures...",
+      "warning": "None",
+      "source_file": "006_abstract_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This abstract reports a single community study (Study X) of 509 men in London, United Kingdom, examining links between the Big Five personality traits and body image measures, including drive for muscularity and body appreciation. Hierarchical regressions (controlling for BMI and subjective social status) found Neuroticism positively predicted drive for muscularity and Neuroticism (negatively) and Extraversion (positively) predicted body appreciation; no instrument names, demographic breakdowns (age, race, education), or BMI means/correlations were provided."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "community"
+        ]
+      },
+      "evidence_source": "Participants of this study were 509 men recruited from the community in London, UK.",
+      "warning": "None",
+      "source_file": "009_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "The section reports one study of 509 men recruited from the community in London, UK (mean age 25.18, SD = 8.28). Mean self-reported BMI was 24.01 (SD = 4.90); 73.1% were British White, 19.3% Asian, and 7.7% African Caribbean; 17.7% had an undergraduate degree and 7.5% a postgraduate degree (25.2% college or higher)."
+    },
+    "2": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "community"
+        ]
+      },
+      "evidence_source": "\"Recruitment was conducted on an opportunistic basis in several public locations in Greater London by six researchers.\" Inferred mapping: recruitment in public locations corresponds to the 'community' source category.",
+      "warning": "None",
+      "source_file": "011_procedure_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "Ethics approval was obtained and participants were recruited opportunistically in public locations in Greater London by six researchers. Participants gave written informed consent and completed an anonymous paper-and-pencil survey in a quiet location; participation was voluntary, unpaid, and participants were given a debriefing sheet upon returning the survey."
+    }
+  },
+  "Number of studies": {
+    "0": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The present study examined associations between the Big Five personality domains and measures of men's body image.",
+      "warning": "None",
+      "source_file": "006_abstract_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This abstract reports a single community study (Study X) of 509 men in London, United Kingdom, examining links between the Big Five personality traits and body image measures, including drive for muscularity and body appreciation. Hierarchical regressions (controlling for BMI and subjective social status) found Neuroticism positively predicted drive for muscularity and Neuroticism (negatively) and Extraversion (positively) predicted body appreciation; no instrument names, demographic breakdowns (age, race, education), or BMI means/correlations were provided."
+    },
+    "1": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "\"In the present study, therefore, we examined associations between the Big Five domains, men's drive for muscularity, and body appreciation.\"",
+      "warning": "None",
+      "source_file": "007_introduction_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This Introduction reviews links between the Big Five personality domains\u2014particularly Neuroticism\u2014and body image outcomes, noting prior work focused mainly on women. It states the present study will examine associations between the Big Five, men's drive for muscularity, and body appreciation, but provides no methodological or sample details in this section."
+    },
+    "2": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Text describes a single \"study\" (\"Participants of this study were 509 men...\").",
+      "warning": "None",
+      "source_file": "009_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "The section reports one study of 509 men recruited from the community in London, UK (mean age 25.18, SD = 8.28). Mean self-reported BMI was 24.01 (SD = 4.90); 73.1% were British White, 19.3% Asian, and 7.7% African Caribbean; 17.7% had an undergraduate degree and 7.5% a postgraduate degree (25.2% college or higher)."
+    },
+    "3": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers repeatedly to \"the present study\" (e.g., \"In the present study, Cronbach's \u02db for this measure was .92.\"), indicating a single study.",
+      "warning": "None",
+      "source_file": "010_measures_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This Measures section describes instruments used in the present study: Drive for Muscularity Scale (DMS), Body Appreciation Scale (BAS), NEO-FFI for Big Five domains, and the McArthur Ladder for subjective social status, plus demographics. Body appreciation was measured with the BAS and BMI was computed from self-reported height and weight. The text repeatedly refers to \"the present study,\" indicating a single study (Study X)."
+    },
+    "4": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "\"Note. N = 509.\" and the Results describe a single dataset and analyses (no mention of multiple studies or samples).",
+      "warning": "None",
+      "source_file": "012_results_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This Results section reports findings from a single study (Study X; N = 509). Drive for muscularity was significantly and positively correlated with Neuroticism and participant BMI, and in a hierarchical regression Neuroticism and BMI were the only significant predictors. Body appreciation was significantly and negatively correlated with Neuroticism and BMI and positively correlated with Extraversion and subjective social status; hierarchical regression showed Neuroticism as the strongest predictor, with subjective social status, BMI, and Extraversion also significant, and no interaction terms reached significance."
+    },
+    "5": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided section describes a single study/sample (Table 1; Note. N = 509) and does not label multiple studies (no 'Study 1' or 'Study 2' present).",
+      "warning": "None",
+      "source_file": "012_results_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Benford2014/tables/1Benford2014_p002_table00.png",
+      "_metadata_caption": null,
+      "_extracted_caption": "Table 1\nDescriptive statistics and inter-scale bivariate correlations between all variables included in the present study.",
+      "_section_summary": "This section reports results from a single study (no explicit study number) with N = 509 and references Table 1 for descriptive statistics and bivariate correlations. Key findings: drive for muscularity correlated positively with Neuroticism and BMI, and body appreciation correlated negatively with Neuroticism and BMI; hierarchical regressions showed Neuroticism and BMI predicted drive for muscularity, while Neuroticism (strongest), subjective social status, BMI, and Extraversion predicted body appreciation."
+    },
+    "6": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "These limitations notwithstanding, our findings highlight the importance of greater scholarly attention to the possible ways in which personality affects corporeal experiences.",
+      "warning": "None",
+      "source_file": "013_discussion_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "The Discussion reports that Neuroticism was positively associated with drive for muscularity and negatively associated with body appreciation, while Extraversion was positively associated with body appreciation in the (male) sample. The authors note implications for screening and intervention, recommend future longitudinal and facet-level personality research, and explicitly do not label multiple studies or study numbers in this section."
+    },
+    "7": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "We also found that Extraversion was positively associated with body appreciation in our sample of men.",
+      "warning": "None",
+      "source_file": "013_discussion_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Benford2014/tables/1Benford2014_p003_table00.png",
+      "_metadata_caption": null,
+      "_extracted_caption": "Table 2\nStandardised and unstandardised regression coefficients for the multiple linear regression with drive for muscularity and body appreciation, respectively, as the criterion variables.",
+      "_section_summary": "The Discussion summarizes that Neuroticism was positively associated with drive for muscularity and negatively associated with body appreciation, while Extraversion was positively associated with body appreciation in the sample of men. The authors note implications for screening and interventions, discuss measurement limitations (domain-level NEO-FFI only), and call for longitudinal and facet-level research to clarify causal pathways."
+    }
+  },
+  "Percent of white in participants": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          73.1
+        ]
+      },
+      "evidence_source": "Most participants were of British White ancestry (73.1%), whereas 19.3% were of Asian descent, and 7.7% were of African Caribbean descent.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            73.1
+          ]
+        }
+      },
+      "source_file": "009_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "The section reports one study of 509 men recruited from the community in London, UK (mean age 25.18, SD = 8.28). Mean self-reported BMI was 24.01 (SD = 4.90); 73.1% were British White, 19.3% Asian, and 7.7% African Caribbean; 17.7% had an undergraduate degree and 7.5% a postgraduate degree (25.2% college or higher)."
+    }
+  },
+  "Mean age of participants": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          25.18
+        ]
+      },
+      "evidence_source": "Participants ... ranging in age from 18 to 59 years (M = 25.18, SD = 8.28).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            25.18
+          ]
+        }
+      },
+      "source_file": "009_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "The section reports one study of 509 men recruited from the community in London, UK (mean age 25.18, SD = 8.28). Mean self-reported BMI was 24.01 (SD = 4.90); 73.1% were British White, 19.3% Asian, and 7.7% African Caribbean; 17.7% had an undergraduate degree and 7.5% a postgraduate degree (25.2% college or higher)."
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          25.2
+        ]
+      },
+      "evidence_source": "Educational qualifications: 17.7% had an undergraduate degree and 7.5% had a postgraduate degree. Calculation: 17.7 + 7.5 = 25.2% (percentage with college or higher).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            25.2
+          ]
+        }
+      },
+      "source_file": "009_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "The section reports one study of 509 men recruited from the community in London, UK (mean age 25.18, SD = 8.28). Mean self-reported BMI was 24.01 (SD = 4.90); 73.1% were British White, 19.3% Asian, and 7.7% African Caribbean; 17.7% had an undergraduate degree and 7.5% a postgraduate degree (25.2% college or higher)."
+    }
+  },
+  "Mean BMI of participants": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          24.01
+        ]
+      },
+      "evidence_source": "Participants' mean self-reported body mass index (BMI) was 24.01 (SD = 4.90).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": {
+          "Study X": [
+            24.01
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            24.01
+          ]
+        }
+      },
+      "source_file": "009_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "The section reports one study of 509 men recruited from the community in London, UK (mean age 25.18, SD = 8.28). Mean self-reported BMI was 24.01 (SD = 4.90); 73.1% were British White, 19.3% Asian, and 7.7% African Caribbean; 17.7% had an undergraduate degree and 7.5% a postgraduate degree (25.2% college or higher)."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          24.01
+        ]
+      },
+      "evidence_source": "Table 1, M row under column (8) \"Body mass index\": \"24.01\".",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "source_file": "012_results_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Benford2014/tables/1Benford2014_p002_table00.png",
+      "_metadata_caption": null,
+      "_extracted_caption": "Table 1\nDescriptive statistics and inter-scale bivariate correlations between all variables included in the present study.",
+      "_section_summary": "This section reports results from a single study (no explicit study number) with N = 509 and references Table 1 for descriptive statistics and bivariate correlations. Key findings: drive for muscularity correlated positively with Neuroticism and BMI, and body appreciation correlated negatively with Neuroticism and BMI; hierarchical regressions showed Neuroticism and BMI predicted drive for muscularity, while Neuroticism (strongest), subjective social status, BMI, and Extraversion predicted body appreciation."
+    }
+  },
+  "Assessment of BMI": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Participants' mean self-reported body mass index (BMI) was 24.01 (SD = 4.90).",
+      "warning": "None",
+      "source_file": "009_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "The section reports one study of 509 men recruited from the community in London, UK (mean age 25.18, SD = 8.28). Mean self-reported BMI was 24.01 (SD = 4.90); 73.1% were British White, 19.3% Asian, and 7.7% African Caribbean; 17.7% had an undergraduate degree and 7.5% a postgraduate degree (25.2% college or higher)."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Participants were asked to report their demographics, consisting of age, ethnicity, educational qualifications, height, and weight (the latter two used to compute self-reported BMI as kg/m2).",
+      "warning": "None",
+      "source_file": "010_measures_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This Measures section describes instruments used in the present study: Drive for Muscularity Scale (DMS), Body Appreciation Scale (BAS), NEO-FFI for Big Five domains, and the McArthur Ladder for subjective social status, plus demographics. Body appreciation was measured with the BAS and BMI was computed from self-reported height and weight. The text repeatedly refers to \"the present study,\" indicating a single study (Study X)."
+    }
+  },
+  "Assessment of BA": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "We measured body appreciation using the Body Appreciation Scale (BAS) developed by Avalos, Tylka, and Wood-Barcalow (2005).",
+      "warning": "None",
+      "source_file": "010_measures_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This Measures section describes instruments used in the present study: Drive for Muscularity Scale (DMS), Body Appreciation Scale (BAS), NEO-FFI for Big Five domains, and the McArthur Ladder for subjective social status, plus demographics. Body appreciation was measured with the BAS and BMI was computed from self-reported height and weight. The text repeatedly refers to \"the present study,\" indicating a single study (Study X)."
+    }
+  },
+  "Survey method": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "paper-and-pencil"
+        ]
+      },
+      "evidence_source": "\"Once participation had been agreed, participants provided written informed consent and completed an anonymous paper-and-pencil version of the survey in a quiet location set up for the purposes of the project.\"",
+      "warning": "None",
+      "source_file": "011_procedure_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "Ethics approval was obtained and participants were recruited opportunistically in public locations in Greater London by six researchers. Participants gave written informed consent and completed an anonymous paper-and-pencil survey in a quiet location; participation was voluntary, unpaid, and participants were given a debriefing sheet upon returning the survey."
+    }
+  },
+  "Correlation between body appreciation and BMI": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.12
+        ]
+      },
+      "evidence_source": "Table 1: correlation at intersection of (2) \"Body appreciation\" (row) and (8) \"Body mass index\" (column) = -0.12 (marked with * indicating p < .05).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "source_file": "012_results_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Benford2014/tables/1Benford2014_p002_table00.png",
+      "_metadata_caption": null,
+      "_extracted_caption": "Table 1\nDescriptive statistics and inter-scale bivariate correlations between all variables included in the present study.",
+      "_section_summary": "This section reports results from a single study (no explicit study number) with N = 509 and references Table 1 for descriptive statistics and bivariate correlations. Key findings: drive for muscularity correlated positively with Neuroticism and BMI, and body appreciation correlated negatively with Neuroticism and BMI; hierarchical regressions showed Neuroticism and BMI predicted drive for muscularity, while Neuroticism (strongest), subjective social status, BMI, and Extraversion predicted body appreciation."
+    }
+  }
+}

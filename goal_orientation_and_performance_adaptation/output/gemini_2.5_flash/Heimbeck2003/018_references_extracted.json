@@ -1,0 +1,371 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'REFERENCES' section, which does not contain information about the publication type of the current paper.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'REFERENCES' section, which does not contain information about financial support for the current study.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'REFERENCES' section, which does not contain information about whether the current publication was peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'REFERENCES' section, which does not contain information about performance goal orientation types assessed in the current study.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'REFERENCES' section, which does not contain information about adaptation measures used in the current study.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'REFERENCES' section, which does not contain information about the adaptation method (subjective/objective) used in the current study.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'REFERENCES' section, which does not contain information about specific adaptation assessment methods used in the current study.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'REFERENCES' section, which does not contain information about the goal orientation measurement method used in the current study.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'REFERENCES' section, which does not contain age information for the study's sample.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'REFERENCES' section, which does not contain mean age information for the study's sample.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'REFERENCES' section, which does not contain information about the sex composition of the study's sample.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'REFERENCES' section, which does not contain information about the percentage of men in the study's sample.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'REFERENCES' section, which does not contain information about the country of data collection for the study.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'REFERENCES' section, which does not contain information about the sample type (student/other) for the study.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'REFERENCES' section, which does not contain information about the sample size (N) for the study.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'REFERENCES' section, which does not contain correlation coefficients between performance goal orientation and performance adaptation.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'REFERENCES' section, which does not contain descriptive information about correlations.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'REFERENCES' section, which does not indicate the number of studies within the paper.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section is titled 'REFERENCES' and contains a list of cited works. It does not provide any details about the methodology, participants, or results of the current study.",
+      "evidence_source": "The section title is 'REFERENCES' and the text content is 'REFERENCES'.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from the presence of a 'REFERENCES' section, which is typical of a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about financial support is present in the 'REFERENCES' section or the provided image captions.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from the publication type (journal article, PubType=1), which typically undergoes peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about performance goal orientation types is present in the provided text or image captions.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The image captions mention 'Performance Variables' but do not specify the assessment method (self-report, other people, objective, or mixed).",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The image captions mention 'Performance Variables' but do not specify if they are subjective or objective.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The image captions mention 'Performance Variables' but do not specify the specific assessment method.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about goal orientation measurement methods is present in the provided text or image captions.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is present in the provided text or image captions.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is present in the provided text or image captions.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sex composition is present in the provided text or image captions.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the percentage of men is present in the provided text or image captions.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the country of data collection is present in the provided text or image captions.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the sample type is present in the provided text or image captions.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The sample size (N) is not explicitly stated in the provided text or image captions.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficients between Performance Goal Orientation and performance adaptation are present in the provided text or image captions.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation information is present.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text and image captions do not explicitly state the number of studies conducted in this paper. 'Three Training Conditions' refers to experimental conditions, not separate studies.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section contains the 'REFERENCES' heading. It also includes captions for Figure 1, which describes means and standard errors of performance variables in three training conditions, and Table 2, which describes observed means and standard deviations of performance variables in three training conditions.",
+      "evidence_source": "Text content: 'REFERENCES'. Attached assets: 'Figure 1: Means and Standard Errors of Performance Variables in Three Training Conditions Adjusted for Computer Experience Variables', 'TABLE 2 Observed Means and Standard Deviations of Performance Variables in the Three Training Conditions and Results of Univariate ANCOVAs'.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Figure 1: Means and Standard Errors of Performance Variables in Three Training Conditions Adjusted for Computer Experience Variables; TABLE 2 Observed Means and Standard Deviations of Performance Variables in the Three Training Conditions and Results of Univariate ANCOVAs",
+      "evidence_source": "The full captions as they appear in the attached image.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Heimbeck2003\\figures\\Heimbeck2003_p015_fig00.png",
+    "_metadata_caption": "TABLE 2\n\nObserved Means and Standard Deviations of Performance Variables in the Three Training Conditions and Results of Univariate ANCOVAs",
+    "_asset_source": "[image] TABLE 2\n\nObserved Means and Standard Deviations of Performance Variables in the Three Training Conditions and Results of Univariate ANCOVAs",
+    "_pass_type": "asset_0"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'REFERENCES' section, which does not contain information about the publication type.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'REFERENCES' section, which does not contain information about financial support.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'REFERENCES' section, which does not contain information about peer review status.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\", \"Avoid\"]}",
+      "evidence_source": "The figure caption states 'Prove Goal Orientation/Avoidance Goal Orientation'. This indicates both prove and avoidance performance goal orientations were assessed. This is for 'Study X' as no specific study number is mentioned.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The y-axis labels 'Performance 1st test phase' and 'Performance 2nd test phase' indicate objective performance measures. This is for 'Study X' as no specific study number is mentioned.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The y-axis labels 'Performance 1st test phase' and 'Performance 2nd test phase' indicate objective performance scores. This is for 'Study X' as no specific study number is mentioned.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The y-axis labels 'Performance 1st test phase' and 'Performance 2nd test phase' indicate objective performance measures. This is for 'Study X' as no specific study number is mentioned.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and figure do not specify the measurement method of goal orientation (e.g., VandeWalle scale).",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information is provided in the 'REFERENCES' section or the figure and its caption.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No age information is provided in the 'REFERENCES' section or the figure and its caption, so mean age cannot be imputed.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No sex composition information is provided in the 'REFERENCES' section or the figure and its caption.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No percentage of men is provided in the 'REFERENCES' section or the figure and its caption.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No country information is provided in the 'REFERENCES' section or the figure and its caption.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No sample type information (student vs. other) is provided in the 'REFERENCES' section or the figure and its caption.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No sample size (N) is provided in the 'REFERENCES' section or the figure and its caption.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "Figure 2 displays interaction effects of goal orientation and training conditions on performance, not direct Pearson correlation coefficients between performance goal orientation and performance adaptation.",
+      "warning": "The figure shows interaction effects, not direct correlation coefficients."
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No correlation coefficients were extracted from the figure.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The figure caption refers to 'Performance in the First Phase (Near Transfer)' and 'in the Second Phase (Far Transfer Performance)', which are likely phases within a single study rather than distinct studies. No explicit 'Study 1', 'Study 2' naming is present.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section is titled 'REFERENCES' and contains no textual content for extraction. An attached figure, Figure 2, illustrates significant interaction effects of prove and avoidance goal orientations and training conditions on performance in first and second test phases, with scores aggregated after z-standardization.",
+      "evidence_source": "The section title is 'REFERENCES' and the text content is 'REFERENCES'. The attached asset is 'Figure 2: Significant Interaction Effects of Prove Goal Orientation/Avoidance Goal Orientation and Training Conditions on Performance in the First Phase (Near Transfer) and in the Second Phase (Far Transfer Performance); all scores aggregated for medium and difficult tasks after z-standardization'.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Figure 2: Significant Interaction Effects of Prove Goal Orientation/Avoidance Goal Orientation and Training Conditions on Performance in the First Phase (Near Transfer) and in the Second Phase (Far Transfer Performance); all scores aggregated for medium and difficult tasks after z-standardization",
+      "evidence_source": "The full caption of the provided image asset.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Heimbeck2003\\figures\\Heimbeck2003_p019_fig00.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_1"
+  }
+]

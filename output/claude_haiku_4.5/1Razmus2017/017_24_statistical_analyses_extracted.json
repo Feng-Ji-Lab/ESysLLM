@@ -1,0 +1,92 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section is a methods/statistical analyses section that does not mention the country where the study was conducted.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section mentions 'first subsample' and 'second subsample' but does not provide specific sample sizes or total number of participants.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes statistical analysis methods but does not mention how data were collected (paper-and-pencil vs. online).",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section does not contain demographic information about racial/ethnic composition of participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section does not report participant age statistics.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section does not contain information about educational attainment of participants.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section mentions BMI as a variable in correlation analyses but does not report mean BMI values.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section is a statistical methods section and does not describe where or how participants were recruited.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The section explicitly states: 'A two-stage factor analytic approach was adopted to examine the factor structure of the BAS-2' and later mentions 'Cronbach's \u02db was used to investigate the internal consistency of Polish BAS-2 scores.' This indicates the study used BAS-2 to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section mentions BMI as a variable in correlation analyses ('Pearson correlation coefficients between body appreciation and self-esteem, body-related emotions, positive affect, positive orientation, and BMI were calculated') but does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section states that 'Pearson correlation coefficients between body appreciation and self-esteem, body-related emotions, positive affect, positive orientation, and BMI were calculated' but does not report the actual correlation values.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The section is a statistical methods section. It mentions 'first subsample' and 'second subsample' which appear to be subsamples within a single study rather than separate studies. The text does not explicitly state the number of distinct studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "This is a methods section from what appears to be a research paper, but the publication type (journal article vs. dissertation) is not explicitly stated in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the statistical analyses used in the study, including a two-stage factor analytic approach to examine the factor structure of the BAS-2 (Body Appreciation Scale-2) using data from two subsamples analyzed separately for men and women. The study employed principal-axis factor analysis for the first subsample and confirmatory factor analysis (CFA) for the second subsample, with measurement invariance testing via Multigroup CFA (MGCFA). Pearson correlation coefficients were calculated between body appreciation and various variables including BMI, though specific correlation values are not reported in this methods section.",
+      "evidence_source": "Entire section 2.4 describing statistical analyses methodology."
+    },
+    "_pass_type": "text_only"
+  }
+]

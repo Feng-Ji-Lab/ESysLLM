@@ -1,0 +1,452 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      3
+    ],
+    "best_indices": [
+      0,
+      1,
+      5,
+      13,
+      16
+    ],
+    "reason": "Multiple high-confidence sections (abstract [0], introduction [1], Study 2 note [5], Study 3 section [13], and discussion [16]) consistently state that the paper reports three studies (Study 1, Study 2, and Study 3). These converge as the strongest evidence for the total count, so 3 is the most accurate value."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Study 1": [
+        "BAS-2"
+      ],
+      "Study 2": [
+        "BAS-2"
+      ],
+      "Study 3": [
+        "BAS-2"
+      ]
+    },
+    "best_indices": [
+      4,
+      9,
+      17,
+      10,
+      12,
+      15,
+      19,
+      24
+    ],
+    "reason": "The paper reports three studies (Introduction and Abstract) and the Methods/Results for each study explicitly state use of the 10-item BAS-2. Study 1 is described as developing and evaluating the BAS-2 (candidate 4, supported by method/results candidates 7, 8, 12). Study 2 used the 10-item BAS-2 across college and MTurk samples (candidates 9, 11, 15). Study 3 used the BAS-2 with a revised Item 8 (candidates 17, 19). Table captions and assets list the BAS-2 for Studies 1\u20133 (candidate 10, 12). Although one metadata candidate listed the original 'Body Appreciation Scale' (candidate 1), the main text, methods, tables, and appendix consistently indicate the instrument used in all three studies is the BAS-2, so each study is assigned ['BAS-2']. Subsamples (e.g., college and MTurk in Study 2) were merged under the same Study 2 entry per instructions."
+  },
+  "Survey method": {
+    "extract_value": {
+      "Study 1": [
+        "online"
+      ],
+      "Study 2": [
+        "online"
+      ],
+      "Study 3": [
+        "online"
+      ]
+    },
+    "best_indices": [
+      1,
+      2,
+      3,
+      5,
+      11
+    ],
+    "reason": "The paper reports three studies (Studies 1\u20133). Study 1 methods state college participants signed up via the psychology department research management website and were directed to a survey webpage (candidate 2), indicating online data collection. Study 2 included both a college sample and an MTurk community sample and the Methods explicitly state measures were completed online via SurveyMonkey (candidates 3 and 5). Study 3 is an MTurk community sample that completed the SurveyMonkey survey (candidate 11). The abstract and discussion likewise describe college and MTurk (online) samples (candidate 1). Therefore all three studies used online survey collection."
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Study 1": [
+        "college"
+      ],
+      "Study 2": [
+        "college",
+        "community"
+      ],
+      "Study 3": [
+        "community"
+      ]
+    },
+    "best_indices": [
+      2,
+      4,
+      5,
+      12
+    ],
+    "reason": "The paper reports three studies (abstract and multiple sections). Study 1 is repeatedly described as a college student sample (development of BAS-2) in Study 1 text and Methods (candidate 2, supported by table notes in candidate 5). Study 2 used two sample domains \u2014 college students and an online community MTurk sample \u2014 as stated in the Study 2 text and Methods (candidates 4 and 6) and summarized in the tables/notes (candidate 5). Study 3 is an MTurk online community sample (candidates 12 and 5). I merged subsamples for Study 2 into the same study entry (college + community) per instructions. Selected best evidence indices: 2 (Study 1 description), 4 (Study 2 description), 5 (table/note summarizing all three studies), and 12 (Study 3 MTurk methods)."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates consistently indicate the work is a journal article. Candidate 0 (meta-information with submission/acceptance dates and keywords) and Candidate 1 (abstract describing three studies and psychometric validation typical of a journal publication) provide converging, strong evidence for 'journal articles'."
+  },
+  "Sample": {
+    "extract_value": {
+      "Study 1": [
+        675,
+        338,
+        337,
+        208
+      ],
+      "Study 2": [
+        263,
+        317,
+        580
+      ],
+      "Study 3": [
+        382
+      ]
+    },
+    "best_indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      9,
+      10,
+      11
+    ],
+    "reason": "Paper reports three distinct studies. I used the Methods and Tables (main text) as primary sources and supplemented with Results splits where relevant. Study 1: main analyzed N = 675 (Methods/Tables) with EFA split groups n = 338 and n = 337 and a test\u2013retest subsample n = 208 (all reported in Methods/Results/Tables) \u2014 merged into Study 1's list. Study 2: two retained samples of N = 263 (college) and N = 317 (MTurk) per Methods/Tables; tables also report the combined Study 2 total N = 580 (complementary), so all three values are included. Study 3: N = 382 (Methods/Tables). I did not use abstract-level aggregate counts (e.g., 820 women, 767 men) for individual-study totals because the main text/table values provide per-study Ns and are more reliable. Selected candidate indices reflect the primary Method/Results/Table extractions used to resolve and merge subsamples.",
+    "extract_value_by_gender": {
+      "male": {},
+      "female": {},
+      "other": {},
+      "total": {}
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Study 1": [
+        100
+      ],
+      "Study 2": [
+        100,
+        82.7
+      ],
+      "Study 3": [
+        86.1
+      ]
+    },
+    "best_indices": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      9
+    ],
+    "reason": "The paper reports three studies. Study 1 is explicitly described as using college students (multiple sources: candidate 0, table notes in 2 and 5), so percentage college-or-higher = 100%. Study 2 includes two samples: Sample 1 is college students (100%) and Sample 2 is an MTurk community sample where 82.7% reported at least a year of college (candidates 3,4,5 provide these education breakdowns; tables in candidate 2 also note Study 2 subsamples). Both values are reported for Study 2 and thus both are included. Study 3 is an MTurk community sample (final N=382) where 86.1% reported at least a year of college (candidate 9). I merged subsamples into their respective study entries and favored method/main-text and table notes over less detailed mentions; the listed candidate indices are the primary sources used.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "female": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "total": {
+        "Study 1": [
+          100
+        ],
+        "Study 2": [
+          100,
+          82.7
+        ],
+        "Study 3": [
+          86.1
+        ]
+      }
+    }
+  },
+  "Country": {
+    "extract_value": {
+      "Study 1": [
+        "United States"
+      ],
+      "Study 2": [
+        "United States"
+      ],
+      "Study 3": [
+        "United States"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "reason": "The paper reports three studies. Methods text for Study 1 (IRB at The Ohio State University; college students) indicates the study was conducted in the United States (candidate 0). Study 2 methods explicitly restricted the community/MTurk sample to U.S. citizens and reported representation across 46 states (candidates 1\u20134). Study 3 methods describe an MTurk sample from 45 U.S. states (candidate 5). The Discussion, Limitations, and Conclusion uniformly state that all samples were U.S.-based (candidates 6\u20138). Synonyms ('U.S.' / 'United States') were normalized to 'United States'. Each study's multiple samples were merged under the same study entry."
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Study 1": [
+        79.1,
+        81.3
+      ],
+      "Study 2": [
+        81.0,
+        79.8
+      ],
+      "Study 3": [
+        71.9
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason": "The paper reports three studies. Candidate 0 (source 011) describes the Study 1 college sample (N=675) and a 3-week test\u2013retest subsample (N=208) giving White = 79.1% (full) and 81.3% (retest) \u2014 both merged under Study 1. Candidates 1\u20134 (source 014, table assets) consistently report Study 2 comprising two samples with White = 81.0% (Sample 1, college) and 79.8% (Sample 2, MTurk) \u2014 both placed under Study 2. Candidate 5 (source 017) corresponds to the MTurk sample N=382 (noted elsewhere as Study 3) with White = 71.9% \u2014 assigned to Study 3. Where multiple assets/tables repeated the same values, they were treated as corroborating evidence and merged rather than duplicated. No gender-specific percentages were reported, so only total percentages are listed.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "female": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "total": {
+        "Study 1": [
+          79.1,
+          81.3
+        ],
+        "Study 2": [
+          81.0,
+          79.8
+        ],
+        "Study 3": [
+          71.9
+        ]
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Study 1": [
+        20.34,
+        20.27
+      ],
+      "Study 2": [
+        20.43,
+        32.89
+      ],
+      "Study 3": [
+        33.38
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      5
+    ],
+    "reason": "The paper reports three distinct studies. Candidate 0 (Methods main text) provides Study 1 mean ages: full sample Mage = 20.34 and test\u2013retest subsample Mage = 20.27 (both included per subsample merging rule). Candidate 1 (Methods for Study 2) reports two Study 2 samples with Mage = 20.43 (college sample) and Mage = 32.89 (MTurk sample) \u2014 both included under Study 2. Candidate 5 (Methods main text) gives Study 3 mean age Mage = 33.38. Preference was given to Methods/main-text values over table/asset duplicates; subsample values were merged into their study lists. No gender-specific mean ages were reported in these candidates, so only total means are listed.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "female": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "total": {
+        "Study 1": [
+          20.34,
+          20.27
+        ],
+        "Study 2": [
+          20.43,
+          32.89
+        ],
+        "Study 3": [
+          33.38
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Study 1": [
+        24.21,
+        25.02
+      ],
+      "Study 2": [
+        24.56,
+        24.84,
+        27.11,
+        26.64
+      ],
+      "Study 3": [
+        26.82,
+        26.54
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      5
+    ],
+    "reason": "The paper reports three distinct studies. Candidate 0 (Methods text) corresponds to Study 1 (college sample, N=675) reporting female BMI 24.21 and male BMI 25.02. Candidates 1 (and corroborating table assets) describe Study 2, which has two samples (college and MTurk); merged both subsample means into Study 2's list: Sample1 female 24.56, male 24.84; Sample2 female 27.11, male 26.64. Candidate 5 (Methods text) corresponds to Study 3 (MTurk community, N=382) reporting female BMI 26.82 and male BMI 26.54. I selected the primary Methods text candidates (indices 0, 1, 5) as the most reliable sources and merged subsample values for Study 2 per instructions.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [
+          25.02
+        ],
+        "Study 2": [
+          24.84,
+          26.64
+        ],
+        "Study 3": [
+          26.54
+        ]
+      },
+      "female": {
+        "Study 1": [
+          24.21
+        ],
+        "Study 2": [
+          24.56,
+          27.11
+        ],
+        "Study 3": [
+          26.82
+        ]
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "total": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      }
+    }
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Study 1": [
+        "self-reported"
+      ],
+      "Study 2": [
+        "self-reported"
+      ],
+      "Study 3": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason": "The paper reports three distinct studies. Method sections and table captions indicate BMI in all studies was calculated from participants' self-reported height and weight. Study 1 is supported by candidate 0 (methods text). Study 2 is supported by candidates 1\u20134 (methods text and table assets describing two samples for Study 2). Study 3 is supported by candidate 5 (methods text for the MTurk sample). Where table assets showed 'None' for some studies, the main Methods text was preferred as more reliable, so all three studies are coded as 'self-reported'."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Study 1": [
+        -0.27
+      ],
+      "Study 2": [
+        -0.33,
+        -0.39
+      ],
+      "Study 3": [
+        -0.38,
+        -0.38
+      ]
+    },
+    "best_indices": [
+      0,
+      3,
+      5
+    ],
+    "reason": "The paper reports three studies. Candidate 0 (Results) reports BAS-2 r = -0.27 with BMI with sex-specific correlations -0.23 (women) and -0.32 (men) \u2014 mapped to Study 1. Candidate 3 (text) reports Study 2 college and community sample correlations r = -0.33 and -0.39 (women: -0.32, -0.38; men: -0.36, -0.42) \u2014 both subsamples merged under Study 2 per instructions. Candidate 5 reports Study 3 gender-specific correlations r = -0.38 for women and -0.38 for men; no total reported, so both gender values are recorded (and duplicated in extract_value as presented in source). Where both table and main-text candidates existed for Study 2, main-text results were preferred. Values are kept as reported (no rounding beyond source precision).",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [
+          -0.32
+        ],
+        "Study 2": [
+          -0.36,
+          -0.42
+        ],
+        "Study 3": [
+          -0.38
+        ]
+      },
+      "female": {
+        "Study 1": [
+          -0.23
+        ],
+        "Study 2": [
+          -0.32,
+          -0.38
+        ],
+        "Study 3": [
+          -0.38
+        ]
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": [],
+        "Study 3": []
+      },
+      "total": {
+        "Study 1": [
+          -0.27
+        ],
+        "Study 2": [
+          -0.33,
+          -0.39
+        ],
+        "Study 3": []
+      }
+    }
+  }
+}

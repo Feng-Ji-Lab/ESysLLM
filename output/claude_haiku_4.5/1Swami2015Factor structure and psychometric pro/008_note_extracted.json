@@ -1,0 +1,105 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Hong Kong"
+        ]
+      },
+      "evidence_source": "Text states: 'our aim in the present study was to examine the factor structure of the BAS-2 in a university sample in Hong Kong'",
+      "warning": "Study name not explicitly provided; using 'Study X' per policy. The text refers to 'the present study' but does not assign a specific study number."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size is provided in this section. The text mentions 'a university sample in Hong Kong' but does not specify the number of participants.",
+      "warning": "Sample size not stated in provided text."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method is explicitly stated in this section.",
+      "warning": "Survey method not specified in provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about racial/ethnic composition is provided in this section.",
+      "warning": "Racial/ethnic composition not stated in provided text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age is provided in this section.",
+      "warning": "Mean age not stated in provided text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "Text states: 'examine the factor structure of the BAS-2 in a university sample in Hong Kong'. The participants are described as university students, which indicates 100% college or higher education experience.",
+      "warning": "Inferred from 'university sample' per case_rules. The text explicitly identifies participants as university students."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI is provided in this section. The text mentions examining 'associations between body appreciation and body mass index (BMI)' but does not report the mean BMI value.",
+      "warning": "Mean BMI not stated in provided text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Text states: 'examine the factor structure of the BAS-2 in a university sample in Hong Kong'. University sample indicates college source.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Text states: 'our aim in the present study was to examine the factor structure of the BAS-2 in a university sample in Hong Kong' and 'examining associations between body appreciation and body mass index (BMI)'. The instrument used is explicitly identified as BAS-2.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions examining 'associations between body appreciation and body mass index (BMI)' but does not specify whether BMI was self-reported or measured.",
+      "warning": "Assessment method for BMI not specified in provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states the expectation of 'negative associations' between body appreciation and BMI in both women and men, but does not provide actual correlation coefficients. Text states: 'we also conducted a preliminary examination of the newly translated scale's construct validity by examining associations between body appreciation and body mass index (BMI) in women and BMI2 in men, with the expectation of negative associations in both cases.'",
+      "warning": "Actual correlation values not provided; only hypothesized direction stated."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to 'the present study' (singular) examining the BAS-2 factor structure in Hong Kong. Only one study is described in this section.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this section.",
+      "warning": "Publication type not stated in provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes a study examining the factor structure of the BAS-2 (Body Appreciation Scale-2) in a university sample in Hong Kong. The study aims to establish cross-cultural invariance of the BAS-2 and investigates associations between body appreciation and BMI in women and men, as well as associations with weight discrepancy, self-esteem, and life satisfaction. The researchers hypothesize negative correlations between body appreciation and BMI/weight discrepancy, and positive correlations with self-esteem and life satisfaction.",
+      "evidence_source": "Entire provided text section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

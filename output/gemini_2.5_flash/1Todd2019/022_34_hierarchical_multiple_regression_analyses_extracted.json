@@ -1,0 +1,653 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information was explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [646]}",
+      "evidence_source": "Note. Men n = 199, Women n = 446; N = 646.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\": [446]}",
+        "male": "{\"Study X\": [199]}",
+        "other": "{\"Study X\": [\"None\"]}",
+        "total": "{\"Study X\": [646]}"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method was explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No percentage of white participants was explicitly stated in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\": [\"None\"]}",
+        "male": "{\"Study X\": [\"None\"]}",
+        "other": "{\"Study X\": [\"None\"]}",
+        "total": "{\"Study X\": [\"None\"]}"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Age was mentioned as a demographic variable but no mean age was explicitly stated in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\": [\"None\"]}",
+        "male": "{\"Study X\": [\"None\"]}",
+        "other": "{\"Study X\": [\"None\"]}",
+        "total": "{\"Study X\": [\"None\"]}"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No percentage of college or higher education was explicitly stated in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\": [\"None\"]}",
+        "male": "{\"Study X\": [\"None\"]}",
+        "other": "{\"Study X\": [\"None\"]}",
+        "total": "{\"Study X\": [\"None\"]}"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "BMI was mentioned as a demographic variable but no mean BMI was explicitly stated in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\": [\"None\"]}",
+        "male": "{\"Study X\": [\"None\"]}",
+        "other": "{\"Study X\": [\"None\"]}",
+        "total": "{\"Study X\": [\"None\"]}"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No source of sample was explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Body appreciation was mentioned as a criterion variable, but the specific assessment instrument (e.g., BAS or BAS-2) was not explicitly stated.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "BMI was mentioned as a demographic variable, but the method of assessment (self-reported or measured) was not explicitly stated.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states 'BMI... were significant negative predictors' for body appreciation, indicating a negative relationship, but a specific Pearson r correlation coefficient was not provided.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\": [\"None\"]}",
+        "male": "{\"Study X\": [\"None\"]}",
+        "other": "{\"Study X\": [\"None\"]}",
+        "total": "{\"Study X\": [\"None\"]}"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to 'the present study' and discusses multiple regression analyses within a single study context.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type was explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details hierarchical multiple regression analyses investigating how facets of interoceptive awareness predict various body image aspects, including body appreciation, functionality appreciation, body-related pride, appearance orientation, and overweight preoccupation. Demographic variables (BMI, sex, age) were entered in the first step, followed by MAIA subscale scores. The results, reported across Tables 2, 3, and 4, indicate that all five criterion variables were significantly predicted by interoceptive awareness facets. The study involved a total sample of N=646, comprising 199 men and 446 women.",
+      "evidence_source": "The entire section '3.4. Hierarchical multiple regression analyses' and the notes below the tables.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text or table.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [646]}",
+      "evidence_source": "Note. N = 646. (from table notes); Note. Men n = 199, Women n = 446 (from table notes). The sum of men and women is 645, but the total N is stated as 646. Prioritizing the explicit total N.",
+      "warning": "Discrepancy between sum of gender-specific samples (645) and explicitly stated total sample (646).",
+      "extract_value_by_gender": {
+        "female": "446",
+        "male": "199",
+        "other": "None",
+        "total": "646"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text or table.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text or table.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [37.76, 39.46]}",
+      "evidence_source": "Table 1, row 'M (Men)', column (13) 'Age' shows 37.76. Table 1, row 'M (Women)', column (13) 'Age' shows 39.46.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "39.46",
+        "male": "37.76",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text or table.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [27.76, 26.10]}",
+      "evidence_source": "Table 1, row 'M (Men)', column (12) 'BMI' shows 27.76. Table 1, row 'M (Women)', column (12) 'BMI' shows 26.10.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "26.10",
+        "male": "27.76",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text or table.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'body appreciation' as a criterion variable, but does not specify the instrument used (e.g., BAS or BAS-2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text or table.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [-0.32, -0.24]}",
+      "evidence_source": "Table 1, correlation between (7) Body appreciation and (12) BMI. For Women (Lower Diagonal), the value is -0.32. For Men (Upper Diagonal), the value is -0.24.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "-0.32",
+        "male": "-0.24",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to 'the present study' and describes analyses within a single study context.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details hierarchical multiple regression analyses investigating how facets of interoceptive awareness predict various body image variables, including body appreciation, functionality appreciation, body-related pride, appearance orientation, and overweight preoccupation. Demographic variables like BMI, sex, and age were included in the first step of the regressions. Results for body appreciation and functionality appreciation are reported in Table 2, body-related pride in Table 3, and appearance orientation and overweight preoccupation in Table 4.",
+      "evidence_source": "The entire text content of section 3.4.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1 Means, Standard Deviations, and Bivariate Correlations between the Different Measures for Women (Lower Diagonal) and Men (Upper Diagonal).",
+      "evidence_source": "The caption of Table 1.",
+      "warning": "None"
+    },
+    "_asset_link": "D:\\PhD\\llm_meta_analysis_new\\output_comparison_llm\\1Todd2019\\tables\\1Todd2019_p005_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "{'Study X': [646]}",
+      "evidence_source": "Note. Men n = 199, Women n = 446; N = 646.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{'Study X': [446]}",
+        "male": "{'Study X': [199]}",
+        "other": "None",
+        "total": "{'Study X': [646]}"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'body appreciation' as a criterion variable but does not specify the assessment instrument (e.g., BAS or BAS-2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Table 2 provides 'Semi-partial correlation' values for BMI with Body Appreciation (Step 1: -0.294, Step 2: -0.195). The schema specifically requests 'Pearson r', which is not provided in the table or text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "In the present study VIFs for all five regressions were \u22642.92.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details hierarchical multiple regression analyses conducted in a single study to predict various body image facets, including body appreciation and functionality appreciation. The analyses involved two steps: demographic variables (BMI, sex, age) in the first step, followed by MAIA subscale scores in the second. Results for body appreciation and functionality appreciation are presented in Table 2, which indicates a total sample size of 646 participants (199 men, 446 women).",
+      "evidence_source": "The entire section describes the methodology and results of regression analyses within 'the present study'. The sample size and gender breakdown are provided in the notes for Table 2.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2 Multiple hierarchical regressions with body appreciation and functionality appreciation as criterion variables.",
+      "evidence_source": "Table 2 caption.",
+      "warning": "None"
+    },
+    "_asset_link": "D:\\PhD\\llm_meta_analysis_new\\output_comparison_llm\\1Todd2019\\tables\\1Todd2019_p005_table01.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_1"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text or table.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "{'Study X': [646]}",
+      "evidence_source": "Note. Men n = 199, Women n = 446; Note. N = 646.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{'Study X': [446]}",
+        "male": "{'Study X': [199]}",
+        "other": "None",
+        "total": "{'Study X': [646]}"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text or table.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text or table.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text or table.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text or table.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text or table.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text or table.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'body appreciation' as a criterion variable but does not specify the instrument used (BAS or BAS-2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated how BMI was assessed (self-reported or measured).",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states 'Results for body appreciation and functionality appreciation are reported in Table 2'. Table 2 was not provided. Table 3 reports on 'Authentic Pride', not 'Body Appreciation'.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to 'the present study' and describes multiple regression analyses conducted within this single study context.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details hierarchical multiple regression analyses performed to determine which facets of interoceptive awareness predicted various body image variables, including body appreciation, functionality appreciation, body-related pride, appearance orientation, and overweight preoccupation. Demographic variables (BMI, sex, and age) were entered in the first step, followed by MAIA subscale scores in the second step. The results for body appreciation and functionality appreciation are reported in Table 2 (not provided), while results for body-related pride are presented in Table 3 (provided). The overall sample size for this study was N=646, consisting of 199 men and 446 women.",
+      "evidence_source": "The entire text content of section 3.4 and the notes below Table 3.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 3 Multiple hierarchical regression with authentic pride as the criterion variable.",
+      "evidence_source": "Caption of Table 3.",
+      "warning": "None"
+    },
+    "_asset_link": "D:\\PhD\\llm_meta_analysis_new\\output_comparison_llm\\1Todd2019\\tables\\1Todd2019_p006_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_2"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [646]}",
+      "evidence_source": "Note. N = 646.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\": [446]}",
+        "male": "{\"Study X\": [199]}",
+        "other": "None",
+        "total": "{\"Study X\": [646]}"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'body appreciation' as a criterion variable but does not specify the instrument used (e.g., BAS or BAS-2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'BMI' but does not specify how it was assessed (self-reported or measured).",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses hierarchical multiple regression analyses where BMI is a predictor of body appreciation, reporting regression coefficients (B, beta) and semi-partial correlations. It explicitly states that 'Results for body appreciation and functionality appreciation are reported in Table 2', which is not provided. The schema specifically asks for Pearson r, which is not present in the provided text or Table 4.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section describes 'the present study' and 'five separate multiple hierarchical regression analyses were conducted', indicating a single study with multiple analyses.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details hierarchical multiple regression analyses conducted to assess which facets of interoceptive awareness predicted various body image variables, including body appreciation, functionality appreciation, body-related pride, appearance orientation, and overweight preoccupation. Demographic variables (BMI, sex, age) were entered in the first step, followed by MAIA subscale scores in the second step. Results for body appreciation and functionality appreciation are referenced to Table 2, body-related pride to Table 3, and appearance orientation and overweight preoccupation to Table 4. The total sample size for the study is N=646, with n=199 men and n=446 women.",
+      "evidence_source": "The entire text content of section 3.4 and the notes for Table 2, Table 3, and Table 4.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 4 Multiple hierarchical regressions with appearance orientation and overweight preoccupation as criterion variables.",
+      "evidence_source": "Table 4 caption.",
+      "warning": "None"
+    },
+    "_asset_link": "D:\\PhD\\llm_meta_analysis_new\\output_comparison_llm\\1Todd2019\\tables\\1Todd2019_p006_table01.png",
+    "_metadata_caption": "Table 4 Multiple hierarchical regressions with appearance orientation and overweight preoccupation as criterion variables.",
+    "_asset_source": "[table] Table 4 Multiple hierarchical regressions with appearance orientation and overweight preoccupation as criterion variables.",
+    "_pass_type": "asset_3"
+  }
+]

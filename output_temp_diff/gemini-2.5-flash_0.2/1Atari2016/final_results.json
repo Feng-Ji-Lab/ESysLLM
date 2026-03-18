@@ -1,0 +1,287 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "reason": "All candidates consistently indicate that the paper describes a single study. The section contexts across the paper, including introduction, methods, results, and discussion, refer to 'the present study' in the singular and detail the execution and analysis of one coherent research effort. There are no conflicting values, and all evidence points to a single study."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "reason": "All candidates consistently indicate that the publication type is 'journal articles'. The section contexts provide strong evidence such as journal titles ('Body Image'), publication platforms (ScienceDirect, Elsevier), publication history, and the format of a 'Brief research report' or 'article abstract', all of which are characteristic of journal articles. There are no conflicting values, and all evidence points to 'journal articles'."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "Iran"
+      ]
+    },
+    "best_indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9
+    ],
+    "reason": "The paper describes a single study, as indicated by the context. Multiple candidates consistently state that the study was conducted in 'Iran' or 'Tehran, Iran'. According to the definition, only the country name 'Iran' should be extracted, not specific cities like 'Tehran'. All selected candidates provide consistent information regarding the country of the study."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        1093
+      ]
+    },
+    "best_indices": [
+      2,
+      4
+    ],
+    "reason": "The paper describes a single study. Candidates [2] (Abstract) and [4] (Participants section) consistently report a total of 1093 participants, comprising 568 men and 525 women. The Participants section is the most reliable source for sample size. Candidate [6] (Results section) infers a total sample size of 1032 from degrees of freedom in statistical tests. This contradicts the direct statements in the Abstract and Participants sections. Following Rule 6, direct statements in the Method/Participants section are preferred over inferred values from statistical results, especially when the discrepancy might be due to missing data for specific analyses rather than the overall recruited sample. Therefore, the values from candidates [2] and [4] are selected.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          568
+        ]
+      },
+      "female": {
+        "Single study": [
+          525
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          1093
+        ]
+      }
+    }
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "paper-and-pencil"
+      ]
+    },
+    "best_indices": [
+      6
+    ],
+    "reason": "The paper describes a single study, as indicated by the context. Candidate [6], from the 'Procedure' section, explicitly states that data collection utilized a 'paper-and-pencil survey method'. This is the only candidate providing direct evidence for the survey method."
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Single study": []
+    },
+    "best_indices": [
+      5,
+      7
+    ],
+    "reason": "The paper explicitly states a 'lack of ethnicity data' as a limitation in the discussion section (Candidate 7). Additionally, Candidate 5's evidence confirms that no information about the percentage of white participants is provided. All other candidates are empty or describe the sample as Iranian university students, without providing any racial or ethnic percentages. Therefore, no values for 'Percent of white in participants' could be extracted.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        25.87
+      ]
+    },
+    "best_indices": [
+      4,
+      8
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context. The overall mean age of participants (25.87 years) was extracted from the 'Participants' section (Candidate 4). Complementary gender-specific mean ages were extracted from Table 2 in the 'Discussion' section (Candidate 8), showing 26.16 years for men and 25.54 years for women. These values are consistent with each other and have been merged into the single study entry.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          26.16
+        ]
+      },
+      "female": {
+        "Single study": [
+          25.54
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        100
+      ]
+    },
+    "best_indices": [
+      2,
+      4,
+      8
+    ],
+    "reason": "The paper describes a single study. Candidates 2 (Abstract), 4 (Participants), and 8 (Discussion) consistently state that the participants were 'university students' or from a 'university population' and 'university settings'. According to the field's infer rule, if participants are university students, the percentage of participants with college or higher education experience is 100%. All relevant candidates support this inference.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        23.69
+      ]
+    },
+    "best_indices": [
+      4,
+      8
+    ],
+    "reason": "The paper describes a single study. Candidate 4 from the 'participants' section provides the self-reported mean BMI for all participants as 23.69 kg/m2. Candidate 8, from Table 2 in the discussion section, provides gender-specific mean BMIs: 25.17 for men and 22.07 for women. These values are complementary and consistent, as the weighted average of the gender-specific BMIs (based on 568 men and 525 women) closely matches the overall mean BMI (23.69). Both sources are reliable. The total BMI is added to 'extract_value' and both total and gender-specific BMIs are added to 'extract_value_by_gender'.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          25.17
+        ]
+      },
+      "female": {
+        "Single study": [
+          22.07
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          23.69
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "college"
+      ]
+    },
+    "best_indices": [
+      2,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "reason": "All candidates consistently indicate that the participants were 'university students' or from 'seven universities in Tehran', which directly translates to a 'college' source of sample. The paper describes a single study, so all relevant information is consolidated under 'Single study'."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS-2"
+      ]
+    },
+    "best_indices": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "reason": "The paper consistently refers to the 'Body Appreciation Scale-2 (BAS-2)' as the instrument used and examined throughout the abstract, introduction, methods (measures, procedure, statistical analyses), results, and discussion sections. While the introduction (Candidate 3) mentions the original BAS, it explicitly states that 'The present study aims to examine the factor structure and psychometric properties of the BAS-2 in Iran', confirming BAS-2 as the instrument of focus for this study. All selected candidates provide direct evidence of the use and assessment of BAS-2."
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      4,
+      5,
+      9
+    ],
+    "reason": "The paper describes a single study. Candidates 4, 5, and 9 all explicitly state that BMI was 'self-reported'. Candidate 4 mentions 'self-reported mean BMI'. Candidate 5 details the collection of 'self-reported weight and height for BMI calculation'. Candidate 9, from the discussion section, directly states 'self-reported BMI was used'. All sources consistently indicate the same method of assessment for BMI for the single study."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": []
+    },
+    "best_indices": [
+      8
+    ],
+    "reason": "The paper describes a single study. Candidate [8] from Table 2 provides the correlation coefficients between BAS-2 and BMI, explicitly separated by gender. For men, the correlation is 0.12, and for women, it is -0.24. These values are directly extracted as per the 'correlation_case_rules' for gender-specific reporting.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          0.12
+        ]
+      },
+      "female": {
+        "Single study": [
+          -0.24
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    }
+  }
+}

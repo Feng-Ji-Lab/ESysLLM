@@ -1,0 +1,83 @@
+[
+  {
+    "SAMPLE SIZE": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'Studies 1 and 2' and 'samples of similar IQ and creative achievement' but does not provide specific numerical sample sizes for either study or their combined total.",
+      "warning": "None"
+    },
+    "ES": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          0.31
+        ]
+      },
+      "evidence_source": "The text states: 'the combined results of the two studies yielded highly significant differences with an effect size of r .31'. This is a combined effect size from Studies 1 and 2, not an individual effect size for either study, hence it is assigned to 'Study X'. The correlation is between LI scores (related to IQ) and CAQ groups (creative achievement).",
+      "warning": "None"
+    },
+    "Effects": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          1
+        ]
+      },
+      "evidence_source": "One combined effect size (r = 0.31) is reported for the meta-analysis of Studies 1 and 2. This is assigned to 'Study X' as it represents a single combined effect.",
+      "warning": "None"
+    },
+    "Mage": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age of participants is mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Measure IQ": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'samples of similar IQ' and 'LI scores' but does not specify the assessment tool or scale used to measure IQ or intelligence.",
+      "warning": "None"
+    },
+    "IQ modality": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The modality of the intelligence measure (e.g., 'figural', 'verbal') is not mentioned in the provided text.",
+      "warning": "None"
+    },
+    "IQ Aspect": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The aspect of intelligence (e.g., 'g', 'Gf', 'Gc', 'Gr') is not mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Creativity Measures": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "CAQ"
+        ]
+      },
+      "evidence_source": "The text states: 'When LI scores were compared between high-CAQ and low-CAQ groups (median split)'. This indicates that CAQ was used as a creativity measure in the context of the combined analysis of Studies 1 and 2, hence assigned to 'Study X'.",
+      "warning": "None"
+    },
+    "Domain classified": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The domain classification for creativity (e.g., 'Everyday', 'Arts', 'Science') is not mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 2,
+      "evidence_source": "The text explicitly refers to 'Studies 1 and 2'.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details a meta-analysis combining the results from Study 1 and Study 2 to examine the relationship between creative achievement scores and LI scores. The combined analysis, which weighted both studies equally due to similar IQ and creative achievement samples, revealed a highly significant effect size of r = 0.31 when comparing LI scores between high-CAQ and low-CAQ groups.",
+      "evidence_source": "The entire provided text content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

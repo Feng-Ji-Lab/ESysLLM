@@ -1,0 +1,465 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Main Analyses' section describing statistical analyses and results. No geographic location or country is mentioned in this section.",
+      "warning": "No country information available in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only statistical results and analyses. While sample sizes are referenced in statistical tests (e.g., F(1, 176), F(1, 175)), the actual total sample size is not explicitly stated in this section.",
+      "warning": "Sample size not explicitly stated in this results section. The degrees of freedom suggest samples around 176-192 participants, but exact total sample size cannot be determined from this text alone.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text describes analyses and results only. No information about survey methodology (paper-and-pencil vs. online) is mentioned.",
+      "warning": "Survey method not described in this results section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only statistical analyses and results. No demographic information about racial/ethnic composition is provided.",
+      "warning": "Demographic information not available in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text discusses age as a variable in correlational and regression analyses, but does not report the mean age of participants.",
+      "warning": "Mean age not reported in this results section.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only statistical analyses and results. No information about educational attainment is mentioned.",
+      "warning": "Educational attainment information not available in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text discusses BMI as a variable in correlational and regression analyses, but does not report the mean BMI of participants.",
+      "warning": "Mean BMI not reported in this results section.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only statistical analyses and results. No information about where or how participants were recruited is mentioned.",
+      "warning": "Sample source not described in this results section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text discusses body appreciation as a variable in analyses but does not specify which instrument (BAS or BAS-2) was used to assess it.",
+      "warning": "Specific body appreciation assessment instrument not identified in this results section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text discusses BMI as a variable but does not specify whether it was self-reported or measured.",
+      "warning": "BMI assessment method not specified in this results section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text describes correlational analyses in Table 2 and mentions relationships between body image variables and sexual health indicators, but does not explicitly report the correlation between body appreciation and BMI. The text states 'age was positively correlated with BMI' but does not provide the body appreciation-BMI correlation coefficient.",
+      "warning": "The specific correlation between body appreciation and BMI is not reported in this section. While Table 2 is referenced, the actual table is not provided.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a results section from a single study. No indication of multiple studies is present. The text describes analyses from one dataset with one sample of women.",
+      "warning": "This appears to be a single-study results section. No explicit mention of multiple studies."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a results section only. No publication type information (journal article vs. dissertation) is evident from this excerpt.",
+      "warning": "Publication type cannot be determined from this results section alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This 'Main Analyses' section presents results from a single study examining relationships between body image variables (appearance dissatisfaction, body area dissatisfaction, and body appreciation), sexual health indicators, and age in women. The analyses include Pearson correlations (Table 2), hierarchical regression analyses (Table 3), and moderated moderation analyses examining how body appreciation moderates the relationship between age and sexual satisfaction, with findings showing body appreciation is a significant predictor of sexual function and distress, and its moderating effect differs between women with and without significant sexual function difficulties.",
+      "evidence_source": "Entire 'Main Analyses' section describing three separate analyses: correlational analyses, hierarchical regression analyses, and moderated moderation analyses."
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not explicitly state the country where the study was conducted.",
+      "warning": "Country information is not available in the provided text or table."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text references sample sizes in regression analyses (e.g., 'F(1, 176)', 'F(1, 175)', 'F(1, 189)') but does not explicitly state the total sample size. The degrees of freedom suggest samples around 177-190, but exact total sample size is not stated.",
+      "warning": "Sample size cannot be definitively extracted from the provided text. Degrees of freedom in regression analyses suggest approximately 177-190 participants, but this is not explicitly confirmed.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether data collection used paper-and-pencil or online survey methods.",
+      "warning": "Survey method is not specified in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report the percentage of white participants.",
+      "warning": "Demographic information regarding race/ethnicity is not provided in the text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text discusses age as a variable in correlational analyses but does not report the mean age of participants.",
+      "warning": "Mean age is not explicitly stated in the provided text.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report educational attainment of participants.",
+      "warning": "Educational level information is not provided in the text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text discusses BMI as a variable in analyses but does not report the mean BMI of participants.",
+      "warning": "Mean BMI is not explicitly stated in the provided text.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether participants were recruited from community, college, or primary/secondary/high school settings.",
+      "warning": "Source of sample is not specified in the provided text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text references 'body appreciation' as a variable but does not explicitly name the instrument used (BAS or BAS-2).",
+      "warning": "The specific body appreciation assessment instrument (BAS or BAS-2) is not identified in the provided text."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether BMI was self-reported or measured.",
+      "warning": "The method of BMI assessment (self-reported vs. measured) is not stated in the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.39
+        ]
+      },
+      "evidence_source": "Table 2, row 3 (Body appreciation) and column 2 (BMI): The correlation coefficient is -.39** (p < .01). The double asterisk indicates p < .01 significance. The numeric value extracted is -0.39.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            -0.39
+          ]
+        }
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text describes a single study with multiple analyses (correlational analyses, hierarchical regression analyses, and moderation analyses). No explicit mention of 'Study 1', 'Study 2', or separate studies is made. The text refers to 'our hypotheses' and 'three separate analyses' within one study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not indicate whether this is from a journal article or dissertation.",
+      "warning": "Publication type cannot be determined from the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents the main analyses of a single study examining associations between body image variables, sexual health indicators, and age. Pearson correlations (Table 2) revealed that body appreciation was negatively correlated with BMI (r = -.39, p < .01) and positively associated with sexual satisfaction, while appearance dissatisfaction was negatively related to sexual health outcomes. Hierarchical regression analyses demonstrated that body appreciation predicted unique variance in sexual function, satisfaction, and distress beyond BMI and appearance dissatisfaction, and moderation analyses revealed that body appreciation moderated the relationship between age and sexual satisfaction, particularly among women with significant sexual function difficulties.",
+      "evidence_source": "Main Analyses section, Table 2, and regression/moderation results described throughout the text."
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2 Correlation matrix between body image variables, sexual health indicators, age, and BMI",
+      "evidence_source": "The table title appears at the top of the provided table image."
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Robbins2018Appearance Dissatisfaction/tables/1Robbins2018Appearance Dissatisfaction_p005_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly state the country where the study was conducted. No geographic location is mentioned in the Main Analyses section or the table.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text references sample sizes in the regression analyses (e.g., 'F(1, 176)=12.28' suggests N=177 for sexual satisfaction analysis, 'F(1, 175)=3.92' suggests N=176 for sexual function, 'F(1, 189)=.77' suggests N=190 for sexual distress), but no explicit total sample size statement is provided in this section. The degrees of freedom vary across analyses, indicating different sample sizes for different outcomes, but the exact overall sample size is not stated.",
+      "warning": "Sample size can be inferred from degrees of freedom in regression analyses, but no explicit statement of total N is provided in this section.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not describe the survey method used (paper-and-pencil vs. online). This information is not mentioned in the Main Analyses section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report the percentage of white participants. No demographic breakdown by race/ethnicity is provided in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text discusses age as a variable in correlational and regression analyses but does not report the mean age of participants. Age is treated as a predictor variable in the analyses, not as a descriptive statistic.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report the educational attainment of participants. No information about college or higher education experience is provided in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report the mean BMI of participants. BMI is treated as a predictor variable in the regression analyses (entered at Step 1), but no descriptive statistics for BMI are provided in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not describe where or how participants were recruited (community, college, or primary/secondary/high school). No information about the source of the sample is provided in this section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly name the instrument used to assess body appreciation (BAS or BAS-2). Body appreciation is mentioned as a variable in the analyses, but the specific assessment tool is not identified in this section.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether BMI was self-reported or measured. BMI is included as a variable in the regression analyses, but the method of assessment is not described in this section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Table 3 presents hierarchical regression analyses predicting sexual health indicators, not correlations between body appreciation and BMI. The text mentions that 'Pearson's correlations' were conducted and results are 'given in Table 2,' but Table 2 is not provided in the input. Therefore, the correlation between body appreciation and BMI cannot be extracted from the available information.",
+      "warning": "Table 2 is referenced but not provided. The correlation between body appreciation and BMI would be found in Table 2, not Table 3.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes 'three separate analyses' (correlational analyses, hierarchical regression analyses, and moderation/moderated moderation analyses) conducted on a single study sample. The phrase 'In order to test our hypotheses, three separate analyses were conducted' indicates these are analytical approaches within one study, not separate studies. No explicit mention of 'Study 1', 'Study 2', or multiple studies is present.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not indicate whether this is a journal article or dissertation. No publication type information is stated in the Main Analyses section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents the main analyses of a single study examining relationships between body image variables (appearance dissatisfaction, body area dissatisfaction, and body appreciation) and sexual health indicators (sexual function, sexual satisfaction, and sexual distress). The analyses include Pearson correlations (results in Table 2, not provided), hierarchical regression analyses (results in Table 3, provided), and moderation/moderated moderation analyses examining body appreciation as a moderator of the age-sexual health relationship. Body appreciation emerged as a significant predictor of sexual function and sexual distress beyond BMI and appearance dissatisfaction variables.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 3 Summary of hierarchical regression analyses predicting indicators of sexual health",
+      "evidence_source": "The table title appears at the top of the provided table image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Robbins2018Appearance Dissatisfaction/tables/1Robbins2018Appearance Dissatisfaction_p006_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_1"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly state the country where the study was conducted. No geographic location is mentioned in the 'Main Analyses' section.",
+      "warning": "Country information is not available in the provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly state the total sample size. References to sample sizes in regression analyses (e.g., 'F(1, 176)') suggest approximately 177-190 participants, but no explicit statement of total N is provided in this section.",
+      "warning": "Sample size is not explicitly stated in the provided text. Inferred ranges from degrees of freedom are approximate."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not describe the survey method (paper-and-pencil vs. online).",
+      "warning": "Survey method is not specified in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report the percentage of white participants.",
+      "warning": "Racial/ethnic composition is not provided in the text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text mentions age as a variable in correlational analyses but does not report the mean age of participants.",
+      "warning": "Mean age is not explicitly stated in the provided text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report educational attainment of participants.",
+      "warning": "Educational level is not specified in the provided text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text mentions BMI as a variable in analyses but does not report the mean BMI of participants.",
+      "warning": "Mean BMI is not explicitly stated in the provided text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not describe where or how participants were recruited (community, college, or school).",
+      "warning": "Source of sample is not specified in the provided text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly name the instrument used to assess body appreciation (BAS or BAS-2). The text refers to 'body appreciation' as a variable but does not specify which scale was used.",
+      "warning": "The specific body appreciation assessment instrument is not identified in the provided text."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether BMI was self-reported or measured.",
+      "warning": "BMI assessment method (self-reported vs. measured) is not stated in the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report a correlation between body appreciation and BMI. Table 2 is referenced as containing correlations between body image variables and other indicators, but the actual table is not provided in the input. The text states 'age was positively correlated with BMI' but does not provide the body appreciation-BMI correlation.",
+      "warning": "The correlation between body appreciation and BMI is not available in the provided text. Table 2 is referenced but not shown."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text describes analyses from what appears to be a single study. No explicit statement of multiple studies is made in this section.",
+      "warning": "The number of studies cannot be determined from the provided text alone. This appears to be a single study's results section."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not indicate whether this is a journal article or dissertation.",
+      "warning": "Publication type is not specified in the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents the main analyses of a study examining relationships between body image variables (appearance dissatisfaction, body area dissatisfaction, and body appreciation), sexual health indicators (desire, arousal, orgasm, lubrication, satisfaction, and distress), and age. Pearson correlations revealed that body appreciation was negatively related to sexual desire, arousal, orgasm, and distress, while appearance dissatisfaction showed opposite patterns. Hierarchical regression analyses demonstrated that body appreciation predicted unique variance in sexual function, satisfaction, and distress beyond BMI and appearance dissatisfaction. Moderation analyses revealed that body appreciation significantly moderated the relationship between age and sexual satisfaction, particularly among women with significant sexual function difficulties.",
+      "evidence_source": "Entire 'Main Analyses' section provided in the text.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "None",
+      "evidence_source": "An image asset is referenced in the input ('[image]'), but no caption or title is provided for it. The text references 'Fig. 1' which depicts slopes related to the moderation analysis, but the actual figure caption is not included in the provided materials.",
+      "warning": "Figure caption is not available. The text references 'Fig. 1' showing slopes for the interaction between age, body appreciation, and sexual satisfaction, but the complete caption is not provided."
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Robbins2018Appearance Dissatisfaction/figures/1Robbins2018Appearance Dissatisfaction_p005_fig00.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_2"
+  }
+]

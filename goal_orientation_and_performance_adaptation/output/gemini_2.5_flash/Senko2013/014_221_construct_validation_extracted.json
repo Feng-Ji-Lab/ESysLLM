@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section '2.2.1. Construct validation' with detailed statistical reporting and citations (Arbuckle, 2007; Kline, 2005) is characteristic of a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No explicit statement about peer review in the provided text.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\", \"Avoid\"]}",
+      "evidence_source": "For Study X, the text states: 'vigilance correlated positively with PAP goals (r= .25)' and 'but not WAV goals (r=\u2212.03)'. PAP goals are coded as 'Prove' and WAV goals as 'Avoid'.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1]}",
+      "evidence_source": "For Study X, the text describes 'vigilance' as having '10 vigilance items' and 'high internal reliability (\u03b1=.90)', indicating a self-report measure. This applies to both correlations.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [0, 0]}",
+      "evidence_source": "For Study X, vigilance is measured via self-report items, which are subjective ratings. This applies to both correlations.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1]}",
+      "evidence_source": "For Study X, vigilance is measured via self-report items. This applies to both correlations.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1]}",
+      "evidence_source": "For Study X, the text mentions 'PAP goals' and 'WAV goals' but does not specify the measurement scale or attribute it to VandeWalle. Therefore, it is coded as 'Other'. This applies to both correlations.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information is provided in the text for Study X.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No age information is provided in the text for Study X, so mean age cannot be imputed.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information about the sex composition of the sample is provided for Study X.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information about the percentage of men in the sample is provided for Study X.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information about the country where the data was collected is provided for Study X.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information about whether the sample was a student sample or other is provided for Study X.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None, None]}",
+      "evidence_source": "The text mentions 'bivariate correlations between the vigilance measure and other key measures (see Table 1)' but does not explicitly state the sample size (N) for these correlations in the provided section. Table 1 is not available.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [0.25, -0.03]}",
+      "evidence_source": "For Study X, the text states: 'vigilance correlated positively with PAP goals (r= .25)' and 'but not WAV goals (r=\u2212.03)'.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"PAP goals and vigilance\", \"WAV goals and vigilance\"]}",
+      "evidence_source": "For Study X, the text states: 'vigilance correlated positively with PAP goals (r= .25)' and 'but not WAV goals (r=\u2212.03)'.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes 'construct validation of each in two ways' and refers to 'the data' (singular), indicating a single study or sample context.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the construct validation of new vigilance and study flexibility measures. It describes confirmatory factor analyses (CFA) to assess structural integrity and reports bivariate correlations between vigilance and other key variables, including PAP goals (r=.25) and WAV goals (r=-.03). The section concludes that both measures are structurally sound and have high internal reliability.",
+      "evidence_source": "Summary of the provided text content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

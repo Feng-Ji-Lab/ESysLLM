@@ -1,0 +1,262 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All three candidates consistently report a value of 1, indicating this paper contains a single study. The evidence comes from multiple reliable sections: (1) the abstract explicitly describes \"a single study\" examining personality and body image in 509 men, (2) the methods section describes participants from \"Study X\" with specific demographic details (N=509, mean age 25.18), and (3) the results section presents data from \"a single study (N = 509)\" with correlation and regression analyses. The convergence across abstract, methods, and results sections with consistent sample size (N=509) and study design provides strong evidence that this paper reports exactly 1 study."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates consistently identify the publication type as \"journal articles\" based on the source being a journal article published in the Body Image journal, identified as a brief research report. While neither candidate provides explicit methodological or results-based evidence, the identification of the source as a journal publication (rather than a dissertation) is reliable based on the journal header and publication context. The convergence of both candidates on this value, combined with the clear journal publication format, provides sufficient evidence to consolidate the publication type as \"journal articles.\""
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "United Kingdom"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "All four candidates consistently report the same country for a single study conducted in the United Kingdom. Candidates [0] and [3] explicitly state 'United Kingdom', while candidates [1] and [2] state 'UK' (synonym for United Kingdom). All candidates refer to 'Study X', which the context confirms is a single study. The geographic specificity increases across sources: the title mentions 'British men', the abstract specifies 'London, UK', the participants section confirms 'London, UK', and the procedure section provides the precise location as 'Greater London, United Kingdom'. These are all complementary details describing the same single study location. Following the synonym handling rule, 'UK' and 'United Kingdom' are treated as identical. The consolidated value is 'United Kingdom' (the full formal name), representing the country where this single study was conducted in the London area.\""
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        509
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "All four candidates consistently report N=509 for a single study examining personality and body image in men from London, UK. Candidates [0] (Abstract) and [1] (Participants/Method) provide the most reliable sources for sample size, with explicit demographic details (509 men, mean age 25.18, 73.1% British White ancestry). Candidates [2] and [3] (Results section and Table 1) confirm the same sample size (N=509), providing corroborating evidence. All candidates refer to the same study (Study X) with identical sample composition (all male participants). The gender breakdown shows 509 males and 0 females/other, with a total of 509. No conflicts exist across sources; all values are consistent and refer to the same single study. The paper contains only one study as confirmed by the context provided.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          509
+        ]
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          509
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "community"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All three candidates consistently report 'community' as the source of sample for a single study. Candidate [0] from the abstract explicitly states '509 men from the community in London, UK'. Candidate [1] from the participants section confirms 'Participants of this study were 509 men recruited from the community in London, UK' with detailed demographics (N=509, mean age 25.18). Candidate [2] from the procedure section provides additional methodological detail that recruitment was 'conducted on an opportunistic basis in several public locations in Greater London', which further confirms community-based recruitment. All three sources are reliable (abstract, methods/participants, and procedure sections) and converge on the same value. The context confirms this paper contains exactly 1 study with consistent sample size (N=509) across all sections. No conflicts or contradictions exist. The value 'community' is the appropriate classification for recruitment from public locations in the community rather than college or school settings.\""
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Single study": [
+        73.1
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Single candidate source identified. The paper contains 1 study as confirmed by the context (consistent reporting across abstract, methods, and results sections with N=509). Candidate [0] from the Participants section (009_participants_extracted.json) provides the most reliable demographic information, explicitly stating that 73.1% of participants were of British White ancestry. This value is extracted from the main text of the Participants/Method section, which is the most appropriate source for demographic data. The gender breakdown shows this percentage applies to the male sample (as the study consisted of 509 men). The value is consolidated as a single study entry with extract_value [73.1] and corresponding gender-specific data (male: [73.1], total: [73.1]).",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          73.1
+        ]
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          73.1
+        ]
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        25.18
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Single candidate source identified. The paper contains 1 study as confirmed by context. Candidate [0] from the Participants section (009_participants_extracted.json) provides the mean age of participants: 25.18 years. This value is extracted from the main text describing the sample demographics (N=509 men, age range 18-59 years, M=25.18, SD=8.28). The gender breakdown shows this is a male-only sample, so the male value equals the total. No conflicting values exist. The study is labeled 'Study X' in the source but resolved to 'Single study' per schema requirements for single-study papers.\"",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          25.18
+        ]
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          25.18
+        ]
+      }
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        25.2
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Single candidate source identified. The paper contains one study (Study X) with 509 male participants from London, UK. The percentage of college or higher education was calculated from the participants section: 17.7% (undergraduate degree) + 7.5% (postgraduate degree) = 25.2%. This value is extracted from the reliable 'Participants' section of the Methods, which is the standard location for demographic information. The gender breakdown shows this value applies to the male sample (as all participants were men), and the total also reflects 25.2%. No conflicts or multiple studies detected.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          25.2
+        ]
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          25.2
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        24.01
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates [0] and [1] report the identical Mean BMI value of 24.01 for the same single study (Study X, N=509). Candidate [0] comes from the Participants section (Method), which is a reliable primary source for demographic data. Candidate [1] comes from the Results section (Table 1: Descriptive Statistics), which provides confirmatory evidence. The convergence of both sources with the same value (24.01) and consistent sample size (N=509) across abstract, methods, and results sections confirms this is a single study. The value is reported for male participants (509 men), with no female or other gender subsamples. Both candidates are merged into a single entry with the consolidated value [24.01].",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          24.01
+        ]
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          24.01
+        ]
+      }
+    }
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates [0] and [1] refer to the same single study (Study X) and consistently report that BMI was assessed via self-reported height and weight. Candidate [0] from the Participants section provides direct evidence of self-reported BMI (mean = 24.01), while Candidate [1] from the Measures section explicitly describes the methodology: participants reported their height and weight, which were then used to compute self-reported BMI as kg/m\u00b2. Both sources are reliable (Participants and Measures sections are standard locations for this information), and they converge on the same assessment method. No conflicts exist. The paper contains a single study with N=509 men, so the resolved_studies entry is labeled 'Single study' with a single value of 'self-reported' in the list.\""
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study as confirmed by the context (N=509 men, consistent across abstract, methods, and results sections). Candidate [0] from the Measures section (010_measures_extracted.json) explicitly identifies the Body Appreciation Scale (BAS) as the instrument used to assess body appreciation. The candidate value 'Study X' is resolved to 'Single study' based on the context indicating this paper reports exactly 1 study. The BAS is a 13-item measure developed by Avalos, Tylka, and Wood-Barcalow (2005) that taps multiple aspects of positive body image. This is a highly reliable source as it comes from the Methods/Measures section, which is the standard location for describing assessment instruments."
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "paper-and-pencil"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study as confirmed by the context. Candidate [0] from the Procedure section (011_procedure_extracted.json) explicitly describes the survey method as 'paper-and-pencil', with clear evidence: 'participants provided written informed consent and completed an anonymous paper-and-pencil version of the survey in a quiet location set up for the purposes of the project.' This is a reliable source from the Methods section. The 'Study X' label in the candidate is resolved to the single study in this paper. No conflicts or merging of multiple studies is required.\""
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        -0.12
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Single candidate source identified from Table 1 in the Results section. The paper contains 1 study (N=509) as confirmed by the context. The correlation between Body Appreciation and BMI is r = -0.12, extracted from the intersection of the Body Appreciation row and BMI column in the bivariate correlations table. This value is reliable as it comes from the Results section with explicit table reference and textual confirmation ('body appreciation was significantly and negatively correlated with... BMI'). No gender-specific breakdowns are provided in the candidate, so the value is reported as total. No conflicts or merging required.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          -0.12
+        ]
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          -0.12
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,149 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "China"
+        ]
+      },
+      "evidence_source": "Text states: 'A pencil-and-paper survey was conducted including 1250 Chinese adolescents girls' and 'Participants were recruited from four public schools in Wuhan City, Hubei province.' This indicates the study was conducted in China, specifically in Wuhan City, Hubei province.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          1152
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            1152
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            1152
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'A pencil-and-paper survey was conducted including 1250 Chinese adolescents girls' but later clarifies 'A total of 1152 questionnaires were included in the present analysis.' The final sample size used for analysis is 1152. All participants are girls (female).",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "paper-and-pencil"
+        ]
+      },
+      "evidence_source": "Text explicitly states: 'A pencil-and-paper survey was conducted' and 'Before completing the pencil-and-paper survey, adolescents and their legal parent/guardian provided informed consent.'",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No information provided in the text regarding the racial/ethnic composition of participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Text states participants were 'between 11 and 15 years of age' but does not provide the mean age. Only the age range is given.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Text states participants were 'adolescents girls between 11 and 15 years of age' recruited from 'four public schools.' This indicates they are secondary/high school students, not college students. However, the text does not explicitly state the percentage with college or higher education.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Text mentions that the questionnaire was 'designed to collect information on age, weight, height' but does not report the mean BMI of participants.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "primary/secondary/ high school"
+        ]
+      },
+      "evidence_source": "Text states: 'Participants were recruited from four public schools in Wuhan City, Hubei province.' The participants are adolescents (11-15 years old) from public schools, indicating a primary/secondary/high school source.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Text mentions that the questionnaire collected information on 'body appreciation' but does not specify which instrument (BAS or BAS-2) was used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Text states the questionnaire was designed to collect 'age, weight, height' but does not explicitly state whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No correlation coefficients between body appreciation and BMI are reported in this section.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with one sample of 1152 Chinese adolescent girls. No multiple studies or experiments are mentioned.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text is from a methods section (2.1 Participants and data collection) but does not indicate whether this is from a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes a single study (Study X) involving 1152 Chinese adolescent girls (ages 11-15) recruited from four public schools in Wuhan City, Hubei province. Data were collected via pencil-and-paper survey, with participants providing information on demographics, weight, height, social media use, body image, and eating behaviors. The questionnaire was translated into Chinese and back-translated to English to ensure validity.",
+      "evidence_source": "Entire section 2.1 Participants and data collection",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

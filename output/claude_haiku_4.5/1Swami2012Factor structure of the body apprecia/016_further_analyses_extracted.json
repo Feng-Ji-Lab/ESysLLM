@@ -1,0 +1,108 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While the text references F(2, 540) and F(1, 540), indicating a total sample size of 543 participants, the exact sample size is not explicitly stated in this section. The degrees of freedom suggest approximately 543 participants, but this is inferred from statistical notation rather than explicitly stated.",
+      "warning": "Sample size inferred from degrees of freedom (df=540) rather than explicitly stated. Actual N may be 543 (540+3 groups) or similar."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is provided in this section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about racial/ethnic composition percentages is provided in this section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age information is provided in this section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI values are reported in this section. Only correlations between Body Appreciation and BMI are discussed.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the source of the sample (community, college, or school) is provided in this section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section mentions 'General Body Appreciation factor' and 'Body Image Investment factor' but does not explicitly state which instrument (BAS or BAS-2) was used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported or measured) is provided in this section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.3,
+          -0.22
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.3
+          ]
+        },
+        "male": {
+          "Study X": [
+            -0.22
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "From the text: 'General Body Appreciation was significantly correlated with BMI among both women (r = -.30, p < .001) and men (r = -.22, p < .001).' The correlation for women is r = -0.30 and for men is r = -0.22. Gender-specific values are reported separately.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section does not explicitly state the number of studies. It appears to be a results/analysis section from a single study, but the document context is unclear.",
+      "warning": "Cannot determine from this section alone whether this is part of a single-study or multi-study paper."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents further analyses of body appreciation data, focusing on the General Body Appreciation factor after excluding the Body Image Investment factor due to low internal consistency. ANOVA results show no significant main effect of ethnicity (Javanese, Sundanese, Chinese) and no ethnicity-by-gender interaction, but a significant main effect of gender with women reporting lower body appreciation than men. Importantly, General Body Appreciation was significantly negatively correlated with BMI for both women (r = -.30) and men (r = -.22).",
+      "evidence_source": "Entire 'Further Analyses' section provided in text_content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

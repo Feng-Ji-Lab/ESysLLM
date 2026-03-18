@@ -1,0 +1,276 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      2
+    ],
+    "best_indices": [
+      0,
+      1,
+      4,
+      6,
+      8
+    ],
+    "reason": "Multiple candidates consistently report a value of 2 studies. Candidates [0], [1], [4], [6], and [8] all provide strong evidence from different sections of the paper (abstract, methods, results, and discussion) that this paper contains exactly 2 studies: Study 1 (cross-sectional, n=215) examining appearance goals, introjected regulation, and body image; and Study 2 (experimental 2\u00d72 design, n=165) manipulating guilt and appearance goals. Candidates [2], [3], [5], and [7] describe only individual studies in isolation but are discussing components of the same two-study investigation. The consensus across multiple independent sections of the paper strongly supports the value of 2 studies."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper is published in \"Body Image: An International Journal of Research,\" which is a peer-reviewed journal. This source context directly indicates the publication type is \"journal articles\" rather than a dissertation. While Candidate [0] shows only the journal cover and homepage reference without detailed study data, the fact that the paper appears in this established journal publication venue is definitive evidence for the publication type classification."
+  },
+  "Country": {
+    "extract_value": {
+      "Study 1": [
+        "United Kingdom"
+      ],
+      "Study 2": [
+        "United Kingdom"
+      ]
+    },
+    "best_indices": [
+      1,
+      5
+    ],
+    "reason": "The paper contains 2 distinct studies as confirmed by the context. Candidates [1] and [5] provide the most reliable and explicit evidence for the country where both studies were conducted. Candidate [1] (Abstract) explicitly states 'Study 1 investigated these relationships within a cross-sectional sample of female UK students' and 'Study 2 experimentally tested this pathway', clearly identifying both studies as UK-based. Candidate [5] (General Discussion) reinforces this by stating findings are limited to 'female undergraduate students in the UK'. Both candidates use consistent terminology (UK/United Kingdom are synonymous). Candidates [0], [2], [3], and [4] provide supporting evidence but rely on inferences from ethical guidelines (BPS = British Psychological Society) or author affiliations rather than explicit study location statements. The Abstract and Discussion sections are more authoritative sources for study location than inferred evidence from ethical procedures. All candidates consistently point to the United Kingdom as the location for both studies, with no contradictions.\""
+  },
+  "Sample": {
+    "extract_value": {
+      "Study 1": [
+        215
+      ],
+      "Study 2": [
+        165
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "The paper contains 2 distinct studies as confirmed by context. Study 1 (n=215 female UK students, cross-sectional design) is consistently reported across candidates [0] and [1] from abstract and method sections. Study 2 (n=165, experimental 2\u00d72 design) is reported in candidate [0] from the abstract. Candidate [2] provides sub-sample breakdowns for Study 2's four experimental conditions (40, 41, 41, 43), which sum to 165, confirming the total. Candidate [3] reports n=162 from manipulation checks section, which appears to be a discrepancy with the reported n=165 for Study 2. However, the n=165 figure from the abstract [0] and the four condition totals [40+41+41+43=165] from Table 2 [2] are more reliable as they come from primary reporting sections (abstract and method/results tables). The n=162 in candidate [3] may reflect missing data or a subset analysis. Following conflict resolution rules: prefer abstract and table values over derived calculations from statistical tests. Final consolidated values: Study 1 = [215] (all female), Study 2 = [165] (gender composition not specified in primary sources).",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [
+          215
+        ],
+        "Study 2": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          215
+        ],
+        "Study 2": [
+          165
+        ]
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Study 1": [
+        19.77
+      ],
+      "Study 2": [
+        22.5
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates were used to resolve the two studies. Candidate [1] from the Method section (009_31_method_extracted.json) provides the most reliable and precise value for Study 1: M = 19.77 years (SD = 2.0) based on actual descriptive statistics from the sample of 215 female students. This is preferred over Candidate [0]'s calculated estimate of 23.5 (midpoint of 17-30 range) because actual reported means are more accurate than range-based calculations. For Study 2, Candidate [0] from the Abstract provides the only available value of 22.5 years (calculated as midpoint of 18-27 range). Study 1 is confirmed as female-only (n=215), while Study 2 gender composition is not specified in the available candidates. Both studies are distinct as confirmed by the context (Study 1: cross-sectional design, n=215; Study 2: experimental 2\u00d72 design, n=165).",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [
+          19.77
+        ],
+        "Study 2": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          19.77
+        ],
+        "Study 2": [
+          22.5
+        ]
+      }
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Study 1": [
+        100
+      ],
+      "Study 2": [
+        100
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All three candidates consistently report 100% college or higher education for both studies. Candidate [0] (Abstract) provides initial evidence that Study 1 participants are 'female UK students' (100%) and notes Study 2 does not specify. Candidate [1] (Method section, Table 1) provides strong confirmation for Study 1, explicitly stating participants were 'female students...recruited from a university participant pool' (100%). Candidate [2] (General Discussion) provides the most comprehensive evidence, explicitly stating both studies involved 'female undergraduate students in the UK' (100% for both Study 1 and Study 2). The Method and Discussion sections are more reliable than the Abstract for demographic details. All candidates agree on 100% for Study 1. Candidate [2] clarifies that Study 2 also involved undergraduate students (100%), resolving the ambiguity in Candidate [0]. The gender breakdown shows all participants were female in Study 1; Study 2's gender composition is not explicitly detailed in these candidates but the total percentage of college or higher education is 100% for both studies.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [
+          100
+        ],
+        "Study 2": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          100
+        ],
+        "Study 2": [
+          100
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Study 1": [
+        "college"
+      ],
+      "Study 2": [
+        "college"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All three candidates consistently report that both Study 1 and Study 2 recruited from college/university sources. Candidate [1] provides the most explicit and reliable evidence from the Method section, stating '215 female students...were recruited from a university participant pool.' Candidate [0] from the Abstract confirms Study 1 as 'a cross-sectional sample of female UK students' (college-based) and infers Study 2 is also college-based given the context. Candidate [2] from the General Discussion reinforces this, noting the sample consists of 'female undergraduate students in the UK.' While Study 2's source is not explicitly stated in the abstract, the consistent context across all sections (same participant pool, same institution, same study design framework) and the discussion's reference to 'undergraduate students' for both studies supports the inference that Study 2 also recruited from the same college source. No conflicts exist between candidates; all point to college as the source for both studies.\""
+  },
+  "Survey method": {
+    "extract_value": {
+      "Study 1": [
+        "online"
+      ],
+      "Study 2": []
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Candidate [0] provides clear evidence for Study 1's survey method as 'online' from the Method section, explicitly stating participants 'were recruited from a university participant pool to complete an online questionnaire.' The context indicates this paper contains 2 studies (Study 1: cross-sectional, n=215; Study 2: experimental 2\u00d72 design, n=165). However, only one candidate was provided, which addresses Study 1. Study 2's survey method cannot be determined from the available candidates and is therefore left empty. The single candidate is reliable as it comes from the Method section (source 009_31_method_extracted.json), which is a primary location for methodological details."
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Study 1": [
+        86
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Single candidate [0] provides explicit evidence from the Method section stating that Study 1 recruited '215 female students (17\u201330 years, M = 19.77 years, SD = 2.0; 86% white)'. This is a direct, unambiguous statement of the percent of white participants in Study 1. The value is sourced from a reliable section (Method/Participants) and is corroborated by Table 1 caption. Since the paper contains 2 studies but only Study 1 data is provided in the candidates, only Study 1 is resolved here. The 86% value applies to the female sample (N=215), which constitutes the total sample for Study 1.\"",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": []
+      },
+      "female": {
+        "Study 1": [
+          86
+        ]
+      },
+      "other": {
+        "Study 1": []
+      },
+      "total": {
+        "Study 1": [
+          86
+        ]
+      }
+    }
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Study 1": [
+        "BAS"
+      ],
+      "Study 2": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All three candidates provide consistent evidence that BAS (Body Appreciation Scale) was used to assess body appreciation. Candidate [0] from the Method section (Table 1) explicitly identifies BAS with descriptive statistics (M=2.94, SD=0.82) for Study 1. Candidate [2] from the Discussion section (Fig. 1) confirms BAS was used in Study 1's structural model. Candidate [1] from the Results section uses ambiguous 'Study X' labeling but describes a structural equation model with BAS as an indicator for body image assessment. Based on the context that this paper contains 2 studies (Study 1: cross-sectional, n=215; Study 2: experimental 2\u00d72 design, n=165), and given that candidates [0] and [2] explicitly reference Study 1, while candidate [1] describes a latent construct analysis typical of Study 1's results section, candidate [1] is resolved to Study 2. The paper reports BAS as the assessment instrument for both studies, making it the primary instrument used across the investigation."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Study 1": [
+        -0.19
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Candidate [0] provides a clear, reliable extraction from Table 1 of the paper, which is a primary results table showing zero-order correlations for Study 1. The correlation between Body Appreciation Scale (BAS) and BMI is -0.19 (p < .05), extracted from the intersection of row 9 (BAS) and column 12 (BMI). The evidence explicitly confirms this is Study 1 data with N=198 for BMI correlations. The sample consisted of 215 female university students, so the correlation is reported for females. No male or other gender data is available for Study 1. The value is precise and directly sourced from a table in the Results section, making it highly reliable. No conflicting values were found for Study 1 in the candidates provided.\"",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": []
+      },
+      "female": {
+        "Study 1": [
+          -0.19
+        ]
+      },
+      "other": {
+        "Study 1": []
+      },
+      "total": {
+        "Study 1": [
+          -0.19
+        ]
+      }
+    }
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Study 1": [
+        "self-reported"
+      ],
+      "Study 2": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates [0] and [1] report 'self-reported' as the assessment method for BMI. Candidate [0] comes from a methods section (010_312_measures_extracted.json, Section 3.1.2) describing measurement instruments, which typically describes Study 1 (the cross-sectional study). Candidate [1] comes from a post-test measures section (015_4123_posttest_measures_extracted.json) describing an experimental study with guilt and appearance goals manipulation, which corresponds to Study 2 (the 2\u00d72 experimental design). Both candidates explicitly state that BMI was calculated using self-reported height and weight. Since the paper contains 2 distinct studies (Study 1: cross-sectional, n=215; Study 2: experimental 2\u00d72, n=165), and both studies used the same assessment method (self-reported), the resolved output contains two entries\u2014one for each study\u2014both with the value ['self-reported']."
+  }
+}

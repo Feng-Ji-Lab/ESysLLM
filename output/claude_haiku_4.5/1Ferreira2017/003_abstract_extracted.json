@@ -1,0 +1,145 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract does not specify the country where the study was conducted.",
+      "warning": "Country information is not provided in the abstract."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          490
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            490
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            490
+          ]
+        }
+      },
+      "evidence_source": "The abstract states: 'The study's sample comprised 490 women who completed an Internet based survey comprising self-report measures of interest.' All 490 participants are female.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "online"
+        ]
+      },
+      "evidence_source": "The abstract states: 'The study's sample comprised 490 women who completed an Internet based survey comprising self-report measures of interest.' Internet-based survey indicates online method.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The abstract does not provide information about the racial/ethnic composition of participants.",
+      "warning": "Racial/ethnic demographic information is not provided in the abstract."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The abstract does not provide information about the mean age of participants.",
+      "warning": "Mean age information is not provided in the abstract."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The abstract does not provide information about the educational level of participants.",
+      "warning": "Educational attainment information is not provided in the abstract."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The abstract mentions that Body Mass Index was controlled for in the analysis ('when controlling the effect of age and Body Mass Index'), but does not report the mean BMI of participants.",
+      "warning": "Mean BMI value is not provided in the abstract, though BMI was used as a control variable."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract does not specify the source of the sample (e.g., community, college, primary/secondary/high school). Only that participants completed an Internet-based survey.",
+      "warning": "Source of sample recruitment is not specified in the abstract."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The abstract mentions 'body appreciation' as a key variable measured through self-report measures, but does not explicitly name the instrument. Based on the context of body appreciation assessment in eating disorder research, BAS-2 is the most commonly used instrument, but this is an inference. The abstract states: 'self-report measures of interest' without specifying the exact instrument name.",
+      "warning": "The specific body appreciation assessment instrument (BAS or BAS-2) is not explicitly stated in the abstract. This extraction is based on inference from the field context."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract does not specify whether BMI was self-reported or measured. It only mentions that BMI was controlled for in the analysis.",
+      "warning": "The method of BMI assessment (self-reported vs. measured) is not provided in the abstract."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The abstract does not report the correlation coefficient between body appreciation and BMI. It mentions that BMI was controlled for in the path analysis, but no specific correlation value is provided.",
+      "warning": "Correlation between body appreciation and BMI is not reported in the abstract."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The abstract describes a single study with one sample of 490 women. No mention of multiple studies or experiments is made.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The abstract does not indicate whether this is a journal article or dissertation. Only the abstract text is provided without publication venue information.",
+      "warning": "Publication type cannot be determined from the abstract alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This abstract describes a single study (Study X) examining the relationship between early positive emotional experiences, self-compassion, body appreciation, and eating psychopathology in 490 women. The study used path analysis to test a mediation model, finding that self-compassion and body appreciation fully mediated the relationship between early emotional memories and disordered eating, accounting for 49% of eating psychopathology variance. The research was conducted via an Internet-based survey with self-report measures.",
+      "evidence_source": "Abstract content describing study design, sample, and key findings.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,108 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the study was conducted. While MTurk (Amazon Mechanical Turk) is mentioned, this is a platform and does not specify a country.",
+      "warning": "Country information not provided in this Results section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          257
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            257
+          ]
+        }
+      },
+      "evidence_source": "The text states: 'Thus, the regression analyses were based on 257 cases.' This indicates the final sample size used in the regression analyses after exclusion of outliers.",
+      "warning": "The text mentions both MTurk participants and college participants were combined, but does not provide separate sample sizes for each group or gender breakdowns."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'MTurk participants and the college participants' but does not explicitly state whether data were collected via paper-and-pencil or online methods.",
+      "warning": "Survey method not explicitly stated in this Results section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the racial/ethnic composition of participants.",
+      "warning": "Demographic information regarding race/ethnicity not provided in this Results section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states 'age was associated with self-compassion and appearance contingent self-worth' and that 'we controlled for BMI and age in the regression analyses,' but does not provide the mean age of participants.",
+      "warning": "Mean age not explicitly stated in this Results section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'college participants' as one source of the sample but does not provide the percentage of participants with college or higher education.",
+      "warning": "Percentage of college or higher education not provided in this Results section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states 'Given that BMI was associated with body appreciation' and that 'we controlled for BMI and age in the regression analyses,' but does not provide the mean BMI value.",
+      "warning": "Mean BMI not explicitly stated in this Results section. The text references Table 1 which would contain means and standard deviations, but Table 1 is not provided."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college",
+          "community"
+        ]
+      },
+      "evidence_source": "The text states: 'Finally, there were no significant mean differences between the MTurk participants and the college participants on social comparison, appearance self-worth, body appreciation, or self-compassion (all ps > .05); thus, these data were combined for the analyses.' MTurk (Amazon Mechanical Turk) is a community-based online platform, and college participants were explicitly mentioned.",
+      "warning": "The text indicates two sources of sample (MTurk/community and college) were combined, but does not provide separate sample sizes for each source."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify which instrument (BAS or BAS-2) was used to assess body appreciation. The text references 'body appreciation' as a variable but does not name the specific assessment tool.",
+      "warning": "Specific assessment instrument for body appreciation not identified in this Results section. The Methods section (not provided) would contain this information."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether BMI was self-reported or measured. It only mentions that 'BMI was associated with body appreciation' and that it was controlled for in analyses.",
+      "warning": "Method of BMI assessment (self-reported vs. measured) not stated in this Results section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states 'Given that BMI was associated with body appreciation' but does not provide the specific correlation coefficient (r value) between body appreciation and BMI.",
+      "warning": "Specific correlation coefficient between body appreciation and BMI not provided. The text references Table 1 which would contain intercorrelations, but Table 1 is not provided in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "This Results section describes a single study with one main analysis involving moderation analyses (Model 1 and Model 2), but these are different analytical models within the same study, not separate studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text does not indicate whether this is from a journal article or dissertation.",
+      "warning": "Publication type not identifiable from this Results section alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Results section describes a single study examining self-compassion as a moderator of the relationships between body comparison/appearance self-worth and body appreciation. Data from 257 participants (after outlier exclusion) combined from MTurk and college samples were analyzed using regression-based moderation analyses. The findings show that self-compassion significantly moderates both the body comparison-body appreciation relationship and the appearance self-worth-body appreciation relationship, with stronger negative associations at low levels of self-compassion.",
+      "evidence_source": "The entire Results section describes the analyses and findings for Study X.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

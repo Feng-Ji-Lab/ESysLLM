@@ -1,0 +1,131 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Hong Kong"
+        ]
+      },
+      "evidence_source": "Title states 'Factor structure and psychometric properties of the Body Appreciation Scale-2 in university students in Hong Kong'",
+      "warning": "Study name not explicitly provided in text; using 'Study X' as placeholder. Only country name extracted from title; no additional geographic information available."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Only author names and title provided. No sample size information available in the given text.",
+      "warning": "Sample size not stated in provided text excerpt."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information provided in the given text.",
+      "warning": "Survey method not stated in provided text excerpt."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No demographic information about racial/ethnic composition provided in the given text.",
+      "warning": "Percent of white participants not stated in provided text excerpt."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No age information provided in the given text.",
+      "warning": "Mean age not stated in provided text excerpt."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Title mentions 'university students' but no explicit percentage or education level breakdown provided in the given text.",
+      "warning": "While title indicates university students (which would suggest 100% college or higher), the instruction policy states not to infer unless certain. No explicit percentage provided in text excerpt."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No BMI information provided in the given text.",
+      "warning": "Mean BMI not stated in provided text excerpt."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Title states 'university students in Hong Kong', indicating the sample source is a college/university setting.",
+      "warning": "Study name not explicitly provided; using 'Study X' as placeholder. Source inferred from 'university students' in title."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Title explicitly states 'Body Appreciation Scale-2', indicating BAS-2 was used to assess body appreciation.",
+      "warning": "Study name not explicitly provided; using 'Study X' as placeholder."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported vs. measured) provided in the given text.",
+      "warning": "Assessment method for BMI not stated in provided text excerpt."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No correlation data provided in the given text.",
+      "warning": "Correlation between body appreciation and BMI not stated in provided text excerpt."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "Only title and author information provided. No explicit statement about number of studies in the paper.",
+      "warning": "Cannot determine number of studies from title and author line alone. Full text needed."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information (journal article vs. dissertation) provided in the given text.",
+      "warning": "Publication type not stated in provided text excerpt."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents the title and authors of a study examining the factor structure and psychometric properties of the Body Appreciation Scale-2 (BAS-2) in university students in Hong Kong. The study was conducted by Viren Swami and Siu-Kuen Ng, with the sample drawn from a college population in Hong Kong.",
+      "evidence_source": "Title and author line provided in the text.",
+      "warning": "Only title and author information available; full study details (sample size, demographics, results) not provided in this excerpt."
+    },
+    "_pass_type": "text_only"
+  }
+]

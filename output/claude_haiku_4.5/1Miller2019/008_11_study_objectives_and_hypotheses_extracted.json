@@ -1,0 +1,97 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes study objectives and hypotheses but does not specify a country where the study was conducted.",
+      "warning": "No country information provided in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes study objectives and hypotheses but does not provide sample size information.",
+      "warning": "No sample size data provided in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes study objectives and hypotheses but does not specify the survey method used.",
+      "warning": "No survey method information provided in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes study objectives and hypotheses but does not provide demographic information about race/ethnicity.",
+      "warning": "No racial/ethnic demographic data provided in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes study objectives and hypotheses but does not provide age information.",
+      "warning": "No age data provided in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "total": [
+          100
+        ]
+      },
+      "evidence_source": "The text explicitly states 'college women' multiple times (e.g., 'The main goal of the current study was to examine the unique contributions of exposure to body focused others and exposure to non-body focused others on college women's own body image'). This indicates all participants are college students, therefore 100% have college or higher education experience.",
+      "warning": "Inferred from context that all participants are college women; not explicitly stated as a percentage."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes study objectives and hypotheses but does not provide BMI information.",
+      "warning": "No BMI data provided in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "total": [
+          "college"
+        ]
+      },
+      "evidence_source": "The text explicitly refers to 'college women' multiple times, indicating the sample was recruited from a college setting.",
+      "warning": "Inferred from context; not explicitly stated as source of sample."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes study objectives and hypotheses but does not specify which instrument was used to assess body appreciation.",
+      "warning": "No assessment instrument information provided in this section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes study objectives and hypotheses but does not specify how BMI was assessed.",
+      "warning": "No BMI assessment method provided in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes study objectives and hypotheses but does not provide correlation coefficients.",
+      "warning": "No correlation data provided in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section describes objectives and hypotheses for a single study examining college women's body image and eating patterns. No mention of multiple studies or experiments.",
+      "warning": "Based on the singular study design described; no explicit statement of multiple studies."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The section describes study objectives and hypotheses but does not indicate whether this is from a journal article or dissertation.",
+      "warning": "No publication type information provided in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section outlines the objectives and hypotheses of a study examining college women's body image and eating behaviors in relation to exposure to body-focused and non-body-focused others. The study employs a multi-level design examining effects at between-persons (average exposure over a week), within-persons (day-to-day variations), and temporal (day-to-day changes) levels. The hypotheses predict that greater exposure to non-body-focused others will be associated with better body image and more intuitive eating, while greater exposure to body-focused others will be associated with worse body image and more restrained eating.",
+      "evidence_source": "Section 1.1 describing study objectives and hypotheses",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

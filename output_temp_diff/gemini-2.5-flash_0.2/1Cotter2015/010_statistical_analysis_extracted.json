@@ -1,0 +1,257 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "The text mentions 'this sample of Black college women' but does not provide the total number of participants.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {},
+        "male": {},
+        "other": {},
+        "total": {}
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "The text states 'this sample of Black college women', implying 0% white participants. However, the schema asks for a list of numbers, and 0% is not explicitly stated, only inferred. Therefore, returning None.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {},
+        "male": {},
+        "other": {},
+        "total": {}
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {},
+        "male": {},
+        "other": {},
+        "total": {}
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "The text states 'this sample of Black college women'. Based on the infer_rule, this means the percentage of participants with college or higher education experience is 100%.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {},
+        "male": {},
+        "other": {},
+        "total": {}
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {},
+        "male": {},
+        "other": {},
+        "total": {}
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "The text refers to 'this sample of Black college women'.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "Note. BAS = Body Appreciation Scale",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "The text mentions 'Evidence of construct validity was examined using Pearson correlation coefficients' and lists 'BAS = Body Appreciation Scale' in the Note, but no specific correlation value between BAS and BMI is provided.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {},
+        "male": {},
+        "other": {},
+        "total": {}
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'the current sample' and 'this sample', indicating a single study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the statistical analyses conducted for the study, including descriptive statistics, independent samples t-tests, Pearson correlation coefficients, exploratory factor analysis (EFA), confirmatory factor analysis (CFA) using Mplus, and mediation analyses using an SPSS macro with bootstrapping. The analyses were performed on a sample of Black college women, examining instruments such as the Body Appreciation Scale (BAS).",
+      "evidence_source": "Summary of the provided text.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text or table.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'this sample of Black college women' but does not provide a specific number for the total participants.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the survey method (e.g., 'paper-and-pencil' or 'online').",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "The text states 'this sample of Black college women', indicating that the percentage of white participants is 0%.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {},
+        "male": "None",
+        "other": "None",
+        "total": {}
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text or table.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "The text states 'this sample of Black college women', which implies that 100% of participants have college or higher education experience.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {},
+        "male": "None",
+        "other": "None",
+        "total": {}
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text or table.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "The text refers to 'this sample of Black college women', indicating the source of the sample is 'college'.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {},
+      "evidence_source": "The text mentions 'the factor structure of the BAS' and the 'Note' section clarifies 'BAS = Body Appreciation Scale'.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text or table.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'Pearson correlation coefficients' were used, but no specific correlation value between Body Appreciation (BAS) and BMI is provided in this section or Table 1.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'the current sample' and 'this sample' in the singular, suggesting a single study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the statistical analyses conducted, including descriptive statistics, t-tests, Pearson correlations, exploratory factor analysis (EFA), confirmatory factor analysis (CFA), and mediation analyses. The study focused on a sample of Black college women, examining the factor structure of the Body Appreciation Scale (BAS) and other related measures. The section also provides a note defining various scales and questionnaires used.",
+      "evidence_source": "Summary of the 'Statistical Analysis' section and the accompanying 'Note'.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1. Descriptive Statistics. Note. BAS = Body Appreciation Scale; MEIM = Multigroup Ethnic Identity Measure; MBSRQ-AE = Multidimensional Body Self-Relations Questionnaire, Appearance Evaluation Subscale; RSES = Rosenberg Self-Esteem Scale; SATAQ-3 Internalization-General = Sociocultural Attitudes Toward Appearance Scale-3, Internalization-General Subscale; EDE-Q-R = Eating Disorders Self-Examination-Questionnaire, Restraint Subscale; EDE-Q-EC = Eating Disorders Self-Examination-Questionnaire, Eating Concern Subscale; EDE-Q-SC = Eating Disorders Self-Examination-Questionnaire, Shape Concern Subscale; EDE-Q-WC = Eating Disorders Self-Examination-Questionnaire, Weight Concern Subscale; EAT-26 Dieting = Eating Attitudes Test-26, Dieting Subscale; PARTS Weight/Size Teasing = Physical Appearance-Related Teasing Scale, Weight/Size Teasing Subscale.",
+      "evidence_source": "The full caption and note provided with Table 1.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Cotter2015/tables/1Cotter2015_p008_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

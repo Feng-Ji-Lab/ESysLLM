@@ -1,0 +1,107 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section is a 'Research Hypotheses' section that describes the goals and hypotheses of a study. No country information is provided in this text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes research hypotheses and mentions 'a sample of Black undergraduate women' and 'Black college women' but does not provide a specific sample size (N).",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method (paper-and-pencil or online) is mentioned in this hypotheses section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The study focuses on Black college women, but no explicit percentage of white participants is provided. The text indicates the sample is Black women, but does not quantify racial composition percentages.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age is provided in this hypotheses section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "The text explicitly states 'Black undergraduate women' and 'Black college women' multiple times, indicating all participants are college students. Per the infer_rule, when participants are described as undergraduate or college students, the percentage with college or higher education is 100%.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI is provided in this hypotheses section.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The text explicitly mentions 'Black college women' and 'Black undergraduate women' multiple times, indicating the sample source is college.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text states 'validate the BAS (Avalos et al., 2005) in Black college women' and discusses 'BAS scores of Black undergraduate women' and 'BAS scores of Black college women', indicating the Body Appreciation Scale (BAS) is the assessment instrument used.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported or measured) is provided in this hypotheses section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This is a hypotheses section that outlines planned analyses. No actual correlation coefficients between body appreciation and BMI are reported. The hypotheses mention relationships between BAS scores and various variables (appearance satisfaction, self-esteem, Western beauty ideal internalization, dieting, eating disordered behavior, weight-related teasing, ethnic identity, and eating disorder symptoms), but no specific correlation with BMI is stated.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes 'the present study' (singular) with multiple hypotheses and planned analyses, indicating one study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "This section is a 'Research Hypotheses' section from what appears to be a research paper or dissertation, but the publication type (journal article vs. dissertation) is not explicitly stated in this excerpt.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section outlines the research hypotheses for a study validating the Body Appreciation Scale (BAS) in Black college women and examining the role of ethnic identity in body appreciation. The study proposes five main hypotheses: (1) CFA will support a unidimensional BAS structure, (2) BAS scores will correlate positively with appearance satisfaction and self-esteem, (3) BAS scores will correlate negatively with Western beauty ideal internalization and eating disorder-related variables, (4) higher BAS scores will relate to stronger ethnic identity and lower eating disorder symptoms, and (5) ethnic identity's relationship with body and eating concerns will be mediated by Western beauty ideal internalization.",
+      "evidence_source": "Entire 'Research Hypotheses' section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

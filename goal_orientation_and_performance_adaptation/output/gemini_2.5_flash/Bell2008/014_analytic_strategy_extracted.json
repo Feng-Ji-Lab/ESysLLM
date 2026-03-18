@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The section 'Analytic Strategy' describes the statistical methods and variable handling, not the publication type of the paper.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The section 'Analytic Strategy' describes the statistical methods and variable handling, not financial support information.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The section 'Analytic Strategy' describes the statistical methods and variable handling, not peer review status.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\", \"Avoid\"]}",
+      "evidence_source": "The text states: \"To preserve valuable degrees of freedom, we created composite measures for each of the following latent variables in the model: metacognition, state mastery orientation, state prove orientation, state avoid orientation, intrinsic motivation, self-efficacy, and state anxiety.\" This indicates that 'state prove orientation' and 'state avoid orientation' were assessed.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text states: \"Single indicators were used for the objective measures of self-evaluation activity, analogical transfer performance, and adaptive transfer performance\". This indicates objective measures were used for performance adaptation.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text states: \"Single indicators were used for the objective measures of self-evaluation activity, analogical transfer performance, and adaptive transfer performance\". Objective measures correspond to code 1.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text states: \"Single indicators were used for the objective measures of self-evaluation activity, analogical transfer performance, and adaptive transfer performance\". Objective measures correspond to code 3.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1]}",
+      "evidence_source": "The text mentions \"state prove orientation\" and \"state avoid orientation\" but does not specify the author or scale used for these goal orientation measures. Therefore, they are coded as 'Other'.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "The section 'Analytic Strategy' describes the statistical methods and variable handling, not participant demographics or age information.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The section 'Analytic Strategy' describes the statistical methods and variable handling, not participant demographics or age information.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The section 'Analytic Strategy' describes the statistical methods and variable handling, not participant demographics or sex composition.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The section 'Analytic Strategy' describes the statistical methods and variable handling, not participant demographics or percentage of men.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The section 'Analytic Strategy' describes the statistical methods and variable handling, not the country of data collection.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The section 'Analytic Strategy' describes the statistical methods and variable handling, not the sample type.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The section 'Analytic Strategy' describes the statistical methods and variable handling, not the sample size (N) for specific correlations.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The section 'Analytic Strategy' describes the statistical methods and variable handling, not specific correlation coefficients.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The section 'Analytic Strategy' describes the statistical methods and variable handling, not specific correlation information.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single set of analyses and hypotheses for a study, referring to 'Our first set of analyses' and 'We then focused on evaluating our hypotheses' within a singular context, implying one study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the analytic strategy used in the study. It describes the use of analysis of variance to assess the effect of training design elements on trainees' performance at three time points, including adaptive transfer. It then focuses on evaluating hypotheses using a moderated structural equation model (MSEM) with LISREL 8.52, outlining the procedure by Mathieu, Tannenbaum, and Salas (1992). The section also explains the creation of composite measures for latent variables such as state prove orientation and state avoid orientation, and the use of single indicators for objective measures of adaptive transfer performance.",
+      "evidence_source": "Summarized content from the provided 'Analytic Strategy' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

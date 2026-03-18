@@ -1,0 +1,211 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason": "All candidates consistently report a value of 1, indicating this paper contains a single study. The evidence is strong and consistent across multiple sections: (1) Candidate [0] describes participants from \"a single study\" in Portugal with 155 participants; (2) Candidate [1] describes the procedure for \"a study\" with recruitment from three institutions; (3) Candidates [2], [3], and [4] explicitly reference \"a single study\" with N=155 (44 males, 111 females); (4) Candidate [5] from the Discussion section confirms \"a single study\" examining the relationship between external shame, self-compassion, and body appreciation. There is no evidence of multiple studies, multiple experiments, or separate study phases. The paper is a single empirical study with one sample and one analysis."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "Portugal"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All three candidates consistently report Portugal as the country where the study was conducted. The paper contains a single study (as confirmed by the context), so all candidates refer to the same study. Candidate [0] provides evidence from author affiliation (University of Coimbra, Portugal), Candidate [1] references the Portuguese population in the participants section, and Candidate [2] explicitly states the study is part of research on body image and mental health in the Portuguese population. All sources are reliable and complementary, with no conflicts. The consolidated value for the single study is ['Portugal'].\""
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        155
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "All four candidates consistently report data from a single study conducted in Portugal with N=155 participants (44 males, 111 females). Candidate [0] from the Participants section provides the primary sample description with explicit gender breakdown. Candidates [1], [2], and [3] from the Results/Path Analysis sections confirm and reinforce these values through different presentations (gender-specific correlations in [1], Table 2 in [2], and Table 1 in [3]). All sources are consistent and complementary\u2014no conflicts exist. The gender split (44 males, 111 females) is explicitly stated across multiple sources and sums to the total of 155. The paper contains only one study with one sample, so the resolved_studies list contains a single entry labeled 'Single study' with the consolidated sample size and gender breakdown.\"",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          44
+        ]
+      },
+      "female": {
+        "Single study": [
+          111
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          155
+        ]
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        21.83
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates refer to the same single study conducted in Portugal with N=155 (44 males, 111 females). Candidate [0] provides the computed overall mean age (21.83) along with gender-specific means (males: 22.36, females: 21.30). Candidate [1] from Table 1 provides the same gender-specific values (males: 22.36, females: 21.30) but without the overall mean. These are complementary and consistent: the overall mean of 21.83 is correctly computed from the gender-specific values and sample sizes. Following instruction 5 (Merge Complementary Data), candidate [0] is selected as the primary source for the overall mean age, with candidate [1] confirming the gender-split values. The context confirms this is a single study with no multiple studies or subsamples to merge.\"",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          22.36
+        ]
+      },
+      "female": {
+        "Single study": [
+          21.3
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          21.83
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        22.63
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates refer to the same single study conducted in Portugal with N=155 (44 males, 111 females). Candidate [0] from the Participants section provides the overall mean BMI (22.63) along with gender-specific values. Candidate [1] from the Results/Table section provides the same gender-specific values (Male: 23.54, Female: 22.28) extracted from Table 1. These are complementary and consistent: the overall mean (22.63) is the weighted average of the gender-specific means. Following the merge complementary data instruction, the total value (22.63) from Candidate [0] is combined with the gender-split values from both candidates. The overall mean BMI of 22.63 is the primary value for the study, with gender breakdowns provided as supplementary information. No conflicts exist; both candidates describe the same study and provide consistent values.\"",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          23.54
+        ]
+      },
+      "female": {
+        "Single study": [
+          22.28
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          22.63
+        ]
+      }
+    }
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All three candidates consistently report that BMI was assessed via self-reported measures. Candidate [0] from the Participants section states participants reported a mean BMI of 22.63. Candidate [1] from the Methods section (2.3.1) explicitly describes the methodology: BMI was calculated using the Quetelet Index formula from self-reported weight and height. Candidate [2] from the Results/Table section confirms the analysis used self-report measures (N=155). The context confirms this is a single study conducted in Portugal with 155 participants. All candidates agree on the assessment method (self-reported), so they are merged into a single entry for the single study with the value ['self-reported']."
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "paper-and-pencil"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates [0] and [1] refer to the same single study (N=155) examining body image and mental health in a Portuguese population. Candidate [0] from the Procedure section provides explicit evidence that 'self-report questionnaires were administered in the presence of one of the researchers,' clearly indicating paper-and-pencil administration. Candidate [1] from the Results/Path Analysis section references the same study and self-report measures but does not explicitly state the administration method. The context provided confirms this is a single empirical study with one sample. The paper-and-pencil method is definitively established by Candidate [0]'s explicit procedural description, which is the most reliable source for this field. Both candidates are merged into a single entry for the single study, with the value 'paper-and-pencil' confirmed.\""
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "community",
+        "college"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study examining body image and mental health in the Portuguese population. Candidate [0] from the Procedure section (009_22_procedure_extracted.json) provides clear evidence that participants were recruited from three distinct institutions: one private company and one retail service (both representing 'community' sources) and one higher education institution (representing 'college' source). This is the most reliable source as it comes from the Method/Procedure section which typically describes participant recruitment. The values 'community' and 'college' are merged into a single list for the single study, as they represent complementary recruitment sources for the same sample."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS-2"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "reason": "All six candidates consistently report BAS-2 as the instrument used to assess body appreciation. The paper contains a single study (N=155; 44 males, 111 females) as confirmed by the context. Candidates [0] through [6] all reference the same study and instrument across different sections: (1) Candidate [0] describes BAS-2 as the assessment tool with Cronbach's alpha of 0.95 in the present study; (2) Candidate [1] from the analytic strategy section explicitly identifies BAS-2 as the body appreciation measure; (3) Candidate [2] from preliminary data analyses references BAS-2 skewness values; (4) Candidate [3] from the path model figure shows BAS-2 as an outcome variable; (5) Candidate [4] from path analysis results explicitly states BAS-2 was used; (6) Candidate [5] from Table 2 confirms BAS-2 in the intercorrelation matrix; (7) Candidate [6] from Table 1 shows BAS-2 descriptive statistics. There are no contradictions, no multiple studies, and no subsample variations requiring separate entries. All candidates refer to the same single study using the same instrument (BAS-2). The consolidated result is a single entry with study_name 'Single study' and extract_value ['BAS-2']."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        -0.39,
+        -0.24
+      ]
+    },
+    "best_indices": [
+      3
+    ],
+    "reason": "Candidate [3] from Table 2 (intercorrelation matrix) is the most reliable source as it provides precise, gender-specific correlation coefficients directly extracted from the intersection of BMI and BAS-2 rows/columns: r = -0.39 for females (n=111) and r = -0.24 for males (n=44). This table-based evidence is preferred over estimates and path coefficients. Candidates [0] and [2] report the standardized path coefficient (\u03b2 = -0.27) from the path model, which represents the overall effect in the structural model rather than the raw bivariate correlation. Candidate [1] provides only a qualitative estimate (-0.3) without precise values. The gender-specific correlations from Table 2 are more informative and directly address the field definition requirement. The paper contains a single study (N=155) as confirmed by the context.\"",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          -0.24
+        ]
+      },
+      "female": {
+        "Single study": [
+          -0.39
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    }
+  }
+}

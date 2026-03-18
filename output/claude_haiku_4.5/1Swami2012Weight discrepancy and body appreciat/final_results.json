@@ -1,0 +1,258 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      2
+    ],
+    "best_indices": [
+      0,
+      2
+    ],
+    "reason": "Candidates 0 and 2 both identify 2 studies with strong structural evidence. The abstract (Candidate 0) explicitly labels \"Study 1\" (140 women in Harare, Zimbabwe) and \"Study 2\" (138 Zimbabwean migrants in Britain) as distinct studies. The methods section (Candidate 2) reinforces this with identical labeling and separate participant descriptions. While Candidates 1, 3, 4, 5, 6, and 7 describe the same research as a single comparative study between two geographic samples, the paper's own terminology clearly designates two separate studies. The explicit \"Study 1\" and \"Study 2\" labeling in the abstract and methods sections provides the strongest evidence for the count of 2 studies."
+  },
+  "Country": {
+    "extract_value": {
+      "Study 1": [
+        "Zimbabwe"
+      ],
+      "Study 2": [
+        "Britain"
+      ]
+    },
+    "best_indices": [
+      1,
+      3
+    ],
+    "reason": "The paper contains 2 distinct studies as confirmed by the context. Candidates 1 (Abstract) and 3 (Participants section) provide the most reliable and explicit evidence for study designation. Candidate 1 clearly states 'Study 1' with 140 women in Harare, Zimbabwe and 'Study 2' with 138 Zimbabwean migrants in Britain. Candidate 3 reinforces this with identical labeling and separate participant descriptions from the Methods section. These early-section sources (Abstract and Participants/Methods) are more authoritative than later sections. Candidates 0, 2, 4, 5, 6, 7, 8, 9, and 10 treat the research as a single comparative study using 'Study X' notation, but the explicit 'Study 1' and 'Study 2' labeling in the abstract and methods sections takes precedence per the critical instruction. Candidate 2 (Introduction) also uses 'Study 1' but lists both countries together, suggesting it describes the overall study design rather than distinguishing the two studies. The final resolution: Study 1 = Zimbabwe (Harare), Study 2 = Britain (London/England).\""
+  },
+  "Sample": {
+    "extract_value": {
+      "Study 1": [
+        140
+      ],
+      "Study 2": [
+        138
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All three candidates consistently report the same sample sizes for two distinct studies. Candidate 0 (abstract) and Candidate 1 (participants section) explicitly label the studies as 'Study 1' (140 women in Harare, Zimbabwe) and 'Study 2' (138 Zimbabwean migrant women in Britain). Candidate 2 (Table 1) presents the same values but uses 'Study X' notation; however, the table context and column headers ('Zimbabwe (n=140)' and 'Britain (n=138)') clearly map to Study 1 and Study 2 respectively. All participants are identified as women (female=100%). No conflicts exist between candidates. The values are merged by study: Study 1 = 140 women, Study 2 = 138 women. Candidates 0 and 1 are preferred as primary sources (abstract and methods/participants sections) with Candidate 2 (table) providing confirmatory evidence.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [
+          140
+        ],
+        "Study 2": [
+          138
+        ]
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          140
+        ],
+        "Study 2": [
+          138
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Study 1": [
+        "community"
+      ],
+      "Study 2": [
+        "community"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "The paper contains 2 distinct studies as confirmed by the context and explicit labeling in the abstract and methods sections. Candidate 0 (abstract) and Candidate 1 (participants section) both clearly identify 'Study 1' and 'Study 2' with separate participant descriptions. Candidates 2 and 3 refer to 'Study X' but describe the same recruitment procedures and samples. All candidates consistently indicate community-based recruitment: Study 1 involved 140 women recruited from Harare, Zimbabwe using opportunistic sampling in public spaces, and Study 2 involved 138 Zimbabwean migrant women recruited from London, Britain using snowball sampling. Both recruitment methods (opportunistic and snowball sampling) are community-based rather than college or school-based. No conflicts exist between candidates\u2014all agree on the 'community' classification for both studies. Candidates 2 and 3 use 'Study X' notation but refer to the same two geographic samples described as Study 1 and Study 2 in Candidates 0 and 1, so they are merged into the appropriate study entries."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Study 1": [
+        "BAS"
+      ],
+      "Study 2": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "All four candidates consistently identify the Body Appreciation Scale (BAS) as the instrument used to assess body appreciation. Candidate 0 explicitly labels 'Study 1' and references the introduction's description of the study comparing Zimbabwean women in Zimbabwe versus Britain. Candidates 1, 2, and 3 use 'Study X' notation but refer to the same research with migrant and non-migrant groups. Based on the context provided, the paper contains 2 distinct studies: Study 1 (140 women in Harare, Zimbabwe) and Study 2 (138 Zimbabwean migrants in Britain). The 'Study X' candidates (1, 2, 3) describe analyses of BAS data across both groups, which encompasses both studies. All candidates converge on BAS as the assessment instrument with no mention of BAS-2. Therefore, both Study 1 and Study 2 used the BAS to assess body appreciation."
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Study 1": [
+        25.34
+      ],
+      "Study 2": [
+        26.61
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates provide consistent mean age values for two distinct studies. Candidate 0 (009_participants_extracted.json) explicitly labels the studies as 'Study 1' (Zimbabwe: M=25.34) and 'Study 2' (Britain: M=26.61) with clear evidence from the participants section. Candidate 1 (014_weight_discrepancy_extracted.json) presents the same values in Table 1 but labels them as 'Study X', referring to the same two geographic groups (Zimbabwe and Britain). The paper's own terminology in the abstract and methods sections clearly designates these as two separate studies. Both candidates are reliable sources from different sections (participants description and descriptive statistics table), and they provide identical values, confirming consistency. The values are extracted from female participants in both studies, with no male or other gender data available. Study 1 (Zimbabwe) has mean age 25.34 years; Study 2 (Britain) has mean age 26.61 years.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [
+          25.34
+        ],
+        "Study 2": [
+          26.61
+        ]
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          25.34
+        ],
+        "Study 2": [
+          26.61
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Study 1": [
+        24.81
+      ],
+      "Study 2": [
+        24.88
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates provide consistent and reliable data for Mean BMI of participants across two distinct studies. Candidate 0 (009_participants_extracted.json) explicitly identifies Study 1 (Zimbabwe: M=24.81) and Study 2 (Britain: M=24.88) with direct evidence from the text describing participant characteristics. Candidate 1 (014_weight_discrepancy_extracted.json, Table 1) corroborates these exact same values (24.81 and 24.88) from the descriptive statistics table. The paper clearly designates two separate studies: Study 1 comprised 140 Zimbabwean women from Harare, and Study 2 comprised 138 first-generation Zimbabwean migrant women from London, Britain. Both candidates report identical values and refer to the same studies, confirming data reliability. The values are extracted from the most reliable sources: the Participants section (Candidate 0) and the Results/Table section (Candidate 1), both of which are primary locations for demographic and descriptive statistics. No conflicts exist between candidates; they provide complementary confirmation of the same data. Gender breakdown shows all participants were female in both studies, with no male or other gender categories reported.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [
+          24.81
+        ],
+        "Study 2": [
+          24.88
+        ]
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          24.81
+        ],
+        "Study 2": [
+          24.88
+        ]
+      }
+    }
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Study 1": [
+        "self-reported"
+      ],
+      "Study 2": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason": "The paper contains 2 distinct studies as confirmed by the context and Candidate 0 (abstract/participants section). Candidate 0 explicitly identifies 'Study 1' (140 Zimbabwean women in Harare) and 'Study 2' (138 Zimbabwean migrant women in Britain) with clear labeling. All candidates consistently report that BMI was assessed via 'self-reported' method across both studies. Candidates 1-5 use 'Study X' notation but refer to the same research comparing the two geographic samples; these are resolved to Study 1 and Study 2 based on the explicit labeling in Candidate 0 and the context provided. The evidence from multiple sections (Participants, Measures, Preliminary Analyses, Results Tables, and Discussion) all converge on the same assessment method: self-reported BMI for both studies. No contradictions exist regarding the assessment method."
+  },
+  "Survey method": {
+    "extract_value": {
+      "Study 1": [
+        "paper-and-pencil"
+      ],
+      "Study 2": [
+        "paper-and-pencil"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains 2 distinct studies as confirmed by the context (Study 1: 140 women in Harare, Zimbabwe; Study 2: 138 Zimbabwean migrants in Britain). Candidate 0 from the procedure section explicitly states that participants 'completed paper-and-pencil surveys' with counterbalanced scale presentation. This procedure applies to both studies as they share the same methodological approach. The evidence clearly describes the survey method used across both studies. Since the procedure section describes the methodology for both studies without differentiation in survey method, both Study 1 and Study 2 used the same 'paper-and-pencil' method."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Study 1": [
+        0.01
+      ],
+      "Study 2": [
+        -0.11
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains 2 distinct studies as confirmed by the context: Study 1 (women in Zimbabwe, N=140) and Study 2 (Zimbabwean migrants in Britain, N=138). Candidate 0 provides a correlation matrix (Table 2) with clear labeling: the bottom diagonal reports results for women in Zimbabwe (Study 1: r = 0.01) and the top diagonal reports results for Zimbabwean women in Britain (Study 2: r = -0.11). Both values represent the Pearson correlation between Body Appreciation and self-reported BMI for female participants. The data is gender-specific (female only) and comes from a reliable source (Results section, correlation table). No merging of subgroups or subscales is required as single correlation coefficients are reported for each study.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [
+          0.01
+        ],
+        "Study 2": [
+          -0.11
+        ]
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          0.01
+        ],
+        "Study 2": [
+          -0.11
+        ]
+      }
+    }
+  }
+}

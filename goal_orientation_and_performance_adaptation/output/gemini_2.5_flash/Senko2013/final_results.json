@@ -1,0 +1,437 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      2
+    ],
+    "best_indices": [
+      2,
+      3,
+      5,
+      13,
+      15,
+      28,
+      29,
+      31
+    ],
+    "reason": "Multiple candidates explicitly state that the paper includes 'two classroom studies', 'Study 1 and Study 2', or refers to 'both studies'. These direct mentions provide strong and consistent evidence for a total of two studies. Candidates with a value of 1 typically describe details of either Study 1 or Study 2 individually, rather than indicating the total number of studies in the paper. Candidates with a value of 0 lack any relevant information about studies."
+  },
+  "PubType": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      1,
+      2,
+      4
+    ],
+    "reason": "Multiple candidates explicitly identify the publication as a 'journal' or 'article'. Candidate [1] and [2] refer to the 'journal title', and candidate [4] mentions 'article information' including submission and acceptance dates, which are characteristic of a journal article. This consistent evidence strongly supports the classification as a journal article."
+  },
+  "PeerReview": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      2,
+      4,
+      19
+    ],
+    "reason": "The overwhelming majority of candidates (20 out of 21) indicate that the publication was peer-reviewed (Value=1). Several candidates provide strong implicit evidence: Candidate [4] explicitly mentions \"submission, revision, and acceptance dates,\" which are direct indicators of a peer-review process. Candidate [2] identifies the document as being from a \"journal title 'Learning and Individual Differences'\" with an editor, and Candidate [19] lists \"academic references,\" all consistent with a peer-reviewed publication. The single conflicting candidate [9] (Value=0) provides no specific evidence in its context to suggest the publication was not peer-reviewed. Therefore, based on strong consensus and implicit evidence, the publication is peer-reviewed."
+  },
+  "FinancSupport": {
+    "extract_value": [
+      0
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "reason": "All provided candidates explicitly state 'Value=0' and 'Evidence=No evidence' regarding financial support. There is no information in any of the section contexts that indicates the presence or absence of financial support (e.g., grants). Therefore, based on the available information, the most accurate conclusion is that there was no financial support mentioned, corresponding to a value of 0. All candidates consistently point to this lack of evidence."
+  },
+  "Country_dichot_num": {
+    "extract_value": {
+      "Study 1": [
+        "2"
+      ],
+      "Study 2": [
+        "2"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      6,
+      13
+    ],
+    "reason": "The paper explicitly describes two distinct studies, 'Study 1' and 'Study 2' (Candidate 1). For Study 1, Candidate 6, from the 'Participants' section, clearly states that participants were from an 'American public university', indicating a country dichotomy of 2 (USA). Similarly, for Study 2, Candidate 13, also from a 'Participants' section, states participants were 'at an American public university', confirming a country dichotomy of 2 (USA). The overall author affiliation (Candidate 0) also points to the US, supporting these specific findings. Candidate 14's value of [1] is disregarded as its own evidence explicitly states 'No country information is provided', creating a contradiction. All other candidates either provide no relevant country information or refer to previous research."
+  },
+  "PgoType": {
+    "extract_value": {
+      "Study 1": [
+        "Prove",
+        "Avoid"
+      ],
+      "Study 2": [
+        "Prove"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "reason": "The paper explicitly states it contains two studies (Study 1 and Study 2) in multiple candidates ([0], [3], [18], [19]). Candidates explicitly labeled 'Study 1' or 'Study 2' were directly assigned. Candidates labeled 'Study X' were resolved based on their source_file index and Section Summary: Candidates [2], [5], [7], [8] appeared in sections preceding the explicit introduction of Study 2 ([11]) and were thus assigned to Study 1. Candidates [12], [13], [16], [17] appeared in sections following the introduction of Study 2 and within its methods/results/summary, and were thus assigned to Study 2. Candidates [1] (introduction) and [19] (general discussion/limitations) referred to 'the present studies' or 'current studies' (plural) and were interpreted as applying to both Study 1 and Study 2. For Study 1, 'Prove' performance goal orientation (PAP goals) was consistently identified across multiple candidates. Additionally, candidate [7] explicitly mentioned 'WAV goals' (Work-Avoidance goals) which are categorized as 'Avoid' performance goal orientation. For Study 2, 'Prove' performance goal orientation (PAP goals) was consistently identified across multiple candidates. No 'Avoid' or 'Global' PgoType was identified for Study 2. Candidate [20] was ignored as it lacked evidence and section summary."
+  },
+  "AdaptMeasures": {
+    "extract_value": {
+      "Study 1": [
+        "1"
+      ],
+      "Study 2": [
+        "3",
+        "1"
+      ]
+    },
+    "best_indices": [
+      0,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "reason": "The paper explicitly states it contains two studies. For Study 1, multiple candidates ([4], [5], [6], [7], [8], [9], [10], [18]) consistently describe performance adaptation measures (e.g., learning strategies, study flexibility, vigilance) as being assessed via self-report surveys or items, leading to the code '1'. Candidate [0] for Study 1 had no specific measure. Candidate [19] suggested vigilance was objective (3), but this was contradicted by more detailed evidence in candidates like [7] (\"10 vigilance items\", \"\" =.90)\"), which strongly indicates a self-report scale. Therefore, '1' is the most reliable code for Study 1. For Study 2, candidates consistently report two types of measures. Several candidates ([13], [14], [15], [18]) describe learning strategies (e.g., deep learning, vigilant approach) as self-reported, leading to the code '1'. Other candidates ([0], [11], [12], [16], [17]) explicitly state that 'exam performance', 'academic achievement', or 'exam scores' were measured, which are objective measures, leading to the code '3'. Candidate [19] also suggested vigilance was objective (3), but this was disregarded for the same reason as Study 1. Thus, Study 2 includes both self-report (1) and objective (3) measures. 'Study X' candidates were resolved to Study 1 or Study 2 based on their source_file index and Section Summary, with earlier sections typically describing Study 1 and later sections describing Study 2. Candidates [1], [2], [3], and [20] were excluded for providing no specific measures or being an example."
+  },
+  "AdaptMethod": {
+    "extract_value": {
+      "Study 1": [
+        "0"
+      ],
+      "Study 2": [
+        "0",
+        "1"
+      ]
+    },
+    "best_indices": [
+      0,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "reason": "The paper contains two distinct studies, explicitly referred to as 'Study 1' and 'Study 2' in multiple candidates (e.g., Candidate 0, 3, 11). For Study 1, all identified performance adaptation outcomes were based on subjective ratings. Candidates 4, 5 (resolved 'Study X' to Study 1), 6, 7 (resolved 'Study X' to Study 1), 8 (applies to both studies), 9, 10, and 18 (applies to both studies) consistently describe measures like 'deep learning strategy', 'surface learning strategy', 'interest-based studying approach', 'vigilant approach', 'syllabus-boundness', 'study flexibility', and 'exam preparation strategies' as being assessed via self-report or subjective ratings (coded as '0'). Candidate 19's assertion that 'Vigilance Measure' is objective was contradicted by specific evidence in multiple other candidates stating it was self-reported, thus '0' was retained for vigilance. For Study 2, performance adaptation outcomes included both subjective ratings and objective scores. Subjective ratings (coded as '0') were for 'learning strategies' (e.g., deep learning, interest-based studying, surface learning, vigilant approach) as indicated by candidates 8 (applies to both studies), 13 (resolved 'Study X' to Study 2), 14, 15, and 18 (applies to both studies), which were assessed via self-report. Objective scores (coded as '1') were for 'academic achievement', 'exam performance', and 'exam scores', as indicated by candidates 0, 11, 12 (resolved 'Study X' to Study 2), 16 (resolved 'Study X' to Study 2), and 17 (resolved 'Study X' to Study 2), which were provided by instructors or were objective measures of performance. 'Study X' candidates were resolved based on their section summaries, source file order, and consistency with explicitly labeled study information. The final list for each study includes all distinct adaptation methods observed."
+  },
+  "AdaptMethod_Specific": {
+    "extract_value": {
+      "Study 1": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "Study 2": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "3",
+        "3",
+        "3",
+        "3",
+        "3"
+      ]
+    },
+    "best_indices": [
+      0,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "reason": "The paper explicitly describes two studies, 'Study 1' and 'Study 2'. Candidates were assigned to the respective studies based on explicit mentions in their values, section summaries, or contextual clues such as section order and table captions. For 'Study X' candidates:\n- Candidates [5], [7], and [8] were resolved to 'Study 1'. Candidate [6] (from the same source file as [5]) and candidates [9] and [10] (from the same source file as [8]) explicitly refer to 'Study 1' in their table captions, indicating that the surrounding text and measures pertain to Study 1.\n- Candidates [12], [13], [16], and [17] were resolved to 'Study 2'. Candidate [11] introduces 'Study 2', and candidate [12]'s summary explicitly states it 'contrasts with Study 1'. Candidates [14], [15], and [16] (from the same source files as [13] and [16]) explicitly refer to 'Study 2' in their table captions.\n\nFor 'Study 1', the following assessment methods were identified:\n- Self-report (code 1): Identified from candidates [4] (vigilant approach), [6] (Study Flexibility), [9] (learning strategies, study flexibility), [10] (study flexibility), [18] (learning strategies), [5] (exam preparation strategies, Study Flexibility), [7] (vigilance), and [8] (learning strategies, vigilant approach, study flexibility). This totals 19 instances of self-report.\n\nFor 'Study 2', the following assessment methods were identified:\n- Self-report (code 1): Identified from candidates [14] (learning strategies), [15] (learning strategies), [18] (learning strategies), and [13] (learning strategies). This totals 11 instances of self-report.\n- Objective (code 3): Identified from candidates [0] (academic achievement), [11] (exam performance, academic achievement), [12] (exam scores), [16] (exam performance), and [17] (exam performance, high achievement). This totals 5 instances of objective measures.\n\nConflict Resolution for 'Vigilance Measure':\nCandidate [19] from Appendix A states 'Vigilance Measure (Studies 1 and 2)' and its evidence interprets it as an objective task/test (code 3). However, candidates [4], [7], and [8] from main text sections (Study 1 method/results) explicitly state that 'vigilant approach' or 'vigilance' was 'self-reported' or 'measured via self-report items'. Following the instruction to prefer values in the main text over supplementary material when there is a contradiction and more specific evidence, the self-report coding (1) for vigilance is adopted for both studies, overriding the interpretation in [19]. Therefore, the vigilance measure from [19] is also coded as '1' (self-report) for both studies."
+  },
+  "GoMeasure_dichot_num": {
+    "extract_value": {
+      "Study 1": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "Study 2": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ]
+    },
+    "best_indices": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "reason": "The paper contains two distinct studies, explicitly named 'Study 1' and 'Study 2' in multiple candidates ([0], [3], [16]).\nFor Study 1, candidate [6] explicitly states that 'PAP Goals' were assessed with the 'Achievement Goal Questionnaire-Revised (AGQ-R; Elliot & Murayama, 2008)', which is not VandeWalle, thus coded as '1' (Other). Other candidates ([4], [5], [7], [8], [9]) also refer to Study 1 and consistently indicate 'Other' (1) for goal orientation measurement. Candidate [16] also contributes one '1' for Study 1.\nFor Study 2, candidate [11] states that the goal orientation measures were 'identical to those from Study 1', implying the use of AGQ-R, which is coded as '1' (Other). Other candidates ([10], [12], [13], [14], [15]) explicitly or implicitly refer to Study 2 and consistently indicate 'Other' (1) for goal orientation measurement. Candidate [16] also contributes one '1' for Study 2.\nFollowing the instruction 'Each integer indicates the measurement method of goal orientation for the corresponding extracted effect', all instances of 'Other' (1) measurement for goal orientation across various reported effects within each study are aggregated into the respective lists. Candidate [2] was excluded as it refers to a different paper (Senko and Miles, 2008) and not the current studies."
+  },
+  "Age_Info": {
+    "extract_value": {
+      "Study 1": [
+        "M age=23.4 years",
+        "conducted in introductory and mid-level college courses"
+      ],
+      "Study 2": [
+        "M age=20.9 years",
+        "conducted in introductory and mid-level college courses"
+      ]
+    },
+    "best_indices": [
+      5,
+      12,
+      18
+    ],
+    "reason": "The paper explicitly states it contains two studies. Candidate 5 provides the mean age for Study 1 (M age=23.4 years), identified by its participant count (N=163) and its placement in the paper's structure as the first detailed participant section. Candidate 12 provides the mean age for Study 2 (M age=20.9 years), identified by its participant count (N=157) and its placement as the second detailed participant section. Candidate 18 provides additional age-related context, stating that both studies were 'conducted in introductory and mid-level college courses', which is relevant age information for both studies. Other candidates either explicitly state no age information or are placeholders. Candidate 2 refers to a different study (Senko and Miles, 2008) and is therefore excluded."
+  },
+  "Age_imputed": {
+    "extract_value": {
+      "Study 1": [
+        "23.4"
+      ],
+      "Study 2": [
+        "20.9"
+      ]
+    },
+    "best_indices": [
+      5,
+      12,
+      0,
+      3,
+      11
+    ],
+    "reason": "The paper explicitly describes two studies, 'Study 1' and 'Study 2'. Candidate 5, from the 'Participants' section for the first study (`011_211_participants_extracted.json`), provides a mean age of 23.4 years. This 'Study X' is identified as Study 1 due to its placement in the paper before Study 2 is introduced. Candidate 12, from the 'Participants' section for the second study (`019_311_participants_extracted.json`), provides a mean age of 20.9 years. This 'Study X' is identified as Study 2, as it appears after the introduction of Study 2. Other candidates (0, 3, 11) confirm the presence of two studies and their respective sections, but do not provide age data. Candidate 2 refers to an external paper and is therefore ignored. No conflicting age values were found for either study."
+  },
+  "Sex": {
+    "extract_value": {
+      "Study 1": [
+        "3"
+      ],
+      "Study 2": [
+        "3"
+      ]
+    },
+    "best_indices": [
+      5,
+      12
+    ],
+    "reason": "The paper explicitly states it contains two studies. For Study 1, candidate [5] from the participants section (source_file 011) explicitly states '85% female', indicating a mixed sample (code 3). For Study 2, candidate [12] from the participants section (source_file 019) explicitly states '64% female', also indicating a mixed sample (code 3). These are the most reliable and explicit sources for sex composition. Other candidates either provided no specific information or made assumptions that align with these explicit findings. Candidates referring to 'Study X' were mapped to Study 1 or Study 2 based on their source_file index and section summary context, with 011 mapping to Study 1 and 019 mapping to Study 2."
+  },
+  "Men_Prop": {
+    "extract_value": {
+      "Study 1": [
+        "15.0"
+      ],
+      "Study 2": [
+        "36.0"
+      ]
+    },
+    "best_indices": [
+      5,
+      12
+    ],
+    "reason": "The paper explicitly states it contains two studies. For Study 1, candidate [5] from the 'Participants' section (011_211) provides the percentage of men as 15.0% (calculated from 85% female). This section's placement in the document structure confirms it refers to Study 1. For Study 2, candidate [12] from the 'Participants' section (019_311) provides the percentage of men as 36.0% (calculated from 64% female). This section's placement after the introduction of Study 2 confirms it refers to Study 2. All other candidates either explicitly state no percentage of men was provided, refer to a different study (Senko and Miles, 2008), or are general sections without specific demographic data."
+  },
+  "Sample_dichot": {
+    "extract_value": {
+      "Study 1": [
+        "1"
+      ],
+      "Study 2": [
+        "1"
+      ]
+    },
+    "best_indices": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      20
+    ],
+    "reason": "The paper explicitly states it contains two studies. Candidates referring to 'Study 1' or 'Study 2' directly provide the sample type. Candidates referring to 'Study X' were resolved to either Study 1 or Study 2 based on their 'source_file' index and 'Section Summary'. Candidates with 'source_file' indices from 005 to 011 (and related assets) were attributed to Study 1, while those from 012 to 018 (and related assets) were attributed to Study 2. Candidate [20] explicitly mentions 'The current studies' and 'students' for both. All reliable candidates consistently indicate that both Study 1 and Study 2 used student samples. Candidates with 'null' or empty lists were discarded as they provided no specific information."
+  },
+  "N": {
+    "extract_value": {
+      "Study 1": [
+        "163"
+      ],
+      "Study 2": [
+        "157"
+      ]
+    },
+    "best_indices": [
+      5,
+      6,
+      7,
+      12,
+      14,
+      15,
+      16
+    ],
+    "reason": "The paper explicitly describes two distinct studies. For Study 1, candidates [5] and [6] identify a sample size of 163 for 'Study X' in sections related to its participants and measures. Candidate [7] provides explicit confirmation from Table 1, stating 'N=163' for 'Study 1', which is a highly reliable source. For Study 2, candidates [12] and [14] identify a sample size of 157 for 'Study X' in sections related to its participants and effects on learning strategies. Candidates [15] and [16] provide explicit confirmation from Table 4 and Table 5, respectively, stating 'N=157' for 'Study 2', which are also highly reliable sources. Other candidates either did not provide a specific N or referred to external studies."
+  },
+  "Correlation_PGO_and_PA": {
+    "extract_value": {
+      "Study 1": [
+        "-0.10",
+        "0.25"
+      ],
+      "Study 2": [
+        "0.25",
+        "0.11",
+        "0.00",
+        "0.28"
+      ]
+    },
+    "best_indices": [
+      6,
+      7,
+      13
+    ],
+    "reason": "The paper explicitly contains two studies. For Study 1, Candidate 6 (Table 1) provides a zero-order correlation of -0.10 between 'PAP goal' (Performance Goal Orientation) and 'Study flexibility' (Performance Adaptation). Candidate 7 (text) reports a correlation of 0.25 between 'PAP goals' and 'vigilance'. 'Study X' in Candidate 7 is resolved to Study 1 based on its sequential appearance in the document, following explicit Study 1 sections and preceding Study 2 sections. For Study 2, Candidate 13 (Table 4) provides multiple zero-order correlations between 'PAP goal' and various learning strategies (Surface learning, Deep learning, Interest-based studying, Vigilance), which are all considered performance adaptation measures. These values are 0.25, 0.11, 0.00, and 0.28 respectively. Other candidates were excluded because they either explicitly stated no correlation coefficients were reported, or they provided regression coefficients (beta) instead of the requested Pearson r correlation coefficients."
+  },
+  "Correlation_info": {
+    "extract_value": {
+      "Study 1": [
+        "PAP and Study Flexibility",
+        "PAP goals and vigilance",
+        "WAV goals and vigilance"
+      ],
+      "Study 2": [
+        "PAP goal and Surface learning",
+        "PAP goal and Deep learning",
+        "PAP goal and Interest-based studying",
+        "PAP goal and Vigilance"
+      ]
+    },
+    "best_indices": [
+      6,
+      7,
+      13
+    ],
+    "reason": "The paper explicitly states it contains two studies, 'Study 1' and 'Study 2'. Correlation information was extracted from specific tables and text sections. For Study 1, correlations were found in Candidate 6 (Table 1) and Candidate 7 (main text). Candidate 7's 'Study X' was resolved to 'Study 1' based on its source file index (014) appearing within the Study 1 sections and its summary describing construct validation relevant to Study 1. For Study 2, correlations were found in Candidate 13 (Table 4), which explicitly refers to 'Study 2'. Other candidates either provided no correlation information or referred to 'Study X' which, upon contextual analysis (source file index and section summary), also contained no correlation data or was resolved to one of the two studies without providing new correlation values. Candidate 17 was not used as its source was 'unknown' and the task requires consolidation from provided candidates with explicit evidence."
+  }
+}

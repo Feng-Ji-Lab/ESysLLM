@@ -1,0 +1,195 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only the title and author line of the paper. No country information is explicitly stated in this section.",
+      "warning": "Insufficient information. Only title and author affiliations are provided; full text content needed to extract country."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only the title and author line. No sample size information is provided.",
+      "warning": "Insufficient information. Only title and author affiliations are provided; full text content needed to extract sample size."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only the title and author line. No survey method information is provided.",
+      "warning": "Insufficient information. Only title and author affiliations are provided; full text content needed to extract survey method."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only the title and author line. No demographic information is provided.",
+      "warning": "Insufficient information. Only title and author affiliations are provided; full text content needed to extract racial/ethnic demographics."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only the title and author line. No age information is provided.",
+      "warning": "Insufficient information. Only title and author affiliations are provided; full text content needed to extract mean age."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only the title and author line. No education level information is provided.",
+      "warning": "Insufficient information. Only title and author affiliations are provided; full text content needed to extract education level."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only the title and author line. No BMI information is provided.",
+      "warning": "Insufficient information. Only title and author affiliations are provided; full text content needed to extract mean BMI."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only the title and author line. No information about sample source is provided.",
+      "warning": "Insufficient information. Only title and author affiliations are provided; full text content needed to extract sample source."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only the title and author line. The title mentions 'Body Appreciation Scale-2' but does not explicitly state which assessment tool was used in the study methodology.",
+      "warning": "Insufficient information. Only title and author affiliations are provided; full text content needed to confirm assessment tool used."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only the title and author line. No information about BMI assessment method is provided.",
+      "warning": "Insufficient information. Only title and author affiliations are provided; full text content needed to extract BMI assessment method."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only the title and author line. No correlation data is provided.",
+      "warning": "Insufficient information. Only title and author affiliations are provided; full text content needed to extract correlation coefficients."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only the title and author line. No information about the number of studies is provided.",
+      "warning": "Insufficient information. Only title and author affiliations are provided; full text content needed to determine number of studies."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only the title and author line. No publication type information is provided.",
+      "warning": "Insufficient information. Only title and author affiliations are provided; full text content needed to determine publication type."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section contains only the title and author line of a research paper examining the factor structure and psychometric properties of the Body Appreciation Scale-2 (BAS-2) among adolescents and young adults in Danish, Portuguese, and Swedish populations. The authors are affiliated with institutions in multiple countries, suggesting a cross-national study. No substantive content, methodology, results, or data are provided in this excerpt.",
+      "evidence_source": "Title and author line provided in text_content",
+      "warning": "This is only the header/title section of the paper. Full text content is required to extract study-specific data."
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Denmark",
+          "Portugal",
+          "Sweden"
+        ]
+      },
+      "evidence_source": "Title states 'among adolescents and young adults in Danish, Portuguese, and Swedish' and author affiliations include institutions from these countries (Konradsen from Denmark, Lunde Jensen from Denmark, Nyg from Sweden, Torres from Portugal based on typical institutional patterns).",
+      "warning": "Country inferred from title and author affiliations; explicit country statement not found in provided text section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information provided in the title and author line section.",
+      "warning": "Sample size data not available in provided text."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information provided in the title and author line section.",
+      "warning": "Survey method not specified in provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information about race/ethnicity provided in the title and author line section.",
+      "warning": "Racial/ethnic composition data not available in provided text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age statistics provided in the title and author line section.",
+      "warning": "Mean age data not available in provided text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information provided in the title and author line section.",
+      "warning": "Education level data not available in provided text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI statistics provided in the title and author line section.",
+      "warning": "Mean BMI data not available in provided text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample source (community, college, school) provided in the title and author line section.",
+      "warning": "Sample source not specified in provided text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Title explicitly mentions 'Body Appreciation Scale-2' (BAS-2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about BMI assessment method provided in the title and author line section.",
+      "warning": "BMI assessment method not specified in provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation data provided in the title and author line section.",
+      "warning": "Correlation coefficients not available in provided text."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The title and author line do not explicitly state the number of studies. The title mentions three countries (Danish, Portuguese, Swedish) which may suggest multiple studies, but this is not explicitly confirmed in the provided text section.",
+      "warning": "Number of studies cannot be determined from title alone; full methods section would be needed."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "Publication type (journal article vs. dissertation) cannot be determined from the title and author line alone.",
+      "warning": "Publication type not specified in provided text section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This is the title and author section of a research paper examining the factor structure and psychometric properties of the Body Appreciation Scale-2 (BAS-2) across three countries: Denmark, Portugal, and Sweden. The study focuses on adolescents and young adults. Multiple authors from different institutions suggest a multi-site or collaborative study design.",
+      "evidence_source": "Title and author affiliations provided in the text_content.",
+      "warning": "This section contains only the title and author information; detailed study methodology and results are not available in the provided text."
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "None",
+      "evidence_source": "An image asset was referenced in the input but no caption or figure content was provided in the text_content.",
+      "warning": "Image asset present but caption/content not available in provided text."
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Lemoine2018/figures/1Lemoine2018_p000_fig01.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_0"
+  }
+]

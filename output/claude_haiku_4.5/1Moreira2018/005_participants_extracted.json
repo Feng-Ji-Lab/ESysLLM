@@ -1,0 +1,127 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'two Portuguese teachers of Elementary school' which suggests the study was conducted in Portugal, but the country is not explicitly stated in this section. The text does not directly state the country where the study was conducted.",
+      "warning": "Country not explicitly stated in the provided text. Inferred reference to Portugal through mention of 'Portuguese teachers' but this is not a definitive statement of study location."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          347
+        ],
+        "Study X_female": [
+          176
+        ],
+        "Study X_male": [
+          171
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            176
+          ]
+        },
+        "male": {
+          "Study X": [
+            171
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            347
+          ]
+        }
+      },
+      "evidence_source": "The text states: 'The initial sample comprised 352 participants, but it was reduced to 347 (171 male and 176 female) after rejecting any of those who presented some intellectual prejudice...'. The final sample size is 347 total participants, with 171 males and 176 females.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain information about the survey method (paper-and-pencil or online).",
+      "warning": "Survey method not mentioned in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain information about the racial/ethnic composition of participants.",
+      "warning": "Percent of white participants not mentioned in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes participants as 'young adolescents, all of whom were elementary school students' but does not provide a specific mean age value.",
+      "warning": "Mean age not explicitly stated. Only age group descriptor ('young adolescents', 'elementary school students') is provided."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain information about the educational level of participants. The participants are described as 'elementary school students', which indicates they are in primary/secondary education, not college or higher.",
+      "warning": "Percentage of college or higher education not applicable; participants are elementary school students."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain information about BMI values for participants.",
+      "warning": "Mean BMI not mentioned in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "primary/secondary/ high school"
+        ]
+      },
+      "evidence_source": "The text states: 'The final group comprised young adolescents, all of whom were elementary school students drawn from two state schools and three private schools (located in cities of small and medium size).'",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain information about the specific instrument used to assess body appreciation (BAS or BAS-2).",
+      "warning": "Assessment of body appreciation instrument not mentioned in this section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain information about how BMI was assessed (self-reported or measured).",
+      "warning": "Assessment of BMI method not mentioned in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text does not contain correlation data between body appreciation and BMI.",
+      "warning": "Correlation coefficients not mentioned in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly indicate the number of studies. This appears to be a single study based on the description of one sample, but the text does not explicitly state 'Study 1', 'Study 2', or indicate multiple studies.",
+      "warning": "Number of studies cannot be definitively determined from this section alone. This appears to be describing a single study, but explicit confirmation is not provided."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain information about the publication type (journal article or dissertation).",
+      "warning": "Publication type not mentioned in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the participant sample for a study conducted with elementary school students. The initial sample of 352 participants was reduced to 347 (171 male, 176 female) after excluding those with intellectual prejudice or comprehension/language difficulties. Participants were drawn from two state schools and three private schools located in small to medium-sized cities, and the sample size was calculated using a 10:1 ratio of participants to test items.",
+      "evidence_source": "Entire 'Participants' section provided in the text.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

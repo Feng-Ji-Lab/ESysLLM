@@ -1,0 +1,425 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          44,
+          111
+        ]
+      },
+      "evidence_source": "The note states 'Lower triangle comprises correlations among men (n = 44) and upper triangle (in bold) comprises correlations among women (n = 111).' This indicates a sample of 44 males and 111 females, totaling 155 participants.",
+      "warning": "Gender-specific sample sizes are provided but the study name is not explicitly stated in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While BMI is discussed as a variable in the path analysis, no mean BMI value for participants is reported in this section.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about where or how participants were recruited is provided in this section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The text explicitly states 'body appreciation (BAS-2)' and 'BAS-2 = Body Appreciation Scale \u2013 2' in the notes. The model explained '49% of the variance of body appreciation (BAS-2)' and multiple references to BAS-2 are made throughout the path analysis results.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section discusses BMI as a variable in the path analysis but does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.27
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            -0.27
+          ]
+        }
+      },
+      "evidence_source": "The text states 'body mass index revealed a direct negative effect on BAS-2 (bSC = \u22120.68; SEb = 0.15; Z = \u22124.77; p b 0.001; \u03b2 = \u22120.27).' The standardized coefficient (\u03b2) of \u22120.27 represents the correlation/effect between BMI and body appreciation (BAS-2).",
+      "warning": "This is a standardized path coefficient (\u03b2) from the path analysis model, not a Pearson correlation coefficient. Gender-specific correlations are not separately reported in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "This section describes a single study with path analysis and multigroup analysis by gender. No multiple studies are explicitly named or described.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents path analysis results from a single study examining relationships between external shame (OAS), self-compassion (SCS_SC), and body appreciation (BAS-2), with BMI as an additional predictor. The sample comprised 44 males and 111 females. The readjusted model showed that BMI had a direct negative effect on body appreciation (\u03b2 = \u22120.27), and self-compassion mediated the relationship between external shame and body appreciation. A multigroup analysis confirmed the model's invariance across gender groups.",
+      "evidence_source": "Section 3.4 Path analysis, including model descriptions, path coefficients, and multigroup analysis results.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section does not explicitly state the country where the study was conducted. No country information is mentioned in the path analysis section or table.",
+      "warning": "Country information not found in the provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          155
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            111
+          ]
+        },
+        "male": {
+          "Study X": [
+            44
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            155
+          ]
+        }
+      },
+      "evidence_source": "Table 2 caption states 'Intercorrelation scores on self-report measures (N = 155)'. The note below the table specifies: 'Lower triangle comprises correlations among men (n = 44) and upper triangle (in bold) comprises correlations among women (n = 111).' Total sample = 44 + 111 = 155.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section does not specify the survey method (paper-and-pencil or online). No information about data collection method is mentioned.",
+      "warning": "Survey method not found in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain information about the racial/ethnic composition of participants.",
+      "warning": "Percent of white participants not found in the provided text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report mean age of participants.",
+      "warning": "Mean age not found in the provided text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not contain information about educational attainment of participants.",
+      "warning": "Percentage of college or higher education not found in the provided text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report mean BMI of participants. While BMI is mentioned as a variable in the analysis, no descriptive statistics for BMI are provided.",
+      "warning": "Mean BMI not found in the provided text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify where or how participants were recruited (community, college, or primary/secondary/high school).",
+      "warning": "Source of sample not found in the provided text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Table 2 and the text refer to 'BAS-2' (Body Appreciation Scale \u2013 2) as the instrument used to assess body appreciation. The table note explicitly states 'BAS-2 = Body Appreciation Scale \u2013 2'.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether BMI was assessed through self-report or measured directly.",
+      "warning": "Assessment method for BMI not found in the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.39,
+          -0.24
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.39
+          ]
+        },
+        "male": {
+          "Study X": [
+            -0.24
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Table 2 shows intercorrelation scores. The note states: 'Lower triangle comprises correlations among men (n = 44) and upper triangle (in bold) comprises correlations among women (n = 111).' The correlation between BMI (row) and BAS-2 (column) is: Upper triangle (women): -0.39*** (highlighted in green); Lower triangle (men): -0.24. These values are extracted from the intersection of the BMI row and BAS-2 column.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text describes a single study with path analysis and multigroup analysis (comparing males and females), but it is one study with one sample (N=155) divided by gender for comparison. No separate studies are explicitly named or described.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not indicate whether this is from a journal article or dissertation.",
+      "warning": "Publication type not found in the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents path analysis results from a single study (N=155) examining relationships between external shame (OAS), self-compassion (SCS_SC), body appreciation (BAS-2), and BMI. Table 2 displays intercorrelation scores with gender-specific data: lower triangle shows correlations for men (n=44) and upper triangle (in bold) shows correlations for women (n=111). The correlation between BMI and BAS-2 is -0.39 for women and -0.24 for men, indicating a negative relationship between body mass index and body appreciation that is stronger in women.",
+      "evidence_source": "Derived from the path analysis section and Table 2 caption and note."
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2: Intercorrelation scores on self-report measures (N = 155).",
+      "evidence_source": "The table title and caption as it appears in the document."
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1MartaSimoes2016/tables/1MartaSimoes2016_p003_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly state the country where the study was conducted. The section focuses on path analysis results and does not contain country information.",
+      "warning": "Country information not found in the provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          155
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            111
+          ]
+        },
+        "male": {
+          "Study X": [
+            44
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            155
+          ]
+        }
+      },
+      "evidence_source": "Table 1 caption states 'Means (M) and standard deviations (SD) using t-test for equality of means, on self-report measures (N = 155).' The table shows Men (n = 44) and Women (n = 111), totaling 155 participants.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "paper-and-pencil"
+        ]
+      },
+      "evidence_source": "Table 1 caption mentions 'self-report measures' but does not explicitly specify whether data collection was via paper-and-pencil or online. The term 'self-report measures' is inferred to suggest paper-and-pencil based on the context of the study design, but this is not explicitly stated.",
+      "warning": "Survey method not explicitly stated in the provided text. Inferred as 'paper-and-pencil' based on 'self-report measures' terminology, but this is uncertain."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and Table 1 do not contain information about the racial/ethnic composition of participants.",
+      "warning": "Percent of white participants not found in the provided text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          22.36,
+          21.3
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            21.3
+          ]
+        },
+        "male": {
+          "Study X": [
+            22.36
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Table 1 shows Age row with M = 22.36 (SD = 3.14) for Men (n = 44) and M = 21.30 (SD = 2.54) for Women (n = 111).",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and Table 1 do not contain information about the educational level of participants.",
+      "warning": "Percentage of college or higher education not found in the provided text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          23.54,
+          22.28
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            22.28
+          ]
+        },
+        "male": {
+          "Study X": [
+            23.54
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Table 1 shows BMI row with M = 23.54 (SD = 3.29) for Men (n = 44) and M = 22.28 (SD = 2.99) for Women (n = 111).",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly state the source of the sample (e.g., community, college, primary/secondary/high school).",
+      "warning": "Source of sample not found in the provided text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Table 1 includes a row for 'BAS-2' (Body Appreciation Scale \u2013 2) with means and standard deviations reported. The note at the bottom confirms 'BAS-2 = Body Appreciation Scale \u2013 2.'",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Table 1 caption states 'Means (M) and standard deviations (SD) using t-test for equality of means, on self-report measures (N = 155).' This indicates that BMI was assessed via self-report.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text does not contain a correlation matrix or explicit correlation coefficients between Body Appreciation (BAS-2) and BMI. Table 1 shows descriptive statistics (means and standard deviations) but not correlations. The path analysis section mentions direct effects but does not report the Pearson r correlation between BAS-2 and BMI.",
+      "warning": "Correlation between body appreciation and BMI not found in the provided text or table."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text describes a single study with one sample (N = 155) analyzed through path analysis. There is mention of a 'multigroup analysis' comparing males and females, but this is a subgroup analysis within the same study, not a separate study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly state whether this is a journal article or dissertation.",
+      "warning": "Publication type not found in the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents descriptive statistics (Table 1) and path analysis results for a single study (N = 155; 44 men, 111 women). The study examined relationships among external shame (OAS), self-compassion (SCS_SC), body appreciation (BAS-2), and BMI using self-report measures. Path analysis revealed that external shame had direct negative effects on both self-compassion and body appreciation, with self-compassion mediating the relationship between external shame and body appreciation. A multigroup analysis confirmed the model's invariance across gender groups.",
+      "evidence_source": "Synthesized from Table 1 caption and the path analysis section text describing the theoretical model, path coefficients, and multigroup analysis results.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1: Means (M) and standard deviations (SD) using t-test for equality of means, on self-report measures (N = 155).",
+      "evidence_source": "The table title and caption as it appears at the top of the provided table image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1MartaSimoes2016/tables/1MartaSimoes2016_p003_table01.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_1"
+  }
+]

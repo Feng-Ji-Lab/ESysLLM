@@ -1,0 +1,230 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      2,
+      5
+    ],
+    "reason": "All candidate sections consistently describe a single study (one sample, one set of CFA analyses). The abstract (0), participant description (2), and results (5) report a single sample and single analysis pipeline with no labeling of multiple separate studies (e.g., 'Study 1', 'Study 2'), so the most accurate count is 1."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Multiple sections indicate this is a journal article: candidate 0 shows the journal title ('Body Image') and homepage, and candidate 1 provides article metadata (submission/acceptance dates), both strong indicators of a journal publication. The abstract, results, and discussion (candidates 2\u20134) consistently describe a single empirical article with no sign of a dissertation. No evidence supports 'dissertation', so the allowed value 'journal articles' is selected."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "Hong Kong"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "reason": "All candidate sections consistently describe a single study (title, abstract, 'the present study', participants, and discussion) conducted in Hong Kong. The most reliable sources are the Abstract (1) and Participants/Methods (3), both explicitly stating the sample was from Hong Kong; other sections (0,2,4\u20136) concur. There are no multiple distinct studies or conflicting country values, and subsamples (women and men) belong to the same study, so a single entry 'Hong Kong' is returned."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      1,
+      4,
+      5,
+      6,
+      8,
+      10,
+      13
+    ],
+    "reason": "All candidate sections consistently describe a single study (no 'Study 1/Study 2' labels) that used the Body Appreciation Scale (BAS). Method/materials (index 4), statistical analyses (5), and results (6, 8) explicitly report CFAs and use of the BAS; the abstract (1), discussion (10), and appendix (13) corroborate this. The paper does not report use of BAS-2, only the BAS, so the single-study extraction is {'Single study': ['BAS']}."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        2403,
+        2393
+      ]
+    },
+    "best_indices": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "reason": "All candidates describe a single study. The Participants section (candidate 1) reports 1319 female and 1084 male students (total N = 2403) \u2014 this is the recruited sample and thus the primary total. Several Results candidates (e.g., 2, 3, 4) report N = 2393 for CFA analyses; this likely reflects the analytic sample after listwise deletion/missing data. The abstract (0) matches the gender split. Therefore I provide the recruited total (2403) as the main sample size and also include the analytic N (2393) reported in results. Male and female counts use the participants section values (1319 F, 1084 M).",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          1084
+        ]
+      },
+      "female": {
+        "Single study": [
+          1319
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          2403,
+          2393
+        ]
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        23.52
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "All candidate sections describe a single sample (one study). The most reliable source is the Participants section (candidate 0), which reports age range 17\u201366 and mean age M = 23.52 (SD = 10.26) for the full sample (N = 2403). No gender-specific mean ages were provided, so only the total mean (23.52) is recorded.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          23.52
+        ]
+      }
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        100
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study/sample was reported across candidates. Participant text states they were university students at two Hong Kong universities (N = 2403: 1319 female, 1084 male); per the inference rule, this implies 100% had college-level enrollment. No conflicting values or multiple studies were found.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          100
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        20.75
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study/sample is reported across the provided sections. The participants section (most reliable for mean BMI) reports BMI M = 20.75 (SD = 3.07), so this value was taken as the study mean. No separate gender-specific means were provided.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          20.75
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "college"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "All candidates consistently describe a single study using a student/university sample in Hong Kong (participants described as students at two universities, discussion repeatedly notes reliance on a student sample). Therefore the source of sample is 'college'. Candidates 0\u20133 were used to confirm this."
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both reliable sources (Participants and Materials sections) consistently state BMI was computed from participants' self-reported height and weight. The paper describes a single sample/single study, so values from both candidates are merged for that study. No indication of measured BMI was reported."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": []
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "All candidates describe a single study (N=2393) reporting gender-specific Pearson correlations between General Body Appreciation and BMI. No overall/total correlation was reported. Female correlation r = -0.32 (p < .001); male correlation r = -0.02 (p = .468, nonsignificant). The small reported male correlation with BMI^2 (r = -0.12) was ignored because it refers to BMI squared, not raw BMI. Primary evidence comes from the Results text (candidate 0) and is supported by table/figure captions (candidates 1\u20133).",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          -0.02
+        ]
+      },
+      "female": {
+        "Single study": [
+          -0.32
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes 'Measures' and reports 'Coefficient alpha' values, which are typical of a journal article. No other publication type is indicated.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from PubType being a journal article, which typically undergoes peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\", \"Global\"]}",
+      "evidence_source": "The 'Performance orientation' scale is described with a sample item 'I feel smart when I do something without making any mistakes.' This item does not explicitly distinguish between proving competence or avoiding incompetence, suggesting a global performance goal orientation. Since two adaptation outcomes (Training performance and Transfer performance) are described, and correlations with performance orientation would likely be extracted for both, 'Global' is listed twice for 'Study X'.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3, 3]}",
+      "evidence_source": "Both 'Training performance' and 'Transfer performance' are assessed by 'score achieved' based on points gained/lost for correct decisions and penalty circle intrusions, which are objective measures. Thus, code 3 for both. These correspond to two potential extracted effects.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1]}",
+      "evidence_source": "Both 'Training performance' and 'Transfer performance' are based on objective scores (points gained/lost). Thus, code 1 for both. These correspond to two potential extracted effects.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3, 3]}",
+      "evidence_source": "Both 'Training performance' and 'Transfer performance' are objective task scores. Thus, code 3 for both. These correspond to two potential extracted effects.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1]}",
+      "evidence_source": "The 'Performance orientation' scale was 'developed by Button et al. (1996)', not VandeWalle. Thus, code 1 (Other). This is applied for both potential extracted effects.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\", \"\"]}",
+      "evidence_source": "No age information is reported in this section for any sample or effect. An empty string is stored for each of the two potential extracted effects.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null, null]}",
+      "evidence_source": "No mean age or other information to impute age is reported in this section for any sample or effect. Null is stored for each of the two potential extracted effects.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null, null]}",
+      "evidence_source": "No information about the sex composition of the sample is reported in this section for any sample or effect. Null is stored for each of the two potential extracted effects.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null, null]}",
+      "evidence_source": "No information about the percentage of men in the sample is reported in this section for any sample or effect. Null is stored for each of the two potential extracted effects.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null, null]}",
+      "evidence_source": "No information about the country of data collection is reported in this section for any sample or effect. Null is stored for each of the two potential extracted effects.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null, null]}",
+      "evidence_source": "No information about whether the sample is a student sample or other is reported in this section for any sample or effect. Null is stored for each of the two potential extracted effects.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null, null]}",
+      "evidence_source": "No sample size (N) is reported in this section for any analysis or effect. Null is stored for each of the two potential extracted effects.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null, null]}",
+      "evidence_source": "This section describes measures but does not report any correlation coefficients between performance goal orientation and performance adaptation. Null is stored for each of the two potential extracted effects.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"PGO and Training performance\", \"PGO and Transfer performance\"]}",
+      "evidence_source": "The text describes 'Performance orientation' and two adaptation measures: 'Training performance' and 'Transfer performance'. These imply two potential correlations. The descriptions are derived from the names of these measures.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes 'Measures' for a single, undifferentiated study. There is no explicit mention of 'Study 1', 'Study 2', or multiple experiments/samples.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the various measures used in the study, including mastery orientation, performance orientation, identical elements, activity level, metacognitive activity, a knowledge test, training performance, self-efficacy, and transfer performance. It provides information on the scales, sample items, and reliability coefficients for self-report measures, and describes how objective performance measures were calculated. The section does not explicitly name studies or multiple sample subsets.",
+      "evidence_source": "Summary of the 'Measures' section content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

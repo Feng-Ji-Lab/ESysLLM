@@ -1,0 +1,282 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the country or location where the study was conducted is provided in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about total sample size or participant counts is provided in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section states participants rated figures \"using dropdown menus\", but does not state whether data were collected online or via paper-and-pencil: \"participants were asked to rate (in this case, using dropdown menus) the figure that most closely matched their own body and the figure that they would most likely to possess.\"",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participant race/ethnicity or percentage identifying as white is provided in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participant ages or mean age is provided in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participants' education level or percentage with college or higher education is provided in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes a figural rating scale and ratings of body figures but does not report measured or self-reported BMI values for participants.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the recruitment source (e.g., community, college, primary/secondary/high school) is provided in this section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes assessment of body dissatisfaction using the Photographic Figure Rating Scale: \"To measure actual-ideal weight discrepancy, we used the Photographic Figure Rating Scale (Swami et al. 2008c)...\" It does not reference Body Appreciation Scale (BAS) or BAS-2.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes figural ratings of body size but does not state that BMI was measured or self-reported: \"participants are presented with 10 photographic images of women ranging in body size from emaciated to obese... Ratings were made on a 10-point scale (1 = Figure with the lowest BMI, 10 = Figure with the highest BMI).\"",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlations between body appreciation (BAS/BAS-2) and BMI are reported in this section; the section focuses on body dissatisfaction measured via a figural rating scale.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section is a methods subsection on body dissatisfaction measures and does not indicate how many separate studies are reported (no 'Study 1', 'Study 2', or similar labels are mentioned).",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No information in this section indicates whether the overall document is a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This subsection describes how body dissatisfaction (actual-ideal weight discrepancy) was measured using the Photographic Figure Rating Scale (Swami et al., 2008c), presenting 10 greyscale images and asking participants to select current and ideal figures. Ratings were made on a 10-point scale and body dissatisfaction was operationalised as the absolute difference between current and ideal ratings. The section does not mention Study 1, Experiment 2, multiple sample subsets, sample size, demographics, BMI measurements, or body appreciation (BAS/BAS-2).",
+      "evidence_source": "Quoted sentences: \"To measure actual-ideal weight discrepancy, we used the Photographic Figure Rating Scale (Swami et al. 2008c), a figural rating scale in which participants are presented with 10 photographic images of women ranging in body size from emaciated to obese.\" and \"Ratings were made on a 10-point scale (1 = Figure with the lowest BMI, 10 = Figure with the highest BMI). For the purposes of analyses, we operationalised body dissatisfaction as the difference between unsigned (absolute) current and ideal ratings...\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "US sample",
+          "Non-US sample"
+        ]
+      },
+      "evidence_source": "Table 1 caption and columns: 'Table 1 Sample characteristics for the included sub-samples in the present study' with column headers 'US sample' and 'Non-US sample'.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          8925,
+          742
+        ]
+      },
+      "evidence_source": "Table 1, row 'N': US sample = 8,925; Non-US sample = 742.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          30.22,
+          27.7
+        ]
+      },
+      "evidence_source": "Table 1, 'Age' M (SD): US sample = 30.22 (12.37); Non-US sample = 27.70 (11.42).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          68.8,
+          68.9
+        ]
+      },
+      "evidence_source": "Computed from Table 1 education percentages: US = Some college (35.3) + Undergraduate degree (23.2) + Graduate degree (10.3) = 68.8%; Non-US = Some college (25.7) + Undergraduate degree (32.3) + Graduate degree (10.9) = 68.9%.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          26.75,
+          24.93
+        ]
+      },
+      "evidence_source": "Table 1, 'Body mass index' M (SD): US sample = 26.75 (5.86); Non-US sample = 24.93 (5.09).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "The section describes measurement of body dissatisfaction using the Photographic Figure Rating Scale (Swami et al., 2008c), where participants selected current and ideal body figures and dissatisfaction was operationalized as the absolute difference between current and ideal ratings. Table 1 (Sample characteristics for the included sub-samples in the present study) reports sample details for two sub-samples labeled 'US sample' (N = 8,925) and 'Non-US sample' (N = 742), including age and BMI means and education breakdowns.",
+      "evidence_source": "Section text: 'To measure actual-ideal weight discrepancy, we used the Photographic Figure Rating Scale (Swami et al. 2008c)... operationalised body dissatisfaction as the difference between unsigned (absolute) current and ideal ratings.' Table 1: shows US sample N = 8,925 and Non-US sample N = 742 with age and BMI statistics.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1 Sample characteristics for the included sub-samples in the present study",
+      "evidence_source": "Caption visible on provided table image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2015Associations Between Women\u2019s Body Ima/tables/1Swami2015Associations Between Women\u2019s Body Ima_p004_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

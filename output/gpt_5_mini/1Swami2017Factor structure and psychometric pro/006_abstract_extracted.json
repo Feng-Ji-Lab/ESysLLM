@@ -1,0 +1,149 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Romania",
+          "None"
+        ]
+      },
+      "evidence_source": "Sentence(s): \"A total of 453 university students from Romania completed the BAS-2...\" and \"In addition, a separate sample of university students (N = 109) completed only the BAS-2 at two time-points three weeks apart.\" The first sample is explicitly stated as from Romania; the second sample's country is not specified in the text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          453,
+          109
+        ]
+      },
+      "evidence_source": "Sentence(s): \"A total of 453 university students from Romania completed the BAS-2...\" and \"In addition, a separate sample of university students (N = 109) completed only the BAS-2 at two time-points three weeks apart.\"",
+      "warning": "Multiple samples reported (main sample and separate test\u2013retest sample).",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100,
+          100
+        ]
+      },
+      "evidence_source": "Sentence(s): \"A total of 453 university students...\" and \"a separate sample of university students (N = 109)...\" Both samples are explicitly described as university students; per inference rule, this indicates 100% with college or higher education for each sample.",
+      "warning": "Inference applied: 'university students' interpreted as 100% college or higher.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college",
+          "college"
+        ]
+      },
+      "evidence_source": "Sentence(s): \"A total of 453 university students...\" and \"a separate sample of university students (N = 109)...\" Both samples were drawn from university student populations.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Sentence: \"We examined the psychometric properties of a Romanian translation of the 10-item Body Appreciation Scale-2 (BAS-2).\"",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The abstract describes a primary sample (N = 453) and, in addition, a separate sample (N = 109) used for test\u2013retest reliability; the text does not label these as separate numbered studies.",
+      "warning": "Multiple samples (main and test\u2013retest) within a single study/report."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "journal articles",
+      "evidence_source": "Footer: \"\u00a9 2017 Elsevier Ltd. All rights reserved.\" (indicates an article published by Elsevier).",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This abstract reports on the psychometric evaluation of a Romanian translation of the 10-item BAS-2 using a primary sample of 453 university students and a separate test\u2013retest sample of 109 university students. The BAS-2 showed a one-dimensional factor structure, adequate CFA fit, internal consistency, convergent validity, and test\u2013retest reliability; however, invariance across sex was not supported.",
+      "evidence_source": "Summary based on multiple sentences in the abstract describing samples, factor analyses, invariance across sex, and psychometric properties.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

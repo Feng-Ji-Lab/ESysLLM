@@ -1,0 +1,219 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All three candidates consistently indicate a single study (Study X) with N=249 college women participants. The abstract (Candidate 0) describes one study investigating a model of positive body image. The methods section (Candidate 1) describes the participants for this single study. The results section (Candidate 2) presents the structural equation modeling analysis for the same study with the same sample size (N=249). There is no evidence of multiple studies in this paper - all sections refer to the same research design and dataset. Therefore, the number of studies is 1."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper is published in an Elsevier journal, which is a peer-reviewed academic journal. This clearly indicates the publication type is \"journal articles\" rather than \"dissertation\". Although Candidate 0 comes from a title/header page with minimal substantive content, the source itself (an Elsevier journal) provides definitive evidence of the publication type. The paper's appearance in a journal format with journal branding confirms it is a journal article publication."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "United States"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates refer to the same single study and consistently indicate the United States as the country where the study was conducted. Candidate 0 provides institutional affiliation (The Ohio State University, Marion, OH), while Candidate 1 provides direct participant location information (Midwestern U.S. regional campus). Both sources are reliable and complementary. The paper contains only one study with N=249 college women participants. The specific regional descriptor 'Midwestern U.S.' is not included in the final output per the field definition, which states not to include specific parts of a country like 'Midwestern US'. Therefore, the consolidated value is 'United States'.\""
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        249
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All four candidates consistently report the same single study with N=249 college women participants. Candidate 0 (Abstract) provides the initial description of the study with 249 female college students. Candidate 1 (Participants section) confirms the final sample size of 249 college women from the Methods section. Candidates 2 and 3 (Results/Model Testing section) both reference the same N=249 sample used in the structural equation modeling analysis. All candidates refer to the same study design and dataset with no evidence of multiple distinct studies. The gender breakdown is clear: all 249 participants are female college students. Candidate 3's table note mentioning \"females only (n=177)\" and \"males only (n=72)\" refers to subgroup correlations within the same study, not separate studies, and these subgroups sum to 249 total participants. Therefore, the consolidated result is a single study with N=249 female participants.\"",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          249
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          249
+        ]
+      }
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        100
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All three candidates consistently refer to the same single study (Study X) with 249 college women participants. Candidate 0 (Abstract) explicitly states 'college women' with 100% college education. Candidate 1 (Participants section) confirms all 249 participants are college students or higher (first-year through post-baccalaureate/graduate students). Candidate 2 (Procedure section) describes female introductory psychology students, which per the infer_rule indicates 100% college or higher education experience. All three sources are reliable and consistent, with Candidate 1 (Participants section) being the most authoritative source for demographic information. The value of 100% is confirmed across all candidates with gender breakdown showing 100% female participants and 100% total college or higher education experience. No conflicts exist between candidates.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          100
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          100
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "college"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "All four candidates consistently refer to the same single study (Study X) with a sample of college women (N=249) recruited from a regional campus of a large university in the Midwestern U.S. The candidates span multiple sections (Abstract, Participants, Procedure, Conclusion) and all confirm the source of sample as 'college'. Candidates 0 and 1 provide the most direct and reliable evidence from the Abstract and Participants sections respectively. Candidates 2 and 3 provide corroborating evidence from the Procedure and Conclusion sections. No conflicts exist, and all sources point to a single study design. The paper contains only one study, so the resolved_studies list contains a single entry with study_name 'Single study' and extract_value ['college'].\""
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Single study": [
+        86.3
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Single candidate source from the Participants section (Method) describing demographic characteristics of the study sample. The paper contains one study with N=249 college women. The value 86.3% represents the percentage of participants identifying as White/Caucasian. Since the sample consists entirely of women, the female percentage equals the total percentage. No male or other gender data available for this study.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          86.3
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          86.3
+        ]
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        19.1
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Single candidate identified from the Participants section (009_participants_extracted.json). The paper contains one study with N=249 college women. The mean age of participants is 19.1 years (SD = 1.7, range 18-28). Since all participants were female, the female value equals the total value. Male and other gender categories are not applicable to this sample. Candidate 0 is the most reliable source as it comes from the dedicated Participants section of the Methods, which is the standard location for demographic information including mean age.\"",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          19.1
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          19.1
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        23.1
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Single candidate identified from the Measures section (010_measures_extracted.json) reporting Mean BMI = 23.1 kg/m\u00b2. This value is extracted from the BMI calculation section where participants' self-reported weight and height were converted to metric units. The paper contains only one study with N=249 college women participants. The Measures section is a reliable source for reporting descriptive statistics of the sample. No gender-specific breakdown is provided in the candidate, so the value is recorded as the total mean BMI. No conflicts or contradictions exist as only one candidate was found.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          23.1
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          23.1
+        ]
+      }
+    }
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one candidate found describing the Assessment of BA field. The candidate comes from the Measures section (010_measures_extracted.json), which is a reliable source for identifying assessment instruments. The evidence clearly states that the Body Appreciation Scale (BAS) was used to measure body appreciation. The context confirms this is a single-study paper with N=249 college women participants. The candidate value 'Study X' is resolved to 'Single study' per the schema requirements. No conflicts or merging needed as only one candidate is available."
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study with N=249 college women participants. Candidate 0 from the Measures section (010_measures_extracted.json) provides clear evidence that BMI was assessed through self-reported weight and height. The evidence explicitly states 'Participants reported their weight and height,' which unambiguously indicates self-reported assessment. This is the most reliable source as it comes from the Methods/Measures section where assessment procedures are formally documented. No contradictions or alternative assessment methods are present in the candidates provided."
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      2
+    ],
+    "best_indices": [
+      0,
+      2,
+      3,
+      4,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "reason": "Multiple candidates explicitly state or strongly imply the presence of two studies (Study 1 and Study 2) within the paper. Candidates [0], [2], [9], [10], and [11] directly mention 'two studies' or 'Study 1 and Study 2'. Other candidates like [3], [4], [7], and [8] refer to 'initial analyses' or 'Study X' and then 'Study 2', or mention 'Study 1' in comparison to the current study, all indicating a total of two studies. Candidates suggesting only one study are either incomplete in their scope or refer to a single study's methodology in isolation, not the total count for the paper."
+  },
+  "usa_vs_other": {
+    "extract_value": {
+      "Study 1": [
+        1
+      ],
+      "Study 2": [
+        1
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "reason": "The paper clearly describes two distinct studies. For Study 1, candidates [0], [1], [2], [6], [7], and [8] consistently indicate that the sample was collected in the United States. Evidence includes explicit mentions of 'U.S. college samples', recruitment from specific US universities (Georgetown, UC Irvine, Arizona State), and references to 'American' ethnic groups. Candidate [1] and the 'Study X' in [2] are resolved to Study 1 based on their placement in early method/results sections and the context of initial analyses. For Study 2, candidates [0], [2], [3], [4], [5], [6], [7], and [8] consistently indicate that the sample was collected in the United States. Candidate [2] explicitly mentions 'Study 2' as US-based. Candidates [3], [4], and [5] refer to 'Study X' in later method/results sections, with [4] explicitly stating it's 'distinct from Study 1', thus resolving these to Study 2. The evidence for these candidates also points to US locations (e.g., UC Irvine IRB, 'Latino Americans', 'East Asian Americans'). Candidates [6], [7], and [8] from the General Discussion section provide overarching evidence for both studies being conducted in the USA by discussing 'Latinos and Asians in the United States' and suggesting future research in 'less Americanized samples'. All evidence is consistent, indicating both studies were conducted in the USA."
+  },
+  "N": {
+    "extract_value": {
+      "Study 1": [
+        91,
+        121
+      ],
+      "Study 2": [
+        666,
+        464,
+        491
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "The paper explicitly states it contains two studies. Candidate [1] from 'method_1' clearly describes 'a single study' with N=212 (91 Latino, 121 East Asian). Candidate [2] from a table in the general discussion provides the same breakdown (91, 121) and mentions 'Study 1 and Study 2', confirming these values for Study 1. Candidate [0] from a general method section describes a larger sample of N=1621 (666 Latino, 464 East Asian, 491 European American). Given that Study 1's N is resolved as 212, this distinct and larger N from candidate [0] is assigned to Study 2. The section summary for candidate [0] also mentions 'information for both studies', supporting its relevance to one of the paper's studies."
+  },
+  "female": {
+    "extract_value": {
+      "Study 1": [
+        0.818,
+        0.737,
+        0.695
+      ],
+      "Study 2": [
+        0.868,
+        0.843
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper contains two distinct studies. Candidate 0 describes a larger sample (1621 students) from multiple universities, providing female proportions for Latino, East Asian, and European American groups. This is assigned to 'Study 1'. Candidate 1 describes a smaller sample (212 students) from UC Irvine, providing female proportions for Latino and East Asian groups. The female proportions for the same ethnic groups (Latino: 0.818 in C0 vs 0.868 in C1; East Asian: 0.737 in C0 vs 0.843 in C1) are different, indicating distinct samples. The phrase 'recruited from a larger study' in Candidate 1's summary, combined with the distinct demographics and the overall context of two studies, suggests this refers to a separate study, which is assigned to 'Study 2'. Both candidates are from 'method' sections, and their distinct values and sample descriptions support treating them as separate studies rather than merged subsamples of a single study."
+  },
+  "SD_age": {
+    "extract_value": {
+      "Study 1": [
+        2.65
+      ],
+      "Study 2": [
+        3.07
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper contains two distinct studies. Candidate [0] is from an earlier method section (source_file 005) and provides an SD of 2.65. The section summary for [0] mentions 'both studies' and a large participant pool, suggesting it pertains to Study 1. The 'n=10' in the evidence for [0] is noted as potentially referring to a specific subsample or being a typo, but the SD value is extracted as reported. Candidate [1] is from a later method section (source_file 008) and describes a distinct sample of 212 students with an SD of 3.07. Following the critical instruction to use source file index and section summary to resolve studies, and assuming early method sections describe Study 1 and later ones describe Study 2, these values are assigned to distinct studies."
+  },
+  "M_age": {
+    "extract_value": {
+      "Study 1": [
+        20.89
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Candidate [0] provides the mean age (M=20.89) for 'Study X'. Given that the paper has two studies and this candidate is from an early method section describing 'a single study', 'Study X' is resolved to 'Study 1'."
+  },
+  "r": {
+    "extract_value": {
+      "Study 2": [
+        -0.485
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Candidate [0] refers to 'Study X' but its section summary states 'similar to findings in Study 1', indicating it describes Study 2. The value -0.485 is the arithmetic mean of correlations for Latino Americans (-0.40) and East Asian Americans (-0.57), as per the 'case_3_multiple_subgroups' rule."
+  }
+}

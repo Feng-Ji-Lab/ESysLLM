@@ -1,0 +1,201 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "United States"
+        ]
+      },
+      "evidence_source": "Text states: 'Community participants who were from the U.S.' and 'final data set of 382 participants (192 women and 190 men) from 45 U.S. states.'",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          382
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            192
+          ]
+        },
+        "male": {
+          "Study 1": [
+            190
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study 1": [
+            382
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'This screening resulted in a final data set of 382 participants (192 women and 190 men) from 45 U.S. states.'",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "online"
+        ]
+      },
+      "evidence_source": "Text states: 'completed the survey via SurveyMonkey.' SurveyMonkey is an online survey platform.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          71.9
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            71.9
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'Participants identified as White (71.9%), African American (8.4%), Asian American (9.2%), Latina/Latino (6.3%), Native American (0.5%), or multiracial (3.6%).'",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          33.38
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            33.38
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'They ranged in age from 18 to 75 (M_age=33.38, SD=11.08).'",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          86.1
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            86.1
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'One (0.3%) did not complete high school, 13.6% finished high school, and the remaining participants (86.1%) reported at least a year of college education.'",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          26.68
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            26.82
+          ]
+        },
+        "male": {
+          "Study 1": [
+            26.54
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study 1": [
+            26.68
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'Average BMI was 26.82 (SD=7.30) for women and 26.54 (SD=5.96) for men.' Overall mean computed as arithmetic mean: (26.82 + 26.54) / 2 = 26.68.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "community"
+        ]
+      },
+      "evidence_source": "Text states: 'Community participants who were from the U.S., completed at least 100 hits, and had their previous work approved at least 98% of the time were introduced to this study.' This indicates participants were recruited from the community via MTurk (Amazon Mechanical Turk).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Text states: 'The 10-item BAS-2 with the modified Item 8 example was analyzed' and 'The BAS-2 was counterbalanced with the other measures.'",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Text states: 'Participants self-reported their height and weight, which were used to calculate BMI.'",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No correlation coefficients between body appreciation (BAS-2) and BMI are reported in this Methods section.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study. References to 'Study 2' indicate this is Study 1 (participants were deleted if they had participated in Study 2), but only one study is described in this section.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The publication type (journal article or dissertation) is not specified in this Methods section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Methods section describes Study 1, which involved 382 U.S. community participants (192 women, 190 men) recruited via Amazon Mechanical Turk who completed an online survey via SurveyMonkey. Participants completed the 10-item BAS-2 (with modified Item 8) and self-reported their height and weight for BMI calculation. The sample was 71.9% White, had a mean age of 33.38 years, and 86.1% had at least one year of college education.",
+      "evidence_source": "Entire Methods section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,89 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Preliminary Analyses' section describing data handling and normality testing procedures. No geographic location or country information is mentioned.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'twelve missing data points' and references 'participants' but does not provide the total sample size or number of participants.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not describe the method used to collect survey data (paper-and-pencil vs. online).",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide demographic information about race/ethnicity of participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not report participant age information.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about participants' educational attainment.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions that 'Variable means, standard deviations, and bivariate correlations are presented in Table 1' but the actual table is not provided in the input. Therefore, BMI values cannot be extracted.",
+      "warning": "Table 1 is referenced but not provided; cannot extract mean BMI values."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify where or how participants were recruited (community, college, or primary/secondary/high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not identify which instrument was used to assess body appreciation (BAS or BAS-2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify how BMI was assessed (self-reported or measured).",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'bivariate correlations are presented in Table 1' but the actual table is not provided. Therefore, correlation values cannot be extracted from the text.",
+      "warning": "Table 1 is referenced but not provided; cannot extract correlation coefficients."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section is a 'Preliminary Analyses' section describing data handling procedures. It does not indicate how many studies are included in the paper.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text does not indicate whether this is from a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes preliminary data analyses procedures, including handling of twelve missing data points through mean substitution and testing for normality of distribution. The text reports that skewness and kurtosis values were within acceptable ranges (skewness: -1.21 to 1.69; kurtosis: -0.58 to 3.55), so no variable transformation was performed. The section references Table 1 for variable means, standard deviations, and bivariate correlations, but the table itself is not provided.",
+      "evidence_source": "Entire 'Preliminary Analyses' section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

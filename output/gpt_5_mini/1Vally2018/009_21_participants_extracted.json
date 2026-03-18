@@ -1,0 +1,171 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "United Arab Emirates"
+        ]
+      },
+      "evidence_source": "Sentence: \"This study employed a cross-sectional survey design and a convenience sample of 256 undergraduate female students enrolled at a large, public university in the UAE.\"",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          256
+        ]
+      },
+      "evidence_source": "Sentence: \"This study employed a cross-sectional survey design and a convenience sample of 256 undergraduate female students enrolled at a large, public university in the UAE.\"",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            256
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            256
+          ]
+        }
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Sentence: \"This study employed a cross-sectional survey design...\" (The section describes a survey design but does not specify administration method \u2014 no indication of 'paper-and-pencil' or 'online'.)",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Sentence: \"The sample was ethnically homogenous, all participants were of Arab descent, and identified as Muslim.\" (No percent identifying as 'white' is reported and no inference about 'white' status is made.)",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          20.35
+        ]
+      },
+      "evidence_source": "Sentence: \"Participants ranged in age from 18 to 26 (M = 20.35 years, SD = 1.81).\"",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            20.35
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            20.35
+          ]
+        }
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "Sentence: \"...a convenience sample of 256 undergraduate female students enrolled at a large, public university in the UAE.\" Inference: participants are described as undergraduate students, therefore percentage with college or higher education is inferred as 100%.",
+      "warning": "Inference made that all participants have college-level enrollment because they are described as undergraduate students."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          22.98
+        ]
+      },
+      "evidence_source": "Sentence: \"Participants ranged in ... self-reported BMI from 14.27 to 49.42 kg/m2 (M = 22.98, SD = 5.01).\"",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            22.98
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            22.98
+          ]
+        }
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Sentence: \"Participants were recruited from undergraduate psychology and general education courses and received course credit for participation.\"",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No assessment of body appreciation (BAS or BAS-2) is mentioned in this section.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Sentence: \"...self-reported BMI from 14.27 to 49.42 kg/m2 (M = 22.98, SD = 5.01).\"",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation between body appreciation (BAS/BAS-2) and BMI is reported in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Sentence: \"This study employed a cross-sectional survey design...\" (Section describes a single study.)",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type (e.g., 'journal article' or 'dissertation') is specified in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes a single cross-sectional survey of 256 undergraduate female students enrolled at a large public university in the United Arab Emirates; participants were recruited from undergraduate psychology and general education courses. Participants were all of Arab descent and identified as Muslim; mean age was 20.35 years (SD = 1.81) and mean self-reported BMI was 22.98 (SD = 5.01). No information on the survey administration method (paper-and-pencil vs. online), any BAS/BAS-2 assessment, or correlations between body appreciation and BMI is provided.",
+      "evidence_source": "Sentences used: \"This study employed a cross-sectional survey design and a convenience sample of 256 undergraduate female students enrolled at a large, public university in the UAE.\"; \"Participants ranged in age from 18 to 26 (M = 20.35 years, SD = 1.81) and in self-reported BMI from 14.27 to 49.42 kg/m2 (M = 22.98, SD = 5.01).\"; \"The sample was ethnically homogenous, all participants were of Arab descent, and identified as Muslim.\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

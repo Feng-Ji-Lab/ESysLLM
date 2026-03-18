@@ -1,0 +1,99 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments (BAS-2, PFRS, RSES, SWLS) but does not mention the country where the study was conducted.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments but does not provide sample size information.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes the measures used but does not specify whether data were collected via paper-and-pencil or online methods.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section and does not provide demographic information about participant race/ethnicity.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section and does not provide participant age information.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section and does not provide information about participant education level.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section and does not provide BMI statistics. It describes the PFRS (Photographic Figure Rating Scale) for assessing weight discrepancy, not BMI.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section and does not describe where or how participants were recruited.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Text states: 'Participants completed the 10-item BAS-2 (Tylka & Wood-Barcalow, 2015b; see Appendix for items in English and Standard Chinese). All items were rated on a 5-point scale, ranging from 1 (Never) to 5 (Always).'",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes the PFRS for assessing weight discrepancy but does not mention how BMI was assessed (self-reported or measured). BMI is not explicitly discussed in this Measures section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments. It does not report any correlations between body appreciation and BMI.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section and does not indicate how many studies are included in the paper. No explicit study numbering or multiple study descriptions are present.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section from what appears to be a research paper, but the publication type (journal article vs. dissertation) is not specified in this excerpt.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This is a Measures section describing the assessment instruments used in the study. The study assessed body appreciation using the 10-item BAS-2 scale, weight discrepancy using the Photographic Figure Rating Scale (PFRS) for women only, self-esteem using the Rosenberg Self-Esteem Scale (RSES), and life satisfaction using the Satisfaction With Life Scale (SWLS). All measures used Likert-type rating scales with varying point ranges.",
+      "evidence_source": "The entire Measures section describes the instruments: BAS-2 (5-point scale), PFRS (10-point scale for women only), RSES (4-point scale, 9 items after removal), and SWLS (5-point scale, 5 items).",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

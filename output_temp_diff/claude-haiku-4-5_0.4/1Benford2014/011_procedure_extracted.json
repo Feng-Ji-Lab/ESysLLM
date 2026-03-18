@@ -1,0 +1,131 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "United Kingdom"
+        ]
+      },
+      "evidence_source": "Text states: 'Recruitment was conducted on an opportunistic basis in several public locations in Greater London' - Greater London is in the United Kingdom.",
+      "warning": "Study name is inferred as 'Study X' since no explicit study numbering is provided in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The procedure section does not provide the total number of participants. It describes the recruitment and data collection process but does not state the sample size.",
+      "warning": "Sample size information is not available in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "paper-and-pencil"
+        ]
+      },
+      "evidence_source": "Text explicitly states: 'completed an anonymous paper-and-pencil version of the survey in a quiet location set up for the purposes of the project.'",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The procedure section does not contain demographic information about racial/ethnic composition of participants.",
+      "warning": "Demographic details regarding race/ethnicity are not provided in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The procedure section does not provide age information for participants.",
+      "warning": "Age data is not available in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The procedure section does not provide information about participants' educational attainment.",
+      "warning": "Educational background data is not available in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The procedure section does not provide BMI information for participants.",
+      "warning": "BMI data is not available in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "community"
+        ]
+      },
+      "evidence_source": "Text states: 'Recruitment was conducted on an opportunistic basis in several public locations in Greater London' - public locations indicate community-based recruitment rather than college or school settings.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The procedure section describes the data collection process but does not specify which instrument (BAS or BAS-2) was used to assess body appreciation.",
+      "warning": "Assessment instrument for body appreciation is not identified in this section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The procedure section does not specify whether BMI was measured or self-reported.",
+      "warning": "Method of BMI assessment is not provided in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The procedure section describes methodology but does not report correlation coefficients between body appreciation and BMI.",
+      "warning": "Correlation data is not available in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The procedure section does not explicitly state the number of studies. No study numbering (e.g., 'Study 1', 'Study 2') is mentioned in this procedural description.",
+      "warning": "Cannot determine the number of studies from this section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The procedure section does not indicate whether this is a journal article or dissertation.",
+      "warning": "Publication type is not specified in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This procedure section describes a study conducted in Greater London, United Kingdom, where participants were recruited opportunistically from public locations and completed a paper-and-pencil survey. The study obtained ethics approval, used semi-randomized scale presentation with demographics last, and participants provided written informed consent without remuneration. No explicit study numbering is mentioned, and demographic and outcome data are not provided in this section.",
+      "evidence_source": "Entire procedure section provided.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

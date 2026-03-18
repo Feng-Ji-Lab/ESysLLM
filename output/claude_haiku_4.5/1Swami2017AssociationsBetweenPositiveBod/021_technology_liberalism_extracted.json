@@ -1,0 +1,407 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          151,
+          163
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            151
+          ]
+        },
+        "male": {
+          "Study X": [
+            163
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            151,
+            163
+          ]
+        }
+      },
+      "evidence_source": "Text states 'Women n = 151, men n = 163' in the results section.",
+      "warning": "Gender-specific sample sizes are provided: 151 women and 163 men."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method (paper-and-pencil or online) is mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about racial/ethnic composition is provided in the text.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age information is provided in the text.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about educational attainment is provided in the text.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While BMI is mentioned as a predictor variable in the regression analysis, no mean BMI value is reported in the text.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the source of the sample (community, college, or primary/secondary/high school) is provided in the text.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While body appreciation is mentioned as a predictor in the regression analysis for men, the specific instrument used to assess body appreciation (BAS or BAS-2) is not identified in the provided text.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While BMI is used as a predictor variable, the method of assessment (self-reported or measured) is not specified in the provided text.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text presents regression results (B, SE, \u03b2, t, p values) showing that body appreciation and BMI are predictors of technology liberalism, but does not explicitly report the Pearson correlation coefficient between body appreciation and BMI.",
+      "warning": "The text shows regression coefficients and significance tests but not the direct correlation between body appreciation and BMI."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text appears to be a results section from a single study with gender-stratified analyses, but does not explicitly state the number of studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information (journal article or dissertation) is provided in the text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents regression results examining predictors of technology liberalism, with gender-stratified analyses. For women (n=151), sexual orientation and BMI significantly predicted technology liberalism in both regression steps. For men (n=163), body appreciation emerged as the only significant predictor in the second regression step. The text does not explicitly identify this as a named study (e.g., 'Study 1'), so it is labeled as 'Study X'.",
+      "evidence_source": "Entire provided text section on regression results for technology liberalism.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is provided in the text or table.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          151,
+          163
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            151
+          ]
+        },
+        "male": {
+          "Study X": [
+            163
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            314
+          ]
+        }
+      },
+      "evidence_source": "From the table footnote: 'Women n = 151, men n = 163'. This indicates Study X has two gender-specific sample sizes: 151 women and 163 men, for a total of 314 participants.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is provided in the text or table.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information is provided in the text or table.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          34.26,
+          30.97
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            34.26
+          ]
+        },
+        "male": {
+          "Study X": [
+            30.97
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "From Table 2, row 'Age (years)': Women M = 34.26 (SD = 11.59), Men M = 30.97 (SD = 9.75). These are gender-specific mean ages.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in the text or table.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          25.88,
+          25.82
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            25.88
+          ]
+        },
+        "male": {
+          "Study X": [
+            25.82
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "From Table 2, row 'Body mass index': Women M = 25.88 (SD = 5.21), Men M = 25.82 (SD = 5.99). These are gender-specific mean BMI values.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the source of the sample (community, college, or primary/secondary/high school) is provided in the text or table.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No specific body appreciation assessment instrument (BAS or BAS-2) is mentioned in the provided text or table.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about whether BMI was self-reported or measured is provided in the text or table.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses regression analyses where BMI is a predictor of technology liberalism and body appreciation is a predictor of technology liberalism in men, but no direct correlation coefficient between body appreciation and BMI is reported in the provided text or Table 2.",
+      "warning": "The table shows descriptive statistics and t-test results, not a correlation matrix. The text mentions regression analyses but does not provide the specific Pearson r correlation between body appreciation and BMI."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text and table appear to describe a single study with gender-based comparisons (women n = 151, men n = 163). No explicit mention of multiple studies (e.g., 'Study 1', 'Study 2') is present.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information (journal article or dissertation) is provided in the text or table.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "Table 2 presents descriptive statistics (means and standard deviations) and results of Bonferroni-corrected t-tests examining sex differences across multiple variables including age, body mass index, erotophilia, sexual liberalism, technology liberalism, attitudes toward unconventional sex, body appreciation, authentic body pride, body acceptance from others, and body image flexibility. The sample consists of 151 women (M age = 34.26 years, M BMI = 25.88) and 163 men (M age = 30.97 years, M BMI = 25.82). The accompanying text describes regression analyses for technology liberalism, where sexual orientation and BMI were significant predictors in women, while body appreciation was the only significant predictor in men.",
+      "evidence_source": "Table 2 caption and content, plus the regression analysis text describing technology liberalism outcomes for women and men separately."
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2 Descriptive statistics and the results of Bonferroni-corrected t tests examining sex differences",
+      "evidence_source": "The table title as it appears at the top of the provided image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2017AssociationsBetweenPositiveBod/tables/1Swami2017AssociationsBetweenPositiveBod_p005_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is provided in the text or table.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          151,
+          163
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            151
+          ]
+        },
+        "male": {
+          "Study X": [
+            163
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            314
+          ]
+        }
+      },
+      "evidence_source": "Table 3 footnote states: 'Women n = 151, men n = 163'. This indicates two gender-specific sample sizes for the same study.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is provided in the text or table.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic composition data is provided in the text or table.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in the text or table.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in the text or table.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI is reported in the text or table. BMI is only mentioned as a predictor variable in regression analyses.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample source (community, college, or school) is provided in the text or table.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'body appreciation' as a variable but does not specify whether BAS or BAS-2 was used to assess it.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.22,
+          -0.17
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.22
+          ]
+        },
+        "male": {
+          "Study X": [
+            -0.17
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Table 3 shows bivariate correlations between variables. Row (5) 'Body appreciation' and Column (10) 'Body mass index' intersection: Upper triangle (women) = -0.22** (highlighted in green); Lower triangle (men) = -0.17*. The asterisks indicate significance levels but are not part of the correlation coefficient value. Table 3 footnote confirms: 'Results for women are presented in the top diagonal and men in the bottom diagonal. Women n = 151, men n = 163.'",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text and table present data from a single study with gender-stratified analyses. No explicit mention of multiple studies (e.g., 'Study 1', 'Study 2') is present.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information (journal article or dissertation) is provided in the text or table.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents bivariate correlations between variables (Table 3) and regression analyses examining predictors of technology liberalism separately for women (n = 151) and men (n = 163). For women, sexual orientation and BMI significantly predicted technology liberalism in both regression steps. For men, body appreciation emerged as the only significant predictor in the second regression step. The table shows gender-stratified results with women's correlations in the upper diagonal and men's in the lower diagonal.",
+      "evidence_source": "Text content describing regression analyses and Table 3 caption and footnote.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 3 Bivariate correlations between variables",
+      "evidence_source": "Table title as presented at the top of the table.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2017AssociationsBetweenPositiveBod/tables/1Swami2017AssociationsBetweenPositiveBod_p006_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_1"
+  }
+]

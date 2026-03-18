@@ -1,0 +1,93 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "reason": "All candidates consistently indicate that the paper describes a single research study. The section contexts across all candidates refer to different aspects (introduction, methods, results, discussion) of what is clearly presented as one unified study. There is no conflicting information, and all candidates support the value of 1."
+  },
+  "usa_vs_other": {
+    "extract_value": {
+      "Single study": [
+        0
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "All candidates consistently indicate that the study was conducted in Italy, not the USA. Candidate 0 and 1 explicitly state the author's affiliation and corresponding author's address in Rome, Italy. Candidate 3 further supports this by mentioning the adaptation of all scales to the 'Italian language' and 'Italian version'. Therefore, the value 0 (not USA) is extracted for the single study."
+  },
+  "r": {
+    "extract_value": {
+      "Single study": [
+        -0.438
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "The paper describes a single study. Candidate 1 explicitly states the correlation coefficient between Gratitude and Loneliness as -0.438, referencing Table 2 in the results section, which is a highly reliable source for this specific value. Candidate 0 only mentions a negative correlation without providing a numerical value. Therefore, the value from Candidate 1 is selected for the single study."
+  },
+  "N": {
+    "extract_value": {
+      "Single study": [
+        197
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "The paper describes a single study, as indicated by the context and all candidate summaries. All candidates consistently report a sample size (N) of 197 participants. Candidates [0] and [1] from the abstract, candidate [2] from the participants section, and candidate [3] from a table caption in the results section all provide the same value, confirming its reliability. No conflicts were found, and all sources are consistent."
+  },
+  "female": {
+    "extract_value": {
+      "Single study": [
+        0.802030456852792
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "The paper describes a single study. Candidate 1, from the 'Participants and Procedure' section, explicitly states '158 women and 39 men' out of a total of 197 participants. This is the most direct and reliable source for the proportion of female participants. The proportion is calculated as 158 / 197 = 0.8020304568527919. Other candidates do not provide specific numerical values for gender proportion."
+  },
+  "M_age": {
+    "extract_value": {
+      "Single study": [
+        29.1
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "The paper describes a single study. Candidate 1, from the 'participants_and_procedure' section, explicitly states the mean age as 29.1 in its evidence, making it the most reliable source for this information. Other candidates do not provide this specific value."
+  },
+  "SD_age": {
+    "extract_value": {
+      "Single study": [
+        10.4
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "The paper describes a single study, as indicated by the context. Candidate 1, from the 'participants_and_procedure' section, explicitly states the standard deviation of age as 'SD = 10.4'. No other candidate provides this specific value, and Candidate 0 and 2 do not contain the SD of age in their evidence or extracted values. Therefore, Candidate 1 is the most reliable source for this information."
+  }
+}

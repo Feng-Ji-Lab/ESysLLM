@@ -1,0 +1,96 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where any study was conducted. While the corresponding author is affiliated with Mount Allison University in Canada (Sackville, NB), this is not sufficient to infer the study location without explicit statement.",
+      "warning": "No country information provided in the text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text references 'a sample of undergraduate students' in the Wasylkiw and Williamson (2013) study, but no specific sample size is provided.",
+      "warning": "No numerical sample size data provided."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether data collection used paper-and-pencil or online survey methods.",
+      "warning": "No survey method information provided."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide demographic information about racial/ethnic composition of participants.",
+      "warning": "No racial/ethnic demographic data provided."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide mean age data for participants. References to 'young women' and 'undergraduate students' are descriptive but not numerical.",
+      "warning": "No numerical age data provided."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "The text references 'a sample of undergraduate students' in the Wasylkiw and Williamson (2013) study. Per the infer_rule, undergraduate students are college students, so the percentage with college or higher education is 100%.",
+      "warning": "Inferred from 'undergraduate students' reference; explicit percentage not stated."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide mean BMI data for any study participants.",
+      "warning": "No BMI data provided."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The text references 'a sample of undergraduate students' in the Wasylkiw and Williamson (2013) study, indicating the sample source is college.",
+      "warning": "Inferred from 'undergraduate students' reference; explicit source statement not provided."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not mention any specific Body Appreciation Scale (BAS or BAS-2) assessment instrument.",
+      "warning": "No body appreciation assessment instrument specified."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether BMI was self-reported or measured.",
+      "warning": "No BMI assessment method specified."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide correlation coefficients between body appreciation and BMI.",
+      "warning": "No correlation data provided."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This text is a literature review/introduction section that cites multiple studies (Unikel et al. 2013, Stice et al. 2003, Ousley et al. 2008, Wasylkiw and Williamson 2013, etc.) but does not present original empirical studies with extractable data. The section discusses prior research rather than reporting new study results.",
+      "warning": "This appears to be a literature review/introduction section, not a methods or results section reporting original studies."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state whether this is from a journal article or dissertation. The presence of a corresponding author suggests a journal article, but this cannot be confirmed from the text alone.",
+      "warning": "Publication type cannot be definitively determined from this excerpt."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section is a literature review discussing the role of 'fat talk' and body-related conversations in shaping women's body image and eating behaviors. It reviews research on how peer conversations about weight, dieting, and exercise influence body dissatisfaction and internalization of thin ideals, and cites the Wasylkiw and Williamson (2013) study showing that exercise-related talk predicted less body dissatisfaction while food/weight talk predicted increased dissatisfaction. The section does not present original empirical data or specific study samples.",
+      "evidence_source": "Content analysis of the entire provided text section."
+    },
+    "_pass_type": "text_only"
+  }
+]

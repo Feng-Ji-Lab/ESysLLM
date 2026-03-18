@@ -1,0 +1,177 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Romania"
+        ]
+      },
+      "evidence_source": "Text states: 'Participants of the main study were 212 female and 241 male students from a university in Timis\u00b8 County in the west of Romania.'",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          453
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            212
+          ]
+        },
+        "male": {
+          "Study X": [
+            241
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            453
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'Participants of the main study were 212 female and 241 male students from a university in Timis\u00b8 County in the west of Romania.' Total calculated as 212 + 241 = 453.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information provided in the text about survey method (paper-and-pencil or online).",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Text reports ethnicity as 'Romanian ethnicity (97.3%)' but does not specify 'white' as a racial category. The text does not provide information about racial/ethnic classification as 'white'.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          23.57
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            23.57
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'Participants ranged in age from 17 to 61 years (M = 23.57, SD = 7.86).'",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          88.3
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            88.3
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'Most participants were enrolled on undergraduate programmes (72.2%; Masters programmes = 16.1%, other = 11.7%).' Calculated as 72.2% + 16.1% = 88.3% (undergraduate + Masters = college or higher education).",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          22.18
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            22.18
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'in self-reported BMI from 13.98 to 37.11 kg/m2 (M = 22.18, SD = 3.46).'",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Text states: 'Participants of the main study were 212 female and 241 male students from a university in Timis\u00b8 County in the west of Romania.' The participants are university students, indicating a college source.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information provided in the text about the instrument used to assess body appreciation (BAS or BAS-2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Text states: 'in self-reported BMI from 13.98 to 37.11 kg/m2 (M = 22.18, SD = 3.46).' The term 'self-reported BMI' explicitly indicates the assessment method.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No correlation coefficients between body appreciation and BMI are provided in this section.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes 'the main study' with a single sample of 212 female and 241 male students. This appears to be one study section (2.1.1. Main sample).",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No information provided in the text about publication type (journal articles or dissertation).",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the main sample of a study conducted at a university in Romania, consisting of 212 female and 241 male undergraduate and graduate students (total N=453). Participants ranged in age from 17 to 61 years (M=23.57), with a mean self-reported BMI of 22.18 kg/m\u00b2, and 88.3% were enrolled in college or higher education programs. The majority identified as Romanian ethnicity (97.3%) and Eastern Orthodox (68.1%).",
+      "evidence_source": "Section 2.1.1 describing the main sample characteristics.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

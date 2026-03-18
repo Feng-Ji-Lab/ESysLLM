@@ -1,0 +1,191 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "reason": "Multiple reliable sections of the paper, including the abstract, introduction, participants, methods, results, and discussion, consistently refer to 'a single study' or 'this study'. For example, Candidate [1] (Abstract) explicitly states 'This abstract describes a single study'. Candidate [3] (Participants) mentions 'participants for a single study'. Candidate [7] (Results) details 'findings from a single study'. Candidate [21] (Discussion) summarizes 'the findings of 'this study''. Candidate [0] provides a value of 0, but its context is only journal metadata and does not contain information about the studies conducted in the paper, making it an unreliable source for this field. Therefore, the most accurate value is 1."
+  },
+  "Domain classified": {
+    "extract_value": {
+      "Single study": [
+        "Arts",
+        "Science",
+        "Total"
+      ]
+    },
+    "best_indices": [
+      3,
+      4,
+      5,
+      11
+    ],
+    "reason": "The paper consistently describes a single study, as confirmed by the context and multiple sections (Abstract, Introduction, Participants, Methods, Results, Discussion). Multiple reliable candidates, particularly from the 'Measures' and 'Results' sections (e.g., [3], [4], [5], [11]), explicitly state that creative achievement was measured across 'artistic domains' (\u2211ART), 'scientific domains' (\u2211SCI), and a 'total sum of creative achievements' (\u2211CAQ). Other candidates consistently refer to 'Arts' (or 'Artistic') and 'Science' (or 'Scientific') domains. Therefore, the consolidated list of domain classifications for this single study includes 'Arts', 'Science', and 'Total'."
+  },
+  "SAMPLE SIZE": {
+    "extract_value": {
+      "Single study": [
+        9537,
+        8240,
+        6604,
+        435,
+        1276,
+        616,
+        618,
+        517,
+        712,
+        716,
+        774,
+        777,
+        802,
+        805,
+        815,
+        817,
+        1292,
+        1297,
+        2299,
+        2314
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "reason": "The paper consistently describes a single study, as confirmed by the context and section summaries. The initial sample size is reliably reported as 9537 individuals (Candidate [1], supported by calculations in [3] and [5]). Due to participant dropout across different measures, the sample size varied. For the WMT (intelligence) measure, detailed calculations in Candidates [3] and [5] indicate a sample size of 8240. While Candidate [2] reported 8242 from Table 1, the calculated value of 8240 is preferred due to the explicit and detailed dropout information provided. Similarly, for the CAQ (creative achievement) measure, detailed calculations in Candidates [3] and [5] indicate a sample size of 6604. Candidates [2] and [4] reported 6606 from tables, but the calculated value of 6604 is preferred for the same reason. Candidate [0] provides a range (6606-9537) consistent with these findings. Additionally, various subsample sizes for specific analyses (t-tests, different levels of creative achievement) are provided in Candidates [6] and [7], which are distinct and valid sample sizes within this single study. All unique and resolved sample sizes are consolidated into a single list for the 'Single study'."
+  },
+  "Measure IQ": {
+    "extract_value": {
+      "Single study": [
+        "Wiener Matrizen Test"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      4,
+      10
+    ],
+    "reason": "The paper consistently describes a single study across all sections. All reliable candidates, including the abstract, methods, and results sections, uniformly identify 'Wiener Matrizen Test' (or its abbreviation 'WMT') as the specific assessment tool used to measure IQ or intelligence. Therefore, the value 'Wiener Matrizen Test' is extracted for the single study."
+  },
+  "IQ modality": {
+    "extract_value": {
+      "Single study": [
+        "figural"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "reason": "The paper describes a single study, as indicated by the context. All candidates consistently report that psychometric intelligence was measured using the Wiener Matrizen Test, which is explicitly identified as a 'figural' or 'non-verbal, figural intelligence test' across multiple reliable sections (abstract, measures, phenotypic data analyses, genetic modeling). There are no conflicting values or mentions of other IQ modalities."
+  },
+  "IQ Aspect": {
+    "extract_value": {
+      "Single study": [
+        "Gf"
+      ]
+    },
+    "best_indices": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "reason": "The paper describes a single study. Multiple reliable sources, including the abstract, measures, phenotypic analyses, and genetic modeling sections (both text and tables), consistently identify the Wiener Matrizen Test as a measure of fluid intelligence (Gf). While one candidate [1] mentions 'g' (general psychometric intelligence), the Wiener Matrizen Test is more specifically a measure of Gf, which is a component of g. Given the strong and consistent evidence for Gf across various reliable sections, Gf is the more precise and accurate aspect of intelligence measured in this study."
+  },
+  "Creativity Measures": {
+    "extract_value": {
+      "Single study": [
+        "CAQ"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context. All candidates consistently indicate that the 'Creative Achievement Questionnaire' (CAQ) was the creativity measure used in this study. Candidate [13] mentions 'ICAA' but explicitly states it is a 'promising future instrument, not as used in this study', therefore it is not included in the extracted values."
+  },
+  "Effects": {
+    "extract_value": {
+      "Single study": [
+        3
+      ]
+    },
+    "best_indices": [
+      4
+    ],
+    "reason": "The paper contains a single study, as confirmed by the provided context. Candidates [2] and [4], both from the 'Results of the phenotypic analyses' section, are the most reliable sources for the number of correlation coefficients between intelligence and creative achievement. Candidate [2] (text) mentions two distinct correlations: WMT with \"ART and WMT with \"SCI. Candidate [4] (Table 4) explicitly lists three distinct correlation coefficients: WMT with \"CAQ, WMT with \"ART, and WMT with \"SCI. Candidate [3] reports 1, but its evidence indicates this is an average, not a count of distinct coefficients, and is therefore disregarded. Table 4 provides a more comprehensive and explicit list of the correlations, making its value of 3 more accurate for the total number of distinct effect sizes. Other candidates report 0 or empty lists, which are less reliable than the explicit counts from the results section and tables. Therefore, the single study has 3 effect sizes."
+  },
+  "Mage": {
+    "extract_value": {
+      "Single study": [
+        41
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study, as confirmed by the context. Candidate [0] from the participants section reliably provides the mean age (M = 41 years) for this study. The value is directly extracted from the evidence."
+  },
+  "ES": {
+    "extract_value": {
+      "Single study": [
+        0.227
+      ]
+    },
+    "best_indices": [
+      2
+    ],
+    "reason": "The paper contains a single study, as indicated by the context. All candidates referring to 'Study X' are therefore consolidated under 'Single study'. Candidate 0 and 1 provide a value of 0.2175, derived from text describing confidence intervals for correlations between creative achievement subscales (\u2211ART, \u2211SCI) and intelligence (WMT). Candidate 2 provides a value of 0.227, derived from Table 4, which explicitly lists partial correlations for multiple creative achievement measures (\u2211CAQ, \u2211ART, and \u2211SCI) with intelligence (WMT). According to the 'case_1_multiple_subscales' rule, when multiple creative achievement scale correlations with intelligence are reported, their arithmetic mean should be computed. Table 4 (Candidate 2) provides the most comprehensive set of relevant correlations (0.24 for \u2211CAQ, 0.13 for \u2211ART, and 0.31 for \u2211SCI). The arithmetic mean of these values is (0.24 + 0.13 + 0.31) / 3 = 0.22666..., which is rounded to 0.227. Although there is a rule to prefer main text over table values in case of contradiction, in this specific scenario, the table provides a more complete and direct set of values for applying the required averaging rule, as it includes the \u2211CAQ correlation which is a key measure of creative achievement. The text-based evidence (Candidates 0 and 1) only considers two of the three relevant creative achievement measures and derives values from confidence intervals, making the table a more reliable source for the complete calculation."
+  }
+}

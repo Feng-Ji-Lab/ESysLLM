@@ -1,0 +1,137 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this preliminary analyses section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          333
+        ]
+      },
+      "evidence_source": "The analytic sample size of 333 is explicitly stated: 'the analytic sample size of 333 far exceeds the required minimum N of 148...'",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            333
+          ]
+        }
+      },
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method (paper-and-pencil or online) is specified in this preliminary analyses section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about racial/ethnic composition is provided in this section.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age of participants is reported in this preliminary analyses section.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about educational attainment is provided in this section.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While BMI is mentioned as a variable with 6.1% missing data and is discussed in correlational context, no mean BMI value is reported in this section. Table 1 is referenced as presenting means and standard deviations, but the actual table data is not provided.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "warning": "Table 1 is referenced but not provided; cannot extract mean BMI from text alone."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the source of the sample (community, college, or primary/secondary/high school) is provided in this preliminary analyses section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "BAS-2 is mentioned as one of the primary study variables with 4.4% missing data: 'BMI (6.1%), MEQ (5%), FFTQ-F (5.8%), BAS-2 (4.4%), and FBApS (5.2%)'. BAS-2 is the Body Appreciation Scale-2.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section does not specify whether BMI was self-reported or measured. BMI is mentioned as a variable but the assessment method is not described.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While the text states 'Possessing a higher BMI corresponded with reporting higher levels of family fat talk and lower levels of mindful eating and positive body image,' no specific correlation coefficient (r value) between body appreciation and BMI is provided. Table 1 is referenced as presenting correlations but the actual table is not provided.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "warning": "Table 1 is referenced but not provided; cannot extract specific correlation coefficient from text alone."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section is labeled as preliminary analyses and does not explicitly indicate the number of studies. The text refers to 'the present analysis' and 'the present study' (singular), suggesting one study, but this is not explicitly stated as a count.",
+      "warning": "Cannot definitively determine number of studies from this preliminary analyses section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this preliminary analyses section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This preliminary analyses section describes data quality checks and sample characteristics for a single study with an analytic sample of 333 participants. The study assessed body appreciation using BAS-2, along with measures of mindful eating (MEQ), family fat talk (FFTQ-F), and functional body appreciation (FBApS), with BMI as a key variable. Missing data was minimal (4.4%-6.1%) and handled via listwise deletion, and the sample size was deemed adequate for detecting indirect effects in the planned mediation analysis.",
+      "evidence_source": "Section 3.1 Preliminary analyses - entire section content",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

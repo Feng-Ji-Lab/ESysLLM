@@ -1,0 +1,241 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      2,
+      3,
+      7
+    ],
+    "reason": "Multiple sections (candidate 2 reports a single community sample of N=300; candidate 3 notes no labeling or multiple studies; candidate 7 discusses results from a single unnamed study) consistently indicate there was one study in the paper. No evidence of additional separate studies was found."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All candidates indicate the work is a published article (bibliographic journal info in candidates 0 and 1; an abstract of a validation study in candidate 2). No evidence suggests this is a dissertation, so the correct value is \"journal articles.\""
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      4,
+      5,
+      6,
+      8,
+      10
+    ],
+    "reason": "All candidates consistently describe a single validation study of the German translation of the Body Appreciation Scale (BAS). The instrument is named in the title (0), abstract (1), introduction and scale description (3/4), procedure (5), results for women and men (6, 8, with supporting table 7), and discussion (10). No evidence indicates use of BAS-2 or multiple distinct studies. Male and female subsamples were analyzed but use the same instrument, so they are merged into the single-study entry."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "Austria",
+        "Vienna and its environs"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates refer to the same single community sample (N=300). Candidate 0 (abstract) states the country as Austria; Candidate 1 (Participants) gives a more specific location, 'Vienna and its environs'. They describe the same study, so values are merged under 'Single study' and both the country and the more specific region are retained."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        300
+      ]
+    },
+    "best_indices": [
+      1,
+      0
+    ],
+    "reason": "Both the Participants section (candidate 1) and the Abstract (candidate 0) report a single community sample. The Participants section (main text) gives the detailed breakdown: 156 women + 144 men = total N = 300, so N=300 is accepted as the study total. The Abstract duplicates this information. Preference given to the Participants/main-text candidate (index 1) per reliability rules; the Abstract (index 0) is supplementary and consistent.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          144
+        ]
+      },
+      "female": {
+        "Single study": [
+          156
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          300
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "community"
+      ]
+    },
+    "best_indices": [
+      2,
+      3,
+      4,
+      1,
+      0
+    ],
+    "reason": "All candidate sources consistently identify a single, opportunistically recruited community sample (N = 300) from Vienna and environs. The Participants section (candidate 2) and Procedure (candidate 3) are the most reliable sources: they describe a community sample of 156 women and 144 men recruited via snowball sampling and provide demographic details. Introduction (1), Abstract (0), and Discussion (4) likewise state the sample was community (and contrast it with prior college samples). No evidence of multiple distinct studies or subsamples was found, so these were merged into one 'Single study' entry with value 'community'. Preference was given to main-text Method/Participants over abstract when resolving sources."
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        31.66,
+        33.31
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper reports a single community sample (N = 300; 156 women, 144 men). Mean ages are provided separately by gender (women M = 31.66, men M = 33.31) with no overall mean reported. Candidate 0 supplies these values, so both gender-specific means are returned under the single study entry.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          33.31
+        ]
+      },
+      "female": {
+        "Single study": [
+          31.66
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        14.3
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study reported in the paper (single community sample, N=300). The Participants section (candidate 0) explicitly reports 'university = 14.3%', which directly indicates the percentage with college or higher; no gender breakdown was provided. Mapped 'Study X' to 'Single study' per instructions and recorded the total percentage 14.3%.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          14.3
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        21.94,
+        24.01
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates refer to the same single community sample (N=300) and report identical values: mean BMI for women = 21.94 and men = 24.01. Candidate 0 (participants section) and Candidate 1 (Table 2) are consistent; merged as one study and gender-specific values recorded. No total BMI mean reported.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          24.01
+        ]
+      },
+      "female": {
+        "Single study": [
+          21.94
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    }
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one candidate was found (index 0) and it indicates participants provided their height and weight (demographics section), which implies BMI was calculated from self-reported values. No other sources or contradictions were present, and the paper contains a single study."
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "paper-and-pencil"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one reliable candidate (Procedure section) explicitly states that all participants completed a paper-and-pencil questionnaire returned in sealed envelopes. The section does not indicate multiple distinct studies, so results are recorded under 'Single study'. Candidate 0 (procedure/main-text) is the primary source for this field."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        -0.28,
+        -0.03
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Single study in the paper. Table 2 reports Pearson r between Body Appreciation (BAS) and BMI separately by gender: lower off-diagonal (women) r = -0.28 and upper off-diagonal (men) r = -0.03. No total/combined correlation reported. Values taken directly from Table 2 without rounding.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          -0.03
+        ]
+      },
+      "female": {
+        "Single study": [
+          -0.28
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    }
+  }
+}

@@ -1,0 +1,297 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'three partnering sites' and 'three collaborating institutions' but does not explicitly state the country. While the context suggests a U.S. study (NIH-funded, U.S. mail, university IRBs), the country is not explicitly stated in this section.",
+      "warning": "Country not explicitly stated in the provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          207,
+          247
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            207,
+            247
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            207,
+            247
+          ]
+        }
+      },
+      "evidence_source": "Note states: 'Ns ranged from 207 to 247 due to missing data.' The sample consisted of 'Black first-year college women,' indicating all participants were female.",
+      "warning": "Range provided rather than single value. The text indicates sample size varied due to missing data across analyses."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "online"
+        ]
+      },
+      "evidence_source": "Text states: 'included a weblink to access the SurveyShare-hosted online study.' This indicates an online survey method.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text specifies that participants 'racially identified as Black' but does not provide a percentage of white participants. The study explicitly recruited only Black women.",
+      "warning": "Study recruited exclusively Black women; percentage of white participants would be 0%, but this is not explicitly stated."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No mean age is provided in this section. The text mentions 'first-year college women' and 'summer before entering college,' but no specific age data is given.",
+      "warning": "Mean age not provided in the text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            100
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'Our precollege sample was recruited as part of a larger NIH-funded study' and 'admitted students who racially identified as Black were mailed an invitation letter' and 'In the summer before entering college.' The participants are first-year college women, meaning they have college or higher education experience (or are about to enter college). Per the infer_rule, participants described as college students should be coded as 100% college or higher.",
+      "warning": "Inferred as 100% based on participants being first-year college women, though technically they were surveyed before entering college."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No mean BMI is provided in this section. The text mentions the study was 'designed to evaluate the biopsychosocial determinants of body composition changes' but does not report actual BMI values.",
+      "warning": "Mean BMI not provided in the text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Text states: 'Through a partnership with the Office of Admissions at all three collaborating institutions, researchers obtained access to the racial identification and contact information of all admitted female first-year students.' Participants were recruited from college institutions.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "Note states: 'BAS = Body Appreciation Scale (Avalos et al., 2005).' The BAS is mentioned as an instrument used in the study.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether BMI was self-reported or measured. While the study was designed to evaluate 'body composition changes,' the method of BMI assessment is not stated in this section.",
+      "warning": "Assessment method for BMI not specified in the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No correlation coefficients between body appreciation and BMI are provided in this section. The text describes procedures and mentions the BAS instrument but does not report any correlation data.",
+      "warning": "Correlation data not provided in the text."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study: 'Our precollege sample was recruited as part of a larger NIH-funded study designed to evaluate the biopsychosocial determinants of body composition changes in Black first-year college women.' One study is referenced.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a procedures section and does not indicate whether this is from a journal article or dissertation.",
+      "warning": "Publication type cannot be determined from this section alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the procedures for a single study recruiting Black first-year college women from three partnering institutions. Participants were recruited in the summer before college entry through an online survey (SurveyShare-hosted) with sample sizes ranging from 207 to 247 due to missing data. The study used the Body Appreciation Scale (BAS) to assess body appreciation, though the method of BMI assessment is not specified in this section.",
+      "evidence_source": "Entire Procedures section provided.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "United States"
+        ]
+      },
+      "evidence_source": "Text states 'partnership with the Office of Admissions at all three collaborating institutions' and 'admitted female first-year students' at 'three partnering sites' in the U.S. context. The note mentions 'university Institutional Review Boards at all three partnering sites' indicating U.S.-based universities.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          207,
+          247
+        ]
+      },
+      "evidence_source": "Note at bottom of table states: 'Ns ranged from 207 to 247 due to missing data.' This indicates the sample size ranged from 207 to 247 participants.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "online"
+        ]
+      },
+      "evidence_source": "Text states: 'researchers obtained access to the racial identification and contact information of all admitted female first-year students who were subsequently invited to participate. In the summer before entering college, admitted students who racially identified as Black were mailed an invitation letter both through U.S. mail and through email when available that provided details of the research and included a weblink to access the SurveyShare-hosted online study.'",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text explicitly states that participants 'racially identified as Black' but does not provide a percentage breakdown of white participants. The study specifically recruited Black first-year college women.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          17.8
+        ]
+      },
+      "evidence_source": "Table 1 shows 'Mean (SD)' row with Age listed as '17.8 (0.47)'. The mean age is 17.8 years.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "Text states: 'Our precollege sample was recruited as part of a larger NIH-funded study' and 'admitted students who racially identified as Black were mailed an invitation letter' and 'In the summer before entering college, admitted students...were invited to participate.' All participants were admitted first-year college students, meaning 100% had college or higher education experience (or were about to enter college).",
+      "warning": "The text says 'precollege sample' but also 'first-year college women,' which could be interpreted as students admitted to college but not yet enrolled. However, the context of the larger study on 'body composition changes in Black first-year college women' suggests these are college students. Inference applied per case_rules."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          25.4
+        ]
+      },
+      "evidence_source": "Table 1 shows 'Mean (SD)' row with BMI listed as '25.4 (6.4)'. The mean BMI is 25.4 kg/m\u00b2.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Text states: 'Our precollege sample was recruited as part of a larger NIH-funded study designed to evaluate the biopsychosocial determinants of body composition changes in Black first-year college women. Through a partnership with the Office of Admissions at all three collaborating institutions, researchers obtained access to the racial identification and contact information of all admitted female first-year students.'",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "Table 1 note states: 'BAS = Body Appreciation Scale (Avalos et al., 2005).' The table includes variable 5 labeled 'BAS' in the correlation matrix.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text and table do not explicitly state whether BMI was self-reported or measured. The procedures section does not specify the method of BMI assessment.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.44
+        ]
+      },
+      "evidence_source": "Table 1 shows the correlation matrix. Variable 2 is BMI and Variable 5 is BAS (Body Appreciation Scale). The cell at row 5 (BAS), column 2 (BMI) shows the value '\u2212.44' with significance marker '**'. Removing the significance marker, the correlation is -0.44.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study: 'Our precollege sample was recruited as part of a larger NIH-funded study designed to evaluate the biopsychosocial determinants of body composition changes in Black first-year college women.' No multiple studies or experiments are explicitly named or described.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a procedures section from an academic paper, but the publication type (journal article vs. dissertation) is not explicitly stated in the provided excerpt.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the procedures for a single study recruiting Black first-year college women from three U.S. institutions. Participants were invited via mail and email to complete an online survey in the summer before entering college, with sample sizes ranging from 207 to 247 due to missing data. The study assessed body appreciation using the BAS and measured various body image and demographic variables, as shown in Table 1.",
+      "evidence_source": "Entire procedures section and Table 1 caption and note.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1: Intercorrelations and descriptive statistics among the primary study variables.",
+      "evidence_source": "The table title and caption as it appears at the top of the table.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Webb2014/tables/1Webb2014_p005_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

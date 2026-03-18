@@ -1,0 +1,212 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a Results section that does not contain information about the country where the study was conducted.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Results section mentions F(7, 314) indicating 314 degrees of freedom in the regression model, but does not explicitly state the total sample size. The text does not provide sufficient information to determine the exact sample size.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided Results section does not contain information about the survey method used.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Results section does not contain demographic information about racial/ethnic composition of participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Results section mentions participant age as a variable in the regression analysis but does not report the mean age of participants.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Results section does not contain information about the educational level of participants.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Results section references BMI as a variable in the regression analysis and mentions that consideration of cosmetic surgery was significantly and negatively correlated with BMI. However, the mean BMI value is not explicitly stated in this section. The text indicates 'Descriptive statistics (Ms and SDs) for all variables...are reported in Table 1' but Table 1 is not provided.",
+      "warning": "Table 1 is referenced but not provided; cannot extract mean BMI from this section alone."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Results section does not contain information about where or how participants were recruited.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The note at the end of the Results section states 'BAS = Body Appreciation Scale', indicating that the Body Appreciation Scale (BAS) was used to assess body appreciation in this study.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Results section does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Results section states that consideration of cosmetic surgery was 'significantly and negatively correlated with body appreciation, BMI, and age' and that 'Descriptive statistics (Ms and SDs) for all variables and interitem correlations are reported in Table 1.' However, the specific correlation coefficient between body appreciation and BMI is not provided in the text. Table 1 is referenced but not provided.",
+      "warning": "Table 1 is referenced but not provided; specific correlation coefficient cannot be extracted from this section alone."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a Results section from what appears to be a single study. No explicit mention of multiple studies is present in this excerpt.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The Results section does not contain information about the publication type (journal article or dissertation).",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Results section reports findings from a multiple linear regression analysis examining predictors of consideration of cosmetic surgery. The regression model was significant (F(7, 314) = 41.89, p < .001, Adj. R\u00b2 = .471), with body appreciation, Internalisation-General, Information, BMI, and Pressures emerging as significant predictors. The text references Table 1 for descriptive statistics and correlations among variables, including the relationship between body appreciation (measured by BAS) and BMI, though specific values are not provided in this excerpt.",
+      "evidence_source": "Entire Results section provided"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is provided in the text or table.",
+      "warning": "Country not specified in the provided text or table."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'F(7, 314)' in the regression results, indicating a sample size of approximately 322 (314 + 7 + 1), but the exact total sample size is not explicitly stated in the provided excerpt.",
+      "warning": "Sample size inferred from regression degrees of freedom (314 residual df suggests N \u2248 322), but not explicitly stated."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is provided in the text or table.",
+      "warning": "Survey method not specified in the provided text or table."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information is provided in the text or table.",
+      "warning": "Percent of white participants not specified in the provided text or table."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "total": [
+          24.72
+        ]
+      },
+      "evidence_source": "Table 1, column (8) Age, row M: Mean age = 24.72. SD = 5.90.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in the text or table.",
+      "warning": "Percentage of college or higher education not specified in the provided text or table."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "total": [
+          21.67
+        ]
+      },
+      "evidence_source": "Table 1, column (7) BMI, row M: Mean BMI = 21.67. SD = 3.48.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the source of the sample (community, college, or school) is provided in the text or table.",
+      "warning": "Source of sample not specified in the provided text or table."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "Table 1, column (6) labeled 'BAS' (Body Appreciation Scale). The note at the bottom confirms 'BAS = Body Appreciation Scale'.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The table reports BMI values but does not specify whether they were self-reported or measured.",
+      "warning": "Assessment method for BMI (self-reported vs. measured) not specified in the provided text or table."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.55
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            -0.55
+          ]
+        }
+      },
+      "evidence_source": "Table 1, intersection of row (6) BAS and column (7) BMI: correlation = -.55**. The double asterisk indicates p < .001 (highly significant). The numeric value extracted is -0.55.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text and table present results from a single study with one sample. No explicit mention of multiple studies or experiments.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not indicate whether this is from a journal article or dissertation.",
+      "warning": "Publication type not specified in the provided text or table."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents descriptive statistics and inter-item correlations from Table 1 for a single study examining relationships between consideration of cosmetic surgery, media influence (SATAQ-3 subscales), body appreciation (BAS), BMI, and age. The study reports a significant multiple regression model (F(7, 314) = 41.89, p < .001, Adj. R\u00b2 = .471) with body appreciation, internalisation-general, information, BMI, and pressures as significant predictors of cosmetic surgery consideration.",
+      "evidence_source": "Results section text and Table 1 caption and data."
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1: Descriptive statistics and inter-item correlations between consideration of cosmetic surgery, media influence, body appreciation, weight status, and age.",
+      "evidence_source": "Table 1 title and caption as presented in the image."
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2009check/tables/1Swami2009check_p001_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

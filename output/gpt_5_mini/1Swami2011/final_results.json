@@ -1,0 +1,267 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      2,
+      0,
+      6,
+      13
+    ],
+    "reason": "Multiple sections consistently describe a single empirical study (N=311) validating the Portuguese ACSS: the Methods/Participants (candidate 2) details one sample and procedures, the Abstract (candidate 0) and Results/Analyses (candidate 6) describe a single psychometric evaluation, and the Discussion (candidate 13) summarizes one study. No sections label or present multiple distinct studies, so the most accurate count is 1."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "Brazil",
+        "state of S\u00e3o Paulo"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "reason": "All candidates refer to a single empirical study (N = 311) validating the Portuguese ACSS among Brazilian adults. Multiple sections (Abstract, Introduction, Procedure, Results, Discussion) consistently indicate the study was conducted in Brazil; the Methods/Participants section provides a more specific location, reporting recruitment at two universities in the state of S\u00e3o Paulo. I therefore treated this as one study and consolidated location values, keeping both the country-level value ('Brazil') and the more specific region ('state of S\u00e3o Paulo') to capture the precise Methods detail. Preferred the Methods section for the more specific locale while retaining country-level mentions from other sections."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidate 0 (article metadata with submission/acceptance dates and keywords) and candidate 1 (abstract describing a single psychometric evaluation of a Portuguese ACSS with N=311) indicate this is a journal article. There is no evidence anywhere that the work is a dissertation, so the allowed value 'journal articles' is the best and only match."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        311
+      ]
+    },
+    "best_indices": [
+      1,
+      0,
+      3,
+      4,
+      5,
+      2
+    ],
+    "reason": "All candidates refer to a single empirical study (no Study 1/Study 2 distinctions). The Methods/Participants section (candidate 1) provides the most reliable breakdown: 195 women + 116 men = 311 total. The Abstract (0), SATAQ and table assets (3, 4, 5), and the body appreciation section (2, via t-test df) consistently corroborate N = 311. No contradictory totals found, so output a single study with total N = 311 and gender counts female = 195, male = 116.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          116
+        ]
+      },
+      "female": {
+        "Single study": [
+          195
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          311
+        ]
+      }
+    }
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      1,
+      3,
+      4
+    ],
+    "reason": "All candidates refer to a single empirical study validating Portuguese measures. The most reliable sources are the Methods/demographics (index 1) documenting translation/adaptation of the Body Appreciation Scale (BAS) and the Results (index 3) with the EFA and internal consistency for the Portuguese BAS, supported by the factor-loading table (index 4). All evidence consistently indicates the Body Appreciation Scale (BAS) was used; no BAS-2 is reported."
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "reason": "All candidate sources refer to a single empirical study (N=311). The Methods/Participants (candidate 1) explicitly states a 'mean self-reported BMI of 23.27 kg/m2', and the Demographics section (candidate 2) confirms that height and weight were self-reported and used to calculate BMI. Results and Discussion (candidates 4 and 5) likewise report correlations with 'self-reported BMI'. No evidence suggests measured BMI. Therefore the study's BMI assessment is classified as 'self-reported'."
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Single study": [
+        79.4
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "All candidates describe a single empirical study (N=311). The Methods/Participants main-text explicitly reports ethnicity: 'White (79.4%)'. This is the most reliable source, so 79.4% is recorded for the single study (also placed under total in extract_value_by_gender). No conflicting or additional study-specific values were found.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          79.4
+        ]
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        29.32
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The Methods -> Participants section (candidate 0) explicitly states 'Participants had a mean age of 29.32 years (SD = 11.02)' for the single study (N = 311: 195 women, 116 men). There is only one study reported in the paper, and the Methods value is the most reliable source, so 29.32 is taken as the mean age (total). No conflicting values were found.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          29.32
+        ]
+      }
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        51.1
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one reliable candidate (index 0) from the Methods/Participants section describes a single study (N=311). The Methods reports education: 19.6% undergraduate + 31.5% further degree = 51.1% with college or higher. No other studies or conflicting values were found, so this value is used for the single study; total is provided, no gender-specific percentages reported.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          51.1
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        23.27
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study reported (N=311). The mean BMI (self-reported) 23.27 kg/m2 is reported in the Methods/Participants section, which is the most reliable source for sample characteristics. No gender-specific BMI values were provided, so the total value is recorded.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          23.27
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "college"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates describe the same single empirical study (N=311) and consistently report recruitment from universities/campus locations. Methods state participants were recruited from students and staff at two universities; Procedure confirms opportunistic sampling at campus locations by experimenters. Therefore the source is classified as 'college'."
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "paper-and-pencil"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "All candidate information describes a single empirical study. The Procedure (reliable source for data-collection details) explicitly states participants completed anonymous paper-and-pencil questionnaires at campus locations. No conflicting candidates were found, so the survey method for the single study is 'paper-and-pencil'."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        -0.26,
+        -0.19
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Table 4 reports the Pearson correlations between General Body Appreciation and BMI with women shown in the top diagonal and men in the bottom diagonal. Values: women r = -0.19 (n = 195), men r = -0.26 (n = 116). The paper presents a single study, so both gender-specific correlations are reported under the single study entry.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          -0.26
+        ]
+      },
+      "female": {
+        "Single study": [
+          -0.19
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    }
+  }
+}

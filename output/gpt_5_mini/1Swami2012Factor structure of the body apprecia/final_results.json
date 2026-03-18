@@ -1,0 +1,200 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      2,
+      9,
+      1
+    ],
+    "reason": "Multiple sections consistently describe a single empirical study (e.g., summary/abstract [0], Methods with participant sample [2], Discussion [9], and Introduction [1]). All analyses, measures, and procedures refer to the same sample (N = 540) and no separate or numbered studies are reported. Therefore the paper contains one study."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "Indonesia"
+      ]
+    },
+    "best_indices": [
+      1,
+      3
+    ],
+    "reason": "All candidate sections consistently describe a single empirical study conducted in Jakarta, Indonesia (total N = 540). The Participants section (candidate 3) and Abstract (candidate 1) are the most reliable sources and explicitly state the sample was from Jakarta, Indonesia; other sections (e.g., Introduction, Methods, Table captions, Discussion) corroborate this. Per the field definition, the country name 'Indonesia' is returned."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        540
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates report the same single-study sample (262 women + 278 men = N 540). Candidate [1] (Participants section) and candidate [0] (Abstract) are consistent; per rules, main text (Participants) is preferred but both agree, so merged into one 'Single study' entry with total and gender counts.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          278
+        ]
+      },
+      "female": {
+        "Single study": [
+          262
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          540
+        ]
+      }
+    }
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "reason": "All candidate sources refer to the same single empirical study (one Indonesian sample, N = 540) and consistently report use of the Body Appreciation Scale (Avalos et al., 2005). Measures, methods/statistical-analysis, results (female and male samples), abstract, and discussion all cite the BAS; no evidence indicates use of BAS-2. Therefore the study-level instrument is 'BAS'. All candidates (indices 0\u20137) were used to confirm consistency across sections."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper presents a single empirical study with conventional journal-article structure (abstract, methods, results, discussion) and no indicators of a dissertation (no mention of thesis, degree, advisor, university, or chapter structure). Given the two allowed options and absence of dissertation markers, \"journal articles\" is the best-supported value."
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        43.19
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "All sections describe a single empirical study (N=540). The Participants section (most reliable for sample characteristics) reports participant ages with M = 43.19 (SD = 12.95). No gender-specific mean ages were provided, so the mean is recorded under the study total.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          43.19
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        22.08
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study in the paper (N=540). Participants section reports BMI range 13.52\u201335.65 with mean M = 22.08 (SD = 4.38); this is the most reliable source for mean BMI.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          22.08
+        ]
+      }
+    }
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study is reported across sections. The Measures text states participants \"provided\" demographics including height and weight, which were used to compute BMI\u2014this indicates height/weight were self-reported rather than measured objectively. No text indicates researcher-measured height/weight, so 'self-reported' is selected."
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "paper-and-pencil"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study is reported in the paper. The Procedure (main text) explicitly states participants \"completed a paper-and-pencil survey\" and returned it to the research assistant in a sealed envelope, so 'paper-and-pencil' is taken as the survey method. No conflicting or additional candidates were provided."
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "community"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both reliable candidates (Procedure and Discussion) describe the same single study and consistently report opportunistic/convenience recruitment of participants in public locations in Jakarta. This maps to the 'community' source. No evidence of multiple distinct studies or other recruitment sources was found, so values were merged into one entry."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": []
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study in the paper. Candidate 0 reports gender-specific Pearson correlations between General Body Appreciation and BMI: women r = -0.30 and men r = -0.22. No overall/total correlation was reported, so values are recorded under female and male per the gender-specific rule. Followed instruction to keep gender-separated values and not compute/insert a total.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          -0.22
+        ]
+      },
+      "female": {
+        "Single study": [
+          -0.3
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Poland"
+        ]
+      },
+      "evidence_source": "Keywords section lists 'Poland' as a keyword, indicating the study was conducted in Poland.",
+      "warning": "Study name is inferred as 'Study X' because the provided text is only article metadata (article info section) and does not explicitly name the study. The full paper content is needed to determine actual study names and extract other required fields."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only article metadata (article history and keywords). No sample size information is present in this section.",
+      "warning": "Cannot extract sample size from article metadata alone. Full paper content required."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only article metadata. No survey method information is present.",
+      "warning": "Cannot extract survey method from article metadata alone. Full paper content required."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only article metadata. No demographic information is present.",
+      "warning": "Cannot extract racial/ethnic demographics from article metadata alone. Full paper content required."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only article metadata. No participant age information is present.",
+      "warning": "Cannot extract mean age from article metadata alone. Full paper content required."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only article metadata. No education level information is present.",
+      "warning": "Cannot extract education level from article metadata alone. Full paper content required."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only article metadata. No BMI information is present.",
+      "warning": "Cannot extract mean BMI from article metadata alone. Full paper content required."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only article metadata. No information about sample source is present.",
+      "warning": "Cannot extract sample source from article metadata alone. Full paper content required."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only article metadata. Keywords mention 'Body appreciation' and 'Scale validation' but do not specify which instrument (BAS or BAS-2) was used.",
+      "warning": "Cannot determine specific BA assessment instrument from keywords alone. Full paper content required."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only article metadata. No information about BMI assessment method is present.",
+      "warning": "Cannot extract BMI assessment method from article metadata alone. Full paper content required."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text is only article metadata. No correlation data is present.",
+      "warning": "Cannot extract correlation coefficients from article metadata alone. Full paper content required."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only article metadata (article history and keywords). No information about the number of studies is present.",
+      "warning": "Cannot determine number of studies from article metadata alone. Full paper content required."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "journal articles",
+      "evidence_source": "The article metadata format (article history with 'Received', 'Accepted', 'Available online' dates) indicates this is a journal article, not a dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section contains only article metadata including publication history and keywords. The article was received on 10 February 2017, revised on 20 July 2017, and accepted on 23 July 2017. Keywords indicate the study focuses on body appreciation, positive body image, scale validation, and measurement invariance in Poland. Full paper content is needed to extract study-specific data.",
+      "evidence_source": "Article info section header and metadata content",
+      "warning": "This is metadata only; substantive study information cannot be extracted from this section alone."
+    },
+    "_pass_type": "text_only"
+  }
+]

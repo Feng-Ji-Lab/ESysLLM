@@ -1,0 +1,89 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text only contains header information ('NON SOLUS', 'ELSEVIER', 'Contents lists available at ScienceDirect') with no study content or country information.",
+      "warning": "Insufficient content. The text appears to be a journal header/navigation element only, not actual study content."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No study content provided. Text contains only journal header information.",
+      "warning": "Insufficient content to extract sample size."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No study methodology described in the provided text.",
+      "warning": "Insufficient content to determine survey method."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information provided in the text.",
+      "warning": "Insufficient content to extract racial/ethnic demographics."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No participant demographic data in the provided text.",
+      "warning": "Insufficient content to extract age information."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No educational background information provided.",
+      "warning": "Insufficient content to extract education level."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No health or anthropometric data in the provided text.",
+      "warning": "Insufficient content to extract BMI information."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participant recruitment or sample source.",
+      "warning": "Insufficient content to determine sample source."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No measurement instruments or assessment tools described.",
+      "warning": "Insufficient content to identify body appreciation assessment method."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about BMI measurement methodology.",
+      "warning": "Insufficient content to determine BMI assessment method."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No statistical results or correlations reported in the provided text.",
+      "warning": "Insufficient content to extract correlation coefficients."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only a journal header/navigation element with no study content.",
+      "warning": "Cannot determine number of studies from header information alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "While 'ELSEVIER' suggests a journal publication, the text provided is insufficient to confirm publication type.",
+      "warning": "Insufficient content. Only journal header visible, not actual article content."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only journal header information ('NON SOLUS', 'ELSEVIER', 'Contents lists available at ScienceDirect') with no actual study content.",
+      "warning": "The text appears to be a journal navigation/header element rather than study methodology or results section. No study information can be extracted."
+    },
+    "_pass_type": "text_only"
+  }
+]

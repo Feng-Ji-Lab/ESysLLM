@@ -1,0 +1,103 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in the provided text.",
+      "warning": "Country not specified in the text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          310
+        ]
+      },
+      "evidence_source": "The text states 't(309) = 0.36' and 't(309) = 1.08', indicating a sample size of 310 participants (df = n - 1). This is mentioned multiple times in the independent sample t-tests section.",
+      "warning": "Sample size inferred from degrees of freedom (df = 309, so n = 310). Gender breakdown not explicitly stated.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            310
+          ]
+        }
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method (paper-and-pencil or online) is mentioned in the provided text.",
+      "warning": "Survey method not specified."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about racial/ethnic composition is provided in the text.",
+      "warning": "Racial/ethnic demographics not reported."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in the text.",
+      "warning": "Mean age not reported."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in the text.",
+      "warning": "Education level not reported."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI information is provided in the text.",
+      "warning": "BMI data not reported."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about where or how participants were recruited is provided in the text.",
+      "warning": "Source of sample not specified."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses the Acceptance of Cosmetic Surgery Scale (ACSS), not Body Appreciation Scale (BAS or BAS-2). This is a different construct.",
+      "warning": "The instrument discussed is ACSS (Acceptance of Cosmetic Surgery Scale), not BAS or BAS-2 (Body Appreciation Scale). These are different measures."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI assessment method is mentioned in the text.",
+      "warning": "BMI assessment method not specified."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not report any correlations between body appreciation and BMI. The section focuses on factor analysis of the ACSS and sex differences on ACSS subscales.",
+      "warning": "No correlation data between body appreciation and BMI is provided in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly identify multiple studies or experiments. It appears to describe analyses from a single study, but no explicit study numbering is provided.",
+      "warning": "Number of studies cannot be determined from the provided text. The section appears to describe one study, but this is not explicitly stated."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in the text.",
+      "warning": "Publication type not specified."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes an exploratory factor analysis (EFA) of the Portuguese Acceptance of Cosmetic Surgery Scale (ACSS) with 15 items. Three factors emerged explaining 61.9% of the variance, with good internal consistency (Cronbach's \u03b1 = .91 for overall score). Independent sample t-tests revealed no significant sex differences on the overall ACSS score or most subscales, though women scored significantly higher on the Consider subscale.",
+      "evidence_source": "The entire provided text section on 'Acceptance of cosmetic surgery'.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

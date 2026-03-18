@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text mentions \"Correspondence concerning this article\" and \"research on this topic has only recently begun to appear in the literature\", indicating a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "This research was supported, in part, by Office of Naval Research Grant N00014-93-1-1385.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from PubType being a journal article, which is typically peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The text refers to \"high-performance orientation members\". Since it does not differentiate between approach and avoidance, it is coded as 'Global' performance goal orientation.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text states \"teams needed to adapt their system of roles in order to perform effectively\" and discusses \"team adaptation\" and its prediction by \"interpersonal, transition, and action processes\". This indicates an objective assessment of performance adaptation.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "Derived from AdaptMeasures being objective (3), which corresponds to objective scores (1).",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "Derived from AdaptMeasures being objective (3), which corresponds to objective (task/test) assessment (3).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text mentions \"members' goal orientation\" but does not specify the measurement scale, nor does it attribute it to VandeWalle. Therefore, it is coded as 'Other'.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No age information (mean, range, SD, or categories) is reported in the text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No age information was reported in the text to impute a mean age.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "The text mentions \"64 3-person teams\" but provides no information about the sex composition of the sample.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the percentage of men in the sample was provided.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "The author's affiliation is \"University of Florida, Gainesville, FL\", which is located in the USA.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "The text describes an \"experiment in which 64 3-person teams\" participated. It does not explicitly state that the sample consists of students, so it is coded as 'Other sample'.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [64]}",
+      "evidence_source": "The text states: \"Halfway through a 3-hour experiment in which 64 3-person teams needed to make a series of decisions...\". The N for the study is 64 teams.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "The text describes associations qualitatively (e.g., \"Teams with difficult goals and staffed with high-performance orientation members were especially unlikely to adapt\") but does not provide specific Pearson correlation coefficients (r values) between performance goal orientation and performance adaptation.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No specific correlation coefficients were reported, so no correlation information can be provided.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single \"experiment\" and refers to \"the present research\" and \"this study\" consistently throughout, indicating one study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes a single 3-hour experiment involving 64 3-person teams. The study investigated how team composition (cognitive ability, goal orientation) and goal difficulty influenced team adaptation to unforeseen changes. It found that teams with difficult goals and high-performance orientation members were less likely to adapt, while those with high-learning orientation members were more likely to adapt.",
+      "evidence_source": "The entire text content of the section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

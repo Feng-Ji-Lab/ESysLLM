@@ -1,0 +1,111 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or region is stated in the provided text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          490
+        ]
+      },
+      "evidence_source": "\"The study's sample comprised 490 women who completed an Internet based survey comprising self-report measures of interest.\"",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            490
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "online"
+        ]
+      },
+      "evidence_source": "\"The study's sample comprised 490 women who completed an Internet based survey comprising self-report measures of interest.\"",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participant race/ethnicity or percentage white is provided in the text.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not report mean or distribution of participant ages.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not state participants' education level or that they were students.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions Body Mass Index in analyses but does not report mean BMI.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The only recruitment detail given is that participants completed an Internet-based survey; the source (e.g., community, college) is not specified.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text refers to body appreciation but does not specify the instrument (BAS or BAS-2) used to assess it.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "\"The study's sample comprised 490 women who completed an Internet based survey comprising self-report measures of interest.\" Additionally, BMI is mentioned as a controlled variable: \"...when controlling the effect of age and Body Mass Index.\" Based on these sentences, BMI was assessed via self-report within the internet survey.",
+      "warning": "Inference: BMI method inferred from phrase 'self-report measures'; BMI measurement method not explicitly stated as self-reported but strongly implied."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The paper reports path analysis showing body appreciation mediated effects and that analyses controlled for BMI, but no Pearson correlation coefficient between body appreciation and BMI is reported in the provided text.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "\"Thus, this study aimed to explore a model...\" and the text describes a single sample (490 women), indicating one study was conducted.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type (e.g., journal article or dissertation) is stated in the provided section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes one study (Study X) of 490 women who completed an internet-based self-report survey examining whether positive early emotional memories predict lower disordered eating via self-compassion and body appreciation. Path analysis indicated that self-compassion and body appreciation fully mediated the relation between early positive emotional memories and eating psychopathology, with the model accounting for 49% of variance.",
+      "evidence_source": "\"Thus, this study aimed to explore a model...\"; \"The study's sample comprised 490 women who completed an Internet based survey comprising self-report measures of interest.\"; \"Path analysis' results revealed that self-compassion and body appreciation fully mediated the impact of early positive emotional memories on eating psychopathology, when controlling the effect of age and Body Mass Index. The plausibility of the path model was confirmed which accounted for 49% of eating psychopathology's variance.\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

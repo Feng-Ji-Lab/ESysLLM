@@ -1,0 +1,93 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments and does not contain information about the country where the study was conducted.",
+      "warning": "No country information provided in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments and does not contain sample size information.",
+      "warning": "No sample size data provided in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments. While it mentions questionnaires and scales, it does not specify whether data collection was conducted via paper-and-pencil or online methods.",
+      "warning": "No survey method information provided in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments and does not contain demographic information about participant race/ethnicity percentages.",
+      "warning": "No racial/ethnic demographic data provided in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments. While the Demographics Questionnaire asks participants to report their age, no mean age is reported in this section.",
+      "warning": "No mean age data provided in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments. While the Demographics Questionnaire asks participants to report their year in school, no percentage of college or higher education is reported in this section.",
+      "warning": "No education level percentage data provided in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments. While the Demographics Questionnaire asks participants to report their height and weight (which could be used to calculate BMI), no mean BMI is reported in this section.",
+      "warning": "No mean BMI data provided in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments and does not contain information about where or how participants were recruited.",
+      "warning": "No sample source information provided in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly describes the Body Appreciation Scale (BAS) by Avalos et al. (2005) as a measure used in the current study: 'The BAS (Avalos et al., 2005) includes 13 items rated on a 5-point scale... Cronbach's coefficient alpha in the current sample was .92.' This indicates BAS was used to assess body appreciation in the current study.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments. While the Demographics Questionnaire asks participants to report their height and weight (which could be used to calculate BMI), the text does not explicitly state whether BMI was assessed via self-reported or measured methods.",
+      "warning": "No explicit BMI assessment method (self-reported vs. measured) is stated in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments and does not report any correlations between body appreciation and BMI.",
+      "warning": "No correlation data provided in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments for what appears to be a single study (referred to as 'the current sample' and 'the current study'). However, this section alone does not provide explicit information about the total number of studies in the paper.",
+      "warning": "Cannot determine total number of studies from this Measures section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments and does not contain information about the publication type (journal article vs. dissertation).",
+      "warning": "No publication type information provided in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Measures section describes the assessment instruments used in the current study, including the Body Appreciation Scale (BAS) with 13 items and Cronbach's alpha of .92, the Multidimensional Body Self-Relations Questionnaire Appearance Evaluation Subscale (MBSRQ-AE), the Multigroup Ethnic Identity Measure (MEIM), the Rosenberg Self-Esteem Scale (RSES), the Sociocultural Attitudes Toward Appearance Scale\u20133 Internalization-General Subscale (SATAQ-3), the Eating Attitudes Test-26 Dieting Subscale (EAT-26), the Eating Disorders Self-Examination-Questionnaire (EDE-Q), the Physical Appearance\u2013Related Testing Scale Weight/Size Teasing Subscale (PARTS), and a Demographics Questionnaire. The section provides detailed descriptions of each instrument's items, response scales, validity evidence, and internal consistency coefficients for the current sample.",
+      "evidence_source": "Entire Measures section from 'Body Appreciation Scale' through 'Demographics Questionnaire'.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

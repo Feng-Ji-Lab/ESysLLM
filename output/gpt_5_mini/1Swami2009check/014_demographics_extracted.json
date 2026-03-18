@@ -1,0 +1,129 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or location information is provided in the section: \"All participants provided their demographic details consisting of age, ethnicity, religion, height, and weight. The latter two items were used to calculate participants' BMI, as kg/m2 .\"",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size (N) is reported in the section: \"All participants provided their demographic details consisting of age, ethnicity, religion, height, and weight. The latter two items were used to calculate participants' BMI, as kg/m2 .\"",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section does not state the survey/data-collection method (e.g., online or paper-and-pencil). Text: \"All participants provided their demographic details consisting of age, ethnicity, religion, height, and weight.\"",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Ethnicity is mentioned but no breakdown or percentage by race/ethnicity is provided: \"All participants provided their demographic details consisting of age, ethnicity, religion, height, and weight.\"",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Age is listed as a collected demographic but no mean or descriptive statistic provided: \"All participants provided their demographic details consisting of age, ethnicity, religion, height, and weight.\"",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Education level is not reported; the section only lists collected demographics (age, ethnicity, religion, height, and weight) and does not mention participants' education: \"All participants provided their demographic details consisting of age, ethnicity, religion, height, and weight.\"",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Although height and weight were used to calculate BMI (\"The latter two items were used to calculate participants' BMI, as kg/m2 .\"), no mean BMI value is reported in the section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the source of the sample (e.g., community, college, primary/secondary/high school) is provided in the section: \"All participants provided their demographic details consisting of age, ethnicity, religion, height, and weight.\"",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Body appreciation (BAS or BAS-2) is not mentioned in the section; only basic demographics and BMI calculation are described: \"All participants provided their demographic details consisting of age, ethnicity, religion, height, and weight.\"",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "\"All participants provided their demographic details consisting of age, ethnicity, religion, height, and weight. The latter two items were used to calculate participants' BMI, as kg/m2 .\" \u2014 participants provided height and weight which were used to calculate BMI, indicating BMI was derived from participant-provided (self-reported) height and weight.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation or statistical relationship between body appreciation and BMI is reported in the section. The section only describes collected demographics and that BMI was calculated from height and weight.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not label or describe multiple studies (no 'Study 1', 'Experiment 2', etc.); only a single demographics description is given.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The section does not state the publication type (journal article or dissertation).",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This short demographics section states that participants provided age, ethnicity, religion, height, and weight; height and weight were used to calculate BMI (kg/m2). The section provides no sample size, location, survey method, education level, mean age/BMI, racial breakdown, assessment of body appreciation, correlations, or study labels (e.g., 'Study 1').",
+      "evidence_source": "\"All participants provided their demographic details consisting of age, ethnicity, religion, height, and weight. The latter two items were used to calculate participants' BMI, as kg/m2 .\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments used in a study. No geographic location or country is mentioned in this section.",
+      "warning": "This is a methods/measures section that does not contain information about study location or country."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments. No sample size or participant count is mentioned in this section.",
+      "warning": "This is a methods/measures section that does not contain sample size information."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments. No information about survey administration method (paper-and-pencil vs. online) is provided in this section.",
+      "warning": "This is a methods/measures section that does not contain information about survey administration method."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments. While demographics including ethnicity are mentioned as being collected, no actual percentages or demographic data are reported in this section.",
+      "warning": "This is a methods/measures section that does not contain demographic data."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments. While age is mentioned as a demographic variable that was collected, no mean age is reported in this section.",
+      "warning": "This is a methods/measures section that does not contain descriptive statistics."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments. While educational qualifications are mentioned as a demographic variable that was collected, no percentages or educational data are reported in this section.",
+      "warning": "This is a methods/measures section that does not contain demographic data."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments. While height and weight are mentioned as variables used to compute self-reported BMI, no mean BMI value is reported in this section.",
+      "warning": "This is a methods/measures section that does not contain descriptive statistics."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments. No information about where or how participants were recruited is provided in this section.",
+      "warning": "This is a methods/measures section that does not contain information about sample recruitment."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text states: 'We measured body appreciation using the Body Appreciation Scale (BAS) developed by Avalos, Tylka, and Wood-Barcalow (2005). This is a 13-item measure that taps multiple aspects of positive body image...' The BAS is explicitly identified as the instrument used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "The text states: 'Participants were asked to report their demographics, consisting of age, ethnicity, educational qualifications, height, and weight (the latter two used to compute self-reported BMI as kg/m2).' This explicitly indicates that BMI was computed from self-reported height and weight.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments and their psychometric properties. No correlations between body appreciation and BMI are reported in this section.",
+      "warning": "This is a methods/measures section that does not contain correlation data."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section describing assessment instruments used in a study. No explicit statement about the number of studies is provided. The phrase 'in the present study' appears multiple times, suggesting a single study context, but the section does not explicitly state the number of studies.",
+      "warning": "This is a methods/measures section; the number of studies cannot be definitively determined from this section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text is a 'Measures' section from what appears to be a research paper. No explicit statement about publication type (journal article vs. dissertation) is provided in this section.",
+      "warning": "Publication type cannot be determined from this methods/measures section alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This is a Measures section describing the assessment instruments used in a study. The section details four main measurement tools: the Drive for Muscularity Scale (DMS) with 15 items measuring desire for muscularity, the Body Appreciation Scale (BAS) with 13 items measuring positive body image, the Neuroticism-Extraversion-Openness-Five-Factor Inventory (NEO-FFI) measuring Big Five personality domains, and the McArthur Ladder of Subjective Social Status (MLSSS) measuring perceived social status. Additionally, demographic information including age, ethnicity, educational qualifications, height, and weight (used to compute self-reported BMI) were collected. The text references 'the present study' suggesting a single study context, though no explicit study numbering is provided.",
+      "evidence_source": "Entire Measures section provided in text_content",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,93 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "reason": "All candidates consistently indicate that the paper describes a single study. Multiple section contexts explicitly refer to 'a cross-sectional study', 'the current study', or 'a single online cross-sectional study'. There is no conflicting information suggesting multiple studies."
+  },
+  "N": {
+    "extract_value": {
+      "Single study": [
+        607,
+        584
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context and all candidate sections. The initial sample size for the study, reported in the abstract, participants section, and for the main mediation analysis, is consistently 607 (Candidates 0, 1, 5, 6). A subsample size of 584 is consistently reported for correlations after listwise deletion (Candidates 2, 3, 4). Both values are relevant to different stages or analyses within the same study and are therefore included in the list for the 'Single study'."
+  },
+  "female": {
+    "extract_value": {
+      "Single study": [
+        0.611
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context and the section summary. Candidate [0] explicitly states '61.1% females' for the participants of this single study. This percentage is converted to a proportion (0.611) as per the definition."
+  },
+  "M_age": {
+    "extract_value": {
+      "Single study": [
+        25.15
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper describes a single study. There is a conflict between the mean age reported in the main text (25.15) and the table (24.8). Following the instruction to prefer values from the main text over tables when they contradict for the same study, the value 25.15 from the 'Participants and Procedure' section is selected."
+  },
+  "SD_age": {
+    "extract_value": {
+      "Single study": [
+        9.5
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper describes a single study, as indicated by the context and consistent references to 'Study X' in both candidates. There is a conflict between the SD of age reported in the main text (9.5 from Candidate 0) and the table (9.1 from Candidate 1). Following the instructions, values from the main text are preferred over table values when they contradict for the same study. Therefore, 9.5 from Candidate 0 is selected."
+  },
+  "usa_vs_other": {
+    "extract_value": {
+      "Single study": [
+        0
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper describes a single study. Candidate 0 explicitly states that the participants were '84.5% Irish (9.9% non-Irish European)', indicating the sample was not collected in the United States. Therefore, the value for 'usa_vs_other' is 0."
+  },
+  "r": {
+    "extract_value": {
+      "Single study": [
+        -0.44
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper describes a single study, as indicated by the context. Candidate [0] provides the correlation coefficient between Gratitude and Loneliness as -0.44, explicitly stating it is from Table 1 at the intersection of 'Gratitude' and 'Loneliness'. The section summary confirms Table 1 contains bivariate correlations for the study. Therefore, this value is directly extracted and assigned to the 'Single study'."
+  }
+}

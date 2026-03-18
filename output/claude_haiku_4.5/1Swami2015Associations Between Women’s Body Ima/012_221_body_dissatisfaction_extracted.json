@@ -1,0 +1,213 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information is provided in this section.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method is explicitly stated in this section. The text mentions 'dropdown menus' for ratings but does not specify whether the overall survey was paper-and-pencil or online.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information about race/ethnicity is provided in this section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in this section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI of participants is reported in this section. The section discusses a figural rating scale with BMI categories but does not provide actual participant BMI values.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the source of the sample (community, college, or primary/secondary/high school) is provided in this section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes the measurement of body dissatisfaction using the Photographic Figure Rating Scale, not body appreciation (BAS or BAS-2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section discusses a figural rating scale but does not specify whether BMI was assessed via self-report or measured directly.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes measurement methodology for body dissatisfaction, not correlations between body appreciation and BMI.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section is a methodological description of a measurement instrument and does not indicate the number of studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the methodology for measuring body dissatisfaction using the Photographic Figure Rating Scale (Swami et al. 2008c), a 10-point figural rating scale with photographic images of women. Participants rated their current body and ideal body, with body dissatisfaction operationalized as the absolute difference between these ratings. The measure has demonstrated good validity and test-retest reliability.",
+      "evidence_source": "Section 2.2.1 Body Dissatisfaction",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section (2.2.1 Body Dissatisfaction) does not mention any country. The accompanying Table 1 shows 'US sample' and 'Non-US sample' as column headers, indicating the study includes both US and non-US participants, but the text does not explicitly state which countries are included in the non-US sample. Without explicit country information in the text, this cannot be reliably extracted.",
+      "warning": "Country information not explicitly stated in the provided text section. Table 1 references 'US sample' and 'Non-US sample' but does not specify which countries comprise the non-US sample."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "US sample": [
+          8925
+        ],
+        "Non-US sample": [
+          742
+        ]
+      },
+      "evidence_source": "Table 1, row 'N': 'US sample' column shows 8,925 and 'Non-US sample' column shows 742. The table caption states 'Table 1 Sample characteristics for the included sub-samples in the present study', indicating these are two sub-samples within the same study.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section (2.2.1 Body Dissatisfaction) does not mention the survey method (paper-and-pencil or online). Table 1 provides sample characteristics but does not include survey method information.",
+      "warning": "Survey method not specified in the provided text or table."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section and Table 1 do not contain information about the percentage of white participants.",
+      "warning": "Racial/ethnic composition data not provided in the text or table."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "US sample": [
+          30.22
+        ],
+        "Non-US sample": [
+          27.7
+        ]
+      },
+      "evidence_source": "Table 1, 'Age' section, row 'M (SD)': US sample shows 30.22 (12.37) and Non-US sample shows 27.70 (11.42). The mean ages are 30.22 and 27.70 respectively.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "US sample": [
+          68.8
+        ],
+        "Non-US sample": [
+          68.9
+        ]
+      },
+      "evidence_source": "Table 1, 'Education' section. For US sample: 'Some college' (35.3%) + 'Undergraduate degree' (23.2%) + 'Graduate degree' (10.3%) = 68.8%. For Non-US sample: 'Some college' (25.7%) + 'Undergraduate degree' (32.3%) + 'Graduate degree' (10.9%) = 68.9%. These percentages represent participants with college or higher education experience.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "US sample": [
+          26.75
+        ],
+        "Non-US sample": [
+          24.93
+        ]
+      },
+      "evidence_source": "Table 1, 'Body mass index' section, row 'M (SD)': US sample shows 26.75 (5.86) and Non-US sample shows 24.93 (5.09). The mean BMIs are 26.75 and 24.93 respectively.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section (2.2.1 Body Dissatisfaction) and Table 1 do not specify the source of the sample (community, college, or primary/secondary/high school).",
+      "warning": "Source of sample not specified in the provided text or table."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section (2.2.1 Body Dissatisfaction) discusses the Photographic Figure Rating Scale for measuring body dissatisfaction, not body appreciation. No mention of BAS or BAS-2 (Body Appreciation Scale instruments) is present in the provided text.",
+      "warning": "The text describes assessment of body dissatisfaction (using Photographic Figure Rating Scale), not body appreciation (BAS/BAS-2). Assessment of BA cannot be determined from this section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section (2.2.1 Body Dissatisfaction) does not explicitly state whether BMI was self-reported or measured. Table 1 presents BMI data but does not specify the assessment method.",
+      "warning": "BMI assessment method (self-reported vs. measured) not explicitly stated in the provided text or table."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section (2.2.1 Body Dissatisfaction) does not report any correlations between body appreciation and BMI. The section focuses on body dissatisfaction measurement using the Photographic Figure Rating Scale, not body appreciation correlations.",
+      "warning": "No correlation data between body appreciation and BMI is present in the provided text section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text section is labeled '2.2.1 Body Dissatisfaction' and appears to be a subsection describing a measurement method. Table 1 shows 'US sample' and 'Non-US sample' as two sub-samples, but these appear to be sub-samples within a single study rather than separate studies. The text does not explicitly state the number of distinct studies.",
+      "warning": "The provided section does not clearly indicate the total number of studies in the paper. Table 1 shows two sub-samples (US and Non-US) but these appear to be sub-samples of one study, not separate studies."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text section does not contain information about the publication type (journal article or dissertation).",
+      "warning": "Publication type not specified in the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "Section 2.2.1 describes the measurement of body dissatisfaction using the Photographic Figure Rating Scale, where participants rate their current and ideal body figures on a 10-point scale. Table 1 presents sample characteristics for two sub-samples: a US sample (N=8,925, mean age 30.22) and a Non-US sample (N=742, mean age 27.70), with comparable education levels (approximately 69% with college or higher education) and different mean BMIs (26.75 vs. 24.93).",
+      "evidence_source": "Section 2.2.1 text and Table 1 caption and data",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1 Sample characteristics for the included sub-samples in the present study",
+      "evidence_source": "Table 1 title as presented in the image",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2015Associations Between Women\u2019s Body Ima/tables/1Swami2015Associations Between Women\u2019s Body Ima_p004_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

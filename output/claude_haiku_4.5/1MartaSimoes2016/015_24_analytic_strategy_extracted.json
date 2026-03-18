@@ -1,0 +1,93 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section is an analytic strategy section describing statistical methods. No country information is provided in this text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section mentions 'the sample comprised 155 participants' in the context of discussing sample size adequacy for structural equation modeling. However, this is a methodological discussion section (2.4 Analytic strategy), not a methods or results section where sample characteristics are typically reported. The mention of 155 is in the context of justifying the adequacy of the sample size for the statistical model, not as a primary sample description. Without explicit confirmation that this is the actual study sample being analyzed, extraction is uncertain.",
+      "warning": "Potential reference to sample size (155) found in methodological justification context, but unclear if this is the primary study sample or a reference example."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes analytic strategy and statistical methods (SPSS, Amos, path analysis, bootstrap resampling). No information about survey method (paper-and-pencil vs. online) is provided.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information about racial/ethnic composition is provided in this analytic strategy section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section mentions 'significant differences found between males and females' mean ages' and that 'age' was included as a control variable, but no actual mean age values are reported in this analytic strategy section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about educational attainment of participants is provided in this analytic strategy section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section mentions that 'body mass index (BMI)' was entered as an exogenous variable in the path analysis model, but no mean BMI value is reported in this analytic strategy section.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This analytic strategy section does not describe where or how participants were recruited.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The section explicitly states: 'product-moment Pearson correlation analyses were conducted to study BAS-2's associations with body mass index (BMI), external shame (OAS), and self-compassion (SCS_SC)' and 'positive body image (BAS-2) as an endogenous variable.' This indicates BAS-2 was used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section mentions that 'body mass index (BMI)' was used as a variable in the analyses, but does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This is an analytic strategy section describing the planned statistical methods. It states that 'product-moment Pearson correlation analyses were conducted to study BAS-2's associations with body mass index (BMI)' but does not report the actual correlation coefficient values. The section describes the methodology for computing correlations, not the results.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section is a methodological description of analytic strategy for what appears to be a single study. No explicit mention of multiple studies is provided in this section.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "This section is from a methods/analytic strategy section of a paper. The publication type (journal article vs. dissertation) cannot be determined from this section alone.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the analytic strategy for a single study examining relationships among body appreciation (BAS-2), BMI, external shame, and self-compassion. The analysis employed path analysis using SPSS and Amos software, with BAS-2 as the body appreciation measure and BMI as an exogenous variable. The study included 155 participants and conducted multigroup invariance analysis to test for differences between male and female participants.",
+      "evidence_source": "Section 2.4 Analytic strategy describes the statistical methods, variables used (BAS-2, BMI, OAS, SCS_SC), sample size (155 participants), and gender-specific analyses.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

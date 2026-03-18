@@ -1,0 +1,296 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information is provided in this section.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI values are reported in this section. Weight status categories (Underweight, Normoweight, Overweight, Obese) are mentioned but not mean BMI.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample source (community, college, or school) is provided in this section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section discusses confirmatory factor analysis but does not explicitly state which body appreciation instrument (BAS or BAS-2) was used.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported or measured) is provided in this section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section reports confirmatory factor analysis results and model fit indices, but does not report correlation coefficients between body appreciation and BMI.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section does not provide information about the number of studies. It appears to be a methods/results section of a single study analyzing a 10-item one-factor model.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents confirmatory factor analysis results for a 10-item one-factor model examining body appreciation across the whole sample and subsamples stratified by gender and weight status. The model demonstrated acceptable fit overall, but invariance testing revealed statistically significant differences across gender (p = .01), which were resolved after freeing thresholds for specific items (M1P, p = .07). No significant differences were found across weight status categories (p = .33).",
+      "evidence_source": "Entire section text describing CFA results and DIFFTEST procedures.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not explicitly state the country where the study was conducted. The table shows a Spanish version of the BAS-2 (English BAS-2 items [Spanish version]), but this does not necessarily indicate the country of the study.",
+      "warning": "Country information not provided in the text or table."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          840,
+          438,
+          402,
+          592,
+          248
+        ]
+      },
+      "evidence_source": "Table 1 header shows: 'Whole sample (N = 840)', 'Boys (n = 438)', 'Girls (n = 402)', 'UW & NW (n = 592)', 'OW & OB (n = 248)'. The text does not explicitly name this as 'Study 1' or provide a specific study identifier, so 'Study X' is used per the naming rule. The sample sizes represent the whole sample and gender/weight status subgroups.",
+      "warning": "Multiple subgroups are reported (gender and weight status). All values are listed under Study X as per the policy to record all sub-samples in the same list."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not specify the survey method (paper-and-pencil or online).",
+      "warning": "Survey method not provided."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not report the percentage of white participants.",
+      "warning": "Racial/ethnic composition not provided."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not report the mean age of participants.",
+      "warning": "Mean age not provided."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not report the percentage of participants with college or higher education.",
+      "warning": "Education level not provided."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not report mean BMI values. The table shows weight status subgroups (UW, NW, OW, OB) but not mean BMI values.",
+      "warning": "Mean BMI not provided."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not specify the source of the sample (community, college, or primary/secondary/high school).",
+      "warning": "Sample source not provided."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Table 1 title explicitly states 'English BAS-2 items [Spanish version]' and the note confirms this is the BAS-2 assessment instrument.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not specify whether BMI was self-reported or measured.",
+      "warning": "BMI assessment method not provided."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Table 1 presents factor loadings and standard errors for BAS-2 items across subgroups, not correlations between body appreciation and BMI. This is a confirmatory factor analysis table showing item loadings, not a correlation matrix with BMI.",
+      "warning": "The table does not contain correlation data between body appreciation and BMI. It shows factor loadings for the BAS-2 items."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text describes a single confirmatory factor analysis with one sample divided into subgroups (gender and weight status). No multiple studies are explicitly named or described.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not indicate whether this is from a journal article or dissertation.",
+      "warning": "Publication type not provided."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents a Confirmatory Factor Analysis of a 10-item one-factor BAS-2 model tested on a whole sample (N=840) and across gender subgroups (Boys n=438, Girls n=402) and weight status subgroups (UW & NW n=592, OW & OB n=248). Table 1 displays standardized factor loadings and standard errors for each BAS-2 item across these subgroups, with all loadings statistically significant (p < .001). The analysis tested measurement invariance across gender and weight status, finding significant differences in gender invariance that were resolved after freeing specific item thresholds.",
+      "evidence_source": "Text content describing the confirmatory factor analysis and Table 1 caption and structure."
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1. Factor Loadings and Standard Errors for Whole Sample and Gender and Weight Status Subgroups",
+      "evidence_source": "The exact title/caption of Table 1 as it appears in the document."
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1AlcarazIbanez2017/tables/1AlcarazIbanez2017_p006_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain explicit information about the country where the study was conducted.",
+      "warning": "No country information found in the provided section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          438,
+          402,
+          592,
+          248
+        ]
+      },
+      "evidence_source": "Table 2 shows sample sizes: Boys (n = 438), Girls (n = 402), Underweight & Normoweight group (n = 592), Overweight & Obese group (n = 248). The text indicates these are subsamples of the same study with different grouping schemes (by gender and by weight status).",
+      "warning": "Multiple subsamples reported for the same study using different stratification schemes (gender and weight status). All values listed under Study X as per policy."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain information about the survey method (paper-and-pencil vs. online).",
+      "warning": "No survey method information found in the provided section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain information about the racial/ethnic composition of participants.",
+      "warning": "No racial/ethnic demographic information found in the provided section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain information about the mean age of participants.",
+      "warning": "No age information found in the provided section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain information about educational attainment of participants.",
+      "warning": "No education level information found in the provided section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain information about mean BMI of participants. The table discusses weight status groups (Underweight, Normoweight, Overweight, Obese) but does not report mean BMI values.",
+      "warning": "No mean BMI values found in the provided section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain information about where or how participants were recruited.",
+      "warning": "No sample source information found in the provided section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain information about which body appreciation instrument (BAS or BAS-2) was used.",
+      "warning": "No body appreciation assessment instrument information found in the provided section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain information about how BMI was assessed (self-reported vs. measured).",
+      "warning": "No BMI assessment method information found in the provided section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain correlation coefficients between body appreciation and BMI. Table 2 reports model fit indices (\u03c7\u00b2, df, CFI, TLI, RMSEA) for confirmatory factor analysis, not correlations between body appreciation and BMI.",
+      "warning": "No correlation data between body appreciation and BMI found in the provided section. Table 2 contains CFA fit indices, not correlation coefficients."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single confirmatory factor analysis study with multiple subsamples (gender groups and weight status groups), but these are subsamples of one study, not separate studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly state whether this is a journal article or dissertation.",
+      "warning": "Publication type not specified in the provided section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents a Confirmatory Factor Analysis (CFA) of a 10-item one-factor model for body appreciation in adolescents. The analysis examined measurement invariance across gender (Boys n=438, Girls n=402) and weight status groups (Underweight & Normoweight n=592, Overweight & Obese n=248). The model showed acceptable fit overall, with statistically significant differences in invariance testing across gender that were resolved through partial metric invariance (M1P), while no significant differences were found across weight status groups.",
+      "evidence_source": "Text content describing the confirmatory factor analysis and Table 2 showing model fit indices and sample sizes."
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2. Model Fit Indices for the Confirmatory Factor Analyses and tests of Measurement Invariance",
+      "evidence_source": "Table title as presented in the document."
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1AlcarazIbanez2017/tables/1AlcarazIbanez2017_p007_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_1"
+  }
+]

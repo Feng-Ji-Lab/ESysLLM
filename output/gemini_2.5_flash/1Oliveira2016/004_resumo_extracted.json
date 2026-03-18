@@ -1,0 +1,125 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information was explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [490]}",
+      "evidence_source": "The text states: \"A an\u00e1lise path foi conduzida numa amostra de 490 mulheres\" (The path analysis was conducted on a sample of 490 women). The extracted value is for Study X.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\": [490]}",
+        "male": "None",
+        "other": "None",
+        "total": "{\"Study X\": [490]}"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method was explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the percentage of white participants was explicitly stated in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age of participants was explicitly stated in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the percentage of participants with college or higher education was explicitly stated in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI of participants was explicitly stated in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No source of sample was explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions \"aprecia\u00e7\u00e3o positiva do corpo (body appreciation)\" but does not specify the instrument used (BAS or BAS-2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions \"controlando o efeito do IMC\" (controlling the effect of BMI) but does not specify how BMI was assessed (self-reported or measured).",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states that \"social safeness and positive body appreciation (body appreciation) proved to be mediators of the impact of early memories of warmth on disturbed eating behavior, controlling for the effect of BMI.\" This describes a mediation effect but does not provide a direct Pearson r correlation coefficient between body appreciation and BMI.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to \"Este estudo\" (This study), indicating a single study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "journal articles",
+      "evidence_source": "The section is titled \"Resumo\" (Abstract), which is a common component of journal articles. The content describes a research study, analysis, and findings, consistent with a journal article.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This abstract describes a study that investigated a model hypothesizing that positive early memories are negatively associated with eating psychopathology, mediated by social safeness and a positive body appreciation. The path analysis was conducted on a sample of 490 women and confirmed the model's adequacy, explaining 51% of the variance in eating psychopathology. The results suggest that social safeness and body appreciation may contribute to prevention programs for eating psychopathology, controlling for BMI.",
+      "evidence_source": "Summary of the provided abstract text.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

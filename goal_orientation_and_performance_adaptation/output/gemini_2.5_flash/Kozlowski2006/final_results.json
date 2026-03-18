@@ -1,0 +1,274 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      3,
+      7,
+      9,
+      16,
+      17,
+      18,
+      24
+    ],
+    "reason": "Multiple sections explicitly state that the paper describes 'a single research study' or 'the present study' or 'the research' in the context of empirical work. No section suggests the presence of multiple distinct studies, indicating that the paper reports on one comprehensive study."
+  },
+  "PubType": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      17
+    ],
+    "reason": "The 'References' section (Candidate [17]) explicitly mentions 'received, revised, and accepted' dates, which are standard indicators of a journal article's publication process. All other candidates consistently describe the paper as a single research study, which is also characteristic of a journal article."
+  },
+  "FinancSupport": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0
+    ],
+    "reason": "Candidate [0] explicitly states that 'the research was funded by the Air Force Office of Scientific Research and the Army Research Institute', which is direct evidence of financial support. According to the definition, any mention of funding agencies or explicit financial support codes as '1'. Other candidates do not mention financial support, but the presence of explicit funding information in one section is sufficient to determine the overall value for the paper, as per the 'where_to_find' rule."
+  },
+  "PeerReview": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      16
+    ],
+    "reason": "All candidates consistently indicate a value of 1. The section context for Candidate [16], which mentions the paper being 'received, revised, and accepted', provides strong evidence that the publication underwent a peer-review process, confirming the 'Yes' status for peer review."
+  },
+  "PgoType": {
+    "extract_value": {
+      "Single study": [
+        "Prove",
+        "Avoid"
+      ]
+    },
+    "best_indices": [
+      1,
+      4,
+      5
+    ],
+    "reason": "The paper reports a single study. Candidates 1, 4, and 5 provide the most reliable and direct evidence. Candidate 1 explicitly states that 'performance-prove, and performance-avoid orientations were measured'. Candidates 4 and 5, derived from tables (Table 1: Means, Standard Deviations, and Intercorrelations; Table 3: Between-Subjects Effects), clearly list 'Performance-prove orientation' and 'Performance-avoid orientation' as distinct variables. This directly aligns with the definition's tie-breaker rule 1: 'If the paper reports both performance-approach and performance-avoidance as separate constructs, extract two separate effects and code them as 'Prove' and 'Avoid' respectively.' Other candidates infer 'Global' based on general phrasing or lack of differentiation, which is less precise than the explicit measurement details provided by candidates 1, 4, and 5."
+  },
+  "GoMeasure_dichot_num": {
+    "extract_value": {
+      "Single study": [
+        "2",
+        "2"
+      ]
+    },
+    "best_indices": [
+      2
+    ],
+    "reason": "The paper describes a single study. Candidate 2 explicitly states that 'trait learning, performance-prove, and performance-avoid orientations were measured using three scales developed by VandeWalle (1997)'. This is the most direct and reliable evidence for the measurement method of goal orientation, leading to a code of 2 (VandeWalle). The provided value `[2, 2]` indicates two distinct effects were extracted using this measure. Other candidates either refer to different constructs (e.g., goal commitment in Candidate 3) or mention 'trait goal orientation' without specific attribution (Candidates 0, 4, 5, 8). In the absence of evidence for a different goal orientation measure, the explicit attribution to VandeWalle in Candidate 2 is considered definitive for the goal orientation measure used in the study."
+  },
+  "Age_Info": {
+    "extract_value": {
+      "Single study": [
+        "most (87%) were between 18 and 21 years old."
+      ]
+    },
+    "best_indices": [
+      2
+    ],
+    "reason": "The paper describes a single study. Candidate [2] provides specific age information for the participants, stating that 'most (87%) were between 18 and 21 years old.' All other candidates explicitly state that no age information was reported in their respective sections. Therefore, the information from candidate [2] is the only relevant and reliable age information to extract for the single study."
+  },
+  "Age_imputed": {
+    "extract_value": {
+      "Single study": [
+        "21"
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "The paper describes a single study. Candidate 1 provides an imputed age of 21, derived from the reported age range '18 and 21 years old' for the majority (87%) of participants. This imputation follows rule 2.1_single_range, which uses the upper bound of a single reported age range. All other candidates explicitly state that no age information was reported or could be imputed."
+  },
+  "Sex": {
+    "extract_value": {
+      "Single study": [
+        "3"
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "The paper reports a single study. Candidate [1] from the 'Participants' section explicitly states that 'Fifty-eight percent of the participants were female', which indicates a mixed sample. According to the definition, a mixed sample is coded as 3. Other candidates either provide no information or infer a mixed sample without explicit percentages, making Candidate [1] the most precise and reliable source."
+  },
+  "Men_Prop": {
+    "extract_value": {
+      "Single study": [
+        "42.0"
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "The paper describes a single study. Candidate [1] from the 'participants' section explicitly states that 'Fifty-eight percent of the participants were female'. Following the fallback rule '2_from_percent_women', Men_Prop is calculated as 100 - 58 = 42%. All other candidates either explicitly state no information was provided or contain 'None' or 'null' values for Men_Prop."
+  },
+  "Country_dichot_num": {
+    "extract_value": {
+      "Single study": [
+        "2"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper describes a single study. Candidates 0 and 1 provide strong and consistent evidence that the study was conducted in the USA. Candidate 0 mentions US-based institutions (Michigan State University, Cornell University) sponsoring the research, and Candidate 1 explicitly states the sample was from a 'large midwestern university', implying the USA. Both pieces of evidence support coding the country as 2 (USA). Other candidates either provide no country information or, in the case of Candidate 9, provide a value of 1 while simultaneously stating no country information was available, which is contradictory and less reliable than the explicit evidence from Candidates 0 and 1."
+  },
+  "Sample_dichot": {
+    "extract_value": {
+      "Single study": [
+        "1"
+      ]
+    },
+    "best_indices": [
+      1,
+      3,
+      11
+    ],
+    "reason": "The paper reports a single study. There was conflicting information regarding the sample type. Candidates 0, 2, 9, and 10 inferred that the sample consisted of 'trainees' who were not students, based on military funding or the lack of explicit mention of students. However, candidates 1, 3, and 11 provided explicit and strong evidence that the sample was a student population. Candidate 1 explicitly stated '542 undergraduates in psychology courses'. Candidate 3 mentioned 'Participants provided their SAT or ACT scores', which are typically associated with student populations. Most definitively, Candidate 11 explicitly stated 'the use of a student population'. Given these explicit statements, which are more reliable than inferences from the term 'trainees', the sample is coded as a student sample (1)."
+  },
+  "N": {
+    "extract_value": {
+      "Single study": [
+        "530",
+        "530",
+        "530",
+        "530",
+        "530",
+        "530",
+        "530",
+        "530"
+      ]
+    },
+    "best_indices": [
+      6
+    ],
+    "reason": "The paper reports a single study. The field definition requires the sample size (N) for the extracted correlation coefficient between goal orientation and performance adaptation. Candidate 6 provides N=530, explicitly stating that this N is 'applied to each of the 8 extracted correlations' and is found in a section detailing 'intercorrelations of variables in Table 1'. This directly aligns with the definition's preference for the N that matches the specific analysis producing the correlation coefficient. Other candidates provide Ns for total participants (524, 542), confirmatory factor analysis (542), or various F-tests and t-tests for other analyses (531, 536, 534) which are not specifically for the correlation coefficients between goal orientation and performance adaptation. Therefore, N=530 from Candidate 6 is the most appropriate value."
+  },
+  "Correlation_PGO_and_PA": {
+    "extract_value": {
+      "Single study": [
+        "0.01",
+        "0.07",
+        "0.04",
+        "0.03",
+        "-0.03",
+        "-0.05",
+        "0.01",
+        "0.01"
+      ]
+    },
+    "best_indices": [
+      4
+    ],
+    "reason": "The paper reports a single study. Candidate 4, from Table 1, provides Pearson correlation coefficients (r values) between 'Performance-prove orientation' and 'Performance-avoid orientation' (both subscales of Performance Goal Orientation) and various measures of performance adaptation ('Self-evaluation activity', 'Practice focus', 'Basic performance', 'Strategic performance'). According to the correlation case rules, if multiple goal orientation subscale correlations or multiple performance adaptation subscale correlations are reported, all should be included. Candidates 0, 1, 2, 3, 5, 6, and 7 were rejected as they explicitly state that no relevant correlation coefficients were reported or they provided other statistical measures not pertaining to Pearson r correlations between PGO and PA."
+  },
+  "Correlation_info": {
+    "extract_value": {
+      "Single study": [
+        "PPGO and Self-evaluation activity",
+        "PPGO and Practice focus",
+        "PPGO and Basic performance",
+        "PPGO and Strategic performance",
+        "APGO and Self-evaluation activity",
+        "APGO and Practice focus",
+        "APGO and Basic performance",
+        "APGO and Strategic performance"
+      ]
+    },
+    "best_indices": [
+      4
+    ],
+    "reason": "The paper describes a single study. Candidates 0, 1, 2, 3, 5, 6, and 7 explicitly state that no correlation information was reported or found. Candidate 4, however, provides specific correlations from Table 1, linking 'Performance-prove orientation' (PPGO) and 'Performance-avoid orientation' (APGO) with 'Self-evaluation activity', 'Practice focus', 'Basic performance', and 'Strategic performance'. These values directly describe correlations between types of performance goal orientation and aspects of performance/adaptation, fitting the field definition. Therefore, the values from Candidate 4 are selected for the 'Single study'."
+  },
+  "AdaptMeasures": {
+    "extract_value": {
+      "Single study": [
+        "1",
+        "3"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "reason": "The paper reports a single study, as confirmed by the context. Performance adaptation was assessed using both self-report and objective measures. Self-report measures (Code 1) include self-monitoring, self-evaluation activities, negative affect, self-efficacy, off-task thoughts, cognitive focus, and practice focus, as indicated by candidates [0], [5], [7], [8], and [9]. Objective measures (Code 3) include task performance, basic performance, and strategic performance on a generalization task, as indicated by candidates [1], [2], [3], and [10]. Candidate [6] (Table 1) also supports both self-report (for self-evaluation activity and practice focus) and objective measures (for basic and strategic performance). Candidate [4] was excluded as it described manipulation checks and did not provide specific assessment methods for performance adaptation."
+  },
+  "AdaptMethod": {
+    "extract_value": {
+      "Single study": [
+        "0",
+        "1",
+        "1",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "1",
+        "1",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "reason": "The paper describes a single study, as indicated by the context. Candidates 0, 5, 7, 8, and 9 consistently identify adaptation outcomes such as self-monitoring, self-evaluation, negative affect, self-efficacy, off-task thoughts, cognitive focus, and practice focus as subjective ratings based on self-report (coded as 0). Candidates 1, 2, 3, and 10 consistently identify adaptation outcomes such as points for correct/incorrect decisions, generalization task performance, and basic/strategic knowledge and performance as objective scores (coded as 1). Candidate 6, from a table, initially coded 'Self-evaluation activity' and 'Practice focus' as objective (1). However, multiple text-based candidates (0, 5, 7, 8, 9) explicitly state these measures are 'self-reported', making them subjective (0). Following the conflict resolution rule to prefer main text over table values when reliable, 'Self-evaluation activity' and 'Practice focus' are re-coded as 0. 'Basic performance' and 'Strategic performance' from candidate 6 are objective (1), consistent with other objective measures. Thus, candidate 6 contributes four '0's (for self-evaluation activity and practice focus, each correlated with two PGO types) and four '1's (for basic performance and strategic performance, each correlated with two PGO types). Candidate 4 was excluded as it did not provide relevant information for AdaptMethod. All valid extracted values are consolidated into a single list for the 'Single study'."
+  },
+  "AdaptMethod_Specific": {
+    "extract_value": {
+      "Single study": [
+        "1",
+        "3"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "reason": "The paper describes a single study, so all candidates referring to 'Study X' were consolidated under 'Single study'. Multiple candidates ([0], [5], [7], [8], [9]) consistently indicate self-report methods (code 1) for various self-regulatory processes such as self-monitoring, self-evaluation, negative affect, self-efficacy, off-task thoughts, cognitive focus, and practice focus. Other candidates ([1], [2], [3], [10]) consistently indicate objective task-based measures (code 3) for performance adaptation, basic performance, and strategic performance. Candidate [6] presented a conflict for 'Self-evaluation activity' and 'Practice focus', coding them as objective (3) in a table. However, main text sources ([0], [5], [7], [8], [9]) consistently describe these as self-reported (1). Following the conflict resolution rule to prefer main text over tables when reliable, these were resolved as code 1. Candidate [6] also listed 'Basic performance' and 'Strategic performance' as objective (3), which is consistent with other sources. Therefore, candidate [6] contributes both 1 and 3 to the overall set of methods. Candidate [4] was excluded as it discussed manipulation checks, not the specific assessment methods of performance adaptation. The final extract_value list includes all distinct assessment methods identified: self-report (1) and objective (3)."
+  }
+}

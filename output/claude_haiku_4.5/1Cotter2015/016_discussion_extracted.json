@@ -1,0 +1,165 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "United States"
+        ]
+      },
+      "evidence_source": "Text states: 'the current study provided psychometric data for the BAS using a sample of Black college women' and 'Body appreciation also had a moderate, negative relation with BMI' in the context of a study examining Black women in the United States. The text explicitly mentions 'Black women in the United States' when discussing the sample.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The Discussion section does not provide explicit sample size information. While the text references 'the current study' and 'the current sample,' no specific number of participants is stated in this Discussion section.",
+      "warning": "Sample size not provided in the Discussion section. This information would typically be found in the Methods section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not specify whether data collection used paper-and-pencil or online survey methods.",
+      "warning": "Survey method not stated in the Discussion section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          0
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            0
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            0
+          ]
+        }
+      },
+      "evidence_source": "The text explicitly states: 'the current study provided psychometric data for the BAS using a sample of Black college women.' The sample is described as composed of Black women, indicating 0% White participants (or 100% Black participants). The text also contrasts this sample with 'samples composed primarily of White women' and 'previously published samples of primarily White undergraduates,' emphasizing that the current sample is Black women.",
+      "warning": "The percentage is inferred from the explicit description of the sample as 'Black college women' with no mention of other racial/ethnic groups in the sample composition."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The Discussion section does not provide explicit mean age information. While the text mentions 'college' and 'young Black women entering predominantly White colleges,' no specific mean age is stated.",
+      "warning": "Mean age not provided in the Discussion section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          100
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            100
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            100
+          ]
+        }
+      },
+      "evidence_source": "The text explicitly states: 'the current study provided psychometric data for the BAS using a sample of Black college women.' The sample is described as college women, indicating 100% of participants have college or higher education experience. This is further supported by: 'The use of a college sample is another potential limitation, given the relatively high educational attainment within this group.'",
+      "warning": "Percentage inferred from explicit description of sample as 'Black college women' - all participants are college students."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The Discussion section does not provide explicit mean BMI information. While the text discusses BMI and its relationship with body appreciation, no specific mean BMI value is stated.",
+      "warning": "Mean BMI not provided in the Discussion section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "college"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'the current study provided psychometric data for the BAS using a sample of Black college women.' The sample source is clearly identified as college.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'studies examining the psychometric properties of the BAS, a measure of body appreciation' and 'the current study provided psychometric data for the BAS using a sample of Black college women.' The Body Appreciation Scale (BAS) is the instrument used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "The text states: 'Self-reported height and weight is a related limitation in the current study. Previous research has found that women have a tendency to underreport their weight...' This explicitly indicates that BMI was assessed using self-reported height and weight.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The Discussion section states: 'Body appreciation also had a moderate, negative relation with BMI.' However, no specific correlation coefficient (r value) is provided in this Discussion section. The text only describes the relationship qualitatively as 'moderate' and 'negative.'",
+      "warning": "Specific correlation coefficient not provided in the Discussion section. The relationship is described qualitatively as 'moderate, negative' but no numerical r value is given."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The Discussion section refers to 'the current study' consistently throughout, indicating a single study. Phrases such as 'the current study provided psychometric data,' 'the current sample,' and 'the current study's outcomes' all refer to one study examining Black college women and their body appreciation, ethnic identity, and eating disorder pathology.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not explicitly state whether this is a journal article or dissertation. This information would typically be found on the title page or in the publication metadata.",
+      "warning": "Publication type not stated in the Discussion section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Discussion section presents findings from a single study (Study 1) examining body appreciation, ethnic identity, and eating disorder pathology among Black college women in the United States. The study validated the Body Appreciation Scale (BAS) using self-reported height and weight to assess BMI, finding that body appreciation had a moderate negative relation with BMI and was associated with reduced eating disorder risk factors. The research emphasizes the importance of examining positive aspects of body image and cultural factors, particularly ethnic identity, as protective factors against eating disorders in Black women.",
+      "evidence_source": "The entire Discussion section describes Study 1's findings, methodology, and implications.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

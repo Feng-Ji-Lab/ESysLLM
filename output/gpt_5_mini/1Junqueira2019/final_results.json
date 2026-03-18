@@ -1,0 +1,274 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      1,
+      2,
+      3,
+      6,
+      7,
+      8
+    ],
+    "reason": "Multiple sections (abstract, introduction, participants, methods, results, discussion) consistently describe a single empirical study of Brazilian university women (N\u2248194) with a 15-day retest subsample. There is no indication of separate, distinct studies (e.g., Study 1/Study 2) in the paper, so the most accurate count is 1."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      2
+    ],
+    "reason": "Multiple sections indicate this is a peer-reviewed article (journal homepage and article metadata) and the abstract (candidate 2) describes an empirical study of Brazilian university women; therefore the publication type matches \"journal articles\" rather than \"dissertation.\" Candidate 2 provides the strongest direct evidence."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "Brazil"
+      ]
+    },
+    "best_indices": [
+      0,
+      3,
+      5,
+      7,
+      10
+    ],
+    "reason": "All reliable sources (title, abstract, Participants/Method, tables, and Discussion) consistently report a single empirical study conducted in Brazil. The Participants section (candidate 5) specifies recruitment from a private university in Ribeir\u00e3o Preto, S\u00e3o Paulo, and the abstract (candidate 3) reports 194 Brazilian university women. There is a single study with a retest subsample, which is part of the same Brazilian sample, so all subsamples are merged under the one study entry."
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        100
+      ]
+    },
+    "best_indices": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "reason": "All candidates refer to the same single empirical study of Brazilian university women (N=194). The abstract (candidate 2) explicitly states the sample consisted of Brazilian university women, and the discussion (candidate 3) and title/figure (candidates 0 and 1) confirm this. Per the provided infer_rule, 'university women' implies 100% have college-level education, so extract value = 100. No gender-specific percentages were reported.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          100
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          100
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "college"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason": "All candidate excerpts consistently describe a single empirical study of Brazilian university women (title, abstract, Participants, Procedures, and Discussion). Participants were recruited from a university/private university campus in Ribeir\u00e3o Preto and opportunistically sampled by research assistants; a 15-day retest subsample is reported but does not constitute a separate study. Therefore the correct source classification is 'college'. Candidates 0\u20135 were used to confirm this."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        194,
+        100
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "reason": "The paper reports a single study of Brazilian university women. Multiple candidates report N = 194 (abstract [0], Participants/methods [1], Table 1 caption [2]) \u2014 these are consistent and derive from the Participants/main text and table, so 194 is the primary total sample size. A subset of 100 participants is reported for the 15-day test\u2013retest reliability (subsample) [4]; per instructions subsamples are merged into the same study entry, so 100 is included as a subsample value. One candidate reported N = 196 in preliminary analyses [3]; this conflicts with the Participants section (which documents 200 initial, 6 exclusions \u2192 194) and with the table and abstract, so it was treated as a likely inconsistency/typo and not used. Gender information indicates an all-female sample, so female and total arrays mirror the values above.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          194,
+          100
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          194,
+          100
+        ]
+      }
+    }
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "measured"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All candidate sources (abstract, BMI methods section, and procedures) consistently state that weight and height were directly measured (digital scale and stadiometer) and BMI was calculated from those measurements. Methods/Main text descriptions (indices 1 and 2) are the most reliable sources and corroborate the abstract (index 0). The paper reports a single empirical study (with a 15-day retest subsample), so values were merged into one entry. No evidence of self-reported BMI was found."
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Single study": [
+        88.7
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one participant sample is reported (no Study 1/Study 2 distinctions). The Participants section states 88.7% of the sample self-reported as ethnically White; no gender-specific percentages were provided. Therefore this single value (total = 88.7) is assigned to the single study.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          88.7
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          88.7
+        ]
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        21.8
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study is reported. The Participants section (main text) states 'The remaining 194 women had a mean age of 21.80 years (SD = 4.24)', so 21.8 was taken as the mean age (total). No gender-specific means were reported.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          21.8
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          21.8
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        23.99
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Paper reports a single study (one participant sample of Brazilian university women, N=194). The Participants section (main text) reports mean BMI = 23.99 kg/m2 (SD=4.94); no gender split was provided. Candidate 0 is from the Participants section and is the most reliable source, so its value was used as the total for the single study.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          23.99
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          23.99
+        ]
+      }
+    }
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "All candidates describe a single empirical study. Participants completed the Body Appreciation Scale (BAS; Brazilian Portuguese translation) with 10 of the original 13 items retained; the BAS-2 was unavailable when the study began. Therefore the assessment instrument for the single study is BAS."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        -0.36
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study in the paper (N = 194). Table 1 (Inter-scale Correlations, N = 194) reports the Pearson correlation between 'Body appreciation' (variable 3) and 'Body mass index' (variable 9) as r = -0.36. No gender-separated correlations were reported, so the total correlation is recorded for the single study. Candidate 0 (Table 1) is the direct source.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          -0.36
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          -0.36
+        ]
+      }
+    }
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "paper-and-pencil"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The procedures section (candidate 0) explicitly states participants completed paper-and-pencil anonymous questionnaires in a laboratory setting. The paper reports a single study (including a 15-day retest subsample), so all data map to one study. No conflicting sources were provided."
+  }
+}

@@ -1,0 +1,125 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "{\"Study X\":[\"U.S.\"]}",
+      "evidence_source": "Community participants who were from the U.S.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "{\"Study X\":[382]}",
+      "evidence_source": "This screening resulted in a final data set of 382 participants (192 women and 190 men)",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\":[192]}",
+        "male": "{\"Study X\":[190]}",
+        "other": "None",
+        "total": "{\"Study X\":[382]}"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "{\"Study X\":[\"online\"]}",
+      "evidence_source": "completed the survey via SurveyMonkey.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\":[71.9]}",
+      "evidence_source": "Participants identified as White (71.9%)",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "{\"Study X\":[71.9]}"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\":[33.38]}",
+      "evidence_source": "They ranged in age from 18 to 75 (M_{\\rm age}=33.38, SD=11.08).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "{\"Study X\":[33.38]}"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\":[86.1]}",
+      "evidence_source": "One (0.3%) did not complete high school, 13.6% finished high school, and the remaining participants (86.1%) reported at least a year of college education.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "{\"Study X\":[86.1]}"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\":[26.82,26.54]}",
+      "evidence_source": "Average BMI was 26.82 (SD=7.30) for women and 26.54 (SD=5.96) for men.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\":[26.82]}",
+        "male": "{\"Study X\":[26.54]}",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "{\"Study X\":[\"community\"]}",
+      "evidence_source": "Community participants who were from the U.S., completed at least 100 hits, and had their previous work approved at least 98% of the time were introduced to this study as \"an investigation of attitudes about food, eating, and body.\" If interested, they signed up via the MTurk worker hit website, provided their consent, and completed the survey via SurveyMonkey.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "{\"Study X\":[\"BAS-2\"]}",
+      "evidence_source": "The BAS-2 with the modified Item 8 example was embedded within a larger survey including nine measures, which was approved by the IRB from The Ohio State University. The 10-item BAS-2 with the modified Item 8 example was analyzed (see Appendix).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "{\"Study X\":[\"self-reported\"]}",
+      "evidence_source": "Participants self-reported their height and weight, which were used to calculate BMI.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes the method for a single study. The mention of 'Study 2' refers to participants being *deleted* if they participated in a different study, not that 'Study 2' is described within this section.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the methodology for a study, outlining the recruitment of 382 community participants (192 women, 190 men) from the U.S. via MTurk and SurveyMonkey. It describes the screening process, participant demographics including mean age (33.38), racial composition (71.9% White), and education level (86.1% with college or higher education). The section also specifies the use of the BAS-2 for body appreciation assessment and self-reported height and weight for BMI calculation, with mean BMI reported for women (26.82) and men (26.54).",
+      "evidence_source": "Summarized from the 'Method' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

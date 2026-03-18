@@ -1,0 +1,497 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text cites multiple academic papers (e.g., Pedhazur, 1982; Cohen and Cohen, 1983; Bentler, 1993), and the content describes a research study with analytical procedures and model fit tests, consistent with a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of grants, funding agencies, or financial support was found in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The publication type is inferred to be a journal article, which is typically peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The text refers to 'trait performance orientation' and 'performance orientation' without distinguishing between approach or avoidance components, and also mentions 'Mastery/performance goals (0 = performance, 1 = mastery)', indicating a global measure of performance goal orientation. This is for Study X.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'adaptive performance' and 'performance adaptability' as dependent variables but does not explicitly describe how these adaptation outcomes were measured (e.g., self-report, other, objective). It only describes what predicted them.",
+      "warning": "The specific measurement method for 'adaptive performance' or 'performance adaptability' is not explicitly stated."
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state whether 'adaptive performance' or 'performance adaptability' was measured using subjective ratings or objective scores.",
+      "warning": "The specific measurement method for 'adaptive performance' or 'performance adaptability' is not explicitly stated."
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the specific assessment method (self-report, other, objective) used for 'adaptive performance' or 'performance adaptability'.",
+      "warning": "The specific measurement method for 'adaptive performance' or 'performance adaptability' is not explicitly stated."
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text mentions 'trait performance orientation' and 'Mastery/performance goals (0 = performance, 1 = mastery)' but does not attribute the measure to VandeWalle. Therefore, it is coded as 'Other' (1). This is for Study X.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No information regarding age (mean, range, SD, or other details) was provided in the text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No mean age or information to impute age was provided in the text.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "No explicit information about the sex composition of the sample was provided, so it is assumed to be a mixed sample. This is for Study X.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the percentage of men in the sample was provided in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "No information about the country where the sample was collected was provided in the text, so it is coded as 'Other' (1). This is for Study X.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "No information indicating a student sample was provided. The context of 'training outcomes' and 'performance adaptability' suggests a non-student sample, so it is coded as 'Other sample' (2). This is for Study X.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [60]}",
+      "evidence_source": "The note states: 'N = 60'. This is for Study X.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "The text reports beta coefficients from regression analyses (e.g., 'performance orientation (b = .034, t = .307, p > .50) did not significantly predict training performance'), but it does not provide Pearson r correlation coefficients between Performance Goal Orientation and performance adaptation.",
+      "warning": "Only beta coefficients from regression were reported, not Pearson r correlations as requested by the schema."
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No Pearson r correlation was found, so no correlation information can be provided.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single set of 'Analytical Procedures' and 'Test of overall model fit' for one model, indicating a single study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the analytical procedures, primarily path analysis, used to evaluate a model. It describes regression analyses for various endogenous variables, including adaptive performance, training performance, declarative knowledge, knowledge structure coherence, and self-efficacy. The section concludes with a test of overall model fit, indicating that the hypothesized model fit the data well, and mentions the use of LISREL for robustness checks. The sample size for these analyses is N=60.",
+      "evidence_source": "The entire 'Analytical Procedures' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes 'Analytical Procedures' and references multiple academic papers (Pedhazur, Cohen and Cohen, Bentler, Chan, Raykov & Widaman, Hu and Bentler, Sugawara and MacCallum), indicating it is a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of grants, funding, or financial support was found in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Given the detailed analytical procedures and academic references, it is inferred to be a peer-reviewed journal article.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The note states 'Mastery/performance goals (0 = performance, 1 = mastery)', indicating a single 'performance' goal construct without separation into approach or avoidance.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text refers to 'adaptive performance' and 'performance adaptability' as the dependent variables, but does not explicitly state the assessment method (e.g., self-report, objective task, other ratings) used for these outcomes.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state whether the 'adaptive performance' outcome was based on subjective ratings or objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the specific assessment method (e.g., self-report, other people, objective task) used for 'adaptive performance'.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text mentions 'trait performance orientation' and 'mastery/performance goals' but does not attribute the measure to VandeWalle.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information (mean, range, SD, median) was reported in the provided text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No age information was reported, so mean age could not be extracted or imputed.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No information regarding the sex composition of the sample was provided in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No information regarding the percentage of men in the sample was provided in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No information regarding the country where the sample was collected was provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No information indicating whether the sample was a student sample or other was provided in the text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [60]}",
+      "evidence_source": "The note below the regression analyses explicitly states 'N = 60'.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text reports regression coefficients (beta values) and t-statistics for the relationship between performance orientation and training performance (a predictor of adaptive performance), but does not provide a Pearson correlation coefficient (r) between Performance Goal Orientation and performance adaptation.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson correlation coefficient between Performance Goal Orientation and performance adaptation was extracted.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'our model' and 'the path analysis' without explicitly delineating multiple studies or distinct samples.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the analytical procedures, specifically path analysis and regression analyses, used to evaluate a theoretical model. It describes how adaptive performance was regressed onto training outcomes, and subsequent regressions for training performance, declarative knowledge, knowledge structure coherence, and self-efficacy. The section concludes with a test of overall model fit, which indicated a good fit to the data.",
+      "evidence_source": "Summary of the 'Analytical Procedures' section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "TABLE 2 Regressions for Path Analysis",
+      "evidence_source": "The caption of the provided image asset.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Kozlowski2001\\tables\\Kozlowski2001_p018_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The table note states 'Mastery/performance goals (0 = performance, 1 = mastery)', indicating a general performance goal orientation. The text also refers to 'trait performance orientation'. Since it is not specified as approach or avoidance, it is coded as 'Global'.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The dependent variable 'adaptive performance' or 'performance adaptability' is mentioned, but its assessment method (self-report, other, objective, mixed) is not specified in the provided text.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The assessment method for 'adaptive performance' is not specified, therefore it cannot be determined if it is subjective or objective.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The specific assessment method for 'adaptive performance' is not specified in the provided text.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text mentions 'trait performance orientation' and 'training goals' with a note 'Mastery/performance goals (0 = performance, 1 = mastery)'. There is no explicit mention of VandeWalle as the source of the goal orientation measure, so it is coded as 'Other' (1).",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information is reported in the provided text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No mean age or other age-related numerical data is reported in the provided text.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No information about the sex composition of the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No information about the percentage of men in the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No information about the country of data collection is provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No information about whether the sample is a student sample or other is provided in the text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [60]}",
+      "evidence_source": "The table note explicitly states 'N = 60'.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The text and table provide beta coefficients from regression analyses (e.g., 'Performance orientation (b = .034)' predicting 'training performance'), but no Pearson correlation coefficients (r) between Performance Goal Orientation and performance adaptation are explicitly reported.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No Pearson correlation coefficients were extracted, so no correlation information is available.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single set of 'Analytical Procedures' and 'our model' without explicitly naming or distinguishing multiple studies or distinct samples. Therefore, it is treated as one study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the analytical procedures, primarily path analysis, used to evaluate a theoretical model. It describes several regression analyses, including adaptive performance regressed onto training outcomes, training performance onto trait performance orientation and declarative knowledge, and other relationships. The section concludes with a test of overall model fit and robustness checks using LISREL. The analyses appear to pertain to a single study, which is not explicitly numbered.",
+      "evidence_source": "The entire 'Analytical Procedures' section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Regressions for Path Analysis Note. Mastery/performance goals (0 = performance, 1 = mastery). N = 60 ** p # .01, *p # .05, ***p # .05, one-tailed.",
+      "evidence_source": "The caption and note directly below the table image.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Kozlowski2001\\tables\\Kozlowski2001_p018_table01.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_1"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The document is structured as an academic paper, implying it is a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support or grants in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from the publication type (journal article).",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The schema requests PgoType for a 'particular extracted effect' (correlation). Since no Pearson r correlation between PGO and PA was extracted, this field is None.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The schema requests AdaptMeasures for 'the corresponding extracted effect'. Since no Pearson r correlation between PGO and PA was extracted, this field is None. The text mentions 'adaptive performance' and 'performance adaptability' but does not specify the measurement method (self-report, other, objective).",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The schema requests AdaptMethod for 'the corresponding extracted effect'. Since no Pearson r correlation between PGO and PA was extracted, this field is None. The text does not specify if the adaptation outcome is based on subjective ratings or objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The schema requests AdaptMethod_Specific for 'the corresponding extracted effect'. Since no Pearson r correlation between PGO and PA was extracted, this field is None. The text does not specify the specific assessment method of adaptation.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The schema requests GoMeasure_dichot_num for 'the corresponding extracted effect'. Since no Pearson r correlation between PGO and PA was extracted, this field is None. The text mentions 'performance orientation' and 'training goals' but does not specify the measurement method (e.g., VandeWalle).",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": []}",
+      "evidence_source": "No age information (e.g., range, SD, median) is reported for the sample in the text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No mean age or other age information is reported for the sample in the text to impute from.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the sex composition of the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the percentage of men in the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the country where the sample was collected is provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about whether the sample is a student sample or other is provided in the text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [60]}",
+      "evidence_source": "The text states: \"N = 60\" in a note below the regression analysis results.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The schema specifically requests Pearson r. The text provides beta coefficients from regression analyses (e.g., 'performance orientation (b = .034)' and 'Training performance (b = .529)') and path coefficients in Fig. 2 (e.g., '.04', '.53*'). These are not Pearson r values.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson r correlation between PGO and PA was extracted, so no correlation information is applicable.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'our model' and 'the study' implicitly, indicating a single study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the analytical procedures, primarily path analysis and regression, used to evaluate a theoretical model. It describes the regression of adaptive performance on training outcomes, and other relationships between variables like performance orientation, declarative knowledge, and self-efficacy. The overall model fit was tested, and alternative LISREL analyses were also performed. The sample size for the analysis was N=60.",
+      "evidence_source": "Summarized from the entire 'Analytical Procedures' section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "FIG. 2. Path analytic results.",
+      "evidence_source": "Caption of the provided image 'FIG. 2. Path analytic results.'",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Kozlowski2001\\figures\\Kozlowski2001_p017_fig00.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_2"
+  }
+]

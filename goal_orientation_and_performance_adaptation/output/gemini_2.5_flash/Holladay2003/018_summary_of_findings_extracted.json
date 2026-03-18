@@ -1,0 +1,371 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section title 'Summary of Findings' indicates this is part of a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies in the text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section 'Summary of Findings' is typically found in a peer-reviewed journal article.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mention of 'Performance Goal Orientation', 'Avoid performance goal orientation', or 'Prove performance goal orientation'.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'training performance' and 'transfer' but does not specify the assessment method (e.g., self-report, other people, objective).",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'training performance' and 'transfer' but does not explicitly state if these were based on subjective ratings or objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'training performance' and 'transfer' but does not specify the specific assessment method (e.g., self-report, other people, objective task).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mention of 'goal orientation' or 'VandeWalle' in the text.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information (mean, range, SD, median) is reported in the text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is reported in the text to impute a mean age.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the sex composition of the sample is reported in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No percentage of men in the sample is reported in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the country where the sample was collected is reported in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the sample type (student or other) is reported in the text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size (N) is reported in the text for any analysis.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficient between Performance Goal Orientation and performance adaptation is reported in the text, as Performance Goal Orientation is not mentioned.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation involving Performance Goal Orientation and performance adaptation is reported in the text.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single set of findings using 'We did not find a relationship...' and 'We also found support...', referring to 'Table 1' and 'Figure 1', indicating a single study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section summarizes findings regarding practice variability, self-efficacy, and transfer. It reports that practice variability did not relate to mean training performance but influenced training performance variability and transfer, with low variability leading to higher near transfer and high variability to higher far transfer. It also found that higher practice variability led to higher self-efficacy generality, which in turn served as an intervening variable between practice variability and far transfer.",
+      "evidence_source": "The entire 'Summary of Findings' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text is a 'Summary of Findings' section, which is commonly found in journal articles. The presence of citations like 'Stevens & Gist, 1997' further supports this.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from PubType being a journal article (1), which implies peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The table 'Hierarchical Regression Predicting Transfer Performance From Self-Efficacy' lists 'Performance goal orientation' as a variable. The text also refers to 'Performance goal orientation'. Since no distinction between approach and avoidance is made, it is coded as 'Global'.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3, 3]}",
+      "evidence_source": "The text and Table 4 refer to 'Near transfer performance' and 'Far transfer performance' as outcomes. These are typically objective measures of performance adaptation.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1]}",
+      "evidence_source": "Derived from 'AdaptMeasures' being objective (3) for both near and far transfer performance.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3, 3]}",
+      "evidence_source": "Derived from 'AdaptMeasures' being objective (3) for both near and far transfer performance.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text mentions 'Performance goal orientation' but does not specify the measurement scale (e.g., VandeWalle). Therefore, it is coded as 'Other'.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information (mean, range, SD, median) is reported in the provided text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No age information is reported in the provided text, so imputation is not possible.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the sex composition of the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the percentage of men in the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the country where the sample was collected is provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the sample type (student or other) is provided in the text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "The sample size (N) for the regression analysis or the study in general is not reported in the provided text or Table 4.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "Table 4 presents beta coefficients from hierarchical regression, not Pearson correlation coefficients (r) between Performance Goal Orientation and performance adaptation. The schema specifically requests Pearson r.",
+      "warning": "The table provides beta coefficients, not Pearson correlation coefficients as requested by the schema."
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No correlation coefficients were extracted as the table provides beta coefficients, not Pearson r.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text is a 'Summary of Findings' and uses 'We' consistently, indicating a single research effort. There are no explicit mentions of 'Study 1', 'Study 2', or 'Experiment 1'.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section summarizes findings regarding practice variability, self-efficacy, and transfer performance. It discusses the impact of practice variability on training performance, transfer (near and far), and self-efficacy generality, noting that the relationship with transfer depends on the type of transfer. It also examines the independent effects of self-efficacy intensity and generality on far transfer, highlighting the role of self-efficacy generality as an intervening variable between practice variability and far transfer. Table 1 and Figure 1 are referenced but not provided.",
+      "evidence_source": "Summary of the provided text content.",
+      "warning": "Table 1 and Figure 1 are referenced in the text but were not provided."
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 4 Hierarchical Regression Predicting Transfer Performance From Self-Efficacy",
+      "evidence_source": "The caption directly above the provided table image.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Holladay2003\\tables\\Holladay2003_p006_table01.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text is a 'Summary of Findings' from an academic paper, referencing other research (e.g., Stevens & Gist, 1997), and presents regression results, which are typical of a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from PubType being a journal article (1), which is typically peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The table row 'Performance goal orientation' indicates a global measure of performance goal orientation. The text does not specify 'Avoid' or 'Prove' sub-types.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The text mentions 'transfer performance' and 'far transfer' as outcomes, but does not specify the measurement method (e.g., self-report, objective task, other-rated).",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The text refers to 'transfer performance' but does not provide details on whether it was assessed via subjective ratings or objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The text refers to 'transfer performance' but does not provide details on the specific assessment method (self-report, other people, or objective task).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The table mentions 'Performance goal orientation' but does not specify the measurement scale, so it is coded as 'Other'.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information (mean, range, SD, or median) is reported in the provided text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No age information is reported in the provided text, thus imputation is not possible.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No information regarding the sex composition of the sample is reported in the provided text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No information regarding the percentage of men in the sample is reported in the provided text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No information regarding the country of data collection is reported in the provided text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No information regarding whether the sample is a student sample or other is reported in the provided text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The sample size (N) for the regression analysis or the study in general is not reported in the provided text or Table 5.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "Table 5 presents beta coefficients (\u03b2) from a hierarchical regression analysis, not Pearson correlation coefficients (r) between Performance Goal Orientation and performance adaptation.",
+      "warning": "The table provides beta coefficients, not Pearson correlation coefficients as requested."
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No correlation coefficient was extracted, so no correlation information is available.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text is a 'Summary of Findings' and uses first-person plural ('We did not find', 'We also found'), indicating a single study's results are being presented.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section summarizes findings regarding practice variability, self-efficacy, and transfer performance. It discusses the impact of practice variability on training performance, transfer (near vs. far), and self-efficacy generality, but not self-efficacy intensity. It also explores the relationship between self-efficacy (intensity and generality) and far transfer, highlighting self-efficacy generality as an intervening variable between practice variability and far transfer. Table 1 and Figure 1 are referenced, but not provided in the context.",
+      "evidence_source": "Summary of the provided text content.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 5 Hierarchical Regression Predicting Transfer Performance From Practice Variability",
+      "evidence_source": "The caption directly above the table in the provided image.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Holladay2003\\tables\\Holladay2003_p007_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_1"
+  }
+]

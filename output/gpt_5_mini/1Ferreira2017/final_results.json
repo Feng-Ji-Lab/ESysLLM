@@ -1,0 +1,199 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      2,
+      7,
+      8,
+      9
+    ],
+    "reason": "Multiple sections consistently describe a single cross-sectional study. Candidate 8 explicitly calls this 'the present study' and 'this is the first study...', candidate 0 and 2 describe one study of 490 women with sample details, candidate 9 shows Table 1 with N = 490, and candidate 7 reports path analysis results from that single sample. No candidates present evidence of additional studies or multiple study samples, so the most accurate count is 1."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "Portugal"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All three candidates refer to the same single study (labelled Study X / 'the present study') and consistently indicate the study was conducted in Portugal: candidate 0 (author affiliation: University of Coimbra, Portugal), candidate 1 (participants: 490 women from the Portuguese general population), and candidate 2 (procedures: part of a wider Portuguese project). No evidence of multiple distinct studies was found, so values were merged into one entry 'Single study' with country 'Portugal'."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        490
+      ]
+    },
+    "best_indices": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "reason": "All reliable sources converge on a final sample of 490 women (Abstract [0], Participants [1], Table 1 caption [3]). Procedures [2] report an initial N=514 (494 women, 20 men) but state that male participants and out-of-range female ages were excluded; the Participants/Table/Abstract report the cleaned final N=490. The paper contains a single study, so values were merged into one entry (female = 490, total = 490).",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          490
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          490
+        ]
+      }
+    }
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "online"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates describe the same single study (490 women) and consistently report an Internet/online data-collection method: candidate 0 states participants \"completed an Internet based survey\" and candidate 1 describes recruitment via online advertisements and self-report measures. No evidence of additional distinct studies was found, so the study-level survey method is 'online'."
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidate sources refer to the same single study. The Measures section (candidate 1) explicitly states BMI was calculated from self-reported height and weight; the Abstract (candidate 0) also describes an Internet-based self-report survey and refers to BMI as a controlled variable. No evidence of additional distinct studies or measured (objectively assessed) BMI was found. Therefore the study-level assessment is 'self-reported'."
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        24.76
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "All candidates refer to a single cross-sectional study (N = 490 women). Candidate 0 (Participants section) reports age M = 24.76 (SD = 7.66). Candidate 1 (Table 1) reports age M = 22.29 but appears inconsistent with the main-text participants description (values for age and BMI seem swapped between sources). Per instructions, when conflicting values for the same study prefer the main text (Participants/Method) over the table. Therefore the resolved mean age is 24.76 (also the mean for the female sample/total).",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          24.76
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          24.76
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        22.29
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Candidates refer to a single study (N = 490, female sample). Candidate 0 (participants/main text) reports mean BMI = 22.29 (SD = 3.87). Candidate 1 (Table 1) reports BMI = 24.76 but appears to have values for age and BMI swapped relative to the main text; per instructions prefer the main text over a conflicting table. Therefore the resolved mean BMI is 22.29 (reported for the total sample and specifically for females).",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          22.29
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          22.29
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "community"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidate entries describe the same single study: a sample of Portuguese adults recruited via online advertisements/social networks (general population). No evidence of multiple distinct studies or school/college samples was found, so the source is classified as 'community'. Candidates 0 and 1 were used to determine this."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS-2"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "reason": "All candidates refer to a single study (the paper consistently describes one sample, N = 490). The Measures section (candidate 0) explicitly lists the Body Appreciation Scale (BAS-2), Table 1 (candidate 3) labels measure 5 as BAS-2 and reports BAS-2 summary statistics, and the analyses/path model (candidates 1,2,4) treat body appreciation as BAS-2. No conflicting instruments or multiple studies were reported, so the assessment of BA for the single study is BAS-2."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        -0.37
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study in the paper (N = 490). Table 1 reports the intercorrelation between BAS-2 (Body Appreciation Scale-2) and BMI as r = -0.37 (displayed as -.37***). This is the direct Pearson correlation between Body Appreciation and BMI for the single sample, so it was used as the extracted value.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          -0.37
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          -0.37
+        ]
+      }
+    }
+  }
+}

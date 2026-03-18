@@ -1,0 +1,181 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Portugal"
+        ]
+      },
+      "evidence_source": "The text mentions 'reflects the BMI distribution by sex of the Portuguese population (Po\u00ednhos et al., 2009)', indicating the study was conducted in Portugal.",
+      "warning": "Study name is inferred as 'Study X' since no explicit study number is provided in the text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          155
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            111
+          ]
+        },
+        "male": {
+          "Study X": [
+            44
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            155
+          ]
+        }
+      },
+      "evidence_source": "The text states: 'The present study comprised 155 participants, 44 males and 111 females.'",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether the survey was conducted using paper-and-pencil or online methods.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text does not provide information about the racial or ethnic composition of participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          21.83
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            21.3
+          ]
+        },
+        "male": {
+          "Study X": [
+            22.36
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            21.83
+          ]
+        }
+      },
+      "evidence_source": "The text states: 'males' mean age (M = 22.36; SD = 3.14) was slightly higher than women's mean age (M = 21.30; SD = 2.54).' Overall mean age computed as: (44 \u00d7 22.36 + 111 \u00d7 21.30) / 155 = 21.83.",
+      "warning": "Overall mean age was computed from gender-specific means and sample sizes."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text reports 'a mean of years of schooling of 13.69 (SD = 1.63)' but does not specify the percentage of participants with college or higher education.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          22.63
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            22.28
+          ]
+        },
+        "male": {
+          "Study X": [
+            23.54
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            22.63
+          ]
+        }
+      },
+      "evidence_source": "The text states: 'participants reported a mean of 22.63 (SD = 3.57)' for overall BMI, and 'men (M = 23.54; SD = 3.14) and women (M = 22.28; SD = 2.99)' for gender-specific means.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether participants were recruited from a community, college, or primary/secondary/high school setting.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not mention any body appreciation assessment instrument (BAS or BAS-2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "The text states: 'Concerning body mass index (BMI), participants reported a mean of 22.63', indicating that BMI was self-reported by participants.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text does not provide any correlation coefficients between body appreciation and BMI.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with one sample of 155 participants. No mention of multiple studies or experiments is present.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text is a participants section from a study but does not explicitly state whether it is from a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the participants of a single study conducted in Portugal with 155 participants (44 males, 111 females) aged 18-35 years. Males had a slightly higher mean age (22.36 years) compared to females (21.30 years), and the sample reported a mean BMI of 22.63, which was classified as normal-weighted. BMI was assessed through self-reported measures and differed slightly between genders, with males having a higher mean BMI (23.54) than females (22.28).",
+      "evidence_source": "Entire section 2.1 Participants",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

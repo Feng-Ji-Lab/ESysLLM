@@ -1,0 +1,352 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      2
+    ],
+    "best_indices": [
+      0,
+      1,
+      8,
+      10,
+      12
+    ],
+    "reason": "The abstract and introduction explicitly state that two studies were conducted (Candidate 0, 1). The paper contains a labeled Study 2 section and Study 2-specific analyses/tables (Candidates 8, 10, 12) and earlier candidates describe Study 1 (Ns = 238) and Study 2 (N = 288). Multiple sections consistently report two distinct samples and analyses, so the most accurate count is 2."
+  },
+  "Country": {
+    "extract_value": {
+      "Study 1": [
+        "Midwestern United States"
+      ],
+      "Study 2": []
+    },
+    "best_indices": [
+      1,
+      0,
+      2
+    ],
+    "reason": "The participants/procedure section (candidate 1) explicitly reports recruitment from introductory psychology classes at a large Midwestern university and a community college, so Study 1 is located in the Midwestern United States. The paper affiliation (candidate 0) also indicates United States, which corroborates the country. Candidate 2 is a duplicate/figure asset reiterating the Midwestern recruitment. No candidate provides location information specific to Study 2 in the provided inputs, so Study 2 is left blank (no reliable country/region evidence available among candidates)."
+  },
+  "Sample": {
+    "extract_value": {
+      "Study 1": [
+        238,
+        18
+      ],
+      "Study 2": [
+        288
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "reason": "The paper reports two distinct studies (abstract and method/results sections). Study 1 is consistently reported with N = 238 (participants section, results, Table 1) with gender breakdown women = 160 and men = 78; a 4-week test\u2013retest subsample of 18 is reported in reliability analyses and has been merged into Study 1's values per instruction to include subsamples. Study 2 is consistently reported with N = 288 (participants, measures, Table 2) with women = 171 and men = 117. The pilot sample of 43 was a separate piloting group (not labeled as Study 1) and was not included as a main-study total. Preference was given to Method/Participants and Table entries over the abstract when sourcing totals. Candidates used are listed in best_indices.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [
+          78
+        ],
+        "Study 2": [
+          117
+        ]
+      },
+      "female": {
+        "Study 1": [
+          160
+        ],
+        "Study 2": [
+          171
+        ]
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          238
+        ],
+        "Study 2": [
+          288
+        ]
+      }
+    }
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both the abstract (Candidate 0) and Methods/Measures text (Candidate 1) describe two studies, standard psychometric measures, and presentation of results (path model, Ns), consistent with a journal article report. There is no indication this is a dissertation. Therefore the best-fit value is \"journal articles.\""
+  },
+  "Survey method": {
+    "extract_value": {
+      "Study 1": [
+        "paper-and-pencil"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates describe the same participant/procedure section (N=238 college sample) where measures were completed in-class or returned to the experimenter, indicating paper-and-pencil administration. Both assets refer to the same study sample, so they were merged into Study 1. (Although the paper contains two studies overall, these candidates only provide information for Study 1.)"
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Study 1": [
+        91.6,
+        94
+      ],
+      "Study 2": [
+        80.2
+      ]
+    },
+    "best_indices": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "reason": "The paper reports two studies. Study 1 (N = 238) is reported as 91.6% Caucasian in the Participants/Method text (candidates 0 and 1). Study 1 also included a 4-week retest subsample (n = 18) reported as 94% Caucasian (candidates 2 and 3); per instructions subsample values are merged into Study 1's list. Study 2 (N = 288) is reported as 80.2% Caucasian in its Participants section (candidate 4). Values were taken from the Methods/Participants and reliability subsections (main text preferred), and subsample values were included with their parent study rather than listed separately.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [],
+        "Study 2": []
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Study 1": [
+        20.87,
+        20.65
+      ],
+      "Study 2": [
+        19.39
+      ]
+    },
+    "best_indices": [
+      0,
+      4,
+      5
+    ],
+    "reason": "The paper contains two distinct studies: Study 1 (N = 238) and Study 2 (N = 288). For Study 1 the primary sample mean age is reported as M = 20.87 (candidate 0) and a 4-week test\u2013retest subsample (n = 18) reports M = 20.65 (candidates 3/4); per instructions subsample values are merged into Study 1. For Study 2 the sample mean age is M = 19.39 (candidate 5). A pilot sample (M = 26.40, candidate 2) was ancillary to measure development and is not treated as Study 1 or Study 2, so it was excluded.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          20.87,
+          20.65
+        ],
+        "Study 2": [
+          19.39
+        ]
+      }
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Study 1": [
+        100
+      ],
+      "Study 2": [
+        100
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "reason": "The paper reports two distinct studies. Candidates 0 and 1 describe the first main sample (N = 238) as college students (recruited from introductory psychology classes and listing college ranks), so percentage with college or higher is 100% for Study 1. Candidate 2 is a pilot of revised items with 43 college students (also 100%) and was used as supporting evidence for the college status of samples rather than a separate labeled study. Candidate 3 describes the second main sample (N = 288) as college students (recruited from introductory psychology classes), so percentage is 100% for Study 2. Candidate 4 (limitations) notes the samples consist of first-year/college students and supports the 100% inference. No conflicting values were found; pilot data were not treated as a separate study but as supporting/subsample evidence for Study 1.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          100
+        ],
+        "Study 2": [
+          100
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Study 1": [
+        "college",
+        "community"
+      ],
+      "Study 2": [
+        "college"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason": "The paper reports two studies. Candidates 0, 1, and 3 (early/source files) describe the first study (N = 238) with participants recruited from introductory psychology classes at a large Midwestern university and a community college, so Study 1 = [college, community]. Candidate 2 reports pilot/test subsamples of college students and candidate 3 reports a test\u2013retest subsample; these are subsamples of the same study and were merged into Study 1. Candidate 4 (and the limitation note in 5) describe a subsequent sample (N = 288) recruited from introductory psychology classes (college students), so Study 2 = [college]. All candidates (0\u20135) were used to determine source types and to merge subsamples into the two study entries."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Study 1": [
+        "BAS"
+      ],
+      "Study 2": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "The paper contains two studies (Study 1, Study 2). Table 1 (candidate 2) explicitly labels 'BAS (Body Appreciation)' for Study 1; reliability/Methods text (candidate 1) describes Study 1 measures including BAS. The path model/figure (candidate 3) for the second sample (N = 288) also includes BAS. The Measures description (candidate 0) names the 13-item Body Appreciation Scale (BAS; Avalos et al., 2005). No candidate mentions BAS-2. Therefore both Study 1 and Study 2 used the BAS (not BAS-2). All four candidates informed this resolution."
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Study 1": [
+        "self-reported"
+      ],
+      "Study 2": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "reason": "The paper reports two distinct studies. Multiple Measures sections and captions state BMI was computed from participants' self-reported height and weight (candidates 0\u20133). Candidate 2 and related assets (1 and 3) explicitly describe Study 2 (N = 288) and state BMI was from self-report. Candidate 0 (an earlier Measures section/pilot) and the Limitations section (candidate 4) indicate reliance on self-report measures for BMI, which maps to Study 1/general study procedures. No candidate indicates measured (objective) height/weight. Therefore both Study 1 and Study 2 are coded as 'self-reported.'"
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Study 1": [
+        24.8,
+        24.84
+      ],
+      "Study 2": [
+        23.16,
+        24.92
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper reports two distinct studies. Table 1 (Candidate 0) reports Study 1 BMI means for women (24.80) and men (24.84). Table 2 (Candidate 1) reports Study 2 BMI means for women (23.16) and men (24.92). These table values are the most reliable source for mean BMI and were used to populate each study's list and gender-specific fields.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [
+          24.84
+        ],
+        "Study 2": [
+          24.92
+        ]
+      },
+      "female": {
+        "Study 1": [
+          24.8
+        ],
+        "Study 2": [
+          23.16
+        ]
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [],
+        "Study 2": []
+      }
+    }
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Study 1": [
+        -0.31,
+        -0.17
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Table 1 from Study 1 (N = 238) reports correlations with women below the diagonal (n = 160) and men above the diagonal (n = 78). The correlation between BMI (variable 1) and BAS (variable 5, Body Appreciation Scale) is -0.31 for women and -0.17 for men; these gender-specific values are returned and also listed under total as the set of reported values.",
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [
+          -0.17
+        ]
+      },
+      "female": {
+        "Study 1": [
+          -0.31
+        ]
+      },
+      "other": {
+        "Study 1": []
+      },
+      "total": {
+        "Study 1": [
+          -0.31,
+          -0.17
+        ]
+      }
+    }
+  }
+}

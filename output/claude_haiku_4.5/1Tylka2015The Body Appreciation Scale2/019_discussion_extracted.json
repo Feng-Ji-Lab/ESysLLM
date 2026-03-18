@@ -1,0 +1,174 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "United States"
+        ],
+        "Study 2": [
+          "United States"
+        ],
+        "Study 3": [
+          "United States"
+        ]
+      },
+      "evidence_source": "The text states 'we reported on the development and psychometric evaluation of the BAS-2 with samples of college and online community (MTurk) women and men from the U.S.' This indicates all three studies were conducted in the United States.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The Discussion section does not provide specific sample sizes for any of the three studies. While it references 'college and online community (MTurk) women and men,' no numerical sample sizes are stated in this section.",
+      "warning": "Sample sizes are not provided in this Discussion section. They would typically be found in the Methods section of the paper."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "online"
+        ],
+        "Study 2": [
+          "paper-and-pencil",
+          "online"
+        ],
+        "Study 3": [
+          "online"
+        ]
+      },
+      "evidence_source": "The text mentions 'online community (MTurk)' participants, indicating online survey methods. Study 2 is explicitly referenced as comparing 'college and community' samples, with college samples potentially using paper-and-pencil methods and community (MTurk) using online methods. The text does not explicitly state survey methods for all studies, but MTurk is inherently online.",
+      "warning": "Survey methods are inferred from the mention of 'MTurk' (online) and 'college' samples. Explicit confirmation of paper-and-pencil for college samples is not stated in this Discussion section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The Discussion section does not provide demographic information regarding racial/ethnic composition of participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "While the text mentions that 'community men reported older ages and higher BMIs than college men' and 'community women reported older ages and higher BMIs than college women,' specific mean ages are not provided in this Discussion section.",
+      "warning": "Age comparisons are mentioned qualitatively but no specific mean ages are stated."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 2": [
+          100,
+          0
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Study 2 explicitly compares 'college women and men' (100% college education) with 'community women and men' (0% college education, as they are community/MTurk samples). The text states 'In Study 2, mean differences were noted in total BAS-2 scores between college women and men, but not between community women and men.'",
+      "warning": "Only Study 2 allows inference of education level based on explicit college vs. community distinction. Studies 1 and 3 are not clearly differentiated in the Discussion."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The Discussion mentions that 'community men reported older ages and higher BMIs than college men' and 'community women reported older ages and higher BMIs than college women,' but specific mean BMI values are not provided.",
+      "warning": "BMI differences are mentioned qualitatively but no specific mean BMI values are stated in this Discussion section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "college",
+          "community"
+        ],
+        "Study 2": [
+          "college",
+          "community"
+        ],
+        "Study 3": [
+          "college",
+          "community"
+        ]
+      },
+      "evidence_source": "The text explicitly states 'samples of college and online community (MTurk) women and men from the U.S.' This indicates all three studies included both college and community samples.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "BAS-2"
+        ],
+        "Study 2": [
+          "BAS-2"
+        ],
+        "Study 3": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The text explicitly states 'we reported on the development and psychometric evaluation of the BAS-2' and discusses the BAS-2 throughout. The Discussion is about the BAS-2 instrument.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not specify whether BMI was self-reported or measured. It only mentions that 'the BAS-2 was inversely related to BMI' but does not describe the assessment method.",
+      "warning": "Assessment method for BMI is not stated in this Discussion section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text states 'the BAS-2 was inversely related to BMI to a moderate degree among college and community women and men' but does not provide specific correlation coefficients (r values). The text only describes the relationship as 'moderate' in strength.",
+      "warning": "Specific correlation coefficients are not provided in this Discussion section. Only a qualitative description ('moderate degree') is given."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 3,
+      "evidence_source": "The text explicitly references 'these three studies' in the opening sentence: 'In these three studies, we reported on the development and psychometric evaluation of the BAS-2...' Additionally, Study 2 is explicitly mentioned by name: 'In Study 2, mean differences were noted...'",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not indicate whether this is a journal article or dissertation. This information would typically be found on the title page or in the publication metadata.",
+      "warning": "Publication type cannot be determined from the Discussion section alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Discussion section summarizes findings from three studies on the development and psychometric evaluation of the BAS-2 (Body Appreciation Scale-2) with college and online community (MTurk) samples of women and men from the U.S. The BAS-2 demonstrated strong psychometric properties, measurement invariance across gender and sample type, and improved upon the original BAS by eliminating sex-specific versions and reflecting current positive body image understanding. Study 2 specifically found that college men reported higher body appreciation than college women (moderate difference), while community women and men showed minimal differences; additionally, the BAS-2 was inversely related to BMI to a moderate degree across all groups, with this relationship potentially reflecting cultural bias toward leanness in Western countries.",
+      "evidence_source": "Entire Discussion section provides context for the three studies and their key findings.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

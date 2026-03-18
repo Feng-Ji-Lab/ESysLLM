@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text is a 'Measures' section, which is typical for a journal article. No other publication type is indicated.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from the publication type being a journal article, which is typically peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The text states: 'We measured LO with six items (\u03b1 = .76) and PO with four items (\u03b1 = .70).' PO refers to Performance Orientation. Since it is not further specified as approach or avoidance, it is coded as 'Global' performance goal orientation.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text states: 'We collected sales performance, relative to quota, from the corporate archive for 12 months'. This indicates an objective measure.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text states: 'We collected sales performance, relative to quota, from the corporate archive for 12 months'. This is an objective score.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text states: 'We collected sales performance, relative to quota, from the corporate archive for 12 months'. This is an objective measure.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text states: 'We measured salesperson goal orientations using seven-point Likert scales adapted from Sujan, Weitz, and Kumar (1994).' This is not VandeWalle, so it is coded as 'Other'.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information (mean, median, range, SD) is provided in the text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No age information is provided in the text to impute a mean age.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "No explicit information about the sex composition of the sample is provided. Assuming a mixed sample as it is not specified as single-sex.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the percentage of men in the sample is provided.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "No country information is provided in the text. Coded as 'Other' by default.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "The text refers to 'salesperson goal orientations' and 'salesperson performance', indicating a non-student, 'Other' sample.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [401]}",
+      "evidence_source": "The text states: 't(399) = 2.53, p < .05'. For a t-test, degrees of freedom (df) = N - 2. So, 399 = N - 2, which means N = 401. This N is associated with the sales quota performance, which is the adaptation outcome.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No correlation coefficient between Performance Goal Orientation (PO) and performance adaptation (sales performance) is explicitly reported in this section.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No correlation coefficient was found, so no correlation information can be provided.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes the measures for a single study without explicitly naming it 'Study 1' or 'Study 2', nor does it mention multiple distinct samples or experiments.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the measures used in a single study, including goal orientations (Learning Orientation and Performance Orientation adapted from Sujan, Weitz, and Kumar, 1994), and objective sales performance data collected from a corporate archive. It also describes the covariates controlled for, such as openness to change, work experience, and previous use of sales technology. A t-test for sales quota performance indicates a sample size of N=401.",
+      "evidence_source": "Summary of the 'Measures' section content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

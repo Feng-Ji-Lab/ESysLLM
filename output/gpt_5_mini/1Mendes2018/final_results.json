@@ -1,0 +1,212 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      2,
+      5,
+      10
+    ],
+    "reason": "Multiple sections consistently describe a single cross-sectional study of 309 Portuguese women (abstract [0], sample/methods [2,5], and discussion summary [10]). No sections report additional, separate studies. Therefore the most accurate count is 1."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates indicate the publication is a journal article. Candidate 0 provides authoritative publication metadata (received/accepted dates and Springer Nature copyright), and candidate 1 contains article content (results from a single study) consistent with a journal article. There is no evidence supporting 'dissertation.'"
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "Portugal"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "reason": "All candidate sections consistently report a single cross-sectional study of 309 Portuguese women. The most reliable sources are the Participants (index 1) and Procedure (index 2) sections, which explicitly state the sample was Portuguese; the Abstract (0), Discussion (3) and figure caption (4) corroborate this. Therefore a single study entry ('Single study') with country = 'Portugal' is returned."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        309
+      ]
+    },
+    "best_indices": [
+      1,
+      2,
+      3
+    ],
+    "reason": "All sources describe a single cross-sectional study. Method/Participants (index 1) and Procedure (index 2) indicate that although 509 people initially completed questionnaires (352 women, 157 men), the selected/analyzed sample comprised 309 Portuguese women aged 18\u201350. Table caption and results (index 3) report N=309. Therefore the study sample (total participants analyzed) is 309 women. I prioritized Methods/Main text and table evidence over the abstract for confirmation.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          309
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          309
+        ]
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        23.0
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study in the paper (sample of 309 Portuguese women). Candidate 0 reports 'aged between 18 and 50 (M=23.00 years; SD=6.37)'. Because the sample consists solely of women, the female mean (23.0) represents the total sample mean as well. Used candidate 0 (participants/methods) as the reliable source.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          23.0
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          23.0
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        22.28
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates refer to the same single study (one sample of 309 Portuguese women). The Method/Participants text (candidate 0) reports mean BMI = 22.28 (SD 3.09); Table 1 (candidate 1) confirms M = 22.28 (SD = 3.09). No conflicts\u2014value recorded as total and, since sample is all women, also as female.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          22.28
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          22.28
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "community"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "All candidate sections describe the same single cross-sectional study of 309 Portuguese women drawn from the general population and recruited online (Facebook and e-mail). Multiple reliable sections (Participants, Procedure, Discussion, and figure caption) consistently identify a community/general population sample; no separate studies or school/college samples are reported. Therefore the source is classified as 'community'."
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "All candidates consistently indicate BMI was based on participants' self-reported height and weight. The Methods/Body Mass Index section explicitly states BMI was calculated from self-reported weight and height (Quetelet Index), the Participants section reports a mean BMI described as self-reported, and the Discussion notes the exclusive use of self-report measures. Sources are consistent and refer to a single study of 309 Portuguese women, so the study is labeled 'Single study' and 'self-reported' is selected."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS-2"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "reason": "All candidate sources consistently identify the instrument as the Body Appreciation Scale-2 (BAS-2). Source 0 (methods/measure description) explicitly names and describes BAS-2 and reports Cronbach's alpha for the present study; sources 1\u20134 (results, path analysis, table and figure legends) also use the abbreviation BAS-2. The paper reports a single study (N=309), so a single entry ('Single study') was used. No conflicting instrument labels were found."
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "online"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "All candidates describe a single cross-sectional study (309 Portuguese women). The procedure/participants section explicitly states recruitment via online advertisements, Facebook, and e-mail, so the survey method is 'online'. Only candidate 0 provided this information."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        -0.22
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Single cross-sectional study (N=309). Table 1 (intercorrelation matrix, N=309) reports the Pearson correlation between BAS-2 (Body Appreciation Scale-II) and BMI as -0.22 (displayed as -0.22***). No gender-specific correlations or multiple BAS subscales were reported, so the study-level total correlation -0.22 was used.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          -0.22
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          -0.22
+        ]
+      }
+    }
+  }
+}

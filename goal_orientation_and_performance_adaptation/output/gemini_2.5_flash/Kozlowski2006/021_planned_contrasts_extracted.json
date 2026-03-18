@@ -1,0 +1,371 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text cites 'Rosnow & Rosenthal, 1995, 1996', indicating it is a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from PubType being a journal article (1), which typically undergoes peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses 'performance goal frames and goal content' as experimental manipulations, not an assessment of a trait Performance Goal Orientation (PGO) or its sub-types (Avoid, Prove, Global).",
+      "warning": "The study manipulates goal frames rather than assessing a trait PGO."
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "Dependent variables include affective and cognitive self-regulatory processes: self-efficacy, negative affect, off-task thoughts, cognitive focus, self-evaluation activity, and practice focus. These are typically self-report measures.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [0]}",
+      "evidence_source": "The adaptation outcomes (self-efficacy, negative affect, off-task thoughts, cognitive focus, self-evaluation activity, and practice focus) are self-reported, making them subjective ratings.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The adaptation outcomes (self-efficacy, negative affect, off-task thoughts, cognitive focus, self-evaluation activity, and practice focus) are self-reported.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes manipulations of 'learning and performance goal frames and goal content' rather than the measurement of a specific goal orientation scale. VandeWalle is not mentioned.",
+      "warning": "The study uses goal frame manipulations, not a specific goal orientation measure."
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": []}",
+      "evidence_source": "No age information is reported in the provided text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No age information is reported in the provided text.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No sex composition information is reported in the provided text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No percentage of men is reported in the provided text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No country information is reported in the provided text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the sample type (student vs. other) is reported in the provided text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [536]}",
+      "evidence_source": "The t-statistics consistently report degrees of freedom as t(534), implying N-2 = 534, so N = 536.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text reports results of planned contrasts using t-tests comparing different experimental conditions (e.g., congruent learning vs. congruent performance frames) on various self-regulatory processes. It does not report Pearson correlations (r) between a trait Performance Goal Orientation (PGO) and performance adaptation.",
+      "warning": "The study reports t-tests for experimental manipulations, not Pearson correlations for trait PGO."
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficients between Performance Goal Orientation and performance adaptation were reported.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes 'our first contrast', 'The next set of contrasts', and 'Our final contrast' within a single experimental design, indicating one study with multiple analyses.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the results of planned contrasts used to analyze the effects of manipulated learning and performance goal frames and content on trainees' self-regulatory processes. It presents findings from various hypotheses, showing that congruent learning conditions were largely superior to congruent performance conditions in terms of self-efficacy, negative affect, self-evaluation activity, and practice focus. The section also examines the implications of inconsistent goal alignments and goal proximity.",
+      "evidence_source": "Summary of the 'Planned Contrasts' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text is a section from an academic paper, which is typically a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No explicit mention of financial support, grants, or funding agencies in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from PubType being a journal article, which typically undergoes peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\", \"Avoid\"]}",
+      "evidence_source": "Table 3 lists 'Trait performance-prove orientation' and 'Trait performance-avoid orientation'. The text also discusses 'performance goal frames and goal content'.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The 'Note' in Table 3 states: 'Dependent variables include affective and cognitive self-regulatory processes: self-efficacy, negative affect, off-task thoughts, cognitive focus, self-evaluation activity, and practice focus.' These are all self-report measures.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [0]}",
+      "evidence_source": "The adaptation measures (self-efficacy, negative affect, off-task thoughts, cognitive focus, self-evaluation activity, and practice focus) are self-reported, making them subjective ratings.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The adaptation measures (self-efficacy, negative affect, off-task thoughts, cognitive focus, self-evaluation activity, and practice focus) are self-reported.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "No specific goal orientation measure (e.g., VandeWalle) is mentioned in the text.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information is reported in the provided text or table.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No mean age or other information to impute age is reported in the provided text or table.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information about the sex composition of the sample is reported in the provided text or table.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information about the percentage of men in the sample is reported in the provided text or table.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information about the country of the sample is reported in the provided text or table.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information about whether the sample is a student sample or other is reported in the provided text or table.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [534]}",
+      "evidence_source": "The t-statistics reported for the planned contrasts consistently use t(534), indicating a sample size of 534. For example, 't(534) = 2.76'.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The text and Table 3 report t-statistics, p-values, Cohen's d, F-statistics, and eta-squared values, but no Pearson correlation coefficients (r) between trait Performance Goal Orientation and performance adaptation.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No correlation coefficients were extracted, so no correlation information is available.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study context, discussing 'planned contrasts' and 'Hypotheses 4\u20137' within that context, without explicitly naming multiple studies or experiments.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the results of planned contrasts used to disentangle the effects of three manipulations related to learning and performance goal frames and goal content on self-regulatory processes. It presents findings for Hypotheses 4-7, comparing congruent learning vs. performance conditions, congruent learning vs. incongruent conditions, and incongruent vs. congruent performance conditions. The section also examines the effects of goal proximity and asymmetrical effects of incongruent combinations, concluding with an optimal combination of factors.",
+      "evidence_source": "Summary of the 'Planned Contrasts' section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 3 Between-Subjects Effects for Repeated Measures Multivariate Analysis of Covariance for Self-Regulatory Processes",
+      "evidence_source": "Caption of the provided image 'Table 3'.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Kozlowski2006\\tables\\Kozlowski2006_p010_table01.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The document is an academic paper, citing other academic works (e.g., Rosnow & Rosenthal, 1995, 1996), and presents detailed statistical analyses (t-tests, d values), which are characteristic of a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies was found in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The document is an academic paper, citing other academic works and presenting detailed statistical analyses, which strongly implies it has undergone peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\", \"Global\", \"Global\", \"Global\", \"Global\", \"Global\"]}",
+      "evidence_source": "The text consistently refers to 'performance goal frames and goal content' or 'performance goals' (e.g., in Hypotheses 4a, 4b, 4c, 4d, 6, and 7) without distinguishing between approach and avoidance components. This indicates a global performance goal orientation. There are 6 distinct hypotheses/contrasts involving performance goals.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1, 1, 1, 1, 1]}",
+      "evidence_source": "The dependent variables are listed as 'affective and cognitive self-regulatory processes: self-efficacy, negative affect, off-task thoughts, cognitive focus, self-evaluation activity, and practice focus'. These are all typically assessed via self-report. This applies to all 6 effects related to performance goals.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [0, 0, 0, 0, 0, 0]}",
+      "evidence_source": "The adaptation outcomes (self-efficacy, negative affect, off-task thoughts, cognitive focus, self-evaluation activity, and practice focus) are self-reported, which are subjective ratings. This applies to all 6 effects related to performance goals.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1, 1, 1, 1, 1]}",
+      "evidence_source": "The adaptation outcomes (self-efficacy, negative affect, off-task thoughts, cognitive focus, self-evaluation activity, and practice focus) are assessed via self-report. This applies to all 6 effects related to performance goals.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1, 1, 1, 1, 1]}",
+      "evidence_source": "The text mentions 'achievement orientation and goal-setting domains' but does not specify the use of a VandeWalle goal orientation measure or any other specific scale. This applies to all 6 effects related to performance goals.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\", \"\", \"\", \"\", \"\", \"\"]}",
+      "evidence_source": "No information regarding age (e.g., mean, range, SD, median) was provided in the text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None, None, None, None, None, None]}",
+      "evidence_source": "No mean age was reported in the text, nor was there sufficient information to impute it.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None, None, None, None, None, None]}",
+      "evidence_source": "No information regarding the sex composition of the sample was provided in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None, None, None, None, None, None]}",
+      "evidence_source": "No information regarding the percentage of men in the sample was provided in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None, None, None, None, None, None]}",
+      "evidence_source": "No information regarding the country of data collection was provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2, 2, 2, 2, 2, 2]}",
+      "evidence_source": "The sample is referred to as 'trainees' (e.g., 'Trainees who received congruent learning conditions'). This term does not explicitly indicate a student sample, and could refer to employees or participants in a specific training program, thus coded as 'Other sample'. This applies to all 6 effects related to performance goals.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [534, 534, 534, 534, 534, 534]}",
+      "evidence_source": "The sample size for the t-tests is consistently reported as 't(534)', indicating N = 534. This applies to all 6 effects related to performance goals.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None, None, None, None, None, None]}",
+      "evidence_source": "The text reports t-statistics and Cohen's d values for various contrasts but does not provide Pearson correlation coefficients (r) between Performance Goal Orientation and performance adaptation. Table 4 also summarizes results qualitatively.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None, None, None, None, None, None]}",
+      "evidence_source": "No correlation coefficients were reported in the text or table.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study or experiment where multiple 'planned contrasts' were performed to test various hypotheses. It does not explicitly mention or delineate multiple distinct studies (e.g., 'Study 1', 'Study 2').",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the planned contrasts conducted to analyze the effects of goal frames and content on self-regulatory processes, with results summarized in Table 4. It examines several hypotheses (4a-7) concerning congruent/incongruent learning and performance goal conditions and goal proximity, reporting t-statistics and effect sizes for various outcomes.",
+      "evidence_source": "The entire 'Planned Contrasts' section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 4 Summary of Planned Contrasts",
+      "evidence_source": "The caption of the provided table image.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Kozlowski2006\\tables\\Kozlowski2006_p011_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_1"
+  }
+]

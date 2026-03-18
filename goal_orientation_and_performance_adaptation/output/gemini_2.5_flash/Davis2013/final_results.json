@@ -1,0 +1,286 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "reason": "The vast majority of candidates, particularly those from the Abstract, Introduction, Method, Results, and Discussion sections, consistently refer to 'a single study' or 'our study'. Candidates from the Method and Results sections (e.g., 7, 8, 9, 10, 11, 12, 13, 14, 15) provide strong evidence by detailing the sample, measures, analysis, and findings of a singular research effort. The candidates suggesting '0' (3, 6, 21) are from sections (Literature Review, Hypothesis Development, Definitional Note) where the description of empirical studies is not expected, and thus do not contradict the presence of a single study in the paper as a whole. Therefore, the most accurate value is 1."
+  },
+  "PubType": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "reason": "The vast majority of candidates (0-15) consistently indicate that the publication type is a 'Journal article' (code 1). Candidate [0] explicitly states 'publication type 'Article'', and Candidate [1] mentions the 'Family Business Review', which is a journal. The remaining candidates from various sections (Abstract, Introduction, Method, Results, Discussion) consistently refer to 'the study', 'our study', or 'the article's structure', all of which are consistent with a journal article. Candidate [16] suggests 'Book chapter' (code 2), but its context clearly indicates it is describing a bibliographic entry *within* the paper's references, not the publication type of the paper itself. Therefore, the overwhelming evidence points to 'Journal article' as the correct publication type for the paper."
+  },
+  "PeerReview": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "reason": "All candidates consistently indicate a value of '1' for PeerReview. The section contexts, particularly those mentioning 'Family Business Review' and describing the paper as an 'Article' with detailed 'Method', 'Results', and 'Discussion' sections, strongly imply that the publication underwent peer review. The complete consensus across all candidates, despite 'No evidence' being explicitly stated for each, provides high confidence in the selection of '1'."
+  },
+  "FinancSupport": {
+    "extract_value": [
+      0
+    ],
+    "best_indices": [
+      12
+    ],
+    "reason": "Candidate [12] explicitly states, 'This section explicitly states that the author(s) received no financial support for the research, authorship, and/or publication of the article.' This direct statement provides strong and unambiguous evidence for 'FinancSupport' being 0, aligning with the definition and coding heuristics for '0 = No financial support'. All other candidates also suggest a value of 0, but without explicit evidence regarding financial support, making candidate [12] the most accurate and definitive source."
+  },
+  "PgoType": {
+    "extract_value": {
+      "Study X": [
+        "Prove",
+        "Avoid",
+        "Prove",
+        "Avoid",
+        "Prove",
+        "Avoid"
+      ]
+    },
+    "best_indices": [
+      0,
+      4,
+      5,
+      9,
+      11
+    ],
+    "reason": "The paper consistently describes a single study, referred to as 'Study X' or 'our study' across various sections. Multiple candidates (e.g., 0, 4, 5, 11) confirm that both 'proving orientation' (Prove) and 'avoidance orientation' (Avoid) were assessed as performance goal orientations. Candidate 9, derived from Table 3 ('Structural Model Parameter Estimates for the Partially Mediated Model'), provides the most comprehensive detail regarding the multiple effects examined within this single study. It explicitly lists relationships for 'proving orientation' and 'avoidance orientation' with three distinct outcomes: 'quality of feedback', 'personal bricolage', and 'individual innovative behavior'. Following the 'multiple_effects_within_study' rule, each of these relationships contributes an entry to the list. Therefore, 'Prove' is listed three times and 'Avoid' is listed three times, reflecting the six distinct effects assessed. Other candidates support the identification of 'Prove' and 'Avoid' as the relevant goal orientations."
+  },
+  "GoMeasure_dichot_num": {
+    "extract_value": {
+      "Single study": [
+        "2",
+        "2",
+        "2"
+      ]
+    },
+    "best_indices": [
+      2,
+      3,
+      4
+    ],
+    "reason": "The paper describes a single study. The most reliable source for measurement details is the 'Measures' section. Candidate [4] from the 'Measures' section explicitly states: 'Goal Orientation (learning, proving, and avoidance) were measured with a 13-item scale developed by Brett and VandeWalle (1999)'. This directly indicates that the VandeWalle measure (code 2) was used for all three dimensions of goal orientation (learning, proving, and avoidance). Candidates [2] and [3] from an earlier section also explicitly attribute the measure to Brett & VandeWalle (1999), reinforcing this finding. These explicit statements from reliable sections override the lack of explicit attribution or general citations in other sections (Abstract, Introduction, Results, Discussion, Implications). Since there are three distinct goal orientation dimensions measured by the VandeWalle scale, the `extract_value` is a list of three '2's."
+  },
+  "Age_Info": {
+    "extract_value": {
+      "Single study": [
+        "The mean age of respondents was 53 years, with the youngest being 22 and the oldest 79."
+      ]
+    },
+    "best_indices": [
+      5
+    ],
+    "reason": "The paper contains a single study, consistently referred to as 'Study X' across candidates. Candidate 5, from the 'Sample' section (010_sample_extracted.json), provides the most specific and comprehensive age information: 'The mean age of respondents was 53 years, with the youngest being 22 and the oldest 79.' This directly addresses the field's requirement for age range, mean, and other details. All other candidates either explicitly state no age information is available or only mention 'age' as a demographic variable without providing specific values."
+  },
+  "Age_imputed": {
+    "extract_value": {
+      "Single study": [
+        "53"
+      ]
+    },
+    "best_indices": [
+      5
+    ],
+    "reason": "The paper contains a single study. Candidate 5, from the 'sample' section, explicitly states 'The mean age of respondents was 53 years'. This is the most direct and reliable report of the mean age, aligning with the preferred rule for Age_imputed."
+  },
+  "Sex": {
+    "extract_value": {
+      "Single study": [
+        "3"
+      ]
+    },
+    "best_indices": [
+      4
+    ],
+    "reason": "The paper reports a single study, as indicated by the context and consistent referencing across candidates. Candidate [4] from the 'sample' section provides explicit demographic information, stating that '159 (63%) were from males and 93 (37%) were from females'. This clearly indicates a mixed sample, which is coded as '3'. Other candidates infer a mixed sample but lack the explicit breakdown, or provide no information."
+  },
+  "Men_Prop": {
+    "extract_value": {
+      "Study X": [
+        "63.0"
+      ]
+    },
+    "best_indices": [
+      4
+    ],
+    "reason": "Candidate [4] from the 'sample' section (010_sample_extracted.json) directly reports the percentage of males as 63% for the single study identified as 'Study X'. This is the most reliable source for demographic information. All other candidates either report no information or are from sections less likely to contain this specific demographic detail."
+  },
+  "Country_dichot_num": {
+    "extract_value": {
+      "Single study": [
+        "1"
+      ]
+    },
+    "best_indices": [
+      4
+    ],
+    "reason": "The paper describes a single study. Candidate 4, from the 'Sample' section, provides the most reliable information regarding the study's country. It states that 'The Family Firm Institute is the leading membership association worldwide,' which indicates a multi-country sample. According to the coding heuristics for 'Country_dichot_num', multi-country samples are coded as 1 ('Other'). Candidate 2 incorrectly infers the country from author affiliations, which is not relevant to the sample's origin. All other candidates either provide no information or are from less reliable sections for this specific field."
+  },
+  "Sample_dichot": {
+    "extract_value": {
+      "Single study": [
+        "2"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      11,
+      12,
+      13,
+      14
+    ],
+    "reason": "The paper contains a single study, consistently referred to as 'Study X' across candidates. Multiple reliable candidates (0, 1, 2, 3, 4, 5, 11, 12, 13, 14) from the Abstract, Keywords, Introduction, Sample, Discussion, and Limitations sections consistently describe the sample as 'family enterprise advisors', 'FFI members', 'professionals', or similar terms. This clearly indicates a non-student population, which is coded as '2'. Candidates 6, 7, 8, 9, 10 from the 'Results' section and tables explicitly state they do not contain information about the sample type, and thus are not used for the extract_value. All informative candidates are consistent, leading to a single value of '2' for the 'Single study'."
+  },
+  "N": {
+    "extract_value": {
+      "Study X": [
+        "231"
+      ]
+    },
+    "best_indices": [
+      0,
+      7
+    ],
+    "reason": "The paper describes a single study, consistently referred to as 'Study X' across candidates. The most reliable N for the correlation coefficients is 231, as explicitly stated in the caption of Table 1 (Candidate 7), which presents the correlation matrix. This value is corroborated by the abstract (Candidate 0). While Candidate 5 mentions a subsample of N=253 used for hypothesis testing, the N=231 from the correlation table is more directly aligned with the field definition's requirement for the sample size used for the *extracted correlation coefficient*. Therefore, 231 is the most precise N for the relevant analyses."
+  },
+  "Correlation_PGO_and_PA": {
+    "extract_value": {
+      "Single study": [
+        "0.12",
+        "0.11",
+        "-0.27",
+        "-0.19"
+      ]
+    },
+    "best_indices": [
+      4
+    ],
+    "reason": "The paper contains a single study. Candidate 4, from Table 1 in the results section, provides Pearson r correlation coefficients between 'Proving orientation' (a form of Performance Goal Orientation) and 'Personal bricolage' (0.12), 'Proving orientation' and 'Individual innovative behavior' (0.11), 'Avoidance orientation' (another form of Performance Goal Orientation) and 'Personal bricolage' (-0.27), and 'Avoidance orientation' and 'Individual innovative behavior' (-0.19). 'Personal bricolage' and 'Individual innovative behavior' are identified as adaptive behaviors, fitting the 'performance adaptation' construct. All other candidates either did not report numerical correlation coefficients or reported path coefficients (gamma values) from structural models, which are not Pearson r correlations as required by the schema."
+  },
+  "Correlation_info": {
+    "extract_value": {
+      "Single study": [
+        "PPGO and Personal bricolage",
+        "PPGO and Individual innovative behavior",
+        "APGO and Personal bricolage",
+        "APGO and Individual innovative behavior",
+        "PPGO and AP (positive)",
+        "APGO and AP (negative)"
+      ]
+    },
+    "best_indices": [
+      4,
+      7,
+      8
+    ],
+    "reason": "The paper contains a single study, as indicated by the context and consistent references to 'Study X' or 'a single study' across all relevant candidates. Therefore, all extracted values are consolidated under 'Single study'.\n\nCandidate 4 (Table 1) provides specific correlations between 'Proving orientation' (mapped to PPGO) and 'Avoidance orientation' (mapped to APGO) with 'Personal bricolage' and 'Individual innovative behavior' (both types of Adaptation Performance, AP). These are included as 'PPGO and Personal bricolage', 'PPGO and Individual innovative behavior', 'APGO and Personal bricolage', and 'APGO and Individual innovative behavior'.\n\nCandidate 7 (Results text) reiterates these specific correlations, confirming the relationships between proving/avoidance orientations and personal bricolage/individual innovative behavior. Correlations involving 'quality of feedback' were excluded as 'quality of feedback' is not a direct measure of 'performance adaptation' as per the field definition.\n\nCandidate 8 (Discussion) provides a more general summary of the relationships, indicating 'PPGO and AP (positive)' and 'APGO and AP (negative)'. These general descriptions, including the direction of the relationship, are valuable and distinct from the specific adaptive behaviors, so they are also included.\n\nAbbreviations (PPGO, APGO, AP) were applied based on the provided case rules and consistency with other candidates' evidence."
+  },
+  "AdaptMeasures": {
+    "extract_value": {
+      "Single study": [
+        "1",
+        "1",
+        "2"
+      ]
+    },
+    "best_indices": [
+      1,
+      6
+    ],
+    "reason": "The paper reports a single study. Candidate 1, from the results section (Table 2), explicitly indicates that 'personal bricolage' and 'individual innovative behavior', identified as adaptive behaviors, were measured via self-report items (code 1). Candidate 6, from the implications section, discusses 'feedback-seeking behaviors' as another adaptive behavior, which is measured through 'other people' (clients) (code 2). The field definition allows for multiple measurement sources for different effects within the same study. Other candidates either provide 'None'/'null' or refer to mediators (like 'Quality of feedback' in Candidate 2) rather than direct adaptive behaviors, and thus are not included."
+  },
+  "AdaptMethod": {
+    "extract_value": {
+      "Single study": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    "best_indices": [
+      1,
+      2,
+      6
+    ],
+    "reason": "The paper describes a single study, as indicated by the context and consistent references to 'a single study' or 'our study' across various sections. Candidates 1, 2, and 6 provide explicit information regarding the AdaptMethod for different adaptive behaviors. Candidate 1 states that 'personal bricolage' and 'individual innovative behavior' are based on self-report measures, thus coded as 0 (subjective ratings). Candidate 2 indicates that 'Quality of feedback' is also self-report, coded as 0. Candidate 6 specifies that 'feedback-seeking behaviors' and 'feedback monitoring' are based on subjective ratings from clients, also coded as 0. The other candidates (0, 3, 4, 5) provide 'None' or 'null' values, indicating a lack of explicit information, and are therefore superseded by the candidates providing concrete values. All identified adaptation outcomes are consistently subjective ratings (0)."
+  },
+  "AdaptMethod_Specific": {
+    "extract_value": {
+      "Single study": [
+        "1",
+        "1",
+        "1",
+        "2"
+      ]
+    },
+    "best_indices": [
+      1,
+      2,
+      6
+    ],
+    "reason": "The paper describes a single study. Candidates 1 and 2 provide specific assessment methods for adaptive behaviors ('personal bricolage', 'individual innovative behavior') and 'Quality of feedback' as self-report (code 1), based on the structure of items in Table 2. Candidate 6 identifies 'feedback-seeking behaviors' as assessed by 'Other people' (family client, code 2). These are distinct adaptation outcomes or aspects of adaptation within the same study. The other candidates (0, 3, 4, 5) indicate that the assessment method was not explicitly stated in their respective contexts, and therefore do not contradict the specific codes found. All identified specific codes are collected into a single list for the 'Single study'."
+  }
+}

@@ -1,0 +1,209 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section contains only a reference citation. No study data is presented.",
+      "warning": "This is a References section containing only a bibliographic citation, not a study description. No country information is available."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section contains only a reference citation. No study data is presented.",
+      "warning": "This is a References section containing only a bibliographic citation, not a study description. No sample size information is available."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section contains only a reference citation. No study data is presented.",
+      "warning": "This is a References section containing only a bibliographic citation, not a study description. No survey method information is available."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section contains only a reference citation. No study data is presented.",
+      "warning": "This is a References section containing only a bibliographic citation, not a study description. No demographic information is available."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section contains only a reference citation. No study data is presented.",
+      "warning": "This is a References section containing only a bibliographic citation, not a study description. No age information is available."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section contains only a reference citation. No study data is presented.",
+      "warning": "This is a References section containing only a bibliographic citation, not a study description. No education information is available."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section contains only a reference citation. No study data is presented.",
+      "warning": "This is a References section containing only a bibliographic citation, not a study description. No BMI information is available."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section contains only a reference citation. No study data is presented.",
+      "warning": "This is a References section containing only a bibliographic citation, not a study description. No sample source information is available."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section contains only a reference citation. No study data is presented.",
+      "warning": "This is a References section containing only a bibliographic citation, not a study description. No assessment instrument information is available."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section contains only a reference citation. No study data is presented.",
+      "warning": "This is a References section containing only a bibliographic citation, not a study description. No BMI assessment method information is available."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section contains only a reference citation. No study data is presented.",
+      "warning": "This is a References section containing only a bibliographic citation, not a study description. No correlation data is available."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section contains only a reference citation. No study data is presented.",
+      "warning": "This is a References section containing only a bibliographic citation, not a study description. Cannot determine number of studies from a reference entry."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "This section contains only a reference citation. The citation format does not clearly indicate whether the referenced work is a journal article or dissertation.",
+      "warning": "This is a References section containing only a bibliographic citation. While the citation appears to reference a journal article (based on 'J Health Psychol'), this section itself is not a study description and cannot be reliably classified."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section contains only a single bibliographic reference (Andrew, Tiggemann, & Clark, 2014) and does not present any study data, methodology, or results. No study information can be extracted from a References section.",
+      "evidence_source": "The entire section is a reference citation with no study details provided.",
+      "warning": "This is a References section, not a study description section. No data extraction is possible."
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a reference citation only and does not contain information about the country where a study was conducted. The image shows a path analysis diagram (Fig. 1) with three panels (A, B, C) showing indirect effect models, but no country information is provided.",
+      "warning": "This appears to be a reference section or figure caption without study methodology details."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          84
+        ],
+        "Study 2": [
+          84
+        ],
+        "Study 3": [
+          84
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            84
+          ],
+          "Study 2": [
+            84
+          ],
+          "Study 3": [
+            84
+          ]
+        }
+      },
+      "evidence_source": "Fig. 1 caption states: '(Panel A) Indirect effect model with current minus personal ideal body size as the body dissatisfaction predictor (N = 84; \u03b2 = \u2212.34). (Panel B) Indirect effect model with current minus cultural ideal body size as the body dissatisfaction predictor (N = 84; \u03b2 = \u2212.33). (Panel C) Indirect effect model with current minus typical female peer body size as the body dissatisfaction predictor (N = 84; \u03b2 = \u2212.28).' All three panels report N = 84 participants.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and figure do not contain information about the survey method used (paper-and-pencil vs. online).",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and figure do not contain demographic information about racial/ethnic composition of participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and figure do not contain information about the mean age of participants.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and figure do not contain information about educational attainment of participants.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and figure do not contain information about mean BMI of participants.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and figure do not contain information about where or how participants were recruited.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and figure do not explicitly state which instrument (BAS or BAS-2) was used to assess body appreciation, though the figure shows 'Body Appreciation' as an outcome variable.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and figure do not contain information about how BMI was assessed (self-reported vs. measured).",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided figure shows path analysis models with correlations between body dissatisfaction predictors and body appreciation (mediated through body image flexibility), but does not directly report the correlation between body appreciation and BMI.",
+      "warning": "The figure displays indirect effect models showing relationships between body dissatisfaction measures and body appreciation through body image flexibility as a mediator, but the specific correlation between body appreciation and BMI is not presented."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 3,
+      "evidence_source": "Fig. 1 presents three distinct indirect effect models labeled Panel A, Panel B, and Panel C, each with N = 84 participants. These appear to represent three separate analyses or studies testing different body dissatisfaction predictors (personal ideal, cultural ideal, and typical female peer body size).",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a reference citation and does not indicate whether the source document is a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents Fig. 1, which displays three indirect effect path analysis models (Panels A, B, and C) examining the relationship between different body dissatisfaction predictors and body appreciation, mediated through body image flexibility. All three panels use the same sample (N = 84) and test different conceptualizations of body dissatisfaction: current minus personal ideal body size (Panel A), current minus cultural ideal body size (Panel B), and current minus typical female peer body size (Panel C). The figure demonstrates standardized beta coefficients for each pathway in the models.",
+      "evidence_source": "Fig. 1 caption and diagram"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Fig. 1. (Panel A) Indirect effect model with current minus personal ideal body size as the body dissatisfaction predictor (N = 84; \u03b2 = \u2212.34). (Panel B) Indirect effect model with current minus cultural ideal body size as the body dissatisfaction predictor (N = 84; \u03b2 = \u2212.33). (Panel C) Indirect effect model with current minus typical female peer body size as the body dissatisfaction predictor (N = 84; \u03b2 = \u2212.28). Note that all beta coefficients reported for these unadjusted models are standardized. *** p < .001, ** p < .01, * p < .05.",
+      "evidence_source": "Figure caption as presented in the document"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Webb2015/figures/1Webb2015_p004_fig00.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_0"
+  }
+]

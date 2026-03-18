@@ -1,0 +1,89 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text references 299 participants in the statistical analyses [F(1, 299) = ...], but this appears to be a subsample or total from a larger study context. The section does not explicitly state the total sample size for this study.",
+      "warning": "Sample size of 299 is inferred from the degrees of freedom in the ANOVA/ANCOVA analyses, but the section does not explicitly define the study sample."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method is mentioned in this section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states 'One-way analyses of variance showed no significant sex differences in the mean age [F(1, 299) = 0.99, p > .05]', but the actual mean age values are not reported.",
+      "warning": "Mean age is referenced in the statistical test but the actual values are not provided."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states 'There were, however, significant sex differences in mean BMI [F(1, 299) = 24.66, p < .05]', but the actual mean BMI values are not reported.",
+      "warning": "Mean BMI is referenced in the statistical test but the actual values are not provided."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the source of the sample (community, college, primary/secondary/high school) is provided in this section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text references 'BAS scores' but does not specify whether BAS or BAS-2 was used.",
+      "warning": "The instrument is referenced as 'BAS' but the specific version (BAS or BAS-2) is not explicitly stated in this section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported or measured) is provided in this section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section does not report correlation coefficients between body appreciation and BMI. It reports ANCOVA results with BMI as a covariate, but not the correlation itself.",
+      "warning": "The section discusses BMI as a covariate in ANCOVA but does not provide the Pearson r correlation between BAS and BMI."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section appears to be part of a larger study but does not explicitly state the number of studies. The text discusses analyses within what appears to be a single study context.",
+      "warning": "Cannot determine the number of studies from this section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents between-sex comparisons of body appreciation scores (BAS) from a study with 299 participants. One-way ANOVAs showed no significant sex differences in mean age or self-esteem, but significant sex differences were found in mean BMI. An ANCOVA with BMI covaried out revealed a significant effect of sex on BAS scores, indicating that men reported more positive body appreciation than women regardless of individual BMI differences.",
+      "evidence_source": "Entire section text",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,201 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "All four candidates consistently report a value of 1, indicating this paper contains a single study. The evidence comes from multiple sections: (1) the abstract describes \"Study X\" as a single investigation, (2) the methods section describes one sample of 1152 Chinese adolescent girls from four schools, (3) the analysis section presents one mediation model tested on this single sample, and (4) the discussion section refers to \"a single study\" examining OISO experiences. There is no mention of multiple studies, separate study phases, or distinct study samples. The consistent value of 1 across all sections with strong contextual support confirms this paper reports on one study."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper is published in 'Eating Behaviors: An International Journal', which is a peer-reviewed academic journal. This clearly indicates the publication type is 'journal articles'. Although the candidate note states 'No evidence', the journal cover page itself provides definitive evidence that this work is a journal article publication. This is the only candidate available and it correctly identifies the publication type based on the journal source."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "China"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "All four candidates consistently report China as the country where the study was conducted. The context confirms this paper contains a single study (Study X). Candidate [0] from the abstract identifies China as the location. Candidate [1] from the Participants and Data Collection section provides the most specific location detail: Wuhan City, Hubei province, China. Candidates [2] and [3] from the Discussion and Implications sections further confirm China as the study location. All candidates refer to the same single study examining Chinese adolescent girls. The value 'China' is consistent across all sources, with [1] providing additional geographic specificity (Wuhan City, Hubei province) but all referring to the same country. No conflicts exist. The consolidated value for this single study is ['China'].\""
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        1152
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All three candidates consistently report a sample size of 1152 Chinese adolescent girls. Candidate [0] from the abstract provides the initial sample description (1152 girls aged 11-15). Candidate [1] from the Participants and Data Collection section provides the most detailed and reliable information, clarifying that while 1250 questionnaires were initially collected, the final analytical sample was 1152 (all female). Candidate [2] from the Results/Table section confirms the sample size of 1152 used in the mediation analysis. All candidates refer to the same single study with no contradictions. The gender breakdown is complete: all 1152 participants are female, with no male or other gender participants. The context confirms this paper reports one study only.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          1152
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          1152
+        ]
+      }
+    }
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "paper-and-pencil"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates [0] and [1] refer to the same single study (Study X) and consistently report 'paper-and-pencil' as the survey method. Candidate [0] from the abstract infers the method as 'paper-and-pencil' based on the term 'questionnaire survey.' Candidate [1] from the Participants and Data Collection section provides explicit confirmation with the phrase 'A pencil-and-paper survey was conducted.' These are complementary sources describing the same study with consistent values. The context confirms this paper contains only one study. Both candidates are merged into a single entry with the value ['paper-and-pencil'].\""
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        13.08
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates refer to the same single study examining 1152 Chinese adolescent girls. Candidate [0] from the abstract provides an inferred mean age of 13 years (calculated as the midpoint of the 11-15 age range). Candidate [1] from Table 1 in the Results section provides the precise mean age of 13.08 \u00b1 0.94 years. Following the conflict resolution principle (prefer 'Results'/'Method'/'Table' sections over 'Abstract'), the value from Candidate [1] (13.08) is selected as the primary value. Both candidates report data for females only (the sample consisted entirely of adolescent girls), so the female value equals the total value. The abstract's inferred value of 13 is less precise than the reported descriptive statistic of 13.08, making Candidate [1] the more reliable source.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          13.08
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          13.08
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "primary/secondary/ high school"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study as confirmed by the context. Candidate [0] from the Participants and Data Collection section provides clear evidence that participants were recruited from four public schools in Wuhan City, Hubei province, with participants being adolescents aged 11-15 years old. This unambiguously indicates a 'primary/secondary/ high school' source. The evidence is reliable as it comes from the Method/Participants section, which is the standard location for reporting sample recruitment sources. No conflicting values were found across candidates, and no subsample merging was necessary."
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study (as confirmed by context). Candidate [0] from the Methods section (011_221_body_mass_index_extracted.json) provides clear evidence that BMI was assessed via self-reported height and weight measurements. The evidence explicitly states 'Participants reported their current height (meters) and weight (kilograms),' which is the standard definition of self-reported BMI assessment. This is the only candidate and it comes from a reliable source (Methods section), so it is selected as the definitive value for the single study."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS-2"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study as confirmed by the context. Candidate [0] from the Methods section (source 015_225_body_appreciation_extracted.json) explicitly states that the Body Appreciation Scale-2 (BAS-2) was used to measure body appreciation. This is a reliable source from the Methods section describing the measurement instrument. The 'Study X' designation in the candidate is resolved to 'Single study' based on the context confirming this paper reports only one study. The evidence is clear and unambiguous: BAS-2 was the assessment instrument used.\""
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        17.77
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study with 1152 Chinese adolescent girls. Candidate [0] from Table 1 (Descriptive statistics section) provides the mean BMI value of 17.77, extracted from the 'BMI' row showing M \u00b1 SD = 17.77 \u00b1 2.54. This is the most reliable source as it comes from the Method/Participants descriptive statistics table. No gender breakdown is available since the sample consists entirely of female participants. The value is placed in the 'total' category as it represents the overall sample mean.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          17.77
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          17.77
+        ]
+      }
+    }
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        -0.11
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one candidate found reporting the correlation between body appreciation (BA) and BMI. The paper contains a single study with n=1152 Chinese adolescent girls. The value -0.11 was extracted from Table 1 (row 6 'BA' \u00d7 column 3 'BMI'), which is a reliable source for correlation data. No gender-specific breakdown was provided in the table, so the value is reported as the total correlation. No conflicts or multiple studies to resolve. The correlation is statistically significant (p < .001).\"",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          -0.11
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          -0.11
+        ]
+      }
+    }
+  }
+}

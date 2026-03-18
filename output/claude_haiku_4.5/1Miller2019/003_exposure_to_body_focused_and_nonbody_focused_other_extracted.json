@@ -1,0 +1,205 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Canada"
+        ]
+      },
+      "evidence_source": "Department affiliation states 'University of Waterloo, 200 University Avenue West, Waterloo, ON, N2L 3G1, Canada'",
+      "warning": "Study name not explicitly provided in text; using 'Study X' as placeholder per policy. Only country location is available from this title/author section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information provided in the title and author section.",
+      "warning": "Sample size cannot be determined from the provided text excerpt."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information provided in the title and author section.",
+      "warning": "Survey method cannot be determined from the provided text excerpt."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information provided in the title and author section.",
+      "warning": "Racial/ethnic composition cannot be determined from the provided text excerpt."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information provided in the title and author section.",
+      "warning": "Mean age cannot be determined from the provided text excerpt."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "Title explicitly states 'college women' indicating all participants are college students, which means 100% have college or higher education experience.",
+      "warning": "Inferred from title descriptor 'college women' per case_rules infer_rule."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI information provided in the title and author section.",
+      "warning": "Mean BMI cannot be determined from the provided text excerpt."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Title explicitly states 'college women' indicating participants were recruited from a college setting.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about body appreciation assessment instrument provided in the title and author section.",
+      "warning": "Assessment of BA cannot be determined from the provided text excerpt."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about BMI assessment method provided in the title and author section.",
+      "warning": "Assessment of BMI cannot be determined from the provided text excerpt."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation data provided in the title and author section.",
+      "warning": "Correlation coefficients cannot be determined from the provided text excerpt."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No explicit mention of multiple studies in the title and author section. The title describes a single preliminary investigation.",
+      "warning": "Cannot definitively determine number of studies from title alone; full methods section would be needed."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information provided in the title and author section.",
+      "warning": "Publication type cannot be determined from the provided text excerpt."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This is the title and author section of a study examining exposure to body-focused and non-body-focused others and their effects on college women's eating and body image. The study was conducted at the University of Waterloo in Canada. The sample consists of college women, indicating 100% college-level education.",
+      "evidence_source": "Title and author affiliation information provided.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Canada"
+        ]
+      },
+      "evidence_source": "Author affiliation states 'Department of Psychology, University of Waterloo, 200 University Avenue West, Waterloo, ON, N2L 3G1, Canada'",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information provided in the header/title section. Full text content needed to extract sample size.",
+      "warning": "Sample size not available in provided text"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information provided in the header/title section.",
+      "warning": "Survey method not available in provided text"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information provided in the header/title section.",
+      "warning": "Demographic data not available in provided text"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information provided in the header/title section.",
+      "warning": "Age data not available in provided text"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information provided in the header/title section.",
+      "warning": "Education data not available in provided text"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI information provided in the header/title section.",
+      "warning": "BMI data not available in provided text"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Title explicitly states 'college women' as the study population.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No assessment instrument information provided in the header/title section.",
+      "warning": "Assessment instrument not available in provided text"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI assessment method provided in the header/title section.",
+      "warning": "BMI assessment method not available in provided text"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation data provided in the header/title section.",
+      "warning": "Correlation data not available in provided text"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The title does not explicitly indicate multiple studies. The phrase 'preliminary investigation' suggests a single study, but full text is needed to confirm.",
+      "warning": "Cannot definitively determine number of studies from title alone"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "Publication type (journal article vs. dissertation) cannot be determined from the header/title section alone.",
+      "warning": "Publication type not available in provided text"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This is the title and author information section of a study examining exposure to body-focused and non-body-focused others and their effects on college women's eating and body image. The study was conducted at the University of Waterloo in Canada. The full methods, results, and detailed findings are not available in this header section.",
+      "evidence_source": "Title and author affiliation provided",
+      "warning": "Only header information available; full study details needed for complete extraction"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "None",
+      "evidence_source": "An image asset was referenced but no caption text or table content was provided in the input.",
+      "warning": "Image asset present but caption/content not readable or provided"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Miller2019/figures/1Miller2019_p000_fig01.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_0"
+  }
+]

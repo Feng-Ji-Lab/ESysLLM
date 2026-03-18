@@ -1,0 +1,201 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "United States"
+        ]
+      },
+      "evidence_source": "Text states 'at a large, urban university in the Mid-Atlantic.' The Mid-Atlantic is a region of the United States.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          228
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            228
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            228
+          ]
+        }
+      },
+      "evidence_source": "Text states 'Participants were 228 undergraduate Black female college students'. All 228 participants are female.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "online"
+        ]
+      },
+      "evidence_source": "Text states 'Measures were administered through a secure website called SONA Systems, an online data collection program maintained by the university.'",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          0
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            0
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            0
+          ]
+        }
+      },
+      "evidence_source": "Text explicitly states 'Participants were 228 undergraduate Black female college students'. All participants are Black, therefore 0% are White.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          19.89
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            19.89
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            19.89
+          ]
+        }
+      },
+      "evidence_source": "Text states 'M age = 19.89, SD = 4.57'",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            100
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      },
+      "evidence_source": "Text states 'Participants were 228 undergraduate Black female college students'. All participants are undergraduate or graduate students (college level or higher). The breakdown shows: first-year students (n=135, 59.2%), sophomores (n=52, 22.8%), juniors (n=30, 13.2%), seniors (n=10, 4.4%), and graduate students (n=1, 0.4%), totaling 100% of the sample.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          24.71
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            24.71
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            24.71
+          ]
+        }
+      },
+      "evidence_source": "Text states 'Mean BMI was 24.71 (SD = 6.04)'",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Text states 'Participants were 228 undergraduate Black female college students' at 'a large, urban university' and 'Participants were recruited from a Psychology 101 Participant Pool, as well as other psychology courses.'",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text provided does not mention any assessment of body appreciation (BAS or BAS-2). This section only describes participants and procedure, including demographic information and BMI assessment method.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Text states 'Self-reported height and weight data were used to calculate body mass index (BMI)'",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text provided does not report any correlation between body appreciation and BMI. This section only describes participants and procedure.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with one sample of 228 undergraduate Black female college students. No multiple studies or experiments are mentioned.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Participants and Procedure' section and does not explicitly state whether this is from a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes a single study (Study X) involving 228 undergraduate Black female college students (mean age 19.89 years) recruited from psychology courses at a large urban university in the Mid-Atlantic region of the United States. Participants completed an online survey via SONA Systems, and BMI was calculated from self-reported height and weight data (mean BMI = 24.71). The study does not report body appreciation assessments or correlations in this section.",
+      "evidence_source": "Entire 'Participants and Procedure' section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

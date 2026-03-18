@@ -1,0 +1,279 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      1,
+      2,
+      11
+    ],
+    "reason": "All candidates consistently indicate a single study. The section contexts, particularly the abstract, introduction, and discussion, confirm that the paper describes one study focused on the psychometric properties of the BAS-2 in Iran."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason": "All candidates consistently indicate that the publication type is 'journal articles'. The section contexts explicitly mention publication in a 'journal' and describe 'article information' and 'research reports', with no conflicting information suggesting a 'dissertation'."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "Iran"
+      ]
+    },
+    "best_indices": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "reason": "Multiple candidates from the article information, abstract, introduction, participants, and discussion sections consistently state that the study was conducted in Iran. The paper describes a single study, as confirmed by the context."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        1093
+      ]
+    },
+    "best_indices": [
+      2,
+      4
+    ],
+    "reason": "The paper describes a single study. Candidates [2] (Abstract) and [4] (Participants section) consistently report the total sample size as 1093, comprising 568 men and 525 women. Candidate [7] (Results section) provided implied sample sizes of 1032 or 1033 from statistical degrees of freedom, which contradict the explicit numbers. Following instruction 6, the explicit and consistent values from the Abstract and Participants section (main text) are preferred over implied values from statistical tests in the Results section.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          568
+        ]
+      },
+      "female": {
+        "Single study": [
+          525
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          1093
+        ]
+      }
+    }
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "paper-and-pencil"
+      ]
+    },
+    "best_indices": [
+      5
+    ],
+    "reason": "Candidate 5 explicitly states that data was collected 'using a paper-and-pencil survey method'. The context confirms that the paper describes a single study, so the method is assigned to 'Single study'."
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Single study": []
+    },
+    "best_indices": [
+      8,
+      9
+    ],
+    "reason": "The paper explicitly states that 'questions about participants' ethnicity and cultural background were not asked' (Candidates 8 and 9). Therefore, the percentage of white participants cannot be determined from the provided text.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        25.87
+      ]
+    },
+    "best_indices": [
+      4,
+      9
+    ],
+    "reason": "The paper describes a single study. Candidate 4 provides the overall mean age of participants as 25.87 years. Candidate 9 (Table 2) provides gender-specific mean ages: 26.16 for men and 25.54 for women. The overall mean age from Candidate 4 is consistent with the weighted average of the gender-specific ages from Candidate 9, considering the participant counts (568 men, 525 women) mentioned in Candidate 2 and 4. All values are merged into the 'Single study' entry.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          26.16
+        ]
+      },
+      "female": {
+        "Single study": [
+          25.54
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          25.87
+        ]
+      }
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        100
+      ]
+    },
+    "best_indices": [
+      4,
+      7,
+      8,
+      9
+    ],
+    "reason": "The paper describes a single study. Candidates 4, 7, 8, and 9 all indicate that the participants were 'university students' or from a 'university population'. According to the inference rule, if participants are university students, 100% have college or higher education experience. All sources consistently support this, so 100% is extracted for the single study.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        23.69
+      ]
+    },
+    "best_indices": [
+      4,
+      9
+    ],
+    "reason": "The paper describes a single study. Candidate [4] from the 'participants' section provides the self-reported mean BMI for the total sample as 23.69 kg/m2. Candidate [9] from 'Table 2' in the discussion section provides gender-specific mean BMI values: 25.17 for men and 22.07 for women. These values are consistent; a weighted average of the gender-specific BMIs (using participant counts of 568 men and 525 women from candidate [2] and [4]) yields approximately 23.68, which is very close to the total mean BMI of 23.69. Both values are combined for the 'Single study'.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          25.17
+        ]
+      },
+      "female": {
+        "Single study": [
+          22.07
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          23.69
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "college"
+      ]
+    },
+    "best_indices": [
+      2,
+      4,
+      5,
+      7,
+      8,
+      9
+    ],
+    "reason": "The paper describes a single study. Candidates 2, 4, 5, 7, 8, and 9 consistently indicate that the sample was recruited from 'universities' or consisted of 'university students' in Tehran, Iran. This directly maps to the 'college' category for the source of the sample. All relevant candidates provide consistent information, confirming a single 'college' sample for the study."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS-2"
+      ]
+    },
+    "best_indices": [
+      2,
+      3,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context. All relevant candidates consistently indicate that the Body Appreciation Scale-2 (BAS-2) was the instrument used and the primary focus of the psychometric examination. Candidate [5] explicitly states, \"All participants completed the 10-item Body Appreciation Scale-2 (BAS-2).\" Other candidates from the abstract, introduction, methods, results, and discussion sections reinforce that BAS-2 is the instrument being assessed and discussed."
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      4,
+      5,
+      9,
+      10
+    ],
+    "reason": "All relevant candidates consistently indicate that BMI was 'self-reported'. Candidate 5 explicitly states 'Participants also selfreported their weight (in kilograms) and height (in centimeters), which were used to calculate BMI'. Candidates 4, 9, and 10 further confirm this by mentioning 'self-reported mean BMI' or 'Self-reported BMI was used' in their summaries or evidence. Since the paper describes a single study, these values are consolidated under 'Single study'."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": []
+    },
+    "best_indices": [
+      9
+    ],
+    "reason": "The paper describes a single study. Candidate [9] provides the numerical correlation coefficients between Body Appreciation and BMI, separated by gender, from Table 2. For men, the correlation is 0.12, and for women, it is -0.24. Other candidates did not provide numerical values for this field.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          0.12
+        ]
+      },
+      "female": {
+        "Single study": [
+          -0.24
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    }
+  }
+}

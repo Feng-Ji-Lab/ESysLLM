@@ -1,0 +1,245 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text is a 'Measures' section, which is typically found in a journal article. No explicit publication type is mentioned, so it is inferred as a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from PubType being a journal article (1), which implies peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\"]}",
+      "evidence_source": "The text states: \"A sample item of the performance orientation scale (\\alpha = .82, p < 0.05) was 'I prefer to do things that I can do well rather than things that I do poorly.'\" This indicates a prove performance goal orientation.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text states: \"Adaptive work role performance was accessed using the Griffin et al. (2010) scale\". Scales are typically self-report measures.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [0]}",
+      "evidence_source": "Adaptive work role performance was measured using a scale (Griffin et al., 2010), which is a self-report method, thus indicating subjective ratings.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text states: \"Adaptive work role performance was accessed using the Griffin et al. (2010) scale\". Scales are typically self-report measures.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text states: \"Goal orientation was accessed using the 16-item version of Goal Orientation Scale by Button et al. (1996)\". This is not VandeWalle.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information is provided in this section.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No age information is provided in this section to impute a mean age.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the sex composition of the sample is provided in this section.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the percentage of men in the sample is provided in this section.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the country of data collection is provided in this section.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the sample type (student vs. other) is provided in this section.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No sample size (N) is reported in this 'Measures' section.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No correlation coefficients between Performance Goal Orientation and performance adaptation are reported in this 'Measures' section.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No correlation coefficients are reported, therefore no correlation information can be provided.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes measures for a single study. There is no explicit mention of 'Study 1', 'Study 2', or multiple distinct samples.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the measures used in the study, including a short version of the revised self-leadership questionnaire, the Goal Orientation Scale by Button et al. (1996) (covering learning and performance orientations), Griffin et al.'s (2010) scale for proactive work role performance, and Griffin et al.'s (2010) scale for adaptive work role performance. Reliability coefficients and sample items are provided for each measure and its sub-dimensions.",
+      "evidence_source": "Summary of the 'Measures' section content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in the 'Measures' section.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No financial support information is provided in the 'Measures' section.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No peer review information is provided in the 'Measures' section.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "A sample item of the performance orientation scale (\u03b1 = .82, p < 0.05) was 'I prefer to do things that I can do well rather than things that I do poorly.' This indicates a general performance orientation without distinguishing approach or avoidance.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "Adaptive work role performance was accessed using the Griffin et al. (2010) scale (\u03b1 = .88, p < 0.05, 9 items). The reliability for each performance dimension was as follows: Individual task adaptivity (\u03b1 = .81, p < 0.05, 'Adapted well to changes in core tasks'), team member adaptivity (\u03b1 = .85, p < 0.05, 'Dealt effectively with changes affecting your work unit [e.g., new Members]'), and organization member adaptivity (\u03b1 = .79, p < 0.05, 'Coped with changes in the way the organization operates'). The sample items are self-report statements.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [0]}",
+      "evidence_source": "Adaptive work role performance was measured via self-report, which is a subjective rating method.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "Adaptive work role performance was accessed using the Griffin et al. (2010) scale, with sample items indicating self-report ('Adapted well to changes in core tasks', 'Dealt effectively with changes affecting your work unit', 'Coped with changes in the way the organization operates').",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "Goal orientation was accessed using the 16-item version of Goal Orientation Scale by Button et al. (1996) (\u03b1 = .77, p < 0.05). This is not the VandeWalle scale.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information is provided in the 'Measures' section.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No age information is provided in the 'Measures' section.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No sex composition information is provided in the 'Measures' section.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No percentage of men information is provided in the 'Measures' section.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No country information is provided in the 'Measures' section.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No sample type (student/other) information is provided in the 'Measures' section.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No sample size (N) for correlations is provided in the 'Measures' section.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The text and Figure 1 describe the measures and a conceptual model, but no specific correlation coefficients between Performance Goal Orientation and performance adaptation are reported.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No correlation values were found to provide descriptive information for.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section describes measures for a single study, without explicitly naming it 'Study 1' or indicating multiple distinct studies.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the measures used in the study, including self-leadership (short version of revised self-leadership questionnaire by Houghton & Neck, 2002), goal orientation (16-item version by Button et al., 1996, distinguishing learning and performance orientations), proactive work role performance (Griffin et al.'s, 2010 scale), and adaptive work role performance (Griffin et al., 2010 scale). It provides reliability coefficients and sample items for each scale. There is no explicit mention of 'Study 1' or multiple sample subsets.",
+      "evidence_source": "The entire 'Measures' section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "FIGURE 1. The model summarized.",
+      "evidence_source": "Caption of the provided image.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Marques-Quinteiro2012\\figures\\Marques-Quinteiro2012_p008_fig00.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_0"
+  }
+]

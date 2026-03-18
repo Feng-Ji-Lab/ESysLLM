@@ -1,0 +1,125 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "{\"Study X\": None}",
+      "evidence_source": "The text mentions 'female undergraduates' as the sample but does not provide a specific number of participants.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\": None}",
+        "male": "None",
+        "other": "None",
+        "total": "{\"Study X\": None}"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'respondent age was significantly and negative correlated with consideration of cosmetic surgery' and 'the range of BMIs and age was relatively constricted' for 'undergraduate women', but no mean age is provided.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The sample is described as 'female undergraduates', which implies college education, but a specific percentage is not explicitly stated.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'participant BMI was a significant predictor' and 'the range of BMIs... was relatively constricted', but no mean BMI is provided.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"college\"]}",
+      "evidence_source": "The text states the sample consisted of 'female undergraduates'. This indicates a college source for Study X.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'body appreciation' but does not specify the instrument used for its assessment.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'objective measures of appearance such as BMI' but does not specify how BMI was assessed (e.g., self-reported or measured).",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses body appreciation and BMI as separate predictors of consideration of cosmetic surgery, but it does not report a correlation coefficient between body appreciation and BMI.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'the current study' and 'the present study' in the singular, indicating a single study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This discussion section summarizes the findings of the current study, which investigated predictors of consideration of cosmetic surgery among female undergraduates. It highlights that body appreciation, media influence, and respondent weight status were significant predictors, with body appreciation being the strongest. The study also notes that BMI was a significant predictor, but in an unexpected direction (more slender participants reported greater consideration), and age was correlated but not a significant predictor. The section discusses limitations, such as the restricted range of BMI and age in the undergraduate sample, and suggests future research directions.",
+      "evidence_source": "Summary of the entire 'Discussion' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

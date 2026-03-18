@@ -1,0 +1,107 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information is provided in this section.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information about race/ethnicity is provided in this section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While BMI is mentioned in the context of correlations, no mean BMI value is reported in this section.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample source (community, college, etc.) is provided in this section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly states 'For the male BAS data' and 'Cronbach's \u03b1 for all 13 items of the BAS for men revealed that the internal consistency was good (\u03b1 = .85).' This indicates the Body Appreciation Scale (BAS) was used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section mentions BMI and correlations with BMI, but does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          0
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": {
+          "Study X": [
+            0
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text explicitly states: 'There was, however, no association between male body appreciation and BMI.' This indicates a correlation of 0 (or very close to 0, indicating no association) between BAS and BMI for males.",
+      "warning": "The text states 'no association' which typically indicates a correlation near zero. The exact correlation coefficient is not numerically provided, but 'no association' is interpreted as r \u2248 0."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section presents results for male participants but does not explicitly state the number of studies. The text references 'Table 2' which reports data for women, suggesting this may be part of a larger study with gender-specific analyses, but the total number of distinct studies is not specified in this excerpt.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents factor analysis and reliability results for the Body Appreciation Scale (BAS) in male participants. The BAS demonstrated adequate sampling adequacy (KMO = .88) and a one-factor solution explaining 38.3% of variance, with good internal consistency (\u03b1 = .85). Notably, while BAS showed large positive correlations with physical activity, upper body strength, and physical competence, there was no significant association between male body appreciation and BMI.",
+      "evidence_source": "Entire section text describing male BAS results and correlations.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

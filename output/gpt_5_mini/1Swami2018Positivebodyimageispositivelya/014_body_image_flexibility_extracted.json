@@ -1,0 +1,89 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or location information is provided in the supplied text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size or participant count is reported in the supplied text.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not state how data were collected (e.g., online or paper-and-pencil).",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The supplied text provides no information about participant racial/ethnic composition.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The supplied text does not report participant ages or mean age.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The supplied text does not report participants' education levels or indicate they were college students.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI information is provided in the supplied text.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify the recruitment source (community, college, primary/secondary/high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes the 12-item Body Image-Acceptance and Action Questionnaire (BI-AAQ) assessing body image flexibility; no BAS or BAS-2 (body appreciation) measure is mentioned.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not mention assessing BMI or whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlations between body appreciation and BMI are reported in the supplied text.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to \"the present study\" (e.g., \"In the present study, Cronbach's a for this scale was .95 in women and men.\"), indicating a single study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The supplied section does not state the publication type (journal article or dissertation).",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section reports that body image flexibility was measured using the 12-item Body Image-Acceptance and Action Questionnaire (BI-AAQ), with items rated from 1 (Never true) to 7 (Always true) and scores computed as the mean of reverse-coded items so higher scores indicate greater flexibility. It also notes reliability in the present study (\"Cronbach's a for this scale was .95 in women and men\") but provides no sample, demographic, BMI, or assessment-of-body-appreciation details.",
+      "evidence_source": "Key sentences: \"To measure body image flexibility, we used the 12-item Body Image-Acceptance and Action Questionnaire (BI-AAQ; Sandoz et al., 2013).\" and \"In the present study, Cronbach's a for this scale was .95 in women and men.\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

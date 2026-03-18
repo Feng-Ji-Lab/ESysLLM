@@ -1,0 +1,125 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Portugal\"]}",
+      "evidence_source": "The current study is part of a wider Portuguese research about the impact of emotional experiences and emotion regulation processes in the psychological functioning and mental health.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [369]}",
+      "evidence_source": "However, according to the aims of this study, only 369 participants were selected, resulting in an all females sample.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\": [369]}",
+        "male": "{\"Study X\": [0]}",
+        "other": "{\"Study X\": [None]}",
+        "total": "{\"Study X\": [369]}"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"online\"]}",
+      "evidence_source": "Participants were collected through private messages on Facebook and were asked to share it with two more friends (Exponential Non-Discriminative Snowball Sampling method). Participants answered to a set of selfreport measures during 10-15 minutes.",
+      "warning": "Inferred 'online' from 'private messages on Facebook'."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "The text provides an age range (18-55 years old for the final sample) but no mean age.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"community\"]}",
+      "evidence_source": "Participants were collected through private messages on Facebook and were asked to share it with two more friends (Exponential Non-Discriminative Snowball Sampling method).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'The current study' and 'this study' in the singular.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the procedures for a Portuguese study, which is part of a larger research project. Participants were recruited via Facebook using a snowball sampling method and completed self-report measures. The final sample for this study consisted of 369 females, selected from an original sample of 392 individuals after excluding males and participants outside the 18-55 age range.",
+      "evidence_source": "The entire 'Procedures' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

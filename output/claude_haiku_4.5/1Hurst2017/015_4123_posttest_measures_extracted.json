@@ -1,0 +1,93 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify the country where the study was conducted. No geographic location is mentioned in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'n = 130' for the two-week follow-up survey and 'N = 50' for a pilot study, and 'available for 150 participants' for BMI calculation. However, the total sample size for the main study is not explicitly stated in this section. The section references post-test measures and trait measures but does not provide the overall sample size.",
+      "warning": "Multiple sample sizes mentioned (50 for pilot, 130 for follow-up, 150 for BMI) but main study total sample size is unclear from this section alone."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions that trait measures were collected 'via an online survey' (two weeks after the experimental session), but the method for the main post-test measures (in-person vs. online) is not explicitly stated in this section.",
+      "warning": "Partial information: online method mentioned for follow-up survey only, not for main post-test measures."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states 'Participants reported their age, ethnicity, height, and weight' but does not provide the actual percentage breakdown of white participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states 'Participants reported their age, ethnicity, height, and weight' but does not provide the mean age value.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participants' education level is provided in this section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states 'Height and weight were used to calculate body mass index (available for 150 participants)' but does not provide the mean BMI value.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section does not describe where or how participants were recruited. It only describes the measures and procedures used.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section does not mention any assessment of body appreciation (BAS or BAS-2). The measures described include PASTAS (body anxiety), BREQ-2 (exercise regulation), GCEQ (exercise goals), and I-PANAS-SF (mood/affect).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "The text states 'Participants reported their age, ethnicity, height, and weight. Height and weight were used to calculate body mass index (available for 150 participants).' This indicates self-reported height and weight, which were then used to calculate BMI.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section does not report any correlations between body appreciation and BMI. The focus is on post-test and trait measures including body anxiety, exercise regulation, and mood, but not body appreciation or its correlation with BMI.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section describes measures and procedures for what appears to be a single experimental study. A pilot study (N = 50) is mentioned, but this section is part of a larger study description. The text does not explicitly state the number of studies in the overall paper.",
+      "warning": "Pilot study mentioned (N = 50) but unclear if this counts as a separate study or preliminary work for the main study."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "This section does not indicate whether the publication is a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the post-test and trait measures used in an experimental study examining the effects of guilt and appearance/health-focused article exposure on body anxiety and exercise motivation. Post-test measures included questions about the article, guilt and negative emotion (I-PANAS-SF), body anxiety (PASTAS), and exercise regulation (BREQ-2), with demographic information and self-reported height/weight collected for BMI calculation. Two weeks later, participants completed trait measures of body anxiety, exercise goals (GCEQ), and introjected regulation via an online survey (n = 130).",
+      "evidence_source": "Sections 4.1.2.3 and 4.1.2.4 describing post-test and trait measures",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

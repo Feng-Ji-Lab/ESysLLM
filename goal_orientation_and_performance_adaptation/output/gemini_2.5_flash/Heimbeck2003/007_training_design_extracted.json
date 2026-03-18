@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a 'Training Design' section, which is typical of a journal article reporting research methods.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from the publication type being a journal article.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes training conditions (error management, error avoidant) but does not mention any assessment or measurement of performance goal orientation.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3, 3, 3]}",
+      "evidence_source": "For Study X, 'Every action performed on the computer screen was recorded in real time on video.' and 'all training tasks could be solved without making errors.' indicate objective measurement for each of the three training conditions.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1, 1]}",
+      "evidence_source": "For Study X, 'Every action performed on the computer screen was recorded in real time on video.' and task completion indicate objective scores for each of the three training conditions.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3, 3, 3]}",
+      "evidence_source": "For Study X, 'Every action performed on the computer screen was recorded in real time on video.' and task completion indicate objective assessment for each of the three training conditions.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No specific measurement method for goal orientation is mentioned in the text.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information (mean, range, SD, median) is reported in the text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is reported, so imputation is not possible.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the sex composition of the sample is provided.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the percentage of men in the sample is provided.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the country where the study was conducted is provided.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information is provided to determine if the sample is student or other.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [29, 29, 29]}",
+      "evidence_source": "For Study X, 'n=29 in each group'. There are three training conditions/groups, so N=29 for each.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficients between Performance Goal Orientation and performance adaptation are reported in the text.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficients are reported, so no correlation information can be provided.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single experiment with 'one of three training conditions', indicating one study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the training design for a study using a spreadsheet program. Participants were divided into three groups (n=29 each): error training with error management instructions, error training without instructions, and error avoidant training. All computer actions were recorded on video to objectively measure performance.",
+      "evidence_source": "Summary of the 'Training Design' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

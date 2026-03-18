@@ -1,0 +1,245 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text is a 'Discussion and Conclusion' section, which is typically found in a journal article. No explicit publication type is mentioned.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from the publication type (Journal article), which is typically peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{'Study X': ['Prove', 'Avoid']}",
+      "evidence_source": "For Study X: 'Second, proving orientation did not exhibit a negative link with adaptive behaviors.' and 'Third, our results indicated that advisors with either a learning orientation or a proving orientation are more likely to engage in adaptive behaviors compared with those high in avoidance orientation.'",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{'Study X': ['None', 'None']}",
+      "evidence_source": "The text mentions 'adaptive behaviors' and 'ability to adapt by innovatively recombining their resources' but does not specify the measurement method (e.g., self-report, other people, objective).",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{'Study X': ['None', 'None']}",
+      "evidence_source": "The text mentions 'adaptive behaviors' and 'ability to adapt by innovatively recombining their resources' but does not specify if these were subjective or objective measures.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{'Study X': ['None', 'None']}",
+      "evidence_source": "The text mentions 'adaptive behaviors' and 'ability to adapt by innovatively recombining their resources' but does not specify the specific assessment method.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{'Study X': [1, 1]}",
+      "evidence_source": "The text mentions '(VandeWalle et al., 2001)' in relation to proving orientation and feedback seeking, but it does not explicitly state that the goal orientation measure used in this study was developed by VandeWalle. Therefore, it is coded as 'Other'. This applies to both 'Prove' and 'Avoid' orientations as no specific measure is mentioned for either.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{'Study X': ['None']}",
+      "evidence_source": "No age information is provided in the text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{'Study X': [None]}",
+      "evidence_source": "No age information is provided in the text to impute a mean age.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{'Study X': [None]}",
+      "evidence_source": "No information about the sex composition of the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{'Study X': [None]}",
+      "evidence_source": "No information about the percentage of men in the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{'Study X': [None]}",
+      "evidence_source": "No information about the country where the study was conducted is provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{'Study X': [2]}",
+      "evidence_source": "The sample consists of 'family enterprise advisors', which is not a student population. Therefore, it is coded as 'Other sample'.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{'Study X': [None, None]}",
+      "evidence_source": "No sample size (N) is reported in the provided text for the correlations.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{'Study X': [None, None]}",
+      "evidence_source": "The text describes relationships (e.g., 'positive relationship', 'less adaptive behaviors') but does not provide numerical correlation coefficients (r values).",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{'Study X': ['PPGO and AP (positive)', 'APGO and AP (negative)']}",
+      "evidence_source": "For Study X: 'Second, proving orientation did not exhibit a negative link with adaptive behaviors. Instead, a positive relationship was observed.' and 'Third, our results indicated that advisors with either a learning orientation or a proving orientation are more likely to engage in adaptive behaviors compared with those high in avoidance orientation. For avoidance orientation, an interesting finding was observed. Although advisors high in avoidance orientation did in fact engage in less adaptive behaviors...'",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'This study' and 'Our findings' in the singular, indicating a single study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section discusses the findings of a single study on family enterprise advisors. It highlights that advisors with a strong learning orientation are more likely to acquire feedback and exhibit personal bricolage and innovativeness. Proving orientation showed a surprising positive link with adaptive behaviors, despite a negative link with feedback quality. Avoidance orientation was associated with less adaptive behaviors, an effect not explained by feedback quality.",
+      "evidence_source": "Summary of the 'Discussion and Conclusion' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text is a 'Discussion and Conclusion' section, which is typical of a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information regarding financial support or grants was found in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from the publication type being a journal article (PubType = 1), which is typically peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\", \"Avoid\"]}",
+      "evidence_source": "The text explicitly mentions 'proving orientation' and 'avoidance orientation' in the discussion of the study's findings.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null, null]}",
+      "evidence_source": "The text describes 'personal bricolage' and 'individual innovativeness' as adaptive behaviors, but does not specify the assessment method (e.g., self-report, other people, objective). Since there are two PgoTypes, and two adaptive behaviors are discussed, two null values are provided.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null, null]}",
+      "evidence_source": "The text describes 'personal bricolage' and 'individual innovativeness' as adaptive behaviors, but does not specify the assessment method (e.g., self-report, other people, objective) to determine if they are subjective or objective. Since there are two PgoTypes, and two adaptive behaviors are discussed, two null values are provided.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null, null]}",
+      "evidence_source": "The text describes 'personal bricolage' and 'individual innovativeness' as adaptive behaviors, but does not specify the specific assessment method (e.g., self-report, other people, objective). Since there are two PgoTypes, and two adaptive behaviors are discussed, two null values are provided.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2, null]}",
+      "evidence_source": "The text states: 'For instance, persons high in proving orientation often seek out outcome feedback and not process feedback (VandeWalle et al., 2001).' This explicitly links VandeWalle to proving orientation (coded as 2). The measurement method for avoidance orientation is not explicitly stated, so it is coded as null.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information is reported in the provided 'Discussion and Conclusion' section.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No age information is reported in the provided 'Discussion and Conclusion' section.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No sex composition information is reported in the provided 'Discussion and Conclusion' section.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No percentage of men is reported in the provided 'Discussion and Conclusion' section.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No country information is reported in the provided 'Discussion and Conclusion' section.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "The text refers to 'Professional family enterprise advisors' as the sample, indicating a non-student sample.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No sample size (N) is reported in the provided 'Discussion and Conclusion' section.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null, null, null, null]}",
+      "evidence_source": "Figure 2 presents path coefficients (e.g., \u03b322 = .20*, \u03b323 = -.20*, \u03b332 = .16*, \u03b333 = -.07) from goal orientations to adaptive behaviors, which are not Pearson r correlation coefficients. The text describes relationships qualitatively but does not provide specific Pearson r values. There are two PGO types ('Prove', 'Avoid') and two adaptive behaviors ('Personal Bricolage', 'Individual Innovative Behavior'), leading to four potential correlations.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null, null, null, null]}",
+      "evidence_source": "No Pearson r correlation coefficients were extracted from the text or figure.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'this study' and 'our study' in the singular, indicating a single study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section discusses the findings of a single study on family enterprise advisors, examining the relationships between learning, proving, and avoidance goal orientations and adaptive behaviors such as personal bricolage and individual innovativeness. It highlights the role of feedback quality in these relationships, noting unexpected positive links for proving orientation and less adaptive behaviors for avoidance orientation. The section concludes with the study's contributions and practical implications.",
+      "evidence_source": "Summary of the provided 'Discussion and Conclusion' section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Figure 2. Results of partially mediated structural model. Table 4. Summary of Results.",
+      "evidence_source": "Directly extracted from the captions provided below the image.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Davis2013\\figures\\Davis2013_p012_fig00.png",
+    "_metadata_caption": "Table 4. Summary of Results.",
+    "_asset_source": "[image] Table 4. Summary of Results.",
+    "_pass_type": "asset_0"
+  }
+]

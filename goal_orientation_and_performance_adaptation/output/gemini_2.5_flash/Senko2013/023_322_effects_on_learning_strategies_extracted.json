@@ -1,0 +1,371 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The document is structured as an academic paper with sections like '3.2.2. Effects on learning strategies' and references to hypotheses and statistical results, which is typical of a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies was found in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from the publication type being a journal article, which typically undergoes peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\"]}",
+      "evidence_source": "The text mentions 'PAP goals' (Performance-Approach Goals). According to the schema, 'Prove' performance goal orientation (PPGO) aligns with people aiming to prove their competence, which is consistent with Performance-Approach goals. Mastery-Approach Goals (MAP goals) are not considered Performance Goal Orientation per the schema's definition.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text states 'students in one class reported higher vigilance', 'students in another class reported higher utility value and deep learning strategy usage', and 'students in one class reported less surface learning strategy usage'. This indicates that learning strategies (performance adaptation) were assessed via self-report.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [0]}",
+      "evidence_source": "Since the adaptation outcome (learning strategies) was assessed via self-report, it is considered a subjective rating.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text indicates that learning strategies were assessed via self-report, as students 'reported' their usage of various strategies.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text mentions 'MAP goals' and 'PAP goals' but does not specify the measurement scale used for goal orientation (e.g., VandeWalle). Therefore, it is coded as 'Other'.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No information regarding the age of participants (mean, range, SD, or median) is provided in the text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No age information was reported in the text to allow for imputation.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information regarding the sex composition of the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information regarding the percentage of men in the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information regarding the country where the study was conducted is provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text refers to 'students in one class' and 'three courses in the sample', indicating that the sample consists of students.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [157]}",
+      "evidence_source": "The text explicitly states: 'Note: N=157.'",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The text provides standardized regression coefficients (\u03b2) for the effects of goals on learning strategies, but it does not report Pearson r correlation coefficients between Performance Goal Orientation (PGO) and performance adaptation (PA). The schema specifically requests Pearson r.",
+      "warning": "The text provides beta coefficients (standardized regression coefficients) but not Pearson r correlation coefficients, which are explicitly requested by the schema."
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No Pearson r correlation coefficients were extracted, so no correlation information can be provided.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study investigating effects on learning strategies, with a total sample size of N=157. The mention of 'three different classes' refers to subgroups within this single sample, not separate studies.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the effects of Mastery-Approach (MAP) goals and Performance-Approach (PAP) goals on various learning strategies, including deep learning, interest-based studying, surface learning, and vigilant approach to studying. It examines the mediating role of utility value and reports standardized regression coefficients (\u03b2) for the hypothesized relationships. The study involved a sample of N=157 students across three different classes.",
+      "evidence_source": "Summary of the provided text content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about publication type found in the provided text.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about financial support found in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about peer review found in the provided text.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study 2\": [\"Prove\", \"Prove\", \"Prove\", \"Prove\"]}",
+      "evidence_source": "The text mentions 'PAP goals' (Performance-Approach Goals) and the table provides correlations for 'PAP goal'. Performance-Approach Goal aligns with 'Prove' performance goal orientation. This is for Study 2.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study 2\": [1, 1, 1, 1]}",
+      "evidence_source": "The adaptation outcomes are 'deep learning strategy', 'interest-based studying', 'surface learning strategy', and 'vigilant approach to studying'. These are typically self-reported learning strategies, coded as 1.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study 2\": [0, 0, 0, 0]}",
+      "evidence_source": "The adaptation outcomes are self-reported learning strategies, which are subjective ratings, coded as 0.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study 2\": [1, 1, 1, 1]}",
+      "evidence_source": "The adaptation outcomes are self-reported learning strategies, coded as 1 (Self-report).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study 2\": [1, 1, 1, 1]}",
+      "evidence_source": "The text does not specify the measurement method for 'PAP goals'. Therefore, it is coded as 1 (Other).",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information (range, SD, median, or subgroups) found in the provided text for Study 2.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean or median age information found in the provided text for Study 2.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sex composition found in the provided text for Study 2.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the percentage of men found in the provided text for Study 2.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the country of data collection found in the provided text for Study 2.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the sample type (student or other) found in the provided text for Study 2.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study 2\": [157, 157, 157, 157]}",
+      "evidence_source": "The note below Table 4 states: 'Note: N=157.' This N applies to all correlations in the table for Study 2.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study 2\": [0.25, 0.11, 0.00, 0.28]}",
+      "evidence_source": "From Table 4, 'Zero-order correlations among all measures (Study 2)':\n- Correlation between '2. PAP goal' and '3. Surface learning': .25\n- Correlation between '2. PAP goal' and '4. Deep learning': .11\n- Correlation between '2. PAP goal' and '5. Interest-based studying': .00\n- Correlation between '2. PAP goal' and '6. Vigilance': .28",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study 2\": [\"PAP goal and Surface learning\", \"PAP goal and Deep learning\", \"PAP goal and Interest-based studying\", \"PAP goal and Vigilance\"]}",
+      "evidence_source": "Derived from the variable names in Table 4 for 'PAP goal' and the respective learning strategies.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The table caption explicitly states '(Study 2)', indicating one named study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the effects of Mastery-Approach (MAP) and Performance-Approach (PAP) goals on various learning strategies, including deep learning, interest-based studying, surface learning, and vigilant approach to studying. It also explores the mediating role of utility value. Table 4, titled 'Zero-order correlations among all measures (Study 2)', provides the correlation results for Study 2.",
+      "evidence_source": "The entire text content of the section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 4 Zero-order correlations among all measures (Study 2).",
+      "evidence_source": "Caption of the provided image 'Table 4'.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Senko2013\\tables\\Senko2013_p005_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from the academic context and structure of the provided text, which is a section of a research paper.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No explicit mention of financial support or grants in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from the academic context of the provided text, which is a section of a research paper.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study 2\": [\"Prove\"]}",
+      "evidence_source": "The text mentions 'PAP goals' (Performance-Approach Goals) which align with 'Prove' performance goal orientation. 'The results also support each hypothesis for PAP goals.'",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study 2\": [1, 1, 1, 1]}",
+      "evidence_source": "The adaptation outcomes are 'deep learning strategy', 'interest-based studying', 'surface learning strategy', and 'vigilant approach to studying'. These are typically self-report measures.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study 2\": [0, 0, 0, 0]}",
+      "evidence_source": "The adaptation outcomes are learning strategies ('deep learning strategy', 'interest-based studying', 'surface learning strategy', 'vigilant approach to studying'), which are typically self-reported and thus subjective.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study 2\": [1, 1, 1, 1]}",
+      "evidence_source": "The adaptation outcomes are learning strategies ('deep learning strategy', 'interest-based studying', 'surface learning strategy', 'vigilant approach to studying'), which are typically self-reported.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study 2\": [1]}",
+      "evidence_source": "No specific goal orientation measure (e.g., VandeWalle) is mentioned for PAP goals.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study 2\": [\"\"]}",
+      "evidence_source": "No age information is provided in the text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study 2\": [\"None\"]}",
+      "evidence_source": "No age information is provided in the text to impute from.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study 2\": [\"None\"]}",
+      "evidence_source": "No sex information is provided in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study 2\": [\"None\"]}",
+      "evidence_source": "No sex information is provided in the text to derive the percentage of men.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study 2\": [\"None\"]}",
+      "evidence_source": "No country information is provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study 2\": [1]}",
+      "evidence_source": "The text refers to 'students' and 'classes', indicating a student sample. 'students in one class reported higher vigilance'.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study 2\": [157]}",
+      "evidence_source": "Note: N=157.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study 2\": [\"None\"]}",
+      "evidence_source": "The table 'Table 5 Regression analyses of achievement goal relationships with utility value and study strategies (Study 2)' provides standardized regression coefficients (\u03b2), not Pearson r correlation coefficients as requested by the schema. The text states 'Values for goals and classes are standardized regression coefficients (\u03b2).'",
+      "warning": "The table provides standardized regression coefficients (\u03b2) instead of Pearson r correlation coefficients as requested by the schema."
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study 2\": [\"None\"]}",
+      "evidence_source": "No Pearson r correlations were extracted as the table provides beta coefficients.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The table caption explicitly states 'Table 5 Regression analyses of achievement goal relationships with utility value and study strategies (Study 2).'",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section, titled 'Effects on learning strategies', details the results of regression analyses for Study 2. It examines the hypothesized effects of MAP and PAP goals on various learning strategies (deep learning, interest-based studying, surface learning, vigilant approach) and the mediating role of utility value. The results largely support hypotheses for PAP goals predicting surface learning and vigilant approach, and unexpectedly deep learning, while MAP goals predicted deep learning.",
+      "evidence_source": "The entire text content of the section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 5 Regression analyses of achievement goal relationships with utility value and study strategies (Study 2).",
+      "evidence_source": "The caption of Table 5.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Senko2013\\tables\\Senko2013_p006_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_1"
+  }
+]

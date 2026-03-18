@@ -1,0 +1,255 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      2,
+      5,
+      6
+    ],
+    "reason": "Multiple sections consistently describe a single study: the abstract explicitly reports one study (Candidate 0), the Methods describe a single convenience sample (Candidate 2), the Results present analyses from that sample without Study 1/2 labels (Candidate 5), and the Discussion summarizes a single study (Candidate 6). No candidates indicate multiple distinct studies."
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        100
+      ]
+    },
+    "best_indices": [
+      3,
+      2
+    ],
+    "reason": "All candidates describe a single convenience sample of undergraduate women (e.g., Participants/Methods: candidate 3; Abstract: candidate 2). Because the sample is explicitly undergraduate, per the infer rule the percentage with college or higher education is 100%. The candidates are consistent (title, abstract, participants, discussion), and the most reliable sources are the Participants section and Abstract (hence best_indices [3,2]). Female-only sample is reflected under female and total.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          100
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          100
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "college"
+      ]
+    },
+    "best_indices": [
+      3,
+      2
+    ],
+    "reason": "All candidates describe the same single study of undergraduate women. The Participants/Methods section (candidate 3) explicitly states a convenience sample of undergraduate women recruited from an Introductory Psychology class for course credit (N=143), which is the most reliable source; the Abstract (candidate 2) and Title (candidates 0 and 1) also identify undergraduate participants, and the Discussion (candidate 4) reiterates the sample was undergraduate women. Therefore the source of sample is classified as 'college'."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All candidates consistently identify the source as a journal article (explicit Journal of Health Psychology citation and bibliographic references). This matches the allowed value \"journal articles\" and there is no indication the work is a dissertation."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        143,
+        142,
+        138
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All candidates refer to the same single study. Candidate 0 (abstract) reports initial N = 143 undergraduate women. Candidate 1 (Participants/Methods) clarifies one participant was excluded (final sample N = 142). Candidate 2 (Results) notes analyses were based on 138 participants due to missing responses. I retained all three values to represent initial enrollment (143), final retained sample after exclusion (142), and the analytic sample for reported results (138). Female-specific counts available for initial and final samples (143, 142); no male/other counts reported.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          143,
+          142
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          143,
+          142,
+          138
+        ]
+      }
+    }
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "Canada"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "All candidates point to a single study. Candidate 0 provides the location/affiliation phrase 'For Mount Allison University, Canada', which reliably indicates the country where the study was conducted. No other candidate contradicted or added additional countries, so 'Canada' was used for the single study."
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Single study": [
+        86.9
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study in the paper. Candidate 0 (Participants section) reports that 86.9% (n=113 of 130 reporting ethnicity) identified as Caucasian; this is the most reliable source (Methods/Participants). No other candidates or multiple studies to merge or reconcile.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          86.9
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          86.9
+        ]
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        18.68
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study was reported. Candidate 0 (Participants/Methods section) gives the mean age for the sample as M = 18.68 years (ages 17\u201324). This is the primary, reliable source for mean age (main text Methods/Participants), so it was used as the extracted value. The sample was largely female and the candidate indicates the mean for the reported (female) sample; the same value is provided as the total mean.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          18.68
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          18.68
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        22.22
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both Candidate 0 (Participants section) and Candidate 1 (Table 1 in Measures) report the same mean BMI = 22.22 (SD = 3.46). The paper describes a single convenience sample of undergraduate women, so this value applies to the single study; participants are female, so female and total entries are populated. Both sources are consistent; primary reliance on the Method/Participants text (Candidate 0) with table (Candidate 1) as corroboration.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          22.22
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          22.22
+        ]
+      }
+    }
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study reported. Participant section (candidate 0) explicitly states \u201cwe assessed body mass index (BMI) from self-reported weight and height,\u201d so BMI assessment is categorized as 'self-reported'. No conflicting candidates."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All reliable sources (Measures section, Table caption, and Discussion) consistently report use of Avalos et al.'s (2005) 13-item Body Appreciation Scale (BAS). The paper describes a single study (undergraduate women sample) across sections, so values are merged into one entry. No indication of BAS-2 was found."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        -0.36
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Candidate 0 (Table 1: Descriptive statistics and intercorrelations) reports the Pearson correlation between BMI and Body Appreciation as \u22120.36. The paper describes a single study overall, no gender-specific correlations or multiple BAS subscales for this correlation were reported, so the total correlation (\u22120.36) is used.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          -0.36
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          -0.36
+        ]
+      }
+    }
+  }
+}

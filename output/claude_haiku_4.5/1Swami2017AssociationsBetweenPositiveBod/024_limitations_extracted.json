@@ -1,0 +1,93 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a limitations section that does not explicitly state the country where the study was conducted. While the text mentions 'US population', this is in the context of cautioning that findings may not be representative of the wider US population, not as a definitive statement of where the study was conducted.",
+      "warning": "No explicit country statement in this limitations section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This is a limitations section that does not report sample size. No participant numbers are provided.",
+      "warning": "Sample size not reported in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This is a limitations section. While it mentions 'crowdsourcing marketplace samples' and 'Internet samples', it does not explicitly state whether data collection was via paper-and-pencil or online methods.",
+      "warning": "Survey method not explicitly stated in this limitations section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This limitations section does not report racial/ethnic demographics of participants.",
+      "warning": "Racial composition not reported in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This limitations section does not report mean age of participants.",
+      "warning": "Mean age not reported in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This limitations section does not report educational attainment of participants.",
+      "warning": "Educational level not reported in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          25.5
+        ]
+      },
+      "evidence_source": "The text states: 'In particular, it should be noted that the mean BMI of our sample fell in the overweight category'. The overweight BMI category is defined as 25.0-29.9. While an exact mean BMI value is not provided, the statement indicates the mean fell within the overweight range. However, this is an inference rather than an explicit numerical value, so the exact mean BMI cannot be determined from this text alone.",
+      "warning": "Only categorical information provided (overweight category, BMI 25.0-29.9); exact mean BMI value not explicitly stated."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While the text mentions 'crowdsourcing marketplace samples' and recruitment methods, it does not explicitly categorize the source as 'community', 'college', or 'primary/secondary/high school'.",
+      "warning": "Source of sample not explicitly categorized in standard terms in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This limitations section does not specify which body appreciation assessment instrument (BAS or BAS-2) was used.",
+      "warning": "Body appreciation assessment instrument not mentioned in this limitations section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This limitations section does not specify whether BMI was self-reported or measured.",
+      "warning": "BMI assessment method not stated in this limitations section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This limitations section does not report correlation coefficients between body appreciation and BMI.",
+      "warning": "No correlation values reported in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This is a limitations section of what appears to be a single study. No explicit statement of multiple studies is provided in this text.",
+      "warning": "Cannot determine number of studies from limitations section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "This is a limitations section that does not indicate whether the publication is a journal article or dissertation.",
+      "warning": "Publication type not determinable from this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This limitations section discusses the cross-sectional nature of the study and inability to determine causation, potential biases from crowdsourcing marketplace recruitment, and notes that findings may not be representative of the wider US population. The section also highlights measurement limitations in body image scales (BI-AAQ and BASES-AP) and notes that positive body image explained only approximately 13% of variance in sexual liberalism outcomes, suggesting the need for additional variables in future research.",
+      "evidence_source": "Entire limitations section provided",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

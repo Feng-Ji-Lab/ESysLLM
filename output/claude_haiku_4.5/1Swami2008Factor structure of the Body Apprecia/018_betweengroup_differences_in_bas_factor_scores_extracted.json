@@ -1,0 +1,141 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Malaysia"
+        ]
+      },
+      "evidence_source": "The text mentions 'Malay and Chinese participants', indicating the study was conducted in Malaysia where these ethnic groups are present. However, the country is not explicitly stated in this section.",
+      "warning": "Country inferred from ethnic group names (Malay and Chinese) rather than explicitly stated. Confidence is moderate."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          589
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            589
+          ]
+        }
+      },
+      "evidence_source": "The text states 't(589) = 1.40' and 't(589) = 1.01', indicating the total sample size was 589 participants (degrees of freedom = n - 1).",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about survey method (paper-and-pencil or online) is provided in this section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No information about percentage of white participants is provided. The study mentions Malay and Chinese participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No information about mean age of participants is provided in this section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No information about education level of participants is provided in this section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No information about mean BMI of participants is provided in this section.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the source of sample (community, college, or primary/secondary/high school) is provided in this section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text mentions 'BAS Factor Scores' and discusses 'General Body Appreciation' and 'Body Image Investment' factors with factor scores calculated from items. This indicates the Body Appreciation Scale (BAS) was used, though the specific version (BAS or BAS-2) is not explicitly stated. Based on the mention of 'BAS Factor Scores' in the section title, BAS is inferred.",
+      "warning": "The specific version of BAS (BAS or BAS-2) is not explicitly stated. Inferred as BAS based on section title mentioning 'BAS Factor Scores', but confidence is moderate."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported or measured) is provided in this section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No correlation coefficients between body appreciation and BMI are provided in this section. The section reports t-test results comparing BAS factor scores between Malay and Chinese groups, not correlations with BMI.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "This section appears to describe results from a single study comparing Malay and Chinese participants. No explicit mention of multiple studies is provided.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No information about publication type (journal article or dissertation) is provided in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section reports results of independent samples t-tests comparing Body Appreciation Scale (BAS) factor scores between Malay and Chinese participants (n=589). No significant differences were found between the two ethnic groups on either General Body Appreciation or Body Image Investment factor scores. The study appears to be a single cross-cultural comparison examining BAS responses across ethnic groups.",
+      "evidence_source": "Entire provided text section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

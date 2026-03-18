@@ -1,0 +1,152 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Denmark",
+          "Portugal",
+          "Sweden"
+        ]
+      },
+      "evidence_source": "Text states: 'Convergent validity was assessed by looking at the correlations between the BAS-2 and self-esteem, psychological well-being, intuitive eating, and BMI for boys and girls in Denmark, Portugal, and Sweden separately.' Results are reported for all three countries.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No sample sizes are explicitly stated in this section. The text references 'larger sample size in Portugal' but does not provide specific numbers.",
+      "warning": "Sample sizes not provided in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Survey method is not mentioned in this section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Racial/ethnic composition is not mentioned in this section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Mean age is not provided in this section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Education level is not mentioned in this section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Mean BMI values are not provided in this section. Only correlations between BAS-2 and BMI are reported.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Source of sample is not mentioned in this section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Text explicitly states: 'Convergent validity was assessed by looking at the correlations between the BAS-2 and self-esteem, psychological well-being, intuitive eating, and BMI' and 'The relationship between body appreciation and BMI for boys was also less clear, as a weak negative relationship was found in Portugal (r = \u2212.33, p < .001)'. The instrument used is BAS-2.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The method of BMI assessment (self-reported vs. measured) is not specified in this section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          0.14,
+          -0.19,
+          -0.15,
+          -0.33
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            0.14,
+            -0.19,
+            -0.15
+          ]
+        },
+        "male": {
+          "Study X": [
+            -0.33
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "For girls: 'There was a weak negative relationship between the BAS-2 and BMI in the three countries; however, this relationship was significant in Portugal (r = .14, p = .015), but not in Denmark (r = .19, p = .117) or Sweden (r = .15, p = .077)'. Note: The text shows r = .14, .19, .15 for girls (Portugal, Denmark, Sweden respectively). For boys: 'The relationship between body appreciation and BMI for boys was also less clear, as a weak negative relationship was found in Portugal (r = \u2212.33, p < .001), but there was no statistically significant relationship either in Denmark or in Sweden.' The correlations for girls in Denmark and Sweden appear to be reported as positive values (.19, .15) in the text, but the context indicates these are negative relationships. The Portugal value for girls is r = .14 (positive). For boys, only Portugal shows a significant correlation: r = \u2212.33.",
+      "warning": "Inconsistency detected: The text describes 'weak negative relationship' for girls but reports r = .14, .19, .15 which appear positive. This may be a transcription issue in the original text. The sign convention should be verified against the original source. For boys in Denmark and Sweden, no statistically significant correlations are reported, so no values are extracted for those countries."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "This section describes a single study with convergent validity assessment across three countries (Denmark, Portugal, Sweden) and two gender groups (boys and girls). No separate studies are explicitly named or numbered.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "Publication type is not mentioned in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents convergent validity results for the BAS-2 across three countries (Denmark, Portugal, and Sweden) with separate analyses for boys and girls. Body appreciation showed moderate to strong positive correlations with self-esteem, psychological well-being, and intuitive eating across all groups. Weak negative correlations were found between BAS-2 and BMI, with statistical significance varying by country and gender: significant in Portugal for both genders (girls: r = .14; boys: r = \u2212.33), but not significant in Denmark or Sweden.",
+      "evidence_source": "Section 3.4 Convergent validity",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

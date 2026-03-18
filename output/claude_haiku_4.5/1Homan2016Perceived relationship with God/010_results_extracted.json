@@ -1,0 +1,377 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify the country where the study was conducted.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text references N = 186 and N = 164 in footnotes, but does not explicitly state which study these refer to or provide complete sample information. Without the full context of the paper (methods section), it is unclear if this is one study with different sample sizes for different analyses or multiple studies.",
+      "warning": "Ambiguous sample sizes: N = 186 and N = 164 mentioned in notes, but unclear which study or analysis phase these refer to."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not describe the survey method used (paper-and-pencil vs. online).",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide demographic information about racial/ethnic composition of participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not report the mean age of participants.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about participants' educational attainment.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions that 'Body mass index was inversely related to body appreciation' and that BMI was included as a covariate, but does not report the mean BMI of participants.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify where or how participants were recruited (community, college, or primary/secondary/high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly name the instrument used to assess body appreciation (BAS or BAS-2). It only refers to 'body appreciation' as a criterion variable.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states 'Body mass index was inversely related to body appreciation' but does not provide the specific correlation coefficient (r value).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text is a Results section from a single study. It does not explicitly state the number of studies, but the content describes one study with three separate moderation analyses (for body comparison, eating comparison, and exercise comparison). Without the full paper context, it is unclear if this is labeled as 'Study 1' or if there are multiple studies.",
+      "warning": "This is a Results section; the number of studies cannot be definitively determined from this section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text does not indicate whether this is from a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Results section presents findings from a moderation analysis examining how attachment to God moderates the relationship between social comparison (body, eating, and exercise) and body appreciation in women (N = 186 and N = 164 for different analyses). Body comparison and eating comparison were negatively related to body appreciation, with these relationships being conditional upon God attachment anxiety. Exercise comparison showed conditional relationships with both attachment anxiety and avoidance dimensions. The complete models explained substantial variance in body appreciation (40-51%).",
+      "evidence_source": "Entire Results section provided",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the study was conducted. No geographic location is mentioned in the provided section.",
+      "warning": "Country information not available in the provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          186
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            186
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            186
+          ]
+        }
+      },
+      "evidence_source": "Table 1 notes state 'N = 186' for the descriptive statistics and intercorrelations table. The text also references 'N = 164' in a later note, indicating a second analysis with a reduced sample (likely due to missing data in the moderation analysis). Both sample sizes should be recorded as they represent different analytical samples from the same study.",
+      "warning": "Two different sample sizes reported: N=186 for initial descriptive statistics and N=164 for moderation analyses. The text indicates the sample appears to be all female based on the consistent use of 'women' throughout."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether data collection used paper-and-pencil or online survey methods.",
+      "warning": "Survey method not specified in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report the racial/ethnic composition of participants.",
+      "warning": "Racial/ethnic composition not reported in the provided text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report the mean age of participants.",
+      "warning": "Mean age not reported in the provided text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report the educational level of participants.",
+      "warning": "Educational attainment not reported in the provided text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          22.44
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            22.44
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            22.44
+          ]
+        }
+      },
+      "evidence_source": "Table 1, row (7) BMI: M = 22.44, SD = 3.21, Range = 16.27-34.43. This represents the mean BMI of the N=186 sample.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether participants were recruited from community, college, or primary/secondary/high school settings.",
+      "warning": "Source of sample not specified in the provided text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly name the instrument used to assess body appreciation (BAS or BAS-2). The variable is labeled 'Body appreciation' in Table 1, but the specific assessment tool is not identified in this section.",
+      "warning": "Specific body appreciation assessment instrument (BAS vs BAS-2) not identified in the provided text."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether BMI was self-reported or measured.",
+      "warning": "BMI assessment method (self-reported vs measured) not specified in the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.3
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.3
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            -0.3
+          ]
+        }
+      },
+      "evidence_source": "Table 1, intercorrelation matrix: The correlation between (1) Body appreciation and (7) BMI is shown in row 7, column 1 as -.30*** (p < .001). The asterisks indicate statistical significance but are not part of the correlation coefficient value.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text describes a single study with multiple moderation analyses (three separate analyses for body comparison, eating comparison, and exercise comparison), but these are all part of one study design. The text references 'Table 1' and 'Table 2' as part of a unified results section, and uses consistent sample identifiers (N=186, N=164).",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a results section from an academic paper, but the publication type (journal article vs dissertation) is not explicitly stated in the provided excerpt.",
+      "warning": "Publication type not determinable from the provided text excerpt."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This results section presents descriptive statistics and intercorrelations for a single study (N=186) examining the relationship between body appreciation, social comparison, and attachment to God in women. Table 1 shows that body appreciation was negatively correlated with body, eating, and exercise comparisons (r=-.61, -.48, -.45 respectively) and with BMI (r=-.30). The text then describes three separate moderation analyses testing whether God attachment anxiety and avoidance moderate the relationship between each type of social comparison and body appreciation, with results indicating that attachment anxiety significantly moderates the effect of body and exercise comparisons on body appreciation.",
+      "evidence_source": "Entire provided text section",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1. Descriptive statistics and intercorrelations for major study variables.",
+      "evidence_source": "Table title as presented in the image",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Homan2016Perceived relationship with God/tables/1Homan2016Perceived relationship with God_p006_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly state the country where the study was conducted. While the text mentions 'women' as participants and references to 'God attachment' and religiosity, no geographic location is specified.",
+      "warning": "Country information not provided in the text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          164
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            164
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            164
+          ]
+        }
+      },
+      "evidence_source": "Notes at the bottom of the table state 'N = 164. Anxiety = God attachment anxiety; Avoidance = God attachment avoidance.' This indicates the total sample size for the moderation analysis was 164 participants. The text refers to 'women' throughout, indicating an all-female sample.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether data were collected via paper-and-pencil or online survey methods.",
+      "warning": "Survey method not specified in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report the racial/ethnic composition of participants.",
+      "warning": "Racial/ethnic demographic information not provided."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report the mean age of participants.",
+      "warning": "Mean age information not provided in the text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report the educational attainment of participants.",
+      "warning": "Educational attainment information not provided."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report the mean BMI of participants. While BMI is mentioned as a predictor variable in the regression models and is noted as being inversely related to body appreciation, no mean BMI value is provided.",
+      "warning": "Mean BMI value not reported in the text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether participants were recruited from a community, college, or primary/secondary/high school setting.",
+      "warning": "Source of sample not specified in the provided text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly name the instrument used to assess body appreciation. While 'body appreciation' is the criterion variable throughout the analyses, the specific assessment tool (BAS or BAS-2) is not identified in this section.",
+      "warning": "Specific body appreciation assessment instrument not named in the provided text."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether BMI was self-reported or measured. BMI is included as a covariate in the analyses, but the method of assessment is not stated.",
+      "warning": "BMI assessment method (self-reported vs. measured) not specified."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.702
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.702
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            -0.702
+          ]
+        }
+      },
+      "evidence_source": "The table presented shows 'Predictor variables: Model 1' with BMI as the first row. The B coefficient for BMI is \u2212.702 with SE = .123, 95% CI = \u2212.95, \u2212.46, t = \u22125.71, p = .001. This represents the relationship between BMI and body appreciation in the first moderation model. The negative coefficient indicates an inverse relationship. The sample consisted entirely of women (N = 164).",
+      "warning": "The table shows regression coefficients (B) rather than correlation coefficients (r). The B = \u2212.702 is a standardized or unstandardized regression coefficient, not a Pearson correlation coefficient. If a Pearson r is needed, this value should not be directly used as a correlation coefficient without clarification of whether it is standardized."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text describes a single study with three separate moderation analyses (one for body comparison, one for eating comparison, and one for exercise comparison). These are presented as Models 1, 2, and 3 within the same study, not as separate studies. The text states 'Each of the social comparison dimensions (that is, body, eating, and exercise) was tested separately; hence, a total of three moderation analyses were performed.'",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not indicate whether this is from a journal article or dissertation. Only the Results section is provided without publication metadata.",
+      "warning": "Publication type cannot be determined from the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Results section presents findings from a single study examining how God attachment dimensions moderate the relationship between social comparison and body appreciation in women (N = 164). Three separate moderation analyses were conducted (Models 1\u20133) testing body comparison, eating comparison, and exercise comparison as predictors of body appreciation, with God attachment anxiety and avoidance as moderators and BMI and self-rated religiosity as covariates. The results show that social comparison variables negatively predict body appreciation, and this relationship is conditional upon God attachment anxiety (and in the exercise model, also avoidance).",
+      "evidence_source": "Synthesized from the entire Results section provided, which describes the moderation analyses and their outcomes across three models.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2: Regression coefficients, standard errors, 95% confidence intervals, t-values, and p-values for the moderation models predicting body appreciation. Notes: N = 164. Anxiety = God attachment anxiety; Avoidance = God attachment avoidance.",
+      "evidence_source": "The table shown in the image contains three models of predictor variables with columns for B, SE, 95% CI, t, and p. The notes at the bottom specify N = 164 and define Anxiety and Avoidance as God attachment dimensions. This is the table referenced in the Results section as 'Table 2' where results are summarized.",
+      "warning": "The exact table title is not provided in the text, but based on context and the notes, this appears to be Table 2 from the Results section."
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Homan2016Perceived relationship with God/tables/1Homan2016Perceived relationship with God_p007_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_1"
+  }
+]

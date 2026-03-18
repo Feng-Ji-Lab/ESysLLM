@@ -1,0 +1,89 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions N=288 in the context of chi-square difference testing, but this appears to be a subsample used for multiple-group analysis. No clear total sample size for the overall study is explicitly stated in this section.",
+      "warning": "Potential sample size of 288 mentioned in chi-square test context, but unclear if this is the total sample or a subset."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method (paper-and-pencil or online) is mentioned in this section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in this section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No educational attainment information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While BMI is mentioned as a covariate in the structural model, no mean BMI value is reported in this section.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about where or how participants were recruited is provided in this section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section discusses the CEMS (Culturally-Sensitive Eating Messages Scale) and structural modeling, but does not mention Body Appreciation Scale (BAS or BAS-2) assessment.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "BMI is mentioned as a covariate in the structural model, but the method of assessment (self-reported or measured) is not specified in this section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section does not report correlations between body appreciation and BMI. The focus is on structural path coefficients among CEMS variables, familial pressure, body dissatisfaction, and disordered eating.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text references 'Study 1' in the phrase 'Similar to Study 1, pressure to eat messages was not related...' indicating this is Study 2 or a subsequent study, but the total number of studies in the paper is not explicitly stated in this section.",
+      "warning": "Text indicates at least 2 studies exist (Study 1 is referenced), but exact total number cannot be determined from this section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes confirmatory factor analysis and structural equation modeling for the CEMS across Study 2 (referenced implicitly by comparison to Study 1). The analysis tested a maladaptive structural model examining relationships among restrictive/critical eating messages, familial pressure to be lean, body dissatisfaction, and disordered eating, with BMI as a covariate. Multiple-group analysis revealed no significant gender differences in structural paths between women and men (N=288).",
+      "evidence_source": "Entire section text describing Study 2 methodology and results.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

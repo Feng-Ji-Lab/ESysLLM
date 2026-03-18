@@ -1,0 +1,89 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only an article header with keywords. No country information is mentioned.",
+      "warning": "Insufficient data. Only article metadata (received/accepted dates and keywords) provided. No study details available."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only an article header with keywords. No sample size information is mentioned.",
+      "warning": "Insufficient data. Only article metadata provided. No participant sample information available."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only an article header with keywords. No survey method information is mentioned.",
+      "warning": "Insufficient data. Only article metadata provided. No methodology details available."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only an article header with keywords. No demographic information is mentioned.",
+      "warning": "Insufficient data. Only article metadata provided. No demographic details available."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only an article header with keywords. No age information is mentioned.",
+      "warning": "Insufficient data. Only article metadata provided. No participant age data available."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only an article header with keywords. No education information is mentioned.",
+      "warning": "Insufficient data. Only article metadata provided. No education level data available."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only an article header with keywords. No BMI information is mentioned.",
+      "warning": "Insufficient data. Only article metadata provided. No BMI data available."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only an article header with keywords. No sample source information is mentioned.",
+      "warning": "Insufficient data. Only article metadata provided. No sample recruitment details available."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only an article header with keywords. While 'Body appreciation' is mentioned in the keywords, no specific assessment instrument (BAS or BAS-2) is identified.",
+      "warning": "Insufficient data. Only article metadata provided. No assessment instrument details available."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only an article header with keywords. No BMI assessment method is mentioned.",
+      "warning": "Insufficient data. Only article metadata provided. No assessment methodology available."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only an article header with keywords. No correlation data is mentioned.",
+      "warning": "Insufficient data. Only article metadata provided. No statistical results available."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only an article header with keywords. No information about the number of studies is provided.",
+      "warning": "Insufficient data. Only article metadata provided. Cannot determine number of studies."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text shows 'Article history' with received/accepted dates, which suggests a journal article format, but this is not explicitly confirmed in the provided text.",
+      "warning": "Ambiguous. The format suggests a journal article, but explicit confirmation is not available in the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "The provided text contains only article metadata including submission and acceptance dates (received 25 February 2014, accepted 14 July 2014) and keywords related to personality, drive for muscularity, body appreciation, and body mass index. No actual study data, methodology, or results are present in this section.",
+      "evidence_source": "Article header section with dates and keywords only.",
+      "warning": "This is insufficient content for comprehensive data extraction. A full methods and results section is needed to extract study-level variables."
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,129 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This 'Statistical Analyses' section contains no statement of country or location for the sample; no country or region is mentioned in the quoted text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes analytic methods (EFA, t-tests, bivariate correlations) but does not report a sample size or total number of participants in any sentence of the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section details statistical procedures only and does not state the survey/data collection method (e.g., online or paper-and-pencil).",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic breakdown or racial/ethnic composition (including percent white) is reported in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section mentions that associations with respondent age are reported ('We also report on associations between body appreciation and respondent age.'), but does not provide any mean age value.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not state participants' education level or indicate whether participants were college students.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "BMI is mentioned as a variable correlated with body appreciation, but no descriptive statistics (mean BMI) are reported in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section compares scores to 'the community sample means reported in Tylka and Wood-Barcalow's (2015b) Study 3' but does not state whether the present study's sample is community, college, or school-based.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The text states: 'we also conducted one-sample t-tests to compare scores between our participants and the community sample means reported in Tylka and Wood-Barcalow's (2015b) Study 3, which used the same wording of the BAS-2 as in the present study.'",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "BMI is referenced as a variable for correlation analyses ('bivariate correlations were used to establish convergent validity in terms of significant associations between body appreciation, BMI, ...'), but the section does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section states that 'bivariate correlations were used to establish convergent validity in terms of significant associations between body appreciation, BMI, self-esteem, life satisfaction, and (for women only) weight discrepancy' and that 'Because the relationship between body image and BMI may be curvilinear in men, we also examined body appreciation's correlation with BMI.' However, no correlation coefficients are reported in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided section describes analyses for an (unnamed) study but does not label multiple studies (e.g., 'Study 1') or indicate the total number of studies in the paper.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Statistical Analyses' section and does not indicate the publication type (journal article or dissertation).",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This 'Statistical Analyses' section (unnamed study) describes the analytic procedures: sex-specific EFAs on the BAS-2, independent-samples and one-sample t-tests (including comparisons to Tylka & Wood-Barcalow's Study 3 community means), and bivariate correlations examining body appreciation with BMI, self-esteem, life satisfaction, age, and (for women) weight discrepancy; curvilinear relations with BMI were also considered for men. The section does not report sample size, demographic details (country, percent white, mean age, education), BMI measurement method, or numeric correlation coefficients.",
+      "evidence_source": "Key sentences: 'To examine the factor structure of the BAS-2, we computed principal-axis exploratory factor analysis (EFA) for women and men separately...'; 'An independent-samples t-test was used to compare scores between women and men in our sample. We also conducted one-sample t-tests to compare scores between our participants and the community sample means reported in Tylka and Wood-Barcalow's (2015b) Study 3...'; 'bivariate correlations were used to establish convergent validity in terms of significant associations between body appreciation, BMI, self-esteem, life satisfaction, and (for women only) weight discrepancy.'",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

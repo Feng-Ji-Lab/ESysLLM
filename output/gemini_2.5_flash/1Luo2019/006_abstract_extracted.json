@@ -1,0 +1,125 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"China\"]}",
+      "evidence_source": "Participants were 1152 Chinese adolescent girls aged 11 to 15 years who completed a questionnaire survey.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1152]}",
+      "evidence_source": "Participants were 1152 Chinese adolescent girls aged 11 to 15 years who completed a questionnaire survey.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\": [1152]}",
+        "male": "None",
+        "other": "None",
+        "total": "{\"Study X\": [1152]}"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "Participants were 1152 Chinese adolescent girls aged 11 to 15 years who completed a questionnaire survey.",
+      "warning": "The text states 'questionnaire survey' but does not specify if it was 'paper-and-pencil' or 'online'."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [0]}",
+      "evidence_source": "Participants were 1152 Chinese adolescent girls aged 11 to 15 years.",
+      "warning": "Inferred 0% white as participants are explicitly stated as 'Chinese adolescent girls'.",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\": [0]}",
+        "male": "None",
+        "other": "None",
+        "total": "{\"Study X\": [0]}"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "Participants were 1152 Chinese adolescent girls aged 11 to 15 years.",
+      "warning": "Only an age range (11 to 15 years) was provided, not a mean age.",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\": [\"None\"]}",
+        "male": "None",
+        "other": "None",
+        "total": "{\"Study X\": [\"None\"]}"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [0]}",
+      "evidence_source": "Participants were 1152 Chinese adolescent girls aged 11 to 15 years.",
+      "warning": "Inferred 0% college or higher as participants are 'adolescent girls aged 11 to 15 years', which is typically below college age.",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\": [0]}",
+        "male": "None",
+        "other": "None",
+        "total": "{\"Study X\": [0]}"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "Participants were 1152 Chinese adolescent girls aged 11 to 15 years.",
+      "warning": "The text identifies the participants as 'Chinese adolescent girls' but does not specify a recruitment source like 'community' or 'college'."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "This study examined the association between online interpersonal sexual objectification (OISO) experiences and intuitive eating, as well as the mediating role of broad conceptualization of beauty and body appreciation. Participants were 1152 Chinese adolescent girls aged 11 to 15 years who completed a questionnaire survey measuring OISO experiences, broad conceptualization of beauty, body appreciation, and intuitive eating.",
+      "warning": "The text mentions 'body appreciation' was measured but does not specify the instrument (BAS or BAS-2)."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The study examined the association between OISO experiences and intuitive eating, and the mediating role of broad conceptualization of beauty and body appreciation. BMI was not mentioned as a variable in the study.",
+      "warning": "BMI was not mentioned as a variable in the study, therefore no correlation with body appreciation can be extracted.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "This study examined the association...",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "journal articles",
+      "evidence_source": "The provided text is an 'ABSTRACT', which is typically found in journal articles.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This abstract describes a study that investigated the association between online interpersonal sexual objectification (OISO) experiences and intuitive eating in 1152 Chinese adolescent girls. The study also examined the mediating roles of broad conceptualization of beauty and body appreciation. Results indicated a negative association of OISO experiences with broad conceptualization of beauty and intuitive eating, with mediation through beauty conceptualization and body appreciation.",
+      "evidence_source": "The entire abstract text.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

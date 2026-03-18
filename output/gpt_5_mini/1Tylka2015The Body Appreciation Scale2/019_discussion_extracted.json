@@ -1,0 +1,123 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study 2": [
+          "U.S."
+        ],
+        "Study X": [
+          "U.S."
+        ]
+      },
+      "evidence_source": "\"In these three studies, we reported on the development and psychometric evaluation of the BAS-2 with samples of college and online community (MTurk) women and men from the U.S.\"",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes participant types (college and online community) but does not report sample sizes (Ns) for the studies.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study 2": [
+          "online"
+        ],
+        "Study X": [
+          "online"
+        ]
+      },
+      "evidence_source": "\"In these three studies, we reported on the development and psychometric evaluation of the BAS-2 with samples of college and online community (MTurk) women and men from the U.S.\"",
+      "warning": "College sample data collection method is not specified in the text; only the community (MTurk) sample is explicitly identified as online."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic composition (e.g., percent white) is reported in this section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"As reflected in the demographic data, community men reported older ages and higher BMIs than college men.\" (ages described qualitatively but no mean ages reported.)",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 2": [
+          100
+        ]
+      },
+      "evidence_source": "\"To understand the adaptive properties of body appreciation, it is important to note how BAS-2 scores are linked with other bodyrelated, eating, and well-being measures; we provide these data for college students.\" and \"In Study 2, mean differences were noted in total BAS-2 scores between college women and men...\" (text identifies college samples for Study 2, implying participants in that sample are college students).",
+      "warning": "Inference applied per case_rules: 'college students' interpreted as 100% college for the college sample in Study 2; other studies/samples do not have education percentages reported."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"As reflected in the demographic data, community men reported older ages and higher BMIs than college men.\" (BMI differences described qualitatively but no mean BMIs reported.)",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 2": [
+          "college",
+          "community"
+        ],
+        "Study X": [
+          "college",
+          "community"
+        ]
+      },
+      "evidence_source": "\"In these three studies, we reported on the development and psychometric evaluation of the BAS-2 with samples of college and online community (MTurk) women and men from the U.S.\" and \"In Study 2, mean differences were noted in total BAS-2 scores between college women and men, but not between community women and men.\"",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study 2": [
+          "BAS-2"
+        ],
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "\"In these three studies, we reported on the development and psychometric evaluation of the BAS-2... The final 10-item BAS-2 includes five of Avalos et al.'s (2005) original items and five revised or newly developed items.\"",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section references BMI comparisons (e.g., higher BMIs in community men) but does not state whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"It is also noteworthy that the BAS-2 was inversely related to BMI to a moderate degree among college and community women and men.\" (correlation described qualitatively; no numeric Pearson r reported.)",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 3,
+      "evidence_source": "\"In these three studies, we reported on the development and psychometric evaluation of the BAS-2...\"",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type (e.g., 'journal article' or 'dissertation') is specified in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Discussion summarizes psychometric support for the 10-item BAS-2 across three studies involving college and online community (MTurk) women and men from the U.S., noting its unidimensionality, reliability, validity, and measurement invariance. It reports that BAS-2 scores relate adaptively to other well-being and eating measures, that BAS-2 is inversely related to BMI (moderately) across samples, and that Study 2 specifically found differences in BAS-2 scores between college men and women and between college and community men.",
+      "evidence_source": "\"In these three studies, we reported on the development and psychometric evaluation of the BAS-2 with samples of college and online community (MTurk) women and men from the U.S.\" and \"In Study 2, mean differences were noted in total BAS-2 scores between college women and men, but not between community women and men.\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

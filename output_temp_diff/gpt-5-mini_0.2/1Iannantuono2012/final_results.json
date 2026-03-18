@@ -1,0 +1,273 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      4,
+      5,
+      7
+    ],
+    "reason": "All candidate excerpts consistently describe a single empirical study (e.g., abstract describes a path-analysis study, sample descriptions and procedures refer to one sample of N = 249, SEM/modeling sections report analyses on that single sample, and the Discussion refers to 'this study'). There is no evidence of multiple distinct studies or labeling of Study 1/Study 2, so the most accurate count is 1."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "United States"
+      ]
+    },
+    "best_indices": [
+      1,
+      0
+    ],
+    "reason": "All candidates describe a single empirical study. Candidate 1 (Participants section) is the most reliable source and specifies 'Midwestern U.S.' Candidate 0 (author affiliation) lists 'United States.' Per instructions, do not report sub-country regions (e.g., 'Midwestern U.S.') \u2014 convert to the country name. Both sources are consistent, so the study location is recorded as 'United States'."
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        100
+      ]
+    },
+    "best_indices": [
+      3,
+      4,
+      2,
+      6
+    ],
+    "reason": "All candidate excerpts consistently describe one study of college women (e.g., Participants: '249 college women' in the Participants section - candidate 3). Multiple sections (Participants, Procedure, Abstract, Limitations) explicitly identify the sample as college/undergraduate women, so per the case rule this is interpreted as 100% having college or higher education. Preference was given to the Participants/Method (candidate 3) and Procedure (candidate 4) over the Abstract (candidate 2) when judging reliability; other supporting mentions (candidate 6) corroborate the same conclusion. No evidence of multiple distinct studies was found, and no subsamples required merging.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          100
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          100
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "college"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "reason": "All candidate excerpts consistently describe a single empirical study of college women (title and keywords label 'college women'; abstract and participants report '249 college women'; procedure notes recruitment of female introductory psychology students for class credit; limitations and discussion describe first-year/college women). No evidence of multiple distinct studies or other sample sources. Therefore the paper contains one study and the sample source is 'college'."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "The document includes article metadata (submission/revision/acceptance dates) and standard journal sections (abstract, clinical implications, acknowledgements), indicating it is a journal article. Although the acknowledgements note the article is based on a senior honors thesis, the published document itself is a journal article rather than a dissertation."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        249
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "All candidates refer to the same single study (Study X) reporting N = 249. The Participants section (candidate 1) explicitly states the final data set included 249 college women; the Abstract (candidate 0) and model-testing/results sections (candidates 2 and 3) consistently report N = 249. No conflicting values or multiple distinct studies were identified, and gender information indicates the sample comprised women only. Therefore we report a single study with total N = 249 and female N = 249, merging evidence from all provided candidates.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          249
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          249
+        ]
+      }
+    }
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Single study": [
+        86.3
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study is reported in the paper. The Participants section (candidate 0) gives the percent White/Caucasian as 86.3% for the sample of 249 college women. The sample is all female, so the female and total values are identical. Participant-section data is the most reliable source for demographic percentages.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          86.3
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          86.3
+        ]
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        19.1
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "All candidate material describes a single study (N = 249). The Participants section reports ages 18\u201328 with M = 19.1 (SD = 1.7); this main-text Participants information is the most reliable source for mean age. Female and total mean are both reported as 19.1 in the excerpt; no male/other-specific means were provided.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          19.1
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          19.1
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        23.1
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates refer to the same single study (Measures and Table 1). Candidate 0 (Measures/main text) reports BMI M = 23.1 (SD = 4.8); Candidate 1 (Table 1) reports BMI = 23.15 (4.77). These values are effectively identical (difference due to rounding). Per guidance, prefer main-text value when merging with table; therefore the consolidated mean BMI is 23.1. Gender-specific info in the Measures excerpt refers to women, so female = 23.1. Both candidates were used to verify consistency.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          23.1
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          23.1
+        ]
+      }
+    }
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both reliable sources (Measures section and Table 1) refer to the original Body Appreciation Scale (13-item BAS; Avalos et al., 2005). All excerpts describe the same single study (N = 249; model/results refer to \"this study\"), so entries were merged into one 'Single study' record. No evidence of BAS-2 was found."
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both high-reliability sources (Measures section, Candidate 0) explicitly state participants self-reported height and weight and BMI was calculated from those reports; the Limitations section (Candidate 1) reiterates that height/weight were self-reported and notes related measurement/recall bias. There is no mention of objectively measured height/weight or multiple distinct studies, so the paper reports a single study with BMI assessed via self-report."
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "paper-and-pencil"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "All candidate excerpts describe a single study. Candidate 0 explicitly states participants \"completed the measures in a classroom used as a research lab,\" which indicates in-person data collection; there is no mention of online administration. Therefore the survey method is inferred as 'paper-and-pencil'. No conflicting sources were found."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        -0.35
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one candidate (index 0) provided a Pearson correlation between Body Appreciation (BAS) and BMI in Table 1: the intersection of Measure 9 (Body Appreciation Scale) and Measure 11 (BMI) = -0.35 (significant). The paper reports a single study (N = 249) and no gender-specific correlations were reported, so the total-sample correlation (-0.35) is used.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          -0.35
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          -0.35
+        ]
+      }
+    }
+  }
+}

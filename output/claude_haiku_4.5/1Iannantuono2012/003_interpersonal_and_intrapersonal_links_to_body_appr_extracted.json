@@ -1,0 +1,101 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "United States"
+        ]
+      },
+      "evidence_source": "Department affiliation states 'The Ohio State University, Marion, OH 43302, United States'",
+      "warning": "Study name not explicitly provided in text; using 'Study X' as placeholder. Only the title and author information provided; full methods section not available."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information provided in the title and author section.",
+      "warning": "Sample size not stated in provided text."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information provided in the title and author section.",
+      "warning": "Survey method not stated in provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information provided in the title and author section.",
+      "warning": "Racial/ethnic composition not stated in provided text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information provided in the title and author section.",
+      "warning": "Mean age not stated in provided text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "Title explicitly states 'college women', indicating all participants are college students.",
+      "warning": "Inferred from title descriptor 'college women' per case_rules; full methods section not available to confirm."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI information provided in the title and author section.",
+      "warning": "Mean BMI not stated in provided text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Title explicitly states 'college women', indicating sample source is college.",
+      "warning": "Inferred from title descriptor 'college women'; full methods section not available to confirm recruitment details."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No assessment instrument information provided in the title and author section.",
+      "warning": "Body Appreciation assessment tool not stated in provided text."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI assessment method provided in the title and author section.",
+      "warning": "BMI assessment method not stated in provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation data provided in the title and author section.",
+      "warning": "Correlation coefficients not stated in provided text."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "Title and author information only; insufficient content to determine number of studies.",
+      "warning": "Cannot determine number of studies from title and author section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "Publication type not indicated in the title and author section.",
+      "warning": "Publication type (journal article vs. dissertation) cannot be determined from title and author information alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section contains the title and author information for a study titled 'Interpersonal and intrapersonal links to body appreciation in college women: An exploratory model' by Amy C. Iannantuono and Tracy L. Tylka from The Ohio State University. The study focuses on college women and their body appreciation. No detailed methods, results, or sample characteristics are provided in this excerpt.",
+      "evidence_source": "Title and author section",
+      "warning": "Only title and author information provided; full study details not available in this section."
+    },
+    "_pass_type": "text_only"
+  }
+]

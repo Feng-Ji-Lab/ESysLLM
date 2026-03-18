@@ -1,0 +1,141 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country is mentioned in this procedures section. The text only mentions 'on campus' and 'at the college' without specifying a geographic location.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size is provided in this procedures section. The text describes the recruitment process but does not state the total number of participants.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "paper-and-pencil"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'participants completed a paper-and-pencil questionnaire on campus in a group setting'",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information about race/ethnicity is provided in this procedures section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in this procedures section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "The text states: 'Students were recruited from a participant pool at the college' and 'in one of several foundational courses in psychology', indicating all participants were college students. Per the infer_rule, this means 100% of participants have college or higher education experience.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI data is provided in this procedures section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'Students were recruited from a participant pool at the college' and participants were from 'foundational courses in psychology'",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This procedures section does not specify which instrument was used to assess body appreciation. It mentions 'Other measures in the study pertain to body image, body modification...' but does not name the specific BA assessment tool.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This procedures section does not specify whether BMI was self-reported or measured. No BMI assessment method is mentioned.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficients are provided in this procedures section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This procedures section does not explicitly indicate the number of studies. It describes procedures for what appears to be a single study, but the section alone does not provide enough context to determine if this is part of a multi-study paper.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "This procedures section does not indicate whether the publication is a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This procedures section describes a study where college students completed a paper-and-pencil questionnaire on campus in a group setting after providing informed consent. Participants were recruited from a college participant pool and elected to participate for course credit in foundational psychology courses. The study examined attitudes and behaviors related to body modification, body image, risk behaviors, and mental health, with measures presented in the same order for all participants.",
+      "evidence_source": "Entire procedures section (2.3)",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

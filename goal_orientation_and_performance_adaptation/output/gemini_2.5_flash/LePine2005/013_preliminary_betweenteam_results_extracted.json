@@ -1,0 +1,245 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about publication type is provided in the text.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about financial support is provided in the text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about peer review status is provided in the text.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The text mentions \"aggregated learning and performance orientation variables\" in the 'Preliminary Between-Team Results' section. 'Performance orientation' is a type of Performance Goal Orientation (PGO). Since it is not specified as approach or avoidance, it is coded as 'Global'.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text states \"team decision-making performance with respect to the overall accuracy of team decisions (operationalized as the reverse of the mean-squared error so that higher scores indicate higher decisionmaking performance)\". This is an objective measure of performance adaptation. Code 3 = Objective.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text describes \"team decision-making performance with respect to the overall accuracy of team decisions (operationalized as the reverse of the mean-squared error)\". This indicates objective scores. Code 1 = Objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text describes \"team decision-making performance with respect to the overall accuracy of team decisions (operationalized as the reverse of the mean-squared error)\". This is an objective measure. Code 3 = Objective (e.g., task, test).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text mentions \"aggregated learning and performance orientation variables\" but does not specify the measurement scale (e.g., VandeWalle). Therefore, it is coded as 'Other'. Code 1 = Other.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No age information is reported for the sample in the text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No mean age or information to impute age is provided in the text.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No information about the sex composition of the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No information about the percentage of men in the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No information about the country where the sample was collected is provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "The sample consists of 'teams'. There is no indication that these teams are composed of students. Therefore, it is coded as 'Other sample'. Code 2 = Other sample.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [64]}",
+      "evidence_source": "The text explicitly states: \"Note. N = 64.\"",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The text states: \"Finally, the aggregated learning and performance orientation variables were not related.\" This refers to the correlation between learning orientation and performance orientation, not between performance goal orientation and performance adaptation. No explicit correlation between Performance Goal Orientation (PGO) and performance adaptation (PA) is reported.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No correlation between Performance Goal Orientation (PGO) and performance adaptation (PA) was found, so no correlation information can be provided.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single set of 'Preliminary Between-Team Results' without explicitly delineating multiple studies or experiments.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents preliminary between-team results, including descriptive statistics and correlations among team-level variables. It discusses the relationship between an adapted role structure and team decision-making performance, and the association between goal difficulty and decision-making performance in routine versus post-disruption contexts. It also notes that aggregated learning and performance orientation variables were not related.",
+      "evidence_source": "Summary of the provided text content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The document is structured as an academic paper with sections like 'Preliminary Between-Team Results' and includes a 'Table 1 Descriptive Statistics and Correlations', which is typical for a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of grants, funding agencies, sponsored projects, or explicit financial support was found in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from PubType being a journal article, which typically undergoes peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "Table 1 lists '4. Members' performance orientation'. The text also mentions 'aggregated learning and performance orientation variables'. Since it does not specify approach or avoidance, it is coded as 'Global'. This is for Study X.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text states 'team decision-making performance with respect to the overall accuracy of team decisions (operationalized as the reverse of the mean-squared error so that higher scores indicate higher decisionmaking performance)'. This is an objective measure. This is for Study X.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The adaptation outcome is 'overall accuracy of team decisions (operationalized as the reverse of the mean-squared error)', which is an objective score. This is for Study X.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The specific assessment method for performance adaptation is 'overall accuracy of team decisions (operationalized as the reverse of the mean-squared error)', which is an objective measure. This is for Study X.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "No mention of VandeWalle's goal orientation measure was found in the text. This is for Study X.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information (mean, range, SD, median) was reported in the provided text or table. This is for Study X.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No age information was reported, so imputation is not possible. This is for Study X.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information regarding the sex composition of the sample was provided in the text or table. This is for Study X.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information regarding the percentage of men in the sample was provided in the text or table. This is for Study X.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information about the country where the sample was collected was provided in the text or table. This is for Study X.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No explicit information was provided to determine if the sample was a student sample or another type of sample. This is for Study X.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [64]}",
+      "evidence_source": "The note below Table 1 states: 'Note. N = 64.' This is for Study X.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [-0.20, -0.03]}",
+      "evidence_source": "From Table 1, the correlation between '4. Members' performance orientation' (PGO) and '6. Prechange decision-making performance' (PA) is -.20. The correlation between '4. Members' performance orientation' (PGO) and '7. Postchange decision-making performance' (PA) is -.03. These are for Study X.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"PGO and Prechange decision-making performance\", \"PGO and Postchange decision-making performance\"]}",
+      "evidence_source": "The correlations are between 'Members' performance orientation' (PGO) and 'Prechange decision-making performance' (PA), and between 'Members' performance orientation' (PGO) and 'Postchange decision-making performance' (PA). These are for Study X.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single set of 'Preliminary Between-Team Results' and refers to 'Table 1' without indicating multiple distinct studies or experiments.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents preliminary between-team results, including descriptive statistics and correlations from Table 1. It discusses the relationship between adapted role structure and team decision-making performance, as well as the association between goal difficulty and both pre-change and post-change decision-making performance. The section also notes that aggregated learning and performance orientation variables were not related.",
+      "evidence_source": "Summarized from the entire 'Preliminary Between-Team Results' section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1 Descriptive Statistics and Correlations",
+      "evidence_source": "The caption directly above the table reads: 'Table 1 Descriptive Statistics and Correlations'.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\LePine2005\\tables\\LePine2005_p006_table00.png",
+    "_metadata_caption": "Table 1 also shows that goal difficulty was positively associated with team decision-making performance in the routine task context. Specifically, in the 20 trials prior to when the communications began to deteriorate, teams with difficult goals made decisions that were more accurate than teams with easy goals (r = .17, p &lt; .10, one-tailed). Although the correlation between team goal difficulty and postchange decision-making performance was not statistically significant (r = -.10), it was significantly lower than the correlation with prechange performance (r_{\\text{difference}} = -.27, p &lt; .10). Goal difficulty was not significantly related to any of the team composition variables; thus, random assignment to goal conditions appeared to have worked as expected. Aggregated team member cognitive ability was not significantly related to either aggregated goal orientation variable. Finally, the aggregated learning and performance orientation variables were not related.",
+    "_asset_source": "[table] Table 1 also shows that goal difficulty was positively associated with team decision-making performance in the routine task context. Specifically, in the 20 trials prior to when the communications began to deteriorate, teams with difficult goals made decisions that were more accurate than teams with easy goals (r = .17, p &lt; .10, one-tailed). Although the correlation between team goal difficulty and postchange decision-making performance was not statistically significant (r = -.10), it was significantly lower than the correlation with prechange performance (r_{\\text{difference}} = -.27, p &lt; .10). Goal difficulty was not significantly related to any of the team composition variables; thus, random assignment to goal conditions appeared to have worked as expected. Aggregated team member cognitive ability was not significantly related to either aggregated goal orientation variable. Finally, the aggregated learning and performance orientation variables were not related.",
+    "_pass_type": "asset_0"
+  }
+]

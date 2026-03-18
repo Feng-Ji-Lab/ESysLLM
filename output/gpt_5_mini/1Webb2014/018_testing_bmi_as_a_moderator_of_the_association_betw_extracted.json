@@ -1,0 +1,397 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or location information is provided in the supplied section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample size or participant counts appears in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not state how data were collected (e.g., online or paper-and-pencil).",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participant race or percent White is provided in the section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age or age information for participants is reported in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section does not report participants' education levels or percent with college or higher.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Although BMI is used as a predictor and mean-centering is described, no mean BMI value for participants is reported in the text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify the source of the sample (e.g., community, college, primary/secondary/high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No specific instrument name (BAS or BAS-2) for assessing body appreciation is mentioned in the provided section.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes use of BMI and mean-centering but does not state whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson r or correlation coefficient between body appreciation and BMI is reported. The text states only that \"BMI emerged as the strongest predictor\" in regression but provides no correlation value.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section begins: \"Two separate hierarchical moderated regression models were computed...\" and describes two regression models within the same study; no separate studies (e.g., \"Study 1\", \"Study 2\") are labeled in the text, indicating a single study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided section does not indicate whether the report is a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "The section reports two hierarchical moderated regression models testing BMI, three body size discrepancy measures (current-personal ideal, current-ethnic group ideal, current-typical ethnic female peer), and their interactions as predictors of two positive body image outcomes (body appreciation and body image flexibility). Regression results indicate BMI was the strongest predictor for both outcomes, the personal-ideal discrepancy contributed unique variance to both (and to body image flexibility more strongly), and none of the BMI-by-discrepancy interactions were significant. The text describes model fit (e.g., ~22% variance explained for body appreciation; ~34% for body image flexibility) but provides no sample, demographic, instrument names (BAS/BAS-2), correlation coefficients, or procedural details about BMI measurement.",
+      "evidence_source": "\"Two separate hierarchical moderated regression models were computed...\"; \"BMI emerged as the strongest predictor...\"; \"The full model explained roughly 22% of the variance in body appreciation scores.\"; \"The full model accounted for approximately 34% of the variance in body image flexibility scores.\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          223
+        ]
+      },
+      "evidence_source": "Table 2: \"Summary of regression analyses for body appreciation (N = 223).\"",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Text reports analyses from a single sample (see: \"Two separate hierarchical moderated regression models were computed...\" and Table 2: \"Summary of regression analyses for body appreciation (N = 223).\").",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section reports two hierarchical moderated regression models conducted on a single sample (N = 223) testing BMI and three body size discrepancy scores as predictors of body appreciation and body image flexibility. BMI was the strongest predictor for both outcomes (full models explained ~22% variance for body appreciation and ~34% for body image flexibility), the current-personal ideal discrepancy contributed small unique variance, and none of the BMI \u00d7 discrepancy interaction terms were significant.",
+      "evidence_source": "\"Two separate hierarchical moderated regression models were computed...\"; \"The full model explained roughly 22% of the variance in body appreciation scores.\"; \"The full model accounted for approximately 34% of the variance in body image flexibility scores.\"",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2\nSummary of regression analyses for body appreciation (N = 223).",
+      "evidence_source": "Image of Table 2 provided with caption: \"Summary of regression analyses for body appreciation (N = 223).\"",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Webb2014/tables/1Webb2014_p006_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or location is stated in the provided section text or in the included Table 3 image.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          221
+        ]
+      },
+      "evidence_source": "Table 3 caption: \"Summary of regression analyses for body image flexibility (N = 221).\"",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about survey/data-collection method (e.g., online or paper-and-pencil) is provided in the text or Table 3.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section and Table 3 include no information about participant racial/ethnic percentages.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age or age information is reported in the provided section text or Table 3.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not state participants' education level or whether they were undergraduates.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI value is reported in the section text or in Table 3 (Table 3 reports regression coefficients, not mean BMI).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section does not specify the recruitment source (e.g., community, college, primary/secondary/high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text refers to 'body appreciation' but does not name the assessment instrument (e.g., BAS or BAS-2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section does not indicate whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson correlation (r) between body appreciation and BMI is reported in the provided text or in Table 3; Table 2 (body appreciation regression) is referenced but not provided.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided section discusses a single set of analyses (two regression models) for the same sample; no separate studies labeled (e.g., 'Study 1') are indicated.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided excerpt does not state whether this is a journal article or a dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "The section reports two hierarchical moderated regression models testing BMI, three body size discrepancy measures (current-personal ideal, current-ethnic group ideal, current-typical ethnic peer), and their interactions as predictors of two positive body image outcomes (body appreciation and body image flexibility). BMI was the strongest predictor in both models, the current-personal ideal discrepancy contributed unique variance to each outcome, and none of the BMI \u00d7 discrepancy interactions explained additional variance. Table 3 (captioned \"Summary of regression analyses for body image flexibility (N = 221)\") presents the body image flexibility model; Table 2 (not provided) is referenced for body appreciation.",
+      "evidence_source": "\"Two separate hierarchical moderated regression models were computed...\" and \"Table 3 presents the regression model featuring body image flexibility as the criterion.\" plus Table 3 caption: \"Summary of regression analyses for body image flexibility (N = 221).\"",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 3\nSummary of regression analyses for body image flexibility (N = 221).",
+      "evidence_source": "Caption text as shown on the provided table image (top of Table 3).",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Webb2014/tables/1Webb2014_p006_table01.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_1"
+  }
+]

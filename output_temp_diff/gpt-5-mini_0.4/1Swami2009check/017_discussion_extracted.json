@@ -1,0 +1,137 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or region is stated in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size (total N) is reported in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No data collection method (e.g., 'paper-and-pencil' or 'online') is specified in this section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information on participants' ethnicity or percent white is provided in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"Second, respondent age was significantly and negative correlated with consideration of cosmetic surgery, but did not emerge as a significant predictor.\" \u2014 age is discussed but no mean age is reported.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "\"The results of the current study showed that body appreciation... were significant predictors of consideration of cosmetic surgery among female undergraduates, explaining 47.1% of the variance.\" \u2014 participants are described as 'female undergraduates', from which percentage with college or higher education is inferred as 100%.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            100
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"First, although participant BMI was a significant predictor of consideration of cosmetic surgery, it was not in the predicted direction (i.e., more slender participants reported greater consideration of cosmetic surgery).\" \u2014 BMI is discussed as a predictor but no mean BMI is reported.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "\"...consideration of cosmetic surgery among female undergraduates...\" \u2014 indicates a college (undergraduate) sample.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section discusses 'body appreciation' but does not name the instrument used (no mention of BAS or BAS-2) in this section.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "BMI is referenced as 'participant BMI' and as a predictor, but the section does not state whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"The results of the current study showed that body appreciation... were significant predictors...\" and \"First, although participant BMI was a significant predictor...\" \u2014 the section reports predictive relationships but does not report Pearson correlation coefficients between body appreciation and BMI.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text repeatedly refers to 'the current study' and 'the present study' in the singular (e.g., \"The results of the current study...\"), indicating a single study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type (e.g., 'journal articles' or 'dissertation') is specified in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Discussion summarizes results from a single study of female undergraduates finding that body appreciation, media influence (SATAQ-3 subscales), and participant BMI significantly predicted consideration of cosmetic surgery, accounting for 47.1% of variance, with body appreciation the strongest predictor. The authors note BMI predicted consideration in an unexpected direction (more slender participants reported greater consideration) and that respondent age was negatively correlated with consideration but was not a significant predictor. Limitations include the restricted undergraduate sample and limited variables, and the authors recommend replication in community samples and inclusion of additional psychological variables.",
+      "evidence_source": "\"The results of the current study showed that body appreciation, media influence, and respondent weight status were significant predictors of consideration of cosmetic surgery among female undergraduates, explaining 47.1% of the variance.\"; \"First, although participant BMI was a significant predictor... it was not in the predicted direction...\"; \"Second, respondent age was significantly and negative correlated with consideration of cosmetic surgery, but did not emerge as a significant predictor.\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

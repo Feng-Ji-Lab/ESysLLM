@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text is an 'Abstract', which is typically part of a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies in the provided abstract.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text is an 'Abstract', implying it is from a journal article, which is typically peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\", \"Avoid\"]}",
+      "evidence_source": "The abstract states 'advisor goal orientation (i.e., learning orientation, proving orientation, and avoidance orientation)'. 'Proving orientation' corresponds to 'Prove' and 'avoidance orientation' corresponds to 'Avoid'. This information is for Study X.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract mentions 'adaptive behaviors (i.e., personal bricolage and individual innovative behavior)' but does not specify the assessment method (self-report, other people, objective, or mixed).",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract mentions 'adaptive behaviors (i.e., personal bricolage and individual innovative behavior)' but does not specify if these outcomes are based on subjective ratings or objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract mentions 'adaptive behaviors (i.e., personal bricolage and individual innovative behavior)' but does not specify the specific assessment method (self-report, other people, or objective).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1]}",
+      "evidence_source": "The abstract mentions 'advisor goal orientation (i.e., learning orientation, proving orientation, and avoidance orientation)'. There is no explicit mention of VandeWalle's measure. Therefore, 'Other' (1) is coded for both proving and avoidance orientations. This information is for Study X.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information (mean, range, SD, or median) is reported in the abstract for Study X.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No mean age or other age information from which to impute is reported in the abstract for Study X.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the sex composition of the sample is provided in the abstract for Study X.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the percentage of men in the sample is provided in the abstract for Study X.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the country of data collection is provided in the abstract for Study X.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "The sample consists of 'family enterprise advisors', which is not a student population. This information is for Study X.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [231]}",
+      "evidence_source": "The abstract states 'family enterprise advisors (N = 231)'. This sample size is for Study X.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "The abstract discusses 'effects' and 'relationships' between goal orientation and adaptive behaviors, but no specific numerical correlation coefficients (r values) are reported for Study X.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No numerical correlation coefficients were reported, so no correlation information can be provided for Study X.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The abstract explicitly states 'In this study, our aim is to understand more about family enterprise advisors'. This indicates a single study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This abstract describes a single study (Study X) investigating family enterprise advisors (N=231). The study hypothesizes that client feedback quality mediates the effects of advisor goal orientation (proving and avoidance orientations) on adaptive behaviors (personal bricolage and individual innovative behavior). Results indicate partial mediation.",
+      "evidence_source": "Summary of the provided abstract text.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,99 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not mention any country or geographic location where the study was conducted.",
+      "warning": "No country information provided in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes a demographic measure but does not provide the total number of participants or sample size.",
+      "warning": "Sample size not specified in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions that 'a demographic measure was administered' but does not specify whether it was paper-and-pencil or online.",
+      "warning": "Survey method not explicitly stated in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states that race/ethnicity was measured as part of the demographic measure, but no actual percentages or values are reported.",
+      "warning": "Percentage of white participants not provided in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text indicates that age was gathered as a demographic variable, but no mean age value is reported.",
+      "warning": "Mean age not provided in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'academic class status' and 'psychology major status' were measured, but no percentages of college or higher education are reported.",
+      "warning": "Percentage of college or higher education not provided in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states that 'self-reported weight and height which were used to calculate BMI' but no mean BMI value is reported.",
+      "warning": "Mean BMI not provided in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify where or how participants were recruited (community, college, or primary/secondary/high school).",
+      "warning": "Source of sample not specified in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not mention any body appreciation assessment instrument (BAS or BAS-2).",
+      "warning": "Body appreciation assessment instrument not mentioned in this section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "The text explicitly states 'self-reported weight and height which were used to calculate BMI', indicating that BMI was assessed using self-reported measurements.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text does not report any correlation coefficients between body appreciation and BMI.",
+      "warning": "No correlation data provided in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section is a methods subsection describing demographic measures. It does not explicitly state the number of studies in the paper.",
+      "warning": "Number of studies cannot be determined from this section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text is a methods subsection and does not indicate whether the publication is a journal article or dissertation.",
+      "warning": "Publication type not specified in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the demographic measures administered in the study to collect variables including age, race/ethnicity, gender, academic class status, psychology major status, and self-reported weight and height for BMI calculation. No specific demographic values, sample characteristics, or study design details are reported in this subsection.",
+      "evidence_source": "Section 2.2.1 Demographics",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

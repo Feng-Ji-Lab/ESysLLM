@@ -1,0 +1,89 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgements section does not contain information about the country where the study was conducted. Only mentions that Amy Iannantuono is employed in Ohio, USA, but this is about current employment, not study location.",
+      "warning": "No country information available in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgements section does not contain sample size information.",
+      "warning": "No sample size data in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgements section does not contain information about survey methodology.",
+      "warning": "No survey method information available in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgements section does not contain demographic information about participant race/ethnicity.",
+      "warning": "No demographic data in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgements section does not contain information about participant age.",
+      "warning": "No age data in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgements section does not contain information about participant education level.",
+      "warning": "No education data in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgements section does not contain information about participant BMI.",
+      "warning": "No BMI data in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgements section does not contain information about where participants were recruited.",
+      "warning": "No sample source information in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgements section does not contain information about body appreciation assessment instruments.",
+      "warning": "No assessment instrument information in this section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgements section does not contain information about how BMI was assessed.",
+      "warning": "No BMI assessment method in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgements section does not contain correlation data.",
+      "warning": "No correlation data in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgements section does not explicitly state the number of studies. It mentions this article represents Amy Iannantuono's senior honors thesis, but does not specify how many studies are included in the thesis or article.",
+      "warning": "Cannot determine number of studies from Acknowledgements section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgements section mentions this is based on a senior honors thesis, but does not explicitly state whether the publication itself is a journal article or dissertation.",
+      "warning": "Publication type cannot be definitively determined from Acknowledgements section alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Acknowledgements section indicates that the article is based on Amy Iannantuono's senior honors thesis, directed by Tracy Tylka. No study-level data, methodology details, or research findings are provided in this section, as it only contains acknowledgment information and current employment details of the author.",
+      "evidence_source": "Entire Acknowledgements section",
+      "warning": "This is an Acknowledgements section, not a methods or results section. No extractable study data is present."
+    },
+    "_pass_type": "text_only"
+  }
+]

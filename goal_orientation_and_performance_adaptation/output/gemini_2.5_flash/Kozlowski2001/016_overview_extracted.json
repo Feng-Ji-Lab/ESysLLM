@@ -1,0 +1,245 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text uses academic language, refers to 'Fig. 1' and 'Table 1', and cites 'Cohen, 1988, 1992', which are characteristics of a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of grants, funding, or financial support was found in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Given that the text reads like a journal article, it is highly probable that it was peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The text states: 'Trait performance orientation and performance training goals were expected to enhance training performance and declarative knowledge.' 'Trait performance orientation' is a global performance goal orientation.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [4]}",
+      "evidence_source": "The text states: 'Finally, each of the four training outcomes was expected to influence adaptive performance. Training outcomes important to adaptive performance included declarative knowledge, knowledge structure coherence, training performance, and self-efficacy.' Since 'self-efficacy' is typically self-report and 'declarative knowledge' and 'training performance' are typically objective, multiple methods are used to assess the outcomes influencing adaptive performance, thus coded as mixed.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [0, 1]}",
+      "evidence_source": "The adaptation outcome 'adaptive performance' is influenced by 'self-efficacy' (subjective) and 'declarative knowledge' and 'training performance' (objective). Therefore, both subjective (0) and objective (1) methods are involved.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 3]}",
+      "evidence_source": "The adaptation outcome 'adaptive performance' is influenced by 'self-efficacy' (self-report, 1) and 'declarative knowledge' and 'training performance' (objective, 3).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "No specific goal orientation measure (e.g., VandeWalle) was mentioned in the text.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information (mean, range, SD, median) was provided in the text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No age information was provided to impute a mean age.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No information about the sex composition of the sample was provided in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No information about the percentage of men in the sample was provided in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No information about the country where the study was conducted was provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text mentions 'Trainees' and 'academic achievement' as an index for ability, which strongly suggests a student sample.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [60]}",
+      "evidence_source": "The 'Note.' section explicitly states: 'N = 60.'",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The text mentions 'intercorrelations are shown in Table 1' but Table 1 was not provided, and no specific correlation coefficient between Performance Goal Orientation and performance adaptation was found in the text.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No specific correlation value was extracted, so no correlation information can be provided.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently uses singular language like 'the research model', 'our analyses', and 'we', indicating a single study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section provides an overview of a single study, detailing preliminary analyses on goal commitment and outlining the research model. It discusses the evaluation of individual differences (including trait performance orientation) and training goals on various outcomes like declarative knowledge, knowledge coherence, training performance, and self-efficacy, all of which influence adaptive performance. The sample size for this study is explicitly stated as N=60.",
+      "evidence_source": "The entire provided text content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No publication type information was provided in the text.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No financial support information was provided in the text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No peer review information was provided in the text.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "Table 1 lists '1. Performance orientation' as a single construct. The text also refers to 'trait performance orientation'. Following the rule for a single combined performance goal orientation score, it is coded as 'Global' for Study X.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "Table 1 provides a mean of 1105.83 and SD of 1083.16 for '9. Performance adaptability'. These values suggest an objective measure (e.g., task score) rather than self-report or other-report ratings. Therefore, the assessment method is coded as 3 (Objective) for Study X.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "Based on the mean and standard deviation for 'Performance adaptability' in Table 1 (1105.83, 1083.16), the outcome is inferred to be based on objective scores. Therefore, AdaptMethod is coded as 1 (Objective scores) for Study X.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "Based on the mean and standard deviation for 'Performance adaptability' in Table 1 (1105.83, 1083.16), the specific assessment method is inferred to be objective. Therefore, AdaptMethod_Specific is coded as 3 (Objective) for Study X.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text does not specify the measurement instrument for goal orientation (e.g., VandeWalle). Therefore, it is coded as 1 (Other) for Study X.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No age information was provided in the text or table for Study X.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No mean age or information to impute age was provided in the text or table for Study X.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No sex composition information was provided in the text or table for Study X.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No percentage of men in the sample was provided in the text or table for Study X.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No country information was provided in the text or table for Study X.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No information about whether the sample was student or other was provided in the text or table for Study X.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [60]}",
+      "evidence_source": "The note below Table 1 states: 'N = 60.' for Study X.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [0.253]}",
+      "evidence_source": "From Table 1, the correlation between '1. Performance orientation' and '9. Performance adaptability' is .253 for Study X.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"PO and AP\"]}",
+      "evidence_source": "The correlation is between 'Performance orientation' (PO) and 'Performance adaptability' (AP) as listed in Table 1 for Study X.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single research model and analyses without explicitly naming multiple studies or experiments. Therefore, it is considered one study, labeled 'Study X'.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section provides an overview of the research model and preliminary analyses, indicating the effectiveness of goal manipulations and trainees' commitment to assigned goals. It details the evaluation of the model, including descriptive statistics and intercorrelations presented in Table 1. The authors outline three primary issues of interest: assessing the effects of individual differences and training goals on various outcomes, evaluating the unique contribution of self-efficacy to adaptability, and investigating the prediction of adaptability using knowledge structure coherence. The section does not explicitly name any studies as 'Study 1' or 'Experiment 2', but refers to 'the research model' and 'our analyses', implying a single study.",
+      "evidence_source": "The entire text content of the 'Overview' section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "TABLE 1 Means, Standard Deviations, and Intercorrelations. Note. Mastery/performance goals (0 = performance, 1 = mastery). N = 60. **p <= .01, *p <= .05, ***p <= .05, one-tailed.",
+      "evidence_source": "The caption and notes directly below Table 1.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Kozlowski2001\\tables\\Kozlowski2001_p016_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

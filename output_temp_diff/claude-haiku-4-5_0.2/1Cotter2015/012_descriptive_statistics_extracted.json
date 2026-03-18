@@ -1,0 +1,217 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the study was conducted. While it mentions 'college samples' and 'undergraduate women', no geographic location is specified.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text references 'the current sample' and mentions comparisons with previously published samples (t-tests with df values like t(545), t(949), t(947)), but does not explicitly state the sample size of the current study. The degrees of freedom suggest sample sizes around 546-950, but the exact current sample size is not stated.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not describe the method used to collect survey data (paper-and-pencil vs. online).",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          0
+        ]
+      },
+      "evidence_source": "The text explicitly states 'The current sample of Black women', indicating the current sample consists of Black women. This implies 0% White participants in the current study. The comparison group (development sample) is described as 'comprising primarily White college students', but that is a different sample.",
+      "warning": "The current sample is described as 'Black women', which indicates 0% White participants. However, the exact percentage is inferred rather than explicitly stated as a number."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide mean age information for participants.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "The text refers to 'the current sample of Black women' being compared with 'college samples' and 'undergraduate women examined by Luce, Crowther, and Pole (2008)'. The current sample is described in the context of college/undergraduate samples, and the comparison is made with 'undergraduate women', strongly suggesting the current sample consists of college/undergraduate students. Therefore, 100% of participants have college or higher education experience.",
+      "warning": "The percentage is inferred from the context that the sample is described as college/undergraduate women, not explicitly stated as a percentage."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'Means and standard deviations for each measure are included in Table 1' but the actual table is not provided in the text content. Therefore, mean BMI cannot be extracted.",
+      "warning": "Table 1 is referenced but not provided in the text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The text describes the current sample as being compared with 'college samples' and 'undergraduate women', indicating the current sample is from a college source.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly states 'The current sample of Black women reported higher average BAS scores than the development sample' and includes a note 'BAS = Body Appreciation Scale', confirming the use of the Body Appreciation Scale (BAS) to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether BMI was assessed through self-report or measured directly.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide correlation coefficients between body appreciation (BAS) and BMI. It only reports t-tests comparing the current sample with previously published samples on various measures.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with 'the current sample' being compared to previously published samples. There is only one primary study being reported in this section.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether this is a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents descriptive statistics from a study examining body appreciation and eating disorder symptomatology in a sample of Black college women. The current sample reported significantly higher Body Appreciation Scale (BAS) scores compared to a previously published development sample of primarily White college students, and lower scores on eating disorder measures (EDE-Q-R and EDE-Q-EC) compared to another published sample of undergraduate women.",
+      "evidence_source": "Entire section describing the current study's sample characteristics and statistical comparisons with published samples.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'Black women' and references to college samples, but no explicit country is stated. The context suggests a US study (references to US college samples), but this is not explicitly confirmed in the provided text.",
+      "warning": "Country not explicitly stated in the provided text section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text references t-tests with degrees of freedom (e.g., t(545), t(949), t(947)) which suggest sample sizes, but these appear to be comparisons between the current sample and previously published samples. The exact sample size for the current study is not explicitly stated in this section.",
+      "warning": "Sample size not explicitly stated. Degrees of freedom from t-tests suggest sample sizes around 545-949, but it is unclear which value corresponds to the current study's sample."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about survey method (paper-and-pencil vs. online) is provided in the text.",
+      "warning": "Survey method not stated in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {
+        "total": [
+          0
+        ]
+      },
+      "evidence_source": "The text explicitly states 'The current sample of Black women' indicating the sample comprises Black women. This implies 0% White participants (or close to 0% if there is any racial diversity not mentioned).",
+      "warning": "The text states the sample is 'Black women' but does not provide an exact percentage. Inferring 0% or near 0% White participants based on the explicit racial identification of the sample."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age information is provided in the text.",
+      "warning": "Mean age not stated in the provided text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "total": [
+          100
+        ]
+      },
+      "evidence_source": "The text references 'college samples' and 'undergraduate women' when describing the current sample in comparison to previously published samples. The mention of 'undergraduate women' suggests the current sample comprises college students.",
+      "warning": "The text does not explicitly state the percentage of college or higher education. Inferring 100% based on the reference to 'undergraduate women' and 'college samples', but this inference should be verified."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI information is provided in the text.",
+      "warning": "Mean BMI not stated in the provided text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "total": [
+          "college"
+        ]
+      },
+      "evidence_source": "The text references 'college samples' and 'undergraduate women', indicating the sample was drawn from a college population.",
+      "warning": "Inferred from context mentioning 'college samples' and 'undergraduate women', but not explicitly stated as the source of recruitment."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "total": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly mentions 'BAS scores' and references 'Body Appreciation Scale' in the note. The table provided shows 'BAS Item Factor Loadings' with items BAS1 through BAS13, confirming the use of the BAS (Body Appreciation Scale).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported vs. measured) is provided in the text.",
+      "warning": "Assessment method for BMI not stated in the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not report any correlation between body appreciation (BAS) and BMI. The text discusses comparisons of BAS scores and eating disorder symptomatology scores between samples, but no correlation coefficient between BAS and BMI is provided.",
+      "warning": "No correlation between body appreciation and BMI is reported in the provided text."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study comparing the current sample of Black women with previously published samples. No multiple studies are explicitly identified.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The publication type (journal article vs. dissertation) is not stated in the provided text.",
+      "warning": "Publication type not stated in the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents descriptive statistics comparing the current sample of Black women with previously published college samples on body appreciation (BAS) and eating disorder symptomatology measures. The current sample reported significantly higher average BAS scores than the development sample (primarily White college students), and lower scores on eating disorder measures (EDE-Q-R and EDE-Q-EC), with no significant differences on other subscales.",
+      "evidence_source": "Text content describing comparisons between current and previously published samples.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2. BAS Item Factor Loadings.",
+      "evidence_source": "The table title appears at the top of the provided table image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Cotter2015/tables/1Cotter2015_p009_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

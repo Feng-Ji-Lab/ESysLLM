@@ -1,0 +1,371 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No publication type information was provided in the text.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No financial support information was provided in the text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No peer review information was provided in the text.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\", \"Avoid\"]}",
+      "evidence_source": "The text mentions 'prove goal orientation' and 'avoidance goal orientation'.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The text mentions 'performance variables' but does not specify the assessment method (self-report, other people, objective, or mixed).",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The text mentions 'performance variables' but does not specify if the outcome is based on subjective ratings or objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The text mentions 'performance variables' but does not specify the specific assessment method (self-report, other people, or objective).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The text mentions 'goal orientation' but does not specify the measurement method (e.g., VandeWalle).",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information was provided in the text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No mean age or information to impute age was provided in the text.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No sex composition information was provided in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No percentage of men in the sample was provided in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No country information was provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No sample type (student or other) was provided in the text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [87]}",
+      "evidence_source": "The text explicitly states 'Note: N = 87'.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The text states 'Out of 12 correlations between the goal orientation and the performance variables, only 1 was significant', but no specific numerical correlation coefficients (Pearson r) are provided.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove GO and performance variables\", \"Avoid GO and performance variables\"]}",
+      "evidence_source": "The text mentions 'prove goal orientation', 'avoidance goal orientation', and 'performance variables' in the context of correlations.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to 'the study variables' and 'the experimental groups' in singular, implying a single study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents preliminary analyses, including means, standard deviations, and intercorrelations of study variables. It notes substantial cross-time consistency in performance variables and the use of computer experience variables as covariates due to significant correlations. The section also states that there were no direct relationships between goal orientation and performance, with only 1 out of 12 correlations being significant, and no significant differences in computer experience or goal orientation between experimental groups. The sample size for the study is N=87.",
+      "evidence_source": "The entire provided text content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section title 'Preliminary Analyses' and the reference to 'Table 1 displays means, standard deviations, and intercorrelations of the study variables' indicate an academic paper, which is typically a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No financial support information was explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from PubType being a journal article, which implies peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\", \"Avoid\"]}",
+      "evidence_source": "Table 1 lists '5. Prove goal orientation' and '6. Avoidance goal orientation'. The text also mentions 'prove goal orientation' and 'avoidance goal orientation'.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3, 3, 3, 3]}",
+      "evidence_source": "Table 1 lists '7. Performance 1st test phase: Medium tasks', '8. Performance 1st test phase: Difficult tasks', '9. Performance 2nd test phase: Medium tasks', and '10. Performance 2nd test phase: Difficult tasks', which are objective task performance measures.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1, 1, 1]}",
+      "evidence_source": "Derived from 'AdaptMeasures' being objective task performance (e.g., 'Medium tasks', 'Difficult tasks'), which corresponds to objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3, 3, 3, 3]}",
+      "evidence_source": "Table 1 lists '7. Performance 1st test phase: Medium tasks', '8. Performance 1st test phase: Difficult tasks', '9. Performance 2nd test phase: Medium tasks', and '10. Performance 2nd test phase: Difficult tasks', which are objective task performance measures.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1]}",
+      "evidence_source": "No specific goal orientation scale (e.g., VandeWalle) was explicitly mentioned in the text or table for 'Prove goal orientation' or 'Avoidance goal orientation'.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information was reported in the provided text or table.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No age information was reported in the provided text or table to impute mean age.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No sex composition information was reported in the provided text or table.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No percentage of men was reported in the provided text or table.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No country information was reported in the provided text or table.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information regarding the sample type (student vs. other) was reported in the provided text or table.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [87]}",
+      "evidence_source": "The note below Table 1 explicitly states: 'Note: N = 87'.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [0.15, 0.13, 0.15, 0.11, -0.06, -0.00, -0.06, 0.09]}",
+      "evidence_source": "Table 1, intercorrelations section: r(5. Prove goal orientation, 7. Performance 1st test phase: Medium tasks) = .15; r(5. Prove goal orientation, 8. Performance 1st test phase: Difficult tasks) = .13; r(5. Prove goal orientation, 9. Performance 2nd test phase: Medium tasks) = .15; r(5. Prove goal orientation, 10. Performance 2nd test phase: Difficult tasks) = .11; r(6. Avoidance goal orientation, 7. Performance 1st test phase: Medium tasks) = -.06; r(6. Avoidance goal orientation, 8. Performance 1st test phase: Difficult tasks) = -.00; r(6. Avoidance goal orientation, 9. Performance 2nd test phase: Medium tasks) = -.06; r(6. Avoidance goal orientation, 10. Performance 2nd test phase: Difficult tasks) = .09.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"PPGO and AP (1st phase, Medium)\", \"PPGO and AP (1st phase, Difficult)\", \"PPGO and AP (2nd phase, Medium)\", \"PPGO and AP (2nd phase, Difficult)\", \"APGO and AP (1st phase, Medium)\", \"APGO and AP (1st phase, Difficult)\", \"APGO and AP (2nd phase, Medium)\", \"APGO and AP (2nd phase, Difficult)\"]}",
+      "evidence_source": "Derived from the variable names in Table 1: 'Prove goal orientation' (PPGO), 'Avoidance goal orientation' (APGO), and 'Performance 1st test phase: Medium tasks', 'Performance 1st test phase: Difficult tasks', 'Performance 2nd test phase: Medium tasks', 'Performance 2nd test phase: Difficult tasks' (AP).",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'the study variables' and 'the experimental groups' in singular, indicating a single study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents preliminary analyses, including means, standard deviations, and intercorrelations of the study variables, which are displayed in Table 1. It highlights the cross-time consistency in performance variables and the use of computer experience variables as covariates. The section also notes the absence of direct relationships between goal orientation and performance, and no significant differences in computer experience or goal orientation across experimental groups.",
+      "evidence_source": "The entire provided text content.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1. Means, Standard Deviations, and Intercorrelations Among Study Variables",
+      "evidence_source": "The title of the provided table image.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Heimbeck2003\\tables\\Heimbeck2003_p013_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "Not explicitly stated in the provided text.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\", \"Avoid\"]}",
+      "evidence_source": "The text mentions 'prove goal orientation' and 'avoidance goal orientation' as variables in the study: 'There were also no significant differences in the goal orientation variables (data not shown, F(2,84) = 0.76, p = .47 for learning goal orientation; F(2,84) = 1.25, p = .29 for prove goal orientation; F(2,84) = 0.44, p = .65 for avoidance goal orientation).'",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text refers to 'performance variables' but does not specify the assessment method (e.g., self-report, objective).",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text refers to 'performance variables' but does not specify if they are subjective ratings or objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text refers to 'performance variables' but does not specify the specific assessment method.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text mentions 'goal orientation' variables but does not specify the measurement scale (e.g., VandeWalle). Therefore, it is coded as 'Other'.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information is reported in the provided text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No mean age or other information for imputation is reported in the provided text.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No sex composition information is reported in the provided text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No percentage of men in the sample is reported in the provided text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No country information is reported in the provided text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the sample type (student or other) is reported in the provided text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [87]}",
+      "evidence_source": "The text explicitly states 'Note: N = 87'.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "The text states 'Out of 12 correlations between the goal orientation and the performance variables, only 1 was significant.' but does not provide the numerical correlation coefficients. The attached asset is 'None', so no table is available to extract the values.",
+      "warning": "The text mentions correlations were calculated but does not provide the numerical values. The table is not provided."
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Goal Orientation and Performance Variables\"]}",
+      "evidence_source": "The text states 'Out of 12 correlations between the goal orientation and the performance variables, only 1 was significant.'",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to 'the study variables' and 'the experimental groups' within a single context, implying one study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents preliminary analyses, including means, standard deviations, and intercorrelations of study variables, as displayed in Table 1. It notes substantial cross-time consistency in performance variables and the use of computer experience variables as covariates. The section also reports no direct relationships between goal orientation (learning, prove, avoidance) and performance, and no significant differences in computer experience or goal orientation across experimental training conditions.",
+      "evidence_source": "Summary of the provided text content.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "TABLE 1 Means, Standard Deviations, and Intercorrelations Among Study Variables",
+      "evidence_source": "The text states 'Table 1 displays means, standard deviations, and intercorrelations of the study variables.' and the attached asset is labeled 'TABLE 1 Means, Standard Deviations, and Intercorrelations Among Study Variables'.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Heimbeck2003\\tables\\Heimbeck2003_p013_table01.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_1"
+  }
+]

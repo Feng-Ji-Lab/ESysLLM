@@ -1,0 +1,231 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this Measures section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information is provided in this Measures section.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No explicit survey method (paper-and-pencil or online) is stated in this Measures section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No demographic information about race/ethnicity is provided in this Measures section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No age information is provided in this Measures section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No education level information is provided in this Measures section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No BMI values are provided in this Measures section. BMI is mentioned only as an abbreviation in a footnote.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the source of the sample (community, college, or primary/secondary/high school) is provided in this Measures section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text states: 'To assess how women felt about their physical selves, we used Avalos et al.'s (2005) Body Appreciation Scale. Participants rate each of the 13 items on a scale from 1 (never) to 5 (always).' This is the Body Appreciation Scale (BAS), not BAS-2, as indicated by the 13-item format and the reference to Avalos et al. (2005).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported or measured) is provided in this Measures section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No correlation values between body appreciation and BMI are provided in this Measures section. The section only describes the measurement instruments used.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This is a Measures section describing instruments used in a study. No explicit statement about the number of studies is provided in this section.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this Measures section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Measures section describes the instruments used to assess multiple constructs in a study of women. The Body Appreciation Scale (BAS; 13 items) was used to assess body appreciation, the Body Esteem Scale (BES) was used to measure attitudes toward body appearance and functioning, and additional measures assessed exercise behavior, body-related talk, and body orientation. No demographic characteristics, sample size, or correlation data are provided in this section.",
+      "evidence_source": "Entire Measures section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly state the country where the study was conducted. No geographic location is mentioned in the Measures section.",
+      "warning": "Country information not provided in the text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify the total number of participants. The Measures section describes instruments but does not include sample size information.",
+      "warning": "Sample size not provided in the text."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly state whether the survey was administered via paper-and-pencil or online methods.",
+      "warning": "Survey method not specified in the text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not include demographic information about racial/ethnic composition of participants.",
+      "warning": "Racial/ethnic demographic data not provided."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not provide age information for participants.",
+      "warning": "Age data not provided in the text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify the educational level of participants.",
+      "warning": "Educational attainment data not provided."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          22.22
+        ]
+      },
+      "evidence_source": "Table 1 shows 'Mean (SD)' for BMI as '22.22 (3.46)'. This is the mean BMI of participants in the study.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether participants were recruited from community, college, or primary/secondary/high school settings.",
+      "warning": "Source of sample not specified in the text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text states: 'To assess how women felt about their physical selves, we used Avalos et al.'s (2005) Body Appreciation Scale. Participants rate each of the 13 items on a scale from 1 (never) to 5 (always).' This is the Body Appreciation Scale (BAS), not BAS-2.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly state whether BMI was self-reported or measured. The Measures section describes other instruments but does not detail the BMI assessment method.",
+      "warning": "BMI assessment method (self-reported vs. measured) not specified in the text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.36
+        ]
+      },
+      "evidence_source": "Table 1 shows the correlation between BMI (row 1) and Body appreciation (row 7, column 7). The cell at row 1, column 7 contains the value -0.36, which is the Pearson correlation coefficient between BMI and Body appreciation.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text describes a single study with one set of measures and one correlation matrix (Table 1). No mention of multiple studies or experiments is present.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not indicate whether this is a journal article or dissertation. Only the Measures section is provided without publication metadata.",
+      "warning": "Publication type not specified in the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the measures used in a single study to assess exercise behavior, body orientation (using the Body Esteem Scale with body-as-process and body-as-object subscales), body appreciation (using the Body Appreciation Scale), and body-related talk (exercise talk and weight-loss talk). Table 1 presents descriptive statistics and intercorrelations for all variables, showing a correlation of -0.36 between BMI and body appreciation.",
+      "evidence_source": "The entire Measures section and Table 1 caption and data.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1. Descriptive statistics and intercorrelations for all variables.",
+      "evidence_source": "The table title as it appears at the top of the provided table image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Wasylkiw2014/tables/1Wasylkiw2014_p004_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

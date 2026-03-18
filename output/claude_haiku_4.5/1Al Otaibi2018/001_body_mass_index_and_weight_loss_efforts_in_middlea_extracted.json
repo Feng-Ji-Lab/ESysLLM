@@ -1,0 +1,99 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Saudi Arabia"
+        ]
+      },
+      "evidence_source": "Title mentions 'Middle-Aged Saudi Women', indicating the study was conducted in Saudi Arabia.",
+      "warning": "Study name is inferred as 'Study X' because the provided text is only a title and does not explicitly name the study. Full text content needed for complete extraction."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information provided in the title.",
+      "warning": "Sample size cannot be determined from title alone. Full methodology section required."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information provided in the title.",
+      "warning": "Survey method cannot be determined from title alone. Methods section required."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information about race/ethnicity provided in the title.",
+      "warning": "Percent of white participants cannot be determined from title. Full text required."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Title indicates 'Middle-Aged' but does not provide specific mean age values.",
+      "warning": "Mean age cannot be extracted from title alone. Results or demographics section required."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information provided in the title.",
+      "warning": "Education level cannot be determined from title alone. Demographics section required."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Title mentions 'Body Mass Index' but does not provide mean BMI values.",
+      "warning": "Mean BMI cannot be extracted from title alone. Results section required."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample recruitment source provided in the title.",
+      "warning": "Source of sample cannot be determined from title alone. Methods section required."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Title mentions 'Body Appreciation' but does not specify which instrument (BAS or BAS-2) was used.",
+      "warning": "Assessment instrument for body appreciation cannot be determined from title alone. Methods section required."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported vs. measured) provided in the title.",
+      "warning": "BMI assessment method cannot be determined from title alone. Methods section required."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No correlation coefficients provided in the title.",
+      "warning": "Correlation values cannot be extracted from title alone. Results section with statistical tables required."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only a title. Cannot determine number of studies from title alone.",
+      "warning": "Cannot determine if this is a single study or multiple studies from title only. Full abstract and methods required."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information provided in the title.",
+      "warning": "Publication type cannot be determined from title alone. Full citation information required."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This is a title page for a study examining Body Mass Index and Weight Loss Efforts in Middle-Aged Saudi Women, with a focus on the mediating role of Body Appreciation. The study appears to be conducted in Saudi Arabia with a female sample. However, only the title is provided; full text content including abstract, methods, and results sections is needed to extract specific study variables such as sample size, mean age, BMI values, and correlation coefficients.",
+      "evidence_source": "Title: 'Body Mass Index and Weight Loss Efforts in Middle-Aged Saudi Women: The Mediating Role of Body Appreciation'",
+      "warning": "Insufficient information provided. Only title text available; full paper content required for complete data extraction."
+    },
+    "_pass_type": "text_only"
+  }
+]

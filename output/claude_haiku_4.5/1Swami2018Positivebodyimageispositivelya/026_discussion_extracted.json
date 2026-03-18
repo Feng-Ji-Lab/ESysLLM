@@ -1,0 +1,89 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not explicitly state the country where the study was conducted. While the United Kingdom is mentioned as an example in the limitations section ('In the United Kingdom, for example, there are known to be ethnic differences in positive body image'), this is a reference to prior research, not an indication that the present study was conducted there.",
+      "warning": "Country location not explicitly stated in this Discussion section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section mentions 'the relatively large sample' as a strength but does not provide a specific sample size number.",
+      "warning": "Specific sample size not provided in this Discussion section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion mentions 'the reliance on an online sample' as a limitation, indicating the survey method was online. However, this is stated as a limitation of the study design rather than a clear methodological statement in the methods section.",
+      "warning": "Survey method inferred from limitations discussion (online), but not explicitly stated in methodology."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion notes: 'in the United Kingdom, for example, there are known to be ethnic differences in positive body image (Swami et al., 2009), but we were unable to interrogate this issue given the relatively small sub-sample sizes of non-White participants.' This indicates the sample had non-White participants but does not provide a specific percentage.",
+      "warning": "Specific percentage of White participants not provided; only mentioned that non-White sub-sample sizes were small."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion discusses correlations with age but does not report the mean age of participants.",
+      "warning": "Mean age not provided in this Discussion section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion states: 'our sample may have been over-represented in terms of higher education compared with the general population.' However, no specific percentage is provided.",
+      "warning": "Specific percentage of college or higher education not provided; only noted as potentially over-represented."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion mentions that 'some participants returned data with improbable BMI values' and that these accounted for '<4.0% of the total dataset,' but does not report the mean BMI of participants.",
+      "warning": "Mean BMI not provided in this Discussion section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion mentions 'an online sample' and notes 'a known issue with online recruitment' but does not explicitly state whether participants were from community, college, or primary/secondary/high school sources.",
+      "warning": "Specific source of sample (community, college, or school) not explicitly stated."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion discusses body appreciation as a construct and mentions 'four body image variables' but does not specify which instrument (BAS or BAS-2) was used to assess body appreciation.",
+      "warning": "Specific assessment instrument for body appreciation not identified in this Discussion section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion mentions 'some participants returned data with improbable BMI values' suggesting self-reported data, but does not explicitly state whether BMI was self-reported or measured.",
+      "warning": "Assessment method for BMI (self-reported vs. measured) not explicitly stated."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion states: 'respondent BMI was negatively associated with all four indices of positive well-being in both women and men' and 'In terms of positive body image specifically, the pattern of correlations with BMI were generally consistent with previous work.' However, specific correlation coefficients (r values) between body appreciation and BMI are not provided in this Discussion section.",
+      "warning": "Specific correlation coefficients between body appreciation and BMI not provided; only directional statements (negative association) are mentioned."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This is a Discussion section from a single study. The text refers to 'the present study' throughout and discusses results from one dataset. No indication of multiple studies is present.",
+      "warning": "This appears to be a Discussion section from a single study; no multiple studies identified."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a Discussion section only. Publication type (journal article vs. dissertation) cannot be determined from this section alone without access to the title page or publication information.",
+      "warning": "Publication type cannot be determined from Discussion section alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Discussion section presents findings from a single study examining associations between positive body image (including body appreciation, body pride, body acceptance from others, and body image flexibility) and hedonic and eudaimonic well-being. The study found that body appreciation was the strongest predictor of all three indices of well-being in both women and men, and that BMI was negatively associated with well-being. Key limitations discussed include reliance on cross-sectional data, an online sample with potential recruitment bias toward women and higher education, and small sub-sample sizes of non-White participants.",
+      "evidence_source": "Entire Discussion section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

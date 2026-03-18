@@ -1,0 +1,221 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      1,
+      2,
+      5,
+      3
+    ],
+    "reason": "Multiple sections (abstract [1], introduction [2], procedures/methods [5], and participants [3]) consistently describe a single study comparing two samples (Zimbabwe vs Britain). The paper reports analyses across those two subsamples rather than separate, numbered studies (no 'Study 1/Study 2' or additional distinct studies are indicated), so the most accurate count is 1."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "Zimbabwe",
+        "United Kingdom"
+      ]
+    },
+    "best_indices": [
+      2,
+      4,
+      6,
+      9
+    ],
+    "reason": "All candidates describe a single study that compared two subsamples (Zimbabwean women in Harare, Zimbabwe and age-matched Zimbabwean migrants in London/Britain). Key evidence comes from the abstract (idx 2), participants section (idx 4), procedural description confirming locations (idx 6), and Table 1 which labels groups and sample sizes (idx 9). Per instructions, these two subsamples are part of one study (so output uses 'Single study') and subsample locations are merged into the same study entry. 'Britain'/'UK' labels are treated as equivalent; I standardized to 'United Kingdom' while keeping 'Zimbabwe' as stated."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        140,
+        138
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All candidates refer to a single study comparing two samples (Zimbabwe vs Britain). Participant counts are consistent across the abstract (0), Participants section (1), and Table 1 (2): Zimbabwe n = 140 and Britain n = 138. These were merged into one study entry with both sample sizes listed. Female-specific counts were reported (140, 138); no separate total or male/other counts were provided.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          140,
+          138
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          140,
+          138
+        ]
+      }
+    }
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0
+    ],
+    "reason": "The document is presented with an abstract and standard article sections describing a single empirical study across two samples; candidate 0 (journal articles) is the only matching value and best fits the paper format and content. No evidence indicates this is a dissertation."
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        25.34,
+        26.61
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper reports a single study with two subsamples (Zimbabwe community sample in Harare, M = 25.34; Zimbabwean migrants in London, M = 26.61). Both the Participants text (candidate 0) and Table 1 (candidate 1) report the same means for these two female samples. Following the instruction to merge subsamples into the same study entry, both means are included under 'Single study'; female-specific values are recorded under extract_value_by_gender.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          25.34,
+          26.61
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          25.34,
+          26.61
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        24.81,
+        24.88
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates refer to the same single study that sampled two female subsamples (Zimbabwe residents and Zimbabwean migrants in Britain). Candidate 0 (Participants section) reports M = 24.81 (Harare) and M = 24.88 (London migrants); Candidate 1 (Table 1) confirms the same means. These are merged as subsamples of the single study and reported under 'Single study' with female-specific values. Values are consistent between main text and table.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          24.81,
+          24.88
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          24.81,
+          24.88
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "community"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidate sections (Participants and Procedure) describe the same single study with two community subsamples (Harare and London). Recruitment methods (opportunistic sampling in public spaces in Harare; snowball sampling in London) confirm community-based samples. Therefore the study-level source is 'community' (merged across subsamples)."
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      3,
+      4,
+      2,
+      5
+    ],
+    "reason": "All candidate sources consistently indicate BMI was calculated from participants' self-reported height and weight. The Measures section (index 1) explicitly states BMI was computed from self-reported height and weight; the Participants section (index 0) and Table 1 (index 3) label BMI as 'self-reported body mass index'; Table 2 (index 4), the preliminary analyses (index 2), and the Discussion (index 5) all refer to 'self-reported BMI'. The paper reports a single study comparing two subsamples (Zimbabwe vs Britain) rather than multiple distinct studies, so subsamples were merged under 'Single study' and the single consolidated value is 'self-reported'."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2
+    ],
+    "reason": "All reliable candidates (Measures, Body Appreciation section, Discussion) consistently report the Body Appreciation Scale (BAS) as the instrument used. The paper describes a single study with two subsamples (migrant vs. non-migrant); per instructions subsamples are merged under a single study. No evidence of BAS-2 was found."
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "paper-and-pencil"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "All candidate information refers to a single study (surveys administered in Harare and London as part of the same study). The procedure text explicitly states participants completed paper-and-pencil surveys; no candidates indicate online administration. Therefore the survey method for the single study is 'paper-and-pencil'. Candidate index 0 was used."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        -0.11,
+        0.01
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study in the paper with two female subsamples (Zimbabwean women in Britain and women in Zimbabwe). Table 2 reports Body Appreciation vs BMI correlations separately for the two female subsamples: -0.11 (Britain migrants, top diagonal) and 0.01 (Zimbabwe, bottom diagonal). Per instructions, merged subsample values are listed under extract_value. Because both values are for the same gender (women), computed the arithmetic mean for the female entry: (-0.11 + 0.01)/2 = -0.0500 (kept to four decimal places). Candidate index 0 (Table 2) was used.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          -0.05
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          -0.11,
+          0.01
+        ]
+      }
+    }
+  }
+}

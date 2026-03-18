@@ -1,0 +1,103 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses research on Black women in the United States and mentions 'Black women living in the United States' at the end, but this section is introductory/background material and does not describe a specific study with a defined country of conduct. The actual study details are not provided in this section.",
+      "warning": "This appears to be an introduction/background section rather than a methods section describing a specific study. No concrete study data is presented."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size is reported in this introductory section. The text discusses the current study in general terms but does not provide participant numbers.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method is specified in this section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While the text discusses differences between Black and White women, no specific percentage of White participants in the current study is provided.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age is reported in this section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'Black college women' as the study population, which suggests 100% college enrollment, but this is not explicitly stated as a characteristic of the current study's sample. The infer_rule allows inference only when certain, and the text does not explicitly confirm all participants are college students.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI is reported in this section.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The text states 'The current study examined body appreciation and its association with ethnic identity in Black college women.' This indicates the sample source is college.",
+      "warning": "Study name is inferred as 'Study X' per policy since no explicit study number is given in this introductory section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'This study uses the Body Appreciation Scale (BAS; Avalos, Tylka, & Wood-Barcalow, 2005), which was originally developed and validated using four independent samples of predominately White, middle- to upper-class college women, with results from the validation study supporting a unidimensional factor structure for this 13-item measure.'",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported vs. measured) is provided in this section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This introductory section does not report any correlation coefficients between body appreciation and BMI. It discusses the study's purpose and background but not results.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to 'The current study' (singular) examining body appreciation in Black college women. While the introduction discusses multiple prior studies, only one current study is described.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The publication type (journal article vs. dissertation) is not specified in this introductory section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This is an introductory/background section that discusses body image research, ethnic differences in body satisfaction between Black and White women, and the importance of examining body appreciation in Black college women. The current study (Study X) uses the Body Appreciation Scale (BAS) to examine body appreciation and its association with ethnic identity in Black college women, but specific methodological details such as sample size, survey method, and participant demographics are not provided in this section.",
+      "evidence_source": "General summary of the entire provided text section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,93 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify a country where the study was conducted. It only mentions 'the current sample' and 'Black women' without geographic location.",
+      "warning": "No country information provided in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text references 'the current sample' but does not provide a specific sample size or number of participants.",
+      "warning": "Sample size not explicitly stated in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not describe the method used to collect survey data (paper-and-pencil vs. online).",
+      "warning": "Survey method not specified in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'Black women' as the sample but does not provide a percentage breakdown of racial/ethnic composition.",
+      "warning": "Percentage of white participants not provided; only that the sample consisted of Black women."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide mean age or age-related statistics for participants.",
+      "warning": "Mean age not reported in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about participants' educational attainment.",
+      "warning": "Educational attainment percentage not provided in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not report mean BMI or BMI statistics for the sample.",
+      "warning": "Mean BMI not reported in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether participants were recruited from community, college, or primary/secondary/high school settings.",
+      "warning": "Source of sample not specified in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text states 'A preliminary EFA was conducted to explore BAS factor structure in the current sample' and later 'Thus, these results support the unidimensional nature of this measure among Black women.' The measure being analyzed is the BAS (Body Appreciation Scale).",
+      "warning": "The specific version (BAS vs. BAS-2) is not explicitly stated; only 'BAS' is mentioned. Assumed to be the original BAS based on the reference to Avalos et al., 2005."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not discuss how BMI was assessed (self-reported vs. measured). This section focuses on the factor structure of the BAS, not BMI assessment.",
+      "warning": "BMI assessment method not mentioned in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not report any correlations between body appreciation and BMI. It only discusses factor structure and model fit statistics for the BAS.",
+      "warning": "No correlation data provided in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the number of studies. It appears to describe analyses from a single study ('the current sample'), but the total number of studies in the paper is not specified in this section.",
+      "warning": "Number of studies cannot be determined from this section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text does not indicate whether this is from a journal article or dissertation.",
+      "warning": "Publication type not specified in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes a factor structure analysis of the Body Appreciation Scale (BAS) conducted on a sample of Black women. The authors performed an exploratory factor analysis (EFA) that initially suggested two factors, but upon closer examination, a unidimensional structure was deemed most appropriate and confirmed through confirmatory factor analysis (CFA). The CFA model showed adequate fit (\u03c7\u00b2 = 185.02, df = 65, CFI = .94, SRMR = .05, RMSEA = .09), with all factor loadings ranging from .42 to .91, supporting the unidimensional nature of the BAS measure in this population.",
+      "evidence_source": "Entire 'Factor Structure' section provided in text_content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

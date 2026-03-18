@@ -1,0 +1,192 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "UK"
+        ],
+        "Study 2": [
+          "UK"
+        ]
+      },
+      "evidence_source": "Abstract states 'Study 1 investigated these relationships within a cross-sectional sample of female UK students' and 'Study 2 experimentally tested this pathway' with sample sizes and age ranges provided, indicating both studies were conducted in the UK.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          215
+        ],
+        "Study 2": [
+          165
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            215
+          ],
+          "Study 2": null
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            215
+          ],
+          "Study 2": [
+            165
+          ]
+        }
+      },
+      "evidence_source": "Abstract explicitly states 'Study 1 investigated these relationships within a cross-sectional sample of female UK students (n = 215, 17\u201330 years)' and 'Study 2 experimentally tested this pathway, manipulating guilt relating to exercise and appearance goals independently and assessing post-test guilt and body anxiety (n = 165, 18\u201327 years)'. Study 1 sample is explicitly female; Study 2 gender composition is not specified.",
+      "warning": "Study 2 gender composition not specified in abstract."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract does not specify the survey method (paper-and-pencil or online) for either study.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The abstract does not provide information about racial/ethnic composition of participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          23.5
+        ],
+        "Study 2": [
+          22.5
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            23.5
+          ],
+          "Study 2": null
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            23.5
+          ],
+          "Study 2": [
+            22.5
+          ]
+        }
+      },
+      "evidence_source": "Abstract states 'Study 1 investigated these relationships within a cross-sectional sample of female UK students (n = 215, 17\u201330 years)' - mean age calculated as (17+30)/2 = 23.5. 'Study 2 experimentally tested this pathway (n = 165, 18\u201327 years)' - mean age calculated as (18+27)/2 = 22.5. Study 1 sample is explicitly female.",
+      "warning": "Mean ages are calculated from age ranges (minimum and maximum) provided in the abstract, not explicitly stated as mean values. Study 2 gender composition not specified."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          100
+        ],
+        "Study 2": null
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            100
+          ],
+          "Study 2": null
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            100
+          ],
+          "Study 2": null
+        }
+      },
+      "evidence_source": "Abstract describes Study 1 as 'a cross-sectional sample of female UK students'. The term 'students' indicates college/university students, which implies college or higher education experience (100%). Study 2 does not specify student status.",
+      "warning": "Study 1 percentage inferred from 'students' terminology per case rules. Study 2 education level not specified in abstract."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The abstract does not provide information about BMI of participants for either study.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "college"
+        ],
+        "Study 2": [
+          "college"
+        ]
+      },
+      "evidence_source": "Abstract describes Study 1 as 'a cross-sectional sample of female UK students', indicating a college sample. Study 2 is described as an experimental study but does not explicitly state the source; however, given the context and typical recruitment patterns, the source is inferred to be college-based, though this is not explicitly confirmed in the abstract.",
+      "warning": "Study 2 source of sample not explicitly stated in abstract. Inferred as 'college' based on context, but this is uncertain."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract does not specify which instrument (BAS or BAS-2) was used to assess body appreciation in either study.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract does not specify whether BMI was self-reported or measured in either study.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The abstract does not provide correlation coefficients between body appreciation and BMI. The abstract focuses on the relationship between appearance goals, introjected regulation, guilt, and body anxiety/image, not the direct correlation between body appreciation and BMI.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 2,
+      "evidence_source": "The abstract explicitly describes 'Study 1' and 'Study 2', indicating this paper reports findings from two distinct studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The abstract does not explicitly state whether this is a journal article or dissertation. The copyright notice '\u00a9 2017 The Authors. Published by Elsevier Ltd. This is an open access article under the CC BY license' suggests it is a journal article, but this is not explicitly confirmed in the provided text.",
+      "warning": "Publication type inferred from copyright notice as likely journal article, but not explicitly stated in abstract."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This abstract describes a two-study investigation of the relationship between appearance goals for exercise and body image. Study 1 (n=215 female UK students, ages 17-30) used a cross-sectional design to examine how appearance goals indirectly negatively associate with body image through introjected (guilt-based) exercise regulation. Study 2 (n=165, ages 18-27) experimentally manipulated guilt and appearance goals to test whether guilt increases body anxiety, finding that guilt manipulation significantly increased post-test guilt and body anxiety among participants in the guilt condition.",
+      "evidence_source": "Abstract text describing both Study 1 and Study 2 methodologies and findings.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

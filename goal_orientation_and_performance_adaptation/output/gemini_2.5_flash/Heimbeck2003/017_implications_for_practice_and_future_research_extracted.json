@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text is an academic paper discussing research implications and citing other academic works, strongly suggesting it is a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies in this section.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Given that the publication type is inferred as a journal article, it is highly probable that it underwent peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{ \"Study X\": [\"None\"] }",
+      "evidence_source": "Performance goal orientation (PGO) was not mentioned in this section for 'our study'.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{ \"Study X\": [3] }",
+      "evidence_source": "The text states, \"Our study has shown far transfer after one week to be positively affected by error training with error management instructions.\" 'Far transfer' and 'performance' are typically assessed using objective measures (e.g., task or test scores).",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{ \"Study X\": [1] }",
+      "evidence_source": "Based on the mention of 'far transfer' and 'performance' as outcomes, these are inferred to be objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{ \"Study X\": [3] }",
+      "evidence_source": "The outcome 'far transfer' and 'performance' are inferred to be objective measures (e.g., task, test).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{ \"Study X\": [\"None\"] }",
+      "evidence_source": "No information about the measurement method of goal orientation was provided in this section for 'our study'.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{ \"Study X\": [\"\"] }",
+      "evidence_source": "No specific age information (e.g., range, SD, median) was provided for 'our study' in this section. The text mentions 'normal adults' in a general sense.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{ \"Study X\": [\"None\"] }",
+      "evidence_source": "No mean age or sufficient information to impute age was provided for 'our study' in this section.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{ \"Study X\": [\"None\"] }",
+      "evidence_source": "No information about the sex composition of the sample was provided for 'our study' in this section.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{ \"Study X\": [\"None\"] }",
+      "evidence_source": "No percentage of men in the sample was provided for 'our study' in this section.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{ \"Study X\": [\"None\"] }",
+      "evidence_source": "No information about the country where 'our study' was conducted was provided in this section.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{ \"Study X\": [2] }",
+      "evidence_source": "The text refers to 'normal adults' as participants in 'our study', implying it was not exclusively a student sample.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{ \"Study X\": [\"None\"] }",
+      "evidence_source": "No sample size (N) was provided for 'our study' in this section.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{ \"Study X\": [\"None\"] }",
+      "evidence_source": "No correlation coefficients between Performance Goal Orientation (PGO) and performance adaptation (PA) were reported in this section for 'our study'. The study focuses on error training.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{ \"Study X\": [\"None\"] }",
+      "evidence_source": "No correlations were reported in this section for 'our study'.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section consistently refers to 'this study' and 'our study' in the singular, indicating a single main study conducted by the authors.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section, titled 'Implications for Practice and Future Research', discusses the practical implications of 'our study' regarding error training with error management instructions. It suggests that errors can have a positive function for learning and transfer, especially for normal adults, and proposes combining error training with traditional approaches. The section also outlines limiting factors for error training, such as the need for feedback and a safe exploration environment, and suggests avenues for future research.",
+      "evidence_source": "Summary of the provided text content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

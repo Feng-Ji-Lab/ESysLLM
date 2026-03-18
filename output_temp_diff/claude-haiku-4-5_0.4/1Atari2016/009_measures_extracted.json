@@ -1,0 +1,97 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is provided in this Measures section. The text mentions 'Persian version' of scales (RSES and SWLS), suggesting the study may be conducted in Iran, but this is not explicitly stated in the provided text.",
+      "warning": "Country cannot be definitively determined from this section alone; inferred region (Iran) based on 'Persian version' reference, but this is not explicit."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes measurement instruments only. No sample size information is provided in this Measures section.",
+      "warning": "Sample size not reported in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes the measures used but does not specify whether data were collected via paper-and-pencil or online methods.",
+      "warning": "Survey method not specified in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section does not contain demographic information about racial/ethnic composition of participants.",
+      "warning": "Racial/ethnic composition not reported in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section mentions that participants reported their age in the Demographics section, but no mean age values are provided.",
+      "warning": "Mean age not reported in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section mentions that participants reported 'highest educational qualification' but does not provide the percentage with college or higher education.",
+      "warning": "Educational attainment percentages not reported in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section states that 'Participants also self-reported their weight (in kilograms) and height (in centimeters), which were used to calculate BMI,' but no mean BMI values are provided.",
+      "warning": "Mean BMI not reported in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes measurement instruments only and does not specify the source or recruitment method for participants.",
+      "warning": "Sample source not specified in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "First paragraph: 'All participants completed the 10-item Body Appreciation Scale-2 (BAS-2; Tylka & Wood-Barcalow, 2015b). All items were rated on a 5-point Likert-type scale, ranging from 1 (Never) to 5 (Always).'",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Demographics section: 'Participants also self-reported their weight (in kilograms) and height (in centimeters), which were used to calculate BMI.' The use of self-reported weight and height indicates self-reported BMI assessment.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes the measures used but does not report any correlations between body appreciation and BMI.",
+      "warning": "Correlation values not reported in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This is a Measures section describing instruments used. No explicit indication of number of studies is provided in this section alone.",
+      "warning": "Number of studies cannot be determined from this Measures section without additional context."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "This section does not contain information about publication type (journal article vs. dissertation).",
+      "warning": "Publication type not specified in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Measures section describes the instruments used to assess body appreciation (BAS-2), self-esteem (RSES), life satisfaction (SWLS), and demographics including self-reported weight and height for BMI calculation. The text references Persian versions of some scales, suggesting the study may be conducted in an Iranian context, though this is not explicitly stated. No sample size, demographic characteristics, or correlation results are provided in this section.",
+      "evidence_source": "Entire Measures section provided",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

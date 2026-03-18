@@ -1,0 +1,448 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      2
+    ],
+    "best_indices": [
+      9,
+      10
+    ],
+    "reason": "Candidates [9] and [10] explicitly state 'Study 1' and 'Study 2' or 'two studies' in the context of data collection and measures, which are fundamental components of defining distinct research efforts. While other candidates refer to 'a single study' utilizing 'two distinct samples,' the direct naming of 'Study 1' and 'Study 2' in the methods sections (measures and procedure) provides stronger and more explicit evidence for two separate studies. The instruction to prefer stronger evidence from 'Method' or 'Results' sections supports this selection."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason": "All candidates consistently identify the publication type as 'journal articles'. The section contexts provide strong evidence, such as references to the 'Journal of Bisexuality', publication details including volume, page numbers, ISSN, and DOI, and explicit statements indicating it is a journal article. There is no conflicting information, leading to high confidence in this selection."
+  },
+  "Country": {
+    "extract_value": {
+      "Study 1": [
+        "USA"
+      ],
+      "Study 2": []
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [
+          "USA"
+        ],
+        "Study 2": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          "USA"
+        ],
+        "Study 2": []
+      }
+    },
+    "best_indices": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "reason": "The paper is stated to have two studies. Candidate [0] refers to the publisher's registered office (UK), which is not relevant to the location where the research studies were conducted. Candidates [1], [2], [3], and [4] consistently indicate 'USA' as the location of the authors' affiliations and, in the case of candidate [4], explicitly state 'an exploratory study... conducted in the USA'. These candidates are from early sections of the paper (title, author affiliations), which typically describe the first study. Therefore, 'Study 1' is identified as being conducted in the 'USA'. No information regarding the country for 'Study 2' is available in the provided candidates."
+  },
+  "Sample": {
+    "extract_value": {
+      "Study 1": [
+        "903"
+      ],
+      "Study 2": []
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [
+          "903"
+        ],
+        "Study 2": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          "903"
+        ],
+        "Study 2": []
+      }
+    },
+    "best_indices": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "reason": "The paper contains two distinct studies as confirmed by the context and Candidate 4, which explicitly mentions 'Study 1' and 'Study 2' in the context of data collection. Candidates 1, 2, 3, and 4 consistently report a final or overall sample size of 903 women, derived from 'two distinct samples' (which correspond to Study 1 and Study 2). This 903 represents the combined analytical sample. Candidate 5 (N=872) refers to a specific analysis subset, and Candidate 6 (N=266) refers to a subgroup analysis, making 903 the most reliable overall sample size. However, the provided candidates do not explicitly state the individual sample sizes for Study 1 and Study 2 separately. To adhere to the requirement of providing two study entries, the overall sample size of 903 women is assigned to 'Study 1' as the primary reported sample, and 'Study 2' is left with empty sample values to indicate that its specific sample size was not found in the candidates."
+  },
+  "Survey method": {
+    "extract_value": {
+      "Study 1": [
+        "online"
+      ],
+      "Study 2": [
+        "online"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [
+          "online"
+        ],
+        "Study 2": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          "online"
+        ],
+        "Study 2": []
+      }
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "The context indicates there are two studies. Candidate [1] explicitly states 'For both studies, data were collected online using Qualtrics' and refers to 'Sample 1' and 'Sample 2' as 'two studies'. This directly provides the survey method for both distinct studies. Candidate [0] provides no specific value for the survey method. Therefore, Candidate [1] is used to populate the survey method for 'Study 1' and 'Study 2' as 'online'."
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Study 1": [
+        "86.3"
+      ],
+      "Study 2": []
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [
+          "86.3"
+        ],
+        "Study 2": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          "86.3"
+        ],
+        "Study 2": []
+      }
+    },
+    "best_indices": [
+      1,
+      2,
+      3
+    ],
+    "reason": "Candidates 1, 2, and 3 consistently report that 86.3% of the sample was White. These candidates describe 'a single study that utilized data from two distinct samples (Sample 1 and Sample 2)'. Based on the provided context that the paper contains two distinct studies (Study 1 and Study 2), and the instruction to merge multiple samples into the same study, this 'single study' with two samples is resolved as 'Study 1'. The value 86.3% is assigned to 'Study 1' for the total participants. No information regarding the 'Percent of white in participants' was found for 'Study 2' in the provided candidates. Candidate 0 provides no value."
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Study 1": [
+        "28.9",
+        "27.01"
+      ],
+      "Study 2": [
+        "29.17",
+        "27.17"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [
+          "28.9",
+          "27.01"
+        ],
+        "Study 2": [
+          "29.17",
+          "27.17"
+        ]
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          "28.9",
+          "27.01"
+        ],
+        "Study 2": []
+      }
+    },
+    "best_indices": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "reason": "The paper is identified as having two distinct studies based on the provided context. Candidates [1], [2], and [3] consistently report mean ages of 28.9 and 27.01 for 'Sample 1' and 'Sample 2' respectively, from the '011_participants_extracted.json' source. Although these candidates describe 'a single study' with 'two distinct samples,' the overall context dictates two studies. Following the critical instruction that early sections (like 'Participants') usually describe Study 1, and the instruction to merge multiple samples within the same study, these values are assigned to 'Study 1'. Candidate [4] reports mean ages of 29.17 and 27.17, comparing sexual minority and heterosexual participants, from the '015_heterosexual_versus_sexual_minority_women_extracted.json' source. Given its later source file index and its section summary describing 'analyses' (results), it is assigned to 'Study 2', following the critical instruction that later sections describe Study 2. Candidate [0] is excluded as it provides no specific age values."
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Study 1": [
+        "83.7",
+        "55.5",
+        "67.1"
+      ],
+      "Study 2": []
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [
+          "83.7",
+          "55.5",
+          "67.1"
+        ],
+        "Study 2": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          "83.7",
+          "55.5",
+          "67.1"
+        ],
+        "Study 2": []
+      }
+    },
+    "best_indices": [
+      1,
+      2,
+      3
+    ],
+    "reason": "The paper is stated to have two studies based on the provided CONTEXT. Candidates [1], [2], and [3] describe participant characteristics, including education levels, for 'Sample 1' (83.7%), 'Sample 2' (55.5%), and an overall sample (67.1%) within what they refer to as 'a single study.' Given that these candidates are from a 'participants' section (source_file '011_participants_extracted.json'), and the CONTEXT indicates 'Early sections (Method, Participants) usually describe Study 1,' these samples are assigned to 'Study 1.' The instruction to merge multiple samples within the same study is applied, combining these percentages into a single list for 'Study 1.' All three candidates provide consistent values for these samples. No information for 'Study 2' is available in the provided candidates, so its 'extract_value' is empty. Candidate [0] provides no extractable value."
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Study 1": [
+        "27.78"
+      ],
+      "Study 2": [
+        "25.46"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [
+          "27.78"
+        ],
+        "Study 2": [
+          "25.46"
+        ]
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          "27.78"
+        ],
+        "Study 2": [
+          "25.46"
+        ]
+      }
+    },
+    "best_indices": [
+      1,
+      2,
+      3
+    ],
+    "reason": "The paper is identified as having two distinct studies based on the provided context and Candidate 4's summary explicitly mentioning 'Study 1' and 'Study 2'. Candidates 1, 2, and 3 consistently report mean BMIs for 'Sample 1' (27.78) and 'Sample 2' (25.46) within the participants/method section. Following the instruction to resolve 'Study X' candidates to the correct study and the context indicating 'Sample 1' and 'Sample 2' correspond to the two distinct studies, these values are assigned to 'Study 1' and 'Study 2' respectively. The gender information from these candidates indicates these values are for 'female' and 'total' participants. Candidate 4 provides an overall mean BMI (26.24) for the combined sample, which is not specific to either individual study and thus not included in the per-study extraction. Candidate 5 provides BMI values for specific subgroups (sexual minority and heterosexual participants) which are slightly different from the overall sample means and are therefore not used as the primary mean BMI for each study. The explicit labeling of \"M BMI for Sample 1\" and \"M BMI for Sample 2\" in the method section (Candidates 1, 2, 3) is considered the most reliable for the overall study means."
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Study 1": [
+        "community"
+      ],
+      "Study 2": [
+        "community"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [
+          "community"
+        ],
+        "Study 2": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          "community"
+        ],
+        "Study 2": []
+      }
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "The context indicates the paper contains two distinct studies. Candidate [1] explicitly refers to 'Sample 1' and 'Sample 2' and provides the 'Source of sample' as 'community' for both, based on recruitment through social media and email listservs for women over 18. These 'Sample 1' and 'Sample 2' are directly mapped to 'Study 1' and 'Study 2' respectively, as they represent distinct participant groups for the two studies. Candidate [0] refers to 'Study X' but provides no specific value for 'Source of sample', so it is not used for extraction."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Study 1": [
+        "BAS"
+      ],
+      "Study 2": [
+        "BAS"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [
+          "BAS"
+        ],
+        "Study 2": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          "BAS"
+        ],
+        "Study 2": []
+      }
+    },
+    "best_indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "reason": "The context explicitly states the paper contains two distinct studies. Candidate 4, from the 'measures' section, is critical as it explicitly mentions 'Study 1' and 'Study 2' in the context of data collection and states that the Body Appreciation Scale (BAS) was used for the 'overall study,' implying its use in both. Other candidates (1, 2, 3, 5, 6, 7) consistently refer to the use of 'BAS' for body appreciation assessment, reinforcing that this instrument was applied across the research. Therefore, BAS is assigned to both Study 1 and Study 2."
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Study 1": [
+        "self-reported"
+      ],
+      "Study 2": [
+        "self-reported"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [
+          "self-reported"
+        ],
+        "Study 2": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          "self-reported"
+        ],
+        "Study 2": []
+      }
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "Candidate [1] explicitly states 'self-reported' for BMI assessment, noting that participants self-reported weight and height. This information comes from the 'measures' section, which is a reliable source for data collection methods. The evidence in candidate [1] indicates this applies to the 'overall study', and the context confirms two distinct studies ('Study 1' and 'Study 2'). Therefore, 'self-reported' is applied to both studies. Candidate [2]'s 'measured by BMI' is less specific and potentially ambiguous regarding the direct method of obtaining weight and height, as BMI is always a calculated measure. Given the more precise description in candidate [1], 'self-reported' is preferred. Candidate [0] provides no specific value for BMI assessment."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Study 1": [],
+      "Study 2": []
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "female": {
+        "Study 1": [
+          "-0.2565"
+        ],
+        "Study 2": []
+      },
+      "other": {
+        "Study 1": [],
+        "Study 2": []
+      },
+      "total": {
+        "Study 1": [
+          "-0.2565"
+        ],
+        "Study 2": []
+      }
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "Candidate [1] provides a correlation value of -0.2565 for 'Study X', derived from Table 2, which is a reliable source. The value is an arithmetic mean of correlations for 'Heterosexual Women' (-.241) and 'Nonheterosexual Women' (-.272) with BMI. The section summary for candidate [1] describes participants for 'a single study' and is from an early section ('participants'), which, following the critical instruction, is attributed to 'Study 1'. The value is specific to women and represents the total for that female sample, thus placed in 'female' and 'total' within 'extract_value_by_gender'. Candidate [0] is excluded as it provides no specific value. No candidates were found for 'Study 2', so its values remain empty."
+  }
+}

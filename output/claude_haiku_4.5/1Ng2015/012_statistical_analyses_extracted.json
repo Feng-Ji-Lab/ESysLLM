@@ -1,0 +1,93 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Statistical Analyses' section describing methodological procedures (CFA, goodness-of-fit indices, internal consistency measures). No country information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Statistical Analyses' section describing statistical procedures and does not report sample size information.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Statistical Analyses' section describing statistical procedures and does not mention survey method.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Statistical Analyses' section and does not contain demographic information about participant race/ethnicity.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Statistical Analyses' section and does not report participant age information.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Statistical Analyses' section and does not contain information about participant education level.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Statistical Analyses' section describing statistical procedures. While BMI is mentioned as a validity measure ('bivariate correlations between derived factors and measures of BMI'), no mean BMI value is reported.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Statistical Analyses' section and does not describe where or how participants were recruited.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text states: 'CFAs were conducted using the Analysis of Moment Structures Programme (AMOS v.21; Arbuckle, 2012) to examine the factorial structure of the BAS.' The text also references 'A single-factor model where all items loaded onto a single latent variable was assessed to examine the factorial validity of the model proposed by Avalos et al. (2005)' and discusses 'a two-dimensional, 13-item model consisting of General Body Appreciation and Body Image Investment factors.' The BAS (Body Appreciation Scale) is the instrument being examined. The section does not explicitly state whether this is BAS or BAS-2, but the reference to Avalos et al. (2005) and the single-factor model structure suggests the original BAS.",
+      "warning": "The specific version (BAS vs BAS-2) cannot be definitively determined from this section alone; however, the reference to Avalos et al. (2005) and single-factor model suggests BAS."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text mentions that 'bivariate correlations between derived factors and measures of BMI' were assessed, but does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text states that 'indices of validity were established by assessing bivariate correlations between derived factors and measures of BMI, actual-ideal weight discrepancy (women only), and self-esteem.' However, no actual correlation coefficient values are reported in this section.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Statistical Analyses' section describing methodological procedures. It does not explicitly state the number of studies conducted. The text references multiple models (single-factor, two-dimensional 13-item, alternative two-dimensional) but these appear to be alternative factor structures tested within a single analysis, not separate studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Statistical Analyses' section and does not contain information about publication type.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This is a Statistical Analyses section describing confirmatory factor analysis (CFA) procedures used to examine the factorial structure of the Body Appreciation Scale (BAS). The section details the examination of three competing models: a single-factor model, a two-dimensional 13-item model with General Body Appreciation and Body Image Investment factors, and an alternative two-dimensional model with two deleted items. The text outlines goodness-of-fit indices (RMSEA, SRMR, CFI, AIC), internal consistency measures (Cronbach's alpha), and validity assessment through bivariate correlations with BMI, actual-ideal weight discrepancy, and self-esteem, as well as sex differences testing.",
+      "evidence_source": "Entire 'Statistical Analyses' section provided in text_content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

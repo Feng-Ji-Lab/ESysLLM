@@ -1,0 +1,101 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "United Kingdom"
+        ]
+      },
+      "evidence_source": "Text states: 'Recruitment was conducted on an opportunistic basis in several public locations in Greater London' - Greater London is in the United Kingdom.",
+      "warning": "Study name is inferred as 'Study X' because the text does not explicitly label this as 'Study 1' or provide a specific study identifier."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Procedure section describes the methodology but does not provide the total number of participants (sample size). Sample size information is typically found in the Methods or Results section, not in the Procedure subsection.",
+      "warning": "Sample size not provided in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "paper-and-pencil"
+        ]
+      },
+      "evidence_source": "Text explicitly states: 'participants provided written informed consent and completed an anonymous paper-and-pencil version of the survey in a quiet location set up for the purposes of the project.'",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Procedure section does not contain demographic information about racial/ethnic composition of participants.",
+      "warning": "Demographic data not provided in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Procedure section does not provide age statistics. Age information is typically found in the Results or Participants section.",
+      "warning": "Age data not provided in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Procedure section does not contain information about participants' educational attainment.",
+      "warning": "Educational attainment data not provided in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Procedure section describes data collection methods but does not report BMI statistics.",
+      "warning": "BMI data not provided in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "community"
+        ]
+      },
+      "evidence_source": "Text states: 'Recruitment was conducted on an opportunistic basis in several public locations in Greater London' - public locations indicate community-based recruitment rather than college or school settings.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Procedure section describes the general survey administration process but does not specify which instrument (BAS or BAS-2) was used to assess body appreciation.",
+      "warning": "Specific assessment instrument not identified in this section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Procedure section does not specify whether BMI was measured or self-reported.",
+      "warning": "BMI assessment method not provided in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Procedure section describes methodology but does not report correlation coefficients.",
+      "warning": "Correlation data not provided in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The Procedure section does not explicitly identify multiple studies. The text describes a single study's procedure without labeling it as 'Study 1', 'Study 2', etc.",
+      "warning": "Cannot determine number of studies from this Procedure section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The Procedure section does not indicate whether this is from a journal article or dissertation.",
+      "warning": "Publication type not identifiable from this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Procedure section describes the methodology for a study conducted in Greater London, United Kingdom, where participants were recruited opportunistically from public locations and completed a paper-and-pencil survey. The study obtained ethics approval, used semi-randomized scale presentation with demographics last, and participants provided written informed consent without remuneration.",
+      "evidence_source": "Entire Procedure section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

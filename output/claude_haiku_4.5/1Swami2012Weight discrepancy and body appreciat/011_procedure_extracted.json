@@ -1,0 +1,102 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Zimbabwe",
+          "London"
+        ]
+      },
+      "evidence_source": "The text states: 'Two researchers initially recruited participants from Harare using an opportunistic method of sampling' and 'the same two researchers recruited an age-matched sample of Zimbabwean women in London using a snowball-sampling technique.' Harare is in Zimbabwe, and London is in the United Kingdom. The study appears to have two sample locations.",
+      "warning": "The section does not explicitly state the number of studies or how samples are divided. The text mentions two recruitment locations (Harare, Zimbabwe and London) with the same two researchers recruiting 'an age-matched sample of Zimbabwean women in London.' This suggests two sample subsets within a single study design, but the exact study structure is not explicitly labeled."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide specific sample sizes. It mentions 'participants were approached' and 'an age-matched sample of Zimbabwean women in London' but no numerical values are given.",
+      "warning": "No sample size information is provided in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "paper-and-pencil"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'All participants provided informed consent and completed paper-and-pencil surveys in which the order of presentation of the scales was counterbalanced.'",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about the racial or ethnic composition of participants.",
+      "warning": "No demographic information regarding race/ethnicity is provided in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'an age-matched sample of Zimbabwean women in London' but does not provide specific mean age values.",
+      "warning": "While age-matching is mentioned, no actual age data is provided."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about educational attainment of participants.",
+      "warning": "No educational background information is provided in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide BMI data for participants.",
+      "warning": "No BMI information is provided in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "community"
+        ]
+      },
+      "evidence_source": "The text states: 'Two researchers initially recruited participants from Harare using an opportunistic method of sampling. Potential participants were approached in public spaces' and 'the same two researchers recruited an age-matched sample of Zimbabwean women in London using a snowball-sampling technique.' Both recruitment methods (opportunistic sampling in public spaces and snowball sampling) indicate community-based recruitment rather than college or school settings.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'the order of presentation of the scales was counterbalanced' but does not specify which body appreciation assessment instrument (BAS or BAS-2) was used.",
+      "warning": "While scales are mentioned, the specific body appreciation assessment tool is not identified in this section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether BMI was self-reported or measured.",
+      "warning": "No information about BMI assessment method is provided in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a procedural description and does not report any correlation coefficients.",
+      "warning": "This is a methods/procedure section and does not contain results or correlation data."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with two sample recruitment locations (Harare, Zimbabwe and London). The same two researchers conducted recruitment in both locations using different sampling methods (opportunistic in Harare, snowball sampling in London), but this appears to be one study with two sample subsets rather than two separate studies.",
+      "warning": "The text describes two recruitment locations but does not explicitly label them as separate studies. Based on the narrative flow and the statement 'Once data collection in Zimbabwe was complete, the same two researchers recruited an age-matched sample,' this appears to be a single study with two sample subsets."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text is a procedural section and does not indicate whether this is from a journal article or dissertation.",
+      "warning": "Publication type cannot be determined from this procedural section alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the procedure for a study on women's health conducted in two locations: Harare, Zimbabwe and London. Participants were recruited using opportunistic sampling in Harare and snowball sampling in London, with age-matched samples of Zimbabwean women. All participants completed paper-and-pencil surveys with counterbalanced scale presentation and provided informed consent.",
+      "evidence_source": "Entire Procedure section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

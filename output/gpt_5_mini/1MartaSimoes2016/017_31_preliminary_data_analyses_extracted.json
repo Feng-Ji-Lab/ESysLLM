@@ -1,0 +1,189 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section reports preliminary data analyses assessing normality (skewness and kurtosis) and multicollinearity (VIF). It states skewness values ranged from \u22120.16 (BAS-2) to 1.84 (Age), kurtosis values ranged between \u22120.40 (BAS-2) and 4.52 (Age), and VIF values ranged between 0.05 (Age) and 1.16 (OAS). The section does not mention study numbering, sample size, demographics, BMI values, assessment methods, or correlations between body appreciation and BMI.",
+      "evidence_source": "First of all, the suitability of the data for further statistical analyses was tested. The normality of data distribution was confirmed through the analysis of coefficients of Skewness and Kurtosis. Values of Skewness ranged from \u22120.16 (BAS-2) to 1.84 (Age), and Kurtosis values between \u22120.40 (BAS-2) and 4.52 (Age), which do not suggest the presence of serious violation of normal distribution, according to Kline (2005). Furthermore, Variance Inflation Factor (VIF) values ranged between 0.05 (Age) and 1.16 (OAS), which indicates a low probability of multicollinearity issues (Kline, 2005).",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country stated in the provided section text or in the provided figure (Fig. 1).",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size or participant count is reported in the provided section text or in the provided figure (Fig. 1).",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey/data-collection method (paper-and-pencil or online) is stated in the provided section text or figure.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participants' racial/ethnic composition is provided in the section text or figure.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Age is a variable referenced (skewness/kurtosis reported) but no mean age value is provided in the section text or figure.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participants' education level or indication that participants were undergraduates/college is provided in the section text or figure.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "BMI is used as a variable in the figure and text (defined as body mass index) but no mean BMI value is reported in the provided section text or figure.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information on recruitment source (community, college, primary/secondary/high school) is provided in the section text or figure.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Figure caption: \"BAS-2 = Body Appreciation Scale - 2.\"",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Figure caption defines BMI as \"body mass index\" but does not state whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided figure shows a standardized path coefficient from BMI to BAS-2 of \u2212.27 (labelled as a path coefficient in Fig. 1), but no Pearson correlation coefficient (r) between Body Appreciation (BAS-2) and BMI is reported in the provided section text or figure.",
+      "warning": "Reported value in figure is a standardized path/regression coefficient (\u2212.27), not a Pearson r; therefore Pearson correlation is not available."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section presents preliminary data analyses (normality, VIF) and a single path model (Fig. 1) consistent with a single study's analyses; no multiple studies are described in the provided text or figure.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No information about the publication type (journal article or dissertation) is provided in the section text or figure.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section reports preliminary data analyses: tests of normality using skewness and kurtosis (skewness range: \u22120.16 for BAS-2 to 1.84 for Age; kurtosis range: \u22120.40 for BAS-2 to 4.52 for Age) indicating no serious violation of normality, and VIF values (0.05 for Age to 1.16 for OAS) indicating low multicollinearity. The accompanying figure (Fig. 1) shows a final path model with standardized path coefficients among Age, OAS, BMI, SCS_SC, and BAS-2. The section does not label any study as 'Study 1' nor describe multiple studies.",
+      "evidence_source": "Section text: \"Values of Skewness ranged from \u22120.16 (BAS-2) to 1.84 (Age), and Kurtosis values between \u22120.40 (BAS-2) and 4.52 (Age)... VIF values ranged between 0.05 (Age) and 1.16 (OAS)\"; Figure caption: \"Fig. 1. Final path model. Standardized path coefficients among variables are presented.\"",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Fig. 1. Final path model. Standardized path coefficients among variables are presented. Note. BMI = body mass index; OAS = Other as Shamer Scale; SCS_SC = Self-compassion positive composite of the Self-Compassion Scale; BAS-2 = Body Appreciation Scale - 2. *p < 0.050, ***p < 0.001.",
+      "evidence_source": "Caption text as shown under the provided figure (Fig. 1).",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1MartaSimoes2016/figures/1MartaSimoes2016_p002_fig00.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_0"
+  }
+]

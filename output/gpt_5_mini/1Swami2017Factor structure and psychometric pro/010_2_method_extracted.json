@@ -1,0 +1,125 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Provided text contains only the section heading '2. Method' and no information about country or study location.",
+      "warning": "Insufficient information to extract country."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Provided text contains only the section heading '2. Method' and no sample size or participant information.",
+      "warning": "Insufficient information to extract sample size.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Provided text contains only the section heading '2. Method' and no description of survey or data collection method.",
+      "warning": "Insufficient information to extract survey method."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Provided text contains only the section heading '2. Method' and no demographic breakdowns.",
+      "warning": "Insufficient information to extract percentage of white participants.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Provided text contains only the section heading '2. Method' and no age information.",
+      "warning": "Insufficient information to extract mean age.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Provided text contains only the section heading '2. Method' and no education information.",
+      "warning": "Insufficient information to extract education percentage.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Provided text contains only the section heading '2. Method' and no BMI information.",
+      "warning": "Insufficient information to extract mean BMI.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Provided text contains only the section heading '2. Method' and no information on recruitment source (e.g., community, college).",
+      "warning": "Insufficient information to extract source of sample."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Provided text contains only the section heading '2. Method' and no details on instruments (e.g., BAS, BAS-2).",
+      "warning": "Insufficient information to extract assessment of body appreciation."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Provided text contains only the section heading '2. Method' and no details on how BMI was assessed (self-reported or measured).",
+      "warning": "Insufficient information to extract assessment of BMI."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Provided text contains only the section heading '2. Method' and no statistical results or correlation coefficients.",
+      "warning": "Insufficient information to extract correlation between body appreciation and BMI.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "Provided text contains only the section heading '2. Method' and does not indicate the number of studies.",
+      "warning": "Insufficient information to determine number of studies."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "Provided text contains only the section heading '2. Method' and no publication metadata.",
+      "warning": "Insufficient information to determine publication type."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "The provided content contains only the section heading '2. Method' with no additional method details, participant information, instruments, or results. No figures or tables were attached.",
+      "evidence_source": "Provided text: '2. Method'. No further content provided in this section.",
+      "warning": "Insufficient information in this section to extract any of the requested fields."
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the study was conducted. While the text mentions 'Brazilian Portuguese translation' and 'Brazilian adolescent population', this indicates the instrument was validated in Brazil, but does not explicitly state that the current study was conducted in Brazil.",
+      "warning": "Country location not explicitly stated in this section. The mention of 'Brazilian Portuguese' and 'Brazilian adolescent' refers to validation populations of instruments, not necessarily the study location."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes measurement instruments and procedures. No sample size information is provided in this text.",
+      "warning": "Sample size not reported in this Measures section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes the instruments used but does not specify whether data collection was conducted via paper-and-pencil or online methods.",
+      "warning": "Survey method not specified in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section focuses on measurement instruments and does not report demographic information about participant race/ethnicity.",
+      "warning": "Racial/ethnic composition not reported in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While the text mentions 'adolescent population' and 'adolescents', no specific mean age is provided in this Measures section.",
+      "warning": "Mean age not explicitly stated in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes measurement instruments for an adolescent population. No information about college education is provided.",
+      "warning": "Education level not applicable or reported for adolescent sample."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes how BMI was computed from self-reported weight and height, and mentions BMI classification categories (underweight, normoweight, overweight, obese), but does not report the mean BMI value.",
+      "warning": "Mean BMI value not reported in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes measurement instruments and procedures. No information about where or how participants were recruited is provided.",
+      "warning": "Sample source/recruitment location not specified in this Measures section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Participants completed a Brazilian Portuguese translation of the BAS-2 (Tylka & Wood-Barcalow, 2015a). The instrument comprises 10 items rated on a 5 point Likert-type scale (1 = Never, 5 = Always).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Their BMI (kg/m2) was computed using their self-reported weight and height. Participants reported their gender, age, height, and weight.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes the measurement instruments used in the study but does not report any correlation coefficients between body appreciation and BMI.",
+      "warning": "Correlation values not provided in this Measures section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section is a Measures section describing instruments used. It does not explicitly state the number of studies in the paper.",
+      "warning": "Number of studies cannot be determined from this Measures section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "This section does not contain information about the publication type (journal article vs. dissertation).",
+      "warning": "Publication type not specified in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Measures section describes the instruments used to assess body appreciation (BAS-2), social physique anxiety, life satisfaction, and demographics in an adolescent sample. BMI was computed from self-reported height and weight, and participants were classified into BMI categories using Brazilian-specific cut-off values. The section does not provide sample size, mean values, or correlation results.",
+      "evidence_source": "Entire Measures section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

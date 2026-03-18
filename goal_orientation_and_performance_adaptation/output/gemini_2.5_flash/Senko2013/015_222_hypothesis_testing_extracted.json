@@ -1,0 +1,371 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text is a section from a research paper, which is typically a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Given that the text is a section from a journal article (PubType = 1), it is inferred to be peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Prove\"]}",
+      "evidence_source": "The text mentions 'PAP goals' (Performance-Approach goals) which align with 'Prove performance goal orientation'. 'MAP goals' (Mastery-Approach) and 'WAV goals' (Work-Avoidance) are not performance goal orientations as defined.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1, 1, 1, 1, 1]}",
+      "evidence_source": "The study examines 'deep learning strategy', 'surface learning strategy', 'interest-based studying approach', 'vigilant approach', 'syllabus-boundness', and 'study flexibility'. These are all described in a way that implies self-report (e.g., 'students pursuing MAP goals reported being flexible'). Therefore, all are coded as self-report (1).",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [0, 0, 0, 0, 0, 0]}",
+      "evidence_source": "All performance adaptation measures ('deep learning strategy', 'surface learning strategy', 'interest-based studying approach', 'vigilant approach', 'syllabus-boundness', 'study flexibility') are self-reported, which are subjective ratings (0).",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1, 1, 1, 1, 1]}",
+      "evidence_source": "All performance adaptation measures ('deep learning strategy', 'surface learning strategy', 'interest-based studying approach', 'vigilant approach', 'syllabus-boundness', 'study flexibility') are self-reported (1).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text mentions 'MAP and PAP goals' but does not specify the author of the goal orientation scale (e.g., VandeWalle). Therefore, it is coded as 'Other' (1).",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information (mean, range, SD, median) is reported in this section for 'Study X'.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No mean age or information to impute age is provided for 'Study X'.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the sex composition of the sample is provided for 'Study X'.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No percentage of men in the sample is provided for 'Study X'.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the country of data collection is provided for 'Study X'.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about whether the sample is student or other is provided for 'Study X'.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "The text mentions 'medium sample size' but does not provide a specific N for the analyses for 'Study X'.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "The text provides standardized regression coefficients (\u03b2) and indirect effects (B), but not Pearson r correlation coefficients between Performance Goal Orientation and performance adaptation for 'Study X'.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No Pearson r correlation coefficients were extracted, so no correlation information is available for 'Study X'.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 2,
+      "evidence_source": "The text explicitly states 'for both studies' and 'In this and the next study', indicating two distinct studies.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the hypothesis testing methodology and results for a study, using multiple regression. It describes the effects of Mastery-Approach (MAP), Performance-Approach (PAP), and Work-Avoidance (WAV) goals on various learning strategies (deep, surface, interest-based, vigilant, syllabus-boundness) and study flexibility. The text mentions that the analyses were conducted for 'both studies' but presents results without explicitly labeling them as Study 1 or Study 2.",
+      "evidence_source": "Summary of the content of section 2.2.2. Hypothesis testing, including subsections 2.2.2.1 and 2.2.2.2.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about publication type is provided in the text.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about financial support is provided in the text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about peer review status is provided in the text.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study 1\": [\"Prove\", \"Prove\", \"Prove\", \"Prove\", \"Prove\"]}",
+      "evidence_source": "The text discusses 'PAP goals' (Performance-Approach Goals) in relation to various learning strategies and study flexibility in 'Study 1'. Performance-Approach Goals align with the 'Prove' category of performance goal orientation. The five 'Prove' entries correspond to the relationships between PAP goals and: surface learning, vigilant approach, interest-based studying, syllabus-boundness, and study flexibility.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study 1\": [1, 1, 1, 1, 1]}",
+      "evidence_source": "The adaptation outcomes discussed are 'learning strategies' (deep learning, surface learning, interest-based studying, vigilant approach, syllabus-boundness) and 'study flexibility'. These are typically assessed via self-report from students. Therefore, the method is self-report (1) for each of the five effects related to PAP goals.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study 1\": [0, 0, 0, 0, 0]}",
+      "evidence_source": "The adaptation outcomes (learning strategies and study flexibility) are self-reported, which are subjective ratings. Therefore, the method is subjective (0) for each of the five effects related to PAP goals.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study 1\": [1, 1, 1, 1, 1]}",
+      "evidence_source": "The adaptation outcomes (learning strategies and study flexibility) are self-reported. Therefore, the specific assessment method is self-report (1) for each of the five effects related to PAP goals.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify the measurement instrument used for goal orientation.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in the text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age is provided in the text.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the sex composition of the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No percentage of men in the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the country of the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study 1\": [1]}",
+      "evidence_source": "The text repeatedly refers to 'students' (e.g., 'flexibility in students' studying'). This indicates a student sample for Study 1.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'medium sample size' but does not provide a specific N for Study 1.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Table 2 provides standardized regression coefficients (\u03b2), not Pearson correlation coefficients (r), between goal orientations and study strategies/flexibility. The schema specifically requests Pearson r values.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson correlation coefficients were extracted as the table provides beta coefficients.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 2,
+      "evidence_source": "The text states, 'We chose multiple regression over structural equation modeling for both studies (Kline, 2005)' and 'In this and the next study, all indirect effects (B) are bootstrap estimates'. The caption for Table 2 also explicitly mentions '(Study 1)'. This indicates there are at least two studies.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the hypothesis testing for Study 1, focusing on the effects of MAP, PAP, and WAV goals on learning strategies and study flexibility. It describes how MAP goals predicted deep learning and interest-based studying, while PAP goals predicted surface learning and a vigilant approach, which in turn indirectly predicted study flexibility. WAV goals were linked to low deep and surface learning and syllabus-boundness. The analysis used multiple regression, and the results are presented in Table 2.",
+      "evidence_source": "The entire text content of the section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2 Regression analyses of achievement goal relationships with study strategies (Study 1).",
+      "evidence_source": "Caption of Table 2.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Senko2013\\tables\\Senko2013_p003_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section discusses 'Hypothesis testing', 'multiple regression', 'structural equation modeling', 'bootstrap estimates', 'confidence intervals', and cites academic works, which are characteristic of a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support, grants, or funding agencies in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from the publication type (journal article), which typically undergoes peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study 1\": [\"Prove\"]}",
+      "evidence_source": "The text mentions 'PAP goals' (Performance-Approach goals) in relation to study flexibility. Performance-Approach goal orientation maps to 'Prove' performance goal orientation. This is for Study 1 as indicated by 'Table 3 Hierarchical regression analysis of goal and study strategy relationships with study flexibility (Study 1).'",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study 1\": [1]}",
+      "evidence_source": "The outcome variable 'study flexibility' is described in the context of 'students pursuing MAP goals reported being flexible in their study approach' and 'students who were vigilant in their studying approach also reported being flexible in how they study', indicating a self-report measure. This is for Study 1.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study 1\": [0]}",
+      "evidence_source": "The outcome 'study flexibility' is based on self-report, which is a subjective rating. This is for Study 1.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study 1\": [1]}",
+      "evidence_source": "The outcome 'study flexibility' is based on self-report. This is for Study 1.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study 1\": [1]}",
+      "evidence_source": "No specific goal orientation scale (e.g., VandeWalle) is mentioned in the provided text. This is for Study 1.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study 1\": [\"\"]}",
+      "evidence_source": "No age information is reported in the provided text for Study 1.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study 1\": [\"None\"]}",
+      "evidence_source": "No age information is reported in the provided text for Study 1.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study 1\": [\"None\"]}",
+      "evidence_source": "No sex composition information is reported in the provided text for Study 1.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study 1\": [\"None\"]}",
+      "evidence_source": "No percentage of men is reported in the provided text for Study 1.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study 1\": [\"None\"]}",
+      "evidence_source": "No country information is reported in the provided text for Study 1.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study 1\": [1]}",
+      "evidence_source": "The text explicitly refers to 'students' ('flexibility in students' studying'). This is for Study 1.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study 1\": [\"None\"]}",
+      "evidence_source": "The text mentions 'medium sample size' but does not provide a specific N. Table 3, a regression analysis table, does not report the sample size (N) for Study 1.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study 1\": [\"None\"]}",
+      "evidence_source": "The schema requests Pearson r correlation coefficients. The provided text and Table 3 only report standardized regression coefficients (\u03b2) and indirect effects (B), not Pearson r values for the relationship between PGO and performance adaptation for Study 1.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study 1\": [\"None\"]}",
+      "evidence_source": "No Pearson r correlations were extracted, so no correlation information is available for Study 1.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 2,
+      "evidence_source": "The text states 'for both studies' and 'In this and the next study', indicating at least two studies. Table 3 is explicitly for 'Study 1'.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the hypothesis testing for two studies, focusing on the effects of MAP, PAP, and WAV goals on learning strategies (surface, deep, interest-based, vigilant, syllabus-boundness) and study flexibility. It describes the use of multiple regression and bootstrap estimates for indirect effects. Table 3 presents the hierarchical regression analysis results for Study 1, specifically examining goal and study strategy relationships with study flexibility.",
+      "evidence_source": "The entire text content of the section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 3 Hierarchical regression analysis of goal and study strategy relationships with study flexibility (Study 1).",
+      "evidence_source": "Caption of Table 3.",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Senko2013\\tables\\Senko2013_p004_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_1"
+  }
+]

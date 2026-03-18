@@ -1,0 +1,169 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Romania"
+        ]
+      },
+      "evidence_source": "Text states: 'The test\u2013retest sample consisted of 57 female and 52 male university students from the same university in the west of Romania.'",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          109
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            57
+          ]
+        },
+        "male": {
+          "Study X": [
+            52
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            109
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'The test\u2013retest sample consisted of 57 female and 52 male university students.' Total = 57 + 52 = 109.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether the survey was conducted via paper-and-pencil or online format.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text does not provide information about the percentage of white participants. It only states 'All participants were of Romanian ethnicity.'",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          25.02
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            25.02
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'ranged in age from 18 to 57 years (M = 25.02, SD = 8.91).' The mean age is 25.02 years.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'The test\u2013retest sample consisted of 57 female and 52 male university students.' Since all participants are university students, 100% have college or higher education experience.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text does not provide information about mean BMI of participants.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Text states: 'The test\u2013retest sample consisted of 57 female and 52 male university students from the same university in the west of Romania.' University students indicate a college source.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Text states: 'these participants only completed the BAS-2 at two time-points three weeks apart.'",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not mention how BMI was assessed (self-reported or measured).",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text does not provide correlation coefficients between body appreciation and BMI.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "This section describes a single test\u2013retest sample from one study. The text refers to 'The test\u2013retest sample' as a distinct component, but it appears to be part of a larger study design. Based on the section title '2.1.2. Test\u2013retest sample', this is a subsample within a single study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state whether this is a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes a test\u2013retest sample consisting of 109 university students (57 female, 52 male) from Romania, with a mean age of 25.02 years. All participants were of Romanian ethnicity and completed the BAS-2 assessment at two time-points three weeks apart. No additional demographic information or BMI data were collected for this subsample.",
+      "evidence_source": "Section 2.1.2 describing the test\u2013retest sample characteristics and assessment procedures.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,392 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "US",
+          "non-US"
+        ]
+      },
+      "evidence_source": "\"Participants in the US sample were significantly older, t(9,665) = 5.36, p\\.001, d = .11, and had higher BMIs, t(9,665) = 8.24, p\\.001, d = .17, than participants in the non-US sample.\"",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          9667
+        ]
+      },
+      "evidence_source": "The reported t statistics use df = 9,665 (reported as t(9,665)). For independent-samples t-tests df = N_total - 2, so N_total = df + 2 = 9,665 + 2 = 9,667. Source sentence: \"Participants in the US sample were significantly older, t(9,665) = 5.36, p\\.001... than participants in the non-US sample.\" (computation: 9665 + 2 = 9667).",
+      "warning": "Computed total N from reported degrees of freedom (df); group-specific Ns not reported.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            9667
+          ]
+        }
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information on data collection method (e.g., 'online' or 'paper-and-pencil') is provided in the text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participant racial/ethnic composition or percentage white is provided in the text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Although age differences between US and non-US samples are reported (e.g., \"Participants in the US sample were significantly older, t(9,665) = 5.36...\"), no mean ages or age statistics are provided.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states \"the proportion with higher educational levels was higher in the non-US than in the US sample, v2 (4) = 67.01, p\\.001,\" but does not report percentages.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text reports group differences in BMI (e.g., \"had higher BMIs, t(9,665) = 8.24...\"), but does not provide mean BMI values.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section refers to US and non-US samples but does not specify recruitment source (e.g., community, college, primary/secondary/high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Body appreciation is discussed (e.g., 'body appreciation showed a strong and positive association with subjective happiness'), but no instrument name (BAS or BAS-2) is provided in the text.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "BMI is reported and compared between samples (e.g., 'had higher BMIs'), but the method of BMI assessment (self-reported vs. measured) is not stated.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes structural/path effects (e.g., 'a higher BMI had a direct negative effect on body appreciation') but does not report Pearson correlation coefficients between body appreciation and BMI.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section reports results comparing US and non-US samples within the present study (e.g., 'Descriptive statistics for, and intercorrelations between, all variables included in the present study are reported...'; multi-group analyses compare the two samples), with no indication of multiple separate studies labeled 'Study 1', 'Study 2', etc.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided section does not state whether this document is a journal article or a dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Results section reports comparisons between US and non-US samples (descriptive statistics, group differences, and a structural model). It states that US participants were older and had higher BMIs, that educational level proportions differed, and that the hypothesized model fit acceptably with similar path coefficients across samples; no instrument names, exact means, percentages, or correlations are reported. The text does not label multiple studies (only multiple samples within one study).",
+      "evidence_source": "\"Descriptive statistics for, and intercorrelations between, all variables included in the present study are reported...\" and \"Participants in the US sample were significantly older... and had higher BMIs... than participants in the non-US sample.\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "US",
+          "non-US"
+        ]
+      },
+      "evidence_source": "\"Participants in the US sample were significantly older, t(9,665) = 5.36, p<.001... than participants in the non-US sample.\" (Results section)",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"Participants in the US sample were significantly older, t(9,665) = 5.36, p<.001...\" (Degrees of freedom reported as t(9,665) but total N not explicitly stated in this section.)",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about data collection method (e.g., paper-and-pencil or online) is reported in the provided section or accompanying table/figure.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participant race/ethnicity or percent white is reported in the provided section or accompanying table/figure.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"Participants in the US sample were significantly older, t(9,665) = 5.36, p<.001...\" (age difference reported but no mean age values provided in this section or Table 2).",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"the proportion with higher educational levels was higher in the non-US than in the US sample, v2 (4) = 67.01, p<.001.\" (No numeric percentage reported.)",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"...and had higher BMIs, t(9,665) = 8.24, p<.001...\" (BMI differences reported but no mean BMI values provided in this section or Table 2).",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section differentiates US vs. non-US samples but does not state recruitment source (e.g., community, college, primary/secondary/high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Figure caption notes 'BA body appreciation' but no instrument name (e.g., BAS or BAS-2) is provided in the supplied section or figure/table.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "BMI is reported and used in analyses, but the section does not state whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.22,
+          -0.17
+        ]
+      },
+      "evidence_source": "Table 2 (intercorrelations): correlation between Body mass index (3) and Body appreciation (4) reported as \"\u2212.22***/\u2212.17***\" with note \"Correlations pertain to the US vs. non-US samples (left vs. right entries)\" (left = US, right = non-US).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            -0.22,
+            -0.17
+          ]
+        }
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "\"...all variable included in the present study are reported in Table 2.\" (Results refer to a single 'present study' with US vs. non-US samples/multi-group analyses.)",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type (e.g., 'journal article' or 'dissertation') is specified in the provided section or assets.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Results section reports descriptive statistics and intercorrelations (Table 2) comparing US and non-US samples. The US sample was significantly older and had higher BMI, whereas educational level proportion was higher in the non-US sample; multigroup SEM showed acceptable-to-good fit with largely identical path coefficients across the two samples and similar standardized effects. The correlation between body appreciation and BMI was \u2212.22 in the US sample and \u2212.17 in the non-US sample (Table 2).",
+      "evidence_source": "\"Descriptive statistics for, and intercorrelations between, all variables included in the present study are reported in Table 2.\" \"Participants in the US sample were significantly older... and had higher BMIs...\" \"This modified model... had a very good fit on the data of the US sample... and also in the multi-group analysis... Path coefficients were nearly identical across the two samples.\"",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Fig. 2 The final constrained multi-group model, showing standardized path coefficients (US sample/non-US sample). BA body appreciation, BD body dissatisfaction, SH subjective happiness. All coefficients were significant at p < .001 with exception of the path coefficients for BD to SH in both samples (ps = .295). Body appreciation and body dissatisfaction correlated at \u2212.50 (ps < .001) in the two samples\n\nTable 2 Intercorrelations between, and descriptive statistics for, all variable included in the present study",
+      "evidence_source": "Captured from provided figure/table image (Fig. 2 caption and Table 2 title present in the asset).",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2015Associations Between Women\u2019s Body Ima/tables/1Swami2015Associations Between Women\u2019s Body Ima_p007_table00.png",
+    "_metadata_caption": "Fig. 2 The final constrained multi-group model, showing standardized path coefficients (US sample/non-US sample). BA body appreciation, BD body dissatisfaction, SH subjective happiness. All coefficients were significant at p\\.001 with exception of the path coefficients for BD to SH in both samples (ps = .295). Body appreciation and body dissatisfaction correlated at -.50 (ps\\.001) in the two samples",
+    "_asset_source": "[table] Fig. 2 The final constrained multi-group model, showing standardized path coefficients (US sample/non-US sample). BA body appreciation, BD body dissatisfaction, SH subjective happiness. All coefficients were significant at p\\.001 with exception of the path coefficients for BD to SH in both samples (ps = .295). Body appreciation and body dissatisfaction correlated at -.50 (ps\\.001) in the two samples",
+    "_pass_type": "asset_0"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "US",
+          "non-US"
+        ]
+      },
+      "evidence_source": "Correlations pertain to the US vs. non-US samples (left vs. right entries). Participants in the US sample were significantly older, t(9,665) = 5.36, p < .001, d = .11, and had higher BMIs, t(9,665) = 8.24, p < .001, d = .17, than participants in the non-US sample.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No total sample size (N) is reported in the provided section text or visible portion of Table 2 image.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section does not state whether data were collected via 'paper-and-pencil' or 'online'.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participant racial composition (percent white) is provided in the section or visible figure/table.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text notes that 'Participants in the US sample were significantly older...' but does not report mean ages.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section states 'the proportion with higher educational levels was higher in the non-US than in the US sample, v2 (4) = 67.01, p < .001' but does not provide numeric percentages.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text reports that the US sample 'had higher BMIs, t(9,665) = 8.24, p < .001, d = .17' but does not give mean BMI values in the provided section or visible table fragment.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section differentiates 'US' and 'non-US' samples but does not specify recruitment source such as 'community', 'college', or 'primary/secondary/ high school'.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Figure caption identifies 'BA' as 'body appreciation' but the instrument (e.g., BAS or BAS-2) is not specified in the provided text or image.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section discusses BMI values and effects but does not state whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Although Table 2 is titled 'Intercorrelations between, and descriptive statistics for, all variable included in the present study', the numeric correlation between body appreciation and BMI is not visible in the provided text or image. Figure 2 shows standardized path coefficients from BMI to BA (-.24 / -.21) but not a Pearson r.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section reports results for a single study with two subsamples described as 'US' and 'non-US' samples; there is no mention of multiple distinct studies (e.g., 'Study 1', 'Study 2').",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type (journal article or dissertation) is stated in the provided section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section reports results comparing US and non-US samples from a single study: US participants were older and had higher BMIs, while educational level proportions differed between samples. Model fit for the hypothesised (and modified) structural model was acceptable to very good across samples, standardized path coefficients were largely significant, and BMI had both a negative indirect effect on subjective happiness via body appreciation and a small positive direct effect, yielding a small negative total effect.",
+      "evidence_source": "\"Participants in the US sample were significantly older, t(9,665) = 5.36, p < .001, d = .11, and had higher BMIs, t(9,665) = 8.24, p < .001, d = .17, than participants in the non-US sample.\"; \"Fit of the hypothesised model (Fig. 1) was acceptable in the US sample, \u03c72 = 291.41, df = 7, p < .001, CFI = .969, TLI = .939, RMSEA = .067 [.061, .074].\"; \"This indirect effect had standardized coefficients of -.13 and -.11 (ps < .001), respectively, in the two samples. ... the total effect of BMI on subjective happiness was negative and had a size of only -.04 in both samples (ps < .001).\"",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Fig. 2 The final constrained multi-group model, showing standardized path coefficients (US sample/non-US sample). BA body appreciation, BD body dissatisfaction, SH subjective happiness. All coefficients were significant at p < .001 with exception of the path coefficients for BD to SH in both samples (ps = .295). Body appreciation and body dissatisfaction correlated at \u2212.50 (ps < .001) in the two samples\n\nTable 2 Intercorrelations between, and descriptive statistics for, all variable included in the present study",
+      "evidence_source": "Text and image provided with the figure caption (Fig. 2) and table header (Table 2) visible in the attached image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2015Associations Between Women\u2019s Body Ima/figures/1Swami2015Associations Between Women\u2019s Body Ima_p007_fig00.png",
+    "_metadata_caption": "Table 2 Intercorrelations between, and descriptive statistics for, all variable included in the present study",
+    "_asset_source": "[image] Table 2 Intercorrelations between, and descriptive statistics for, all variable included in the present study",
+    "_pass_type": "asset_1"
+  }
+]

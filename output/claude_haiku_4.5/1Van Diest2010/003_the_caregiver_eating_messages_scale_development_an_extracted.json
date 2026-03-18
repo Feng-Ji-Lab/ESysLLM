@@ -1,0 +1,125 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text only contains the title and author affiliation (Ohio State University, Marion, OH, United States). The country can be inferred as United States from the affiliation, but the actual study location/country is not explicitly stated in this header section.",
+      "warning": "Country not explicitly stated in the provided text. Only author affiliation location is available."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No sample size information is provided in this header section.",
+      "warning": "Sample size not provided in the text."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is provided in this header section.",
+      "warning": "Survey method not provided in the text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No demographic information about race/ethnicity is provided in this header section.",
+      "warning": "Percent of white participants not provided in the text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No age information is provided in this header section.",
+      "warning": "Mean age of participants not provided in the text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No education level information is provided in this header section.",
+      "warning": "Percentage of college or higher education not provided in the text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No BMI information is provided in this header section.",
+      "warning": "Mean BMI of participants not provided in the text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample source (community, college, or primary/secondary/high school) is provided in this header section.",
+      "warning": "Source of sample not provided in the text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about body appreciation assessment instruments (BAS or BAS-2) is provided in this header section.",
+      "warning": "Assessment of body appreciation not provided in the text."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about BMI assessment method (self-reported or measured) is provided in this header section.",
+      "warning": "Assessment of BMI not provided in the text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No correlation data between body appreciation and BMI is provided in this header section.",
+      "warning": "Correlation between body appreciation and BMI not provided in the text."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is only a title and author affiliation section. No information about the number of studies is available.",
+      "warning": "Number of studies cannot be determined from this header section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly state whether this is a journal article or dissertation. Only the title and author affiliation are provided.",
+      "warning": "Publication type not explicitly stated in the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This is the title and author affiliation section of a paper titled 'The Caregiver Eating Messages Scale: Development and psychometric investigation' by Ashley M. Kroon Van Diest and Tracy L. Tylka from Ohio State University. No study-specific data, sample characteristics, or methodological details are provided in this header section.",
+      "evidence_source": "Title and author affiliation line provided in the text.",
+      "warning": "This is only a header section; full study details would be found in the methods and results sections."
+    },
+    "_pass_type": "text_only"
+  }
+]

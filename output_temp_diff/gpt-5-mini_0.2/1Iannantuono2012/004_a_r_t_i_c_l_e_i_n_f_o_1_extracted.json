@@ -1,0 +1,137 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "Keywords line contains the phrase 'College women' (\"Keywords: ... College women\"). Per the extraction rule, this indicates participants are college students; therefore inferred percentage with college or higher = 100%.",
+      "warning": "Inference made from Keywords; original text does not explicitly state a percentage.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Keywords line contains the phrase 'College women' (\"Keywords: ... College women\"), indicating the sample source is college.",
+      "warning": "Inference made from Keywords; no explicit recruitment/source description provided."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No study count or labels (e.g., 'Study 1') are present in the provided section.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "journal articles",
+      "evidence_source": "Header shows 'a r t i c l e i n f o' and an Article history with received/revised/accepted dates (\"Article history: Received 16 September 2011 ... Accepted 12 January 2012\"), indicating a journal article.",
+      "warning": "Inference from article metadata; full document not provided to verify."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section contains article metadata (submission/revision/acceptance dates) and the list of keywords for the paper. Keywords include 'Body appreciation' and 'College women', indicating the study topic and that the sample likely consisted of college women; no study labels (e.g., 'Study 1') or sample sizes are provided in this section.",
+      "evidence_source": "Full provided text: \"a r t i c l e i n f o\\nArticle history: Received 16 September 2011 Received in revised form 10 January 2012 Accepted 12 January 2012\\nKeywords: Body appreciation Intuitive eating Caregiver eating messages Adult attachment Perfectionism Depressive symptomatology College women\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

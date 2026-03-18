@@ -1,0 +1,133 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or region of data collection is stated in the provided text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          257
+        ]
+      },
+      "evidence_source": "\"Thus, the regression analyses were based on 257 cases.\"",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The methods of data collection (e.g., online vs. paper-and-pencil) are not specified; only participant sources (MTurk and college) are mentioned.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participant race/ethnicity or percent white is provided in the supplied text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text notes age was associated with some variables but does not report mean age.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participants' education levels or percentage with college or higher is provided.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "BMI is referenced as a variable (and controlled for) but no mean BMI value is reported in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "\"there were no significant mean differences between the MTurk participants and the college participants on ...; thus, these data were combined for the analyses.\"",
+      "warning": "MTurk participants are mentioned but 'MTurk' is not an allowed enum value; only 'college' is explicitly listed among allowed source categories."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text refers to 'body appreciation' but does not name the instrument (e.g., BAS or BAS-2) used to assess it.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text references BMI as a variable but does not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states that 'BMI was associated with body appreciation' but does not provide a Pearson r or other correlation coefficient.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The Results section describes a single combined sample and a single set of analyses (e.g., \"Thus, the regression analyses were based on 257 cases; ... these data were combined for the analyses.\"), indicating one study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type (e.g., journal article or dissertation) is specified in the provided text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Results section reports analyses on a combined sample (MTurk and college participants) with regression analyses based on 257 cases. Self-compassion positively predicted body appreciation and moderated the negative relationships of body comparison and appearance contingent self-worth with body appreciation, such that these negative associations were weaker at higher levels of self-compassion.",
+      "evidence_source": "\"Thus, the regression analyses were based on 257 cases.\"; \"there were no significant mean differences between the MTurk participants and the college participants ...; thus, these data were combined for the analyses.\"; plus summaries of the moderation results and simple slopes in the text.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

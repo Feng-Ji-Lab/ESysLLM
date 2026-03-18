@@ -1,0 +1,197 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "UK"
+        ]
+      },
+      "evidence_source": "Text states: 'Participants of this study were 509 men recruited from the community in London, UK'",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          509
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": {
+          "Study X": [
+            509
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            509
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'Participants of this study were 509 men recruited from the community in London, UK'",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information provided in the text about survey method (paper-and-pencil vs. online)",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          73.1
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": {
+          "Study X": [
+            73.1
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            73.1
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'Most participants were of British White ancestry (73.1%)'",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          25.18
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": {
+          "Study X": [
+            25.18
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            25.18
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'ranging in age from 18 to 59 years (M = 25.18, SD = 8.28)'",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          25.2
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": {
+          "Study X": [
+            25.2
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            25.2
+          ]
+        }
+      },
+      "evidence_source": "Text states educational qualifications: '17.7% had an undergraduate degree, 7.5% had a postgraduate degree'. Calculation: 17.7% + 7.5% = 25.2% with college or higher education.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          24.01
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": {
+          "Study X": [
+            24.01
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            24.01
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'Participants' mean self-reported body mass index (BMI) was 24.01 (SD = 4.90)'",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "community"
+        ]
+      },
+      "evidence_source": "Text states: 'Participants of this study were 509 men recruited from the community in London, UK'",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information provided in the text about the specific instrument used to assess body appreciation (BAS or BAS-2)",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Text states: 'Participants' mean self-reported body mass index (BMI) was 24.01 (SD = 4.90)'",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation coefficients between body appreciation and BMI are provided in this section",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with one sample of 509 men. No explicit mention of multiple studies or experiments.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No information provided in the text about publication type (journal article or dissertation)",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the participants of a single study conducted in London, UK, comprising 509 men recruited from the community with a mean age of 25.18 years. The sample was predominantly British White (73.1%), with 25.2% having college or higher education, and a mean self-reported BMI of 24.01.",
+      "evidence_source": "Entire Participants section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

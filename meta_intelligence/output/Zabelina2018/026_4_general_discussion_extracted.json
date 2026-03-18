@@ -1,0 +1,316 @@
+[
+  {
+    "SAMPLE SIZE": {
+      "type": "object",
+      "extract_value": {
+        "Experiment 1": [],
+        "Experiment 2": []
+      },
+      "evidence_source": "The text mentions 'The effect size in Experiment 1 should be interpreted with caution, as smaller sample sizes are likely to overestimate the size of the correlations.' implying a sample size existed but no specific number is provided. No sample size is explicitly stated for Experiment 2.",
+      "warning": "None"
+    },
+    "ES": {
+      "type": "object",
+      "extract_value": {
+        "Experiment 1": [],
+        "Experiment 2": [
+          0.0
+        ]
+      },
+      "evidence_source": "For Experiment 1, the text mentions 'The effect size in Experiment 1 should be interpreted with caution, as smaller sample sizes are likely to overestimate the size of the correlations.' but no specific value is given. For Experiment 2, the text states 'there was no association between general intelligence and creativity as assessed with the ATTA or the CAQ measures.' indicating a correlation of 0.0.",
+      "warning": "None"
+    },
+    "Effects": {
+      "type": "object",
+      "extract_value": {
+        "Experiment 1": [],
+        "Experiment 2": [
+          1
+        ]
+      },
+      "evidence_source": "For Experiment 1, no specific effect size was provided. For Experiment 2, 'no association between general intelligence and creativity as assessed with the ATTA or the CAQ measures' implies one effect size (correlation) of 0.0.",
+      "warning": "None"
+    },
+    "Mage": {
+      "type": "object",
+      "extract_value": {
+        "Experiment 1": [],
+        "Experiment 2": []
+      },
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Measure IQ": {
+      "type": "object",
+      "extract_value": {
+        "Experiment 1": [],
+        "Experiment 2": [
+          "WASI"
+        ]
+      },
+      "evidence_source": "For Experiment 2, the text states 'general intelligence as assessed with the WASI test'. No specific IQ measure is mentioned for Experiment 1.",
+      "warning": "None"
+    },
+    "IQ modality": {
+      "type": "object",
+      "extract_value": {
+        "Experiment 1": [],
+        "Experiment 2": []
+      },
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "IQ Aspect": {
+      "type": "object",
+      "extract_value": {
+        "Experiment 1": [],
+        "Experiment 2": [
+          "g"
+        ]
+      },
+      "evidence_source": "For Experiment 2, the text refers to 'general intelligence'. No specific IQ aspect is mentioned for Experiment 1.",
+      "warning": "None"
+    },
+    "Creativity Measures": {
+      "type": "object",
+      "extract_value": {
+        "Experiment 1": [],
+        "Experiment 2": [
+          "ATTA",
+          "CAQ"
+        ]
+      },
+      "evidence_source": "For Experiment 2, the text states 'creativity as assessed with the ATTA or the CAQ measures'. No specific creativity measures are explicitly linked to Experiment 1 in this section.",
+      "warning": "None"
+    },
+    "Domain classified": {
+      "type": "object",
+      "extract_value": {
+        "Experiment 1": [],
+        "Experiment 2": [
+          "Total"
+        ]
+      },
+      "evidence_source": "For Experiment 2, the CAQ is mentioned, which measures 'creative achievement in various domains of human endeavor'. This implies a 'Total' domain classification. ATTA is a performance measure, not a domain. No domain classification is mentioned for Experiment 1.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 2,
+      "evidence_source": "The text explicitly mentions 'Results from Experiment 1 and Experiment 2'.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section discusses the general findings of Experiment 1 and Experiment 2, which investigated the role of cognitive control in creativity. Results indicate that divergent thinking is linked to higher attentional flexibility and cognitive control. However, Experiment 2 specifically found no association between real-life creativity (measured by ATTA and CAQ) and attentional flexibility or cognitive control, nor between general intelligence and creativity.",
+      "evidence_source": "Summary of the entire 'General discussion' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "SAMPLE SIZE": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'smaller sample sizes are likely to overestimate the size of the correlations' for Experiment 1, but no specific sample size is provided for either Experiment 1 or Experiment 2.",
+      "warning": "None"
+    },
+    "ES": {
+      "type": "object",
+      "extract_value": {
+        "Experiment 2": [
+          0.0
+        ]
+      },
+      "evidence_source": "For Experiment 2, the text states: 'Further, and contrary to prior reports, there was no association between general intelligence and creativity as assessed with the ATTA or the CAQ measures.' This indicates a correlation of 0.0 between general intelligence and creative achievement (CAQ).",
+      "warning": "None"
+    },
+    "Effects": {
+      "type": "object",
+      "extract_value": {
+        "Experiment 2": [
+          1
+        ]
+      },
+      "evidence_source": "For Experiment 2, the text states 'no association between general intelligence and creativity as assessed with the ATTA or the CAQ measures', which represents one effect size (a correlation of 0.0).",
+      "warning": "None"
+    },
+    "Mage": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'our samples consisted of young psychology students' but does not provide a specific mean age for participants in either experiment.",
+      "warning": "None"
+    },
+    "Measure IQ": {
+      "type": "object",
+      "extract_value": {
+        "Experiment 1": [
+          "WASI"
+        ],
+        "Experiment 2": [
+          "WASI"
+        ]
+      },
+      "evidence_source": "The text states: 'Further, we found a positive association between general intelligence as assessed with the WASI test and the N2 oddball effect.' This applies to both experiments as it is in the general discussion.",
+      "warning": "None"
+    },
+    "IQ modality": {
+      "type": "object",
+      "extract_value": {
+        "Experiment 1": [
+          "both"
+        ],
+        "Experiment 2": [
+          "both"
+        ]
+      },
+      "evidence_source": "The text mentions 'general intelligence as assessed with the WASI test'. The WASI (Wechsler Abbreviated Scale of Intelligence) measures both verbal and performance (figural) aspects of intelligence, thus 'both' is inferred.",
+      "warning": "None"
+    },
+    "IQ Aspect": {
+      "type": "object",
+      "extract_value": {
+        "Experiment 1": [
+          "g"
+        ],
+        "Experiment 2": [
+          "g"
+        ]
+      },
+      "evidence_source": "The text refers to 'general intelligence as assessed with the WASI test'. 'General intelligence' corresponds to the 'g' aspect of intelligence.",
+      "warning": "None"
+    },
+    "Creativity Measures": {
+      "type": "object",
+      "extract_value": {
+        "Experiment 2": [
+          "CAQ"
+        ]
+      },
+      "evidence_source": "The text states: 'Further, and contrary to prior reports, there was no association between general intelligence and creativity as assessed with the ATTA or the CAQ measures.' This indicates CAQ was used as a creativity measure in Experiment 2.",
+      "warning": "None"
+    },
+    "Domain classified": {
+      "type": "object",
+      "extract_value": {
+        "Experiment 2": [
+          "Total"
+        ]
+      },
+      "evidence_source": "The text mentions 'creativity as assessed with the ATTA or the CAQ measures' and describes the CAQ as a 'well-established measure' covering 'various domains of human endeavor'. This implies a 'Total' domain classification for creative achievement.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 2,
+      "evidence_source": "The text explicitly refers to 'Experiment 1' and 'Experiment 2' throughout the discussion.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section discusses the findings from Experiment 1 and Experiment 2, which investigated the relationship between cognitive control, divergent thinking, and creative achievement. Both experiments demonstrated that individuals with higher divergent thinking scores exhibit greater attentional flexibility and cognitive control engagement. However, Experiment 2 specifically found no association between real-life creativity (measured by ATTA and CAQ) and attentional flexibility or cognitive control, nor between general intelligence and creativity. The discussion also notes limitations, including the sample consisting of young psychology students and the correlational nature of the study.",
+      "evidence_source": "The entire 'General discussion' section.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Fig. 7. Correlation between divergent thinking and the RT oddball effect in Experiment 2 (the RT difference between rare and frequent targets), showing that people with higher divergent thinking scores have more flexible attention.",
+      "evidence_source": "The caption directly below the provided image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/meta_intelligence/papers_json/Zabelina2018/figures/Zabelina2018_p006_fig00.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_0"
+  },
+  {
+    "SAMPLE SIZE": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No specific sample sizes were provided for Experiment 1 or Experiment 2 in the text.",
+      "warning": "None"
+    },
+    "ES": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions correlations of r = -.50 and r = -.37 between divergent thinking/fluency and the N2 oddball effect (Fig. 8 and accompanying text). However, the N2 oddball effect is not a measure of creative achievement (CAQ or ICAA) as required by the schema definition for ES. The text also states 'no association between general intelligence and creativity as assessed with the ATTA or the CAQ measures' for Experiment 2, but no specific 'r' value is provided for this 'no association'.",
+      "warning": "None"
+    },
+    "Effects": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No effect sizes (correlation coefficients) meeting the schema's criteria were extracted, therefore the number of effects is None.",
+      "warning": "None"
+    },
+    "Mage": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age of participants was provided in the text for any study.",
+      "warning": "None"
+    },
+    "Measure IQ": {
+      "type": "object",
+      "extract_value": {
+        "Experiment 2": [
+          "WASI"
+        ]
+      },
+      "evidence_source": "The text states: 'Further, we found a positive association between general intelligence as assessed with the WASI test and the N2 oddball effect.' This is discussed in the context of findings from Experiment 2, where 'no association between general intelligence and creativity as assessed with the ATTA or the CAQ measures' was found.",
+      "warning": "None"
+    },
+    "IQ modality": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information regarding the modality (figural, verbal, or both) of the IQ measure was provided.",
+      "warning": "None"
+    },
+    "IQ Aspect": {
+      "type": "object",
+      "extract_value": {
+        "Experiment 2": [
+          "g"
+        ]
+      },
+      "evidence_source": "The text refers to 'general intelligence as assessed with the WASI test' in the context of Experiment 2 findings, which corresponds to the 'g' aspect of intelligence.",
+      "warning": "None"
+    },
+    "Creativity Measures": {
+      "type": "object",
+      "extract_value": {
+        "Experiment 2": [
+          "CAQ"
+        ]
+      },
+      "evidence_source": "The text states: 'Further, and contrary to prior reports, there was no association between general intelligence and creativity as assessed with the ATTA or the CAQ measures.' This explicitly mentions CAQ as a creativity measure for Experiment 2. While ATTA and 'divergent thinking tests' are also mentioned, only CAQ is an allowed value per the schema.",
+      "warning": "None"
+    },
+    "Domain classified": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No specific domain classification for creativity (e.g., 'Everyday', 'Arts', 'Science') was provided.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 2,
+      "evidence_source": "The text explicitly refers to 'Experiment 1' and 'Experiment 2' throughout the discussion.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section discusses the findings from Experiment 1 and Experiment 2, which investigated the relationship between cognitive control, divergent thinking, and creative achievement. Both experiments demonstrated that higher divergent thinking scores are associated with greater attentional flexibility and increased cognitive control during attentional switches. However, Experiment 2 specifically found no association between real-life creativity (assessed by ATTA or CAQ) and attentional flexibility or cognitive control, nor between general intelligence (assessed by WASI) and creativity (CAQ/ATTA). Figure 8 illustrates a correlation from Experiment 2.",
+      "evidence_source": "The entire '4. General discussion' section and Fig. 8 caption.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Fig. 8. Correlation between divergent thinking and the N2 oddball effect (N2 for rare targets minus frequent targets combining sites Fz and Cz within the 350\u2013450 ms time window) in Experiment 2, showing that people with higher divergent thinking scores have better cognitive control (a more negative N2 oddball effect indicates better cognitive control).",
+      "evidence_source": "Fig. 8 caption.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/meta_intelligence/papers_json/Zabelina2018/figures/Zabelina2018_p006_fig01.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_1"
+  }
+]

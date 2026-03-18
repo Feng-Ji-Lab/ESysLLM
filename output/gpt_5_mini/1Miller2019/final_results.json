@@ -1,0 +1,263 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      1,
+      2,
+      4,
+      5,
+      15,
+      16,
+      17
+    ],
+    "reason": "Multiple sections (abstract [1], introduction [2], participant/methods [4,5], discussion [15], limitations [16], conclusion [17]) consistently describe a single 7-day daily-diary study (N=92) and repeatedly refer to \u201cthe current study\u201d/\u201cthis study.\u201d No sections label multiple studies (e.g., \u201cStudy 1\u201d, \u201cStudy 2\u201d) or present separate experiments/samples. Therefore the most accurate count is 1 study."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "Canada"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates come from the paper's author affiliation (University of Waterloo, Waterloo, ON), indicating the study was conducted in Canada. The paper describes a single study (7-day daily-diary) across sections, so entries were merged into one 'Single study' record. Both candidates are consistent, so 'Canada' was used."
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        100
+      ]
+    },
+    "best_indices": [
+      4,
+      2,
+      5
+    ],
+    "reason": "Only one (unnumbered) study in the paper: a daily-diary study with a final sample of 92 female undergraduates (Participants/Method section). Because participants are described as undergraduate/college students, it is appropriate to infer that 100% of participants had college (or higher) education. Preferred sources: Participants section (index 4), Abstract (index 2), and Procedure/recruitment (index 5). Other candidates (title, objectives, discussion) are consistent with this and were considered but the Methods/Participants text was prioritized.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          100
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          100
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "college"
+      ]
+    },
+    "best_indices": [
+      2,
+      4,
+      5
+    ],
+    "reason": "All candidates describe a single unnumbered daily-diary study of female undergraduates (N=92). The Participants section (index 4) explicitly states a final sample of 92 female undergraduates; the Procedure (index 5) notes recruitment via the university research participant pool; the Abstract (index 2) describes \"female college students.\" Other sections (title, objectives, discussion; indices 0,1,3,6) consistently refer to \"college women.\" Therefore the source of sample is classified as 'college' and all candidates refer to the same single study, so their information was merged into one entry."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        92
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates describe the same single 7-day daily-diary study with a final sample of 92 participants. The Participants section (index 1) explicitly states a final sample of 92 female undergraduates; the Abstract (index 0) reports the same figure. Values are consistent, so merged into one entry: total N=92, all female. No male/other participants reported.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          92
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          92
+        ]
+      }
+    }
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "online"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "All reliable sources refer to a single daily-diary study and explicitly state data were collected online: the abstract reports nightly online questionnaires (candidate 0) and the procedure specifies emailed Qualtrics links for daily online surveys (candidate 1). Therefore the survey method is 'online'."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0
+    ],
+    "reason": "The document displays the standard sections of a journal article (abstract, introduction, methods, discussion, limitations, conclusion) and describes a single empirical study; there is no indication it is a dissertation. Candidate [0] is therefore the best match."
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Single study": [
+        50
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper describes a single study (final N=92) and the Participants section explicitly states the ethnic breakdown: '50% Caucasian...'. This candidate (index 0, Participants section) is the most reliable source for percent White. The sample is described as female undergraduates, so the total percent White (50%) is also applicable to the female subsample.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          50
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          50
+        ]
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        19.7
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "All sections describe a single study (final sample: 92 female undergraduates). The Participants section reports age range 17\u201325 and mean age 19.7 (SD=1.93). No conflicting values found. Female and total values are identical, so both are recorded.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          19.7
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          19.7
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        22.47
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates (Measures text and Table 1) report the same mean BMI = 22.47 (SD = 3.28) for the single study described throughout the paper. There is only one study in the paper, so values were merged under 'Single study'. Both sources are consistent and thus the value 22.47 was retained; Measures text (candidate 0) and the table (candidate 1) provided converging evidence.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          22.47
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          22.47
+        ]
+      }
+    }
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one candidate was found and it clearly states BMI was assessed via self-reported weight and height (collected 4\u20136 days before the daily-diary portion). The paper contains a single study (no Study 1/Study 2 distinctions in the sections), and the measures section is the most reliable source for assessment method, so the study-level value is 'self-reported'."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study is reported in the paper (a 7-day daily-diary 'current study'). Candidate 0 (Methods/measurement section) explicitly states that Body Appreciation was measured using the Body Appreciation Scale (BAS; Avalos et al., 2005) with modifications for daily assessment and reports internal consistency\u2014this is the most reliable source for the instrument used. No evidence of BAS-2 or any other instrument was found."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        -0.24
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study in the paper (a single 7-day daily-diary study). Candidate 0 is Table 1 which reports the between-persons correlation (above diagonal) at the intersection of BMI and Body appreciation = -0.24. No gender-specific correlations or multiple subgroups were reported, so the between-persons value -0.24 was used as the total study correlation.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          -0.24
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          -0.24
+        ]
+      }
+    }
+  }
+}

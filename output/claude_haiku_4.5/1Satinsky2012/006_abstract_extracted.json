@@ -1,0 +1,141 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract does not specify the country where the study was conducted.",
+      "warning": "Country information is not provided in the abstract."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          247
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            247
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            247
+          ]
+        }
+      },
+      "evidence_source": "Abstract states: 'Cross-sectional data were collected online from 247 women, ages 18 to 58.' All 247 participants are women.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "online"
+        ]
+      },
+      "evidence_source": "Abstract states: 'Cross-sectional data were collected online from 247 women, ages 18 to 58.'",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The abstract does not provide information about racial/ethnic composition of participants.",
+      "warning": "Racial/ethnic demographic data not reported in abstract."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Abstract states age range 'ages 18 to 58' but does not provide the mean age. Only the range is given.",
+      "warning": "Only age range (18-58) is provided; mean age is not reported in the abstract."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The abstract does not provide information about educational attainment of participants.",
+      "warning": "Educational attainment data not reported in abstract."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The abstract does not report the mean BMI of participants, only that BMI was measured and analyzed.",
+      "warning": "Mean BMI value not reported in abstract."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract does not specify the source of recruitment (e.g., community, college, high school). Only that data were collected online.",
+      "warning": "Source of sample recruitment not specified in abstract."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract mentions 'body appreciation scores' and 'Body Appreciation' but does not specify which instrument (BAS or BAS-2) was used.",
+      "warning": "Specific body appreciation assessment instrument (BAS or BAS-2) not identified in abstract."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract mentions BMI was assessed but does not specify whether it was self-reported or measured.",
+      "warning": "Method of BMI assessment (self-reported vs. measured) not specified in abstract."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Abstract states: 'Body appreciation scores were modestly negatively correlated with BMI' but does not provide the specific correlation coefficient value.",
+      "warning": "Correlation coefficient value not provided; only described as 'modestly negatively correlated'."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The abstract describes a single cross-sectional study with 247 women. No mention of multiple studies or experiments.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The abstract does not indicate whether this is from a journal article or dissertation. Publication type cannot be determined from the abstract alone.",
+      "warning": "Publication type not identifiable from abstract; would require full citation or document header information."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This abstract describes a single cross-sectional study examining the relationship between body appreciation and sexual function in women. Data were collected online from 247 women aged 18-58, and the study found that body appreciation was modestly negatively correlated with BMI and predicted arousal, orgasm, and satisfaction aspects of sexual function after controlling for sexual orientation, partner status, and age.",
+      "evidence_source": "Abstract content",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

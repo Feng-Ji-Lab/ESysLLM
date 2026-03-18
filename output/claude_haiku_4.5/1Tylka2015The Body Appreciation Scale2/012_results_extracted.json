@@ -1,0 +1,125 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this Results section.",
+      "warning": "Country not specified in the provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          338,
+          337,
+          675
+        ]
+      },
+      "evidence_source": "EFA Group 1: 'n=338'; EFA Group 2: 'n=337'; Combined sample: 338 + 337 = 675 participants. The text states 'This program split the data randomly into two groups' and later 'we combined them', indicating these are subsets of the same study.",
+      "warning": "Multiple sample sizes reported for different analyses (EFA Group 1, EFA Group 2, and combined sample). The combined sample represents the total (675 = 338 + 337).",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": [
+          338,
+          337,
+          675
+        ]
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method (paper-and-pencil or online) is specified in this Results section.",
+      "warning": "Survey method not specified in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information is provided in this Results section.",
+      "warning": "Percent of white participants not specified in the provided text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in this Results section.",
+      "warning": "Mean age not specified in the provided text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in this Results section.",
+      "warning": "Percentage of college or higher education not specified in the provided text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While BMI is discussed in relation to correlations with BAS-2, no mean BMI value is reported in this Results section.",
+      "warning": "Mean BMI not specified in the provided text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about where or how participants were recruited is provided in this Results section.",
+      "warning": "Source of sample not specified in the provided text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The entire Results section focuses on the BAS-2 (Body Appreciation Scale-2). Multiple references: 'BAS-2 items, scale, and subscale scores were examined', 'Exploring the BAS-2's factor structure', 'BAS means and correlations with BMI. The means of the 10 BAS-2 items and total BAS-2 are include in Table 2', and 'the 10-item BAS-2' confirm BAS-2 was the assessment used.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While BMI is mentioned multiple times in correlation analyses ('The BAS-2 was correlated \u2013.27 with BMI'), the method of BMI assessment (self-reported vs. measured) is not specified in this Results section.",
+      "warning": "BMI assessment method not specified in the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.27
+        ]
+      },
+      "evidence_source": "From the section 'BAS means and correlations with BMI': 'The BAS-2 was correlated \u2013.27 with BMI; the correlations were \u2013.23 and \u2013.32 for women and men, respectively (all ps < .001).' The overall correlation is \u2013.27. Gender-specific correlations are also provided.",
+      "warning": "Gender-specific correlations available; overall correlation reported is \u2013.27.",
+      "extract_value_by_gender": {
+        "female": [
+          -0.23
+        ],
+        "male": [
+          -0.32
+        ],
+        "other": "None",
+        "total": [
+          -0.27
+        ]
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "This Results section describes a single study with one sample that was split into two groups (EFA Group 1 and EFA Group 2) for cross-validation purposes. The text states: 'This program split the data randomly into two groups so that the second group could be used to cross-validate the findings obtained via the first group' and later 'Due to the consistency in EFA findings across EFA Groups 1 and 2, we combined them'. These are analytical subsets of one study, not separate studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The publication type (journal article or dissertation) is not specified in this Results section.",
+      "warning": "Publication type not specified in the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Results section presents the validation and psychometric properties of the BAS-2 (Body Appreciation Scale-2) using a single study with a combined sample of 675 participants (split into EFA Group 1, n=338, and EFA Group 2, n=337, for cross-validation). The analysis revealed a unidimensional 10-item BAS-2 scale with strong internal consistency (Cronbach's alphas .93\u2013.94) and test\u2013retest reliability (ICCs = .90). The BAS-2 demonstrated strong construct validity and criterion-related validity, with significant negative correlations with BMI (overall r = \u2013.27; women r = \u2013.23, men r = \u2013.32, all ps < .001), and incremental validity in predicting eating behavior and psychological well-being beyond appearance evaluation and body dissatisfaction.",
+      "evidence_source": "Entire Results section synthesized from preliminary analyses through incremental validity findings.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

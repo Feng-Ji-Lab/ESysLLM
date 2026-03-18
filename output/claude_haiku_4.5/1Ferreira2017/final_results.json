@@ -1,0 +1,198 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason": "All six candidates consistently report a value of 1 study. The evidence comes from multiple sections of the paper: (0) the abstract describing a single study with path analysis, (1) participant description for Study X, (2) procedures section describing the study methodology, (3) discussion section analyzing findings from the single study, (4) Table 1 with descriptive statistics from 490 participants, and (5) Figure 1 showing the final path model. Despite the candidates being labeled \"No evidence,\" the section contexts clearly describe a single research study examining the relationship between early emotional memories, self-compassion, body appreciation, and eating psychopathology. All sections refer to the same study with consistent sample characteristics (490 women, Portuguese population, ages 18-54). There is no indication of multiple studies in this paper."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        490
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      3
+    ],
+    "reason": "The paper contains a single study examining the relationship between early emotional memories, self-compassion, body appreciation, and eating psychopathology. The final sample size is 490 women from the Portuguese general population (ages 18-54). Candidates [0], [1], and [3] consistently report N=490 with all 490 participants being female, representing the final cleaned sample used in the analysis. Candidate [2] reports an initial sample of 514 participants (494 women, 20 men) before data cleaning, but explicitly states that male participants and female participants outside the 18-54 age range were excluded. Since the final cleaned sample is 490 women (as confirmed by the abstract, participants section, and Table 1), the final sample value is [490] with all female participants. The gender breakdown shows 490 female participants and 0 male participants in the final sample, as males were excluded during data cleaning.\"",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          490
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          490
+        ]
+      }
+    }
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "online"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates [0] and [1] refer to the same single study (labeled 'Study X' in the candidates). The context confirms this paper contains only 1 study. Both candidates consistently report 'online' as the survey method: candidate [0] from the abstract explicitly states 'Internet-based survey' and candidate [1] from the procedures section confirms data collection 'through online advertisements on social networks'. These are complementary descriptions of the same online data collection method. No conflicts exist. The final resolved study is labeled 'Single study' per the schema requirement for single-study papers."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS-2"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason": "All six candidates consistently report BAS-2 as the instrument used to assess body appreciation across multiple sections of the paper. The paper contains a single study (as confirmed by the context). Candidate [1] from the Measures section provides the most explicit and detailed evidence: 'Body Appreciation Scale (BAS-2; Tylka, Wood-Barcalow, 2015; Portuguese version by Marta-Sim\u00f5es, Mendes, Oliveira, Trindade, & Ferreira, 2016)'. This is corroborated by candidates [2] and [3] from Data Analyses and Path Analysis sections which explicitly reference 'BAS-2' in statistical procedures and results. Candidates [4] and [5] from Table 1 and Figure 1 further confirm BAS-2 as the assessment instrument. Candidate [0] from the abstract infers BAS-2 based on context, which is validated by the explicit mentions in later sections. All candidates refer to the same single study with consistent sample characteristics (490 women, Portuguese population). No conflicts exist; all sources converge on BAS-2 as the sole assessment instrument for body appreciation in this study."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "Portugal"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates [0] and [1] refer to the same single study (labeled 'Study X' in the candidates, which corresponds to the single study confirmed in the context). Both sources consistently report Portugal as the country where the study was conducted. Candidate [0] from the Participants section explicitly states the sample was 'collected from the Portuguese general population' (490 women). Candidate [1] from the Procedures section confirms this is 'a wider Portuguese project' examining emotional regulation processes. These are complementary descriptions of the same study from different sections (Participants and Procedures), both reliably indicating Portugal as the study location. No conflicts exist between the candidates. The consolidated result is a single entry for the single study with Portugal as the country value.\""
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        24.76
+      ]
+    },
+    "best_indices": [
+      0,
+      2
+    ],
+    "reason": "The paper contains a single study examining emotional memories, self-compassion, body appreciation, and eating psychopathology in a Portuguese female sample. Candidate [0] from the Participants section provides the most reliable and explicit mean age value (M = 24.76, SD = 7.66) based on the actual sample of 490 women used in the final analysis. Candidate [2] from Table 1 reports M = 22.29, which appears to be the mean BMI (not age), as evidenced by the context mentioning \"mean BMI of 22.29\" in the participants section. Candidate [1] is an estimate based on age range (17-57 years) from the procedures section describing the initial sample before data cleaning, and is less reliable than the explicit mean reported in the participants section. The final cleaned sample (N=490 women, ages 18-54) is best represented by Candidate [0], which provides the explicit mean age with standard deviation. Therefore, the consolidated value for the single study is [24.76].",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          24.76
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          24.76
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        22.29
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Two candidates report different BMI values for the same study: Candidate [0] reports 22.29 (from the Participants section) and Candidate [1] reports 24.76 (from Table 1). Following the conflict resolution hierarchy, the Participants section (Method/Sample) is the primary source for demographic characteristics and is more reliable than a table that may contain derived or alternative calculations. Candidate [0] explicitly states this is the mean BMI of participants from the text description, while Candidate [1] appears to be a table entry that may represent a different calculation or subset. The Participants section value (22.29) is preferred as it directly describes the sample characteristics in the main text. The paper contains a single study with 490 women from the Portuguese population, ages 18-54.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          22.29
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          22.29
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "community"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates [0] and [1] refer to the same single study (labeled 'Study X' in the candidates, which corresponds to the single study in this paper). Both sources consistently report 'community' as the source of sample. Candidate [0] from the Participants section explicitly states the 490 women were collected from the Portuguese general population (community-based). Candidate [1] from the Procedures section confirms the community-based recruitment approach through online social network advertisements. These are complementary descriptions of the same recruitment method for the same study. The Participants section [0] is the primary source for sample description, while the Procedures section [1] provides additional methodological detail about the recruitment mechanism. Both support the conclusion that the sample source is 'community'. No conflicts exist between the candidates.\""
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "Both candidates refer to the same single study (Study X). Candidate [1] from the 'Measures' section explicitly states that BMI was calculated using 'self-reported height and weight' provided by participants. This is the most reliable source as it directly describes the assessment methodology. Candidate [0] from the 'Participants' section infers 'measured' based on the presentation of BMI statistics (mean, SD, distribution), but this is an indirect inference. The explicit methodological description in Candidate [1] takes precedence over the indirect inference in Candidate [0]. Therefore, the Assessment of BMI for this single study is 'self-reported'.\""
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        -0.37
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "The paper contains a single study examining the relationship between body appreciation and BMI in 490 Portuguese women. Three candidates report correlation values: Candidate [0] provides an estimated value of -0.3 (conservative estimate based on descriptive text), Candidate [1] provides the exact correlation from Table 1 (r = -0.37, p < .001), and Candidate [2] provides a path coefficient from Figure 1 (-.34). Following the conflict resolution rules, Candidate [1] from Table 1 in the Results section is preferred as the most reliable source because: (1) it is an exact empirical value directly extracted from the correlation matrix, (2) it comes from the primary results table with full statistical information (p < .001), and (3) tables in Results sections are more reliable than estimated values from text descriptions or path model coefficients. Candidate [0] is an estimate rather than an exact value. Candidate [2] represents a standardized path coefficient from a structural model, which may differ slightly from the zero-order correlation due to model specification. The table correlation (-0.37) is the most direct and reliable measure of the bivariate relationship between BAS-2 and BMI. No gender-specific breakdowns are provided in any candidate, so the value is reported as total only.\"",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          -0.37
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          -0.37
+        ]
+      }
+    }
+  }
+}

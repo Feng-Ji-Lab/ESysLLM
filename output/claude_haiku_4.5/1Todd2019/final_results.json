@@ -1,0 +1,272 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "reason": "This paper describes a single empirical study examining the relationship between interoceptive awareness and body image in a community sample of 646 British adults. While the introduction reviews multiple prior studies conducted by other researchers (Norwegian, Hungarian, British, Austrian, and Australian samples), these are cited literature, not studies conducted within this paper. All candidates from the methods, results, and participant sections (0, 2-9) consistently describe one unified study with N=646 participants conducted in the United Kingdom. Candidate [1] from the introduction has a value of 0, but this appears to be an error as it describes the background literature rather than the actual studies in the paper. The overwhelming evidence from 9 out of 10 candidates, spanning abstract, aims, methods, participants, procedures, and results sections, all confirm this is a single-study paper."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "United Kingdom"
+      ]
+    },
+    "best_indices": [
+      0,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason": "This paper describes a single empirical study conducted in the United Kingdom. Candidates [0, 2, 3, 4, 5] all consistently refer to the same study examining interoceptive awareness and body image in 646 British adults. Candidate [1] from the introduction describes multiple prior studies by other researchers (Norwegian, Hungarian, British, Austrian, and Australian samples) cited as background literature, not studies conducted within this paper. These background studies are excluded from the final result. The core study was conducted in the United Kingdom, as confirmed by multiple reliable sources: the abstract (candidate 0), the aims section (candidate 2), participants section (candidate 3), demographics procedures (candidate 4), and recruitment procedures (candidate 5). All candidates consistently identify the United Kingdom as the location, with candidate 5 explicitly stating 'eligibility was limited to United Kingdom citizens.' Therefore, the consolidated result is a single study with Country = ['United Kingdom'].\""
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        646
+      ]
+    },
+    "best_indices": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "reason": "This paper describes a single empirical study examining the relationship between interoceptive awareness and body image in a community sample of British adults. Candidate [1] from the introduction (N=30, 30, 82, 70, 50, 139, 200) refers to multiple cited studies from prior research (Norwegian, Hungarian, British, Austrian, and Australian samples), not studies conducted within this paper, and is therefore excluded. All other candidates (0, 2-7) consistently describe the same unified study with N=646 participants. The most reliable sources are the Methods/Participants section (candidate 2) and Results/Tables sections (candidates 3-7), which provide consistent and complementary data. Candidate 0 from the abstract provides the initial sample description (N=646, 447 women). Candidate 2 from the Participants section provides the most detailed gender breakdown (446 women, 199 men, 1 other, total 646). Candidates 3-7 from the Results/Tables sections confirm these values consistently. The slight discrepancy in female count (447 in abstract vs. 446 in participants/results) is resolved in favor of the more detailed Participants section value of 446, which is confirmed across multiple results tables. All values are merged into a single study entry with the complete gender breakdown: 446 female, 199 male, 1 other, total 646.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          199
+        ]
+      },
+      "female": {
+        "Single study": [
+          446
+        ]
+      },
+      "other": {
+        "Single study": [
+          1
+        ]
+      },
+      "total": {
+        "Single study": [
+          646
+        ]
+      }
+    }
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "online"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates [0] and [1] refer to the same single study examining interoceptive awareness and body image in British adults. Candidate [0] from the abstract explicitly identifies this as 'Study 1' with an online survey method (N=646). Candidate [1] from the procedure section describes 'Study X' but provides corroborating evidence that the survey was hosted on Qualtrics and participants were recruited via Prolific Academic, confirming the online method. The context confirms this paper contains only 1 study. Both candidates consistently report 'online' as the survey method. The study name is standardized to 'Single study' per the schema instructions for single-study papers. The survey method is consolidated as ['online'] since both sources confirm the same method with no conflicting information."
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "community"
+      ]
+    },
+    "best_indices": [
+      0,
+      2,
+      3
+    ],
+    "reason": "This paper describes a single empirical study examining interoceptive awareness and body image in a community sample. Candidates [0], [2], and [3] all consistently describe the same study with participants recruited from the community (via Prolific Academic, an online crowdsourcing platform) in the United Kingdom. Candidate [1] from the introduction is excluded because it reviews cited literature from other researchers' studies (Norwegian, Hungarian, British, Austrian, and Australian samples), not the actual study conducted in this paper. The 'Study X' labels in candidates [2] and [3] refer to the single study being conducted in this paper, which is confirmed by the context statement indicating 1 study total. The value 'community' is the appropriate classification for a sample recruited via an online crowdsourcing marketplace (Prolific Academic) representing British adults aged 18-76 years (N=646).\""
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS-2"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates [0] and [1] refer to the same single study examining the relationship between interoceptive awareness and body image in 646 British adults. Candidate [0] from the abstract explicitly identifies 'Study 1' and reports BAS-2. Candidate [1] from the methods section (2.2.2) describes the Body Appreciation Scale-2 (BAS-2) used in the present study, with 'Study X' being a placeholder reference to the same study. The context confirms this is a single-study paper with no multiple distinct studies. Both candidates consistently report BAS-2 as the assessment instrument for body appreciation. They are merged into a single entry with the value ['BAS-2']."
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        53.7
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "Candidate [1] from the Participants section (009_21_participants_extracted.json) provides the most reliable and precise value for the actual study conducted in this paper. It reports 53.7% of participants with college or higher education, calculated from: 36.7% with undergraduate degrees + 15.6% with postgraduate degrees + 1.4% in full-time education. This is the primary empirical study's data. Candidate [0] from the Introduction section lists three values of 100, but these refer to cited literature studies (Norwegian, Hungarian, British, Austrian, and Australian samples from prior research), not the actual study conducted in this paper. The context confirms this is a single-study paper with N=646 British adults. Therefore, only Candidate [1] is selected as it directly describes the participants of the actual study being reported.\"",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          53.7
+        ]
+      }
+    }
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Single study": [
+        92.4
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Single candidate found from the Participants section (009_21_participants_extracted.json) describing a unified study with N=646 British adults. The value 92.4% represents the percentage of participants identifying as White, extracted from the ethnicity breakdown in the participant demographics. This is the most reliable source as it comes directly from the Method/Participants section where demographic information is typically reported. No gender-specific breakdown was available for this metric. The context confirms this paper contains only one empirical study, so the candidate is classified as 'Single study' rather than 'Study X'.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          92.4
+        ]
+      }
+    }
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        38.92
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates refer to the same single study conducted in the United Kingdom with N=646 participants. Candidate [0] from the Participants section provides the overall mean age (M=38.92, SD=11.71) extracted from the main text. Candidate [1] from Table 1 provides gender-specific means: women (M=39.46) and men (M=37.76). These are complementary data from the same study\u2014the overall mean of 38.92 is consistent with the weighted average of the gender-specific means (446 women \u00d7 39.46 + 199 men \u00d7 37.76 / 645 \u2248 38.92). Following instruction 5 (Merge Complementary Data), the overall mean from the main text (Candidate [0]) is preferred as the primary extract_value, while the gender-split values from Table 1 (Candidate [1]) are merged into the extract_value_by_gender field. The context confirms this is a single-study paper, so the study_name is 'Single study'.\"",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          37.76
+        ]
+      },
+      "female": {
+        "Single study": [
+          39.46
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          38.92
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        27.25
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Both candidates [0] and [1] refer to the same single study conducted in the United Kingdom with N=646 participants. Candidate [0] from the Participants section provides the most reliable and complete data: overall mean BMI of 27.25 with gender-specific breakdowns (Female: 26.1, Male: 27.72). Candidate [1] from Table 1 in the Results section shows only the male mean (27.76) and female mean (26.1), but explicitly notes that the overall combined mean is not stated in the table. The discrepancy in male BMI (27.72 vs 27.76) is minor (0.04 difference) and likely due to rounding. Candidate [0] is preferred because: (1) it appears in the Method/Participants section, which is the standard location for sample descriptive statistics; (2) it provides the complete overall mean (27.25) along with gender splits; (3) the Participants section is more authoritative for demographic data than a correlations table. Therefore, the consolidated result uses Candidate [0] as the primary source, representing the single study in this paper.\"",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          27.72
+        ]
+      },
+      "female": {
+        "Single study": [
+          26.1
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          27.25
+        ]
+      }
+    }
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates [0] and [1] refer to the same single study conducted in the United Kingdom with N=646 participants. Candidate [0] from the Participants section provides evidence that 'Self-reported BMI values ranged from 15.22 to 49.57 (M = 27.25, SD = 6.08)', confirming self-reported assessment. Candidate [1] from the Demographics section explicitly states 'We used the final two items to compute self-reported BMI as kg/m2', further confirming that BMI was assessed using self-reported height and weight. Both sources consistently indicate the same assessment method (self-reported), so they are merged into a single entry. The context confirms this is a single-study paper, so the resolved study is labeled 'Single study' with the consolidated value ['self-reported']."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        -0.32,
+        -0.24
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "Candidate [1] from Table 1 provides the most reliable and precise data for this field. It reports the bivariate Pearson correlation coefficients between Body Appreciation and BMI separately by gender: r = -0.32 for women (lower diagonal) and r = -0.24 for men (upper diagonal), both statistically significant at p < .01. This is the primary source for bivariate correlations and directly answers the research question. Candidate [0] provides only a qualitative description ('small negative correlation') with an inferred value of -0.20, which is less precise. Candidates [2], [3], and [4] report regression coefficients (\u03b2 values and semi-partial correlations) from hierarchical multiple regression analyses, not the simple bivariate Pearson correlations requested. Candidate [3] explicitly notes that Table 3 reports regression coefficients, not Pearson r values. Candidate [4] reports results for Appearance Orientation and Overweight Preoccupation, not Body Appreciation. The context confirms this is a single study with N=646 participants (446 women, 199 men). The gender-specific values from Table 1 are reported in the extract_value_by_gender field, and both values are included in the total extract_value list as per the subsample merging instruction.\"",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          -0.24
+        ]
+      },
+      "female": {
+        "Single study": [
+          -0.32
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          -0.32,
+          -0.24
+        ]
+      }
+    }
+  }
+}

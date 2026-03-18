@@ -1,0 +1,329 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Denmark",
+          "Portugal",
+          "Sweden"
+        ]
+      },
+      "evidence_source": "Sentence: \"The CFAs were conducted on the boy and girl samples from the three countries (Denmark, Portugal, and Sweden).\" Also supported by the sample counts: \"N=1012; n=79 Danish girls; n=50 Danish boys; n=296 Portuguese girls; n=217 Portuguese boys; n=155 Swedish girls; n=215 Swedish boys;\"",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          1012,
+          79,
+          50,
+          296,
+          217,
+          155,
+          215
+        ]
+      },
+      "evidence_source": "Table/note: \"N=1012; n=79 Danish girls; n=50 Danish boys; n=296 Portuguese girls; n=217 Portuguese boys; n=155 Swedish girls; n=215 Swedish boys;\"",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            79,
+            296,
+            155
+          ]
+        },
+        "male": {
+          "Study X": [
+            50,
+            217,
+            215
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            1012
+          ]
+        }
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information in the provided section about whether data were collected online or via paper-and-pencil.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information in the provided section about participants' race/ethnicity or percentage identifying as white.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age or age range reported in the provided section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information in the provided section about participants' education level or percentage with college or higher.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI values are reported in the provided section; BMI is mentioned only as a variable used in correlations.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section does not state the source of the sample (e.g., community, college, primary/secondary/high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Sentence: \"First, in order to test the BAS-2 s construct validity (i.e., its factor structure and item-factor loadings), confirmatory factor analyses (CFAs) were performed...\"",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "BMI is mentioned as a variable for convergent validity: \"we tested the convergent validity of the BAS-2 scores using bivariate correlations ... and BMI.\" However, the method of BMI assessment (self-reported vs. measured) is not reported in the provided section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Sentence: \"Last, we tested the convergent validity of the BAS-2 scores using bivariate correlations (Hmisc package; Harrell, 2017) between BAS-2 and self-esteem, psychological wellbeing, intuitive eating, and BMI.\" No correlation coefficients are provided in the section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section describes analyses of a single project/sample (CFAs and related analyses) across boy and girl samples from three countries; no multiple separate studies or labels like 'Study 1'/'Study 2' are presented.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided section does not specify the publication type (journal article or dissertation).",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Methods section describes statistical analyses focused on testing the construct validity of the BAS-2 using confirmatory factor analyses and multi-group invariance testing across boys and girls from Denmark, Portugal, and Sweden (sample note: N=1012; n=79 Danish girls; n=50 Danish boys; n=296 Portuguese girls; n=217 Portuguese boys; n=155 Swedish girls; n=215 Swedish boys). It also states plans to assess internal consistency and convergent validity via bivariate correlations (including with BMI), but does not report descriptive statistics (age, BMI means), sample source, survey method, race/ethnicity, or publication type in the provided text.",
+      "evidence_source": "Sentences: \"The CFAs were conducted on the boy and girl samples from the three countries (Denmark, Portugal, and Sweden).\" and the sample note: \"N=1012; n=79 Danish girls; n=50 Danish boys; n=296 Portuguese girls; n=217 Portuguese boys; n=155 Swedish girls; n=215 Swedish boys;\" plus: \"Last, we tested the convergent validity of the BAS-2 scores using bivariate correlations ... and BMI.\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Denmark",
+          "Portugal",
+          "Sweden"
+        ]
+      },
+      "evidence_source": "Text: \"The CFAs were conducted on the boy and girl samples from the three countries (Denmark, Portugal, and Sweden).\"",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          1012,
+          79,
+          50,
+          296,
+          217,
+          155,
+          215
+        ]
+      },
+      "evidence_source": "Table note (image): \"N=1012; n=79 Danish girls; n=50 Danish boys; n=296 Portuguese girls; n=217 Portuguese boys; n=155 Swedish girls; n=215 Swedish boys.\"",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            79,
+            296,
+            155
+          ]
+        },
+        "male": {
+          "Study X": [
+            50,
+            217,
+            215
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            1012
+          ]
+        }
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method (e.g., 'online' or 'paper-and-pencil') is specified in the provided text or table.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about racial/ethnic composition or percent white is provided in the text or table.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age or age information reported in the provided text or table.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level or percentage with college/higher reported in the provided text or table.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI values are reported in the provided text or table.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not state the source of the sample (e.g., community, college, primary/secondary/high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Text: references to testing the \"BAS-2's construct validity\" and Table note: \"BAS-2 = Body Appreciation Scale-2.\"",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The method of BMI assessment (self-reported or measured) is not specified in the provided text or table.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Text: \"Last, we tested the convergent validity of the BAS-2 scores using bivariate correlations (Hmisc package; Harrell, 2017) between BAS-2 and self-esteem, psychological wellbeing, intuitive eating, and BMI.\" No numeric correlation coefficients are reported in the provided excerpt or table.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section describes analyses (CFAs, multi-group CFAs, reliability, convergent validity) on a single dataset across three countries; Table note provides a single overall N (N=1012) with country-by-sex subgroup Ns.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type (e.g., 'journal article' or 'dissertation') is stated in the provided text or table.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the statistical analyses used to evaluate the BAS-2, including CFAs run separately for boys and girls in three countries (Denmark, Portugal, Sweden), multi-group CFAs to test measurement invariance across sex and country, internal consistency reliability analyses, and convergent validity correlations (including BMI). The provided table lists means, standard deviations, and Cronbach's alphas across country and sex and reports sample sizes (N=1012; country-by-sex subgroup ns).",
+      "evidence_source": "Text: descriptions of CFAs, multi-group CFAs, reliability and convergent validity; Table note: sample sizes and measures reported (e.g., BAS-2).",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1 Means, standard deviations, and Cronbach's alphas of all measures across country and sex.",
+      "evidence_source": "Caption visible on the provided table image: \"Table 1 Means, standard deviations, and Cronbach's alphas of all measures across country and sex.\"",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Lemoine2018/tables/1Lemoine2018_p003_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

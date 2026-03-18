@@ -1,0 +1,143 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Brazil"
+        ]
+      },
+      "evidence_source": "The text discusses 'the Brazilian version of BAS for adolescents' and 'the adaptation of the Brazilian version of BAS' and 'cross-cultural adaptation to Brazilian population', indicating the study was conducted in Brazil.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the total number of participants in the study. It mentions 'this sample' and 'Brazilian adolescent samples' but no specific sample size is provided in this Discussion section.",
+      "warning": "Sample size not provided in the Discussion section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not specify whether data collection was conducted via paper-and-pencil or online methods.",
+      "warning": "Survey method not specified in the Discussion section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          null
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text states: 'Also we did not collect data on ethnicity, although we do know the majority of students were white in the private schools sampled and black in public ones.' This indicates ethnicity data was not systematically collected, and only qualitative observations are provided (majority white in private schools, majority black in public schools), not quantifiable percentages.",
+      "warning": "Ethnicity data was not collected; only qualitative observations provided. No specific percentage of white participants can be extracted."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          11.5
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            11.5
+          ]
+        }
+      },
+      "evidence_source": "The text states 'The adaptation of the Brazilian version of BAS for adolescents aged 10 to 13 years' and later 'Although this is the first study among adolescents aged between 10 to 13 years old using the BAS'. The mean age is inferred as the midpoint of the age range 10-13 years: (10+13)/2 = 11.5 years.",
+      "warning": "Mean age is inferred from the stated age range (10-13 years) by calculating the midpoint. Actual mean age not explicitly provided."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The Discussion section does not provide information about the educational level of participants. The sample consists of adolescents aged 10-13 years, who would typically be in primary/secondary school, but no explicit percentage with college or higher education is stated.",
+      "warning": "Educational attainment data not provided in the Discussion section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The Discussion section discusses associations between BAS scores and BMI and mentions comparisons between 'normal-weight group' and 'overweight group', but does not provide the actual mean BMI value for the sample.",
+      "warning": "Mean BMI not explicitly stated in the Discussion section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "primary/secondary/ high school"
+        ]
+      },
+      "evidence_source": "The text states: 'we do know the majority of students were white in the private schools sampled and black in public ones. Our intention in grouping both private and public settings was to generalize to ethnically diverse adolescents.' This indicates participants were recruited from both private and public schools, which are primary/secondary school settings.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The entire Discussion section discusses the Body Appreciation Scale (BAS) and its validation. The text states: 'The factor structure set to the original factor structure of BAS, keeping the 13 items (Avalos, et al. 2005)' and 'The BAS version is suitable for administration in the Brazilian adolescent population'. The study adapted and validated the original BAS (13 items) for Brazilian adolescents aged 10-13 years.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not specify whether BMI was assessed via self-reported or measured methods. It only discusses the associations between BAS scores and BMI values.",
+      "warning": "Method of BMI assessment (self-reported vs. measured) not specified in the Discussion section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The Discussion section describes the negative association between BAS scores and BMI qualitatively (e.g., 'The negative association between BAS scores and BMI was observed', 'the association between lower BMI and higher BAS scores'), but does not provide specific correlation coefficient values (r values).",
+      "warning": "Specific correlation coefficients between BAS and BMI are not provided in the Discussion section. Only qualitative descriptions of the negative association are present."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "This is a Discussion section of a single study. The text refers to 'this study', 'the present study', and 'Although this is the first study among adolescents aged between 10 to 13 years old using the BAS', indicating one primary study being discussed. While the text references other studies in the literature for comparison, this section describes one main study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a Discussion section only. The publication type (journal article vs. dissertation) cannot be determined from this section alone without access to the title page or other identifying information.",
+      "warning": "Publication type cannot be determined from the Discussion section alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Discussion section presents findings from a single study (Study X) that adapted and validated the Brazilian version of the Body Appreciation Scale (BAS) for adolescents aged 10-13 years. The study confirmed the original unidimensional factor structure of the BAS with 13 items and demonstrated satisfactory internal consistency (\u03b1 = .804), concurrent validity through negative associations with BMI and positive associations with body satisfaction, and significant differences between normal-weight and overweight groups. The research was conducted in both private and public schools in Brazil, with participants from ethnically diverse backgrounds.",
+      "evidence_source": "Entire Discussion section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,133 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          333
+        ]
+      },
+      "evidence_source": "Sentence: 'For example, according to expert guidelines (Fritz & MacKinnon, 2007), the analytic sample size of 333 far exceeds the required minimum N of 148 to observe an indirect effect...'.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text reports missingness for BMI ('BMI (6.1%)') but does not report mean BMI.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Sentence listing variable missingness: '...BAS-2 (4.4%)...'. This indicates the Body Appreciation Scale - 2 (BAS-2) was used.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text references 'BMI (6.1%)' as a variable but does not state whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Sentence: 'Possessing a higher BMI corresponded with reporting higher levels of family fat talk and lower levels of mindful eating and positive body image.' Also: 'Table 1 presents the means, standard deviations, and correlations for the key study variables.' No numeric Pearson r is provided in the text.",
+      "warning": "Only the direction of association is reported (higher BMI associated with lower positive body image); no numeric correlation coefficient available in the provided text.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section describes a single analytic sample (analytic sample size of 333) and references 'Table 1' for the study's variables, indicating one study in this section.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section reports preliminary analyses for a single study (analytic N = 333), including variable-level missingness and justification for listwise deletion after Little's Test indicated data were MCAR. It notes that distributions met skewness and kurtosis criteria, that z-scores were created for analyses, and that Table 1 contains means, SDs, and correlations; the text states higher BMI was associated with lower positive body image but does not provide numeric correlation coefficients.",
+      "evidence_source": "Key sentences: 'For example, ... the analytic sample size of 333...'; 'Little's Test: X2 (31) = 20.37, p = .93'; 'Table 1 presents the means, standard deviations, and correlations for the key study variables.'; 'Possessing a higher BMI corresponded with reporting ... lower levels of ... positive body image.'",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

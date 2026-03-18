@@ -1,0 +1,99 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "United Kingdom"
+        ]
+      },
+      "evidence_source": "Author affiliation states 'School of Psychology, University of Sussex, Brighton, BN1 9QH, United Kingdom'",
+      "warning": "Study name is unclear from title/header alone; using 'Study X' as placeholder. Full text content needed to confirm study structure."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information provided in the title and author affiliation section.",
+      "warning": "Sample size not available in provided text."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information provided in the title and author affiliation section.",
+      "warning": "Survey method not available in provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information provided in the title and author affiliation section.",
+      "warning": "Racial/ethnic composition not available in provided text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information provided in the title and author affiliation section.",
+      "warning": "Mean age not available in provided text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information provided in the title and author affiliation section.",
+      "warning": "Education level not available in provided text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI information provided in the title and author affiliation section.",
+      "warning": "Mean BMI not available in provided text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample source information provided in the title and author affiliation section.",
+      "warning": "Sample source not available in provided text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No body appreciation assessment instrument mentioned in the title and author affiliation section.",
+      "warning": "Body appreciation assessment method not available in provided text."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI assessment method mentioned in the title and author affiliation section.",
+      "warning": "BMI assessment method not available in provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No correlation data provided in the title and author affiliation section.",
+      "warning": "Correlation coefficients not available in provided text."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "Cannot determine number of studies from title and author affiliation alone. Full methods section needed.",
+      "warning": "Study count cannot be determined from provided text."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "Publication type (journal article vs. dissertation) cannot be determined from title and author affiliation alone.",
+      "warning": "Publication type not identifiable from provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section contains the title and author information for a study examining the role of introjected regulation in linking appearance goals for exercise with women's body image, conducted by researchers at the University of Sussex in the United Kingdom. The study focuses on women's body image and exercise motivation. No methodological details, sample characteristics, or results are available in this header section.",
+      "evidence_source": "Title and author affiliation provided",
+      "warning": "Only header information available; full study details required for complete extraction."
+    },
+    "_pass_type": "text_only"
+  }
+]

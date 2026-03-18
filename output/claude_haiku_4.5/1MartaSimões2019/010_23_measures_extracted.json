@@ -1,0 +1,97 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a methods section describing measures used in a study. No country information is provided in this section.",
+      "warning": "Country information not available in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes measures administered to participants but does not specify the sample size or number of participants.",
+      "warning": "Sample size not provided in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'self-report measures were administered to participants' but does not specify whether data collection was via paper-and-pencil or online methods.",
+      "warning": "Survey method not explicitly stated in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information about racial/ethnic composition is provided in this measures section.",
+      "warning": "Demographic data on race/ethnicity not available in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide participant age information.",
+      "warning": "Age data not available in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about educational attainment of participants is provided in this measures section.",
+      "warning": "Educational attainment data not available in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While the text describes how BMI was calculated from self-reported weight and height, no actual mean BMI values for participants are reported in this section.",
+      "warning": "Mean BMI values not provided in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify where or how participants were recruited (community, college, or primary/secondary/high school).",
+      "warning": "Sample source not specified in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'Body Appreciation Scale \u2013 2 (BAS-2; Tylka & Wood-Barcalow, 2015b; Portuguese version by Marta-Sim\u00f5es et al., 2016). This self-report scale evaluates an aspect of positive body image denominated body appreciation.' The BAS-2 was used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "The text states: 'An initial demographic data questionnaire asked participants to report their current weight and height values. Body mass index values were calculated by dividing current weight, in Kilograms, by height squared, in Meters.' This indicates BMI was calculated from self-reported weight and height.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This is a measures/methods section that describes the instruments used but does not report any correlation coefficients between body appreciation and BMI.",
+      "warning": "Correlation data not available in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text is a methods section describing measures. It mentions 'two groups' at the end ('The Cronbach's alphas for each study variables for two groups are presented in Table 1'), but does not explicitly state the number of studies conducted. Without access to the full paper context, the number of studies cannot be determined from this section alone.",
+      "warning": "Number of studies cannot be determined from this measures section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "This is a methods section from a research paper. The publication type (journal article vs. dissertation) is not specified in this section.",
+      "warning": "Publication type not identifiable from this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the measures administered to participants in a Portuguese-language study. The key instruments include Body Mass Index (BMI) calculated from self-reported weight and height, the Compassionate Engagement and Action Scales (CEAS) with focus on self-compassion subscales, the Acceptance and Action Questionnaire-II (AAQ-II) assessing experiential avoidance, and the Body Appreciation Scale-2 (BAS-2) measuring positive body image. The text references Cronbach's alphas for variables across two groups presented in Table 1, suggesting multiple sample groups were analyzed.",
+      "evidence_source": "Section 2.3 Measures - entire text content provided",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

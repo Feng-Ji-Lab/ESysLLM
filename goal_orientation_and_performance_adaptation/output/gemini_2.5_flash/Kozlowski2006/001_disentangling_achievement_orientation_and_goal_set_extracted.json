@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "This article is based on research sponsored in part by the Air Force Office of Scientific Research (Grant No. F49620-01-1-0283), Steve W. J. Kozlowski and R. P. DeShon, principal investigators, and the Army Research Institute for the Social and Behavioral Sciences (Grant No. 1435- 04-03-CT-71272). The use of 'article' implies a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "This article is based on research sponsored in part by the Air Force Office of Scientific Research (Grant No. F49620-01-1-0283), Steve W. J. Kozlowski and R. P. DeShon, principal investigators, and the Army Research Institute for the Social and Behavioral Sciences (Grant No. 1435- 04-03-CT-71272), K. J. Klein, Steve W. J. Kozlowski, and Y. Xiao, principal investigators.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The publication is identified as an 'article' and is published by Michigan State University and Cornell University authors, implying it is a journal article, which is typically peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The research examined 'achievement orientation' and 'performance frame and content' and 'performance goals'. It does not differentiate between performance-approach and performance-avoidance, thus 'Global' performance goal orientation is inferred.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses 'self-regulatory activity' and its effects on 'learning and performance' as outcomes. However, it does not explicitly state the assessment method (self-report, other, objective, mixed) for 'performance adaptation'.",
+      "warning": "No explicit measurement method for 'performance adaptation' was found."
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No explicit measurement method for 'performance adaptation' was found, therefore the method (subjective/objective) cannot be determined.",
+      "warning": "No explicit measurement method for 'performance adaptation' was found."
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No explicit measurement method for 'performance adaptation' was found, therefore the specific method cannot be determined.",
+      "warning": "No explicit measurement method for 'performance adaptation' was found."
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text mentions 'trait-based achievement orientation theory' but does not attribute the goal orientation scale to VandeWalle. Therefore, it is coded as 'Other'.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No age information (mean, range, SD, median) was reported for the trainees.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No age information was reported, so imputation is not possible.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information on the sex composition of the sample was provided.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No information on the percentage of men in the sample was provided.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "The authors are from Michigan State University and Cornell University, and the research was sponsored by the Air Force Office of Scientific Research and the Army Research Institute for the Social and Behavioral Sciences, all US-based institutions, indicating a USA sample.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "The sample consists of 'trainees'. Given the funding from military research institutes (Air Force, Army), it is inferred that these are likely military personnel or employees undergoing training, rather than a student sample.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [524]}",
+      "evidence_source": "The authors examined the effects of 3 training design factors... of 524 trainees.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "The text states 'Results revealed that all 3 factors had a significant influence on self-regulation', but no specific Pearson correlation coefficients (r values) between Performance Goal Orientation and performance adaptation were reported.",
+      "warning": "No specific correlation coefficient (r) between PGO and PA was reported."
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [None]}",
+      "evidence_source": "No specific correlation coefficient was reported, so no correlation information can be provided.",
+      "warning": "No specific correlation coefficient (r) between PGO and PA was reported."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'this research' and 'the authors examined the effects... of 524 trainees', indicating a single study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes a single research study that investigated the independent and integrated effects of achievement orientation and goal-setting approaches on the self-regulatory activity of 524 trainees using a complex computer-based simulation. The study found that three training design factors (goal frame, goal content, and goal proximity) significantly influenced self-regulation, with goal content having the greatest impact. The authors are from Michigan State University and Cornell University, and the research was funded by the Air Force Office of Scientific Research and the Army Research Institute.",
+      "evidence_source": "Summary of the provided text content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

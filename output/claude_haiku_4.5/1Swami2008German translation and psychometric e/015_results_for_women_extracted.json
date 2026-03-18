@@ -1,0 +1,235 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the total sample size or gender-specific sample sizes for this study.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about survey method (paper-and-pencil or online) is provided in the text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information is provided in the text.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in the text.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No educational attainment information is provided in the text.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While BMI is mentioned as a variable in the correlation analysis, no mean BMI value is reported in the provided text. The text references 'Table 2' which would contain means and standard deviations, but the table itself is not provided.",
+      "warning": "Table 2 is referenced but not provided; cannot extract mean BMI values."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about where or how participants were recruited is provided in the text.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'we conducted an exploratory factor analysis of the BAS data' and 'we calculated Cronbach's a for all 13 items of the BAS, and this revealed that the internal consistency of the BAS for female participants was very good (a = .90).' The BAS (Body Appreciation Scale) is the instrument used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions BMI as a variable but does not specify whether it was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.3
+        ]
+      },
+      "evidence_source": "The text states: 'BAS showed a large positive correlation (cf. Cohen, 1992) with WC, moderate positive correlations with SA, PC, and self-esteem, and a moderate negative correlation with BMI.' The text explicitly describes a 'moderate negative correlation with BMI' but does not provide the exact correlation coefficient value. Table 2 is referenced as containing 'Pearson r correlations of the measures for women (including BMI)' but the table is not provided. Based on Cohen's (1992) effect size guidelines, a 'moderate' correlation typically ranges from approximately -0.3 to -0.5. Without the actual table, an exact value cannot be extracted.",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.3
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "warning": "Exact correlation coefficient not provided in text; Table 2 referenced but not provided. Estimated value based on 'moderate negative correlation' descriptor. This is an approximation and should be verified against the actual table."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the number of studies. The phrase 'data for women and men were analysed separately' indicates gender-based analysis within what appears to be a single study, but the total number of studies in the paper is not specified in this section.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in the text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents results for female participants from a study examining the Body Appreciation Scale (BAS). The authors conducted a factor analysis of the BAS data, finding a one-factor solution that explained 45.5% of variance and demonstrated good internal consistency (\u03b1 = .90) for female participants. The analysis revealed that BAS showed a moderate negative correlation with BMI, supporting the construct validity of the scale.",
+      "evidence_source": "Entire provided text section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is provided in the text or table.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information is provided in the text or table.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is provided in the text or table.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information is provided in the text or table.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in the text or table.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in the text or table.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "female": [
+          21.94
+        ],
+        "male": [
+          24.01
+        ],
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Table 2 reports M (women) = 21.94 and M (men) = 24.01 for BMI.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample source (community, college, or school) is provided in the text or table.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text states 'we calculated Cronbach's a for all 13 items of the BAS' and Table 2 shows BAS as the body appreciation measure.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text and table do not specify whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.03,
+          -0.28
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.28
+          ]
+        },
+        "male": {
+          "Study X": [
+            -0.03
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Table 2, row 1 (BAS) and column 6 (BMI): For women (lower off-diagonal), the correlation is \u2212.28** (p < .001). For men (upper off-diagonal), the correlation is \u2212.03 (not significant).",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes results for women and men from a single study, with separate analyses by gender but no indication of multiple distinct studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in the text or table.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section reports results from a single study analyzing body appreciation (BAS) and its correlations with various measures separately for women and men. Table 2 presents means, standard deviations, and Pearson r correlations among different measures for both genders, showing that BAS had a moderate negative correlation with BMI for women (r = \u2212.28) but virtually no correlation for men (r = \u2212.03).",
+      "evidence_source": "Text content describing factor analysis results and Table 2 with correlation matrix.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2: Means, standard deviations and Pearson r correlations among the different measures for women (lower off-diagonal entries) and men (upper off-diagonal entries)",
+      "evidence_source": "Table title and caption as presented in the image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2008German translation and psychometric e/tables/1Swami2008German translation and psychometric e_p003_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

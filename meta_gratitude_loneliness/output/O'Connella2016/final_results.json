@@ -1,0 +1,93 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "reason": "Multiple candidates explicitly state that the paper describes 'a single study' or 'this single study' (e.g., Candidates [3], [4], [7], [9]). Other candidates consistently refer to 'the current study' or 'the present study' and describe a single set of participants and analyses. Candidate [1] discusses a literature review of *other* studies, not studies conducted within the current paper, making its value of 0 irrelevant to the field's definition of counting studies *in this paper*. Therefore, the most accurate and consistently supported value is 1."
+  },
+  "N": {
+    "extract_value": {
+      "Single study": [
+        118,
+        116
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context and consistent references across candidates. The initial sample size was 118 participants, as stated in the abstract (Candidate 0), the participants section (Candidate 1), and Table 1 (Candidate 4). However, 2 participants were excluded from the statistical analysis due to incomplete measures, resulting in an effective sample size of 116 for the main analyses. This exclusion is explicitly explained in the statistical analysis section (Candidate 2) and confirmed by the degrees of freedom in the preliminary analysis (Candidate 3). Both the initial sample size (118) and the sample size used for analysis (116) are relevant and are included in the list for this single study."
+  },
+  "female": {
+    "extract_value": {
+      "Single study": [
+        0.678
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper describes a single study, as indicated by the context. Candidate [0] explicitly states '67.8% female' for 'Study X', which is resolved to 'Single study' based on the paper's structure. The value is already a proportion (0-1)."
+  },
+  "M_age": {
+    "extract_value": {
+      "Single study": [
+        30.6
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper describes a single study, as indicated by the context and consistent references to 'Study X' in both candidates. Both candidates provide the same mean age of 30.6. Candidate [0] is from the 'participants_and_procedure' section, a primary source for demographic data. Candidate [1] is from a descriptive statistics table, also a reliable source. Since both values are identical and from reliable sources, they are merged into a single entry for the 'Single study'."
+  },
+  "SD_age": {
+    "extract_value": {
+      "Single study": [
+        10.7
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context and the section summaries of both candidates. Both candidates consistently report the same standard deviation for age (10.7) for this single study. Candidate [0] provides the value from the main text in the 'Participants and Procedure' section, and Candidate [1] provides the same value from Table 1 in the 'Preliminary Analysis' section. Since the values are identical and refer to the same study, they are merged."
+  },
+  "usa_vs_other": {
+    "extract_value": {
+      "Single study": [
+        1
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper describes a single study, as indicated by the context and the candidate's section summary. Candidate [0] states that 'five Americans' were among the participants. According to the definition, if the sample was collected in the United States (USA), the value should be 1. The presence of American participants confirms that the sample included individuals from the USA, thus the value is 1. The candidate's provided value of 0 for 'Study X' is contradicted by its own evidence and is therefore overridden."
+  },
+  "r": {
+    "extract_value": {
+      "Single study": [
+        -0.47
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study, as indicated by the context. Candidate [0] explicitly reports the Pearson correlation coefficient between 'Gratitude' and 'Loneliness' as -0.47 in Table 1. This value directly matches the field definition and is assigned to the 'Single study'."
+  }
+}

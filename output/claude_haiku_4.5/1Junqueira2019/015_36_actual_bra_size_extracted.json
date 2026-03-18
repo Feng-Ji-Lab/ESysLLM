@@ -1,0 +1,307 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Brazil"
+        ]
+      },
+      "evidence_source": "Text states 'Brazilian bra sizes' and 'Brazilian Association of Technical Standards', indicating the study was conducted in Brazil.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information is provided in this section.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method is mentioned in this section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about racial/ethnic composition is provided in this section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in this section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI information is provided in this section.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample source (community, college, or school) is provided in this section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section discusses bra size measurement, not body appreciation assessment. The note mentions MBSRQ and SATAQ but these are not body appreciation scales (BAS/BAS-2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI assessment method is described in this section. The section discusses bra size measurement only.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation data is provided in this section.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section does not provide information about the number of studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the measurement of actual bra size in a Brazilian study, conducted by trained researchers following national reference benchmarks. Bra sizes ranged from 36 to 58 and were measured based on band width rather than cup size. The section does not contain demographic, sample, or correlation data relevant to body appreciation and BMI.",
+      "evidence_source": "Section 3.6 titled 'Actual bra size'",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Brazil"
+        ]
+      },
+      "evidence_source": "Text section 3.6 states 'Brazilian bra sizes do not take into account cup sizes' and 'All measurements were made following the national reference benchmarks of the Brazilian Association of Technical Standards', indicating the study was conducted in Brazil.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          194
+        ]
+      },
+      "evidence_source": "Table 1 caption states 'Inter-scale Correlations between Breast Size Dissatisfaction and Other Variables Included in the Present Study (N = 194).'",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section 3.6 and Table 1 do not specify whether data collection was via paper-and-pencil or online survey methods.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain information about the racial/ethnic composition of participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not report mean age of participants.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain information about educational attainment of participants.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not report mean BMI. Table 1 includes 'Body mass index' as variable 9, but only correlation coefficients are shown, not mean values.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section 3.6 and Table 1 do not specify the source of the sample (community, college, or primary/secondary/high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "Table 1 includes variable 3 'Body appreciation' and the note states 'MBSRQ: Multidimensional Body-Self Relations Questionnaire - Appearance Scales'. The Body Appreciation Scale (BAS) is a subscale of the MBSRQ. The table does not specify BAS vs BAS-2, but based on the MBSRQ reference, this is the original BAS.",
+      "warning": "Cannot definitively confirm BAS vs BAS-2 from the provided text alone; inferred as BAS based on MBSRQ context."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "measured"
+        ]
+      },
+      "evidence_source": "Section 3.6 states 'Trained researchers measured participants' actual bra size' and describes measurement procedures following 'national reference benchmarks of the Brazilian Association of Technical Standards', indicating measured (not self-reported) assessment.",
+      "warning": "The text describes measurement of bra size, which is used as a proxy for breast size. BMI assessment method is not explicitly stated in the provided text, but the emphasis on trained researchers and standardized measurement procedures suggests measured rather than self-reported."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.36
+        ]
+      },
+      "evidence_source": "Table 1, row 3 (Body appreciation) and column 9 (Body mass index): the correlation coefficient is -0.36 with significance marker ** (p < .05). The numeric value extracted is -0.36. This is the only correlation between Body Appreciation (variable 3) and BMI (variable 9) reported in the table.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text section 3.6 and Table 1 describe a single study with N = 194 participants. No mention of multiple studies or experiments is present.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not indicate whether this is from a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the measurement of actual bra size in a Brazilian study (N = 194) as a proxy for breast size, following standardized national benchmarks. Table 1 presents inter-scale correlations between breast size dissatisfaction and other variables including body appreciation (BAS), weight discrepancy, body areas satisfaction, sociocultural attitudes, and body mass index. The correlation between body appreciation and BMI is -0.36 (p < .05).",
+      "evidence_source": "Section 3.6 text and Table 1 caption and data.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1: Inter-scale Correlations between Breast Size Dissatisfaction and Other Variables Included in the Present Study (N = 194).",
+      "evidence_source": "Table 1 title and caption as presented in the image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Junqueira2019/tables/1Junqueira2019_p002_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section discusses actual bra size measurement in Brazil, but does not explicitly state the country where the study was conducted. The context mentions 'Brazilian bra sizes' and 'Brazilian Association of Technical Standards', which suggests Brazil, but this is not an explicit statement about the study location in the provided text.",
+      "warning": "Country can be inferred as Brazil from context (Brazilian bra sizes, Brazilian Association), but is not explicitly stated in the provided text section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "Table 2 caption states 'N = 100', indicating the total sample size for this study.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not describe the survey method (paper-and-pencil or online).",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report the percentage of white participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report the mean age of participants.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report the percentage of participants with college or higher education.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report the mean BMI of participants.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not describe the source of the sample (community, college, or primary/secondary/high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text mentions MBSRQ (Multidimensional Body-Self Relations Questionnaire) in the note, but does not specify whether BAS or BAS-2 was used for body appreciation assessment.",
+      "warning": "MBSRQ is mentioned but it is not the same as BAS or BAS-2. The specific body appreciation instrument is not clearly identified."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text describes measurement of actual bra size by trained researchers, but does not explicitly state how BMI was assessed (self-reported or measured).",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Table 2 presents correlations between BSRS-derived scores and intraclass correlation coefficients, but does not contain a correlation between body appreciation and BMI. The table shows correlations for breast size variables (current breast size, ideal breast size, breast size dissatisfaction, absolute breast size dissatisfaction) with test-retest reliability, not BMI correlations.",
+      "warning": "The table does not contain the requested correlation between body appreciation and BMI."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text section does not explicitly state the number of studies. It appears to be a single study section (3.6) discussing actual bra size measurement.",
+      "warning": "Cannot determine from provided text whether this is part of a multi-study paper."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not indicate whether this is from a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the measurement of actual bra size in a study with N=100 participants, where trained researchers measured bra size following Brazilian national reference benchmarks. Table 2 presents mean ratings and standard deviations for BSRS-derived scores (current breast size, ideal breast size, breast size dissatisfaction, and absolute breast size dissatisfaction) along with intraclass correlation coefficients between test and retest, all showing high reliability (correlations ranging from .83 to .96, p < .001).",
+      "evidence_source": "Section 3.6 text and Table 2 caption and data"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2: Mean Rating (SD) for BSRS-Derived Scores and Intraclass Correlation Coefficient between Test and Retest (N = 100).",
+      "evidence_source": "Table 2 title as presented in the image"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Junqueira2019/tables/1Junqueira2019_p002_table01.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_1"
+  }
+]

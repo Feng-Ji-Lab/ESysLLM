@@ -1,0 +1,281 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "No country or region is stated in the section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"Our sample comprised young, mostly White, mostly normal weight women from middle to upper-middle class homes.\" (Discussion paragraph)",
+      "warning": "Total sample size (N) is not reported in this section.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "No information about survey/assessment method (online vs paper-and-pencil) in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"Our sample comprised young, mostly White, mostly normal weight women from middle to upper-middle class homes.\" (Discussion paragraph)",
+      "warning": "Described qualitatively as 'mostly White' without numeric percentage.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"Our sample comprised young, mostly White, mostly normal weight women from middle to upper-middle class homes.\" (Discussion paragraph)",
+      "warning": "Age described only as 'young' without numeric mean or range.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "\"students were recruited from Christian colleges\" and \"our sample comprised... women\" (Discussion paragraph) \u2014 participants are described as college students, so inferred as 100% college or higher.",
+      "warning": "Inferred value: text states participants were 'students... from Christian colleges' but does not explicitly say 'undergraduate' or provide a numeric percentage.",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            100
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"Our sample comprised young, mostly White, mostly normal weight women...\" (Discussion paragraph)",
+      "warning": "BMI described qualitatively as 'mostly normal weight' without numeric mean.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "\"Students were recruited from Christian colleges.\" (Discussion paragraph)",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No measurement instrument (e.g., BAS or BAS-2) for body appreciation is specified in this section.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No description of how BMI was assessed (self-reported vs measured) in this section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation (Pearson r) between body appreciation and BMI is reported in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "\"This study tested two hypotheses: first, that higher frequency of social comparison would be related to lower body appreciation and second, that attachment to God would moderate those relationships.\" (Discussion opening sentence)",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type (journal article or dissertation) is specified in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Discussion summarizes a single study that found more frequent social comparison was associated with lower body appreciation among women, and that attachment to God (especially attachment anxiety) moderated those relationships such that feeling unconditionally loved by God buffered the negative effects. The section notes the sample consisted of young, mostly White, mostly normal-weight women recruited from Christian colleges, describes theoretical implications, mentions interventions and limitations (including limited generalisability and cross-sectional design), and suggests future research directions.",
+      "evidence_source": "Multiple sentences throughout the Discussion: opening sentence summarizing hypotheses and findings; sentence stating \"our sample comprised young, mostly White, mostly normal weight women...\"; paragraphs on theoretical implications, interventions, and limitations.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Text: \"students were recruited from Christian colleges\" and \"our sample comprised young, mostly White, mostly normal weight women from middle to upper-middle class homes.\" No country is specified.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Text: \"our sample comprised young, mostly White, mostly normal weight women from middle to upper-middle class homes.\" (No sample N provided.)",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about survey/data collection method in the provided text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Text: \"our sample comprised young, mostly White...\" (no numeric percentage given).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Text: \"our sample comprised young...\" (no mean age or numeric age range provided).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "Text: \"students were recruited from Christian colleges.\" By stating participants were students recruited from colleges, we infer (per extraction rules) that 100% of participants had college enrollment (i.e., college or higher).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Text: \"mostly normal weight\" (no numeric mean BMI reported).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Text: \"students were recruited from Christian colleges.\"",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No explicit measure name (e.g., BAS or BAS-2) for body appreciation is reported in the provided text.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about whether BMI was self-reported or measured in the provided text.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson r or correlation statistics between body appreciation and BMI are reported in the provided text or figure.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Text: \"This study tested two hypotheses...\" (the paper describes a single study).",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No explicit publication type (journal article or dissertation) is stated in the provided text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Discussion summarizes a single study (no Study 1/Study 2 labels) that found frequent social comparison predicted lower body appreciation among women, and that attachment to God (particularly low anxiety/feeling loved) buffered that effect. The section notes sample limitations (young, mostly White, college students from Christian colleges), small moderation effect sizes, and suggests future experimental and intervention research.",
+      "evidence_source": "Key sentences: \"This study tested two hypotheses... Both hypotheses were confirmed.\"; \"our sample comprised young, mostly White, mostly normal weight women from...\"; \"students were recruited from Christian colleges and most participants reported that they were at least somewhat religious.\"; \"the moderation effect sizes were small.\"",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Figure 3. Regression lines showing the relationships between frequency of exercise comparison and body appreciation by low (\u22121 SD) and high (1 SD) levels of God attachment anxiety and God attachment avoidance.",
+      "evidence_source": "Caption text visible in provided figure image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Homan2016Perceived relationship with God/figures/1Homan2016Perceived relationship with God_p009_fig00.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_0"
+  }
+]

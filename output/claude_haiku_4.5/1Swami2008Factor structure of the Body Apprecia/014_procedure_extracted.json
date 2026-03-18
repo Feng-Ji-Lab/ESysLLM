@@ -1,0 +1,93 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not mention any country or geographic location where the study was conducted.",
+      "warning": "No country information provided in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'six data collectors' and 'snowball-sampling technique' but does not provide a specific total sample size or number of participants.",
+      "warning": "Sample size not explicitly stated in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "paper-and-pencil"
+        ]
+      },
+      "evidence_source": "All participants completed paper-and-pencil versions of the questionnaire anonymously, and returned the questionnaires to their contact person.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide any information about the racial or ethnic composition of participants.",
+      "warning": "No demographic information about race/ethnicity provided."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide any information about participant age or mean age.",
+      "warning": "No age information provided in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide any information about educational attainment of participants.",
+      "warning": "No educational background information provided."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide any information about participant BMI or mean BMI.",
+      "warning": "No BMI information provided in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes the sampling method (snowball-sampling technique) but does not explicitly state whether participants were from community, college, or primary/secondary/high school sources.",
+      "warning": "Source of sample cannot be definitively determined from this procedural description alone."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify which instrument (BAS or BAS-2) was used to assess body appreciation.",
+      "warning": "Assessment instrument for body appreciation not mentioned in this section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether BMI was self-reported or measured.",
+      "warning": "BMI assessment method not specified in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is a procedural description and does not contain any correlation coefficients or statistical results.",
+      "warning": "No correlation data provided in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section describes a procedure but does not explicitly state how many studies are included in the paper. The text does not reference 'Study 1', 'Study 2', or similar designations.",
+      "warning": "Number of studies cannot be determined from this procedural section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "This section is a procedural description and does not indicate whether the publication is a journal article or dissertation.",
+      "warning": "Publication type not determinable from this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the procedural methodology for data collection. Participants were recruited using a snowball-sampling technique initiated by six data collectors, and completed paper-and-pencil questionnaires anonymously. The text acknowledges potential sampling bias but does not provide specific demographic details, sample size, or assessment instruments.",
+      "evidence_source": "Entire Procedure section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

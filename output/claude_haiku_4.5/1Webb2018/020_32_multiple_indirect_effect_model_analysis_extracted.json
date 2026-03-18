@@ -1,0 +1,198 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information is provided in this section.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information about race/ethnicity is provided in this section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While BMI is mentioned in the statistical model (\u03b2 = \u22120.01, p = .87), no mean BMI value for participants is reported in this section.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample source (community, college, etc.) is provided in this section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The text explicitly mentions 'BAS-2: \u03b2 = 0.10, p = .13' as one of the variables in the multiple indirect effect model. Additionally, 'FBApS' (Functional Body Appreciation Scale) is mentioned as another body image measure, but the specific assessment instrument for general body appreciation is identified as BAS-2.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section does not specify whether BMI was self-reported or measured; it only includes BMI as a variable in the statistical model.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section presents results from a multiple indirect effect model with standardized beta weights, not correlation coefficients between body appreciation and BMI. The reported values are path coefficients (\u03b2) from a mediation model, not Pearson correlations.",
+      "warning": "The section reports indirect effects and path coefficients from a mediation analysis, not direct correlations between BAS-2 and BMI."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section describes results from a single analysis (multiple indirect effect model) but does not explicitly state the number of studies in the paper.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents results from a multiple indirect effect model analysis examining how body image variables mediate the relationship between family fat talk and mindful eating. The model included BAS-2 (general body appreciation) and FBApS (functional body appreciation) as mediators, along with BMI and FFTQ-F as predictors. A significant indirect effect of family fat talk on mindful eating through functional body appreciation was found (\u03b2 = \u22120.06, p = .01), but the corresponding indirect effect through general body appreciation was not significant (\u03b2 = 0.02, p = .16).",
+      "evidence_source": "Section 3.2 content describing the multiple indirect effect model analysis and its results."
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section does not contain explicit information about the country where the study was conducted. The section focuses on statistical analysis results (multiple indirect effect model analysis) and does not include demographic or methodological details about the sample location.",
+      "warning": "No country information available in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section does not contain information about sample size. The section presents results from a multiple indirect effect model analysis but does not report the number of participants.",
+      "warning": "No sample size information available in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section does not contain information about the survey method used. The section focuses on statistical analysis results rather than methodological details.",
+      "warning": "No survey method information available in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section does not contain demographic information about racial/ethnic composition of participants.",
+      "warning": "No racial/ethnic demographic data available in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section does not contain information about participant age. The section presents statistical analysis results without demographic details.",
+      "warning": "No age information available in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section does not contain information about educational attainment of participants.",
+      "warning": "No education level information available in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          23.5
+        ]
+      },
+      "evidence_source": "Table 1 shows 'Descriptive Statistics and Zero-Order Correlations.' The row labeled '1. BMI' reports Mean = 23.5 and SD = 4.86. This represents the mean BMI of participants in the study.",
+      "warning": "The table is referenced in the context but the specific study number is not explicitly labeled in the provided text section. Using 'Study X' as a placeholder per extraction guidelines."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section does not contain information about where or how participants were recruited (e.g., community, college, primary/secondary school).",
+      "warning": "No source of sample information available in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Table 1 includes a row labeled '3. Body Appreciation' and another row labeled '4. Functional Body Appreciation'. The text mentions 'BAS-2' in the results section: 'BAS-2: \u03b2 = 0.10, p = .13, 95% CI: \u22120.03 to 0.23', indicating that the Body Appreciation Scale-2 (BAS-2) was used to assess body appreciation.",
+      "warning": "The table shows both 'Body Appreciation' and 'Functional Body Appreciation' as separate variables. The text explicitly references BAS-2 in the statistical results."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section does not specify whether BMI was assessed via self-report or measured directly. Table 1 reports BMI values but does not indicate the assessment method.",
+      "warning": "Assessment method for BMI (self-reported vs. measured) is not specified in the provided text or table."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.3
+        ]
+      },
+      "evidence_source": "Table 1, 'Descriptive Statistics and Zero-Order Correlations.' Row 3 is 'Body Appreciation' and Column 1 is 'BMI'. The cell at the intersection shows -.30** (with ** indicating p < .01). The correlation coefficient is -0.30. This is the zero-order (Pearson) correlation between Body Appreciation (not Functional Body Appreciation) and BMI. The table note indicates **p < .01.",
+      "warning": "The table also shows a correlation between 'Functional Body Appreciation' (row 4) and BMI of -.24**, but per instructions, only the Body Appreciation (not Functionality) correlation is extracted. The value -0.30 is highlighted in green in the table."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text section presents results from a single study's multiple indirect effect model analysis. No mention of multiple studies or experiments is present in this section. The table (Table 1) appears to be from a single study.",
+      "warning": "Only one study is evident from the provided text section. The section number '3.2' suggests this is part of a larger results section, but no indication of multiple studies within this section."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text section does not contain information about the publication type (journal article vs. dissertation). The section presents results from a study but does not identify the publication venue.",
+      "warning": "Publication type cannot be determined from the provided text section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents results from a multiple indirect effect model analysis examining how body image variables mediate the relationship between family fat talk and mindful eating. The model accounted for 20% of variance in mindful eating scores, with functional body appreciation (FBApS) emerging as a significant mediator (\u03b2 = 0.35, p < .001), while general body appreciation (BAS-2) did not show a significant indirect effect. Table 1 provides descriptive statistics and zero-order correlations for all variables, including a correlation of -0.30 between Body Appreciation and BMI.",
+      "evidence_source": "Synthesized from the text section '3.2. Multiple indirect effect model analysis' and Table 1 caption and data."
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1: Descriptive Statistics and Zero-Order Correlations.",
+      "evidence_source": "The table title as it appears at the top of the provided table image."
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Webb2018/tables/1Webb2018_p003_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  }
+]

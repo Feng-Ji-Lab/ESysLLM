@@ -1,0 +1,574 @@
+{
+  "Publication type": {
+    "0": {
+      "type": "enum_or_none",
+      "extract_value": "journal articles",
+      "evidence_source": "The header states 'Journal of Health Psychology 2014, Vol. 19(8) 1013\u20131024', indicating this is a journal article publication.",
+      "warning": "None",
+      "source_file": "001_general_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This is the title page/header section of a journal article published in the Journal of Health Psychology in 2014. The article is titled 'Body talk among undergraduate women: Why conversations about exercise and weight loss differentially' but the full title and abstract are not provided in this excerpt. No study details, sample characteristics, or data are available in this section."
+    },
+    "1": {
+      "type": "enum_or_none",
+      "extract_value": "journal articles",
+      "evidence_source": "The header clearly states 'Journal of Health Psychology 2014, Vol. 19(8) 1013\u20131024' indicating this is a journal article publication.",
+      "warning": "None",
+      "source_file": "001_general_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Wasylkiw2014/figures/1Wasylkiw2014_p000_fig00.png",
+      "_metadata_caption": "",
+      "_extracted_caption": "None",
+      "_section_summary": "This is the header section of a journal article titled 'Body talk among undergraduate women: Why conversations about exercise and weight loss differentially' published in the Journal of Health Psychology in 2014. The article appears to focus on undergraduate women and discussions related to exercise and weight loss, but the full content is not provided in the available text."
+    }
+  },
+  "Sample": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          143
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            143
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            143
+          ]
+        }
+      },
+      "evidence_source": "Abstract states 'Undergraduate women (N = 143)'",
+      "warning": "Only female participants; no male or other gender data provided.",
+      "source_file": "003_abstract_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This abstract describes a single study (Study X) with 143 undergraduate women who completed self-reports on exercise behavior, body orientation, body appreciation, and body-related talk. The study examined how conversations about weight loss/dieting versus exercise differentially predicted body appreciation, with results showing that exercise conversations operated through an object orientation (what bodies can do), while weight loss conversations operated through negative body attitudes."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          142
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            142
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            142
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'A convenience sample of 143 undergraduate women was recruited... To maintain a homogenous sample, we eliminated data from one participant with a reported age of 46 years. Of the remaining 142 participants...' The final sample size is 142 participants, all female.",
+      "warning": "None",
+      "source_file": "010_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes the participants for a single study (Study X) consisting of 142 undergraduate women recruited from an Introductory Psychology class via convenience sampling. The sample was predominantly Caucasian (86.9%), with a mean age of 18.68 years, and BMI was assessed through self-reported weight and height (mean BMI = 22.22). No information about body appreciation assessment or correlations is provided in this section."
+    },
+    "2": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          138
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            138
+          ]
+        }
+      },
+      "evidence_source": "Owing to missing responses, the results are based on 138 participants.",
+      "warning": "None",
+      "source_file": "013_bodyrelated_talk_predicting_body_appreciation_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section presents results from a multiple regression analysis examining how body-related talk (weight loss talk and exercise talk) predicts body appreciation while controlling for BMI. The analysis included 138 participants and found that increased BMI (\u03b2 = \u2212.32) and weight loss talk (\u03b2 = \u2212.37) negatively predicted body appreciation, while exercise talk (\u03b2 = .23) positively predicted it. The overall model accounted for 28% of the variance in body appreciation."
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            100
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      },
+      "evidence_source": "Abstract states 'Undergraduate women', indicating all participants are college students.",
+      "warning": "Inferred 100% college education based on 'undergraduate' status; this is a reasonable inference per the infer_rule.",
+      "source_file": "003_abstract_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This abstract describes a single study (Study X) with 143 undergraduate women who completed self-reports on exercise behavior, body orientation, body appreciation, and body-related talk. The study examined how conversations about weight loss/dieting versus exercise differentially predicted body appreciation, with results showing that exercise conversations operated through an object orientation (what bodies can do), while weight loss conversations operated through negative body attitudes."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "The text references 'a sample of undergraduate students' in the Wasylkiw and Williamson (2013) study. Per the infer_rule, undergraduate students are college students, so the percentage with college or higher education is 100%.",
+      "warning": "Inferred from 'undergraduate students' reference; explicit percentage not stated.",
+      "source_file": "006_corresponding_author_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section is a literature review discussing the role of 'fat talk' and body-related conversations in shaping women's body image and eating behaviors. It reviews research on how peer conversations about weight, dieting, and exercise influence body dissatisfaction and internalization of thin ideals, and cites the Wasylkiw and Williamson (2013) study showing that exercise-related talk predicted less body dissatisfaction while food/weight talk predicted increased dissatisfaction. The section does not present original empirical data or specific study samples."
+    },
+    "2": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            100
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'A convenience sample of 143 undergraduate women was recruited from an Introductory Psychology class'. All participants are undergraduate students, which means they have college or higher education experience. Therefore, 100% of participants have college or higher education.",
+      "warning": "None",
+      "source_file": "010_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes the participants for a single study (Study X) consisting of 142 undergraduate women recruited from an Introductory Psychology class via convenience sampling. The sample was predominantly Caucasian (86.9%), with a mean age of 18.68 years, and BMI was assessed through self-reported weight and height (mean BMI = 22.22). No information about body appreciation assessment or correlations is provided in this section."
+    },
+    "3": {
+      "type": "object",
+      "extract_value": {
+        "college": [
+          100
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": [
+          100
+        ],
+        "male": "None",
+        "other": "None",
+        "total": [
+          100
+        ]
+      },
+      "evidence_source": "The text states 'our sample of undergraduate women' and later discusses 'Although friends are important for undergraduates.' This indicates all participants were undergraduate students, meaning 100% had college or higher education experience.",
+      "warning": "Inferred from 'undergraduate women' designation; explicit percentage not stated.",
+      "source_file": "015_discussion_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This Discussion section presents findings from a single study examining how conversations about weight loss/dieting versus exercise differentially predict body appreciation among undergraduate women. The study supported hypotheses that exercise conversations predict increased body appreciation while weight loss/diet conversations predict decreased appreciation, with these relationships mediated by body-as-object versus body-as-process orientations. The authors acknowledge three main limitations: the sample comprised only undergraduate women limiting generalizability, measures of body image and body orientation could be refined, and the cross-sectional design prevents determination of causal direction."
+    }
+  },
+  "Source of sample": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Abstract states 'Undergraduate women', indicating the sample was drawn from a college population.",
+      "warning": "None",
+      "source_file": "003_abstract_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This abstract describes a single study (Study X) with 143 undergraduate women who completed self-reports on exercise behavior, body orientation, body appreciation, and body-related talk. The study examined how conversations about weight loss/dieting versus exercise differentially predicted body appreciation, with results showing that exercise conversations operated through an object orientation (what bodies can do), while weight loss conversations operated through negative body attitudes."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The text references 'a sample of undergraduate students' in the Wasylkiw and Williamson (2013) study, indicating the sample source is college.",
+      "warning": "Inferred from 'undergraduate students' reference; explicit source statement not provided.",
+      "source_file": "006_corresponding_author_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section is a literature review discussing the role of 'fat talk' and body-related conversations in shaping women's body image and eating behaviors. It reviews research on how peer conversations about weight, dieting, and exercise influence body dissatisfaction and internalization of thin ideals, and cites the Wasylkiw and Williamson (2013) study showing that exercise-related talk predicted less body dissatisfaction while food/weight talk predicted increased dissatisfaction. The section does not present original empirical data or specific study samples."
+    },
+    "2": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Text states: 'A convenience sample of 143 undergraduate women was recruited from an Introductory Psychology class'. The sample was recruited from a college/university setting.",
+      "warning": "None",
+      "source_file": "010_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes the participants for a single study (Study X) consisting of 142 undergraduate women recruited from an Introductory Psychology class via convenience sampling. The sample was predominantly Caucasian (86.9%), with a mean age of 18.68 years, and BMI was assessed through self-reported weight and height (mean BMI = 22.22). No information about body appreciation assessment or correlations is provided in this section."
+    },
+    "3": {
+      "type": "object",
+      "extract_value": {
+        "college": [
+          "college"
+        ]
+      },
+      "evidence_source": "The text explicitly states 'our sample of undergraduate women' and discusses the sample in the context of college students. The limitations section notes 'our sample is limited in generalizability because it comprised undergraduate women.'",
+      "warning": "Source inferred from 'undergraduate women' designation.",
+      "source_file": "015_discussion_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This Discussion section presents findings from a single study examining how conversations about weight loss/dieting versus exercise differentially predict body appreciation among undergraduate women. The study supported hypotheses that exercise conversations predict increased body appreciation while weight loss/diet conversations predict decreased appreciation, with these relationships mediated by body-as-object versus body-as-process orientations. The authors acknowledge three main limitations: the sample comprised only undergraduate women limiting generalizability, measures of body image and body orientation could be refined, and the cross-sectional design prevents determination of causal direction."
+    }
+  },
+  "Number of studies": {
+    "0": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The abstract describes a single study with one sample of undergraduate women (N = 143). No multiple studies or experiments are mentioned.",
+      "warning": "None",
+      "source_file": "003_abstract_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This abstract describes a single study (Study X) with 143 undergraduate women who completed self-reports on exercise behavior, body orientation, body appreciation, and body-related talk. The study examined how conversations about weight loss/dieting versus exercise differentially predicted body appreciation, with results showing that exercise conversations operated through an object orientation (what bodies can do), while weight loss conversations operated through negative body attitudes."
+    },
+    "1": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with one sample of undergraduate women. No explicit mention of multiple studies or experiments is present.",
+      "warning": "None",
+      "source_file": "010_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes the participants for a single study (Study X) consisting of 142 undergraduate women recruited from an Introductory Psychology class via convenience sampling. The sample was predominantly Caucasian (86.9%), with a mean age of 18.68 years, and BMI was assessed through self-reported weight and height (mean BMI = 22.22). No information about body appreciation assessment or correlations is provided in this section."
+    },
+    "2": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text describes a single study with one set of measures and one correlation matrix (Table 1). No mention of multiple studies or experiments is present.",
+      "warning": "None",
+      "source_file": "011_measures_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Wasylkiw2014/tables/1Wasylkiw2014_p004_table00.png",
+      "_metadata_caption": null,
+      "_extracted_caption": "Table 1. Descriptive statistics and intercorrelations for all variables.",
+      "_section_summary": "This section describes the measures used in a single study to assess exercise behavior, body orientation (using the Body Esteem Scale with body-as-process and body-as-object subscales), body appreciation (using the Body Appreciation Scale), and body-related talk (exercise talk and weight-loss talk). Table 1 presents descriptive statistics and intercorrelations for all variables, showing a correlation of -0.36 between BMI and body appreciation."
+    },
+    "3": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single regression analysis with one sample of 138 participants. No explicit mention of multiple studies or experiments.",
+      "warning": "None",
+      "source_file": "013_bodyrelated_talk_predicting_body_appreciation_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section presents results from a multiple regression analysis examining how body-related talk (weight loss talk and exercise talk) predicts body appreciation while controlling for BMI. The analysis included 138 participants and found that increased BMI (\u03b2 = \u2212.32) and weight loss talk (\u03b2 = \u2212.37) negatively predicted body appreciation, while exercise talk (\u03b2 = .23) positively predicted it. The overall model accounted for 28% of the variance in body appreciation."
+    },
+    "4": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The Discussion section refers to 'the present study' (singular) and describes a single study examining conversations about weight loss/dieting and exercise and their relationship to body appreciation. No mention of multiple studies is made.",
+      "warning": "None",
+      "source_file": "015_discussion_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This Discussion section presents findings from a single study examining how conversations about weight loss/dieting versus exercise differentially predict body appreciation among undergraduate women. The study supported hypotheses that exercise conversations predict increased body appreciation while weight loss/diet conversations predict decreased appreciation, with these relationships mediated by body-as-object versus body-as-process orientations. The authors acknowledge three main limitations: the sample comprised only undergraduate women limiting generalizability, measures of body image and body orientation could be refined, and the cross-sectional design prevents determination of causal direction."
+    }
+  },
+  "Country": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Canada"
+        ]
+      },
+      "evidence_source": "Text states 'Mount Allison University, Canada' indicating the study location.",
+      "warning": "Study name is unclear; using 'Study X' as placeholder. Only country is explicitly stated; no other demographic or methodological details are provided in this section.",
+      "source_file": "005_body_talk_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section introduces the topic of 'Body talk' and discusses sociocultural models of body image, citing Smolak and Levine (2001) and Thompson et al. (1999). It posits that family and peers influence how girls evaluate their physical selves through communication of appearance value. The section appears to be from a study conducted at Mount Allison University in Canada, though no specific study details, sample characteristics, or methodology are provided in this excerpt."
+    }
+  },
+  "Percent of white in participants": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          86.9
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            86.9
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            86.9
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'Of the 130 participants who indicated ethnicity, 86.9 percent (n = 113) specified being Caucasian'. This percentage applies to the female sample.",
+      "warning": "Note: Only 130 of 142 participants reported ethnicity, so this percentage is based on a subset.",
+      "source_file": "010_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes the participants for a single study (Study X) consisting of 142 undergraduate women recruited from an Introductory Psychology class via convenience sampling. The sample was predominantly Caucasian (86.9%), with a mean age of 18.68 years, and BMI was assessed through self-reported weight and height (mean BMI = 22.22). No information about body appreciation assessment or correlations is provided in this section."
+    }
+  },
+  "Mean age of participants": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          18.68
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            18.68
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            18.68
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'Of the remaining 142 participants, ages ranged between 17 and 24 years (M = 18.68 years; standard deviation (SD) = 1.05 years)'. This mean age applies to the female sample.",
+      "warning": "None",
+      "source_file": "010_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes the participants for a single study (Study X) consisting of 142 undergraduate women recruited from an Introductory Psychology class via convenience sampling. The sample was predominantly Caucasian (86.9%), with a mean age of 18.68 years, and BMI was assessed through self-reported weight and height (mean BMI = 22.22). No information about body appreciation assessment or correlations is provided in this section."
+    }
+  },
+  "Mean BMI of participants": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          22.22
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            22.22
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            22.22
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'Of the 138 participants who reported body weight... the mean BMI was 22.22 (SD = 3.46)'. This mean BMI applies to the female sample.",
+      "warning": "Note: Only 138 of 142 participants reported body weight.",
+      "source_file": "010_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes the participants for a single study (Study X) consisting of 142 undergraduate women recruited from an Introductory Psychology class via convenience sampling. The sample was predominantly Caucasian (86.9%), with a mean age of 18.68 years, and BMI was assessed through self-reported weight and height (mean BMI = 22.22). No information about body appreciation assessment or correlations is provided in this section."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          22.22
+        ]
+      },
+      "evidence_source": "Table 1 shows 'Mean (SD)' for BMI as '22.22 (3.46)'. This is the mean BMI of participants in the study.",
+      "warning": "None",
+      "source_file": "011_measures_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Wasylkiw2014/tables/1Wasylkiw2014_p004_table00.png",
+      "_metadata_caption": null,
+      "_extracted_caption": "Table 1. Descriptive statistics and intercorrelations for all variables.",
+      "_section_summary": "This section describes the measures used in a single study to assess exercise behavior, body orientation (using the Body Esteem Scale with body-as-process and body-as-object subscales), body appreciation (using the Body Appreciation Scale), and body-related talk (exercise talk and weight-loss talk). Table 1 presents descriptive statistics and intercorrelations for all variables, showing a correlation of -0.36 between BMI and body appreciation."
+    }
+  },
+  "Assessment of BMI": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Text states: 'we assessed body mass index (BMI) from self-reported weight and height (in kg/m2)'. BMI was assessed using self-reported measurements.",
+      "warning": "None",
+      "source_file": "010_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes the participants for a single study (Study X) consisting of 142 undergraduate women recruited from an Introductory Psychology class via convenience sampling. The sample was predominantly Caucasian (86.9%), with a mean age of 18.68 years, and BMI was assessed through self-reported weight and height (mean BMI = 22.22). No information about body appreciation assessment or correlations is provided in this section."
+    }
+  },
+  "Assessment of BA": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text states: 'To assess how women felt about their physical selves, we used Avalos et al.'s (2005) Body Appreciation Scale. Participants rate each of the 13 items on a scale from 1 (never) to 5 (always).' This is the Body Appreciation Scale (BAS), not BAS-2, as indicated by the 13-item format and the reference to Avalos et al. (2005).",
+      "warning": "None",
+      "source_file": "011_measures_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This Measures section describes the instruments used to assess multiple constructs in a study of women. The Body Appreciation Scale (BAS; 13 items) was used to assess body appreciation, the Body Esteem Scale (BES) was used to measure attitudes toward body appearance and functioning, and additional measures assessed exercise behavior, body-related talk, and body orientation. No demographic characteristics, sample size, or correlation data are provided in this section."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text states: 'To assess how women felt about their physical selves, we used Avalos et al.'s (2005) Body Appreciation Scale. Participants rate each of the 13 items on a scale from 1 (never) to 5 (always).' This is the Body Appreciation Scale (BAS), not BAS-2.",
+      "warning": "None",
+      "source_file": "011_measures_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Wasylkiw2014/tables/1Wasylkiw2014_p004_table00.png",
+      "_metadata_caption": null,
+      "_extracted_caption": "Table 1. Descriptive statistics and intercorrelations for all variables.",
+      "_section_summary": "This section describes the measures used in a single study to assess exercise behavior, body orientation (using the Body Esteem Scale with body-as-process and body-as-object subscales), body appreciation (using the Body Appreciation Scale), and body-related talk (exercise talk and weight-loss talk). Table 1 presents descriptive statistics and intercorrelations for all variables, showing a correlation of -0.36 between BMI and body appreciation."
+    }
+  },
+  "Correlation between body appreciation and BMI": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.36
+        ]
+      },
+      "evidence_source": "Table 1 shows the correlation between BMI (row 1) and Body appreciation (row 7, column 7). The cell at row 1, column 7 contains the value -0.36, which is the Pearson correlation coefficient between BMI and Body appreciation.",
+      "warning": "None",
+      "source_file": "011_measures_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Wasylkiw2014/tables/1Wasylkiw2014_p004_table00.png",
+      "_metadata_caption": null,
+      "_extracted_caption": "Table 1. Descriptive statistics and intercorrelations for all variables.",
+      "_section_summary": "This section describes the measures used in a single study to assess exercise behavior, body orientation (using the Body Esteem Scale with body-as-process and body-as-object subscales), body appreciation (using the Body Appreciation Scale), and body-related talk (exercise talk and weight-loss talk). Table 1 presents descriptive statistics and intercorrelations for all variables, showing a correlation of -0.36 between BMI and body appreciation."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.32
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            -0.32
+          ]
+        }
+      },
+      "evidence_source": "increased BMI was associated with less appreciation of one's body when controlling for body-related talk, variance inflation factor (VIF) = 1.02, B = \u2212.07, standard error (SE) = .02, \u03b2 = \u2212.32, 95 percent CI: (\u2212.47, \u2212.17), p < .01. The standardized coefficient (\u03b2) of \u2212.32 represents the correlation between BMI and body appreciation.",
+      "warning": "None",
+      "source_file": "013_bodyrelated_talk_predicting_body_appreciation_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section presents results from a multiple regression analysis examining how body-related talk (weight loss talk and exercise talk) predicts body appreciation while controlling for BMI. The analysis included 138 participants and found that increased BMI (\u03b2 = \u2212.32) and weight loss talk (\u03b2 = \u2212.37) negatively predicted body appreciation, while exercise talk (\u03b2 = .23) positively predicted it. The overall model accounted for 28% of the variance in body appreciation."
+    }
+  }
+}

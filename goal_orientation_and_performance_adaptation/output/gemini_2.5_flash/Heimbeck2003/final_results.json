@@ -1,0 +1,301 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      2,
+      6,
+      16
+    ],
+    "reason": "Multiple sections of the paper consistently refer to 'a study', 'an experiment', 'the study', or 'our study' in the singular. Candidate [2] explicitly states 'this article will present one new study', and Candidate [6] mentions 'the procedure of a single experiment'. The overwhelming evidence points to a single study being conducted and reported in the paper. Candidate [8] with a value of 0 is disregarded due to lack of supporting evidence and conflicting with all other candidates."
+  },
+  "PubType": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "reason": "All candidates consistently provide a value of 1, indicating a 'Journal article'. The section contexts describe a new study with experiments, hypotheses, methodology, results, and discussions, which are characteristic features of a journal article reporting original research. There is no conflicting information."
+  },
+  "FinancSupport": {
+    "extract_value": [
+      0
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "reason": "All provided sections and candidates consistently indicate '0' for financial support, with no evidence of grants, funding agencies, sponsored projects, or explicit financial support mentioned anywhere in the text. Therefore, based on the available information, it is concluded that there was no financial support."
+  },
+  "PeerReview": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "reason": "All candidates consistently indicate a value of 1 for 'PeerReview'. Given that the document is a research paper detailing a study, it is highly probable that it has undergone peer review. There are no conflicting values or evidence to suggest otherwise."
+  },
+  "PgoType": {
+    "extract_value": {
+      "Single study": [
+        "Prove",
+        "Prove",
+        "Avoid"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      11
+    ],
+    "reason": "The paper reports a single study, as confirmed by the context and consistent singular references throughout the paper. Multiple candidates (0, 1, 2, 3, 4, 6, 8, 11) consistently indicate that both 'Prove' and 'Avoid' performance goal orientations were assessed. Candidate [7], supported by the text in [6], provides the most precise detail, stating there were 'two significant interaction effects for prove goal orientation' and 'one significant interaction effect for avoidance goal orientation'. Following the 'multiple_effects_within_study' rule, these are appended to the list for the single study. Candidates [5] and [10] were disregarded as they explicitly stated that PgoType was not mentioned or provided an empty/null value."
+  },
+  "AdaptMeasures": {
+    "extract_value": {
+      "Single study": [
+        "3"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "reason": "The paper reports a single study, as confirmed by the context and consistent singular references throughout the candidates. All reliable candidates consistently indicate that performance adaptation was measured using objective methods (code 3). Although multiple performance variables were assessed (e.g., near transfer, far transfer, medium tasks, difficult tasks), the underlying assessment method for all these effects was consistently objective. Therefore, according to the 'multiple_effects_within_study' rule, since there are no different adaptation measurement sources for different effects, a single code '3' is used to represent the objective measurement method. Candidate [5] was disregarded as it explicitly stated 'None' for the assessment method."
+  },
+  "AdaptMethod": {
+    "extract_value": {
+      "Single study": [
+        "1"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "reason": "The paper reports a single study, as confirmed by the context and consistent phrasing across sections (e.g., 'a study', 'the study', 'our study'). All reliable candidates (0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12) consistently indicate that performance adaptation outcomes were based on objective scores (code 1). This is evidenced by mentions of 'short- and medium-term performance', 'performance test', 'actions recorded on video', 'task completion', 'performance tasks', 'transfer performance tasks', 'videotaped task completion units', 'AdaptMeasures', 'performance/medium', 'performance/difficult', 'summing z-scores of performance/medium, performance/difficult', and 'transfer results'. Candidate 5 was disregarded as it provided 'None' and lacked specific evidence for a numerical code. Therefore, the AdaptMethod for the single study is objective (1)."
+  },
+  "AdaptMethod_Specific": {
+    "extract_value": {
+      "Single study": [
+        "3",
+        "3",
+        "3",
+        "3"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "reason": "The paper reports a single study, consistently referred to as 'the study' or 'our study'. All reliable candidates consistently indicate that performance adaptation was assessed using objective measures (code 3). Specifically, candidates [6] and [7] detail four distinct objective performance measures: performance on medium and difficult tasks in both the first and second test phases. Other candidates either confirm objective measurement or refer to aggregations of these measures. Therefore, the consolidated list of assessment methods for the single study includes four instances of objective measurement, reflecting these distinct outcomes. Candidate [5] was disregarded as it did not specify the assessment method."
+  },
+  "GoMeasure_dichot_num": {
+    "extract_value": {
+      "Single study": [
+        "2"
+      ]
+    },
+    "best_indices": [
+      2
+    ],
+    "reason": "The paper reports a single study. Candidate [2] explicitly states that \"Goal orientation was measured with the 13-item work domain trait goal orientation instrument by VandeWalle (1997).\" This direct attribution to VandeWalle (1997) from the 'Measures' section is the most reliable source and directly matches the coding rule for '2'. Other candidates either provide no specific information about the measurement method or infer '1' (Other) from the absence of a specific attribution, which is superseded by the explicit and reliable information provided in Candidate [2]."
+  },
+  "Age_Info": {
+    "extract_value": {
+      "Single study": [
+        "SD = 3.89 with a range from 19 to 37 years"
+      ]
+    },
+    "best_indices": [
+      2
+    ],
+    "reason": "The paper reports a single study, as confirmed by the context. Candidate [2] from the 'Participants' section explicitly provides the age information, stating 'SD = 3.89 with a range from 19 to 37 years'. This is the most reliable and direct source for this field. All other relevant candidates explicitly state that no age information was provided. Candidate [1] was disregarded as it refers to a study by Frese et al. (1991), not the main study of this paper."
+  },
+  "Age_imputed": {
+    "extract_value": {
+      "Single study": [
+        "23.55"
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "The paper reports a single study, as confirmed by the context and multiple candidate sections referring to 'a study' or 'the study' in the singular. Candidate [1] from the 'participants' section explicitly states the average age as 23.55 years (SD = 3.89), which is the most reliable and direct report of mean age. All other candidates either report 'None' or 'null' for age, indicating no age information was found in those sections. Therefore, 23.55 is selected as the Age_imputed for the single study."
+  },
+  "Sex": {
+    "extract_value": {
+      "Single study": [
+        "3"
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "The paper reports a single study, as confirmed by the context and multiple section summaries (e.g., Candidate [2] explicitly states 'procedure of a single experiment'). Candidate [1], from the 'Participants' section, reliably states that 'Eighty percent of the sample were women'. This indicates a mixed-sex sample, which corresponds to the integer code '3' according to the provided definition (3 = Mixed sample: 'Any mixture of men and women, or not explicitly single-sex'). All other candidates either explicitly state 'No sex composition information' or provide no relevant evidence."
+  },
+  "Men_Prop": {
+    "extract_value": {
+      "Single study": [
+        "20.0"
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "The paper contains a single study, as confirmed by the context and consistent singular references across sections. Candidate [1] from the 'participants' section explicitly states that 'Eighty percent of the sample were women'. Following the fallback rule '2_from_percent_women', Men_Prop is calculated as 100 - 80 = 20%. All other candidates either report 'None' or 'null' for Men_Prop, indicating no information was found in those sections, making Candidate [1] the most reliable source for this field."
+  },
+  "Country_dichot_num": {
+    "extract_value": {
+      "Single study": [
+        "1"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      3
+    ],
+    "reason": "The paper reports a single study. Candidates 0, 1, and 3 consistently provide evidence that the study was conducted in Germany or involved German students. Specifically, Candidate 0 mentions authors from Netherlands and Germany, Candidate 1 states '87 undergraduates from several disciplines at a German university participated', and Candidate 3 refers to 'nearly all German students'. According to the definition, any country other than the USA is coded as 1. Therefore, the value for the single study is 1."
+  },
+  "Sample_dichot": {
+    "extract_value": {
+      "Single study": [
+        "1"
+      ]
+    },
+    "best_indices": [
+      1,
+      3,
+      8
+    ],
+    "reason": "The paper reports a single study. Candidates 1, 3, and 8 explicitly state that the sample consisted of 'undergraduates' or 'students', which corresponds to code 1. Candidate 1, from the Participants section, is the most reliable source for sample description, stating 'A total of 87 undergraduates from several disciplines at a German university participated'. Candidate 8, from the Strengths and Limitations section, also explicitly confirms 'Our study, as most other training studies, used a student sample'. Candidate 3 also mentions 'German students'. Candidate 9, which suggests 'normal adults' (code 2), is from the 'Implications for Practice and Future Research' section. This statement is likely a generalization about the applicability of the findings rather than a precise description of the actual study sample, and it is contradicted by multiple explicit statements in more reliable sections. Therefore, the sample is coded as 1 (student sample)."
+  },
+  "N": {
+    "extract_value": {
+      "Single study": [
+        "87",
+        "29",
+        "29",
+        "29"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      5,
+      6,
+      7,
+      9,
+      10
+    ],
+    "reason": "The paper reports a single study, as confirmed by the context. Multiple candidates (0, 1, 5, 6, 7) explicitly state the total sample size as N=87. Candidate 9 further confirms this total N by detailing three training conditions with n=29 participants each (3 * 29 = 87). Candidate 10 derives N=87 from the degrees of freedom in hierarchical regression analyses for interaction effects between goal orientations and training conditions on performance, which are highly relevant to the field definition. Candidate 2 explicitly states 'n=29 in each group' for the three training conditions, representing distinct subsample sizes within the study. Following the 'Subsample Merging' instruction, both the overall sample size (87) and the distinct subsample sizes for each group (29) are included in the list. Candidate 8 (N=162) was disregarded as per the provided context due to conflicting evidence."
+  },
+  "Correlation_PGO_and_PA": {
+    "extract_value": {
+      "Single study": [
+        "0.15",
+        "0.13",
+        "0.15",
+        "0.11",
+        "-0.06",
+        "-0.00",
+        "-0.06",
+        "0.09"
+      ]
+    },
+    "best_indices": [
+      4
+    ],
+    "reason": "The paper reports a single study, as confirmed by the context and multiple candidates referring to 'a study' or 'the study' in the singular. Candidate [4] from Table 1 provides specific Pearson correlation coefficients between 'Prove goal orientation' (a form of Performance Goal Orientation) and various 'Performance' measures (representing performance adaptation), and between 'Avoidance goal orientation' (another form of Performance Goal Orientation) and 'Performance' measures. According to the definition, both 'Prove goal orientation' and 'Avoidance goal orientation' fall under the umbrella of Performance Goal Orientation. The rule 'case_1_multiple_subscales' dictates that if multiple goal orientation subscale correlations with performance adaptation are reported, all should be included. Therefore, all eight correlations from Candidate [4] are extracted. Other candidates either did not provide specific numerical correlation coefficients or were explicitly disregarded by the context."
+  },
+  "Correlation_info": {
+    "extract_value": {
+      "Single study": [
+        "PPGO and AP",
+        "APGO and AP",
+        "PPGO and AP (1st phase, Medium)",
+        "PPGO and AP (1st phase, Difficult)",
+        "PPGO and AP (2nd phase, Medium)",
+        "PPGO and AP (2nd phase, Difficult)",
+        "APGO and AP (1st phase, Medium)",
+        "APGO and AP (1st phase, Difficult)",
+        "APGO and AP (2nd phase, Medium)",
+        "APGO and AP (2nd phase, Difficult)",
+        "PGO and AP"
+      ]
+    },
+    "best_indices": [
+      3,
+      4,
+      5
+    ],
+    "reason": "The paper reports a single study, as confirmed by the context and multiple candidate sections referring to 'a study' or 'our study' in the singular. Candidates [3], [4], and [5] from the 'Preliminary Analyses' section were identified as reliable sources for correlation information. Candidate [3] provided general correlations between 'Prove GO' (PPGO) and 'Avoid GO' (APGO) with 'performance variables' (AP). Candidate [4], derived from Table 1, offered specific correlations between PPGO/APGO and AP across different phases and task difficulties. Candidate [5] provided a general statement about 'Goal Orientation' (PGO) and 'Performance Variables' (AP). These values were consolidated into a single list for the 'Single study', applying the specified abbreviations (PPGO, APGO, PGO, AP). Other candidates were disregarded as they explicitly stated 'None' for correlation information or were irrelevant to the field."
+  }
+}

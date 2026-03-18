@@ -1,0 +1,97 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section references t(1031) and F(6, 1025), indicating a total sample size around 1031-1032 participants, but the exact total sample size is not explicitly stated in this section. The section mentions 'men and women' but does not provide gender-specific sample sizes.",
+      "warning": "Sample size can be inferred from degrees of freedom (df=1031 suggests N\u22481032), but this is not explicitly stated in the provided text."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is provided in this section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in this section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI information is provided in this section.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The section mentions 'universities' in the statement: 'The mean score of the BAS-2 was also compared across universities.' This indicates the sample was recruited from college/university settings.",
+      "warning": "The source is inferred from the mention of 'universities' but the section does not explicitly state the recruitment source."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The section explicitly states 'the total score of the BAS-2 was significantly higher in men compared with women' and 'The mean score of the BAS-2 was also compared across universities.' This clearly indicates BAS-2 was used to assess body appreciation.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported vs. measured) is provided in this section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section does not report correlations between body appreciation and BMI. It reports item-level comparisons between men and women and between universities, but no correlation coefficients are provided.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section does not explicitly state the number of studies. It appears to be reporting results from a single study with multiple analyses (item-level comparisons, university comparisons), but the number of distinct studies is not specified.",
+      "warning": "Cannot determine number of studies from this section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents between-group differences in BAS-2 scores comparing men and women, and across universities. Item-level t-tests (Bonferroni-corrected) revealed that men scored significantly higher on 5 items (#2, 5, 6, 7, 9) while women scored higher on item #10. Overall BAS-2 total scores were significantly higher in men (t(1031)=2.37, p=.021), though the effect size was small (d=0.15). A univariate ANOVA showed no significant differences in body appreciation across universities (F(6,1025)=0.69, p=.660).",
+      "evidence_source": "Entire 'Between-Group Differences' section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

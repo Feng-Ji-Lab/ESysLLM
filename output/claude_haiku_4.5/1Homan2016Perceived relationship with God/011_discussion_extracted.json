@@ -1,0 +1,205 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not explicitly state the country where the study was conducted. While the text mentions 'Christian colleges' and references to U.S.-based institutions and researchers, no specific country is stated in this section.",
+      "warning": "Country information not provided in this Discussion section. Would need to refer to Methods section for this information."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not provide the total sample size. The text mentions 'our sample comprised young, mostly White, mostly normal weight women' but does not specify the exact number of participants.",
+      "warning": "Sample size not explicitly stated in this Discussion section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not describe the survey method used to collect data.",
+      "warning": "Survey method not mentioned in this Discussion section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states 'our sample comprised young, mostly White, mostly normal weight women' but does not provide a specific percentage.",
+      "warning": "Specific percentage of White participants not provided; only described as 'mostly White'."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not provide the mean age of participants. It only describes the sample as 'young' women.",
+      "warning": "Mean age not explicitly stated in this Discussion section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states 'students were recruited from Christian colleges' which indicates college-level participants, but does not provide a specific percentage of college or higher education.",
+      "warning": "While participants appear to be college students, no explicit percentage is stated in this Discussion section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes the sample as 'mostly normal weight women' but does not provide a specific mean BMI value.",
+      "warning": "Mean BMI not explicitly stated; only described as 'mostly normal weight'."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'students were recruited from Christian colleges and most participants reported that they were at least somewhat religious.'",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not specify which instrument (BAS or BAS-2) was used to assess body appreciation.",
+      "warning": "Assessment instrument for body appreciation not mentioned in this Discussion section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not describe how BMI was assessed (self-reported or measured).",
+      "warning": "BMI assessment method not mentioned in this Discussion section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not report correlation coefficients between body appreciation and BMI. The focus is on social comparison and attachment to God as moderators of body appreciation.",
+      "warning": "No correlation values between body appreciation and BMI are provided in this Discussion section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The Discussion section refers to 'This study' and 'the present study' throughout, indicating a single study. References to other studies (e.g., Homan & Lemmon, 2014; Thomas et al., 2011; Rasar et al., 2013) are citations to prior research, not multiple studies within this paper.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The Discussion section does not indicate whether this is a journal article or dissertation.",
+      "warning": "Publication type not specified in this Discussion section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Discussion section presents findings from a single study examining how attachment to God moderates the relationship between social comparison and body appreciation in women. The study recruited college students from Christian colleges, with a sample described as young, mostly White, and mostly normal weight. The research confirmed that higher social comparison frequency relates to lower body appreciation, with this effect being moderated by attachment anxiety to God\u2014women who felt unconditionally loved by God showed weaker negative effects of social comparison on body appreciation.",
+      "evidence_source": "Throughout the Discussion section, particularly in the limitations paragraph: 'our sample comprised young, mostly White, mostly normal weight women from middle to upper-middle class homes' and 'students were recruited from Christian colleges'.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "United States"
+        ]
+      },
+      "evidence_source": "The text states 'our sample comprised young, mostly White, mostly normal weight women from middle to upper-middle class homes' and 'students were recruited from Christian colleges', indicating a U.S.-based study. The discussion section mentions 'Christian colleges' which are primarily located in the United States.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the total sample size. While the discussion mentions 'our sample comprised young, mostly White, mostly normal weight women', no specific number of participants is provided in the given text.",
+      "warning": "Sample size not reported in provided text"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether data collection used paper-and-pencil or online survey methods.",
+      "warning": "Survey method not specified in provided text"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "mostly White"
+        ]
+      },
+      "evidence_source": "The text states 'our sample comprised young, mostly White, mostly normal weight women from middle to upper-middle class homes.' However, 'mostly White' is a qualitative descriptor, not a precise percentage.",
+      "warning": "Percentage not quantified; only qualitative descriptor 'mostly White' provided"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes the sample as 'young' but does not provide a specific mean age or age range.",
+      "warning": "Mean age not reported in provided text"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "The text states 'students were recruited from Christian colleges', indicating that all participants were college students. Therefore, 100% of participants had college or higher education experience.",
+      "warning": "Inferred from statement that participants were college students; not explicitly stated as a percentage"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes the sample as 'mostly normal weight women' but does not provide a specific mean BMI value.",
+      "warning": "Mean BMI not reported; only qualitative descriptor 'mostly normal weight' provided"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The text explicitly states 'students were recruited from Christian colleges', indicating the sample source was college students.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify which instrument (BAS or BAS-2) was used to assess body appreciation.",
+      "warning": "Assessment instrument for body appreciation not specified in provided text"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify whether BMI was self-reported or measured.",
+      "warning": "BMI assessment method not specified in provided text"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and figure do not report a direct correlation between body appreciation and BMI. Figure 3 shows regression lines for relationships between exercise comparison frequency and body appreciation moderated by God attachment anxiety and avoidance, but does not display BMI-body appreciation correlations.",
+      "warning": "Correlation between body appreciation and BMI not reported in provided text or figure"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study examining the relationship between social comparison and body appreciation moderated by attachment to God. No mention of multiple studies is made.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not indicate whether this is a journal article or dissertation.",
+      "warning": "Publication type not specified in provided text"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This is the Discussion section of a single study examining how attachment to God moderates the relationship between social comparison and body appreciation in college women. The study confirmed that higher frequency of social comparison is related to lower body appreciation, and that this relationship is moderated by attachment anxiety and avoidance to God. The authors discuss theoretical implications, limitations (small effect sizes, homogeneous sample of young, mostly White, college-educated women from Christian institutions), and future research directions.",
+      "evidence_source": "Discussion section text describing Study X findings, limitations, and implications",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Figure 3. Regression lines showing the relationships between frequency of exercise comparison and body appreciation by low (\u22121 SD) and high (1 SD) levels of God attachment anxiety and God attachment avoidance.",
+      "evidence_source": "Caption text appearing directly below Figure 3 in the provided image",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Homan2016Perceived relationship with God/figures/1Homan2016Perceived relationship with God_p009_fig00.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_0"
+  }
+]

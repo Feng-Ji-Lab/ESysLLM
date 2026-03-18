@@ -1,0 +1,237 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      1,
+      3,
+      7
+    ],
+    "reason": "Multiple sections (abstract [1], methods [3], and results [7]) consistently describe a single cross-sectional study of 326 middle-aged Saudi women. No sections indicate more than one study, no separate Study 1/Study 2 labeling, and the paper is repeatedly referred to in the singular, so the most accurate count is 1."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "Saudi Arabia"
+      ]
+    },
+    "best_indices": [
+      2,
+      4,
+      5,
+      0
+    ],
+    "reason": "All sections (title, abstract, methods, results, discussion) consistently describe a single cross-sectional study conducted in Hofuf city, Saudi Arabia, enrolling 326 middle-aged Saudi women. No evidence of multiple distinct studies or subsamples was found, so the paper is treated as a single study; the country is reported throughout as Saudi Arabia."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        "326"
+      ]
+    },
+    "best_indices": [
+      2,
+      3
+    ],
+    "reason": "All primary results/tables/abstract/discussion (candidates 0,2,3,4) consistently report 326 enrolled middle-aged Saudi women. The Methods section (candidate 1) gives a calculated minimum required sample of 207, not the actual enrolled N. Per priority rules, Results/Tables/Main text values were preferred over the Methods' target sample and Abstract; therefore the final N is 326. The sample is all female (female=326).",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          "326"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "326"
+        ]
+      }
+    }
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "paper-and-pencil"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both the abstract (candidate 0) and the Methods (candidate 1) describe a single cross-sectional face-to-face interview study. The Methods section explicitly states data were collected via trained interviewers, so the survey method is best classified as in-person/paper-and-pencil. No evidence of online data collection or multiple distinct studies was found."
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        "49.14"
+      ]
+    },
+    "best_indices": [
+      1,
+      2
+    ],
+    "reason": "All candidates refer to a single cross-sectional study of 326 middle-aged Saudi women. Mean age is consistently reported as 49.14 years in the Results text and the table (candidates 1 and 2); the Abstract (candidate 0) reports the same value. Results/Table are preferred as most reliable, so 49.14 was chosen. Female and total values are identical and recorded accordingly.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          "49.14"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "49.14"
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        "29.64",
+        "29.64 (SD 5.82)"
+      ]
+    },
+    "best_indices": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "reason": "All candidates refer to a single cross-sectional study of 326 middle-aged Saudi women. The mean BMI is consistently reported as 29.64 kg/m2 across Results (index 1), table assets (indices 2 and 4) and Discussion (index 3), with SD reported as 5.82 in the Discussion/tables. Prefer main text and tables over the abstract; values are consistent, and participants are all female, so the same mean applies to both 'female' and 'total'.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          "29.64",
+          "29.64 (SD 5.82)"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "29.64",
+          "29.64 (SD 5.82)"
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "community"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both Abstract (candidate 0) and Methods (candidate 1) consistently report a single cross-sectional study recruiting women from primary health centers in Hofuf city via waiting-room approach. This is community-based recruitment, so the source is 'community'. No evidence of college or school sampling or multiple distinct studies."
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "measured"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates come from the Methods/Measures sections of the same single cross-sectional study and explicitly state BMI was measured by trained nutritionists using digital scales and stadiometers (anthropometric measurements). No evidence of multiple studies or contradictory sources, so 'measured' is reported for the single study."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study is reported in the paper. Candidate 0 (Measures section) explicitly states Body Appreciation was measured with the 13-item Body Appreciation Scale (BAS) and provides reliability (\u03b1=0.81). The Measures/Methods section is the most reliable source for instrument identification, so 'BAS' is selected."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        "-0.237"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates refer to the same single cross-sectional study of 326 middle-aged Saudi women and report the same Pearson correlation between Body Appreciation (BA/BAS) and BMI (r = -0.237, p < 0.01). Candidate 0 provides the textual report; Candidate 1 is the table/figure asset showing the same value. Values are consistent, so the single study entry uses r = -0.237 (reported for women; also the total sample).",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          "-0.237"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "-0.237"
+        ]
+      }
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        "33.4"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "Only one study in the paper (single cross-sectional sample of 326 middle-aged Saudi women). The table (Table/Fig-1) reports 'College or higher 109 (33.4%)'. The main text contains an inconsistent statement labeling the same count as 'secondary school or less', so I favored the table value as the more reliable explicit label. Because the sample is entirely female, the percentage applies to both 'female' and 'total'.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          "33.4"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "33.4"
+        ]
+      }
+    }
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0
+    ],
+    "reason": "The manuscript includes corresponding author contact details, declarations of no competing interests, and explicit submission, peer review, acceptance, and publication dates\u2014metadata characteristic of a journal article rather than a dissertation. The paper describes a single cross-sectional study, further supporting journal publication format."
+  }
+}

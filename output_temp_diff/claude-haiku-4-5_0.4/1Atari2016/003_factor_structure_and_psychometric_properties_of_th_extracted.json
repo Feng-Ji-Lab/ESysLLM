@@ -1,0 +1,97 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Iran"
+        ]
+      },
+      "evidence_source": "Title states 'in Iran' and author affiliation shows 'University of Tehran, Tehran, Iran'",
+      "warning": "Study number not explicitly stated in provided text; using 'Study X' as placeholder per policy"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information provided in the given text excerpt",
+      "warning": "Sample size not stated in provided section"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information provided in the given text excerpt",
+      "warning": "Survey method not stated in provided section"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information about race/ethnicity provided in the given text excerpt",
+      "warning": "Racial/ethnic composition not stated in provided section"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information provided in the given text excerpt",
+      "warning": "Mean age not stated in provided section"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information provided in the given text excerpt",
+      "warning": "Education level not stated in provided section"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI information provided in the given text excerpt",
+      "warning": "Mean BMI not stated in provided section"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample source provided in the given text excerpt",
+      "warning": "Sample source not stated in provided section"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Title explicitly mentions 'Body Appreciation Scale-2' (BAS-2)",
+      "warning": "Study number not explicitly stated; using 'Study X' as placeholder per policy"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about BMI assessment method provided in the given text excerpt",
+      "warning": "BMI assessment method not stated in provided section"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation data provided in the given text excerpt",
+      "warning": "Correlation values not stated in provided section"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "Insufficient information in provided text excerpt to determine number of studies",
+      "warning": "Cannot determine number of studies from title and author information alone"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information provided in the given text excerpt",
+      "warning": "Publication type cannot be determined from title and author affiliation alone"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents the title and author information for a study on the factor structure and psychometric properties of the Body Appreciation Scale-2 (BAS-2) conducted in Iran by Mohammad Atari from the University of Tehran. The provided excerpt is limited to the title and author affiliation, containing no detailed methodological or results information.",
+      "evidence_source": "Title and author affiliation provided in the text",
+      "warning": "This is only a title and author section; full methodological details are not available in the provided text"
+    },
+    "_pass_type": "text_only"
+  }
+]

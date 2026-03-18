@@ -1,0 +1,413 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or location information is reported in the provided section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No total sample size (N) is reported in the provided section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section does not state the data collection method (e.g., online or paper-and-pencil).",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participant race/ethnicity or percent white is reported in the provided section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No participant age or mean age is reported in the provided section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section does not report participants' education level or percentage with college or higher.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Although BMI is used as a control variable and abbreviated ('BMI body mass index'), the section does not report participants' mean BMI.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section does not specify the source of the sample (e.g., community, college, primary/secondary/ high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Text line: 'BAS-2 Body Appreciation Scale-II' (legend/abbreviations in the section).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "BMI is mentioned as a control variable ('BMI body mass index') but the section does not indicate whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson correlation (r) between Body Appreciation (BAS/BAS-2) and BMI is reported in the provided section; only path coefficients and effects controlling for BMI are reported.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section describes a single path analysis and final model (e.g., 'Path analysis was performed...', 'the final model demonstrated...') with no indication of multiple distinct studies or labels such as 'Study 1'.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided section does not state the publication type (journal article or dissertation).",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section reports a single path analysis testing whether self-reassurance and body appreciation mediate associations between social safeness and core dimensions of body- and eating-related psychopathology, controlling for BMI. It presents the final model fit and direct and indirect effects (including coefficients and confidence intervals) but provides no sample descriptors (e.g., country, N, age, ethnicity, education, mean BMI), no survey method, and no Pearson correlation between body appreciation and BMI.",
+      "evidence_source": "Opening sentence: 'Path analysis was performed to explore whether the mechanisms of self-reassurance and body appreciation act as significant mediators...' and multiple model/result sentences; no sample or methodological details are reported in this section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or location for the study was stated in the provided section or table.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          309
+        ]
+      },
+      "evidence_source": "Table 1 caption: 'Means (M), standard deviations (SD), and intercorrelation scores on self-report measures (N=309)'.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method (online or paper-and-pencil) reported in the provided section or table.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information on participant race/ethnicity or percent white is provided in the section or table.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age or age information provided in the section or Table 1.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information on participants' education level or percentage with college or higher reported in the provided section or table.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          22.28
+        ]
+      },
+      "evidence_source": "Table 1 row 'BMI' shows M = 22.28 (SD = 3.09) (N=309).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No source of sample (community, college, primary/secondary/high school) is specified in the provided section or table.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Table 1 footnote: 'BAS-2 Body Appreciation Scale-II'.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section and Table 1 report BMI values but do not state whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.22
+        ]
+      },
+      "evidence_source": "Table 1 (intercorrelation matrix, N=309) shows the correlation between BMI (variable 1) and BAS-2 (Body Appreciation Scale-II) = -0.22 (displayed as -0.22***).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section describes a single path analysis and presents a single Table 1 (N=309); no multiple studies are labeled.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type (journal article or dissertation) is stated in the provided section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section reports a path analysis (fully saturated, then trimmed) testing whether self-reassurance and body appreciation mediate relations between social safeness and eating/body-related psychopathology while controlling for BMI; the final model (Fig. 1) explained variance in self-reassurance (32%), body appreciation (56%), restraint (22%), eating concern (27%), weight concern (51%), and shape concern (47%) and showed excellent fit (\u03c72(7)=7.43, p=0.386; CFI=1.00; RMSEA=0.01). Direct and indirect effects are reported (e.g., BAS-2 correlated with BMI, and multiple significant indirect effects of social safeness via self-reassurance and body appreciation on eating/body psychopathology are described).",
+      "evidence_source": "Opening sentences: 'Path analysis was performed to explore whether the mechanisms of self-reassurance and body appreciation act as significant mediators...' and 'The recalculated model (Fig. 1) explained 32% of self-reassurance, 56% of body appreciation, 22% of restraint, 27% of eating concern, 51% of weight concern, and 47% of shape concern after controlling for BMI.'",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 1 Means (M), standard deviations (SD), and intercorrelation scores on self-report measures (N=309)",
+      "evidence_source": "Caption from the attached table image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Mendes2018/tables/1Mendes2018_p003_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Abbreviation line in text: \"BAS-2 Body Appreciation Scale-II\".",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text lists \"BMI body mass index\" in abbreviations but does not state whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section reports path coefficients and that models controlled for BMI but does not report Pearson r between body appreciation and BMI.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section describes a single path analysis throughout (e.g., \"Path analysis was performed...\", \"The recalculated model (Fig. 1) explained...\") with no mention of multiple separate studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section reports a single path analysis examining whether self-reassurance and body appreciation mediate the relationship between social safeness and core eating/body psychopathology, controlling for BMI. The recalculated model (referenced as Fig. 1) explained variance in self-reassurance, body appreciation, and multiple eating-related outcomes and reports direct and indirect effects, but no sample descriptors (e.g., N, age, country) or Pearson correlations between body appreciation and BMI are provided in this section.",
+      "evidence_source": "\"Path analysis was performed to explore whether the mechanisms of self-reassurance and body appreciation act as significant mediators...\"; \"The recalculated model (Fig. 1) explained 32% of self-reassurance, 56% of body appreciation...\"; the section contains path coefficients but no sample size, demographics, or Pearson r values.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "None",
+      "evidence_source": "The text references \"Fig. 1\" (\"The recalculated model (Fig. 1) explained...\"), but the attached image does not contain the figure caption or full figure; only a small page fragment/footnote is present.",
+      "warning": "Figure referenced in text but caption/figure not provided in attached image."
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Mendes2018/figures/1Mendes2018_p003_fig00.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_1"
+  }
+]

@@ -1,0 +1,137 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or region is stated in the provided section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "\"participation in this study was available to all female undergraduate students enrolled in the university psychology subject pool\" \u2014 sample size not reported in the section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "online"
+        ]
+      },
+      "evidence_source": "\"participants were asked to complete a nightly survey e-mailed to them via a link to an online survey.\"",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participant race or ethnicity is provided in the section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean or age information is provided in the section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "\"participation in this study was available to all female undergraduate students enrolled in the university psychology subject pool.\" Based on the statement that participants were undergraduate students, inferred percentage with college or higher = 100% (per case_rules).",
+      "warning": "Inference applied per case_rules to map 'undergraduate students' to 100%.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI or body-mass information is provided in the section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "\"...female undergraduate students enrolled in the university psychology subject pool\" \u2014 indicates recruitment from a university/college subject pool.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mention of Body Appreciation Scale (BAS or BAS-2) or other BA assessment in the section.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information on how BMI was assessed (self-reported or measured) in the section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation statistics or mention of relationships between body appreciation and BMI are provided in the section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "\"As described in Kelly and Stephen (2016), participation in this study was available...\" \u2014 the section describes a single study (referred to as 'this study').",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type (journal article or dissertation) is stated in the provided section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "The section describes procedures for a single study recruiting female undergraduate students from a university psychology subject pool. Participants completed an online nightly survey (emailed link) for seven consecutive days, with instructions to complete surveys between 4 and 11pm and the option to miss one survey and make it up on Day 8.",
+      "evidence_source": "\"participation in this study was available to all female undergraduate students enrolled in the university psychology subject pool.\"; \"participants were asked to complete a nightly survey e-mailed to them via a link to an online survey.\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

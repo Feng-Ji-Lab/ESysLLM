@@ -1,0 +1,660 @@
+{
+  "Publication type": {
+    "0": {
+      "type": "enum_or_none",
+      "extract_value": "journal articles",
+      "evidence_source": "Text explicitly states: \"Body Image journal homepage: www.elsevier.com/locate/bodyimage\" indicating a journal publication.",
+      "warning": "None",
+      "source_file": "003_body_image_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2009check/figures/1Swami2009check_p000_fig01.png",
+      "_metadata_caption": "",
+      "_extracted_caption": "None",
+      "_section_summary": "The provided section contains only the journal title and homepage link: \"Body Image journal homepage: www.elsevier.com/locate/bodyimage.\" No study-specific information (e.g., sample, methods, measures, results) is present. No figures or tables with captions were provided beyond an Elsevier publisher logo image."
+    },
+    "1": {
+      "type": "enum_or_none",
+      "extract_value": "journal articles",
+      "evidence_source": "Abstract header and footer include publisher information (\"- 2009 Elsevier Ltd. All rights reserved.\"), indicating a journal article.",
+      "warning": "None",
+      "source_file": "007_abstract_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This abstract reports a single study of 322 female university (college) students examining relationships among consideration of cosmetic surgery, media influence (SATAQ-3), body appreciation (BAS), and demographics including BMI and age. Results indicated consideration of cosmetic surgery was positively associated with media influence and negatively associated with body appreciation, age, and BMI; regression results showed media influence, lower body appreciation, and lower BMI predicted consideration of cosmetic surgery."
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "Text: '... among female undergraduates'. Per extraction rules, if participants are described as undergraduate students, infer percentage with college or higher = 100%. Detected phrase: 'female undergraduates' -> inferred value 100 for Study X.",
+      "warning": "Inference made: participants described as 'undergraduates' so percentage college-or-higher set to 100%.",
+      "source_file": "005_body_appreciation_media_influence_and_weight_statu_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "The section contains only the paper title and author line: the study appears to examine how body appreciation, media influence, and weight status predict consideration of cosmetic surgery among female undergraduates. The only participant descriptor given is 'female undergraduates' (author: Viren Swami); no sample size, country, methods, measures, or results are provided."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "\"In total, 322 female university students...\" \u2014 inferred as 100% college or higher because all participants are described as university students.",
+      "warning": "Inference made that 'university students' implies 100% have college-level enrollment.",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            100
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      },
+      "source_file": "007_abstract_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This abstract reports a single study of 322 female university (college) students examining relationships among consideration of cosmetic surgery, media influence (SATAQ-3), body appreciation (BAS), and demographics including BMI and age. Results indicated consideration of cosmetic surgery was positively associated with media influence and negatively associated with body appreciation, age, and BMI; regression results showed media influence, lower body appreciation, and lower BMI predicted consideration of cosmetic surgery."
+    },
+    "2": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "The participants of this study were 322 female university students enrolled in a number of courses at a university in Greater London. Inference: all participants are university students, therefore percentage with college or higher = 100%.",
+      "warning": "Inference made that university students = 100% college or higher.",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            100
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "source_file": "010_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes a single study sample of 322 female university students enrolled at a university in Greater London (age M = 24.72, SD = 5.90; BMI M = 21.67, SD = 3.48). The ethnic composition is reported (63.7% European Caucasian, 13.7% Asian, 13.7% African Caribbean, 9.0% other) and religious affiliation breakdown is provided. No information is given about survey method, body appreciation assessment, or BMI measurement method."
+    },
+    "3": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "\"The results of the current study showed that body appreciation... were significant predictors of consideration of cosmetic surgery among female undergraduates, explaining 47.1% of the variance.\" \u2014 participants are described as 'female undergraduates', from which percentage with college or higher education is inferred as 100%.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            100
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "source_file": "017_discussion_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This Discussion summarizes results from a single study of female undergraduates finding that body appreciation, media influence (SATAQ-3 subscales), and participant BMI significantly predicted consideration of cosmetic surgery, accounting for 47.1% of variance, with body appreciation the strongest predictor. The authors note BMI predicted consideration in an unexpected direction (more slender participants reported greater consideration) and that respondent age was negatively correlated with consideration but was not a significant predictor. Limitations include the restricted undergraduate sample and limited variables, and the authors recommend replication in community samples and inclusion of additional psychological variables."
+    }
+  },
+  "Source of sample": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Text: '... among female undergraduates' \u2014 indicates participants were recruited from a college/university student population; therefore source classified as 'college' for Study X.",
+      "warning": "Inference based on phrase 'female undergraduates' -> classified as 'college' sample.",
+      "source_file": "005_body_appreciation_media_influence_and_weight_statu_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "The section contains only the paper title and author line: the study appears to examine how body appreciation, media influence, and weight status predict consideration of cosmetic surgery among female undergraduates. The only participant descriptor given is 'female undergraduates' (author: Viren Swami); no sample size, country, methods, measures, or results are provided."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "\"In total, 322 female university students...\" indicates a college sample.",
+      "warning": "None",
+      "source_file": "007_abstract_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This abstract reports a single study of 322 female university (college) students examining relationships among consideration of cosmetic surgery, media influence (SATAQ-3), body appreciation (BAS), and demographics including BMI and age. Results indicated consideration of cosmetic surgery was positively associated with media influence and negatively associated with body appreciation, age, and BMI; regression results showed media influence, lower body appreciation, and lower BMI predicted consideration of cosmetic surgery."
+    },
+    "2": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The participants of this study were 322 female university students enrolled in a number of courses at a university in Greater London.",
+      "warning": "None",
+      "source_file": "010_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes a single study sample of 322 female university students enrolled at a university in Greater London (age M = 24.72, SD = 5.90; BMI M = 21.67, SD = 3.48). The ethnic composition is reported (63.7% European Caucasian, 13.7% Asian, 13.7% African Caribbean, 9.0% other) and religious affiliation breakdown is provided. No information is given about survey method, body appreciation assessment, or BMI measurement method."
+    },
+    "3": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "\"participants were recruited opportunistically from various campus locations (e.g., libraries, cafeterias).\"",
+      "warning": "None",
+      "source_file": "015_procedure_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This procedural section describes recruitment and data-collection procedures for a single study (referred to as \"this study\"). Participants were recruited opportunistically from campus locations and completed individual, anonymous paper-and-pencil questionnaires after providing informed consent; they were verbally debriefed on return. No sample size, demographic (e.g., country, age, race), BMI, assessment instruments, or correlation/statistical results are reported in this section."
+    },
+    "4": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "\"...consideration of cosmetic surgery among female undergraduates...\" \u2014 indicates a college (undergraduate) sample.",
+      "warning": "None",
+      "source_file": "017_discussion_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This Discussion summarizes results from a single study of female undergraduates finding that body appreciation, media influence (SATAQ-3 subscales), and participant BMI significantly predicted consideration of cosmetic surgery, accounting for 47.1% of variance, with body appreciation the strongest predictor. The authors note BMI predicted consideration in an unexpected direction (more slender participants reported greater consideration) and that respondent age was negatively correlated with consideration but was not a significant predictor. Limitations include the restricted undergraduate sample and limited variables, and the authors recommend replication in community samples and inclusion of additional psychological variables."
+    }
+  },
+  "Sample": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          322
+        ]
+      },
+      "evidence_source": "\"In total, 322 female university students completed the Consider subscale...\"",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            322
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            322
+          ]
+        }
+      },
+      "source_file": "007_abstract_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This abstract reports a single study of 322 female university (college) students examining relationships among consideration of cosmetic surgery, media influence (SATAQ-3), body appreciation (BAS), and demographics including BMI and age. Results indicated consideration of cosmetic surgery was positively associated with media influence and negatively associated with body appreciation, age, and BMI; regression results showed media influence, lower body appreciation, and lower BMI predicted consideration of cosmetic surgery."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          322
+        ]
+      },
+      "evidence_source": "The participants of this study were 322 female university students enrolled in a number of courses at a university in Greater London (age M = 24.72, SD = 5.90; BMI M = 21.67, SD = 3.48).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            322
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "source_file": "010_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes a single study sample of 322 female university students enrolled at a university in Greater London (age M = 24.72, SD = 5.90; BMI M = 21.67, SD = 3.48). The ethnic composition is reported (63.7% European Caucasian, 13.7% Asian, 13.7% African Caribbean, 9.0% other) and religious affiliation breakdown is provided. No information is given about survey method, body appreciation assessment, or BMI measurement method."
+    },
+    "2": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          322
+        ]
+      },
+      "evidence_source": "Computed from regression residual degrees of freedom: F(7, 314) => residual df = 314 = N - 8, therefore N = 314 + 8 = 322.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "source_file": "016_results_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "The Results report descriptive statistics and interitem correlations (referenced as Table 1) and describe that consideration of cosmetic surgery correlated positively with several SATAQ-3 subscales and negatively with body appreciation, BMI, and age. A multiple linear regression (F(7, 314) = 41.89, Adj. R^2 = .471) identified body appreciation, Internalisation-General, Information, BMI, and Pressures as significant predictors; the section presents a single study/sample and does not label multiple studies. Note: the text includes an apparent transcription error with repeated 't = 0.36' entries in the participant age report."
+    }
+  },
+  "Assessment of BA": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The abstract states participants completed \"the Body Appreciation Scale (BAS)\".",
+      "warning": "None",
+      "source_file": "007_abstract_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This abstract reports a single study of 322 female university (college) students examining relationships among consideration of cosmetic surgery, media influence (SATAQ-3), body appreciation (BAS), and demographics including BMI and age. Results indicated consideration of cosmetic surgery was positively associated with media influence and negatively associated with body appreciation, age, and BMI; regression results showed media influence, lower body appreciation, and lower BMI predicted consideration of cosmetic surgery."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The BAS, which measures aspects of positive body image, is a 13-item scale that has been shown to have a unidimensional structure when completed by Western women (Avalos et al., 2005; Swami, Stieger, Haubner, & Voracek, 2008), with good test\u2013retest reliability (Avalos et al., 2005) and good construct and discriminant validity (Avalos et al., 2005; Swami, Stieger, et al., 2008). All items were rated on a 5-point Likert-type scale (1 = Never, 5= Always) and responses on all 13 items were averaged to obtain an overall BAS score (higher scores reflected greater body appreciation). Cronbach's alpha for this scale was .90.",
+      "warning": "None",
+      "source_file": "013_sociocultural_attitudes_towards_appearance_questio_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes the measures used: the SATAQ-3 (30 items, four subscales) to assess media influences, reporting Cronbach's alphas for Information (.87), Pressure (.83), Internalisation-General (.91), and Internalisation-Athlete (.93); and the Body Appreciation Scale (BAS; 13 items) to measure positive body image (Cronbach's alpha = .90). No sample characteristics (country, N, age, ethnicity, education, BMI), survey administration method, or correlations between BAS and BMI are reported in this excerpt."
+    },
+    "2": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "Note in the section: 'BAS = Body Appreciation Scale' (the section also discusses 'body appreciation').",
+      "warning": "None",
+      "source_file": "016_results_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "The Results report descriptive statistics and interitem correlations (referenced as Table 1) and describe that consideration of cosmetic surgery correlated positively with several SATAQ-3 subscales and negatively with body appreciation, BMI, and age. A multiple linear regression (F(7, 314) = 41.89, Adj. R^2 = .471) identified body appreciation, Internalisation-General, Information, BMI, and Pressures as significant predictors; the section presents a single study/sample and does not label multiple studies. Note: the text includes an apparent transcription error with repeated 't = 0.36' entries in the participant age report."
+    },
+    "3": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "Table 1 and the note state 'BAS = Body Appreciation Scale' and Table 1 contains a BAS column (6).",
+      "warning": "None",
+      "source_file": "016_results_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2009check/tables/1Swami2009check_p001_table00.png",
+      "_metadata_caption": null,
+      "_extracted_caption": "Table 1\nDescriptive statistics and inter-item correlations between consideration of cosmetic surgery, media influence, body appreciation, weight status, and age.",
+      "_section_summary": "The Results section reports descriptive statistics and inter-item correlations in Table 1 and tests predictors of consideration of cosmetic surgery using a multiple linear regression. The regression was significant (F(7, 314) = 41.89, p < .001, Adj. R^2 = .471); significant predictors (in order) were body appreciation, Internalisation-General, Information, BMI, and Pressures. Table 1 provides means (e.g., BMI M = 21.67; Age M = 24.72) and shows the BAS\u2013BMI correlation = .27."
+    }
+  },
+  "Number of studies": {
+    "0": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "\"The current study examined...\" (single study described in the abstract).",
+      "warning": "None",
+      "source_file": "007_abstract_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This abstract reports a single study of 322 female university (college) students examining relationships among consideration of cosmetic surgery, media influence (SATAQ-3), body appreciation (BAS), and demographics including BMI and age. Results indicated consideration of cosmetic surgery was positively associated with media influence and negatively associated with body appreciation, age, and BMI; regression results showed media influence, lower body appreciation, and lower BMI predicted consideration of cosmetic surgery."
+    },
+    "1": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The present study sought to extend this body of research by examining the association between the Consider subscale of the ACSS (which directly measures future interest and likelihood in having cosmetic surgery, rather than attitudinal dispositions about cosmetic surgery) and body appreciation, media influence, and respondent weight status and age.",
+      "warning": "None",
+      "source_file": "008_introduction_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This Introduction reviews trends in cosmetic surgery and prior research linking willingness to undergo cosmetic procedures with variables such as body image, media exposure, and demographics. It states that the present study examined associations between the ACSS Consider subscale (interest in cosmetic surgery) and body appreciation, media influence, BMI, and age, and predicts that lower body appreciation, greater internalization of media influence, higher BMI, and older age will be associated with greater consideration of cosmetic surgery."
+    },
+    "2": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The participants of this study were 322 female university students ... (text describes a single study sample).",
+      "warning": "None",
+      "source_file": "010_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes a single study sample of 322 female university students enrolled at a university in Greater London (age M = 24.72, SD = 5.90; BMI M = 21.67, SD = 3.48). The ethnic composition is reported (63.7% European Caucasian, 13.7% Asian, 13.7% African Caribbean, 9.0% other) and religious affiliation breakdown is provided. No information is given about survey method, body appreciation assessment, or BMI measurement method."
+    },
+    "3": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "\"Once ethical approval for this study was obtained from the relevant university ethics committee...\" (section refers to a single study as \"this study\").",
+      "warning": "None",
+      "source_file": "015_procedure_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This procedural section describes recruitment and data-collection procedures for a single study (referred to as \"this study\"). Participants were recruited opportunistically from campus locations and completed individual, anonymous paper-and-pencil questionnaires after providing informed consent; they were verbally debriefed on return. No sample size, demographic (e.g., country, age, race), BMI, assessment instruments, or correlation/statistical results are reported in this section."
+    },
+    "4": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The Results section reports a single set of analyses (a multiple linear regression) and does not label or describe multiple separate studies.",
+      "warning": "The Results text contains a large repeated sequence of 't = 0.36' after the participant age entry, indicating a transcription or formatting error in the provided text.",
+      "source_file": "016_results_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "The Results report descriptive statistics and interitem correlations (referenced as Table 1) and describe that consideration of cosmetic surgery correlated positively with several SATAQ-3 subscales and negatively with body appreciation, BMI, and age. A multiple linear regression (F(7, 314) = 41.89, Adj. R^2 = .471) identified body appreciation, Internalisation-General, Information, BMI, and Pressures as significant predictors; the section presents a single study/sample and does not label multiple studies. Note: the text includes an apparent transcription error with repeated 't = 0.36' entries in the participant age report."
+    },
+    "5": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided Results section and Table 1 describe a single study (no 'Study 1'/'Study 2' labels or multiple study descriptions are present).",
+      "warning": "None",
+      "source_file": "016_results_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2009check/tables/1Swami2009check_p001_table00.png",
+      "_metadata_caption": null,
+      "_extracted_caption": "Table 1\nDescriptive statistics and inter-item correlations between consideration of cosmetic surgery, media influence, body appreciation, weight status, and age.",
+      "_section_summary": "The Results section reports descriptive statistics and inter-item correlations in Table 1 and tests predictors of consideration of cosmetic surgery using a multiple linear regression. The regression was significant (F(7, 314) = 41.89, p < .001, Adj. R^2 = .471); significant predictors (in order) were body appreciation, Internalisation-General, Information, BMI, and Pressures. Table 1 provides means (e.g., BMI M = 21.67; Age M = 24.72) and shows the BAS\u2013BMI correlation = .27."
+    },
+    "6": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text repeatedly refers to 'the current study' and 'the present study' in the singular (e.g., \"The results of the current study...\"), indicating a single study.",
+      "warning": "None",
+      "source_file": "017_discussion_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This Discussion summarizes results from a single study of female undergraduates finding that body appreciation, media influence (SATAQ-3 subscales), and participant BMI significantly predicted consideration of cosmetic surgery, accounting for 47.1% of variance, with body appreciation the strongest predictor. The authors note BMI predicted consideration in an unexpected direction (more slender participants reported greater consideration) and that respondent age was negatively correlated with consideration but was not a significant predictor. Limitations include the restricted undergraduate sample and limited variables, and the authors recommend replication in community samples and inclusion of additional psychological variables."
+    }
+  },
+  "Country": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Greater London"
+        ]
+      },
+      "evidence_source": "The participants of this study were 322 female university students enrolled in a number of courses at a university in Greater London (age M = 24.72, SD = 5.90; BMI M = 21.67, SD = 3.48).",
+      "warning": "None",
+      "source_file": "010_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes a single study sample of 322 female university students enrolled at a university in Greater London (age M = 24.72, SD = 5.90; BMI M = 21.67, SD = 3.48). The ethnic composition is reported (63.7% European Caucasian, 13.7% Asian, 13.7% African Caribbean, 9.0% other) and religious affiliation breakdown is provided. No information is given about survey method, body appreciation assessment, or BMI measurement method."
+    }
+  },
+  "Percent of white in participants": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          63.7
+        ]
+      },
+      "evidence_source": "The majority of participants were of European Caucasian descent (63.7%).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            63.7
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "source_file": "010_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes a single study sample of 322 female university students enrolled at a university in Greater London (age M = 24.72, SD = 5.90; BMI M = 21.67, SD = 3.48). The ethnic composition is reported (63.7% European Caucasian, 13.7% Asian, 13.7% African Caribbean, 9.0% other) and religious affiliation breakdown is provided. No information is given about survey method, body appreciation assessment, or BMI measurement method."
+    }
+  },
+  "Mean age of participants": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          24.72
+        ]
+      },
+      "evidence_source": "The participants of this study were 322 female university students ... (age M = 24.72, SD = 5.90; BMI M = 21.67, SD = 3.48).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            24.72
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "source_file": "010_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes a single study sample of 322 female university students enrolled at a university in Greater London (age M = 24.72, SD = 5.90; BMI M = 21.67, SD = 3.48). The ethnic composition is reported (63.7% European Caucasian, 13.7% Asian, 13.7% African Caribbean, 9.0% other) and religious affiliation breakdown is provided. No information is given about survey method, body appreciation assessment, or BMI measurement method."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          24.72
+        ]
+      },
+      "evidence_source": "Table 1 (M row) shows Age = 24.72.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            24.72
+          ]
+        }
+      },
+      "source_file": "016_results_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2009check/tables/1Swami2009check_p001_table00.png",
+      "_metadata_caption": null,
+      "_extracted_caption": "Table 1\nDescriptive statistics and inter-item correlations between consideration of cosmetic surgery, media influence, body appreciation, weight status, and age.",
+      "_section_summary": "The Results section reports descriptive statistics and inter-item correlations in Table 1 and tests predictors of consideration of cosmetic surgery using a multiple linear regression. The regression was significant (F(7, 314) = 41.89, p < .001, Adj. R^2 = .471); significant predictors (in order) were body appreciation, Internalisation-General, Information, BMI, and Pressures. Table 1 provides means (e.g., BMI M = 21.67; Age M = 24.72) and shows the BAS\u2013BMI correlation = .27."
+    }
+  },
+  "Mean BMI of participants": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          21.67
+        ]
+      },
+      "evidence_source": "The participants of this study were 322 female university students ... (age M = 24.72, SD = 5.90; BMI M = 21.67, SD = 3.48).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            21.67
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "source_file": "010_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes a single study sample of 322 female university students enrolled at a university in Greater London (age M = 24.72, SD = 5.90; BMI M = 21.67, SD = 3.48). The ethnic composition is reported (63.7% European Caucasian, 13.7% Asian, 13.7% African Caribbean, 9.0% other) and religious affiliation breakdown is provided. No information is given about survey method, body appreciation assessment, or BMI measurement method."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          21.67
+        ]
+      },
+      "evidence_source": "Table 1 (M row) shows BMI = 21.67.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            21.67
+          ]
+        }
+      },
+      "source_file": "016_results_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2009check/tables/1Swami2009check_p001_table00.png",
+      "_metadata_caption": null,
+      "_extracted_caption": "Table 1\nDescriptive statistics and inter-item correlations between consideration of cosmetic surgery, media influence, body appreciation, weight status, and age.",
+      "_section_summary": "The Results section reports descriptive statistics and inter-item correlations in Table 1 and tests predictors of consideration of cosmetic surgery using a multiple linear regression. The regression was significant (F(7, 314) = 41.89, p < .001, Adj. R^2 = .471); significant predictors (in order) were body appreciation, Internalisation-General, Information, BMI, and Pressures. Table 1 provides means (e.g., BMI M = 21.67; Age M = 24.72) and shows the BAS\u2013BMI correlation = .27."
+    }
+  },
+  "Assessment of BMI": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "\"All participants provided their demographic details consisting of age, ethnicity, religion, height, and weight.\" Because height and weight were provided by participants as part of demographics and then used to calculate BMI, BMI assessment is inferred to be based on self-reported height and weight (i.e., 'self-reported').",
+      "warning": "Inference made: BMI is inferred to be self-reported because heights/weights were provided by participants; no explicit statement that measurements were taken by researchers.",
+      "source_file": "014_demographics_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This demographics section states that participants provided age, ethnicity, religion, height, and weight; height and weight were used to calculate BMI (kg/m2). The section does not report sample size, country, mean age, racial percentages, education level, source of sample, body appreciation assessment, correlations with BMI, study labels, or publication type."
+    }
+  },
+  "Survey method": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "paper-and-pencil"
+        ]
+      },
+      "evidence_source": "\"they were given a paperand-pencil questionnaire to complete individually and anonymously.\" (also repeated: \"completed a paper-and-pencil questionnaire after providing informed consent.\")",
+      "warning": "None",
+      "source_file": "015_procedure_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This procedural section describes recruitment and data-collection procedures for a single study (referred to as \"this study\"). Participants were recruited opportunistically from campus locations and completed individual, anonymous paper-and-pencil questionnaires after providing informed consent; they were verbally debriefed on return. No sample size, demographic (e.g., country, age, race), BMI, assessment instruments, or correlation/statistical results are reported in this section."
+    }
+  },
+  "Correlation between body appreciation and BMI": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          0.27
+        ]
+      },
+      "evidence_source": "Table 1 correlation between (6) BAS and (7) BMI is reported as .27** (Table 1 cell for BAS vs BMI).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            0.27
+          ]
+        }
+      },
+      "source_file": "016_results_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2009check/tables/1Swami2009check_p001_table00.png",
+      "_metadata_caption": null,
+      "_extracted_caption": "Table 1\nDescriptive statistics and inter-item correlations between consideration of cosmetic surgery, media influence, body appreciation, weight status, and age.",
+      "_section_summary": "The Results section reports descriptive statistics and inter-item correlations in Table 1 and tests predictors of consideration of cosmetic surgery using a multiple linear regression. The regression was significant (F(7, 314) = 41.89, p < .001, Adj. R^2 = .471); significant predictors (in order) were body appreciation, Internalisation-General, Information, BMI, and Pressures. Table 1 provides means (e.g., BMI M = 21.67; Age M = 24.72) and shows the BAS\u2013BMI correlation = .27."
+    }
+  }
+}

@@ -1,0 +1,133 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or location of data collection is stated in the Measures section or Demographics Questionnaire.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section refers to the \"current sample\" when reporting Cronbach's alphas but does not provide a sample size.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about data collection method (e.g., online or paper-and-pencil) is provided in the Measures section or Demographics Questionnaire.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Measures section and Demographics Questionnaire ask about ethnicity but do not report percentages or racial composition.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Age is listed as a demographic item on the Demographics Questionnaire, but no mean age or age distribution is reported in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Demographics Questionnaire asks participants to report \"year in school,\" but the section does not state percentages with college or higher education.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Height and weight are requested on the Demographics Questionnaire (which would allow BMI calculation), but no mean BMI value is reported in this section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No explicit statement about recruitment source (e.g., community, college, primary/secondary/high school) is provided in the Measures section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "\"Body Appreciation Scale. The BAS (Avalos et al., 2005) includes 13 items rated on a 5-point scale ... Cronbach's coefficient alpha in the current sample was .92.\"",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Demographics Questionnaire: \"asks participants to report their age, year in school, ethnicity, gender, height, and weight.\" (height and weight are self-reported, enabling BMI calculation)",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Measures section describes the Body Appreciation Scale and that height/weight were collected, but no correlation (Pearson r) between body appreciation and BMI is reported here.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section reports measures used for the \"current sample\" (e.g., \"Cronbach's coefficient alpha in the current sample was .92\") and does not indicate multiple named studies or experiments.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No information in this section indicates whether the work is a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Measures section lists the instruments used in the study (e.g., BAS for body appreciation, MBSRQ-AE, MEIM, RSES, SATAQ-3, EAT-26 dieting subscale, EDE-Q, PARTS) and reports internal consistency (Cronbach's alpha) for each in the current sample. It notes the Demographics Questionnaire asked for age, year in school, ethnicity, gender, height, and weight. The section does not name any specific study (e.g., 'Study 1') or report sample size, country, recruitment source, BMI means, racial composition, or correlations between body appreciation and BMI.",
+      "evidence_source": "Relevant sentences: (1) \"Body Appreciation Scale. The BAS (Avalos et al., 2005) ... Cronbach's coefficient alpha in the current sample was .92.\" (2) \"Demographics Questionnaire. This questionnaire... asks participants to report their age, year in school, ethnicity, gender, height, and weight.\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

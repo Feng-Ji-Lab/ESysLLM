@@ -1,0 +1,368 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text references F(6, 715) indicating 715 degrees of freedom in the denominator, but this does not directly state the sample size. The actual sample size cannot be reliably inferred from this statistic alone.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method (paper-and-pencil or online) is mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No racial/ethnic demographic information is provided in the text.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "While age is mentioned as a significant predictor in the regressions, no mean age value is reported in the text.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No education level information is provided in the text.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "While BMI is mentioned as a significant predictor in the regressions, no mean BMI value is reported in the text.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the source of the sample (community, college, or primary/secondary/high school) is provided in the text.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No specific body appreciation assessment instrument (BAS or BAS-2) is mentioned in the provided text.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported or measured) is provided in the text.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The text reports regression analyses with body appreciation and BMI as predictors of well-being outcomes, but does not provide the correlation coefficient between body appreciation and BMI.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text appears to be results from a single analysis (regression analyses for women), but does not explicitly state the number of studies in the paper.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information (journal article or dissertation) is provided in the text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents regression analyses for women examining predictors of emotional, psychological, and social well-being. Body appreciation and BMI emerged as significant predictors across all three well-being outcomes, with additional significant predictors including body image flexibility, body pride, and age. The analyses indicate moderate to strong model fits (Adj. R\u00b2 ranging from .27 to .40).",
+      "evidence_source": "Entire provided text section describing three regression models for women.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information provided in the text or tables.",
+      "warning": "Country not mentioned in the provided text or table captions."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          716,
+          432
+        ]
+      },
+      "evidence_source": "Table 3 caption states 'Results of the regression analyses for women (n = 716)'. Table 4 caption states 'Results of the regression analyses for men (n = 432)'. These represent two gender-specific subsamples within the same study.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            716
+          ]
+        },
+        "male": {
+          "Study X": [
+            432
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            1148
+          ]
+        }
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Survey method not specified in the provided text or table captions.",
+      "warning": "Survey method not mentioned."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Racial/ethnic composition not provided in the text or tables.",
+      "warning": "Percent of white participants not mentioned."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Mean age values are not explicitly stated in the provided text. Table 3 shows 'Age' as a predictor variable in regression analyses, but the mean age of participants is not reported.",
+      "warning": "Mean age of participants not explicitly provided; Age appears as a variable in the regression model but descriptive statistics are not given."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Educational attainment not specified in the provided text or table captions.",
+      "warning": "Percentage of college or higher education not mentioned."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Mean BMI values are not explicitly stated in the provided text. Table 3 shows 'Body mass index' as a predictor variable in regression analyses, but the mean BMI of participants is not reported.",
+      "warning": "Mean BMI of participants not explicitly provided; BMI appears as a variable in the regression model but descriptive statistics are not given."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Source of sample recruitment not specified in the provided text or table captions.",
+      "warning": "Source of sample not mentioned."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'body appreciation' as a variable in regression analyses, but the specific instrument (BAS or BAS-2) is not identified in the provided excerpt.",
+      "warning": "Assessment instrument for body appreciation not explicitly specified in the provided text."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'Body mass index' as a variable in regression analyses, but whether it was self-reported or measured is not specified in the provided excerpt.",
+      "warning": "Assessment method for BMI (self-reported vs. measured) not specified in the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.02,
+          -0.02
+        ]
+      },
+      "evidence_source": "Table 3 (women, n=716): Row 'Body appreciation' intersects with column 'Body mass index' under 'Emotional well-being' section, showing B = -.02. The same row-column intersection under 'Psychological well-being' shows B = -.04, and under 'Social well-being' shows B = -.03. However, these are unstandardized regression coefficients (B), not correlation coefficients (r). The standardized coefficients (\u03b2) are: Emotional well-being \u03b2 = -.12, Psychological well-being \u03b2 = -.20, Social well-being \u03b2 = -.14. Table 4 (men, n=432) is partially visible but the body appreciation \u00d7 BMI correlations are not fully shown in the provided excerpt. Based on the visible data from Table 3, the standardized coefficients (\u03b2) for the relationship between body appreciation and BMI are: -.12 (emotional), -.20 (psychological), -.14 (social). Computing the arithmetic mean: (-.12 + -.20 + -.14) / 3 = -.4600 / 3 = -.1533 for women.",
+      "warning": "The provided tables show regression coefficients (B and \u03b2), not Pearson correlation coefficients (r). The \u03b2 values represent standardized regression coefficients in multivariate regression models predicting well-being outcomes, not bivariate correlations between body appreciation and BMI. Additionally, Table 4 for men is incomplete in the provided image. Caution: These are not direct correlation coefficients and should not be interpreted as such without additional context.",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.1533
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes regression analyses for women and men from what appears to be a single study with gender-stratified analyses. Tables 3 and 4 present results for the same study broken down by gender (women n=716, men n=432), not separate studies.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "Publication type (journal article vs. dissertation) is not specified in the provided text or table captions.",
+      "warning": "Publication type not mentioned in the provided excerpt."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents results of regression analyses examining predictors of emotional, psychological, and social well-being separately for women (n=716) and men (n=432). For women, body appreciation, body image flexibility, and BMI significantly predicted emotional well-being; body appreciation, BMI, body pride, age, and body acceptance from others predicted psychological well-being; and body appreciation, BMI, body pride, and age predicted social well-being. Table 4 shows corresponding results for men, though the full results are not visible in the provided excerpt.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 3. Results of the regression analyses for women (n = 716).\nTable 4. Results of the regression analyses for men (n = 432).",
+      "evidence_source": "Table titles as they appear in the provided image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2018Positivebodyimageispositivelya/tables/1Swami2018Positivebodyimageispositivelya_p007_table01.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is provided in the text or table.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          432
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": [
+          432
+        ],
+        "other": "None",
+        "total": [
+          432
+        ]
+      },
+      "evidence_source": "Table 4 title states 'Results of the regression analyses for men (n = 432)'. The sample size of 432 is explicitly stated for men.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is provided in the text or table.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No racial/ethnic demographic information is provided in the text or table.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age information is provided in the text or table. Age appears as a predictor variable in the regression model but no descriptive statistics are given.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in the text or table.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI information is provided in the text or table. BMI appears as a predictor variable in the regression model but no descriptive statistics are given.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample source (community, college, or school) is provided in the text or table.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the specific body appreciation assessment instrument (BAS or BAS-2) is provided in the text or table.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported or measured) is provided in the text or table.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Table 4 presents regression analysis results (B, SE, \u03b2, t, p values) for men, not correlation coefficients. The table shows the relationship between body appreciation and well-being outcomes, not between body appreciation and BMI. BMI is listed as a separate predictor variable in the regression model.",
+      "warning": "This table contains regression coefficients, not correlation coefficients. The correlation between body appreciation and BMI is not directly reported in this table."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not explicitly state the number of studies. The text discusses regression analyses for men and references women in the preceding section, but does not clearly indicate whether this is one study with multiple samples or multiple studies.",
+      "warning": "Cannot determine number of studies from provided excerpt alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in the text or table.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents regression analysis results for men (n = 432) examining predictors of emotional, psychological, and social well-being. Body appreciation emerged as a significant predictor across all three well-being outcomes, while BMI was also a significant predictor in all three models. The table displays standardized and unstandardized regression coefficients with significance levels for each predictor variable.",
+      "evidence_source": "Table 4 caption and accompanying text describing regression analyses for men.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 4. Results of the regression analyses for men (n = 432).",
+      "evidence_source": "Table title as provided in the input.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2018Positivebodyimageispositivelya/tables/1Swami2018Positivebodyimageispositivelya_p007_table02.png",
+    "_metadata_caption": "Table 4. Results of the regression analyses for men (n = 432).",
+    "_asset_source": "[table] Table 4. Results of the regression analyses for men (n = 432).",
+    "_pass_type": "asset_1"
+  }
+]

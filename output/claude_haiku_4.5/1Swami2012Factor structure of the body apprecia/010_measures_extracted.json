@@ -1,0 +1,101 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Indonesia"
+        ]
+      },
+      "evidence_source": "Text states 'the BAS was translated into Indonesian (Bahasa Indonesia), the official language of Indonesia' indicating the study was conducted in Indonesia.",
+      "warning": "Study name is inferred as 'Study X' because the text does not explicitly label this as 'Study 1' or provide a specific study identifier."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide the total number of participants or sample size.",
+      "warning": "Sample size is not mentioned in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether data collection was conducted via paper-and-pencil or online methods.",
+      "warning": "Survey method is not mentioned in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions that participants provided 'ethnicity' as demographic information but does not report the percentage of white participants.",
+      "warning": "Percentage of white participants is not provided in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions that participants provided 'age' as demographic information but does not report the mean age.",
+      "warning": "Mean age is not provided in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide information about participants' education level.",
+      "warning": "Percentage of college or higher education is not mentioned in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states that 'height, and weight' were used to 'compute participants' BMI' but does not report the mean BMI value.",
+      "warning": "Mean BMI value is not provided in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not specify whether participants were recruited from community, college, or primary/secondary/high school sources.",
+      "warning": "Source of sample is not mentioned in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "Text explicitly states 'Participants completed the Body Appreciation Scale (Avalos et al., 2005), a 13-item measure' and later refers to 'the BAS was translated into Indonesian', confirming the use of the BAS (not BAS-2).",
+      "warning": "Study name is inferred as 'Study X' because the text does not explicitly label this as 'Study 1' or provide a specific study identifier."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "measured"
+        ]
+      },
+      "evidence_source": "Text states 'Participants provided their demographic details consisting of sex, age, ethnicity, height, and weight. The latter two variables were used to compute participants' BMI.' This indicates height and weight were collected directly from participants (measured), not self-reported.",
+      "warning": "Study name is inferred as 'Study X' because the text does not explicitly label this as 'Study 1' or provide a specific study identifier."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not provide any correlation coefficients between body appreciation and BMI.",
+      "warning": "Correlation values are not reported in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes measures and demographics for a single study without explicitly naming multiple studies or experiments.",
+      "warning": "Based on the content provided, this appears to be a single study, but the full paper context is not available to confirm."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text does not indicate whether this is from a journal article or dissertation.",
+      "warning": "Publication type is not specified in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the measures used in a study conducted in Indonesia. Participants completed the Body Appreciation Scale (BAS), a 13-item measure translated into Indonesian using back-translation techniques. Demographics were collected including sex, age, ethnicity, height, and weight, with height and weight used to calculate BMI.",
+      "evidence_source": "Entire 'Measures' and 'Demographics' section provided.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

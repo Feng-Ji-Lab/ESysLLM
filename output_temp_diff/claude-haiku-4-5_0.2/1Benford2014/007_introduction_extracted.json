@@ -1,0 +1,89 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is an introduction section that reviews existing literature and does not describe a specific study with a defined country location. No empirical study with country information is presented in this section.",
+      "warning": "This is an introduction/literature review section, not a study description section. No country information is available."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is an introduction section that reviews existing literature. It does not describe a specific empirical study with participant sample size. The phrase 'In the present study, therefore, we examined...' indicates a study will be described, but sample size is not provided in this introduction section.",
+      "warning": "This is an introduction section only. Sample size information is not provided."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is an introduction section reviewing literature and does not describe the methodology of the present study. No survey method is specified in this section.",
+      "warning": "This is an introduction section. Survey method information is not provided."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is an introduction section that does not provide demographic information about participants in the present study.",
+      "warning": "This is an introduction section. Demographic information is not provided."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is an introduction section that does not provide participant age information.",
+      "warning": "This is an introduction section. Participant age information is not provided."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is an introduction section that does not provide educational background information about participants.",
+      "warning": "This is an introduction section. Educational information is not provided."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is an introduction section that does not provide BMI information about participants.",
+      "warning": "This is an introduction section. BMI information is not provided."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is an introduction section that does not describe where participants were recruited for the present study.",
+      "warning": "This is an introduction section. Sample source information is not provided."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is an introduction section that reviews literature on body appreciation but does not specify which instrument (BAS or BAS-2) will be used in the present study.",
+      "warning": "This is an introduction section. Assessment instrument information is not provided."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is an introduction section that does not describe the methodology for assessing BMI in the present study.",
+      "warning": "This is an introduction section. BMI assessment method is not provided."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text is an introduction section that reviews existing literature. While it mentions that 'body appreciation is negatively correlated with drive for muscularity' (citing Campana et al., 2013), it does not provide correlation values between body appreciation and BMI for any study.",
+      "warning": "This is an introduction section. No correlation data is provided for the present study."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text is an introduction section that does not describe the number of studies in the present research. It mentions 'In the present study' (singular), suggesting one study will follow, but the introduction does not specify how many studies are included in the overall paper.",
+      "warning": "This is an introduction section only. The number of studies in the paper cannot be determined from this section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text is an introduction section that does not indicate whether this is from a journal article or dissertation.",
+      "warning": "Publication type cannot be determined from an introduction section alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This is an introduction section that reviews literature on the Big Five personality traits and their associations with body image, particularly focusing on gender differences. The section establishes that while Neuroticism has been extensively studied in relation to women's body image, research on men's body image is limited. The authors indicate they will examine associations between the Big Five domains, men's drive for muscularity, and body appreciation in 'the present study,' but no empirical data, methodology, or results are provided in this introduction.",
+      "evidence_source": "Entire introduction section",
+      "warning": "This is a literature review/introduction section, not a study results section. No empirical data is available for extraction."
+    },
+    "_pass_type": "text_only"
+  }
+]

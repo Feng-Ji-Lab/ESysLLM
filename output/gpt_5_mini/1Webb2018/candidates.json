@@ -1,0 +1,848 @@
+{
+  "Publication type": {
+    "0": {
+      "type": "enum_or_none",
+      "extract_value": "journal articles",
+      "evidence_source": "Header indicates the journal name: 'Appetite' (journal homepage: www.elsevier.com/locate/appet), indicating this is a journal article.",
+      "warning": "None",
+      "source_file": "003_appetite_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section contains the article title and author line for a paper published in the journal Appetite: \"Mom, quit fat talking\u2014I'm trying to eat (mindfully) here!\": Evaluating a sociocultural model of family fat talk, positive body image, and mindful eating in college women. The provided text includes author names (Jennifer B. Webb, Courtney B. Rogers, Lena Etzel, Meagan P. Padro) but contains no study numbering (e.g., 'Study 1') or methodological/sample details."
+    },
+    "1": {
+      "type": "enum_or_none",
+      "extract_value": "journal articles",
+      "evidence_source": "Journal name and citation visible in the figure image header: 'Appetite 126 (2018) 169\u2013175'.",
+      "warning": "None",
+      "source_file": "023_5_conclusions_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Webb2018/figures/1Webb2018_p004_fig00.png",
+      "_metadata_caption": "",
+      "_extracted_caption": "Fig. 1. Multiple indirect effect model of family fat talk predicting mindful eating via body appreciation (\u03b2 = \u22120.02) and functional body appreciation (\u03b2 = \u22120.06). Note that all beta coefficients reported for this model adjusted for BMI are standardized. ***p < .001, **p < .01, *p < .05.",
+      "_section_summary": "This conclusions section summarizes a single study examining sociocultural influences on mindful eating in college women, reporting that limited appreciation of the body's functional qualities helps explain how family members' self-objectifying body talk negatively affects mindful eating. The authors describe the findings as preliminary and suggest further development and testing of contextual and interpersonal models of adaptive eating styles."
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "Keywords: Mindful eating Family fat talk Body appreciation Functional body appreciation Positive body image College women",
+      "warning": "Inferred from keyword 'College women' indicating participants were college students; per case rules this implies 100% college or higher.",
+      "source_file": "005_keywords_mindful_eating_family_fat_talk_body_appre_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section provides keywords indicating the paper focuses on mindful eating, family fat talk, and body appreciation (including functional body appreciation and positive body image) with an emphasis on college women. No study labels (e.g., 'Study 1') or sample sizes, ages, BMI values, or assessment instruments are reported in the provided text."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "Sentence: '...predicting mindful eating among undergraduate females.' Inference: Participants are described as 'undergraduate females' so, per extraction rules, this is interpreted as 100% college-level enrollment (inferred as 100% college or higher).",
+      "warning": "Inference made that all participants are college students because the text specifies 'undergraduate females'.",
+      "source_file": "006_abstract_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "The abstract reports a single preliminary study evaluating indirect effects of overhearing family fat talk on mindful eating via body appreciation and functional body appreciation in undergraduate females (N = 333) using an online survey. Results indicated family fat talk was inversely associated with mindful eating and both indices of positive body image, and a regression controlling for BMI suggested functional body appreciation (appreciating what the body can do) helped explain the inverse link between family fat talk and mindful eating."
+    },
+    "2": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "Therefore, the current analysis provides a preliminary evaluation of a partial sociocultural model of mindful eating informed by the Tripartite Influence framework (Rodgers et al., 2009b; Thompson et al., 1999) in a college female sample.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "source_file": "007_1_introduction_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This Introduction outlines a single empirical analysis conducted in a college female sample that tests a partial sociocultural model linking frequency of overhearing family fat talk to mindful eating, body appreciation, and functional body appreciation. It frames hypotheses that family fat talk will be inversely associated with mindful eating and positive body image and that body appreciation variables may mediate effects (controlling for BMI)."
+    },
+    "3": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "The study sample comprised 3621 undergraduate females from a large publicly-funded institution located in the Southeastern United States. Because the text states participants were undergraduate students, we infer 100% have college enrollment/experience (inference: 'undergraduate students' -> 100% college or higher).",
+      "warning": "Inference applied per case_rules: participants described as undergraduate students -> 100% college or higher.",
+      "source_file": "009_21_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes a single study (no explicit 'Study 1' label) of 3,621 undergraduate females at a large publicly-funded institution in the Southeastern United States. Mean age was 19.4 years (SD = 1.5); racial composition was 62% White, 21% Black, with smaller percentages of Asian (4%), Hispanic/Latina (6%), multi-ethnic (6%), American Indian/Alaska Native (<1%), and Other (1%); mean BMI was 23.5 kg/m2 (SD = 4.9) with 26.8% having BMI \u2265 25. The sample consisted largely of freshmen/sophomores (76.5%) and 86.5% were non-psychology majors; the section does not report body appreciation assessment instrument, BMI measurement method, survey mode, or correlations between body appreciation and BMI."
+    },
+    "4": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "The Discussion states: 'We demonstrated that this model ... in a college female sample.' This indicates participants were a college sample, interpreted as 100% college-level.",
+      "warning": "Inference: percentage set to 100% because the text explicitly describes a 'college female sample'.",
+      "source_file": "021_4_discussion_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This Discussion summarizes a single study that tested a sociocultural model linking overheard family 'fat talk' to mindful eating via positive body image variables. Results (in a college female sample) showed that overhearing family body criticism was associated with lower mindful eating and body appreciation, with body functionality appreciation partially mediating the link to mindful eating. No other studies or sample subsets (e.g., Study 1, Study 2) are mentioned."
+    },
+    "5": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "The current analysis exclusively focused on the experiences of college women. Inferred 100% because participants are described as college women (i.e., college-attending/undergraduate), although an explicit percentage is not provided.",
+      "warning": "Inference that 100% had college or higher education based on wording 'college women'.",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            100
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      },
+      "source_file": "022_41_strengths_limitations_and_future_research_direc_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section outlines strengths, limitations, and directions for future research: the study contributes preliminarily to literature on mindful eating, family fat talk, and positive body image but is limited by reliance on a nonclinical sample of college women who primarily identified as White. The authors note causality cannot be inferred from their concurrent/indirect model, recommend testing the model in experimental or longitudinal designs, and identify measurement limitations (e.g., unclear source of family fat talk, functional body appreciation measure developed in pregnant women)."
+    },
+    "6": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "Sentence: \"The present study provided a novel preliminary partial test of sociocultural theory as applied to mindful eating in college women.\" Inference: participants are described as \"college women,\" so inferred percentage with college or higher education = 100%.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "source_file": "023_5_conclusions_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This concluding section states that the present (single) study tested sociocultural theory in relation to mindful eating in college women and found that limited appreciation of body functionality helps explain negative effects of family self-objectifying talk on mindful eating. The authors suggest these preliminary findings could inform further development and testing of contextual and interpersonal models of adaptive eating styles."
+    },
+    "7": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "evidence_source": "The present study provided a novel preliminary partial test of sociocultural theory as applied to mindful eating in college women.",
+      "warning": "Inference: phrase 'college women' interpreted as participants being college students (therefore 100% with college-level enrollment); original text does not explicitly state 'undergraduate students' or provide exact education percentages.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      },
+      "source_file": "023_5_conclusions_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Webb2018/figures/1Webb2018_p004_fig00.png",
+      "_metadata_caption": "",
+      "_extracted_caption": "Fig. 1. Multiple indirect effect model of family fat talk predicting mindful eating via body appreciation (\u03b2 = \u22120.02) and functional body appreciation (\u03b2 = \u22120.06). Note that all beta coefficients reported for this model adjusted for BMI are standardized. ***p < .001, **p < .01, *p < .05.",
+      "_section_summary": "This conclusions section summarizes a single study examining sociocultural influences on mindful eating in college women, reporting that limited appreciation of the body's functional qualities helps explain how family members' self-objectifying body talk negatively affects mindful eating. The authors describe the findings as preliminary and suggest further development and testing of contextual and interpersonal models of adaptive eating styles."
+    }
+  },
+  "Source of sample": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Keywords: Mindful eating Family fat talk Body appreciation Functional body appreciation Positive body image College women",
+      "warning": "None",
+      "source_file": "005_keywords_mindful_eating_family_fat_talk_body_appre_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section provides keywords indicating the paper focuses on mindful eating, family fat talk, and body appreciation (including functional body appreciation and positive body image) with an emphasis on college women. No study labels (e.g., 'Study 1') or sample sizes, ages, BMI values, or assessment instruments are reported in the provided text."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Participants included 333 women attending a large southeastern public university...",
+      "warning": "None",
+      "source_file": "006_abstract_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "The abstract reports a single preliminary study evaluating indirect effects of overhearing family fat talk on mindful eating via body appreciation and functional body appreciation in undergraduate females (N = 333) using an online survey. Results indicated family fat talk was inversely associated with mindful eating and both indices of positive body image, and a regression controlling for BMI suggested functional body appreciation (appreciating what the body can do) helped explain the inverse link between family fat talk and mindful eating."
+    },
+    "2": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Therefore, the current analysis provides a preliminary evaluation of a partial sociocultural model of mindful eating ... in a college female sample.",
+      "warning": "None",
+      "source_file": "007_1_introduction_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This Introduction outlines a single empirical analysis conducted in a college female sample that tests a partial sociocultural model linking frequency of overhearing family fat talk to mindful eating, body appreciation, and functional body appreciation. It frames hypotheses that family fat talk will be inversely associated with mindful eating and positive body image and that body appreciation variables may mediate effects (controlling for BMI)."
+    },
+    "3": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The study sample comprised 3621 undergraduate females from a large publicly-funded institution located in the Southeastern United States.",
+      "warning": "None",
+      "source_file": "009_21_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes a single study (no explicit 'Study 1' label) of 3,621 undergraduate females at a large publicly-funded institution in the Southeastern United States. Mean age was 19.4 years (SD = 1.5); racial composition was 62% White, 21% Black, with smaller percentages of Asian (4%), Hispanic/Latina (6%), multi-ethnic (6%), American Indian/Alaska Native (<1%), and Other (1%); mean BMI was 23.5 kg/m2 (SD = 4.9) with 26.8% having BMI \u2265 25. The sample consisted largely of freshmen/sophomores (76.5%) and 86.5% were non-psychology majors; the section does not report body appreciation assessment instrument, BMI measurement method, survey mode, or correlations between body appreciation and BMI."
+    },
+    "4": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Text: \"participants were recruited through the Department of Psychology's online research sign-up system... As an incentive, students received research credit in a participating psychology course.\"",
+      "warning": "None",
+      "source_file": "016_23_procedure_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This procedure section describes recruitment and data collection: participants were recruited via the Department of Psychology's online research sign-up system, completed measures in randomized order on the Qualtrics platform, and received research credit in a psychology course. The section does not name a study number or provide sample size, demographics, or measurement details."
+    },
+    "5": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The Discussion states: '...in a college female sample.'",
+      "warning": "None",
+      "source_file": "021_4_discussion_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This Discussion summarizes a single study that tested a sociocultural model linking overheard family 'fat talk' to mindful eating via positive body image variables. Results (in a college female sample) showed that overhearing family body criticism was associated with lower mindful eating and body appreciation, with body functionality appreciation partially mediating the link to mindful eating. No other studies or sample subsets (e.g., Study 1, Study 2) are mentioned."
+    },
+    "6": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The current analysis exclusively focused on the experiences of college women.",
+      "warning": "None",
+      "source_file": "022_41_strengths_limitations_and_future_research_direc_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section outlines strengths, limitations, and directions for future research: the study contributes preliminarily to literature on mindful eating, family fat talk, and positive body image but is limited by reliance on a nonclinical sample of college women who primarily identified as White. The authors note causality cannot be inferred from their concurrent/indirect model, recommend testing the model in experimental or longitudinal designs, and identify measurement limitations (e.g., unclear source of family fat talk, functional body appreciation measure developed in pregnant women)."
+    },
+    "7": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Sentence: \"The present study provided a novel preliminary partial test of sociocultural theory as applied to mindful eating in college women.\"",
+      "warning": "None",
+      "source_file": "023_5_conclusions_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This concluding section states that the present (single) study tested sociocultural theory in relation to mindful eating in college women and found that limited appreciation of body functionality helps explain negative effects of family self-objectifying talk on mindful eating. The authors suggest these preliminary findings could inform further development and testing of contextual and interpersonal models of adaptive eating styles."
+    },
+    "8": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The present study ... applied to mindful eating in college women.",
+      "warning": "None",
+      "source_file": "023_5_conclusions_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Webb2018/figures/1Webb2018_p004_fig00.png",
+      "_metadata_caption": "",
+      "_extracted_caption": "Fig. 1. Multiple indirect effect model of family fat talk predicting mindful eating via body appreciation (\u03b2 = \u22120.02) and functional body appreciation (\u03b2 = \u22120.06). Note that all beta coefficients reported for this model adjusted for BMI are standardized. ***p < .001, **p < .01, *p < .05.",
+      "_section_summary": "This conclusions section summarizes a single study examining sociocultural influences on mindful eating in college women, reporting that limited appreciation of the body's functional qualities helps explain how family members' self-objectifying body talk negatively affects mindful eating. The authors describe the findings as preliminary and suggest further development and testing of contextual and interpersonal models of adaptive eating styles."
+    }
+  },
+  "Country": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "southeastern"
+        ]
+      },
+      "evidence_source": "Participants included 333 women attending a large southeastern public university who completed measures of mindful eating, family fat talk, body appreciation, and functional body appreciation via an online survey platform.",
+      "warning": "None",
+      "source_file": "006_abstract_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "The abstract reports a single preliminary study evaluating indirect effects of overhearing family fat talk on mindful eating via body appreciation and functional body appreciation in undergraduate females (N = 333) using an online survey. Results indicated family fat talk was inversely associated with mindful eating and both indices of positive body image, and a regression controlling for BMI suggested functional body appreciation (appreciating what the body can do) helped explain the inverse link between family fat talk and mindful eating."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Southeastern United States"
+        ]
+      },
+      "evidence_source": "The study sample comprised 3621 undergraduate females from a large publicly-funded institution located in the Southeastern United States.",
+      "warning": "None",
+      "source_file": "009_21_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes a single study (no explicit 'Study 1' label) of 3,621 undergraduate females at a large publicly-funded institution in the Southeastern United States. Mean age was 19.4 years (SD = 1.5); racial composition was 62% White, 21% Black, with smaller percentages of Asian (4%), Hispanic/Latina (6%), multi-ethnic (6%), American Indian/Alaska Native (<1%), and Other (1%); mean BMI was 23.5 kg/m2 (SD = 4.9) with 26.8% having BMI \u2265 25. The sample consisted largely of freshmen/sophomores (76.5%) and 86.5% were non-psychology majors; the section does not report body appreciation assessment instrument, BMI measurement method, survey mode, or correlations between body appreciation and BMI."
+    }
+  },
+  "Sample": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          333
+        ]
+      },
+      "evidence_source": "Participants included 333 women attending a large southeastern public university who completed measures of mindful eating, family fat talk, body appreciation, and functional body appreciation via an online survey platform.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            333
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            333
+          ]
+        }
+      },
+      "source_file": "006_abstract_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "The abstract reports a single preliminary study evaluating indirect effects of overhearing family fat talk on mindful eating via body appreciation and functional body appreciation in undergraduate females (N = 333) using an online survey. Results indicated family fat talk was inversely associated with mindful eating and both indices of positive body image, and a regression controlling for BMI suggested functional body appreciation (appreciating what the body can do) helped explain the inverse link between family fat talk and mindful eating."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          3621
+        ]
+      },
+      "evidence_source": "The study sample comprised 3621 undergraduate females from a large publicly-funded institution located in the Southeastern United States.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            3621
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            3621
+          ]
+        }
+      },
+      "source_file": "009_21_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes a single study (no explicit 'Study 1' label) of 3,621 undergraduate females at a large publicly-funded institution in the Southeastern United States. Mean age was 19.4 years (SD = 1.5); racial composition was 62% White, 21% Black, with smaller percentages of Asian (4%), Hispanic/Latina (6%), multi-ethnic (6%), American Indian/Alaska Native (<1%), and Other (1%); mean BMI was 23.5 kg/m2 (SD = 4.9) with 26.8% having BMI \u2265 25. The sample consisted largely of freshmen/sophomores (76.5%) and 86.5% were non-psychology majors; the section does not report body appreciation assessment instrument, BMI measurement method, survey mode, or correlations between body appreciation and BMI."
+    },
+    "2": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          333
+        ]
+      },
+      "evidence_source": "Sentence: 'For example, according to expert guidelines (Fritz & MacKinnon, 2007), the analytic sample size of 333 far exceeds the required minimum N of 148 to observe an indirect effect...'.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "source_file": "019_31_preliminary_analyses_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section reports preliminary analyses for a single study (analytic N = 333), including variable-level missingness and justification for listwise deletion after Little's Test indicated data were MCAR. It notes that distributions met skewness and kurtosis criteria, that z-scores were created for analyses, and that Table 1 contains means, SDs, and correlations; the text states higher BMI was associated with lower positive body image but does not provide numeric correlation coefficients."
+    }
+  },
+  "Survey method": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "online"
+        ]
+      },
+      "evidence_source": "Participants included 333 women attending a large southeastern public university who completed measures of mindful eating, family fat talk, body appreciation, and functional body appreciation via an online survey platform.",
+      "warning": "None",
+      "source_file": "006_abstract_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "The abstract reports a single preliminary study evaluating indirect effects of overhearing family fat talk on mindful eating via body appreciation and functional body appreciation in undergraduate females (N = 333) using an online survey. Results indicated family fat talk was inversely associated with mindful eating and both indices of positive body image, and a regression controlling for BMI suggested functional body appreciation (appreciating what the body can do) helped explain the inverse link between family fat talk and mindful eating."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "online"
+        ]
+      },
+      "evidence_source": "Text: \"...participants were recruited through the Department of Psychology's online research sign-up system... completed the set of measures in a randomized sequence to minimize order effects using the Qualtrics survey administration platform.\"",
+      "warning": "None",
+      "source_file": "016_23_procedure_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This procedure section describes recruitment and data collection: participants were recruited via the Department of Psychology's online research sign-up system, completed measures in randomized order on the Qualtrics platform, and received research credit in a psychology course. The section does not name a study number or provide sample size, demographics, or measurement details."
+    }
+  },
+  "Number of studies": {
+    "0": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The abstract repeatedly refers to 'the present study' and describes a single participant sample ('Participants included 333 women...'), indicating one study was conducted.",
+      "warning": "None",
+      "source_file": "006_abstract_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "The abstract reports a single preliminary study evaluating indirect effects of overhearing family fat talk on mindful eating via body appreciation and functional body appreciation in undergraduate females (N = 333) using an online survey. Results indicated family fat talk was inversely associated with mindful eating and both indices of positive body image, and a regression controlling for BMI suggested functional body appreciation (appreciating what the body can do) helped explain the inverse link between family fat talk and mindful eating."
+    },
+    "1": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The current analysis provides a preliminary evaluation... in a college female sample (indicating a single analysis/sample described in this section).",
+      "warning": "None",
+      "source_file": "007_1_introduction_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This Introduction outlines a single empirical analysis conducted in a college female sample that tests a partial sociocultural model linking frequency of overhearing family fat talk to mindful eating, body appreciation, and functional body appreciation. It frames hypotheses that family fat talk will be inversely associated with mindful eating and positive body image and that body appreciation variables may mediate effects (controlling for BMI)."
+    },
+    "2": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section describes a single study sample: 'The study sample comprised 3621 undergraduate females...'.",
+      "warning": "None",
+      "source_file": "009_21_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes a single study (no explicit 'Study 1' label) of 3,621 undergraduate females at a large publicly-funded institution in the Southeastern United States. Mean age was 19.4 years (SD = 1.5); racial composition was 62% White, 21% Black, with smaller percentages of Asian (4%), Hispanic/Latina (6%), multi-ethnic (6%), American Indian/Alaska Native (<1%), and Other (1%); mean BMI was 23.5 kg/m2 (SD = 4.9) with 26.8% having BMI \u2265 25. The sample consisted largely of freshmen/sophomores (76.5%) and 86.5% were non-psychology majors; the section does not report body appreciation assessment instrument, BMI measurement method, survey mode, or correlations between body appreciation and BMI."
+    },
+    "3": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section describes a single analytic sample (analytic sample size of 333) and references 'Table 1' for the study's variables, indicating one study in this section.",
+      "warning": "None",
+      "source_file": "019_31_preliminary_analyses_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section reports preliminary analyses for a single study (analytic N = 333), including variable-level missingness and justification for listwise deletion after Little's Test indicated data were MCAR. It notes that distributions met skewness and kurtosis criteria, that z-scores were created for analyses, and that Table 1 contains means, SDs, and correlations; the text states higher BMI was associated with lower positive body image but does not provide numeric correlation coefficients."
+    },
+    "4": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section describes results from a single concurrent multiple indirect effect model (e.g., 'A graphical representation of the results obtained from the multiple indirect effect model...'). No multiple separate studies or numbered studies are reported in the supplied section.",
+      "warning": "None",
+      "source_file": "020_32_multiple_indirect_effect_model_analysis_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section reports results from a concurrent multiple indirect-effects model examining BMI, family fat talk, general body appreciation (BAS-2), functional body appreciation (FBApS), and mindful eating. The model accounted for 20% of variance in mindful eating and found a significant indirect effect of family fat talk on mindful eating via functional body appreciation (\u03b2 = \u22120.06, p = .01), whereas the indirect effect via general body appreciation (BAS-2) was not significant; no study numbering or sample descriptives are provided in the section."
+    },
+    "5": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Section presents results from a single concurrent multiple indirect effect model (no multiple studies or 'Study 1/Study 2' labels are provided in the section).",
+      "warning": "None",
+      "source_file": "020_32_multiple_indirect_effect_model_analysis_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Webb2018/tables/1Webb2018_p003_table00.png",
+      "_metadata_caption": null,
+      "_extracted_caption": "Table 1\nDescriptive Statistics and Zero-Order Correlations.",
+      "_section_summary": "This section reports results from a concurrent multiple indirect effect model examining family fat talk, body appreciation (BAS-2 and functional body appreciation), and mindful eating, adjusting for BMI. The model accounted for 20% of variance in mindful eating and found a significant indirect effect of family fat talk on mindful eating via functional body appreciation; no gender-specific or multiple-study labels (e.g., 'Study 1') are mentioned in this section."
+    },
+    "6": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text repeatedly refers to 'the present study' and discusses results from a single sample (e.g., 'The present study provided...' and 'We demonstrated that this model ... in a college female sample.'), indicating one study.",
+      "warning": "None",
+      "source_file": "021_4_discussion_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This Discussion summarizes a single study that tested a sociocultural model linking overheard family 'fat talk' to mindful eating via positive body image variables. Results (in a college female sample) showed that overhearing family body criticism was associated with lower mindful eating and body appreciation, with body functionality appreciation partially mediating the link to mindful eating. No other studies or sample subsets (e.g., Study 1, Study 2) are mentioned."
+    },
+    "7": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The present study provides an incremental contribution... (singular reference to 'the present study' throughout the section).",
+      "warning": "None",
+      "source_file": "022_41_strengths_limitations_and_future_research_direc_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section outlines strengths, limitations, and directions for future research: the study contributes preliminarily to literature on mindful eating, family fat talk, and positive body image but is limited by reliance on a nonclinical sample of college women who primarily identified as White. The authors note causality cannot be inferred from their concurrent/indirect model, recommend testing the model in experimental or longitudinal designs, and identify measurement limitations (e.g., unclear source of family fat talk, functional body appreciation measure developed in pregnant women)."
+    },
+    "8": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Sentence: \"The present study provided a novel preliminary partial test...\" Interpreted as indicating a single study in this paper.",
+      "warning": "None",
+      "source_file": "023_5_conclusions_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This concluding section states that the present (single) study tested sociocultural theory in relation to mindful eating in college women and found that limited appreciation of body functionality helps explain negative effects of family self-objectifying talk on mindful eating. The authors suggest these preliminary findings could inform further development and testing of contextual and interpersonal models of adaptive eating styles."
+    },
+    "9": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The conclusions section refers to \"The present study\" (singular), indicating a single study.",
+      "warning": "None",
+      "source_file": "023_5_conclusions_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Webb2018/figures/1Webb2018_p004_fig00.png",
+      "_metadata_caption": "",
+      "_extracted_caption": "Fig. 1. Multiple indirect effect model of family fat talk predicting mindful eating via body appreciation (\u03b2 = \u22120.02) and functional body appreciation (\u03b2 = \u22120.06). Note that all beta coefficients reported for this model adjusted for BMI are standardized. ***p < .001, **p < .01, *p < .05.",
+      "_section_summary": "This conclusions section summarizes a single study examining sociocultural influences on mindful eating in college women, reporting that limited appreciation of the body's functional qualities helps explain how family members' self-objectifying body talk negatively affects mindful eating. The authors describe the findings as preliminary and suggest further development and testing of contextual and interpersonal models of adaptive eating styles."
+    }
+  },
+  "Percent of white in participants": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          62
+        ]
+      },
+      "evidence_source": "The sample was predominantly White/European American (62%) and Black/African American (21%).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            62
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            62
+          ]
+        }
+      },
+      "source_file": "009_21_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes a single study (no explicit 'Study 1' label) of 3,621 undergraduate females at a large publicly-funded institution in the Southeastern United States. Mean age was 19.4 years (SD = 1.5); racial composition was 62% White, 21% Black, with smaller percentages of Asian (4%), Hispanic/Latina (6%), multi-ethnic (6%), American Indian/Alaska Native (<1%), and Other (1%); mean BMI was 23.5 kg/m2 (SD = 4.9) with 26.8% having BMI \u2265 25. The sample consisted largely of freshmen/sophomores (76.5%) and 86.5% were non-psychology majors; the section does not report body appreciation assessment instrument, BMI measurement method, survey mode, or correlations between body appreciation and BMI."
+    }
+  },
+  "Mean age of participants": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          19.4
+        ]
+      },
+      "evidence_source": "The mean age was 19.4 years (SD = 1.5).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            19.4
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            19.4
+          ]
+        }
+      },
+      "source_file": "009_21_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes a single study (no explicit 'Study 1' label) of 3,621 undergraduate females at a large publicly-funded institution in the Southeastern United States. Mean age was 19.4 years (SD = 1.5); racial composition was 62% White, 21% Black, with smaller percentages of Asian (4%), Hispanic/Latina (6%), multi-ethnic (6%), American Indian/Alaska Native (<1%), and Other (1%); mean BMI was 23.5 kg/m2 (SD = 4.9) with 26.8% having BMI \u2265 25. The sample consisted largely of freshmen/sophomores (76.5%) and 86.5% were non-psychology majors; the section does not report body appreciation assessment instrument, BMI measurement method, survey mode, or correlations between body appreciation and BMI."
+    }
+  },
+  "Mean BMI of participants": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          23.5
+        ]
+      },
+      "evidence_source": "The participants had an average body mass index (BMI) of 23.5 kg/m2 (SD = 4.9; \"normal weight\" range).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            23.5
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            23.5
+          ]
+        }
+      },
+      "source_file": "009_21_participants_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes a single study (no explicit 'Study 1' label) of 3,621 undergraduate females at a large publicly-funded institution in the Southeastern United States. Mean age was 19.4 years (SD = 1.5); racial composition was 62% White, 21% Black, with smaller percentages of Asian (4%), Hispanic/Latina (6%), multi-ethnic (6%), American Indian/Alaska Native (<1%), and Other (1%); mean BMI was 23.5 kg/m2 (SD = 4.9) with 26.8% having BMI \u2265 25. The sample consisted largely of freshmen/sophomores (76.5%) and 86.5% were non-psychology majors; the section does not report body appreciation assessment instrument, BMI measurement method, survey mode, or correlations between body appreciation and BMI."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          23.5
+        ]
+      },
+      "evidence_source": "Table 1 (Descriptive Statistics and Zero-Order Correlations) \u2014 Mean column: '1. BMI 23.5'.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            23.5
+          ]
+        }
+      },
+      "source_file": "020_32_multiple_indirect_effect_model_analysis_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Webb2018/tables/1Webb2018_p003_table00.png",
+      "_metadata_caption": null,
+      "_extracted_caption": "Table 1\nDescriptive Statistics and Zero-Order Correlations.",
+      "_section_summary": "This section reports results from a concurrent multiple indirect effect model examining family fat talk, body appreciation (BAS-2 and functional body appreciation), and mindful eating, adjusting for BMI. The model accounted for 20% of variance in mindful eating and found a significant indirect effect of family fat talk on mindful eating via functional body appreciation; no gender-specific or multiple-study labels (e.g., 'Study 1') are mentioned in this section."
+    }
+  },
+  "Assessment of BMI": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "A demographic measure was administered to gather the following variables: age, race/ethnicity, gender, academic class status, psychology major status, and self-reported weight and height which were used to calculate BMI.",
+      "warning": "None",
+      "source_file": "011_221_demographics_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This demographics section reports that a demographic measure collected age, race/ethnicity, gender, academic class status, psychology major status, and self-reported weight and height used to calculate BMI. It explicitly indicates BMI was calculated from self-reported weight and height. The section does not mention country, sample size, survey method, body appreciation assessment (BAS/BAS-2), correlations with BMI, or any study numbering such as 'Study 1'."
+    }
+  },
+  "Assessment of BA": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The 10-item Body Appreciation Scale-2 (BAS-2; Tylka & Wood-Barcalow, 2015b) was used to assess respondent's acceptance of and respect for their own bodies.",
+      "warning": "None",
+      "source_file": "013_223_body_appreciation_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section describes the Body Appreciation Scale-2 (BAS-2) and its psychometric properties, noting it is a 10-item unidimensional measure with good reliability and validity. It reports that internal consistency in the present sample was excellent (\u03b1 = .96) and references prior validation demonstrating invariance across sex and sample sources; no study identifier (e.g., 'Study 1') or sample demographics (country, N, age, BMI, race, survey method) are provided in this excerpt."
+    },
+    "1": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Sentence listing variable missingness: '...BAS-2 (4.4%)...'. This indicates the Body Appreciation Scale - 2 (BAS-2) was used.",
+      "warning": "None",
+      "source_file": "019_31_preliminary_analyses_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section reports preliminary analyses for a single study (analytic N = 333), including variable-level missingness and justification for listwise deletion after Little's Test indicated data were MCAR. It notes that distributions met skewness and kurtosis criteria, that z-scores were created for analyses, and that Table 1 contains means, SDs, and correlations; the text states higher BMI was associated with lower positive body image but does not provide numeric correlation coefficients."
+    },
+    "2": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Sentence in results listing predictors: '...BAS-2: \u03b2 = 0.10, p = .13, 95% CI: \u22120.03 to 0.23; FBApS: \u03b2 = 0.35, p < .001...'. This indicates use of BAS-2 to assess general body appreciation in the reported model.",
+      "warning": "None",
+      "source_file": "020_32_multiple_indirect_effect_model_analysis_extracted.json",
+      "_pass_type": "text_only",
+      "_asset_link": "None",
+      "_metadata_caption": "None",
+      "_extracted_caption": "None",
+      "_section_summary": "This section reports results from a concurrent multiple indirect-effects model examining BMI, family fat talk, general body appreciation (BAS-2), functional body appreciation (FBApS), and mindful eating. The model accounted for 20% of variance in mindful eating and found a significant indirect effect of family fat talk on mindful eating via functional body appreciation (\u03b2 = \u22120.06, p = .01), whereas the indirect effect via general body appreciation (BAS-2) was not significant; no study numbering or sample descriptives are provided in the section."
+    },
+    "3": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Text: 'BAS-2: \u03b2 = 0.10, p = .13, 95% CI: \u22120.03 to 0.23' (multiple indirect effect model results).",
+      "warning": "Functional body appreciation (FBApS) is reported in the text but is not an allowed enum value for this field; only BAS-2 is returned.",
+      "source_file": "020_32_multiple_indirect_effect_model_analysis_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Webb2018/tables/1Webb2018_p003_table00.png",
+      "_metadata_caption": null,
+      "_extracted_caption": "Table 1\nDescriptive Statistics and Zero-Order Correlations.",
+      "_section_summary": "This section reports results from a concurrent multiple indirect effect model examining family fat talk, body appreciation (BAS-2 and functional body appreciation), and mindful eating, adjusting for BMI. The model accounted for 20% of variance in mindful eating and found a significant indirect effect of family fat talk on mindful eating via functional body appreciation; no gender-specific or multiple-study labels (e.g., 'Study 1') are mentioned in this section."
+    }
+  },
+  "Correlation between body appreciation and BMI": {
+    "0": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.3
+        ]
+      },
+      "evidence_source": "Table 1 (Descriptive Statistics and Zero-Order Correlations): correlation between BMI (1) and Body Appreciation (3) = -0.30 (reported as - .30** in the table).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            -0.3
+          ]
+        }
+      },
+      "source_file": "020_32_multiple_indirect_effect_model_analysis_extracted.json",
+      "_pass_type": "asset_0",
+      "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Webb2018/tables/1Webb2018_p003_table00.png",
+      "_metadata_caption": null,
+      "_extracted_caption": "Table 1\nDescriptive Statistics and Zero-Order Correlations.",
+      "_section_summary": "This section reports results from a concurrent multiple indirect effect model examining family fat talk, body appreciation (BAS-2 and functional body appreciation), and mindful eating, adjusting for BMI. The model accounted for 20% of variance in mindful eating and found a significant indirect effect of family fat talk on mindful eating via functional body appreciation; no gender-specific or multiple-study labels (e.g., 'Study 1') are mentioned in this section."
+    }
+  }
+}

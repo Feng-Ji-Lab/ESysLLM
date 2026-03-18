@@ -1,0 +1,191 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text only contains a journal header ('Personality and Individual Differences, journal homepage: www.elsevier.com/locate/paid') with no study content, country information, or participant details.",
+      "warning": "Insufficient content. Only journal header provided; no actual study data available for extraction."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text only contains a journal header with no study content or participant sample information.",
+      "warning": "Insufficient content. No sample size data available."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text only contains a journal header with no methodology information.",
+      "warning": "Insufficient content. No survey method specified."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text only contains a journal header with no demographic information.",
+      "warning": "Insufficient content. No demographic data available."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text only contains a journal header with no participant demographic data.",
+      "warning": "Insufficient content. No age data available."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text only contains a journal header with no educational background information.",
+      "warning": "Insufficient content. No education data available."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text only contains a journal header with no health/anthropometric data.",
+      "warning": "Insufficient content. No BMI data available."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text only contains a journal header with no information about sample recruitment or source.",
+      "warning": "Insufficient content. No sample source information available."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text only contains a journal header with no information about body appreciation assessment instruments.",
+      "warning": "Insufficient content. No assessment methodology specified."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text only contains a journal header with no information about BMI assessment methodology.",
+      "warning": "Insufficient content. No assessment methodology specified."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text only contains a journal header with no statistical results or correlation data.",
+      "warning": "Insufficient content. No correlation data available."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text only contains a journal header with no study information.",
+      "warning": "Insufficient content. Cannot determine number of studies."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "journal articles",
+      "evidence_source": "The text header indicates this is from 'Personality and Individual Differences' journal, which is a peer-reviewed journal publication.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "The provided text contains only a journal header ('Personality and Individual Differences, journal homepage: www.elsevier.com/locate/paid') with no actual study content, methodology, participant information, or results. No studies, experiments, or data are described in this section.",
+      "evidence_source": "Entire provided text content",
+      "warning": "Critical: Insufficient content for data extraction. Only journal identification provided; actual study section is missing."
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided image shows only the journal cover page for 'Personality and Individual Differences' with no visible text content describing a specific study or country location.",
+      "warning": "No study-specific information is visible in the provided image. Only the journal header and table of contents are shown."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided image shows only the journal cover page with no visible study data or sample size information.",
+      "warning": "No sample size data is visible in the provided image."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided image shows only the journal cover page with no visible methodology information.",
+      "warning": "No survey method information is visible in the provided image."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided image shows only the journal cover page with no visible demographic information.",
+      "warning": "No demographic data is visible in the provided image."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided image shows only the journal cover page with no visible participant age information.",
+      "warning": "No age data is visible in the provided image."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided image shows only the journal cover page with no visible education level information.",
+      "warning": "No education data is visible in the provided image."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided image shows only the journal cover page with no visible BMI data.",
+      "warning": "No BMI data is visible in the provided image."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided image shows only the journal cover page with no visible information about sample source.",
+      "warning": "No sample source information is visible in the provided image."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided image shows only the journal cover page with no visible information about body appreciation assessment instruments.",
+      "warning": "No assessment instrument information is visible in the provided image."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided image shows only the journal cover page with no visible information about BMI assessment methods.",
+      "warning": "No BMI assessment method information is visible in the provided image."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided image shows only the journal cover page with no visible correlation data.",
+      "warning": "No correlation data is visible in the provided image."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided image shows only the journal cover page with no visible study information.",
+      "warning": "Cannot determine number of studies from the journal cover page alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "journal articles",
+      "evidence_source": "The image shows the cover page of 'Personality and Individual Differences', which is a peer-reviewed journal, indicating this is a journal article publication.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "The provided image shows only the cover page of the journal 'Personality and Individual Differences' with the journal title, logo, and table of contents visible. No specific study content, methodology, or data is presented in this image. The actual research article content is not visible.",
+      "evidence_source": "Visual inspection of the journal cover page image.",
+      "warning": "This is only a journal cover page; no actual study data or research content is available for extraction."
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Personality and Individual Differences - Journal Cover Page",
+      "evidence_source": "The image header displays 'PERSONALITY AND INDIVIDUAL DIFFERENCES' as the journal title.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Swami2010Associations between femininity ideol/figures/1Swami2010Associations between femininity ideol_p000_fig00.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_0"
+  }
+]

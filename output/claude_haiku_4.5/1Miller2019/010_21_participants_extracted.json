@@ -1,0 +1,165 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in the provided text.",
+      "warning": "Country not specified in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          92
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            92
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            92
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'leaving a final sample of 92 female undergraduates.' All 92 participants are female.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'eight surveys' and 'survey completion' but does not specify whether surveys were administered via paper-and-pencil or online methods.",
+      "warning": "Survey method (paper-and-pencil vs. online) not specified."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          50
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            50
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            50
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'The ethnic composition of the sample was 50% Caucasian...' Caucasian is interpreted as white.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          19.7
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            19.7
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            19.7
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'Participants' age ranged from 17 to 25, with an average age of 19.7 (SD = 1.93).'",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            100
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'leaving a final sample of 92 female undergraduates.' All participants are undergraduate students, which means they have college or higher education experience. Therefore, 100% of participants have college or higher education.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions that 'four participants who had outlying BMIs (> 3 SDs from the mean; all above 40) were subsequently removed' but does not provide the mean BMI of the final sample.",
+      "warning": "Mean BMI not explicitly stated. Only outlier information is provided."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Text states: 'leaving a final sample of 92 female undergraduates.' Undergraduates are college students, indicating the sample was recruited from a college.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not mention any body appreciation assessment instrument (BAS or BAS-2).",
+      "warning": "Assessment of body appreciation not specified in this section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions BMI but does not specify whether it was self-reported or measured.",
+      "warning": "Assessment method for BMI (self-reported vs. measured) not specified."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report any correlation between body appreciation and BMI.",
+      "warning": "Correlation data not present in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with one sample of 92 female undergraduates. No explicit mention of multiple studies or experiments.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a participants section and does not indicate whether this is from a journal article or dissertation.",
+      "warning": "Publication type not determinable from this section alone."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the participants for a single study involving 92 female undergraduate students (mean age 19.7 years, 50% Caucasian) who completed a longitudinal survey study with eight surveys. Participants were required to complete at least four of eight surveys, with a mean of 6.67 surveys completed. The sample was drawn from a college population.",
+      "evidence_source": "Entire Participants section (2.1)",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,93 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The conclusion section does not specify the country where the study was conducted. The text mentions 'college women' but does not indicate the geographic location.",
+      "warning": "No country information provided in this conclusion section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The conclusion section does not provide sample size information. It references 'college women' as the study population but does not state the number of participants.",
+      "warning": "No sample size information provided in this conclusion section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The conclusion section does not describe the survey method used to collect data.",
+      "warning": "No survey method information provided in this conclusion section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The conclusion section does not provide demographic information about racial/ethnic composition of participants.",
+      "warning": "No racial/ethnic demographic information provided in this conclusion section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The conclusion section does not provide age information about participants.",
+      "warning": "No age demographic information provided in this conclusion section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "While the text mentions 'college women', this describes the source of the sample rather than providing a percentage of participants with college or higher education. The conclusion does not explicitly state the percentage of participants with college or higher education experience.",
+      "warning": "Cannot infer percentage from 'college women' reference without explicit statement of sample composition."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The conclusion section does not provide BMI information about participants.",
+      "warning": "No BMI data provided in this conclusion section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "The text states 'provided a good fit with college women', indicating that participants were recruited from a college setting.",
+      "warning": "Study identifier is inferred as 'Study X' since the conclusion does not explicitly name the study. The source is identified as 'college' based on the reference to 'college women'."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The conclusion section does not specify which instrument (BAS or BAS-2) was used to assess body appreciation.",
+      "warning": "No specific body appreciation assessment instrument mentioned in this conclusion section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The conclusion section does not specify whether BMI was self-reported or measured.",
+      "warning": "No BMI assessment method specified in this conclusion section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The conclusion section does not provide correlation coefficients between body appreciation and BMI. While the study investigates body appreciation and its relationships, no specific correlation values are reported in this conclusion.",
+      "warning": "No correlation values provided in this conclusion section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The conclusion section does not explicitly state the number of studies. It refers to 'our final model' and 'this study', suggesting a single study, but the conclusion alone does not provide definitive information about the total number of studies in the paper.",
+      "warning": "Cannot definitively determine number of studies from conclusion section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The conclusion section does not indicate whether this is a journal article or dissertation.",
+      "warning": "No publication type information provided in this conclusion section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This conclusion section describes a study examining interpersonal and intrapersonal links to body appreciation among college women, with body appreciation serving as a mediator between various psychological variables and intuitive eating. The study found that body appreciation did not predict unique variance in depressive symptoms, suggesting it is distinct from negative body image. The authors recommend exploring similar models with diverse samples to better understand body appreciation across different populations.",
+      "evidence_source": "Entire conclusion section provided in text_content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

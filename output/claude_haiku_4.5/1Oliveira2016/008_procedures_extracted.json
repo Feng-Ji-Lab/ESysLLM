@@ -1,0 +1,162 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Portugal"
+        ]
+      },
+      "evidence_source": "Text states: 'The present study is part of a wider Portuguese research about the impact of different emotional regulation processes in psychological functioning and mental health.'",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          514,
+          494
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            494
+          ]
+        },
+        "male": {
+          "Study X": [
+            20
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            514
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'The initial sample was composed of 514 individuals (494 women and 20 men)'. After data cleaning procedures that excluded male participants and participants outside the age range 18-55, the final sample size is not explicitly stated in this section.",
+      "warning": "The text reports initial sample of 514 (494 women, 20 men) but indicates data cleaning excluded male participants and those outside age 18-55. Final sample size after cleaning is not provided in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "online"
+        ]
+      },
+      "evidence_source": "Text states: 'The sample was obtained through online advertisements on social networks'.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No information about racial/ethnic composition provided in this section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          37
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            37
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'The initial sample was composed of 514 individuals (494 women and 20 men), with ages ranging from 17 to 57 years old.' Mean age calculated as (17 + 57) / 2 = 37 years. Note: This is the midpoint of the age range for the initial sample; the final sample after data cleaning (excluding those younger than 18 and older than 55) would have a slightly different mean, but the exact mean is not provided.",
+      "warning": "Mean age is estimated from the age range midpoint (17-57 years). The exact mean age is not explicitly stated. After data cleaning (excluding participants younger than 18 and older than 55), the actual mean would differ but is not provided in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No information about educational level provided in this section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No information about BMI provided in this section.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "community"
+        ]
+      },
+      "evidence_source": "Text states: 'The sample was obtained through online advertisements on social networks'. This indicates a community-based recruitment approach rather than college or school-based.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the instrument used to assess body appreciation (BAS or BAS-2) provided in this section.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about how BMI was assessed (self-reported or measured) provided in this section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No correlation data provided in this section.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Text refers to 'The present study' and 'the current study' (singular), indicating one study. The text mentions it is 'part of a wider Portuguese research' but the procedures section describes a single study design.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No explicit publication type information (journal article or dissertation) provided in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the procedures for a Portuguese study examining emotional regulation and mental health. The initial sample consisted of 514 individuals (494 women, 20 men) recruited through online social network advertisements, with ages ranging from 17-57 years. Data cleaning procedures excluded male participants and those outside the 18-55 age range, though the final sample size after cleaning is not specified in this section.",
+      "evidence_source": "Entire Procedures section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

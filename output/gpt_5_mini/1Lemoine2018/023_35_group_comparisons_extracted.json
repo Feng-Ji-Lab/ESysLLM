@@ -1,0 +1,765 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Denmark",
+          "Portugal",
+          "Sweden"
+        ]
+      },
+      "evidence_source": "Results showed that the level of body appreciation was not significantly different across the three countries: Denmark (M = 3.89, SD = 0.78), Portugal (M = 4.01, SD = 0.79), and Sweden (M = 3.89, SD = 0.90).",
+      "warning": "Sentence describing country means is fragmented in the source text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "ANOVA reported F(1, 1006) and F(2, 1006) (e.g., 'F(1, 1006) = 105.45' and 'F(2, 1006) = 3.42'), but no explicit total N was stated. The section also contains multiple table notes with subgroup sample sizes (e.g., 'Note. Correlations above the diagonal correspond to the girl sample (n = 79); correlations below the diagonal correspond to the boy sample (n = 50).' and similar notes with n = 296/217 and n = 155/215), which are ambiguous with respect to the overall sample.",
+      "warning": "Multiple subgroup ns are present in notes and overall total N is not explicitly stated; ambiguous.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about data collection method (e.g., 'online' or 'paper-and-pencil') is reported in the provided section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided section does not report participant race/ethnicity or percent white.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided section does not report mean age of participants.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided section does not report educational attainment or percentage with college or higher.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided section does not report participants' BMI or mean BMI values.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided section does not specify the source of the sample (e.g., community, college, primary/secondary/high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section reports analyses of 'body appreciation' but does not state the specific instrument used (e.g., BAS or BAS-2).",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided section does not indicate whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson r values between Body Appreciation and BMI are reported in the provided section. The section does include notes referencing correlation matrices with subgroup ns (e.g., 'Note. Correlations above the diagonal correspond to the girl sample (n = 79); correlations below the diagonal correspond to the boy sample (n = 50).', and similar notes with n = 296/217 and n = 155/215), but no correlation coefficients are given here.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Section heading '3.5. Group comparisons' and continuous reporting of analyses in this single section with no mention of 'Study 1', 'Study 2', or multiple distinct studies; thus the section appears to present results from a single study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided section does not indicate publication type (journal article or dissertation).",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "A two-way ANOVA tested body appreciation by sex and country: there was a significant main effect of sex (F(1, 1006) = 105.45, p < .001), with boys (M = 4.21, SD = 0.73) reporting higher body appreciation than girls (M = 3.72, SD = 0.85). There was a small but significant main effect of country (F(2, 1006) = 3.42, p = .033), with reported means for Denmark (M = 3.89, SD = 0.78), Portugal (M = 4.01, SD = 0.79), and Sweden (M = 3.89, SD = 0.90); the sex-by-country interaction was non-significant (F(2, 1006) = 0.75, p = .475). The section also includes notes indicating multiple subgroup sample sizes for correlation matrices (e.g., girl n = 79 and boy n = 50; girl n = 296 and boy n = 217; girl n = 155 and boy n = 215).",
+      "evidence_source": "Text excerpts: 'A two-way ANOVA was conducted to assess the differences in terms of body appreciation between sex and country. Results show that there was a significant effect of sex, F(1, 1006) = 105.45, p < .001... Boys (M= 4.21, SD = 0.73) had a higher level of body appreciation than girls (M = 3.72, SD = 0.85). There was also a significant effect of country, F(2, 1006) = 3.42, p = .033... Results showed that the level of body appreciation was not significantly different across the three countries: Denmark (M = 3.89, SD = 0.78), Portugal (M = 4.01, SD = 0.79), and Sweden (M = 3.89, SD = 0.90). The interaction between sex and country was nonsignificant, F(2, 1006) = 0.75, p = .475.' Plus notes: 'Note. Correlations above the diagonal correspond to the girl sample (n = 79); correlations below the diagonal correspond to the boy sample (n = 50).' (and two similar notes with n = 296/217 and n = 155/215).",
+      "warning": "Country means sentence is fragmented in source; subgroup n statements are present but their relation to the main ANOVA sample is ambiguous."
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Denmark",
+          "Portugal",
+          "Sweden"
+        ]
+      },
+      "evidence_source": "Text: \"Results showed that the level of body appreciation was not significantly different across the three countries: Denmark (M = 3.89, SD = 0.78), Portugal (M=4.01, SD=0.79), and Sweden (M=3.89, SD=0.90).\"",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          1012
+        ]
+      },
+      "evidence_source": "Notes in text/tables give country- and sex-specific ns: Danish girls n = 79, Danish boys n = 50; Portuguese girls n = 296, Portuguese boys n = 217; Swedish girls n = 155, Swedish boys n = 215. Sum across all groups = 79 + 50 + 296 + 217 + 155 + 215 = 1012. This also matches the ANOVA residual df (F reported with df = 1006), since N = 1006 + 6 cells = 1012.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            530
+          ]
+        },
+        "male": {
+          "Study X": [
+            482
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            1012
+          ]
+        }
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about data collection method (e.g., 'online' or 'paper-and-pencil') is provided in the supplied text or figures.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participant race/ethnicity or percentage white is provided in the supplied text or figures.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age or age information is provided in the supplied text or figures.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education-level information (e.g., percentage college) is provided in the supplied text or figures.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI values are reported in the supplied text or figures (only correlations with BMI are shown).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text/figures do not state the recruitment source (e.g., community, college, primary/secondary/high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No instrument name (e.g., BAS or BAS-2) for assessing body appreciation is provided in the supplied text or figures.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The supplied text/figures do not indicate whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "See extract_value_by_gender for gender-specific correlations taken from Table 5 (Danish sample).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.19
+          ]
+        },
+        "male": {
+          "Study X": [
+            -0.07
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The supplied section describes one study comparing sex and country (no separate 'Study 1'/'Study 2' labels were provided).",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type (journal article or dissertation) is specified in the supplied text or figures.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "A two-way ANOVA tested body appreciation by sex and country: boys reported higher body appreciation than girls (boys M = 4.21, SD = 0.73; girls M = 3.72, SD = 0.85), and there was a small significant main effect of country though post-hoc tests showed no significant pairwise differences (Denmark M = 3.89, Portugal M = 4.01, Sweden M = 3.89). The sex-by-country interaction was non-significant. Multiple correlation tables are presented by country/sex (e.g., Table 5 shows Danish correlations with girls n = 79 and boys n = 50).",
+      "evidence_source": "Text: \"A two-way ANOVA... Boys (M= 4.21, SD = 0.73) had a higher level of body appreciation than girls (M = 3.72, SD = 0.85). ... Denmark (M = 3.89, SD = 0.78), Portugal (M=4.01, SD=0.79), and Sweden (M=3.89, SD=0.90). ... The interaction between sex and country was nonsignificant, F(2, 1006) = 0.75, p=.475, \u03c92=.000.\" Notes in tables: Danish girls n = 79, Danish boys n = 50; Portuguese girls n = 296, Portuguese boys n = 217; Swedish girls n = 155, Swedish boys n = 215.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 4\nMulti-group CFAs testing for measurement invariance between sex and country.\n\nTable 5\nBivariate correlations for Danish boys and girls.",
+      "evidence_source": "Captured directly from the provided figure image showing table captions.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Lemoine2018/tables/1Lemoine2018_p005_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Denmark",
+          "Portugal",
+          "Sweden"
+        ]
+      },
+      "evidence_source": "Text: \"Results showed that the level of body appreciation was not significantly different across the three countries: Denmark (M = 3.89, SD = 0.78), Portugal (M=4.01, SD=0.79), and Sweden (M=3.89, SD=0.90).\"",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          129,
+          513,
+          370
+        ]
+      },
+      "evidence_source": "Table notes and text: \"Note. Correlations above the diagonal correspond to the girl sample (n = 79); correlations below the diagonal correspond to the boy sample (n = 50).\" Additional notes in the text: \"... (n = 296); ... (n = 217).\" and \"... (n = 155); ... (n = 215).\" Computation of totals per reported pair: Denmark total = 79 + 50 = 129; other sample total = 296 + 217 = 513; other sample total = 155 + 215 = 370.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            79,
+            296,
+            155
+          ]
+        },
+        "male": {
+          "Study X": [
+            50,
+            217,
+            215
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            129,
+            513,
+            370
+          ]
+        }
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.07,
+          -0.19
+        ]
+      },
+      "evidence_source": "Table 5 (Bivariate correlations for Danish boys and girls) and its note: \"Correlations above the diagonal correspond to the girl sample (n = 79); correlations below the diagonal correspond to the boy sample (n = 50).\" In Table 5 the cell intersecting (1) Body appreciation and (5) Body mass index shows -0.07 in the lower triangle (boys) and -0.19 in the upper triangle (girls).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.19
+          ]
+        },
+        "male": {
+          "Study X": [
+            -0.07
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Section content provides one set of analyses (ANOVA results and correlation tables) and does not label multiple studies (e.g., no 'Study 1'/'Study 2').",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "A two-way ANOVA tested body appreciation by sex and country: there was a significant sex effect (boys M=4.21, SD=0.73; girls M=3.72, SD=0.85) and a small significant country effect (Denmark M=3.89, Portugal M=4.01, Sweden M=3.89); the sex-by-country interaction was nonsignificant. Table 5 displays bivariate correlations for Danish boys and girls (note: girls n = 79, boys n = 50); the correlation between body appreciation and BMI in Denmark is -0.07 for boys and -0.19 for girls.",
+      "evidence_source": "Text: \"A two-way ANOVA ... Boys (M= 4.21, SD = 0.73) had a higher level of body appreciation than girls (M = 3.72, SD = 0.85). ... Denmark (M = 3.89, SD = 0.78), Portugal (M=4.01, SD=0.79), and Sweden (M=3.89, SD=0.90). ... The interaction between sex and country was nonsignificant, F(2, 1006) = 0.75, p=.475, \u03c92=.000.\" Table/caption: \"Table 5 Bivariate correlations for Danish boys and girls.\"",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 5  Bivariate correlations for Danish boys and girls.",
+      "evidence_source": "Caption of provided table image (visible in attached asset).",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Lemoine2018/tables/1Lemoine2018_p005_table01.png",
+    "_metadata_caption": "Table 5Bivariate correlations for Danish boys and girls.",
+    "_asset_source": "[table] Table 5Bivariate correlations for Danish boys and girls.",
+    "_pass_type": "asset_1"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Denmark",
+          "Portugal",
+          "Sweden"
+        ]
+      },
+      "evidence_source": "Sentence: \"Results showed that the level of body appreciation was not significantly different across the three countries: Denmark (M = 3.89, SD = 0.78), Portugal (M=4.01, SD=0.79), and Sweden (M=3.89, SD=0.90).\"",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No single overall total N is explicitly stated. Country- and gender-specific sample sizes are given in table notes (see extract_value_by_gender).",
+      "warning": "Overall sample size not explicitly stated; per-country gender Ns are given in table notes and were summed to provide gender totals (see extract_value_by_gender).",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            530
+          ]
+        },
+        "male": {
+          "Study X": [
+            482
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            1012
+          ]
+        }
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information on data collection method (e.g., online or paper-and-pencil) is provided in the text or figure.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No ethnicity/race percentages are reported in the provided text or table.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No ages or mean ages are reported in the provided text or table.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education-level information is reported in the provided text or table.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean BMI values are reported in the provided text (table displays correlations including BMI but not mean BMI).",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No description of recruitment source (community, college, primary/secondary/high school) is provided in the text or table.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Instrument used to assess body appreciation (BAS or BAS-2) is not specified in the provided text or table.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Method of BMI assessment (self-reported or measured) is not specified in the provided text or table.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.14,
+          -0.33
+        ]
+      },
+      "evidence_source": "Table 6 (caption: 'Bivariate correlations for Portuguese boys and girls.') and its note: \"Correlations above the diagonal correspond to the girl sample (n = 296); correlations below the diagonal correspond to the boy sample (n = 217).\" The cell for Body appreciation (1) vs Body mass index (5) shows -0.14 (above diagonal = girls, marked *) and -0.33 (below diagonal = boys, marked ***).",
+      "warning": "Values reported separately by gender in the table (above diagonal = girls; below diagonal = boys). Extracted numeric values exclude significance markers."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Section describes a single set of group comparisons across sex and country (no explicit labeling of multiple studies).",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided section does not specify whether this is a journal article or dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section reports two-way ANOVA group comparisons of body appreciation by sex and country, finding a significant sex effect (boys higher than girls) and a small significant country effect but no sex-by-country interaction. Correlation matrices (Table 6) are provided separately by gender for Portugal (note: correlations above diagonal = girls n=296; below diagonal = boys n=217), showing correlations between body appreciation and BMI of -0.14 for girls and -0.33 for boys. Multiple per-country gender subsamples are present (notes indicate additional country-specific Ns).",
+      "evidence_source": "Text: \"A two-way ANOVA... Results show that there was a significant effect of sex, F(1, 1006) = 105.45, p < .001... Boys (M= 4.21, SD = 0.73) had a higher level of body appreciation than girls (M = 3.72, SD = 0.85).\" and \"Results showed that the level of body appreciation was not significantly different across the three countries: Denmark (M = 3.89, SD = 0.78), Portugal (M=4.01, SD=0.79), and Sweden (M=3.89, SD=0.90).\" Table 6 caption and note identify gender-specific correlation matrices for Portugal (girls n=296; boys n=217).",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 6 Bivariate correlations for Portuguese boys and girls.",
+      "evidence_source": "Exact table heading visible on the provided figure: 'Table 6' on top line and 'Bivariate correlations for Portuguese boys and girls.' immediately below.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Lemoine2018/tables/1Lemoine2018_p005_table02.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_2"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Denmark",
+          "Portugal",
+          "Sweden"
+        ]
+      },
+      "evidence_source": "Text: \"Results show that there was a significant effect of country... Results showed that the level of body appreciation was not significantly different across the three countries: Denmark (M = 3.89, SD = 0.78), Portugal (M=4.01, SD=0.79), and Sweden (M=3.89, SD=0.90).\"",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          79,
+          50,
+          296,
+          217,
+          155,
+          215
+        ]
+      },
+      "evidence_source": "Notes in text and table: \"Note. Correlations above the diagonal correspond to the girl sample (n = 79); correlations below the diagonal correspond to the boy sample (n = 50).\"; \"Note. Correlations above the diagonal correspond to the girl sample (n = 296); correlations below the diagonal correspond to the boy sample (n = 217).\"; Table 7 note: \"Correlations above the diagonal correspond to the girl sample (n = 155); correlations below the diagonal correspond to the boy sample (n = 215).\"",
+      "warning": "Sum of subgroup ns (79+50+296+217+155+215 = 1012) does not match the denominator df reported in ANOVAs (F(..., 1006)); possible inconsistency between subgroup Ns and ANOVA sample size.",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            79,
+            296,
+            155
+          ]
+        },
+        "male": {
+          "Study X": [
+            50,
+            217,
+            215
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          -0.15,
+          -0.04
+        ]
+      },
+      "evidence_source": "Table 7 (caption: \"Bivariate correlations for Swedish boys and girls\"). Note: \"Correlations above the diagonal correspond to the girl sample (n = 155); correlations below the diagonal correspond to the boy sample (n = 215).\" In Table 7, variable (1) = Body appreciation and variable (5) = Body mass index; the cell above the diagonal (1,5) = -0.15 (girl), the cell below the diagonal (5,1) = -0.04 (boy).",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            -0.15
+          ]
+        },
+        "male": {
+          "Study X": [
+            -0.04
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section reports two-way ANOVA results comparing body appreciation by sex and country: a significant main effect of sex (boys M=4.21, SD=0.73; girls M=3.72, SD=0.85) and a small significant effect of country, though post-hoc tests indicated no significant pairwise differences across Denmark, Portugal, and Sweden. Correlation matrices (Table 7 and notes) present separate correlations for girls and boys in each country (e.g., Sweden: girls n=155, boys n=215) showing the correlation between body appreciation and BMI is -0.15 for girls and -0.04 for boys.",
+      "evidence_source": "Text: \"Results show that there was a significant effect of sex, F(1, 1006) = 105.45, p < .001... Boys (M= 4.21, SD = 0.73) had a higher level of body appreciation than girls (M = 3.72, SD = 0.85).\"; \"...not significantly different across the three countries: Denmark (M = 3.89, SD = 0.78), Portugal (M=4.01, SD=0.79), and Sweden (M=3.89, SD=0.90).\"; Table 7 note: \"Correlations above the diagonal correspond to the girl sample (n = 155); correlations below the diagonal correspond to the boy sample (n = 215).\"",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 7\nBivariate correlations for Swedish boys and girls.",
+      "evidence_source": "Caption text visible on provided Table 7 image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Lemoine2018/tables/1Lemoine2018_p005_table03.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_3"
+  }
+]

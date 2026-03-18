@@ -1,0 +1,141 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the country where the study was conducted. While the study appears to be published in an English-language journal and uses online data collection, no geographic location is specified in the provided abstract.",
+      "warning": "Country information is not provided in the abstract."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          215
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            215
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            215
+          ]
+        }
+      },
+      "evidence_source": "Abstract states: 'Crosssectional data were collected online from 215 heterosexual women aged 18-88 years.' All 215 participants are women.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "online"
+        ]
+      },
+      "evidence_source": "Abstract states: 'Crosssectional data were collected online from 215 heterosexual women aged 18-88 years.'",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The abstract does not provide information about the racial/ethnic composition of participants.",
+      "warning": "Racial/ethnic demographic data not provided in the abstract."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The abstract states the age range as '18-88 years' but does not provide the mean age. Only the range is given: 'Crosssectional data were collected online from 215 heterosexual women aged 18-88 years.'",
+      "warning": "Only age range (18-88 years) is provided; mean age is not stated in the abstract."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The abstract does not provide information about the educational attainment of participants.",
+      "warning": "Educational demographic data not provided in the abstract."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The abstract mentions BMI as a variable but does not report the mean BMI of participants. It states: 'Results showed that body appreciation was a unique predictor of sexual function, satisfaction, and distress, above and beyond the effect of BMI and appearance dissatisfaction.'",
+      "warning": "Mean BMI is not provided in the abstract."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract states data were 'collected online from 215 heterosexual women' but does not specify the recruitment source (e.g., community, college, primary/secondary/high school).",
+      "warning": "Source of sample (recruitment location/method) is not specified in the abstract."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract does not specify which instrument (BAS or BAS-2) was used to assess body appreciation. It mentions 'body appreciation' as a construct but does not name the specific assessment tool.",
+      "warning": "Specific body appreciation assessment instrument (BAS vs. BAS-2) is not identified in the abstract."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract does not specify whether BMI was self-reported or measured. It only mentions BMI as a variable in the analysis.",
+      "warning": "BMI assessment method (self-reported vs. measured) is not specified in the abstract."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The abstract does not report the correlation coefficient between body appreciation and BMI. While the study examined body appreciation and BMI as variables, no specific correlation value is provided in the abstract.",
+      "warning": "Correlation between body appreciation and BMI is not reported in the abstract."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The abstract describes a single cross-sectional study with one sample of 215 women. No mention of multiple studies or experiments is made.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "journal articles",
+      "evidence_source": "The text is formatted as a journal article with author names, publication date ('Published online: 4 April 2017'), copyright notice ('\u00a9 Springer Science+Business Media New York 2017'), and keywords, indicating it is a peer-reviewed journal article rather than a dissertation.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This is a single cross-sectional study examining the relationship between body appreciation, appearance dissatisfaction, and sexual health in 215 heterosexual women aged 18-88 years. Data were collected online, and the study found that body appreciation was a unique predictor of sexual function, satisfaction, and distress beyond BMI and appearance dissatisfaction effects. The abstract does not provide detailed demographic information (country, race/ethnicity, education, mean age, mean BMI) or specific assessment instruments used.",
+      "evidence_source": "Abstract of the study titled 'Appearance Dissatisfaction, Body Appreciation, and Sexual Health in Women Across Adulthood' by Anne-Rose Robbins and Elke D. Reissing.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

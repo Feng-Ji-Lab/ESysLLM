@@ -1,0 +1,93 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Data analysis' section describing statistical methods and does not contain information about the country where the study was conducted.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Data analysis' section describing statistical methods. It mentions 'the final sample in the study' but does not provide the actual sample size or number of participants.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Data analysis' section describing statistical methods and does not contain information about the survey method used to collect data.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Data analysis' section describing statistical methods and does not contain demographic information about participant race/ethnicity.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Data analysis' section describing statistical methods and does not contain information about participant age.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Data analysis' section describing statistical methods and does not contain information about participant education level.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Data analysis' section describing statistical methods. While BMI is mentioned as a control variable in the path analysis, no mean BMI value is reported.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Data analysis' section describing statistical methods and does not contain information about where or how participants were recruited.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "The text explicitly states 'body appreciation (BAS-2)' when describing the variables included in the correlational analyses and path analysis.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Data analysis' section describing statistical methods. While BMI is mentioned as a control variable in the path analysis, the method of BMI assessment (self-reported vs. measured) is not specified.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Data analysis' section describing the statistical methods and procedures used. It does not report actual correlation coefficients between body appreciation and BMI. The text describes that correlational analyses were performed and provides guidelines for interpreting correlation magnitudes, but no specific correlation values are presented.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Data analysis' section describing statistical methods and does not explicitly identify the number of studies conducted. No study labels (e.g., 'Study 1', 'Study 2') are mentioned.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'Data analysis' section from what appears to be a research paper, but the publication type (journal article vs. dissertation) cannot be determined from this section alone.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the data analysis procedures used in the study. IBM SPSS (v.22) was used for descriptive and correlational analyses, while AMOS (v.22) was used for path analysis. Pearson correlation analyses were performed to examine associations between social safeness (SSPS), self-reassurance (FSCRS_reassure), body appreciation (BAS-2), and eating psychopathology (EDE-Q). Path analyses tested whether the association between social safeness and disordered eating would be mediated by self-reassurance and body appreciation while controlling for BMI, using Maximum Likelihood estimation and Bootstrap resampling with 5000 samples.",
+      "evidence_source": "Entire 'Data analysis' section provided in the text_content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

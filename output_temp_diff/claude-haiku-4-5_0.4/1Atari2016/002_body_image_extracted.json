@@ -1,0 +1,215 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text only shows the journal header and title information ('Body Image journal homepage: www.elsevier.com/locate/bodyimage' and 'Brief research report'). No country information is mentioned in this section.",
+      "warning": "Insufficient content. Only journal header and publication type indicator provided. No actual study content available for extraction."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information is provided in the available text.",
+      "warning": "Insufficient content. Only journal header provided."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is provided in the available text.",
+      "warning": "Insufficient content. Only journal header provided."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No demographic information is provided in the available text.",
+      "warning": "Insufficient content. Only journal header provided."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No age information is provided in the available text.",
+      "warning": "Insufficient content. Only journal header provided."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No education level information is provided in the available text.",
+      "warning": "Insufficient content. Only journal header provided."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No BMI information is provided in the available text.",
+      "warning": "Insufficient content. Only journal header provided."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample source information is provided in the available text.",
+      "warning": "Insufficient content. Only journal header provided."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about body appreciation assessment instruments is provided in the available text.",
+      "warning": "Insufficient content. Only journal header provided."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about BMI assessment method is provided in the available text.",
+      "warning": "Insufficient content. Only journal header provided."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No correlation data is provided in the available text.",
+      "warning": "Insufficient content. Only journal header provided."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text only contains a journal header and publication type indicator ('Brief research report'). No actual study content is available to determine the number of studies.",
+      "warning": "Insufficient content. Cannot determine number of studies from header information alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The text states 'Brief research report' which indicates this is a journal article, but the publication type field requires either 'journal articles' or 'dissertation'. While 'Brief research report' suggests 'journal articles', the actual study content is not provided to confirm this is indeed a journal article publication.",
+      "warning": "Ambiguous context. Only header information provided. 'Brief research report' suggests journal article format, but full content needed for confirmation."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only the journal header information ('Body Image journal homepage: www.elsevier.com/locate/bodyimage') and a publication type indicator ('Brief research report'). No actual study content, methodology, results, or participant information is available in this section.",
+      "warning": "Insufficient content. This appears to be only the journal header/title page, not the actual study content. No substantive information available for summary."
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text only shows the journal cover/header for 'Body Image: An International Journal of Research' and does not contain any study details or country information.",
+      "warning": "No study content provided - only journal cover visible."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No study data provided in the text. Only journal cover/header visible.",
+      "warning": "No study content available."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No study methodology information provided.",
+      "warning": "No study content available."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic data provided in the text.",
+      "warning": "No study content available."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No participant demographic information provided.",
+      "warning": "No study content available."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level data provided.",
+      "warning": "No study content available."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No participant health metrics provided.",
+      "warning": "No study content available."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sampling information provided.",
+      "warning": "No study content available."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No assessment instrument information provided.",
+      "warning": "No study content available."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI assessment method information provided.",
+      "warning": "No study content available."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation data provided.",
+      "warning": "No study content available."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "Only journal cover/header provided; no study information available.",
+      "warning": "Cannot determine number of studies from journal cover alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "journal articles",
+      "evidence_source": "The image shows the cover of 'Body Image: An International Journal of Research', indicating this is a journal article publication.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "The provided input shows only the cover page of the Body Image journal with the subtitle 'AN INTERNATIONAL JOURNAL OF RESEARCH' and indicates this is a 'Brief research report' section. No actual study data, methodology, or results are present in the provided text.",
+      "evidence_source": "Journal cover header and section label visible in the image.",
+      "warning": "Only journal cover provided; no study content available for extraction."
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Body Image: An International Journal of Research",
+      "evidence_source": "Title visible on the journal cover image provided.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Atari2016/figures/1Atari2016_p000_fig00.png",
+    "_metadata_caption": "",
+    "_asset_source": "[image] ",
+    "_pass_type": "asset_0"
+  }
+]

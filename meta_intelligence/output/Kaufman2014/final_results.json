@@ -1,0 +1,164 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      1,
+      2,
+      10,
+      16,
+      17
+    ],
+    "reason": "The majority of candidates (1-17) explicitly state or strongly imply that the paper presents a single study, often referring to 'a single study' or 'the current study' (e.g., Candidates 1, 2, 10, 16, 17). Candidate 0 incorrectly includes three external 'prior studies' in its count, which are references to other works, not studies conducted within the current paper. Therefore, the most accurate count of studies presented in this paper is 1."
+  },
+  "SAMPLE SIZE": {
+    "extract_value": {
+      "Single study": [
+        45,
+        117,
+        119,
+        677,
+        696,
+        799,
+        815
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      6,
+      7,
+      8,
+      9
+    ],
+    "reason": "The paper presents a single study, as confirmed by the provided context. The main sample size for this study is consistently reported as 815 (Candidates 0, 1, 4, 5, 6). This total sample includes 696 females and 119 males (Candidates 4, 5, 6, 8). Additionally, various analyses within this single study utilized specific subsample sizes due to missing data or the nature of the analysis: a correlation analysis used N=799 (Candidate 2), another correlation analysis used N=45 (Candidate 3), and regression analyses for female and male subgroups used N=677 and N=117 respectively (Candidates 7, 9). All these distinct sample sizes refer to the same overarching study and are therefore consolidated into a single list for 'Single study', as per instructions for subsample merging."
+  },
+  "Effects": {
+    "extract_value": {
+      "Single study": [
+        1
+      ]
+    },
+    "best_indices": [
+      7
+    ],
+    "reason": "The paper presents a single study, as indicated by the context. All candidates referring to 'Study X' or 'the current study' are therefore consolidated under 'Single study'. Candidates 0, 1, 2, 3, 4, 5, 6, and 8 report an 'Effects' value of [0], stating that no correlation coefficients between intelligence and creative achievement were found in the main text. However, Candidate 7 explicitly references 'TABLE 3. Correlations among Predictor Variables' (asset_0) and provides a value of [1] for 'Study X'. The section summary for Candidate 6 also confirms that correlations between general cognitive ability and creative achievement were presented in Table 3. According to Instruction 6, values from 'Table' sections are generally preferred over text-only statements of absence, especially when the table is explicitly mentioned as containing the relevant data. Therefore, Candidate 7 is considered the most reliable source for this information, and its value of [1] is selected for the 'Single study'."
+  },
+  "IQ Aspect": {
+    "extract_value": {
+      "Single study": [
+        "g",
+        "Gc",
+        "Gf"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "reason": "The paper presents a single study, as confirmed by the context. All candidates refer to 'Study X', which is resolved to 'Single study'. Multiple candidates (0, 2, 3, 4, 5, 6, 7, 8) consistently identify 'g' (general cognitive ability/general intelligence) as an IQ aspect measured. Candidate 1 explicitly states that the 'Word Knowledge Test' assesses 'Gc' (crystallized intelligence) and the 'Raven's Progressive Matrices Test' assesses 'Gf' (fluid intelligence). Candidate 8 further supports 'Gf' by mentioning 'fluid reasoning' as a highly g-loaded ability. All unique and consistent IQ aspects are consolidated for this single study."
+  },
+  "Domain classified": {
+    "extract_value": {
+      "Single study": [
+        "Arts",
+        "Technological",
+        "Science",
+        "Everyday",
+        "Total"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "reason": "The paper presents a single study, consistently referred to as 'Study X' across all candidates. The domain classifications 'Arts' (derived from 'ornamental/aesthetic'), 'Technological' (derived from 'applied/technological'), 'Science' (derived from 'applied/technological' and explicitly mentioned in candidates 0 and 11), and 'Everyday' (derived from 'everyday/domestic') are consistently identified across multiple candidates (0, 1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12). The 'Total' classification, representing overall creative achievement across domains, is explicitly mentioned in candidates 2, 4, and 11. All identified values are consistent and complementary, with no contradictions, thus they are merged into a single list for the 'Single study'."
+  },
+  "Mage": {
+    "extract_value": {
+      "Single study": [
+        24.3,
+        24.2
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study as per the context. Candidate 0 provides mean ages for males (24.3) and females (24.2) within 'Study X'. Since there is only one study, 'Study X' is resolved to 'Single study', and both age values are included in the extract_value list for this study."
+  },
+  "Measure IQ": {
+    "extract_value": {
+      "Single study": [
+        "Word Knowledge Test",
+        "Raven's Progressive Matrices Test"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper presents a single study, as indicated by the context. Candidates 0 and 1 explicitly identify the specific assessment tools used to measure IQ: 'Word Knowledge Test' and 'Raven's Progressive Matrices Test'. These are consistent across both candidates and directly align with the field definition requiring specific assessment tools or scales. Candidates 2, 3, and 4 refer to constructs like 'g', 'Intellect', or 'general cognitive ability', which are not specific assessment tools, or explicitly state no specific tool name, and are therefore excluded as per the field definition."
+  },
+  "IQ modality": {
+    "extract_value": {
+      "Single study": [
+        "both"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper presents a single study. Candidates 0 and 1 both explicitly state that the IQ modality involved both verbal (Word Knowledge Test) and figural (Raven's Progressive Matrices Test) measures. According to the aggregation rule, if both figural and verbal measures are present, 'both' should be reported. Candidate 2 only mentions 'nonverbal cognitive ability' which implies figural, but this is an incomplete representation of the IQ measures used, as confirmed by candidates 0 and 1. Therefore, candidates 0 and 1 are the most reliable and complete sources."
+  },
+  "Creativity Measures": {
+    "extract_value": {
+      "Single study": [
+        "CAQ"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "reason": "The paper contains a single study, as indicated by the context. All candidates consistently identify 'CAQ' (Creative Achievement Questionnaire) as the creativity measure used in this study. The 'Study X' designation in the candidates is resolved to 'Single study' based on the provided context that the paper presents only one study. All candidates provide consistent information, so all are used."
+  },
+  "ES": {
+    "extract_value": {
+      "Single study": [
+        0.11
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study as per the context. Candidate 0 provides correlations from Table 3, which reports correlations for 'g' and 'Intellect' (measures of intelligence) with various 'CAQ' subscales (measures of creative achievement) for both males and females. Following the 'case_1_multiple_subscales' rule, the arithmetic mean was computed across the intelligence subscales ('g' and 'Intellect') and creative achievement subscales (Ornamental/Aesthetic CAQ, Applied/Technological CAQ, Everyday/Domestic CAQ). Following the 'case_3_multiple_subgroups' rule, the arithmetic mean was then computed across the male and female subgroups. The detailed calculation in the evidence for Candidate 0 is: (Average for g (Males) + Average for Intellect (Males)) / 2 = ((-0.02666...) + (0.28333...)) / 2 = 0.1283335. (Average for g (Females) + Average for Intellect (Females)) / 2 = ((0.09666...) + (0.08666...)) / 2 = 0.091666. The overall average is (0.1283335 + 0.091666) / 2 = 0.10999975, which is rounded to 0.11. This value is assigned to the 'Single study'."
+  }
+}

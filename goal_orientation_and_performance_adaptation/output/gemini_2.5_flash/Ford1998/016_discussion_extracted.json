@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text is a 'Discussion' section, which is characteristic of a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of grants, funding, or financial support was found in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from the publication type being a journal article (PubType = 1), which is typically peer-reviewed.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Global\"]}",
+      "evidence_source": "The text refers to 'performance orientation' as a single construct without differentiating between approach and avoidance: 'Finally, correlational results supported the distinction of mastery and performance orientation as two separate constructs (Button et al., 1996).' and 'examining the influence of mastery orientation and performance orientation on learning outcomes (Button et al., 1996).'",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text mentions 'performance in a more complex transfer task' and states that 'job knowledge has a strong, positive relationship with work sample performance (which is similar to our measure of transfer)'. This indicates an objective measure of adaptation.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text describes 'performance in a more complex transfer task' and compares it to 'work sample performance', which are objective measures. Therefore, the adaptation outcome is based on objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text refers to 'performance in a more complex transfer task' and compares it to 'work sample performance', indicating an objective assessment method.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "No specific goal orientation measure, such as VandeWalle, is mentioned in the provided text. The text only references 'Button et al., 1996' in the context of distinguishing mastery and performance orientation, not as the measure itself.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information (e.g., mean, range, SD) is reported in the provided text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No mean age or information to impute age is reported in the provided text.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No information regarding the sex composition of the sample is reported in the provided text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No percentage of men in the sample is reported in the provided text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No information about the country where the study was conducted is reported in the provided text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No information indicating whether the sample was student or other is reported in the provided text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No sample size (N) for the correlation coefficient between goal orientation and performance adaptation is reported in the provided text.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The text describes relationships and mediated paths, stating 'Results indicated a mediated path from performance orientation to self-efficacy to transfer performance' and 'Individuals with a higher performance orientation were less self-efficacious at the end of training, and this was related to their poorer performance on the transfer task.' However, no specific correlation coefficient value (Pearson r) is provided.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"PGO to self-efficacy to AP (mediated path), higher PGO related to poorer AP\"]}",
+      "evidence_source": "The text states: 'Results indicated a mediated path from performance orientation to self-efficacy to transfer performance. Individuals with a higher performance orientation were less self-efficacious at the end of training, and this was related to their poorer performance on the transfer task.'",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'This study' in the singular (e.g., 'This study examined a model...', 'key findings from this study').",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section discusses the findings of a single study that investigated the relationships among goal orientation, metacognitive activity, practice strategies, and multiple learning outcomes, including transfer performance. Key findings highlight the importance of a multidimensional perspective on learning outcomes, the role of self-efficacy in transfer, the impact of metacognitive activity as a learning strategy, and the distinct influences of mastery and performance orientations on learning and transfer.",
+      "evidence_source": "The entire 'Discussion' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,399 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "reason": "The vast majority of candidates with actual content (from the title, abstract, introduction, methods, results, and discussion sections) explicitly state or strongly imply that there is a single study. Several candidates specifically refer to 'a single study' or 'Study X'. The candidates with a value of 0 are due to a lack of text in their respective sections, not an actual count of zero studies. Therefore, the most accurate and consistently supported value is 1."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "reason": "All candidates consistently indicate 'journal articles'. Candidates [0] and [1] explicitly mention a journal title. Candidate [2] refers to a 'Brief research report', which is a type of journal article. The remaining candidates describe a research study, its abstract, introduction, and discussion, all of which are characteristic of a journal article. There is no conflicting evidence suggesting 'dissertation'."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "Malaysia"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          "Malaysia"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "Malaysia"
+        ]
+      }
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7
+    ],
+    "reason": "The paper describes a single study. All reliable candidates consistently indicate that the study was conducted in Malaysia. Candidate 5 explicitly stated 'None' for the country, but this is due to the specific section not mentioning it, while other sections clearly identify Malaysia. Therefore, 'Malaysia' is the definitive country for the single study."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          "BAS"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "BAS"
+        ]
+      }
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "reason": "The paper describes a single study, consistently referred to as 'Study X' across all candidates. All relevant candidates explicitly state that the Body Appreciation Scale (BAS) was used to assess body appreciation. Candidate [4] confirms the participants for this single study. Therefore, the assessment instrument for the 'Single study' is 'BAS'. The 'None' value from candidate [4] is ignored as it does not provide an assessment instrument, but the section summary confirms it refers to the same single study."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        "591",
+        "315",
+        "276",
+        "296",
+        "295"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          "591"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "591"
+        ]
+      }
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "reason": "The paper describes a single study, as indicated by the context and consistent references across candidates. Multiple reliable candidates (0, 1, 2, 3, 4) consistently report a total sample size of 591 participants. Candidate [1] (Participants section) provides the most detailed breakdown, stating an initial sample of 660 women was reduced to 591 women (315 Malay and 276 Chinese) after exclusions. Candidates [2] and [4] infer N=591 from t-test degrees of freedom (t(589) implies N=591). Candidate [3] confirms the total N=591 and further details subsamples used for analyses (296 and 295 for PCA/CFA, and 315 Malay and 276 Chinese for multi-group analyses). As per instructions, all distinct subsample values are included in the 'extract_value' list. All participants were women, as explicitly stated in candidates [0] and [1], thus 'female' and 'total' in 'extract_value_by_gender' are 591, and 'male' and 'other' are empty."
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "community"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          "community"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "community"
+        ]
+      }
+    },
+    "best_indices": [
+      0,
+      1,
+      3
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context and multiple section summaries. Candidates 0, 1, and 3 consistently indicate that the sample was drawn from the 'community' in Kuala Lumpur, Malaysia. Candidate 1 (Participants section) is a highly reliable source for this information. Candidates 2 and 4 did not provide specific values for the source of the sample."
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "paper-and-pencil"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          "paper-and-pencil"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "paper-and-pencil"
+        ]
+      }
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "Candidate [1] from the 'Procedure' section explicitly states the survey method as 'paper-and-pencil', which is the most reliable source for this information. All other candidates either provide 'None' or are from sections less likely to contain this detail. The paper describes a single study, so the value is assigned to 'Single study'."
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Single study": [
+        "0"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          "None"
+        ]
+      },
+      "female": {
+        "Single study": [
+          "0"
+        ]
+      },
+      "other": {
+        "Single study": [
+          "None"
+        ]
+      },
+      "total": {
+        "Single study": [
+          "0"
+        ]
+      }
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "reason": "The paper describes a single study, as indicated by the context and consistent references to 'Study X' across all candidates. Candidates 0 and 2, from the 'Participants' and 'Between-group differences' sections respectively, explicitly state that the percentage of white participants is 0%. This is strongly supported by the evidence in these candidates and others (1, 3, 4) which consistently describe the sample as consisting of 'Malay and Chinese women' in Kuala Lumpur, with no mention of white participants. The sample is entirely female, thus the percentage of white participants among females is 0%, while for male and 'other' genders, it is 'None' as these groups are not present in the sample."
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        "42.96",
+        "43.18",
+        "42.75",
+        "43.43"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          "42.96",
+          "43.18",
+          "42.75",
+          "43.43"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "42.96",
+          "43.18",
+          "42.75",
+          "43.43"
+        ]
+      }
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context. Candidate 0, from the 'participants' section, provides mean ages for two distinct subgroups of female participants (Malay women: 42.96; Chinese women: 43.18). Candidate 1, from the 'factor structure' section, provides mean ages for two analytical subsamples (42.75 and 43.43) derived from the same overall participant pool. Given that the entire study population consists of women, all extracted age values are attributed to female participants. Since these values represent different breakdowns or subsamples within the same single study, they are all collected and merged into the respective lists for the 'Single study'. Candidates 2 and 3 did not contain any relevant age information."
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": []
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    },
+    "best_indices": [],
+    "reason": "No information regarding the 'Percentage of college or higher of participants' was found in any of the provided candidates. All candidates explicitly state 'None' for this field, and their section summaries do not contain relevant details."
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        "22.01",
+        "22.33"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          "22.01",
+          "22.33"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "22.01",
+          "22.33"
+        ]
+      }
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study as indicated by the context. Candidate [0] from the 'participants' section is the most reliable source, providing mean BMI values for two female subgroups (Malay women: 22.01, Chinese women: 22.33) within this single study. These values are consolidated into the 'extract_value' list and specifically attributed to 'female' participants in 'extract_value_by_gender'. Other candidates either contained no relevant information or were from less reliable sections for demographic data."
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          "self-reported"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "self-reported"
+        ]
+      }
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "The paper contains a single study. Candidate 1 explicitly states that participants 'provided their demographic information, namely sex, age, ethnicity, religion, height, and weight (the latter two variables were used to calculate BMI, as kg/m2 )', indicating that BMI was 'self-reported'. This is the only candidate that provides specific information on how BMI was assessed. Other candidates either state 'None' or discuss other aspects of the study without detailing BMI assessment."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        "-0.24"
+      ]
+    },
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": [
+          "-0.24"
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          "-0.24"
+        ]
+      }
+    },
+    "best_indices": [
+      2
+    ],
+    "reason": "The paper contains a single study, as confirmed by the context. Candidate 2 explicitly states the correlation between General Body Appreciation and BMI as r = -.24. Other candidates either confirm a significant negative correlation without providing a numerical value (Candidates 3, 4) or do not report this specific correlation (Candidates 0, 1). No gender-specific correlations were provided. Therefore, the value from Candidate 2 is selected for the 'Single study'."
+  }
+}

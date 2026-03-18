@@ -1,0 +1,161 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "United States"
+        ]
+      },
+      "evidence_source": "Sentence: 'Undergraduates enrolled at a regional college of a larger university in the northeastern United States participated in a study.'",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          261
+        ]
+      },
+      "evidence_source": "Sentence: 'The sample size for the current study was N = 261.'",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            159
+          ]
+        },
+        "male": {
+          "Study X": [
+            102
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study X": [
+            261
+          ]
+        }
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          44.4
+        ]
+      },
+      "evidence_source": "Sentence: 'The sample was racially/ethnically diverse with 44.4% identifying as European American/White (n = 116)...'",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          20.16
+        ]
+      },
+      "evidence_source": "Sentence: 'Participants' mean age was M = 20.16 years (SD = 3.68)...'",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100.0
+        ]
+      },
+      "evidence_source": "Sentence: 'Undergraduates enrolled at a regional college of a larger university in the northeastern United States participated in a study.' Inference: all participants are undergraduates, therefore percentage with college or higher education = 100.0%.",
+      "warning": "Inference made that 'undergraduates' implies 100% college or higher.",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Sentence: 'Undergraduates enrolled at a regional college of a larger university in the northeastern United States participated in a study.'",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Sentence: 'Undergraduates ... participated in a study.' (single study described in this section).",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes one study of undergraduates at a regional college in the northeastern United States (no explicit label such as 'Study 1' is used). The sample consisted of N = 261 participants (60.9% women), mean age M = 20.16 years (SD = 3.68), and racial/ethnic breakdown including 44.4% European American/White (n = 116).",
+      "evidence_source": "Quoted sentences: 'Undergraduates enrolled at a regional college of a larger university in the northeastern United States participated in a study.' 'Participants' mean age was M = 20.16 years (SD = 3.68), and 60.9% identified as women.' 'The sample was racially/ethnically diverse with 44.4% identifying as European American/White (n = 116)...' 'The sample size for the current study was N = 261.'",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

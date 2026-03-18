@@ -1,0 +1,89 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only publication metadata (journal name, volume, issue, ISSN, and DOI) with no information about study location or country.",
+      "warning": "No country information available in the provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only publication metadata with no sample size information.",
+      "warning": "No sample size data available in the provided text."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only publication metadata with no information about survey methodology.",
+      "warning": "No survey method information available in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only publication metadata with no demographic information about participants.",
+      "warning": "No racial/ethnic demographic data available in the provided text."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only publication metadata with no participant age information.",
+      "warning": "No age data available in the provided text."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only publication metadata with no educational background information.",
+      "warning": "No education level data available in the provided text."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only publication metadata with no participant BMI information.",
+      "warning": "No BMI data available in the provided text."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only publication metadata with no information about sample recruitment source.",
+      "warning": "No sample source information available in the provided text."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only publication metadata with no information about body appreciation assessment instruments.",
+      "warning": "No body appreciation assessment information available in the provided text."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only publication metadata with no information about BMI assessment methods.",
+      "warning": "No BMI assessment method information available in the provided text."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only publication metadata with no correlation data.",
+      "warning": "No correlation data available in the provided text."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only publication metadata (journal header information) with no study content or indication of number of studies.",
+      "warning": "Cannot determine number of studies from publication metadata alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text shows this is from a journal (Psychology, Society, & Education) but does not explicitly state whether it is a journal article or dissertation. Based on the journal publication format, it is likely a journal article, but this cannot be definitively confirmed from the metadata alone.",
+      "warning": "Publication type cannot be definitively determined from metadata alone. The source appears to be a journal, suggesting 'journal articles', but this is not explicitly stated."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "None",
+      "evidence_source": "The provided text contains only publication metadata (journal name, volume, issue, ISSN numbers, and DOI) with no actual study content, methodology, or results.",
+      "warning": "This section contains only publication header information and does not include any study details, methodology, or findings. No studies are explicitly named or described."
+    },
+    "_pass_type": "text_only"
+  }
+]

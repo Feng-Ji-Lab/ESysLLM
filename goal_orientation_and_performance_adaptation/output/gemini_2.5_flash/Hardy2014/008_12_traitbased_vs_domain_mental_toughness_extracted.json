@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text uses academic language, cites multiple scholarly works (e.g., 'Cattell et al., 1955; Tutko & Richards, 1972; Clough, Earle, & Sewell, 2002'), and discusses research methodology ('This study addressed differences between these approaches by comparing the predictive validities...'). This strongly suggests it is a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No mention of financial support, grants, or funding agencies in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Given the inferred publication type is a journal article, it is highly probable that it underwent peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses 'mental toughness' and its operationalization, not 'performance goal orientation' (PGO) as defined in the schema. The schema explicitly states to select ONLY performance goal orientation.",
+      "warning": "The study focuses on 'mental toughness' which is not 'performance goal orientation' as defined."
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'learning outcomes' as the criterion task, not 'performance adaptation' as defined in the schema.",
+      "warning": "The study's outcome is 'learning outcomes', not 'performance adaptation'."
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses 'learning outcomes' as the criterion task, not 'performance adaptation' as defined in the schema. Therefore, the method for performance adaptation cannot be coded.",
+      "warning": "The study's outcome is 'learning outcomes', not 'performance adaptation'."
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses 'learning outcomes' as the criterion task, not 'performance adaptation' as defined in the schema. Therefore, the specific method for performance adaptation cannot be coded.",
+      "warning": "The study's outcome is 'learning outcomes', not 'performance adaptation'."
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'trait-based Mental Toughness Questionnaire (i.e., the MT18)' and a 'domain scale' for mental toughness. It does not mention any measure for 'goal orientation' or VandeWalle.",
+      "warning": "The study measures 'mental toughness', not 'goal orientation'."
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about age (mean, range, SD, median, or subgroups) is provided in the text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in the text to impute a mean age.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the sex composition of the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the sex composition of the sample is provided in the text to calculate the percentage of men.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the country where the sample was collected is provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about whether the sample is a student sample or other is provided in the text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size (N) is provided in the text for any correlation or analysis.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses correlations between 'mental toughness' and 'learning outcomes', not 'Performance Goal Orientation (PGO)' and 'performance adaptation (PA)'. The schema explicitly states to select ONLY performance goal orientation.",
+      "warning": "The study focuses on 'mental toughness' and 'learning outcomes', not 'Performance Goal Orientation' and 'performance adaptation'."
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlation between Performance Goal Orientation and performance adaptation was found in the text.",
+      "warning": "No relevant correlation found."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to 'This study' and 'the current study' in the singular, indicating a single study is being described.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section discusses the debate on whether mental toughness is a stable personality trait or a domain-specific construct. The current study aims to compare the predictive validities of a trait-based Mental Toughness Questionnaire (MT18) with a domain-specific scale, expecting the latter to be more strongly related to learning outcomes.",
+      "evidence_source": "The entire text content of the section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

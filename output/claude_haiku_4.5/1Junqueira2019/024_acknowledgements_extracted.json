@@ -1,0 +1,89 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgements section contains only funding information from Brazilian funding agencies (CNPq and CAPES). No explicit statement of where the study was conducted is provided in this section.",
+      "warning": "This is an Acknowledgements section, not a Methods or Results section. No study details are present."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgements section does not contain participant sample information.",
+      "warning": "This is an Acknowledgements section, not a Methods or Results section. No sample size data is present."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgements section does not contain information about survey methodology.",
+      "warning": "This is an Acknowledgements section, not a Methods section. No survey method information is present."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgements section does not contain demographic information about participants.",
+      "warning": "This is an Acknowledgements section, not a Results or Methods section. No demographic data is present."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgements section does not contain participant age information.",
+      "warning": "This is an Acknowledgements section, not a Methods or Results section. No age data is present."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgements section does not contain information about participant education levels.",
+      "warning": "This is an Acknowledgements section, not a Methods or Results section. No education data is present."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgements section does not contain participant BMI information.",
+      "warning": "This is an Acknowledgements section, not a Results or Methods section. No BMI data is present."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgements section does not contain information about where participants were recruited.",
+      "warning": "This is an Acknowledgements section, not a Methods section. No sample source information is present."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgements section does not contain information about body appreciation assessment instruments.",
+      "warning": "This is an Acknowledgements section, not a Methods section. No assessment instrument information is present."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgements section does not contain information about BMI assessment methods.",
+      "warning": "This is an Acknowledgements section, not a Methods section. No assessment method information is present."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgements section does not contain statistical results or correlation data.",
+      "warning": "This is an Acknowledgements section, not a Results section. No correlation data is present."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgements section does not indicate the number of studies conducted.",
+      "warning": "This is an Acknowledgements section, not a Methods or Results section. No information about study count is present."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The Acknowledgements section does not specify the publication type.",
+      "warning": "This is an Acknowledgements section. Publication type information is typically found in the title page or header, not in acknowledgements."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This is an Acknowledgements section that lists funding sources from Brazilian agencies (CNPq and CAPES). It contains no study methodology, participant demographics, or research findings. No information relevant to the extraction targets is available in this section.",
+      "evidence_source": "Entire Acknowledgements section provided",
+      "warning": "This section is not appropriate for extracting study-level metadata or statistics. Study details should be extracted from Methods and Results sections instead."
+    },
+    "_pass_type": "text_only"
+  }
+]

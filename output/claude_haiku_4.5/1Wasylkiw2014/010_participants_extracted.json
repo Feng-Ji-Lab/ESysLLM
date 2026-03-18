@@ -1,0 +1,193 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is provided in the text.",
+      "warning": "Country not specified in the provided text."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          142
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            142
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            142
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'A convenience sample of 143 undergraduate women was recruited... To maintain a homogenous sample, we eliminated data from one participant with a reported age of 46 years. Of the remaining 142 participants...' The final sample size is 142 participants, all female.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No explicit survey method (paper-and-pencil or online) is mentioned in the text.",
+      "warning": "Survey method not specified in the provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          86.9
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            86.9
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            86.9
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'Of the 130 participants who indicated ethnicity, 86.9 percent (n = 113) specified being Caucasian'. This percentage applies to the female sample.",
+      "warning": "Note: Only 130 of 142 participants reported ethnicity, so this percentage is based on a subset."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          18.68
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            18.68
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            18.68
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'Of the remaining 142 participants, ages ranged between 17 and 24 years (M = 18.68 years; standard deviation (SD) = 1.05 years)'. This mean age applies to the female sample.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            100
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'A convenience sample of 143 undergraduate women was recruited from an Introductory Psychology class'. All participants are undergraduate students, which means they have college or higher education experience. Therefore, 100% of participants have college or higher education.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          22.22
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            22.22
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            22.22
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'Of the 138 participants who reported body weight... the mean BMI was 22.22 (SD = 3.46)'. This mean BMI applies to the female sample.",
+      "warning": "Note: Only 138 of 142 participants reported body weight."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "Text states: 'A convenience sample of 143 undergraduate women was recruited from an Introductory Psychology class'. The sample was recruited from a college/university setting.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the assessment instrument for body appreciation (BAS or BAS-2) is provided in this section.",
+      "warning": "Assessment of body appreciation not specified in the provided text."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Text states: 'we assessed body mass index (BMI) from self-reported weight and height (in kg/m2)'. BMI was assessed using self-reported measurements.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No correlation coefficients between body appreciation and BMI are reported in this section.",
+      "warning": "Correlation data not provided in the participants section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study with one sample of undergraduate women. No explicit mention of multiple studies or experiments is present.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this section.",
+      "warning": "Publication type not specified in the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the participants for a single study (Study X) consisting of 142 undergraduate women recruited from an Introductory Psychology class via convenience sampling. The sample was predominantly Caucasian (86.9%), with a mean age of 18.68 years, and BMI was assessed through self-reported weight and height (mean BMI = 22.22). No information about body appreciation assessment or correlations is provided in this section.",
+      "evidence_source": "Entire Participants section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

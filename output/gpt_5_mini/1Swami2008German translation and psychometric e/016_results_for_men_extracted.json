@@ -1,0 +1,129 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or location information is stated in the provided section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size (N) or participant counts are reported in the provided section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey or data-collection method (e.g., online, paper-and-pencil) is described in the provided section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information on participant race or percentage identifying as white is provided in the section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No mean age or age statistics are reported in the provided section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participants' education level or percentage with college or higher is provided in the section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "Although BMI is mentioned, no mean BMI value is reported in the provided section.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section does not state the source of the sample (e.g., community, college, primary/secondary/high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "Multiple sentences refer to the BAS (e.g., 'The BAS items had adequate common variance for factor analysis...' and 'Cronbach's \\alpha for all 13 items of the BAS for men revealed that the internal consistency was good (\\alpha = .85).').",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section mentions BMI but does not state whether BMI was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section states: 'BAS showed ... a moderate positive association with BMI' in reference to women (reported in Table 2) and explicitly states for men: 'There was, however, no association between male body appreciation and BMI.' No numeric Pearson r values are provided in this text.",
+      "warning": "No numeric correlation coefficients provided in the text; only qualitative descriptions ('moderate positive association' for women in Table 2 and 'no association' for men).",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The section is labeled 'Results for men' but does not identify study numbering (e.g., 'Study 1') or indicate how many distinct studies are in the paper.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided section does not state the publication type (journal article or dissertation).",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This 'Results for men' section reports factor-analytic results for the BAS in men, finding a one-factor solution (eigenvalue = 4.98, 38.3% variance) and good internal consistency (Cronbach's \u03b1 = .85). It notes that correlations (including BMI) for women are reported in Table 2 and qualitatively states that there was no association between male body appreciation and BMI.",
+      "evidence_source": "Key sentences: 'The results of a factor analysis ... revealed a one-factor solution with an eigenvalue of 4.98 (38.3% of the variance explained).'; 'Cronbach's \\alpha for all 13 items of the BAS for men revealed that the internal consistency was good (\\alpha = .85).'; 'BAS showed ... a moderate positive association with BMI ...' (women, Table 2); 'There was, however, no association between male body appreciation and BMI.'",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

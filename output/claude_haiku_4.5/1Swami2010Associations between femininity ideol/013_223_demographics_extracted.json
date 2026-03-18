@@ -1,0 +1,93 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section (2.2.3. Demographics) does not mention any country or geographic location where the study was conducted.",
+      "warning": "No country information available in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section (2.2.3. Demographics) does not specify the total number of participants or sample size.",
+      "warning": "No sample size information available in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section (2.2.3. Demographics) does not describe the survey method (paper-and-pencil or online).",
+      "warning": "No survey method information available in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section (2.2.3. Demographics) mentions that participants were asked about ethnicity, but does not provide the percentage of white participants.",
+      "warning": "Ethnicity data was collected but percentages are not reported in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section (2.2.3. Demographics) mentions that participants were asked to provide their age, but does not report the mean age.",
+      "warning": "Age data was collected but mean age is not reported in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section (2.2.3. Demographics) does not mention education level or percentage of participants with college or higher education.",
+      "warning": "No education level information available in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section (2.2.3. Demographics) states that 'height, and weight. The latter two items were used to calculate participants' BMI (kg/m2)', but does not report the mean BMI value.",
+      "warning": "BMI was calculated but the mean value is not reported in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section (2.2.3. Demographics) does not describe where or how participants were recruited.",
+      "warning": "No information about sample source (community, college, or primary/secondary/high school) is available in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section (2.2.3. Demographics) does not mention any instrument used to assess body appreciation (BAS or BAS-2).",
+      "warning": "No body appreciation assessment information available in this section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "measured"
+        ]
+      },
+      "evidence_source": "The provided text section (2.2.3. Demographics) states: 'Participants were asked to provide their demographic details consisting of age, ethnicity, religion, marital status, height, and weight. The latter two items were used to calculate participants' BMI (kg/m2).' This indicates that height and weight were directly provided by participants, which were then used to calculate BMI, indicating a measured assessment method.",
+      "warning": "The study name is not explicitly provided in this section, so 'Study X' is used as a placeholder."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section (2.2.3. Demographics) is a methods section describing demographic data collection and does not report any correlation coefficients between body appreciation and BMI.",
+      "warning": "This is a methods/demographics section; correlation results are not expected here."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text section (2.2.3. Demographics) does not explicitly state the number of studies in the paper. This is a subsection of a methods chapter and does not provide information about the overall structure of the paper.",
+      "warning": "Cannot determine number of studies from this section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text section (2.2.3. Demographics) does not indicate whether this is a journal article or dissertation.",
+      "warning": "No publication type information available in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "Section 2.2.3 describes the demographics data collection procedures. Participants were asked to provide demographic information including age, ethnicity, religion, marital status, height, and weight, with height and weight used to calculate BMI. No specific demographic statistics, sample characteristics, or study results are reported in this section.",
+      "evidence_source": "Section 2.2.3. Demographics",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

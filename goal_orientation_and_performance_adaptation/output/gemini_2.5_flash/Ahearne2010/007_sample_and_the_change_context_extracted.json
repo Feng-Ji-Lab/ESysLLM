@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text describes a study but does not specify the publication type (e.g., journal article, dissertation).",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of grants, funding, or financial support was found in the text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state whether the publication was peer-reviewed, and the publication type is not specified.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The text describes performance improvements related to a new sales technology system but does not mention performance goal orientation (PGO) or its sub-types.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text states, \"We then paired the survey participants with their archival performance data\" and mentions \"performance improvements,\" indicating objective measures of adaptation. This is for Study X.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text refers to \"archival performance data\" and \"performance improvements,\" which are objective scores. This is for Study X.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The text mentions \"archival performance data\" and \"performance improvements,\" which are objective measures. This is for Study X.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "The text does not mention any specific measurement method for goal orientation.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"median age was approximately 30 years\"]}",
+      "evidence_source": "The study sample comprised approximately 52% women, and the median age was approximately 30 years. This is for Study X.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [30.0]}",
+      "evidence_source": "The text states, \"the median age was approximately 30 years.\" The mean age is not reported, so the median age is used as the imputed age. This is for Study X.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3]}",
+      "evidence_source": "The study sample comprised approximately 52% women, indicating a mixed sample. This is for Study X.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [48.0]}",
+      "evidence_source": "The study sample comprised approximately 52% women. Therefore, the percentage of men is 100% - 52% = 48%. This is for Study X.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "Data was collected from a division of a major U.S. pharmaceutical company. This is for Study X.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2]}",
+      "evidence_source": "The sample consisted of \"salespeople in a specialty division of a major pharmaceutical company,\" which is an 'Other sample' (employees), not a student sample. This is for Study X.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [400]}",
+      "evidence_source": "In total, we had complete information from 400 salespeople. This is for Study X.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No correlation coefficients between Performance Goal Orientation (PGO) and performance adaptation (PA) are reported in this section.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"None\"]}",
+      "evidence_source": "No correlations are reported in this section.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes a single study: 'We collected data from a division...' and 'The study sample comprised...'",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes a single study conducted within a division of a major U.S. pharmaceutical company. The study involved salespeople transitioning to a new sales technology system, detailing the disruptive change context and the potential for performance improvements. Data was collected from 400 salespeople, with demographics including approximately 52% women and a median age of 30 years.",
+      "evidence_source": "Summary of the 'Sample and the Change Context' and 'Data collection' subsections.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

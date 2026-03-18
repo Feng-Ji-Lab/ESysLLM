@@ -1,0 +1,337 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "reason": "The majority of candidates, particularly those describing the methodology, results, discussion, and limitations, consistently refer to 'the current study', 'the present study', 'a study', or 'this research' in the singular, indicating that a single study was conducted. Candidates suggesting '0' are from introductory sections that review literature or propose hypotheses, not describing the actual conduct of a study by the authors, but even these often refer to 'the current study' in a singular context, implying one study to follow."
+  },
+  "PubType": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "reason": "All candidates consistently provide a value of '1'. The presence of 'received, revised, and accepted dates' in candidates [9], [10], and [11] is strong evidence that the publication is a journal article, which corresponds to code '1' in the provided definitions. The overall structure described in the other sections (introduction, hypotheses, methods, results, discussion, implications, references) is also typical of a journal article."
+  },
+  "FinancSupport": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0
+    ],
+    "reason": "Candidate [0] explicitly states that \"The authors acknowledge financial support from the Naval Air Warfare Center Training Systems Division.\" This direct acknowledgement provides strong evidence for the presence of financial support. Other candidates either do not mention financial support (and thus default to 0) or are from sections that typically do not contain such information, and therefore do not explicitly contradict this statement. Candidate [5] also indicates a value of 1, but its provided context does not contain the evidence for financial support, making Candidate [0] the most reliable source for this information."
+  },
+  "PeerReview": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      8,
+      9,
+      10
+    ],
+    "reason": "All candidates consistently indicate a value of '1' for peer review. The strongest evidence for this comes from candidates [8], [9], and [10], which explicitly mention publication dates including 'received', 'revised', and 'accepted' dates. These dates are direct indicators that the paper underwent a peer-review process before publication."
+  },
+  "PgoType": {
+    "extract_value": {
+      "Single study": [
+        "Global",
+        "Global",
+        "Global",
+        "Global",
+        "Global"
+      ]
+    },
+    "best_indices": [
+      0,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context and consistent singular references to 'the study' or 'the present research' across various sections. Multiple candidates (0, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16) consistently indicate that 'performance orientation' was measured as a single, undifferentiated construct, without distinguishing between approach and avoidance components. This corresponds to a 'Global' performance goal orientation. Candidate [12] provides the most comprehensive enumeration of distinct effects (5 in total) for which this 'Global' performance orientation was assessed and discussed in the study's findings. These effects include relationships with individuals' performance (general, and for high/low ability) and self-efficacy (for high/low ability). Therefore, the 'extract_value' list contains five 'Global' entries, reflecting these five distinct effects."
+  },
+  "AdaptMeasures": {
+    "extract_value": {
+      "Single study": [
+        "4",
+        "3",
+        "1"
+      ]
+    },
+    "best_indices": [
+      0,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14
+    ],
+    "reason": "The paper describes a single study, as indicated by the context. Adaptation measures were extracted from multiple candidates referring to 'Study X' or 'the present study'. Candidate 0 explicitly states mixed methods (4) for self-efficacy (self-report) and performance/knowledge (objective). Candidates 4, 5, 6, 10, 11 (partially), and 13 provide evidence for objective measures (3) related to task performance, knowledge tests, and performance composites. Candidates 8 (partially), 9 (partially), 11 (partially), and 14 provide evidence for self-report measures (1) for self-efficacy. All unique and valid codes (1, 3, 4) are consolidated into a single list for the 'Single study'. Candidates 1, 2, 3, 7, and 12 were excluded as they did not provide specific adaptation measures or contained 'None' values."
+  },
+  "AdaptMethod": {
+    "extract_value": {
+      "Single study": [
+        "0",
+        "1",
+        "1",
+        "1",
+        "1",
+        "0",
+        "0",
+        "1",
+        "1",
+        "1",
+        "0",
+        "0",
+        "1",
+        "1",
+        "1",
+        "0"
+      ]
+    },
+    "best_indices": [
+      0,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14
+    ],
+    "reason": "The paper describes a single study, as confirmed by the provided context. All candidates referring to 'Study X' are consolidated under the 'Single study' entry. Values for 'AdaptMethod' are extracted as integers (0 for subjective ratings, 1 for objective scores). Candidate 0 identifies self-efficacy (0) and performance/knowledge (1). Candidates 4, 5, 6, 10, and 13 consistently identify objective measures (1) for various performance and knowledge assessments. Candidate 8 identifies self-efficacy (0), with 'None' values for other outcomes being disregarded as they are not valid codes. Candidate 9 identifies self-efficacy (0), performance (1), and knowledge (1). Candidate 11 provides a list of five outcomes, identifying performance as objective (1) and self-efficacy as subjective (0). Candidate 14 identifies self-efficacy (0). Candidates 1, 2, 3, 7, and 12 were excluded as they either did not describe specific adaptation methods or provided empty/invalid values for the field."
+  },
+  "AdaptMethod_Specific": {
+    "extract_value": {
+      "Single study": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "3",
+        "3",
+        "3",
+        "3",
+        "3",
+        "3",
+        "3",
+        "3",
+        "3",
+        "3",
+        "3",
+        "3",
+        "3"
+      ]
+    },
+    "best_indices": [
+      0,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14
+    ],
+    "reason": "The context indicates that the paper contains a single study. All candidates referring to 'Study X' or 'the present study' were therefore consolidated under 'Single study'. Adaptation methods were extracted from reliable candidates:\n- Self-report (code 1) was identified for 'self-efficacy' in candidates [0], [8], [9], [11], and [14]. This accounts for 6 instances of code 1.\n- Objective (code 3) was identified for 'performance', 'knowledge', 'task performance', 'knowledge tests', and 'generalization task' in candidates [0], [4], [5], [6], [9], [10], [11], and [13]. This accounts for 13 instances of code 3.\nAll identified method codes were collected into a single list for the 'Single study', reflecting each instance of an assessment method used for an extracted effect."
+  },
+  "GoMeasure_dichot_num": {
+    "extract_value": {
+      "Single study": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ]
+    },
+    "best_indices": [
+      0,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "reason": "The paper reports a single study, as indicated by the context. Candidate 5 explicitly states that 'Trait learning and performance orientations were assessed using two 8-item scales developed by Button et al. (1996)', which is not VandeWalle, thus coded as 'Other' (1). All other candidates that provide a value for 'GoMeasure_dichot_num' consistently indicate 'Other' (1) as they do not mention VandeWalle. Following the instruction to consolidate all extracted values for the single study into one list, and considering that each integer indicates the measurement method for a corresponding extracted effect, all '1's from the individual candidate values have been combined into a single list for the 'Single study'."
+  },
+  "Age_Info": {
+    "extract_value": {
+      "Single study": [
+        "most (88.8%) of the participants were between 18 and 21 years old."
+      ]
+    },
+    "best_indices": [
+      4
+    ],
+    "reason": "The paper describes a single study, as indicated by the context. Candidate 4, from the 'Participants' section, is the most reliable source for age information and explicitly states that 'most (88.8%) of the participants were between 18 and 21 years old'. All other candidates either provided no age information or were from sections less relevant for participant demographics."
+  },
+  "Age_imputed": {
+    "extract_value": {
+      "Single study": [
+        "21.0"
+      ]
+    },
+    "best_indices": [
+      4
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context. Only candidate 4, from the 'Participants' section, provided specific age information for 'the current study', stating that 'most (88.8%) of the participants were between 18 and 21 years old'. The value 21.0 was imputed using the upper bound of this age range. All other candidates either reported no age information or could not impute a value."
+  },
+  "Sex": {
+    "extract_value": {
+      "Single study": [
+        "3"
+      ]
+    },
+    "best_indices": [
+      4
+    ],
+    "reason": "The paper describes a single study. Candidate [4] explicitly states that 'Fifty-eight percent of the participants were female' for 'the current study', indicating a mixed sample (code 3). All other candidates either explicitly state no information was provided regarding sex composition or are introductory/discussion sections that do not contain participant demographics for the authors' study."
+  },
+  "Men_Prop": {
+    "extract_value": {
+      "Single study": [
+        "42.0"
+      ]
+    },
+    "best_indices": [
+      4
+    ],
+    "reason": "Candidate 4 from the 'Participants' section explicitly states that 58% of participants were female, allowing for the calculation of the percentage of men as 100 - 58 = 42%. This is the only reliable source providing this information for the single study identified in the paper. All other candidates either do not contain the information or are not relevant to the authors' study."
+  },
+  "Country_dichot_num": {
+    "extract_value": {
+      "Single study": [
+        "2"
+      ]
+    },
+    "best_indices": [
+      0,
+      4
+    ],
+    "reason": "The paper describes a single study, as indicated by the context. Candidate [0] provides the authors' affiliation as 'Michigan State University', which is in the USA. Candidate [4], from the 'Participants' section, states that '125 undergraduate college students from a large midwestern university participated in the current study', strongly implying the USA. Both pieces of evidence consistently point to the study being conducted in the USA (code 2). These are reliable sources for country information, and there are no conflicting values."
+  },
+  "Sample_dichot": {
+    "extract_value": {
+      "Single study": [
+        "1"
+      ]
+    },
+    "best_indices": [
+      4,
+      5,
+      14
+    ],
+    "reason": "The paper describes a single study. Candidates [4] (from 'Participants' section), [5] (from 'Procedure' section), and [14] (from 'Limitations' section) explicitly state that the participants were 'undergraduate college students' or 'student participants' and received course credit. This directly indicates a student sample, coded as 1. Candidate [6] infers 'Other sample' (2) based on the absence of explicit mention of students, which is less reliable than the direct statements in [4], [5], and [14]. Therefore, the value 1 is selected for the single study."
+  },
+  "N": {
+    "extract_value": {
+      "Single study": [
+        "125"
+      ]
+    },
+    "best_indices": [
+      4
+    ],
+    "reason": "The paper describes a single study, as indicated by the context and consistent references to 'the current study' or 'the present study' across various sections. Candidate 4, from the 'Participants' section, explicitly states the sample size as 125 ('A total of 125 undergraduate college students... participated in the current study.'). This is the most reliable source for sample size. All other candidates either do not report a sample size or explicitly state that N is not provided for the relevant analyses or correlations. Therefore, 125 is the only valid N extracted for the single study."
+  },
+  "Correlation_PGO_and_PA": {
+    "extract_value": {
+      "Single study": [
+        "-0.16"
+      ]
+    },
+    "best_indices": [
+      7
+    ],
+    "reason": "The paper contains a single study, as indicated by the context. Candidate 7, extracted from Table 1 ('Means, Standard Deviations, and Intercorrelations'), provides the Pearson correlation coefficient (r) between 'Performance orientation' (PGO) and 'Performance'. Given the field definition 'Correlation_PGO_and_PA' (Performance Adaptation) and the description in Candidate 4's section summary that 'Performance adaptation was measured objectively through basic and strategic performance indicators', 'Performance' in Table 1 is interpreted as 'Performance Adaptation'. The correlation between Performance orientation and Performance is -0.16. Other candidates either did not provide a specific Pearson r value, reported beta coefficients instead of r, or discussed relationships qualitatively without numerical values."
+  },
+  "Correlation_info": {
+    "extract_value": {
+      "Single study": [
+        "Performance orientation negatively related to individuals' performance.",
+        "Performance orientation positively related to high-ability individuals' self-efficacy.",
+        "Performance orientation negatively related to low-ability individuals' self-efficacy.",
+        "Performance orientation negatively related to high-ability individuals' performance.",
+        "Performance orientation generally unrelated to the performance of low-ability individuals."
+      ]
+    },
+    "best_indices": [
+      8
+    ],
+    "reason": "The paper conducts a single study, as indicated by the context. Candidate 8, from the discussion section, provides explicit textual descriptions of the relationships (correlations) between performance goal orientation and various outcomes (performance, self-efficacy), often moderated by ability. These descriptions directly address the field's requirement for 'short description of the correlation between performance goal orientation and performance adaptation'. Other candidates either state no correlation information was found, provide only variable names from tables without describing the correlation, or provide regression coefficients (beta) which are not direct correlations, or are theoretical. Therefore, Candidate 8 is the most reliable source for the requested information."
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      1,
+      2,
+      6,
+      8,
+      10,
+      15,
+      17,
+      23
+    ],
+    "reason": "Multiple sections of the paper, including the abstract, introduction, methods, results, discussion, and a CONSORT flow diagram, consistently refer to and describe a single experimental study conducted by the authors. There is no evidence to suggest the paper contains multiple distinct studies."
+  },
+  "usa_vs_other": {
+    "extract_value": {
+      "Single study": [
+        1
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "The paper describes a single study, consistently referred to as 'Study X' across all candidates. All candidates provide a consistent value of 1 for 'usa_vs_other', indicating the study was conducted in the United States. Evidence includes the corresponding author's US address, participant recruitment from the Pacific Northwest (USA), payment in US dollars, and funding from a US university. Since there is only one study, it is labeled 'Single study' as per instructions."
+  },
+  "N": {
+    "extract_value": {
+      "Single study": [
+        42,
+        36
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      12
+    ],
+    "reason": "The paper describes a single study. Candidate 0 states an initial convenience sample of 42 older adults. Candidate 1, from the 'design and procedure' section, explicitly states that data from participants who provided at least 7 days of surveys were retained for analyses, resulting in a final analytical sample of N=36. The CONSORT 2010 Flow Diagram (Candidate 12) corroborates this, showing an initial enrollment of 42 participants, with 19 from the gratitude condition and 17 from the control group included in the analysis, summing to 36. Multiple other candidates (2, 3, 4, 5, 9, 10, 11) consistently report N=36 as the sample size for various analyses, reinforcing its reliability as the final analytical sample. Candidates 6, 7, and 8 derive N=38 from t-statistics. However, the explicit statements in the Method section (Candidate 1) and the detailed participant flow in the CONSORT diagram (Candidate 12) provide more direct and reliable evidence for the overall analytical sample size of 36. Therefore, N=36 is chosen as the final analytical sample, and N=42 as the initial enrolled sample. Both values are included as they represent different stages of the participant count for the same study."
+  },
+  "female": {
+    "extract_value": {
+      "Single study": [
+        0.8
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper describes a single study. Candidate [0] provides the proportion of female participants as 80% (0.8), which is directly extracted and assigned to 'Single study'."
+  },
+  "M_age": {
+    "extract_value": {
+      "Single study": [
+        73
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study, as indicated by the context. Candidate [0] provides the average age of 73 for 'Study X', which is resolved to 'Single study'. The value is directly extracted from the 'Participants' section, which is a reliable source for demographic information."
+  },
+  "SD_age": {
+    "extract_value": {
+      "Single study": [
+        6.43
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper describes a single study. Candidate [0] provides the standard error (SE) of the mean age as 6.43. As per the extraction rules, SE can be reported if SD is not available, with a note that it is SE and not SD. Therefore, 6.43 is extracted for the single study."
+  },
+  "r": {
+    "extract_value": {
+      "Single study": [
+        -0.46
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study as indicated by the context. Candidate [0] explicitly states the correlation between 'Gratitude' and 'Loneliness' as -0.46 in a table of bivariate correlations. This value is directly extracted and assigned to the 'Single study'."
+  }
+}

@@ -1,0 +1,95 @@
+[
+  {
+    "SAMPLE SIZE": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'People participated in groups ranging from 1 to 8' but does not provide a total sample size.",
+      "warning": "None"
+    },
+    "ES": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The 'Procedure' section describes the experimental setup and measures used but does not report any correlation coefficients (Pearson r) between intelligence and creative achievement.",
+      "warning": "None"
+    },
+    "Effects": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          0
+        ]
+      },
+      "evidence_source": "No correlation coefficients were reported in the text for 'Study X'. Therefore, the number of effects is 0.",
+      "warning": "None"
+    },
+    "Mage": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not explicitly state the mean age of participants.",
+      "warning": "None"
+    },
+    "Measure IQ": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Measures of Fluid Intelligence"
+        ]
+      },
+      "evidence_source": "The text states 'participants completed several measures of fluid intelligence'. The specific tasks mentioned (letter sets, number series, series completion, visuospatial reasoning) are components of fluid intelligence, not overarching IQ tests themselves. Therefore, 'Measures of Fluid Intelligence' is the highest level of assessment tool.",
+      "warning": "None"
+    },
+    "IQ modality": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "both"
+        ]
+      },
+      "evidence_source": "The fluid intelligence measures included a 'letter sets task' (verbal) and 'number series task', 'series completion task' (patterns and shapes), and 'visuospatial reasoning task' (images), which are figural. Since both verbal and figural components were used, the modality is 'both'.",
+      "warning": "None"
+    },
+    "IQ Aspect": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Gf"
+        ]
+      },
+      "evidence_source": "The text explicitly states 'participants completed several measures of fluid intelligence' and 'Three tasks assessed inductive reasoning, perhaps the core component of fluid intelligence (Carroll, 1993)'. Fluid intelligence corresponds to 'Gf'.",
+      "warning": "None"
+    },
+    "Creativity Measures": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "CAQ"
+        ]
+      },
+      "evidence_source": "The text states 'We measured creative achievements using the Creative Achievement Questionnaire (CAQ; Carson, Peterson, & Higgins, 2005)'.",
+      "warning": "None"
+    },
+    "Domain classified": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Total"
+        ]
+      },
+      "evidence_source": "The text mentions the CAQ 'measures achievements in 10 domains' and then states 'We summed the scores across the domains and then log-transformed the total score to reduce the skew', indicating a 'Total' domain classification.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The section describes a single experimental procedure, detailing the tasks and measures for one set of participants, without explicitly naming or differentiating multiple studies.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section outlines the procedure for a single study (Study X) involving participants completing tasks in groups. It details two divergent thinking tasks (uses for a rope and a box) with varying instructions ('be creative' vs. 'be fluent'), and explains the subjective scoring methods for creativity. The study also included measures of fluid intelligence, comprising letter sets, number series, series completion, and visuospatial reasoning tasks, as well as individual differences in personality (NEO-FFI) and creative achievement using the Creative Achievement Questionnaire (CAQ).",
+      "evidence_source": "Summary of the entire 'Procedure' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

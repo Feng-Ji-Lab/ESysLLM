@@ -1,0 +1,245 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about publication type is provided in the text.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about financial support is provided in the text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No information about peer review status is provided in the text.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses 'performance variables' and 'training groups' but does not mention 'Performance Goal Orientation' (PGO), 'Prove performance goal orientation' (PPGO), or 'Avoid performance goal orientation' (APGO).",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'performance variables' and 'performance' but does not specify the assessment method (e.g., self-report, other people, objective, mixed) for performance adaptation.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'performance variables' but does not specify whether the outcome is based on subjective ratings or objective scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'performance variables' but does not specify the specific assessment method (self-report, other people, objective).",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text does not mention any goal orientation measures.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in this section.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is provided in this section.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sex composition information is provided in this section.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No percentage of men in the sample is provided in this section.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is provided in this section.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about the sample type (student or other) is provided in this section.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [162]}",
+      "evidence_source": "The MANCOVA reported F(8,156). With 3 training groups and 3 covariates (years of computer usage, number of programs, and owning a computer), the denominator degrees of freedom (df_error) is N - g - c = N - 3 - 3 = N - 6. Thus, N - 6 = 156, which means N = 162.",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text reports F-statistics and Cohen's d values for performance differences between training groups, but no Pearson r correlation coefficients between Performance Goal Orientation and Performance Adaptation.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No correlations between Performance Goal Orientation and Performance Adaptation are reported.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text refers to 'Hypothesis 1' and 'this experiment' consistently, indicating a single study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the performance effects of different training methods, specifically comparing error training with error management instructions against two other conditions. A MANCOVA revealed a significant overall effect for training groups, supporting Hypothesis 1 that error training with error management instructions leads to higher performance. Univariate analyses further confirmed these differences across various performance variables and test phases, with medium to high effect sizes (Cohen's d ranging from 0.63 to 0.90). The section references Figure 1 and Table 2.",
+      "evidence_source": "The entire text content of the 'Performance Effects' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from the academic nature of the text, including hypotheses, statistical analyses (MANCOVA, ANCOVA), and reporting of effect sizes (Cohen's d, eta^2), which are typical of a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of financial support or grants in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from the publication type being a journal article.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": []}",
+      "evidence_source": "The text discusses \"performance variables\" and \"performance effects\" in the context of training methods, but does not mention \"Performance Goal Orientation\" or its sub-types (Avoid, Prove, Global) as a construct being assessed.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3, 3, 3, 3]}",
+      "evidence_source": "The text states \"four performance variables as dependent variables (performance/medium and difficult for both phases [near and far transfer])\" and \"univariate analyses of covariance for the five performance variables separately\". Figure 1 and Table 2 list \"Performance/medium\" and \"Performance/difficult\" for \"1st test phase\" and \"2nd test phase\". These are objective task-based measures.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1, 1, 1]}",
+      "evidence_source": "The adaptation outcomes are \"performance/medium\" and \"performance/difficult\" in two test phases, which are objective task scores.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3, 3, 3, 3]}",
+      "evidence_source": "The adaptation outcomes are \"performance/medium\" and \"performance/difficult\" in two test phases, which are objective task scores.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": []}",
+      "evidence_source": "No mention of goal orientation measures in the provided text.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No age information (mean, range, SD, median) is reported in the provided text.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No age information (mean, median, or categories) is reported in the provided text.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the sex composition of the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the percentage of men in the sample is provided in the text.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the country where the sample was collected is provided in the text.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about whether the sample is a student sample or other is provided in the text.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [87]}",
+      "evidence_source": "The table (Figure 1 / Table 2) explicitly states \"(n = 29)\" for each of the three training conditions. The text mentions \"three groups\". Therefore, the total sample size is 3 * 29 = 87. This is consistent with the degrees of freedom for the univariate ANCOVAs, F(2,81), where 81 = N - (number of groups) - (number of covariates) = 87 - 3 - 3 = 81 (assuming 3 covariates: years of computer usage, number of programs, and owning a computer).",
+      "warning": "None"
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": []}",
+      "evidence_source": "The text does not report any correlation coefficients between Performance Goal Orientation and performance adaptation.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": []}",
+      "evidence_source": "No correlations were reported in the text.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to \"this experiment\" and \"our Hypothesis 1\" in the singular, indicating a single study.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the performance effects of three training conditions, focusing on Hypothesis 1 which predicted superior performance for error training with error management instructions. It reports significant multivariate and univariate ANCOVA effects, confirming that error training with error management instructions led to better performance than the other two groups across different task difficulties and test phases. The section refers to Figure 1 and Table 2 for detailed results.",
+      "evidence_source": "The entire provided text.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Figure 1: Means and Standard Errors of Performance Variables in Three Training Conditions Adjusted for Computer Experience Variables",
+      "evidence_source": "Figure 1: Means and Standard Errors of Performance Variables in Three Training Conditions Adjusted for Computer Experience Variables",
+      "warning": "None"
+    },
+    "_asset_link": "d:\\PhD\\llm_meta_analysis_new\\goal_orientation_and_performance_adaptation\\papers_json\\Heimbeck2003\\tables\\Heimbeck2003_p015_table00.png",
+    "_metadata_caption": "Figure 1: Means and Standard Errors of Performance Variables in Three Training Conditions Adjusted for Computer Experience Variables",
+    "_asset_source": "[table] Figure 1: Means and Standard Errors of Performance Variables in Three Training Conditions Adjusted for Computer Experience Variables",
+    "_pass_type": "asset_0"
+  }
+]

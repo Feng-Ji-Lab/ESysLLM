@@ -1,0 +1,89 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'country of residence' as a self-reported demographic item but does not specify which country or countries the study was conducted in.",
+      "warning": "Country of study location is not explicitly stated in this demographics section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes demographic variables collected but does not report the total sample size or number of participants.",
+      "warning": "Sample size is not provided in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes demographic data collection methods but does not specify whether the overall survey was administered via paper-and-pencil or online.",
+      "warning": "Survey method is not explicitly stated in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions that ethnicity was self-reported using predetermined drop-down menus, but no percentages or actual ethnicity data are provided.",
+      "warning": "Ethnicity percentages are not reported in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text states 'Participants self-reported their age' but does not provide the mean age or any age statistics.",
+      "warning": "Mean age is not reported in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes educational categories (ranging from 'Some high school' to 'Graduate degree') that were used to collect data, but does not report the percentage of participants with college or higher education.",
+      "warning": "Percentage of college or higher education is not reported in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section focuses on demographic data collection methods and does not mention BMI or body measurements.",
+      "warning": "Mean BMI is not provided in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The section describes demographic variables but does not specify the source or recruitment location of the sample (e.g., community, college, or school).",
+      "warning": "Source of sample is not stated in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section is about demographics collection and does not mention body appreciation assessment instruments (BAS or BAS-2).",
+      "warning": "Assessment of body appreciation is not mentioned in this section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes demographic data collection but does not specify how BMI was assessed (self-reported or measured).",
+      "warning": "Assessment of BMI is not mentioned in this section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section is a demographics description and does not report any correlations between body appreciation and BMI.",
+      "warning": "Correlation data is not provided in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section is a subsection (2.2.5) describing demographics procedures and does not indicate the number of studies in the paper.",
+      "warning": "Number of studies cannot be determined from this section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "This section is a methods subsection and does not indicate whether the publication is a journal article or dissertation.",
+      "warning": "Publication type is not stated in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section (2.2.5 Demographics) describes the demographic data collection procedures for the study. Participants self-reported their age and confirmed their female gender, and were asked to provide information on educational qualification, ethnicity, and country of residence using predetermined drop-down menus. Educational categories ranged from 'Some high school' to 'Graduate degree', but no actual demographic statistics or sample characteristics are reported in this section.",
+      "evidence_source": "Section 2.2.5 Demographics",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

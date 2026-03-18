@@ -1,0 +1,281 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      0,
+      2,
+      8
+    ],
+    "reason": "Multiple sections consistently describe a single present/online study (abstract: 'a single ... online study' [0]; participant/methods detail a single sample of N=399 [2]; discussion summarizes 'a single present study' [8]). No text indicates additional or separate studies, so the most accurate count is 1."
+  },
+  "Publication type": {
+    "extract_value": [
+      "journal articles"
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "All candidates consistently indicate a single empirical study published in the journal 'Body Image' (journal header in candidate 0 and abstract/methods/discussion describing a single online study in candidates 1\u20133). No text suggests this is a dissertation, so 'journal articles' is the correct value."
+  },
+  "Country": {
+    "extract_value": {
+      "Single study": [
+        "United States"
+      ]
+    },
+    "best_indices": [
+      1,
+      3,
+      5
+    ],
+    "reason": "All candidates refer to a single present/online study and consistently indicate it was conducted in the U.S. (abstract: 'online sample of 399 U.S. women and men' [1]; methods: 'we limited participation to MTurk workers from the U.S.' [3]; discussion: 'in U.S. adult women and men' [5]). 'U.S.' and 'United States' are treated as synonyms, so the consolidated value is 'United States'."
+  },
+  "Sample": {
+    "extract_value": {
+      "Single study": [
+        399
+      ]
+    },
+    "best_indices": [
+      1,
+      3
+    ],
+    "reason": "All candidates describe a single online study (N = 399). The Participants section (candidate 1) explicitly reports the final sample and gender split (199 women, 200 men; total 399) after excluding 15 participants; Table 1 (candidate 3) confirms Women (n = 199) and Men (n = 200). Values are consistent across abstract and analysis sections, so the final N = 399 with female = 199 and male = 200 is reported.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          200
+        ]
+      },
+      "female": {
+        "Single study": [
+          199
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          399
+        ]
+      }
+    }
+  },
+  "Survey method": {
+    "extract_value": {
+      "Single study": [
+        "online"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason": "All candidate sources consistently describe a single study conducted online (explicitly via Amazon Mechanical Turk). The abstract, Participants/Procedure, and Discussion each state online recruitment, so the survey method is resolved as 'online' for the single study."
+  },
+  "Mean age of participants": {
+    "extract_value": {
+      "Single study": [
+        34.55
+      ]
+    },
+    "best_indices": [
+      1,
+      3
+    ],
+    "reason": "The paper reports a single online study (N = 399). The Methods/Participants section (candidate 1) gives the total mean age M = 34.55 (SD = 10.89) \u2014 this is taken as the primary total mean. Table 1 (candidate 3) provides gender-specific means (Women M = 34.99; Men M = 34.12), which were combined with the total. The Abstract (candidate 0) repeats the same total mean but the Methods value is preferred. Minor rounding differences across sources are consistent with weighted aggregation of the gender means and the reported total.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          34.12
+        ]
+      },
+      "female": {
+        "Single study": [
+          34.99
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          34.55
+        ]
+      }
+    }
+  },
+  "Source of sample": {
+    "extract_value": {
+      "Single study": [
+        "community"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "All candidates describe the same single online study recruiting U.S. community adults via Amazon Mechanical Turk (MTurk). The Participants/Procedure section (candidate 1) and figure caption (candidate 2) explicitly state MTurk recruitment and community adult sample (N = 399; 199 women, 200 men). The Discussion (candidate 3) notes online recruitment and sampling biases, and candidate 0 likewise refers to community adults. No text indicates a college or school sample or multiple distinct studies. Therefore the source is classified as 'community' and all relevant candidates (0\u20133) were used."
+  },
+  "Assessment of BA": {
+    "extract_value": {
+      "Single study": [
+        "BAS-2"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason": "All candidate sources consistently report the Body Appreciation Scale-2 (BAS-2) as the instrument for assessing body appreciation. The Measures section (candidate 1) explicitly names the BAS-2, Table 1 (candidate 2) and the Discussion/figures (candidates 3\u20135) corroborate this, and the paper describes a single present study (candidates 0 and 3). Therefore, for the single study in this paper, the assessment instrument is BAS-2."
+  },
+  "Percent of white in participants": {
+    "extract_value": {
+      "Single study": [
+        81.7
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates report the same single study (an online MTurk sample, N = 399) and give the percent White as 81.7%. The paper contains only one study, so values were merged into a single entry. The participant/methods text (candidate 0) is the primary source; the figure caption (candidate 1) repeats the same value.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          81.7
+        ]
+      }
+    }
+  },
+  "Percentage of college or higher of participants": {
+    "extract_value": {
+      "Single study": [
+        66.3
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "Both candidates refer to the same single online study (N = 399) described in Participants/Procedure. The main-text values report 50.0% undergraduate and 16.3% postgraduate; summing these yields 66.3% classified as college or higher. The 2.5% \"still in fulltime education\" was not included in this calculation. Both candidate sources are consistent, so the computed value 66.3% is used.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": []
+      },
+      "female": {
+        "Single study": []
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          66.3
+        ]
+      }
+    }
+  },
+  "Mean BMI of participants": {
+    "extract_value": {
+      "Single study": [
+        26.62
+      ]
+    },
+    "best_indices": [
+      0,
+      2
+    ],
+    "reason": "Paper reports a single online study (N = 399). Main-text/participants section (candidate 0) reports mean BMI for the full sample M = 26.62 (SD = 5.73). Table 1 (candidate 2) provides gender-specific means (Women M = 26.66; Men M = 25.58). These were merged per instructions: include the total sample mean and the gender-specific means. Candidate 1 duplicates candidate 0 (figure asset) and was not additionally used.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          25.58
+        ]
+      },
+      "female": {
+        "Single study": [
+          26.66
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": [
+          26.62
+        ]
+      }
+    }
+  },
+  "Assessment of BMI": {
+    "extract_value": {
+      "Single study": [
+        "self-reported"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "reason": "All candidate sources refer to a single online study (N = 399). Multiple reliable sections (Measures, Participants, Table caption, Figure caption, and Discussion) explicitly state BMI was computed from self-reported height and weight (e.g., 'We used this data to compute participants' self-reported BMI' and 'self-reported body mass index'). No indication of measured (objectively assessed) BMI was found. Therefore the study-level assessment is 'self-reported'."
+  },
+  "Correlation between body appreciation and BMI": {
+    "extract_value": {
+      "Single study": [
+        -0.28,
+        -0.3
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper reports a single study. Table 2 provides bivariate correlations separately for women (above diagonal) and men (below diagonal). The intersection for Body Appreciation vs BMI is -0.28 for women (cell row 1, column 12) and -0.30 for men (cell row 12, column 1). Both gender-specific correlations are reported and extracted. No overall/total correlation or additional studies were reported.",
+    "extract_value_by_gender": {
+      "male": {
+        "Single study": [
+          -0.3
+        ]
+      },
+      "female": {
+        "Single study": [
+          -0.28
+        ]
+      },
+      "other": {
+        "Single study": []
+      },
+      "total": {
+        "Single study": []
+      }
+    }
+  }
+}

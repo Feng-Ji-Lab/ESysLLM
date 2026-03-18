@@ -1,0 +1,161 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Portugal"
+        ]
+      },
+      "evidence_source": "Abstract states 'Participants were 309 Portuguese women' indicating the study was conducted in Portugal.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          309
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            309
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            309
+          ]
+        }
+      },
+      "evidence_source": "Abstract states 'Participants were 309 Portuguese women'.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "paper-and-pencil"
+        ]
+      },
+      "evidence_source": "Abstract states 'completed self-report measures' which typically indicates paper-and-pencil survey method, though the exact method is not explicitly specified. This is inferred from standard practice for self-report measures.",
+      "warning": "Survey method not explicitly stated; inferred from 'self-report measures' language."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No information provided in the abstract regarding racial/ethnic composition of participants.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          34
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            34
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            34
+          ]
+        }
+      },
+      "evidence_source": "Abstract states 'aged between 18 and 50 years'. The midpoint of this range is (18+50)/2 = 34 years.",
+      "warning": "Mean age not explicitly stated; calculated as midpoint of the stated age range (18-50 years)."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No information provided in the abstract regarding educational attainment of participants.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No mean BMI value provided in the abstract. BMI is mentioned as a control variable in the analysis but no descriptive statistics are reported.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "community"
+        ]
+      },
+      "evidence_source": "Abstract states 'women from the general community with body and eating-related difficulties' in the discussion of intervention implications, indicating the sample was drawn from the general community.",
+      "warning": "Source of sample inferred from reference to 'general community' in the context of the study population."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract mentions 'body-image appreciation' as a key variable but does not specify which instrument (BAS or BAS-2) was used to assess it.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The abstract mentions BMI as a control variable but does not specify whether it was self-reported or measured.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "No correlation coefficient between body appreciation and BMI is reported in the abstract. The study examined mediation pathways but specific correlations are not provided.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The abstract describes a single study with one sample of 309 Portuguese women. No mention of multiple studies or experiments.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The abstract does not explicitly state whether this is a journal article or dissertation. The format and content suggest it could be either.",
+      "warning": "Publication type not explicitly stated in the provided abstract."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This abstract describes a single cross-sectional study (Study X) examining the mediating roles of self-reassurance and body-image appreciation in the relationship between social safeness/acceptance and eating psychopathology dimensions. The study included 309 Portuguese women aged 18-50 years from the general community who completed self-report measures. The path analysis revealed significant mediation effects, with the model explaining substantial variance in restraint, eating concern, weight concern, and shape concern.",
+      "evidence_source": "Abstract content describing study design, sample, and key findings.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

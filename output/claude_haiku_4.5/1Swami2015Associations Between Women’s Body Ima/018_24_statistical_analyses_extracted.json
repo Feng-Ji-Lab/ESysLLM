@@ -1,0 +1,93 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "US",
+          "non-US"
+        ]
+      },
+      "evidence_source": "Text states 'the larger US sample' and 'the smaller non-US sample' in the context of multi-group analysis comparing fit across samples.",
+      "warning": "The text mentions 'US' and 'non-US' samples but does not specify which non-US countries are included. The non-US designation is vague."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text references 'the larger US sample' and 'the smaller non-US sample' but does not provide specific sample sizes or participant numbers.",
+      "warning": "Sample sizes are not provided in this statistical methods section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes statistical analysis procedures only and does not mention the survey method used for data collection.",
+      "warning": "Survey method information is not available in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section does not contain demographic information about participant race/ethnicity.",
+      "warning": "Demographic data on race/ethnicity is not provided in this statistical methods section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes statistical analysis procedures and does not report participant age statistics.",
+      "warning": "Mean age data is not available in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section does not contain information about participant education levels.",
+      "warning": "Education level data is not provided in this statistical methods section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes statistical analysis procedures and does not report BMI statistics for participants.",
+      "warning": "Mean BMI data is not available in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section does not specify where or how participants were recruited.",
+      "warning": "Sample source information is not provided in this statistical methods section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes statistical analysis procedures and does not specify which instrument was used to assess body appreciation.",
+      "warning": "Assessment instrument for body appreciation is not mentioned in this section."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes statistical analysis procedures and does not specify whether BMI was self-reported or measured.",
+      "warning": "BMI assessment method is not provided in this statistical methods section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section describes the statistical analysis approach and model structure but does not report actual correlation coefficients between body appreciation and BMI.",
+      "warning": "Correlation values are not provided in this statistical methods section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section describes statistical analysis procedures for what appears to be a single study with two samples (US and non-US). The text does not explicitly label separate studies.",
+      "warning": "The section describes analysis of two samples (US and non-US) within what appears to be a single study, but does not explicitly state the number of studies."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "This section is a methods section and does not indicate the publication type.",
+      "warning": "Publication type cannot be determined from this statistical methods section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the statistical analysis procedures for a study examining relationships between education, age, BMI, body appreciation, body dissatisfaction, and subjective happiness. The analysis was conducted in three steps: first testing a hypothesized model in the larger US sample, then improving the model with additional paths, and finally fitting the final model to both US and non-US samples using multi-group analysis. Mplus 6.11 was used for path analyses with robust estimation methods and standard fit indices (CFI, TLI, RMSEA).",
+      "evidence_source": "Entire section 2.4 Statistical Analyses"
+    },
+    "_pass_type": "text_only"
+  }
+]

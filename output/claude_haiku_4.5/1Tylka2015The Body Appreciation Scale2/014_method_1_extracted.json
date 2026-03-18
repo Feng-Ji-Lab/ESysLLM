@@ -1,0 +1,808 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "United States"
+        ],
+        "Study 2": [
+          "United States"
+        ],
+        "Study 3": [
+          "United States"
+        ]
+      },
+      "evidence_source": "Study 1: 'college students' from regional campus (implied US context). Study 2: 'college students and Amazon Mechanical Turk (MTurk) online community members' with 'We were able to restrict the community participant sample to U.S. citizens' explicitly stated. Study 3: Referenced in note as 'MTurk online community participants' (implied US, consistent with Study 2 methodology).",
+      "warning": "Study 1 location inferred from context as same regional campus; Study 3 location inferred from MTurk methodology used in Study 2."
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study 2": [
+          "United States"
+        ]
+      },
+      "evidence_source": "Text states: 'The second sample in Study 2 included 317 MTurk community participants (150 women and 167 men); 46 U.S. states were represented in their data.' Also: 'We were able to restrict the community participant sample to U.S. citizens...'",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 2": [
+          263,
+          317
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 2": [
+            161,
+            150
+          ]
+        },
+        "male": {
+          "Study 2": [
+            102,
+            167
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study 2": [
+            263,
+            317
+          ]
+        }
+      },
+      "evidence_source": "Text states: 'Sample 1. Sample 1 included 263 college students (161 women and 102 men)' and 'Sample 2. The second sample in Study 2 included 317 MTurk community participants (150 women and 167 men)'. Also confirmed in note: 'Study 2: College students: N = 263 (women n = 161, men n = 102); Amazon Mechanical Turk online community participants: N = 317 (women n = 150, men n = 167).'",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study 2": [
+          "online"
+        ]
+      },
+      "evidence_source": "Text states: 'Measures (BAS-2 and Impression Management subscale of the Balanced Inventory of Desirable Responding-6; BIDR-6) were completed online via SurveyMonkey.' This applies to both college students and community participants in Study 2.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 2": [
+          81.0,
+          79.8
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 2": [
+            81.0,
+            79.8
+          ]
+        }
+      },
+      "evidence_source": "For Sample 1 (college): 'They identified as White (81.0%)...'. For Sample 2 (community): 'They identified as White (79.8%)...'",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 2": [
+          20.43,
+          32.89
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 2": [
+            20.43,
+            32.89
+          ]
+        }
+      },
+      "evidence_source": "For Sample 1 (college): 'Participants ranged in age from 18 to 58 (Mage = 20.43, SD = 6.04)'. For Sample 2 (community): 'They ranged in age from 19 to 65 (Mage = 32.89, SD = 10.10).'",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 2": [
+          100,
+          82.7
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 2": [
+            100,
+            82.7
+          ]
+        }
+      },
+      "evidence_source": "For Sample 1 (college): All participants are college students (first-year, sophomores, juniors, or seniors), so 100%. For Sample 2 (community): 'Two (0.6%) did not complete high school, 16.7% finished high school, and the remaining participants (82.7%) reported at least a year of college education.'",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 2": [
+          24.7,
+          26.88
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 2": [
+            24.56,
+            27.11
+          ]
+        },
+        "male": {
+          "Study 2": [
+            24.84,
+            26.64
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study 2": [
+            24.7,
+            26.88
+          ]
+        }
+      },
+      "evidence_source": "For Sample 1 (college): 'Women's average BMI was 24.56 (SD = 5.93), and men's average BMI was 24.84 (SD = 5.65).' Computed mean: (24.56 + 24.84) / 2 = 24.70. For Sample 2 (community): 'Women's average BMI was 27.11 (SD = 8.14), and men's average BMI was 26.64 (SD = 6.58).' Computed mean: (27.11 + 26.64) / 2 = 26.875 \u2248 26.88.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 2": [
+          "college",
+          "community"
+        ]
+      },
+      "evidence_source": "Text explicitly identifies two samples: 'Sample 1. Sample 1 included 263 college students' and 'Sample 2. The second sample in Study 2 included 317 MTurk community participants'. The college sample is from 'the same regional campus as Study 1', and the community sample is from 'Amazon Mechanical Turk (MTurk) online community members'.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study 2": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Text states: 'The 10-item BAS-2, containing five original BAS items and five new items, was used in Study 2.' Also: 'Measures (BAS-2 and Impression Management subscale of the Balanced Inventory of Desirable Responding-6; BIDR-6) were completed online via SurveyMonkey.'",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study 2": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Text states: 'BMI. Participants reported their height and weight, which was used to calculate BMI.' This indicates self-reported measurement.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text does not contain correlation coefficients between body appreciation (BAS-2) and BMI. Table 2 shows BAS-2 item means and standard deviations but does not report correlations with BMI. No correlation matrix or correlation values are presented in the text.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text describes Study 2 only. The text mentions 'Study 1' and 'Study 3' in passing (e.g., 'participants were deleted if they took the survey more than once (n = 6), completed Study 1 (n = 4)' and Table 2 caption mentions 'Studies 1, 2, and 3'), but the detailed method section provided describes only Study 2. Therefore, the number of studies described in detail in this section is 1 (Study 2).",
+      "evidence_source_note": "If the task is to count all studies mentioned across the entire paper, the answer would be 3. However, based on the provided text section, only Study 2 is described in detail.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly state whether this is a journal article or dissertation. No publication venue or type is mentioned in the provided excerpt.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "Study 2 involved two samples: 263 college students (161 women, 102 men; Mage = 20.43) and 317 MTurk community participants (150 women, 167 men; Mage = 32.89) from the United States. Both samples completed the 10-item BAS-2 and other measures online via SurveyMonkey, with BMI calculated from self-reported height and weight. The college sample was 81% White with 100% college education, while the community sample was 79.8% White with 82.7% having at least one year of college education.",
+      "evidence_source": "Entire Method section describing Study 2 participants and procedure.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 2: Body Appreciation Scale-2 (BAS-2) items and means (SDs): Studies 1, 2, and 3.",
+      "evidence_source": "The table caption at the top of the provided table image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Tylka2015The Body Appreciation Scale2/tables/1Tylka2015The Body Appreciation Scale2_p007_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "United States"
+        ],
+        "Study 2": [
+          "United States"
+        ]
+      },
+      "evidence_source": "Study 1: 'college students' from 'the same regional campus as Study 1' (Ohio State University, per IRB approval). Study 2: 'college students' and 'Amazon Mechanical Turk (MTurk) online community members' with 'U.S. citizens' restriction and '46 U.S. states were represented in their data'.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          675
+        ],
+        "Study 2": [
+          263,
+          317
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            367
+          ],
+          "Study 2": [
+            161,
+            150
+          ]
+        },
+        "male": {
+          "Study 1": [
+            308
+          ],
+          "Study 2": [
+            102,
+            167
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study 1": [
+            675
+          ],
+          "Study 2": [
+            263,
+            317
+          ]
+        }
+      },
+      "evidence_source": "Study 1: 'N = 675 college students (women n = 367, men n = 308)' from the note at end of text. Study 2: 'data from 263 college students and 317 community participants were retained and analyzed.' Sample 1 (college): '263 college students (161 women and 102 men)'. Sample 2 (MTurk): '317 MTurk community participants (150 women and 167 men)'.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "online"
+        ],
+        "Study 2": [
+          "online"
+        ]
+      },
+      "evidence_source": "Study 2: 'Measures (BAS-2 and Impression Management subscale of the Balanced Inventory of Desirable Responding-6; BIDR-6) were completed online via SurveyMonkey.' Study 1 is referenced as prior work but method not explicitly stated in this section; however, the context indicates online administration.",
+      "warning": "Study 1 survey method inferred from context; not explicitly stated in provided text."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "None"
+        ],
+        "Study 2": [
+          81.0,
+          79.8
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            "None"
+          ],
+          "Study 2": [
+            81.0,
+            79.8
+          ]
+        }
+      },
+      "evidence_source": "Study 2, Sample 1 (college students): 'They identified as White (81.0%)'. Study 2, Sample 2 (MTurk community): 'They identified as White (79.8%)'. Study 1 racial composition not provided in this section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "None"
+        ],
+        "Study 2": [
+          20.43,
+          32.89
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            "None"
+          ],
+          "Study 2": [
+            20.43,
+            32.89
+          ]
+        }
+      },
+      "evidence_source": "Study 2, Sample 1 (college): 'Participants ranged in age from 18 to 58 (Mage = 20.43, SD = 6.04)'. Study 2, Sample 2 (MTurk): 'They ranged in age from 19 to 65 (Mage = 32.89, SD = 10.10)'. Study 1 mean age not provided in this section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "None"
+        ],
+        "Study 2": [
+          100,
+          82.7
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            "None"
+          ],
+          "Study 2": [
+            100,
+            82.7
+          ]
+        }
+      },
+      "evidence_source": "Study 2, Sample 1 (college): All participants were college students (first-year through seniors), so 100% have college education. Study 2, Sample 2 (MTurk): 'Two (0.6%) did not complete high school, 16.7% finished high school, and the remaining participants (82.7%) reported at least a year of college education.' Study 1 education level not provided in this section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "None"
+        ],
+        "Study 2": [
+          24.56,
+          24.84,
+          27.11,
+          26.64
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            "None"
+          ],
+          "Study 2": [
+            24.56,
+            27.11
+          ]
+        },
+        "male": {
+          "Study 1": [
+            "None"
+          ],
+          "Study 2": [
+            24.84,
+            26.64
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study 1": [
+            "None"
+          ],
+          "Study 2": [
+            "None"
+          ]
+        }
+      },
+      "evidence_source": "Study 2, Sample 1 (college students): 'Women's average BMI was 24.56 (SD = 5.93), and men's average BMI was 24.84 (SD = 5.65).' Study 2, Sample 2 (MTurk community): 'Women's average BMI was 27.11 (SD = 8.14), and men's average BMI was 26.64 (SD = 6.58).' Study 1 BMI data not provided in this section.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "None"
+        ],
+        "Study 2": [
+          "college",
+          "community"
+        ]
+      },
+      "evidence_source": "Study 2: 'We collected data from two sample domains: college students and Amazon Mechanical Turk (MTurk) online community members.' Sample 1 explicitly identified as college students. Sample 2 explicitly identified as MTurk community participants. Study 1 source not specified in this section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "None"
+        ],
+        "Study 2": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Study 2: 'The 10-item BAS-2, containing five original BAS items and five new items, was used in Study 2.' Study 1 assessment of body appreciation not specified in this section.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "None"
+        ],
+        "Study 2": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Study 2: 'Participants reported their height and weight, which was used to calculate BMI.' This indicates self-reported measurement. Study 1 BMI assessment method not specified in this section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "None"
+        ],
+        "Study 2": [
+          "None"
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Table 3 is titled 'Study 1 variable means (SDs) and correlations' and shows correlations for Study 1 only (N=675, women n=367, men n=308). The table does not contain data for Study 2. The provided text section describes Study 2 methods but does not report correlation values between body appreciation (BAS-2) and BMI. No correlation coefficients are explicitly stated in the text for either study.",
+      "warning": "Correlation data for Study 2 not found in provided text. Table 3 contains Study 1 data but was not included in the extraction request context; only the methods section text was provided."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 2,
+      "evidence_source": "The text explicitly references 'Study 1' and 'Study 2'. Study 1 is mentioned as prior work ('completed Study 1 (n = 4)' as exclusion criterion). Study 2 is the focus of the methods section, with two samples: Sample 1 (college students, N=263) and Sample 2 (MTurk community, N=317).",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text is a methods section from an academic paper but does not explicitly state whether it is a journal article or dissertation. Publication type cannot be determined from the given text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This methods section describes Study 2, which includes two samples: Sample 1 comprises 263 college students (161 women, 102 men) from a regional campus with mean age 20.43 and 81% White identification; Sample 2 comprises 317 MTurk community participants (150 women, 167 men) with mean age 32.89 and 79.8% White identification. Both samples completed the BAS-2 online via SurveyMonkey to assess body appreciation, and BMI was calculated from self-reported height and weight. The text also references Study 1 (N=675 college students) as prior work from which participants were excluded if they had already completed it.",
+      "evidence_source": "Entire methods section provided in text_content.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 3: Study 1 variable means (SDs) and correlations.",
+      "evidence_source": "Table 3 caption as provided in the image input.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Tylka2015The Body Appreciation Scale2/tables/1Tylka2015The Body Appreciation Scale2_p007_table01.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_1"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "United States"
+        ],
+        "Study 2": [
+          "United States"
+        ]
+      },
+      "evidence_source": "Study 1: 'college students' from 'the same regional campus as Study 1' (Ohio State University, as indicated by 'IRB approval from The Ohio State University'). Study 2: 'Sample 1' includes 263 college students from the same regional campus. 'Sample 2' includes 317 MTurk community participants with '46 U.S. states represented in their data', confirming U.S. location. The text states 'We were able to restrict the community participant sample to U.S. citizens'.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          675
+        ],
+        "Study 2": [
+          263,
+          317
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            367
+          ],
+          "Study 2": [
+            161,
+            150
+          ]
+        },
+        "male": {
+          "Study 1": [
+            308
+          ],
+          "Study 2": [
+            102,
+            167
+          ]
+        },
+        "other": "None",
+        "total": {
+          "Study 1": [
+            675
+          ],
+          "Study 2": [
+            263,
+            317
+          ]
+        }
+      },
+      "evidence_source": "Study 1: 'N = 675 college students (women n = 367, men n = 308)' from the note at the end of the text. Study 2: 'Sample 1. Sample 1 included 263 college students (161 women and 102 men)' and 'Sample 2. The second sample in Study 2 included 317 MTurk community participants (150 women and 167 men)'. The note confirms: 'Study 2: College students: N = 263 (women n = 161, men n = 102); Amazon Mechanical Turk online community participants: N = 317 (women n = 150, men n = 167).'",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "online"
+        ],
+        "Study 2": [
+          "online"
+        ]
+      },
+      "evidence_source": "Study 1: 'Measures (BAS-2 and Impression Management subscale of the Balanced Inventory of Desirable Responding-6; BIDR-6) were completed online via SurveyMonkey.' Study 2: Same method stated in the same paragraph: 'Measures were completed online via SurveyMonkey.'",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          81.0
+        ],
+        "Study 2": [
+          81.0,
+          79.8
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            81.0
+          ],
+          "Study 2": [
+            81.0,
+            79.8
+          ]
+        }
+      },
+      "evidence_source": "Study 1: 'They identified as White (81.0%), African American (7.3%), Asian American (4.9%), Latina/Latino (1.5%), Native American (1.1%), or multiracial (4.2%).' Study 2, Sample 1 (college students): 'They identified as White (81.0%), African American (7.3%), Asian American (4.9%), Latina/Latino (1.5%), Native American (1.1%), or multiracial (4.2%).' Study 2, Sample 2 (MTurk community): 'They identified as White (79.8%), African American (6.0%), Asian American (4.7%), Latina/Latino (4.1%), Native American (0.9%), or multiracial (3.5%), with two participants (0.6%) choosing \"other.\"'",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          20.43
+        ],
+        "Study 2": [
+          20.43,
+          32.89
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            20.43
+          ],
+          "Study 2": [
+            20.43,
+            32.89
+          ]
+        }
+      },
+      "evidence_source": "Study 1: 'Participants ranged in age from 18 to 58 (Mage = 20.43, SD = 6.04).' Study 2, Sample 1 (college students): 'Participants ranged in age from 18 to 58 (Mage = 20.43, SD = 6.04).' Study 2, Sample 2 (MTurk community): 'They ranged in age from 19 to 65 (Mage = 32.89, SD = 10.10).'",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          100
+        ],
+        "Study 2": [
+          100,
+          82.7
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study 1": [
+            100
+          ],
+          "Study 2": [
+            100,
+            82.7
+          ]
+        }
+      },
+      "evidence_source": "Study 1: All participants are college students (first-year, sophomores, juniors, or seniors), so 100% have college or higher education. Study 2, Sample 1 (college students): 'They were first-year college students (73.8%), sophomores (13.7%), juniors (5.7%), or seniors (4.2%); 2.7% indicated \"other.\"' All are college students, so 100%. Study 2, Sample 2 (MTurk community): 'Two (0.6%) did not complete high school, 16.7% finished high school, and the remaining participants (82.7%) reported at least a year of college education.' The 82.7% represents those with at least a year of college education.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          24.56,
+          24.84
+        ],
+        "Study 2": [
+          24.56,
+          24.84,
+          27.11,
+          26.64
+        ]
+      },
+      "extract_value_by_gender": {
+        "female": {
+          "Study 1": [
+            24.56
+          ],
+          "Study 2": [
+            24.56,
+            27.11
+          ]
+        },
+        "male": {
+          "Study 1": [
+            24.84
+          ],
+          "Study 2": [
+            24.84,
+            26.64
+          ]
+        },
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "Study 1: 'Women's average BMI was 24.56 (SD = 5.93), and men's average BMI was 24.84 (SD = 5.65).' Study 2, Sample 1 (college students): 'Women's average BMI was 24.56 (SD = 5.93), and men's average BMI was 24.84 (SD = 5.65).' Study 2, Sample 2 (MTurk community): 'Women's average BMI was 27.11 (SD = 8.14), and men's average BMI was 26.64 (SD = 6.58).'",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "college"
+        ],
+        "Study 2": [
+          "college",
+          "community"
+        ]
+      },
+      "evidence_source": "Study 1: 'We collected data from two sample domains: college students and Amazon Mechanical Turk (MTurk) online community members.' The note specifies 'Study 1: N = 675 college students'. Study 2: 'Sample 1. Sample 1 included 263 college students' and 'Sample 2. The second sample in Study 2 included 317 MTurk community participants'. The note confirms: 'Study 2: College students: N = 263 (women n = 161, men n = 102); Amazon Mechanical Turk online community participants: N = 317 (women n = 150, men n = 167).'",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "BAS-2"
+        ],
+        "Study 2": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Study 1: 'The 10-item BAS-2, containing five original BAS items and five new items, was used in Study 2.' However, the context indicates this is describing Study 2. For Study 1, the text states 'Measures (BAS-2 and Impression Management subscale of the Balanced Inventory of Desirable Responding-6; BIDR-6) were completed online via SurveyMonkey.' Study 2: 'The 10-item BAS-2, containing five original BAS items and five new items, was used in Study 2.'",
+      "warning": "The text explicitly states 'was used in Study 2' for BAS-2, but the method section describes both Study 1 and Study 2 using the same measures. Study 1 assessment of BA is inferred from the measures section mentioning BAS-2 completion."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study 1": [
+          "self-reported"
+        ],
+        "Study 2": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Study 1 and Study 2: 'BMI. Participants reported their height and weight, which was used to calculate BMI.' This indicates self-reported height and weight.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      },
+      "evidence_source": "The provided text does not contain correlation coefficients between body appreciation (BAS-2) and BMI. The table image shows 'Table 4: BAS-2 incremental variance in eating behavior and well-being: Study 1' with various criteria (Intuitive eating, ED symptomatology, self-esteem, proactive coping) but does not display a correlation matrix between BAS-2 and BMI. The table shows \u03b2 and t values for different predictors but not the specific correlation between body appreciation and BMI.",
+      "warning": "Correlation data not found in the provided text or table. The table shown (Table 4) displays incremental variance analysis results, not correlation coefficients between BAS-2 and BMI."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 3,
+      "evidence_source": "The text explicitly references 'Study 1', 'Study 2', and 'Study 3'. The note states: 'Study 1: N = 675 college students (women n = 367, men n = 308). Study 2: College students: N = 263 (women n = 161, men n = 102); Amazon Mechanical Turk online community participants: N = 317 (women n = 150, men n = 167). Study 3: MTurk online community participants N = 382 (women n = 192, men n = 190).'",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not explicitly state whether this is a journal article or dissertation. The text appears to be from a research paper but the publication type is not specified in the provided excerpt.",
+      "warning": "Publication type not specified in the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes the methodology for Study 2, which includes two distinct samples: Sample 1 comprises 263 college students (161 women, 102 men) from a regional campus with a mean age of 20.43 years and mean BMI of 24.56 (women) and 24.84 (men); Sample 2 comprises 317 MTurk community participants (150 women, 167 men) with a mean age of 32.89 years and mean BMI of 27.11 (women) and 26.64 (men). Both samples completed the BAS-2 and other measures online via SurveyMonkey, with BMI calculated from self-reported height and weight. The text also references Study 1 (N = 675 college students) and Study 3 (N = 382 MTurk participants) in the notes.",
+      "evidence_source": "Entire Method section describing Study 2 participants, procedure, and measures.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 4. BAS-2 incremental variance in eating behavior and well-being: Study 1.",
+      "evidence_source": "The table title/caption as it appears at the top of the provided table image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Tylka2015The Body Appreciation Scale2/tables/1Tylka2015The Body Appreciation Scale2_p008_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_2"
+  }
+]

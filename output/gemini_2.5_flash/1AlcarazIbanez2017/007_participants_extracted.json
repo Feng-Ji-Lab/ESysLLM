@@ -1,0 +1,125 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "{\"Study X\":[\"Brazil\"]}",
+      "evidence_source": "The sample was comprised of 840 students (438 boys and 402 girls) from three Brazilian cities located in S\u00e3o Paulo State.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "{\"Study X\":[840,46]}",
+      "evidence_source": "The sample was comprised of 840 students (438 boys and 402 girls); a second independent sample of students comprising 19 boys and 27 girls.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\":[402,27]}",
+        "male": "{\"Study X\":[438,19]}",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\":[15.50,15.51,14.02]}",
+      "evidence_source": "Participant ages ranged from 13 to 17 years, with a mean age of 15.50 (SD=1.20) for boys and 15.51 (SD=1.18) for girls; Mage = 14.02, SDage = 0.93.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\":[15.51]}",
+        "male": "{\"Study X\":[15.50]}",
+        "other": "None",
+        "total": "{\"Study X\":[14.02]}"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "{\"Study X\":[21.87,21.67,20.32]}",
+      "evidence_source": "being their mean BMI of 21.87 (SD=3.52) for boys and 21.67 (SD=3.71) for girls; MBMI = 20.32, SDBMI= 3.03.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "{\"Study X\":[21.67]}",
+        "male": "{\"Study X\":[21.87]}",
+        "other": "None",
+        "total": "{\"Study X\":[20.32]}"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "{\"Study X\":[\"primary/secondary/ high school\"]}",
+      "evidence_source": "The sample was comprised of 840 students (438 boys and 402 girls); Participant ages ranged from 13 to 17 years.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "{\"Study X\":[\"BAS-2\"]}",
+      "evidence_source": "To analyse BAS-2's temporal stability, a second independent sample of students completed the instrument twice within a two-week period.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "{\"Study X\":[\"self-reported\"]}",
+      "evidence_source": "Their self-reported BMI ranged from 13.55 to 43.98 kg/m<sup>2</sup>",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text describes 'The sample was comprised of 840 students' and 'a second independent sample of students', indicating two distinct samples within a single study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the participants of a study, which included two distinct samples. The primary sample consisted of 840 students (438 boys, 402 girls) from three Brazilian cities, with mean ages of 15.50 for boys and 15.51 for girls, and mean BMIs of 21.87 for boys and 21.67 for girls. A second independent sample of 46 students (19 boys, 27 girls), with a mean age of 14.02 and mean BMI of 20.32, was recruited to assess the temporal stability of the BAS-2 instrument.",
+      "evidence_source": "The entire text content of the 'Participants' section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

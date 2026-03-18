@@ -1,0 +1,290 @@
+{
+  "Number of studies": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      1,
+      5,
+      6
+    ],
+    "reason": "Multiple sections consistently refer to 'a study', 'the present study', or 'an experiment' in the singular. Specifically, candidate [5] states 'this experiment, indicating a single study', and candidate [6] mentions 'operationalized in a single study'. There is no evidence of multiple distinct studies being conducted within the paper."
+  },
+  "PubType": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      11
+    ],
+    "reason": "All candidates consistently suggest a publication type of 'Journal article' (code 1). Candidate [11] provides the strongest and most explicit evidence, stating 'This section contains a reference entry for a journal article published in the Journal of Counseling Psychology', which directly confirms the publication type."
+  },
+  "FinancSupport": {
+    "extract_value": [
+      0
+    ],
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "reason": "All provided candidates consistently indicate a value of 0 for 'FinancSupport' with 'No evidence'. There is no mention of grants, funding agencies, sponsored projects, or explicit financial support in any of the section contexts. Therefore, based on the available information, the most accurate value is 0."
+  },
+  "PeerReview": {
+    "extract_value": [
+      1
+    ],
+    "best_indices": [
+      10,
+      11
+    ],
+    "reason": "The paper is identified as a journal article published in the 'Journal of Counseling Psychology', an APA journal. Candidate [10] explicitly mentions 'submission, revision, and acceptance dates' for the article, which are clear indicators of a peer-review process. Candidate [11] further confirms it is an 'APA journal', which are typically peer-reviewed."
+  },
+  "AdaptMeasures": {
+    "extract_value": {
+      "Single study": [
+        "3",
+        "3",
+        "3",
+        "3",
+        "3",
+        "3",
+        "3",
+        "3",
+        "3",
+        "3",
+        "3",
+        "3",
+        "3",
+        "3",
+        "3"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12
+    ],
+    "reason": "The paper contains a single study, as indicated by the context and consistent references to 'this experiment' or 'the present study' in the candidates. Therefore, all extracted values are consolidated under 'Single study'. All valid candidates consistently describe objective measures of performance adaptation, such as 'computer decision-making task', 'accuracy of judgment', 'points awarded', 'training performance', 'transfer performance', 'near transfer performance mean', and 'far transfer performance mean'. These align with code 3 (Objective). Candidate [11] was excluded because its evidence explicitly stated that the measurement method was not specified, resulting in a 'None' value, which is not a valid code. Multiple instances of code 3 are included in the list as per the 'multiple_effects_within_study' rule, which states: 'If the study provides multiple eligible effects with different adaptation measurement sources, store each code in the LIST.' The integer codes are converted to strings to comply with the provided JSON schema for 'extract_value' items."
+  },
+  "AdaptMethod": {
+    "extract_value": {
+      "Single study": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12
+    ],
+    "reason": "The paper contains a single study as confirmed by the context. All reliable candidates consistently indicate that the adaptation outcome is based on objective scores (coded as '1'), such as 'transfer performance', 'accuracy of judgments', and 'points awarded' from a computer task. Candidate 11 was excluded as it provided 'None' and explicitly stated a lack of detail regarding the assessment method, making it unreliable and inconsistent with other candidates. The integer codes are represented as strings to comply with the provided JSON schema for 'extract_value'."
+  },
+  "AdaptMethod_Specific": {
+    "extract_value": {
+      "Single study": [
+        "3",
+        "3",
+        "3"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12
+    ],
+    "reason": "The paper contains a single study, as indicated by the context, so all 'Study X' candidates are merged into 'Single study'. All valid candidates consistently identify the adaptation method as objective (code 3). The study measures multiple distinct objective performance adaptation outcomes: training performance, near transfer performance, and far transfer performance. Candidates [5] and [10] explicitly provide two '3's for near and far transfer performance. Other candidates (e.g., [0], [2], [4], [6], [12]) also refer to multiple objective performance outcomes (training, near transfer, far transfer). Following the definition that 'Each integer indicates the specific assessment method of performance adaptation used for the corresponding extracted effect' and the instruction to 'code each outcome separately' when applicable, the most comprehensive representation is to include '3' for each of these three distinct objective performance outcomes. Candidate [11] was excluded because its value '[\"None\"]' is invalid according to the schema, and its evidence states it does not provide specific assessment method details. The integer codes are converted to strings as per the schema."
+  },
+  "Age_Info": {
+    "extract_value": {
+      "Single study": [
+        "Undergraduate students",
+        "college students"
+      ]
+    },
+    "best_indices": [
+      0,
+      11
+    ],
+    "reason": "The paper describes a single study, as confirmed by the context. Candidates 0 and 11 provide consistent information about the participant type ('Undergraduate students' and 'college students'), which serves as additional age information (subgroup details) as per the field definition. These values are merged into a single list for the 'Single study'. Other candidates either explicitly state no age information or provide empty strings, which are less informative than the participant type."
+  },
+  "Age_imputed": {
+    "extract_value": {
+      "Single study": []
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "reason": "The paper contains a single study. All candidates were reviewed, and none provided any information (mean, median, or age ranges) to impute the mean age of the participants. Therefore, no age could be extracted or imputed."
+  },
+  "Sex": {
+    "extract_value": {
+      "Single study": [
+        "3"
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "The paper contains a single study, as confirmed by the context and consistent references across candidates. Candidate 1 provides the most explicit and reliable information, stating the sample composition as '82 undergraduate students (36 men, 46 women)'. This clearly indicates a mixed-sex sample, which corresponds to code 3 ('Mixed sample') as per the field definition. Other candidates either infer a mixed sample without explicit numbers or provide no information regarding sex composition."
+  },
+  "Men_Prop": {
+    "extract_value": {
+      "Single study": [
+        "43.9"
+      ]
+    },
+    "best_indices": [
+      1
+    ],
+    "reason": "The paper contains a single study. Candidate [1] explicitly states the number of men (36) and women (46) in the sample of 82 participants. From these counts, Men_Prop is calculated as (36 / 82) * 100 = 43.9024%, which is rounded to 43.9%. All other candidates either do not provide this information or explicitly state that the information is missing."
+  },
+  "Country_dichot_num": {
+    "extract_value": {
+      "Single study": [
+        "2"
+      ]
+    },
+    "best_indices": [
+      0,
+      1
+    ],
+    "reason": "The paper contains a single study, as confirmed by the context and multiple candidate summaries. Candidates 0 and 1 provide strong evidence that the study was conducted in the United States, citing author affiliations (Rice University, University of Arizona) and a correspondence address in Houston, Texas. This explicit information is more reliable than the 'None' or 'null' values from other candidates, which simply indicate a lack of country information in their respective sections, or the default coding of '1' in candidate 8. Therefore, the country dichotomy is coded as 2 (USA)."
+  },
+  "Sample_dichot": {
+    "extract_value": {
+      "Single study": [
+        "1"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      10
+    ],
+    "reason": "The paper reports a single study, as indicated by the context. Candidates 0, 1, and 10 explicitly state that the participants were 'Undergraduate students' or 'college students', which corresponds to a student sample (code 1). Candidate 7's default coding of '2' is disregarded due to explicit contradictory evidence from more reliable sources. Other candidates provided no relevant information."
+  },
+  "N": {
+    "extract_value": {
+      "Single study": [
+        "80"
+      ]
+    },
+    "best_indices": [
+      5
+    ],
+    "reason": "The paper contains a single study, as confirmed by the context. Candidates [0] and [1] report a total sample size of N=82. Candidate [4] reports N=78 based on F-tests for performance analyses. Candidate [5] provides an N=80, derived from t-tests, and explicitly states it is 'used as a reasonable estimate for the overall sample size for the correlations' in Table 1. The field definition for 'N' specifically asks for the 'sample size used for the extracted correlation coefficient between goal orientation and performance adaptation'. According to the tie-breaker rules, 'Use the N that matches the specific analysis producing the correlation coefficient, not necessarily the total recruited N' and 'If there are multiple Ns across measures or analyses, use the N reported for the relevant correlation or model.' Therefore, N=80 from candidate [5] is the most appropriate value as it is directly associated with 'correlations', making it more specific to the field's requirement than the total N=82 or the N=78 from F-tests. Although N=80 is an estimate, it is the most relevant N for correlations provided."
+  },
+  "PgoType": {
+    "extract_value": {
+      "Single study": [
+        "Prove"
+      ]
+    },
+    "best_indices": [
+      0
+    ],
+    "reason": "The paper contains a single study. Candidate 0, from the measures section in the main text, provides an example item for performance goal orientation: \"'It is important to me to always do better than others'\". This item clearly indicates a 'Prove' (performance-approach) goal orientation. This textual description of the measure is more specific and reliable than the general label 'Performance goal orientation' found in the tables (Candidates 1-5), which led to a 'Global' interpretation. Following the conflict resolution rule to prefer main text descriptions over table labels when they provide more specific and reliable information, 'Prove' is the correct PgoType."
+  },
+  "GoMeasure_dichot_num": {
+    "extract_value": {
+      "Single study": [
+        "1"
+      ]
+    },
+    "best_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "reason": "The paper contains a single study, as confirmed by the context. All candidates consistently indicate that the goal orientation measure used was not VandeWalle's. Specifically, candidate [0] identifies the measure as 'Roedel, Schraw, & Plake, 1994', which falls under the 'Other' category (code 1). Other candidates also confirm the absence of VandeWalle's measure. Since a single type of measure was used in this single study, the value is represented as a list containing a single '1'."
+  },
+  "Correlation_PGO_and_PA": {
+    "extract_value": {
+      "Single study": [
+        "-0.10",
+        "-0.26"
+      ]
+    },
+    "best_indices": [
+      2
+    ],
+    "reason": "Candidate 2 from Table 1 explicitly reports Pearson r correlations between 'Performance goal orientation' and 'Near transfer performance mean' (-0.10) and 'Far transfer performance mean' (-0.26). Both near and far transfer performance are considered forms of performance adaptation. All other candidates either do not report correlation coefficients or report beta coefficients from regression analyses, which are not Pearson r correlations as required by the schema. The paper contains a single study, as confirmed by the context."
+  },
+  "Correlation_info": {
+    "extract_value": {
+      "Single study": [
+        "PGO and Near transfer performance mean",
+        "PGO and Far transfer performance mean"
+      ]
+    },
+    "best_indices": [
+      2
+    ],
+    "reason": "The paper contains a single study as indicated by the context. Candidate 2, derived from Table 1, is the only candidate that provides specific correlation information relevant to Performance Goal Orientation (PGO) and Performance Adaptation (represented by Near and Far transfer performance). All other candidates explicitly state that no correlation coefficients were reported or extracted, or that the tables provided beta coefficients rather than Pearson r values, making them unsuitable for this field."
+  }
+}

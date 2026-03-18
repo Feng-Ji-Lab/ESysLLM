@@ -1,0 +1,293 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No sample size information is provided in this section.",
+      "warning": "None"
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No survey method information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No demographic information about race/ethnicity percentages is provided in this section.",
+      "warning": "None"
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No age information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No education level information is provided in this section.",
+      "warning": "None"
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No BMI information is mentioned in this section.",
+      "warning": "None"
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about sample source (community, college, etc.) is provided in this section.",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text states 'ethnic identity, as measured by the MEIM, was positively associated with body appreciation (BAS)' and later references 'Body Appreciation Scale' in the note section.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about BMI assessment method (self-reported or measured) is provided in this section.",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "This section discusses correlations between ethnic identity and body appreciation, and mediating effects, but does not report correlations between body appreciation and BMI.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "No explicit mention of multiple studies or study numbering in this section. This appears to be a results section from a single study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No publication type information is provided in this section.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents results examining the relationship between ethnic identity (measured by MEIM) and body appreciation (BAS), finding a positive association. The analysis tested Western beauty ideal internalization as a mediator between ethnic identity and various eating disorder-related outcomes, finding significant mediating effects for eating, shape, and weight concerns, but not for body appreciation.",
+      "evidence_source": "The entire provided text section.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section does not contain explicit information about the country where the study was conducted. The text discusses ethnic identity, body appreciation, and eating disorder pathology but does not specify a geographic location.",
+      "warning": "No country information found in the provided text section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section does not contain information about the total number of participants or sample size. The text focuses on statistical analyses and mediation models but does not report sample demographics.",
+      "warning": "No sample size information found in the provided text section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section does not specify the survey method (paper-and-pencil or online). The text discusses measures and analyses but does not describe data collection methodology.",
+      "warning": "No survey method information found in the provided text section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section does not contain demographic information about racial/ethnic composition of participants.",
+      "warning": "No racial/ethnic demographic data found in the provided text section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section does not report the mean age of participants.",
+      "warning": "No age demographic data found in the provided text section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section does not contain information about educational attainment of participants.",
+      "warning": "No educational demographic data found in the provided text section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section does not report mean BMI of participants. While the text discusses weight concerns and eating disorder pathology, it does not provide BMI statistics.",
+      "warning": "No BMI data found in the provided text section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section does not specify the source of the sample (community, college, or primary/secondary/high school).",
+      "warning": "No sample source information found in the provided text section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'ethnic identity, as measured by the MEIM, was positively associated with body appreciation (BAS)' and later 'on body appreciation (BAS)'. The Body Appreciation Scale (BAS) is identified as the instrument used to assess body appreciation.",
+      "warning": "The study number is not explicitly named in this section; using 'Study X' as a placeholder. The text clearly identifies BAS as the assessment tool for body appreciation."
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section does not specify how BMI was assessed (self-reported or measured). While the text discusses weight concerns and eating disorder pathology, it does not describe BMI assessment methodology.",
+      "warning": "No BMI assessment method information found in the provided text section."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text section does not report a correlation between body appreciation (BAS) and BMI. Table 3 shown in the image displays correlations between various measures, but the specific correlation between BAS and BMI is not visible or reported in the provided text content. The text discusses mediation analyses and associations with ethnic identity but does not provide the BAS-BMI correlation coefficient.",
+      "warning": "No BAS-BMI correlation found in the provided text section. While Table 3 is referenced in the image, the specific BAS-BMI correlation value is not extractable from the visible content."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "The provided text section does not explicitly state the number of studies. The text appears to describe analyses from a single study examining ethnic identity, body appreciation, and eating disorder pathology, but does not label it as 'Study 1', 'Study 2', etc., nor does it explicitly count the number of studies.",
+      "warning": "Cannot definitively determine the number of studies from this section alone. The text appears to describe one study but does not explicitly confirm this."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text section does not specify whether this is a journal article or dissertation. The text appears to be from an academic paper but the publication type is not explicitly stated in the provided excerpt.",
+      "warning": "Publication type cannot be determined from the provided text section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section examines the relationship between ethnic identity (measured by MEIM) and body appreciation (BAS), finding a positive association. The text reports that ethnic identity also had positive relations with self-esteem and appearance evaluation, and negative associations with Western beauty ideal internalization and eating concerns. A mediation analysis tested whether Western beauty ideal internalization mediates the relationship between ethnic identity and body appreciation, finding that it mediated eating, shape, and weight concerns but not body appreciation itself.",
+      "evidence_source": "Entire provided text section describing ethnic identity relations and mediation analyses.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 3. Correlations Between Measures.",
+      "evidence_source": "The table image provided shows the title 'Table 3. Correlations Between Measures.' at the top of the correlation matrix.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Cotter2015/tables/1Cotter2015_p011_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_0"
+  },
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not explicitly state the country where the study was conducted. While the text discusses ethnic identity and Western beauty ideals, no geographic location is mentioned.",
+      "warning": "Country information not provided in the given text or table."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain information about the total sample size or number of participants.",
+      "warning": "Sample size information not provided in the given text or table."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not specify the survey method used (paper-and-pencil or online).",
+      "warning": "Survey method information not provided in the given text or table."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain demographic information about the racial/ethnic composition of participants.",
+      "warning": "Percent of white participants information not provided in the given text or table."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not provide information about the mean age of participants.",
+      "warning": "Mean age information not provided in the given text or table."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain information about the educational level of participants.",
+      "warning": "Educational attainment information not provided in the given text or table."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not report the mean BMI of participants.",
+      "warning": "Mean BMI information not provided in the given text or table."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not specify the source of the sample (community, college, or primary/secondary/high school).",
+      "warning": "Source of sample information not provided in the given text or table."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'ethnic identity, as measured by the MEIM, was positively associated with body appreciation (BAS)' and Table 4 presents results for Body Appreciation measured by BAS. The note at the bottom confirms 'BAS = Body Appreciation Scale'.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not contain information about how BMI was assessed (self-reported or measured). The table focuses on mediation analysis of ethnic identity, Western beauty ideal internalization, and body appreciation/eating concerns, but does not include BMI as a variable.",
+      "warning": "BMI assessment method not applicable to this table/section; BMI is not a variable in the analysis presented."
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not report correlations between body appreciation and BMI. Table 4 presents path coefficients and indirect effects in a mediation analysis, not correlations between body appreciation and BMI.",
+      "warning": "Correlation between body appreciation and BMI not reported in this section/table."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The provided text describes a single study examining the mediating role of Western beauty ideal internalization. No explicit mention of multiple studies (e.g., 'Study 1', 'Study 2', 'Experiment 1') is present. The analysis appears to be from one sample of women.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "The provided text and table do not explicitly state whether this is from a journal article or dissertation. The format and content suggest it is from a research paper, but the publication type cannot be definitively determined from the provided excerpt.",
+      "warning": "Publication type not explicitly stated in the provided text."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section presents results from a mediation analysis examining how Western beauty ideal internalization mediates the relationship between ethnic identity and body appreciation, eating concerns, shape concerns, and weight concerns. The analysis used bootstrapping with 5,000 resamples to test indirect effects. Table 4 displays path coefficients and confidence intervals showing that Western beauty ideal internalization significantly mediated the relationships between ethnic identity and eating concern, shape concern, and weight concern, but not body appreciation.",
+      "evidence_source": "The entire provided text section describing the mediation analysis and Table 4 results.",
+      "warning": "None"
+    },
+    "Asset Caption": {
+      "type": "string",
+      "extract_value": "Table 4. Results of Tests for the Mediating Effects of Western Beauty Ideal Internalization on the Relation Between Ethnic Identity and Body Appreciation, Eating Concern, Shape Concern, and Weight Concern.",
+      "evidence_source": "The table title as it appears at the top of Table 4 in the provided image.",
+      "warning": "None"
+    },
+    "_asset_link": "/home/ubuntu/nanyu/llm_meta_analysis_new/test/papers/1Cotter2015/tables/1Cotter2015_p012_table00.png",
+    "_metadata_caption": null,
+    "_asset_source": "[table] None",
+    "_pass_type": "asset_1"
+  }
+]

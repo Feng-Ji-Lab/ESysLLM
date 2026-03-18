@@ -1,0 +1,97 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes measurement instruments and procedures but does not explicitly state the country where the study was conducted.",
+      "warning": "No country information provided in this section."
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes measurement instruments and procedures but does not provide sample size information.",
+      "warning": "No sample size data provided in this section."
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes measurement instruments but does not explicitly state whether data collection was conducted via paper-and-pencil or online methods.",
+      "warning": "No survey method information provided in this section."
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text discusses the importance of using ethnically-relevant measures and mentions Black female participants, but does not provide a specific percentage of white participants.",
+      "warning": "No percentage of white participants provided in this section."
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text references 'younger Black female cohorts' and 'undergraduate female' samples in validation studies, but does not provide a specific mean age for the current study's participants.",
+      "warning": "No mean age data provided in this section."
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'Black female undergraduates' and 'undergraduate female and male samples' in the context of validation studies, but does not explicitly state the percentage of college or higher education in the current study's sample.",
+      "warning": "No percentage of college or higher education provided in this section."
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes how BMI was calculated from self-reported height and weight but does not provide the mean BMI of participants.",
+      "warning": "No mean BMI data provided in this section."
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'Black urban community residents' in the context of validation studies and references 'pediatric and adolescent weight management intervention research,' but does not explicitly state the source of the current study's sample.",
+      "warning": "No explicit source of sample information provided in this section."
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'The Body Appreciation Scale (BAS; Avalos et al., 2005) is a 13-item holistic measure of positive body image.' The section further confirms: 'In the current study, Cronbach's alpha was .89,' indicating the BAS was used in the current study.",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "The text explicitly states: 'Participants provided self-reported height in inches and weight in pounds, which were used to calculate BMI converted to kg/m2.'",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The text describes the Body Appreciation Scale (BAS) and BMI assessment methods but does not provide any correlation coefficients between body appreciation and BMI.",
+      "warning": "No correlation data provided in this section."
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": "None",
+      "evidence_source": "This section is a 'Measures' section describing instruments and their validation in previous research. It does not explicitly state how many studies are included in the current paper. The text references validation studies by other authors (e.g., Pulvers et al., 2004; Cotter et al., 2013) but does not indicate the number of studies in the current paper.",
+      "warning": "Cannot determine number of studies from this Measures section alone."
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "This section is a Measures section and does not contain information about the publication type of the current paper.",
+      "warning": "No publication type information provided in this section."
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Measures section describes the instruments used to assess body mass index (self-reported height and weight), body dissatisfaction (Pulvers et al.'s culturally-relevant body size rating scale), body appreciation (Body Appreciation Scale or BAS), and body image flexibility (BI-AAQ). The section emphasizes the importance of using ethnically-relevant measures for diverse populations, particularly Black female participants, and provides psychometric evidence for each instrument's validity and reliability in the current study.",
+      "evidence_source": "Entire Measures section",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "PubType": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The detailed description of methods, measures, and reliability, typical of an academic research paper, suggests it is a journal article.",
+      "warning": "None"
+    },
+    "FinancSupport": {
+      "type": "integer",
+      "extract_value": 0,
+      "evidence_source": "No mention of grants, funding, or acknowledgments in the provided text.",
+      "warning": "None"
+    },
+    "PeerReview": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "Inferred from PubType being a journal article, which typically undergoes peer review.",
+      "warning": "None"
+    },
+    "PgoType": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"Avoid\", \"Prove\", \"Avoid\", \"Prove\"]}",
+      "evidence_source": "For 'Trait goal orientation': 'The performance-avoid orientation measure consisted of 4 items' and 'Performance-prove orientation was assessed with 4 items'. For 'State goal orientation': 'The performance-avoid measure contained 4 items' and 'Performance-prove orientation was also measured with 4 items'.",
+      "warning": "None"
+    },
+    "AdaptMeasures": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3, 3]}",
+      "evidence_source": "Performance was measured during 'two transfer trials' which 'assessed analogical and adaptive transfer performance'. The 'Skill-based performance' section describes objective scoring based on target identification, prosecution, and perimeter crossings. Both analogical and adaptive transfer are objective measures.",
+      "warning": "None"
+    },
+    "AdaptMethod": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1, 1]}",
+      "evidence_source": "The 'Skill-based performance' section describes objective scoring based on task performance (adding/subtracting points for correct/incorrect actions). This indicates objective scores for both analogical and adaptive transfer performance.",
+      "warning": "None"
+    },
+    "AdaptMethod_Specific": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [3, 3]}",
+      "evidence_source": "The 'Skill-based performance' section details how performance was 'computed by adding 100 points to the trainee's performance score every time a target was identified and prosecuted correctly and by subtracting 100 points from the trainee's score each time a target was misidentified or prosecuted incorrectly'. This is an objective task/test measure for both analogical and adaptive transfer.",
+      "warning": "None"
+    },
+    "GoMeasure_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [2, 1]}",
+      "evidence_source": "For 'Trait goal orientation': 'participants completed VandeWalle's (1997) 13-item trait goal orientation measure'. For 'State goal orientation': 'The scales, which were adapted from Horvath, Scheu, and DeShon (2001)'.",
+      "warning": "None"
+    },
+    "Age_Info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [\"\"]}",
+      "evidence_source": "No specific age information (mean, median, range, SD) is reported in this section.",
+      "warning": "None"
+    },
+    "Age_imputed": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No age information was provided to impute from.",
+      "warning": "None"
+    },
+    "Sex": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the sex composition of the sample is provided.",
+      "warning": "None"
+    },
+    "Men_Prop": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No information about the percentage of men in the sample is provided.",
+      "warning": "None"
+    },
+    "Country_dichot_num": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No explicit mention of the country where the study was conducted.",
+      "warning": "None"
+    },
+    "Sample_dichot": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [1]}",
+      "evidence_source": "The text mentions 'participants were scheduled for the experimental session', 'obtained from official university records', and 'standardized individuals' ACT or SAT scores with norms published by ACT and the College Board', all of which indicate a student sample.",
+      "warning": "None"
+    },
+    "N": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "The text mentions 'N = 350' in the context of a confirmatory factor analysis for declarative knowledge, but this N is not explicitly stated for the correlation between goal orientation and performance adaptation.",
+      "warning": "N for specific correlation not reported."
+    },
+    "Correlation_PGO_and_PA": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No correlation coefficients between Performance Goal Orientation and performance adaptation are reported in this section.",
+      "warning": "None"
+    },
+    "Correlation_info": {
+      "type": "object",
+      "extract_value": "{\"Study X\": [null]}",
+      "evidence_source": "No correlation coefficients were reported, so no correlation information can be provided.",
+      "warning": "None"
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text consistently refers to 'this study' and 'the experiment' in the singular, describing a single research design with measures administered at different time points and two transfer trials.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section details the various measures used in the study, including cognitive ability, trait and state goal orientation (performance-avoid and performance-prove), trait anxiety, metacognitive activity, self-evaluation activity, intrinsic motivation, self-efficacy, state anxiety, declarative knowledge, and skill-based performance (analogical and adaptive transfer). It describes the scales, items, and reliability for each measure. The study is referred to in the singular.",
+      "evidence_source": "Summary of the 'Measures' section content.",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

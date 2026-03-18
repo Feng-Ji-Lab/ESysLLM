@@ -1,0 +1,201 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "Mid-Atlantic"
+        ]
+      },
+      "evidence_source": "\"Participants were 228 undergraduate Black female college students (M age =  19.89, SD = 4.57) at a large, urban university in the Mid-Atlantic.\"",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          228
+        ]
+      },
+      "evidence_source": "\"Participants were 228 undergraduate Black female college students (M age =  19.89, SD = 4.57) at a large, urban university in the Mid-Atlantic.\"",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            228
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            228
+          ]
+        }
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "online"
+        ]
+      },
+      "evidence_source": "\"Measures were administered through a secure website called SONA Systems, an online data collection program maintained by the university.\"",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          0.0
+        ]
+      },
+      "evidence_source": "\"Participants were 228 undergraduate Black female college students ...\" --> All participants are described as Black; therefore percent White among participants = 0.0%.",
+      "warning": "Inference: percent white set to 0.0 because sample is explicitly described as Black female students.",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            0.0
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            0.0
+          ]
+        }
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          19.89
+        ]
+      },
+      "evidence_source": "\"Participants were 228 undergraduate Black female college students (M age =  19.89, SD = 4.57) ...\"",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            19.89
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            19.89
+          ]
+        }
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          100.0
+        ]
+      },
+      "evidence_source": "\"Participants were 228 undergraduate ... college students\" --> All participants are college students, so percentage with college or higher = 100.0%.",
+      "warning": "Inference: set to 100.0 because sample is explicitly described as undergraduate college students.",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            100.0
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            100.0
+          ]
+        }
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          24.71
+        ]
+      },
+      "evidence_source": "\"Mean BMI was 24.71 (SD = 6.04), which is just below the overweight range (Centers for Disease Control and Prevention, 2011).\"",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": {
+          "Study X": [
+            24.71
+          ]
+        },
+        "male": "None",
+        "other": "None",
+        "total": {
+          "Study X": [
+            24.71
+          ]
+        }
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "college"
+        ]
+      },
+      "evidence_source": "\"Participants were recruited from a Psychology 101 Participant Pool, as well as other psychology courses.\"",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "\"Self-reported height and weight data were used to calculate body mass index (BMI)...\"",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "\"Participants were 228 undergraduate Black female college students...\" (Only a single sample is described in this section; no additional studies are mentioned.)",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "None",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This section describes a single study sample of 228 undergraduate Black female college students (M age = 19.89, SD = 4.57) at a large urban university in the Mid-Atlantic. Recruitment was from a Psychology 101 participant pool and other psychology courses; class-year breakdown (first-year, sophomore, junior, senior, graduate) is reported. BMI was calculated from self-reported height and weight (Mean BMI = 24.71, SD = 6.04).",
+      "evidence_source": "\"Participants were 228 undergraduate Black female college students (M age =  19.89, SD = 4.57) at a large, urban university in the Mid-Atlantic.\"; \"Participants were recruited from a Psychology 101 Participant Pool, as well as other psychology courses.\"; \"Mean BMI was 24.71 (SD = 6.04)...\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]

@@ -1,0 +1,133 @@
+[
+  {
+    "Country": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No country or location information for the current study is provided in the supplied text.",
+      "warning": "None"
+    },
+    "Sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report the total number of participants or sample size for the current study.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Survey method": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not state whether data were collected online or via paper-and-pencil.",
+      "warning": "None"
+    },
+    "Percent of white in participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No information about participant racial/ethnic composition (percent white) is reported in the supplied text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean age of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not report mean or distribution of participant ages.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Percentage of college or higher of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not state participants' education levels or percentage with college or higher.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Mean BMI of participants": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text describes how BMI was calculated but does not report the sample's mean BMI.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Source of sample": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "The provided text does not specify the source of the sample (e.g., community, college, primary/secondary/high school).",
+      "warning": "None"
+    },
+    "Assessment of BA": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "BAS-2"
+        ]
+      },
+      "evidence_source": "Body appreciation scale-2 (BAS-2; [32, 34]). BAS-2 is a 10-item self-report measure of body image appreciation, respect and acceptance (e.g., \"I take a positive attitude towards my body\").",
+      "warning": "None"
+    },
+    "Assessment of BMI": {
+      "type": "object",
+      "extract_value": {
+        "Study X": [
+          "self-reported"
+        ]
+      },
+      "evidence_source": "Body mass index BMI was calculated through the quetelet index, based on participants' self-reported weight and  height (kg/m2 ).",
+      "warning": "None"
+    },
+    "Correlation between body appreciation and BMI": {
+      "type": "object",
+      "extract_value": "None",
+      "evidence_source": "No Pearson correlation between Body Appreciation (BAS-2) and BMI is reported in the provided text.",
+      "warning": "None",
+      "extract_value_by_gender": {
+        "female": "None",
+        "male": "None",
+        "other": "None",
+        "total": "None"
+      }
+    },
+    "Number of studies": {
+      "type": "integer",
+      "extract_value": 1,
+      "evidence_source": "The text repeatedly refers to results for the \"current study\" or \"present study\" (e.g., \"In the present study, BAS-2's Cronbach's alpha was 0.95.\"), indicating a single study.",
+      "warning": "None"
+    },
+    "Publication type": {
+      "type": "enum_or_none",
+      "extract_value": "None",
+      "evidence_source": "No information about the publication type (journal article or dissertation) is provided in the supplied text.",
+      "warning": "None"
+    },
+    "section_summary": {
+      "type": "string",
+      "extract_value": "This Measures section describes instruments used in the current study: BMI (calculated from participants' self-reported weight and height), the Social Safeness and Pleasure Scale (SSPS), the Body Appreciation Scale-2 (BAS-2), the Inflexible Eating Questionnaire (IEQ), and the Eating Disorder Examination Questionnaire (EDE-Q). It reports internal consistency (Cronbach's alpha) values for these scales in the present study but provides no sample descriptors (e.g., sample size, age, country, ethnicity), no survey method, and no correlation between BAS-2 and BMI in the supplied text.",
+      "evidence_source": "Selected sentences in the section: \"Body mass index BMI was calculated through the quetelet index, based on participants' self-reported weight and  height (kg/m2 ).\"; \"Body appreciation scale-2 (BAS-2; [32, 34]). BAS-2 is a 10-item self-report measure...\"; \"In the present study, BAS-2's Cronbach's alpha was 0.95.\"",
+      "warning": "None"
+    },
+    "_pass_type": "text_only"
+  }
+]
