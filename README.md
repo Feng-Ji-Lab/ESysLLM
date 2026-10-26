@@ -1,3 +1,9 @@
+> **Update (October 2026): version 2 is available.** The code, archived outputs,
+> scoring scripts and dashboards for the revised paper — including Study 5, the
+> comparison with Jansen et al. (2025) on five benchmark meta-analyses — are on branch
+> [`release/r2`](https://github.com/Feng-Ji-Lab/ESysLLM/tree/release/r2) and in its pull
+> request. That branch keeps this version-1 pipeline unchanged under `legacy/v1/`.
+
 # ESysLLM: LLM-Based Meta-Analysis Extraction Pipeline
 
 This project implements an advanced pipeline for extracting structured data from academic papers using Large Language Models (Gemini, Claude, etc.). It features a modular architecture comprising Preprocessing, Batch Extraction, and Aggregation/Validation, aiming to automate meta-analysis data collection.
