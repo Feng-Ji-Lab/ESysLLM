@@ -1,0 +1,210 @@
+{
+  "prompt_tokens": 14020,
+  "completion_tokens": 3906,
+  "data": {
+    "Design": {
+      "extract_value": "between-subject",
+      "evidence_source": "[page/3/Text/5] In the original setting of DWK, the dictator is told about her self-interested action before she is presented with the information choice (the Before treatment). In contrast to this timeline, in the other setting she is told about her self-interested action after she has been presented with the information choice (the After treatment).",
+      "block_id": "page/3/Text/5",
+      "warning": ""
+    },
+    "country": {
+      "extract_value": "None",
+      "evidence_source": "No information about the country where the experiment was conducted or the recruitment platform was provided in the text.",
+      "block_id": "None",
+      "warning": ""
+    },
+    "info_cost": {
+      "extract_value": 0.0,
+      "evidence_source": "[page/3/Text/4] All the dictators need to do is click a button in order to nd out if the case is conicting or non-conicting.",
+      "block_id": "page/3/Text/4",
+      "warning": ""
+    },
+    "Sample": {
+      "extract_value": [
+        {
+          "key": "Before treatment vs Conict treatment",
+          "value": [
+            1
+          ]
+        },
+        {
+          "key": "After treatment vs Conict treatment",
+          "value": [
+            1
+          ]
+        },
+        {
+          "key": "Conict-Before treatment vs Conict treatment",
+          "value": [
+            1
+          ]
+        },
+        {
+          "key": "No-Conict-Before treatment vs Conict treatment",
+          "value": [
+            1
+          ]
+        }
+      ],
+      "evidence_source": "The text provides percentages for choices but does not provide the total number of participants (N) for any of the conditions.",
+      "block_id": "None",
+      "warning": "Total N for each cell is not explicitly stated, only percentages are given. Returning 1 as a placeholder for each cell, but actual N is unknown."
+    },
+    "N_Self_CI_Tmt": {
+      "extract_value": [
+        {
+          "key": "Before treatment vs Conict treatment",
+          "value": [
+            1
+          ]
+        },
+        {
+          "key": "After treatment vs Conict treatment",
+          "value": [
+            1
+          ]
+        },
+        {
+          "key": "Conict-Before treatment vs Conict treatment",
+          "value": [
+            1
+          ]
+        },
+        {
+          "key": "No-Conict-Before treatment vs Conict treatment",
+          "value": [
+            1
+          ]
+        }
+      ],
+      "evidence_source": "The text provides percentages for selfish choices but does not provide the total number of participants (N) for any of the conditions, making it impossible to extract integer counts. Returning 1 as a placeholder for each cell, but actual N is unknown.",
+      "block_id": "page/4/Text/5, page/5/Text/4",
+      "warning": "Only percentages are reported for selfish choices in Tmt conditions (58% for Before, 34% for After, 38% for Conict-Before, 34% for No-Conict-Before). No total N is provided to convert these to integer counts."
+    },
+    "N_Self_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Before treatment vs Conict treatment",
+          "value": [
+            1
+          ]
+        },
+        {
+          "key": "After treatment vs Conict treatment",
+          "value": [
+            1
+          ]
+        },
+        {
+          "key": "Conict-Before treatment vs Conict treatment",
+          "value": [
+            1
+          ]
+        },
+        {
+          "key": "No-Conict-Before treatment vs Conict treatment",
+          "value": [
+            1
+          ]
+        }
+      ],
+      "evidence_source": "The text states '29% in the dictator game with full information (the Conict treatment)' but does not provide the total number of participants (N) for this condition, making it impossible to extract an integer count. Returning 1 as a placeholder for each cell, but actual N is unknown.",
+      "block_id": "page/4/Text/5",
+      "warning": "Only a percentage (29%) is reported for selfish choices in the Ctr condition. No total N is provided to convert this to an integer count."
+    },
+    "N_Altr_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Before treatment vs Conict treatment",
+          "value": [
+            1
+          ]
+        },
+        {
+          "key": "After treatment vs Conict treatment",
+          "value": [
+            1
+          ]
+        },
+        {
+          "key": "Conict-Before treatment vs Conict treatment",
+          "value": [
+            1
+          ]
+        },
+        {
+          "key": "No-Conict-Before treatment vs Conict treatment",
+          "value": [
+            1
+          ]
+        }
+      ],
+      "evidence_source": "Cannot derive N_Altr_CI_Ctr because N_Tot_CI_Ctr and N_Self_CI_Ctr are not provided as integer counts in the text. Returning 1 as a placeholder for each cell, but actual N is unknown.",
+      "block_id": "None",
+      "warning": "Cannot derive N_Altr_CI_Ctr as N_Tot_CI_Ctr and N_Self_CI_Ctr are not reported as integer counts."
+    },
+    "N_Tot_CI_Tmt": {
+      "extract_value": [
+        {
+          "key": "Before treatment vs Conict treatment",
+          "value": [
+            1
+          ]
+        },
+        {
+          "key": "After treatment vs Conict treatment",
+          "value": [
+            1
+          ]
+        },
+        {
+          "key": "Conict-Before treatment vs Conict treatment",
+          "value": [
+            1
+          ]
+        },
+        {
+          "key": "No-Conict-Before treatment vs Conict treatment",
+          "value": [
+            1
+          ]
+        }
+      ],
+      "evidence_source": "The text provides percentages for choices but does not provide the total number of participants (N) for any of the Tmt conditions. Returning 1 as a placeholder for each cell, but actual N is unknown.",
+      "block_id": "None",
+      "warning": "Total N for Tmt conditions is not explicitly stated, only percentages are given."
+    },
+    "N_Tot_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Before treatment vs Conict treatment",
+          "value": [
+            1
+          ]
+        },
+        {
+          "key": "After treatment vs Conict treatment",
+          "value": [
+            1
+          ]
+        },
+        {
+          "key": "Conict-Before treatment vs Conict treatment",
+          "value": [
+            1
+          ]
+        },
+        {
+          "key": "No-Conict-Before treatment vs Conict treatment",
+          "value": [
+            1
+          ]
+        }
+      ],
+      "evidence_source": "The text refers to 'the dictator game with full information (the Conict treatment)' but does not provide the total number of participants (N) for this condition. Returning 1 as a placeholder for each cell, but actual N is unknown.",
+      "block_id": "page/4/Text/5",
+      "warning": "Total N for the Ctr condition is not explicitly stated, only a percentage for selfish choices is given."
+    }
+  }
+}

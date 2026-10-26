@@ -1,0 +1,197 @@
+# Vu 2024 — cell terminology glossary
+# =======================================
+# Translates the variable Tmt_name / Ctr_name labels used in the 15 willful-
+# ignorance papers to Vu's canonical Hidden-Info (HI/Tmt) vs Full-Info (FI/Ctr)
+# axis. Used by the extractor to identify which condition is the "experimental
+# treatment" and which is the "control" — Jansen's #1 source of failure
+# (selecting the wrong cell as Tmt).
+
+# Conceptual axes
+axes:
+  state:
+    label: "Underlying payoff state"
+    values:
+      CI:
+        full: "Conflict state (Conflict of Interests)"
+        meaning: >
+          Dictator and recipient interests are MISALIGNED — the selfish option
+          ($6/$1 in Dana 2007) helps the dictator and hurts the recipient.
+          This is the cell we extract counts from.
+        synonyms:
+          - "conflict game"
+          - "conflict condition"
+          - "asymmetric payoff"
+          - "conflicting interests"
+          - "$6/$1 cell"
+          - "payoff state 1"
+          - "state B"
+          - "non-aligned state"
+      AI:
+        full: "Aligned state"
+        meaning: >
+          Dictator and recipient interests are ALIGNED — the selfish option is
+          also best for the recipient. Not extracted by Jansen.
+        synonyms:
+          - "aligned game"
+          - "non-conflict"
+          - "common interest"
+          - "$5/$5 cell"
+          - "symmetric payoff"
+          - "state A"
+
+  information:
+    label: "Information visibility"
+    values:
+      FI:
+        full: "Full Information (CONTROL)"
+        meaning: >
+          Recipient payoffs are visible from the start. This is the BASELINE
+          condition. Always the Ctr_name side.
+        synonyms:
+          - "Baseline"
+          - "Transparent"
+          - "Known information"
+          - "Revealed state"
+          - "Standard dictator"
+          - "Standard dictator game"
+          - "CIG Only"
+          - "Period 1"
+          - "Control"
+          - "Open"
+          - "Public payoffs"
+      HI:
+        full: "Hidden Information (EXPERIMENTAL TREATMENT)"
+        meaning: >
+          Recipient payoffs are CONCEALED by default but can be revealed (usually
+          for free, one click). This is the MANIPULATION OF INTEREST. Always
+          the Tmt_name side.
+        synonyms:
+          - "Hidden payoff"
+          - "Hidden information"
+          - "Non-transparent"
+          - "Hidden – conflict"
+          - "Hidden – time pressure"
+          - "Default NR"        # Grossman 2014 — no reveal default
+          - "Default R"         # Grossman 2014 — reveal default
+          - "Active choice"     # Grossman 2014 — neither default
+          - "Choice"            # Conrads 2013
+          - "Choice-UR"         # Conrads 2013 (Unknown Recipient)
+          - "Choice-H"          # Conrads 2013 (Hidden version)
+          - "Period 2"          # Matthey & Regner 2011
+          - "Reveal bonus"      # Grossman 2014 variant — paid 0.10 to reveal
+          - "Dictator – Ruler – Hidden"  # Cerrone & Engel 2019
+
+  choice:
+    label: "Dictator's choice"
+    values:
+      Self:
+        full: "Selfish choice"
+        meaning: >
+          The option that MAXIMIZES the dictator's payoff at the recipient's
+          expense. The $6/$1 option in Dana 2007 (option A in most papers).
+        synonyms:
+          - "option A"
+          - "$6/$1"
+          - "selfish option"
+          - "self-interested choice"
+          - "X option"
+          - "decision that prioritized own benefit"
+          - "self-serving choice"
+      Altr:
+        full: "Altruistic / prosocial choice"
+        meaning: >
+          The option that EQUALIZES or FAVORS the recipient. The $5/$5 option
+          in Dana 2007 (option B in most papers).
+        synonyms:
+          - "option B"
+          - "$5/$5"
+          - "prosocial option"
+          - "fair choice"
+          - "Y option"
+          - "decision that prioritized welfare of the recipient"
+          - "altruistic option"
+
+# Variable composition
+variables:
+  N_Self_CI_Tmt:
+    composition: "Number of (Selfish) choices in the (Conflict) state of the (Hidden-Information/Tmt) condition"
+    short: "Selfish choices in HI conflict cell"
+
+  N_Self_CI_Ctr:
+    composition: "Number of (Selfish) choices in the (Conflict) state of the (Full-Information/Ctr) condition"
+    short: "Selfish choices in FI baseline conflict cell"
+
+  N_Altr_CI_Ctr:
+    composition: "Number of (Altruistic) choices in the (Conflict) state of the (Full-Information/Ctr) condition"
+    short: "Altruistic choices in FI baseline conflict cell"
+    derived: true
+    formula: "N_Tot_CI_Ctr - N_Self_CI_Ctr"
+
+  N_Tot_CI_Tmt:
+    composition: "Total participants in the (Conflict) state of the (Tmt) condition"
+
+  N_Tot_CI_Ctr:
+    composition: "Total participants in the (Conflict) state of the (Ctr) condition"
+
+# Critical extraction rules
+rules:
+  - rule_id: "tmt_vs_ctr_assignment"
+    text: >
+      The EXPERIMENTAL treatment (Tmt) is ALWAYS the Hidden Information
+      manipulation, never the Full Information baseline. If a paper has
+      multiple HI variants (e.g., Grossman 2014: Default NR / Active choice /
+      Default R), each becomes its own cell, all compared against the same
+      Baseline Ctr.
+
+  - rule_id: "shared_ctr_replication"
+    text: >
+      When N Tmt rows in a single paper share ONE Ctr_name (e.g., Grossman 2014
+      has 3 Tmts vs 1 Baseline), the Ctr-side N values are REPLICATED across
+      rows in WI_meta.csv. Extractor must not double-count: extract Ctr-side
+      values once per Ctr_name and copy across all cells that share it.
+
+  - rule_id: "within_subject_nullify_N"
+    text: >
+      For within-subject papers (Exley 2015, Matthey & Regner 2011, Soraperra
+      2020), the N_*_CI_* fields are NA in WI_meta.csv. Schema emits cells: []
+      and stores transition counts in transitions: {N_Self_Self, N_Self_Altr,
+      N_Altr_Self, N_Altr_Altr} instead. Likely matches Jansen's NA gold.
+
+  - rule_id: "altr_ctr_identity"
+    text: >
+      N_Altr_CI_Ctr = N_Tot_CI_Ctr - N_Self_CI_Ctr is an exact identity for
+      every paper Vu coded. PREFERRED extraction: derive via this formula
+      rather than search the paper for "N prosocial choices in baseline"
+      (which is often reported only as a proportion).
+
+  - rule_id: "cell_count_sanity"
+    text: >
+      Per cell: N_Self_CI_Tmt + N_Altr_CI_Tmt == N_Tot_CI_Tmt; same for Ctr.
+      Flag any extraction violating this.
+
+  - rule_id: "info_cost_default_zero"
+    text: >
+      For all 15 Jansen-included papers info_cost = 0.0 (information is FREE).
+      Default to 0.0 unless paper explicitly states a monetary cost. Do NOT
+      attempt ECU→USD→PPP conversion otherwise — the brittle multi-step prompt
+      is solving a problem that doesn't exist in this corpus.
+
+# Per-paper Tmt_name and Ctr_name labels (from WI_meta.csv)
+# Use these to disambiguate which condition is which when reading the paper.
+per_paper_labels:
+  Bartling2014:    {tmt: ["Hidden information"],                              ctr: ["Baseline"]}
+  Cerrone2019:     {tmt: ["Dictator – Ruler – Hidden"],                       ctr: ["Dictator – Ruler"]}
+  Conrads2013:     {tmt: ["Choice", "Choice-UR", "Choice-H"],                 ctr: ["Transparency"]}
+  Dana2007:        {tmt: ["Hidden payoff"],                                   ctr: ["Baseline"]}
+  Exley2015:       {tmt: ["within-subject HI"],                               ctr: ["Revealed state"]}      # within-subject
+  Exley2021:       {tmt: ["Hidden info 1", "Hidden info 2", "Hidden info 3"], ctr: ["Known information 1", "Known information 2", "Known information 3"]}
+  Grossman2014:    {tmt: ["Default NR", "Active choice", "Default R"],        ctr: ["Baseline"]}            # all share Baseline
+  Grossman2017:    {tmt: ["Hidden information", "Reveal bonus"],              ctr: ["CIG Only"]}
+  Jarke-Neuert2022: {tmt: ["Hidden-no-time-pressure", "Hidden-time-pressure"], ctr: ["Transparent – no time pressure", "Transparent – time pressure"]}
+  Kappes2018:      {tmt: ["S1 Uncertain", "S1 Low income", "S1 High income", "S1 Control",
+                          "S2 Uncertain", "S2 Low", "S2 High"],               ctr: ["S1 Outcome Certainty", "S2 Standard dictator"]}
+  Larson2009:      {tmt: ["Non-transparent – conflict"],                      ctr: ["Transparent"]}
+  Lind2019:        {tmt: ["Hidden", "Hypothetical", "Stranger", "Partner"],   ctr: ["Baselline"]}            # sic in WI_meta
+  Matthey2011:     {tmt: ["Period 2"],                                        ctr: ["Period 1"]}            # within-subject
+  Moradi2018:      {tmt: ["Before", "Conflict-Before"],                       ctr: ["Baseline"]}
+  Stuber2019:      {tmt: ["Hidden information"],                              ctr: ["Baseline"]}

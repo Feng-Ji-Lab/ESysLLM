@@ -1,0 +1,24 @@
+{
+  "resolved_samples": [
+    {
+      "sample_key": "Study 1 - whole sample | life satisfaction | wave 1",
+      "values": [
+        null
+      ],
+      "best_indices": [
+        0
+      ],
+      "reasoning": "The candidate provides a list of item-level standard deviations ([1.48, 1.35, 1.38, 1.44, 1.89]), but the field 'SD_SWB' expects a single standard deviation for the overall scale, represented as a single-element list '[value]'. Since the candidate's output is a list of multiple values, it does not conform to the expected VALUE SHAPE for this field, and no single scale SD can be extracted without synthesis."
+    },
+    {
+      "sample_key": "Study 1 - whole sample | life satisfaction | wave 2",
+      "values": [
+        null
+      ],
+      "best_indices": [
+        0
+      ],
+      "reasoning": "The candidate provides a list of item-level standard deviations ([1.48, 1.31, 1.38, 1.44, 1.95]), but the field 'SD_SWB' expects a single standard deviation for the overall scale, represented as a single-element list '[value]'. Since the candidate's output is a list of multiple values, it does not conform to the expected VALUE SHAPE for this field, and no single scale SD can be extracted without synthesis."
+    }
+  ]
+}

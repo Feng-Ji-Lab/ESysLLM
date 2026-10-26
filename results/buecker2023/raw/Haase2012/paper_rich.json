@@ -1,0 +1,447 @@
+{
+  "paper_id": "Haase2012",
+  "pdf_path": "Haase2012.pdf",
+  "marker_output_dir": "/projects/code/meta_analysis_agent/data/processed/buecker2023/Haase2012",
+  "samples": [
+    {
+      "study_index": 1,
+      "sample_label": "whole sample | positive affect | wave 1"
+    },
+    {
+      "study_index": 1,
+      "sample_label": "whole sample | positive affect | wave 2"
+    }
+  ],
+  "fields": {
+    "Sample": {
+      "name": "Sample",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | positive affect | wave 1": {
+          "values": [
+            {
+              "value": 752,
+              "evidence": [
+                {
+                  "pdf_name": "Haase2012.pdf",
+                  "section_id": "012_results",
+                  "section_title": "Results",
+                  "block_id": "/page/3/Table/2",
+                  "page": 3,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1. Study I: Descriptive Statistics and Correlations for Study Variables (N = 752)",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | positive affect | wave 2": {
+          "values": [
+            {
+              "value": 752,
+              "evidence": [
+                {
+                  "pdf_name": "Haase2012.pdf",
+                  "section_id": "012_results",
+                  "section_title": "Results",
+                  "block_id": "/page/3/Table/2",
+                  "page": 3,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1. Study I: Descriptive Statistics and Correlations for Study Variables (N = 752)",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    },
+    "infoYearT1": {
+      "name": "infoYearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "estimated",
+        "evidence": [
+          {
+            "pdf_name": "Haase2012.pdf",
+            "section_id": "003_abstract",
+            "section_title": "Abstract",
+            "block_id": "003_abstract",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/6] In Study 1, positive affect predicted primary control striving for career goals in a two-wave longitudinal study of a U.S. sample. In Study 2, positive affect predicted primary control striving for career and educational goals and objective career outcomes in a six-wave longitudinal study of a German sample.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "yearT1": {
+      "name": "yearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 2008,
+        "evidence": [],
+        "derivation": {
+          "kind": "infer_constant",
+          "skill_name": "estimate_yeart1_from_pubyear",
+          "inputs": {
+            "publication_year": 2012,
+            "span": 1.0,
+            "span_source": "lag*1waves"
+          },
+          "formula": "yearT1 = publication_year - 3 - span",
+          "note": "Buecker gold estimation rule for an unreported (Estimated) baseline year"
+        },
+        "confidence": 0.4
+      }
+    },
+    "country": {
+      "name": "country",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "united states/germany",
+        "evidence": [
+          {
+            "pdf_name": "Haase2012.pdf",
+            "section_id": "003_abstract",
+            "section_title": "Abstract",
+            "block_id": "003_abstract",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/6] In Study 1, positive affect predicted primary control striving for career goals in a two-wave longitudinal study of a U.S. sample. In Study 2, positive affect predicted primary control striving for career and educational goals and objective career outcomes in a six-wave longitudinal study of a German sample.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "Outcome_variable": {
+      "name": "Outcome_variable",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "positive affect, negative affect",
+        "evidence": [
+          {
+            "pdf_name": "Haase2012.pdf",
+            "section_id": "003_abstract",
+            "section_title": "Abstract",
+            "block_id": "003_abstract",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/6] We propose that positive affect predicts primary control striving for career and educational goals, and we explore the mediating role of control beliefs. In Study 1, positive affect predicted primary control striving for career goals in a two-wave longitudinal study of a U.S. sample. In Study 2, positive affect predicted primary control striving for career and educational goals and objective career outcomes in a six-wave longitudinal study of a German sample.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "sample_type": {
+      "name": "sample_type",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "community/convenience",
+        "evidence": [
+          {
+            "pdf_name": "Haase2012.pdf",
+            "section_id": "003_abstract",
+            "section_title": "Abstract",
+            "block_id": "003_abstract",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/6] In Study 1, positive affect predicted primary control striving for career goals in a two-wave longitudinal study of a U.S. sample. In Study 2, positive affect predicted primary control striving for career and educational goals and objective career outcomes in a six-wave longitudinal study of a German sample.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "ethnicity": {
+      "name": "ethnicity",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "other",
+        "evidence": [
+          {
+            "pdf_name": "Haase2012.pdf",
+            "section_id": "003_abstract",
+            "section_title": "Abstract",
+            "block_id": "003_abstract",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/6] In Study 1, positive affect predicted primary control striving for career goals in a two-wave longitudinal study of a U.S. sample. In Study 2, positive affect predicted primary control striving for career and educational goals and objective career outcomes in a six-wave longitudinal study of a German sample.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "lag": {
+      "name": "lag",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 1.0,
+        "evidence": [
+          {
+            "pdf_name": "Haase2012.pdf",
+            "section_id": "011_measures",
+            "section_title": "Measures",
+            "block_id": "011_measures",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/2/Text/13] Study 1 used a two-wave longitudinal design. Data were collected shortly before school graduation (Wave 1) and 1 year after graduation (Wave 2).",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "M_SWB": {
+      "name": "M_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | positive affect | wave 1": {
+          "values": [
+            {
+              "value": 3.27,
+              "evidence": [
+                {
+                  "pdf_name": "Haase2012.pdf",
+                  "section_id": "012_results",
+                  "section_title": "Results",
+                  "block_id": "/page/3/Table/2",
+                  "page": 3,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1. Study I: Descriptive Statistics and Correlations for Study Variables (N = 752) -> Variables -> 1. W1 Positive affect -> M (SD) = 3.27 (0.64); 5. W2 Positive affect -> M (SD) = 3.31 (0.66)",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | positive affect | wave 2": {
+          "values": [
+            {
+              "value": 3.31,
+              "evidence": [
+                {
+                  "pdf_name": "Haase2012.pdf",
+                  "section_id": "012_results",
+                  "section_title": "Results",
+                  "block_id": "/page/3/Table/2",
+                  "page": 3,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1. Study I: Descriptive Statistics and Correlations for Study Variables (N = 752) -> Variables -> 1. W1 Positive affect -> M (SD) = 3.27 (0.64); 5. W2 Positive affect -> M (SD) = 3.31 (0.66)",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    },
+    "SD_SWB": {
+      "name": "SD_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | positive affect | wave 1": {
+          "values": [
+            {
+              "value": 0.64,
+              "evidence": [
+                {
+                  "pdf_name": "Haase2012.pdf",
+                  "section_id": "012_results",
+                  "section_title": "Results",
+                  "block_id": "/page/3/Table/2",
+                  "page": 3,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1. Study I: Descriptive Statistics and Correlations for Study Variables (N = 752) -> Variables -> 1. W1 Positive affect -> M (SD) = 3.27 (0.64); 5. W2 Positive affect -> M (SD) = 3.31 (0.66)",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | positive affect | wave 2": {
+          "values": [
+            {
+              "value": 0.66,
+              "evidence": [
+                {
+                  "pdf_name": "Haase2012.pdf",
+                  "section_id": "012_results",
+                  "section_title": "Results",
+                  "block_id": "/page/3/Table/2",
+                  "page": 3,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1. Study I: Descriptive Statistics and Correlations for Study Variables (N = 752) -> Variables -> 1. W1 Positive affect -> M (SD) = 3.27 (0.64); 5. W2 Positive affect -> M (SD) = 3.31 (0.66)",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    }
+  },
+  "warnings": [
+    {
+      "code": "ungrounded_candidate",
+      "message": "002_happiness_as_a_motivator_positive_affect_predicts_/infoYearT1: quote not found in section (likely hallucinated): 'The text provides the publication year (2012) but does not state the calendar ye'",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "002_happiness_as_a_motivator_positive_affect_predicts_/ethnicity: quote not found in section (likely hallucinated): 'The text does not report the ethnic composition of the sample.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "004_keywords/ethnicity: quote not found in section (likely hallucinated): 'No information about the ethnicity of the sample is provided in this section.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "006_corresponding_author/ethnicity: quote not found in section (likely hallucinated): 'The text does not provide any information about the ethnic composition of the sa'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "011_measures/ethnicity: quote not found in section (likely hallucinated): 'Ethnicity composition is not reported in this section.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "012_results/ethnicity: quote not found in section (likely hallucinated): 'No information about the ethnicity of the sample is provided in the text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "015_method/ethnicity: quote not found in section (likely hallucinated): 'Ethnicity information is not provided in the text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "016_measures/ethnicity: quote not found in section (likely hallucinated): 'No information on ethnicity is provided in the text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "017_results/ethnicity: quote not found in section (likely hallucinated): 'Ethnicity of the sample is not mentioned in the provided text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "018_discussion/ethnicity: quote not found in section (likely hallucinated): 'Ethnicity composition is not reported in the provided text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "019_general_discussion/ethnicity: quote not found in section (likely hallucinated): 'Ethnicity information is not provided in the text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "020_positive_affect_predicts_primary_control_striving_/ethnicity: quote not found in section (likely hallucinated): 'The race/ethnicity of the sample is not reported in this section.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    }
+  ],
+  "run_meta": {
+    "run_id": "Haase2012",
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "schema_name": "buecker2023",
+    "schema_version": 1,
+    "skill_names": [
+      "bas2_over_bas",
+      "compute_weighted_mean_total",
+      "estimate_yeart1_from_pubyear",
+      "gender-mapping",
+      "hien_arm_taxonomy",
+      "infer_college_sample_100",
+      "infer_ethnicity_from_country",
+      "info_cost_clamp_zero",
+      "ng_mediator_lookup",
+      "ng_source_smallest_number",
+      "single_gender_fill",
+      "study_naming",
+      "table-parsing",
+      "total_geq_sum",
+      "vu_altr_ctr_identity",
+      "vu_cell_count_localization",
+      "vu_cell_terminology",
+      "vu_country_mturk",
+      "vu_info_cost_default"
+    ],
+    "started_at": "2026-07-08T19:52:25.513172Z",
+    "finished_at": "2026-07-08T19:57:49.862465Z",
+    "prompt_tokens": 422630,
+    "completion_tokens": 49109,
+    "passes": 272,
+    "aggregator_passes": 10
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "resolved_samples": [
+    {
+      "sample_key": "Study 1 - Choice-to-Reveal Question (Unaligned State) vs Revealed-State Questions (Unaligned State)",
+      "values": [
+        51
+      ],
+      "best_indices": [
+        1
+      ],
+      "reasoning": "Candidate 1 directly reports a value of 51 from Table C.1 for the 'Unaligned State', 'Choice-to-Reveal Question' condition, which corresponds to the experimental treatment in the conflict state. This is preferred as per heuristic rule 3 (prefer numerical evidence from tables)."
+    },
+    {
+      "sample_key": "Study 1 - Choice-to-Reveal Question (Unaligned State*) vs Revealed-State Questions (Unaligned State*)",
+      "values": [
+        null
+      ],
+      "best_indices": [
+        1
+      ],
+      "reasoning": "Candidate 1 provided a value of -999 for this sample key. This value is outside the valid range [0, 1000] for N counts and is rejected as per heuristic rule 4. No other candidate provides a valid value for this specific sample key, leading to a null resolution."
+    }
+  ]
+}

@@ -1,0 +1,581 @@
+{
+  "paper_id": "Li2014",
+  "pdf_path": "Li2014.pdf",
+  "marker_output_dir": "/projects/code/meta_analysis_agent/data/processed/buecker2023/Li2014",
+  "samples": [],
+  "fields": {
+    "Sample": {
+      "name": "Sample",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": null
+    },
+    "infoYearT1": {
+      "name": "infoYearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "estimated",
+        "evidence": [
+          {
+            "pdf_name": "Li2014.pdf",
+            "section_id": "001_psychological_mechanism_of_subjective_wellbeing_a_",
+            "section_title": "Psychological Mechanism of Subjective Well-Being: A Stable Trait or Situational Variability",
+            "block_id": "/page/0/Text/4",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/4] The study was conducted based on a 1-year and three-wave longitudinal study with a sample of 360 college students.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "yearT1": {
+      "name": "yearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 2010,
+        "evidence": [],
+        "derivation": {
+          "kind": "infer_constant",
+          "skill_name": "estimate_yeart1_from_pubyear",
+          "inputs": {
+            "publication_year": 2014,
+            "span": 1.0,
+            "span_source": "lag*2waves"
+          },
+          "formula": "yearT1 = publication_year - 3 - span",
+          "note": "Buecker gold estimation rule for an unreported (Estimated) baseline year"
+        },
+        "confidence": 0.4
+      }
+    },
+    "country": {
+      "name": "country",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "China",
+        "evidence": [
+          {
+            "pdf_name": "Li2014.pdf",
+            "section_id": "001_psychological_mechanism_of_subjective_wellbeing_a_",
+            "section_title": "Psychological Mechanism of Subjective Well-Being: A Stable Trait or Situational Variability",
+            "block_id": "/page/0/Text/6",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/6] Medical Psychological Institute, Second Xiangya Hospital, Central South University, #139 Ren-Min Zhong Road, Changsha 410011, Hunan, People's Republic of China",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "Outcome_variable": {
+      "name": "Outcome_variable",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "life satisfaction,positive affect,negative affect",
+        "evidence": [
+          {
+            "pdf_name": "Li2014.pdf",
+            "section_id": "001_psychological_mechanism_of_subjective_wellbeing_a_",
+            "section_title": "Psychological Mechanism of Subjective Well-Being: A Stable Trait or Situational Variability",
+            "block_id": "/page/0/Text/4",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/4] The study was conducted based on a 1-year and three-wave longitudinal study with a sample of 360 college students. The results show the suitability of the IT model. The consistency coefficients (CO) of all variables are significantly higher than occasion-specificity coefficients (OSpe) in this model, indicating that stability is a remarkable feature of SWB. Moreover, the consistency coefficients of positive affection and negative affection are much higher than that of life satisfaction, suggesting that the positive and negative emotions of individuals are more stable than life satisfaction.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "sample_type": {
+      "name": "sample_type",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "college/university students",
+        "evidence": [
+          {
+            "pdf_name": "Li2014.pdf",
+            "section_id": "001_psychological_mechanism_of_subjective_wellbeing_a_",
+            "section_title": "Psychological Mechanism of Subjective Well-Being: A Stable Trait or Situational Variability",
+            "block_id": "/page/0/Text/4",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/4] The study was conducted based on a 1-year and three-wave longitudinal study with a sample of 360 college students.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "ethnicity": {
+      "name": "ethnicity",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "predominantly asian",
+        "evidence": [
+          {
+            "pdf_name": "Li2014.pdf",
+            "section_id": "004_12_latent_statetrait_lst_model",
+            "section_title": "1.2 Latent State-Trait (LST) Model",
+            "block_id": "None",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "No information regarding the ethnicity of the sample is provided in the text.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "lag": {
+      "name": "lag",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 0.3333333333333333,
+        "evidence": [
+          {
+            "pdf_name": "Li2014.pdf",
+            "section_id": "001_psychological_mechanism_of_subjective_wellbeing_a_",
+            "section_title": "Psychological Mechanism of Subjective Well-Being: A Stable Trait or Situational Variability",
+            "block_id": "/page/0/Text/4",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/4] The study was conducted based on a 1-year and three-wave longitudinal study with a sample of 360 college students.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "M_SWB": {
+      "name": "M_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "whole sample | life satisfaction | wave 1": {
+          "values": [
+            {
+              "value": 19.77,
+              "evidence": [
+                {
+                  "pdf_name": "Li2014.pdf",
+                  "section_id": "014_33_consistency_coefficient_co_occasionspecificity_",
+                  "section_title": "3.3 Consistency Coefficient (CO), Occasion-Specificity Coefficient (OSpe) and Reliability Coefficient (Rel)",
+                  "block_id": "/page/7/Table/2",
+                  "page": 7,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1 Mean value, standard deviation, and correlation matrix, column 'M ± SD'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "whole sample | positive affect | wave 1": {
+          "values": [
+            {
+              "value": 30.68,
+              "evidence": [
+                {
+                  "pdf_name": "Li2014.pdf",
+                  "section_id": "014_33_consistency_coefficient_co_occasionspecificity_",
+                  "section_title": "3.3 Consistency Coefficient (CO), Occasion-Specificity Coefficient (OSpe) and Reliability Coefficient (Rel)",
+                  "block_id": "/page/7/Table/2",
+                  "page": 7,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1 Mean value, standard deviation, and correlation matrix, column 'M ± SD'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "whole sample | negative affect | wave 1": {
+          "values": [
+            {
+              "value": 22.14,
+              "evidence": [
+                {
+                  "pdf_name": "Li2014.pdf",
+                  "section_id": "014_33_consistency_coefficient_co_occasionspecificity_",
+                  "section_title": "3.3 Consistency Coefficient (CO), Occasion-Specificity Coefficient (OSpe) and Reliability Coefficient (Rel)",
+                  "block_id": "/page/7/Table/2",
+                  "page": 7,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1 Mean value, standard deviation, and correlation matrix, column 'M ± SD'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "whole sample | life satisfaction | wave 2": {
+          "values": [
+            {
+              "value": 20.38,
+              "evidence": [
+                {
+                  "pdf_name": "Li2014.pdf",
+                  "section_id": "014_33_consistency_coefficient_co_occasionspecificity_",
+                  "section_title": "3.3 Consistency Coefficient (CO), Occasion-Specificity Coefficient (OSpe) and Reliability Coefficient (Rel)",
+                  "block_id": "/page/7/Table/2",
+                  "page": 7,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1 Mean value, standard deviation, and correlation matrix, column 'M ± SD'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "whole sample | positive affect | wave 2": {
+          "values": [
+            {
+              "value": 30.53,
+              "evidence": [
+                {
+                  "pdf_name": "Li2014.pdf",
+                  "section_id": "014_33_consistency_coefficient_co_occasionspecificity_",
+                  "section_title": "3.3 Consistency Coefficient (CO), Occasion-Specificity Coefficient (OSpe) and Reliability Coefficient (Rel)",
+                  "block_id": "/page/7/Table/2",
+                  "page": 7,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1 Mean value, standard deviation, and correlation matrix, column 'M ± SD'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "whole sample | negative affect | wave 2": {
+          "values": [
+            {
+              "value": 21.7,
+              "evidence": [
+                {
+                  "pdf_name": "Li2014.pdf",
+                  "section_id": "014_33_consistency_coefficient_co_occasionspecificity_",
+                  "section_title": "3.3 Consistency Coefficient (CO), Occasion-Specificity Coefficient (OSpe) and Reliability Coefficient (Rel)",
+                  "block_id": "/page/7/Table/2",
+                  "page": 7,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1 Mean value, standard deviation, and correlation matrix, column 'M ± SD'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "whole sample | life satisfaction | wave 3": {
+          "values": [
+            {
+              "value": 20.96,
+              "evidence": [
+                {
+                  "pdf_name": "Li2014.pdf",
+                  "section_id": "014_33_consistency_coefficient_co_occasionspecificity_",
+                  "section_title": "3.3 Consistency Coefficient (CO), Occasion-Specificity Coefficient (OSpe) and Reliability Coefficient (Rel)",
+                  "block_id": "/page/7/Table/2",
+                  "page": 7,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1 Mean value, standard deviation, and correlation matrix, column 'M ± SD'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "whole sample | positive affect | wave 3": {
+          "values": [
+            {
+              "value": 30.12,
+              "evidence": [
+                {
+                  "pdf_name": "Li2014.pdf",
+                  "section_id": "014_33_consistency_coefficient_co_occasionspecificity_",
+                  "section_title": "3.3 Consistency Coefficient (CO), Occasion-Specificity Coefficient (OSpe) and Reliability Coefficient (Rel)",
+                  "block_id": "/page/7/Table/2",
+                  "page": 7,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1 Mean value, standard deviation, and correlation matrix, column 'M ± SD'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "whole sample | negative affect | wave 3": {
+          "values": [
+            {
+              "value": 21.96,
+              "evidence": [
+                {
+                  "pdf_name": "Li2014.pdf",
+                  "section_id": "014_33_consistency_coefficient_co_occasionspecificity_",
+                  "section_title": "3.3 Consistency Coefficient (CO), Occasion-Specificity Coefficient (OSpe) and Reliability Coefficient (Rel)",
+                  "block_id": "/page/7/Table/2",
+                  "page": 7,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1 Mean value, standard deviation, and correlation matrix, column 'M ± SD'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    },
+    "SD_SWB": {
+      "name": "SD_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "whole sample | life satisfaction | wave 1": {
+          "values": [
+            {
+              "value": 4.74,
+              "evidence": [
+                {
+                  "pdf_name": "Li2014.pdf",
+                  "section_id": "014_33_consistency_coefficient_co_occasionspecificity_",
+                  "section_title": "3.3 Consistency Coefficient (CO), Occasion-Specificity Coefficient (OSpe) and Reliability Coefficient (Rel)",
+                  "block_id": "/page/7/Table/2",
+                  "page": 7,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1 Mean value, standard deviation, and correlation matrix, column 'M ± SD'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "whole sample | life satisfaction | wave 2": {
+          "values": [
+            {
+              "value": 4.52,
+              "evidence": [
+                {
+                  "pdf_name": "Li2014.pdf",
+                  "section_id": "014_33_consistency_coefficient_co_occasionspecificity_",
+                  "section_title": "3.3 Consistency Coefficient (CO), Occasion-Specificity Coefficient (OSpe) and Reliability Coefficient (Rel)",
+                  "block_id": "/page/7/Table/2",
+                  "page": 7,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1 Mean value, standard deviation, and correlation matrix, column 'M ± SD'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "whole sample | life satisfaction | wave 3": {
+          "values": [
+            {
+              "value": 4.74,
+              "evidence": [
+                {
+                  "pdf_name": "Li2014.pdf",
+                  "section_id": "014_33_consistency_coefficient_co_occasionspecificity_",
+                  "section_title": "3.3 Consistency Coefficient (CO), Occasion-Specificity Coefficient (OSpe) and Reliability Coefficient (Rel)",
+                  "block_id": "/page/7/Table/2",
+                  "page": 7,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1 Mean value, standard deviation, and correlation matrix, column 'M ± SD'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    }
+  },
+  "warnings": [
+    {
+      "code": "ungrounded_candidate",
+      "message": "001_psychological_mechanism_of_subjective_wellbeing_a_/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "004_12_latent_statetrait_lst_model/ethnicity: quote not found in section (likely hallucinated): 'No information about the ethnicity of the sample is provided.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "005_2_methods/Sample: quote not found in section (likely hallucinated): 'Table 1: Descriptive Statistics for SWB Measures'",
+      "field_name": "Sample",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "005_2_methods/infoYearT1: quote not found in section (likely hallucinated): 'Data were collected in two waves, 12 months apart, in 2018 and 2019.'",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "005_2_methods/yearT1: quote not found in section (likely hallucinated): 'Data were collected in two waves, 12 months apart, in 2018 and 2019.'",
+      "field_name": "yearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "005_2_methods/country: quote not found in section (likely hallucinated): 'recruited from a nationally representative online panel in the United States.'",
+      "field_name": "country",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "005_2_methods/Outcome_variable: quote not found in section (likely hallucinated): 'Subjective well-being was assessed using the Satisfaction with Life Scale (SWLS;'",
+      "field_name": "Outcome_variable",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "005_2_methods/sample_type: quote not found in section (likely hallucinated): 'recruited from a nationally representative online panel in the United States.'",
+      "field_name": "sample_type",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "005_2_methods/ethnicity: quote not found in section (likely hallucinated): 'The sample was 75% White, 10% Black, 8% Hispanic, and 7% Asian.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "005_2_methods/lag: quote not found in section (likely hallucinated): 'Data were collected in two waves, 12 months apart, in 2018 and 2019.'",
+      "field_name": "lag",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "005_2_methods/M_SWB: quote not found in section (likely hallucinated): 'Table 1: Descriptive Statistics for SWB Measures'",
+      "field_name": "M_SWB",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "005_2_methods/SD_SWB: quote not found in section (likely hallucinated): 'Table 1: Descriptive Statistics for SWB Measures'",
+      "field_name": "SD_SWB",
+      "sample_key": null
+    },
+    {
+      "code": "unmapped_candidate",
+      "message": "candidate [0] from 014_33_consistency_coefficient_co_occasionspecificity_ carries value(s) [[6.33], [5.83], [5.54], [6.26], [6.05], [6.32]] not placed in any sample",
+      "field_name": "SD_SWB",
+      "sample_key": null
+    },
+    {
+      "code": "no_samples",
+      "message": "sample census returned no samples",
+      "field_name": null,
+      "sample_key": null
+    }
+  ],
+  "run_meta": {
+    "run_id": "Li2014",
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "schema_name": "buecker2023",
+    "schema_version": 1,
+    "skill_names": [
+      "bas2_over_bas",
+      "compute_weighted_mean_total",
+      "estimate_yeart1_from_pubyear",
+      "gender-mapping",
+      "hien_arm_taxonomy",
+      "infer_college_sample_100",
+      "infer_ethnicity_from_country",
+      "info_cost_clamp_zero",
+      "ng_mediator_lookup",
+      "ng_source_smallest_number",
+      "single_gender_fill",
+      "study_naming",
+      "table-parsing",
+      "total_geq_sum",
+      "vu_altr_ctr_identity",
+      "vu_cell_count_localization",
+      "vu_cell_terminology",
+      "vu_country_mturk",
+      "vu_info_cost_default"
+    ],
+    "started_at": "2026-07-08T23:51:15.482058Z",
+    "finished_at": "2026-07-08T23:55:23.203277Z",
+    "prompt_tokens": 304626,
+    "completion_tokens": 38333,
+    "passes": 149,
+    "aggregator_passes": 10
+  }
+}

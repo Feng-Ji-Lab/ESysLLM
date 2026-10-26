@@ -1,0 +1,83 @@
+{
+  "version": 3,
+  "meta_analysis": "Bennett et al. (2023) — Male suicide risk and recovery factors: a qualitative meta-synthesis",
+  "doi": "10.1037/bul0000397",
+  "jansen_label": "Bennett2023",
+  "rationale": "Bennett is a QUALITATIVE meta-synthesis: no effect sizes. The extraction unit is each included primary study; the task is the 4 categorical variables Jansen 2025 benchmarked (Country, Population, Type, Area). Gold lives in Jansen's d_long.xlsx at (study x variable) granularity; see eval/bennett2023/gold_studylevel.csv and docs/reports/2026-06-18-bennett2023-benchmark-feasibility.md. Population and Area are multi-label (a study can list several suicide-outcome groups, and 49/69 studies cover BOTH risk and recovery), so they aggregate to a study-level SET. Type is multi-label only for the rare primary+secondary study. Country is open-vocabulary free text.",
+  "fields": [
+    {
+      "name": "Sample",
+      "scope": "sample",
+      "gender_specific": false,
+      "type": "object",
+      "items_type": "integer",
+      "definition": "Anchors the within-paper study census. Each included PRIMARY paper is normally ONE study record -> sample_key 'main sample'. EXCEPTION: an article that explicitly reports multiple distinct sub-studies emits one record per sub-study -> 'Study 1', 'Study 2'. DO NOT put the author or year in the sample_key. The Country / Population / Type / Area values key off these same labels. total_n is the qualitative sample size if the paper reports one (else null) — it is NOT scored, it only anchors the census."
+    },
+    {
+      "name": "Country",
+      "scope": "study",
+      "gender_specific": false,
+      "type": "string",
+      "items_type": "string",
+      "definition": "The country in which the study was conducted (open vocabulary — any country name, e.g. 'UK', 'Ghana', 'Australia'). Determined from where data were collected / where the sample originated. If conducted in multiple countries, list each. Gold is stored lowercase; the validator normalizes case + common aliases (e.g. 'United Kingdom'->'uk', 'USA'/'United States'->'america').",
+      "skill_hints": "Read Methods / Participants for the study location or sample origin (university, city, recruitment site). Keywords: participants, origin, university, country, citizens.",
+      "validator_match": "string_normalized"
+    },
+    {
+      "name": "Population",
+      "scope": "study",
+      "gender_specific": false,
+      "type": "multi_label",
+      "items_type": "enum",
+      "allowed_values": [
+        "Attempted Suicide (Mixed)",
+        "Attempted Suicide (Men)",
+        "Bereaved (Male Suicide)",
+        "Bereaved (Mixed)",
+        "Suicidal Ideation"
+      ],
+      "value_labels": {
+        "Attempted Suicide (Mixed)": "Individuals who made one or more suicide attempts but survived, both men and women",
+        "Attempted Suicide (Men)": "Suicide-attempt survivors, restricted to men only",
+        "Bereaved (Male Suicide)": "People bereaved by suicide where the deceased was male",
+        "Bereaved (Mixed)": "People bereaved by suicide, deceased of mixed/both genders",
+        "Suicidal Ideation": "Individuals with thoughts of ending their life without a suicide attempt"
+      },
+      "definition": "Suicide-experience group(s) that DEFINE the study SAMPLE — i.e. who was recruited (the inclusion criteria), NOT every suicide phenomenon discussed. Multi-label ONLY when the inclusion criteria explicitly recruited more than one distinct group (e.g. Lusk2018 recruited people with EITHER ideation OR an attempt -> two labels; Jordan2012 recruited attempters AND ideators -> two labels). Aggregates to a study-level set.",
+      "skill_hints": "ANCHOR to the SAMPLE's inclusion criteria in Participants/Methods ('we recruited men who had attempted suicide', 'eligible if history of ideation or attempt'). Set the gender qualifier from the SAMPLE composition: all-male sample -> (Men)/(Male Suicide); both genders -> (Mixed) — a generic phrase like 'suicide attempts' without gender does NOT override a men-only sample. Do NOT add a group just because: (a) participants describe it in the FINDINGS (men recruited as attempters who recount past ideation are NOT a 'Suicidal Ideation' sample); (b) it appears in the Introduction/background or a CITED other study. Keywords: 'participants were', 'we recruited', 'eligible', 'inclusion criteria', bereaved, attempted, ideation.",
+      "validator_match": "set_overlap",
+      "validator_note": "Gold strings in d_long are messy/compound (e.g. 'attempted suicide (men)' vs 'attempted suicide (male)', 'mixture'/'mixed', typo 'non-attemtped'). The validator normalizes to the 5 canonical labels before set comparison."
+    },
+    {
+      "name": "Type",
+      "scope": "study",
+      "gender_specific": false,
+      "type": "multi_label",
+      "items_type": "enum",
+      "allowed_values": ["Primary", "Secondary"],
+      "value_labels": {
+        "Primary": "Data collected directly by the researchers (interviews, surveys, experiments, observations)",
+        "Secondary": "Analysis of pre-existing data (prior studies, datasets, document/literature review)"
+      },
+      "definition": "Whether the DATA analyzed were collected specifically for THIS study (Primary) or pre-existed (Secondary). Decide from the data-provenance sentence. Secondary signals (about the DATA, not the method): (a) the data were previously reported/already collected ('as previously reported (Author, YEAR), our data...'); (b) the data belong to a larger/parent project ('forms part of a larger research project'). A METHOD/theory citation (e.g. 'psychological autopsy [Shneidman, 1981]') is NOT secondary data. A paper recruiting participants and collecting its own interviews with no (a)/(b) statement is Primary even if it cites much prior work. Usually a single value; multi-label only when genuinely both. ~85% are 'Primary' (degenerate) — report kappa alongside accuracy.",
+      "skill_hints": "Ask: were these data collected FOR this study, or drawn from a pre-existing/larger dataset? SECONDARY cues: 'data from our previous study / [prior citation]', 'as part of a larger study/project', 're-analysis', 'secondary analysis', 'the same dataset/narratives as [earlier paper]', 'drawn from a corpus collected for...'. If this paper re-analyzes interviews/narratives gathered for another study (even by the same authors) -> Secondary. Do NOT mark Secondary merely because the Method or theoretical constructs cite prior literature.",
+      "validator_match": "set_overlap"
+    },
+    {
+      "name": "Area",
+      "scope": "study",
+      "gender_specific": false,
+      "type": "multi_label",
+      "items_type": "enum",
+      "allowed_values": ["Risk", "Recovery"],
+      "value_labels": {
+        "Risk": "Examines factors that INCREASE male suicide risk (cultural norms, emotional suppression, social isolation, dysfunctional coping, impaired psychological-pain regulation)",
+        "Recovery": "Examines factors that support resilience/recovery (emotional regulation, meaningful social connection, positive self-perception, therapeutic intervention)"
+      },
+      "definition": "Whether the study's analytical FINDINGS about the participants speak to suicide RISK factors, RECOVERY/protective factors, or both. Judge from the study's own RESULTS/FINDINGS, not from framing words elsewhere. Multi-label and frequently BOTH (49/69 studies), so scored as set overlap. Emit Recovery ONLY if the findings actually report factors that supported resilience/recovery IN THE PARTICIPANTS — NOT from: a funder/charity acknowledgment (e.g. a suicide-PREVENTION charity), keywords, or a Discussion recommendation that 'better support could have helped'.",
+      "skill_hints": "Read the RESULTS/FINDINGS themes. Risk = findings about what increased these men's suicide risk (masculine norms, emotional suppression, isolation, dysfunctional coping). Recovery = findings about what helped them survive/recover/be resilient (emotional regulation, connection, meaning, help that worked). Emit {Risk, Recovery} only when the findings genuinely report BOTH. IGNORE for Area: acknowledgments, funding/charity names, keyword lists, and generic prevention recommendations.",
+      "validator_match": "set_overlap",
+      "validator_note": "Jansen scored Area at the quote/instance level (n~118/model) because most studies are both. We score the study-level set with overlap."
+    }
+  ]
+}

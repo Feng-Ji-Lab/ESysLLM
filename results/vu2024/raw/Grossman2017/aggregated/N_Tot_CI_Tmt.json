@@ -1,0 +1,35 @@
+{
+  "resolved_samples": [
+    {
+      "sample_key": "Study 1 - Hidden Information vs CIG Only",
+      "values": [
+        24
+      ],
+      "best_indices": [
+        1,
+        3
+      ],
+      "reasoning": "Candidates 1 and 3 both report N_Tot_CI_Tmt as 24 for 'Hidden Information vs CIG Only'. Candidate 3 extracts this value from a table, which is preferred over prose. Candidate 0 reports 120, which is an outlier and contradicted by two other candidates, including one from a table. Therefore, 24 is selected based on majority agreement and preference for table data."
+    },
+    {
+      "sample_key": "Study 1 - Reveal Ex post vs CIG Only",
+      "values": [
+        35
+      ],
+      "best_indices": [
+        3
+      ],
+      "reasoning": "Candidate 3 is the only candidate providing a value for 'Reveal Ex post vs CIG Only', reporting 35 from a table."
+    },
+    {
+      "sample_key": "Study 1 - Reveal Bonus vs CIG Only",
+      "values": [
+        8
+      ],
+      "best_indices": [
+        3
+      ],
+      "reasoning": "Candidate 3 reports N_Tot_CI_Tmt as 8 for 'Reveal Bonus vs CIG Only' from a table. Candidate 2 explicitly states that no N value was found for this condition, making its reported value of 0 invalid. Therefore, 8 is selected."
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "prompt_tokens": 13672,
+  "completion_tokens": 2964,
+  "data": {
+    "Design": {
+      "extract_value": "between-subject",
+      "evidence_source": "Table A.1 lists distinct 'Treatment' rows (Baseline, Hidden payoff, Hypothetical messenger, Stranger, Partner) with separate subject counts for each, indicating different groups of participants per condition.",
+      "block_id": "/page/20/Table/2",
+      "warning": ""
+    },
+    "country": {
+      "extract_value": "norway",
+      "evidence_source": "Lind 2019 is listed in the prompt as being conducted in Oslo, Norway.",
+      "block_id": "None",
+      "warning": ""
+    },
+    "info_cost": {
+      "extract_value": 0.0,
+      "evidence_source": "No explicit monetary cost for information revelation is mentioned in the provided text.",
+      "block_id": "None",
+      "warning": ""
+    },
+    "Sample": {
+      "extract_value": [
+        {
+          "key": "Hidden payoff vs Baseline",
+          "value": [
+            100
+          ]
+        },
+        {
+          "key": "Hypothetical messenger vs Baseline",
+          "value": [
+            64
+          ]
+        },
+        {
+          "key": "Stranger vs Baseline",
+          "value": [
+            62
+          ]
+        },
+        {
+          "key": "Partner vs Baseline",
+          "value": [
+            72
+          ]
+        }
+      ],
+      "evidence_source": "Derived from N_Tot_CI_Tmt + N_Tot_CI_Ctr for each cell. Hidden payoff vs Baseline: 55 + 45 = 100; Hypothetical messenger vs Baseline: 19 + 45 = 64; Stranger vs Baseline: 17 + 45 = 62; Partner vs Baseline: 27 + 45 = 72.",
+      "block_id": "/page/20/Table/2",
+      "warning": ""
+    },
+    "N_Self_CI_Tmt": {
+      "extract_value": "None",
+      "evidence_source": "The table 'Table A.1: Number of subjects by treatment, type, and state' provides the number of dictators in the 'Conflict' state but does not specify how many of them made selfish choices. The text mentions 'choosing X (the selfserving choice)' but does not provide counts.",
+      "block_id": "/page/20/Table/2",
+      "warning": ""
+    },
+    "N_Self_CI_Ctr": {
+      "extract_value": "None",
+      "evidence_source": "The table 'Table A.1: Number of subjects by treatment, type, and state' provides the number of dictators in the 'Conflict' state but does not specify how many of them made selfish choices. The text mentions 'choosing X (the selfserving choice)' but does not provide counts.",
+      "block_id": "/page/20/Table/2",
+      "warning": ""
+    },
+    "N_Altr_CI_Ctr": {
+      "extract_value": "None",
+      "evidence_source": "Cannot derive N_Altr_CI_Ctr as N_Self_CI_Ctr is not reported in the provided text or table.",
+      "block_id": "/page/20/Table/2",
+      "warning": ""
+    },
+    "N_Tot_CI_Tmt": {
+      "extract_value": [
+        {
+          "key": "Hidden payoff vs Baseline",
+          "value": [
+            55
+          ]
+        },
+        {
+          "key": "Hypothetical messenger vs Baseline",
+          "value": [
+            19
+          ]
+        },
+        {
+          "key": "Stranger vs Baseline",
+          "value": [
+            17
+          ]
+        },
+        {
+          "key": "Partner vs Baseline",
+          "value": [
+            27
+          ]
+        }
+      ],
+      "evidence_source": "Table A.1, row 'Hidden payoff', column 'Conflict': 55; Table A.1, row 'Hypothetical messenger', column 'Conflict': 19; Table A.1, row 'Stranger', column 'Conflict': 17; Table A.1, row 'Partner', column 'Conflict': 27.",
+      "block_id": "/page/20/Table/2",
+      "warning": ""
+    },
+    "N_Tot_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Hidden payoff vs Baseline",
+          "value": [
+            45
+          ]
+        },
+        {
+          "key": "Hypothetical messenger vs Baseline",
+          "value": [
+            45
+          ]
+        },
+        {
+          "key": "Stranger vs Baseline",
+          "value": [
+            45
+          ]
+        },
+        {
+          "key": "Partner vs Baseline",
+          "value": [
+            45
+          ]
+        }
+      ],
+      "evidence_source": "Table A.1, row 'Baseline', column 'Conflict': 45. This value is replicated across all cells sharing the 'Baseline' Ctr.",
+      "block_id": "/page/20/Table/2",
+      "warning": ""
+    }
+  }
+}

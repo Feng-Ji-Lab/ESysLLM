@@ -1,0 +1,26 @@
+{
+  "resolved_samples": [
+    {
+      "sample_key": "Study 1 - IPT arm",
+      "values": [
+        1
+      ],
+      "best_indices": [
+        0,
+        4,
+        7
+      ],
+      "reasoning": "Multiple candidates, including the abstract (0), the treatment conditions description (4), and the data analyses section (7), identify Family-Based Interpersonal Psychotherapy (FB-IPT) as the IPT arm and explicitly code it as 1."
+    },
+    {
+      "sample_key": "Study 1 - CBT arm",
+      "values": [
+        0
+      ],
+      "best_indices": [
+        7
+      ],
+      "reasoning": "The paper describes Child-Centered Therapy (CCT) as the comparison arm. While CCT is not explicitly CBT, candidate (7) from the data analyses section explicitly dummy codes CCT as 0, which is the value for the non-IPT arm in this binary field. Given the fixed sample key 'Study 1 - CBT arm', CCT is mapped to this key as the non-IPT treatment."
+    }
+  ]
+}

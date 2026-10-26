@@ -1,0 +1,59 @@
+# Vu 2024 — country normalization rules
+# =========================================
+# Jansen's gold has 5 country values; "mturk/prolifics" is NOT a country, it's
+# an online-panel identifier.
+
+allowed_values:
+  - germany
+  - mturk/prolifics
+  - norway
+  - switzerland
+  - united states
+
+decision_tree:
+  - check: "Was the study run on Amazon MTurk, Prolific (Academic), CloudResearch, or any US-based online panel?"
+    if_yes: "mturk/prolifics"
+  - check: "Is the lab/university in the United States (other than MTurk-style online)?"
+    if_yes: "united states"
+  - check: "Lab in Germany or Deutschland?"
+    if_yes: "germany"
+  - check: "Lab in Switzerland or Schweiz or Suisse?"
+    if_yes: "switzerland"
+  - check: "Lab in Norway or Norge?"
+    if_yes: "norway"
+
+synonyms:
+  united states: ["USA", "U.S.", "U.S.A.", "United States of America", "US", "America", "American"]
+  germany:       ["Deutschland"]
+  switzerland:   ["Schweiz", "Suisse", "Svizzera"]
+
+online_panel_keywords:
+  - "Amazon Mechanical Turk"
+  - "MTurk"
+  - "Mechanical Turk"
+  - "Prolific"
+  - "Prolific Academic"
+  - "CloudResearch"
+  - "MTurk Prime"
+
+# Per-paper assignments (from WI_meta.csv)
+per_paper:
+  Bartling2014:     switzerland
+  Cerrone2019:      germany
+  Conrads2013:      germany
+  Dana2007:         united states
+  Exley2015:        united states
+  Exley2021:        mturk/prolifics   # Harvard MTurk panel
+  Grossman2014:     united states     # UCSB
+  Grossman2017:     united states     # UCSB / van der Weele (Amsterdam, but study run on US sample)
+  Jarke-Neuert2022: germany
+  Kappes2018:       mturk/prolifics   # Crockett lab Oxford, MTurk recruitment
+  Larson2009:       united states
+  Lind2019:         norway
+  Matthey2011:      germany
+  Moradi2018:       germany
+  Stuber2019:       germany
+
+excluded_from_jansen_15:
+  Pace2020:         netherlands       # not in Jansen's 5-value enum → excluded
+  Soraperra2020:    france            # not in Jansen's 5-value enum → excluded

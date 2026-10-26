@@ -1,0 +1,50 @@
+{
+  "version": 2,
+  "meta_analysis": "Vu et al. (2024) — Ignorance by Choice meta-analysis (willful ignorance / moral wiggle room)",
+  "doi": "10.1037/bul0000418",
+  "jansen_label": "Vu2023",
+  "rationale": "Schema mirrors Jansen's 6 extracted variables. SCHEMA CONVENTION: 'sample' = a (Tmt × Ctr) comparison cell, so per-cell N_*_CI_* values are stored as object fields keyed by the cell label (e.g., 'Hidden information vs Baseline'). Paper-scope fields (Design, country, info_cost) are flat. Three load-bearing optimizations: (1) info_cost defaults to 0 (all 15 papers free-info); (2) N_Altr_CI_Ctr derived from N_Tot_CI_Ctr - N_Self_CI_Ctr identity; (3) within-subject papers (Exley 2015, Matthey 2011) emit `transitions` block instead of cell counts.",
+  "fields": [
+    {"name": "Design", "scope": "paper", "gender_specific": false,
+     "type": "enum_or_none", "allowed_values": ["between-subject", "within-subject"],
+     "definition": "Whether the study used a between-subject design (different participants in FI vs HI) or within-subject design (same participants experience both). Lowercase. Papers using a multiple-choices-within design should be classified as 'within-subject'."},
+
+    {"name": "country", "scope": "paper", "gender_specific": false,
+     "type": "enum_or_none", "allowed_values": ["germany", "mturk/prolifics", "norway", "switzerland", "united states"],
+     "definition": "Country where the study was conducted. Lowercase. SPECIAL CASE: US-based online panels (MTurk, Prolific, CloudResearch, MTurk Prime) → 'mturk/prolifics' (NOT 'united states'). Synonyms: USA/U.S./America → united states; Deutschland → germany; Schweiz/Suisse → switzerland.",
+     "case_rules": {"online_panel": "MTurk / Prolific / CloudResearch → 'mturk/prolifics'"}},
+
+    {"name": "info_cost", "scope": "paper", "gender_specific": false,
+     "type": "number",
+     "definition": "Cost to acquire information about the recipient's payoff, adjusted to 2015 USD by PPP. DEFAULT TO 0.0 unless the paper EXPLICITLY states a monetary cost (e.g., 'participants paid 1 ECU to reveal'). For all papers in this meta-analysis this is 0.0 (information reveal is FREE, one click). Phrases like 'free of charge', 'no cost', 'one click', 'costless reveal' → 0.0. Do NOT attempt the brittle ECU→USD→PPP conversion unless a non-zero cost is stated."},
+
+    {"name": "Sample", "scope": "sample", "gender_specific": false,
+     "type": "object", "items_type": "integer",
+     "definition": "Total participants in this (Tmt × Ctr) comparison cell, summed across both sides. One value per cell key. The cell key (sample_label) is the canonical census identifier — use 'Tmt_name vs Ctr_name' format with verbatim names from the paper (e.g., 'Hidden information vs Baseline', 'Default NR vs Baseline'). This field's primary purpose is to ANCHOR the cell census; the actual cell counts live in N_Self_CI_*, N_Altr_CI_*, N_Tot_CI_* below."},
+
+    {"name": "N_Self_CI_Tmt", "scope": "sample", "gender_specific": false,
+     "type": "object", "items_type": "integer",
+     "definition": "Number of SELFISH choices (max-own-payoff option, $6/$1 in Dana 2007, 'option A') in the CONFLICT STATE of the EXPERIMENTAL TREATMENT (Tmt = Hidden Information / HI condition). One value per cell key (Tmt_name vs Ctr_name comparison). Each cell key is a separate 'sample'. For within-subject papers (Exley 2015, Matthey 2011), return 'None' — these report 2×2 transition cells instead.",
+     "skills": ["vu_cell_terminology"]},
+
+    {"name": "N_Self_CI_Ctr", "scope": "sample", "gender_specific": false,
+     "type": "object", "items_type": "integer",
+     "definition": "Number of SELFISH choices in the CONFLICT STATE of the CONTROL TREATMENT (Ctr = Full Information / FI / Baseline). One value per cell key. When multiple Tmt rows share one Ctr (e.g., three HI variants all compared against one Baseline), this value is REPLICATED across all cells sharing the same Ctr — that matches the canonical per-cell encoding.",
+     "skills": ["vu_cell_terminology"]},
+
+    {"name": "N_Altr_CI_Ctr", "scope": "sample", "gender_specific": false,
+     "type": "object", "items_type": "integer",
+     "definition": "Number of ALTRUISTIC/PROSOCIAL choices (equal-pay or favor-recipient option, $5/$5, 'option B', 'fair choice') in the CONFLICT STATE of the CONTROL TREATMENT. Definitional identity: N_Altr_CI_Ctr = N_Tot_CI_Ctr - N_Self_CI_Ctr. PREFERRED extraction: derive via the identity rather than search the paper for 'N prosocial choices in baseline' (often only reported as a proportion).",
+     "skills": ["vu_cell_terminology", "vu_altr_ctr_identity"]},
+
+    {"name": "N_Tot_CI_Tmt", "scope": "sample", "gender_specific": false,
+     "type": "object", "items_type": "integer",
+     "definition": "Total participants in the CONFLICT STATE of the EXPERIMENTAL TREATMENT (HI condition). Auxiliary field for sanity checks. Reported as the per-cell 'n =' in tables.",
+     "skills": ["vu_cell_terminology"]},
+
+    {"name": "N_Tot_CI_Ctr", "scope": "sample", "gender_specific": false,
+     "type": "object", "items_type": "integer",
+     "definition": "Total participants in the CONFLICT STATE of the CONTROL TREATMENT (FI baseline). Auxiliary field needed to derive N_Altr_CI_Ctr via the identity. Replicated across rows sharing the same Ctr_name.",
+     "skills": ["vu_cell_terminology"]}
+  ]
+}

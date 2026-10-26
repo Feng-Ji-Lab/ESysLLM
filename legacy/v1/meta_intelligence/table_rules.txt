@@ -1,0 +1,35 @@
+
+*** SPECIAL INSTRUCTIONS FOR TABLES/FIGURES ***
+Input: a table from a academic paper. The table may have:
+- Row headers containing variable index + variable name, while column headers contain only variable index; OR the reverse.
+- Two groups (e.g., two genders) stored in one matrix, where the LOWER triangle is Group A and the UPPER triangle is Group B (or vice versa).
+- Footnotes that specify which triangle corresponds to which group, and possibly significance markers (e.g., *, **, †) and missing values (blank, NA, em dash).
+
+Follow these steps strictly to get the extracted values for required fields:
+
+1) Capture table metadata
+   - Record the table title/caption and any notes that describe how to interpret the matrix (especially any sentence about “above/below diagonal” or group labels).
+
+2) Build the variable dictionary (index -> name)
+   - Determine where variable names appear:
+     a) If variable names are present only on rows: use the row labels to build a mapping from index to name, then apply indices from the column headers to the same mapping.
+     b) If variable names are present only on columns: use the column labels to build a mapping from index to name, then apply indices from the row headers to the same mapping.
+     c) If both axes have names: verify they match. If they disagree, prefer the axis that contains both index and name, and report a warning.
+   - Normalize variable indices (strip punctuation like “(1)” or “1.”) but keep the original text in a separate field.
+
+3) Identify whether the matrix contains one group or two groups
+   - If the notes explicitly say two groups by triangles, use that.
+   - If the notes do not say so, assume one group unless there is clear evidence of two different sets of values.
+   - If you cannot determine group labels (e.g., male/female), name them “lower_triangle_group” and “upper_triangle_group” and include a warning.
+
+4) Extract correlations
+   - For each cell r(i, j):
+     - Ignore diagonal cells (i = j) unless the diagonal contains something other than 1.00 and the table notes say to keep it.
+     - If two-group format: extract LOWER triangle cells as GroupLower and UPPER triangle cells as GroupUpper.
+     - If one-group format: extract whichever triangle is reported, and you may mirror it logically (optional) but do not invent numbers that are not shown.
+   - Ignore significance markers (e.g., -0.23**, 0.15†). Store the numeric value only.
+   - Treat blank/NA as missing (null). Do not guess.
+
+5) Consistency checks
+   - Check that indices span the same set across rows and columns. If an index exists on one axis but not the other, report it as a warning.
+   - If one-group format and both triangles are present, verify approximate symmetry. If large mismatches exist, report a warning.

@@ -1,0 +1,64 @@
+{
+  "resolved_samples": [
+    {
+      "sample_key": "Study 1 - sample 1",
+      "values": [
+        52.41
+      ],
+      "best_indices": [
+        0
+      ],
+      "reasoning": "Candidate 0 directly provides the number of boys (98) and total students (187) for 'sample 1' of Study 1, from which male_pct is calculated as (98/187)*100 = 52.41%."
+    },
+    {
+      "sample_key": "Study 2 - sample 2",
+      "values": [
+        52.54
+      ],
+      "best_indices": [
+        1
+      ],
+      "reasoning": "Candidate 1 directly provides the number of boys (744) and total students (1416) for 'sample 2' of Study 1, from which male_pct is calculated as (744/1416)*100 = 52.54%."
+    },
+    {
+      "sample_key": "Study 3 - Study 1",
+      "values": [
+        52.04
+      ],
+      "best_indices": [
+        2
+      ],
+      "reasoning": "Candidate 2 provides male N (703) and total N (1351) from Table 1 for Study 1, yielding a male_pct of (703/1351)*100 = 52.04%. This represents the overall sample for Study 1."
+    },
+    {
+      "sample_key": "Study 6 - American sample",
+      "values": [
+        55.12
+      ],
+      "best_indices": [
+        3
+      ],
+      "reasoning": "Candidate 3 explicitly states 'the American sample' consisted of 377 boys out of a total of 684 students, resulting in a male_pct of (377/684)*100 = 55.12%."
+    },
+    {
+      "sample_key": "Study 7 - main sample",
+      "values": [
+        52.41
+      ],
+      "best_indices": [
+        4
+      ],
+      "reasoning": "Candidate 4, labeled for Study 2, describes a sample with 98 boys and 89 girls (total 187), yielding a male_pct of (98/187)*100 = 52.41%. This is distinct from the intervention sample and is assigned to the 'main sample' for Study 2."
+    },
+    {
+      "sample_key": "Study 9 - intervention sample",
+      "values": [
+        55.45
+      ],
+      "best_indices": [
+        5
+      ],
+      "reasoning": "Candidate 5, labeled for Study 2, explicitly details a 'treatment group' and 'control group' totaling 122 boys (60+62) out of 220 children (104+116), which is characteristic of an intervention sample. The male_pct is (122/220)*100 = 55.45%."
+    }
+  ]
+}

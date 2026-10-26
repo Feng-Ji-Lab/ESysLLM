@@ -1,0 +1,204 @@
+# Hien 2024 — arm taxonomy mapping
+# ===================================================
+# Maps verbatim arm names from primary RCT papers to Hien's canonical 12-category
+# code (from code_aod_ptsd_nma.Rmd SN1+SN2 vectors). Used by the extractor to
+# avoid the most common Jansen failure mode (54.9% accuracy on `category` due to
+# label confusion).
+#
+# Two sub-networks (do NOT mix):
+#   SN1 (psychotherapy-controlled): integrated, integrated trauma focused,
+#       trauma focused, psychotherapy (aod), psychotherapy (control),
+#       integrated and ptsd medication
+#   SN2 (placebo-controlled):       medication (aod), medication (both),
+#       medication (ptsd), placebo (control), trauma focused and aod medication,
+#       trauma focused and placebo
+#
+# CRITICAL distinctions:
+#   - "integrated trauma focused" requires evidence-based trauma processing
+#     (PE / CPT / EMDR / NET) INSIDE the integrated protocol.
+#   - "Seeking Safety" is "integrated" (present-focused, NOT trauma-focused).
+#   - "psychotherapy (control)" covers TAU, waitlist, attention control, community
+#     care, Women's Health Education, and any non-active comparator.
+#   - "psychotherapy (aod)" is an active AOD therapy WITHOUT PTSD content
+#     (relapse prevention, addiction counseling).
+
+categories:
+  integrated:
+    definition: >
+      Psychotherapy that simultaneously and explicitly addresses BOTH PTSD and
+      AOD within the same protocol; NOT trauma-focused (no evidence-based
+      trauma processing). Canonical example: Seeking Safety.
+    canonical_arm_names:
+      - "Seeking Safety"
+      - "SS"
+      - "Integrated CBT"
+      - "Integrated CBT for PTSD and SUD"
+      - "Creating Change"
+      - "ICBT"
+
+  integrated_trauma_focused:
+    label: "integrated trauma focused"
+    definition: >
+      Integrated PTSD + AOD treatment that ALSO includes an evidence-based
+      trauma-processing component (Prolonged Exposure, Cognitive Processing
+      Therapy, EMDR, Narrative Exposure Therapy).
+    canonical_arm_names:
+      - "COPE"
+      - "Concurrent Treatment of PTSD and Substance Use Disorders using Prolonged Exposure"
+      - "PE + SUD treatment integrated"
+      - "Integrated Prolonged Exposure"
+      - "Structured Writing Therapy + CBT for SUD"
+
+  trauma_focused:
+    label: "trauma focused"
+    definition: >
+      Evidence-based trauma processing (PE, CPT, EMDR) WITHOUT an explicit AOD
+      component in the same arm. Counts only as a standalone trauma therapy.
+    canonical_arm_names:
+      - "Prolonged Exposure"
+      - "PE"
+      - "Cognitive Processing Therapy"
+      - "CPT"
+      - "Culturally Adapted CPT"
+      - "EMDR"
+
+  trauma_focused_and_aod_medication:
+    label: "trauma focused and aod medication"
+    definition: >
+      Trauma psychotherapy combined with an AOD pharmacotherapy in the SAME arm
+      (e.g., PE + naltrexone).
+    canonical_arm_names:
+      - "PE + naltrexone"
+      - "Prolonged Exposure + Naltrexone"
+      - "CPT + naltrexone"
+
+  trauma_focused_and_placebo:
+    label: "trauma focused and placebo"
+    definition: >
+      Trauma psychotherapy combined with placebo pill (active-control for the
+      pharma arm).
+    canonical_arm_names:
+      - "PE + placebo"
+      - "Prolonged Exposure + placebo"
+
+  psychotherapy_aod:
+    label: "psychotherapy (aod)"
+    definition: >
+      Active psychotherapy targeting AOD only, WITHOUT PTSD content. Includes
+      relapse prevention, addiction counseling, individual drug counseling.
+    canonical_arm_names:
+      - "Relapse Prevention"
+      - "RP"
+      - "Relapse Prevention Training"
+      - "Addiction counseling"
+      - "Individual Drug Counseling"
+      - "AUD treatment"
+      - "SUD treatment alone"
+      - "CBT for SUD alone"
+      - "Alcohol-focused CBT"
+
+  psychotherapy_control:
+    label: "psychotherapy (control)"
+    definition: >
+      Non-active comparator psychotherapy condition. Catches TAU, waitlist,
+      attention control, community care, and education-only conditions.
+    canonical_arm_names:
+      - "Treatment-as-Usual"
+      - "TAU"
+      - "Standard care"
+      - "Community care"
+      - "Waitlist"
+      - "Wait-list control"
+      - "Women's Health Education"
+      - "WHE"
+      - "Active monitoring"
+      - "Attention control"
+      - "Supportive counseling"
+
+  medication_aod:
+    label: "medication (aod)"
+    definition: >
+      Pharmacotherapy targeting AOD only.
+    canonical_arm_names:
+      - "Naltrexone"
+      - "naltrexone"
+      - "Disulfiram"
+      - "disulfiram"
+      - "Topiramate"
+      - "topiramate"
+      - "Acamprosate"
+      - "Naltrexone + disulfiram"
+
+  medication_ptsd:
+    label: "medication (ptsd)"
+    definition: >
+      Pharmacotherapy targeting PTSD only.
+    canonical_arm_names:
+      - "Sertraline"
+      - "sertraline"
+      - "Paroxetine"
+      - "paroxetine"
+      - "Desipramine"
+      - "desipramine"
+
+  medication_both:
+    label: "medication (both)"
+    definition: >
+      Single pharmacotherapy with proposed action on BOTH PTSD and AOD.
+    canonical_arm_names:
+      - "N-acetylcysteine"
+      - "NAC"
+      - "Prazosin"
+      - "prazosin"
+      - "Doxazosin"
+      - "Topiramate + sertraline"
+
+  integrated_and_ptsd_medication:
+    label: "integrated and ptsd medication"
+    definition: >
+      Integrated PTSD+AOD psychotherapy BUNDLED with a PTSD-targeting medication
+      in the same arm.
+    canonical_arm_names:
+      - "Seeking Safety + sertraline"
+      - "SS + sertraline"
+      - "Integrated therapy + SSRI"
+
+  placebo_control:
+    label: "placebo (control)"
+    definition: >
+      Pill placebo, no active pharmacotherapy. Standard active-control for
+      medication trials.
+    canonical_arm_names:
+      - "Placebo"
+      - "placebo"
+      - "Placebo pill"
+      - "Inert pill"
+
+# Per-study expected arms (24 trials). Derived from `data/raw/manifests/hien2024_studies.tsv`
+# intervention summaries and Jansen's prior reviewer-response plan §3.1.
+# Use as a sanity check: extracted arms.category set must intersect this list.
+expected_per_study:
+  Back2016:      [medication (both), placebo (control)]
+  Back2019:      [integrated trauma focused, psychotherapy (aod)]
+  Batki2014:     [medication (aod), placebo (control)]
+  Brady2005:     [medication (ptsd), placebo (control)]
+  Capone2018:    [integrated, psychotherapy (control)]
+  Foa2013:       [trauma focused and aod medication, trauma focused and placebo, medication (aod), placebo (control)]
+  Hien2004:      [integrated, psychotherapy (aod), psychotherapy (control)]
+  Hien2009:      [integrated, psychotherapy (control)]
+  Hien2015:      [integrated and ptsd medication, integrated]
+  McGovern2015:  [integrated, psychotherapy (aod), psychotherapy (control)]
+  Mills2012:     [integrated trauma focused, psychotherapy (control)]
+  Myers2015:     [integrated trauma focused, psychotherapy (aod)]
+  Najavits2018:  [integrated, integrated]
+  Norman2019:    [integrated trauma focused, integrated]
+  Pearson2019:   [trauma focused, psychotherapy (control)]
+  Petrakis2006:  [medication (aod), placebo (control)]
+  Petrakis2012:  [medication (both), medication (ptsd), medication (aod), placebo (control)]
+  Petrakis2016:  [medication (both), placebo (control)]
+  Ruglass2017:   [trauma focused, psychotherapy (aod), psychotherapy (control)]
+  Sannibale2013: [integrated trauma focused, psychotherapy (aod)]
+  Schafer2019:   [integrated, psychotherapy (aod)]
+  Simpson2015:   [medication (both), placebo (control)]
+  vanDam2013:    [integrated trauma focused, psychotherapy (aod)]
+  Zlotnick2009:  [integrated, psychotherapy (control)]

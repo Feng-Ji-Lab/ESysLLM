@@ -1,26 +1,33 @@
+# --- runtime state (new extraction runs, staging, exports) ---
+data/
+exports/
+meta.db*
 
-# Environment
-config/settings.json
+# --- local env + credentials ---
 .env
+.env.*
+!.env.example
+*-sa.json
+*service-account*.json
+/secrets/
 
-# Python
+# --- third-party archives that are NOT redistributed (see eval/_jansen/PROVENANCE.md) ---
+Jansen2025/
+
+# --- local tooling ---
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Output / Data
-# output/
-archive/
-processed_sections/
-processed_sections_test/
-*.log
-*.txt
-*.xlsx
-ground_truth.json
-*.pdf
-
-# IDE
-.vscode/
-.idea/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
 venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.idea/
+.vscode/
+*.swp
+.DS_Store

@@ -1,145 +1,115 @@
-> **Update (October 2026): version 2 is available.** The code, archived outputs,
-> scoring scripts and dashboards for the revised paper — including Study 5, the
-> comparison with Jansen et al. (2025) on five benchmark meta-analyses — are on branch
-> [`release/r2`](https://github.com/Feng-Ji-Lab/ESysLLM/tree/release/r2) and in its pull
-> request. That branch keeps this version-1 pipeline unchanged under `legacy/v1/`.
+# ESysLLM — LLM-based data extraction and coding for evidence synthesis
 
-# ESysLLM: LLM-Based Meta-Analysis Extraction Pipeline
+Companion code, outputs and reference data for
 
-This project implements an advanced pipeline for extracting structured data from academic papers using Large Language Models (Gemini, Claude, etc.). It features a modular architecture comprising Preprocessing, Batch Extraction, and Aggregation/Validation, aiming to automate meta-analysis data collection.
+> Zhang, Y.\*, Luo, N.\*, Kim, H., Li, L., Gao, L., Han, J., Chen, S., Zhang, X., He, J., & Ji, F.
+> *Large Language Models (LLMs) for Evidence Synthesis: An Exploratory Evaluation and A New
+> Approach for Automated Data Extraction and Validation.* Preprint: https://doi.org/10.31234/osf.io/udysp_v2
+> (\* equal contribution)
 
-## Key Features
+The paper proposes the **Divide, Conquer, then Recheck (DCR)** workflow: split an article
+into sections, extract each section (and each table/figure) in its own LLM call with
+JSON-constrained output and cited evidence, then reconcile the candidates per field.
+Two implementations are in this repository:
 
-- **Multi-Pass Extraction**: Processes text sections and individual assets (Figures/Tables) separately to maximize recall.
-- **Dynamic Schema Generation**: Automatically adapts the extraction schema to handle complex fields and data types.
-- **Intelligent Aggregation**: Uses an LLM agent to consolidate conflicting or complementary data (e.g., merging "Total Sample" from text with "Gender Split" from a table).
-- **Batch Processing**: Supports efficient batch execution with resume/skip capabilities and robustness against individual failures.
-- **Automated Validation**: Automated validation and comparison against Ground Truth datasets, generating comprehensive dashboards.
+| | Where | Used for | Prompts |
+|---|---|---|---|
+| **v2 — `mag`** (main code) | `src/mag`, `schemas/`, `rules/` | Study 5: five meta-analyses from the Jansen et al. (2025) benchmark | prose slots in `schemas/<ma>/prompts.yaml` + rule packs; `[block_id]`-cited evidence; sample census + per-field aggregation — see [docs/methods_v2_prompts.md](docs/methods_v2_prompts.md) |
+| **v1** (archived, unchanged) | `legacy/v1/` | Studies 2–4, Supplemental Material C–D | JSON system/user/aggregation templates + table-reading rules |
 
-## Directory Structure
+Study 5's conspiracy-belief dataset (Bowes 2023) was extracted with a separate
+single-pass script, `scripts/extract_bowes.py`, not with the section-level pipeline.
+No extraction was rerun for this release: outputs are the ones behind the manuscript.
 
-- `src/`: Core source code containing modules for API interaction, configuration, extraction, aggregation, pre-processing, and schema generation.
-- `config/`: Configuration templates for application settings and schemas.
-- `tests/`, `runners/`, `validation/`: Scripts for testing, executing pipelines, and validating results.
-- `output/`: Extraction results.
+## What is here
 
-## Configuration Guide
-
-Before running the pipeline, you need to set up the configuration files in the `config/` directory.
-
-### `config/settings.json`
-
-This is your main configuration file. You can copy `config/settings.example.json` to create it.
-It defines your API keys, the target directories, and controls which fields are extracted and how they are structured.
-
-**Example `settings.json`**:
-
-```json
-{
-  "api_key": "YOUR_API_KEY_HERE",
-  "retry_count": 2,
-  "model_name": "gemini-2.5-flash",
-  "temperature": 0,
-  "papers_json_path": "test/papers",
-  "requested_fields": ["Country", "Sample", "Mean age of participants"],
-  "validation_targets": ["Country", "Sample"],
-  "gender_specific_fields": ["Sample", "Mean age of participants"],
-  "study_specific_fields": ["Country", "Sample"]
-}
+```
+src/mag/                 v2 pipeline (preprocessing → stage-1 section passes → census → per-field aggregation → executors)
+schemas/<ma>/            fields.json + prompts.yaml per meta-analysis (default, bas-bmi, vu2024, ng2023, bennett2023, bowes2023, buecker2023)
+rules/<pack>/SKILL.md    rule packs injected into prompts; some carry executors (src/mag/skills)
+scripts/                 run_jansen_bench.py / run_extract.py (extraction), extract_bowes.py, score_*.py (ours and Jansen re-scored),
+                         export_scored_cells.py, build_summary.py, build_all_dashboards.py, fir/ (Marker SLURM jobs)
+eval/_dashboard/         scoring classifiers + dashboard builder; eval/<ma>/ gold CSVs; eval/_jansen/ third-party files (PROVENANCE.md)
+results/<ma>/raw/        as-run outputs: Vu 15, Ng 31, Bennett 69 (3 batches), Buecker 101, Bowes 100 papers
+results/<ma>/scored_cells.csv   one row per scored paper × field for all nine meta-analyses (same columns everywhere)
+results/paper_numbers.yaml, results/summary.csv   every number in the manuscript → selection → recomputed value
+dashboard/               index.html + 17 pages (one per meta-analysis; He2020 per model × temperature)
+legacy/v1/               the R1 release plus its ground truth, table rules and three small repairs (see below)
+docs/                    methods_v2_prompts.md, reproduction.md, known_discrepancies.md
 ```
 
-- `requested_fields`: Fields the extractor will look for in the papers.
-- `gender_specific_fields`: Fields that should be categorized by gender (`male`, `female`, `total`, `other`).
-- `study_specific_fields`: Fields that should be broken down per study/experiment within a paper.
+Marker full-text conversions of the primary articles are **not** included for Study 5
+(copyright); `legacy/v1` keeps what the R1 release already contained.
 
-### `config/extraction_schema.json`
+## Results at a glance
 
-Defines the structure and allowed values for the `requested_fields`.
+Metric = the paper's coverage rule: a paper × field item is correct when every reference
+value appears in the extraction (extra values allowed); micro-averaged F1. All values
+are recomputed from `results/*/scored_cells.csv` by `scripts/build_summary.py`.
 
-## Ground Truth Format for Validation
+| Study | Dataset | Pipeline / model | Papers | F1 |
+|---|---|---|--:|--:|
+| 3 | He 2020, Body Appreciation × BMI | v1 / Gemini 2.5 Flash | 56 | 0.988 |
+| 3 | 〃 | v1 / GPT-5-mini | 56 | 0.968 |
+| 3 | 〃 | v1 / Claude Haiku 4.5 | 56 | 0.946 |
+| 4 | Goal orientation (Stasielowicz 2019) | v1 / Gemini 2.5 Flash | 13 | 0.976 |
+| 4 | Gratitude–loneliness (Hittner 2024) | v1 / Gemini 2.5 Flash | 17 | 0.979 |
+| 4 | Intelligence–creativity (Karwowski 2021) | v1 / Gemini 2.5 Flash | 18 | 0.963 |
+| 5 | Subjective well-being (Buecker 2023) | v2 / Gemini 2.5 Flash | 99 | 0.916 (Jansen best model 0.873) |
+| 5 | Male suicide (Bennett 2023) | v2 / Gemini 2.5 Flash | 69 | 0.900 (68-paper head-to-head 0.899; Jansen best 0.874) |
+| 5 | Youth depression psychotherapy (Ng 2023) | v2 / Gemini 2.5 Flash | 31 | 0.848 (30-paper head-to-head 0.852; Jansen best 0.738) |
+| 5 | Willful ignorance (Vu 2023) | v2 / Gemini 2.5 Flash | 15 | 0.831 (Jansen best 0.615) |
+| 5 | Conspiracy beliefs (Bowes 2023) | single-pass / Gemini 2.5 Flash | 100 | 0.831 (Jansen best 0.720) |
 
-To run the validation scripts and build comparison dashboards, you need a `ground_truth.json` file. The structure is based on the paper IDs and the fields extracted.
+"Jansen best" is the best of Jansen et al.'s eight models, re-scored with the same
+classifier on the same papers and fields (`scripts/score_*_jansen*.py`). Per-field
+numbers, precision/recall and the strict (exact-match) standard are in
+`results/summary.csv` and on each dashboard page.
 
-Fields defined in `gender_specific_fields` will have a nested structure containing `male`, `female`, and `total` breakdowns. Each leaf node must be a dictionary with a `"study"` key pointing to an array of values.
-
-**Example structure for `ground_truth.json`:**
-
-```json
-{
-  "1Al Otaibi2018": {
-    "Country": {
-      "study": [4]
-    },
-    "Sample": {
-      "male": {
-        "study": ["none"]
-      },
-      "female": {
-        "study": [326]
-      },
-      "total": {
-        "study": []
-      }
-    },
-    "Mean age of participants": {
-      "male": {
-        "study": ["none"]
-      },
-      "female": {
-        "study": [49.14]
-      },
-      "total": {
-        "study": []
-      }
-    }
-  }
-}
-```
-
-_Note: Use `"none"` to indicate explicitly missing or evaluated as non-existent values. Enums and Country values are often mapped to integer codes based on your codebook setup._
-
-## Running the Pipeline
-
-### 1. PDF Parsing and Preprocessing
-
-Before running extraction, you need to parse the raw academic PDFs into structured JSON files.
-
-1. **Convert PDF to JSON using Marker:**
-   We recommend using [Marker](https://github.com/datalab-to/marker?tab=readme-ov-file#llm-services) to accurately parse PDFs into JSON.
-   Set up Marker to process your documents and output them in its supported structured format.
-
-2. **Section Preprocessing:**
-   After parsing with Marker, run the preprocessor to divide the parsed PDF into manageable sections for the extraction pipeline. First, you need to open `tests/test_preprocessing.py` and specify the `OUTPUT_ROOT` and the paper's json files root `PAPERS_DIR`. Then run the script:
-   ```bash
-   python tests/test_preprocessing.py
-   ```
-
-### 2. Execute Batch Extraction
-
-Run the complete extraction and aggregation pipeline across your dataset:
+## Reproduce
 
 ```bash
-python runners/run_batch_extraction.py --start 0 --end 10 --input_processed <INPUT_DIR> --output_final <OUTPUT_DIR> [--overwrite] [--skip PAPER_NAME]
+pip install -e . && pip install pandas openpyxl
+PYTHONPATH=.:src python scripts/export_scored_cells.py     # results/<ma>/scored_cells.csv
+PYTHONPATH=.:src python scripts/build_summary.py           # checks every manuscript number; exit 0
+PYTHONPATH=.:src python scripts/build_all_dashboards.py    # dashboard/
 ```
 
-**Arguments:**
+Step-by-step commands per study, and how to rerun extraction on new PDFs, are in
+[docs/reproduction.md](docs/reproduction.md).
 
-- `--start`: Start index (0-based).
-- `--end`: End index (exclusive).
-- `--input_processed`: Path to the directory containing preprocessed JSON sections.
-- `--output_final`: Path to the directory where final structured outputs should be saved.
-- `--overwrite`: (Optional) Overwrite existing output files.
-- `--skip`: (Optional) List of paper folder names to skip.
+## Read before citing the numbers
 
-### 3. Validation and Dashboard
+[docs/known_discrepancies.md](docs/known_discrepancies.md) lists the places where the
+manuscript text and this repository disagree (temperature claim, Table 3 Ng sample size,
+"macro" vs micro averaging, prompt-structure statements, Bowes method, Buecker values
+filled by codebook executors, 56 of 60 He2020 papers). The numbers reproduce; the
+wording around some of them does not yet.
 
-Compare your extracted results against the Ground Truth and generate visual dashboards:
+Known limitations of the code as released:
 
-```bash
-python validation/verify_batch_results.py
-python validation/build_dashboard.py
-```
+- `src/mag` is the 2026-07-09 state. The Vu/Ng/Bennett/Bowes runs used earlier,
+  uncommitted versions of a few files; the prompts, schemas and rule packs are unchanged
+  since every run.
+- The batch driver injects **every** rule pack under `rules/` into every prompt,
+  whichever meta-analysis is being extracted.
+- `fields.json` keys `case_rules`, `value_labels`, `skill_hints` are not read by the code.
+- v2 has a Gemini provider only (Vertex AI or API key); the three-model comparison of
+  Study 3 was run with v1.
+- Studies 1–2 (chatbot interfaces, GPT-4o) and the bar-chart figures cannot be
+  re-derived from this repository; their source material was not archived here.
+- `legacy/v1` repairs: a comment in `validation/build_dashboard.py` that had lost its
+  `#` and did not parse; absolute workstation paths in two ground-truth helper scripts.
+  Scoring logic is untouched and reproduces Studies 3–4 and Appendix D exactly.
 
-## Logs
+## Data and licences
 
-Execution progress and extraction steps will be logged into standard output and respective log files in the directory.
+Code is MIT (see `LICENSE`). `results/` and `eval/<ma>/` are ours. `eval/_jansen/`
+holds six files from Jansen et al. (2025) and from the Vu and Ng meta-analysis authors,
+redistributed only because the scorers open them — see `eval/_jansen/PROVENANCE.md` and
+cite the original sources. Ground truth for He2020 and the Study-4 datasets is in
+`legacy/v1/*/ground_truth.json` with its source spreadsheets.
+
+## Citation
+
+See `CITATION.cff`.

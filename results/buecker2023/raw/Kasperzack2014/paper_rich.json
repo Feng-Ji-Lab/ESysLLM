@@ -1,0 +1,425 @@
+{
+  "paper_id": "Kasperzack2014",
+  "pdf_path": "Kasperzack2014.pdf",
+  "marker_output_dir": "/projects/code/meta_analysis_agent/data/processed/buecker2023/Kasperzack2014",
+  "samples": [
+    {
+      "study_index": 1,
+      "sample_label": "whole sample | life satisfaction | wave 1"
+    },
+    {
+      "study_index": 1,
+      "sample_label": "whole sample | life satisfaction | wave 2"
+    }
+  ],
+  "fields": {
+    "Sample": {
+      "name": "Sample",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | life satisfaction | wave 1": {
+          "values": [
+            {
+              "value": 220,
+              "evidence": [
+                {
+                  "pdf_name": "Kasperzack2014.pdf",
+                  "section_id": "015_ambivalence_in_career_decision_making_and_satisfac",
+                  "section_title": "Ambivalence in Career Decision Making and Satisfaction (Hypotheses 2a and 2b and Hypotheses 3a–3d)",
+                  "block_id": "/page/6/Text/9",
+                  "page": 6,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "[/page/6/Text/9] Furthermore, statistically significant concurrent correlations were observed between life satisfaction and ambivalence during career decision making (rs ¼ -.15, p ¼ .02, N ¼ 220) as well as ambivalence after career decision making (rs ¼ -.53, p < .001, N ¼ 121).",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | life satisfaction | wave 2": {
+          "values": [
+            {
+              "value": 121,
+              "evidence": [
+                {
+                  "pdf_name": "Kasperzack2014.pdf",
+                  "section_id": "015_ambivalence_in_career_decision_making_and_satisfac",
+                  "section_title": "Ambivalence in Career Decision Making and Satisfaction (Hypotheses 2a and 2b and Hypotheses 3a–3d)",
+                  "block_id": "/page/6/Text/9",
+                  "page": 6,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "[/page/6/Text/9] Furthermore, statistically significant concurrent correlations were observed between life satisfaction and ambivalence during career decision making (rs ¼ -.15, p ¼ .02, N ¼ 220) as well as ambivalence after career decision making (rs ¼ -.53, p < .001, N ¼ 121).",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    },
+    "infoYearT1": {
+      "name": "infoYearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "estimated",
+        "evidence": [
+          {
+            "pdf_name": "Kasperzack2014.pdf",
+            "section_id": "006_introduction_and_theoretical_background",
+            "section_title": "Introduction and Theoretical Background",
+            "block_id": "/page/1/Text/4",
+            "page": 1,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "The text does not explicitly state the calendar year the first wave of data for the present study was collected. It mentions a citation about German students matriculating in 2001, but this is not the study's own data.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "yearT1": {
+      "name": "yearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 2010,
+        "evidence": [],
+        "derivation": {
+          "kind": "infer_constant",
+          "skill_name": "estimate_yeart1_from_pubyear",
+          "inputs": {
+            "publication_year": 2014,
+            "span": 1.0,
+            "span_source": "lag*1waves"
+          },
+          "formula": "yearT1 = publication_year - 3 - span",
+          "note": "Buecker gold estimation rule for an unreported (Estimated) baseline year"
+        },
+        "confidence": 0.4
+      }
+    },
+    "country": {
+      "name": "country",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "germany",
+        "evidence": [
+          {
+            "pdf_name": "Kasperzack2014.pdf",
+            "section_id": "004_abstract",
+            "section_title": "Abstract",
+            "block_id": "004_abstract",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/7] This longitudinal study investigated ambivalence during and after the decision in favor of a field of study or apprenticeship in 220 German high school graduates.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "Outcome_variable": {
+      "name": "Outcome_variable",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "life satisfaction",
+        "evidence": [
+          {
+            "pdf_name": "Kasperzack2014.pdf",
+            "section_id": "004_abstract",
+            "section_title": "Abstract",
+            "block_id": "004_abstract",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/7] In addition, participants underwent measurements of career decision-making self-efficacy, neuroticism, conscientiousness, current satisfaction with life as well as satisfaction with the chosen training.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "sample_type": {
+      "name": "sample_type",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "community/convenience",
+        "evidence": [
+          {
+            "pdf_name": "Kasperzack2014.pdf",
+            "section_id": "004_abstract",
+            "section_title": "Abstract",
+            "block_id": "004_abstract",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/7] This longitudinal study investigated ambivalence during and after the decision in favor of a field of study or apprenticeship in 220 German high school graduates.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "ethnicity": {
+      "name": "ethnicity",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "predominantly white/european",
+        "evidence": [],
+        "derivation": {
+          "kind": "infer_constant",
+          "skill_name": "infer_ethnicity_from_country",
+          "inputs": {
+            "country": "germany"
+          },
+          "formula": "",
+          "note": "predominant ethnicity inferred from country (unreported in paper)"
+        },
+        "confidence": 0.5
+      }
+    },
+    "lag": {
+      "name": "lag",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 0.5,
+        "evidence": [
+          {
+            "pdf_name": "Kasperzack2014.pdf",
+            "section_id": "010_design_and_sample",
+            "section_title": "Design and Sample",
+            "block_id": "/page/3/Text/5",
+            "page": 3,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "The first point of measurement was prior to application for training and the second point of measurement occurred 6 months later",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "M_SWB": {
+      "name": "M_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | life satisfaction | wave 1": {
+          "values": [
+            {
+              "value": 3.56,
+              "evidence": [
+                {
+                  "pdf_name": "Kasperzack2014.pdf",
+                  "section_id": "011_instruments",
+                  "section_title": "Instruments",
+                  "block_id": "/page/5/Table/1",
+                  "page": 5,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table I. Univariate Statistics for the Assessed Constructs. Row 'Current satisfaction with life (Time 1)', column 'M' = 3.56. Row 'Current satisfaction with life (Time 2)', column 'M' = 3.71.",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | life satisfaction | wave 2": {
+          "values": [
+            {
+              "value": 3.71,
+              "evidence": [
+                {
+                  "pdf_name": "Kasperzack2014.pdf",
+                  "section_id": "011_instruments",
+                  "section_title": "Instruments",
+                  "block_id": "/page/5/Table/1",
+                  "page": 5,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table I. Univariate Statistics for the Assessed Constructs. Row 'Current satisfaction with life (Time 1)', column 'M' = 3.56. Row 'Current satisfaction with life (Time 2)', column 'M' = 3.71.",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    },
+    "SD_SWB": {
+      "name": "SD_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | life satisfaction | wave 1": {
+          "values": [
+            {
+              "value": 0.88,
+              "evidence": [
+                {
+                  "pdf_name": "Kasperzack2014.pdf",
+                  "section_id": "011_instruments",
+                  "section_title": "Instruments",
+                  "block_id": "/page/5/Table/1",
+                  "page": 5,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table I. Univariate Statistics for the Assessed Constructs. Row 'Current satisfaction with life (Time 1)', column 'SD' = 0.88. Row 'Current satisfaction with life (Time 2)', column 'SD' = 0.80.",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | life satisfaction | wave 2": {
+          "values": [
+            {
+              "value": 0.8,
+              "evidence": [
+                {
+                  "pdf_name": "Kasperzack2014.pdf",
+                  "section_id": "011_instruments",
+                  "section_title": "Instruments",
+                  "block_id": "/page/5/Table/1",
+                  "page": 5,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table I. Univariate Statistics for the Assessed Constructs. Row 'Current satisfaction with life (Time 1)', column 'SD' = 0.88. Row 'Current satisfaction with life (Time 2)', column 'SD' = 0.80.",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    }
+  },
+  "warnings": [
+    {
+      "code": "ungrounded_candidate",
+      "message": "004_abstract/infoYearT1: quote not found in section (likely hallucinated): 'The calendar year of the first assessment wave is not explicitly stated in this '",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "004_abstract/ethnicity: quote not found in section (likely hallucinated): 'Ethnicity composition is not reported in this abstract.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "010_design_and_sample/ethnicity: quote not found in section (likely hallucinated): 'No information about the ethnic composition of the sample is provided in the tex'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "014_correlates_of_ambivalence_hypotheses_1a1h/ethnicity: quote not found in section (likely hallucinated): 'The text does not report the ethnic composition of the sample.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "015_ambivalence_in_career_decision_making_and_satisfac/infoYearT1: quote not found in section (likely hallucinated): 'The text does not explicitly state the calendar year of the first data collectio'",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "015_ambivalence_in_career_decision_making_and_satisfac/ethnicity: quote not found in section (likely hallucinated): 'The text does not report the ethnic composition of the sample.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "017_prevalence_of_ambivalence_during_and_after_career_/infoYearT1: quote not found in section (likely hallucinated): 'No calendar year for data collection is mentioned in the provided text.'",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "019_ambivalence_in_career_decision_making_and_satisfac/ethnicity: quote not found in section (likely hallucinated): 'The ethnicity of the sample is not mentioned in the provided text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "021_limitations_and_suggestions_for_future_research/ethnicity: quote not found in section (likely hallucinated): 'Ethnicity information is not provided in the text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    }
+  ],
+  "run_meta": {
+    "run_id": "Kasperzack2014",
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "schema_name": "buecker2023",
+    "schema_version": 1,
+    "skill_names": [
+      "bas2_over_bas",
+      "compute_weighted_mean_total",
+      "estimate_yeart1_from_pubyear",
+      "gender-mapping",
+      "hien_arm_taxonomy",
+      "infer_college_sample_100",
+      "infer_ethnicity_from_country",
+      "info_cost_clamp_zero",
+      "ng_mediator_lookup",
+      "ng_source_smallest_number",
+      "single_gender_fill",
+      "study_naming",
+      "table-parsing",
+      "total_geq_sum",
+      "vu_altr_ctr_identity",
+      "vu_cell_count_localization",
+      "vu_cell_terminology",
+      "vu_country_mturk",
+      "vu_info_cost_default"
+    ],
+    "started_at": "2026-07-08T21:52:49.644672Z",
+    "finished_at": "2026-07-08T21:56:51.457876Z",
+    "prompt_tokens": 386592,
+    "completion_tokens": 37956,
+    "passes": 283,
+    "aggregator_passes": 10
+  }
+}

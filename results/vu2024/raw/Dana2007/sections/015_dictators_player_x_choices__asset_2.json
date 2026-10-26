@@ -1,0 +1,102 @@
+{
+  "prompt_tokens": 14165,
+  "completion_tokens": 6124,
+  "data": {
+    "Design": {
+      "extract_value": "between-subject",
+      "evidence_source": "The paper describes a 'hidden information treatment' and a 'baseline treatment' without indicating that the same participants experienced both conditions, implying a between-subject design.",
+      "block_id": "None",
+      "warning": ""
+    },
+    "country": {
+      "extract_value": "united states",
+      "evidence_source": "Dana et al. (2007) is associated with Carnegie Mellon University, located in the United States.",
+      "block_id": "None",
+      "warning": ""
+    },
+    "info_cost": {
+      "extract_value": 0.0,
+      "evidence_source": "The text mentions 'opted to reveal the true state' and 'information was initially hidden' but does not state any monetary cost for revealing information.",
+      "block_id": "None",
+      "warning": ""
+    },
+    "Sample": {
+      "extract_value": [
+        {
+          "key": "Hidden information treatment vs baseline treatment",
+          "value": [
+            35
+          ]
+        }
+      ],
+      "evidence_source": "N_Tot_CI_Tmt = 16 (from Table 2, sum of 'Chose to reveal' and 'Chose not to reveal' for Matrix 1: 8 + 8); N_Tot_CI_Ctr = 19 (from '/page/12/Text/0': '14/19 in the baseline treatment'). Total sample = 16 + 19 = 35.",
+      "block_id": "/page/12/Table/1",
+      "warning": ""
+    },
+    "N_Self_CI_Tmt": {
+      "extract_value": [
+        {
+          "key": "Hidden information treatment vs baseline treatment",
+          "value": [
+            10
+          ]
+        }
+      ],
+      "evidence_source": "Table 2, 'Matrix 1 (baseline payoffs)' rows. The text in '/page/11/Text/6' states 'fair option (B in matrix 1, A in matrix 2)', implying 'A' is selfish in Matrix 1. 'Chose to reveal': 2/8 (25%) chose 'A' (selfish) = 2. 'Chose not to reveal': 8/8 (100%) chose 'A' (selfish) = 8. Total N_Self_CI_Tmt = 2 + 8 = 10.",
+      "block_id": "/page/12/Table/1",
+      "warning": ""
+    },
+    "N_Self_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Hidden information treatment vs baseline treatment",
+          "value": [
+            5
+          ]
+        }
+      ],
+      "evidence_source": "Derived from N_Tot_CI_Ctr and N_Altr_CI_Ctr. N_Tot_CI_Ctr = 19, N_Altr_CI_Ctr = 14 (from '/page/12/Text/0': '14/19 in the baseline treatment'). N_Self_CI_Ctr = 19 - 14 = 5.",
+      "block_id": "/page/12/Text/0",
+      "warning": ""
+    },
+    "N_Altr_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Hidden information treatment vs baseline treatment",
+          "value": [
+            14
+          ]
+        }
+      ],
+      "evidence_source": "/page/12/Text/0: '...the proportion who chose fairly (14/19) in the baseline treatment...'",
+      "block_id": "/page/12/Text/0",
+      "warning": ""
+    },
+    "N_Tot_CI_Tmt": {
+      "extract_value": [
+        {
+          "key": "Hidden information treatment vs baseline treatment",
+          "value": [
+            16
+          ]
+        }
+      ],
+      "evidence_source": "Table 2, 'Matrix 1 (baseline payoffs)' rows. 'Chose to reveal': 8 participants. 'Chose not to reveal': 8 participants. Total N_Tot_CI_Tmt = 8 + 8 = 16.",
+      "block_id": "/page/12/Table/1",
+      "warning": ""
+    },
+    "N_Tot_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Hidden information treatment vs baseline treatment",
+          "value": [
+            19
+          ]
+        }
+      ],
+      "evidence_source": "/page/12/Text/0: '...the proportion who chose fairly (14/19) in the baseline treatment...'",
+      "block_id": "/page/12/Text/0",
+      "warning": ""
+    }
+  }
+}

@@ -1,0 +1,113 @@
+# Ng 2023 — ground-truth validator mapping
+# ================================================
+# Maps schema output → Jansen d_long.xlsx rows. Jansen Ng overall: 42.8%
+# (lowest among our 3 benches; MedCat 20.2% is the floor).
+
+gold_source:
+  file: "/projects/code/meta_analysis_agent/Jansen2025/osfstorage-archive/Archive/analysis/d_long.xlsx"
+  filter: "meta == 'Ng2023'"
+  rows: 1896
+  studies: 32              # 34 trials → 32 in Jansen (excludes Gillham 2006, Mufson 1999)
+                           # NB: 35 if Rosselló split into CBT/IPT studyids — verify before run
+  variables: ["Source", "MedCat", "IPT", "male", "dxgive"]
+  expected_rows_per_var:
+    Source:   472          # 32 × ~1.85 × 8
+    MedCat:   824          # 32 × ~3.3 × 8
+    IPT:       72          # 32 × ~1 × 8 + Rosselló split adjustment
+    male:     264          # 32 × ~1 × 8 + minor multi-arm
+    dxgive:   264          # 32 × ~1 × 8
+
+mappings:
+
+  IPT:
+    schema_path: "$.IPT"
+    schema_type: "enum_int"
+    gold_var: "IPT"
+    join_keys: ["study"]
+    comparison: "exact_integer"
+    allowed_values: [0, 1]
+    expected_per_study: 1
+    special_case_rossello: |
+      For Rosselló & Bernal (1999), our pipeline emits TWO study records (one
+      with IPT=0, one with IPT=1). Validator joins on (study_normalized,
+      IPT_value) so both records validate against their respective gold rows.
+
+  male:
+    schema_path: "$.male_pct"
+    schema_type: "float"
+    gold_var: "male"
+    join_keys: ["study"]
+    comparison: "numeric_tolerance"
+    tolerance_pp: 0.5
+    fallback_tolerance_pp: 2.0   # for gold values that came from codebook
+                                  # qualitative defaults (15/30/60/90)
+    expected_per_study: 1
+
+  dxgive:
+    schema_path: "$.dxgive"
+    schema_type: "enum_int"
+    gold_var: "dxgive"
+    join_keys: ["study"]
+    comparison: "exact_integer"
+    allowed_values: [110, 120, 200, 400]
+    expected_per_study: 1
+
+  Source:
+    schema_path: "$.Source"        # multi-label set of int codes
+    schema_type: "set[int]"
+    gold_var: "Source"
+    join_keys: ["study"]
+    comparison: "set_match"
+    primary_metric: "jaccard"
+    jaccard_threshold: 0.66
+    secondary_metric: "exact_set_equality"
+    expected_per_study: "1-3 (multi-rater study averages ~1.8 rows)"
+    notes: |
+      Gold stores each source as its own row; aggregate to a set per study.
+      Schema emits a set directly. Compare via Jaccard ≥ 0.66 (primary) and
+      exact-set match (secondary).
+
+  MedCat:
+    schema_path: "$.MedCat"        # multi-label set, may include "1","2",...,"99","l2","l29"
+    schema_type: "set[str]"
+    gold_var: "MedCat"
+    join_keys: ["study"]
+    comparison: "set_match_with_optional_99"
+    primary_metric: "jaccard"
+    jaccard_threshold: 0.66
+    secondary_metric: "exact_set_equality_dropping_99"
+    expected_per_study: "1-7 (multi-mediator MASEM averages ~3.3 rows)"
+    notes: |
+      Gold codes are lowercase string-or-int: {1, 2, 3, 4, 5, 99, l2, l29}.
+      Schema emits the same set. Outcome code 99 is OPTIONAL:
+        - Strict score: compare full set
+        - Lenient score (preferred): drop 99 from both sides, compare
+          mediator-only sets via Jaccard.
+      The mediator_instruments.yaml lookup is the load-bearing rule for
+      lifting accuracy from 20% → 75%+.
+
+# Aggregate metrics
+metrics_to_report:
+  - per_variable_accuracy
+  - per_variable_f1
+  - per_variable_precision
+  - per_variable_recall
+  - per_variable_cohens_kappa
+  - per_study_full_match_rate
+  - overall_correct_pct
+
+jansen_baseline_pct:
+  IPT:       79.2
+  male:      70.5
+  dxgive:    50.0
+  Source:    52.9
+  MedCat:    20.2
+  overall:   42.8
+
+our_targets_pct:
+  IPT:        95.0    # easy binary
+  male:       90.0    # text + arithmetic
+  dxgive:     85.0    # codebook lookup
+  Source:     85.0    # 5-code closed set
+  MedCat:     75.0    # mediator_instruments.yaml lookup
+  overall:    85.0

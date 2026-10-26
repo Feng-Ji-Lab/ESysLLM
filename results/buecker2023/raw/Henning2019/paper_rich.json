@@ -1,0 +1,443 @@
+{
+  "paper_id": "Henning2019",
+  "pdf_path": "Henning2019.pdf",
+  "marker_output_dir": "/projects/code/meta_analysis_agent/data/processed/buecker2023/Henning2019",
+  "samples": [],
+  "fields": {
+    "Sample": {
+      "name": "Sample",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": null
+    },
+    "infoYearT1": {
+      "name": "infoYearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "given",
+        "evidence": [
+          {
+            "pdf_name": "Henning2019.pdf",
+            "section_id": "001_front_matter",
+            "section_title": "Front matter",
+            "block_id": "None",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "No information about data collection year is provided in this section.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "yearT1": {
+      "name": "yearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 2015,
+        "evidence": [
+          {
+            "pdf_name": "Henning2019.pdf",
+            "section_id": "014_21_sample_and_procedure",
+            "section_title": "2.1. Sample and procedure",
+            "block_id": "/page/3/Text/6",
+            "page": 3,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/3/Text/6] A nationally representative sample (N = 14.990) of people aged 60–66 was drawn in 2015, and in a first assessment in 2015, 5913 (-40%) participated in the survey.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "country": {
+      "name": "country",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "Sweden",
+        "evidence": [
+          {
+            "pdf_name": "Henning2019.pdf",
+            "section_id": "008_abstract",
+            "section_title": "ABSTRACT",
+            "block_id": "/page/0/Text/19",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "Data was drawn from four waves of the Health, Aging, and Retirement Transitions in Sweden (HEARTS) study",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "Outcome_variable": {
+      "name": "Outcome_variable",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "life satisfaction",
+        "evidence": [
+          {
+            "pdf_name": "Henning2019.pdf",
+            "section_id": "012_14_need_satisfaction_and_wellbeing_across_the_reti",
+            "section_title": "1.4. Need satisfaction and well-being across the retirement transition",
+            "block_id": "/page/2/Text/10",
+            "page": 2,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/2/Text/10] 'Hansson, Buratti, Johansson, and Berg (2018) found in a three-wave study that autonomy was comparably associated with level and change in life satisfaction in both people continuing to work and retiring over the study period.'",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "sample_type": {
+      "name": "sample_type",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "nationally-representative",
+        "evidence": [
+          {
+            "pdf_name": "Henning2019.pdf",
+            "section_id": "008_abstract",
+            "section_title": "ABSTRACT",
+            "block_id": "/page/0/Text/19",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "Data was drawn from four waves of the Health, Aging, and Retirement Transitions in Sweden (HEARTS) study (N = 5,074, M (age) = 63.16; 53.61% female). This describes a large cohort study, typical of a community sample.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "ethnicity": {
+      "name": "ethnicity",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "predominantly white/european",
+        "evidence": [],
+        "derivation": {
+          "kind": "infer_constant",
+          "skill_name": "infer_ethnicity_from_country",
+          "inputs": {
+            "country": "Sweden"
+          },
+          "formula": "",
+          "note": "predominant ethnicity inferred from country (unreported in paper)"
+        },
+        "confidence": 0.5
+      }
+    },
+    "lag": {
+      "name": "lag",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 1.0,
+        "evidence": [
+          {
+            "pdf_name": "Henning2019.pdf",
+            "section_id": "014_21_sample_and_procedure",
+            "section_title": "2.1. Sample and procedure",
+            "block_id": "/page/3/Text/6",
+            "page": 3,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/3/Text/6] Participants are followed over time with annual assessments.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "M_SWB": {
+      "name": "M_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "whole sample | life satisfaction | wave 1": {
+          "values": [
+            {
+              "value": 4.92,
+              "evidence": [
+                {
+                  "pdf_name": "Henning2019.pdf",
+                  "section_id": "019_32_multilevel_models",
+                  "section_title": "3.2. Multilevel models",
+                  "block_id": "/page/4/Table/18",
+                  "page": 4,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1, row 'Well-Being', columns 'T1 M(SD)/%', 'T2 M(SD)/%', 'T3 M(SD)/%', 'T4 M(SD)/%'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "whole sample | life satisfaction | wave 2": {
+          "values": [
+            {
+              "value": 4.96,
+              "evidence": [
+                {
+                  "pdf_name": "Henning2019.pdf",
+                  "section_id": "019_32_multilevel_models",
+                  "section_title": "3.2. Multilevel models",
+                  "block_id": "/page/4/Table/18",
+                  "page": 4,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1, row 'Well-Being', columns 'T1 M(SD)/%', 'T2 M(SD)/%', 'T3 M(SD)/%', 'T4 M(SD)/%'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "whole sample | life satisfaction | wave 3": {
+          "values": [
+            {
+              "value": 4.95,
+              "evidence": [
+                {
+                  "pdf_name": "Henning2019.pdf",
+                  "section_id": "019_32_multilevel_models",
+                  "section_title": "3.2. Multilevel models",
+                  "block_id": "/page/4/Table/18",
+                  "page": 4,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1, row 'Well-Being', columns 'T1 M(SD)/%', 'T2 M(SD)/%', 'T3 M(SD)/%', 'T4 M(SD)/%'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "whole sample | life satisfaction | wave 4": {
+          "values": [
+            {
+              "value": 4.99,
+              "evidence": [
+                {
+                  "pdf_name": "Henning2019.pdf",
+                  "section_id": "019_32_multilevel_models",
+                  "section_title": "3.2. Multilevel models",
+                  "block_id": "/page/4/Table/18",
+                  "page": 4,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1, row 'Well-Being', columns 'T1 M(SD)/%', 'T2 M(SD)/%', 'T3 M(SD)/%', 'T4 M(SD)/%'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    },
+    "SD_SWB": {
+      "name": "SD_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "whole sample | life satisfaction | wave 1": {
+          "values": [
+            {
+              "value": 1.34,
+              "evidence": [
+                {
+                  "pdf_name": "Henning2019.pdf",
+                  "section_id": "019_32_multilevel_models",
+                  "section_title": "3.2. Multilevel models",
+                  "block_id": "/page/4/Table/18",
+                  "page": 4,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1, row 'Well-Being', columns 'T1 M(SD)/%', 'T2 M(SD)/%', 'T3 M(SD)/%', 'T4 M(SD)/%'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "whole sample | life satisfaction | wave 2": {
+          "values": [
+            {
+              "value": 1.31,
+              "evidence": [
+                {
+                  "pdf_name": "Henning2019.pdf",
+                  "section_id": "019_32_multilevel_models",
+                  "section_title": "3.2. Multilevel models",
+                  "block_id": "/page/4/Table/18",
+                  "page": 4,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1, row 'Well-Being', columns 'T1 M(SD)/%', 'T2 M(SD)/%', 'T3 M(SD)/%', 'T4 M(SD)/%'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "whole sample | life satisfaction | wave 3": {
+          "values": [
+            {
+              "value": 1.35,
+              "evidence": [
+                {
+                  "pdf_name": "Henning2019.pdf",
+                  "section_id": "019_32_multilevel_models",
+                  "section_title": "3.2. Multilevel models",
+                  "block_id": "/page/4/Table/18",
+                  "page": 4,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1, row 'Well-Being', columns 'T1 M(SD)/%', 'T2 M(SD)/%', 'T3 M(SD)/%', 'T4 M(SD)/%'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "whole sample | life satisfaction | wave 4": {
+          "values": [
+            {
+              "value": 1.4,
+              "evidence": [
+                {
+                  "pdf_name": "Henning2019.pdf",
+                  "section_id": "019_32_multilevel_models",
+                  "section_title": "3.2. Multilevel models",
+                  "block_id": "/page/4/Table/18",
+                  "page": 4,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1, row 'Well-Being', columns 'T1 M(SD)/%', 'T2 M(SD)/%', 'T3 M(SD)/%', 'T4 M(SD)/%'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    }
+  },
+  "warnings": [
+    {
+      "code": "ungrounded_candidate",
+      "message": "001_front_matter/infoYearT1: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "003_journal_of_research_in_personality/ethnicity: quote not found in section (likely hallucinated): 'No evidence found in the text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "008_abstract/ethnicity: quote not found in section (likely hallucinated): 'Ethnicity composition is not reported in the abstract.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "016_23_analysis/ethnicity: quote not found in section (likely hallucinated): 'The ethnicity of the sample is not reported in this section.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "030_journal_of_research_in_personality/ethnicity: quote not found in section (likely hallucinated): 'No information about the ethnicity of the sample is provided in this section.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "no_samples",
+      "message": "sample census returned no samples",
+      "field_name": null,
+      "sample_key": null
+    }
+  ],
+  "run_meta": {
+    "run_id": "Henning2019",
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "schema_name": "buecker2023",
+    "schema_version": 1,
+    "skill_names": [
+      "bas2_over_bas",
+      "compute_weighted_mean_total",
+      "estimate_yeart1_from_pubyear",
+      "gender-mapping",
+      "hien_arm_taxonomy",
+      "infer_college_sample_100",
+      "infer_ethnicity_from_country",
+      "info_cost_clamp_zero",
+      "ng_mediator_lookup",
+      "ng_source_smallest_number",
+      "single_gender_fill",
+      "study_naming",
+      "table-parsing",
+      "total_geq_sum",
+      "vu_altr_ctr_identity",
+      "vu_cell_count_localization",
+      "vu_cell_terminology",
+      "vu_country_mturk",
+      "vu_info_cost_default"
+    ],
+    "started_at": "2026-07-08T20:48:45.936762Z",
+    "finished_at": "2026-07-08T20:54:27.116008Z",
+    "prompt_tokens": 554022,
+    "completion_tokens": 55272,
+    "passes": 308,
+    "aggregator_passes": 10
+  }
+}

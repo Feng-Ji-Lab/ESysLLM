@@ -1,0 +1,454 @@
+{
+  "paper_id": "Abele2016",
+  "pdf_path": "Abele2016.pdf",
+  "marker_output_dir": "/projects/code/meta_analysis_agent/data/processed/buecker2023/Abele2016",
+  "samples": [
+    {
+      "study_index": 1,
+      "sample_label": "whole sample | life satisfaction | wave 1"
+    },
+    {
+      "study_index": 1,
+      "sample_label": "whole sample | life satisfaction | wave 2"
+    }
+  ],
+  "fields": {
+    "Sample": {
+      "name": "Sample",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | life satisfaction | wave 1": {
+          "values": [
+            {
+              "value": 990,
+              "evidence": [
+                {
+                  "pdf_name": "Abele2016.pdf",
+                  "section_id": "019_51_descriptive_statistics",
+                  "section_title": "5.1 Descriptive Statistics",
+                  "block_id": "/page/8/Table/3",
+                  "page": 8,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "N = 990",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | life satisfaction | wave 2": {
+          "values": [
+            {
+              "value": 990,
+              "evidence": [
+                {
+                  "pdf_name": "Abele2016.pdf",
+                  "section_id": "019_51_descriptive_statistics",
+                  "section_title": "5.1 Descriptive Statistics",
+                  "block_id": "/page/8/Table/3",
+                  "page": 8,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "N = 990",
+                  "bbox": null
+                },
+                {
+                  "pdf_name": "Abele2016.pdf",
+                  "section_id": "023_523_mediation_model_2",
+                  "section_title": "5.2.3 Mediation Model 2",
+                  "block_id": "/page/11/Picture/7",
+                  "page": 11,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Fig. 1 First mediation model for the association between career success and life satisfaction. Note: Effects of non-significant control variables are not displayed; oval fields represent latent variables, rectangular fields represent manifest variables; SE success evaluation; N = 990. *p < .05; **p < .01;***p < .001",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    },
+    "infoYearT1": {
+      "name": "infoYearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "estimated",
+        "evidence": [],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "yearT1": {
+      "name": "yearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 2011,
+        "evidence": [],
+        "derivation": {
+          "kind": "infer_constant",
+          "skill_name": "estimate_yeart1_from_pubyear",
+          "inputs": {
+            "publication_year": 2016,
+            "span": 2.0,
+            "span_source": "lag*1waves"
+          },
+          "formula": "yearT1 = publication_year - 3 - span",
+          "note": "Buecker gold estimation rule for an unreported (Estimated) baseline year"
+        },
+        "confidence": 0.4
+      }
+    },
+    "country": {
+      "name": "country",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "Germany",
+        "evidence": [
+          {
+            "pdf_name": "Abele2016.pdf",
+            "section_id": "003_does_career_success_make_you_happy_the_mediating_r",
+            "section_title": "Does Career Success Make You Happy? The Mediating Role of Multiple Subjective Success Evaluations",
+            "block_id": "003_does_career_success_make_you_happy_the_mediating_r",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/4] Andrea E. Abele<sup>1</sup> · Tamara Hagmaier<sup>1</sup> · Daniel Spurk<sup>2</sup> (Affiliation 1 is Universität Erlangen-Nürnberg)",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "Outcome_variable": {
+      "name": "Outcome_variable",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "life satisfaction, positive affect, negative affect",
+        "evidence": [
+          {
+            "pdf_name": "Abele2016.pdf",
+            "section_id": "003_does_career_success_make_you_happy_the_mediating_r",
+            "section_title": "Does Career Success Make You Happy? The Mediating Role of Multiple Subjective Success Evaluations",
+            "block_id": "003_does_career_success_make_you_happy_the_mediating_r",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/7] has an indirect positive association with life satisfaction",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "sample_type": {
+      "name": "sample_type",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "community/convenience",
+        "evidence": [
+          {
+            "pdf_name": "Abele2016.pdf",
+            "section_id": "003_does_career_success_make_you_happy_the_mediating_r",
+            "section_title": "Does Career Success Make You Happy? The Mediating Role of Multiple Subjective Success Evaluations",
+            "block_id": "003_does_career_success_make_you_happy_the_mediating_r",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/7] N = 990 professionals.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "ethnicity": {
+      "name": "ethnicity",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "predominantly white/european",
+        "evidence": [],
+        "derivation": {
+          "kind": "infer_constant",
+          "skill_name": "infer_ethnicity_from_country",
+          "inputs": {
+            "country": "Germany"
+          },
+          "formula": "",
+          "note": "predominant ethnicity inferred from country (unreported in paper)"
+        },
+        "confidence": 0.5
+      }
+    },
+    "lag": {
+      "name": "lag",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 2.0,
+        "evidence": [
+          {
+            "pdf_name": "Abele2016.pdf",
+            "section_id": "003_does_career_success_make_you_happy_the_mediating_r",
+            "section_title": "Does Career Success Make You Happy? The Mediating Role of Multiple Subjective Success Evaluations",
+            "block_id": "003_does_career_success_make_you_happy_the_mediating_r",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/7] We tested our reasoning in a 2-year prospective study with N = 990 professionals. Controlling for gender, family status, and workload, the results of two mediation models that draw on all information from two measurement points supported our reasoning.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "M_SWB": {
+      "name": "M_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | life satisfaction | wave 1": {
+          "values": [
+            {
+              "value": 3.68,
+              "evidence": [
+                {
+                  "pdf_name": "Abele2016.pdf",
+                  "section_id": "019_51_descriptive_statistics",
+                  "section_title": "5.1 Descriptive Statistics",
+                  "block_id": "/page/8/Table/3",
+                  "page": 8,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1, row '13. Life satisfaction T1', column 'M': 3.68; Table 1, row '14. Life satisfaction T2', column 'M': 3.74",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | life satisfaction | wave 2": {
+          "values": [
+            {
+              "value": 3.74,
+              "evidence": [
+                {
+                  "pdf_name": "Abele2016.pdf",
+                  "section_id": "019_51_descriptive_statistics",
+                  "section_title": "5.1 Descriptive Statistics",
+                  "block_id": "/page/8/Table/3",
+                  "page": 8,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1, row '13. Life satisfaction T1', column 'M': 3.68; Table 1, row '14. Life satisfaction T2', column 'M': 3.74",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    },
+    "SD_SWB": {
+      "name": "SD_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | life satisfaction | wave 1": {
+          "values": [
+            {
+              "value": 0.77,
+              "evidence": [
+                {
+                  "pdf_name": "Abele2016.pdf",
+                  "section_id": "019_51_descriptive_statistics",
+                  "section_title": "5.1 Descriptive Statistics",
+                  "block_id": "/page/8/Table/3",
+                  "page": 8,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1, row '13. Life satisfaction T1', column 'SD': .77; Table 1, row '14. Life satisfaction T2', column 'SD': .74",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | life satisfaction | wave 2": {
+          "values": [
+            {
+              "value": 0.74,
+              "evidence": [
+                {
+                  "pdf_name": "Abele2016.pdf",
+                  "section_id": "019_51_descriptive_statistics",
+                  "section_title": "5.1 Descriptive Statistics",
+                  "block_id": "/page/8/Table/3",
+                  "page": 8,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1, row '13. Life satisfaction T1', column 'SD': .77; Table 1, row '14. Life satisfaction T2', column 'SD': .74",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    }
+  },
+  "warnings": [
+    {
+      "code": "ungrounded_candidate",
+      "message": "003_does_career_success_make_you_happy_the_mediating_r/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "004_1_introduction/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "007_22_career_success_evaluation/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "009_231_correlation_of_predictor_objective_career_achi/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "011_233_correlation_of_mediators_with_the_criterion/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "013_3_present_research/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "016_42_measures/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "020_52_hypotheses_testing/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "021_521_basic_model/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "022_522_mediation_model_1/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "023_523_mediation_model_2/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "024_6_discussion/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "025_61_limitations/ethnicity: quote not found in section (likely hallucinated): 'The paper does not report the racial/ethnic composition of the sample.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "027_7_conclusion/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    }
+  ],
+  "run_meta": {
+    "run_id": "Abele2016",
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "schema_name": "buecker2023",
+    "schema_version": 1,
+    "skill_names": [
+      "bas2_over_bas",
+      "compute_weighted_mean_total",
+      "estimate_yeart1_from_pubyear",
+      "gender-mapping",
+      "hien_arm_taxonomy",
+      "infer_college_sample_100",
+      "infer_ethnicity_from_country",
+      "info_cost_clamp_zero",
+      "ng_mediator_lookup",
+      "ng_source_smallest_number",
+      "single_gender_fill",
+      "study_naming",
+      "table-parsing",
+      "total_geq_sum",
+      "vu_altr_ctr_identity",
+      "vu_cell_count_localization",
+      "vu_cell_terminology",
+      "vu_country_mturk",
+      "vu_info_cost_default"
+    ],
+    "started_at": "2026-07-08T14:59:01.995861Z",
+    "finished_at": "2026-07-08T14:59:07.714694Z",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "passes": 239,
+    "aggregator_passes": 10
+  }
+}

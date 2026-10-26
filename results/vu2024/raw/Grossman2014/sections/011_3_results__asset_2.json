@@ -1,0 +1,194 @@
+{
+  "prompt_tokens": 15066,
+  "completion_tokens": 5435,
+  "data": {
+    "Design": {
+      "extract_value": "None",
+      "evidence_source": "No explicit mention of between-subject or within-subject design in the provided text.",
+      "block_id": "None",
+      "warning": ""
+    },
+    "country": {
+      "extract_value": "None",
+      "evidence_source": "No explicit mention of the country where the study was conducted or the recruitment platform used.",
+      "block_id": "None",
+      "warning": ""
+    },
+    "info_cost": {
+      "extract_value": 0.0,
+      "evidence_source": "No explicit mention of a monetary cost to acquire information. The default for this meta-analysis is 0.0.",
+      "block_id": "None",
+      "warning": ""
+    },
+    "Sample": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            75
+          ]
+        },
+        {
+          "key": "Active Choice vs Baseline",
+          "value": []
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": []
+        },
+        {
+          "key": "Strategy Method vs Baseline",
+          "value": [
+            71
+          ]
+        }
+      ],
+      "evidence_source": "Default NR vs Baseline: N_Tot_CI_Tmt (39) from [page/7/Text/4] + N_Tot_CI_Ctr (36) from [page/7/Text/4]. Active Choice vs Baseline: N_Tot_CI_Tmt is not reported. Default R vs Baseline: N_Tot_CI_Tmt is not reported. Strategy Method vs Baseline: N_Tot_CI_Tmt (35) from Table 3 [page/9/Table/1] + N_Tot_CI_Ctr (36) from [page/7/Text/4].",
+      "block_id": "None",
+      "warning": "Sample for 'Active Choice vs Baseline' and 'Default R vs Baseline' cannot be calculated as N_Tot_CI_Tmt is not reported for these conditions."
+    },
+    "N_Self_CI_Tmt": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": []
+        },
+        {
+          "key": "Active Choice vs Baseline",
+          "value": []
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": []
+        },
+        {
+          "key": "Strategy Method vs Baseline",
+          "value": []
+        }
+      ],
+      "evidence_source": "For Default NR, Active Choice, and Default R, the paper reports 'behavior inconsistent with a preference for the fair outcome', which is defined as 'either choosing to remain ignorant of the recipient's payoffs or, conditional on revealing and being in the CI game, choosing (6,1)' ([page/7/Text/4], [page/9/Text/3]). This combined measure does not allow for the extraction of 'N_Self_CI_Tmt' (selfish choices in the conflict state) as defined. For Strategy Method, the paper states '19 (54%) chose to give the recipient the lower payoff in at least one payoff state' ([page/10/Text/2]), which is also a combined measure of 'inconsistent behavior' ([page/9/Text/3]) and not specifically selfish choices in the conflict state.",
+      "block_id": "None",
+      "warning": "N_Self_CI_Tmt is not explicitly reported for any Tmt condition as a count of selfish choices in the conflict state, but rather as a broader 'inconsistent behavior' measure that includes remaining ignorant."
+    },
+    "N_Self_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            9
+          ]
+        },
+        {
+          "key": "Active Choice vs Baseline",
+          "value": [
+            9
+          ]
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": [
+            9
+          ]
+        },
+        {
+          "key": "Strategy Method vs Baseline",
+          "value": [
+            9
+          ]
+        }
+      ],
+      "evidence_source": "[page/7/Text/4]: \"9 out of 36 (35%) dictators in the Baseline condition chose (6, 1)\"",
+      "block_id": "page/7/Text/4",
+      "warning": ""
+    },
+    "N_Altr_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            27
+          ]
+        },
+        {
+          "key": "Active Choice vs Baseline",
+          "value": [
+            27
+          ]
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": [
+            27
+          ]
+        },
+        {
+          "key": "Strategy Method vs Baseline",
+          "value": [
+            27
+          ]
+        }
+      ],
+      "evidence_source": "Derived: 27 = 36 (N_Tot_CI_Ctr) - 9 (N_Self_CI_Ctr). N_Tot_CI_Ctr from [page/7/Text/4]: '36 dictators in the Baseline condition'. N_Self_CI_Ctr from [page/7/Text/4]: '9 out of 36 ... chose (6, 1)'.",
+      "block_id": "page/7/Text/4",
+      "warning": ""
+    },
+    "N_Tot_CI_Tmt": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            39
+          ]
+        },
+        {
+          "key": "Active Choice vs Baseline",
+          "value": []
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": []
+        },
+        {
+          "key": "Strategy Method vs Baseline",
+          "value": [
+            35
+          ]
+        }
+      ],
+      "evidence_source": "Default NR: [page/7/Text/4]: \"23 of 39 (59%)\". Strategy Method: Table 3 [page/9/Table/1]: \"Strategy Method N 35\". N_Tot_CI_Tmt for Active Choice and Default R are not reported.",
+      "block_id": "None",
+      "warning": "N_Tot_CI_Tmt for 'Active Choice vs Baseline' and 'Default R vs Baseline' is not reported."
+    },
+    "N_Tot_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            36
+          ]
+        },
+        {
+          "key": "Active Choice vs Baseline",
+          "value": [
+            36
+          ]
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": [
+            36
+          ]
+        },
+        {
+          "key": "Strategy Method vs Baseline",
+          "value": [
+            36
+          ]
+        }
+      ],
+      "evidence_source": "[page/7/Text/4]: \"36 (35%) dictators in the Baseline condition\"",
+      "block_id": "page/7/Text/4",
+      "warning": ""
+    }
+  }
+}

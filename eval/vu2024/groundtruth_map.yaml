@@ -1,0 +1,140 @@
+# Vu 2024 — ground-truth validator mapping
+# ================================================
+# Maps schema output → Jansen d_long.xlsx rows. Vu is the HARDEST bench in
+# Jansen: overall 33.6%, with 3 of 6 vars under 25%.
+
+gold_source:
+  file: "/projects/code/meta_analysis_agent/Jansen2025/osfstorage-archive/Archive/analysis/d_long.xlsx"
+  filter: "meta == 'Vu2023'"
+  rows: 1008
+  studies: 15                       # subset of Vu's 22; see studies_in_jansen below
+  variables: ["Design", "country", "info_cost", "N_Self_CI_Tmt", "N_Self_CI_Ctr", "N_Altr_CI_Ctr"]
+  expected_rows_per_var:
+    Design:        120              # 15 × 1 × 8
+    country:       120              # 15 × 1 × 8
+    info_cost:     120              # 15 × 1 × 8
+    N_Self_CI_Tmt: 264              # 15 × ~2.2 × 8
+    N_Self_CI_Ctr: 192              # 15 × ~1.6 × 8
+    N_Altr_CI_Ctr: 192              # 15 × ~1.6 × 8
+
+studies_in_jansen:
+  - Bartling2014
+  - Cerrone2019
+  - Conrads2013
+  - Dana2007
+  - Exley2015                       # within-subject — N_*_CI_* should be NA
+  - Exley2021                       # = Exley & Kessler 2020 working paper
+  - Grossman2014
+  - Grossman2017
+  - Jarke-Neuert2022                # = Jarke-Neuert & Lohse 2020
+  - Kappes2018
+  - Larson2009
+  - Lind2019
+  - Matthey2011                     # within-subject — N_*_CI_* should be NA
+  - Moradi2018
+  - Stuber2019                      # = Stüber 2020 working-paper year
+# Excluded from Jansen-15: Pace2020 (Netherlands), Soraperra2020 (France),
+# plus 5 multi-choice papers Feiler 2014, Felgendreher 2018, Momsen 2019/2020/2020V
+
+mappings:
+
+  Design:
+    schema_path: "$.Design"
+    schema_type: "enum_str"
+    gold_var: "Design"
+    join_keys: ["study"]
+    comparison: "string_exact_lowercase"
+    allowed_values: ["between-subject", "within-subject"]
+    expected_per_study: 1
+
+  country:
+    schema_path: "$.country"
+    schema_type: "enum_str"
+    gold_var: "country"
+    join_keys: ["study"]
+    comparison: "string_exact_lowercase"
+    allowed_values: ["germany", "mturk/prolifics", "norway", "switzerland", "united states"]
+    expected_per_study: 1
+
+  info_cost:
+    schema_path: "$.info_cost"
+    schema_type: "float"
+    gold_var: "info_cost"
+    join_keys: ["study"]
+    comparison: "numeric_tolerance"
+    tolerance: 0.01
+    expected_per_study: 1
+    default_value: 0.0
+    notes: |
+      All 15 Jansen-included papers have info_cost = 0 in the gold. Schema
+      defaults to 0.0. Lift expected: 24% → ~95%.
+
+  N_Self_CI_Tmt:
+    schema_path: "$.cells[*].N_Self_CI_Tmt"
+    schema_type: "list[int]"
+    gold_var: "N_Self_CI_Tmt"
+    join_keys: ["study"]
+    comparison: "list_set_match"     # order doesn't matter, multiset
+    expected_per_study: "1-8 (multi-Tmt papers)"
+    notes: |
+      For within-subject papers (Exley2015, Matthey2011), gold is NA. Schema
+      emits cells: [] → validator treats as match.
+      Lift expected: 10.7% → ~70%.
+
+  N_Self_CI_Ctr:
+    schema_path: "$.cells[*].N_Self_CI_Ctr"
+    schema_type: "list[int]"
+    gold_var: "N_Self_CI_Ctr"
+    join_keys: ["study"]
+    comparison: "list_set_match"
+    expected_per_study: "1-8 (replicated across rows that share one Ctr)"
+    notes: |
+      Schema replicates the same N_Self_CI_Ctr value across cells that share
+      one Ctr_name, matching d_long's row-per-cell encoding.
+      Lift expected: 22.1% → ~75%.
+
+  N_Altr_CI_Ctr:
+    schema_path: "$.cells[*].N_Altr_CI_Ctr"
+    schema_type: "list[int]"
+    gold_var: "N_Altr_CI_Ctr"
+    join_keys: ["study"]
+    comparison: "list_set_match"
+    expected_per_study: "1-8"
+    notes: |
+      Derived via N_Tot_CI_Ctr - N_Self_CI_Ctr. Validator additionally checks
+      identity holds. Lift expected: 12.9% → ~70%.
+
+# Within-subject special handling
+within_subject_studies: [Exley2015, Matthey2011]
+within_subject_rule: |
+  For these studies, all N_*_CI_* gold values are NA. Our schema sets cells: []
+  and emits transitions: { N_Self_Self, N_Self_Altr, N_Altr_Self, N_Altr_Altr }.
+  Validator treats cells: [] as matching NA gold.
+
+# Aggregate metrics
+metrics_to_report:
+  - per_variable_accuracy
+  - per_variable_f1
+  - per_variable_precision
+  - per_variable_recall
+  - per_variable_cohens_kappa
+  - per_study_full_match_rate
+  - overall_correct_pct
+
+jansen_baseline_pct:
+  Design:         82.2
+  country:        85.7
+  info_cost:      24.0
+  N_Self_CI_Tmt:  10.7
+  N_Self_CI_Ctr:  22.1
+  N_Altr_CI_Ctr:  12.9
+  overall:        33.6
+
+our_targets_pct:
+  Design:         95.0      # simple enum
+  country:        90.0      # mturk-special rule
+  info_cost:      95.0      # default 0
+  N_Self_CI_Tmt:  70.0      # cell-structured schema + table PNG multimodal
+  N_Self_CI_Ctr:  75.0      # ditto, with shared-Ctr replication
+  N_Altr_CI_Ctr:  70.0      # derived from identity
+  overall:        80.0

@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "meta_analysis": "Ng et al. (2023) — MASEM of mediators of CBT/IPT for youth depression",
+  "doi": "10.1037/bul0000402",
+  "jansen_label": "Ng2023",
+  "rationale": "Schema covers 5 variables (IPT, male_pct, dxgive, Source, MedCat). For multi-label fields (Source, MedCat) we extract at the measure level and aggregate to a study-level set. The mediator-instrument lookup skill (rules/ng_mediator_lookup) is the main leverage rule for MedCat accuracy.",
+  "fields": [
+    {"name": "Sample", "scope": "sample", "gender_specific": false,
+     "type": "object", "items_type": "integer",
+     "definition": "Total participants randomized in this study record. The sample_key is a GENERIC within-paper label — 'main sample' for most papers; 'CBT arm' and 'IPT arm' for the dual-arm CBT+IPT exception. DO NOT include the paper's author or year in the sample_key. This field anchors the within-paper sample census; the per-record IPT / male_pct / dxgive / Source / MedCat values key off the same labels."
+    },
+
+    {
+      "name": "IPT",
+      "scope": "study",
+      "gender_specific": false,
+      "type": "enum",
+      "items_type": "integer",
+      "allowed_values": ["0", "1"],
+      "value_labels": {"0": "Cognitive Behavioral Therapy (CBT)", "1": "Interpersonal Psychotherapy (IPT)"},
+      "definition": "Therapy approach tested in this study. 0 = CBT (cognitive, cognitive-behavioral, problem-solving training, rational-emotive, restructuring/reframing, self-control training, verbal self-instructional training). 1 = IPT (Interpersonal Psychotherapy, including IPT-A, IPT-AST variants). DUAL-ARM EXCEPTION: a paper that tests BOTH a CBT arm and an IPT arm in the same RCT contributes TWO study records keyed 'CBT arm' and 'IPT arm'; all other fields (male_pct, dxgive, Source, MedCat) are shared between the two records.",
+      "skill_hints": "Look at Methods → 'Treatment'/'Intervention' section. Treatment name 'IPT' or 'interpersonal psychotherapy' or 'IPT-A' or 'IPT-AST' → 1. Otherwise (CBT, problem-solving training, behavioral activation, etc.) → 0."
+    },
+    {
+      "name": "male_pct",
+      "scope": "study",
+      "gender_specific": false,
+      "comment_on_gender": "IS the gender metric, NOT decomposed [total, female, male]. female_pct = 100 - male_pct is trivially derivable.",
+      "type": "number",
+      "unit": "percent",
+      "range": [0, 100],
+      "precision_dp": 2,
+      "definition": "Percentage of the sample that is male, rounded to 2 decimal places (e.g., 66.67%). If only N_male and N_total are reported, compute (N_male / N_total) × 100. If only verbal descriptors are given, follow codebook defaults: Marginal/Few = 15%, Some = 30%, Majority = 60%, Mainly/Predominantly/Primarily = 90%.",
+      "skill_hints": "Find the Participants/Sample description in Methods. Prefer randomized-sample %male over enrolled or screened. For all-female samples emit 0; for all-male emit 100.",
+      "validator_tolerance_pp": 0.5,
+      "fallback_tolerance_pp": 2.0
+    },
+    {
+      "name": "dxgive",
+      "scope": "study",
+      "gender_specific": false,
+      "type": "enum",
+      "items_type": "integer",
+      "allowed_values": ["110", "120", "200", "400"],
+      "value_labels": {
+        "110": "Yes, ALL of sample met diagnostic criteria for a depressive disorder",
+        "120": "Yes, SOME portion of sample met diagnostic criteria",
+        "200": "NONE of sample met diagnostic criteria (e.g., prevention trial that excluded diagnosed)",
+        "400": "Diagnosis NOT assessed, mentioned, or reported"
+      },
+      "definition": "Whether participants met formal diagnostic criteria for a depressive disorder (MDD, persistent depressive disorder/dysthymia, minor depressive disorder, or depressive disorder NOS). 3-digit categorical code where leading digit encodes top-level: 1=Yes, 2=No, 4=Unknown.",
+      "skill_hints": "Read Methods → Eligibility/Inclusion Criteria. 'Met DSM-IV/5 criteria for MDD' as required → 110. 'Eligible if elevated symptoms; some met dx' → 120. 'Excluded if diagnosed' (typical prevention trial) → 200. No mention of diagnosis at all → 400."
+    },
+    {
+      "name": "Source",
+      "scope": "measure_aggregated_to_study",
+      "gender_specific": false,
+      "type": "multi_label",
+      "items_type": "enum",
+      "allowed_values": ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+      "allowed_values_int": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "value_labels": {
+        "1": "Target youth (self-report)",
+        "2": "Caregiver (parent/guardian)",
+        "3": "Sibling",
+        "4": "Peer",
+        "5": "Teacher (or teacher-like adult: counselor, milieu worker, probation officer)",
+        "6": "Therapist (the treating clinician)",
+        "7": "Researcher (RA, independent evaluator, clinician-rater; performance-based measures; interview-based judgments like K-SADS, CGI, GAF)",
+        "8": "Life-event data (external records: arrests, attendance, grades, urinalysis)",
+        "9": "Unknown (not reported and authors did not reply)"
+      },
+      "definition": "Rater/informant types used across all measures in the study. Multi-label: extract every distinct rater type for any measure (mediator or outcome). Emit as a SET of integers.",
+      "skill_hints": "For each measure in Methods, identify who completed it. 'Children/adolescents/youth completed the [scale]' → 1. 'Parent/mother/father completed' → 2. 'Teacher rated' → 5. 'Trained interviewer / clinician administered K-SADS / CGI / CDRS-R / HRSD' → 7. Per codebook rule: 'when there are multiple sources for one measure, code the smallest number'.",
+      "observed_in_data": [1, 2, 5, 7, 9],
+      "comment": "Codes 3, 4, 6, 8 are codebook-defined but rarely appear in youth-depression trials (sibling/peer/therapist/life-event sources are unusual for these measures). Schema accepts them but marks them low-prior.",
+      "validator_match": "set_jaccard",
+      "validator_jaccard_threshold": 0.66
+    },
+    {
+      "name": "MedCat",
+      "scope": "measure_aggregated_to_study",
+      "gender_specific": false,
+      "type": "multi_label",
+      "items_type": "enum",
+      "allowed_values": ["1", "2", "3", "4", "5", "6", "99", "l2", "l29"],
+      "value_labels": {
+        "1": "Negative cognition (a) — cognitive distortions, dysfunctional attitudes, hopelessness, low self-esteem, rumination, pessimistic attribution",
+        "2": "Pleasant activities (b) — activity scheduling, hobbies, behavioral activation, relaxation (NOT social)",
+        "3": "Problem solving (c) — primary control coping, active coping, generating solutions, conflict resolution",
+        "4": "Reframing (d) — secondary control coping, cognitive restructuring, distraction, acceptance, finding the silver lining",
+        "5": "Social engagement (e) — social skills, social support, prosocial behavior, loneliness, peer/dating quality",
+        "99": "Outcome (depression symptoms)",
+        "l2": "Family functioning (L2) — family dysfunction, expressed emotion, parent-youth conflict, cohesion, communication problems",
+        "l29": "Avoidance (L29) — avoidant coping, wishful thinking, denial"
+      },
+      "definition": "Mediator category for every measure in the study. Multi-label: emit a SET of distinct MedCat codes covering all measures. Codes 1-5 are the canonical 'high-priority' mediators (CMH a-e); 'l2' and 'l29' are 'low-priority' but central to this MA's IPT pathway; '99' marks depression-symptom outcome measures.",
+      "skill_hints_ref": "rules/ng2023/mediator_instruments.yaml",
+      "skill_hints": "For each measure, look up its name in the mediator_instruments.yaml table. Codebook rule (p. 11): 'prioritize the contents of the measure over the title'. If a measure has 2/3 items in social and 1/3 in family, code as social engagement (5). Code 99 for depression symptom outcomes only (BDI, CDI, CES-D, KSADS-depression-severity).",
+      "validator_match": "set_jaccard_with_optional_99",
+      "validator_note": "Compare schema output set with d_long gold set via Jaccard ≥ 0.66. Outcome code 99 is OPTIONAL — if gold has only mediator codes, drop 99 from schema before comparing."
+    }
+  ]
+}

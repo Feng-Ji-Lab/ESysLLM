@@ -1,0 +1,363 @@
+{
+  "paper_id": "Haase2008",
+  "pdf_path": "Haase2008.pdf",
+  "marker_output_dir": "/projects/code/meta_analysis_agent/data/processed/buecker2023/Haase2008",
+  "samples": [],
+  "fields": {
+    "Sample": {
+      "name": "Sample",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": null
+    },
+    "infoYearT1": {
+      "name": "infoYearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "estimated",
+        "evidence": [
+          {
+            "pdf_name": "Haase2008.pdf",
+            "section_id": "002_goal_engagement_during_the_school_work_transition_",
+            "section_title": "Goal Engagement During the School– Work Transition: Beneficial for All, Particularly for Girls",
+            "block_id": "None",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "The text mentions a 'longitudinal study' but does not specify the calendar year of the first data collection wave.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "yearT1": {
+      "name": "yearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 2003,
+        "evidence": [],
+        "derivation": {
+          "kind": "infer_constant",
+          "skill_name": "estimate_yeart1_from_pubyear",
+          "inputs": {
+            "publication_year": 2008,
+            "span": 2.0,
+            "span_source": "default"
+          },
+          "formula": "yearT1 = publication_year - 3 - span",
+          "note": "Buecker gold estimation rule for an unreported (Estimated) baseline year"
+        },
+        "confidence": 0.4
+      }
+    },
+    "country": {
+      "name": "country",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "Germany",
+        "evidence": [
+          {
+            "pdf_name": "Haase2008.pdf",
+            "section_id": "002_goal_engagement_during_the_school_work_transition_",
+            "section_title": "Goal Engagement During the School– Work Transition: Beneficial for All, Particularly for Girls",
+            "block_id": "/page/0/Text/4",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[page/0/Text/4] University of Jena, Germany; [page/0/Text/8] Humboldt University of Berlin, Germany; [page/0/Text/9] ...noncollege-bound German adolescents (N=362).",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "Outcome_variable": {
+      "name": "Outcome_variable",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "positive affect, negative affect",
+        "evidence": [
+          {
+            "pdf_name": "Haase2008.pdf",
+            "section_id": "002_goal_engagement_during_the_school_work_transition_",
+            "section_title": "Goal Engagement During the School– Work Transition: Beneficial for All, Particularly for Girls",
+            "block_id": "/page/0/Text/9",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[page/0/Text/9] Goal engagement was nonetheless beneficial for well-being, predicting positive affect for both girls and boys.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "sample_type": {
+      "name": "sample_type",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "community/convenience",
+        "evidence": [
+          {
+            "pdf_name": "Haase2008.pdf",
+            "section_id": "002_goal_engagement_during_the_school_work_transition_",
+            "section_title": "Goal Engagement During the School– Work Transition: Beneficial for All, Particularly for Girls",
+            "block_id": "/page/0/Text/9",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[page/0/Text/9] ...noncollege-bound German adolescents (N=362).",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "ethnicity": {
+      "name": "ethnicity",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "predominantly white/european",
+        "evidence": [
+          {
+            "pdf_name": "Haase2008.pdf",
+            "section_id": "002_goal_engagement_during_the_school_work_transition_",
+            "section_title": "Goal Engagement During the School– Work Transition: Beneficial for All, Particularly for Girls",
+            "block_id": "/page/0/Text/9",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[page/0/Text/9] ...noncollege-bound German adolescents (N=362).",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "lag": {
+      "name": "lag",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 0.17,
+        "evidence": [
+          {
+            "pdf_name": "Haase2008.pdf",
+            "section_id": "010_procedure",
+            "section_title": "Procedure",
+            "block_id": "/page/9/Text/8",
+            "page": 9,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/9/Text/8] five were scheduled at two-month intervals during the 10th grade (3, 4, 5, 6, 7)",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "M_SWB": {
+      "name": "M_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": null
+    },
+    "SD_SWB": {
+      "name": "SD_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": null
+    }
+  },
+  "warnings": [
+    {
+      "code": "ungrounded_candidate",
+      "message": "004_the_schooltowork_transition/ethnicity: quote not found in section (likely hallucinated): 'The text does not report the ethnic composition of the sample.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "005_the_present_study/ethnicity: quote not found in section (likely hallucinated): 'Ethnicity information is not provided in the text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "007_method/Sample: quote not found in section (likely hallucinated): 'Participants were 1,000 German adults (50% female) aged 18 to 85 years (M = 49.8'",
+      "field_name": "Sample",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "007_method/infoYearT1: quote not found in section (likely hallucinated): 'The data for the present study were collected in 2010 (Time 1) and 2011 (Time 2)'",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "007_method/yearT1: quote not found in section (likely hallucinated): 'The data for the present study were collected in 2010 (Time 1) and 2011 (Time 2)'",
+      "field_name": "yearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "007_method/country: quote not found in section (likely hallucinated): 'The data for the present study were collected in 2010 (Time 1) and 2011 (Time 2)'",
+      "field_name": "country",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "007_method/Outcome_variable: quote not found in section (likely hallucinated): 'Subjective well-being was assessed using the Satisfaction with Life Scale (SWLS;'",
+      "field_name": "Outcome_variable",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "007_method/sample_type: quote not found in section (likely hallucinated): 'Participants were 1,000 German adults (50% female) aged 18 to 85 years (M = 49.8'",
+      "field_name": "sample_type",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "007_method/ethnicity: quote not found in section (likely hallucinated): 'Participants were 1,000 German adults (50% female) aged 18 to 85 years (M = 49.8'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "007_method/lag: quote not found in section (likely hallucinated): 'The data for the present study were collected in 2010 (Time 1) and 2011 (Time 2)'",
+      "field_name": "lag",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "007_method/M_SWB: quote not found in section (likely hallucinated): 'At Time 1, the mean SWLS score was 5.12 (SD = 1.23), and at Time 2, it was 5.08 '",
+      "field_name": "M_SWB",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "007_method/SD_SWB: quote not found in section (likely hallucinated): 'At Time 1, the mean SWLS score was 5.12 (SD = 1.23), and at Time 2, it was 5.08 '",
+      "field_name": "SD_SWB",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "010_procedure/ethnicity: quote not found in section (likely hallucinated): 'The text does not provide any information regarding the ethnicity or racial comp'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "011_results/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "012_intercorrelations_of_variables/infoYearT1: quote not found in section (likely hallucinated): \"The text mentions '2008' in a download link, but this is not the data collection\"",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "013_goal_engagement_and_apprenticeship_attainment/ethnicity: quote not found in section (likely hallucinated): 'No information about the ethnicity of the sample is provided in the text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "014_goal_engagement_and_positive_affect/ethnicity: quote not found in section (likely hallucinated): 'Ethnicity of the sample is not reported in this section.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "015_discussion/ethnicity: quote not found in section (likely hallucinated): 'Ethnicity of the sample is not reported in this section.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "016_goal_engagement_and_career_goal_attainment/ethnicity: quote not found in section (likely hallucinated): 'Ethnicity of the sample is not reported in the provided text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "017_goal_engagement_and_positive_affect/infoYearT1: quote not found in section (likely hallucinated): 'The text does not explicitly state the calendar year of the first data collectio'",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "022_acknowledgments/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "no_samples",
+      "message": "sample census returned no samples",
+      "field_name": null,
+      "sample_key": null
+    }
+  ],
+  "run_meta": {
+    "run_id": "Haase2008",
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "schema_name": "buecker2023",
+    "schema_version": 1,
+    "skill_names": [
+      "bas2_over_bas",
+      "compute_weighted_mean_total",
+      "estimate_yeart1_from_pubyear",
+      "gender-mapping",
+      "hien_arm_taxonomy",
+      "infer_college_sample_100",
+      "infer_ethnicity_from_country",
+      "info_cost_clamp_zero",
+      "ng_mediator_lookup",
+      "ng_source_smallest_number",
+      "single_gender_fill",
+      "study_naming",
+      "table-parsing",
+      "total_geq_sum",
+      "vu_altr_ctr_identity",
+      "vu_cell_count_localization",
+      "vu_cell_terminology",
+      "vu_country_mturk",
+      "vu_info_cost_default"
+    ],
+    "started_at": "2026-07-08T19:47:22.547136Z",
+    "finished_at": "2026-07-08T19:52:20.511566Z",
+    "prompt_tokens": 390443,
+    "completion_tokens": 45303,
+    "passes": 232,
+    "aggregator_passes": 10
+  }
+}

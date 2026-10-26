@@ -1,0 +1,169 @@
+# Every number reported in the R2 manuscript that this repository can reproduce, with
+# the cell selection or scorer line that produces it. Checked by scripts/build_summary.py.
+#
+# standard: coverage  = the paper's rule (reference value(s) appear in the extraction;
+#                       extras allowed)  -> match_class in {exact, contains}
+#           strict    = exact only
+# Numbers for Studies 1-2 (chatbot interfaces, GPT-4o DCR) are not in this repository:
+# the rater sheets and GPT-4o outputs were never archived here (see README).
+
+# ---------------------------------------------------------------- Study 3 (He2020, T = 0)
+- {id: s3_gemini_precision, location: "main.tex §3.3; Fig. model_comp_all", ma: he2020,
+   select: {study: "Study 3", model: gemini-2.5-flash, temperature: "0"}, standard: coverage,
+   metric: precision, paper_value: 0.9776}
+- {id: s3_gemini_recall, location: "main.tex §3.3", ma: he2020,
+   select: {study: "Study 3", model: gemini-2.5-flash, temperature: "0"}, metric: recall, paper_value: 0.9984}
+- {id: s3_gemini_f1, location: "main.tex §3.3; abstract (0.99)", ma: he2020,
+   select: {study: "Study 3", model: gemini-2.5-flash, temperature: "0"}, metric: f1, paper_value: 0.9879}
+- {id: s3_gpt5mini_precision, location: "main.tex §3.3", ma: he2020,
+   select: {study: "Study 3", model: gpt-5-mini, temperature: "0"}, metric: precision, paper_value: 0.9545}
+- {id: s3_gpt5mini_recall, location: "main.tex §3.3", ma: he2020,
+   select: {study: "Study 3", model: gpt-5-mini, temperature: "0"}, metric: recall, paper_value: 0.9816}
+- {id: s3_gpt5mini_f1, location: "main.tex §3.3", ma: he2020,
+   select: {study: "Study 3", model: gpt-5-mini, temperature: "0"}, metric: f1, paper_value: 0.9679}
+- {id: s3_haiku_precision, location: "main.tex §3.3", ma: he2020,
+   select: {study: "Study 3", model: claude-haiku-4.5, temperature: "0"}, metric: precision, paper_value: 0.9352}
+- {id: s3_haiku_recall, location: "main.tex §3.3", ma: he2020,
+   select: {study: "Study 3", model: claude-haiku-4.5, temperature: "0"}, metric: recall, paper_value: 0.9575}
+- {id: s3_haiku_f1, location: "main.tex §3.3", ma: he2020,
+   select: {study: "Study 3", model: claude-haiku-4.5, temperature: "0"}, metric: f1, paper_value: 0.9462}
+- {id: s3_n_papers_scored, location: "main.tex §2.2.1 says He2020 has 60 papers", ma: he2020,
+   select: {study: "Study 3", model: gemini-2.5-flash, temperature: "0"}, metric: n_papers, paper_value: null,
+   note: "56 of the 60 reference papers have pipeline outputs in legacy/v1/output/<model>/ (all three models lack 1Howell2018, 1Luu2014, 1Swami2010Associations between trait emotional, 1Thall2014121); the paper does not state n for Study 3"}
+
+# ---------------------------------------------------------------- Appendix D (5 papers; T = 0 rows = Study-3 runs)
+- &appd_papers {id: _appd_paper_list, location: "appendix.tex Supplemental D", ma: he2020,
+   select: {study: "Study 3", model: gemini-2.5-flash, temperature: "0",
+            papers: &p5 [1Atari2016, 1Benford2014, 1Cotter2015, 1Iannantuono2012, 1Swami2009check]},
+   metric: n_papers, paper_value: 5}
+- {id: appd_gemini_t0_p, location: "appendix.tex Fig. temp_comp_pre", ma: he2020,
+   select: {study: "Study 3", model: gemini-2.5-flash, temperature: "0", papers: *p5}, metric: precision, paper_value: 1.0000}
+- {id: appd_gemini_t0_r, location: "appendix.tex Fig. temp_comp_re", ma: he2020,
+   select: {study: "Study 3", model: gemini-2.5-flash, temperature: "0", papers: *p5}, metric: recall, paper_value: 1.0000}
+- {id: appd_gemini_t02_p, location: "appendix.tex Fig. temp_comp_pre", ma: he2020,
+   select: {study: "Appendix D", model: gemini-2.5-flash, temperature: "0.2"}, metric: precision, paper_value: 0.9828}
+- {id: appd_gemini_t02_r, location: "appendix.tex Fig. temp_comp_re", ma: he2020,
+   select: {study: "Appendix D", model: gemini-2.5-flash, temperature: "0.2"}, metric: recall, paper_value: 1.0000}
+- {id: appd_gemini_t04_p, location: "appendix.tex Fig. temp_comp_pre", ma: he2020,
+   select: {study: "Appendix D", model: gemini-2.5-flash, temperature: "0.4"}, metric: precision, paper_value: 0.9828}
+- {id: appd_gemini_t04_r, location: "appendix.tex Fig. temp_comp_re", ma: he2020,
+   select: {study: "Appendix D", model: gemini-2.5-flash, temperature: "0.4"}, metric: recall, paper_value: 1.0000}
+- {id: appd_gpt5mini_t0_p, location: "appendix.tex Fig. temp_comp_pre", ma: he2020,
+   select: {study: "Study 3", model: gpt-5-mini, temperature: "0", papers: *p5}, metric: precision, paper_value: 0.9655}
+- {id: appd_gpt5mini_t0_r, location: "appendix.tex Fig. temp_comp_re", ma: he2020,
+   select: {study: "Study 3", model: gpt-5-mini, temperature: "0", papers: *p5}, metric: recall, paper_value: 1.0000}
+- {id: appd_gpt5mini_t02_p, location: "appendix.tex Fig. temp_comp_pre", ma: he2020,
+   select: {study: "Appendix D", model: gpt-5-mini, temperature: "0.2"}, metric: precision, paper_value: 1.0000}
+- {id: appd_gpt5mini_t02_r, location: "appendix.tex Fig. temp_comp_re", ma: he2020,
+   select: {study: "Appendix D", model: gpt-5-mini, temperature: "0.2"}, metric: recall, paper_value: 1.0000}
+- {id: appd_gpt5mini_t04_p, location: "appendix.tex Fig. temp_comp_pre", ma: he2020,
+   select: {study: "Appendix D", model: gpt-5-mini, temperature: "0.4"}, metric: precision, paper_value: 0.9655}
+- {id: appd_gpt5mini_t04_r, location: "appendix.tex Fig. temp_comp_re", ma: he2020,
+   select: {study: "Appendix D", model: gpt-5-mini, temperature: "0.4"}, metric: recall, paper_value: 1.0000}
+- {id: appd_haiku_t0_p, location: "appendix.tex Fig. temp_comp_pre", ma: he2020,
+   select: {study: "Study 3", model: claude-haiku-4.5, temperature: "0", papers: *p5}, metric: precision, paper_value: 0.9107}
+- {id: appd_haiku_t0_r, location: "appendix.tex Fig. temp_comp_re", ma: he2020,
+   select: {study: "Study 3", model: claude-haiku-4.5, temperature: "0", papers: *p5}, metric: recall, paper_value: 0.9623}
+- {id: appd_haiku_t02_p, location: "appendix.tex Fig. temp_comp_pre", ma: he2020,
+   select: {study: "Appendix D", model: claude-haiku-4.5, temperature: "0.2"}, metric: precision, paper_value: 0.9455}
+- {id: appd_haiku_t02_r, location: "appendix.tex Fig. temp_comp_re", ma: he2020,
+   select: {study: "Appendix D", model: claude-haiku-4.5, temperature: "0.2"}, metric: recall, paper_value: 0.9455}
+- {id: appd_haiku_t04_p, location: "appendix.tex Fig. temp_comp_pre", ma: he2020,
+   select: {study: "Appendix D", model: claude-haiku-4.5, temperature: "0.4"}, metric: precision, paper_value: 0.9286}
+- {id: appd_haiku_t04_r, location: "appendix.tex Fig. temp_comp_re", ma: he2020,
+   select: {study: "Appendix D", model: claude-haiku-4.5, temperature: "0.4"}, metric: recall, paper_value: 0.9630}
+# F1 per cell of the figure (not printed in the paper) — informational, to document that
+# T=0 is best only for Gemini (see docs/known_discrepancies.md #1)
+- {id: appd_haiku_t0_f1, location: "appendix.tex Fig. temp_comp_f1", ma: he2020,
+   select: {study: "Study 3", model: claude-haiku-4.5, temperature: "0", papers: *p5}, metric: f1, paper_value: null,
+   note: "Haiku F1 is lowest at T=0 (0.936 vs 0.946 at 0.2/0.4); text says T=0 best for all models"}
+- {id: appd_gpt5mini_t02_f1, location: "appendix.tex Fig. temp_comp_f1", ma: he2020,
+   select: {study: "Appendix D", model: gpt-5-mini, temperature: "0.2"}, metric: f1, paper_value: null,
+   note: "GPT-5-mini F1 peaks at T=0.2 (1.000), not T=0 (0.982)"}
+
+# ---------------------------------------------------------------- Study 4 (Table 2)
+- {id: t2_goal_n, location: "main.tex Table 2", ma: goal_orientation_2019, select: {study: "Study 4"}, metric: n_papers, paper_value: 13}
+- {id: t2_goal_precision, location: "main.tex Table 2", ma: goal_orientation_2019, select: {study: "Study 4"}, metric: precision, paper_value: 0.9521}
+- {id: t2_goal_recall, location: "main.tex Table 2", ma: goal_orientation_2019, select: {study: "Study 4"}, metric: recall, paper_value: 1.0000}
+- {id: t2_goal_f1, location: "main.tex Table 2", ma: goal_orientation_2019, select: {study: "Study 4"}, metric: f1, paper_value: 0.9755}
+- {id: t2_gratitude_n, location: "main.tex Table 2", ma: gratitude_loneliness_2024, select: {study: "Study 4"}, metric: n_papers, paper_value: 17}
+- {id: t2_gratitude_precision, location: "main.tex Table 2", ma: gratitude_loneliness_2024, select: {study: "Study 4"}, metric: precision, paper_value: 0.9592}
+- {id: t2_gratitude_recall, location: "main.tex Table 2", ma: gratitude_loneliness_2024, select: {study: "Study 4"}, metric: recall, paper_value: 1.0000}
+- {id: t2_gratitude_f1, location: "main.tex Table 2", ma: gratitude_loneliness_2024, select: {study: "Study 4"}, metric: f1, paper_value: 0.9792}
+- {id: t2_intelligence_n, location: "main.tex Table 2", ma: intelligence_creativity_2021, select: {study: "Study 4"}, metric: n_papers, paper_value: 18}
+- {id: t2_intelligence_precision, location: "main.tex Table 2", ma: intelligence_creativity_2021, select: {study: "Study 4"}, metric: precision, paper_value: 0.9435}
+- {id: t2_intelligence_recall, location: "main.tex Table 2", ma: intelligence_creativity_2021, select: {study: "Study 4"}, metric: recall, paper_value: 0.9832}
+- {id: t2_intelligence_f1, location: "main.tex Table 2", ma: intelligence_creativity_2021, select: {study: "Study 4"}, metric: f1, paper_value: 0.9630}
+
+# ---------------------------------------------------------------- Study 5 (Table 3) — DCR column
+# n in Table 3 is the head-to-head set (papers Jansen's sheet also codes); our F1 is
+# recomputed on that same set where it differs from everything we scored.
+- {id: t3_buecker_dcr, location: "main.tex Table 3 (n=98)", ma: buecker2023,
+   select: {study: "Study 5", papers_exclude: [Garcia-Pena2013]}, metric: f1, paper_value: 0.916}
+- {id: t3_buecker_dcr_all99, location: "main.tex Table 3 (all 99 scored papers)", ma: buecker2023,
+   select: {study: "Study 5"}, metric: f1, paper_value: null, note: "same to 3 dp as the 98-paper set"}
+- {id: t3_bennett_dcr, location: "main.tex Table 3 (n=68)", ma: bennett2023,
+   select: {study: "Study 5", papers_exclude: [Ziolkowska2017]}, metric: f1, paper_value: 0.899}
+- {id: t3_bennett_dcr_all69, location: "main.tex Table 3 (all 69 scored papers)", ma: bennett2023,
+   select: {study: "Study 5"}, metric: f1, paper_value: null, note: "0.900 on all 69; Jansen's sheet lacks Ziolkowska2017 (corrupted label)"}
+- {id: t3_ng_dcr, location: "main.tex Table 3 (row says n=30)", ma: ng2023,
+   select: {study: "Study 5"}, metric: f1, paper_value: 0.848,
+   note: "0.848 is the 31-paper figure; Jansen's side has 30 (his TADS2003 != our TADS2004). On the common 30 papers DCR = 0.852 (see t3_ng_dcr_30)."}
+- {id: t3_ng_dcr_30, location: "main.tex Table 3 — 30-paper head-to-head set", ma: ng2023,
+   select: {study: "Study 5", papers_exclude: [TADS2004]}, metric: f1, paper_value: null,
+   note: "value the Table 3 row should carry if n=30 is kept"}
+- {id: t3_vu_dcr, location: "main.tex Table 3 (n=15)", ma: vu2024, select: {study: "Study 5"}, metric: f1, paper_value: 0.831}
+- {id: t3_bowes_dcr, location: "main.tex Table 3 (n=100)", ma: bowes2023, select: {study: "Study 5"}, metric: f1, paper_value: 0.831}
+- {id: t3_vu_n, location: "main.tex Table 3", ma: vu2024, select: {study: "Study 5"}, metric: n_papers, paper_value: 15}
+- {id: t3_bowes_n, location: "main.tex Table 3", ma: bowes2023, select: {study: "Study 5"}, metric: n_papers, paper_value: 100}
+- {id: t3_ng_n_scored, location: "main.tex Table 3 (row says 30)", ma: ng2023, select: {study: "Study 5"}, metric: n_papers,
+   paper_value: 30, note: "31 papers were scored on our side"}
+
+# ---------------------------------------------------------------- Study 5 (Table 3) — Jansen Best / Mean, re-scored with our scorer
+- {id: t3_buecker_best, location: "main.tex Table 3", ma: buecker2023, metric: f1, paper_value: 0.873,
+   source: {script: score_buecker_jansen_ced.py, line: "Jansen best", index: 1}}
+- {id: t3_buecker_mean, location: "main.tex Table 3", ma: buecker2023, metric: f1, paper_value: 0.805,
+   source: {script: score_buecker_jansen_ced.py, line: "Jansen mean", index: 1}}
+- {id: t3_bennett_best, location: "main.tex Table 3", ma: bennett2023, metric: f1, paper_value: 0.874,
+   source: {script: score_bennett_jansen_ced.py, line: "Jansen best", index: 1}}
+- {id: t3_bennett_mean, location: "main.tex Table 3", ma: bennett2023, metric: f1, paper_value: 0.823,
+   source: {script: score_bennett_jansen_ced.py, line: "Jansen mean", index: 1}}
+- {id: t3_ng_best, location: "main.tex Table 3", ma: ng2023, metric: f1, paper_value: 0.738,
+   source: {script: score_ng_vu_jansen_ced.py, section: "Ng2023", line: "Jansen best", index: 1}}
+- {id: t3_ng_mean, location: "main.tex Table 3", ma: ng2023, metric: f1, paper_value: 0.644,
+   source: {script: score_ng_vu_jansen_ced.py, section: "Ng2023", line: "Jansen mean", index: 1}}
+- {id: t3_vu_best, location: "main.tex Table 3", ma: vu2024, metric: f1, paper_value: 0.615,
+   source: {script: score_ng_vu_jansen_ced.py, section: "Vu2023", line: "Jansen best", index: 1}}
+- {id: t3_vu_mean, location: "main.tex Table 3", ma: vu2024, metric: f1, paper_value: 0.527,
+   source: {script: score_ng_vu_jansen_ced.py, section: "Vu2023", line: "Jansen mean", index: 1}}
+- {id: t3_bowes_best, location: "main.tex Table 3", ma: bowes2023, metric: f1, paper_value: 0.720,
+   source: {script: score_bowes_jansen_ced9.py, line: "Jansen best", index: 1}}
+- {id: t3_bowes_mean, location: "main.tex Table 3", ma: bowes2023, metric: f1, paper_value: 0.611,
+   source: {script: score_bowes_jansen_ced9.py, line: "Jansen mean", index: 1}}
+
+# margins quoted in §3.5 text
+- {id: s5_margin_bennett, location: "main.tex §3.5 (0.025 margin)", ma: bennett2023, metric: f1_diff, paper_value: 0.025,
+   derived: {a: t3_bennett_dcr, b: t3_bennett_best}}
+- {id: s5_margin_vu, location: "main.tex §3.5 (0.216 margin)", ma: vu2024, metric: f1_diff, paper_value: 0.216,
+   derived: {a: t3_vu_dcr, b: t3_vu_best}}
+- {id: s5_margin_bowes, location: "main.tex §3.5 (0.111 margin)", ma: bowes2023, metric: f1_diff, paper_value: 0.111,
+   derived: {a: t3_bowes_dcr, b: t3_bowes_best}}
+
+# ---------------------------------------------------------------- §3.5 per-field numbers
+- {id: s5_bowes_outcome_es_f1, location: "main.tex §3.5 (0.675)", ma: bowes2023, select: {field: outcome_es}, metric: f1, paper_value: 0.675}
+- {id: s5_bowes_es_es_f1, location: "main.tex §3.5 (0.571)", ma: bowes2023, select: {field: es_es}, metric: f1, paper_value: 0.571}
+- {id: s5_bowes_N_es_f1, location: "main.tex §3.5 (0.582)", ma: bowes2023, select: {field: N_es}, metric: f1, paper_value: 0.582}
+- {id: s5_bowes_outcome_f1, location: "main.tex §3.5 (0.765)", ma: bowes2023, select: {field: Outcome}, metric: f1, paper_value: 0.765}
+- {id: s5_bowes_covid_f1, location: "main.tex §3.5 (0.985)", ma: bowes2023, select: {field: COVID}, metric: f1, paper_value: 0.985}
+- {id: s5_bowes_jansen_es_es_best, location: "main.tex §3.5 (0.291)", ma: bowes2023, metric: f1, paper_value: 0.291,
+   source: {script: score_bowes_jansen_ced9.py, after: "per-field Widened F1", line: "es_es", index: 0}}
+- {id: s5_bowes_jansen_outcome_es_best, location: "main.tex §3.5 (0.347)", ma: bowes2023, metric: f1, paper_value: 0.347,
+   source: {script: score_bowes_jansen_ced9.py, after: "per-field Widened F1", line: "outcome_es", index: 0}}
+- {id: s5_bowes_jansen_N_es_best, location: "main.tex §3.5 (0.462)", ma: bowes2023, metric: f1, paper_value: 0.462,
+   source: {script: score_bowes_jansen_ced9.py, after: "per-field Widened F1", line: "N_es", index: 0}}
+- {id: s5_bowes_jansen_outcome_best, location: "main.tex §3.5 (0.821)", ma: bowes2023, metric: f1, paper_value: 0.821,
+   source: {script: score_bowes_jansen_ced9.py, after: "per-field Widened F1", line: "Outcome ", index: 0}}
+- {id: s5_buecker_country_f1, location: "main.tex §3.5 (0.952)", ma: buecker2023, select: {field: country}, metric: f1, paper_value: 0.952}
+- {id: s5_buecker_yearT1_f1, location: "main.tex §3.5 (0.900)", ma: buecker2023, select: {field: yearT1}, metric: f1, paper_value: 0.900,
+   note: "30 of 101 yearT1 values were filled by the estimate_yeart1_from_pubyear executor (codebook rule), not read from the article"}
+- {id: s5_bennett_country_f1, location: "main.tex §3.5 (0.978)", ma: bennett2023, select: {field: Country}, metric: f1, paper_value: 0.978}

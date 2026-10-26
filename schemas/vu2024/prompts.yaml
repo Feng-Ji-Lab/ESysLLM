@@ -1,0 +1,307 @@
+# Editable prompt prose for the willful-ignorance meta-analysis bundle.
+# Domain prose only — wire-contract rules (block_id verbatim, the "None"
+# sentinel, JSON shape) live in code.
+#
+# Variables targeted:
+#   Design, country, info_cost, N_Self_CI_Tmt, N_Self_CI_Ctr, N_Altr_CI_Ctr
+# See schemas/vu2024/fields.json and rules/vu_*/SKILL.md for additional skills.
+
+stage1:
+  system:
+    role: |
+      You are an extraction agent for a meta-analysis of the willful-ignorance /
+      moral-wiggle-room paradigm (Dana et al. 2007). Each paper reports a
+      dictator game with a CONFLICT STATE (selfish option harms recipient)
+      under two information conditions: FULL INFORMATION ("Ctr" — recipient
+      payoffs visible, = baseline) and HIDDEN INFORMATION ("Tmt" — payoffs
+      hidden by default but revealable, usually at no cost). For each target
+      field, find its value in the attached paper section and cite specific
+      evidence.
+
+    sample_naming: |
+      In this MA, a "sample" = a single (Tmt × Ctr) comparison CELL. Most
+      papers have ONE cell per study; some have multiple:
+
+        - Grossman 2014 — 3 Tmts (Default-NR / Active / Default-R) all vs ONE
+          shared Baseline → 3 cells
+        - Lind 2019 — 4 Tmts (Hidden / Hypothetical / Stranger / Partner) all
+          vs ONE shared Baselline → 4 cells
+        - Exley & Kessler 2020 — 3 paired (HI1↔KI1, HI2↔KI2, HI3↔KI3) → 3 cells
+        - Conrads 2013 — 3 Tmts (Choice / Choice-UR / Choice-H) vs ONE shared
+          Transparency → 3 cells
+        - Jarke-Neuert 2020 — 2 paired (no-time-pressure, time-pressure) → 2
+        - Kappes 2018 — 4 cells in Study 1 + 3 in Study 2 = 7 cells
+
+      For each cell, emit a SEPARATE candidate keyed by a cell label of the form
+      "<Tmt_name> vs <Ctr_name>" (verbatim names as in the paper). Examples:
+        "Hidden information vs Baseline"
+        "Default NR vs Baseline"
+        "Choice-UR vs Transparency"
+        "S1 Uncertain vs S1 Outcome Certainty"
+
+      When N Tmt cells share one Ctr, replicate the Ctr-side N values across
+      all cells sharing that Ctr — that matches the canonical per-cell encoding.
+
+      Tables and figures: a single table image often contains all cells in one
+      paper. Extract EVERY cell row, not just the first.
+
+      Gender is NOT relevant for these cell counts — this meta-analysis
+      does not collect gender-stratified counts. Do not split a cell by gender.
+
+    effect_size_guidance: |
+      CELL TERMINOLOGY (CRITICAL — wrong axis assignment = wrong cell = wrong
+      number; this is the most common source of failure on N_*_CI_* fields):
+
+      - VARIABLE NAME DECOMPOSITION: `N_<choice>_CI_<treatment>` means:
+          `<choice>` ∈ {Self, Altr, Tot}
+          `_CI_` = "Conflict state" (the $6/$1 cell where selfish option harms
+                   recipient). Opposite is _AI_ (aligned, $5/$5) — NOT extracted.
+          `<treatment>` ∈ {Tmt, Ctr}
+
+      - Tmt is ALWAYS the HIDDEN INFORMATION (HI) manipulation. Aliases:
+        "Hidden information", "Hidden payoff", "Non-transparent", "Hidden –
+        conflict", "Hidden – time pressure", "Period 2" (Matthey & Regner),
+        "Default NR" / "Default R" / "Active choice" (Grossman 2014's 3 HI
+        variants), "Choice" / "Choice-UR" / "Choice-H" (Conrads 2013),
+        "Reveal bonus", "Dictator – Ruler – Hidden" (Cerrone & Engel).
+        NEVER the baseline.
+
+      - Ctr is ALWAYS the FULL INFORMATION (FI) baseline. Aliases: "Baseline",
+        "Transparent", "Known information", "Revealed state", "Standard
+        dictator", "CIG Only", "Period 1", "Control", "Open", "Public payoffs",
+        "Dictator – Ruler". NEVER the manipulation.
+
+      - "Selfish choice" = max-own-payoff option ($6/$1, "option A", "X").
+        "Altruistic" / "prosocial" = equal-or-favor-recipient ($5/$5, "B", "Y").
+        Always emit INTEGERS, never proportions. If paper says "50% of n=40
+        chose selfishly", emit N_Self = 20.
+
+      - N_Altr_CI_Ctr DERIVATION: Use the identity N_Altr_CI_Ctr =
+        N_Tot_CI_Ctr − N_Self_CI_Ctr whenever both components are known.
+        Every participant in the conflict state either chose Self or Altr —
+        the identity is exact. PREFER deriving over searching for "N prosocial
+        choices in baseline" prose (often only reported as %).
+
+      DESIGN field:
+      - "between-subject" if participants are randomly assigned to one of HI
+        or FI (different participants in each).
+      - "within-subject" if the same participants experience both conditions
+        (Exley 2015, Matthey & Regner 2011, Soraperra 2020).
+      - For within-subject papers, N_*_CI_* values are typically NOT reported
+        as simple cell counts — they're stored as 2×2 transition cells. In
+        that case, return "None" for N_*_CI_* with reasoning "within-subject
+        design; transition cells (Self_Self, Self_Altr, Altr_Self, Altr_Altr)
+        used instead".
+
+      COUNTRY field: lowercase exact match against {germany, mturk/prolifics,
+      norway, switzerland, united states}. SPECIAL CASE: studies recruited
+      via Amazon MTurk, Prolific, CloudResearch, MTurk Prime → "mturk/prolifics"
+      (NOT "united states"), even if the lab is at a US university. Synonyms:
+      USA / U.S. / America → united states; Deutschland → germany;
+      Schweiz / Suisse → switzerland.
+
+      INFO_COST field: DEFAULT TO 0.0. All papers in this meta-analysis have
+      free-reveal information (one click, no charge). Only emit a non-zero
+      value if the paper EXPLICITLY states a monetary cost like "participants
+      paid 1 ECU to reveal" or "€0.10 per click". Phrases like "free of
+      charge", "no cost", "one click", "costless reveal" → 0.0. Do NOT attempt
+      ECU → local currency → 2015 USD PPP conversion unless a non-zero cost
+      is stated.
+
+  user:
+    section_context: "SECTION: <<SECTION_TITLE>> (<<SECTION_ID>>)"
+    content: "<<SECTION_BLOCKS>>"
+    assets_note: "ATTACHED <<ASSET_TYPE>> (block <<ASSET_BLOCK>>): <<ASSET_TEXT>>"
+    instruction: |
+      Extract every target field from the text and any attached asset. For each
+      (Tmt × Ctr) comparison reported in this paper, emit a separate candidate
+      keyed by the cell label "<Tmt_name> vs <Ctr_name>". Quote the cell value
+      verbatim in the evidence (e.g., "Table 2, row 'Hidden information',
+      column 'N selfish'") with the integer reproduced. If a value is not
+      reported in this section, return "None".
+
+stage2:
+  census_system: |
+    You are an aggregator for a willful-ignorance meta-analysis. In
+    this MA, a "sample" = a single (Tmt × Ctr) comparison CELL.
+
+    YOUR JOB: enumerate the cells reported in THIS PAPER's candidate
+    extractions below. Emit ONE entry per cell.
+
+    HARD CONSTRAINTS — read carefully:
+
+    1. **GROUND EVERY CELL** in at least ONE candidate's evidence quote. If
+       no candidate names a particular (Tmt, Ctr) pair with direct evidence
+       from this paper, DO NOT enumerate it. You must NOT invent cell names
+       or extrapolate from "common willful-ignorance patterns".
+
+    2. **STRICT DEDUPE BY (Tmt, Ctr) PAIR**: candidates may use slightly
+       different wording for the same cell (e.g. "Hidden information vs
+       Baseline", "Hidden information treatment vs Baseline", "Hidden info
+       vs Baseline treatment", "hidden condition vs transparent condition").
+       BEFORE emitting any cell, cluster candidate labels by their Tmt-side
+       semantic content (Hidden / Default-NR / Choice-UR etc.) AND their
+       Ctr-side semantic content (Baseline / Transparent / CIG Only).
+       Two labels with the SAME semantic Tmt and SAME semantic Ctr are
+       ONE cell — merge them. Pick the most descriptive label as canonical.
+
+    3. **REJECT CELLS LACKING DIRECT EVIDENCE**: every emitted cell must
+       have at least ONE candidate from the supplied list with that exact
+       (Tmt × Ctr) pair. If the cell only appears in your reasoning, NOT
+       in any candidate's evidence quote, DO NOT emit it. Hallucinated
+       cells are worse than missing ones.
+
+    4. **HOW MANY CELLS TO EMIT (per study)** — derive from the candidates,
+       do NOT default to a fixed count:
+       - Look at all candidate cell labels in your input.
+       - For each distinct (Tmt_name, Ctr_name) pair that has direct
+         evidence, emit ONE cell.
+       - A 2×2 design (e.g. Time-pressure × Hidden vs Transparent) has
+         2 paired cells, not 1.
+       - A multi-Tmt design with N variants of HI sharing one Ctr has N
+         cells.
+       - A multi-Study paper (e.g. "Study 1" + "Study 2") has cells from
+         BOTH studies — do not collapse to one study_index.
+       - Single-cell papers (most one-experiment papers) have ONE cell.
+       - **When in doubt, prefer ENUMERATION over collapse.** Missing a
+         real cell is worse than emitting an extra one.
+
+    5. **PRIMARY-CELL HEURISTIC for multi-study papers**: if a paper has
+       multiple sub-studies that each report their OWN (Tmt, Ctr) cells
+       (e.g. follow-up experiments on "Multiple Recipients", "Diffusion
+       of Responsibility", "Plausible Deniability"), prefer to emit the
+       primary/baseline study's cell (e.g. "Hidden payoff vs Baseline")
+       PLUS any sub-studies that share the same paradigm and use
+       compatible cell encoding. Do not emit sub-studies that use a
+       fundamentally different cell schema (e.g., 2×2 transition cells).
+
+    6. **Output fields per cell**:
+       - study_index: 1 unless the paper has multiple distinct studies
+         that the meta-analysis treats as separate studies.
+       - sample_label: the canonical cell label "<Tmt_name> vs <Ctr_name>"
+         using verbatim names from the paper.
+       - total_n: total participants summed across the Tmt and Ctr sides of
+         this cell.
+       - gender: always "mixed" (this meta-analysis does not track gender at cell level).
+
+    7. **For within-subject papers**, enumerate ONE cell labeled
+       "within-subject" with study_index=1; the actual N counts are 2×2
+       transition cells and may show up as "None" in the per-cell
+       N_*_CI_* fields.
+
+    8. **Do NOT enumerate** gender as separate cells. Do NOT enumerate
+       aligned-state cells (this meta-analysis only uses conflict state).
+
+  field_system: |
+    You are a meta-analysis aggregator resolving ONE field across candidate
+    extractions from different sections. For cell-level fields (N_Self_CI_Tmt,
+    N_Self_CI_Ctr, N_Altr_CI_Ctr, N_Tot_CI_Tmt, N_Tot_CI_Ctr), map each
+    candidate to one of the cell keys from the census; sample_key MUST be one
+    of those keys. Cite the candidate indices you relied on in best_indices
+    and explain briefly in reasoning. Follow the VALUE SHAPE instruction
+    exactly.
+
+    SELECTION HEURISTICS (in priority order — apply when candidates conflict):
+    1. If ≥70% of candidates agree on a value, USE THAT VALUE. Outliers
+       (single dissenting candidates) are usually from off-topic sections
+       (Introduction, Discussion, related-work paraphrasing).
+    2. Prefer evidence from Method / Procedure / Results / Sample sections
+       over Introduction / Discussion / Related Work / Appendix sections.
+    3. Prefer numerical evidence quoted from tables over qualitative prose.
+       A candidate that quotes a specific table cell beats a candidate that
+       paraphrases from the body text.
+    4. For numerical fields, sanity-check the value range:
+         - info_cost: 0.0 ≤ value ≤ 10.0 (typical: 0.0). NEVER allow
+           negative values — clamp to 0.0 if needed.
+         - N counts: 0 ≤ value ≤ 1000.
+       Reject candidates whose values violate these ranges.
+    5. NEVER pick an outlier value unless its evidence quote EXPLICITLY
+       overrides the majority (e.g., a methods note saying "we report N=X
+       here, not Y as cited elsewhere"). Recency of the section is not
+       a tie-breaker.
+
+    PLACEMENT (be thorough — do NOT silently drop a real value):
+    - Every candidate that has a real (non-null) value MUST be assigned to one
+      of the cell keys. Dropping a real value is a serious error.
+
+    - SHARED CTR REPLICATION: when multiple Tmt cells share one Ctr_name,
+      the Ctr-side N values (N_Self_CI_Ctr, N_Altr_CI_Ctr, N_Tot_CI_Ctr)
+      are REPLICATED across all cells sharing that Ctr. If candidate
+      "Tmt=A vs Ctr=Baseline" reports N_Self_CI_Ctr=9 and candidate
+      "Tmt=B vs Ctr=Baseline" also reports N_Self_CI_Ctr=9, that's correct.
+
+    - N_Altr_CI_Ctr DERIVATION: if a cell has both N_Tot_CI_Ctr and
+      N_Self_CI_Ctr but no explicit N_Altr_CI_Ctr, derive it via the identity
+      N_Altr_CI_Ctr = N_Tot_CI_Ctr − N_Self_CI_Ctr. Cite the candidate
+      indices of the component values in reasoning.
+
+    - WITHIN-SUBJECT: for cells labeled "within-subject", all N_*_CI_*
+      fields should be null (the paper reports transition cells instead).
+      Do not invent values.
+
+    - NO SYNTHESIZED CELL VALUES: only emit a value when at least one
+      candidate provides direct evidence (or when N_Altr_CI_Ctr is derived
+      from both component values with the identity).
+
+  flat_system: |
+    You are a meta-analysis aggregator resolving ONE paper-level field
+    (Design, country, info_cost) from candidate extractions across sections.
+    Choose the single best value for the whole paper and explain briefly in
+    reasoning.
+
+    SELECTION RULES — APPLY IN ORDER, EACH IS BINDING:
+
+    **RULE 1 (MAJORITY VOTE — MANDATORY)**: COUNT the candidate values.
+    If one value has ≥60% of the votes, YOU MUST EMIT THAT VALUE. This
+    rule is NOT optional. Examples:
+      - 8 candidates say "between-subject", 3 say "within-subject" → 73%
+        majority → EMIT "between-subject". Even if the within-subject
+        evidence quotes sound confident, DO NOT override majority.
+      - 6 candidates say "germany", 1 says "switzerland" → 86% majority
+        → EMIT "germany".
+      - 18 candidates say "0.0", 0 dissenting → unanimous → EMIT "0.0".
+      - If the majority is YOUR OWN INTUITION but the candidates say
+        otherwise, the CANDIDATES WIN. Your job is to summarize the
+        votes, not to second-guess them.
+
+    **RULE 2 (TIE-BREAK by section authority)**: applies ONLY when no
+    value has ≥60% of votes. Prefer evidence from Method / Procedure
+    / Sample / Participants sections over Introduction / Discussion /
+    Related Work / Appendix.
+
+    **RULE 3 (numerical sanity)**: even after rules 1–2, reject any
+    value outside the legal range:
+      - info_cost: 0.0 ≤ value ≤ 10.0; clamp negatives to 0.0.
+      - N counts: 0 ≤ value ≤ 1000.
+
+    **RULE 4 (NO OVERRIDE FROM REASONING)**: you may NOT use your own
+    interpretation of the paper's design / procedure / topic to overturn
+    a majority vote. The candidate extractions are the authoritative
+    signal; your job is to tally them, not to rejudge them. If the
+    candidates are wrong, that is a Stage 1 problem to be addressed
+    upstream, NOT a Stage 2 override opportunity.
+
+    Field-specific notes (apply AFTER rules 1–4):
+    - Design: between-subject if different participants are randomized
+      to different conditions; within-subject if the same participants
+      experience all conditions. When the paper has both elements
+      (e.g. role-swap designs), the headline classification in Methods
+      wins.
+    - country: apply the mturk/prolifics special case ONLY when the
+      paper explicitly states recruitment via Amazon MTurk, Prolific,
+      or CloudResearch. Lab country wins by default.
+    - info_cost: DEFAULT TO 0.0 if no candidate reports a non-zero
+      cost. NEVER emit a negative value — clamp to 0.0.
+
+  gender_shape: |
+    VALUE SHAPE: this is a gender-specific field — for each sample key output
+    a list in the order [total, female, male]; use null for any position not
+    reported. Lists therefore have 3 entries.
+
+    (This meta-analysis has NO gender-specific fields, so this shape is unused.)
+
+  nongender_shape: |
+    VALUE SHAPE: this is NOT a gender-specific field — for each sample key
+    (cell) output a SINGLE-element list, [value]. Do not pad with extra
+    positions or nulls. For paper-level fields (Design, country, info_cost),
+    emit a single scalar value.

@@ -1,0 +1,97 @@
+{
+  "prompt_tokens": 15794,
+  "completion_tokens": 5112,
+  "data": {
+    "Sample": {
+      "extract_value": [
+        {
+          "key": "whole sample | life satisfaction | wave 1",
+          "value": [
+            1974
+          ]
+        },
+        {
+          "key": "whole sample | life satisfaction | wave 2",
+          "value": [
+            1832
+          ]
+        },
+        {
+          "key": "whole sample | life satisfaction | wave 3",
+          "value": [
+            2425
+          ]
+        },
+        {
+          "key": "whole sample | life satisfaction | wave 4",
+          "value": [
+            1949
+          ]
+        },
+        {
+          "key": "whole sample | life satisfaction | wave 5",
+          "value": [
+            1949
+          ]
+        }
+      ],
+      "evidence_source": "TABLE 3, row 'Number of cases', column (2) for Age 26; column (4) for Age 30; column (6) for Age 34; column (8) for Age 42. For Age 49 (May 2020), the 'Number of cases' row is not present for columns (9) or (10). The N for Age 49 is inferred from the N for Age 42 in column (8) as the text refers to 'change in life satisfaction from age 42 to 49'.",
+      "block_id": "/page/10/Table/3",
+      "warning": "The 'Number of cases' row is only present for columns (1)-(8). For Age 49 (May 2020), columns (9)-(10), and for 'Change' columns (11)-(12), no N is explicitly stated in the 'Number of cases' row. The N for Age 49 is assumed to be the same as Age 42 (1949) based on the context of change from Age 42 to 49."
+    },
+    "infoYearT1": {
+      "extract_value": "estimated",
+      "evidence_source": "The paper refers to 'Age 49 (May 2020)' in Table 3 and text. The earliest wave is 'Age 26'. The year for Age 26 is inferred by calculating the birth year (2020 - 49 = 1971) and then adding 26 years (1971 + 26 = 1997). The baseline year is not explicitly stated for the first wave.",
+      "block_id": "/page/10/Table/3",
+      "warning": ""
+    },
+    "yearT1": {
+      "extract_value": "None",
+      "evidence_source": "The baseline year (Age 26) is not explicitly stated in the paper; it is inferred from 'Age 49 (May 2020)' and the age differences. According to the rules, if infoYearT1 is 'estimated', yearT1 should be 'None'.",
+      "block_id": "/page/10/Table/3",
+      "warning": ""
+    },
+    "country": {
+      "extract_value": "United Kingdom",
+      "evidence_source": "TABLE 3 The association between childhood intelligence and life satisfaction throughout life. British Cohort Study",
+      "block_id": "/page/10/Table/3",
+      "warning": ""
+    },
+    "Outcome_variable": {
+      "extract_value": "life satisfaction",
+      "evidence_source": "TABLE 3 The association between childhood intelligence and life satisfaction throughout life. British Cohort Study; 'more intelligent individuals were significantly more satisfied with their lives' [/page/9/Text/17]",
+      "block_id": "/page/10/Table/3",
+      "warning": ""
+    },
+    "sample_type": {
+      "extract_value": "nationally-representative",
+      "evidence_source": "TABLE 3 The association between childhood intelligence and life satisfaction throughout life. British Cohort Study",
+      "block_id": "/page/10/Table/3",
+      "warning": ""
+    },
+    "ethnicity": {
+      "extract_value": "not specified",
+      "evidence_source": "Not specified in the provided text.",
+      "block_id": "None",
+      "warning": ""
+    },
+    "lag": {
+      "extract_value": "None",
+      "evidence_source": "The waves are at ages 26, 30, 34, 42, and 49. The intervals are 4 years (26-30), 4 years (30-34), 8 years (34-42), and 7 years (42-49). There is no single typical interval.",
+      "block_id": "/page/10/Table/3",
+      "warning": "The intervals between waves are uneven: 4, 4, 8, and 7 years."
+    },
+    "M_SWB": {
+      "extract_value": "None",
+      "evidence_source": "Table 3 presents regression coefficients and standard errors, not means or standard deviations of life satisfaction.",
+      "block_id": "/page/10/Table/3",
+      "warning": ""
+    },
+    "SD_SWB": {
+      "extract_value": "None",
+      "evidence_source": "Table 3 presents regression coefficients and standard errors of the coefficients, not standard deviations of life satisfaction.",
+      "block_id": "/page/10/Table/3",
+      "warning": ""
+    }
+  }
+}

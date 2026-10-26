@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Extraction Pipeline Dashboard</title>
+<style>
+:root {
+  --bg: #f8f9fa;
+  --text: #212529;
+  --border: #dee2e6;
+  --header-bg: #343a40;
+  --header-text: #f8f9fa;
+  --cell-border: rgba(150,150,150,0.4);
+  --match-full: rgba(72, 199, 116, 0.25);
+  --match-partial: rgba(255, 221, 87, 0.30);
+  --match-none: rgba(255, 99, 99, 0.22);
+  --match-neutral: rgba(200,200,200,0.10);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: 13px;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.4;
+}
+
+/* --- Controls --- */
+.controls {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+  border-bottom: 2px solid var(--border);
+  padding: 10px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+.controls label { font-weight: 600; font-size: 12px; white-space: nowrap; }
+.controls input[type="text"], .controls select {
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 12px;
+}
+.controls input[type="text"] { width: 200px; }
+.controls select { max-width: 320px; }
+.controls .sep { border-left: 1px solid var(--border); height: 28px; }
+.controls .badge {
+  background: #e9ecef;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  color: #495057;
+}
+
+/* --- Table wrapper --- */
+.table-wrap {
+  overflow: auto;
+  max-height: calc(100vh - 60px);
+  position: relative;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 100%;
+}
+
+/* --- Header --- */
+thead th {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--header-bg);
+  color: var(--header-text);
+  padding: 8px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: left;
+  white-space: nowrap;
+  border-right: 1px solid rgba(255,255,255,0.1);
+  min-width: 160px;
+}
+thead th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 200;
+  min-width: 220px;
+  max-width: 280px;
+}
+
+/* --- Body --- */
+tbody td {
+  vertical-align: top;
+  padding: 4px 6px;
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  min-width: 160px;
+}
+tbody td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 50;
+  background: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  min-width: 220px;
+  max-width: 280px;
+  word-break: break-word;
+  border-right: 2px solid var(--border);
+}
+
+/* --- Cell block --- */
+.cell-block {
+  border: 1px solid var(--cell-border);
+  border-radius: 4px;
+  padding: 4px 6px;
+  cursor: pointer;
+  position: relative;
+  min-height: 24px;
+  transition: box-shadow 0.15s;
+}
+.cell-block:hover {
+  box-shadow: 0 0 0 2px rgba(66,133,244,0.3);
+}
+.cell-block.pinned {
+  box-shadow: 0 0 0 2px rgba(66,133,244,0.6);
+}
+.cell-block.match-full    { background: var(--match-full); }
+.cell-block.match-partial { background: var(--match-partial); }
+.cell-block.match-none    { background: var(--match-none); }
+.cell-block.match-neutral { background: var(--match-neutral); }
+
+/* sub-blocks */
+.sub-block { margin-bottom: 3px; }
+.sub-block:last-child { margin-bottom: 0; }
+.sub-block-header {
+  font-weight: 600;
+  font-size: 11px;
+  color: #495057;
+}
+.gender-line {
+  margin-left: 12px;
+  font-size: 11px;
+  color: #555;
+}
+.gender-label { font-weight: 600; text-transform: capitalize; }
+.empty-val { color: #aaa; font-style: italic; }
+
+/* --- Tooltip --- */
+.tooltip-box {
+  position: fixed;
+  z-index: 5000;
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  padding: 10px 12px;
+  max-width: 480px;
+  min-width: 200px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  font-size: 12px;
+  line-height: 1.5;
+  display: none;
+  pointer-events: none;
+  word-wrap: break-word;
+}
+.tooltip-box.pinned {
+  pointer-events: auto;
+}
+.tooltip-box .tt-label { font-weight: 700; color: #333; }
+.tooltip-box .tt-section { margin-top: 6px; }
+.tooltip-box .tt-gt { border-top: 1px dashed #ccc; padding-top: 6px; margin-top: 6px; }
+
+/* --- Legend --- */
+.legend {
+  display: flex; gap: 12px; align-items: center; font-size: 11px;
+}
+.legend-item {
+  display: flex; align-items: center; gap: 4px;
+}
+.legend-swatch {
+  width: 14px; height: 14px; border-radius: 3px; border: 1px solid rgba(0,0,0,0.15);
+}
+
+/* search highlight */
+tr.highlight-row td:first-child { background: #fff3cd !important; }
+</style>
+</head>
+<body>
+
+<div class="controls" id="controls">
+  <label>View:</label>
+  <select id="viewMode">
+    <option value="all">All papers</option>
+    <option value="single">Single paper</option>
+  </select>
+  <select id="paperSelect" style="display:none"></select>
+  <div class="sep"></div>
+  <label>Search:</label>
+  <input type="text" id="searchBox" placeholder="Filter papers...">
+  <div class="sep"></div>
+  <div class="legend">
+    <div class="legend-item"><div class="legend-swatch" style="background:var(--match-full)"></div> Full match</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:var(--match-partial)"></div> Partial match</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:var(--match-none)"></div> No match</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:var(--match-neutral)"></div> No GT</div>
+  </div>
+  <div class="sep"></div>
+  <span class="badge" id="paperCount"></span>
+</div>
+
+<div class="table-wrap" id="tableWrap">
+  <table id="mainTable">
+    <thead><tr id="headerRow"></tr></thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+</div>
+
+<div class="tooltip-box" id="tooltip"></div>
+
+<script>
+// ---- Embedded data ----
+const DATA = {"papers": {"Bartlett2019": {"Number of studies": {"extract_value": [1], "best_indices": [1, 2, 6, 8, 10, 15, 17, 23], "reason": "Multiple sections of the paper, including the abstract, introduction, methods, results, discussion, and a CONSORT flow diagram, consistently refer to and describe a single experimental study conducted by the authors. There is no evidence to suggest the paper contains multiple distinct studies."}, "usa_vs_other": {"extract_value": {"Single study": [1]}, "best_indices": [0, 1, 2, 3], "reason": "The paper describes a single study, consistently referred to as 'Study X' across all candidates. All candidates provide a consistent value of 1 for 'usa_vs_other', indicating the study was conducted in the United States. Evidence includes the corresponding author's US address, participant recruitment from the Pacific Northwest (USA), payment in US dollars, and funding from a US university. Since there is only one study, it is labeled 'Single study' as per instructions."}, "N": {"extract_value": {"Single study": [42, 36]}, "best_indices": [0, 1, 12], "reason": "The paper describes a single study. Candidate 0 states an initial convenience sample of 42 older adults. Candidate 1, from the 'design and procedure' section, explicitly states that data from participants who provided at least 7 days of surveys were retained for analyses, resulting in a final analytical sample of N=36. The CONSORT 2010 Flow Diagram (Candidate 12) corroborates this, showing an initial enrollment of 42 participants, with 19 from the gratitude condition and 17 from the control group included in the analysis, summing to 36. Multiple other candidates (2, 3, 4, 5, 9, 10, 11) consistently report N=36 as the sample size for various analyses, reinforcing its reliability as the final analytical sample. Candidates 6, 7, and 8 derive N=38 from t-statistics. However, the explicit statements in the Method section (Candidate 1) and the detailed participant flow in the CONSORT diagram (Candidate 12) provide more direct and reliable evidence for the overall analytical sample size of 36. Therefore, N=36 is chosen as the final analytical sample, and N=42 as the initial enrolled sample. Both values are included as they represent different stages of the participant count for the same study."}, "female": {"extract_value": {"Single study": [0.8]}, "best_indices": [0], "reason": "The paper describes a single study. Candidate [0] provides the proportion of female participants as 80% (0.8), which is directly extracted and assigned to 'Single study'."}, "M_age": {"extract_value": {"Single study": [73]}, "best_indices": [0], "reason": "The paper contains a single study, as indicated by the context. Candidate [0] provides the average age of 73 for 'Study X', which is resolved to 'Single study'. The value is directly extracted from the 'Participants' section, which is a reliable source for demographic information."}, "SD_age": {"extract_value": {"Single study": [6.43]}, "best_indices": [0], "reason": "The paper describes a single study. Candidate [0] provides the standard error (SE) of the mean age as 6.43. As per the extraction rules, SE can be reported if SD is not available, with a note that it is SE and not SD. Therefore, 6.43 is extracted for the single study."}, "r": {"extract_value": {"Single study": [-0.46]}, "best_indices": [0], "reason": "The paper contains a single study as indicated by the context. Candidate [0] explicitly states the correlation between 'Gratitude' and 'Loneliness' as -0.46 in a table of bivariate correlations. This value is directly extracted and assigned to the 'Single study'."}}, "Caputoa2015": {"Number of studies": {"extract_value": [1], "best_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "reason": "All candidates consistently indicate that the paper describes a single research study. The section contexts across all candidates refer to different aspects (introduction, methods, results, discussion) of what is clearly presented as one unified study. There is no conflicting information, and all candidates support the value of 1."}, "usa_vs_other": {"extract_value": {"Single study": [0]}, "best_indices": [0, 1, 2, 3], "reason": "All candidates consistently indicate that the study was conducted in Italy, not the USA. Candidate 0 and 1 explicitly state the author's affiliation and corresponding author's address in Rome, Italy. Candidate 3 further supports this by mentioning the adaptation of all scales to the 'Italian language' and 'Italian version'. Therefore, the value 0 (not USA) is extracted for the single study."}, "r": {"extract_value": {"Single study": [-0.438]}, "best_indices": [1], "reason": "The paper describes a single study. Candidate 1 explicitly states the correlation coefficient between Gratitude and Loneliness as -0.438, referencing Table 2 in the results section, which is a highly reliable source for this specific value. Candidate 0 only mentions a negative correlation without providing a numerical value. Therefore, the value from Candidate 1 is selected for the single study."}, "N": {"extract_value": {"Single study": [197]}, "best_indices": [0, 1, 2, 3], "reason": "The paper describes a single study, as indicated by the context and all candidate summaries. All candidates consistently report a sample size (N) of 197 participants. Candidates [0] and [1] from the abstract, candidate [2] from the participants section, and candidate [3] from a table caption in the results section all provide the same value, confirming its reliability. No conflicts were found, and all sources are consistent."}, "female": {"extract_value": {"Single study": [0.802030456852792]}, "best_indices": [1], "reason": "The paper describes a single study. Candidate 1, from the 'Participants and Procedure' section, explicitly states '158 women and 39 men' out of a total of 197 participants. This is the most direct and reliable source for the proportion of female participants. The proportion is calculated as 158 / 197 = 0.8020304568527919. Other candidates do not provide specific numerical values for gender proportion."}, "M_age": {"extract_value": {"Single study": [29.1]}, "best_indices": [1], "reason": "The paper describes a single study. Candidate 1, from the 'participants_and_procedure' section, explicitly states the mean age as 29.1 in its evidence, making it the most reliable source for this information. Other candidates do not provide this specific value."}, "SD_age": {"extract_value": {"Single study": [10.4]}, "best_indices": [1], "reason": "The paper describes a single study, as indicated by the context. Candidate 1, from the 'participants_and_procedure' section, explicitly states the standard deviation of age as 'SD = 10.4'. No other candidate provides this specific value, and Candidate 0 and 2 do not contain the SD of age in their evidence or extracted values. Therefore, Candidate 1 is the most reliable source for this information."}}, "Caputoa2016": {"Number of studies": {"extract_value": [1], "best_indices": [1, 7, 11, 13, 20], "reason": "The abstract, introduction, methods, results, and discussion sections consistently refer to 'a single study', 'the present study', or 'a single web-based survey' focused on the translation and validation of the GQ-6 scale. Candidates suggesting '0' either describe sections that do not present a study (e.g., instrument description, references) or make local observations about the absence of multiple studies, which does not imply zero studies in the paper. The overwhelming evidence points to a single research endeavor."}, "usa_vs_other": {"extract_value": {"Single study": [0]}, "best_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "reason": "All candidates consistently indicate that the study was conducted in Italy, not the USA. Phrases like 'Italian translation and validation', 'aims at translating the GQ-6 into Italian', 'Italian version', and 'Italian territorial area' explicitly confirm the non-USA context. Therefore, the value for usa_vs_other is 0 for the single study."}, "N": {"extract_value": {"Single study": [204, 102, 102, 10]}, "best_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "reason": "The paper describes a single study, as indicated by the context and consistent references across the abstract, methods, and results sections. The main sample size is consistently reported as 204 participants (Candidates 0, 2, 3, 4, 5, 6, 7, 8, 9, 10). This total sample was divided into two sub-samples of 102 participants each for Exploratory Factor Analysis (EFA) and Confirmatory Factor Analysis (CFA) (Candidates 3, 7, 8, 10). Additionally, a pre-testing phase involved 10 volunteer participants (Candidate 1). Following the instruction to merge all subsamples and preliminary phases into the same list for a single study, all identified N values (204, 102, 102, 10) are included in the 'Single study' entry."}, "M_age": {"extract_value": {"Single study": [28.96, 25.02, 26.27]}, "best_indices": [0, 1, 2, 3, 4, 5], "reason": "The paper describes a single study. The overall mean age of participants is consistently reported as 28.96 across the abstract, participants section, and a socio-demographic table (Candidates 0, 1, 2). Additionally, the results section provides mean ages for two distinct subgroups within this single study: younger adults (M = 25.02) and older adults (M = 26.27) (Candidates 3, 4, 5). As per instructions, all mean age values from a single study, including those from identified subgroups, are merged into a single list for that study."}, "SD_age": {"extract_value": {"Single study": [10.27, 7.51, 6.79]}, "best_indices": [0, 1, 2, 3, 4, 5], "reason": "The paper describes a single study, as confirmed by the context. Candidates [0], [1], and [2] consistently report the standard deviation of age for the total sample as 10.27. Candidates [3], [4], and [5] consistently report the standard deviations for two age subgroups within the same study: 7.51 for younger adults and 6.79 for older adults. All these values are complementary and refer to the same single study, so they are merged into a single list for 'Single study'."}, "female": {"extract_value": {"Single study": [0.7990196078431373]}, "best_indices": [0, 1], "reason": "The paper contains a single study. Both candidate 0 (textual evidence) and candidate 1 (table evidence) refer to the same sample (N=204) and provide consistent information regarding the proportion of female participants. Candidate 0 calculates the proportion as 163 women out of 204 total participants, resulting in approximately 0.7990196. Candidate 1 reports 79.90% from a table, which is 0.7990. The more precise value from the calculation in candidate 0 is used."}, "r": {"extract_value": {"Single study": [-0.411]}, "best_indices": [0], "reason": "The paper contains a single study, as indicated by the context. Candidate 0 explicitly states that 'GQ-6 was negatively associated with loneliness (Table 6 below)' and provides the Pearson's correlation coefficient as '-.411' from Table 6. GQ-6 measures Gratitude, and the correlation is with Loneliness, directly matching the field definition for 'r'. This value is for the total sample."}}, "Chen2012": {"Number of studies": {"extract_value": [3], "best_indices": [20], "reason": "Candidate [20] explicitly states that the research involved 'three independent samples: a pilot study, Study 1, and Study 2'. This provides the most comprehensive count of studies, including the pilot study, which aligns with the definition of 'Number of studies' as a numeric count of studies found."}, "N": {"extract_value": {"Pilot study": [235], "Study 1": [353], "Study 2": [233]}, "best_indices": [0, 3, 4, 7], "reason": "Candidate [0] explicitly states the sample sizes for Study 1 (N=353) and Study 2 (N=233). Candidate [3] confirms the sample size for Study 1 (N=353) by detailing its participants. Candidate [7] confirms the sample size for Study 2 (N=233) by detailing its participants. Candidate [4] explicitly states the sample size for a pilot study (N=235). These values are consistent across sources and cover all three distinct studies identified in the paper."}, "usa_vs_other": {"extract_value": {"Pilot Study": [0], "Study 1": [0], "Study 2": [0]}, "best_indices": [0, 3, 5, 8, 11], "reason": "The paper explicitly mentions three studies: a pilot study, Study 1, and Study 2. Candidate [5] describes a 'pilot study' and refers to 'Gratitude Questionnaire–Taiwan Version' and 'Taiwan Social Change Survey', indicating a Taiwanese sample (0). Candidate [0] explicitly states 'Study 1: 353 Taiwanese college students' and 'Study 2: 233 Taiwanese college students', confirming both main studies were conducted in Taiwan (0). Candidate [3] refers to 'the current study' in a 'sample of Taiwanese college students', reinforcing the location for Study 1. Candidate [8] further confirms Study 2 used a 'Taiwanese sample'. Candidate [11] summarizes findings 'Across two studies' in 'a sample of Taiwanese students'. Therefore, all three studies were conducted in Taiwan, not the USA."}, "r": {"extract_value": {"Study 2": [-0.49]}, "best_indices": [6], "reason": "The paper describes three studies: a pilot study, Study 1, and Study 2. For Study 1 (referred to as 'a single study' in candidates 2, 3, and 4), candidate 3 explicitly states that 'no correlation between Gratitude and Loneliness' was mentioned. Therefore, no value for 'r' can be extracted for Study 1 or the Pilot Study. For Study 2, candidate 6 (from '019_descriptive_statistics_and_correlation_results_1_extracted.json') explicitly reports that 'gratitude was found to have a reverse relationship with loneliness (r=-.49)'. This value is assigned to Study 2, as indicated by the '_1' suffix in the filename and the context of nearby candidates (5 and 7) which explicitly mention 'Study 2' and the use of the UCLA Loneliness Scale."}, "female": {"extract_value": {"Study 1": [0.6940509915], "Study 2": [0.618025751]}, "best_indices": [2, 5], "reason": "Candidate [2] from '009_participants_and_procedure_extracted.json' describes the participants for what is identified as 'Study 1' based on its early placement in the document flow. It reports 245 female participants out of a total of 353, yielding a proportion of 245/353 = 0.6940509915. Candidate [5] from '016_participants_and_procedure_1_extracted.json' describes participants for 'Study 2' (indicated by the '_1' suffix and later file index). It reports 144 female participants out of a total of 233, yielding a proportion of 144/233 = 0.618025751. No specific numerical data for female participants was found for the pilot study mentioned in the context."}, "M_age": {"extract_value": {"Study 1": [18.62], "Study 2": [19.31]}, "best_indices": [2, 6], "reason": "Candidate 2, from the 'participants_and_procedure' section (009), describes a study with a mean age of 18.62. Given its early placement and the subsequent mention of 'Study 1' in related sections (e.g., Candidate 5), this is identified as Study 1. Candidate 6, from a later 'participants_and_procedure_1' section (016), describes another study with a mean age of 19.31. Its sequential position and the explicit mention of 'Study 2' in subsequent sections (e.g., Candidate 7) confirm this as Study 2. No mean age information was found for the pilot study mentioned in the paper's context."}, "SD_age": {"extract_value": {"Study 1": [0.97], "Study 2": [2.1]}, "best_indices": [2, 6], "reason": "Candidate 2, from an early 'participants and procedure' section (009), describes 'a single study' with a mean age of 18.62 (SD = 0.97). This is identified as Study 1. Candidate 6, from a later 'participants and procedure' section (016_1), also describes 'a single study' with a mean age of 19.31 (SD = 2.10). This is identified as Study 2. No standard deviation for age was found for the pilot study mentioned in the paper's context."}}, "Chui2021": {"Number of studies": {"extract_value": [1], "best_indices": [0, 6, 9, 12, 15, 18], "reason": "The majority of candidates, including the abstract, introduction, methods, results, discussion, and limitations sections, consistently refer to 'a single daily diary study,' 'the current study,' or explicitly state 'a single study' conducted by the authors. Candidates [1], [2], and [4] with a value of 0 are either discussing existing literature or introducing the study without counting it. Candidate [19] with a value of 2 incorrectly includes a cited study in the count, whereas 'Number of studies' typically refers to studies conducted and reported by the paper's authors. Therefore, the most accurate and consistently supported value is 1."}, "N": {"extract_value": {"Single study": [128]}, "best_indices": [0, 2, 3, 4], "reason": "Multiple reliable sources, including the abstract, the participants section (main text and asset), and Table 1 in the procedure section, consistently report the total sample size as 128. The participants section explicitly states, \"The final sample consisted of 128 community-residing adults.\" Candidate [1] refers to a cited study and is therefore excluded. Candidates [5] and [7] provide implied N values (77 and 116 respectively) from statistical tests (F-statistics and t-statistics). These values are likely due to missing data for specific analyses rather than representing the overall sample size of the study. Therefore, 128 is the most robust and consistently reported N for the single study conducted in this paper."}, "female": {"extract_value": {"Single study": [0.4609375, 0.48, 0.5, 0.43]}, "best_indices": [0, 2, 3, 4], "reason": "The paper describes a single study, as confirmed by the context. Candidates 0, 2, 3, and 4 consistently report the proportion of female participants for this study. Candidates 2 and 3 provide the exact count (59 women out of 128 participants), yielding a precise proportion of 0.4609375. Candidate 0 (abstract) and Candidate 4 (Table 1) report 46% (0.46) for the full sample, which is consistent with the more precise value. Candidate 4 (Table 1) also provides proportions for age-based subsamples (Young adults: 48% or 0.48, Middle-aged adults: 50% or 0.50, Older adults: 43% or 0.43). Following the instruction to merge subsample data into the same list for a single study, all these distinct values (the overall proportion and the subsample proportions) are included. Candidate 1 is excluded as it refers to a cited study (Kashdan et al., 2009), not the current paper's study. Candidate 5 does not contain relevant information regarding female proportion."}, "M_age": {"extract_value": {"Single study": [56.72]}, "best_indices": [0, 2, 3, 4], "reason": "The paper reports a single study, as confirmed by the context and consistent references throughout the candidates. Candidates [0], [2], [3], and [4] consistently report the mean age of participants for this single study. The abstract [0] and participants section [2, 3] state a mean age of 56.7 years. Table 1 [4] provides a more precise mean age for the full sample as 56.72 years. While Table 1 also lists mean ages for specific age groups (Young adults: 29.90, Middle-aged adults: 54.65, Older adults: 72.37), the field definition requests the mean age of participants, which is best represented by the overall mean. Therefore, 56.72 is selected as the most precise overall mean. Candidate [1] is excluded as it refers to a cited study by Kashdan et al. (2009), not the current paper's study. Candidate [5] does not contain M_age information."}, "SD_age": {"extract_value": {"Single study": [18.72, 3.95, 5.15, 8.46]}, "best_indices": [0, 1, 2, 3], "reason": "The paper reports a single study, as confirmed by the provided context. Candidates [0], [1], and [2] consistently report an SD of 18.7 for the full sample's age. Candidate [3] (Table 1) provides more detailed information, including the SD for the full sample (18.72) and for specific age groups: Young adults (3.95), Middle-aged adults (5.15), and Older adults (8.46). Following the instructions, all subsample values (age groups) are merged into a single list for the 'Single study'. For the full sample, 18.72 from Table 1 is considered more precise than 18.7 from the text/abstract, as tables often provide exact values. Candidate [4] did not provide relevant data for SD_age."}, "usa_vs_other": {"extract_value": {"Single study": [1]}, "best_indices": [1, 2], "reason": "The paper reports a single study, as confirmed by the context. Candidate [1] provides strong indirect evidence that the study was conducted in the United States by listing racial/ethnic categories (Caucasian, African American, American Indian or Alaska Native) typically used in US demographic reporting. Candidate [2] provides direct evidence, explicitly stating that the original sample was recruited in 'a tri-county area in north central Florida,' which is located in the United States. Both candidates refer to the same study and consistently indicate that the sample was collected in the USA, leading to an extract_value of 1 for the single study."}, "r": {"extract_value": {"Single study": [-0.1]}, "best_indices": [0], "reason": "The paper contains a single study as per the context. Candidate [0] explicitly states 'Correlations' in its caption and section summary, indicating it is a reliable source for correlation coefficients. The evidence clearly identifies the correlation between 'Loneliness' and 'Gratitude' as -0.10 from Table 2. No other studies, subscales, or subgroups were identified that would require averaging or additional entries."}}, "Corona2020": {"Number of studies": {"extract_value": [2], "best_indices": [0, 2, 3, 4, 7, 8, 9, 10, 11], "reason": "Multiple candidates explicitly state or strongly imply the presence of two studies (Study 1 and Study 2) within the paper. Candidates [0], [2], [9], [10], and [11] directly mention 'two studies' or 'Study 1 and Study 2'. Other candidates like [3], [4], [7], and [8] refer to 'initial analyses' or 'Study X' and then 'Study 2', or mention 'Study 1' in comparison to the current study, all indicating a total of two studies. Candidates suggesting only one study are either incomplete in their scope or refer to a single study's methodology in isolation, not the total count for the paper."}, "usa_vs_other": {"extract_value": {"Study 1": [1], "Study 2": [1]}, "best_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8], "reason": "The paper clearly describes two distinct studies. For Study 1, candidates [0], [1], [2], [6], [7], and [8] consistently indicate that the sample was collected in the United States. Evidence includes explicit mentions of 'U.S. college samples', recruitment from specific US universities (Georgetown, UC Irvine, Arizona State), and references to 'American' ethnic groups. Candidate [1] and the 'Study X' in [2] are resolved to Study 1 based on their placement in early method/results sections and the context of initial analyses. For Study 2, candidates [0], [2], [3], [4], [5], [6], [7], and [8] consistently indicate that the sample was collected in the United States. Candidate [2] explicitly mentions 'Study 2' as US-based. Candidates [3], [4], and [5] refer to 'Study X' in later method/results sections, with [4] explicitly stating it's 'distinct from Study 1', thus resolving these to Study 2. The evidence for these candidates also points to US locations (e.g., UC Irvine IRB, 'Latino Americans', 'East Asian Americans'). Candidates [6], [7], and [8] from the General Discussion section provide overarching evidence for both studies being conducted in the USA by discussing 'Latinos and Asians in the United States' and suggesting future research in 'less Americanized samples'. All evidence is consistent, indicating both studies were conducted in the USA."}, "N": {"extract_value": {"Study 1": [91, 121], "Study 2": [666, 464, 491]}, "best_indices": [0, 1, 2], "reason": "The paper explicitly states it contains two studies. Candidate [1] from 'method_1' clearly describes 'a single study' with N=212 (91 Latino, 121 East Asian). Candidate [2] from a table in the general discussion provides the same breakdown (91, 121) and mentions 'Study 1 and Study 2', confirming these values for Study 1. Candidate [0] from a general method section describes a larger sample of N=1621 (666 Latino, 464 East Asian, 491 European American). Given that Study 1's N is resolved as 212, this distinct and larger N from candidate [0] is assigned to Study 2. The section summary for candidate [0] also mentions 'information for both studies', supporting its relevance to one of the paper's studies."}, "female": {"extract_value": {"Study 1": [0.818, 0.737, 0.695], "Study 2": [0.868, 0.843]}, "best_indices": [0, 1], "reason": "The paper contains two distinct studies. Candidate 0 describes a larger sample (1621 students) from multiple universities, providing female proportions for Latino, East Asian, and European American groups. This is assigned to 'Study 1'. Candidate 1 describes a smaller sample (212 students) from UC Irvine, providing female proportions for Latino and East Asian groups. The female proportions for the same ethnic groups (Latino: 0.818 in C0 vs 0.868 in C1; East Asian: 0.737 in C0 vs 0.843 in C1) are different, indicating distinct samples. The phrase 'recruited from a larger study' in Candidate 1's summary, combined with the distinct demographics and the overall context of two studies, suggests this refers to a separate study, which is assigned to 'Study 2'. Both candidates are from 'method' sections, and their distinct values and sample descriptions support treating them as separate studies rather than merged subsamples of a single study."}, "SD_age": {"extract_value": {"Study 1": [2.65], "Study 2": [3.07]}, "best_indices": [0, 1], "reason": "The paper contains two distinct studies. Candidate [0] is from an earlier method section (source_file 005) and provides an SD of 2.65. The section summary for [0] mentions 'both studies' and a large participant pool, suggesting it pertains to Study 1. The 'n=10' in the evidence for [0] is noted as potentially referring to a specific subsample or being a typo, but the SD value is extracted as reported. Candidate [1] is from a later method section (source_file 008) and describes a distinct sample of 212 students with an SD of 3.07. Following the critical instruction to use source file index and section summary to resolve studies, and assuming early method sections describe Study 1 and later ones describe Study 2, these values are assigned to distinct studies."}, "M_age": {"extract_value": {"Study 1": [20.89]}, "best_indices": [0], "reason": "Candidate [0] provides the mean age (M=20.89) for 'Study X'. Given that the paper has two studies and this candidate is from an early method section describing 'a single study', 'Study X' is resolved to 'Study 1'."}, "r": {"extract_value": {"Study 2": [-0.485]}, "best_indices": [0], "reason": "Candidate [0] refers to 'Study X' but its section summary states 'similar to findings in Study 1', indicating it describes Study 2. The value -0.485 is the arithmetic mean of correlations for Latino Americans (-0.40) and East Asian Americans (-0.57), as per the 'case_3_multiple_subgroups' rule."}}, "Frinking2020": {"Number of studies": {"extract_value": [1], "best_indices": [1, 6, 7, 11, 17], "reason": "Multiple candidates, particularly from the abstract, methods, and conclusion sections, explicitly state that the paper describes 'a single study' or 'the current study'. Candidate [9] incorrectly counts a referenced 'previous study' as a study conducted within the current paper, which is a misinterpretation of the field's scope."}, "usa_vs_other": {"extract_value": {"Single study": [0]}, "best_indices": [0, 1, 2, 3, 4, 5], "reason": "All candidates consistently indicate that the study's sample was collected in the Netherlands, not the USA, thus the value is 0. The paper describes a single study, as confirmed by the context and multiple candidate summaries."}, "N": {"extract_value": {"Single study": [163]}, "best_indices": [0, 1, 2], "reason": "The paper describes a single study, as confirmed by the context and the section summaries of candidates 0 and 1. Candidates 0 (abstract) and 1 (method section) consistently report a total sample size of 163 participants. Candidate 2 (Table 1) from the discussion section also shows N=163 for 'Age', which supports the total sample size. The other N values (146, 160) in Table 1 likely represent the sample size for specific variables due to missing data, rather than the overall total sample size. Therefore, 163 is selected as the total N for the single study."}, "female": {"extract_value": {"Single study": [0.6]}, "best_indices": [0, 1, 2], "reason": "All candidates consistently report 60% female participants (0.6 proportion) for the single study described in the paper. The values are consistent across the abstract, method section, and a table in the discussion, confirming the proportion of female participants."}, "M_age": {"extract_value": {"Single study": [66]}, "best_indices": [0, 1, 2], "reason": "The paper describes a single study, as confirmed by the context and consistent descriptions across all candidate sections (abstract, design and sample, discussion). All candidates provide a consistent mean age of 66 for this single study. Candidate [0] from the abstract, candidate [1] from the design and sample section, and candidate [2] from a table in the discussion section all report 'Mage = 66'. There are no conflicts or multiple studies to distinguish."}, "SD_age": {"extract_value": {"Single study": [12]}, "best_indices": [0, 1, 2], "reason": "The paper describes a single study, as confirmed by the context and all candidate summaries. All candidates consistently report an SD_age of 12 for this single study. Candidate [0] from the abstract, Candidate [1] from the design and sample section, and Candidate [2] from a table in the discussion section all provide the same value, indicating high consistency across sources. Therefore, the value 12 is extracted for the single study."}, "r": {"extract_value": {"Single study": [-0.45]}, "best_indices": [0], "reason": "The paper contains a single study, as indicated by the context. Candidate [0] provides a Pearson's correlation of -0.45 between Gratitude (SGRAT-NL) and Loneliness (LQ) in Table 1. This value directly corresponds to the definition of 'r' for the single study."}}, "Garg2023": {"Number of studies": {"extract_value": [2], "best_indices": [0, 1, 3], "reason": "The abstract (Candidate 0) and introduction (Candidate 1) explicitly state that the paper describes 'two studies'. Candidate 3, while detailing 'Study 1', also mentions 'Study 2' in its context, reinforcing the count of two. Other candidates either focus on a single study (Study 1 or Study 2) or are from sections not relevant to the overall number of studies. Candidate 9, from the discussion, refers to 'a single study', but this conflicts with the clear and repeated mentions of 'Study 1' and 'Study 2' throughout the paper, especially in the abstract and introduction which provide an overview of the entire research structure. Therefore, the stronger evidence points to two studies."}, "usa_vs_other": {"extract_value": {"Study 1": [0], "Study 2": [0]}, "best_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], "reason": "The paper explicitly states that it comprises two studies conducted in the 'Indian context' (Candidates 0, 1, 2, 10, 11). Specifically, Study 1 is confirmed to be in the Indian context by Candidates 1, 3, 4, 5, and 6. Similarly, Study 2 is confirmed to be in the Indian context by Candidates 1, 4, 7, 8, and 9. All evidence consistently indicates that both studies were conducted in India, not the United States. Therefore, the value for 'usa_vs_other' is 0 for both Study 1 and Study 2."}, "N": {"extract_value": {"Study 1": [570], "Study 2": [524]}, "best_indices": [0, 1, 2, 3, 4, 5, 6, 7], "reason": "The paper explicitly describes two studies. For Study 1, the sample size of 570 is consistently reported in the abstract (Candidate 0) and the main text describing Study 1 (Candidates 1, 2, 3). Candidate 4 presents a conflicting value of 572 from a table, but the main text value of 570 is preferred due to its consistency across multiple reliable sources and the instruction to prefer main text over tables in case of conflict. For Study 2, the sample size of 524 is consistently reported in the main text describing Study 2 (Candidates 5, 6, 7). The abstract (Candidate 0) reports 534. Following the instruction to prefer values from 'Results'/'Method'/'Table' sections over 'Abstract', the value of 524 is selected for Study 2."}, "female": {"extract_value": {"Study 1": [0.519], "Study 2": [0.463]}, "best_indices": [0], "reason": "Candidate 0 provides clear and distinct female proportions for 'Study 1' (0.519) and 'Study 2' (0.463) from Table 2, 'Sample description'. The values are directly extracted and converted from percentages as per the definition. This aligns with the context that the paper contains two studies."}, "r": {"extract_value": {"Study 2": [-0.344]}, "best_indices": [1], "reason": "The paper describes two studies, but all candidates for 'r' refer to 'Study 2'. Candidate 1 provides a value of -0.344, which is the arithmetic mean of two correlations: TILS (Loneliness) with Gratitude (r = -0.410) and GQ-6 (Gratitude) with Revised UCLA loneliness scale (r = -0.278). This aligns with the definition's rule 'case_1_multiple_subscales', which states that if multiple Loneliness scale or subscale correlations with Gratitude are reported, the arithmetic mean across the subscales should be computed. Candidates 0 and 2 only report the -0.410 correlation, which is only one of the two relevant correlations. Therefore, Candidate 1's value is preferred as it correctly applies the averaging rule."}}, "Green2010": {"Number of studies": {"extract_value": [1], "best_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], "reason": "All candidates consistently indicate that the paper describes a single study, using phrases like 'this study' or 'the study' throughout various sections. There is no conflicting evidence suggesting multiple studies."}, "N": {"extract_value": {"Single study": [140, 137]}, "best_indices": [0, 1], "reason": "The paper describes a single study, as indicated by the context. Candidate [0] from the 'participants' section reports an initial sample size of 140. Candidate [1] from the 'procedure' section clarifies that 137 out of the 140 participants returned packets, indicating the final sample size for analysis. Both values are relevant and complementary, representing different stages of participant involvement in the same study, and are therefore merged into a single list for 'Single study'."}, "female": {"extract_value": {"Single study": [0.807]}, "best_indices": [0], "reason": "The paper describes a single study, as indicated by the context. Candidate [0] provides the proportion of female participants as 0.807 (80.7%), which is consistent across the evidence and section summary. This value is directly used for the 'Single study'."}, "M_age": {"extract_value": {"Single study": [21.91]}, "best_indices": [0], "reason": "The paper describes a single study, as indicated by the context. Candidate [0] provides a clear mean age of 21.91 years from the participants section, which is a reliable source for this information. 'Study X' is resolved to 'Single study' based on the paper's overall structure."}, "SD_age": {"extract_value": {"Single study": [5.74]}, "best_indices": [0], "reason": "The paper describes a single study, as indicated by the context. Candidate [0] provides the standard deviation of age (SD = 5.74) for this study. There are no conflicting values or other studies to consider."}, "usa_vs_other": {"extract_value": {"Single study": [1]}, "best_indices": [0], "reason": "The paper describes a single study, as indicated by the context. Candidate [0] explicitly states that participants were from a large, public university, implying a US location, thus 'usa_vs_other' is 1. The 'Study X' label from the candidate has been resolved to 'Single study' based on the provided context."}, "r": {"extract_value": {"Single study": [-0.28]}, "best_indices": [0], "reason": "The paper describes a single study. Candidate [0] provides the direct Pearson correlation coefficient (r = -0.28) between Gratitude (GQ-6) and Loneliness (UCLA loneliness scale), which directly aligns with the definition of 'r' as the Pearson r between Gratitude and Loneliness. Candidate [1] reports a partial correlation (r = -0.14) controlling for HFS-Total. Since the definition specifies 'Pearson r' without mentioning partial correlations, the direct correlation from Candidate [0] is the most appropriate value."}}, "Jovancevic&Milicevic2021": {"Number of studies": {"extract_value": [1], "best_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "reason": "All candidates consistently indicate that the paper describes a single study. Multiple section contexts explicitly state 'a single study' or refer to 'the study' in the singular, without any mention of multiple studies."}, "N": {"extract_value": {"Single study": [219]}, "best_indices": [0, 1, 2], "reason": "The context indicates a single study. All candidates consistently report N=219 for 'Study X', which is resolved to 'Single study' based on the context. Candidates 1 and 2 explicitly state 'a single study' in their section summaries, reinforcing this resolution. All sources are reliable (Abstract, Sample/Procedure section) and provide consistent information."}, "female": {"extract_value": {"Single study": [0.7899]}, "best_indices": [0, 1, 2], "reason": "All candidates consistently report that 78.99% of the sample were women, which translates to a proportion of 0.7899. The context confirms that the paper describes a single study. Therefore, the value is assigned to 'Single study'."}, "usa_vs_other": {"extract_value": {"Single study": [0]}, "best_indices": [0, 1, 2], "reason": "All candidates consistently indicate that the study was conducted in Serbia, not the USA, thus the value is 0. The context confirms this is a single study, so 'Single study' is used as the study name. All candidates provide consistent information and are used."}, "M_age": {"extract_value": {"Single study": [25.28]}, "best_indices": [0], "reason": "The paper describes a single study, as indicated by the context and the section summary. Candidate [0] explicitly states the average age as 25.28, which is directly extracted for the 'Single study'."}, "SD_age": {"extract_value": {"Single study": [8.14]}, "best_indices": [0], "reason": "The paper describes a single study, as indicated by the context and the section summary of candidate [0]. Candidate [0] explicitly states the standard deviation of age as 8.14. This value is directly extracted and assigned to the 'Single study'."}, "r": {"extract_value": {"Single study": [-0.31766666666666665]}, "best_indices": [0], "reason": "The paper describes a single study, as confirmed by the context and section summary. Candidate [0] provides the correlation between Gratitude and Loneliness, which is an arithmetic mean of correlations with multiple loneliness subscales (Loneliness in love, Loneliness in Family, and Social loneliness). This calculation adheres to the 'case_1_multiple_subscales' rule, which requires computing the arithmetic mean when multiple subscale correlations are reported. The value -0.31766666666666665 is the correct mean of -0.250, -0.277, and -0.426."}}, "Kuwert2014": {"Number of studies": {"extract_value": [1], "best_indices": [0, 1, 2, 3, 4, 5, 6], "reason": "All candidates consistently indicate that the paper describes a single study. For example, Candidate [0] explicitly states 'a single study (Study X)', Candidate [4] states 'results of a study on veterans', and Candidate [6] mentions 'results of a single study'. There is no conflicting information, and all contexts refer to one overarching research effort."}, "N": {"extract_value": {"Single study": [2025]}, "best_indices": [0, 1, 3], "reason": "The paper describes a single study, as confirmed by the context and all candidates. Candidates [0], [1], and [3] consistently report N=2025. Candidate [1] is from the 'Sample' section (Method), which is a highly reliable source for the total number of participants. Candidate [3] is from a table caption, also a reliable source, stating N=2025 for the overall results. Candidate [0] also supports N=2025 in the general study description. Candidate [2] reports N=1811, derived from degrees of freedom for Pearson r's. This value likely represents the sample size for a specific analysis after exclusions (e.g., listwise deletion), rather than the total sample size. Following the definition of N as the 'total number of participants' and prioritizing the 'Method' section and consistent reporting across multiple reliable sources, N=2025 is selected as the total sample size for the single study."}, "usa_vs_other": {"extract_value": {"Single study": [1]}, "best_indices": [0, 1, 2, 3], "reason": "All candidates consistently indicate that the study was conducted in the United States, with values of 1 for 'Study X'. The context confirms that the paper describes a single study. Therefore, the value 1 is assigned to 'Single study'."}, "M_age": {"extract_value": {"Single study": [71]}, "best_indices": [0, 1, 2], "reason": "All candidates consistently report a mean age of 71.0 years for 'Study X'. The context indicates that the paper describes a single study. Therefore, 'Study X' is resolved to 'Single study', and the value 71 is extracted. All candidates provide consistent and reliable information from relevant sections (sample description, results, and table caption)."}, "SD_age": {"extract_value": {"Single study": [7.1]}, "best_indices": [0, 1, 2], "reason": "All candidates consistently report an SD of 7.1 for the age of participants. The context indicates that the paper describes a single study, so all values are merged under 'Single study'."}, "female": {"extract_value": {"Single study": [0.038]}, "best_indices": [0, 1], "reason": "The paper describes a single study, as confirmed by the context. Both candidates [0] and [1] consistently report that 96.2% of participants were male. Therefore, the proportion of female participants is calculated as 100% - 96.2% = 3.8%, or 0.038. Both candidates provide the same value and evidence, reinforcing its reliability. The values are merged into a single entry for 'Single study'."}, "r": {"extract_value": {"Single study": [-0.36]}, "best_indices": [0], "reason": "The paper describes a single study. Candidate [0] directly provides the correlation coefficient 'r' between 'Dispositional gratitude' and 'Loneliness' as -0.36 from Table 1. This value aligns with the definition of 'r' as the Pearson correlation between Gratitude and Loneliness."}}, "Ni2015": {"Number of studies": {"extract_value": [1], "best_indices": [0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13], "reason": "Multiple candidates explicitly state or strongly imply that the paper describes 'a single study' or 'the present study'. Candidate [5] provides a value of 0 but lacks any supporting evidence in its context, making it unreliable. The overwhelming evidence points to a single study."}, "N": {"extract_value": {"Single study": [728]}, "best_indices": [0, 1, 2, 3, 4], "reason": "All candidates consistently report N=728. The context indicates that the paper describes a single study. Therefore, all 'Study X' references are consolidated into a 'Single study' with the value 728. All sources are reliable and provide consistent information across different sections (introduction, participants, procedure, results, and tables)."}, "usa_vs_other": {"extract_value": {"Single study": [0]}, "best_indices": [0, 1, 2, 3, 4], "reason": "The paper describes a single study, as indicated by the context and consistent phrasing across candidates (e.g., 'the present study', 'a single study'). All candidates consistently provide evidence that the study participants were Chinese students from universities in China, not the United States. Therefore, the value 0 (not USA) is appropriate for this single study. All candidates are reliable and contribute to this conclusion."}, "female": {"extract_value": {"Single study": [0.54]}, "best_indices": [0], "reason": "The context indicates that the paper describes a single study. Candidate [0] provides a clear proportion of female participants (54% or 0.54) from the 'participants' section, which is a reliable source. 'Study X' from the candidate is resolved to 'Single study' based on the overall paper context."}, "M_age": {"extract_value": {"Single study": [20.2]}, "best_indices": [0], "reason": "The paper describes a single study, as indicated by the context and the section summary. The mean age of 20.2 was reliably extracted from the participants section for this single study."}, "SD_age": {"extract_value": {"Single study": [3.1]}, "best_indices": [0], "reason": "The paper describes a single study, as indicated by the context and the section summary. Candidate [0] provides the standard deviation of age (3.1) for 'Study X', which is resolved to 'Single study' based on the overall paper structure."}, "r": {"extract_value": {"Single study": [-0.29]}, "best_indices": [0], "reason": "The paper describes a single study, as indicated by the context. Candidate [0] provides a correlation value of 0.29 from Table 1. However, the accompanying text explicitly states that 'Gratitude and loneliness were negatively correlated'. Following the conflict resolution rule to 'Prefer values in the MAIN TEXT over 'TABLE' values if both contradict but appear reliable', the qualitative statement from the text regarding the negative correlation is used to determine the sign, while the magnitude is taken from the table. Therefore, the correlation coefficient is resolved as -0.29."}}, "O'Connella2016": {"Number of studies": {"extract_value": [1], "best_indices": [0, 2, 3, 4, 5, 6, 7, 8, 9, 10], "reason": "Multiple candidates explicitly state that the paper describes 'a single study' or 'this single study' (e.g., Candidates [3], [4], [7], [9]). Other candidates consistently refer to 'the current study' or 'the present study' and describe a single set of participants and analyses. Candidate [1] discusses a literature review of *other* studies, not studies conducted within the current paper, making its value of 0 irrelevant to the field's definition of counting studies *in this paper*. Therefore, the most accurate and consistently supported value is 1."}, "N": {"extract_value": {"Single study": [118, 116]}, "best_indices": [0, 1, 2, 3, 4], "reason": "The paper describes a single study, as confirmed by the context and consistent references across candidates. The initial sample size was 118 participants, as stated in the abstract (Candidate 0), the participants section (Candidate 1), and Table 1 (Candidate 4). However, 2 participants were excluded from the statistical analysis due to incomplete measures, resulting in an effective sample size of 116 for the main analyses. This exclusion is explicitly explained in the statistical analysis section (Candidate 2) and confirmed by the degrees of freedom in the preliminary analysis (Candidate 3). Both the initial sample size (118) and the sample size used for analysis (116) are relevant and are included in the list for this single study."}, "female": {"extract_value": {"Single study": [0.678]}, "best_indices": [0], "reason": "The paper describes a single study, as indicated by the context. Candidate [0] explicitly states '67.8% female' for 'Study X', which is resolved to 'Single study' based on the paper's structure. The value is already a proportion (0-1)."}, "M_age": {"extract_value": {"Single study": [30.6]}, "best_indices": [0, 1], "reason": "The paper describes a single study, as indicated by the context and consistent references to 'Study X' in both candidates. Both candidates provide the same mean age of 30.6. Candidate [0] is from the 'participants_and_procedure' section, a primary source for demographic data. Candidate [1] is from a descriptive statistics table, also a reliable source. Since both values are identical and from reliable sources, they are merged into a single entry for the 'Single study'."}, "SD_age": {"extract_value": {"Single study": [10.7]}, "best_indices": [0, 1], "reason": "The paper describes a single study, as confirmed by the context and the section summaries of both candidates. Both candidates consistently report the same standard deviation for age (10.7) for this single study. Candidate [0] provides the value from the main text in the 'Participants and Procedure' section, and Candidate [1] provides the same value from Table 1 in the 'Preliminary Analysis' section. Since the values are identical and refer to the same study, they are merged."}, "usa_vs_other": {"extract_value": {"Single study": [1]}, "best_indices": [0], "reason": "The paper describes a single study, as indicated by the context and the candidate's section summary. Candidate [0] states that 'five Americans' were among the participants. According to the definition, if the sample was collected in the United States (USA), the value should be 1. The presence of American participants confirms that the sample included individuals from the USA, thus the value is 1. The candidate's provided value of 0 for 'Study X' is contradicted by its own evidence and is therefore overridden."}, "r": {"extract_value": {"Single study": [-0.47]}, "best_indices": [0], "reason": "The paper contains a single study, as indicated by the context. Candidate [0] explicitly reports the Pearson correlation coefficient between 'Gratitude' and 'Loneliness' as -0.47 in Table 1. This value directly matches the field definition and is assigned to the 'Single study'."}}, "O'Connellb2018": {"Number of studies": {"extract_value": [1], "best_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "reason": "All candidates consistently indicate that the paper describes a single study. Multiple section contexts explicitly refer to 'a cross-sectional study', 'the current study', or 'a single online cross-sectional study'. There is no conflicting information suggesting multiple studies."}, "N": {"extract_value": {"Single study": [607, 584]}, "best_indices": [0, 1, 2, 3, 4, 5, 6], "reason": "The paper describes a single study, as confirmed by the context and all candidate sections. The initial sample size for the study, reported in the abstract, participants section, and for the main mediation analysis, is consistently 607 (Candidates 0, 1, 5, 6). A subsample size of 584 is consistently reported for correlations after listwise deletion (Candidates 2, 3, 4). Both values are relevant to different stages or analyses within the same study and are therefore included in the list for the 'Single study'."}, "female": {"extract_value": {"Single study": [0.611]}, "best_indices": [0], "reason": "The paper describes a single study, as confirmed by the context and the section summary. Candidate [0] explicitly states '61.1% females' for the participants of this single study. This percentage is converted to a proportion (0.611) as per the definition."}, "M_age": {"extract_value": {"Single study": [25.15]}, "best_indices": [0], "reason": "The paper describes a single study. There is a conflict between the mean age reported in the main text (25.15) and the table (24.8). Following the instruction to prefer values from the main text over tables when they contradict for the same study, the value 25.15 from the 'Participants and Procedure' section is selected."}, "SD_age": {"extract_value": {"Single study": [9.5]}, "best_indices": [0], "reason": "The paper describes a single study, as indicated by the context and consistent references to 'Study X' in both candidates. There is a conflict between the SD of age reported in the main text (9.5 from Candidate 0) and the table (9.1 from Candidate 1). Following the instructions, values from the main text are preferred over table values when they contradict for the same study. Therefore, 9.5 from Candidate 0 is selected."}, "usa_vs_other": {"extract_value": {"Single study": [0]}, "best_indices": [0], "reason": "The paper describes a single study. Candidate 0 explicitly states that the participants were '84.5% Irish (9.9% non-Irish European)', indicating the sample was not collected in the United States. Therefore, the value for 'usa_vs_other' is 0."}, "r": {"extract_value": {"Single study": [-0.44]}, "best_indices": [0], "reason": "The paper describes a single study, as indicated by the context. Candidate [0] provides the correlation coefficient between Gratitude and Loneliness as -0.44, explicitly stating it is from Table 1 at the intersection of 'Gratitude' and 'Loneliness'. The section summary confirms Table 1 contains bivariate correlations for the study. Therefore, this value is directly extracted and assigned to the 'Single study'."}}, "Olawa2019": {"Number of studies": {"extract_value": [1], "best_indices": [0, 1, 7, 14], "reason": "Multiple candidates, including the abstract (Candidate [0]), explicitly state or strongly imply that the paper describes a single study. For example, Candidate [0] mentions 'a single study (Study X)', Candidate [1] refers to 'a study involving 465 older adults', Candidate [7] discusses findings 'in a single sample of 465 participants', and Candidate [14] refers to 'the present study'. All consistent candidates support the value of 1, while Candidate [6] provides no textual evidence to support its value of 0."}, "usa_vs_other": {"extract_value": {"Single study": [0]}, "best_indices": [0, 1, 2, 3, 4, 5], "reason": "All candidates consistently indicate that the study was conducted in Nigeria (or authors are affiliated with South Africa), which is not the United States. Candidate [1] explicitly states 'Ekiti State, Nigeria', Candidate [2] confirms 'Ekiti State, Nigeria', Candidate [3] mentions 'Ado-Ekiti' (a city in Ekiti State, Nigeria), Candidate [4] refers to 'Nigerian higher institutions', and Candidate [5] notes translation to 'Yoruba language' (spoken in Nigeria). Candidate [0] states authors are from 'South Africa'. All evidence points to the study not being conducted in the USA, thus the value is 0. The context confirms this is a single study."}, "N": {"extract_value": {"Single study": [465]}, "best_indices": [0, 1, 3, 4, 5], "reason": "The paper describes a single study, consistently identified across multiple reliable sources (abstract, method, results, tables). Candidates [0], [1], [3], [4], and [5] all report a sample size of 465 for the main study. Candidate [2] refers to a pilot testing sample of 63, which is distinct from the main study's participant pool and therefore excluded from the main study's N."}, "female": {"extract_value": {"Single study": [0.632]}, "best_indices": [0, 1, 2], "reason": "The paper describes a single study, as confirmed by the context and consistent reporting across all candidates. All three candidates provide highly consistent values for the proportion of female participants. Candidate [0] (abstract) states '294 women and 171 men', yielding 294/465 = 0.632. Candidate [1] (sample and procedure) states '465 older adults (comprising of 294 women)', yielding 294/465 = 0.632258. Candidate [2] (table) explicitly states 'Women 294 (63.2%)', which is 0.632 as a proportion. Given the consistency, the value 0.632 is selected, representing the proportion of female participants in the single study."}, "M_age": {"extract_value": {"Single study": [74.18]}, "best_indices": [0, 1], "reason": "The paper describes a single study, as indicated by the context and consistent references across candidates. Both Candidate [0] (abstract) and Candidate [1] (sample and procedure) report the mean age as 74.18 for 'Study X'. These values are consistent and refer to the same single study. Therefore, they are merged into a single entry under 'Single study'."}, "SD_age": {"extract_value": {"Single study": [9.42]}, "best_indices": [0, 1], "reason": "Both candidates [0] and [1] consistently report the standard deviation of age as 9.42. The context indicates that the paper describes a single study, so the values are merged under 'Single study'."}, "r": {"extract_value": {"Single study": [-0.25]}, "best_indices": [0, 1], "reason": "The paper describes a single study. Candidates [0] and [1] both report a correlation of r = -0.25 between Gratitude and Loneliness. Candidate [1] explicitly confirms this value from Table 2, which is titled 'Descriptive statistics and correlations among study variables' and shows '-.25**' for the correlation between Loneliness and Gratitude. This is a direct and reliable source for the Pearson r. Candidate [2] reports a correlation of r = -0.40 from Figure 1, which is a path model showing standardized estimates between latent variables. While this can represent a correlation, the value from the explicit correlation matrix (Table 2) is considered more direct and reliable for the zero-order Pearson correlation as per the field definition and correlation case rules. Therefore, -0.25 is selected as the most accurate value."}}, "RenJi2019": {"Number of studies": {"extract_value": [1], "best_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16], "reason": "All candidates consistently indicate that the paper describes a single study. The section contexts repeatedly refer to 'a study', 'this study', or 'the study', and there is no evidence to suggest multiple studies were conducted or reported within this paper."}, "usa_vs_other": {"extract_value": {"Single study": [0]}, "best_indices": [0, 1, 2, 3], "reason": "All candidates consistently indicate that the study was conducted in China, not the USA, hence the value 0 for 'usa_vs_other'. The context confirms this is a single study, so all 'Study X' references are merged into 'Single study'."}, "N": {"extract_value": {"Single study": [694]}, "best_indices": [0, 1, 2, 3], "reason": "The paper describes a single study, as indicated by the context and consistent references across all candidates. All candidates consistently report a sample size (N) of 694. Candidates [1], [2], and [3] further provide a gender breakdown (364 males, 330 females) which sums to 694, confirming the total N. There are no conflicting values, so all reliable sources are used to confirm the single N value for the study."}, "female": {"extract_value": {"Single study": [0.4755043227665706]}, "best_indices": [0, 1, 2], "reason": "All candidates consistently refer to a single study and provide highly consistent values for the proportion of female participants. Candidates [0] and [1] provide the exact calculated proportion (330/694 = 0.4755), while candidate [2] provides a rounded percentage (47.6%) from a table, which is consistent with the exact calculation. Given the context that the paper describes a single study, these values are merged under 'Single study'."}, "M_age": {"extract_value": {"Single study": [13.97]}, "best_indices": [0, 1, 2], "reason": "The paper describes a single study, as indicated by the context and consistent references across all candidates. All candidates report the same mean age of 13.97 for this single study. Candidates [0], [1], and [2] provide identical and consistent information from reliable sections (instruments, descriptive statistics, and a table caption), corroborating the mean age. Therefore, the value 13.97 is extracted for the 'Single study'."}, "SD_age": {"extract_value": {"Single study": [0.85]}, "best_indices": [0, 1, 2], "reason": "All candidates consistently report an SD of 0.85 for the age of participants. The context indicates that the paper describes a single study. All candidates refer to the same sample and provide consistent information, therefore they are merged under 'Single study'."}, "r": {"extract_value": {"Single study": [-0.21]}, "best_indices": [0], "reason": "The paper contains a single study. Candidate 0 provides the correlation between 'Reasoning & gratitude' (a measure of Gratitude) and 'Loneliness' as -0.210, which directly matches the definition of 'r'. This value is taken from Table 5, which is a reliable source for correlation coefficients."}}, "YuYuan2021": {"Number of studies": {"extract_value": [1], "best_indices": [0, 3, 5], "reason": "Multiple sections explicitly state that the paper describes 'a single study' or 'the study', consistently indicating a count of 1. Candidate [2] provides a value of 0, but its context 'proposes hypotheses for a new study' actually implies one study, making it less reliable than the explicit mentions of 'single study'."}, "N": {"extract_value": {"Single study": [384]}, "best_indices": [0, 2, 3, 4, 5], "reason": "The paper describes a single study, as indicated by the context and consistent phrasing across sections. Candidates [0] (Abstract), [2] (Participants), [3] (Results), [4] (Results, Figure), and [5] (Results, Table) all consistently report N=384 for this study. Candidate [1] from the Introduction refers to 'one study on 64,000 participants' which is an external study cited for background information, not the study conducted in this paper, and is therefore excluded. All reliable sources confirm N=384."}, "female": {"extract_value": {"Single study": [0.5651041666666666]}, "best_indices": [0, 1], "reason": "The paper describes a single study, as indicated by the context and both candidate sections. Both candidates [0] (abstract) and [1] (participants section) provide the exact same proportion of female participants (217 females out of 384 total participants), which is 0.5651041666666666. The values are consistent and refer to the same study, so they are merged into a single entry for 'Single study'."}, "usa_vs_other": {"extract_value": {"Single study": [0]}, "best_indices": [0, 2, 4, 5, 6], "reason": "The paper describes a single study. Candidates 0 (abstract), 2 (participants), 4 (results), 5 (figure caption), and 6 (table caption) consistently state that the study's participants were 'Chinese international students,' indicating the sample was not collected in the United States (value 0). Candidate 1 refers to a different study cited in the introduction and is therefore excluded. Candidate 3, from the data analysis section, states 'American college students' (value 1), which contradicts the overwhelming evidence from other reliable sections (abstract, participants, results). Given the consistency and reliability of the abstract, participants, and results sections, the information from Candidate 3 is considered an outlier or a general statement not specific to the study's actual sample. Therefore, the value 0 is selected for the single study."}, "r": {"extract_value": {"Single study": [-0.45]}, "best_indices": [0, 1, 2], "reason": "The paper describes a single study, as indicated by the context. All candidates consistently report a correlation coefficient (r) of -0.45 between gratitude and loneliness. Candidate [2] explicitly confirms this value from Table 1, which is a highly reliable source for correlation data. Candidates [0] and [1] also provide the same value in the text. Since all sources are consistent and refer to the same single study, the value -0.45 is extracted for the 'Single study'."}}}, "fields": ["M_age", "N", "SD_age", "female", "r", "usa_vs_other"], "comparison": {"Bartlett2019": {"r": "full", "N": "partial", "female": "full", "M_age": "full", "SD_age": "full", "usa_vs_other": "full"}, "Caputoa2015": {"r": "full", "N": "full", "female": "full", "M_age": "full", "SD_age": "full", "usa_vs_other": "full"}, "Caputoa2016": {"r": "full", "N": "partial", "female": "full", "M_age": "partial", "SD_age": "partial", "usa_vs_other": "full"}, "Chen2012": {"r": "full", "N": "partial", "female": "partial", "M_age": "partial", "SD_age": "partial", "usa_vs_other": "partial"}, "Chui2021": {"r": "full", "N": "full", "female": "partial", "M_age": "full", "SD_age": "partial", "usa_vs_other": "full"}, "Corona2020": {"r": "full", "N": "none", "female": "partial", "M_age": "full", "SD_age": "partial", "usa_vs_other": "partial"}, "Frinking2020": {"r": "full", "N": "full", "female": "full", "M_age": "full", "SD_age": "full", "usa_vs_other": "full"}, "Garg2023": {"r": "full", "N": "partial", "female": "partial", "M_age": "full", "SD_age": "full", "usa_vs_other": "partial"}, "Green2010": {"r": "full", "N": "partial", "female": "full", "M_age": "full", "SD_age": "full", "usa_vs_other": "full"}, "Jovancevic&Milicevic2021": {"r": "full", "N": "full", "female": "full", "M_age": "full", "SD_age": "full", "usa_vs_other": "full"}, "Kuwert2014": {"r": "full", "N": "full", "female": "full", "M_age": "full", "SD_age": "full", "usa_vs_other": "full"}, "Ni2015": {"r": "full", "N": "full", "female": "full", "M_age": "full", "SD_age": "full", "usa_vs_other": "full"}, "O'Connella2016": {"r": "full", "N": "partial", "female": "full", "M_age": "full", "SD_age": "full", "usa_vs_other": "none"}, "O'Connellb2018": {"r": "full", "N": "none", "female": "full", "M_age": "full", "SD_age": "full", "usa_vs_other": "full"}, "Olawa2019": {"r": "full", "N": "full", "female": "full", "M_age": "full", "SD_age": "full", "usa_vs_other": "full"}, "RenJi2019": {"r": "full", "N": "full", "female": "full", "M_age": "full", "SD_age": "full", "usa_vs_other": "full"}, "YuYuan2021": {"r": "full", "N": "full", "female": "full", "M_age": "full", "SD_age": "full", "usa_vs_other": "none"}}, "gt_display": {"Bartlett2019": {"r": "-0.46", "N": "42", "female": "0.8", "M_age": "73.0", "SD_age": "6.43", "usa_vs_other": "1"}, "Caputoa2015": {"r": "-0.438", "N": "197", "female": "0.802", "M_age": "29.1", "SD_age": "10.4", "usa_vs_other": "0"}, "Caputoa2016": {"r": "-0.411", "N": "204", "female": "0.799", "M_age": "28.96", "SD_age": "10.27", "usa_vs_other": "0"}, "Chen2012": {"r": "-0.49", "N": "233", "female": "0.618", "M_age": "19.31", "SD_age": "2.1", "usa_vs_other": "0"}, "Chui2021": {"r": "-0.1", "N": "128", "female": "0.46", "M_age": "56.7", "SD_age": "18.7", "usa_vs_other": "1"}, "Corona2020": {"r": "-0.485", "N": "212", "female": "0.8538", "M_age": "20.89", "SD_age": "3.07", "usa_vs_other": "1"}, "Frinking2020": {"r": "-0.45", "N": "163", "female": "0.6", "M_age": "66.0", "SD_age": "12.0", "usa_vs_other": "0"}, "Garg2023": {"r": "-0.344", "N": "524", "female": "0.463", "M_age": "(empty)", "SD_age": "(empty)", "usa_vs_other": "0"}, "Green2010": {"r": "-0.28", "N": "140", "female": "0.807", "M_age": "21.91", "SD_age": "5.74", "usa_vs_other": "1"}, "Jovancevic&Milicevic2021": {"r": "-0.318", "N": "219", "female": "0.7899", "M_age": "25.28", "SD_age": "8.14", "usa_vs_other": "0"}, "Kuwert2014": {"r": "-0.36", "N": "2025", "female": "0.038", "M_age": "71.0", "SD_age": "7.1", "usa_vs_other": "1"}, "Ni2015": {"r": "-0.29", "N": "728", "female": "0.54", "M_age": "20.2", "SD_age": "3.1", "usa_vs_other": "0"}, "O'Connella2016": {"r": "-0.47", "N": "118", "female": "0.678", "M_age": "30.6", "SD_age": "10.7", "usa_vs_other": "0"}, "O'Connellb2018": {"r": "-0.44", "N": "790", "female": "0.611", "M_age": "25.15", "SD_age": "9.5", "usa_vs_other": "0"}, "Olawa2019": {"r": "-0.25", "N": "465", "female": "0.632", "M_age": "74.18", "SD_age": "9.42", "usa_vs_other": "0"}, "RenJi2019": {"r": "-0.21", "N": "694", "female": "0.4755", "M_age": "13.97", "SD_age": "0.85", "usa_vs_other": "0"}, "YuYuan2021": {"r": "-0.45", "N": "384", "female": "0.5651", "M_age": "(empty)", "SD_age": "(empty)", "usa_vs_other": "1"}}, "gt_paper_mapping": {"Bartlett2019": "Bartlett2019", "Caputoa2015": "Caputoa2015", "Caputoa2016": "Caputoa2016", "Chen2012": "Chen2012", "Chui2021": "Chui2021", "Corona2020": "Corona2020", "Frinking2020": "Frinking2020", "Garg2023": "Garg2023", "Green2010": "Green2010", "Jovancevic&Milicevic2021": "Jovancevic&Milicevic2021", "Kuwert2014": "Kuwert2014", "Ni2015": "Ni2015", "O'Connella2016": "O'Connella2016", "O'Connellb2018": "O'Connellb2018", "Olawa2019": "Olawa2019", "RenJi2019": "RenJi2019", "YuYuan2021": "YuYuan2021"}};
+
+const papers = DATA.papers;
+const fields = DATA.fields;
+const comparison = DATA.comparison;
+const gtDisplay = DATA.gt_display;
+const paperIds = Object.keys(papers).sort();
+
+// ---- State ----
+let pinnedTooltip = null;  // {paperId, field} or null
+
+// ---- Helpers ----
+function isNoneLike(v) {
+  if (v === null || v === undefined) return true;
+  const s = String(v).trim().toLowerCase();
+  return s === 'none' || s === 'nan' || s === '' || s === '.';
+}
+
+function formatBestIndices(indices) {
+  if (!indices || !indices.length) return '(none)';
+  const sorted = [...indices].sort((a,b) => a - b);
+  const ranges = [];
+  let start = sorted[0], end = sorted[0];
+  for (let i = 1; i < sorted.length; i++) {
+    if (sorted[i] === end + 1) {
+      end = sorted[i];
+    } else {
+      ranges.push(start === end ? String(start) : `${start}-${end}`);
+      start = end = sorted[i];
+    }
+  }
+  ranges.push(start === end ? String(start) : `${start}-${end}`);
+  return ranges.join(', ');
+}
+
+function esc(s) {
+  const d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+function filterNoneLike(arr) {
+  return (arr || []).filter(v => !isNoneLike(v));
+}
+
+function listsMatch(a, b) {
+  // Compare two value lists (order-insensitive, approximate)
+  if (a.length !== b.length) return false;
+  const na = a.map(v => { try { return parseFloat(v); } catch(e) { return String(v).toLowerCase(); } }).sort();
+  const nb = b.map(v => { try { return parseFloat(v); } catch(e) { return String(v).toLowerCase(); } }).sort();
+  for (let i = 0; i < na.length; i++) {
+    if (typeof na[i] === 'number' && typeof nb[i] === 'number') {
+      if (Math.abs(na[i] - nb[i]) > 0.05) return false;
+    } else if (String(na[i]) !== String(nb[i])) return false;
+  }
+  return true;
+}
+
+// ---- Cell rendering ----
+function renderCell(fieldData) {
+  if (!fieldData) return '<span class="empty-val">(no data)</span>';
+
+  const ev = fieldData.extract_value;
+  const evg = fieldData.extract_value_by_gender;
+  let html = '';
+
+  if (evg) {
+    html = renderGenderCell(ev, evg);
+  } else if (ev !== undefined) {
+    html = renderPlainCell(ev);
+  } else {
+    html = '<span class="empty-val">(no data)</span>';
+  }
+  return html;
+}
+
+function renderPlainCell(ev) {
+  // ev is dict or list
+  if (ev && typeof ev === 'object' && !Array.isArray(ev)) {
+    // Dict: per-study
+    const parts = [];
+    for (const [study, vals] of Object.entries(ev)) {
+      const filtered = filterNoneLike(vals);
+      if (filtered.length) {
+        parts.push(`<div class="sub-block"><span class="sub-block-header">${esc(study)}:</span> ${filtered.map(v => esc(String(v))).join(', ')}</div>`);
+      } else {
+        parts.push(`<div class="sub-block"><span class="sub-block-header">${esc(study)}:</span> <span class="empty-val">(empty)</span></div>`);
+      }
+    }
+    return parts.join('') || '<span class="empty-val">(empty)</span>';
+  }
+  if (Array.isArray(ev)) {
+    const filtered = filterNoneLike(ev);
+    if (filtered.length) {
+      return `<div class="sub-block">${filtered.map(v => esc(String(v))).join(', ')}</div>`;
+    }
+    return '<span class="empty-val">(empty)</span>';
+  }
+  if (isNoneLike(ev)) return '<span class="empty-val">(empty)</span>';
+  return `<div class="sub-block">${esc(String(ev))}</div>`;
+}
+
+function renderGenderCell(ev, evg) {
+  // Collect all study keys from evg (from any gender dict)
+  const studyKeys = new Set();
+  for (const g of ['female', 'male', 'other', 'total']) {
+    const gDict = evg[g];
+    if (gDict && typeof gDict === 'object' && !Array.isArray(gDict)) {
+      for (const k of Object.keys(gDict)) studyKeys.add(k);
+    }
+  }
+  // Also get study keys from ev if it's a dict
+  const evIsDict = (ev && typeof ev === 'object' && !Array.isArray(ev));
+  if (evIsDict) {
+    for (const k of Object.keys(ev)) studyKeys.add(k);
+  }
+
+  const parts = [];
+  for (const study of studyKeys) {
+    let headerVals = '';
+
+    // Get extract_value for this study
+    let evStudyVals = [];
+    if (evIsDict && ev[study]) {
+      evStudyVals = filterNoneLike(Array.isArray(ev[study]) ? ev[study] : [ev[study]]);
+    }
+
+    // Get total for this study
+    let totalVals = [];
+    if (evg.total && typeof evg.total === 'object' && !Array.isArray(evg.total) && evg.total[study]) {
+      totalVals = filterNoneLike(Array.isArray(evg.total[study]) ? evg.total[study] : [evg.total[study]]);
+    }
+
+    // Check if total matches extract_value
+    const totalMatchesEv = evStudyVals.length > 0 && totalVals.length > 0 && listsMatch(evStudyVals, totalVals);
+
+    // Header line
+    if (!totalMatchesEv && evStudyVals.length > 0) {
+      headerVals = ` ${evStudyVals.map(v => esc(String(v))).join(', ')}`;
+    }
+
+    let studyHtml = `<div class="sub-block"><div class="sub-block-header">${esc(study)}:${headerVals}</div>`;
+
+    // Gender lines
+    for (const g of ['female', 'male', 'other', 'total']) {
+      const gDict = evg[g];
+      if (!gDict) continue;
+      let gVals = [];
+      if (typeof gDict === 'object' && !Array.isArray(gDict) && gDict[study]) {
+        gVals = filterNoneLike(Array.isArray(gDict[study]) ? gDict[study] : [gDict[study]]);
+      }
+      // Skip empty or zero-only
+      if (!gVals.length) continue;
+      if (gVals.length === 1 && (gVals[0] === 0 || gVals[0] === '0')) continue;
+
+      studyHtml += `<div class="gender-line"><span class="gender-label">${g}:</span> ${gVals.map(v => esc(String(v))).join(', ')}</div>`;
+    }
+
+    studyHtml += '</div>';
+    parts.push(studyHtml);
+  }
+
+  // Also render studies from ev that are NOT in evg study keys
+  if (evIsDict) {
+    for (const [study, vals] of Object.entries(ev)) {
+      if (studyKeys.has(study)) continue;  // already rendered above
+      const filtered = filterNoneLike(Array.isArray(vals) ? vals : [vals]);
+      if (filtered.length) {
+        parts.push(`<div class="sub-block"><span class="sub-block-header">${esc(study)}:</span> ${filtered.map(v => esc(String(v))).join(', ')}</div>`);
+      }
+    }
+  }
+
+  return parts.join('') || '<span class="empty-val">(empty)</span>';
+}
+
+// ---- Tooltip ----
+const tooltipEl = document.getElementById('tooltip');
+
+function showTooltip(paperId, field, x, y) {
+  const fd = papers[paperId]?.[field];
+  const gt = gtDisplay[paperId]?.[field];
+
+  // If no extracted data AND no GT info, nothing to show
+  if (!fd && gt === undefined) { tooltipEl.style.display = 'none'; return; }
+
+  let html = '';
+  if (fd) {
+    // best_indices
+    html += `<div><span class="tt-label">best_indices:</span> ${formatBestIndices(fd.best_indices)}</div>`;
+    // reason
+    if (fd.reason) {
+      html += `<div class="tt-section"><span class="tt-label">reason:</span> ${esc(fd.reason)}</div>`;
+    }
+  } else {
+    html += `<div><span class="tt-label" style="color:#888">No values extracted for this field.</span></div>`;
+  }
+  // ground truth
+  if (gt !== undefined) {
+    html += `<div class="tt-gt"><span class="tt-label">ground_truth:</span> ${esc(gt)}</div>`;
+  }
+
+  tooltipEl.innerHTML = html;
+  tooltipEl.style.display = 'block';
+
+  // Position
+  const rect = tooltipEl.getBoundingClientRect();
+  const vw = window.innerWidth;
+  const vh = window.innerHeight;
+  let left = x + 12;
+  let top = y + 12;
+  if (left + rect.width > vw - 10) left = x - rect.width - 12;
+  if (top + rect.height > vh - 10) top = y - rect.height - 12;
+  if (left < 0) left = 10;
+  if (top < 0) top = 10;
+  tooltipEl.style.left = left + 'px';
+  tooltipEl.style.top = top + 'px';
+}
+
+function hideTooltip() {
+  tooltipEl.style.display = 'none';
+  tooltipEl.classList.remove('pinned');
+}
+
+// ---- Build table ----
+function buildTable(visiblePapers) {
+  const headerRow = document.getElementById('headerRow');
+  const tbody = document.getElementById('tableBody');
+
+  // Header
+  headerRow.innerHTML = '<th>Paper</th>' + fields.map(f => `<th title="${esc(f)}">${esc(f)}</th>`).join('');
+
+  // Body
+  const rows = [];
+  for (const pid of visiblePapers) {
+    const pdata = papers[pid];
+    let tr = `<tr data-paper="${esc(pid)}"><td title="${esc(pid)}">${esc(pid)}</td>`;
+    for (const field of fields) {
+      const fd = pdata[field];
+      const match = comparison[pid]?.[field] || 'neutral';
+      const cellContent = renderCell(fd);
+      tr += `<td><div class="cell-block match-${match}" data-paper="${esc(pid)}" data-field="${esc(field)}">${cellContent}</div></td>`;
+    }
+    tr += '</tr>';
+    rows.push(tr);
+  }
+  tbody.innerHTML = rows.join('');
+
+  document.getElementById('paperCount').textContent = `${visiblePapers.length} papers`;
+
+  // Attach events
+  attachCellEvents();
+}
+
+function attachCellEvents() {
+  document.querySelectorAll('.cell-block').forEach(block => {
+    block.addEventListener('mouseenter', (e) => {
+      if (pinnedTooltip) return; // don't override pinned
+      const pid = block.dataset.paper;
+      const field = block.dataset.field;
+      showTooltip(pid, field, e.clientX, e.clientY);
+    });
+    block.addEventListener('mousemove', (e) => {
+      if (pinnedTooltip) return;
+      const pid = block.dataset.paper;
+      const field = block.dataset.field;
+      showTooltip(pid, field, e.clientX, e.clientY);
+    });
+    block.addEventListener('mouseleave', () => {
+      if (!pinnedTooltip) hideTooltip();
+    });
+    block.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const pid = block.dataset.paper;
+      const field = block.dataset.field;
+
+      if (pinnedTooltip && pinnedTooltip.paperId === pid && pinnedTooltip.field === field) {
+        // Unpin
+        pinnedTooltip = null;
+        hideTooltip();
+        block.classList.remove('pinned');
+      } else {
+        // Unpin old
+        if (pinnedTooltip) {
+          document.querySelectorAll('.cell-block.pinned').forEach(b => b.classList.remove('pinned'));
+        }
+        // Pin new
+        pinnedTooltip = { paperId: pid, field: field };
+        block.classList.add('pinned');
+        showTooltip(pid, field, e.clientX, e.clientY);
+        tooltipEl.classList.add('pinned');
+      }
+    });
+  });
+}
+
+// Click elsewhere to unpin
+document.addEventListener('click', (e) => {
+  if (pinnedTooltip && !e.target.closest('.cell-block') && !e.target.closest('.tooltip-box')) {
+    pinnedTooltip = null;
+    hideTooltip();
+    document.querySelectorAll('.cell-block.pinned').forEach(b => b.classList.remove('pinned'));
+  }
+});
+
+// ---- Controls ----
+const viewMode = document.getElementById('viewMode');
+const paperSelect = document.getElementById('paperSelect');
+const searchBox = document.getElementById('searchBox');
+
+// Populate paper select
+paperIds.forEach(pid => {
+  const opt = document.createElement('option');
+  opt.value = pid;
+  opt.textContent = pid;
+  paperSelect.appendChild(opt);
+});
+
+function refresh() {
+  const mode = viewMode.value;
+  const search = searchBox.value.trim().toLowerCase();
+
+  let visible;
+  if (mode === 'single') {
+    paperSelect.style.display = '';
+    visible = [paperSelect.value];
+  } else {
+    paperSelect.style.display = 'none';
+    visible = paperIds;
+  }
+
+  if (search) {
+    visible = visible.filter(pid => pid.toLowerCase().includes(search));
+  }
+
+  // Reset tooltip state
+  pinnedTooltip = null;
+  hideTooltip();
+
+  buildTable(visible);
+}
+
+viewMode.addEventListener('change', refresh);
+paperSelect.addEventListener('change', refresh);
+searchBox.addEventListener('input', refresh);
+
+// Initial render
+refresh();
+</script>
+</body>
+</html>

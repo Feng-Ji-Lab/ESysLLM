@@ -1,0 +1,4 @@
+{
+  "value": "None",
+  "reasoning": "The evidence states 'Published online: 23 July 2015' and 'We tested our reasoning in a 2-year prospective study'. This information allows for an estimation of the baseline year (e.g., 2015 - 2 years = 2013, or 2014 - 2 years = 2012 if data collection finished before publication). However, the field definition for yearT1 explicitly states: 'If infoYearT1='estimated': return the string 'None' — a deterministic post-step computes it as publication_year − 3 − span.' Since the baseline year is not explicitly given but must be estimated from the publication year and study duration, infoYearT1 would be 'estimated', and thus yearT1 must be 'None'."
+}

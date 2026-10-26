@@ -1,0 +1,25 @@
+{
+  "resolved_samples": [
+    {
+      "sample_key": "Study 1 - Choice-to-Reveal Question (Unaligned State) vs Revealed-State Questions (Unaligned State)",
+      "values": [
+        null
+      ],
+      "best_indices": [
+        0
+      ],
+      "reasoning": "Candidate 0 explicitly states that the design is \"Within-subject\" and that \"transition cells... used instead of simple cell counts.\" The field definition for N_Self_CI_Tmt specifies that for within-subject designs, all N_*_CI_* fields should be null. Although Candidate 1 provides a numerical value, the design type (within-subject) takes precedence for this field, making the count inapplicable in this format."
+    },
+    {
+      "sample_key": "Study 1 - Choice-to-Reveal Question (Unaligned State*) vs Revealed-State Questions (Unaligned State*)",
+      "values": [
+        null
+      ],
+      "best_indices": [
+        0,
+        1
+      ],
+      "reasoning": "Candidate 0 indicates a \"Within-subject design\" for the study, which implies that N_*_CI_* fields should be null as per the field definition. Candidate 1 provides an invalid value (-999) for this specific sample key, which is rejected. Therefore, based on the within-subject design, the value is null."
+    }
+  ]
+}

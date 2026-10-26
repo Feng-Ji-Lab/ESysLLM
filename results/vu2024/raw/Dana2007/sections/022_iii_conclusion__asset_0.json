@@ -1,0 +1,174 @@
+{
+  "prompt_tokens": 14897,
+  "completion_tokens": 3059,
+  "data": {
+    "Design": {
+      "extract_value": "between-subject",
+      "evidence_source": "Table 5 presents the proportion of dictators in each treatment that did so.",
+      "block_id": "/page/20/Text/4",
+      "warning": ""
+    },
+    "country": {
+      "extract_value": "None",
+      "evidence_source": "No information about the country of study was provided in the text.",
+      "block_id": "None",
+      "warning": ""
+    },
+    "info_cost": {
+      "extract_value": 0.0,
+      "evidence_source": "The text mentions 'relaxing the transparency' but does not state any monetary cost for revealing information. Defaulting to 0.0 as per rule.",
+      "block_id": "/page/20/Text/2",
+      "warning": ""
+    },
+    "Sample": {
+      "extract_value": [
+        {
+          "key": "Hidden information (baseline payoffs) vs Baseline",
+          "value": [
+            35
+          ]
+        },
+        {
+          "key": "Diffusion of responsibility vs Baseline",
+          "value": [
+            39
+          ]
+        },
+        {
+          "key": "Plausible deniability vs Baseline",
+          "value": [
+            48
+          ]
+        }
+      ],
+      "evidence_source": "Derived from N_Tot_CI_Tmt + N_Tot_CI_Ctr for each cell. For 'Hidden information (baseline payoffs) vs Baseline': 16 + 19 = 35. For 'Diffusion of responsibility vs Baseline': 20 + 19 = 39. For 'Plausible deniability vs Baseline': 29 + 19 = 48. N_Tot values are from Table 5.",
+      "block_id": "/page/21/Table/1",
+      "warning": ""
+    },
+    "N_Self_CI_Tmt": {
+      "extract_value": [
+        {
+          "key": "Hidden information (baseline payoffs) vs Baseline",
+          "value": [
+            10
+          ]
+        },
+        {
+          "key": "Diffusion of responsibility vs Baseline",
+          "value": [
+            13
+          ]
+        },
+        {
+          "key": "Plausible deniability vs Baseline",
+          "value": [
+            19
+          ]
+        }
+      ],
+      "evidence_source": "Derived from N_Tot_CI_Tmt - N_Altr_CI_Tmt. For 'Hidden information (baseline payoffs)': 16 - 6 = 10. For 'Diffusion of responsibility': 20 - 7 = 13. For 'Plausible deniability': 29 - 10 = 19. N_Tot and N_Altr values are from Table 5, column 'Proportion implementing fair outcome'.",
+      "block_id": "/page/21/Table/1",
+      "warning": ""
+    },
+    "N_Self_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Hidden information (baseline payoffs) vs Baseline",
+          "value": [
+            5
+          ]
+        },
+        {
+          "key": "Diffusion of responsibility vs Baseline",
+          "value": [
+            5
+          ]
+        },
+        {
+          "key": "Plausible deniability vs Baseline",
+          "value": [
+            5
+          ]
+        }
+      ],
+      "evidence_source": "Derived from N_Tot_CI_Ctr - N_Altr_CI_Ctr. For 'Baseline': 19 - 14 = 5. N_Tot and N_Altr values are from Table 5, row 'Baseline', column 'Proportion implementing fair outcome'.",
+      "block_id": "/page/21/Table/1",
+      "warning": ""
+    },
+    "N_Altr_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Hidden information (baseline payoffs) vs Baseline",
+          "value": [
+            14
+          ]
+        },
+        {
+          "key": "Diffusion of responsibility vs Baseline",
+          "value": [
+            14
+          ]
+        },
+        {
+          "key": "Plausible deniability vs Baseline",
+          "value": [
+            14
+          ]
+        }
+      ],
+      "evidence_source": "Table 5, row 'Baseline', column 'Proportion implementing fair outcome': '14/19 (74%)'.",
+      "block_id": "/page/21/Table/1",
+      "warning": ""
+    },
+    "N_Tot_CI_Tmt": {
+      "extract_value": [
+        {
+          "key": "Hidden information (baseline payoffs) vs Baseline",
+          "value": [
+            16
+          ]
+        },
+        {
+          "key": "Diffusion of responsibility vs Baseline",
+          "value": [
+            20
+          ]
+        },
+        {
+          "key": "Plausible deniability vs Baseline",
+          "value": [
+            29
+          ]
+        }
+      ],
+      "evidence_source": "Table 5, column 'Proportion implementing fair outcome'. For 'Hidden information (baseline payoffs)': '6/16 (38%)'. For 'Diffusion of responsibility': '7/20 (35%)'. For 'Plausible deniability': '10/29 (34%)'.",
+      "block_id": "/page/21/Table/1",
+      "warning": ""
+    },
+    "N_Tot_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Hidden information (baseline payoffs) vs Baseline",
+          "value": [
+            19
+          ]
+        },
+        {
+          "key": "Diffusion of responsibility vs Baseline",
+          "value": [
+            19
+          ]
+        },
+        {
+          "key": "Plausible deniability vs Baseline",
+          "value": [
+            19
+          ]
+        }
+      ],
+      "evidence_source": "Table 5, row 'Baseline', column 'Proportion implementing fair outcome': '14/19 (74%)'.",
+      "block_id": "/page/21/Table/1",
+      "warning": ""
+    }
+  }
+}

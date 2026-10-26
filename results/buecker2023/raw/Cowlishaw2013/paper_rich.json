@@ -1,0 +1,367 @@
+{
+  "paper_id": "Cowlishaw2013",
+  "pdf_path": "Cowlishaw2013.pdf",
+  "marker_output_dir": "/projects/code/meta_analysis_agent/data/processed/buecker2023/Cowlishaw2013",
+  "samples": [],
+  "fields": {
+    "Sample": {
+      "name": "Sample",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": null
+    },
+    "infoYearT1": {
+      "name": "infoYearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "given",
+        "evidence": [
+          {
+            "pdf_name": "Cowlishaw2013.pdf",
+            "section_id": "002_abstract",
+            "section_title": "ABSTRACT",
+            "block_id": "/page/0/Text/5",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "The text mentions 'over a four-year period' but does not specify the calendar year the first wave of data was collected.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "yearT1": {
+      "name": "yearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 2004,
+        "evidence": [
+          {
+            "pdf_name": "Cowlishaw2013.pdf",
+            "section_id": "005_participants",
+            "section_title": "Participants",
+            "block_id": "005_participants",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/4/Text/4] Participants were N=324 community-living older adults who were participants in the 2004 measurement of Melbourne Longitudinal Studies on Healthy Ageing programme (MELSHA; Browning and Kendig 2010).",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "country": {
+      "name": "country",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "Australia",
+        "evidence": [
+          {
+            "pdf_name": "Cowlishaw2013.pdf",
+            "section_id": "005_participants",
+            "section_title": "Participants",
+            "block_id": "005_participants",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/4/Text/4] Melbourne Longitudinal Studies on Healthy Ageing programme (MELSHA; Browning and Kendig 2010).",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "Outcome_variable": {
+      "name": "Outcome_variable",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "life satisfaction",
+        "evidence": [
+          {
+            "pdf_name": "Cowlishaw2013.pdf",
+            "section_id": "002_abstract",
+            "section_title": "ABSTRACT",
+            "block_id": "/page/0/Text/5",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/5] The current study examined the role of Antonovsky's Sense of Coherence (SOC) and social support in mediating the effects of spirituality on life satisfaction in older participants over a four-year period. ... wellbeing, as measured by life satisfaction",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "sample_type": {
+      "name": "sample_type",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "community/convenience",
+        "evidence": [
+          {
+            "pdf_name": "Cowlishaw2013.pdf",
+            "section_id": "002_abstract",
+            "section_title": "ABSTRACT",
+            "block_id": "/page/0/Text/5",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/5] using longitudinal data from a community sample of older adults.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "ethnicity": {
+      "name": "ethnicity",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "predominantly white/european",
+        "evidence": [],
+        "derivation": {
+          "kind": "infer_constant",
+          "skill_name": "infer_ethnicity_from_country",
+          "inputs": {
+            "country": "Australia"
+          },
+          "formula": "",
+          "note": "predominant ethnicity inferred from country (unreported in paper)"
+        },
+        "confidence": 0.5
+      }
+    },
+    "lag": {
+      "name": "lag",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 2.0,
+        "evidence": [
+          {
+            "pdf_name": "Cowlishaw2013.pdf",
+            "section_id": "003_introduction",
+            "section_title": "Introduction",
+            "block_id": "/page/4/Text/1",
+            "page": 4,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[page/4/Text/1] ...tests longitudinal mediation across a four-year interval.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "M_SWB": {
+      "name": "M_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | life satisfaction | wave 1": {
+          "values": [
+            {
+              "value": 18.7,
+              "evidence": [
+                {
+                  "pdf_name": "Cowlishaw2013.pdf",
+                  "section_id": "009_descriptive_statistics",
+                  "section_title": "Descriptive statistics",
+                  "block_id": "/page/8/Table/3",
+                  "page": 8,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1, row 9 'LSAT_2004', column 'Mean' (18.70); Table 1, row 10 'LSAT_2008', column 'Mean' (18.31)",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | life satisfaction | wave 2": {
+          "values": [
+            {
+              "value": 18.31,
+              "evidence": [
+                {
+                  "pdf_name": "Cowlishaw2013.pdf",
+                  "section_id": "009_descriptive_statistics",
+                  "section_title": "Descriptive statistics",
+                  "block_id": "/page/8/Table/3",
+                  "page": 8,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1, row 9 'LSAT_2004', column 'Mean' (18.70); Table 1, row 10 'LSAT_2008', column 'Mean' (18.31)",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    },
+    "SD_SWB": {
+      "name": "SD_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "whole sample | life satisfaction | wave 1": {
+          "values": [
+            {
+              "value": 2.83,
+              "evidence": [
+                {
+                  "pdf_name": "Cowlishaw2013.pdf",
+                  "section_id": "009_descriptive_statistics",
+                  "section_title": "Descriptive statistics",
+                  "block_id": "/page/8/Table/3",
+                  "page": 8,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1, row 9 'LSAT_2004', column 'SD' (2.83); Table 1, row 10 'LSAT_2008', column 'SD' (2.80)",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "whole sample | life satisfaction | wave 2": {
+          "values": [
+            {
+              "value": 2.8,
+              "evidence": [
+                {
+                  "pdf_name": "Cowlishaw2013.pdf",
+                  "section_id": "009_descriptive_statistics",
+                  "section_title": "Descriptive statistics",
+                  "block_id": "/page/8/Table/3",
+                  "page": 8,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1, row 9 'LSAT_2004', column 'SD' (2.83); Table 1, row 10 'LSAT_2008', column 'SD' (2.80)",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    }
+  },
+  "warnings": [
+    {
+      "code": "ungrounded_candidate",
+      "message": "001_older_adults_spirituality_and_life_satisfaction_a_/infoYearT1: quote not found in section (likely hallucinated): \"No information about the first wave's collection year is provided in the text.\"",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "001_older_adults_spirituality_and_life_satisfaction_a_/ethnicity: quote not found in section (likely hallucinated): 'No information about the ethnicity of the sample is provided in the text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "006_measures/ethnicity: quote not found in section (likely hallucinated): 'Ethnicity of the sample is not reported in the provided text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "008_results/infoYearT1: quote not found in section (likely hallucinated): 'No information found in the provided section.'",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "009_descriptive_statistics/ethnicity: quote not found in section (likely hallucinated): 'No ethnicity information is provided in the text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "012_conclusions/ethnicity: quote not found in section (likely hallucinated): 'Ethnicity of the sample is not reported in this section.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "015_sean_cowlishaw_et_al/ethnicity: quote not found in section (likely hallucinated): 'The text does not report the ethnic composition of the sample.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "no_samples",
+      "message": "sample census returned no samples",
+      "field_name": null,
+      "sample_key": null
+    }
+  ],
+  "run_meta": {
+    "run_id": "Cowlishaw2013",
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "schema_name": "buecker2023",
+    "schema_version": 1,
+    "skill_names": [
+      "bas2_over_bas",
+      "compute_weighted_mean_total",
+      "estimate_yeart1_from_pubyear",
+      "gender-mapping",
+      "hien_arm_taxonomy",
+      "infer_college_sample_100",
+      "infer_ethnicity_from_country",
+      "info_cost_clamp_zero",
+      "ng_mediator_lookup",
+      "ng_source_smallest_number",
+      "single_gender_fill",
+      "study_naming",
+      "table-parsing",
+      "total_geq_sum",
+      "vu_altr_ctr_identity",
+      "vu_cell_count_localization",
+      "vu_cell_terminology",
+      "vu_country_mturk",
+      "vu_info_cost_default"
+    ],
+    "started_at": "2026-07-08T16:06:25.326049Z",
+    "finished_at": "2026-07-08T16:06:35.181168Z",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "passes": 144,
+    "aggregator_passes": 10
+  }
+}

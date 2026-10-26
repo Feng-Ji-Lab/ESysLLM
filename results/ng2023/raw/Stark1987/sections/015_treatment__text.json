@@ -1,0 +1,47 @@
+{
+  "prompt_tokens": 13231,
+  "completion_tokens": 3545,
+  "data": {
+    "Sample": {
+      "extract_value": [
+        {
+          "key": "main sample",
+          "value": []
+        }
+      ],
+      "evidence_source": "Most papers contribute ONE study record. EXCEPTION: a paper that tests BOTH a CBT arm AND an IPT arm in the same RCT contributes TWO study records — one with IPT=0 (the CBT arm) and one with IPT=1 (the IPT arm).",
+      "block_id": "None",
+      "warning": "The paper describes two distinct CBT-flavored interventions (Self-Control Therapy and Behavioral Problem-Solving Therapy) and a Waiting List control. Following the rule that only CBT+IPT dual-arm studies create multiple records, this is treated as a single 'main sample' record with IPT=0."
+    },
+    "IPT": {
+      "extract_value": "0",
+      "evidence_source": "[/page/8/Text/3] Self-Control Therapy. The self-control treatment (S-C) was modeled after the latest of Rehm's manuals for adults (Rehm et al., 1984), which combines cognitive and behavioral skills training. [/page/8/Text/5] Behavioral Problem-Solving Therapy. The behavioral problem-solving therapy (BPS) combined self-monitoring, pleasant activity scheduling, and the acquisition of problem-solving skills.",
+      "block_id": "/page/8/Text/3",
+      "warning": "Both described interventions (Self-Control Therapy and Behavioral Problem-Solving Therapy) are variants of CBT, not IPT."
+    },
+    "male_pct": {
+      "extract_value": "None",
+      "evidence_source": "None",
+      "block_id": "None",
+      "warning": "None"
+    },
+    "dxgive": {
+      "extract_value": "400",
+      "evidence_source": "[/page/7/Text/3] Subjects were randomly assigned to experimental conditions. [/page/7/Text/4] Common Elements. Subjects in the self-control and behavioral problem-solving conditions received a behavioral rationale for the development and treatment of depression. [/page/9/Text/4] Waiting List. Following random assignment to conditions, subjects in the waiting list (WL) condition were informed that they would begin meeting with a therapist as soon as possible.",
+      "block_id": "/page/7/Text/3",
+      "warning": "The section describes interventions and mentions 'dysphoria' and 'behavior related to depression' but does not specify formal diagnostic criteria for study entry or assessment."
+    },
+    "Source": {
+      "extract_value": "1",
+      "evidence_source": "[/page/7/Text/4] Self-monitoring log sheets of pleasant activities were completed by subjects on a daily basis. [/page/8/Text/4] During the first four sessions, subjects were taught to monitor pleasant activities and positive self-statements through the use of log sheets, which consisted of lists of pleasant events and self-statements. On the bottom of each sheet, subjects rated their mood for the day on a 0-10 scale.",
+      "block_id": "/page/7/Text/4",
+      "warning": "None"
+    },
+    "MedCat": {
+      "extract_value": "2,1,99",
+      "evidence_source": "[/page/7/Text/4] Self-monitoring log sheets of pleasant activities were completed by subjects on a daily basis. [/page/8/Text/4] During the first four sessions, subjects were taught to monitor pleasant activities and positive self-statements through the use of log sheets, which consisted of lists of pleasant events and self-statements. On the bottom of each sheet, subjects rated their mood for the day on a 0-10 scale.",
+      "block_id": "/page/7/Text/4",
+      "warning": "None"
+    }
+  }
+}

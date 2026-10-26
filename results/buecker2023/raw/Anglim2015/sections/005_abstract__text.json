@@ -1,0 +1,60 @@
+{
+  "prompt_tokens": 10304,
+  "completion_tokens": 2740,
+  "data": {
+    "Sample": {
+      "extract_value": "None",
+      "evidence_source": "The abstract mentions 'subjective well-being (SWB)' but does not specify the component (e.g., life satisfaction, positive affect, negative affect) required to form the record key.",
+      "block_id": "None",
+      "warning": "Specific SWB components (life satisfaction, positive affect, negative affect) are not mentioned, only the general term 'subjective well-being (SWB)'. Therefore, per-record data (Sample, M_SWB, SD_SWB) cannot be extracted as the record key requires a specific component."
+    },
+    "yearT1": {
+      "extract_value": 2008,
+      "evidence_source": "[/page/0/Text/14] 'provided annual SWB scores on between 5 and 10 occasions.' [/page/0/Text/15] '2015 Elsevier Inc. All rights reserved.'",
+      "block_id": "005_abstract",
+      "warning": "Estimated based on publication year (2015) and study duration (5-10 annual waves, implying 4-9 years of data collection). Midpoint duration is 6.5 years, so 2015 - 6.5 = 2008.5, rounded to 2008."
+    },
+    "country": {
+      "extract_value": "Australia",
+      "evidence_source": "[/page/0/Text/14] 'a sample of Australian adults'",
+      "block_id": "005_abstract",
+      "warning": ""
+    },
+    "Outcome_variable": {
+      "extract_value": "None",
+      "evidence_source": "[/page/0/Text/14] 'subjective well-being (SWB)'",
+      "block_id": "005_abstract",
+      "warning": "The abstract mentions 'subjective well-being (SWB)' but does not specify whether it refers to life satisfaction, positive affect, or negative affect, nor does it mention specific measures."
+    },
+    "sample_type": {
+      "extract_value": "community/convenience",
+      "evidence_source": "[/page/0/Text/14] 'a sample of Australian adults (n = 1081)'",
+      "block_id": "005_abstract",
+      "warning": "Inferred as 'community/convenience' because it's a general sample of adults without explicit mention of national representativeness or specific recruitment methods."
+    },
+    "ethnicity": {
+      "extract_value": "not specified",
+      "evidence_source": "[/page/0/Text/14] 'a sample of Australian adults'",
+      "block_id": "005_abstract",
+      "warning": "Ethnicity is not specified in the abstract."
+    },
+    "lag": {
+      "extract_value": 1.0,
+      "evidence_source": "[/page/0/Text/14] 'provided annual SWB scores'",
+      "block_id": "005_abstract",
+      "warning": ""
+    },
+    "M_SWB": {
+      "extract_value": "None",
+      "evidence_source": "The abstract does not contain any mean SWB scores.",
+      "block_id": "None",
+      "warning": "Specific SWB components (life satisfaction, positive affect, negative affect) are not mentioned, only the general term 'subjective well-being (SWB)'. Therefore, per-record data (Sample, M_SWB, SD_SWB) cannot be extracted as the record key requires a specific component."
+    },
+    "SD_SWB": {
+      "extract_value": "None",
+      "evidence_source": "The abstract does not contain any standard deviation SWB scores.",
+      "block_id": "None",
+      "warning": "Specific SWB components (life satisfaction, positive affect, negative affect) are not mentioned, only the general term 'subjective well-being (SWB)'. Therefore, per-record data (Sample, M_SWB, SD_SWB) cannot be extracted as the record key requires a specific component."
+    }
+  }
+}

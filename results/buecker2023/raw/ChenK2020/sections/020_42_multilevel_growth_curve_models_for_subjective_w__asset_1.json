@@ -1,0 +1,60 @@
+{
+  "prompt_tokens": 15566,
+  "completion_tokens": 2961,
+  "data": {
+    "Sample": {
+      "extract_value": "None",
+      "evidence_source": "The provided text and table present model coefficients and variances from growth curve models, not descriptive means and standard deviations (N, M, SD) per wave. The N=1222 is a total sample size for the study, not an N for a specific wave's descriptive statistics.",
+      "block_id": "None",
+      "warning": "The N=1222 is a total sample size for the study, not an N for a specific wave's descriptive statistics. No per-wave Ns are provided."
+    },
+    "yearT1": {
+      "extract_value": "None",
+      "evidence_source": "The text mentions 'initial status (at T0)' and 'every two years' for wave intervals, but does not provide the calendar year for the first wave (T1) or the publication year to estimate it.",
+      "block_id": "None",
+      "warning": "The calendar year for the first wave (T1) is not explicitly stated, nor is the publication year to allow for estimation. The instruction 'ALWAYS return a 4-digit year — do NOT return 'None'' cannot be fulfilled without this information."
+    },
+    "country": {
+      "extract_value": "None",
+      "evidence_source": "The country where the sample was collected is not mentioned in this section.",
+      "block_id": "None",
+      "warning": ""
+    },
+    "Outcome_variable": {
+      "extract_value": "life satisfaction",
+      "evidence_source": "[page/5/Text/11] The multilevel results for life satisfaction are detailed in Table 5.",
+      "block_id": "page/5/Text/11",
+      "warning": ""
+    },
+    "sample_type": {
+      "extract_value": "None",
+      "evidence_source": "The recruitment source or sample type is not mentioned in this section.",
+      "block_id": "None",
+      "warning": ""
+    },
+    "ethnicity": {
+      "extract_value": "None",
+      "evidence_source": "The ethnicity of the sample is not mentioned in this section.",
+      "block_id": "None",
+      "warning": ""
+    },
+    "lag": {
+      "extract_value": 2.0,
+      "evidence_source": "[page/5/Text/12] scores fell by 0.171 every two years.",
+      "block_id": "page/5/Text/12",
+      "warning": ""
+    },
+    "M_SWB": {
+      "extract_value": "None",
+      "evidence_source": "The provided text and table present model coefficients and variances from growth curve models, not descriptive means and standard deviations (N, M, SD) per wave. The 'estimated mean initial status' values (e.g., 4.351, 6.209) are model intercepts, not raw descriptive means.",
+      "block_id": "None",
+      "warning": "The values provided (e.g., 4.351, 6.209) are estimated intercepts from growth models, not descriptive means for specific waves. The prompt asks for descriptive statistics (means, SDs) at each wave."
+    },
+    "SD_SWB": {
+      "extract_value": "None",
+      "evidence_source": "The provided text and table present model coefficients and variances from growth curve models, not descriptive means and standard deviations (N, M, SD) per wave. No standard deviations for life satisfaction at specific waves are reported.",
+      "block_id": "None",
+      "warning": "No standard deviations for life satisfaction at specific waves are reported. The table shows variances for random effects (e.g., Intercept, Time slope) and Level 1 residual variance, but these are not descriptive standard deviations for the SWB measure at each wave."
+    }
+  }
+}

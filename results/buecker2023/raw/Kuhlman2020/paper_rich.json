@@ -1,0 +1,490 @@
+{
+  "paper_id": "Kuhlman2020",
+  "pdf_path": "Kuhlman2020.pdf",
+  "marker_output_dir": "/projects/code/meta_analysis_agent/data/processed/buecker2023/Kuhlman2020",
+  "samples": [
+    {
+      "study_index": 1,
+      "sample_label": "whole sample | positive affect | wave 1"
+    },
+    {
+      "study_index": 1,
+      "sample_label": "whole sample | positive affect | wave 2"
+    },
+    {
+      "study_index": 1,
+      "sample_label": "whole sample | positive affect | wave 3"
+    }
+  ],
+  "fields": {
+    "Sample": {
+      "name": "Sample",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | positive affect | wave 1": {
+          "values": [
+            {
+              "value": 147,
+              "evidence": [
+                {
+                  "pdf_name": "Kuhlman2020.pdf",
+                  "section_id": "003_abstract",
+                  "section_title": "Abstract",
+                  "block_id": "/page/0/Text/7",
+                  "page": 0,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Adolescents (n = 147; 63.9% female; 33.7% non-Hispanic white) were recruited in 10th–11th grade and re-assessed 2 and 4 years later. At each assessment, adolescents completed measures of positive affect and sleep disturbances.",
+                  "bbox": null
+                },
+                {
+                  "pdf_name": "Kuhlman2020.pdf",
+                  "section_id": "009_results",
+                  "section_title": "Results",
+                  "block_id": "/page/4/Table/10",
+                  "page": 4,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 2, header (n = 147)",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | positive affect | wave 2": {
+          "values": [
+            {
+              "value": 147,
+              "evidence": [
+                {
+                  "pdf_name": "Kuhlman2020.pdf",
+                  "section_id": "003_abstract",
+                  "section_title": "Abstract",
+                  "block_id": "/page/0/Text/7",
+                  "page": 0,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Adolescents (n = 147; 63.9% female; 33.7% non-Hispanic white) were recruited in 10th–11th grade and re-assessed 2 and 4 years later. At each assessment, adolescents completed measures of positive affect and sleep disturbances.",
+                  "bbox": null
+                },
+                {
+                  "pdf_name": "Kuhlman2020.pdf",
+                  "section_id": "009_results",
+                  "section_title": "Results",
+                  "block_id": "/page/4/Table/10",
+                  "page": 4,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 2, header (n = 147)",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | positive affect | wave 3": {
+          "values": [
+            {
+              "value": 147,
+              "evidence": [
+                {
+                  "pdf_name": "Kuhlman2020.pdf",
+                  "section_id": "003_abstract",
+                  "section_title": "Abstract",
+                  "block_id": "/page/0/Text/7",
+                  "page": 0,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Adolescents (n = 147; 63.9% female; 33.7% non-Hispanic white) were recruited in 10th–11th grade and re-assessed 2 and 4 years later. At each assessment, adolescents completed measures of positive affect and sleep disturbances.",
+                  "bbox": null
+                },
+                {
+                  "pdf_name": "Kuhlman2020.pdf",
+                  "section_id": "009_results",
+                  "section_title": "Results",
+                  "block_id": "/page/4/Table/10",
+                  "page": 4,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 2, header (n = 147)",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    },
+    "infoYearT1": {
+      "name": "infoYearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "estimated",
+        "evidence": [
+          {
+            "pdf_name": "Kuhlman2020.pdf",
+            "section_id": "003_abstract",
+            "section_title": "Abstract",
+            "block_id": "/page/0/Text/7",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "Adolescents (n = 147; 63.9% female; 33.7% non-Hispanic white) were recruited in 10th–11th grade and re-assessed 2 and 4 years later.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "yearT1": {
+      "name": "yearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 2013,
+        "evidence": [],
+        "derivation": {
+          "kind": "infer_constant",
+          "skill_name": "estimate_yeart1_from_pubyear",
+          "inputs": {
+            "publication_year": 2020,
+            "span": 4.0,
+            "span_source": "lag*2waves"
+          },
+          "formula": "yearT1 = publication_year - 3 - span",
+          "note": "Buecker gold estimation rule for an unreported (Estimated) baseline year"
+        },
+        "confidence": 0.4
+      }
+    },
+    "country": {
+      "name": "country",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "united states",
+        "evidence": [
+          {
+            "pdf_name": "Kuhlman2020.pdf",
+            "section_id": "006_procedures",
+            "section_title": "Procedures",
+            "block_id": "/page/2/Text/9",
+            "page": 2,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/2/Text/9] Adolescents and their primary caregivers were recruited from four high schools in the Los Angeles metropolitan area.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "Outcome_variable": {
+      "name": "Outcome_variable",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "positive affect",
+        "evidence": [
+          {
+            "pdf_name": "Kuhlman2020.pdf",
+            "section_id": "003_abstract",
+            "section_title": "Abstract",
+            "block_id": "/page/0/Text/7",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "At each assessment, adolescents completed measures of positive affect and sleep disturbances.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "sample_type": {
+      "name": "sample_type",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "community/convenience",
+        "evidence": [
+          {
+            "pdf_name": "Kuhlman2020.pdf",
+            "section_id": "003_abstract",
+            "section_title": "Abstract",
+            "block_id": "/page/0/Text/7",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "Adolescents (n = 147; 63.9% female; 33.7% non-Hispanic white) were recruited in 10th–11th grade",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "ethnicity": {
+      "name": "ethnicity",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "other",
+        "evidence": [
+          {
+            "pdf_name": "Kuhlman2020.pdf",
+            "section_id": "003_abstract",
+            "section_title": "Abstract",
+            "block_id": "/page/0/Text/7",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "33.7% non-Hispanic white",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "lag": {
+      "name": "lag",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 2.0,
+        "evidence": [
+          {
+            "pdf_name": "Kuhlman2020.pdf",
+            "section_id": "003_abstract",
+            "section_title": "Abstract",
+            "block_id": "/page/0/Text/7",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "re-assessed 2 and 4 years later.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "M_SWB": {
+      "name": "M_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | positive affect | wave 1": {
+          "values": [
+            {
+              "value": 3.67,
+              "evidence": [
+                {
+                  "pdf_name": "Kuhlman2020.pdf",
+                  "section_id": "009_results",
+                  "section_title": "Results",
+                  "block_id": "/page/4/Table/10",
+                  "page": 4,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 2, row '1. Positivity', column 'M (SD)' (3.67); Table 2, row '3. Positivity', column 'M (SD)' (3.61); Table 2, row '7. Positivity', column 'M (SD)' (3.62)",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | positive affect | wave 2": {
+          "values": [
+            {
+              "value": 3.61,
+              "evidence": [
+                {
+                  "pdf_name": "Kuhlman2020.pdf",
+                  "section_id": "009_results",
+                  "section_title": "Results",
+                  "block_id": "/page/4/Table/10",
+                  "page": 4,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 2, row '1. Positivity', column 'M (SD)' (3.67); Table 2, row '3. Positivity', column 'M (SD)' (3.61); Table 2, row '7. Positivity', column 'M (SD)' (3.62)",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | positive affect | wave 3": {
+          "values": [
+            {
+              "value": 3.62,
+              "evidence": [
+                {
+                  "pdf_name": "Kuhlman2020.pdf",
+                  "section_id": "009_results",
+                  "section_title": "Results",
+                  "block_id": "/page/4/Table/10",
+                  "page": 4,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 2, row '1. Positivity', column 'M (SD)' (3.67); Table 2, row '3. Positivity', column 'M (SD)' (3.61); Table 2, row '7. Positivity', column 'M (SD)' (3.62)",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    },
+    "SD_SWB": {
+      "name": "SD_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | positive affect | wave 1": {
+          "values": [
+            {
+              "value": 0.98,
+              "evidence": [
+                {
+                  "pdf_name": "Kuhlman2020.pdf",
+                  "section_id": "009_results",
+                  "section_title": "Results",
+                  "block_id": "/page/4/Table/10",
+                  "page": 4,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 2, row '1. Positivity', column 'M (SD)' (0.98); Table 2, row '3. Positivity', column 'M (SD)' (1.00); Table 2, row '7. Positivity', column 'M (SD)' (0.99)",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | positive affect | wave 2": {
+          "values": [
+            {
+              "value": 1.0,
+              "evidence": [
+                {
+                  "pdf_name": "Kuhlman2020.pdf",
+                  "section_id": "009_results",
+                  "section_title": "Results",
+                  "block_id": "/page/4/Table/10",
+                  "page": 4,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 2, row '1. Positivity', column 'M (SD)' (0.98); Table 2, row '3. Positivity', column 'M (SD)' (1.00); Table 2, row '7. Positivity', column 'M (SD)' (0.99)",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | positive affect | wave 3": {
+          "values": [
+            {
+              "value": 0.99,
+              "evidence": [
+                {
+                  "pdf_name": "Kuhlman2020.pdf",
+                  "section_id": "009_results",
+                  "section_title": "Results",
+                  "block_id": "/page/4/Table/10",
+                  "page": 4,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 2, row '1. Positivity', column 'M (SD)' (0.98); Table 2, row '3. Positivity', column 'M (SD)' (1.00); Table 2, row '7. Positivity', column 'M (SD)' (0.99)",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    }
+  },
+  "warnings": [
+    {
+      "code": "ungrounded_candidate",
+      "message": "002_persistent_low_positive_affect_and_sleep_disturban/infoYearT1: quote not found in section (likely hallucinated): 'The calendar year of the first assessment wave (T1) is not explicitly stated in '",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "002_persistent_low_positive_affect_and_sleep_disturban/ethnicity: quote not found in section (likely hallucinated): 'The ethnicity of the sample is not reported in the provided text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    }
+  ],
+  "run_meta": {
+    "run_id": "Kuhlman2020",
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "schema_name": "buecker2023",
+    "schema_version": 1,
+    "skill_names": [
+      "bas2_over_bas",
+      "compute_weighted_mean_total",
+      "estimate_yeart1_from_pubyear",
+      "gender-mapping",
+      "hien_arm_taxonomy",
+      "infer_college_sample_100",
+      "infer_ethnicity_from_country",
+      "info_cost_clamp_zero",
+      "ng_mediator_lookup",
+      "ng_source_smallest_number",
+      "single_gender_fill",
+      "study_naming",
+      "table-parsing",
+      "total_geq_sum",
+      "vu_altr_ctr_identity",
+      "vu_cell_count_localization",
+      "vu_cell_terminology",
+      "vu_country_mturk",
+      "vu_info_cost_default"
+    ],
+    "started_at": "2026-07-08T23:07:33.597397Z",
+    "finished_at": "2026-07-08T23:12:43.279726Z",
+    "prompt_tokens": 380633,
+    "completion_tokens": 49623,
+    "passes": 158,
+    "aggregator_passes": 10
+  }
+}

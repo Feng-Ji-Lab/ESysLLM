@@ -1,0 +1,210 @@
+{
+  "prompt_tokens": 15067,
+  "completion_tokens": 5299,
+  "data": {
+    "Design": {
+      "extract_value": "between-subject",
+      "evidence_source": "[/page/7/Text/4] Table 1 displays the results of the Baseline and Default NR conditions. While only 9 out of 36 (35%) dictators in the Baseline condition chose (6, 1), in the Default NR condition 23 of 39 (59%) chose in a manner inconsistent with a preference for the fair outcome",
+      "block_id": "/page/7/Text/4",
+      "warning": ""
+    },
+    "country": {
+      "extract_value": "None",
+      "evidence_source": "No country information provided in the text.",
+      "block_id": "None",
+      "warning": ""
+    },
+    "info_cost": {
+      "extract_value": 0.0,
+      "evidence_source": "The text mentions 'choosing to remain ignorant' or 'avoid learning' but does not state any monetary cost for revealing information.",
+      "block_id": "/page/7/Text/4",
+      "warning": ""
+    },
+    "Sample": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            65
+          ]
+        },
+        {
+          "key": "Active Choice vs Baseline",
+          "value": [
+            66
+          ]
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": [
+            55
+          ]
+        },
+        {
+          "key": "Strategy Method vs Baseline",
+          "value": [
+            61
+          ]
+        }
+      ],
+      "evidence_source": "Derived from N_Tot_CI_Tmt + N_Tot_CI_Ctr for each cell. N_Tot_CI_Tmt from Table 4, column 'N'; N_Tot_CI_Ctr from Table 4, column 'N'.",
+      "block_id": "/page/10/Table/0",
+      "warning": ""
+    },
+    "N_Self_CI_Tmt": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            23
+          ]
+        },
+        {
+          "key": "Active Choice vs Baseline",
+          "value": [
+            14
+          ]
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": [
+            8
+          ]
+        },
+        {
+          "key": "Strategy Method vs Baseline",
+          "value": [
+            19
+          ]
+        }
+      ],
+      "evidence_source": "Default NR: [page/7/Text/4] '23 of 39 (59%) chose in a manner inconsistent with a preference for the fair outcome'. Also derived from Table 4, row 'Default NR', column 'Inconsistent with fairness prefs.' (.59) * N (39) = 23.01, rounded to 23. Active Choice: Derived from Table 4, row 'Active Choice', column 'Inconsistent with fairness prefs.' (.35) * N (40) = 14. Default R: Derived from Table 4, row 'Default R', column 'Inconsistent with fairness prefs.' (.28) * N (29) = 8.12, rounded to 8. Strategy Method: Derived from Table 4, row 'Strategy Method', column 'Inconsistent with fairness prefs.' (.54) * N (35) = 18.9, rounded to 19. [page/9/Text/3] clarifies 'Inconsistent with fairness prefs.' means choosing (6,1) or remaining ignorant.",
+      "block_id": "/page/10/Table/0",
+      "warning": ""
+    },
+    "N_Self_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            9
+          ]
+        },
+        {
+          "key": "Active Choice vs Baseline",
+          "value": [
+            9
+          ]
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": [
+            9
+          ]
+        },
+        {
+          "key": "Strategy Method vs Baseline",
+          "value": [
+            9
+          ]
+        }
+      ],
+      "evidence_source": "[/page/7/Text/4] '9 out of 36 (35%) dictators in the Baseline condition chose (6, 1)'. Derived from Table 4, row 'Baseline', column 'Inconsistent with fairness prefs.' (.35) * N (26) = 9.1, rounded to 9. Prioritized Table 4's N=26 over text's N=36 due to consistency with percentage.",
+      "block_id": "/page/10/Table/0",
+      "warning": "The text in /page/7/Text/4 states '9 out of 36 (35%) dictators in the Baseline condition chose (6, 1)'. This is inconsistent as 9/36 = 0.25, not 0.35. Table 4 reports N=26 and 0.35. We used N=26 and 0.35 from Table 4, which yields 9 selfish choices, matching the count in the text."
+    },
+    "N_Altr_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            17
+          ]
+        },
+        {
+          "key": "Active Choice vs Baseline",
+          "value": [
+            17
+          ]
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": [
+            17
+          ]
+        },
+        {
+          "key": "Strategy Method vs Baseline",
+          "value": [
+            17
+          ]
+        }
+      ],
+      "evidence_source": "Derived: 17 = 26 (N_Tot_CI_Ctr) - 9 (N_Self_CI_Ctr). N_Tot_CI_Ctr from Table 4, row 'Baseline', column 'N'. N_Self_CI_Ctr derived from Table 4, row 'Baseline', column 'Inconsistent with fairness prefs.' (.35) * N (26).",
+      "block_id": "/page/10/Table/0",
+      "warning": ""
+    },
+    "N_Tot_CI_Tmt": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            39
+          ]
+        },
+        {
+          "key": "Active Choice vs Baseline",
+          "value": [
+            40
+          ]
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": [
+            29
+          ]
+        },
+        {
+          "key": "Strategy Method vs Baseline",
+          "value": [
+            35
+          ]
+        }
+      ],
+      "evidence_source": "Default NR: Table 4, row 'Default NR', column 'N' = 39. Active Choice: Table 4, row 'Active Choice', column 'N' = 40. Default R: Table 4, row 'Default R', column 'N' = 29. Strategy Method: Table 4, row 'Strategy Method', column 'N' = 35.",
+      "block_id": "/page/10/Table/0",
+      "warning": ""
+    },
+    "N_Tot_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            26
+          ]
+        },
+        {
+          "key": "Active Choice vs Baseline",
+          "value": [
+            26
+          ]
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": [
+            26
+          ]
+        },
+        {
+          "key": "Strategy Method vs Baseline",
+          "value": [
+            26
+          ]
+        }
+      ],
+      "evidence_source": "Table 4, row 'Baseline', column 'N' = 26. Prioritized Table 4's N=26 over text's N=36 in /page/7/Text/4 due to consistency with percentage and its role as a summary table.",
+      "block_id": "/page/10/Table/0",
+      "warning": "The text in /page/7/Text/4 states '9 out of 36 (35%) dictators in the Baseline condition chose (6, 1)'. This is inconsistent as 9/36 = 0.25, not 0.35. Table 4 reports N=26 and 0.35. We used N=26 from Table 4."
+    }
+  }
+}

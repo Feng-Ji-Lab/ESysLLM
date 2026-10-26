@@ -1,0 +1,49 @@
+{
+  "prompt_tokens": 12416,
+  "completion_tokens": 2060,
+  "data": {
+    "Sample": {
+      "extract_value": [
+        {
+          "key": "main sample",
+          "value": [
+            154
+          ]
+        }
+      ],
+      "evidence_source": "No. of Participants 77, 74, 77, 79, 72, 69, 82, 84, 125, 119, 29, 34",
+      "block_id": "page/19/Text/5",
+      "warning": "The total N is derived from summing the 'No. of Participants' column in Table 4, which appears to be the randomized sample size for the CB Prevention Program and Usual Care groups. Summing all values (77+74+77+79+72+69+82+84+125+119+29+34) gives 901, which is incorrect as these are subgroup Ns. The table shows two main groups: 'CB Prevention Program' and 'Usual Care'. For 'Parental depression Current', CB has 77, Usual Care has 74. For 'No current', CB has 77, Usual Care has 79. For 'High entry CES-D, ≥20', CB has 72, Usual Care has 69. For 'Low entry CES-D, <20', CB has 82, Usual Care has 84. For 'Depressive episode History', CB has 125, Usual Care has 119. For 'No history', CB has 29, Usual Care has 34. These are not mutually exclusive categories. The total N for the study is not explicitly stated in this section. However, looking at the 'Depressive episode History' row, the sum of participants for 'History' and 'No history' for the CB Prevention Program is 125 + 29 = 154. For Usual Care, it's 119 + 34 = 153. This suggests a total N of 154 + 153 = 307. However, the prompt asks for 'Total participants randomized in this study record'. Without a clear total N for the entire study, and given the table structure, it's difficult to pinpoint a single total N from this snippet. I will use the largest N for one arm, 154, as a placeholder, but note the ambiguity."
+    },
+    "IPT": {
+      "extract_value": "0",
+      "evidence_source": "Abbreviations: CB, cognitive behavioral;",
+      "block_id": "page/19/Text/6",
+      "warning": ""
+    },
+    "male_pct": {
+      "extract_value": "None",
+      "evidence_source": "None",
+      "block_id": "None",
+      "warning": ""
+    },
+    "dxgive": {
+      "extract_value": "400",
+      "evidence_source": "Entry Characteristics as Moderators of the Effect of the Cognitive Behavioral Prevention Program on Onset of Depressive Episodes; CES-D High entry CES-D, ≥20",
+      "block_id": "page/19/Text/4",
+      "warning": "The study is described as a 'Prevention Program' and entry criteria include 'High entry CES-D, ≥20', which is a symptom cutoff, not a formal diagnostic requirement. While 'Depressive episode History' is mentioned as a moderator, it's not stated as a required entry criterion based on a formal diagnostic interview."
+    },
+    "Source": {
+      "extract_value": "1,7",
+      "evidence_source": "Abbreviations: CES-D, Center for Epidemiological Studies Depression Scale.; Scores on the Center for Epidemiological Studies Depression Scale and Children's Depression Rating Scale–Revised at Baseline, Postacute Intervention, and Postcontinuation Evaluations",
+      "block_id": "page/19/Text/6",
+      "warning": ""
+    },
+    "MedCat": {
+      "extract_value": "99",
+      "evidence_source": "Abbreviations: CES-D, Center for Epidemiological Studies Depression Scale.; Scores on the Center for Epidemiological Studies Depression Scale and Children's Depression Rating Scale–Revised at Baseline, Postacute Intervention, and Postcontinuation Evaluations",
+      "block_id": "page/19/Text/6",
+      "warning": ""
+    }
+  }
+}

@@ -1,0 +1,437 @@
+{
+  "paper_id": "Esnaola2019",
+  "pdf_path": "Esnaola2019.pdf",
+  "marker_output_dir": "/projects/code/meta_analysis_agent/data/processed/buecker2023/Esnaola2019",
+  "samples": [
+    {
+      "study_index": 1,
+      "sample_label": "whole sample | life satisfaction | wave 1"
+    },
+    {
+      "study_index": 1,
+      "sample_label": "whole sample | life satisfaction | wave 2"
+    }
+  ],
+  "fields": {
+    "Sample": {
+      "name": "Sample",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | life satisfaction | wave 1": {
+          "values": [
+            {
+              "value": 484,
+              "evidence": [
+                {
+                  "pdf_name": "Esnaola2019.pdf",
+                  "section_id": "003_abstract",
+                  "section_title": "Abstract",
+                  "block_id": "003_abstract",
+                  "page": null,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "The sample was composed by 484 adolescents from Spain",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | life satisfaction | wave 2": {
+          "values": [
+            {
+              "value": 484,
+              "evidence": [
+                {
+                  "pdf_name": "Esnaola2019.pdf",
+                  "section_id": "003_abstract",
+                  "section_title": "Abstract",
+                  "block_id": "003_abstract",
+                  "page": null,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "The sample was composed by 484 adolescents from Spain",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    },
+    "infoYearT1": {
+      "name": "infoYearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "estimated",
+        "evidence": [
+          {
+            "pdf_name": "Esnaola2019.pdf",
+            "section_id": "003_abstract",
+            "section_title": "Abstract",
+            "block_id": "003_abstract",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "answered the questionnaires at two diferent times: at the beginning (Mage1=14.95, SD1=1.81) and at the end of the school year (Mage2=15.61, SD2=1.81)",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "yearT1": {
+      "name": "yearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 2015,
+        "evidence": [],
+        "derivation": {
+          "kind": "infer_constant",
+          "skill_name": "estimate_yeart1_from_pubyear",
+          "inputs": {
+            "publication_year": 2019,
+            "span": 1.0,
+            "span_source": "lag*1waves"
+          },
+          "formula": "yearT1 = publication_year - 3 - span",
+          "note": "Buecker gold estimation rule for an unreported (Estimated) baseline year"
+        },
+        "confidence": 0.4
+      }
+    },
+    "country": {
+      "name": "country",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "Spain",
+        "evidence": [
+          {
+            "pdf_name": "Esnaola2019.pdf",
+            "section_id": "003_abstract",
+            "section_title": "Abstract",
+            "block_id": "003_abstract",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "The sample was composed by 484 adolescents from Spain",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "Outcome_variable": {
+      "name": "Outcome_variable",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "life satisfaction",
+        "evidence": [
+          {
+            "pdf_name": "Esnaola2019.pdf",
+            "section_id": "003_abstract",
+            "section_title": "Abstract",
+            "block_id": "003_abstract",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "longitudinal measurement invariance of the Satisfaction With Life Scale (SWLS) in adolescence.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "sample_type": {
+      "name": "sample_type",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "community/convenience",
+        "evidence": [
+          {
+            "pdf_name": "Esnaola2019.pdf",
+            "section_id": "003_abstract",
+            "section_title": "Abstract",
+            "block_id": "003_abstract",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "The sample was composed by 484 adolescents from Spain, 46.7% were males. All participants belonged to six academic levels from Grade 7 to Grade 12",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "ethnicity": {
+      "name": "ethnicity",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "predominantly white/european",
+        "evidence": [],
+        "derivation": {
+          "kind": "infer_constant",
+          "skill_name": "infer_ethnicity_from_country",
+          "inputs": {
+            "country": "Spain"
+          },
+          "formula": "",
+          "note": "predominant ethnicity inferred from country (unreported in paper)"
+        },
+        "confidence": 0.5
+      }
+    },
+    "lag": {
+      "name": "lag",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 0.66,
+        "evidence": [
+          {
+            "pdf_name": "Esnaola2019.pdf",
+            "section_id": "003_abstract",
+            "section_title": "Abstract",
+            "block_id": "003_abstract",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "answered the questionnaires at two diferent times: at the beginning (Mage1=14.95, SD1=1.81) and at the end of the school year (Mage2=15.61, SD2=1.81)",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "M_SWB": {
+      "name": "M_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | life satisfaction | wave 1": {
+          "values": [
+            {
+              "value": null,
+              "evidence": [
+                {
+                  "pdf_name": "Esnaola2019.pdf",
+                  "section_id": "010_results",
+                  "section_title": "Results",
+                  "block_id": "/page/3/Table/9",
+                  "page": 3,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1, column 'M', rows 'Swls1T1' (4.87), 'Swls2T1' (5.34), 'Swls3T1' (5.57), 'Swls4T1' (5.16), 'Swls5T1' (4.85), 'Swls1T2' (4.88), 'Swls2T2' (5.46), 'Swls3T2' (5.48), 'Swls4T2' (5.16), 'Swls5T2' (4.71).",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | life satisfaction | wave 2": {
+          "values": [
+            {
+              "value": null,
+              "evidence": [
+                {
+                  "pdf_name": "Esnaola2019.pdf",
+                  "section_id": "010_results",
+                  "section_title": "Results",
+                  "block_id": "/page/3/Table/9",
+                  "page": 3,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1, column 'M', rows 'Swls1T1' (4.87), 'Swls2T1' (5.34), 'Swls3T1' (5.57), 'Swls4T1' (5.16), 'Swls5T1' (4.85), 'Swls1T2' (4.88), 'Swls2T2' (5.46), 'Swls3T2' (5.48), 'Swls4T2' (5.16), 'Swls5T2' (4.71).",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    },
+    "SD_SWB": {
+      "name": "SD_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | life satisfaction | wave 1": {
+          "values": [
+            {
+              "value": null,
+              "evidence": [
+                {
+                  "pdf_name": "Esnaola2019.pdf",
+                  "section_id": "010_results",
+                  "section_title": "Results",
+                  "block_id": "/page/3/Table/9",
+                  "page": 3,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1, column 'SD', rows 'Swls1T1' (1.48), 'Swls2T1' (1.35), 'Swls3T1' (1.38), 'Swls4T1' (1.44), 'Swls5T1' (1.89), 'Swls1T2' (1.48), 'Swls2T2' (1.31), 'Swls3T2' (1.38), 'Swls4T2' (1.44), 'Swls5T2' (1.95).",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | life satisfaction | wave 2": {
+          "values": [
+            {
+              "value": null,
+              "evidence": [
+                {
+                  "pdf_name": "Esnaola2019.pdf",
+                  "section_id": "010_results",
+                  "section_title": "Results",
+                  "block_id": "/page/3/Table/9",
+                  "page": 3,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1, column 'SD', rows 'Swls1T1' (1.48), 'Swls2T1' (1.35), 'Swls3T1' (1.38), 'Swls4T1' (1.44), 'Swls5T1' (1.89), 'Swls1T2' (1.48), 'Swls2T2' (1.31), 'Swls3T2' (1.38), 'Swls4T2' (1.44), 'Swls5T2' (1.95).",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    }
+  },
+  "warnings": [
+    {
+      "code": "ungrounded_candidate",
+      "message": "002_longitudinal_measurement_invariance_of_the_satisfa/Outcome_variable: quote not found in section (likely hallucinated): 'Longitudinal measurement invariance of the Satisfaction With Life Scale in adole'",
+      "field_name": "Outcome_variable",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "002_longitudinal_measurement_invariance_of_the_satisfa/sample_type: quote not found in section (likely hallucinated): 'Longitudinal measurement invariance of the Satisfaction With Life Scale in adole'",
+      "field_name": "sample_type",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "002_longitudinal_measurement_invariance_of_the_satisfa/ethnicity: quote not found in section (likely hallucinated): 'The text does not report the ethnic composition of the sample.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "003_abstract/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "008_procedure/infoYearT1: quote not found in section (likely hallucinated): 'No specific year for data collection is mentioned in the text.'",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "008_procedure/ethnicity: quote not found in section (likely hallucinated): 'Ethnicity information is not provided in the text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "009_data_analysis/ethnicity: quote not found in section (likely hallucinated): 'No information about the ethnic composition of the sample is provided in this se'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "013_conclusion/ethnicity: quote not found in section (likely hallucinated): 'No information on ethnicity is provided in the text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "015_references/ethnicity: quote not found in section (likely hallucinated): \"No information about the ethnicity of the sample was found in the 'References' s\"",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "unmapped_candidate",
+      "message": "candidate [0] from 010_results carries value(s) [[4.87, 5.34, 5.57, 5.16, 4.85], [4.88, 5.46, 5.48, 5.16, 4.71]] not placed in any sample",
+      "field_name": "M_SWB",
+      "sample_key": null
+    },
+    {
+      "code": "unmapped_candidate",
+      "message": "candidate [0] from 010_results carries value(s) [[1.48, 1.35, 1.38, 1.44, 1.89], [1.48, 1.31, 1.38, 1.44, 1.95]] not placed in any sample",
+      "field_name": "SD_SWB",
+      "sample_key": null
+    }
+  ],
+  "run_meta": {
+    "run_id": "Esnaola2019",
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "schema_name": "buecker2023",
+    "schema_version": 1,
+    "skill_names": [
+      "bas2_over_bas",
+      "compute_weighted_mean_total",
+      "estimate_yeart1_from_pubyear",
+      "gender-mapping",
+      "hien_arm_taxonomy",
+      "infer_college_sample_100",
+      "infer_ethnicity_from_country",
+      "info_cost_clamp_zero",
+      "ng_mediator_lookup",
+      "ng_source_smallest_number",
+      "single_gender_fill",
+      "study_naming",
+      "table-parsing",
+      "total_geq_sum",
+      "vu_altr_ctr_identity",
+      "vu_cell_count_localization",
+      "vu_cell_terminology",
+      "vu_country_mturk",
+      "vu_info_cost_default"
+    ],
+    "started_at": "2026-07-08T16:13:14.383913Z",
+    "finished_at": "2026-07-08T16:13:35.987564Z",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "passes": 141,
+    "aggregator_passes": 10
+  }
+}

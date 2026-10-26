@@ -1,0 +1,621 @@
+{
+  "paper_id": "King2017",
+  "pdf_path": "King2017.pdf",
+  "marker_output_dir": "/projects/code/meta_analysis_agent/data/processed/buecker2023/King2017",
+  "samples": [
+    {
+      "study_index": 1,
+      "sample_label": "whole sample | None | wave 1"
+    },
+    {
+      "study_index": 2,
+      "sample_label": "whole sample | SWB component (unspecified) | wave 1"
+    },
+    {
+      "study_index": 2,
+      "sample_label": "whole sample | SWB component (unspecified) | wave 2"
+    },
+    {
+      "study_index": 2,
+      "sample_label": "boys | SWB component (unspecified) | wave 2"
+    },
+    {
+      "study_index": 2,
+      "sample_label": "girls | SWB component (unspecified) | wave 2"
+    }
+  ],
+  "fields": {
+    "Sample": {
+      "name": "Sample",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | None | wave 1": {
+          "values": [
+            {
+              "value": 272,
+              "evidence": [
+                {
+                  "pdf_name": "King2017.pdf",
+                  "section_id": "009_participants",
+                  "section_title": "Participants",
+                  "block_id": "/page/2/Text/16",
+                  "page": 2,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "There were 272 students",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 2 - whole sample | SWB component (unspecified) | wave 1": {
+          "values": [
+            {
+              "value": 369,
+              "evidence": [
+                {
+                  "pdf_name": "King2017.pdf",
+                  "section_id": "017_participants_and_procedures",
+                  "section_title": "Participants and Procedures",
+                  "block_id": "/page/4/Text/14",
+                  "page": 4,
+                  "study_index": 2,
+                  "granularity": "paragraph",
+                  "quote": "Initially, there were 369 students who participated in the first wave of the study. However, only 333 students completed the two waves. Of those who completed the study, there were 140 boys and 193 girls.",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 2 - whole sample | SWB component (unspecified) | wave 2": {
+          "values": [
+            {
+              "value": 333,
+              "evidence": [
+                {
+                  "pdf_name": "King2017.pdf",
+                  "section_id": "017_participants_and_procedures",
+                  "section_title": "Participants and Procedures",
+                  "block_id": "/page/4/Text/14",
+                  "page": 4,
+                  "study_index": 2,
+                  "granularity": "paragraph",
+                  "quote": "Initially, there were 369 students who participated in the first wave of the study. However, only 333 students completed the two waves. Of those who completed the study, there were 140 boys and 193 girls.",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 2 - boys | SWB component (unspecified) | wave 2": {
+          "values": [
+            {
+              "value": 140,
+              "evidence": [
+                {
+                  "pdf_name": "King2017.pdf",
+                  "section_id": "017_participants_and_procedures",
+                  "section_title": "Participants and Procedures",
+                  "block_id": "/page/4/Text/14",
+                  "page": 4,
+                  "study_index": 2,
+                  "granularity": "paragraph",
+                  "quote": "Initially, there were 369 students who participated in the first wave of the study. However, only 333 students completed the two waves. Of those who completed the study, there were 140 boys and 193 girls.",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 2 - girls | SWB component (unspecified) | wave 2": {
+          "values": [
+            {
+              "value": 193,
+              "evidence": [
+                {
+                  "pdf_name": "King2017.pdf",
+                  "section_id": "017_participants_and_procedures",
+                  "section_title": "Participants and Procedures",
+                  "block_id": "/page/4/Text/14",
+                  "page": 4,
+                  "study_index": 2,
+                  "granularity": "paragraph",
+                  "quote": "Initially, there were 369 students who participated in the first wave of the study. However, only 333 students completed the two waves. Of those who completed the study, there were 140 boys and 193 girls.",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    },
+    "infoYearT1": {
+      "name": "infoYearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "estimated",
+        "evidence": [
+          {
+            "pdf_name": "King2017.pdf",
+            "section_id": "003_the_relations_between_implicit_theories_of_intelli",
+            "section_title": "The Relations Between Implicit Theories of Intelligence and Subjective Well-Being",
+            "block_id": "/page/0/Text/7",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "The text mentions 'Study 2, a cross-lagged longitudinal study' and 'Time 1 entity theory' but does not specify the calendar year of the first data collection wave.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "yearT1": {
+      "name": "yearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 2013,
+        "evidence": [],
+        "derivation": {
+          "kind": "infer_constant",
+          "skill_name": "estimate_yeart1_from_pubyear",
+          "inputs": {
+            "publication_year": 2017,
+            "span": 1.0,
+            "span_source": "lag*1waves"
+          },
+          "formula": "yearT1 = publication_year - 3 - span",
+          "note": "Buecker gold estimation rule for an unreported (Estimated) baseline year"
+        },
+        "confidence": 0.4
+      }
+    },
+    "country": {
+      "name": "country",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "Philippines",
+        "evidence": [
+          {
+            "pdf_name": "King2017.pdf",
+            "section_id": "009_participants",
+            "section_title": "Participants",
+            "block_id": "/page/2/Text/16",
+            "page": 2,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "Metro Manila. In the Philippines",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "Outcome_variable": {
+      "name": "Outcome_variable",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "life satisfaction, positive affect, negative affect",
+        "evidence": [
+          {
+            "pdf_name": "King2017.pdf",
+            "section_id": "003_the_relations_between_implicit_theories_of_intelli",
+            "section_title": "The Relations Between Implicit Theories of Intelligence and Subjective Well-Being",
+            "block_id": "/page/0/Text/7",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/7] The aim of this study was to investigate the relationship between implicit theories of intelligence and subjective well-being as indexed by life satisfaction, positive affect, and (low levels of) negative affect.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "sample_type": {
+      "name": "sample_type",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "community/convenience",
+        "evidence": [
+          {
+            "pdf_name": "King2017.pdf",
+            "section_id": "009_participants",
+            "section_title": "Participants",
+            "block_id": "/page/2/Text/16",
+            "page": 2,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "There were 272 students who were drawn from one public and one private school in Metro Manila. [...] All the students were second-year high school students",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "ethnicity": {
+      "name": "ethnicity",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "not specified",
+        "evidence": [
+          {
+            "pdf_name": "King2017.pdf",
+            "section_id": "003_the_relations_between_implicit_theories_of_intelli",
+            "section_title": "The Relations Between Implicit Theories of Intelligence and Subjective Well-Being",
+            "block_id": "None",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "No information on the ethnic composition of the sample is provided in this section.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "lag": {
+      "name": "lag",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 0.5833,
+        "evidence": [
+          {
+            "pdf_name": "King2017.pdf",
+            "section_id": "017_participants_and_procedures",
+            "section_title": "Participants and Procedures",
+            "block_id": "/page/4/Text/15",
+            "page": 4,
+            "study_index": 2,
+            "granularity": "paragraph",
+            "quote": "The Time 1 surveys were administered in August during the first semester and the Time 2 surveys were administered in March, 7 months later before the end of the second semester.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "M_SWB": {
+      "name": "M_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | None | wave 1": {
+          "values": [
+            {
+              "value": 4.06,
+              "evidence": [
+                {
+                  "pdf_name": "King2017.pdf",
+                  "section_id": "014_primary_analyses",
+                  "section_title": "Primary Analyses",
+                  "block_id": "/page/4/Table/4",
+                  "page": 4,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1, row 'Mean', column '2' (Life satisfaction): 4.06; column '3' (Positive affect): 4.55; column '4' (Negative affect): 3.04.",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 2 - whole sample | SWB component (unspecified) | wave 1": {
+          "values": [
+            {
+              "value": 4.19,
+              "evidence": [
+                {
+                  "pdf_name": "King2017.pdf",
+                  "section_id": "021_missing_data_analysis",
+                  "section_title": "Missing Data Analysis",
+                  "block_id": "/page/5/Table/4",
+                  "page": 5,
+                  "study_index": 2,
+                  "granularity": "paragraph",
+                  "quote": "Table 2. Descriptive statistics, internal reliabilities, and bivariate correlations among the variables (Study 2), row 'Mean', columns '3. T1 life satisfaction', '4. T2 life satisfaction', '5. T1 positive affect', '6. T2 positive affect', '7. T1 negative affect', '8. T2 negative affect'.",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 2 - whole sample | SWB component (unspecified) | wave 2": {
+          "values": [
+            {
+              "value": 4.13,
+              "evidence": [
+                {
+                  "pdf_name": "King2017.pdf",
+                  "section_id": "021_missing_data_analysis",
+                  "section_title": "Missing Data Analysis",
+                  "block_id": "/page/5/Table/4",
+                  "page": 5,
+                  "study_index": 2,
+                  "granularity": "paragraph",
+                  "quote": "Table 2. Descriptive statistics, internal reliabilities, and bivariate correlations among the variables (Study 2), row 'Mean', columns '3. T1 life satisfaction', '4. T2 life satisfaction', '5. T1 positive affect', '6. T2 positive affect', '7. T1 negative affect', '8. T2 negative affect'.",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 2 - boys | SWB component (unspecified) | wave 2": {
+          "values": [
+            {
+              "value": null,
+              "evidence": [],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 2 - girls | SWB component (unspecified) | wave 2": {
+          "values": [
+            {
+              "value": null,
+              "evidence": [],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    },
+    "SD_SWB": {
+      "name": "SD_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | None | wave 1": {
+          "values": [
+            {
+              "value": 0.94,
+              "evidence": [
+                {
+                  "pdf_name": "King2017.pdf",
+                  "section_id": "014_primary_analyses",
+                  "section_title": "Primary Analyses",
+                  "block_id": "/page/4/Table/4",
+                  "page": 4,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1, row 'SD', column '2' (Life satisfaction): .94; column '3' (Positive affect): .79; column '4' (Negative affect): 1.10.",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 2 - whole sample | SWB component (unspecified) | wave 1": {
+          "values": [
+            {
+              "value": 0.84,
+              "evidence": [
+                {
+                  "pdf_name": "King2017.pdf",
+                  "section_id": "021_missing_data_analysis",
+                  "section_title": "Missing Data Analysis",
+                  "block_id": "/page/5/Table/4",
+                  "page": 5,
+                  "study_index": 2,
+                  "granularity": "paragraph",
+                  "quote": "Table 2. Descriptive statistics, internal reliabilities, and bivariate correlations among the variables (Study 2), row 'SD', columns '3. T1 life satisfaction', '4. T2 life satisfaction', '5. T1 positive affect', '6. T2 positive affect', '7. T1 negative affect', '8. T2 negative affect'.",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 2 - whole sample | SWB component (unspecified) | wave 2": {
+          "values": [
+            {
+              "value": 0.87,
+              "evidence": [
+                {
+                  "pdf_name": "King2017.pdf",
+                  "section_id": "021_missing_data_analysis",
+                  "section_title": "Missing Data Analysis",
+                  "block_id": "/page/5/Table/4",
+                  "page": 5,
+                  "study_index": 2,
+                  "granularity": "paragraph",
+                  "quote": "Table 2. Descriptive statistics, internal reliabilities, and bivariate correlations among the variables (Study 2), row 'SD', columns '3. T1 life satisfaction', '4. T2 life satisfaction', '5. T1 positive affect', '6. T2 positive affect', '7. T1 negative affect', '8. T2 negative affect'.",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 2 - boys | SWB component (unspecified) | wave 2": {
+          "values": [
+            {
+              "value": null,
+              "evidence": [],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 2 - girls | SWB component (unspecified) | wave 2": {
+          "values": [
+            {
+              "value": null,
+              "evidence": [],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    }
+  },
+  "warnings": [
+    {
+      "code": "ungrounded_candidate",
+      "message": "006_the_present_study/ethnicity: quote not found in section (likely hallucinated): 'Ethnicity of the sample is not reported in this section.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "008_methods/ethnicity: quote not found in section (likely hallucinated): 'No information about the ethnicity of the sample was found in the provided text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "009_participants/ethnicity: quote not found in section (likely hallucinated): 'Not specified in the provided text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "014_primary_analyses/ethnicity: quote not found in section (likely hallucinated): 'The text does not provide any information about the ethnic composition of the sa'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "015_study_2/ethnicity: quote not found in section (likely hallucinated): 'The ethnicity of the sample is not reported in this section.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "017_participants_and_procedures/ethnicity: quote not found in section (likely hallucinated): 'No information on ethnicity is provided in the text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "021_missing_data_analysis/infoYearT1: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "021_missing_data_analysis/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "023_primary_analyses/ethnicity: quote not found in section (likely hallucinated): 'No information about the ethnicity of the sample is provided in this section.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "024_general_discussion/ethnicity: quote not found in section (likely hallucinated): 'The text does not provide any information regarding the ethnic composition of th'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "unmapped_candidate",
+      "message": "candidate [0] from 014_primary_analyses carries value(s) [[4.55], [3.04]] not placed in any sample",
+      "field_name": "M_SWB",
+      "sample_key": null
+    },
+    {
+      "code": "unmapped_candidate",
+      "message": "candidate [1] from 021_missing_data_analysis carries value(s) [[4.48], [4.73], [2.81], [2.89]] not placed in any sample",
+      "field_name": "M_SWB",
+      "sample_key": null
+    },
+    {
+      "code": "unmapped_candidate",
+      "message": "candidate [0] from 014_primary_analyses carries value(s) [[0.79], [1.1]] not placed in any sample",
+      "field_name": "SD_SWB",
+      "sample_key": null
+    },
+    {
+      "code": "unmapped_candidate",
+      "message": "candidate [1] from 021_missing_data_analysis carries value(s) [[0.86], [1.08], [1.11], [1.01]] not placed in any sample",
+      "field_name": "SD_SWB",
+      "sample_key": null
+    }
+  ],
+  "run_meta": {
+    "run_id": "King2017",
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "schema_name": "buecker2023",
+    "schema_version": 1,
+    "skill_names": [
+      "bas2_over_bas",
+      "compute_weighted_mean_total",
+      "estimate_yeart1_from_pubyear",
+      "gender-mapping",
+      "hien_arm_taxonomy",
+      "infer_college_sample_100",
+      "infer_ethnicity_from_country",
+      "info_cost_clamp_zero",
+      "ng_mediator_lookup",
+      "ng_source_smallest_number",
+      "single_gender_fill",
+      "study_naming",
+      "table-parsing",
+      "total_geq_sum",
+      "vu_altr_ctr_identity",
+      "vu_cell_count_localization",
+      "vu_cell_terminology",
+      "vu_country_mturk",
+      "vu_info_cost_default"
+    ],
+    "started_at": "2026-07-08T21:56:56.459339Z",
+    "finished_at": "2026-07-08T22:01:28.143323Z",
+    "prompt_tokens": 351923,
+    "completion_tokens": 37224,
+    "passes": 254,
+    "aggregator_passes": 10
+  }
+}

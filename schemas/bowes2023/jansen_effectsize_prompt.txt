@@ -1,0 +1,117 @@
+<Context>
+Read the <study> and extract essential information. Act as a researcher conducting the coding process for a systematic literature review. Pay close attention, as these results will influence future research decisions.
+</Context>
+
+<Task>
+Identify and extract all zero-order correlations between conspiratorial ideation and any construct that correspond to the `Construct_category` whitelist. For each valid correlation, create one entry with the following variables:
+- `outcome`: One construct of the 55 labels from the provided whitelist (case-sensitive).
+- `es`: correlation (e.g., Pearson’s *r*, Spearman’s *ρ*) conspiratorial ideation and outcome category.
+- `N`: The overall sample size on which the effect size is based.
+
+**Whitelist of Construct_categories:**
+
+     ### EPISTEMIC
+     - Delusion = Delusion-proneness
+     - Anthro = Anthropomorphism
+     - BSR = Bullshit Receptivity
+     - IOA = Intolerance of ambiguity
+     - PNR = Perceived non-randomness/illusory pattern perception
+     - Dog = Dogmatism
+     - ConjFall = Conjunction Fallacy
+     - NeedClose = Need for closure
+     - REIR = Self-reported rationality
+     - NFCog = Need for Cognition
+     - IntCT = Intelligence
+     - CRT = Cognitive Reflection
+     - AOT = Actively Open-Minded Thinking
+
+     ### EXISTENTIAL
+     - BDW = Belief in Dangerous World
+     - ExThreat = Existential threat
+     - Cyn = Cynicism
+     - Powerlessness
+     - Anx = Anxiety (e.g., social anxiety)
+     - DeathAnx = Death Anxiety
+     - Efficacy = Efficacy
+     - Control
+
+     ### SOCIAL
+     - SocThreat = Social threat perception
+     - CollNarc = Collective Narcissism
+     - Anomie
+     - Alien = Alienation
+     - RWA = Right-wing authoritarianism
+     - IndNarc = Individual narcissism
+     - CollSelfEst = Collective Self-Esteem
+     - SDO = Social dominance orientation
+     - NFUnique = Need for Uniqueness
+     - IndSelfEst = Individual self-esteem
+     - Trust
+
+     ### GENREAL PERSONALITY
+     - Neuro = Neuroticism
+     - Open = Openness
+     - Consc = Conscientiousness
+     - Extra = Extraversion
+     - Agree = Agreeableness
+     - HH = Honesty-humility
+
+     ### PSYCHOPATHOLOGY
+     - Anger
+     - Antag = Antagonism
+     - Depression
+     - Detach = Detachment
+     - Dis = Disinhibition
+     - NegAff = Negative affect
+     - Paranoia
+     - PhysAgg = Physical Aggression
+     - Psych = Psychoticism
+     - Schizo = Schizotypy
+     - UnusExp = Susceptibility to unusual experiences
+     - Hostility
+
+</Task>
+
+<Procedure>
+To do this, use the following step-by-step (chain-of-thought approach) instructions:
+
+1. Carefully Read the Article:
+- Identify all reported correlations conspiratorial ideation and every construct.
+- Focus on Results, Tables, and Methods sections where statistical values are reported.
+- Pay attention to construct names and their corresponding statistical values.  
+
+2. Match Outcomes:
+- For each identified correlation between conspiratorial ideation and construct category, determine if the construct in the article has an exact match in the provided `Construct_category` whitelist (case-sensitive).
+- Identify every single measured construct that can match with construct categories.
+- If a construct in the article has no obvious label in the list, skip the entire correlation.
+
+3. Provide Answer:
+- For each valid correlation, extract the construct category (outcome), correlation (es), and the corresponding sample size (`N`) (see <Output Example>).
+- Output your final result as a valid JSON array (see <Example Output>) WITHOUT any additional information!
+
+4. Coding Rules:
+- Ensure that only bivariate statistics are considered.
+- Ignore partial/adjusted values, interaction terms, composites, factor scores, or path-model coefficients.
+- Copy numbers exactly; do not perform any transformations or rounding.
+
+</Procedure>
+
+<Output Example>
+[
+  {
+    "outcome": "Anx",
+    "es": 0.35,
+    "N": 180
+  },
+  {
+    "outcome": "Depression",
+    "es": -0.22,
+    "N": 180,
+  },
+  {
+    "outcome": "RWA",
+    "es": 0.48,
+    "N": 180,
+  }
+]
+</Output Example>

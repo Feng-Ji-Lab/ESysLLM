@@ -1,0 +1,55 @@
+{
+  "prompt_tokens": 12272,
+  "completion_tokens": 1615,
+  "data": {
+    "Sample": {
+      "extract_value": [
+        {
+          "key": "IPT arm",
+          "value": [
+            14
+          ]
+        },
+        {
+          "key": "CBT arm",
+          "value": [
+            14
+          ]
+        }
+      ],
+      "evidence_source": "[/page/4/Text/8] Family-Based Interpersonal Psychotherapy (FB-IPT)—FB-IPT included the preadolescent and one parent in a 14-session treatment, although it was not uncommon for 2 parents or the preadolescent's second parent to attend at least 1 treatment session.",
+      "block_id": "/page/4/Text/8",
+      "warning": "The N for the CBT arm is inferred to be the same as the IPT arm (14 sessions) as it's a comparison condition in the same study, but the text only explicitly states '14-session treatment' for FB-IPT. The number 14 refers to sessions, not participants. The prompt asks for 'Total participants randomized in this study record'. This section does not provide participant N. Returning session count as a placeholder, but this needs to be corrected from a different section."
+    },
+    "IPT": {
+      "extract_value": "1",
+      "evidence_source": "[/page/4/Text/8] Family-Based Interpersonal Psychotherapy (FB-IPT)—FB-IPT included the preadolescent and one parent in a 14-session treatment, although it was not uncommon for 2 parents or the preadolescent's second parent to attend at least 1 treatment session.",
+      "block_id": "/page/4/Text/8",
+      "warning": "For the 'CBT arm' sample, the IPT value should be 0. This output only reflects the IPT arm."
+    },
+    "male_pct": {
+      "extract_value": "None",
+      "evidence_source": "None",
+      "block_id": "None",
+      "warning": "None"
+    },
+    "dxgive": {
+      "extract_value": "None",
+      "evidence_source": "None",
+      "block_id": "None",
+      "warning": "None"
+    },
+    "Source": {
+      "extract_value": "None",
+      "evidence_source": "None",
+      "block_id": "None",
+      "warning": "None"
+    },
+    "MedCat": {
+      "extract_value": "None",
+      "evidence_source": "None",
+      "block_id": "None",
+      "warning": "None"
+    }
+  }
+}

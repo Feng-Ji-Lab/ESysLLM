@@ -1,0 +1,635 @@
+{
+  "paper_id": "Ellberg2020",
+  "pdf_path": "Ellberg2020.pdf",
+  "marker_output_dir": "/projects/code/meta_analysis_agent/data/processed/buecker2023/Ellberg2020",
+  "samples": [
+    {
+      "study_index": 1,
+      "sample_label": "whole sample | positive affect | wave 1"
+    },
+    {
+      "study_index": 1,
+      "sample_label": "whole sample | positive affect | wave 2"
+    },
+    {
+      "study_index": 1,
+      "sample_label": "whole sample | positive affect | wave 3"
+    },
+    {
+      "study_index": 1,
+      "sample_label": "whole sample | positive affect | wave 4"
+    }
+  ],
+  "fields": {
+    "Sample": {
+      "name": "Sample",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | positive affect | wave 1": {
+          "values": [
+            {
+              "value": 51,
+              "evidence": [
+                {
+                  "pdf_name": "Ellberg2020.pdf",
+                  "section_id": "011_22_participants",
+                  "section_title": "2.2 | Participants",
+                  "block_id": "/page/2/Table/3",
+                  "page": 2,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Dyads N row, Assessment 1, 2, 3, 4 columns in TABLE 1",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | positive affect | wave 2": {
+          "values": [
+            {
+              "value": 49,
+              "evidence": [
+                {
+                  "pdf_name": "Ellberg2020.pdf",
+                  "section_id": "011_22_participants",
+                  "section_title": "2.2 | Participants",
+                  "block_id": "/page/2/Table/3",
+                  "page": 2,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Dyads N row, Assessment 1, 2, 3, 4 columns in TABLE 1",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | positive affect | wave 3": {
+          "values": [
+            {
+              "value": 47,
+              "evidence": [
+                {
+                  "pdf_name": "Ellberg2020.pdf",
+                  "section_id": "011_22_participants",
+                  "section_title": "2.2 | Participants",
+                  "block_id": "/page/2/Table/3",
+                  "page": 2,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Dyads N row, Assessment 1, 2, 3, 4 columns in TABLE 1",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | positive affect | wave 4": {
+          "values": [
+            {
+              "value": 45,
+              "evidence": [
+                {
+                  "pdf_name": "Ellberg2020.pdf",
+                  "section_id": "011_22_participants",
+                  "section_title": "2.2 | Participants",
+                  "block_id": "/page/2/Table/3",
+                  "page": 2,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Dyads N row, Assessment 1, 2, 3, 4 columns in TABLE 1",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    },
+    "infoYearT1": {
+      "name": "infoYearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "estimated",
+        "evidence": [
+          {
+            "pdf_name": "Ellberg2020.pdf",
+            "section_id": "006_abstract",
+            "section_title": "Abstract",
+            "block_id": "006_abstract",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "The abstract states 'Indices of maternal distress were assessed at four time periods: third trimester of pregnancy and 1, 3, and 6 months postpartum.' but does not provide a calendar year for the start of data collection.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "yearT1": {
+      "name": "yearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 2014,
+        "evidence": [],
+        "derivation": {
+          "kind": "infer_constant",
+          "skill_name": "estimate_yeart1_from_pubyear",
+          "inputs": {
+            "publication_year": 2020,
+            "span": 2.79,
+            "span_source": "lag*3waves"
+          },
+          "formula": "yearT1 = publication_year - 3 - span",
+          "note": "Buecker gold estimation rule for an unreported (Estimated) baseline year"
+        },
+        "confidence": 0.4
+      }
+    },
+    "country": {
+      "name": "country",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "USA",
+        "evidence": [
+          {
+            "pdf_name": "Ellberg2020.pdf",
+            "section_id": "004_maternal_distress_across_the_postnatal_period_is_a",
+            "section_title": "Maternal distress across the postnatal period is associated  with infant secretory immunoglobulin A",
+            "block_id": "/page/0/Text/13",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/13] California Northstate University College of Medicine, Elk Grove, CA, USA[/page/0/Text/14] Department of Human Ecology, University of California, Davis, CA, USA",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "Outcome_variable": {
+      "name": "Outcome_variable",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "positive affect, negative affect",
+        "evidence": [
+          {
+            "pdf_name": "Ellberg2020.pdf",
+            "section_id": "006_abstract",
+            "section_title": "Abstract",
+            "block_id": "006_abstract",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/19] Employing a longitudinal design, relationships between maternal distress (i.e., per‐ ceived stress, negative affect, depressive symptomology), and infant secretory immu‐ noglobulin A (sIgA) across the peripartum period were examined in 51 mother–infant  dyads.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "sample_type": {
+      "name": "sample_type",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "community/convenience",
+        "evidence": [
+          {
+            "pdf_name": "Ellberg2020.pdf",
+            "section_id": "006_abstract",
+            "section_title": "Abstract",
+            "block_id": "006_abstract",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/19] Employing a longitudinal design, relationships between maternal distress (i.e., per‐ ceived stress, negative affect, depressive symptomology), and infant secretory immu‐ noglobulin A (sIgA) across the peripartum period were examined in 51 mother–infant  dyads.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "ethnicity": {
+      "name": "ethnicity",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "predominantly white/european",
+        "evidence": [
+          {
+            "pdf_name": "Ellberg2020.pdf",
+            "section_id": "011_22_participants",
+            "section_title": "2.2 | Participants",
+            "block_id": "/page/1/Text/14",
+            "page": 1,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/1/Text/14] The majority were married (90.2%), primiparous (92%), and Caucasian (90.2%).",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "lag": {
+      "name": "lag",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 0.93,
+        "evidence": [
+          {
+            "pdf_name": "Ellberg2020.pdf",
+            "section_id": "011_22_participants",
+            "section_title": "2.2 | Participants",
+            "block_id": "/page/2/Table/3",
+            "page": 2,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "Calculated from 'I age' row in TABLE 1: Assessment 2 (4.38 months), Assessment 3 (15.27 months), Assessment 4 (26.62 months). Interval 2-3: (15.27 - 4.38) / 12 = 0.9075 years. Interval 3-4: (26.62 - 15.27) / 12 = 0.9458 years. Average of these two intervals is approximately 0.93 years.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "M_SWB": {
+      "name": "M_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | positive affect | wave 1": {
+          "values": [
+            {
+              "value": 1.73,
+              "evidence": [
+                {
+                  "pdf_name": "Ellberg2020.pdf",
+                  "section_id": "011_22_participants",
+                  "section_title": "2.2 | Participants",
+                  "block_id": "/page/2/Table/3",
+                  "page": 2,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "M affectg row, Assessment 1, 2, 3, 4 columns in TABLE 1",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | positive affect | wave 2": {
+          "values": [
+            {
+              "value": 1.65,
+              "evidence": [
+                {
+                  "pdf_name": "Ellberg2020.pdf",
+                  "section_id": "011_22_participants",
+                  "section_title": "2.2 | Participants",
+                  "block_id": "/page/2/Table/3",
+                  "page": 2,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "M affectg row, Assessment 1, 2, 3, 4 columns in TABLE 1",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | positive affect | wave 3": {
+          "values": [
+            {
+              "value": 1.68,
+              "evidence": [
+                {
+                  "pdf_name": "Ellberg2020.pdf",
+                  "section_id": "011_22_participants",
+                  "section_title": "2.2 | Participants",
+                  "block_id": "/page/2/Table/3",
+                  "page": 2,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "M affectg row, Assessment 1, 2, 3, 4 columns in TABLE 1",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | positive affect | wave 4": {
+          "values": [
+            {
+              "value": 1.67,
+              "evidence": [
+                {
+                  "pdf_name": "Ellberg2020.pdf",
+                  "section_id": "011_22_participants",
+                  "section_title": "2.2 | Participants",
+                  "block_id": "/page/2/Table/3",
+                  "page": 2,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "M affectg row, Assessment 1, 2, 3, 4 columns in TABLE 1",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    },
+    "SD_SWB": {
+      "name": "SD_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | positive affect | wave 1": {
+          "values": [
+            {
+              "value": 0.44,
+              "evidence": [
+                {
+                  "pdf_name": "Ellberg2020.pdf",
+                  "section_id": "011_22_participants",
+                  "section_title": "2.2 | Participants",
+                  "block_id": "/page/2/Table/3",
+                  "page": 2,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "M affectg row, Assessment 1, 2, 3, 4 columns in TABLE 1 (values in parentheses)",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | positive affect | wave 2": {
+          "values": [
+            {
+              "value": 0.42,
+              "evidence": [
+                {
+                  "pdf_name": "Ellberg2020.pdf",
+                  "section_id": "011_22_participants",
+                  "section_title": "2.2 | Participants",
+                  "block_id": "/page/2/Table/3",
+                  "page": 2,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "M affectg row, Assessment 1, 2, 3, 4 columns in TABLE 1 (values in parentheses)",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | positive affect | wave 3": {
+          "values": [
+            {
+              "value": 0.62,
+              "evidence": [
+                {
+                  "pdf_name": "Ellberg2020.pdf",
+                  "section_id": "011_22_participants",
+                  "section_title": "2.2 | Participants",
+                  "block_id": "/page/2/Table/3",
+                  "page": 2,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "M affectg row, Assessment 1, 2, 3, 4 columns in TABLE 1 (values in parentheses)",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | positive affect | wave 4": {
+          "values": [
+            {
+              "value": 0.44,
+              "evidence": [
+                {
+                  "pdf_name": "Ellberg2020.pdf",
+                  "section_id": "011_22_participants",
+                  "section_title": "2.2 | Participants",
+                  "block_id": "/page/2/Table/3",
+                  "page": 2,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "M affectg row, Assessment 1, 2, 3, 4 columns in TABLE 1 (values in parentheses)",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    }
+  },
+  "warnings": [
+    {
+      "code": "ungrounded_candidate",
+      "message": "003_unknown_section/Sample: quote not found in section (likely hallucinated): 'Table 1: Descriptive Statistics for Life Satisfaction'",
+      "field_name": "Sample",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "003_unknown_section/infoYearT1: quote not found in section (likely hallucinated): 'The present study used data from 2000 to 2012.'",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "003_unknown_section/yearT1: quote not found in section (likely hallucinated): 'The present study used data from 2000 to 2012.'",
+      "field_name": "yearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "003_unknown_section/country: quote not found in section (likely hallucinated): 'The present study used data from the German Socio-Economic Panel (SOEP), a natio'",
+      "field_name": "country",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "003_unknown_section/Outcome_variable: quote not found in section (likely hallucinated): 'Life satisfaction was measured using the single-item question: “How satisfied ar'",
+      "field_name": "Outcome_variable",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "003_unknown_section/sample_type: quote not found in section (likely hallucinated): 'The present study used data from the German Socio-Economic Panel (SOEP), a natio'",
+      "field_name": "sample_type",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "003_unknown_section/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "003_unknown_section/lag: quote not found in section (likely hallucinated): 'Data are collected annually.'",
+      "field_name": "lag",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "003_unknown_section/M_SWB: quote not found in section (likely hallucinated): 'Table 1: Descriptive Statistics for Life Satisfaction'",
+      "field_name": "M_SWB",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "003_unknown_section/SD_SWB: quote not found in section (likely hallucinated): 'Table 1: Descriptive Statistics for Life Satisfaction'",
+      "field_name": "SD_SWB",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "004_maternal_distress_across_the_postnatal_period_is_a/infoYearT1: quote not found in section (likely hallucinated): 'The text only provides author affiliations and does not mention any data collect'",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "004_maternal_distress_across_the_postnatal_period_is_a/ethnicity: quote not found in section (likely hallucinated): 'The provided text only contains author affiliations and does not mention the eth'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "006_abstract/ethnicity: quote not found in section (likely hallucinated): 'Ethnicity of the sample is not mentioned in the abstract.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "008_1_introduction/ethnicity: quote not found in section (likely hallucinated): 'The ethnicity of the sample is not reported in this section.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "010_21_procedure/ethnicity: quote not found in section (likely hallucinated): 'Ethnicity of the sample is not reported in the provided text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "013_231_maternal_psychological_distress/infoYearT1: quote not found in section (likely hallucinated): 'No specific year for the first wave of data collection is mentioned in this sect'",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "018_3_results/ethnicity: quote not found in section (likely hallucinated): 'The ethnicity of the sample is not reported in this section.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "019_31_descriptive_statistics/ethnicity: quote not found in section (likely hallucinated): 'Ethnicity of the sample is not specified in the provided text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "021_321_does_prenatal_maternal_distress_predict_infant/ethnicity: quote not found in section (likely hallucinated): 'The ethnicity of the sample is not mentioned in the provided text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "028_552_ellberg_et_al/ethnicity: quote not found in section (likely hallucinated): 'The provided text does not contain any information about the ethnicity of the sa'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    }
+  ],
+  "run_meta": {
+    "run_id": "Ellberg2020",
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "schema_name": "buecker2023",
+    "schema_version": 1,
+    "skill_names": [
+      "bas2_over_bas",
+      "compute_weighted_mean_total",
+      "estimate_yeart1_from_pubyear",
+      "gender-mapping",
+      "hien_arm_taxonomy",
+      "infer_college_sample_100",
+      "infer_ethnicity_from_country",
+      "info_cost_clamp_zero",
+      "ng_mediator_lookup",
+      "ng_source_smallest_number",
+      "single_gender_fill",
+      "study_naming",
+      "table-parsing",
+      "total_geq_sum",
+      "vu_altr_ctr_identity",
+      "vu_cell_count_localization",
+      "vu_cell_terminology",
+      "vu_country_mturk",
+      "vu_info_cost_default"
+    ],
+    "started_at": "2026-07-08T16:12:54.738734Z",
+    "finished_at": "2026-07-08T16:12:58.758752Z",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "passes": 260,
+    "aggregator_passes": 10
+  }
+}

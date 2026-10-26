@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Extraction Pipeline Dashboard</title>
+<style>
+:root {
+  --bg: #f8f9fa;
+  --text: #212529;
+  --border: #dee2e6;
+  --header-bg: #343a40;
+  --header-text: #f8f9fa;
+  --cell-border: rgba(150,150,150,0.4);
+  --match-full: rgba(72, 199, 116, 0.25);
+  --match-partial: rgba(255, 221, 87, 0.30);
+  --match-none: rgba(255, 99, 99, 0.22);
+  --match-neutral: rgba(200,200,200,0.10);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: 13px;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.4;
+}
+
+/* --- Controls --- */
+.controls {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+  border-bottom: 2px solid var(--border);
+  padding: 10px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+.controls label { font-weight: 600; font-size: 12px; white-space: nowrap; }
+.controls input[type="text"], .controls select {
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 12px;
+}
+.controls input[type="text"] { width: 200px; }
+.controls select { max-width: 320px; }
+.controls .sep { border-left: 1px solid var(--border); height: 28px; }
+.controls .badge {
+  background: #e9ecef;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  color: #495057;
+}
+
+/* --- Table wrapper --- */
+.table-wrap {
+  overflow: auto;
+  max-height: calc(100vh - 60px);
+  position: relative;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 100%;
+}
+
+/* --- Header --- */
+thead th {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--header-bg);
+  color: var(--header-text);
+  padding: 8px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: left;
+  white-space: nowrap;
+  border-right: 1px solid rgba(255,255,255,0.1);
+  min-width: 160px;
+}
+thead th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 200;
+  min-width: 220px;
+  max-width: 280px;
+}
+
+/* --- Body --- */
+tbody td {
+  vertical-align: top;
+  padding: 4px 6px;
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  min-width: 160px;
+}
+tbody td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 50;
+  background: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  min-width: 220px;
+  max-width: 280px;
+  word-break: break-word;
+  border-right: 2px solid var(--border);
+}
+
+/* --- Cell block --- */
+.cell-block {
+  border: 1px solid var(--cell-border);
+  border-radius: 4px;
+  padding: 4px 6px;
+  cursor: pointer;
+  position: relative;
+  min-height: 24px;
+  transition: box-shadow 0.15s;
+}
+.cell-block:hover {
+  box-shadow: 0 0 0 2px rgba(66,133,244,0.3);
+}
+.cell-block.pinned {
+  box-shadow: 0 0 0 2px rgba(66,133,244,0.6);
+}
+.cell-block.match-full    { background: var(--match-full); }
+.cell-block.match-partial { background: var(--match-partial); }
+.cell-block.match-none    { background: var(--match-none); }
+.cell-block.match-neutral { background: var(--match-neutral); }
+
+/* sub-blocks */
+.sub-block { margin-bottom: 3px; }
+.sub-block:last-child { margin-bottom: 0; }
+.sub-block-header {
+  font-weight: 600;
+  font-size: 11px;
+  color: #495057;
+}
+.gender-line {
+  margin-left: 12px;
+  font-size: 11px;
+  color: #555;
+}
+.gender-label { font-weight: 600; text-transform: capitalize; }
+.empty-val { color: #aaa; font-style: italic; }
+
+/* --- Tooltip --- */
+.tooltip-box {
+  position: fixed;
+  z-index: 5000;
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  padding: 10px 12px;
+  max-width: 480px;
+  min-width: 200px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  font-size: 12px;
+  line-height: 1.5;
+  display: none;
+  pointer-events: none;
+  word-wrap: break-word;
+}
+.tooltip-box.pinned {
+  pointer-events: auto;
+}
+.tooltip-box .tt-label { font-weight: 700; color: #333; }
+.tooltip-box .tt-section { margin-top: 6px; }
+.tooltip-box .tt-gt { border-top: 1px dashed #ccc; padding-top: 6px; margin-top: 6px; }
+
+/* --- Legend --- */
+.legend {
+  display: flex; gap: 12px; align-items: center; font-size: 11px;
+}
+.legend-item {
+  display: flex; align-items: center; gap: 4px;
+}
+.legend-swatch {
+  width: 14px; height: 14px; border-radius: 3px; border: 1px solid rgba(0,0,0,0.15);
+}
+
+/* search highlight */
+tr.highlight-row td:first-child { background: #fff3cd !important; }
+</style>
+</head>
+<body>
+
+<div class="controls" id="controls">
+  <label>View:</label>
+  <select id="viewMode">
+    <option value="all">All papers</option>
+    <option value="single">Single paper</option>
+  </select>
+  <select id="paperSelect" style="display:none"></select>
+  <div class="sep"></div>
+  <label>Search:</label>
+  <input type="text" id="searchBox" placeholder="Filter papers...">
+  <div class="sep"></div>
+  <div class="legend">
+    <div class="legend-item"><div class="legend-swatch" style="background:var(--match-full)"></div> Full match</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:var(--match-partial)"></div> Partial match</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:var(--match-none)"></div> No match</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:var(--match-neutral)"></div> No GT</div>
+  </div>
+  <div class="sep"></div>
+  <span class="badge" id="paperCount"></span>
+</div>
+
+<div class="table-wrap" id="tableWrap">
+  <table id="mainTable">
+    <thead><tr id="headerRow"></tr></thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+</div>
+
+<div class="tooltip-box" id="tooltip"></div>
+
+<script>
+// ---- Embedded data ----
+const DATA = {"papers": {"1Atari2016": {"Number of studies": {"extract_value": [1], "best_indices": [1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], "reason": "Multiple candidates consistently describe 'a study' or 'the present study' detailing its methodology, participants, and results. The analyses of male and female subsamples are part of this single overarching study. Candidates [0] and [3] provide no information about studies and are therefore less reliable. The overwhelming evidence points to a single study being conducted in the paper."}, "Publication type": {"extract_value": ["journal articles"], "best_indices": [0, 1, 2, 3, 4], "reason": "All candidates consistently indicate that the publication type is 'journal articles'. The section contexts across all candidates provide strong, consistent evidence supporting this, mentioning journal homepages, journal titles, brief research reports, article publication history, and study descriptions typical of a journal article."}, "Country": {"extract_value": {"Single study": ["Iran"]}, "best_indices": [0, 1, 2, 3, 4, 5, 8, 9], "reason": "The paper describes a single study, as indicated by the context. Multiple reliable candidates (0, 1, 2, 3, 4, 5, 8, 9) consistently state that the study was conducted in 'Iran' or mention 'Iran' in relation to the study's context, participants, or aims. Candidates 6 and 7 describe subsamples and results within this single study but do not explicitly mention the country, so they are not included in the 'best_indices' for country extraction, though they support the existence of a single study. All explicit mentions of country point to 'Iran'."}, "Sample": {"extract_value": {"Single study": [1093]}, "best_indices": [2, 4], "reason": "The paper describes a single study. Candidates 2 (Abstract) and 4 (Participants section) consistently report a total of 1093 participants, comprising 568 men and 525 women. The Participants section is a highly reliable source for sample size. Candidate 7 infers a slightly different total N (1031, 1032, or 1033) from statistical tests in the Results section. The direct count from the Method/Participants section is preferred over inferred values from statistical tests when there is a discrepancy, as per instruction 6.", "extract_value_by_gender": {"male": {"Single study": [568]}, "female": {"Single study": [525]}, "other": {"Single study": []}, "total": {"Single study": [1093]}}}, "Survey method": {"extract_value": {"Single study": ["paper-and-pencil"]}, "best_indices": [4], "reason": "The paper describes a single study, as indicated by the context. Candidate 4, from the 'procedure' section, explicitly states that 'university students completed a paper-and-pencil survey'. This directly provides the survey method for the single study conducted."}, "Percent of white in participants": {"extract_value": {"Single study": []}, "best_indices": [7, 4], "reason": "The paper explicitly states in the discussion section (Candidate 7) that 'questions about participants' ethnicity and cultural background were not asked'. Candidate 4 also confirms no information was provided regarding the percentage of white participants. Therefore, this information is not available in the paper for the single study conducted.", "extract_value_by_gender": {"male": {"Single study": []}, "female": {"Single study": []}, "other": {"Single study": []}, "total": {"Single study": []}}}, "Mean age of participants": {"extract_value": {"Single study": [25.87]}, "best_indices": [4, 8], "reason": "The paper describes a single study. Candidate 4 (Participants section) provides the overall mean age of 25.87 years for the total sample. Candidate 8 (Table 2 in Discussion section) provides the mean age for male (26.16 years) and female (25.54 years) subsamples. These values are consistent (weighted average of gender-specific ages is ~25.87) and complement each other, so they are merged under the 'Single study'. Candidates 0, 1, 2, 3, 5, 6, and 7 did not provide specific mean age values.", "extract_value_by_gender": {"male": {"Single study": [26.16]}, "female": {"Single study": [25.54]}, "other": {"Single study": []}, "total": {"Single study": [25.87]}}}, "Percentage of college or higher of participants": {"extract_value": {"Single study": [100]}, "best_indices": [2, 4, 5, 7, 8, 9], "reason": "The paper describes a single study. Multiple candidates (2, 4, 5, 7, 8, 9) consistently state that the participants were 'university students' or from a 'university population' and data was collected in 'university settings'. According to the inference rule for 'Percentage of college or higher of participants', if participants are university students, the percentage of participants with college or higher education experience is 100%. Therefore, 100% is extracted for the single study.", "extract_value_by_gender": {"male": {"Single study": []}, "female": {"Single study": []}, "other": {"Single study": []}, "total": {"Single study": []}}}, "Mean BMI of participants": {"extract_value": {"Single study": [23.69]}, "best_indices": [4, 8], "reason": "The paper describes a single study, as indicated by the context. Candidate 4 provides the overall mean BMI for participants (23.69). Candidate 8, from Table 2, provides the mean BMI for men (25.17) and women (22.07). These values are consistent; a weighted average of the male and female BMIs (using participant counts of 568 men and 525 women from Candidate 4) closely approximates the overall mean BMI (23.69). All relevant values are merged under 'Single study'.", "extract_value_by_gender": {"male": {"Single study": [25.17]}, "female": {"Single study": [22.07]}, "other": {"Single study": []}, "total": {"Single study": [23.69]}}}, "Source of sample": {"extract_value": {"Single study": ["college"]}, "best_indices": [2, 4, 5, 7, 8, 9], "reason": "Multiple candidates consistently indicate that the participants for the single study were recruited from universities in Tehran, Iran. Candidate [4] explicitly states '1093 university students were recruited from seven universities in Tehran, Iran'. Candidate [5] mentions 'Data collection occurred... in seven large universities in Tehran, Iran, where university students completed a paper-and-pencil survey'. Candidates [2], [7], [8], and [9] further corroborate this by referring to 'seven universities', 'university population', or 'university settings'. This evidence clearly maps the source of the sample to 'college'."}, "Assessment of BA": {"extract_value": {"Single study": ["BAS-2"]}, "best_indices": [4, 0, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13], "reason": "The paper consistently describes a single study. Multiple candidates (0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13) explicitly state that the Body Appreciation Scale-2 (BAS-2) was used in 'the present study' or 'a study'. Candidate 4, from the 'Measures' section, provides the most direct evidence: 'All participants completed the 10-item Body Appreciation Scale-2 (BAS-2; Tylka & Wood-Barcalow, 2015b).' Other sections like the Abstract, Introduction, Procedure, Statistical Analyses, and Discussion also confirm the use of BAS-2. There is no mention of the original BAS being used in this specific study, only BAS-2."}, "Assessment of BMI": {"extract_value": {"Single study": ["self-reported"]}, "best_indices": [4, 5, 9, 10], "reason": "The paper describes a single study. Candidates [4], [5], [9], and [10] consistently state that BMI was 'self-reported'. Candidate [4] mentions 'self-reported mean BMI', candidate [5] states 'Participants also selfreported their weight (in kilograms) and height (in centimeters), which were used to calculate BMI', and candidates [9] and [10] (both from the discussion section) explicitly mention 'self-reported BMI was used' as a study limitation. All these pieces of evidence refer to the same single study."}, "Correlation between body appreciation and BMI": {"extract_value": {"Single study": [0.12, -0.24]}, "best_indices": [7], "reason": "Candidate 7 from the 'discussion' section explicitly provides the correlation coefficients between BAS-2 and BMI, separated by gender, by referencing Table 2. It states that for men, the correlation is .12, and for women, it is -.24. Other candidates either do not contain the requested information or only discuss the study's methodology or aims without providing numerical results. As per the context, the paper contains a single study, so all values are consolidated under 'Single study'.", "extract_value_by_gender": {"male": {"Single study": [0.12]}, "female": {"Single study": [-0.24]}, "other": {"Single study": []}, "total": {"Single study": []}}}}, "1Benford2014": {"Number of studies": {"extract_value": [1], "best_indices": [0, 1, 3, 4, 5, 6, 7, 8, 9], "reason": "Multiple sections (Abstract, Introduction, Participants, Measures, Procedure, Results, Discussion) consistently refer to 'a single study' or 'the present study'. Candidate [2] has a value of 0 due to an empty section, which is not reliable and contradicts all other strong evidence."}, "Publication type": {"extract_value": ["journal articles"], "best_indices": [0, 1, 2, 3, 4, 5], "reason": "All candidates consistently indicate 'journal articles' through various contextual cues such as journal homepages, journal metadata, article history, and the structure of an abstract and introduction typical of a research paper published in a journal. There are no conflicting values or evidence suggesting 'dissertation'."}, "Country": {"extract_value": {"Single study": ["UK"]}, "best_indices": [1, 2, 4], "reason": "The paper consistently describes a single study. Candidate [2] (Participants section) explicitly states that participants were recruited from 'London, UK'. Candidate [1] (Abstract) corroborates this, mentioning 'London, UK'. Candidate [4] (Procedure section) further supports this by stating recruitment occurred in 'Greater London'. All reliable sources indicate the study was conducted in the UK."}, "Sample": {"extract_value": {"Single study": [509]}, "best_indices": [1, 2, 5, 6], "reason": "The paper describes a single study, as confirmed by the context and consistent references to 'a single study' or 'the present study' across sections. Candidates 1 (Abstract), 2 (Participants), 5 (Results), and 6 (Results Table) all consistently report a total sample size of N=509. Candidates 1 and 2 explicitly state that the participants were '509 men', providing clear gender information. All reliable evidence converges on a single sample of 509 male participants.", "extract_value_by_gender": {"male": {"Single study": [509]}, "female": {"Single study": []}, "other": {"Single study": []}, "total": {"Single study": [509]}}}, "Survey method": {"extract_value": {"Single study": ["paper-and-pencil"]}, "best_indices": [4], "reason": "The paper describes a single study. Candidate [4] from the 'Procedure' section explicitly states that 'participants completed an anonymous paper-and-pencil survey', providing direct evidence for the survey method."}, "Percent of white in participants": {"extract_value": {"Single study": [73.1]}, "best_indices": [2], "reason": "The paper describes a single study, as confirmed by the context and consistent references across sections. Candidate [2] from the 'Participants' section provides clear and direct evidence for the percentage of white participants (73.1%). Other candidates do not contain this specific demographic information. The value was extracted from the 'Evidence' field of candidate [2].", "extract_value_by_gender": {"male": {"Single study": [73.1]}, "female": {"Single study": []}, "other": {"Single study": []}, "total": {"Single study": [73.1]}}}, "Mean age of participants": {"extract_value": {"Single study": [25.18]}, "best_indices": [2], "reason": "The paper describes a single study, as indicated by the context and consistent references to 'a single study' or 'the present study' across all section summaries. Candidate [2] from the 'Participants' section provides the most reliable and explicit evidence for the mean age of participants (M = 25.18) for the 509 men in the study. Other candidates either have no specific age data or are less reliable sources for this information. The mean age is recorded for the 'Single study' and specified under both 'male' and 'total' in 'extract_value_by_gender' as the sample consisted entirely of men.", "extract_value_by_gender": {"male": {"Single study": [25.18]}, "female": {"Single study": []}, "other": {"Single study": []}, "total": {"Single study": [25.18]}}}, "Percentage of college or higher of participants": {"extract_value": {"Single study": [25.2]}, "best_indices": [2], "reason": "The paper describes a single study. Candidate 2 provides direct evidence for the percentage of participants with college or higher education by summing the percentages for undergraduate (17.7%) and postgraduate (7.5%) degrees, resulting in 25.2%. No gender-specific educational attainment data was found.", "extract_value_by_gender": {"male": {"Single study": [25.2]}, "female": {"Single study": []}, "other": {"Single study": []}, "total": {"Single study": [25.2]}}}, "Mean BMI of participants": {"extract_value": {"Single study": [24.01]}, "best_indices": [2, 5], "reason": "The paper consistently refers to a single study. Candidate 2 (Participants section) and Candidate 5 (Table 1 in Results section) both reliably report the mean BMI of participants as 24.01. These values are consistent and refer to the same single study. No gender-specific BMI values were provided.", "extract_value_by_gender": {"male": {"Single study": [24.01]}, "female": {"Single study": []}, "other": {"Single study": []}, "total": {"Single study": [24.01]}}}, "Source of sample": {"extract_value": {"Single study": ["community"]}, "best_indices": [1, 2], "reason": "The paper describes a single study. Both Candidate 1 (Abstract) and Candidate 2 (Participants section) explicitly state that participants were recruited 'from the community'. Candidate 4 (Procedure) further supports this by mentioning recruitment in 'public locations'. These sources consistently indicate 'community' as the source of the sample for the single study."}, "Assessment of BA": {"extract_value": {"Single study": []}, "best_indices": [], "reason": "The paper describes a single study. No candidate provided a specific value for 'Assessment of BA' (e.g., 'BAS' or 'BAS-2'). All candidates had empty values and no evidence for this field, indicating the instrument name was not extracted from the provided sections."}, "Assessment of BMI": {"extract_value": {"Single study": ["self-reported"]}, "best_indices": [2], "reason": "The paper describes a single study. Candidate 2 explicitly states that participants' BMI was 'self-reported', providing direct evidence for the assessment method. No other candidate provides information regarding how BMI was assessed."}, "Correlation between body appreciation and BMI": {"extract_value": {"Single study": [-0.12]}, "best_indices": [5], "reason": "The paper describes a single study involving 509 men. Candidate [5] from the Results section (Table 1) explicitly provides the bivariate correlation between 'Body appreciation' and 'Body mass index' as -0.12. Since the entire sample consists of men, this value is placed under the 'male' category and also in the general 'extract_value' list for the single study. Other candidates either do not contain the specific correlation value or provide regression coefficients instead of correlation coefficients.", "extract_value_by_gender": {"male": {"Single study": [-0.12]}, "female": {"Single study": []}, "other": {"Single study": []}, "total": {"Single study": [-0.12]}}}}, "1Cotter2015": {"Number of studies": {"extract_value": [1], "best_indices": [0, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "reason": "Multiple candidates explicitly state or strongly imply that the paper describes 'a single study' or 'the current study', consistently indicating a count of 1. Candidates 1 and 4 are irrelevant as they discuss contact information or are empty sections. All other relevant candidates support the value of 1."}, "Publication type": {"extract_value": ["journal articles"], "best_indices": [0, 1, 2], "reason": "All candidates consistently indicate that the publication is a 'journal article'. Candidate [0] mentions 'publication details for an article... published in the Journal'. Candidate [1] explicitly states 'includes the journal name, publication year, and DOI'. Candidate [2] is an abstract describing a single study, which is characteristic of a journal article. Candidate [3] lists other journal articles in the references, which is consistent with the paper itself being a journal article. Given the strong and consistent evidence across multiple relevant candidates, 'journal articles' is the most accurate value."}, "Country": {"extract_value": {"Single study": ["USA"]}, "best_indices": [1, 4], "reason": "The paper describes a single study. Candidate [1] provides the corresponding author's affiliation as \"Virginia Commonwealth University in Richmond, VA, USA,\" explicitly stating \"USA\" as the country. Candidate [4] describes participants from \"a large urban university in the Mid-Atlantic,\" which is consistent with the location in candidate [1] (Richmond, VA is in the Mid-Atlantic region of the USA). Following instructions to return the country name and not a specific part of a country, \"USA\" is the appropriate value."}, "Sample": {"extract_value": {"Single study": [228]}, "best_indices": [0, 4], "reason": "The paper describes a single study. Candidates 0 (Abstract) and 4 (Participants and Procedure section) consistently report a total sample of 228, all identified as female Black college students. The values are consistent across these reliable sources, with the Participants section being the most authoritative.", "extract_value_by_gender": {"male": {"Single study": []}, "female": {"Single study": [228]}, "other": {"Single study": []}, "total": {"Single study": [228]}}}, "Survey method": {"extract_value": {"Single study": ["online"]}, "best_indices": [4], "reason": "The paper describes a single study, as confirmed by the CONTEXT and consistent references to 'a single study' or 'the current study' across candidates. Candidate [4] explicitly states that \"Measures were administered through a secure website called SONA Systems, an online data collection program maintained by the university\" and \"Data was collected online via SONA Systems,\" which directly indicates an 'online' survey method for this study."}, "Percent of white in participants": {"extract_value": {"Single study": [0]}, "best_indices": [0, 3, 4, 5, 6, 7, 8], "reason": "Multiple candidates consistently state that the participants were exclusively Black college women. Candidate 0 (abstract) states 'Participants were 228 Black college women'. Candidate 3 (research hypotheses) mentions 'Black college women' and 'Black undergraduate women'. Candidate 4 (participants and procedure) explicitly states 'Participants were 228 undergraduate Black female college students'. Candidates 5, 6, 7, and 8 (statistical analysis and descriptive statistics) refer to 'this sample of Black college women' or 'The current sample of Black women'. This overwhelming evidence indicates that 0% of the participants were white.", "extract_value_by_gender": {"male": {"Single study": []}, "female": {"Single study": [0]}, "other": {"Single study": []}, "total": {"Single study": [0]}}}, "Mean age of participants": {"extract_value": {"Single study": [19.89]}, "best_indices": [0, 4], "reason": "The paper describes a single study. Both Candidate 0 (abstract) and Candidate 4 (participants and procedure) consistently report the mean age of participants as 19.89. Both sources also specify that the participants were Black college women/female students. The 'Participants and Procedure' section (Candidate 4) is a highly reliable source for demographic information, and the abstract (Candidate 0) corroborates this value. Therefore, the value 19.89 is extracted for the single study, specifically for female participants.", "extract_value_by_gender": {"male": {"Single study": []}, "female": {"Single study": [19.89]}, "other": {"Single study": []}, "total": {"Single study": [19.89]}}}, "Percentage of college or higher of participants": {"extract_value": {"Single study": [100]}, "best_indices": [0, 2, 3, 4, 5, 6, 7], "reason": "The paper describes a single study. Multiple candidates (0, 2, 3, 4, 5, 6, 7) explicitly state that the participants were 'Black college women' or 'undergraduate Black female college students'. According to the inference rule, if participants are undergraduate students or college women, the percentage of participants with college or higher education experience is 100%. All relevant candidates consistently support this value for the single study.", "extract_value_by_gender": {"male": {"Single study": []}, "female": {"Single study": [100]}, "other": {"Single study": []}, "total": {"Single study": [100]}}}, "Mean BMI of participants": {"extract_value": {"Single study": [24.71]}, "best_indices": [4], "reason": "Candidate 4, from the 'Participants and Procedure' section, explicitly states the mean BMI as 24.71. This is the only candidate providing this specific numerical value. The paper describes a single study, and the participants are identified as 228 Black female undergraduate college students, indicating that the mean BMI of 24.71 applies to the female participants and thus also to the total sample.", "extract_value_by_gender": {"male": {"Single study": []}, "female": {"Single study": [24.71]}, "other": {"Single study": []}, "total": {"Single study": [24.71]}}}, "Source of sample": {"extract_value": {"Single study": ["college"]}, "best_indices": [0, 2, 3, 4, 5, 6, 7], "reason": "All relevant candidates consistently indicate that the participants were 'Black college women' or 'Black undergraduate women', and were recruited from a 'Psychology 101 Participant Pool, as well as other psychology courses' at a 'large urban university'. This clearly points to 'college' as the source of the sample. The paper describes a single study, as confirmed by the context and multiple candidate summaries referring to 'the current study' or 'a single study'. Candidates 1 and 10 are irrelevant or lack specific information for this field. Candidates 8 and 9 confirm the single study nature but do not provide direct evidence for the source of sample."}, "Assessment of BA": {"extract_value": {"Single study": ["BAS"]}, "best_indices": [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], "reason": "Multiple candidates across various sections (abstract, keywords, hypotheses, measures, statistical analysis, descriptive statistics, factor structure, construct validity, and relation to ethnic identity) consistently identify 'BAS' (Body Appreciation Scale) as the instrument used to assess body appreciation. The paper describes a single study, as confirmed by the context and consistent phrasing across candidates (e.g., 'This study', 'The current study')."}, "Assessment of BMI": {"extract_value": {"Single study": ["self-reported"]}, "best_indices": [4, 5], "reason": "The paper describes a single study, as indicated by the context and confirmed by multiple section summaries (e.g., 'the current study', 'the present study'). Candidate 4, from the 'Participants and Procedure' section, explicitly states, 'Self-reported height and weight data were used to calculate body mass index (BMI)'. Candidate 5, from the 'Measures' section, further supports this by noting that the 'Demographics Questionnaire' asked participants to 'report their... height, and weight', leading to the inference that BMI was 'self-reported'. Both candidates consistently point to 'self-reported' as the method of BMI assessment for the single study."}, "Correlation between body appreciation and BMI": {"extract_value": {"Single study": []}, "best_indices": [7], "reason": "The paper describes a single study. Candidate 7, from Table 3, explicitly provides the correlation between '1. BAS' (Body Appreciation Scale) and '12. Body Mass Index' as -0.45. The study sample, as described in the abstract and other sections (e.g., candidate 0, 2), consists of Black college women, indicating that this correlation is specific to females. Therefore, the value -0.45 is assigned to the 'female' category for the single study.", "extract_value_by_gender": {"male": {"Single study": []}, "female": {"Single study": [-0.45]}, "other": {"Single study": []}, "total": {"Single study": []}}}}, "1Iannantuono2012": {"Number of studies": {"extract_value": [1], "best_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], "reason": "All candidates consistently indicate that the paper describes a single study. The section contexts repeatedly refer to 'a study', 'the present study', or 'this study' without any mention of multiple distinct studies being conducted or reported within the paper."}, "Publication type": {"extract_value": ["journal articles"], "best_indices": [0, 1, 2, 3, 4, 5, 6, 8, 9], "reason": "The overwhelming majority of candidates (0, 1, 2, 3, 4, 5, 6, 8, 9) provide strong evidence that the paper is a journal article, referencing journal covers, journal homepages, article history (received, revised, accepted dates), abstracts, and standard journal article structure. While candidate [7] indicates the article is a version of a senior honors thesis (a type of dissertation), this refers to its origin, not its current publication type. The document itself is presented and formatted as a journal article."}, "Country": {"extract_value": {"Single study": ["United States"]}, "best_indices": [3], "reason": "Candidate 3 explicitly states the study was conducted in the 'Midwestern U.S.'. Following the instruction to not state specific parts of a country but to return the country name, 'Midwestern U.S.' implies the study was conducted in the 'United States'. All other candidates do not provide country information. The paper describes a single study as per the context."}, "Sample": {"extract_value": {"Single study": [249]}, "best_indices": [1, 3, 5, 6], "reason": "The paper describes a single study. Candidates 1 (Abstract), 3 (Participants), 5 and 6 (Test of the hypothesized model) consistently report a total of 249 participants. Candidates 1 and 3 explicitly state that the participants were 'college women' or 'women only', which is further supported by Candidate 4 (Procedure) mentioning 'Female introductory psychology students'. Therefore, the sample consists of 249 female participants.", "extract_value_by_gender": {"male": {"Single study": []}, "female": {"Single study": [249]}, "other": {"Single study": []}, "total": {"Single study": [249]}}}, "Survey method": {"extract_value": {"Single study": ["paper-and-pencil"]}, "best_indices": [4], "reason": "The paper describes a single study, as indicated by the context. Candidate 4 provides direct evidence for the survey method: 'Participants completed the measures in a classroom used as a research lab.' This clearly indicates an in-person, non-online method, which is best categorized as 'paper-and-pencil'. No other candidates provide information about the survey method."}, "Percent of white in participants": {"extract_value": {"Single study": [86.3]}, "best_indices": [3], "reason": "The paper describes a single study. Candidate 3, from the 'participants' section, explicitly states that 'Most identified as White/Caucasian (86.3%)'. The section summary and other candidates confirm that the study exclusively involved college women. Therefore, 86.3% is the overall percentage of white participants, which also applies to the female and total participant categories.", "extract_value_by_gender": {"male": {"Single study": []}, "female": {"Single study": [86.3]}, "other": {"Single study": []}, "total": {"Single study": [86.3]}}}, "Mean age of participants": {"extract_value": {"Single study": [19.1]}, "best_indices": [3], "reason": "The paper describes a single study. Candidate [3] from the 'Participants' section explicitly states the mean age of participants as 19.1 years (M = 19.1). Since the study exclusively involved college women, this value is also attributed to the female and total categories.", "extract_value_by_gender": {"male": {"Single study": []}, "female": {"Single study": [19.1]}, "other": {"Single study": []}, "total": {"Single study": [19.1]}}}, "Percentage of college or higher of participants": {"extract_value": {"Single study": [100]}, "best_indices": [0, 1, 2, 4, 5, 8, 10, 11], "reason": "The paper consistently refers to its participants as 'college women' or 'college students' across multiple sections (title, keywords, abstract, participants, procedure, discussion, limitations, conclusion). Specifically, the 'Participants' section (Candidate 4) details that the sample consisted of first-year students, sophomores, juniors, seniors, and post-baccalaureate or graduate students, all of whom have college or higher education experience. The 'Procedure' section (Candidate 5) mentions 'Female introductory psychology students'. According to the inference rule, if participants are undergraduate students or similar, the percentage of college or higher education is 100%. Therefore, it is inferred that 100% of the participants had college or higher education experience. The paper describes a single study.", "extract_value_by_gender": {"male": {"Single study": []}, "female": {"Single study": [100]}, "other": {"Single study": []}, "total": {"Single study": [100]}}}, "Mean BMI of participants": {"extract_value": {"Single study": [23.15]}, "best_indices": [4, 6], "reason": "The paper describes a single study, as confirmed by the context and consistent references across candidates to 'this study' involving '249 college women'. Candidate [4] reports a mean BMI of 23.1 (SD = 4.8) for women, stating 'the mean BMI for the total sample is 23.1 and for females is 23.1'. Candidate [6], from Table 1, provides a mean BMI of 23.15 (4.77) for 'Body Mass Index'. The value from the table (23.15) is slightly more precise and is consistent with the value from the text (23.1). Since the study sample consists entirely of women, the mean BMI for 'female' and 'total' participants is the same. Therefore, 23.15 is selected as the consolidated mean BMI for the single study.", "extract_value_by_gender": {"male": {"Single study": []}, "female": {"Single study": [23.15]}, "other": {"Single study": []}, "total": {"Single study": [23.15]}}}, "Source of sample": {"extract_value": {"Single study": ["college"]}, "best_indices": [0, 1, 2, 4, 5, 8, 10, 11], "reason": "All candidates consistently indicate that the participants were 'college women' or 'college students' recruited from a university setting. Specifically, the title (0), keywords (1), abstract (2), participants section (4), procedure section (5), discussion (8), limitations (10), and conclusion (11) all refer to a college sample. The context confirms this paper describes a single study."}, "Assessment of BA": {"extract_value": {"Single study": ["BAS"]}, "best_indices": [4], "reason": "Candidate [4] explicitly states 'Body Appreciation Scale (BAS)' as the measure used, which directly matches one of the allowed enum values 'BAS'. The paper describes a single study, so the value is assigned to 'Single study'."}, "Assessment of BMI": {"extract_value": {"Single study": ["self-reported"]}, "best_indices": [4, 8], "reason": "The paper describes a single study. Candidate [4] explicitly states that \"Participants reported their weight and height. This information was converted to metric units and BMI was calculated... This indicates BMI was self-reported.\" Candidate [8] further confirms this by mentioning \"self-reported height and weight\" as a limitation. Both sources consistently indicate that BMI was self-reported."}, "Correlation between body appreciation and BMI": {"extract_value": {"Single study": [-0.35]}, "best_indices": [5], "reason": "The paper describes a single study, as indicated by the context and consistent references across candidates. Candidate [5] from Table 1 explicitly provides the correlation between the Body Appreciation Scale and Body Mass Index as -0.35. Given that the study's participants are exclusively college women (as per candidates [0], [1], and [3]), this correlation is attributed to the 'female' gender category.", "extract_value_by_gender": {"male": {"Single study": []}, "female": {"Single study": [-0.35]}, "other": {"Single study": []}, "total": {"Single study": [-0.35]}}}}, "1Swami2009check": {"Number of studies": {"extract_value": [1], "best_indices": [3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14], "reason": "Multiple sections consistently refer to and describe a single study, using terms like 'the present study' or 'Study X', without any indication of multiple distinct studies. Candidates with a value of 0 are from empty or irrelevant sections and do not provide reliable information about the number of studies."}, "Publication type": {"extract_value": ["journal articles"], "best_indices": [0, 1, 2, 3, 4, 5, 6, 7], "reason": "All candidates consistently indicate that the publication type is 'journal articles'. Candidate [4] explicitly states 'Brief research report', which is a type of journal article. Other candidates refer to journal-specific elements like 'journal cover', 'journal title', 'article information', and 'abstract', reinforcing this classification. There are no conflicting values."}, "Percentage of college or higher of participants": {"extract_value": {"Single study": [100]}, "best_indices": [0, 1, 2, 3, 5], "reason": "The paper describes a single study, consistently referred to as 'Study X', 'the present study', or 'this study'. Multiple candidates (0, 1, 2, 3, 5) provide evidence that participants were 'female undergraduates' or 'female university students', or were recruited from 'campus locations' with 'university ethics committee' approval. According to the inference rule, this indicates that 100% of participants have college or higher education experience. All relevant candidates support this single value without contradiction. Candidate 4 is a results section and does not provide demographic information relevant to this field.", "extract_value_by_gender": {"male": {"Single study": []}, "female": {"Single study": [100]}, "other": {"Single study": []}, "total": {"Single study": [100]}}}, "Source of sample": {"extract_value": {"Single study": ["college"]}, "best_indices": [0, 1, 2, 3, 5], "reason": "The paper describes a single study, consistently referred to as 'Study X' or 'the present study'. All relevant candidates (0, 1, 2, 3, 5) indicate that the participants were 'female undergraduates' or 'university students' and were recruited from 'campus locations'. This evidence clearly points to 'college' as the source of the sample. Candidate 4 did not contain information about the source of the sample."}, "Country": {"extract_value": {"Single study": ["United Kingdom"]}, "best_indices": [1], "reason": "The paper describes a single study. Candidate 1, from the 'participants' section, states the participants were from 'a university in Greater London'. 'Greater London' is a specific region within the United Kingdom. Following the instruction to not state specific parts of a country (like 'Midwestern US') but to identify the country where possible, 'United Kingdom' is the appropriate country. Other candidates did not provide country information."}, "Sample": {"extract_value": {"Single study": [322]}, "best_indices": [0, 1, 2, 3, 4], "reason": "All candidates consistently indicate a single study with 322 female participants. Candidates 0 (Abstract) and 1 (Participants) explicitly state '322 female university students'. Candidates 2 and 3 (Results) independently derive the total sample size as 322 from statistical degrees of freedom (F(7, 314) implies N=322). Candidate 4 (Discussion) further confirms the sample consisted of 'female undergraduates'. All sources are consistent and complementary, providing both the total count and gender information for the single study.", "extract_value_by_gender": {"male": {"Single study": []}, "female": {"Single study": [322]}, "other": {"Single study": []}, "total": {"Single study": [322]}}}, "Survey method": {"extract_value": {"Single study": ["paper-and-pencil"]}, "best_indices": [2], "reason": "The paper describes a single study. Candidate 2, from the 'procedure' section, explicitly states that participants were given a 'paper-and-pencil questionnaire' to complete. This provides clear evidence for the survey method."}, "Percent of white in participants": {"extract_value": {"Single study": [63.7]}, "best_indices": [1], "reason": "Candidate 1 explicitly states that 'The majority of participants (63.7%) were of European Caucasian descent' for 'this study', which is identified as the single study in the paper. 'European Caucasian descent' is considered equivalent to 'white'. No other candidate provides this information. The paper contains only one study, as indicated by the context.", "extract_value_by_gender": {"male": {"Single study": []}, "female": {"Single study": [63.7]}, "other": {"Single study": []}, "total": {"Single study": [63.7]}}}, "Mean age of participants": {"extract_value": {"Single study": [24.72]}, "best_indices": [1, 3], "reason": "The paper describes a single study. Candidate 1 (Participants section) explicitly states 'The mean age was 24.72' for 'this study' (Study X). Candidate 3 (Table 1 in Results) corroborates this by showing '24.72' for 'Age' in the 'M' row for Study X. Both sources are highly reliable and consistent. The study sample is described as 'female university students', so the mean age of 24.72 applies to both the female participants and the total sample.", "extract_value_by_gender": {"male": {"Single study": []}, "female": {"Single study": [24.72]}, "other": {"Single study": []}, "total": {"Single study": [24.72]}}}, "Mean BMI of participants": {"extract_value": {"Single study": [21.67]}, "best_indices": [1, 3], "reason": "The paper describes a single study, as indicated by the context and consistent references to 'this study' or 'the present study' across sections. Candidate 1 (Participants section) explicitly states 'mean BMI was 21.67'. Candidate 3 (Table 1 in Results) corroborates this value, showing '21.67' for BMI. Both sources are reliable and consistent. The study sample consists entirely of female participants (as per Candidate 1 and 0), so the mean BMI of 21.67 applies to the female group and the total sample.", "extract_value_by_gender": {"male": {"Single study": []}, "female": {"Single study": [21.67]}, "other": {"Single study": []}, "total": {"Single study": [21.67]}}}, "Assessment of BA": {"extract_value": {"Single study": ["BAS"]}, "best_indices": [0, 2, 3, 4], "reason": "The paper consistently describes a single study, referred to as 'the present study' or 'Study X' across all relevant sections (abstract, participants, measures, results, discussion). Candidates 0 (abstract), 2 (measures), 3 (results text), and 4 (results table asset) all explicitly state that the 'Body Appreciation Scale (BAS)' was used. There are no conflicting values or indications of a different instrument, and all sources are reliable for this information. Therefore, 'BAS' is extracted for the single study."}, "Assessment of BMI": {"extract_value": {"Single study": ["self-reported"]}, "best_indices": [0, 2], "reason": "The paper describes a single study. Candidate 0 (Abstract) infers 'self-reported' BMI based on participants providing demographic details including BMI. Candidate 2 (Demographics section), which is a more reliable source for methodological details, explicitly states that 'All participants provided their demographic details consisting of age, ethnicity, religion, height, and weight. The latter two items were used to calculate participants' BMI, as kg/m2.' This clearly indicates that height and weight were self-reported, leading to an inferred 'self-reported' assessment of BMI. Both candidates consistently point to self-reported BMI, with Candidate 2 providing stronger evidence from a relevant section."}, "Correlation between body appreciation and BMI": {"extract_value": {"Single study": [0.27]}, "best_indices": [3], "reason": "The paper describes a single study. Candidate 3, from Table 1 in the results section, provides the numerical correlation coefficient between Body Appreciation Scale (BAS) and BMI as 0.27. This is the only candidate that provides a specific numerical value. Candidates 0 and 2 mention a negative correlation but do not provide the coefficient. Candidates 1 and 4 do not contain this information. The study sample, as described in Candidates 0 and 1, consists entirely of female university students. Therefore, the correlation of 0.27 is assigned to 'female' and also to 'total' and 'extract_value' for this single study, as it represents the overall correlation for the exclusively female sample.", "extract_value_by_gender": {"male": {"Single study": []}, "female": {"Single study": [0.27]}, "other": {"Single study": []}, "total": {"Single study": [0.27]}}}}}, "fields": ["Assessment of BA", "Assessment of BMI", "Correlation between body appreciation and BMI", "Country", "Mean BMI of participants", "Mean age of participants", "Percent of white in participants", "Percentage of college or higher of participants", "Publication type", "Sample", "Source of sample", "Survey method"], "comparison": {"1Atari2016": {"Publication type": "full", "Country": "full", "Survey method": "full", "Source of sample": "full", "Assessment of BA": "full", "Assessment of BMI": "full", "Sample": "full", "Mean age of participants": "full", "Mean BMI of participants": "full", "Percent of white in participants": "full", "Percentage of college or higher of participants": "full", "Correlation between body appreciation and BMI": "full"}, "1Benford2014": {"Publication type": "full", "Country": "full", "Survey method": "full", "Source of sample": "full", "Assessment of BA": "none", "Assessment of BMI": "full", "Sample": "full", "Mean age of participants": "full", "Mean BMI of participants": "full", "Percent of white in participants": "full", "Percentage of college or higher of participants": "full", "Correlation between body appreciation and BMI": "full"}, "1Cotter2015": {"Publication type": "full", "Country": "full", "Survey method": "full", "Source of sample": "full", "Assessment of BA": "full", "Assessment of BMI": "full", "Sample": "full", "Mean age of participants": "full", "Mean BMI of participants": "full", "Percent of white in participants": "full", "Percentage of college or higher of participants": "full", "Correlation between body appreciation and BMI": "full"}, "1Iannantuono2012": {"Publication type": "full", "Country": "full", "Survey method": "full", "Source of sample": "full", "Assessment of BA": "full", "Assessment of BMI": "full", "Sample": "full", "Mean age of participants": "full", "Mean BMI of participants": "full", "Percent of white in participants": "full", "Percentage of college or higher of participants": "full", "Correlation between body appreciation and BMI": "full"}, "1Swami2009check": {"Publication type": "full", "Country": "full", "Survey method": "full", "Source of sample": "full", "Assessment of BA": "full", "Assessment of BMI": "full", "Sample": "full", "Mean age of participants": "full", "Mean BMI of participants": "full", "Percent of white in participants": "full", "Percentage of college or higher of participants": "full", "Correlation between body appreciation and BMI": "full"}}, "gt_display": {"1Atari2016": {"Publication type": "1 (journal articles)", "Country": "4 (Asia)", "Survey method": "2 (paper-and-pencil)", "Source of sample": "2 (college)", "Assessment of BA": "2 (bas-2)", "Assessment of BMI": "1 (self-reported)", "Sample": "male: 568; female: 525", "Mean age of participants": "male: 26.16; female: 25.54", "Mean BMI of participants": "male: 25.17; female: 22.07", "Percent of white in participants": "(empty)", "Percentage of college or higher of participants": "total: 1", "Correlation between body appreciation and BMI": "male: 0.12; female: -0.24"}, "1Benford2014": {"Publication type": "1 (journal articles)", "Country": "2 (Europe)", "Survey method": "2 (paper-and-pencil)", "Source of sample": "3 (community)", "Assessment of BA": "1 (bas)", "Assessment of BMI": "1 (self-reported)", "Sample": "male: 509", "Mean age of participants": "male: 25.18", "Mean BMI of participants": "male: 24.01", "Percent of white in participants": "male: 0.731", "Percentage of college or higher of participants": "male: 0.252", "Correlation between body appreciation and BMI": "male: -0.12"}, "1Cotter2015": {"Publication type": "1 (journal articles)", "Country": "1 (North America)", "Survey method": "1 (online)", "Source of sample": "2 (college)", "Assessment of BA": "1 (bas)", "Assessment of BMI": "1 (self-reported)", "Sample": "female: 228", "Mean age of participants": "female: 19.89", "Mean BMI of participants": "female: 24.71", "Percent of white in participants": "(empty)", "Percentage of college or higher of participants": "female: 1", "Correlation between body appreciation and BMI": "female: -0.45"}, "1Iannantuono2012": {"Publication type": "1 (journal articles)", "Country": "1 (North America)", "Survey method": "2 (paper-and-pencil)", "Source of sample": "2 (college)", "Assessment of BA": "1 (bas)", "Assessment of BMI": "1 (self-reported)", "Sample": "female: 249", "Mean age of participants": "female: 19.1", "Mean BMI of participants": "female: 23.1", "Percent of white in participants": "female: 0.863", "Percentage of college or higher of participants": "female: 1", "Correlation between body appreciation and BMI": "female: -0.35"}, "1Swami2009check": {"Publication type": "1 (journal articles)", "Country": "2 (Europe)", "Survey method": "2 (paper-and-pencil)", "Source of sample": "2 (college)", "Assessment of BA": "1 (bas)", "Assessment of BMI": "1 (self-reported)", "Sample": "female: 322", "Mean age of participants": "female: 24.72", "Mean BMI of participants": "female: 21.67", "Percent of white in participants": "female: 0.637", "Percentage of college or higher of participants": "female: 1", "Correlation between body appreciation and BMI": "female: 0.27"}}, "gt_paper_mapping": {"1Atari2016": "1Atari2016", "1Benford2014": "1Benford2014", "1Cotter2015": "1Cotter2015", "1Iannantuono2012": "1Iannantuono2012", "1Swami2009check": "1Swami2009check"}};
+
+const papers = DATA.papers;
+const fields = DATA.fields;
+const comparison = DATA.comparison;
+const gtDisplay = DATA.gt_display;
+const paperIds = Object.keys(papers).sort();
+
+// ---- State ----
+let pinnedTooltip = null;  // {paperId, field} or null
+
+// ---- Helpers ----
+function isNoneLike(v) {
+  if (v === null || v === undefined) return true;
+  const s = String(v).trim().toLowerCase();
+  return s === 'none' || s === 'nan' || s === '' || s === '.';
+}
+
+function formatBestIndices(indices) {
+  if (!indices || !indices.length) return '(none)';
+  const sorted = [...indices].sort((a,b) => a - b);
+  const ranges = [];
+  let start = sorted[0], end = sorted[0];
+  for (let i = 1; i < sorted.length; i++) {
+    if (sorted[i] === end + 1) {
+      end = sorted[i];
+    } else {
+      ranges.push(start === end ? String(start) : `${start}-${end}`);
+      start = end = sorted[i];
+    }
+  }
+  ranges.push(start === end ? String(start) : `${start}-${end}`);
+  return ranges.join(', ');
+}
+
+function esc(s) {
+  const d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+function filterNoneLike(arr) {
+  return (arr || []).filter(v => !isNoneLike(v));
+}
+
+function listsMatch(a, b) {
+  // Compare two value lists (order-insensitive, approximate)
+  if (a.length !== b.length) return false;
+  const na = a.map(v => { try { return parseFloat(v); } catch(e) { return String(v).toLowerCase(); } }).sort();
+  const nb = b.map(v => { try { return parseFloat(v); } catch(e) { return String(v).toLowerCase(); } }).sort();
+  for (let i = 0; i < na.length; i++) {
+    if (typeof na[i] === 'number' && typeof nb[i] === 'number') {
+      if (Math.abs(na[i] - nb[i]) > 0.05) return false;
+    } else if (String(na[i]) !== String(nb[i])) return false;
+  }
+  return true;
+}
+
+// ---- Cell rendering ----
+function renderCell(fieldData) {
+  if (!fieldData) return '<span class="empty-val">(no data)</span>';
+
+  const ev = fieldData.extract_value;
+  const evg = fieldData.extract_value_by_gender;
+  let html = '';
+
+  if (evg) {
+    html = renderGenderCell(ev, evg);
+  } else if (ev !== undefined) {
+    html = renderPlainCell(ev);
+  } else {
+    html = '<span class="empty-val">(no data)</span>';
+  }
+  return html;
+}
+
+function renderPlainCell(ev) {
+  // ev is dict or list
+  if (ev && typeof ev === 'object' && !Array.isArray(ev)) {
+    // Dict: per-study
+    const parts = [];
+    for (const [study, vals] of Object.entries(ev)) {
+      const filtered = filterNoneLike(vals);
+      if (filtered.length) {
+        parts.push(`<div class="sub-block"><span class="sub-block-header">${esc(study)}:</span> ${filtered.map(v => esc(String(v))).join(', ')}</div>`);
+      } else {
+        parts.push(`<div class="sub-block"><span class="sub-block-header">${esc(study)}:</span> <span class="empty-val">(empty)</span></div>`);
+      }
+    }
+    return parts.join('') || '<span class="empty-val">(empty)</span>';
+  }
+  if (Array.isArray(ev)) {
+    const filtered = filterNoneLike(ev);
+    if (filtered.length) {
+      return `<div class="sub-block">${filtered.map(v => esc(String(v))).join(', ')}</div>`;
+    }
+    return '<span class="empty-val">(empty)</span>';
+  }
+  if (isNoneLike(ev)) return '<span class="empty-val">(empty)</span>';
+  return `<div class="sub-block">${esc(String(ev))}</div>`;
+}
+
+function renderGenderCell(ev, evg) {
+  // Collect all study keys from evg (from any gender dict)
+  const studyKeys = new Set();
+  for (const g of ['female', 'male', 'other', 'total']) {
+    const gDict = evg[g];
+    if (gDict && typeof gDict === 'object' && !Array.isArray(gDict)) {
+      for (const k of Object.keys(gDict)) studyKeys.add(k);
+    }
+  }
+  // Also get study keys from ev if it's a dict
+  const evIsDict = (ev && typeof ev === 'object' && !Array.isArray(ev));
+  if (evIsDict) {
+    for (const k of Object.keys(ev)) studyKeys.add(k);
+  }
+
+  const parts = [];
+  for (const study of studyKeys) {
+    let headerVals = '';
+
+    // Get extract_value for this study
+    let evStudyVals = [];
+    if (evIsDict && ev[study]) {
+      evStudyVals = filterNoneLike(Array.isArray(ev[study]) ? ev[study] : [ev[study]]);
+    }
+
+    // Get total for this study
+    let totalVals = [];
+    if (evg.total && typeof evg.total === 'object' && !Array.isArray(evg.total) && evg.total[study]) {
+      totalVals = filterNoneLike(Array.isArray(evg.total[study]) ? evg.total[study] : [evg.total[study]]);
+    }
+
+    // Check if total matches extract_value
+    const totalMatchesEv = evStudyVals.length > 0 && totalVals.length > 0 && listsMatch(evStudyVals, totalVals);
+
+    // Header line
+    if (!totalMatchesEv && evStudyVals.length > 0) {
+      headerVals = ` ${evStudyVals.map(v => esc(String(v))).join(', ')}`;
+    }
+
+    let studyHtml = `<div class="sub-block"><div class="sub-block-header">${esc(study)}:${headerVals}</div>`;
+
+    // Gender lines
+    for (const g of ['female', 'male', 'other', 'total']) {
+      const gDict = evg[g];
+      if (!gDict) continue;
+      let gVals = [];
+      if (typeof gDict === 'object' && !Array.isArray(gDict) && gDict[study]) {
+        gVals = filterNoneLike(Array.isArray(gDict[study]) ? gDict[study] : [gDict[study]]);
+      }
+      // Skip empty or zero-only
+      if (!gVals.length) continue;
+      if (gVals.length === 1 && (gVals[0] === 0 || gVals[0] === '0')) continue;
+
+      studyHtml += `<div class="gender-line"><span class="gender-label">${g}:</span> ${gVals.map(v => esc(String(v))).join(', ')}</div>`;
+    }
+
+    studyHtml += '</div>';
+    parts.push(studyHtml);
+  }
+
+  // Also render studies from ev that are NOT in evg study keys
+  if (evIsDict) {
+    for (const [study, vals] of Object.entries(ev)) {
+      if (studyKeys.has(study)) continue;  // already rendered above
+      const filtered = filterNoneLike(Array.isArray(vals) ? vals : [vals]);
+      if (filtered.length) {
+        parts.push(`<div class="sub-block"><span class="sub-block-header">${esc(study)}:</span> ${filtered.map(v => esc(String(v))).join(', ')}</div>`);
+      }
+    }
+  }
+
+  return parts.join('') || '<span class="empty-val">(empty)</span>';
+}
+
+// ---- Tooltip ----
+const tooltipEl = document.getElementById('tooltip');
+
+function showTooltip(paperId, field, x, y) {
+  const fd = papers[paperId]?.[field];
+  const gt = gtDisplay[paperId]?.[field];
+
+  // If no extracted data AND no GT info, nothing to show
+  if (!fd && gt === undefined) { tooltipEl.style.display = 'none'; return; }
+
+  let html = '';
+  if (fd) {
+    // best_indices
+    html += `<div><span class="tt-label">best_indices:</span> ${formatBestIndices(fd.best_indices)}</div>`;
+    // reason
+    if (fd.reason) {
+      html += `<div class="tt-section"><span class="tt-label">reason:</span> ${esc(fd.reason)}</div>`;
+    }
+  } else {
+    html += `<div><span class="tt-label" style="color:#888">No values extracted for this field.</span></div>`;
+  }
+  // ground truth
+  if (gt !== undefined) {
+    html += `<div class="tt-gt"><span class="tt-label">ground_truth:</span> ${esc(gt)}</div>`;
+  }
+
+  tooltipEl.innerHTML = html;
+  tooltipEl.style.display = 'block';
+
+  // Position
+  const rect = tooltipEl.getBoundingClientRect();
+  const vw = window.innerWidth;
+  const vh = window.innerHeight;
+  let left = x + 12;
+  let top = y + 12;
+  if (left + rect.width > vw - 10) left = x - rect.width - 12;
+  if (top + rect.height > vh - 10) top = y - rect.height - 12;
+  if (left < 0) left = 10;
+  if (top < 0) top = 10;
+  tooltipEl.style.left = left + 'px';
+  tooltipEl.style.top = top + 'px';
+}
+
+function hideTooltip() {
+  tooltipEl.style.display = 'none';
+  tooltipEl.classList.remove('pinned');
+}
+
+// ---- Build table ----
+function buildTable(visiblePapers) {
+  const headerRow = document.getElementById('headerRow');
+  const tbody = document.getElementById('tableBody');
+
+  // Header
+  headerRow.innerHTML = '<th>Paper</th>' + fields.map(f => `<th title="${esc(f)}">${esc(f)}</th>`).join('');
+
+  // Body
+  const rows = [];
+  for (const pid of visiblePapers) {
+    const pdata = papers[pid];
+    let tr = `<tr data-paper="${esc(pid)}"><td title="${esc(pid)}">${esc(pid)}</td>`;
+    for (const field of fields) {
+      const fd = pdata[field];
+      const match = comparison[pid]?.[field] || 'neutral';
+      const cellContent = renderCell(fd);
+      tr += `<td><div class="cell-block match-${match}" data-paper="${esc(pid)}" data-field="${esc(field)}">${cellContent}</div></td>`;
+    }
+    tr += '</tr>';
+    rows.push(tr);
+  }
+  tbody.innerHTML = rows.join('');
+
+  document.getElementById('paperCount').textContent = `${visiblePapers.length} papers`;
+
+  // Attach events
+  attachCellEvents();
+}
+
+function attachCellEvents() {
+  document.querySelectorAll('.cell-block').forEach(block => {
+    block.addEventListener('mouseenter', (e) => {
+      if (pinnedTooltip) return; // don't override pinned
+      const pid = block.dataset.paper;
+      const field = block.dataset.field;
+      showTooltip(pid, field, e.clientX, e.clientY);
+    });
+    block.addEventListener('mousemove', (e) => {
+      if (pinnedTooltip) return;
+      const pid = block.dataset.paper;
+      const field = block.dataset.field;
+      showTooltip(pid, field, e.clientX, e.clientY);
+    });
+    block.addEventListener('mouseleave', () => {
+      if (!pinnedTooltip) hideTooltip();
+    });
+    block.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const pid = block.dataset.paper;
+      const field = block.dataset.field;
+
+      if (pinnedTooltip && pinnedTooltip.paperId === pid && pinnedTooltip.field === field) {
+        // Unpin
+        pinnedTooltip = null;
+        hideTooltip();
+        block.classList.remove('pinned');
+      } else {
+        // Unpin old
+        if (pinnedTooltip) {
+          document.querySelectorAll('.cell-block.pinned').forEach(b => b.classList.remove('pinned'));
+        }
+        // Pin new
+        pinnedTooltip = { paperId: pid, field: field };
+        block.classList.add('pinned');
+        showTooltip(pid, field, e.clientX, e.clientY);
+        tooltipEl.classList.add('pinned');
+      }
+    });
+  });
+}
+
+// Click elsewhere to unpin
+document.addEventListener('click', (e) => {
+  if (pinnedTooltip && !e.target.closest('.cell-block') && !e.target.closest('.tooltip-box')) {
+    pinnedTooltip = null;
+    hideTooltip();
+    document.querySelectorAll('.cell-block.pinned').forEach(b => b.classList.remove('pinned'));
+  }
+});
+
+// ---- Controls ----
+const viewMode = document.getElementById('viewMode');
+const paperSelect = document.getElementById('paperSelect');
+const searchBox = document.getElementById('searchBox');
+
+// Populate paper select
+paperIds.forEach(pid => {
+  const opt = document.createElement('option');
+  opt.value = pid;
+  opt.textContent = pid;
+  paperSelect.appendChild(opt);
+});
+
+function refresh() {
+  const mode = viewMode.value;
+  const search = searchBox.value.trim().toLowerCase();
+
+  let visible;
+  if (mode === 'single') {
+    paperSelect.style.display = '';
+    visible = [paperSelect.value];
+  } else {
+    paperSelect.style.display = 'none';
+    visible = paperIds;
+  }
+
+  if (search) {
+    visible = visible.filter(pid => pid.toLowerCase().includes(search));
+  }
+
+  // Reset tooltip state
+  pinnedTooltip = null;
+  hideTooltip();
+
+  buildTable(visible);
+}
+
+viewMode.addEventListener('change', refresh);
+paperSelect.addEventListener('change', refresh);
+searchBox.addEventListener('input', refresh);
+
+// Initial render
+refresh();
+</script>
+</body>
+</html>

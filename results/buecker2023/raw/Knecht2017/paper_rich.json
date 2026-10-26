@@ -1,0 +1,317 @@
+{
+  "paper_id": "Knecht2017",
+  "pdf_path": "Knecht2017.pdf",
+  "marker_output_dir": "/projects/code/meta_analysis_agent/data/processed/buecker2023/Knecht2017",
+  "samples": [],
+  "fields": {
+    "Sample": {
+      "name": "Sample",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": null
+    },
+    "infoYearT1": {
+      "name": "infoYearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "estimated",
+        "evidence": [
+          {
+            "pdf_name": "Knecht2017.pdf",
+            "section_id": "001_front_matter",
+            "section_title": "Front matter",
+            "block_id": "/page/0/Picture/0",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "The publication date 'MAY 2017' is visible, but no data collection year for the study's baseline is stated.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "yearT1": {
+      "name": "yearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 2012,
+        "evidence": [],
+        "derivation": {
+          "kind": "infer_constant",
+          "skill_name": "estimate_yeart1_from_pubyear",
+          "inputs": {
+            "publication_year": 2017,
+            "span": 2.0,
+            "span_source": "default"
+          },
+          "formula": "yearT1 = publication_year - 3 - span",
+          "note": "Buecker gold estimation rule for an unreported (Estimated) baseline year"
+        },
+        "confidence": 0.4
+      }
+    },
+    "country": {
+      "name": "country",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "Switzerland",
+        "evidence": [
+          {
+            "pdf_name": "Knecht2017.pdf",
+            "section_id": "005_michaela_knecht_and_alexandra_m_freund",
+            "section_title": "Michaela Knecht and Alexandra M. Freund",
+            "block_id": "/page/1/Text/4",
+            "page": 1,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "Zurich, Switzerland",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "Outcome_variable": {
+      "name": "Outcome_variable",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "life satisfaction",
+        "evidence": [
+          {
+            "pdf_name": "Knecht2017.pdf",
+            "section_id": "007_multiple_goals_in_middle_adulthood",
+            "section_title": "Multiple goals in middle adulthood",
+            "block_id": "007_multiple_goals_in_middle_adulthood/page/3/Text/4",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[007_multiple_goals_in_middle_adulthood/page/3/Text/4] Goal conflicts are associated with lower subjective well-being (e.g., Emmons & King, 1988; Riediger & Freund, 2004), whereas facilitation between goals is associated with higher goal engagement (Riediger & Freund, 2004).; [007_multiple_goals_in_middle_adulthood/page/3/Text/5] Wiese et al. (2002) showed the beneficial effects of habitual SOC for young and middle-aged adults for both, the increase in work-related and general subjective well-being over time.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "sample_type": {
+      "name": "sample_type",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "community/convenience",
+        "evidence": [
+          {
+            "pdf_name": "Knecht2017.pdf",
+            "section_id": "006_abstract",
+            "section_title": "ABSTRACT",
+            "block_id": "006_abstract",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/1/Text/6] In a sample of N = 89 employed middle-age adults",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "ethnicity": {
+      "name": "ethnicity",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "predominantly white/european",
+        "evidence": [],
+        "derivation": {
+          "kind": "infer_constant",
+          "skill_name": "infer_ethnicity_from_country",
+          "inputs": {
+            "country": "Switzerland"
+          },
+          "formula": "",
+          "note": "predominant ethnicity inferred from country (unreported in paper)"
+        },
+        "confidence": 0.5
+      }
+    },
+    "lag": {
+      "name": "lag",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": null,
+        "evidence": [],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "M_SWB": {
+      "name": "M_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": null
+    },
+    "SD_SWB": {
+      "name": "SD_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": null
+    }
+  },
+  "warnings": [
+    {
+      "code": "ungrounded_candidate",
+      "message": "003_the_use_of_selection_optimization_and_compensation/infoYearT1: quote not found in section (likely hallucinated): 'The calendar year of the first assessment wave is not explicitly stated in the p'",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "005_michaela_knecht_and_alexandra_m_freund/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "007_multiple_goals_in_middle_adulthood/ethnicity: quote not found in section (likely hallucinated): 'No information about the ethnicity of the sample is provided in this section.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "012_soc_and_goal_relations/infoYearT1: quote not found in section (likely hallucinated): 'No specific calendar year for the first wave of data collection was provided in '",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "012_soc_and_goal_relations/ethnicity: quote not found in section (likely hallucinated): 'No information on the ethnic composition of the sample was provided in the text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "016_method/infoYearT1: quote not found in section (likely hallucinated): \"No information about the first wave's collection year is provided in the text.\"",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "016_method/ethnicity: quote not found in section (likely hallucinated): 'No information about the ethnic composition of the sample is provided in the tex'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "019_data_analysis/ethnicity: quote not found in section (likely hallucinated): 'The text does not provide any information about the ethnic composition of the sa'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "020_measures/Outcome_variable: quote not found in section (likely hallucinated): '[020_measures] Life satisfaction was assessed using the Satisfaction With Life S'",
+      "field_name": "Outcome_variable",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "025_strengths_and_limitations/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "031_appendix_table_1/Outcome_variable: quote not found in section (likely hallucinated): \"Appendix Table 1. Descriptive Statistics for Study Variables, Variable column: '\"",
+      "field_name": "Outcome_variable",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "031_appendix_table_1/ethnicity: quote not found in section (likely hallucinated): 'Not specified in the provided text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "031_appendix_table_1/M_SWB: quote not found in section (likely hallucinated): \"Appendix Table 1. Descriptive Statistics for Study Variables, M column, rows 'Li\"",
+      "field_name": "M_SWB",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "031_appendix_table_1/SD_SWB: quote not found in section (likely hallucinated): \"Appendix Table 1. Descriptive Statistics for Study Variables, SD column, rows 'L\"",
+      "field_name": "SD_SWB",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "032_goal_conflict_as_predictor_for_soc_one_time_point_/infoYearT1: quote not found in section (likely hallucinated): 'No specific year for the first wave of data collection is mentioned in this sect'",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "032_goal_conflict_as_predictor_for_soc_one_time_point_/ethnicity: quote not found in section (likely hallucinated): 'The ethnicity of the sample is not reported in this section.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "no_samples",
+      "message": "sample census returned no samples",
+      "field_name": null,
+      "sample_key": null
+    }
+  ],
+  "run_meta": {
+    "run_id": "Knecht2017",
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "schema_name": "buecker2023",
+    "schema_version": 1,
+    "skill_names": [
+      "bas2_over_bas",
+      "compute_weighted_mean_total",
+      "estimate_yeart1_from_pubyear",
+      "gender-mapping",
+      "hien_arm_taxonomy",
+      "infer_college_sample_100",
+      "infer_ethnicity_from_country",
+      "info_cost_clamp_zero",
+      "ng_mediator_lookup",
+      "ng_source_smallest_number",
+      "single_gender_fill",
+      "study_naming",
+      "table-parsing",
+      "total_geq_sum",
+      "vu_altr_ctr_identity",
+      "vu_cell_count_localization",
+      "vu_cell_terminology",
+      "vu_country_mturk",
+      "vu_info_cost_default"
+    ],
+    "started_at": "2026-07-08T22:05:23.312621Z",
+    "finished_at": "2026-07-08T22:11:27.559436Z",
+    "prompt_tokens": 532632,
+    "completion_tokens": 58859,
+    "passes": 307,
+    "aggregator_passes": 10
+  }
+}

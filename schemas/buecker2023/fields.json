@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "meta_analysis": "Buecker et al. (2023) — The Development of Subjective Well-Being Across the Life Span (meta-analysis of longitudinal studies)",
+  "doi": "10.1037/bul0000401",
+  "jansen_label": "Buecker2023",
+  "rationale": "Two-part extraction. (A) The 6 study-level descriptors Jansen (2025) benchmarked (yearT1, country, Outcome, sample_type, ethnicity, lag) — paper-scope flat fields for a like-for-like accuracy comparison against Jansen's LLM baseline. (B) The per-subsample-per-wave SWB N/mean/SD numeric payload the meta-analysts themselves coded (data_final) but Jansen NEVER benchmarked — this is our multimodal/table-reading differentiator. A 'sample' here = one measurement record: a subsample (whole recruited sample OR a distinct age cohort / demographic group analysed separately) × one SWB component (life satisfaction / positive affect / negative affect) × one measurement wave/timepoint. sample_label encodes all three so records join to data_final rows. Field names and the descriptor value-vocabularies mirror the human_coding_final 'Buecker2023' gold columns.",
+  "fields": [
+    {"name": "Sample", "scope": "sample", "gender_specific": false,
+     "type": "object", "items_type": "integer",
+     "definition": "Number of participants (N) contributing to THIS measurement record. The cell key (sample_label) identifies one record as '<subsample> | <SWB component> | wave <k>' — e.g. 'whole sample | life satisfaction | wave 1', '1998 cohort | negative affect | wave 2'. A 'subsample' is the whole recruited sample, OR a distinct age cohort / demographic group the paper analyses separately. Use the analysis N reported for that component at that wave. total_n anchors the census; leave it as the single value (this MA does not split by gender).",
+     "skills": []},
+
+    {"name": "infoYearT1", "scope": "paper", "gender_specific": false, "type": "enum",
+     "allowed_values": ["given", "reported_other_source", "estimated"],
+     "validator_match": "string_normalized",
+     "definition": "PROVENANCE of the baseline year (mirrors the meta-analysts' infoYearT1). Decide how yearT1 is known: 'given' = THIS paper explicitly states the calendar year/date its OWN first/baseline data-collection wave took place ('data were collected in 2008', 'baseline: December 2005', 'Time 1 (2011)'). 'reported_other_source' = this study REUSES data collected in a DIFFERENT publication about the SAME sample, and that source states the collection year (e.g. 'we analysed Waves 4–8 of the NLSY97, first fielded in 1997', 'data from the SOEP (Wagner et al., 2007)'). 'estimated' = the baseline collection year is NOT stated for this study's data anywhere — including when the only years present are BACKGROUND CITATIONS (a prior study cited for context/theory, whose DATA this study does NOT use, e.g. 'as Carmel (2001) showed in a 1994 study…'). When in doubt between a background citation and a genuine data source, ask: does THIS study's analysis use that referenced study's data (same sample/waves)? If no → 'estimated'."},
+
+    {"name": "yearT1", "scope": "paper", "gender_specific": false, "type": "integer_or_string",
+     "jansen_label": "yearT1", "validator_match": "numeric_tolerance", "validator_tolerance": 1,
+     "skills": ["estimate_yeart1_from_pubyear"],
+     "definition": "Calendar year of the FIRST (baseline) assessment wave (T1), following infoYearT1. If infoYearT1='given': the year THIS paper states for its own baseline data collection (earliest if a range). If infoYearT1='reported_other_source': the collection year of the reused data source for the same sample. If infoYearT1='estimated': return the string 'None' — a deterministic post-step computes it as publication_year − 3 − span. CRITICAL: a year that only appears inside a BACKGROUND CITATION (a prior study cited for context whose data this study does NOT use — e.g. 'the 1994 study (Carmel & Mutran, 1997)') is NOT a valid yearT1 → set infoYearT1='estimated' and yearT1='None'. NEVER return the publication year itself, an ongoing survey's inception year when the study only uses a later window, or a date not supported by the paper. If the study reuses specific waves of a named panel, prefer infoYearT1='reported_other_source' and the EARLIEST WAVE INCLUDED, not the panel's first-ever wave."},
+
+    {"name": "country", "scope": "paper", "gender_specific": false, "type": "string",
+     "jansen_label": "country", "validator_match": "string_normalized",
+     "definition": "Country where the study sample was predominantly collected (e.g. 'Germany', 'USA', 'Australia', 'United Kingdom'). If it is a multi-country panel, name the predominant country; if genuinely split, list them (e.g. 'USA/Canada'). Give the country, not a region or city."},
+
+    {"name": "Outcome_variable", "scope": "paper", "gender_specific": false,
+     "type": "multi_label", "items_type": "enum",
+     "allowed_values": ["life satisfaction", "positive affect", "negative affect"],
+     "jansen_label": "Outcome_variable", "validator_match": "set_overlap",
+     "definition": "Which subjective-well-being component(s) this study measured longitudinally. 'life satisfaction' = SWLS, single-item life-satisfaction, cognitive well-being, quality of life. 'positive affect' / 'negative affect' = PANAS or other affect scales (positive vs negative subscales). Emit the SET of components actually measured (a paper may report one, two, or all three)."},
+
+    {"name": "sample_type", "scope": "paper", "gender_specific": false, "type": "enum",
+     "allowed_values": ["nationally-representative", "community/convenience", "college/university students", "clinical/patient", "other"],
+     "jansen_label": "sample_type", "validator_match": "string_normalized",
+     "definition": "Recruitment source of the sample — choose exactly ONE. 'nationally-representative' = ONLY a national PROBABILITY sample whose SAMPLING FRAME IS A WHOLE COUNTRY, explicitly designed to represent that country's population (SOEP, HILDA, BHPS, NLSY, SHARE-national, national census-based / nationally-representative surveys). CRITICAL — geographic scope matters, not just random sampling: a sample RANDOMLY or probability-drawn from a SINGLE CITY, region, province, county, clinic, hospital, school district, or institution is NOT nationally-representative (e.g. 'randomly selected older adults in Mexico City', 'a random community sample from one town') — code those 'community/convenience' (or 'clinical/patient' if clinically recruited). A large NAMED cohort / twin registry / ageing or wellbeing survey that is NOT probability-sampled to represent the whole nation is NOT this. 'college/university students' = TERTIARY (college/university/undergraduate/postgraduate) students ONLY. IMPORTANT: samples recruited from PRIMARY/ELEMENTARY/MIDDLE/JUNIOR-HIGH/SECONDARY/HIGH SCHOOLS — i.e. children or adolescents ('grades 8–10', 'high-school students', 'schoolchildren', 'adolescents recruited via schools') — are NOT 'college/university students'; code them 'community/convenience'. 'clinical/patient' = recruited through a clinical/treatment setting. 'community/convenience' = the DEFAULT for any other general sample — community, convenience, workplace/PROFESSIONAL, ATHLETES, volunteers, SCHOOL-recruited children/adolescents, and named cohort studies that are not nationally probability-sampled. 'other' = use ONLY when genuinely none of the above fit (very rare); a professional, athlete, school, or community sample is 'community/convenience', NOT 'other'."},
+
+    {"name": "ethnicity", "scope": "paper", "gender_specific": false, "type": "enum",
+     "allowed_values": ["predominantly white/european", "predominantly black", "predominantly asian", "predominantly hispanic/latin american", "predominantly native american", "other", "not specified"],
+     "jansen_label": "ethnicity", "validator_match": "string_normalized",
+     "skills": ["infer_ethnicity_from_country"],
+     "definition": "Race/ethnicity of the sample, coded with the meta-analysts' 70% rule ('predominantly' = 70% or more). If the paper REPORTS the ethnic composition: (a) if ONE group is >=70%, code that group (e.g. 'White 98%' -> predominantly white/european; 'American Indian' -> predominantly native american); (b) if composition IS reported but NO single group reaches 70% — a diverse/mixed sample (e.g. '39% racial minorities' -> ~61% white < 70%; 'English 22%, Italian 12%, Dutch 11%') — code 'other'. If the paper does NOT report the composition at all, emit 'not specified' (a deterministic post-step then infers from country for ethnically-homogeneous countries). Do NOT code 'white/european' from a nationality mix or from names when no single group hits 70% — that is 'other'; 'not specified' is only for genuinely UNREPORTED composition."},
+
+    {"name": "lag", "scope": "paper", "gender_specific": false, "type": "number",
+     "jansen_label": "lag", "validator_match": "numeric_tolerance", "validator_tolerance": 0.34,
+     "definition": "Typical time interval in YEARS between consecutive assessment waves (annual = 1.0; 6-monthly = 0.5; biennial = 2.0). If waves are unevenly spaced, report the modal/typical interval. Compute from the stated wave schedule or assessment dates when not stated directly. Report a number in years, not months."},
+
+    {"name": "M_SWB", "scope": "sample", "gender_specific": false,
+     "type": "object", "items_type": "number",
+     "definition": "MEAN subjective-well-being score for THIS record (its subsample × SWB component × wave). Transcribe the value EXACTLY as printed in the results table or text — do NOT round, standardize (z-score), or impute. Keep the paper's original scale (e.g. a 1–7 SWLS mean, a 0–3 PANAS mean, a percentage). Means for SWB descriptive statistics are usually in a Table (means/SDs by wave) — read the table cells carefully (O vs 0, I vs 1) and record the row/column header in the evidence. If only a median is reported, emit 'None'."},
+
+    {"name": "SD_SWB", "scope": "sample", "gender_specific": false,
+     "type": "object", "items_type": "number",
+     "definition": "STANDARD DEVIATION matching M_SWB for this record, transcribed exactly as printed. If only a standard error (SE) is reported, convert SD = SE × √N (N from this record's Sample). If only IQR or range is reported, emit 'None'. Do not confuse SD with SE — SD is typically several times larger."}
+  ]
+}

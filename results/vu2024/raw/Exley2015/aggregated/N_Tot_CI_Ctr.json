@@ -1,0 +1,25 @@
+{
+  "resolved_samples": [
+    {
+      "sample_key": "Study 1 - Choice-to-Reveal Question (Unaligned State) vs Revealed-State Questions (Unaligned State)",
+      "values": [
+        null
+      ],
+      "best_indices": [
+        0
+      ],
+      "reasoning": "Candidate 0 indicates a within-subject design for Study 1, stating 'transition cells... used instead of simple cell counts'. Per instructions, for within-subject designs, N counts should be null. Although Candidate 1 provides '100' from a table, the explicit instruction for within-subject designs takes precedence for N_*_CI_* fields."
+    },
+    {
+      "sample_key": "Study 1 - Choice-to-Reveal Question (Unaligned State*) vs Revealed-State Questions (Unaligned State*)",
+      "values": [
+        null
+      ],
+      "best_indices": [
+        0,
+        1
+      ],
+      "reasoning": "Candidate 0 indicates a within-subject design for Study 1, stating 'transition cells... used instead of simple cell counts'. Per instructions, for within-subject designs, N counts should be null. Candidate 1's value of -999 is rejected as it falls outside the valid range (0-1000)."
+    }
+  ]
+}

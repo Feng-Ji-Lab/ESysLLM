@@ -1,0 +1,41 @@
+{
+  "prompt_tokens": 15020,
+  "completion_tokens": 1385,
+  "data": {
+    "Sample": {
+      "extract_value": [
+        {
+          "key": "main sample",
+          "value": []
+        }
+      ],
+      "evidence_source": "The text describes findings from a single group of participants without indicating separate studies or samples.",
+      "block_id": "None",
+      "warning": "The document provided is a 'FINDINGS' section, which typically does not contain explicit sample definitions or counts. Assuming 'main sample' as per instructions for single-study papers."
+    },
+    "Country": {
+      "extract_value": "None",
+      "evidence_source": "The provided 'FINDINGS' section does not contain information about the country where the study was conducted.",
+      "block_id": "None",
+      "warning": ""
+    },
+    "Population": {
+      "extract_value": "None",
+      "evidence_source": "The provided text is a 'FINDINGS' section and describes the experiences of 'suicide attempters'. However, the rule states: 'Emit a Population candidate ONLY from text describing WHO WAS RECRUITED (Participants / Methods inclusion criteria / the abstract's sample sentence). Do NOT emit a label because participants merely DESCRIBE that experience in the Findings.' Therefore, no Population label can be extracted from this section.",
+      "block_id": "None",
+      "warning": ""
+    },
+    "Type": {
+      "extract_value": "None",
+      "evidence_source": "The provided 'FINDINGS' section does not contain information about whether the data were collected specifically for this study (Primary) or pre-existed (Secondary).",
+      "block_id": "None",
+      "warning": ""
+    },
+    "Area": {
+      "extract_value": "Risk, Recovery",
+      "evidence_source": "Risk: [page/1/Text/13] \"The desire to commit suicide and the expressions of feeling bored, uncertain, anxious, pressed, terrible, and sad were ever present in the suicide attempters' accounts.\"; [page/2/Text/5] \"The above narratives demonstrate that these suicide attempters felt trapped and that their lives were in disorder, causing them to endure physical and psychological distress.\"; [page/2/Text/6] \"There was a strong perception that these participants' lives were not controlled by themselves but by other persons...\"; [page/3/Text/13] \"Although human beings connect with each other, one may live with one's family but may not say a word when one is at home.\"; [page/3/Text/14] \"Yeong-Jye felt that no one wanted to talk to or care for him when he was in the troop. His colleagues always ridiculed him...\"; [page/4/Text/11] \"Most stated that their family did not understand their feelings and that they were very often scolded by their family members, particularly their mothers.\"; Recovery: [page/3/Text/2] \"Although participants still believed that the use of suicide gave them the power to control their own lives, they started or planned to change themselves or their environment after attempted suicide because of the influence of cultural values or the mirroring of others' actions and words.\"; [page/3/Text/7] \"mirroring one of his neighbor's actions in the hospital helped him to stand up again.\"; [page/4/Text/5] \"Just making jokes, we hang out together smoking, drinking, then talking. When we feel sad, we cry together. I just want someone to keep me company... with someone close.\"; [page/4/Text/7] \"In addition to friends' company, family support and care also helped suicide attempters feel that their lives were valuable.\"; [page/5/Text/6] \"In particular, having responsibility for their family forced them to live in the world.\"",
+      "block_id": "page/1/Text/13, page/2/Text/5, page/2/Text/6, page/3/Text/13, page/3/Text/14, page/4/Text/11, page/3/Text/2, page/3/Text/7, page/4/Text/5, page/4/Text/7, page/5/Text/6",
+      "warning": ""
+    }
+  }
+}

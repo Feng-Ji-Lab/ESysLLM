@@ -1,0 +1,49 @@
+{
+  "prompt_tokens": 12194,
+  "completion_tokens": 2311,
+  "data": {
+    "Sample": {
+      "extract_value": [
+        {
+          "key": "main sample",
+          "value": [
+            10
+          ]
+        }
+      ],
+      "evidence_source": "[/page/2/Text/11] Mixed-gender groups of approximately 10 adolescents were treated in 16 2-hour sessions conducted over an 8-week period; the CWD-A groups consisted of 7 to 14 adolescents (mean = 10.4); the LS groups consisted of 6 to 12 adolescents (mean = 9.8).",
+      "block_id": "010_treatment_interventions",
+      "warning": "The sample size is given as an approximate '10 adolescents' per group, with means of 10.4 and 9.8 for the two groups. Using 10 as a representative value for the sample size per group, but the total N for the study is not explicitly stated as a single number."
+    },
+    "IPT": {
+      "extract_value": "0",
+      "evidence_source": "[/page/2/Text/12] CWD-A Condition. The CWD-A course is a group intervention that combines cognitive and behavioral strategies aimed at ameliorating the types of problems that commonly characterize depressed adolescents. The treatment incorporates other elements shared by [/page/2/Text/13] CBT, such as the focus on specific and current actions and cognitions as targets for change, structured intervention sessions, repeated practice of skills, use of rewards and contracts, homework assignments, and a relatively small number of therapy sessions. ... [/page/2/Text/14] LS Condition. The LS intervention consisted of current events review, life skills training (e.g., filling out a job application, renting an apartment), and academic tutoring.",
+      "block_id": "010_treatment_interventions",
+      "warning": "The paper describes two interventions: CWD-A (CBT) and LS (Life Skills). Since LS is not IPT, and the MA coding rule states 'otherwise (CBT-flavored, problem-solving, BA, etc.) → 0', both arms are coded as 0. This is not the dual-arm CBT vs IPT exception, so a single record is emitted."
+    },
+    "male_pct": {
+      "extract_value": "None",
+      "evidence_source": "[/page/2/Text/11] Mixed-gender groups of approximately 10 adolescents were treated in 16 2-hour sessions conducted over an 8-week period;",
+      "block_id": "010_treatment_interventions",
+      "warning": "The text mentions 'Mixed-gender groups' but does not provide a percentage or count of male participants."
+    },
+    "dxgive": {
+      "extract_value": "400",
+      "evidence_source": "[/page/2/Text/12] CWD-A course is a group intervention that combines cognitive and behavioral strategies aimed at ameliorating the types of problems that commonly characterize depressed adolescents.",
+      "block_id": "010_treatment_interventions",
+      "warning": "The text mentions 'depressed adolescents' and 'comorbid population' but does not specify if formal diagnostic criteria were required for study entry or assessed at baseline."
+    },
+    "Source": {
+      "extract_value": "None",
+      "evidence_source": "None",
+      "block_id": "None",
+      "warning": "No specific measures or informants are mentioned in this section."
+    },
+    "MedCat": {
+      "extract_value": "None",
+      "evidence_source": "None",
+      "block_id": "None",
+      "warning": "No specific measures or mediator categories are mentioned in this section."
+    }
+  }
+}

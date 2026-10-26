@@ -1,0 +1,49 @@
+{
+  "prompt_tokens": 15102,
+  "completion_tokens": 1302,
+  "data": {
+    "Sample": {
+      "extract_value": [
+        {
+          "key": "main sample",
+          "value": [
+            24
+          ]
+        }
+      ],
+      "evidence_source": "[/page/4/Text/8] On the BDI at posttreatment, 11 of 14 subjects (79%) who received treatment met the criteria for normalacy (BDI score less than 10). Of these, 5 were in the cognitive-behavioral group (83%) and 6 were in the relaxation group (75%); no subjects from the wait-list group met this criteria, \\chi^2(2, N = 24) = 14.60, p < .001.",
+      "block_id": "/page/4/Text/8",
+      "warning": "The N=24 is for the entire sample across all three groups (cognitive-behavioral, relaxation, wait-list). The prompt asks for the sample size of the *study record*, which in this case is the CBT arm. The CBT arm has 6 subjects (5/6 = 83% of 6 subjects). However, the prompt asks for 'Total participants randomized in this study record'. The N=24 is the total randomized across all groups. The prompt also states 'Most papers contribute ONE study record'. Given the context, the N=24 is the most appropriate total sample size for the paper, even if the CBT arm itself is smaller. Re-reading the prompt: 'Total participants randomized in this study record.' If the paper tests only CBT, then the total randomized *for that CBT study record* would be the CBT group + control group. The N=24 is the total across all three groups, which includes the CBT group. I will use 24 as the total sample size for the 'main sample' record, representing the entire RCT."
+    },
+    "IPT": {
+      "extract_value": "0",
+      "evidence_source": "[/page/3/Text/14] On the BDI, both the cognitive-behavioral group (Q_p = 5.28, p < .01) and the relaxation therapy group (Q_p = 6.02, p < .01) had a significantly lower mean score than the wait-list group.",
+      "block_id": "/page/3/Text/14",
+      "warning": "None"
+    },
+    "male_pct": {
+      "extract_value": "None",
+      "evidence_source": "None",
+      "block_id": "None",
+      "warning": "None"
+    },
+    "dxgive": {
+      "extract_value": "400",
+      "evidence_source": "[/page/3/Text/13] Based on the BDI scores, subjects in each condition fell within the moderate range of depression.",
+      "block_id": "/page/3/Text/13",
+      "warning": "The text mentions 'moderate range of depression' based on BDI scores, which is a symptom cutoff, not a formal diagnosis. No mention of DSM criteria or clinician-administered diagnostic interviews for inclusion."
+    },
+    "Source": {
+      "extract_value": "1",
+      "evidence_source": "[/page/4/Table/4] Note. Adjusted means are reported for the posttreatment and follow-up assessment periods. BDI = Beck Depression Inventory; BID = Bellevue Index of Depression; RADS = Reynolds Adolescent Depression Scale.",
+      "block_id": "/page/4/Table/4",
+      "warning": "BDI, BID, and RADS are typically self-report measures for youth, hence Source 1. The text does not explicitly state the informant for these measures, but this is the standard for these instruments."
+    },
+    "MedCat": {
+      "extract_value": "99",
+      "evidence_source": "[/page/4/Table/4] Note. Adjusted means are reported for the posttreatment and follow-up assessment periods. BDI = Beck Depression Inventory; BID = Bellevue Index of Depression; RADS = Reynolds Adolescent Depression Scale.",
+      "block_id": "/page/4/Table/4",
+      "warning": "None"
+    }
+  }
+}

@@ -1,0 +1,429 @@
+{
+  "paper_id": "Marques2016",
+  "pdf_path": "Marques2016.pdf",
+  "marker_output_dir": "/projects/code/meta_analysis_agent/data/processed/buecker2023/Marques2016",
+  "samples": [
+    {
+      "study_index": 1,
+      "sample_label": "whole sample | life satisfaction | wave 1"
+    },
+    {
+      "study_index": 1,
+      "sample_label": "whole sample | life satisfaction | wave 2"
+    },
+    {
+      "study_index": 1,
+      "sample_label": "whole sample | life satisfaction | wave 1"
+    }
+  ],
+  "fields": {
+    "Sample": {
+      "name": "Sample",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | life satisfaction | wave 1": {
+          "values": [
+            {
+              "value": 367,
+              "evidence": [
+                {
+                  "pdf_name": "Marques2016.pdf",
+                  "section_id": "015_multiple_regression_analysis_hope_mental_health_an",
+                  "section_title": "Multiple Regression Analysis: Hope, Mental Health, and Student Engagement",
+                  "block_id": "/page/4/Table/3",
+                  "page": 4,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1 Intercorrelations of and between target variables for students at Time 1 and Time 2 (N = 367)",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | life satisfaction | wave 2": {
+          "values": [
+            {
+              "value": 367,
+              "evidence": [
+                {
+                  "pdf_name": "Marques2016.pdf",
+                  "section_id": "015_multiple_regression_analysis_hope_mental_health_an",
+                  "section_title": "Multiple Regression Analysis: Hope, Mental Health, and Student Engagement",
+                  "block_id": "/page/4/Table/3",
+                  "page": 4,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table 1 Intercorrelations of and between target variables for students at Time 1 and Time 2 (N = 367)",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    },
+    "infoYearT1": {
+      "name": "infoYearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "estimated",
+        "evidence": [
+          {
+            "pdf_name": "Marques2016.pdf",
+            "section_id": "002_psychological_strengths_in_childhood_as_predictors",
+            "section_title": "Psychological Strengths in Childhood as Predictors of Longitudinal Outcomes",
+            "block_id": "/page/0/Text/7",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "The abstract states 'administered to 367 students on two occasions, separated by 5 years' but does not provide the calendar year for the first assessment.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "yearT1": {
+      "name": "yearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 2008,
+        "evidence": [],
+        "derivation": {
+          "kind": "infer_constant",
+          "skill_name": "estimate_yeart1_from_pubyear",
+          "inputs": {
+            "publication_year": 2016,
+            "span": 5.0,
+            "span_source": "lag*1waves"
+          },
+          "formula": "yearT1 = publication_year - 3 - span",
+          "note": "Buecker gold estimation rule for an unreported (Estimated) baseline year"
+        },
+        "confidence": 0.4
+      }
+    },
+    "country": {
+      "name": "country",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "Portugal",
+        "evidence": [
+          {
+            "pdf_name": "Marques2016.pdf",
+            "section_id": "003_introduction",
+            "section_title": "Introduction",
+            "block_id": "/page/1/Picture/5",
+            "page": 1,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "Based on preliminary longitudinal research (1-year time frame), hope and life satisfaction may operate as protective factors or buffers from subsequent psychopathological behavior in US adolescents in the face of adverse circumstances",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "Outcome_variable": {
+      "name": "Outcome_variable",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "life satisfaction, positive affect",
+        "evidence": [
+          {
+            "pdf_name": "Marques2016.pdf",
+            "section_id": "002_psychological_strengths_in_childhood_as_predictors",
+            "section_title": "Psychological Strengths in Childhood as Predictors of Longitudinal Outcomes",
+            "block_id": "/page/0/Text/7",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "Measures of hope, life satisfaction, stressful life events, mental health, and students' engagement were administered to 367 students on two occasions, separated by 5 years. Results showed that participants with lower levels of hope and life satisfaction who experienced several stressful events had a higher risk of developing diminished mental health and difficulties of school engagement 5 years later, while those with higher levels of hope and life satisfaction were not exposed to this vulnerability. These findings reveal that hope and life satisfaction operate as protective psychological strengths in the transition from childhood to/and during adolescence.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "sample_type": {
+      "name": "sample_type",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "community/convenience",
+        "evidence": [
+          {
+            "pdf_name": "Marques2016.pdf",
+            "section_id": "002_psychological_strengths_in_childhood_as_predictors",
+            "section_title": "Psychological Strengths in Childhood as Predictors of Longitudinal Outcomes",
+            "block_id": "/page/0/Text/7",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "Measures of hope, life satisfaction, stressful life events, mental health, and students' engagement were administered to 367 students on two occasions, separated by 5 years. ... These findings reveal that hope and life satisfaction operate as protective psychological strengths in the transition from childhood to/and during adolescence.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "ethnicity": {
+      "name": "ethnicity",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "predominantly white/european",
+        "evidence": [],
+        "derivation": {
+          "kind": "infer_constant",
+          "skill_name": "infer_ethnicity_from_country",
+          "inputs": {
+            "country": "Portugal"
+          },
+          "formula": "",
+          "note": "predominant ethnicity inferred from country (unreported in paper)"
+        },
+        "confidence": 0.5
+      }
+    },
+    "lag": {
+      "name": "lag",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 5.0,
+        "evidence": [
+          {
+            "pdf_name": "Marques2016.pdf",
+            "section_id": "002_psychological_strengths_in_childhood_as_predictors",
+            "section_title": "Psychological Strengths in Childhood as Predictors of Longitudinal Outcomes",
+            "block_id": "/page/0/Text/7",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "Measures of hope, life satisfaction, stressful life events, mental health, and students' engagement were administered to 367 students on two occasions, separated by 5 years.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "M_SWB": {
+      "name": "M_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | life satisfaction | wave 1": {
+          "values": [
+            {
+              "value": 29.3,
+              "evidence": [
+                {
+                  "pdf_name": "Marques2016.pdf",
+                  "section_id": "008_students_life_satisfaction_scale",
+                  "section_title": "Students' Life Satisfaction Scale",
+                  "block_id": "/page/2/Text/9",
+                  "page": 2,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "[/page/2/Text/9] the means, standard deviations at Time 1 were M = 29.30, SD = 6.36 and at Time 2 were M = 29.10, SD = 6.82.",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | life satisfaction | wave 2": {
+          "values": [
+            {
+              "value": 29.1,
+              "evidence": [
+                {
+                  "pdf_name": "Marques2016.pdf",
+                  "section_id": "008_students_life_satisfaction_scale",
+                  "section_title": "Students' Life Satisfaction Scale",
+                  "block_id": "/page/2/Text/9",
+                  "page": 2,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "[/page/2/Text/9] the means, standard deviations at Time 1 were M = 29.30, SD = 6.36 and at Time 2 were M = 29.10, SD = 6.82.",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    },
+    "SD_SWB": {
+      "name": "SD_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | life satisfaction | wave 1": {
+          "values": [
+            {
+              "value": 6.36,
+              "evidence": [
+                {
+                  "pdf_name": "Marques2016.pdf",
+                  "section_id": "008_students_life_satisfaction_scale",
+                  "section_title": "Students' Life Satisfaction Scale",
+                  "block_id": "/page/2/Text/9",
+                  "page": 2,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "[/page/2/Text/9] the means, standard deviations at Time 1 were M = 29.30, SD = 6.36 and at Time 2 were M = 29.10, SD = 6.82.",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | life satisfaction | wave 2": {
+          "values": [
+            {
+              "value": 6.82,
+              "evidence": [
+                {
+                  "pdf_name": "Marques2016.pdf",
+                  "section_id": "008_students_life_satisfaction_scale",
+                  "section_title": "Students' Life Satisfaction Scale",
+                  "block_id": "/page/2/Text/9",
+                  "page": 2,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "[/page/2/Text/9] the means, standard deviations at Time 1 were M = 29.30, SD = 6.36 and at Time 2 were M = 29.10, SD = 6.82.",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    }
+  },
+  "warnings": [
+    {
+      "code": "ungrounded_candidate",
+      "message": "003_introduction/ethnicity: quote not found in section (likely hallucinated): 'No information regarding the ethnicity of the sample is provided in the text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "009_mental_health_inventory5/ethnicity: quote not found in section (likely hallucinated): 'Ethnicity of the sample is not mentioned in this section.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "011_life_events_checklist/ethnicity: quote not found in section (likely hallucinated): 'The text does not provide any information about the ethnicity or race of the sam'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "014_descriptive_statistics_and_correlations/infoYearT1: quote not found in section (likely hallucinated): 'The calendar year of the first assessment is not explicitly stated in the provid'",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "014_descriptive_statistics_and_correlations/ethnicity: quote not found in section (likely hallucinated): 'No information about the ethnicity of the sample is provided in the text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "015_multiple_regression_analysis_hope_mental_health_an/ethnicity: quote not found in section (likely hallucinated): 'The ethnicity of the sample is not mentioned in the provided text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "unmapped_candidate",
+      "message": "candidate [0] from 005_participants carries value(s) [[592]] not placed in any sample",
+      "field_name": "Sample",
+      "sample_key": null
+    },
+    {
+      "code": "unmapped_candidate",
+      "message": "candidate [1] from 009_mental_health_inventory5 carries value(s) [[22.68], [22.1]] not placed in any sample",
+      "field_name": "M_SWB",
+      "sample_key": null
+    },
+    {
+      "code": "unmapped_candidate",
+      "message": "candidate [1] from 009_mental_health_inventory5 carries value(s) [[3.8], [3.86]] not placed in any sample",
+      "field_name": "SD_SWB",
+      "sample_key": null
+    }
+  ],
+  "run_meta": {
+    "run_id": "Marques2016",
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "schema_name": "buecker2023",
+    "schema_version": 1,
+    "skill_names": [
+      "bas2_over_bas",
+      "compute_weighted_mean_total",
+      "estimate_yeart1_from_pubyear",
+      "gender-mapping",
+      "hien_arm_taxonomy",
+      "infer_college_sample_100",
+      "infer_ethnicity_from_country",
+      "info_cost_clamp_zero",
+      "ng_mediator_lookup",
+      "ng_source_smallest_number",
+      "single_gender_fill",
+      "study_naming",
+      "table-parsing",
+      "total_geq_sum",
+      "vu_altr_ctr_identity",
+      "vu_cell_count_localization",
+      "vu_cell_terminology",
+      "vu_country_mturk",
+      "vu_info_cost_default"
+    ],
+    "started_at": "2026-07-09T01:42:05.684587Z",
+    "finished_at": "2026-07-09T01:46:48.528337Z",
+    "prompt_tokens": 357375,
+    "completion_tokens": 44845,
+    "passes": 188,
+    "aggregator_passes": 10
+  }
+}

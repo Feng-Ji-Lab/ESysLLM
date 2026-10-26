@@ -1,0 +1,174 @@
+{
+  "prompt_tokens": 11047,
+  "completion_tokens": 3144,
+  "data": {
+    "Design": {
+      "extract_value": "between-subject",
+      "evidence_source": "The table presents distinct 'N' values for each 'Treatment' (Baseline, Default NR, Active, Default R), indicating separate groups of participants for each condition.",
+      "block_id": "023_a_instructions",
+      "warning": ""
+    },
+    "country": {
+      "extract_value": "None",
+      "evidence_source": "The provided table does not contain information about the country where the study was conducted.",
+      "block_id": "023_a_instructions",
+      "warning": ""
+    },
+    "info_cost": {
+      "extract_value": 0.0,
+      "evidence_source": "The table does not mention any monetary cost associated with revealing information. By default, information reveal is free in this paradigm.",
+      "block_id": "023_a_instructions",
+      "warning": ""
+    },
+    "Sample": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            200
+          ]
+        },
+        {
+          "key": "Active vs Baseline",
+          "value": [
+            200
+          ]
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": [
+            200
+          ]
+        }
+      ],
+      "evidence_source": "Table, 'N' column: Baseline N=100, Default NR N=100, Active N=100, Default R N=100. Each cell is a comparison of one Tmt (N=100) and the Ctr (N=100), so total N = 100 + 100 = 200.",
+      "block_id": "023_a_instructions",
+      "warning": ""
+    },
+    "N_Self_CI_Tmt": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            40
+          ]
+        },
+        {
+          "key": "Active vs Baseline",
+          "value": [
+            30
+          ]
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": [
+            25
+          ]
+        }
+      ],
+      "evidence_source": "Table, 'N' column and '% chose A' column: Default NR N=100, % chose A=40% (40 selfish choices); Active N=100, % chose A=30% (30 selfish choices); Default R N=100, % chose A=25% (25 selfish choices).",
+      "block_id": "023_a_instructions",
+      "warning": ""
+    },
+    "N_Self_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            20
+          ]
+        },
+        {
+          "key": "Active vs Baseline",
+          "value": [
+            20
+          ]
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": [
+            20
+          ]
+        }
+      ],
+      "evidence_source": "Table, 'N' column and '% chose A' column: Baseline N=100, % chose A=20% (20 selfish choices). This value is replicated for all cells sharing the 'Baseline' Ctr.",
+      "block_id": "023_a_instructions",
+      "warning": ""
+    },
+    "N_Altr_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            80
+          ]
+        },
+        {
+          "key": "Active vs Baseline",
+          "value": [
+            80
+          ]
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": [
+            80
+          ]
+        }
+      ],
+      "evidence_source": "Derived: 80 = 100 (N_Tot_CI_Ctr) - 20 (N_Self_CI_Ctr). N_Tot_CI_Ctr from Table, 'N' column for Baseline (100). N_Self_CI_Ctr from Table, '% chose A' for Baseline (20% of 100 = 20). This value is replicated for all cells sharing the 'Baseline' Ctr.",
+      "block_id": "023_a_instructions",
+      "warning": ""
+    },
+    "N_Tot_CI_Tmt": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            100
+          ]
+        },
+        {
+          "key": "Active vs Baseline",
+          "value": [
+            100
+          ]
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": [
+            100
+          ]
+        }
+      ],
+      "evidence_source": "Table, 'N' column: Default NR N=100, Active N=100, Default R N=100.",
+      "block_id": "023_a_instructions",
+      "warning": ""
+    },
+    "N_Tot_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            100
+          ]
+        },
+        {
+          "key": "Active vs Baseline",
+          "value": [
+            100
+          ]
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": [
+            100
+          ]
+        }
+      ],
+      "evidence_source": "Table, 'N' column: Baseline N=100. This value is replicated for all cells sharing the 'Baseline' Ctr.",
+      "block_id": "023_a_instructions",
+      "warning": ""
+    }
+  }
+}

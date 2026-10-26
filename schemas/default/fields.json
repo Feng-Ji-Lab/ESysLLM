@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "gender_specific": ["Sample", "Mean age"],
+  "study_specific":  ["Country", "Sample", "Mean age", "Correlation BAS-BMI"],
+  "fields": [
+    {
+      "name": "Country",
+      "type": "enum",
+      "allowed_values_ref": "code_book.json#/Country",
+      "description": "ISO country code of the study's participant pool"
+    },
+    {
+      "name": "Sample",
+      "type": "integer",
+      "description": "Number of participants analysed (respects the gender split if any)"
+    },
+    {
+      "name": "Mean age",
+      "type": "number",
+      "description": "Mean age of participants, in years"
+    },
+    {
+      "name": "Correlation BAS-BMI",
+      "type": "number",
+      "description": "Pearson r between Body Appreciation Scale and Body Mass Index"
+    },
+    {
+      "name": "Number of studies",
+      "type": "integer",
+      "description": "How many distinct studies / experiments the paper reports"
+    }
+  ]
+}

@@ -1,0 +1,413 @@
+{
+  "paper_id": "Eisman2017",
+  "pdf_path": "Eisman2017.pdf",
+  "marker_output_dir": "/projects/code/meta_analysis_agent/data/processed/buecker2023/Eisman2017",
+  "samples": [
+    {
+      "study_index": 1,
+      "sample_label": "whole sample | life satisfaction | wave 12"
+    }
+  ],
+  "fields": {
+    "Sample": {
+      "name": "Sample",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | life satisfaction | wave 12": {
+          "values": [
+            {
+              "value": 362,
+              "evidence": [
+                {
+                  "pdf_name": "Eisman2017.pdf",
+                  "section_id": "021_23_measures",
+                  "section_title": "2.3 Measures",
+                  "block_id": "/page/4/Table/11",
+                  "page": 4,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "/page/4/Table/11: \"Life satisfaction (N=362)\"",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    },
+    "infoYearT1": {
+      "name": "infoYearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "estimated",
+        "evidence": [
+          {
+            "pdf_name": "Eisman2017.pdf",
+            "section_id": "005_abstract",
+            "section_title": "Abstract",
+            "block_id": "005_abstract",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "The abstract mentions 'Wave 1: mean age = 14.86 years' but does not state the calendar year of data collection for Wave 1.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "yearT1": {
+      "name": "yearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 1992,
+        "evidence": [],
+        "derivation": {
+          "kind": "infer_constant",
+          "skill_name": "estimate_yeart1_from_pubyear",
+          "inputs": {
+            "publication_year": 2017,
+            "span": 22.0,
+            "span_source": "lag*11waves"
+          },
+          "formula": "yearT1 = publication_year - 3 - span",
+          "note": "Buecker gold estimation rule for an unreported (Estimated) baseline year"
+        },
+        "confidence": 0.4
+      }
+    },
+    "country": {
+      "name": "country",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "united states",
+        "evidence": [
+          {
+            "pdf_name": "Eisman2017.pdf",
+            "section_id": "005_abstract",
+            "section_title": "Abstract",
+            "block_id": "005_abstract",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/14] African American adolescents in an urban, disadvantaged community",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "Outcome_variable": {
+      "name": "Outcome_variable",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "life satisfaction, negative affect",
+        "evidence": [
+          {
+            "pdf_name": "Eisman2017.pdf",
+            "section_id": "005_abstract",
+            "section_title": "Abstract",
+            "block_id": "005_abstract",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/14] Adolescents in the increasing class reported higher life satisfaction and lower substance use in young adulthood compared to the decreasing class.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "sample_type": {
+      "name": "sample_type",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "community/convenience",
+        "evidence": [
+          {
+            "pdf_name": "Eisman2017.pdf",
+            "section_id": "005_abstract",
+            "section_title": "Abstract",
+            "block_id": "005_abstract",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/14] African American adolescents in an urban, disadvantaged community",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "ethnicity": {
+      "name": "ethnicity",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "predominantly black",
+        "evidence": [
+          {
+            "pdf_name": "Eisman2017.pdf",
+            "section_id": "005_abstract",
+            "section_title": "Abstract",
+            "block_id": "005_abstract",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/14] African American adolescents",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "lag": {
+      "name": "lag",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 2.0,
+        "evidence": [
+          {
+            "pdf_name": "Eisman2017.pdf",
+            "section_id": "020_22_participants",
+            "section_title": "2.2 Participants",
+            "block_id": "020_22_participants",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[020_22_participants] Mean age at Wave 1 was 14.86 years (standard deviation [SD] = 0.64). ... We used Wave 12 data to study young adult outcomes when the participants were in their mid-30s (mean age was 34.09 years, SD = 0.62). Waves 1 through 4 correspond to the participants' high school years. (Calculation: Age difference 34.09 - 14.86 = 19.23 years over 11 intervals (W1 to W12). If W1-W4 are annual (3 intervals of 1 year), then 3 years pass. Age at W4 = 14.86 + 3 = 17.86. Remaining 19.23 - 3 = 16.23 years over 8 intervals (W4 to W12). Average interval for W4-W12 = 16.23 / 8 = 2.02875 years. The modal interval is 2.0 years.)",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "M_SWB": {
+      "name": "M_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | life satisfaction | wave 12": {
+          "values": [
+            {
+              "value": 3.05,
+              "evidence": [
+                {
+                  "pdf_name": "Eisman2017.pdf",
+                  "section_id": "021_23_measures",
+                  "section_title": "2.3 Measures",
+                  "block_id": "/page/4/Table/11",
+                  "page": 4,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "/page/4/Table/11: \"Life satisfaction (N=362) 3.05 (1.02)\"",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    },
+    "SD_SWB": {
+      "name": "SD_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | life satisfaction | wave 12": {
+          "values": [
+            {
+              "value": 1.02,
+              "evidence": [
+                {
+                  "pdf_name": "Eisman2017.pdf",
+                  "section_id": "021_23_measures",
+                  "section_title": "2.3 Measures",
+                  "block_id": "/page/4/Table/11",
+                  "page": 4,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "/page/4/Table/11: \"Life satisfaction (N=362) 3.05 (1.02)\"",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    }
+  },
+  "warnings": [
+    {
+      "code": "ungrounded_candidate",
+      "message": "008_111_participation_over_time/infoYearT1: quote not found in section (likely hallucinated): 'No information about the baseline year of data collection for this study is prov'",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "010_113_selection_bias/ethnicity: quote not found in section (likely hallucinated): 'No information about the ethnicity of the sample is provided in the text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "013_121_depressive_symptoms/ethnicity: quote not found in section (likely hallucinated): 'No information about the ethnic composition of the sample is provided in this se'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "014_122_life_satisfaction/ethnicity: quote not found in section (likely hallucinated): 'No information about the ethnicity of the sample is provided in this section.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "016_124_educational_outcomes/ethnicity: quote not found in section (likely hallucinated): 'The text does not report the ethnic composition of the sample.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "017_13_current_study/ethnicity: quote not found in section (likely hallucinated): 'Ethnicity composition is not reported in the provided text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "018_2_method/infoYearT1: quote not found in section (likely hallucinated): 'The data were collected in 2010 (Time 1), 2011 (Time 2), and 2012 (Time 3).'",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "018_2_method/yearT1: quote not found in section (likely hallucinated): 'The data were collected in 2010 (Time 1), 2011 (Time 2), and 2012 (Time 3).'",
+      "field_name": "yearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "018_2_method/country: quote not found in section (likely hallucinated): 'The sample consisted of 1,000 participants from the general population in German'",
+      "field_name": "country",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "018_2_method/Outcome_variable: quote not found in section (likely hallucinated): 'Life satisfaction was assessed using the Satisfaction with Life Scale (SWLS; Die'",
+      "field_name": "Outcome_variable",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "018_2_method/sample_type: quote not found in section (likely hallucinated): 'The sample consisted of 1,000 participants from the general population in German'",
+      "field_name": "sample_type",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "018_2_method/ethnicity: quote not found in section (likely hallucinated): 'The sample consisted of 1,000 participants from the general population in German'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "018_2_method/lag: quote not found in section (likely hallucinated): 'The data were collected in 2010 (Time 1), 2011 (Time 2), and 2012 (Time 3).'",
+      "field_name": "lag",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "021_23_measures/infoYearT1: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "021_23_measures/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "032_24_data_analytic_strategy/ethnicity: quote not found in section (likely hallucinated): 'No information about the ethnicity of the sample is provided in this section.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "042_4_discussion/ethnicity: quote not found in section (likely hallucinated): 'No information about the ethnic composition of the sample is provided.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "047_43_conclusion/ethnicity: quote not found in section (likely hallucinated): 'The text does not provide any information about the ethnic composition of the sa'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    }
+  ],
+  "run_meta": {
+    "run_id": "Eisman2017",
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "schema_name": "buecker2023",
+    "schema_version": 1,
+    "skill_names": [
+      "bas2_over_bas",
+      "compute_weighted_mean_total",
+      "estimate_yeart1_from_pubyear",
+      "gender-mapping",
+      "hien_arm_taxonomy",
+      "infer_college_sample_100",
+      "infer_ethnicity_from_country",
+      "info_cost_clamp_zero",
+      "ng_mediator_lookup",
+      "ng_source_smallest_number",
+      "single_gender_fill",
+      "study_naming",
+      "table-parsing",
+      "total_geq_sum",
+      "vu_altr_ctr_identity",
+      "vu_cell_count_localization",
+      "vu_cell_terminology",
+      "vu_country_mturk",
+      "vu_info_cost_default"
+    ],
+    "started_at": "2026-07-08T16:12:44.115513Z",
+    "finished_at": "2026-07-08T16:12:51.736581Z",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "passes": 464,
+    "aggregator_passes": 10
+  }
+}

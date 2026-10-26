@@ -1,0 +1,210 @@
+{
+  "prompt_tokens": 14034,
+  "completion_tokens": 5039,
+  "data": {
+    "Design": {
+      "extract_value": "between-subject",
+      "evidence_source": "The paper describes different conditions (Baseline, Default NR, Active Choice, Default R, Strategy Method) and compares outcomes between them, implying participants were assigned to one condition.",
+      "block_id": "None",
+      "warning": ""
+    },
+    "country": {
+      "extract_value": "None",
+      "evidence_source": "The provided text does not mention the country where the study was conducted or the recruitment platform used.",
+      "block_id": "None",
+      "warning": ""
+    },
+    "info_cost": {
+      "extract_value": 0.0,
+      "evidence_source": "The text mentions 'choosing to remain ignorant' and 'overcoming the default choice in order to select 'reveal'' but does not state any monetary cost for revealing information.",
+      "block_id": "/page/8/Text/2",
+      "warning": ""
+    },
+    "Sample": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            65
+          ]
+        },
+        {
+          "key": "Active Choice vs Baseline",
+          "value": [
+            26
+          ]
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": [
+            26
+          ]
+        },
+        {
+          "key": "Strategy Method vs Baseline",
+          "value": [
+            61
+          ]
+        }
+      ],
+      "evidence_source": "Default NR vs Baseline: N_Tot_CI_Tmt = 39 from Table 1 'Default NR' row 'N' column 'Replication'; N_Tot_CI_Ctr = 26 from Table 1 'Baseline' row 'N' column 'Replication'. Sum = 39 + 26 = 65. Active Choice vs Baseline: N_Tot_CI_Tmt is not reported; N_Tot_CI_Ctr = 26 from Table 1 'Baseline' row 'N' column 'Replication'. Default R vs Baseline: N_Tot_CI_Tmt is not reported; N_Tot_CI_Ctr = 26 from Table 1 'Baseline' row 'N' column 'Replication'. Strategy Method vs Baseline: N_Tot_CI_Tmt = 35 from '/page/9/Text/5' 'Out of 35 participants,'; N_Tot_CI_Ctr = 26 from Table 1 'Baseline' row 'N' column 'Replication'. Sum = 35 + 26 = 61.",
+      "block_id": "/page/7/Text/4",
+      "warning": ""
+    },
+    "N_Self_CI_Tmt": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            23
+          ]
+        },
+        {
+          "key": "Active Choice vs Baseline",
+          "value": [
+            -999
+          ]
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": [
+            -999
+          ]
+        },
+        {
+          "key": "Strategy Method vs Baseline",
+          "value": [
+            19
+          ]
+        }
+      ],
+      "evidence_source": "Default NR vs Baseline: '23 of 39 (59%) chose in a manner inconsistent with a preference for the fair outcome' from '/page/7/Text/4'. Active Choice vs Baseline: N_Tot_CI_Tmt not reported, so N_Self_CI_Tmt cannot be derived. Default R vs Baseline: N_Tot_CI_Tmt not reported, so N_Self_CI_Tmt cannot be derived. Strategy Method vs Baseline: '19 (54%) chose to give the recipient the lower payoff in at least one payoff state' from '/page/10/Text/2'.",
+      "block_id": "/page/7/Text/4",
+      "warning": "N_Self_CI_Tmt for 'Active Choice vs Baseline' and 'Default R vs Baseline' cannot be extracted because N_Tot_CI_Tmt is not reported for these conditions."
+    },
+    "N_Self_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            9
+          ]
+        },
+        {
+          "key": "Active Choice vs Baseline",
+          "value": [
+            9
+          ]
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": [
+            9
+          ]
+        },
+        {
+          "key": "Strategy Method vs Baseline",
+          "value": [
+            9
+          ]
+        }
+      ],
+      "evidence_source": "Derived from Table 1 'Baseline' row 'Selfish (A)' column 'Replication' (.35) and 'N' column 'Replication' (26). N_Self_CI_Ctr = round(0.35 * 26) = 9.",
+      "block_id": "/page/8/Table/3",
+      "warning": ""
+    },
+    "N_Altr_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            17
+          ]
+        },
+        {
+          "key": "Active Choice vs Baseline",
+          "value": [
+            17
+          ]
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": [
+            17
+          ]
+        },
+        {
+          "key": "Strategy Method vs Baseline",
+          "value": [
+            17
+          ]
+        }
+      ],
+      "evidence_source": "Derived: N_Altr_CI_Ctr = N_Tot_CI_Ctr - N_Self_CI_Ctr = 26 - 9 = 17. N_Tot_CI_Ctr from Table 1 'Baseline' row 'N' column 'Replication' (26). N_Self_CI_Ctr derived from Table 1 'Baseline' row 'Selfish (A)' column 'Replication' (.35) and 'N' column 'Replication' (26).",
+      "block_id": "/page/8/Table/3",
+      "warning": ""
+    },
+    "N_Tot_CI_Tmt": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            39
+          ]
+        },
+        {
+          "key": "Active Choice vs Baseline",
+          "value": [
+            -999
+          ]
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": [
+            -999
+          ]
+        },
+        {
+          "key": "Strategy Method vs Baseline",
+          "value": [
+            35
+          ]
+        }
+      ],
+      "evidence_source": "Default NR vs Baseline: 'N' column 'Replication' for 'Default NR' row in Table 1 (39). Active Choice vs Baseline: Total N for Active Choice condition is not reported in the provided text. Default R vs Baseline: Total N for Default R condition is not reported in the provided text. Strategy Method vs Baseline: 'Out of 35 participants,' from '/page/9/Text/5'.",
+      "block_id": "/page/8/Table/3",
+      "warning": "N_Tot_CI_Tmt for 'Active Choice vs Baseline' and 'Default R vs Baseline' cannot be extracted as the total N for these conditions is not reported."
+    },
+    "N_Tot_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            26
+          ]
+        },
+        {
+          "key": "Active Choice vs Baseline",
+          "value": [
+            26
+          ]
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": [
+            26
+          ]
+        },
+        {
+          "key": "Strategy Method vs Baseline",
+          "value": [
+            26
+          ]
+        }
+      ],
+      "evidence_source": "'N' column 'Replication' for 'Baseline' row in Table 1 (26).",
+      "block_id": "/page/8/Table/3",
+      "warning": ""
+    }
+  }
+}

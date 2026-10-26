@@ -1,0 +1,174 @@
+{
+  "prompt_tokens": 13999,
+  "completion_tokens": 4075,
+  "data": {
+    "Design": {
+      "extract_value": "between-subject",
+      "evidence_source": "[034_appendix_b_descriptive_statistics] TABLE B.1. Percent of dictators choosing ignorance and percent of selfish (A) choices by information state (sample size in parentheses). The table lists different 'Treatment' conditions.",
+      "block_id": "/page/41/Table/6",
+      "warning": ""
+    },
+    "country": {
+      "extract_value": "None",
+      "evidence_source": "Country information is not provided in this appendix section.",
+      "block_id": "None",
+      "warning": ""
+    },
+    "info_cost": {
+      "extract_value": 0.0,
+      "evidence_source": "[034_appendix_b_descriptive_statistics] The table does not mention any monetary cost associated with revealing information.",
+      "block_id": "/page/41/Table/6",
+      "warning": ""
+    },
+    "Sample": {
+      "extract_value": [
+        {
+          "key": "Hidden Information vs CIG Only",
+          "value": [
+            50
+          ]
+        },
+        {
+          "key": "Reveal Ex post vs CIG Only",
+          "value": [
+            61
+          ]
+        },
+        {
+          "key": "Reveal Bonus vs CIG Only",
+          "value": [
+            34
+          ]
+        }
+      ],
+      "evidence_source": "Derived from N_Tot_CI_Tmt + N_Tot_CI_Ctr for each cell.",
+      "block_id": "/page/41/Table/6",
+      "warning": ""
+    },
+    "N_Self_CI_Tmt": {
+      "extract_value": [
+        {
+          "key": "Hidden Information vs CIG Only",
+          "value": [
+            4
+          ]
+        },
+        {
+          "key": "Reveal Ex post vs CIG Only",
+          "value": [
+            19
+          ]
+        },
+        {
+          "key": "Reveal Bonus vs CIG Only",
+          "value": [
+            2
+          ]
+        }
+      ],
+      "evidence_source": "[034_appendix_b_descriptive_statistics] TABLE B.1, row 'Hidden Information', column 'CIG': '17 (24)' -> round(0.17 * 24) = 4. [034_appendix_b_descriptive_statistics] TABLE B.1, row 'Reveal Ex post', column 'CIG': '54 (35)' -> round(0.54 * 35) = 19. [034_appendix_b_descriptive_statistics] TABLE B.1, row 'Reveal Bonus', column 'CIG': '25 (8)' -> round(0.25 * 8) = 2.",
+      "block_id": "/page/41/Table/6",
+      "warning": ""
+    },
+    "N_Self_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Hidden Information vs CIG Only",
+          "value": [
+            9
+          ]
+        },
+        {
+          "key": "Reveal Ex post vs CIG Only",
+          "value": [
+            9
+          ]
+        },
+        {
+          "key": "Reveal Bonus vs CIG Only",
+          "value": [
+            9
+          ]
+        }
+      ],
+      "evidence_source": "[034_appendix_b_descriptive_statistics] TABLE B.1, row 'CIG Only', column 'CIG': '35 (26)' -> round(0.35 * 26) = 9.",
+      "block_id": "/page/41/Table/6",
+      "warning": ""
+    },
+    "N_Altr_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Hidden Information vs CIG Only",
+          "value": [
+            17
+          ]
+        },
+        {
+          "key": "Reveal Ex post vs CIG Only",
+          "value": [
+            17
+          ]
+        },
+        {
+          "key": "Reveal Bonus vs CIG Only",
+          "value": [
+            17
+          ]
+        }
+      ],
+      "evidence_source": "Derived: 17 = 26 (N_Tot_CI_Ctr) - 9 (N_Self_CI_Ctr). N_Tot_CI_Ctr from [034_appendix_b_descriptive_statistics] TABLE B.1, row 'CIG Only', column 'CIG': '35 (26)'. N_Self_CI_Ctr derived from '35 (26)' as round(0.35 * 26) = 9.",
+      "block_id": "/page/41/Table/6",
+      "warning": ""
+    },
+    "N_Tot_CI_Tmt": {
+      "extract_value": [
+        {
+          "key": "Hidden Information vs CIG Only",
+          "value": [
+            24
+          ]
+        },
+        {
+          "key": "Reveal Ex post vs CIG Only",
+          "value": [
+            35
+          ]
+        },
+        {
+          "key": "Reveal Bonus vs CIG Only",
+          "value": [
+            8
+          ]
+        }
+      ],
+      "evidence_source": "[034_appendix_b_descriptive_statistics] TABLE B.1, row 'Hidden Information', column 'CIG': '17 (24)'. [034_appendix_b_descriptive_statistics] TABLE B.1, row 'Reveal Ex post', column 'CIG': '54 (35)'. [034_appendix_b_descriptive_statistics] TABLE B.1, row 'Reveal Bonus', column 'CIG': '25 (8)'.",
+      "block_id": "/page/41/Table/6",
+      "warning": ""
+    },
+    "N_Tot_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Hidden Information vs CIG Only",
+          "value": [
+            26
+          ]
+        },
+        {
+          "key": "Reveal Ex post vs CIG Only",
+          "value": [
+            26
+          ]
+        },
+        {
+          "key": "Reveal Bonus vs CIG Only",
+          "value": [
+            26
+          ]
+        }
+      ],
+      "evidence_source": "[034_appendix_b_descriptive_statistics] TABLE B.1, row 'CIG Only', column 'CIG': '35 (26)'.",
+      "block_id": "/page/41/Table/6",
+      "warning": ""
+    }
+  }
+}

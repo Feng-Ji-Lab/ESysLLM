@@ -1,0 +1,138 @@
+{
+  "prompt_tokens": 12206,
+  "completion_tokens": 4404,
+  "data": {
+    "Design": {
+      "extract_value": "between-subject",
+      "evidence_source": "The text reports distinct N values for each treatment group (e.g., '14 out of 48' for 'Conict treatment', '25 out of 43' for 'Before treatment', '14 out of 42' for 'After treatment'), indicating independent groups rather than the same participants experiencing multiple conditions.",
+      "block_id": "/page/18/Text/1",
+      "warning": ""
+    },
+    "country": {
+      "extract_value": "None",
+      "evidence_source": "No information about the country where the study was conducted is provided in the text.",
+      "block_id": "None",
+      "warning": ""
+    },
+    "info_cost": {
+      "extract_value": 0.0,
+      "evidence_source": "No explicit mention of a monetary cost for information revelation is made in the provided text. The default for this meta-analysis is 0.0.",
+      "block_id": "None",
+      "warning": ""
+    },
+    "Sample": {
+      "extract_value": [
+        {
+          "key": "Before treatment vs Conict treatment",
+          "value": [
+            91
+          ]
+        },
+        {
+          "key": "After treatment vs Conict treatment",
+          "value": [
+            90
+          ]
+        }
+      ],
+      "evidence_source": "Derived from N_Tot_CI_Tmt and N_Tot_CI_Ctr for each cell. For 'Before treatment vs Conict treatment': 43 + 48 = 91. For 'After treatment vs Conict treatment': 42 + 48 = 90.",
+      "block_id": "/page/18/Text/1",
+      "warning": ""
+    },
+    "N_Self_CI_Tmt": {
+      "extract_value": [
+        {
+          "key": "Before treatment vs Conict treatment",
+          "value": [
+            25
+          ]
+        },
+        {
+          "key": "After treatment vs Conict treatment",
+          "value": [
+            14
+          ]
+        }
+      ],
+      "evidence_source": "['/page/18/Text/1'] 'They choose the selsh option in 58% (25 out of 43) of cases in the Before treatment.' (for Before treatment); ['/page/18/Text/1'] 'However, the rate of selsh choices drops to 33% (14 out of 42) of the cases in the After treatment.' (for After treatment)",
+      "block_id": "/page/18/Text/1",
+      "warning": ""
+    },
+    "N_Self_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Before treatment vs Conict treatment",
+          "value": [
+            14
+          ]
+        },
+        {
+          "key": "After treatment vs Conict treatment",
+          "value": [
+            14
+          ]
+        }
+      ],
+      "evidence_source": "['/page/18/Text/1'] 'In the Con ict treatment, 29% (14 out of 48) of dictators choose the selsh option.'",
+      "block_id": "/page/18/Text/1",
+      "warning": ""
+    },
+    "N_Altr_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Before treatment vs Conict treatment",
+          "value": [
+            34
+          ]
+        },
+        {
+          "key": "After treatment vs Conict treatment",
+          "value": [
+            34
+          ]
+        }
+      ],
+      "evidence_source": "Derived: 34 = 48 (N_Tot_CI_Ctr) - 14 (N_Self_CI_Ctr). N_Tot_CI_Ctr and N_Self_CI_Ctr from ['/page/18/Text/1'] 'In the Con ict treatment, 29% (14 out of 48) of dictators choose the selsh option.'",
+      "block_id": "/page/18/Text/1",
+      "warning": ""
+    },
+    "N_Tot_CI_Tmt": {
+      "extract_value": [
+        {
+          "key": "Before treatment vs Conict treatment",
+          "value": [
+            43
+          ]
+        },
+        {
+          "key": "After treatment vs Conict treatment",
+          "value": [
+            42
+          ]
+        }
+      ],
+      "evidence_source": "['/page/18/Text/1'] 'They choose the selsh option in 58% (25 out of 43) of cases in the Before treatment.' (for Before treatment); ['/page/18/Text/1'] 'However, the rate of selsh choices drops to 33% (14 out of 42) of the cases in the After treatment.' (for After treatment)",
+      "block_id": "/page/18/Text/1",
+      "warning": ""
+    },
+    "N_Tot_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Before treatment vs Conict treatment",
+          "value": [
+            48
+          ]
+        },
+        {
+          "key": "After treatment vs Conict treatment",
+          "value": [
+            48
+          ]
+        }
+      ],
+      "evidence_source": "['/page/18/Text/1'] 'In the Con ict treatment, 29% (14 out of 48) of dictators choose the selsh option.'",
+      "block_id": "/page/18/Text/1",
+      "warning": ""
+    }
+  }
+}

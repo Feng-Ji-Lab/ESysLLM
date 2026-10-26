@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "meta_analysis": "Bowes, Costello & Tasimi (2023) — The Conspiratorial Mind: motivational and personological correlates of conspiratorial ideation",
+  "doi": "10.1037/bul0000392",
+  "jansen_label": "Bowes2023",
+  "rationale": "Bowes is a CORRELATES meta-analysis: each effect size is a zero-order correlation r between conspiratorial ideation and a psychological construct, nested article -> study -> SAMPLE -> effect-size. We replicate EXACTLY the variables Jansen 2025 benchmarked (no extras): study-level YearOfPub, CTType, COVID, Outcome; sample-level Females and Sample(recruitment); and the effect-size triple outcome/es/N (phase 2). KEY granularity decision: studies ~= articles (169 studies / 165 articles, multi-study rare) but SAMPLES are frequently multiple (257 samples / 169 studies; e.g. Betsch2018 = 1 study, 2 samples). So Females, recruitment and N are SAMPLE-scoped (each sample has its own), unlike Jansen who collapsed to one-per-paper. CRITICAL FIX: gold `Females` is a PERCENTAGE (0-100, mean 56.95), not an absolute count — Jansen extracted counts and scored 0.03; we extract female_pct to match gold. Gold lives in RDataFile2023Final.xlsx 'For R' sheet.",
+  "fields": [
+    {
+      "name": "Sample",
+      "scope": "sample",
+      "gender_specific": false,
+      "type": "object",
+      "items_type": "integer",
+      "definition": "Anchors the within-paper sample census. Each distinct participant SAMPLE the paper reports correlations for is one record. Most papers have ONE sample -> sample_key 'main sample'. A paper that reports SEPARATE samples / studies / data collections with their own N and their own correlation set emits one record per sample -> 'Study 1', 'Study 2' (or 'Sample 1', 'Sample 2'). DO NOT put author/year in the sample_key. total_n is this sample's overall N (the denominator the correlations are based on). The Females / Sample-recruitment values and the effect sizes key off these same sample labels. YearOfPub / CTType / COVID / Outcome are study-level (shared across the paper's samples)."
+    },
+    {
+      "name": "YearOfPub",
+      "scope": "study",
+      "gender_specific": false,
+      "type": "integer",
+      "items_type": "integer",
+      "range": [1990, 2023],
+      "definition": "Official year of publication of the article (format XXXX). Not the submission/acceptance/online-posting year unless that is the only date available.",
+      "skill_hints": "Look at the study header, citation/copyright line, or any year on the first page ('published', 'online', copyright year). One value per paper.",
+      "validator_match": "numeric_exact"
+    },
+    {
+      "name": "CTType",
+      "scope": "study",
+      "gender_specific": false,
+      "type": "multi_label",
+      "items_type": "enum",
+      "allowed_values": ["General", "Specific", "Stereotype", "Scenario", "Fictitious", "Mix"],
+      "value_labels": {
+        "General": "General belief in conspiracy theories with no focus on specific events/narratives (e.g. generic conspiracist-belief scales).",
+        "Specific": "Concrete, event-based conspiracy theories (e.g. 9/11 was an inside job, faked moon landing).",
+        "Stereotype": "Conspiracy beliefs tied to outgroup stereotypes (e.g. a group conspiring for dominance).",
+        "Scenario": "Hypothetical/scenario-based conspiracies where participants read a conspiratorial scenario.",
+        "Fictitious": "Conspiracy theories that are not publicly circulated (invented for the study, e.g. Red Bull is carcinogenic and hidden).",
+        "Mix": "Combines different conspiracy types, or does not differentiate specific vs general."
+      },
+      "definition": "Type of conspiracy theory the study's conspiratorial-ideation measure assessed. Multi-label only when the study genuinely uses more than one distinct type; otherwise a single token. Map to 'Mix' when types are combined / undifferentiated.",
+      "skill_hints": "Read the conspiracy-belief MEASURE described in Methods/Materials. Generic Conspiracist Beliefs Scale / Conspiracy Mentality -> General. Named real events -> Specific. Invented item -> Fictitious. Scenario vignette -> Scenario. Outgroup-stereotype items -> Stereotype.",
+      "validator_match": "set_overlap"
+    },
+    {
+      "name": "Females",
+      "scope": "sample",
+      "gender_specific": false,
+      "comment_on_gender": "IS the gender metric, expressed as PERCENT female of the sample (gold convention), NOT decomposed [total,female,male] and NOT an absolute count.",
+      "type": "number",
+      "unit": "percent",
+      "range": [0, 100],
+      "precision_dp": 2,
+      "definition": "Percentage of THIS sample that is female (0-100). Bowes gold stores female PERCENT, so report a percentage even if the paper gives a raw count: female_pct = (n_female / N) * 100. If only n_male is given, female_pct = (N - n_male)/N * 100. All-female -> 100; all-male -> 0. One value per SAMPLE (a paper with two samples has two female% values).",
+      "skill_hints": "Find the Participants/Sample demographics for EACH sample. Keywords: 'female', 'women', 'male', 'men', '% female', 'gender'. Convert any count to a percentage of that sample's N. Do NOT report the absolute number.",
+      "validator_match": "numeric_tolerance",
+      "validator_tolerance": 1.0,
+      "fallback_tolerance": 3.0
+    },
+    {
+      "name": "SampleType",
+      "scope": "sample",
+      "gender_specific": false,
+      "jansen_label": "Sample",
+      "type": "enum",
+      "items_type": "string",
+      "allowed_values": ["Student", "Com", "Mixed", "Soldier"],
+      "value_labels": {
+        "Student": "Recruited from university/college student populations.",
+        "Com": "Community / general public / online panel (e.g. MTurk, Prolific, general adult sample).",
+        "Mixed": "Composed of participants from more than one category (e.g. students AND community).",
+        "Soldier": "Military personnel, serving or with a military background."
+      },
+      "definition": "Recruitment category of THIS sample (Jansen variable 'Sample'). One value per sample. Use 'Mixed' when a single sample combines multiple recruitment sources; use 'Com' for general-public / online-panel adults.",
+      "skill_hints": "Read recruitment text in Methods/Participants. 'undergraduates / psychology students' -> Student. 'MTurk / Prolific / online panel / general public / community adults' -> Com. 'students and community' in one sample -> Mixed. 'soldiers / military / veterans' -> Soldier.",
+      "validator_match": "string_normalized"
+    },
+    {
+      "name": "COVID",
+      "scope": "study",
+      "gender_specific": false,
+      "type": "enum",
+      "items_type": "string",
+      "allowed_values": ["Yes", "No"],
+      "value_labels": {
+        "Yes": "The conspiracy measure specifically assessed COVID-19 conspiracy theories.",
+        "No": "The measure did not specifically assess COVID-19 conspiracy theories."
+      },
+      "definition": "Whether the study specifically assessed COVID-19 conspiracy theories. 'Yes' only if the conspiratorial-ideation measure is explicitly about COVID-19/pandemic conspiracies; otherwise 'No'.",
+      "skill_hints": "Look at the conspiracy measure / Materials. Keywords: 'COVID-19', 'coronavirus', 'pandemic'. A general conspiracy scale that happens to be administered during 2020-2022 is still 'No' unless its ITEMS are COVID-specific.",
+      "validator_match": "string_normalized"
+    },
+    {
+      "name": "Outcome",
+      "scope": "study",
+      "gender_specific": false,
+      "type": "multi_label",
+      "items_type": "enum",
+      "allowed_values": ["AOT","Agree","Alien","Anger","Anomie","Antag","Anthro","Anx","BDW","BSR","CRT","CollNarc","CollSelfEst","ConjFall","Consc","Control","Cyn","DeathAnx","Delusion","Depression","Detach","Dis","Dog","Efficacy","ExThreat","Extra","HH","Hostility","IOA","IndNarc","IndSelfEst","IntCT","NFCog","NFUnique","NeedClose","NegAff","Neuro","Open","PNR","Paranoia","PercInt","PhysAgg","Powerlessness","Psych","REII","REIR","RWA","SDO","Schizo","SocThreat","Trust","UnusExp","VerbAgg"],
+      "value_labels": {
+        "Agree": "Agreeableness", "Alien": "Alienation", "Anger": "Anger", "Anomie": "Anomie",
+        "Antag": "Antagonism", "Anthro": "Anthropomorphism", "Anx": "Anxiety",
+        "AOT": "Actively Open-minded Thinking", "BDW": "Belief in a Dangerous World",
+        "BSR": "Bullshit Receptivity", "CollNarc": "Collective Narcissism",
+        "CollSelfEst": "Collective Self-Esteem", "ConjFall": "Conjunction Fallacy",
+        "Consc": "Conscientiousness", "Control": "Sense of control/power", "CRT": "Cognitive Reflection",
+        "Cyn": "Cynicism", "DeathAnx": "Death Anxiety", "Delusion": "Delusion-proneness",
+        "Depression": "Depression", "Detach": "Detachment", "Dis": "Disinhibition", "Dog": "Dogmatism",
+        "Efficacy": "Efficacy", "ExThreat": "Existential threat", "Extra": "Extraversion",
+        "HH": "Honesty-Humility", "Hostility": "Hostility", "IndNarc": "Individual narcissism",
+        "IndSelfEst": "Individual self-esteem", "IntCT": "Intelligence", "IOA": "Intolerance of ambiguity",
+        "NeedClose": "Need for closure", "NegAff": "Negative affect", "Neuro": "Neuroticism",
+        "NFCog": "Need for Cognition", "NFUnique": "Need for Uniqueness", "Open": "Openness",
+        "Paranoia": "Paranoia", "PercInt": "Perceived Intentionality", "PhysAgg": "Physical Aggression",
+        "PNR": "Perceived non-randomness/illusory pattern perception", "Powerlessness": "Powerlessness",
+        "Psych": "Psychoticism", "REII": "Self-reported intuition", "REIR": "Self-reported rationality",
+        "RWA": "Right-wing authoritarianism", "Schizo": "Schizotypy", "SDO": "Social dominance orientation",
+        "SocThreat": "Social threat perception", "Trust": "Trust in others",
+        "UnusExp": "Susceptibility to unusual experiences", "VerbAgg": "Verbal Aggression"
+      },
+      "definition": "The set of psychological/behavioral constructs the study correlated with conspiratorial ideation, each mapped to its controlled-vocabulary token. Multi-label: list every construct measured. Map a measured construct to a token ONLY when it clearly matches; skip constructs with no token. This is the study-level union of the per-effect-size `outcome` values.",
+      "skill_hints": "Read Methods (Measures) and the correlation table headers/results. Each scale that is correlated with the conspiracy measure -> its token (e.g. Big Five NEO -> Neuro/Extra/Open/Agree/Consc; RWA scale -> RWA; paranoia scale -> Paranoia). Use the correlation matrix as the authoritative list of measured constructs.",
+      "validator_match": "set_overlap"
+    }
+  ]
+}

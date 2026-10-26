@@ -1,0 +1,210 @@
+{
+  "prompt_tokens": 14034,
+  "completion_tokens": 8748,
+  "data": {
+    "Design": {
+      "extract_value": "between-subject",
+      "evidence_source": "The paper compares different conditions (Baseline, Default NR, Active Choice, Default R, Strategy Method) and their respective rates, implying participants were assigned to one condition.",
+      "block_id": "None",
+      "warning": ""
+    },
+    "country": {
+      "extract_value": "None",
+      "evidence_source": "No information about the country where the study was conducted or the recruitment platform was provided in the text.",
+      "block_id": "None",
+      "warning": ""
+    },
+    "info_cost": {
+      "extract_value": 0.0,
+      "evidence_source": "No explicit mention of a monetary cost to acquire information about the recipient's payoff was found in the provided text. The default assumption is 0.0.",
+      "block_id": "None",
+      "warning": ""
+    },
+    "Sample": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            37
+          ]
+        },
+        {
+          "key": "Active Choice vs Baseline",
+          "value": [
+            1
+          ]
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": [
+            1
+          ]
+        },
+        {
+          "key": "Strategy Method vs Baseline",
+          "value": [
+            1
+          ]
+        }
+      ],
+      "evidence_source": "Derived from N_Tot_CI_Tmt + N_Tot_CI_Ctr for each cell. For 'Default NR vs Baseline': 11 (N_Tot_CI_Tmt) + 26 (N_Tot_CI_Ctr) = 37. For other cells, N_Tot_CI_Tmt is not reported.",
+      "block_id": "None",
+      "warning": "Sample for 'Active Choice vs Baseline', 'Default R vs Baseline', and 'Strategy Method vs Baseline' is set to 1 as N_Tot_CI_Tmt is None, but the schema requires an integer array. This is a placeholder for 'None'."
+    },
+    "N_Self_CI_Tmt": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            2
+          ]
+        },
+        {
+          "key": "Active Choice vs Baseline",
+          "value": [
+            1
+          ]
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": [
+            1
+          ]
+        },
+        {
+          "key": "Strategy Method vs Baseline",
+          "value": [
+            1
+          ]
+        }
+      ],
+      "evidence_source": "For 'Default NR vs Baseline': Table 1, row 'Default NR', 'Reveal & CI giving (N)' column under 'Replication' shows '.82 (11)'. This means 11 participants revealed and were in the CI game, and 82% of them gave (5,5). Therefore, 18% chose (6,1) selfishly. 0.18 * 11 = 1.98, rounded to 2. For 'Active Choice vs Baseline', 'Default R vs Baseline', and 'Strategy Method vs Baseline': The text provides 'inconsistency rates' or 'ignorance rates' for the overall condition, but not the specific number of selfish choices in the conflict state (after revealing information).",
+      "block_id": "/page/8/Table/0",
+      "warning": "N_Self_CI_Tmt for 'Active Choice vs Baseline', 'Default R vs Baseline', and 'Strategy Method vs Baseline' is set to 1 as the value is None, but the schema requires an integer array. This is a placeholder for 'None'."
+    },
+    "N_Self_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            9
+          ]
+        },
+        {
+          "key": "Active Choice vs Baseline",
+          "value": [
+            9
+          ]
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": [
+            9
+          ]
+        },
+        {
+          "key": "Strategy Method vs Baseline",
+          "value": [
+            9
+          ]
+        }
+      ],
+      "evidence_source": "Table 1, row 'Baseline', 'Selfish (A)' column under 'Replication' shows '.35'. N for Baseline is 26. So, N_Self_CI_Ctr = round(0.35 * 26) = 9.1, rounded to 9. This value is replicated across all cells sharing the 'Baseline' Ctr.",
+      "block_id": "/page/8/Table/0",
+      "warning": ""
+    },
+    "N_Altr_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            17
+          ]
+        },
+        {
+          "key": "Active Choice vs Baseline",
+          "value": [
+            17
+          ]
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": [
+            17
+          ]
+        },
+        {
+          "key": "Strategy Method vs Baseline",
+          "value": [
+            17
+          ]
+        }
+      ],
+      "evidence_source": "Derived: N_Altr_CI_Ctr = N_Tot_CI_Ctr - N_Self_CI_Ctr. For Baseline, N_Tot_CI_Ctr = 26 and N_Self_CI_Ctr = 9. So, 26 - 9 = 17. This value is replicated across all cells sharing the 'Baseline' Ctr.",
+      "block_id": "/page/8/Table/0",
+      "warning": ""
+    },
+    "N_Tot_CI_Tmt": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            11
+          ]
+        },
+        {
+          "key": "Active Choice vs Baseline",
+          "value": [
+            1
+          ]
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": [
+            1
+          ]
+        },
+        {
+          "key": "Strategy Method vs Baseline",
+          "value": [
+            1
+          ]
+        }
+      ],
+      "evidence_source": "For 'Default NR vs Baseline': Table 1, row 'Default NR', 'Reveal & CI giving (N)' column under 'Replication' shows '(11)'. This indicates 11 participants revealed and were in the conflict of interest (CI) game, which represents the conflict state. For 'Active Choice vs Baseline', 'Default R vs Baseline', and 'Strategy Method vs Baseline': The text provides overall Ns for the conditions (e.g., 35 for Strategy Method) but does not specify the number of participants who reached the conflict state (i.e., revealed information).",
+      "block_id": "/page/8/Table/0",
+      "warning": "N_Tot_CI_Tmt for 'Active Choice vs Baseline', 'Default R vs Baseline', and 'Strategy Method vs Baseline' is set to 1 as the value is None, but the schema requires an integer array. This is a placeholder for 'None'."
+    },
+    "N_Tot_CI_Ctr": {
+      "extract_value": [
+        {
+          "key": "Default NR vs Baseline",
+          "value": [
+            26
+          ]
+        },
+        {
+          "key": "Active Choice vs Baseline",
+          "value": [
+            26
+          ]
+        },
+        {
+          "key": "Default R vs Baseline",
+          "value": [
+            26
+          ]
+        },
+        {
+          "key": "Strategy Method vs Baseline",
+          "value": [
+            26
+          ]
+        }
+      ],
+      "evidence_source": "Table 1, row 'Baseline', 'N' column under 'Replication' shows '26'. This value is replicated across all cells sharing the 'Baseline' Ctr.",
+      "block_id": "/page/8/Table/0",
+      "warning": ""
+    }
+  }
+}

@@ -1,0 +1,221 @@
+# Ng 2023 — mediator → instrument lookup
+# ===========================================
+# Maps each candidate mediator category (MedCat) to the set of instruments
+# commonly used to measure it in youth-depression CBT/IPT trials.
+#
+# This is the #1 leverage file for fixing Jansen's 20% MedCat accuracy floor.
+# At extraction time the agent reads the Methods § Measures and looks up each
+# instrument name in this table to determine its MedCat code.
+#
+# Derived from:
+#   - Ng codebook ("Codebook How Does Psychotherapy Improve Youth Depression",
+#     pp. 5–7 mediator definitions; pp. 11–13 Source codes)
+#   - Ng 2023 paper Table 1 (28 CBT trials, p. 516–519) and Table 3 (7 IPT
+#     trials, p. 525) — the publication-ready dump of MeasureCharacteristics.xlsx
+#
+# Mediator codes match d_long.xlsx exactly:
+#   1=negative_cognition (MA)   2=pleasant_activities (MB)
+#   3=problem_solving (MC)      4=reframing (MD)
+#   5=social_engagement (ME)    99=outcome (depression symptoms)
+#   l2=family_functioning (ML2) l29=avoidance (ML29)
+
+mediators:
+
+  negative_cognition:
+    code: "1"
+    csv_var_type: "MA"
+    codebook_letter: "a"
+    description: >
+      Cognitive distortion, jumping to negative conclusions, irrational/
+      unrealistic beliefs, depressogenic thoughts/schemas, dysfunctional
+      attitudes, pessimistic explanatory/attributional style, negative
+      self-concept/self-esteem/self-worth, external locus of control, low
+      perceived sense of control, rumination/worry, self-blame, hopelessness.
+    instruments:
+      - "ATQ"   # Automatic Thoughts Questionnaire
+      - "ATQ-30"
+      - "ATQ-R"
+      - "CNCEQ" # Children's Negative Cognitive Error Questionnaire
+      - "DAS"   # Dysfunctional Attitude Scale
+      - "BHS"   # Beck Hopelessness Scale
+      - "HSC"   # Hopelessness Scale for Children
+      - "CASQ"  # Children's Attributional Style Questionnaire
+      - "CASQ-R"
+      - "ACSQ"  # Adolescent Cognitive Style Questionnaire
+      - "RSES"  # Rosenberg Self-Esteem Scale
+      - "CSEI"  # Coopersmith Self-Esteem Inventory
+      - "PHCSCS" # Piers-Harris Children's Self-Concept Scale
+      - "SPPC"  # Self-Perception Profile for Children
+      - "Perceived Competence Scale"
+      - "Cognitive Triad Inventory for Children"
+      - "Perceived Control Scale for Children"
+      - "Personal Beliefs Inventory"
+      - "Children's Nowicki-Strickland Internal-External Scale"
+      - "Academic Self-Concept Scale"
+      - "BASC-2 locus of control"
+      - "BASC-2 self-esteem"
+      - "BASC-2 sense of inadequacy"
+      - "CPRS-R perfectionism"
+      - "SPSI-R negative problem orientation"
+
+  pleasant_activities:
+    code: "2"
+    csv_var_type: "MB"
+    codebook_letter: "b"
+    description: >
+      Engagement in / scheduling of activities one enjoys; hobbies, relaxation,
+      physical activity. NOT social activities (those go under social_engagement).
+    instruments:
+      - "PES"   # Pleasant Events Schedule
+      - "PASCET skills - behavioral activation"
+      - "SAICA - spare time"
+
+  problem_solving:
+    code: "3"
+    csv_var_type: "MC"
+    codebook_letter: "c"
+    description: >
+      Skill or effort in changing external, objective conditions; primary
+      control coping; active coping; conflict resolution; generating solutions;
+      asking others for help; action stage of change.
+    instruments:
+      - "Self-Report Coping Scale - problem solving"
+      - "FAD - problem solving"
+      - "FICS - adolescent problem solving"
+      - "List of Social Situation Problems"
+      - "Children's Coping Strategies Checklist-R active coping"
+      - "ACS - problem solving"
+      - "ACS - reference to others"
+      - "SPSI-R rational problem solving"
+      - "SOCQ action"
+      - "RSQ primary control engagement coping"
+
+  reframing:
+    code: "4"
+    csv_var_type: "MD"
+    codebook_letter: "d"
+    description: >
+      Skill or effort in changing internal, subjective thinking; secondary
+      control coping; cognitive restructuring; distraction; thinking positive
+      thoughts; finding the silver lining; acceptance; distancing from negative
+      thoughts; positive orientation toward problems.
+    instruments:
+      - "Frequency of Self-Reinforcement Attitudes Scale"
+      - "Subjective Probability Questionnaire"
+      - "Emotional Regulation Questionnaire - reappraisal"
+      - "SPSI-R positive problem orientation"
+      - "RSQ secondary control engagement coping"
+      - "PASCET skills - cognitive skills"
+
+  social_engagement:
+    code: "5"
+    csv_var_type: "ME"
+    codebook_letter: "e"
+    description: >
+      Social skills, social participation, positive self-presentation, social
+      adjustment, quality of interpersonal relationships, social support,
+      loneliness, sociometric likability/popularity, prosocial behavior,
+      positive behavior with peers, peer/dating relationship quality.
+      2/3 rule applies: a measure with mostly general/peer social content (but
+      some family items) still codes here.
+    instruments:
+      - "MESSY"  # Matson Evaluation of Social Skills with Youngsters
+      - "Number of friends"
+      - "Satisfaction with friend relationships"
+      - "Children's Self-Efficacy for Peer Interaction"
+      - "Personality Inventory for Children - social skills"
+      - "BASC-2 - interpersonal relations"
+      - "BASC-2 - social skills"
+      - "PES - social skills"
+      - "SAS-SR friends"
+      - "SAS-SR dating"
+      - "NRI peer"
+      - "Loneliness Scale"
+      - "NRI friend social support"
+      - "Asperger Syndrome Diagnostic Interview - social skills"
+      - "Autism Spectrum Quotient - social skills"
+      - "CBCL social withdrawal"
+      - "CBCL social abilities"
+      - "Social Adjustment Scale for Children and Adolescents"
+      - "CPRS-R Social Problems subscale"
+      - "SAICA - peers"
+      - "SAICA - schooling"
+      - "SAS-SR (modified) - peer impairment"
+      - "SAS-SR (modified) - social impairment"
+
+  family_functioning:
+    code: "l2"
+    csv_var_type: "ML2"
+    codebook_letter: "L2"
+    description: >
+      Any family relationship problem: dysfunction, lack of cohesion, parent/
+      family expressed emotion (criticism, hostility, emotional overinvolvement),
+      parent-youth communication problems, conflicts and fights, relationship
+      quality.
+    instruments:
+      - "FAD"   # Family Assessment Device (any subscale except problem_solving)
+      - "FAM-III general child"
+      - "FAM-III general parent"
+      - "FICS"  # Family Interaction Coding System
+      - "CRPBI" # Children's Report of Parenting Behavior Inventory
+      - "CBQ"   # Conflict Behavior Questionnaire
+      - "IC"    # Issues Checklist
+      - "Family Environment Scale - family cohesion"
+      - "NRI parent"
+      - "Child FACES Family Score"
+      - "Conners-Wells Self-Report - family problems"
+      - "BASC-2 - relations with parents"
+      - "Parent-child Communication Scale"
+      - "SAICA - family life"
+      - "NRI parental social support"
+      - "FEICS" # Family Emotional Involvement and Criticism Scale
+      - "SAS-SR family"
+
+  avoidance:
+    code: "l29"
+    csv_var_type: "ML29"
+    codebook_letter: "L29"
+    description: >
+      Avoidant coping; wishful thinking; denial; distancing from problem;
+      precontemplation stage of change.
+    instruments:
+      - "Self-Report Coping Scale - distancing"
+      - "ACS - nonproductive coping"
+      - "SPSI-R avoidant coping"
+      - "SOCQ precontemplation"
+      - "RSQ disengagement coping"
+      - "PASCET skills - avoidance"
+
+  outcome_depression_symptoms:
+    code: "99"
+    csv_var_type: "O"
+    codebook_letter: "O"
+    description: >
+      Depression symptom outcome measures (used as the dependent variable in
+      Ng's mediation paths; NOT a mediator).
+    instruments:
+      - "BDI"   # Beck Depression Inventory
+      - "BDI-II"
+      - "CDI"   # Children's Depression Inventory
+      - "CDI-S"
+      - "CES-D" # Center for Epidemiologic Studies Depression Scale
+      - "CES-DC"
+      - "K-SADS depression severity"
+      - "KSADS-PL depression"
+      - "RADS-2" # Reynolds Adolescent Depression Scale
+      - "MFQ"   # Mood and Feelings Questionnaire
+      - "PHQ-9"
+      - "PHQ-A"
+      - "CDRS-R" # Children's Depression Rating Scale - Revised (clinician-rated)
+      - "HRSD"  # Hamilton Rating Scale for Depression
+      - "HRSD-Bech"
+      - "Bellevue Index of Depression"
+
+# Tie-breaker rules (codebook p. 11):
+#   1. Prioritize CONTENTS of the measure over its title.
+#   2. 2/3 rule: if at least 2/3 of items fall in one category, code as that.
+#   3. For a measure used with multiple raters (youth, parent), code each
+#      occurrence separately; Source differs but MedCat is the same.
+#   4. Combination of CMHs (codebook code 6) is allowed but unattested in
+#      Ng's 34 trials; if the agent encounters one, prefer the higher-frequency
+#      single mediator over the combination.

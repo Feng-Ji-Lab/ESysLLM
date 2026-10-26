@@ -1,0 +1,679 @@
+{
+  "paper_id": "Dill2004",
+  "pdf_path": "Dill2004.pdf",
+  "marker_output_dir": "/projects/code/meta_analysis_agent/data/processed/buecker2023/Dill2004",
+  "samples": [
+    {
+      "study_index": 1,
+      "sample_label": "whole sample | negative affect | wave 1"
+    },
+    {
+      "study_index": 1,
+      "sample_label": "whole sample | negative affect | wave 2"
+    },
+    {
+      "study_index": 1,
+      "sample_label": "Males | negative affect | wave 1"
+    },
+    {
+      "study_index": 1,
+      "sample_label": "Males | negative affect | wave 2"
+    },
+    {
+      "study_index": 1,
+      "sample_label": "Females | negative affect | wave 1"
+    },
+    {
+      "study_index": 1,
+      "sample_label": "Females | negative affect | wave 2"
+    }
+  ],
+  "fields": {
+    "Sample": {
+      "name": "Sample",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | negative affect | wave 1": {
+          "values": [
+            {
+              "value": 296,
+              "evidence": [
+                {
+                  "pdf_name": "Dill2004.pdf",
+                  "section_id": "005_measures",
+                  "section_title": "Measures",
+                  "block_id": "/page/5/Table/2",
+                  "page": 5,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table I footnote: \"a n = 296.\"",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | negative affect | wave 2": {
+          "values": [
+            {
+              "value": 296,
+              "evidence": [
+                {
+                  "pdf_name": "Dill2004.pdf",
+                  "section_id": "005_measures",
+                  "section_title": "Measures",
+                  "block_id": "/page/5/Table/2",
+                  "page": 5,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table I footnote: \"a n = 296.\"",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - Males | negative affect | wave 1": {
+          "values": [
+            {
+              "value": null,
+              "evidence": [],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - Males | negative affect | wave 2": {
+          "values": [
+            {
+              "value": null,
+              "evidence": [],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - Females | negative affect | wave 1": {
+          "values": [
+            {
+              "value": null,
+              "evidence": [],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - Females | negative affect | wave 2": {
+          "values": [
+            {
+              "value": null,
+              "evidence": [],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    },
+    "infoYearT1": {
+      "name": "infoYearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "estimated",
+        "evidence": [
+          {
+            "pdf_name": "Dill2004.pdf",
+            "section_id": "001_negative_affect_in_victimized_children_the_roles_o",
+            "section_title": "Negative Affect in Victimized Children: The Roles of Social Withdrawal, Peer Rejection, and Attitudes Toward Bullying",
+            "block_id": "/page/0/Text/4",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "Self-report measures of victimization, attitudes, and negative affect, and a teacher-report measure of shyness/social withdrawal and peer rejection were completed during the spring semesters of 2 consecutive years.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "yearT1": {
+      "name": "yearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 2000,
+        "evidence": [],
+        "derivation": {
+          "kind": "infer_constant",
+          "skill_name": "estimate_yeart1_from_pubyear",
+          "inputs": {
+            "publication_year": 2004,
+            "span": 1.0,
+            "span_source": "lag*1waves"
+          },
+          "formula": "yearT1 = publication_year - 3 - span",
+          "note": "Buecker gold estimation rule for an unreported (Estimated) baseline year"
+        },
+        "confidence": 0.4
+      }
+    },
+    "country": {
+      "name": "country",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "USA",
+        "evidence": [
+          {
+            "pdf_name": "Dill2004.pdf",
+            "section_id": "001_negative_affect_in_victimized_children_the_roles_o",
+            "section_title": "Negative Affect in Victimized Children: The Roles of Social Withdrawal, Peer Rejection, and Attitudes Toward Bullying",
+            "block_id": "/page/0/Text/6",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "Chronic victimization of students by their peers is a significant issue in America's schools. A recent national study conducted in the United States of over 15,000 junior high and high school students found that 8.4% of those surveyed reported being bullied once a week or more during the current semester (Nansel et al., 2001).",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "Outcome_variable": {
+      "name": "Outcome_variable",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "negative affect",
+        "evidence": [
+          {
+            "pdf_name": "Dill2004.pdf",
+            "section_id": "001_negative_affect_in_victimized_children_the_roles_o",
+            "section_title": "Negative Affect in Victimized Children: The Roles of Social Withdrawal, Peer Rejection, and Attitudes Toward Bullying",
+            "block_id": "/page/0/Text/4",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "This study evaluated the validity of mediating pathways in predicting self-assessed negative affect from shyness/social withdrawal, peer rejection, victimization by peers (overt and relational), and the attitude that aggression is legitimate and warranted.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "sample_type": {
+      "name": "sample_type",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "community/convenience",
+        "evidence": [
+          {
+            "pdf_name": "Dill2004.pdf",
+            "section_id": "001_negative_affect_in_victimized_children_the_roles_o",
+            "section_title": "Negative Affect in Victimized Children: The Roles of Social Withdrawal, Peer Rejection, and Attitudes Toward Bullying",
+            "block_id": "/page/0/Text/4",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "Participants were 296 3rd through 5th graders (156 girls, 140 boys) from 10 elementary schools.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "ethnicity": {
+      "name": "ethnicity",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "other",
+        "evidence": [
+          {
+            "pdf_name": "Dill2004.pdf",
+            "section_id": "001_negative_affect_in_victimized_children_the_roles_o",
+            "section_title": "Negative Affect in Victimized Children: The Roles of Social Withdrawal, Peer Rejection, and Attitudes Toward Bullying",
+            "block_id": "None",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "The paper does not report the ethnic composition of the sample.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "lag": {
+      "name": "lag",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 1.0,
+        "evidence": [
+          {
+            "pdf_name": "Dill2004.pdf",
+            "section_id": "001_negative_affect_in_victimized_children_the_roles_o",
+            "section_title": "Negative Affect in Victimized Children: The Roles of Social Withdrawal, Peer Rejection, and Attitudes Toward Bullying",
+            "block_id": "/page/0/Text/4",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "Self-report measures of victimization, attitudes, and negative affect, and a teacher-report measure of shyness/social withdrawal and peer rejection were completed during the spring semesters of 2 consecutive years.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "M_SWB": {
+      "name": "M_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | negative affect | wave 1": {
+          "values": [
+            {
+              "value": 26.93,
+              "evidence": [
+                {
+                  "pdf_name": "Dill2004.pdf",
+                  "section_id": "005_measures",
+                  "section_title": "Measures",
+                  "block_id": "/page/5/Table/2",
+                  "page": 5,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table I, row 'Negative affect—T1' and 'Negative affect—T2', columns 'Total M', 'Males M', 'Females M', '3rd Graders M', '4th Graders M'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | negative affect | wave 2": {
+          "values": [
+            {
+              "value": 26.47,
+              "evidence": [
+                {
+                  "pdf_name": "Dill2004.pdf",
+                  "section_id": "005_measures",
+                  "section_title": "Measures",
+                  "block_id": "/page/5/Table/2",
+                  "page": 5,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table I, row 'Negative affect—T1' and 'Negative affect—T2', columns 'Total M', 'Males M', 'Females M', '3rd Graders M', '4th Graders M'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - Males | negative affect | wave 1": {
+          "values": [
+            {
+              "value": 26.48,
+              "evidence": [
+                {
+                  "pdf_name": "Dill2004.pdf",
+                  "section_id": "005_measures",
+                  "section_title": "Measures",
+                  "block_id": "/page/5/Table/2",
+                  "page": 5,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table I, row 'Negative affect—T1' and 'Negative affect—T2', columns 'Total M', 'Males M', 'Females M', '3rd Graders M', '4th Graders M'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - Males | negative affect | wave 2": {
+          "values": [
+            {
+              "value": 26.06,
+              "evidence": [
+                {
+                  "pdf_name": "Dill2004.pdf",
+                  "section_id": "005_measures",
+                  "section_title": "Measures",
+                  "block_id": "/page/5/Table/2",
+                  "page": 5,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table I, row 'Negative affect—T1' and 'Negative affect—T2', columns 'Total M', 'Males M', 'Females M', '3rd Graders M', '4th Graders M'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - Females | negative affect | wave 1": {
+          "values": [
+            {
+              "value": 27.33,
+              "evidence": [
+                {
+                  "pdf_name": "Dill2004.pdf",
+                  "section_id": "005_measures",
+                  "section_title": "Measures",
+                  "block_id": "/page/5/Table/2",
+                  "page": 5,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table I, row 'Negative affect—T1' and 'Negative affect—T2', columns 'Total M', 'Males M', 'Females M', '3rd Graders M', '4th Graders M'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - Females | negative affect | wave 2": {
+          "values": [
+            {
+              "value": 26.83,
+              "evidence": [
+                {
+                  "pdf_name": "Dill2004.pdf",
+                  "section_id": "005_measures",
+                  "section_title": "Measures",
+                  "block_id": "/page/5/Table/2",
+                  "page": 5,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table I, row 'Negative affect—T1' and 'Negative affect—T2', columns 'Total M', 'Males M', 'Females M', '3rd Graders M', '4th Graders M'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    },
+    "SD_SWB": {
+      "name": "SD_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | negative affect | wave 1": {
+          "values": [
+            {
+              "value": 10.19,
+              "evidence": [
+                {
+                  "pdf_name": "Dill2004.pdf",
+                  "section_id": "005_measures",
+                  "section_title": "Measures",
+                  "block_id": "/page/5/Table/2",
+                  "page": 5,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table I, row 'Negative affect—T1' and 'Negative affect—T2', columns 'Total SD', 'Males SD', 'Females SD', '3rd Graders SD', '4th Graders SD'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - whole sample | negative affect | wave 2": {
+          "values": [
+            {
+              "value": 10.4,
+              "evidence": [
+                {
+                  "pdf_name": "Dill2004.pdf",
+                  "section_id": "005_measures",
+                  "section_title": "Measures",
+                  "block_id": "/page/5/Table/2",
+                  "page": 5,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table I, row 'Negative affect—T1' and 'Negative affect—T2', columns 'Total SD', 'Males SD', 'Females SD', '3rd Graders SD', '4th Graders SD'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - Males | negative affect | wave 1": {
+          "values": [
+            {
+              "value": 10.23,
+              "evidence": [
+                {
+                  "pdf_name": "Dill2004.pdf",
+                  "section_id": "005_measures",
+                  "section_title": "Measures",
+                  "block_id": "/page/5/Table/2",
+                  "page": 5,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table I, row 'Negative affect—T1' and 'Negative affect—T2', columns 'Total SD', 'Males SD', 'Females SD', '3rd Graders SD', '4th Graders SD'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - Males | negative affect | wave 2": {
+          "values": [
+            {
+              "value": 11.32,
+              "evidence": [
+                {
+                  "pdf_name": "Dill2004.pdf",
+                  "section_id": "005_measures",
+                  "section_title": "Measures",
+                  "block_id": "/page/5/Table/2",
+                  "page": 5,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table I, row 'Negative affect—T1' and 'Negative affect—T2', columns 'Total SD', 'Males SD', 'Females SD', '3rd Graders SD', '4th Graders SD'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - Females | negative affect | wave 1": {
+          "values": [
+            {
+              "value": 10.18,
+              "evidence": [
+                {
+                  "pdf_name": "Dill2004.pdf",
+                  "section_id": "005_measures",
+                  "section_title": "Measures",
+                  "block_id": "/page/5/Table/2",
+                  "page": 5,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table I, row 'Negative affect—T1' and 'Negative affect—T2', columns 'Total SD', 'Males SD', 'Females SD', '3rd Graders SD', '4th Graders SD'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Study 1 - Females | negative affect | wave 2": {
+          "values": [
+            {
+              "value": 9.51,
+              "evidence": [
+                {
+                  "pdf_name": "Dill2004.pdf",
+                  "section_id": "005_measures",
+                  "section_title": "Measures",
+                  "block_id": "/page/5/Table/2",
+                  "page": 5,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table I, row 'Negative affect—T1' and 'Negative affect—T2', columns 'Total SD', 'Males SD', 'Females SD', '3rd Graders SD', '4th Graders SD'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    }
+  },
+  "warnings": [
+    {
+      "code": "ungrounded_candidate",
+      "message": "001_negative_affect_in_victimized_children_the_roles_o/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "004_procedure/ethnicity: quote not found in section (likely hallucinated): 'No information on ethnicity is provided in the text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "008_gender_and_grade_differences_in_victimization_adju/infoYearT1: quote not found in section (likely hallucinated): 'No specific year of data collection is mentioned in the provided text.'",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "008_gender_and_grade_differences_in_victimization_adju/ethnicity: quote not found in section (likely hallucinated): 'No information about the ethnic composition of the sample is provided.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "009_intercorrelations_among_variables/ethnicity: quote not found in section (likely hallucinated): 'Ethnicity of the sample is not mentioned in this section.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "011_predicting_change_in_negative_affect/infoYearT1: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "011_predicting_change_in_negative_affect/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "012_testing_the_vicious_cycle_hypothesis/ethnicity: quote not found in section (likely hallucinated): 'The text does not provide any information regarding the ethnicity of the partici'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "014_acknowledgments/ethnicity: quote not found in section (likely hallucinated): 'Ethnicity composition of the sample is not reported in the provided text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "unmapped_candidate",
+      "message": "candidate [1] from 005_measures carries value(s) [[-999], [-999], [-999], [-999], [-999], [-999], [-999], [-999]] not placed in any sample",
+      "field_name": "Sample",
+      "sample_key": null
+    },
+    {
+      "code": "unmapped_candidate",
+      "message": "candidate [0] from 005_measures carries value(s) [[26.13], [24.3], [27.53], [28.11]] not placed in any sample",
+      "field_name": "M_SWB",
+      "sample_key": null
+    },
+    {
+      "code": "unmapped_candidate",
+      "message": "candidate [0] from 005_measures carries value(s) [[10.03], [8.89], [10.31], [11.16]] not placed in any sample",
+      "field_name": "SD_SWB",
+      "sample_key": null
+    }
+  ],
+  "run_meta": {
+    "run_id": "Dill2004",
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "schema_name": "buecker2023",
+    "schema_version": 1,
+    "skill_names": [
+      "bas2_over_bas",
+      "compute_weighted_mean_total",
+      "estimate_yeart1_from_pubyear",
+      "gender-mapping",
+      "hien_arm_taxonomy",
+      "infer_college_sample_100",
+      "infer_ethnicity_from_country",
+      "info_cost_clamp_zero",
+      "ng_mediator_lookup",
+      "ng_source_smallest_number",
+      "single_gender_fill",
+      "study_naming",
+      "table-parsing",
+      "total_geq_sum",
+      "vu_altr_ctr_identity",
+      "vu_cell_count_localization",
+      "vu_cell_terminology",
+      "vu_country_mturk",
+      "vu_info_cost_default"
+    ],
+    "started_at": "2026-07-08T16:10:10.883254Z",
+    "finished_at": "2026-07-08T16:11:23.087482Z",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "passes": 145,
+    "aggregator_passes": 10
+  }
+}

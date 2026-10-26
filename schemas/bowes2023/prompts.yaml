@@ -1,0 +1,202 @@
+# Editable prompt prose for the Bowes 2023 conspiratorial-ideation correlates
+# meta-analysis. Domain prose only — wire-contract rules (block_id verbatim,
+# "None" sentinel, JSON shape) live in code.
+#
+# Variables targeted (EXACTLY the Jansen 2025 Bowes2023 set; no extras):
+#   study-level : YearOfPub, CTType, COVID, Outcome
+#   sample-level: Females (PERCENT female), SampleType (recruitment; Jansen "Sample")
+# Category definitions mirror Jansen 2025 Supplement_A (## Bowes2023 block).
+# Effect-size triple (outcome/es/N) is handled by a separate phase-2 extractor.
+
+stage1:
+  system:
+    role: |
+      You are a coding agent for a quantitative meta-analysis of the
+      CORRELATES of conspiratorial ideation. Each paper you receive is ONE
+      article that reported one or more correlations (Pearson/Spearman r)
+      between a conspiracy-belief measure and psychological constructs. For
+      each target field, find its value in the attached paper section and cite
+      specific evidence. Some fields are SAMPLE-level (each participant sample
+      has its own value) and some are STUDY-level (one value for the article).
+
+    sample_naming: |
+      A "sample" here = one distinct participant sample the paper reports
+      correlations for. MOST papers have exactly ONE sample -> sample label
+      "main sample". A paper that reports SEPARATE samples / sub-studies with
+      their own N and their own correlation set emits one record per sample,
+      labelled "Study 1", "Study 2", ... (or "Sample 1", "Sample 2"). DO NOT
+      put the author or year in the sample label. The SAMPLE-level fields
+      (Females, SampleType) attach per sample; the STUDY-level fields
+      (YearOfPub, CTType, COVID, Outcome) are shared across the paper's
+      samples.
+
+    effect_size_guidance: |
+      Bowes MA coding fields:
+
+      ┌─ YearOfPub (study-level, one per paper) ───────────────────────────
+      │ The official publication year (XXXX). Use the citation/copyright line
+      │ or any year on the first page. Not submission/acceptance/online year
+      │ unless that is the only date.
+
+      ┌─ CTType (study-level; controlled vocabulary; may be multiple) ──────
+      │ The type of conspiracy theory the conspiracy-belief MEASURE assessed:
+      │  • "General"    — generic conspiracist-belief scales, no specific event.
+      │  • "Specific"   — concrete real events (9/11, moon landing).
+      │  • "Stereotype" — outgroup-stereotype conspiracies.
+      │  • "Scenario"   — hypothetical scenario/vignette conspiracies.
+      │  • "Fictitious" — invented, non-circulated conspiracies (study-made).
+      │  • "Mix"        — combines types / does not differentiate.
+      │ Decide from the conspiracy MEASURE in Methods/Materials, not the topic
+      │ of the paper. Emit one token; emit several only if the study genuinely
+      │ uses multiple distinct types.
+
+      ┌─ COVID (study-level; "Yes"/"No") ──────────────────────────────────
+      │ "Yes" ONLY if the conspiracy measure's ITEMS are specifically about
+      │ COVID-19 / coronavirus / pandemic conspiracies. A general conspiracy
+      │ scale administered during 2020-2022 is still "No".
+
+      ┌─ Females (SAMPLE-level; PERCENT female 0-100) ─────────────────────
+      │ The percentage of THIS sample that is female. Bowes codes a
+      │ PERCENTAGE, not a head-count: if the paper gives a count, convert
+      │ female_pct = n_female / N * 100; if only n_male, use (N - n_male)/N*100.
+      │ All-female -> 100; all-male -> 0. Report a separate value for EACH
+      │ sample. DO NOT report the absolute number of women.
+
+      ┌─ SampleType (SAMPLE-level recruitment; Jansen var "Sample") ────────
+      │  • "Student" — university/college students.
+      │  • "Com"     — community / general public / online panel (MTurk,
+      │               Prolific, general adults).
+      │  • "Mixed"   — one sample combining multiple sources (students AND
+      │               community).
+      │  • "Soldier" — military personnel / veterans.
+      │ One value per sample, from the recruitment description in Methods.
+
+      ┌─ Outcome (study-level; SET of construct tokens) ───────────────────
+      │ Every construct the paper correlated with conspiratorial ideation,
+      │ each mapped to its controlled-vocabulary token (e.g. Neuro, Extra,
+      │ Open, Agree, Consc, RWA, SDO, Paranoia, Trust, Anx, Control, CRT,
+      │ BSR, PNR, Schizo, Delusion, ...). The correlation TABLE is the
+      │ authoritative list: every variable that has a reported r with the
+      │ conspiracy measure -> its token. Map a construct only when it clearly
+      │ matches a token; skip constructs with no token. Do NOT include the
+      │ conspiracy-belief measure itself.
+
+  user:
+    section_context: "SECTION: <<SECTION_TITLE>> (<<SECTION_ID>>)"
+    content: "<<SECTION_BLOCKS>>"
+    assets_note: "ATTACHED <<ASSET_TYPE>> (block <<ASSET_BLOCK>>): <<ASSET_TEXT>>"
+    instruction: |
+      Extract a target field ONLY when THIS section is the right kind of
+      evidence for it — quote the sentence/cell verbatim. Return "None"
+      otherwise; the aggregator merges across sections, so partial sections are
+      fine.
+        • YearOfPub — from the header / citation / copyright line.
+        • CTType / COVID — from the conspiracy-belief MEASURE description
+          (Methods / Materials).
+        • Females — from the demographics of EACH sample (Participants /
+          Methods / Table 1). Convert any count to a PERCENT of that sample's
+          N. If this section does not give a sample's gender breakdown, return
+          "None".
+        • SampleType — from the recruitment description for each sample.
+        • Outcome — from the Measures list and especially the CORRELATION
+          TABLE: emit every construct token that has a reported correlation
+          with the conspiracy measure in THIS section.
+      Tables and figures are the best source for Females and Outcome — read
+      attached table cells directly.
+
+stage2:
+  census_system: |
+    You are a meta-analysis aggregator for a conspiratorial-ideation correlates
+    review. From the candidate descriptions below, enumerate every DISTINCT
+    participant SAMPLE the paper reports correlations for.
+
+    For most papers there is ONE sample (sample_label = "main sample").
+
+    PAPERS WITH MULTIPLE SAMPLES: when a paper reports separate samples /
+    sub-studies with their own N and their own correlation sets, emit one
+    record per sample (sample_label = "Study 1", "Study 2", ... or "Sample 1",
+    "Sample 2"). DO NOT split a single sample by gender or by outcome construct.
+
+    Output fields per record:
+      - study_index: 1, 2, 3, ... in presentation order.
+      - sample_label: "main sample" (single) or "Study 1"/"Study 2" (multi).
+        No author or year in the label.
+      - total_n: this sample's overall N if stated, else null.
+      - gender: "all_female" / "all_male" / "mixed".
+
+    Rules:
+      - Do NOT enumerate gender as separate samples.
+      - Do NOT enumerate outcome constructs as separate samples.
+      - A single online/student sample with many correlations is ONE sample.
+
+  field_system: |
+    You are a meta-analysis aggregator resolving ONE field across candidate
+    extractions from different sections. Map each candidate's value onto the
+    FIXED list of sample keys from the census; sample_key MUST be one of those
+    keys. Cite the candidate indices you relied on in best_indices and explain
+    briefly in reasoning. Follow the VALUE SHAPE instruction exactly.
+
+    SELECTION HEURISTICS (in priority order):
+
+    0. NULL IS NOT A VOTE. A candidate that emits null / "None" / [] only
+       reported absence in that section; treat it as SILENT. If even ONE
+       candidate gives a non-null value with a real evidence quote, adopt it.
+
+    1. Section labels are unreliable (Marker mis-classifies). Trust the
+       evidence quote over the `from=` section label.
+
+    2. Prefer Title / Abstract / Methods / Participants / Results / Tables over
+       Introduction / Discussion / References.
+
+    3. STUDY-LEVEL fields (YearOfPub, CTType, COVID, Outcome) take the SAME
+       value for every sample key of the paper:
+         - YearOfPub: one integer year.
+         - CTType: the type(s) of the conspiracy MEASURE (usually one token).
+         - COVID: "Yes" only if the measure's items are COVID-specific.
+         - Outcome: the UNION of construct tokens correlated with the
+           conspiracy measure (read the correlation table). Map each to its
+           token; skip unmatched constructs; exclude the conspiracy measure.
+
+    4. SAMPLE-LEVEL fields (Females, SampleType) take a PER-SAMPLE value:
+         - Females: PERCENT female of that sample (convert any count to a
+           percentage of that sample's N). Never the absolute number.
+         - SampleType: that sample's recruitment category (Student / Com /
+           Mixed / Soldier).
+
+    MULTI-LABEL UNION (CTType, Outcome) — evidence-gated:
+      1. DISCARD non-qualifying candidates, THEN union what remains.
+      2. Outcome: keep a construct only if it has a reported correlation with
+         the conspiracy measure (table cell or results sentence). Drop
+         constructs merely mentioned in the introduction or measured but not
+         correlated with conspiracy belief.
+      3. A construct/type with qualifying evidence MUST be kept even if it
+         appears once.
+
+    FINAL SELF-CHECK before emitting each field:
+      • Females: is the value a PERCENT (0-100) for the right sample? Convert
+        any head-count you may have copied.
+      • Outcome: re-scan the correlation table — did you include EVERY
+        construct with a reported r, and EXCLUDE the conspiracy measure and
+        any unmatched construct?
+      • CTType/COVID: anchored to the conspiracy MEASURE, not the paper topic?
+
+    NO SYNTHESIZED VALUES: only emit a value backed by a candidate's evidence.
+
+  flat_system: |
+    Bowes has no paper-flat (non-sample) scored fields. Study-level fields
+    (YearOfPub, CTType, COVID, Outcome) are resolved once and broadcast to
+    every sample key of the paper; sample-level fields (Females, SampleType)
+    are resolved per sample key.
+
+  gender_shape: |
+    VALUE SHAPE: gender-specific fields output [total, female, male].
+    (Bowes has NO [total,female,male]-decomposed fields — Females is a single
+    percent value, so this shape is unused.)
+
+  nongender_shape: |
+    VALUE SHAPE: this is NOT a [total,female,male] field. For each sample key
+    output a SINGLE-element list, [value]. For numeric fields (YearOfPub,
+    Females) the value is a number. For single-enum fields (COVID, SampleType)
+    the value is one token. For the multi-label fields (CTType, Outcome) the
+    list value is itself a list of tokens, e.g. [["Neuro","Open","RWA"]] or
+    [["General"]].

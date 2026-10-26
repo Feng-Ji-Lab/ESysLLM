@@ -1,0 +1,419 @@
+{
+  "paper_id": "Bearman2006",
+  "pdf_path": "Bearman2006.pdf",
+  "marker_output_dir": "/projects/code/meta_analysis_agent/data/processed/buecker2023/Bearman2006",
+  "samples": [
+    {
+      "study_index": 1,
+      "sample_label": "whole sample | negative affect | wave 1"
+    }
+  ],
+  "fields": {
+    "Sample": {
+      "name": "Sample",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | negative affect | wave 1": {
+          "values": [
+            {
+              "value": 428,
+              "evidence": [
+                {
+                  "pdf_name": "Bearman2006.pdf",
+                  "section_id": "025_preliminary_analyses",
+                  "section_title": "Preliminary Analyses",
+                  "block_id": "/page/6/Text/5",
+                  "page": 6,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Because HLM uses fullinformation maximum likelihood estimation for missing data, the effective N for analyses was 428.",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    },
+    "infoYearT1": {
+      "name": "infoYearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "estimated",
+        "evidence": [],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "yearT1": {
+      "name": "yearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 2001,
+        "evidence": [],
+        "derivation": {
+          "kind": "infer_constant",
+          "skill_name": "estimate_yeart1_from_pubyear",
+          "inputs": {
+            "publication_year": 2006,
+            "span": 2.0,
+            "span_source": "default"
+          },
+          "formula": "yearT1 = publication_year - 3 - span",
+          "note": "Buecker gold estimation rule for an unreported (Estimated) baseline year"
+        },
+        "confidence": 0.4
+      }
+    },
+    "country": {
+      "name": "country",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "USA",
+        "evidence": [
+          {
+            "pdf_name": "Bearman2006.pdf",
+            "section_id": "011_participants",
+            "section_title": "Participants",
+            "block_id": "/page/3/Text/10",
+            "page": 3,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/3/Text/10] Participants were 247 adolescent girls and 181 adolescent boys from four public and four private middle schools in a large metropolitan area of the Southwestern United States.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "Outcome_variable": {
+      "name": "Outcome_variable",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "negative affect",
+        "evidence": [
+          {
+            "pdf_name": "Bearman2006.pdf",
+            "section_id": "001_the_skinny_on_body_dissatisfaction_a_longitudinal_",
+            "section_title": "The Skinny on Body Dissatisfaction: A Longitudinal Study of Adolescent Girls and Boys",
+            "block_id": "/page/0/Text/4",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/4] For both genders, parental support deficits, negative affectivity, and self-reported dietary restraint showed significant relations to future increases in body dissatisfaction.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "sample_type": {
+      "name": "sample_type",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "community/convenience",
+        "evidence": [
+          {
+            "pdf_name": "Bearman2006.pdf",
+            "section_id": "001_the_skinny_on_body_dissatisfaction_a_longitudinal_",
+            "section_title": "The Skinny on Body Dissatisfaction: A Longitudinal Study of Adolescent Girls and Boys",
+            "block_id": "/page/0/Text/8",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/0/Text/8] ...in a community sample of adolescent boys and girls;",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "ethnicity": {
+      "name": "ethnicity",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "other",
+        "evidence": [
+          {
+            "pdf_name": "Bearman2006.pdf",
+            "section_id": "008_present_study",
+            "section_title": "Present Study",
+            "block_id": "008_present_study",
+            "page": null,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/3/Text/4] In view of these gaps in the literature, the current study sought to directly compare a sample of boys and girls in order to elucidate the processes by which adolescents become body dissatisfied, and whether these processes differ for girls versus boys.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "lag": {
+      "name": "lag",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 1.0,
+        "evidence": [
+          {
+            "pdf_name": "Bearman2006.pdf",
+            "section_id": "012_procedures",
+            "section_title": "Procedures",
+            "block_id": "/page/3/Text/13",
+            "page": 3,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "[/page/3/Text/13] Participants completed a self-report questionnaire, participated in a structured psychiatric interview, and had their weight and height measured by research assistants at baseline (T1) and at 1- and 2-year follow-up (T2 and T3, respectively).",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "M_SWB": {
+      "name": "M_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | negative affect | wave 1": {
+          "values": [
+            {
+              "value": 2.68,
+              "evidence": [
+                {
+                  "pdf_name": "Bearman2006.pdf",
+                  "section_id": "025_preliminary_analyses",
+                  "section_title": "Preliminary Analyses",
+                  "block_id": "/page/6/Table/2",
+                  "page": 6,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table I, Row '3. Negative Affect', Column 'M'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    },
+    "SD_SWB": {
+      "name": "SD_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Study 1 - whole sample | negative affect | wave 1": {
+          "values": [
+            {
+              "value": 0.61,
+              "evidence": [
+                {
+                  "pdf_name": "Bearman2006.pdf",
+                  "section_id": "025_preliminary_analyses",
+                  "section_title": "Preliminary Analyses",
+                  "block_id": "/page/6/Table/2",
+                  "page": 6,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "Table I, Row '3. Negative Affect', Column 'SD'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    }
+  },
+  "warnings": [
+    {
+      "code": "ungrounded_candidate",
+      "message": "001_the_skinny_on_body_dissatisfaction_a_longitudinal_/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "003_body_mass/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "006_negative_affect/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "012_procedures/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "013_measures/Outcome_variable: quote not found in section (likely hallucinated): '[013_measures] Subjective well-being (SWB) was assessed using the Satisfaction w'",
+      "field_name": "Outcome_variable",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "013_measures/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "014_ideal_body_internalization/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "016_social_support/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "017_dieting/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "018_negative_affectivity/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "019_body_dissatisfaction/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "022_preliminary_analyses/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "023_descriptive_analyses/ethnicity: quote not found in section (likely hallucinated): 'The racial/ethnic composition of the sample is not reported in this section.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "024_prospective_analyses/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "027_risk_factors_for_increases_in_body_dissatisfaction/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "028_discussion/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "029_developmental_course_of_body_dissatisfaction/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "031_study_limitations/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "033_acknowledgments/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "unmapped_candidate",
+      "message": "candidate [1] from 026_descriptive_analyses carries value(s) [[2.78], [2.57]] not placed in any sample",
+      "field_name": "M_SWB",
+      "sample_key": null
+    },
+    {
+      "code": "unmapped_candidate",
+      "message": "candidate [1] from 026_descriptive_analyses carries value(s) [[0.6], [0.59]] not placed in any sample",
+      "field_name": "SD_SWB",
+      "sample_key": null
+    }
+  ],
+  "run_meta": {
+    "run_id": "Bearman2006",
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "schema_name": "buecker2023",
+    "schema_version": 1,
+    "skill_names": [
+      "bas2_over_bas",
+      "compute_weighted_mean_total",
+      "estimate_yeart1_from_pubyear",
+      "gender-mapping",
+      "hien_arm_taxonomy",
+      "infer_college_sample_100",
+      "infer_ethnicity_from_country",
+      "info_cost_clamp_zero",
+      "ng_mediator_lookup",
+      "ng_source_smallest_number",
+      "single_gender_fill",
+      "study_naming",
+      "table-parsing",
+      "total_geq_sum",
+      "vu_altr_ctr_identity",
+      "vu_cell_count_localization",
+      "vu_cell_terminology",
+      "vu_country_mturk",
+      "vu_info_cost_default"
+    ],
+    "started_at": "2026-07-08T15:01:08.756241Z",
+    "finished_at": "2026-07-08T15:01:17.925165Z",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "passes": 289,
+    "aggregator_passes": 10
+  }
+}

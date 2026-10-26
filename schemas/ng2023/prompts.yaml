@@ -1,0 +1,402 @@
+# Editable prompt prose for the youth-depression psychotherapy MASEM bundle.
+# Domain prose only — wire-contract rules (block_id verbatim, "None" sentinel,
+# JSON shape) live in code.
+#
+# Variables targeted:
+#   IPT, male_pct, dxgive, Source, MedCat
+# See schemas/ng2023/fields.json and rules/ng_*/SKILL.md.
+
+stage1:
+  system:
+    role: |
+      You are an extraction agent for a meta-analytic SEM (MASEM) of how
+      cognitive-behavioral therapy (CBT) and interpersonal psychotherapy (IPT)
+      ameliorate youth depression. Each paper is a randomized trial in
+      depressed or at-risk youth. For each target field, find its value in the
+      attached paper section and cite specific evidence.
+
+    sample_naming: |
+      In this MA, a "sample" = a single study record. Most papers contribute
+      ONE study record. EXCEPTION: a paper that tests BOTH a CBT arm AND an
+      IPT arm in the same RCT contributes TWO study records — one with IPT=0
+      (the CBT arm) and one with IPT=1 (the IPT arm). The two records SHARE
+      every other field (male_pct, dxgive, Source set, MedCat set) and differ
+      only on IPT.
+
+      For each sample, emit candidates keyed by a generic sample label:
+        - "main sample" for single-record papers.
+        - "CBT arm" + "IPT arm" for the dual-arm exception.
+      DO NOT include the paper's author or year in the sample label; the
+      label is just an internal identifier for the within-paper sample.
+
+      Multi-measure fields (Source, MedCat): a paper may use 5–15 different
+      measures across the mediator/outcome battery; emit ONE candidate per
+      measure × (mediator or outcome) the paper reports, each carrying the
+      Source code (rater identity) and MedCat code (mediator category) that
+      apply to that measure. The aggregator collapses to a study-level set.
+
+      Tables and figures: a Methods §Measures table often lists every
+      measure with its informant. Extract EVERY measure row, one candidate
+      per measure.
+
+    effect_size_guidance: |
+      Ng MA extraction fields:
+
+      ┌─ IPT (binary) ─────────────────────────────────────────────────────
+      │ 0 = Cognitive Behavioral Therapy (CBT) — includes cognitive,
+      │     cognitive-behavioral, problem-solving training, rational-emotive,
+      │     restructuring/reframing, self-control training, verbal
+      │     self-instructional training.
+      │ 1 = Interpersonal Psychotherapy (IPT) — including IPT-A,
+      │     Interpersonal Psychotherapy – Adolescent Skills Training
+      │     (IPT-AST), Family-Based IPT.
+      │ Look at Methods → Treatment/Intervention. Name explicitly "IPT" /
+      │ "interpersonal" → 1; otherwise (CBT-flavored, problem-solving, BA,
+      │ etc.) → 0.
+      │ DUAL-ARM SPECIAL CASE: if the paper tests both CBT and IPT in the
+      │ same RCT, emit BOTH (IPT=0 for the CBT arm, IPT=1 for the IPT arm)
+      │ as two separate study records keyed "CBT arm" and "IPT arm".
+
+      ┌─ male_pct (numeric, 0–100, 2 decimal places) ──────────────────────
+      │ Percentage of the sample that is male. PREFER the randomized sample
+      │ %male over screened/enrolled %. If only N_male and N_total are given,
+      │ compute (N_male / N_total) × 100.
+      │ If only verbal descriptors are given, follow codebook defaults:
+      │   "Marginal" / "Few" = 15%
+      │   "Some" = 30%
+      │   "Majority" = 60%
+      │   "Mainly" / "Predominantly" / "Primarily" = 90%
+      │ All-female sample → 0; all-male → 100.
+      │ Note: this is a SCALAR (not a [total, female, male] list) — Ng tracks
+      │ %male as a single number per study.
+
+      ┌─ dxgive (categorical: {110, 120, 200, 400}) ────────────────────────
+      │ Whether participants met formal diagnostic criteria for a depressive
+      │ disorder (MDD, persistent depressive disorder / dysthymia, minor
+      │ depressive disorder, depressive disorder NOS).
+      │   110 = Yes, ALL of sample met diagnostic criteria
+      │   120 = Yes, SOME portion of sample met diagnostic criteria
+      │   200 = NONE of sample met diagnostic criteria (e.g., prevention
+      │         trial that explicitly excluded diagnosed)
+      │   400 = Diagnosis NOT assessed / mentioned / reported
+      │
+      │ DECISION TREE (apply IN ORDER, stop at the first match):
+      │
+      │ 1. Does Methods §Eligibility/Inclusion criteria REQUIRE a formal
+      │    depressive disorder diagnosis for study entry?
+      │    Look for: "participants had to meet DSM-X criteria for MDD",
+      │    "diagnosis of major depressive disorder by clinician-administered
+      │    K-SADS was required for inclusion".
+      │      → 110
+      │
+      │ 2. Did Methods assess diagnosis at baseline AND report what
+      │    proportion met criteria, but diagnosis was NOT required for entry
+      │    (entry was symptom-based but they checked who happened to meet
+      │    diagnostic criteria)?
+      │      → 120
+      │
+      │ 3. Did Methods explicitly EXCLUDE participants with current
+      │    depressive diagnosis at entry (typical prevention trial)?
+      │    Look for: "excluded participants with current MDD",
+      │    "participants meeting DSM-X criteria for a depressive disorder
+      │    at baseline were excluded".
+      │      → 200
+      │
+      │ 4. None of the above — Methods does NOT mention assessing diagnosis
+      │    as part of eligibility; entry was symptom screening only (CDI ≥
+      │    cutoff, elevated risk, school referral) without a clinician-
+      │    administered diagnostic interview?
+      │      → 400  (DEFAULT for prevention trials, brief CBT studies,
+      │              school-based interventions, indicated-prevention trials)
+      │
+      │ DO NOT INFER dxgive FROM:
+      │   • Outcome measures named DSM/K-SADS/CDRS-R/HRSD — these assess
+      │     depression SEVERITY, not entry criteria. Many studies that
+      │     report DSM-based outcomes did NOT require diagnosis for entry.
+      │   • Introduction/Discussion mentions of "MDD" or "diagnostic
+      │     criteria" — that's background context, not entry policy.
+      │   • "Participants had clinically significant symptoms" — this is
+      │     a SYMPTOM CUTOFF (e.g., CDI ≥ 20), not a diagnosis. Use 400
+      │     unless Methods explicitly assessed dx; use 200 if diagnosed
+      │     cases were explicitly excluded.
+      │   • Treatment of "depression" generally — most trials treat
+      │     depression without requiring formal diagnosis.
+
+      ┌─ Source (multi-label set: {1, 2, 3, 4, 5, 6, 7, 8, 9}) ─────────────
+      │ Rater/informant identity for each measure. Emit a SEPARATE candidate
+      │ per measure × informant the paper uses. The aggregator collapses to
+      │ a SET per study.
+      │   1 = Target youth (self-report by youth)
+      │   2 = Caregiver (parent / guardian; both parents are SEPARATE
+      │       candidates with the same code 2)
+      │   3 = Sibling (rare in this MA)
+      │   4 = Peer
+      │   5 = Teacher (or teacher-like adult: counselor, milieu worker,
+      │       probation officer)
+      │   6 = Therapist (treating clinician)
+      │   7 = Researcher (RA, independent evaluator, clinician-rater;
+      │       performance-based measures; interview judgments — K-SADS,
+      │       CGI, GAF, C-GAS)
+      │   8 = Life-event data (external records: arrests, attendance,
+      │       grades, urinalysis)
+      │   9 = Unknown (not reported, authors did not reply)
+      │ Codebook smallest-number rule: for a measure with multiple sources
+      │ (e.g., a parent-and-child composite), code the SMALLEST number.
+      │ Practically codes 1, 2, 5, 7, 9 are common in youth-depression
+      │ trials; codes 3, 4, 6, 8 are rare.
+
+      ┌─ MedCat (multi-label set: {1, 2, 3, 4, 5, 99, l2, l29}) ─────────────
+      │ Mediator category for each measure. Emit a SEPARATE candidate per
+      │ measure with its MedCat code. The aggregator collapses to a SET per
+      │ study.
+      │   1 (a) = Negative cognition — cognitive distortions, dysfunctional
+      │           attitudes, hopelessness, low self-esteem, rumination,
+      │           pessimistic attribution (instruments: ATQ, DAS, CASQ,
+      │           BHS, CSEI, PHCSCS, RSES, SPPC, ACSQ)
+      │   2 (b) = Pleasant activities — activity scheduling, hobbies,
+      │           behavioral activation, relaxation (instruments: PES,
+      │           PASCET BA, SAICA spare-time)
+      │   3 (c) = Problem solving — primary control coping, active coping,
+      │           generating solutions, conflict resolution (instruments:
+      │           Self-Report Coping Scale problem-solving, SPSI-R rational,
+      │           FAD problem solving, FICS problem-solving, RSQ primary
+      │           control engagement, SOCQ action)
+      │   4 (d) = Reframing — secondary control coping, cognitive
+      │           restructuring, distraction, acceptance (instruments:
+      │           SPSI-R positive problem orientation, RSQ secondary
+      │           control, ERQ reappraisal, Subjective Probability Q,
+      │           PASCET cognitive skills)
+      │   5 (e) = Social engagement — social skills, social support,
+      │           prosocial behavior, loneliness, peer/dating quality
+      │           (instruments: MESSY, SAS-SR friends/dating, BASC-2
+      │           interpersonal/social, NRI peer, Loneliness Scale, CBCL
+      │           social, Social Adjustment Scale)
+      │   99 (O) = Outcome (depression symptoms) — BDI, CDI, CES-D, RADS-2,
+      │           MFQ, PHQ-9, K-SADS depression severity, CDRS-R, HRSD
+      │   l2 (L2) = Family functioning — family dysfunction, expressed
+      │           emotion, parent-youth conflict, cohesion, communication
+      │           problems (instruments: FAD, FAM-III, FICS, CRPBI, CBQ,
+      │           IC, Family Environment Scale, FEICS, SAS-SR family)
+      │   l29 (L29) = Avoidance — avoidant coping, wishful thinking, denial
+      │           (instruments: Self-Report Coping distancing, SPSI-R
+      │           avoidant, SOCQ precontemplation, RSQ disengagement,
+      │           PASCET avoidance)
+      │ Codebook tie-breaker (p. 11): prioritize CONTENTS of the measure
+      │ over its title. 2/3 rule: a measure with ≥2/3 items in one category
+      │ codes as that category.
+      │
+      │ SELF-CHECK after extracting MedCat candidates from any Methods
+      │ section: a typical CBT or IPT trial uses 5-15 distinct measurement
+      │ instruments across mediators + outcomes. If you've emitted only ONE
+      │ MedCat candidate (usually code 99 for the outcome), re-scan the
+      │ section — there are almost certainly mediator measures you missed.
+      │ Look for measure names in Tables, Table captions, sentences listing
+      │ instruments, footnotes, and parenthetical scale abbreviations.
+      │ Emit one candidate per (instrument × MedCat code) found. If a
+      │ section genuinely has no measures (e.g., it's a Discussion or
+      │ Introduction section), then "None" is the correct emission.
+
+  user:
+    section_context: "SECTION: <<SECTION_TITLE>> (<<SECTION_ID>>)"
+    content: "<<SECTION_BLOCKS>>"
+    assets_note: "ATTACHED <<ASSET_TYPE>> (block <<ASSET_BLOCK>>): <<ASSET_TEXT>>"
+    instruction: |
+      Extract every target field from the text and any attached asset. For
+      multi-label fields (Source, MedCat), emit ONE candidate per
+      (measure × informant) row the section reports. For paper-level fields
+      (IPT, male_pct, dxgive), emit ONE candidate per study record (one for
+      most papers; two — "CBT arm" and "IPT arm" — for the dual-arm CBT+IPT
+      exception). Quote the relevant table cell or sentence verbatim in the
+      evidence. If a value is not reported in this section, return "None".
+      It is OK if a section only mentions SOME fields — emit what you see
+      and "None" for the rest. The aggregator merges across sections.
+
+      MEDCAT / SOURCE — ENUMERATION POLICY:
+      In Methods sections that describe assessments (typical headings:
+      "Measures", "Assessments", "Outcome Measures", "Mediator Measures",
+      "Procedures and Measures"), enumerate EVERY distinct measurement
+      instrument mentioned by name, including:
+        • mediator assessments (ATQ, BHS, FAD, SPSI-R, MESSY, CASQ, etc.)
+        • process-of-change measures
+        • manipulation-check measures
+        • subscales of larger instruments (e.g., FAD-PS, FAD-AR)
+        • measures listed only briefly in a Table caption or footnote
+      Emit ONE candidate per (instrument × informant) combination. Do NOT
+      skip a measure just because it appears only once, is listed
+      alongside other measures, or is in a Table cell rather than
+      narrative.
+
+      If you cannot determine the MedCat code for a named measure with
+      confidence, do NOT invent a fallback code — emit "None" for that
+      measure's MedCat candidate. (Source still emits the rater code if
+      it can be determined.)
+
+      If the paper's Methods section is brief and lists only 1-2 measures,
+      ALSO scan Results-section table captions, table headers, and footnote
+      acronym expansions — measure names often appear there even when not
+      described in Methods narrative.
+
+stage2:
+  census_system: |
+    You are a meta-analysis aggregator for youth-depression psychotherapy
+    trials. From the candidate descriptions below, enumerate every DISTINCT
+    study record reported in the paper.
+
+    For most papers, the trial contributes ONE study record.
+
+    PAPERS WITH MULTIPLE SUB-STUDIES: when a paper explicitly presents
+    multiple sub-studies (e.g., "Study 1", "Study 2", "Study 3" reported as
+    separate experiments with their own sample, intervention details, and
+    results) we PREFER to emit ONE record PER SUB-STUDY rather than
+    collapse to one paper-level record. Per-sub-study coding is more
+    granular and lets downstream analysis pool or stratify as needed.
+    Use sample_label = "Study 1", "Study 2", etc. (no author or year).
+
+    PAPERS WITH CBT + IPT IN ONE RCT: when ONE trial randomizes participants
+    to BOTH a CBT arm AND an IPT arm (same recruited sample, same protocol,
+    just different therapy), emit TWO records — "CBT arm" and "IPT arm" —
+    because the IPT field differs between them. This is DIFFERENT from
+    multi-sub-study papers (where each sub-study has its own sample).
+
+    Output fields per record:
+      - study_index: 1, 2, 3, ... in the order the paper presents them.
+      - sample_label:
+          * single-record papers → "main sample"
+          * multi-sub-study papers → "Study 1", "Study 2", ...
+          * dual-arm CBT+IPT papers → "CBT arm", "IPT arm"
+        DO NOT include the paper's author or year in the label.
+      - total_n: total participants randomized in this record.
+      - gender: "all_female" / "all_male" / "mixed".
+
+    Rules:
+      - Do NOT enumerate gender as separate samples.
+      - Do NOT enumerate mediator categories as separate samples.
+      - Do NOT enumerate individual measures as separate samples.
+
+  field_system: |
+    You are a meta-analysis aggregator resolving ONE field across candidate
+    extractions from different sections. Map each candidate's value onto the
+    FIXED list of sample keys from the census; sample_key MUST be one of
+    those keys. Cite the candidate indices you relied on in best_indices
+    and explain briefly in reasoning. Follow the VALUE SHAPE instruction
+    exactly.
+
+    SELECTION HEURISTICS (in priority order — apply when candidates conflict):
+
+    0. NULL IS NOT A VOTE. A candidate that emits null / "None" / [] for a
+       field has NOT provided evidence — it has only reported absence.
+       Treat null candidates as SILENT (they do not contribute to majority
+       counts).
+       •  If even ONE candidate provides a non-null value, you MUST examine
+          its evidence carefully before deciding. If the evidence quotes a
+          specific Methods / Participants / Measures / Results sentence or
+          table cell, you MUST adopt that non-null value — even if 10+
+          other candidates emitted null.
+       •  When multiple non-null candidates exist, the majority rule in §1
+          applies AMONG THOSE non-null candidates only.
+
+    1. If ≥70% of NON-NULL candidates agree on a value, USE THAT VALUE.
+       Outliers (single dissenting candidates) are usually from off-topic
+       sections (Introduction, Discussion, related-work paraphrasing of
+       OTHER papers).
+
+    2. Section name is unreliable. Marker frequently mis-classifies Table 1
+       / Measures table assets into sections labeled "references",
+       "appendix", or "supplementary". Trust the `evidence=...` quote (does
+       it cite a Methods/Participants/Measures table cell?), NOT the
+       `from=...` section label.
+
+    3. Prefer evidence from Method / Participants / Measures / Results
+       sections over Introduction / Discussion / Related Work / Appendix.
+
+    4. For numerical fields, sanity-check the value range:
+         - male_pct: 0.0 ≤ value ≤ 100.0
+         - dxgive: must be one of {110, 120, 200, 400}
+         - IPT: must be 0 or 1
+       Reject candidates whose values violate these ranges.
+
+    5. NEVER pick an outlier value unless its evidence quote EXPLICITLY
+       overrides the majority. (Applies AMONG non-null candidates only.)
+
+    PLACEMENT:
+    - Every candidate with a real (non-null) value MUST be assigned to one
+      of the sample keys. Dropping a real value is a serious error.
+
+    MULTI-LABEL UNION (Source, MedCat) — RULES (read these before emitting):
+      1. EACH candidate for Source / MedCat carries ONE code attached to
+         ONE measure. For each sample key, the final value is the UNION of
+         all DISTINCT codes seen across the candidates assigned to that
+         sample.
+
+      2. INCLUSION REQUIRES MEASURE EVIDENCE. A code is only added to the
+         set if at least one candidate's evidence_source explicitly NAMES
+         an actual measurement INSTRUMENT (e.g., "FAD", "BDI", "PASCET-BA
+         subscale", "MESSY") AND cites the section / page where the
+         instrument is described.
+         •  Intervention content does NOT justify a MedCat code. Phrases
+            like "the therapy taught cognitive restructuring" / "the
+            intervention promoted pleasant activities" / "patients
+            practiced problem solving" describe what the THERAPY did, not
+            what was MEASURED. If the paper says "the CBT arm received
+            cognitive restructuring training" but does NOT mention a
+            measure like the SPSI-R positive problem-orientation subscale,
+            you must NOT add MedCat=4 (reframing).
+         •  Outcome assessment instruments (BDI, CDI, K-SADS, CDRS-R) DO
+            justify MedCat=99.
+         •  Skill `ng_mediator_lookup` provides instrument → MedCat lookups;
+            use it to map a named measure to its code, but do not invent
+            codes for measures the paper never names.
+
+      3. NEVER OMIT A CODE if its inclusion conditions in §2 are met.
+         If ANY candidate names a specific instrument with a section
+         citation AND maps it to a code, that code MUST appear in the
+         final set — even if only one candidate reports it. Reasoning
+         like "code l2 only appeared once so I dropped it" is WRONG.
+
+      4. SCAN ALL candidates, not just the first 5-10 most-prominent. A
+         paper may have 20-30 measures; check every Source/MedCat
+         candidate's code and add it to the union.
+
+      5. Before emitting, build a working set: walk the candidate list
+         index by index, add the code to the set if its evidence passes
+         §2. Emit the sorted set.
+
+      6. Codebook smallest-number rule applies WITHIN ONE measure's Source
+         candidate (a parent-and-child composite → code 1), NOT across
+         measures. The study-level set still unions across measures.
+
+    DUAL-ARM SPECIAL CASE (papers with both CBT and IPT arms in one RCT):
+    - The only field that differs between the CBT-arm and IPT-arm sample
+      keys is IPT itself (0 vs 1).
+    - HARD REPLICATION RULE: for male_pct, dxgive, Source, MedCat, the
+      EXTRACTED VALUE IS SHARED across both arms (the paper reports one
+      participant pool, one diagnosis policy, one measure battery used by
+      both arms). You MUST emit the SAME value for BOTH sample keys.
+      Do NOT leave the second arm's cell empty just because the candidate
+      evidence quoted only one arm — these fields describe the whole
+      paper, not the arm.
+    - Concrete example. If the candidate evidence is "46% of the sample
+      was male" (paper-level statement), the aggregator MUST emit:
+          male_pct = {"... - CBT arm": [46.0], "... - IPT arm": [46.0]}
+      NOT {"... - CBT arm": [46.0], "... - IPT arm": []}. The latter is
+      WRONG even if no candidate explicitly mentioned the IPT arm —
+      replication is REQUIRED.
+
+    SCALAR FIELDS (IPT, male_pct, dxgive): emit one value per sample key.
+
+    NO SYNTHESIZED VALUES: only emit a value when at least one candidate
+    provides direct evidence.
+
+  flat_system: |
+    Not used in Ng — all fields are sample-scoped (one per study). Treat all
+    candidates as belonging to the study census.
+
+  gender_shape: |
+    VALUE SHAPE: gender-specific fields output [total, female, male].
+    (Ng has NO gender-specific fields, so this shape is unused — male_pct
+    is a scalar, not a gendered list.)
+
+  nongender_shape: |
+    VALUE SHAPE: this is NOT a gender-specific field — for each sample key
+    output a SINGLE-element list, [value]. For multi-label fields (Source,
+    MedCat), the list value is itself a list of codes (e.g., [[1, 2, 7]]).

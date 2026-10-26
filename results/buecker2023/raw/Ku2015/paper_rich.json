@@ -1,0 +1,641 @@
+{
+  "paper_id": "Ku2015",
+  "pdf_path": "Ku2015.pdf",
+  "marker_output_dir": "/projects/code/meta_analysis_agent/data/processed/buecker2023/Ku2015",
+  "samples": [],
+  "fields": {
+    "Sample": {
+      "name": "Sample",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": null
+    },
+    "infoYearT1": {
+      "name": "infoYearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "estimated",
+        "evidence": [
+          {
+            "pdf_name": "Ku2015.pdf",
+            "section_id": "002_development_of_materialism_in_adolescence_the_long",
+            "section_title": "Development of Materialism in Adolescence: The Longitudinal Role of Life Satisfaction Among Chinese Youths",
+            "block_id": "/page/0/Text/4",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "Accepted: 4 October 2014/Published online: 16 October 2014",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "yearT1": {
+      "name": "yearT1",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 2011,
+        "evidence": [],
+        "derivation": {
+          "kind": "infer_constant",
+          "skill_name": "estimate_yeart1_from_pubyear",
+          "inputs": {
+            "publication_year": 2015,
+            "span": 1.0,
+            "span_source": "lag*1waves"
+          },
+          "formula": "yearT1 = publication_year - 3 - span",
+          "note": "Buecker gold estimation rule for an unreported (Estimated) baseline year"
+        },
+        "confidence": 0.4
+      }
+    },
+    "country": {
+      "name": "country",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "Hong Kong",
+        "evidence": [
+          {
+            "pdf_name": "Ku2015.pdf",
+            "section_id": "002_development_of_materialism_in_adolescence_the_long",
+            "section_title": "Development of Materialism in Adolescence: The Longitudinal Role of Life Satisfaction Among Chinese Youths",
+            "block_id": "/page/0/Text/5",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "The present research tests the longitudinal role of life satisfaction on materialism among Chinese adolescents",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "Outcome_variable": {
+      "name": "Outcome_variable",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "life satisfaction",
+        "evidence": [
+          {
+            "pdf_name": "Ku2015.pdf",
+            "section_id": "002_development_of_materialism_in_adolescence_the_long",
+            "section_title": "Development of Materialism in Adolescence: The Longitudinal Role of Life Satisfaction Among Chinese Youths",
+            "block_id": "/page/0/Text/5",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "The present research tests the longitudinal role of life satisfaction on materialism among Chinese adolescents",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "sample_type": {
+      "name": "sample_type",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "community/convenience",
+        "evidence": [
+          {
+            "pdf_name": "Ku2015.pdf",
+            "section_id": "002_development_of_materialism_in_adolescence_the_long",
+            "section_title": "Development of Materialism in Adolescence: The Longitudinal Role of Life Satisfaction Among Chinese Youths",
+            "block_id": "/page/0/Text/5",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "among Chinese adolescents",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "ethnicity": {
+      "name": "ethnicity",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": "predominantly asian",
+        "evidence": [
+          {
+            "pdf_name": "Ku2015.pdf",
+            "section_id": "002_development_of_materialism_in_adolescence_the_long",
+            "section_title": "Development of Materialism in Adolescence: The Longitudinal Role of Life Satisfaction Among Chinese Youths",
+            "block_id": "/page/0/Text/5",
+            "page": 0,
+            "study_index": 1,
+            "granularity": "paragraph",
+            "quote": "among Chinese adolescents",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "lag": {
+      "name": "lag",
+      "scope": "paper",
+      "gender_specific": false,
+      "cells": {},
+      "paper_value": {
+        "value": 0.75,
+        "evidence": [
+          {
+            "pdf_name": "Ku2015.pdf",
+            "section_id": "018_311_participants",
+            "section_title": "3.1.1 Participants",
+            "block_id": "018_311_participants",
+            "page": null,
+            "study_index": 2,
+            "granularity": "paragraph",
+            "quote": "[/page/8/Text/7] The two waves of data collection are separated by an approximately 9-month gap.",
+            "bbox": null
+          }
+        ],
+        "derivation": null,
+        "confidence": 0.0
+      }
+    },
+    "M_SWB": {
+      "name": "M_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Overall | life satisfaction | wave 1": {
+          "values": [
+            {
+              "value": 4.04,
+              "evidence": [
+                {
+                  "pdf_name": "Ku2015.pdf",
+                  "section_id": "015_22_results_and_brief_discussion",
+                  "section_title": "2.2 Results and Brief Discussion",
+                  "block_id": "/page/7/Table/2",
+                  "page": 7,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "[/page/7/Table/2] Table 1, row 'SLS Overall', column 'M (SD)'; Table 1, row 'SLS Younger Gp.', column 'M (SD)'; Table 1, row 'SLS Older Gp.', column 'M (SD)'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Younger Gp. | life satisfaction | wave 1": {
+          "values": [
+            {
+              "value": 4.11,
+              "evidence": [
+                {
+                  "pdf_name": "Ku2015.pdf",
+                  "section_id": "015_22_results_and_brief_discussion",
+                  "section_title": "2.2 Results and Brief Discussion",
+                  "block_id": "/page/7/Table/2",
+                  "page": 7,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "[/page/7/Table/2] Table 1, row 'SLS Overall', column 'M (SD)'; Table 1, row 'SLS Younger Gp.', column 'M (SD)'; Table 1, row 'SLS Older Gp.', column 'M (SD)'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Older Gp. | life satisfaction | wave 1": {
+          "values": [
+            {
+              "value": 3.96,
+              "evidence": [
+                {
+                  "pdf_name": "Ku2015.pdf",
+                  "section_id": "015_22_results_and_brief_discussion",
+                  "section_title": "2.2 Results and Brief Discussion",
+                  "block_id": "/page/7/Table/2",
+                  "page": 7,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "[/page/7/Table/2] Table 1, row 'SLS Overall', column 'M (SD)'; Table 1, row 'SLS Younger Gp.', column 'M (SD)'; Table 1, row 'SLS Older Gp.', column 'M (SD)'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Overall | life satisfaction | wave 2": {
+          "values": [
+            {
+              "value": 3.69,
+              "evidence": [
+                {
+                  "pdf_name": "Ku2015.pdf",
+                  "section_id": "020_32_results_and_brief_discussion",
+                  "section_title": "3.2 Results and Brief Discussion",
+                  "block_id": "/page/10/Table/3",
+                  "page": 10,
+                  "study_index": 2,
+                  "granularity": "paragraph",
+                  "quote": "Table 2, row 'SLS Wave 1' and 'SLS Wave 2', column 'M (SD)'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Younger Gp. | life satisfaction | wave 2": {
+          "values": [
+            {
+              "value": 3.66,
+              "evidence": [
+                {
+                  "pdf_name": "Ku2015.pdf",
+                  "section_id": "020_32_results_and_brief_discussion",
+                  "section_title": "3.2 Results and Brief Discussion",
+                  "block_id": "/page/10/Table/3",
+                  "page": 10,
+                  "study_index": 2,
+                  "granularity": "paragraph",
+                  "quote": "Table 2, row 'SLS Wave 1' and 'SLS Wave 2', column 'M (SD)'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Older Gp. | life satisfaction | wave 2": {
+          "values": [
+            {
+              "value": 3.72,
+              "evidence": [
+                {
+                  "pdf_name": "Ku2015.pdf",
+                  "section_id": "020_32_results_and_brief_discussion",
+                  "section_title": "3.2 Results and Brief Discussion",
+                  "block_id": "/page/10/Table/3",
+                  "page": 10,
+                  "study_index": 2,
+                  "granularity": "paragraph",
+                  "quote": "Table 2, row 'SLS Wave 1' and 'SLS Wave 2', column 'M (SD)'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    },
+    "SD_SWB": {
+      "name": "SD_SWB",
+      "scope": "sample",
+      "gender_specific": false,
+      "cells": {
+        "Overall | life satisfaction | wave 1": {
+          "values": [
+            {
+              "value": 0.87,
+              "evidence": [
+                {
+                  "pdf_name": "Ku2015.pdf",
+                  "section_id": "015_22_results_and_brief_discussion",
+                  "section_title": "2.2 Results and Brief Discussion",
+                  "block_id": "/page/7/Table/2",
+                  "page": 7,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "[/page/7/Table/2] Table 1, row 'SLS Overall', column 'M (SD)'; Table 1, row 'SLS Younger Gp.', column 'M (SD)'; Table 1, row 'SLS Older Gp.', column 'M (SD)'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Younger Gp. | life satisfaction | wave 1": {
+          "values": [
+            {
+              "value": 0.9,
+              "evidence": [
+                {
+                  "pdf_name": "Ku2015.pdf",
+                  "section_id": "015_22_results_and_brief_discussion",
+                  "section_title": "2.2 Results and Brief Discussion",
+                  "block_id": "/page/7/Table/2",
+                  "page": 7,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "[/page/7/Table/2] Table 1, row 'SLS Overall', column 'M (SD)'; Table 1, row 'SLS Younger Gp.', column 'M (SD)'; Table 1, row 'SLS Older Gp.', column 'M (SD)'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Older Gp. | life satisfaction | wave 1": {
+          "values": [
+            {
+              "value": 0.83,
+              "evidence": [
+                {
+                  "pdf_name": "Ku2015.pdf",
+                  "section_id": "015_22_results_and_brief_discussion",
+                  "section_title": "2.2 Results and Brief Discussion",
+                  "block_id": "/page/7/Table/2",
+                  "page": 7,
+                  "study_index": 1,
+                  "granularity": "paragraph",
+                  "quote": "[/page/7/Table/2] Table 1, row 'SLS Overall', column 'M (SD)'; Table 1, row 'SLS Younger Gp.', column 'M (SD)'; Table 1, row 'SLS Older Gp.', column 'M (SD)'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Overall | life satisfaction | wave 2": {
+          "values": [
+            {
+              "value": 0.69,
+              "evidence": [
+                {
+                  "pdf_name": "Ku2015.pdf",
+                  "section_id": "020_32_results_and_brief_discussion",
+                  "section_title": "3.2 Results and Brief Discussion",
+                  "block_id": "/page/10/Table/3",
+                  "page": 10,
+                  "study_index": 2,
+                  "granularity": "paragraph",
+                  "quote": "Table 2, row 'SLS Wave 1' and 'SLS Wave 2', column 'M (SD)'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Younger Gp. | life satisfaction | wave 2": {
+          "values": [
+            {
+              "value": 0.71,
+              "evidence": [
+                {
+                  "pdf_name": "Ku2015.pdf",
+                  "section_id": "020_32_results_and_brief_discussion",
+                  "section_title": "3.2 Results and Brief Discussion",
+                  "block_id": "/page/10/Table/3",
+                  "page": 10,
+                  "study_index": 2,
+                  "granularity": "paragraph",
+                  "quote": "Table 2, row 'SLS Wave 1' and 'SLS Wave 2', column 'M (SD)'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        },
+        "Older Gp. | life satisfaction | wave 2": {
+          "values": [
+            {
+              "value": 0.68,
+              "evidence": [
+                {
+                  "pdf_name": "Ku2015.pdf",
+                  "section_id": "020_32_results_and_brief_discussion",
+                  "section_title": "3.2 Results and Brief Discussion",
+                  "block_id": "/page/10/Table/3",
+                  "page": 10,
+                  "study_index": 2,
+                  "granularity": "paragraph",
+                  "quote": "Table 2, row 'SLS Wave 1' and 'SLS Wave 2', column 'M (SD)'",
+                  "bbox": null
+                }
+              ],
+              "derivation": null,
+              "confidence": 0.0
+            }
+          ]
+        }
+      },
+      "paper_value": null
+    }
+  },
+  "warnings": [
+    {
+      "code": "ungrounded_candidate",
+      "message": "007_131_the_longitudinal_effects_of_life_satisfaction_/ethnicity: quote not found in section (likely hallucinated): 'Ethnicity is not explicitly reported in the provided text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "008_132_the_reciprocal_relationship_between_life_satis/ethnicity: quote not found in section (likely hallucinated): 'The ethnicity of the sample is not reported in this section.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "009_133_the_role_of_age_and_ses/ethnicity: quote not found in section (likely hallucinated): 'The text does not report the ethnic composition of the sample.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "010_2_study_1/ethnicity: quote not found in section (likely hallucinated): 'Ethnicity composition is not reported in the provided text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "011_21_method/infoYearT1: quote not found in section (likely hallucinated): '[011_21_method] The data were collected in 2010 (Time 1) and 2011 (Time 2) from '",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "011_21_method/yearT1: quote not found in section (likely hallucinated): '[011_21_method] The data were collected in 2010 (Time 1) and 2011 (Time 2) from '",
+      "field_name": "yearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "011_21_method/country: quote not found in section (likely hallucinated): '[011_21_method] The data were collected in 2010 (Time 1) and 2011 (Time 2) from '",
+      "field_name": "country",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "011_21_method/Outcome_variable: quote not found in section (likely hallucinated): '[011_21_method] Participants completed measures of life satisfaction (Diener et '",
+      "field_name": "Outcome_variable",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "011_21_method/sample_type: quote not found in section (likely hallucinated): '[011_21_method] The sample was recruited through a national online panel provide'",
+      "field_name": "sample_type",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "011_21_method/ethnicity: quote not found in section (likely hallucinated): 'No information on ethnicity is provided in the text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "011_21_method/lag: quote not found in section (likely hallucinated): '[011_21_method] The data were collected in 2010 (Time 1) and 2011 (Time 2)'",
+      "field_name": "lag",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "014_213_procedure/infoYearT1: quote not found in section (likely hallucinated): 'The text describes the procedure but does not state the year of data collection.'",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "016_3_study_2/ethnicity: quote not found in section (likely hallucinated): 'None'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "017_31_method/infoYearT1: quote not found in section (likely hallucinated): '[017_31_method] This study used data from the German Socio-Economic Panel (SOEP)'",
+      "field_name": "infoYearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "017_31_method/yearT1: quote not found in section (likely hallucinated): '[017_31_method] For the present study, we used data from 2000 to 2010.'",
+      "field_name": "yearT1",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "017_31_method/country: quote not found in section (likely hallucinated): '[017_31_method] This study used data from the German Socio-Economic Panel (SOEP)'",
+      "field_name": "country",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "017_31_method/sample_type: quote not found in section (likely hallucinated): '[017_31_method] This study used data from the German Socio-Economic Panel (SOEP)'",
+      "field_name": "sample_type",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "017_31_method/ethnicity: quote not found in section (likely hallucinated): '[017_31_method] This study used data from the German Socio-Economic Panel (SOEP)'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "017_31_method/lag: quote not found in section (likely hallucinated): '[017_31_method] The SOEP started in 1984 with a sample of 12,245 respondents and'",
+      "field_name": "lag",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "019_312_measures_and_procedure/ethnicity: quote not found in section (likely hallucinated): 'Ethnicity of the sample is not mentioned in the provided text.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "ungrounded_candidate",
+      "message": "022_references/ethnicity: quote not found in section (likely hallucinated): 'No information about the ethnicity of the sample is provided in this section.'",
+      "field_name": "ethnicity",
+      "sample_key": null
+    },
+    {
+      "code": "unmapped_candidate",
+      "message": "candidate [1] from 020_32_results_and_brief_discussion carries value(s) [[4.09], [4.67]] not placed in any sample",
+      "field_name": "M_SWB",
+      "sample_key": null
+    },
+    {
+      "code": "unmapped_candidate",
+      "message": "candidate [1] from 020_32_results_and_brief_discussion carries value(s) [[0.66], [0.65]] not placed in any sample",
+      "field_name": "SD_SWB",
+      "sample_key": null
+    },
+    {
+      "code": "no_samples",
+      "message": "sample census returned no samples",
+      "field_name": null,
+      "sample_key": null
+    }
+  ],
+  "run_meta": {
+    "run_id": "Ku2015",
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "schema_name": "buecker2023",
+    "schema_version": 1,
+    "skill_names": [
+      "bas2_over_bas",
+      "compute_weighted_mean_total",
+      "estimate_yeart1_from_pubyear",
+      "gender-mapping",
+      "hien_arm_taxonomy",
+      "infer_college_sample_100",
+      "infer_ethnicity_from_country",
+      "info_cost_clamp_zero",
+      "ng_mediator_lookup",
+      "ng_source_smallest_number",
+      "single_gender_fill",
+      "study_naming",
+      "table-parsing",
+      "total_geq_sum",
+      "vu_altr_ctr_identity",
+      "vu_cell_count_localization",
+      "vu_cell_terminology",
+      "vu_country_mturk",
+      "vu_info_cost_default"
+    ],
+    "started_at": "2026-07-08T23:02:07.465047Z",
+    "finished_at": "2026-07-08T23:07:28.595693Z",
+    "prompt_tokens": 350765,
+    "completion_tokens": 44054,
+    "passes": 201,
+    "aggregator_passes": 10
+  }
+}
